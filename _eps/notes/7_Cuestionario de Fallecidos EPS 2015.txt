@@ -1,0 +1,690 @@
+
+=== PDF PAGE 1 ===
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+2015
+COMUNA
+FOLIO -
+INFORMACIÓN DE LA ENTREVISTA:
+Fecha 1ª visita: Resultado 1ª visita:
+2016
+Fecha 2ª visita: Resultado 2ª visita:
+2016
+Fecha 3ª visita: Resultado 3ª visita:
+2016
+Fecha de la Entrevista
+2016
+Hora de la Entrevista
+Inicio
+Término
+FALLECIDO
+Teléfono (código de área - fono) Comuna: Región:
+Villa / Población: Localidad:
+Nombre: Apellido Paterno: Apellido Materno:
+Fecha de Nacimiento: Dirección:
+Sr(a) ......... mi nombre es ......... y estoy acá porque el CentroUC Encuestas y Estudios 
+Longitudinales de la Universidad Católica de Chile y la Subsecretaría de Previsión Social están 
+conduciendo la Encuesta de Protección Social 2015. El propósito de este estudio es obtener 
+información estadística sobre la población chilena, la que será utilizada en el análisis para 
+elaborar y desarrollar políticas públicas, así como en las investigaciones académicas en las áreas 
+de trabajo, familia y seguridad social.
+ 
+El Sr(a) ......... ha participado en varias oportunidades en el estudio que le acabo de presentar y 
+es de vital importancia que para el cierre de su participación en esta encuesta, usted nos pueda 
+colaborar entregándonos algunos datos sobre la persona fallecida.
+ 
+Estaríamos complacidos si usted nos puede colaborar, pero si decidiera no hacerlo, respetamos 
+y entendemos su decisión. Con su consentimiento yo (el entrevistador) le formularé varias 
+preguntas sobre la historia laboral y las condiciones de salud previas al fallecimiento. Debo 
+aclararle que no hay respuestas correctas o incorrectas a estas preguntas. Por favor solicíteme 
+una clarificación si usted no entiende alguna de las preguntas. Si existiese alguna pregunta que 
+usted no quisiera responder, por favor hágalo saber para continuar con la siguiente pregunta. 
+Todo lo que nos diga será completamente confidencial. La entrevista tendrá una duración de 
+aproximadamente una hora. Su participación en este estudio es completamente voluntaria y 
+podrá retirarse en cualquier momento sin ninguna consecuencia. Si usted tiene alguna pregunta 
+sobre este estudio, puede contactarse con los encargados de éste, al mail dudasEPS@uc.cl o 
+llamar al (56 2) 2354 1792. Garantía de Confidencialidad: El CentroUC Encuestas y Estudios 
+Longitudinales adhiere a lo establecido en La ley Orgánica N° 17.374 del Instituto Nacional de 
+Estadísticas que, en los artículos que señala, determina lo siguiente: Artículo 29: “El Instituto 
+Nacional de Estadísticas, los Organismos Fiscales, Semifiscales y Empresas del Estado, y cada 
+uno de sus respectivos funcionarios, no podrán divulgar los hechos que se refieren a las 
+personas o entidades determinadas, de que se haya tomado conocimiento en el desempeño 
+de sus actividades. El estricto mantenimiento de estas reservas constituyen el “SECRETO 
+ESTADISTICO”. Su infracción por cualquier persona sujeta a esta obligación, hará incurrir en el 
+delito previsto por el artículo 247° del Código Penal.
+
+=== PDF PAGE 2 ===
+Encuesta de Protección Social  2015
+2
+Reservado Supervisión
+(En cada etapa se debe registrar el nombre del responsable)
+1. Sí 2. No Códigos 
+Encuesta completa Nombre Encuestador(a) 
+Flujo lógico Nombre Supervisor(a) 
+Letra legible Nombre Codificador(a) 
+Entrevistado idóneo Nombre Digitador(a) 
+M1. Nombre de pila del Fallecido
+M5e. ¿Usted diría que fue una muerte inesperada?
+1. Sí
+2. No
+8.  No responde
+9. No sabe
+ 
+M5c. ¿Qué causó la muerte del entrevistado?
+1. Cáncer
+2. Ataque al corazón
+3.  Ataque cerebral
+4.  Otras enfermedades cardiovasculares relacionadas
+5.  Enfermedades respiratorias
+6.  Accidente  Pase a M5f
+7.  Otra. Especifique  Pase a M5c.e
+8.  No responde  Pase a M5e
+9. No sabe  Pase a M5e
+M3. Sexo de fallecido(a)
+1. Hombre
+2. Mujer
+M5a. ¿Cuál fue la fecha exacta del fallecimiento?
+ ANOTE DÍA, MES Y AÑO
+M5a_día M5a_mes M5a_año
+8888. No responde
+9999. No sabe
+88. No responde
+99. No sabe
+88. No responde
+99. No sabe
+A TODOS LOS FALLECIDOS
+M5c.e
+M2. ¿Cuál era la relación de parentesco de el/la fallecido(a) con el 
+Jefe(a) de Hogar?
+1. Jefe(a) del hogar
+2. Cónyuge o Pareja
+3. Hijo(a) / Hijastro(a)
+11. Otro familiar
+12. No familiar
+M4. ¿Cuál era el estado civil de el/la fallecido(a) antes de morir?
+1. Casado(a)
+2. Conviviente
+3. Anulado(a)
+4. Con pareja a través de Acuerdo de Unión Civil (AUC)
+5. Separado(a) de unión legal
+6. Separado(a) de unión de hecho
+7. Viudo(a)
+8. Soltero(a)
+9. Divorciado
+88. No responde
+99. No sabe 
+M5b. ¿Qué edad tenía el entrevistado al fallecer?
+ AÑOS CUMPLIDOS 
+888. No responde
+999. No sabe
+M5d. ¿Cuánto tiempo estuvo enfermo/a el/la fallecido/a antes de 
+morir?
+1.  No estuvo enfermo/a, falleció repentinamente
+2. 1 a 2 horas
+3.  Menos de 24 horas
+4.  Un día o más, pero menos de una semana 
+5.  Una semana o más, pero menos de un mes 
+6.  Un mes o más, pero menos de 6 meses 
+7.  6 meses o más, pero menos de un año 
+8.  Un año o más 
+88.  No responde
+99. No sabe  
+ 
+
+=== PDF PAGE 3 ===
+Encuesta de Protección Social  2015
+3
+M11. ¿En qué sistema previsional se encontraba cotizando el/la 
+fallecido(a)?
+1. AFP
+2. INP
+3. CAPREDENA
+4. DIPRECA
+5. Otro sistema. Especifique  Pase a M11.e
+8. No responde 
+9. No sabe 
+M11.e
+M9. A el/la fallecido(a), ¿le había sido diagnosticada alguna de las 
+siguientes condiciones médicas por un doctor?
+1. Sí
+2. No
+8. No responde 
+9. No sabe
+Condición Médica M9
+M9_01 Asma o Enfisema pulmonar
+M9_02 Depresión
+M9_03 Diabetes
+M9_04 Hipertensión o Presión alta
+M9_05 Problemas cardíacos
+M9_06 Cáncer
+M9_07 Artritis o Artrosis
+M9_08 Enfermedad renal
+M9_09 Derrame cerebral
+M9_10 Enfermedad mental
+M9_11 VIH / SIDA
+M10. ¿El/la fallecido(a) se encontraba cotizando en algún sistema 
+previsional antes de su fallecimiento?
+1. Sí
+2. No  Pase a M12
+8. No sabe / No responde
+M13. ¿El/la fallecido(a) era cotizante o carga familiar?
+1.  Cotizante  Pase a M17
+2. Carga
+8. No Responde  Pase a M17
+9. No sabe  Pase a M17 
+M14. El/la fallecido(a), ¿de quién era carga familiar?
+1. Padre
+2. Madre
+3. Hijo(a)
+4. Cónyuge
+5. Otro
+8. No Responde  Pase a M17
+9. No sabe  Pase a M17
+M12. ¿A qué sistema previsional de salud pertenecía el/la 
+fallecido(a)?
+1. Sistema público FONASA Grupo A (indigente)
+2. Sistema público FONASA Grupo B
+3. Sistema público FONASA Grupo C
+4. Sistema Público FONASA Grupo D
+5. Sistema público FONASA. No sabe el grupo
+6. FF.AA. y de Orden
+7. ISAPRE. Especifique  Pase a M12.e
+8. Ninguno (Particular)  Pase a M17
+9. Otro Sistema. Especifique  Pase a M12.e
+88. No Responde  Pase a M17
+99. No sabe  Pase a M17
+M12.e
+M5f. ¿En qué lugar falleció?
+1.  En su casa (del fallecido) 
+2.  En la casa de un familiar
+3.  En la casa de un no familiar 
+4.  En un  hospital
+5.  En un hospicio
+6.  En un asilo de ancianos
+7.  En una residencial 
+8.  En un albergue
+9.  En una ambulancia/vehículo camino al hospital
+10.  Otro. Especifique  Pase a M5f.e
+88. No Responde
+99. No sabe 
+ 
+M5f.e
+
+=== PDF PAGE 4 ===
+Encuesta de Protección Social  2015
+4
+M15. ¿Pertenece esta persona al hogar de el/la fallecido(a)?
+1. Sí
+2. No
+8. No Responde
+9. No sabe 
+M17.Entre Enero del 2009 y su fallecimiento, ¿Recibió el/la 
+fallecido(a) algún tipo de capacitación laboral, sindical, recreacional u 
+otro curso de nivelación educacional?
+1. Sí
+2. No
+8. No Responde
+9. No sabe 
+M0c. El/la fallecido(a), ¿Con qué regularidad practicaba deporte o 
+alguna actividad física?
+1.  Todos los días
+2.  5 a 6 veces por semana
+3.  3 a 4 veces por semana
+4.  1 a 2 veces por semana
+5. 1 a 3 veces al mes
+6.  Algunas veces al año
+7.  Nunca o casi nunca
+8.  No responde
+9. No sabe
+M0d  El/la fallecido(a), ¿Fumaba?
+1. Sí
+2.  No  Pase a M0f
+8. No Responde  Pase a M0f
+9.  No sabe  Pase a M0f
+M0e.  El/la fallecido(a), ¿Cuántos cigarrillos fumaba en promedio 
+mensualmente?
+ INDICAR CANTIDAD MENSUAL
+8888. No responde
+9999. No sabe
+M0f. El/la fallecido(a), ¿Consumía bebidas alcohólicas como cerveza, 
+vino, pisco u otros licores?  LEER
+1. Sí
+2.  No  Pase a siguiente
+8.  No responde  Pase a siguiente
+9. No sabe
+Bebida alcohólica F13
+F13_01 Cerveza
+F13_02 Vino
+F13_03 Pisco u otro licor
+M0g. El/la fallecido(a), ¿Habitualmente necesitaba ayuda de 
+terceros o tenía dificultad para realizar las siguientes actividades?
+ LEER TODAS. RESPUESTA MÚLTIPLE
+1. Sí
+2. No
+8. No responde
+9. No sabe 
+M0g_01 Ejercicio extenuante o intenso
+M0g _02 Caminar largas distancias
+M0g _03 Subir escalas
+M0g _04 Bañarse
+M0g _05 Vestirse
+M0g _06 Comer
+M0g _07 Salir de su cama
+
+=== PDF PAGE 5 ===
+Encuesta de Protección Social  2015
+5
+OBSERVACIONES                                                                 
+M18b. El/la fallecido(a), ¿recibía 
+ingresos por concepto de:
+ LEER
+1. Sí
+2.  No  Pase a siguiente
+8.  No responde  Pase a siguiente
+9. No sabe  Pase a siguiente
+M19b. ¿Qué institución le pagaba este ingreso? 
+1. AFP
+2. INP
+3. CAPREDENA
+4. DIPRECA
+5. Mutual de Accidentes del Trabajo
+6. Cía. de Seguros
+7. Administrador de Fondos Cesantía
+8. Otra institución  Pase a M19b.e Especifique
+88. No Responde
+99. No sabe
+M20b. ¿Cuánto recibía 
+mensualmente?
+ 
+ ANOTE MONTO EN PESOS
+ 
+M18b M19b M19b.e M20b
+1. Jubilación o Pensión 
+de Vejez  
+2. Pensión de invalidez  
+3. Pensión de viudez 
+(Montepío)  
+4. Pensión de orfandad  
+5. Otro tipo de pensión  
+ SI CONTESTÓ NO (M18 b=2,8 ó 9) EN TODAS LAS ALTERNATIVAS  Pase a M27
+
+=== PDF PAGE 6 ===
+Encuesta de Protección Social  2015
+6
+M26. ¿Qué modalidad de pensión tenía el/la fallecido(a)?
+ LEA LAS ALTERNATIVAS  
+1. Retiro programado
+2. Renta vitalicia
+3. Renta temporal con renta vitalicia diferida
+4. Renta vitalicia inmediata con retiro programado
+5. Era del sistema antiguo
+8. No Responde
+9. No sabe
+PENSIONADOS POR VEJEZ
+M22. Después de pensionarse, ¿siguió trabajando?
+1. Sí
+2. No  Pase a M24
+8. No sabe / No responde
+M21b. ¿En qué fecha jubiló o se pensionó? Señale mes y año
+ SI LA FECHA DE JUBILACIÓN ES ANTERIOR A ENERO DE 2012   Pase a 
+M25
+ SI NO RECUERDA EL MES ANOTE “0”
+M21b.m  mes M21b.a  año
+88. No responde
+99. No sabe
+8888. No responde
+9999. No sabe
+M24. ¿Por qué no siguió trabajando?
+1. No encontraba trabajo
+2. Quería dedicarse a otras cosas
+3. La salud se lo impedía
+4. Por otra razón. Especifique  Pase a M24.e
+8. No sabe / No responde
+M24.e
+M25. ¿Cuáles fueron las principales razones por la que jubiló o se 
+pensionó?  SEÑALE LAS TRES RAZONES MÁS IMPORTANTE  
+1. Quería aumentar sus ingresos con nuevos proyectos laborales
+2. Quería usar Fondos o Excedentes de libre disposición
+3. Lo convenció un agente de ventas
+4. Por problemas de salud
+5. Quería dedicarse a otras actividades no laborales
+6. Cumplió años de servicio (INP , DIPRECA o CAPREDENA)
+7. La empresa le ofreció un plan de retiro
+8. Porque realizaba trabajos pesados
+9. Quedó sin trabajo y le quedaba poco tiempo para jubilar
+10. Recibió regalo o dinero del agente de ventas
+11. Cumplió edad legal de retiro
+12. Por discapacidad o invalidez
+13. Otra razón. Especifique  Pase a M25.e
+14. Ninguna otra
+M25_1 
+Primera Razón
+M25_2 
+Segunda Razón
+M25_3 Tercera 
+Razón
+   
+M25.eM23. ¿Por qué siguió trabajando?
+1. Por necesidad económica  Pase a M25
+2. Le agradaba el trabajo  Pase a M25
+3. Por mantenerse activo  Pase a M25
+4. Porque la pensión era muy baja  Pase a M25
+5. Por otra razón. Especifique  Pase a M23.e
+8. No sabe / No responde
+M23.e
+  Pase a M25
+SÓLO PARA FALLECIDOS CON JUBILACIÓN O PENSIÓN DE VEJEZ (M18 b_1=1). EL RESTO  Pase a M27   
+
+=== PDF PAGE 7 ===
+Encuesta de Protección Social  2015
+7
+PENSIONES DE SOBREVIVENCIA/HERENCIAS
+Sobreviviente
+ CONSULTE 
+POR CADA 
+UNO DE ESTOS 
+PARENTESCOS 
+Y ANOTE LOS 
+BENEFICIOS 
+CUANDO 
+CORRESPONDA
+M27. El/la 
+fallecido(a), ¿dejó 
+algún beneficio del 
+sistema de pensiones?
+1. Sí
+2. No
+ Pase a otro
+3. No sabe
+ Pase a otro
+8. No responde
+ Pase a otro
+9. No aplica (no tenía) 
+ Pase a otro
+M28. ¿Qué beneficio dejó?
+ MARQUE X EN BENEFICIO QUE CORRESPONDA AL 
+PARENTESCO. PUEDEN SER MAS DE UNA ALTERNATIVA
+M28.1 Una pensión
+M28.2 Una Herencia
+M28.3 Cuota Mortuoria
+M28.4 Seguro de Vida
+M28.5 Otro beneficio. Especifique  M28.e 
+M29. ¿Cuán-
+tas personas 
+recibieron 
+este benefi-
+cio?
+ ANOTE 
+CUANTAS 
+PENSIONES A 
+CADA PAREN -
+TESCO CON -
+SULTADO
+88. No sabe/No  
+responde
+M30. ¿Cuál es el 
+monto total de las 
+pensiones?
+88888888. No 
+Responde
+99999999. No sabe
+Lea parentesco M27 M28_1 M28_2 M28_3 M28_4 M28_5 M28.e M29 M30
+1 Cónyuge
+2 Pareja AUC
+3 Hijos(as)
+4 Madre o Padre 
+de sus hijos
+5 Otros familiares
+M31. ¿El fallecido dejó herencia en bienes, activos, etc. o deudas?
+1. Sí
+2. No  Pase a siguiente
+8. No Responde  Pase a siguiente
+9. No sabe  Pase a siguiente
+M32. ¿Cuál es el monto de esta herencia? 
+888888888. No responde
+999999999. No sabe
+M31 M21
+a. Bienes Raíces
+b. Otros bienes
+c. Activos (acciones, bonos, etc)
+d. Negocios (negocios o empresas)
+e. Deudas
+ SI CONTESTÓ NO (M31=2,8 ó 9) EN TODAS LAS ALTERNATIVAS  Pase a M33
+
+=== PDF PAGE 8 ===
+Encuesta de Protección Social  2015
+8
+HISTORIA LABORAL
+OCUPADOS (PARA PERÍODOS EN QUE ESTABA TRABAJANDO M34=1)
+M33. Describa, cronológicamente, todas las 
+actividades que el Fallecido haya realizado desde 
+Enero de 2009 a la fecha de deceso.
+ INDIQUE LA FECHA DE INICIO Y DE TÉRMINO DE 
+CADA ACTIVIDAD
+M34. En ese período, ¿en cuál de las siguientes 
+situaciones se encontraba?
+1. Trabajando
+2. Cesante  Pase a M47
+3. Buscando trabajo por 1ª vez  Pase a M47 
+4. Inactivo  Pase a M46
+8. No sabe / No responde
+M35. ¿En que Región trabajaba? Si en este período realizaba más de un trabajo, refiérase al 
+principal
+ CONSIDERE NUEVAS REGIONES (1 A 15) U OTRO PAÍS. ANOTE EL Nº CORRESPONDIENTE A LA 
+REGIÓN, SI NO LA SABE, CONSULTE EN LA ÚLTIMA PÁGINA.
+1-13. I a XIII (RM)
+14. De los Ríos (Valdivia) 
+15. Arica y Parinacota
+80. Fuera de Chile
+88. No responde
+99. No sabe
+M36. ¿Cuál era su ocupación u oficio? Si en este período realizaba más de un trabajo, 
+refiérase al principal
+M37. Este trabajo era de tipo:
+1.  Permanente
+2.  De temporada o estacional
+3.  Ocasional o eventual
+4. A prueba
+5.  Por plazo o tiempo determinado
+8. No responde
+9. No sabe mes y año
+inicio
+mes y año
+término
+M33im M33ia M33tm M33ta M34 M35 M36 M37
+1 Enero 2009  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10  
+11  
+12  
+13  
+14  
+15  
+AHORA LE PEDIRÉ QUE DESCRIBA CRONOLÓGICAMENTE, TODAS LAS ACTIVIDADES QUE EL FALLECIDO HAYA REALIZADO
+DESDE ENERO DE 2009 A LA FECHA DE DECESO
+Total Actividades
+
+=== PDF PAGE 9 ===
+Encuesta de Protección Social  2015
+9
+HISTORIA LABORAL
+OCUPADOS ( PARA PERÍODOS EN QUE ESTABA TRABAJANDO M34=1)
+M38. ¿Qué actividad realiza la empresa, industria o servicio donde 
+desempeñaba este trabajo?
+M39. Incluyendo descuentos ¿Cuál era el ingreso liquido mensual promedio 
+en su trabajo?
+M40. ¿En esta ocupación, el/la fallecido(a) trabajaba como:
+1. Patrón o empleador
+2. Trabajador por cuenta propia
+3. Empleado u Obrero del Sector Público
+4. Empleado u Obrero del Sector Privado
+5. Servicio Doméstico Puertas Adentro
+6. Servicio Doméstico Puertas Afuera
+7. Familiar No remunerado
+8. FF.AA. y de Orden
+88. No responde
+99. No sabe
+M41. En este trabajo, el/la fallecido(a), ¿había firmado contrato de 
+trabajo?
+1. Sí, tenía contrato y lo firmó
+2. No, tenía contrato pero no lo firmó
+3. No tenía contrato
+8. No responde
+9. No sabe
+M43. Durante este trabajo, ¿se 
+encontraba el/la fallecido(a) 
+afiliado a algún sindicato?
+1. Sí
+2. No
+8. No responde
+9. No sabe
+M44. El/la fallecido(a), ¿Se 
+encontraba cotizando en algún 
+sistema Previsional?
+1. Sí, AFP (Adm. Fondos Pensiones)
+2. Sí, INP [Servicio de Seguro Social, 
+Caja Nacional Empleados Públicos 
+(CANAEMPU), Caja de Empleados 
+Particulares (EMPART)]
+3. Sí, Caja de Previsión de la Defensa 
+Nacional(CAPREDENA)
+4. Sí, Dirección de Previsión de 
+Carabineros (DIPRECA)
+5. Sí, Otra Caja
+6. Sí, no sabe donde cotizó
+7. No cotizó
+8. No responde
+9. No sabe 
+M45. ¿Cuál fue el motivo 
+por el que dejó este trabajo?
+1. Mutuo acuerdo de las 
+partes
+2. Renuncia
+3. Vencimiento del contrato 
+o fin del trabajo o servicio 
+que dio origen al contrato
+4. Despido por causa 
+imputable a trabajador
+5. Despido por necesidades 
+de la empresa
+6. Cierre de la empresa
+7. Encontró un mejor trabajo
+8. Condiciones de salud o 
+invalidez
+9. Se pensionó
+10. Caso fortuito o fuerza 
+mayor
+11. Otra
+12. No aplicable (fallecido no 
+se cambió de trabajo)
+88. No responde
+99.No sabe
+Todos  Pasan a M47
+M38 M39 M40 M41 M43 M44 M45
+1   
+2   
+3   
+4   
+5   
+6   
+7   
+8   
+9   
+10   
+11   
+12   
+13   
+14   
+15   
+ Pase a M42
+ Pase a M42
+
+=== PDF PAGE 10 ===
+Encuesta de Protección Social  2015
+10
+HISTORIA LABORAL
+INACTIVOS TODOS
+M46. ¿Cuál fue la razón de la inactividad del fallecido?
+1. Enfermedad o discapacidad
+2. Cuidado de los niños
+3. Otras responsabilidades personales o familiares
+4. Embarazo
+5. Estudiaba o se estaba capacitando
+6. Realizaba la práctica 
+7. Quehaceres de hogar
+8. Jubilado, pensionado o montepío
+9. Rentista
+10. No le interesaba trabajar
+11. Estaba haciendo el servicio militar
+12. Cuidados de personas mayores o personas con discapacidad
+13. Cree que no encontrará trabajo
+14. Se cansó de buscar empleo
+15. Algún miembro del hogar no le permite trabajar
+16. Vacaciones o permisos 
+17. Licencia médica 
+18. Por horario o jornada variable o flexible 
+19. Huelga, conflicto laboral 
+20. Trabajo es estacional
+21. No tuvo pedidos (clientes) 
+22. Suspensión temporal del trabajo
+23. Otro
+88. No responde
+99. No sabe
+M47. ¿Participó el fallecido en algún Programa de Empleo de 
+Emergencia del Estado (Municipalidad u otro Organismo Estatal, FOSIS, 
+SENCE, Bonificación a la contratación de mano de obra) durante este 
+período?
+1. Sí
+2. No
+8. No responde
+9. No sabe
+M46 M47
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+10  
+11  
+12  
+13  
+14  
+15  
+
+=== PDF PAGE 11 ===
+Encuesta de Protección Social  2015
+11
+OBSERVACIONES                                                                 LISTADO DE REGIONES DE CHILE
+XV Arica y Parinacota
+I Tarapacá
+II Antofagasta
+III Atacama
+IV Coquimbo
+V Valparaíso 
+RM Metropolitana
+VI O’Higgins
+VII Maule
+VIII Biobío
+IX Araucanía
+XIV Los Ríos
+X Los Lagos 
+XI Aysén
+XII Magallanes
+
+=== PDF PAGE 12 ===
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+2015

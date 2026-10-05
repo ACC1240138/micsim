@@ -1,0 +1,421 @@
+Year	disease	sex	age_group	AAF	LL	UL	muertes	att_mort	att_mort_low	att_mort_up
+2012	Breast Cancer	Female	15-29	0,028	0,023	0,034	3	0	0	0
+2012	Breast Cancer	Female	30-44	0,02	0,016	0,024	116	2	2	3
+2012	Breast Cancer	Female	45-59	0,018	0,014	0,022	372	7	5	8
+2012	Breast Cancer	Female	60+	0,014	0,01	0,017	876	12	9	15
+2014	Breast Cancer	Female	15-29	0,034	0,028	0,04	6	0	0	0
+2014	Breast Cancer	Female	30-44	0,031	0,025	0,037	122	4	3	5
+2014	Breast Cancer	Female	45-59	0,026	0,022	0,032	393	10	9	13
+2014	Breast Cancer	Female	60+	0,021	0,017	0,026	901	19	15	23
+2016	Breast Cancer	Female	15-29	0,034	0,028	0,041	4	0	0	0
+2016	Breast Cancer	Female	30-44	0,026	0,022	0,032	114	3	3	4
+2016	Breast Cancer	Female	45-59	0,02	0,016	0,024	415	8	7	10
+2016	Breast Cancer	Female	60+	0,015	0,012	0,019	957	14	11	18
+2018	Breast Cancer	Female	15-29	0,029	0,023	0,035	9	0	0	0
+2018	Breast Cancer	Female	30-44	0,027	0,022	0,033	145	4	3	5
+2018	Breast Cancer	Female	45-59	0,018	0,014	0,022	372	7	5	8
+2018	Breast Cancer	Female	60+	0,014	0,011	0,018	1026	14	11	18
+2020	Breast Cancer	Female	15-29	0,032	0,026	0,038	7	0	0	0
+2020	Breast Cancer	Female	30-44	0,032	0,026	0,038	128	4	3	5
+2020	Breast Cancer	Female	45-59	0,025	0,021	0,03	420	10	9	13
+2020	Breast Cancer	Female	60+	0,018	0,014	0,022	1089	20	15	24
+2022	Breast Cancer	Female	15-29	0,029	0,024	0,035	7	0	0	0
+2022	Breast Cancer	Female	30-44	0,03	0,024	0,036	127	4	3	5
+2022	Breast Cancer	Female	45-59	0,02	0,016	0,024	404	8	6	10
+2022	Breast Cancer	Female	60+	0,014	0,011	0,018	1167	16	13	21
+2024	Breast Cancer	Female	15-29	0,023	0,018	0,028	4	0	0	0
+2024	Breast Cancer	Female	30-44	0,027	0,022	0,033	158	4	3	5
+2024	Breast Cancer	Female	45-59	0,019	0,015	0,023	395	8	6	9
+2024	Breast Cancer	Female	60+	0,011	0,008	0,015	1283	14	10	19
+2012	Colorectal Cancer	Female	15-29	0,039	0,033	0,047	3	0	0	0
+2012	Colorectal Cancer	Female	30-44	0,032	0,028	0,037	34	1	1	1
+2012	Colorectal Cancer	Female	45-59	0,03	0,026	0,034	155	5	4	5
+2012	Colorectal Cancer	Female	60+	0,026	0,023	0,03	938	24	22	28
+2014	Colorectal Cancer	Female	15-29	0,046	0,038	0,055	2	0	0	0
+2014	Colorectal Cancer	Female	30-44	0,043	0,035	0,05	40	2	1	2
+2014	Colorectal Cancer	Female	45-59	0,039	0,033	0,046	190	7	6	9
+2014	Colorectal Cancer	Female	60+	0,033	0,029	0,038	1000	33	29	38
+2016	Colorectal Cancer	Female	15-29	0,044	0,036	0,052	2	0	0	0
+2016	Colorectal Cancer	Female	30-44	0,04	0,034	0,045	33	1	1	1
+2016	Colorectal Cancer	Female	45-59	0,034	0,03	0,039	181	6	5	7
+2016	Colorectal Cancer	Female	60+	0,032	0,029	0,035	1110	36	32	39
+2018	Colorectal Cancer	Female	15-29	0,041	0,034	0,048	2	0	0	0
+2018	Colorectal Cancer	Female	30-44	0,04	0,034	0,046	54	2	2	2
+2018	Colorectal Cancer	Female	45-59	0,035	0,031	0,039	215	8	7	8
+2018	Colorectal Cancer	Female	60+	0,032	0,029	0,036	1118	36	32	40
+2020	Colorectal Cancer	Female	15-29	0,047	0,039	0,056	6	0	0	0
+2020	Colorectal Cancer	Female	30-44	0,045	0,038	0,053	48	2	2	3
+2020	Colorectal Cancer	Female	45-59	0,041	0,035	0,047	232	10	8	11
+2020	Colorectal Cancer	Female	60+	0,037	0,033	0,041	1248	46	41	51
+2022	Colorectal Cancer	Female	15-29	0,045	0,037	0,052	6	0	0	0
+2022	Colorectal Cancer	Female	30-44	0,044	0,037	0,051	66	3	2	3
+2022	Colorectal Cancer	Female	45-59	0,037	0,033	0,042	237	9	8	10
+2022	Colorectal Cancer	Female	60+	0,033	0,03	0,037	1400	46	42	52
+2024	Colorectal Cancer	Female	15-29	0,037	0,031	0,043	3	0	0	0
+2024	Colorectal Cancer	Female	30-44	0,044	0,037	0,051	62	3	2	3
+2024	Colorectal Cancer	Female	45-59	0,036	0,031	0,041	251	9	8	10
+2024	Colorectal Cancer	Female	60+	0,032	0,028	0,035	1590	51	45	56
+2012	Colorectal Cancer	Male	15-29	0,242	0,222	0,261	3	1	1	1
+2012	Colorectal Cancer	Male	30-44	0,273	0,253	0,292	36	10	9	11
+2012	Colorectal Cancer	Male	45-59	0,3	0,28	0,318	149	45	42	47
+2012	Colorectal Cancer	Male	60+	0,314	0,297	0,331	825	259	245	273
+2014	Colorectal Cancer	Male	15-29	0,278	0,258	0,297	9	3	2	3
+2014	Colorectal Cancer	Male	30-44	0,283	0,262	0,303	39	11	10	12
+2014	Colorectal Cancer	Male	45-59	0,328	0,309	0,346	179	59	55	62
+2014	Colorectal Cancer	Male	60+	0,325	0,307	0,342	978	318	300	334
+2016	Colorectal Cancer	Male	15-29	0,286	0,267	0,305	8	2	2	2
+2016	Colorectal Cancer	Male	30-44	0,303	0,284	0,32	56	17	16	18
+2016	Colorectal Cancer	Male	45-59	0,326	0,308	0,343	200	65	62	69
+2016	Colorectal Cancer	Male	60+	0,354	0,338	0,368	1004	355	339	369
+2018	Colorectal Cancer	Male	15-29	0,288	0,27	0,305	8	2	2	2
+2018	Colorectal Cancer	Male	30-44	0,294	0,275	0,312	42	12	12	13
+2018	Colorectal Cancer	Male	45-59	0,32	0,302	0,337	223	71	67	75
+2018	Colorectal Cancer	Male	60+	0,353	0,337	0,368	1161	410	391	427
+2020	Colorectal Cancer	Male	15-29	0,303	0,285	0,321	4	1	1	1
+2020	Colorectal Cancer	Male	30-44	0,312	0,292	0,331	55	17	16	18
+2020	Colorectal Cancer	Male	45-59	0,329	0,311	0,346	226	74	70	78
+2020	Colorectal Cancer	Male	60+	0,36	0,344	0,376	1342	483	462	505
+2022	Colorectal Cancer	Male	15-29	0,308	0,291	0,325	7	2	2	2
+2022	Colorectal Cancer	Male	30-44	0,32	0,301	0,337	54	17	16	18
+2022	Colorectal Cancer	Male	45-59	0,341	0,324	0,358	293	100	95	105
+2022	Colorectal Cancer	Male	60+	0,373	0,357	0,387	1457	543	520	564
+2024	Colorectal Cancer	Male	15-29	0,317	0,3	0,333	8	3	2	3
+2024	Colorectal Cancer	Male	30-44	0,32	0,302	0,337	61	20	18	21
+2024	Colorectal Cancer	Male	45-59	0,336	0,319	0,352	296	99	94	104
+2024	Colorectal Cancer	Male	60+	0,383	0,37	0,397	1657	635	613	658
+2012	Larynx Cancer	Female	15-29	0,103	0,091	0,117	0	0	0	0
+2012	Larynx Cancer	Female	30-44	0,09	0,082	0,098	0	0	0	0
+2012	Larynx Cancer	Female	45-59	0,083	0,075	0,091	3	0	0	0
+2012	Larynx Cancer	Female	60+	0,077	0,071	0,083	21	2	1	2
+2014	Larynx Cancer	Female	15-29	0,118	0,103	0,135	0	0	0	0
+2014	Larynx Cancer	Female	30-44	0,111	0,098	0,125	1	0	0	0
+2014	Larynx Cancer	Female	45-59	0,105	0,094	0,117	3	0	0	0
+2014	Larynx Cancer	Female	60+	0,092	0,083	0,101	23	2	2	2
+2016	Larynx Cancer	Female	15-29	0,112	0,098	0,127	0	0	0	0
+2016	Larynx Cancer	Female	30-44	0,107	0,097	0,118	0	0	0	0
+2016	Larynx Cancer	Female	45-59	0,098	0,09	0,106	3	0	0	0
+2016	Larynx Cancer	Female	60+	0,093	0,087	0,1	15	1	1	2
+2018	Larynx Cancer	Female	15-29	0,108	0,096	0,122	0	0	0	0
+2018	Larynx Cancer	Female	30-44	0,106	0,095	0,118	0	0	0	0
+2018	Larynx Cancer	Female	45-59	0,1	0,093	0,108	2	0	0	0
+2018	Larynx Cancer	Female	60+	0,095	0,089	0,101	22	2	2	2
+2020	Larynx Cancer	Female	15-29	0,122	0,108	0,137	0	0	0	0
+2020	Larynx Cancer	Female	30-44	0,118	0,105	0,133	0	0	0	0
+2020	Larynx Cancer	Female	45-59	0,112	0,102	0,123	3	0	0	0
+2020	Larynx Cancer	Female	60+	0,105	0,098	0,113	13	1	1	1
+2022	Larynx Cancer	Female	15-29	0,118	0,105	0,132	0	0	0	0
+2022	Larynx Cancer	Female	30-44	0,117	0,104	0,13	1	0	0	0
+2022	Larynx Cancer	Female	45-59	0,106	0,097	0,114	4	0	0	0
+2022	Larynx Cancer	Female	60+	0,098	0,091	0,104	20	2	2	2
+2024	Larynx Cancer	Female	15-29	0,1	0,09	0,111	0	0	0	0
+2024	Larynx Cancer	Female	30-44	0,117	0,104	0,13	0	0	0	0
+2024	Larynx Cancer	Female	45-59	0,101	0,093	0,111	0	0	0	0
+2024	Larynx Cancer	Female	60+	0,095	0,089	0,101	21	2	2	2
+2012	Larynx Cancer	Male	15-29	0,166	0,133	0,2	0	0	0	0
+2012	Larynx Cancer	Male	30-44	0,168	0,137	0,2	1	0	0	0
+2012	Larynx Cancer	Male	45-59	0,182	0,149	0,219	25	5	4	5
+2012	Larynx Cancer	Male	60+	0,158	0,132	0,187	102	16	13	19
+2014	Larynx Cancer	Male	15-29	0,183	0,149	0,219	0	0	0	0
+2014	Larynx Cancer	Male	30-44	0,199	0,161	0,238	1	0	0	0
+2014	Larynx Cancer	Male	45-59	0,207	0,17	0,246	14	3	2	3
+2014	Larynx Cancer	Male	60+	0,177	0,147	0,21	112	20	16	24
+2016	Larynx Cancer	Male	15-29	0,173	0,143	0,206	0	0	0	0
+2016	Larynx Cancer	Male	30-44	0,172	0,142	0,203	2	0	0	0
+2016	Larynx Cancer	Male	45-59	0,18	0,15	0,212	20	4	3	4
+2016	Larynx Cancer	Male	60+	0,157	0,135	0,182	86	14	12	16
+2018	Larynx Cancer	Male	15-29	0,159	0,132	0,189	0	0	0	0
+2018	Larynx Cancer	Male	30-44	0,178	0,146	0,211	2	0	0	0
+2018	Larynx Cancer	Male	45-59	0,18	0,149	0,213	20	4	3	4
+2018	Larynx Cancer	Male	60+	0,175	0,147	0,204	98	17	14	20
+2020	Larynx Cancer	Male	15-29	0,174	0,143	0,206	0	0	0	0
+2020	Larynx Cancer	Male	30-44	0,203	0,166	0,242	1	0	0	0
+2020	Larynx Cancer	Male	45-59	0,192	0,159	0,228	9	2	1	2
+2020	Larynx Cancer	Male	60+	0,184	0,155	0,216	104	19	16	22
+2022	Larynx Cancer	Male	15-29	0,154	0,129	0,182	0	0	0	0
+2022	Larynx Cancer	Male	30-44	0,194	0,159	0,23	2	0	0	0
+2022	Larynx Cancer	Male	45-59	0,183	0,153	0,215	15	3	2	3
+2022	Larynx Cancer	Male	60+	0,18	0,152	0,212	113	20	17	24
+2024	Larynx Cancer	Male	15-29	0,148	0,125	0,173	0	0	0	0
+2024	Larynx Cancer	Male	30-44	0,179	0,148	0,211	1	0	0	0
+2024	Larynx Cancer	Male	45-59	0,182	0,151	0,215	10	2	2	2
+2024	Larynx Cancer	Male	60+	0,172	0,148	0,2	118	20	17	24
+2012	Liver Cancer	Female	15-29	0,362	0,342	0,381	0	0	0	0
+2012	Liver Cancer	Female	30-44	0,38	0,36	0,399	10	4	4	4
+2012	Liver Cancer	Female	45-59	0,36	0,339	0,379	68	24	23	26
+2012	Liver Cancer	Female	60+	0,359	0,339	0,379	447	160	152	169
+2014	Liver Cancer	Female	15-29	0,383	0,364	0,402	4	2	1	2
+2014	Liver Cancer	Female	30-44	0,389	0,37	0,407	8	3	3	3
+2014	Liver Cancer	Female	45-59	0,394	0,375	0,412	60	24	22	25
+2014	Liver Cancer	Female	60+	0,374	0,354	0,392	510	191	181	200
+2016	Liver Cancer	Female	15-29	0,37	0,35	0,389	1	0	0	0
+2016	Liver Cancer	Female	30-44	0,412	0,394	0,429	7	3	3	3
+2016	Liver Cancer	Female	45-59	0,416	0,399	0,433	77	32	31	33
+2016	Liver Cancer	Female	60+	0,421	0,404	0,438	513	216	207	225
+2018	Liver Cancer	Female	15-29	0,388	0,37	0,407	2	1	1	1
+2018	Liver Cancer	Female	30-44	0,4	0,382	0,418	7	3	3	3
+2018	Liver Cancer	Female	45-59	0,433	0,416	0,449	59	26	25	26
+2018	Liver Cancer	Female	60+	0,432	0,415	0,448	528	228	219	237
+2020	Liver Cancer	Female	15-29	0,413	0,396	0,43	1	0	0	0
+2020	Liver Cancer	Female	30-44	0,407	0,389	0,425	9	4	4	4
+2020	Liver Cancer	Female	45-59	0,429	0,412	0,445	68	29	28	30
+2020	Liver Cancer	Female	60+	0,449	0,433	0,464	591	265	256	274
+2022	Liver Cancer	Female	15-29	0,413	0,395	0,43	1	0	0	0
+2022	Liver Cancer	Female	30-44	0,418	0,4	0,435	5	2	2	2
+2022	Liver Cancer	Female	45-59	0,439	0,422	0,454	63	28	27	29
+2022	Liver Cancer	Female	60+	0,438	0,421	0,454	595	261	250	270
+2024	Liver Cancer	Female	15-29	0,387	0,369	0,405	0	0	0	0
+2024	Liver Cancer	Female	30-44	0,424	0,407	0,44	5	2	2	2
+2024	Liver Cancer	Female	45-59	0,422	0,405	0,439	65	27	26	29
+2024	Liver Cancer	Female	60+	0,438	0,421	0,454	686	300	289	311
+2012	Liver Cancer	Male	15-29	0,229	0,207	0,249	1	0	0	0
+2012	Liver Cancer	Male	30-44	0,263	0,242	0,283	9	2	2	3
+2012	Liver Cancer	Male	45-59	0,29	0,269	0,309	114	33	31	35
+2012	Liver Cancer	Male	60+	0,309	0,29	0,326	511	158	148	167
+2014	Liver Cancer	Male	15-29	0,265	0,244	0,285	1	0	0	0
+2014	Liver Cancer	Male	30-44	0,268	0,246	0,289	10	3	2	3
+2014	Liver Cancer	Male	45-59	0,317	0,297	0,335	88	28	26	29
+2014	Liver Cancer	Male	60+	0,318	0,299	0,335	532	169	159	178
+2016	Liver Cancer	Male	15-29	0,276	0,257	0,295	2	1	1	1
+2016	Liver Cancer	Male	30-44	0,294	0,275	0,313	10	3	3	3
+2016	Liver Cancer	Male	45-59	0,318	0,3	0,336	108	34	32	36
+2016	Liver Cancer	Male	60+	0,352	0,336	0,367	569	200	191	209
+2018	Liver Cancer	Male	15-29	0,28	0,26	0,299	2	1	1	1
+2018	Liver Cancer	Male	30-44	0,283	0,263	0,303	11	3	3	3
+2018	Liver Cancer	Male	45-59	0,313	0,294	0,331	94	29	28	31
+2018	Liver Cancer	Male	60+	0,349	0,332	0,365	644	225	214	235
+2020	Liver Cancer	Male	15-29	0,295	0,275	0,314	2	1	1	1
+2020	Liver Cancer	Male	30-44	0,299	0,279	0,319	14	4	4	4
+2020	Liver Cancer	Male	45-59	0,32	0,301	0,339	105	34	32	36
+2020	Liver Cancer	Male	60+	0,355	0,338	0,371	673	239	227	250
+2022	Liver Cancer	Male	15-29	0,303	0,285	0,321	5	2	1	2
+2022	Liver Cancer	Male	30-44	0,309	0,29	0,328	12	4	3	4
+2022	Liver Cancer	Male	45-59	0,334	0,316	0,351	86	29	27	30
+2022	Liver Cancer	Male	60+	0,369	0,353	0,384	674	249	238	259
+2024	Liver Cancer	Male	15-29	0,313	0,296	0,331	3	1	1	1
+2024	Liver Cancer	Male	30-44	0,313	0,294	0,331	13	4	4	4
+2024	Liver Cancer	Male	45-59	0,329	0,311	0,346	111	37	35	38
+2024	Liver Cancer	Male	60+	0,382	0,367	0,396	805	308	295	319
+2012	Oesophagus Cancer	Female	15-29	0,094	0,089	0,1	0	0	0	0
+2012	Oesophagus Cancer	Female	30-44	0,082	0,078	0,085	3	0	0	0
+2012	Oesophagus Cancer	Female	45-59	0,075	0,071	0,079	14	1	1	1
+2012	Oesophagus Cancer	Female	60+	0,069	0,066	0,073	220	15	15	16
+2014	Oesophagus Cancer	Female	15-29	0,108	0,102	0,115	0	0	0	0
+2014	Oesophagus Cancer	Female	30-44	0,101	0,096	0,107	2	0	0	0
+2014	Oesophagus Cancer	Female	45-59	0,096	0,091	0,1	22	2	2	2
+2014	Oesophagus Cancer	Female	60+	0,083	0,079	0,087	250	21	20	22
+2016	Oesophagus Cancer	Female	15-29	0,102	0,097	0,108	0	0	0	0
+2016	Oesophagus Cancer	Female	30-44	0,097	0,093	0,102	0	0	0	0
+2016	Oesophagus Cancer	Female	45-59	0,088	0,085	0,092	17	1	1	2
+2016	Oesophagus Cancer	Female	60+	0,084	0,081	0,088	202	17	16	18
+2018	Oesophagus Cancer	Female	15-29	0,099	0,094	0,104	0	0	0	0
+2018	Oesophagus Cancer	Female	30-44	0,097	0,092	0,101	1	0	0	0
+2018	Oesophagus Cancer	Female	45-59	0,091	0,087	0,094	17	2	1	2
+2018	Oesophagus Cancer	Female	60+	0,086	0,083	0,089	227	20	19	20
+2020	Oesophagus Cancer	Female	15-29	0,112	0,106	0,118	1	0	0	0
+2020	Oesophagus Cancer	Female	30-44	0,108	0,103	0,113	0	0	0	0
+2020	Oesophagus Cancer	Female	45-59	0,102	0,098	0,106	13	1	1	1
+2020	Oesophagus Cancer	Female	60+	0,095	0,092	0,099	211	20	19	21
+2022	Oesophagus Cancer	Female	15-29	0,107	0,102	0,113	0	0	0	0
+2022	Oesophagus Cancer	Female	30-44	0,106	0,102	0,111	1	0	0	0
+2022	Oesophagus Cancer	Female	45-59	0,096	0,092	0,099	11	1	1	1
+2022	Oesophagus Cancer	Female	60+	0,088	0,085	0,092	204	18	17	19
+2024	Oesophagus Cancer	Female	15-29	0,091	0,086	0,096	0	0	0	0
+2024	Oesophagus Cancer	Female	30-44	0,107	0,101	0,112	3	0	0	0
+2024	Oesophagus Cancer	Female	45-59	0,092	0,088	0,096	14	1	1	1
+2024	Oesophagus Cancer	Female	60+	0,085	0,082	0,089	198	17	16	18
+2012	Oesophagus Cancer	Male	15-29	0,156	0,144	0,169	0	0	0	0
+2012	Oesophagus Cancer	Male	30-44	0,157	0,146	0,169	5	1	1	1
+2012	Oesophagus Cancer	Male	45-59	0,172	0,158	0,187	46	8	7	9
+2012	Oesophagus Cancer	Male	60+	0,148	0,137	0,16	345	51	47	55
+2014	Oesophagus Cancer	Male	15-29	0,172	0,159	0,187	0	0	0	0
+2014	Oesophagus Cancer	Male	30-44	0,188	0,173	0,203	1	0	0	0
+2014	Oesophagus Cancer	Male	45-59	0,196	0,181	0,212	39	8	7	8
+2014	Oesophagus Cancer	Male	60+	0,166	0,154	0,179	336	56	52	60
+2016	Oesophagus Cancer	Male	15-29	0,162	0,15	0,174	1	0	0	0
+2016	Oesophagus Cancer	Male	30-44	0,16	0,149	0,171	4	1	1	1
+2016	Oesophagus Cancer	Male	45-59	0,169	0,157	0,182	46	8	7	8
+2016	Oesophagus Cancer	Male	60+	0,146	0,137	0,155	380	55	52	59
+2018	Oesophagus Cancer	Male	15-29	0,148	0,138	0,159	0	0	0	0
+2018	Oesophagus Cancer	Male	30-44	0,167	0,155	0,179	4	1	1	1
+2018	Oesophagus Cancer	Male	45-59	0,168	0,156	0,181	37	6	6	7
+2018	Oesophagus Cancer	Male	60+	0,163	0,152	0,175	354	58	54	62
+2020	Oesophagus Cancer	Male	15-29	0,163	0,151	0,175	0	0	0	0
+2020	Oesophagus Cancer	Male	30-44	0,192	0,178	0,207	3	1	1	1
+2020	Oesophagus Cancer	Male	45-59	0,181	0,167	0,195	29	5	5	6
+2020	Oesophagus Cancer	Male	60+	0,173	0,161	0,186	348	60	56	65
+2022	Oesophagus Cancer	Male	15-29	0,144	0,133	0,155	1	0	0	0
+2022	Oesophagus Cancer	Male	30-44	0,182	0,169	0,196	4	1	1	1
+2022	Oesophagus Cancer	Male	45-59	0,172	0,159	0,185	30	5	5	6
+2022	Oesophagus Cancer	Male	60+	0,17	0,157	0,183	332	56	52	61
+2024	Oesophagus Cancer	Male	15-29	0,137	0,128	0,148	0	0	0	0
+2024	Oesophagus Cancer	Male	30-44	0,168	0,156	0,18	4	1	1	1
+2024	Oesophagus Cancer	Male	45-59	0,171	0,158	0,186	33	6	5	6
+2024	Oesophagus Cancer	Male	60+	0,162	0,15	0,174	317	51	48	55
+2012	Oral Cavity and Pharynx Cancer	Female	15-29	0,146	0,131	0,162	0	0	0	0
+2012	Oral Cavity and Pharynx Cancer	Female	30-44	0,118	0,109	0,127	2	0	0	0
+2012	Oral Cavity and Pharynx Cancer	Female	45-59	0,109	0,101	0,118	16	2	2	2
+2012	Oral Cavity and Pharynx Cancer	Female	60+	0,098	0,091	0,106	70	7	6	7
+2014	Oral Cavity and Pharynx Cancer	Female	15-29	0,17	0,152	0,189	0	0	0	0
+2014	Oral Cavity and Pharynx Cancer	Female	30-44	0,154	0,14	0,17	4	1	1	1
+2014	Oral Cavity and Pharynx Cancer	Female	45-59	0,143	0,131	0,156	6	1	1	1
+2014	Oral Cavity and Pharynx Cancer	Female	60+	0,122	0,112	0,133	59	7	7	8
+2016	Oral Cavity and Pharynx Cancer	Female	15-29	0,159	0,143	0,175	1	0	0	0
+2016	Oral Cavity and Pharynx Cancer	Female	30-44	0,142	0,132	0,154	4	1	1	1
+2016	Oral Cavity and Pharynx Cancer	Female	45-59	0,125	0,117	0,133	18	2	2	2
+2016	Oral Cavity and Pharynx Cancer	Female	60+	0,116	0,11	0,124	77	9	8	10
+2018	Oral Cavity and Pharynx Cancer	Female	15-29	0,15	0,136	0,165	0	0	0	0
+2018	Oral Cavity and Pharynx Cancer	Female	30-44	0,143	0,132	0,156	5	1	1	1
+2018	Oral Cavity and Pharynx Cancer	Female	45-59	0,126	0,119	0,135	15	2	2	2
+2018	Oral Cavity and Pharynx Cancer	Female	60+	0,118	0,111	0,125	71	8	8	9
+2020	Oral Cavity and Pharynx Cancer	Female	15-29	0,171	0,154	0,189	0	0	0	0
+2020	Oral Cavity and Pharynx Cancer	Female	30-44	0,164	0,149	0,18	6	1	1	1
+2020	Oral Cavity and Pharynx Cancer	Female	45-59	0,149	0,137	0,161	20	3	3	3
+2020	Oral Cavity and Pharynx Cancer	Female	60+	0,133	0,125	0,142	68	9	8	10
+2022	Oral Cavity and Pharynx Cancer	Female	15-29	0,163	0,148	0,18	0	0	0	0
+2022	Oral Cavity and Pharynx Cancer	Female	30-44	0,159	0,145	0,174	4	1	1	1
+2022	Oral Cavity and Pharynx Cancer	Female	45-59	0,135	0,126	0,145	7	1	1	1
+2022	Oral Cavity and Pharynx Cancer	Female	60+	0,122	0,114	0,13	103	13	12	13
+2024	Oral Cavity and Pharynx Cancer	Female	15-29	0,136	0,124	0,15	1	0	0	0
+2024	Oral Cavity and Pharynx Cancer	Female	30-44	0,159	0,145	0,175	4	1	1	1
+2024	Oral Cavity and Pharynx Cancer	Female	45-59	0,132	0,122	0,143	13	2	2	2
+2024	Oral Cavity and Pharynx Cancer	Female	60+	0,117	0,109	0,126	111	13	12	14
+2012	Oral Cavity and Pharynx Cancer	Male	15-29	0,27	0,234	0,308	3	1	1	1
+2012	Oral Cavity and Pharynx Cancer	Male	30-44	0,266	0,233	0,302	3	1	1	1
+2012	Oral Cavity and Pharynx Cancer	Male	45-59	0,296	0,256	0,337	37	11	9	12
+2012	Oral Cavity and Pharynx Cancer	Male	60+	0,25	0,217	0,286	135	34	29	39
+2014	Oral Cavity and Pharynx Cancer	Male	15-29	0,297	0,257	0,34	2	1	1	1
+2014	Oral Cavity and Pharynx Cancer	Male	30-44	0,319	0,277	0,363	4	1	1	1
+2014	Oral Cavity and Pharynx Cancer	Male	45-59	0,334	0,29	0,38	27	9	8	10
+2014	Oral Cavity and Pharynx Cancer	Male	60+	0,28	0,244	0,317	118	33	29	37
+2016	Oral Cavity and Pharynx Cancer	Male	15-29	0,273	0,239	0,308	2	1	0	1
+2016	Oral Cavity and Pharynx Cancer	Male	30-44	0,266	0,234	0,3	5	1	1	2
+2016	Oral Cavity and Pharynx Cancer	Male	45-59	0,284	0,248	0,323	36	10	9	12
+2016	Oral Cavity and Pharynx Cancer	Male	60+	0,235	0,208	0,264	143	34	30	38
+2018	Oral Cavity and Pharynx Cancer	Male	15-29	0,249	0,218	0,282	3	1	1	1
+2018	Oral Cavity and Pharynx Cancer	Male	30-44	0,28	0,245	0,319	8	2	2	3
+2018	Oral Cavity and Pharynx Cancer	Male	45-59	0,283	0,247	0,322	46	13	11	15
+2018	Oral Cavity and Pharynx Cancer	Male	60+	0,269	0,236	0,304	141	38	33	43
+2020	Oral Cavity and Pharynx Cancer	Male	15-29	0,274	0,24	0,311	0	0	0	0
+2020	Oral Cavity and Pharynx Cancer	Male	30-44	0,323	0,283	0,364	6	2	2	2
+2020	Oral Cavity and Pharynx Cancer	Male	45-59	0,306	0,266	0,347	26	8	7	9
+2020	Oral Cavity and Pharynx Cancer	Male	60+	0,288	0,252	0,327	155	45	39	51
+2022	Oral Cavity and Pharynx Cancer	Male	15-29	0,241	0,211	0,274	2	0	0	1
+2022	Oral Cavity and Pharynx Cancer	Male	30-44	0,306	0,269	0,347	9	3	2	3
+2022	Oral Cavity and Pharynx Cancer	Male	45-59	0,287	0,25	0,326	43	12	11	14
+2022	Oral Cavity and Pharynx Cancer	Male	60+	0,282	0,245	0,321	187	53	46	60
+2024	Oral Cavity and Pharynx Cancer	Male	15-29	0,226	0,199	0,257	1	0	0	0
+2024	Oral Cavity and Pharynx Cancer	Male	30-44	0,28	0,246	0,317	5	1	1	2
+2024	Oral Cavity and Pharynx Cancer	Male	45-59	0,291	0,252	0,332	43	13	11	14
+2024	Oral Cavity and Pharynx Cancer	Male	60+	0,265	0,231	0,303	170	45	39	52
+2012	Pancreatic Cancer	Female	15-29	0,132	0,123	0,142	1	0	0	0
+2012	Pancreatic Cancer	Female	30-44	0,14	0,131	0,15	9	1	1	1
+2012	Pancreatic Cancer	Female	45-59	0,13	0,12	0,139	105	14	13	15
+2012	Pancreatic Cancer	Female	60+	0,129	0,12	0,138	559	72	67	77
+2014	Pancreatic Cancer	Female	15-29	0,143	0,134	0,153	0	0	0	0
+2014	Pancreatic Cancer	Female	30-44	0,146	0,136	0,155	6	1	1	1
+2014	Pancreatic Cancer	Female	45-59	0,148	0,138	0,157	92	14	13	14
+2014	Pancreatic Cancer	Female	60+	0,137	0,128	0,147	598	82	77	88
+2016	Pancreatic Cancer	Female	15-29	0,137	0,127	0,146	5	1	1	1
+2016	Pancreatic Cancer	Female	30-44	0,157	0,148	0,167	14	2	2	2
+2016	Pancreatic Cancer	Female	45-59	0,159	0,149	0,168	111	18	17	19
+2016	Pancreatic Cancer	Female	60+	0,162	0,152	0,171	686	111	104	117
+2018	Pancreatic Cancer	Female	15-29	0,145	0,136	0,155	0	0	0	0
+2018	Pancreatic Cancer	Female	30-44	0,151	0,141	0,161	17	3	2	3
+2018	Pancreatic Cancer	Female	45-59	0,168	0,159	0,177	116	19	18	21
+2018	Pancreatic Cancer	Female	60+	0,167	0,158	0,177	660	110	104	117
+2020	Pancreatic Cancer	Female	15-29	0,159	0,149	0,168	0	0	0	0
+2020	Pancreatic Cancer	Female	30-44	0,155	0,146	0,165	6	1	1	1
+2020	Pancreatic Cancer	Female	45-59	0,167	0,157	0,176	103	17	16	18
+2020	Pancreatic Cancer	Female	60+	0,177	0,168	0,186	772	137	130	144
+2022	Pancreatic Cancer	Female	15-29	0,158	0,149	0,168	0	0	0	0
+2022	Pancreatic Cancer	Female	30-44	0,161	0,152	0,171	13	2	2	2
+2022	Pancreatic Cancer	Female	45-59	0,172	0,162	0,181	110	19	18	20
+2022	Pancreatic Cancer	Female	60+	0,171	0,161	0,18	830	142	134	149
+2024	Pancreatic Cancer	Female	15-29	0,144	0,134	0,154	0	0	0	0
+2024	Pancreatic Cancer	Female	30-44	0,164	0,155	0,173	9	1	1	2
+2024	Pancreatic Cancer	Female	45-59	0,162	0,153	0,172	108	17	17	19
+2024	Pancreatic Cancer	Female	60+	0,17	0,161	0,179	922	157	148	165
+2012	Pancreatic Cancer	Male	15-29	0,06	0,051	0,069	1	0	0	0
+2012	Pancreatic Cancer	Male	30-44	0,069	0,06	0,077	12	1	1	1
+2012	Pancreatic Cancer	Male	45-59	0,077	0,067	0,086	113	9	8	10
+2012	Pancreatic Cancer	Male	60+	0,08	0,072	0,087	400	32	29	35
+2014	Pancreatic Cancer	Male	15-29	0,07	0,061	0,08	0	0	0	0
+2014	Pancreatic Cancer	Male	30-44	0,073	0,062	0,083	13	1	1	1
+2014	Pancreatic Cancer	Male	45-59	0,086	0,076	0,097	134	12	10	13
+2014	Pancreatic Cancer	Male	60+	0,084	0,075	0,093	482	40	36	45
+2016	Pancreatic Cancer	Male	15-29	0,073	0,063	0,082	2	0	0	0
+2016	Pancreatic Cancer	Male	30-44	0,077	0,068	0,086	18	1	1	2
+2016	Pancreatic Cancer	Male	45-59	0,084	0,075	0,093	115	10	9	11
+2016	Pancreatic Cancer	Male	60+	0,092	0,085	0,099	527	48	45	52
+2018	Pancreatic Cancer	Male	15-29	0,072	0,064	0,081	0	0	0	0
+2018	Pancreatic Cancer	Male	30-44	0,075	0,065	0,084	14	1	1	1
+2018	Pancreatic Cancer	Male	45-59	0,083	0,074	0,092	123	10	9	11
+2018	Pancreatic Cancer	Male	60+	0,093	0,085	0,101	564	52	48	57
+2020	Pancreatic Cancer	Male	15-29	0,077	0,068	0,086	0	0	0	0
+2020	Pancreatic Cancer	Male	30-44	0,082	0,071	0,092	13	1	1	1
+2020	Pancreatic Cancer	Male	45-59	0,086	0,076	0,095	132	11	10	13
+2020	Pancreatic Cancer	Male	60+	0,096	0,087	0,104	575	55	50	60
+2022	Pancreatic Cancer	Male	15-29	0,078	0,07	0,085	1	0	0	0
+2022	Pancreatic Cancer	Male	30-44	0,083	0,074	0,093	18	1	1	2
+2022	Pancreatic Cancer	Male	45-59	0,089	0,081	0,098	137	12	11	13
+2022	Pancreatic Cancer	Male	60+	0,1	0,092	0,107	655	66	60	70
+2024	Pancreatic Cancer	Male	15-29	0,08	0,073	0,087	1	0	0	0
+2024	Pancreatic Cancer	Male	30-44	0,083	0,074	0,092	21	2	2	2
+2024	Pancreatic Cancer	Male	45-59	0,087	0,079	0,096	105	9	8	10
+2024	Pancreatic Cancer	Male	60+	0,103	0,096	0,11	721	74	69	79
+2012	Stomach Cancer	Female	15-29	0,127	0,116	0,138	4	1	0	1
+2012	Stomach Cancer	Female	30-44	0,137	0,126	0,147	57	8	7	8
+2012	Stomach Cancer	Female	45-59	0,127	0,116	0,137	133	17	15	18
+2012	Stomach Cancer	Female	60+	0,127	0,116	0,137	979	124	114	134
+2014	Stomach Cancer	Female	15-29	0,137	0,125	0,148	8	1	1	1
+2014	Stomach Cancer	Female	30-44	0,14	0,129	0,151	35	5	5	5
+2014	Stomach Cancer	Female	45-59	0,143	0,132	0,154	146	21	19	22
+2014	Stomach Cancer	Female	60+	0,133	0,123	0,143	892	119	110	128
+2016	Stomach Cancer	Female	15-29	0,13	0,119	0,141	4	1	0	1
+2016	Stomach Cancer	Female	30-44	0,153	0,142	0,163	43	7	6	7
+2016	Stomach Cancer	Female	45-59	0,156	0,146	0,166	148	23	22	25
+2016	Stomach Cancer	Female	60+	0,159	0,149	0,169	902	143	134	152
+2018	Stomach Cancer	Female	15-29	0,14	0,129	0,151	3	0	0	0
+2018	Stomach Cancer	Female	30-44	0,146	0,136	0,156	32	5	4	5
+2018	Stomach Cancer	Female	45-59	0,165	0,155	0,175	134	22	21	23
+2018	Stomach Cancer	Female	60+	0,165	0,155	0,175	843	139	131	148
+2020	Stomach Cancer	Female	15-29	0,153	0,142	0,164	3	0	0	0
+2020	Stomach Cancer	Female	30-44	0,15	0,139	0,161	41	6	6	7
+2020	Stomach Cancer	Female	45-59	0,162	0,152	0,172	138	22	21	24
+2020	Stomach Cancer	Female	60+	0,174	0,165	0,184	873	152	144	161
+2022	Stomach Cancer	Female	15-29	0,153	0,142	0,163	1	0	0	0
+2022	Stomach Cancer	Female	30-44	0,156	0,145	0,166	41	6	6	7
+2022	Stomach Cancer	Female	45-59	0,168	0,158	0,178	142	24	22	25
+2022	Stomach Cancer	Female	60+	0,168	0,159	0,178	877	147	139	156
+2024	Stomach Cancer	Female	15-29	0,14	0,129	0,15	3	0	0	0
+2024	Stomach Cancer	Female	30-44	0,159	0,149	0,169	46	7	7	8
+2024	Stomach Cancer	Female	45-59	0,159	0,149	0,169	128	20	19	22
+2024	Stomach Cancer	Female	60+	0,168	0,159	0,178	864	145	137	154
+2012	Stomach Cancer	Male	15-29	0,047	0,032	0,062	4	0	0	0
+2012	Stomach Cancer	Male	30-44	0,055	0,04	0,07	49	3	2	3
+2012	Stomach Cancer	Male	45-59	0,066	0,051	0,08	351	23	18	28
+2012	Stomach Cancer	Male	60+	0,071	0,059	0,082	1777	126	105	146
+2014	Stomach Cancer	Male	15-29	0,058	0,042	0,074	6	0	0	0
+2014	Stomach Cancer	Male	30-44	0,059	0,041	0,077	47	3	2	4
+2014	Stomach Cancer	Male	45-59	0,076	0,059	0,091	341	26	20	31
+2014	Stomach Cancer	Male	60+	0,074	0,061	0,087	1790	132	109	156
+2016	Stomach Cancer	Male	15-29	0,06	0,045	0,074	4	0	0	0
+2016	Stomach Cancer	Male	30-44	0,064	0,05	0,079	56	4	3	4
+2016	Stomach Cancer	Male	45-59	0,074	0,06	0,088	339	25	20	30
+2016	Stomach Cancer	Male	60+	0,084	0,072	0,094	1754	147	126	165
+2018	Stomach Cancer	Male	15-29	0,061	0,047	0,074	4	0	0	0
+2018	Stomach Cancer	Male	30-44	0,062	0,046	0,077	38	2	2	3
+2018	Stomach Cancer	Male	45-59	0,072	0,058	0,086	351	25	20	30
+2018	Stomach Cancer	Male	60+	0,084	0,071	0,096	1760	148	125	169
+2020	Stomach Cancer	Male	15-29	0,066	0,052	0,08	3	0	0	0
+2020	Stomach Cancer	Male	30-44	0,068	0,05	0,085	59	4	3	5
+2020	Stomach Cancer	Male	45-59	0,075	0,06	0,09	312	23	19	28
+2020	Stomach Cancer	Male	60+	0,087	0,074	0,099	1758	153	130	174
+2022	Stomach Cancer	Male	15-29	0,068	0,056	0,08	3	0	0	0
+2022	Stomach Cancer	Male	30-44	0,071	0,055	0,086	43	3	2	4
+2022	Stomach Cancer	Male	45-59	0,08	0,066	0,093	290	23	19	27
+2022	Stomach Cancer	Male	60+	0,092	0,081	0,103	1751	161	142	180
+2024	Stomach Cancer	Male	15-29	0,071	0,06	0,082	5	0	0	0
+2024	Stomach Cancer	Male	30-44	0,071	0,057	0,085	47	3	3	4
+2024	Stomach Cancer	Male	45-59	0,079	0,066	0,091	242	19	16	22
+2024	Stomach Cancer	Male	60+	0,097	0,086	0,107	1721	167	148	184

@@ -1,0 +1,36 @@
+# Copy as .gitignore at the root of ACC1240138/micsim.
+# Secrets and machine-local files
+.Renviron
+.env
+CLAUDE.local.md
+.claude/settings.local.json
+.codex/
+# Plaintext data never enters git: only *.tar.xz.enc bundles (+ their *.md5.csv sidecars)
+*.dta
+*.DTA
+*.sav
+*.parquet
+*.zip
+*.7z
+*.jsonl
+_bib/local/
+_sessions/local/
+_epf/raw_local/
+# Large regenerable artifacts (Monte Carlo draws; rerun expand_pif / expand_pif2)
+__andres_control/*_synchronised_draws_*
+__andres_control/manual_paf_pif_draws_*/
+# Renders, caches, editor files
+.quarto/
+__pycache__/
+*_files/
+.Rhistory
+.RData
+.Rproj.user/
+desktop.ini
+Rplots.pdf
+
+# Derived microdata: never in plain text (use acc_pack)
+data_binge_sensitivity.rds
+ENPG_*.RDS
+enpg20??.RDS
+epf_20??.rds

@@ -1,0 +1,3 @@
+"sex","domain","n","lifetime_lower","lifetime_upper","observed_former_lower","note"
+"Men","50plus_at_VI_official_panel",1079,0,0.348353750089168,0.293418763173415,"identification_bounds_not_confidence_intervals"
+"Women","50plus_at_VI_official_panel",1573,0,0.623709938171415,0.200269266421942,"identification_bounds_not_confidence_intervals"

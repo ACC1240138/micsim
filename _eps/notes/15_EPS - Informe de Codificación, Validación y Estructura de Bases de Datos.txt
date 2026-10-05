@@ -1,0 +1,715 @@
+
+=== PDF PAGE 1 ===
+ 
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           1 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LEVANTAMIENTO VII RONDA DE LA ENCUESTA DE 
+PROTECCIÓN SOCIAL 
+Informe sobre Validación, Codificación y Estructura de 
+bases de datos  
+ 
+    Abril, 2021 
+      
+      
+ 
+     
+ 
+ 
+ 
+
+
+=== PDF PAGE 2 ===
+ 
+ 
+                                                                 2 
+ 
+ 
+Contenido 
+1. Consideraciones previas .......................................................................................................................................... 3 
+2. Validaciones, edición y estructura de las bases de datos de la EPS VII Ronda ....................................................... 3 
+3. Acerca de las variables codificadas ......................................................................................................................... 5 
+3.1. Clasificación Internacional Uniforme de Ocupaciones (CIUO-08 Y CIUO-08.CL) ................................................ 6 
+3.1.1. Nomenclatura CIUO-08 ................................................................................................................................... 6 
+3.1.1.1. Estructura de la CIUO-08 ............................................................................................................................. 7 
+3.1.2. Nomenclatura CIUO-08.CL .............................................................................................................................. 7 
+3.1.2.1. Estructura de la CIUO-08.CL ........................................................................................................................ 7 
+3.1.3. Estrategia operativa para la codificación de la ocupación según CIUO-08 y CIUO-08.CL ............................... 8 
+Etapa 1. Clasificación a 4 dígitos ............................................................................................................................. 8 
+Etapa 2: clasificación a 1 dígito ............................................................................................................................... 9 
+Etapa 3: Adaptación de CIUO-08 a CIUO-08.CL....................................................................................................... 9 
+3.2. Clasificación Industrial Internacional Uniforme de todas las actividades económicas según CIIU Rev.4 .......... 9 
+3.2.1. Estructura de la CIIU rev.4 .............................................................................................................................. 9 
+3.2.2. Estrategia operativa para la codificación de las actividades según CIIU rev.4 ............................................. 10 
+3.3. Codificación de preguntas de respuesta abierta o semi-abierta ...................................................................... 11 
+4. Clasificación Internacional Normalizada de la Educación según CINE 2011 ............................................................. 12 
+1.1.1. Criterios de codificación aplicados ................................................................................................................ 13 
+1.1.2. Codificación CINE 2011 – P: Programas Educativos ...................................................................................... 13 
+1.1.2.1. Codificación a un dígito ............................................................................................................................. 13 
+1.1.2.2. Codificación a 2 dígitos ............................................................................................................................. 14 
+1.1.3. Codificación CINE 2011 – C: Grupos Amplios y Campos de Educación ......................................................... 15 
+ 
+  
+
+=== PDF PAGE 3 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           3 
+ 
+  
+ 
+1. Consideraciones previas 
+En este informe se repasan  los ajustes llevados a cabo sobre los tres componentes de la EPS VII Ronda, es decir, 
+encuestas Presencial, Re -Entrevista y Continuidad  para asegurar la calidad, completitud y adecuación de la 
+información recolectada a los criterios establecidos y a las buenas prácticas . Los detalles técnicos sobre la EPS VII 
+Ronda en general y sus componentes, se encuentran en el Informe Metodológico de la VII ronda EPS.. 
+Los aspectos tratados en este informe, y que corresponden a las acciones llevadas a cabo para mejorar la calidad y 
+presentación de la información recolectada, incluyen: 
+• La validación permite asegurar que todas las piezas de información c umplan con la calidad y los criterios 
+establecidos en cuanto a flujo de los cuestionarios (orden y correspondencia de las preguntas ), filtros de 
+entrada, rangos de respuesta, outliers y valores  incoherentes con el contexto. 
+• La codificación de respuestas a biertas, algunas de ellas de acuerdo a nomencladores internacionales como 
+la ocupación (CIUO), la actividad económica (CIIU) y la educación (CINE). También se codifican respuestas 
+abiertas a preguntas categóricas que suelen contenerse en la alternativa “Otros. Especifique”. 
+2. Validaciones, edición y estructura de las bases de datos de la EPS VII Ronda 
+A continuación, se  explican las acciones de validación y edición de las bases de datos de la EPS VII Ronda. 
+Las convenciones de nombre empleadas en los archivos obedecen al nombre de los módulos de cada cuestionario 
+de la encuesta y a quién va dirigido el cuestionario (Entrevistado u Hogar). En todos los casos, es el entrevistado 
+quien responde la encuesta, o  en su lugar un informante idóneo para los casos de  entrevistados fallecidos e 
+impedidos. 
+Los archivos de las bases de datos tienen los siguientes sufijos que expresan su contenido: 
+• MÓDULO_X_Contenido.dta: corresponde a la base de datos del módulo de referencia en formato Stata 14. 
+Esta estructura de entrega de la información se repite para cada encuesta (Presencial , Re-Entrevista y Continuidad) 
+y cuestionario (Vivos, Fallecidos e Impedidos). En la  Tabla  1 se presenta la estructura de la s bases de datos de la 
+EPS VII Ronda , incluyendo los 10 Factores de Expansión disponibles para trabajar con las bases de datos 
+presentadas.  Tres factores (los factores denominados "XS" ) corresponden a los factores de corte transversal para 
+cada una de las tres encuestas realizadas. Siete f actores longitudinales (los factores denominados "Panel") 
+corresponden a los factores para ser utilizados con el trabajo longitudinal de los datos. De éstos, 3 son para ser 
+aplicados a la muestra de la EPS Presencial, 3 para ser aplicados a la muestra de l a EPS de Continuidad,  y uno de 
+ello para vincular los datos de las personas entrevistas en la EPS de Reentrevista con los datos "Prepandemia" de la 
+EPS Presencial. 
+  
+Tabla 1: Estructura de las bases de datos EPS VII 
+Encuesta   Numero 
+base 
+Detalle Bases de datos 
+Bases EPS Vivos 1 Modulo A entrevistado 
+
+=== PDF PAGE 4 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           4 
+ 
+  
+ 
+Presencial 2 Modulo A carreras 
+3 Modulo B  Historia Laboral 
+4 Modulo B Situación Actual 
+5 Modulo C Ingresos del Entrevistado e Ingreso Total del Hogar 
+6 Modulo D Activos y Patrimonio del Entrevistado y Total del Hogar  
+7 Modulo E  Protección Social  
+8 Modulo F Salud 
+9 Modulo G Capacitación 
+10 Modulo I Historia Invidual 
+11 Modulo J Calidad de Vida 
+12 Modulo Q  Coyuntura Previsional y Opinión 
+13 Modulo Hogar: Situación Laboral de Salud y Previsional de los integrantes del 
+hogar del entrevistado 
+Fallecid
+os 
+14 Modulo M Entrevistado fallecido 
+15 Modulo Historia Laboral 
+Impedid
+os 
+16 Modulo P Entrevistado impedido 
+17 Modulo Historia Laboral 
+Bases EPS 
+Reentrevista 
+Vivos 18 Modulo Entrevistado Vivo 
+19 Modulo B  Historia Laboral Vivos 
+20 Modulo Hogar del entrevistado 
+Fallecid
+os 
+21 Modulo Entrevistado Fallecido 
+22 Modulo B  Historia Laboral Fallecido 
+23 Modulo Hogar fallecido 
+Impedid
+os 
+24 Modulo Entrevistado Impedido 
+25 Modulo B  Historia Laboral Impedido 
+26 Modulo Hogar Impedido 
+Bases EPS 
+Continuidad 
+Vivos 27 Modulo Entrevistado Vivo 
+28 Modulo B  Historia Laboral Vivos 
+29 Modulo Hogar del entrevistado 
+Fallecid
+os 
+30 Modulo Entrevistado Fallecido 
+31 Modulo B  Historia Laboral Fallecido 
+32 Modulo Hogar fallecido 
+Impedid
+os 
+33 Modulo Entrevistado Impedido 
+34 Modulo B  Historia Laboral Impedido 
+35 Modulo Hogar Impedido 
+Bases de factores 
+de expansión  
+  36 Factor _Panel_2002 
+37 Factor _Panel_2004 
+38 Factor _Panel_2015 
+39 Factor_Panel_EPS_PRES_2002 
+40 Factor_Panel_EPS_PRES_2004 
+41 Factor_Panel_EPS_PRES_2015 
+
+=== PDF PAGE 5 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           5 
+ 
+  
+ 
+42 Factor_Panel_EPS_RE 
+43 Factor_XS_EPS_CONT 
+44 Factor_XS_EPS_PRES 
+45 Factor_XS_EPS_RE 
+ 
+Fuente: Elaboración propia. 
+ 
+Cada encuesta que compone la VII ronda presencial cuenta con un libro de códigos en formato Excel en donde es 
+posible observar el listado de variables de la encuesta, sus etiquetas y categorías de la variable.  
+3. Acerca de las variables codificadas 
+La EPS VI I Ronda requirió un trabajo de codificación exhaustivo y extenso que se realizó a través de dos  
+procedimientos: 
+- La codificación de las glosas de las variables de ocupación principal y de actividad económica del lugar 
+donde trabajan las personas entrevistadas, se realizaron, en base a las nomenclaturas CIUO -08, CIUO-
+08.CL y CIIU Rev.4; mientras que, la educación recibida, se hizo a través de la nomenclatura CINE 93. 
+- La codificación de preguntas de respuesta abierta o semi -abierta que incluyen, en su mayoría, 
+descripciones de situaciones diferentes a las establecidas en las categorías ofrecidas.  
+Todas las variables co dificadas fueron nombradas como la variable original más el sufijo “_cod ”. En algunos casos, 
+la información recolectada por el encuestador implicaba más de una respuesta a la misma pregunta. A fin de no 
+perder la riqueza informativa lograda en la encuesta,  se optó por mantener esta información en la codificación a 
+través de la incorporación de varias versiones de la variable codificada. Estas versiones se identificaron con un 
+dígito final agregado al sufijo (por ejemplo, c1_cod1, c1_co2, c1_cod3…), como se puede ver en la ¡Error! No se 
+encuentra el origen de la referencia., más adelante. 
+Un detalle importante respecto a la información recolectada bajo la alternativa “Especifique”, y que se traspasó a la 
+codificación, es el hecho de que, en muchas preguntas, los entrevistados informaban dos o más respuestas a la 
+misma pregunta.1 Cuando esta información era identificable, fue codificada en sendas variables para mantener la 
+completitud del aporte de da tos que realizó el entrevistado. Por lo tanto, es habitual encontrar variables como 
+g24_5_e que se refieren a otros financiadores de cursos de capacitación laboral, y que, dada la riqueza de la 
+información aportada por el entrevistado, se codificó en dos variables: g24_5_e_cod1 y g24_5_e_cod2. Nótese que 
+el dígito que acompaña al sufijo “_cod” indica la variante de respuesta entregada por el entrevistado. 
+En el caso de las codificaciones de empleo, actividad y situación ocupacional, se realizaron codificaci ones en 
+función de la información que se logró recuperar en terreno, tal como se explica a continuación. Un hecho 
+ 
+1 El listado de variables codificadas entre los nueve cuestionarios aplicados en la EPS VII Ronda es muy amplia. Por lo tanto, en 
+honor a la breveda d, se sugiere revisar en las bases de datos las variables terminadas en “_cod”. En la ¡Error! No se encuentra 
+el origen de la referencia.  de la sección ¡Error! No se encuentra el origen de la referencia.  se puede ver un ejemplo de 
+variables codificadas de las bases de datos de entrevistados Vivos de la encuesta Presencial.  
+
+=== PDF PAGE 6 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           6 
+ 
+  
+ 
+particular proviene de la CIIU revisión 4 a un dígito: la codificación que se emplea es alfanumérica. Por lo tanto, 
+para poder aplicar la glos a completa, se creó una variable auxiliar denominada CIIU_1dig_cat que recupera la 
+misma información en codificación numérica. Las etiquetas aplicadas corresponden a las categorías alfanuméricas 
+más la glosa propia de cada categoría. Así, se dispone de una  variable con codificación original y una variable con 
+codificación numérica, útil para tabulaciones y reportería, en que es importante la glosa de cada categoría de 
+actividad. 
+A continuación, se explica el proceso de codificación, con particular énfasis e n la codificación de ocupación y 
+actividad, explicando los criterios adoptados en la clasificación para cada nomenclatura.  
+ 
+3.1. Clasificación Internacional Uniforme de Ocupaciones (CIUO-08 Y CIUO-08.CL)  
+3.1.1.  Nomenclatura CIUO-08  
+La Clasificación Internacional Uniforme de Ocupaciones es una herramienta ampliamente utilizada por organismos 
+interesados en la caracterización de la estructura y dinámica de los mercados del trabajo, facilitando también su 
+comparabilidad a nivel internacional.  
+La CIUO-08 corresponde a la clasificación adoptada desde el año 2008, que recoge las experiencias de uso de su 
+antecesora y considera la evolución y cambios en el mercado del trabajo. Esta nomenclatura agrupa los empleos de 
+las personas según sus ocupaciones, en consideración de la similitud de sus tareas y cometidos. Estos grupos luego 
+forman parte de 10 grupos generales que son usualmente utilizados en la comunicación de resultados sobre la 
+materia. El principal criterio para la agrupación de ocupaciones y grupos generales corresponde a la similitud de las 
+competencias necesarias para desempeñar las tareas de los empleos.  
+En términos conceptuales, se puede mencionar que mientras un empleo corresponde a un conjunto de tareas y 
+cometidos desempeñado s por una persona, una ocupación es un conjunto de empleos que comparten 
+características comunes en términos de las tareas y cometidos encomendados. Así, en la descripción del mercado 
+del trabajo actualmente se utiliza el término ocupación y con ello persona ocupada.  
+Otro concepto de importancia es el de competencia, que refiere a la capacidad de llevar a cabo tareas y funciones 
+de un determinado puesto de trabajo. Las competencias involucran dos dimensiones de análisis: nivel de 
+competencias y especialización de las competencias. Nivel de competencias refiere a la diversidad y complejidad de 
+las tareas, involucrando una asociación estrecha con la educación formal y no formal obtenida por la persona. El 
+nivel de análisis tiene gran implicancia en la clasificación según los grandes grupos que estructuran la clasificación.  
+Por su parte, la especialización de competencias refiere a aspectos tales como el campo de conocimiento, 
+herramientas y maquinaria utilizada, materiales de trabajo, tipos de bienes y servic ios producidos. La 
+especialización de competencias tiene implicancia en los niveles desagregados de la estructura. 
+Es posible apuntar que una adecuada clasificación, tanto a nivel de grandes grupos como de sus desagregaciones se 
+ve favorecida o perjudicada  por la mayor o menor descripción con la que se cuente no solo del nombre de la 
+ocupación, sino también del reporte adecuado del nivel educacional, de las tareas realizadas, de la posición 
+jerárquica, materiales utilizados, bienes producidos, lugar de trabajo.  
+
+=== PDF PAGE 7 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           7 
+ 
+  
+ 
+3.1.1.1.  Estructura de la CIUO-08  
+CIUO-08 sigue una estructura jerárquica que considera los siguientes 10 grupos:  
+1. Directores y gerentes  
+2. Profesionales científicos e intelectuales  
+3. Técnicos y profesionales de nivel medio  
+4. Personal de apoyo administrativo  
+5. Trabajadores de los servicios y vendedores de comercios y mercados  
+6. Agricultores y trabajadores calificados agropecuarios, forestales y pesqueros  
+7. Oficiales, operarios y artesanos de artes mecánicas y de otros oficios  
+8. Operadores de instalaciones y máquinas y ensambladores  
+9. Ocupaciones elementales  
+0. Ocupaciones militares  
+3.1.2.  Nomenclatura CIUO-08.CL  
+Esta nomenclatura constituye una adaptación de la clasificación internacional a la realidad chilena, publicada en 
+diciembre del año 2018. En términos generales, mantiene las definiciones conceptuales de la CIUO -08, así como 
+también sus criterios de clasificación en cuanto a niveles y especialización de la s competencias. En términos 
+específicos, y según menciona el INE (2018, p.12),2 involucra las siguientes modificaciones:  
+• “Mejoras en la denominación de glosas y descripciones de notas explicativas, adecuándolas a la 
+terminología chilena.  
+• Incorporación de ocupaciones nacionales, provenientes de la revisión realizada por las oficinas regionales 
+del INE, algunas de las cuales se acompañan de un paréntesis explicativo para casos complejos de 
+identificar solo por el nombre de la ocupación.  
+• Incorporación de ejemplos de ocupaciones incluidas y excluidas en cada uno de los grupos primarios.  
+• Ocupaciones que se mueven de un gran grupo a otro. A fin de adaptar la clasificación a la realidad 
+ocupacional chilena, se debió modificar la propuesta de clasificación de C IUO 08 para ocupaciones que, 
+para ser ejercidas en Chile, requieren niveles de competencia distintos a lo planteado por CIUO 08.”  
+3.1.2.1. Estructura de la CIUO-08.CL  
+1. Directores, gerentes y administradores.  
+2. Profesionales, científicos e intelectuales  
+3. Técnicos y profesionales de nivel medio  
+4. Personal de apoyo administrativo  
+5. Trabajadores de los servicios y vendedores de comercios y mercados  
+6. Agricultores y trabajadores calificados agropecuarios, forestales y pesqueros.  
+ 
+2 Modificaciones específicas recomendadas por el INE pue den encontrarse en INE (2018, pp.12-17), destacando principalmente 
+la consideración de la especificidad nacional en la defi nición de ocupaciones de carácter técnico, consideradas en CIUO -08 
+como profesionales sin distinción. 
+
+=== PDF PAGE 8 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           8 
+ 
+  
+ 
+7. Artesanos y operarios de oficios  
+8. Operadores de instalaciones, máquinas y ensambladores.  
+9. Ocupaciones elementales  
+0. Ocupaciones de las fuerzas armadas  
+ 
+3.1.3. Estrategia operativa para la codificación de la ocupación según CIUO-08 y CIUO-08.CL  
+En consideración de los requerimientos de la nomenclatura utilizada y de las características de la base de datos, se 
+consideró la siguiente estrategia operativa para la clasificación de las ocupaciones:  
+Etapa 1. Clasificación a 4 dígitos 
+La clasificación a 4 dígitos se realizó de acuerdo con los siguientes criterios: 
+Criterio 1:  ocupación principal declarada y  tareas asociadas si es que se requiere información adicional . Es 
+importante mencionar que la evaluación caso a caso de las glosas (o “literales”) permite reconocer ocupaciones 
+cuya denominación facilita en mayor grado que otras su clasificación inmediata. Por ejemplo: la palabra “taxista” 
+permite reconocer inmediatamente que se trata de una ocupación del grupo 8, no así la palabra “vend edor”, que 
+precisa de información adicional para distinguir el gran grupo de clasificación (5 o 9).  
+Criterio 2:  consideración del nivel educacional de las personas entrevistadas, nivel de instrucción en curso y 
+completado, en tanto proxy probable del nive l de competencias de las personas. Es importante destacar que, en 
+consideración de lo antes descrito, es importante evaluar posibles casos donde la experiencia y trayectoria 
+favorezcan el desarrollo de competencias de manera informal. Por ejemplo: personas  que se desempeñan como 
+“jefes de tienda” y que pueden ser clasificadas dentro del grupo 3, aun cuando no tengan estudios técnicos de 
+carácter formal, dado que realizan tareas de administración que requieren un mayor grado de experiencia que las 
+que se pueden encontrar en ocupaciones asociadas del grupo 5, por ejemplo.  
+Otro aspecto destacable es que, si una persona tiene un grado de calificación formal que es indicativo de 
+competencias que exceden el cargo desempeñado, pero no son requeridas por el empleo que desempeña no es 
+considerado. Ejemplo: profesionales que se desempeñan como garzones, o que conducen utilizando la aplicación 
+“Uber”.  
+Criterio auxiliar: características del negocio o empresa donde trabajan ; si bien la clasificación de la ocupaci ón es 
+independiente, la información de las empresas transmitida por las personas entrega orientaciones, ya sea porque 
+allí describen los productos y materiales utilizados, o porque entregan información acerca de su lugar en la 
+jerarquía de la organización, todos aspectos ligados a la especialización de las competencias. 
+Por otra parte, la categoría ocupacional es un criterio de mayor lejanía, que puede ser utilizado, pero con mayor 
+precaución. Es decir: si una persona es empleadora, cuenta propia, asalariad a o familiar no remunerado. Se puede 
+señalar como ejemplo, que una persona que es dueña de un almacén de abarrotes y trabaja por cuenta propia es 
+clasificada en el grupo 5 y no en el grupo 1, ya que se desempeña de forma prioritaria en la propia actividad del 
+negocio (vendedora en mostrador) y no solamente como administradora de la propiedad del negocio.  
+
+=== PDF PAGE 9 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           9 
+ 
+  
+ 
+Etapa 2: clasificación a 1 dígito  
+En aquellos casos donde no sea posible entregar una clasificación a 1 dígito por no tener información de los 
+materiales utilizados o productos generados, se entregará una codificación a 1 dígito, en la medida que la 
+información disponible permita reconocer  los grandes grupos debido a  las competencias involucradas y la 
+especialización relativa. Por ejemplo: el genérico “maestro de la construcción” permite reconocer que se trata de 
+un trabajador especializado (distinto a un jornal del grupo 9, por ejemplo), l o que la ubica en el grupo 7, sin 
+embargo, no es posible señalar si se trata de un albañil, electricista, “enfierrador”, ceramista, cristalero, etc. y por 
+ende no se puede clasificar a 4 dígitos.  
+Etapa 3: Adaptación de CIUO-08 a CIUO-08.CL  
+Esta etapa tom a en cuenta las adaptaciones nacionales realizadas por la nomenclatura CIUO -08.CL, tomando en 
+cuenta cambios de gran grupo, así como también códigos nuevos específicos. Para ello se creó una columna 
+independiente, en base a una comparación línea por línea de las ocupaciones clasificadas en cada nomenclatura. 
+3.2. Clasificación Industrial Internacional Uniforme de todas las actividades económicas según CIIU Rev.4  
+La Clasificación Industrial Internacional Uniforme de todas las actividades económicas (CIIU) es una  nomenclatura 
+de referencia internacional para la clasificación de las actividades productivas de los países. Su objetivo es 
+favorecer la reunión y difusión de datos estadísticos en ámbitos de interés. La CIIU rev isión 4 (más conocida como 
+la “CIIUrev4”) constituye una versión aprobada en el año 2006 y que sustituye a la versión 3.1 aprobada en el año 
+2002.  
+La CIIU es una clasificación de actividades económicas. No refiere a la ocupación y tareas que desempeña la 
+persona, sino más bien a la actividad que r ealiza la empresa, negocio o institución donde trabaja la persona. Aún 
+más, es necesario enfatizar que se tratará en todos los casos de la unidad donde se trabaja y no la unidad que le 
+paga a la persona, aspecto especialmente relevante para considerar aque llos casos donde existen empresas 
+externas que colocan personal para realizar servicios dentro de otra unidad.3 
+Las unidades que se dedican a la misma clase de actividad económica se clasifican en la misma categoría de la CIIU, 
+con independencia de que sean empresas constituidas en sociedades de capital, particulares o el Estado (o que 
+formen parte de esas entidades) o de que la empresa matriz esté compuesta de más de un establecimiento.  
+En términos conceptuales, una actividad corresponde a un proceso, donde se combinan acciones y se tiene como 
+resultado un tipo de producción, que permite la reunión de unidades de p roducción en industrias. Existen 
+actividades principales, secundarias y auxiliares. La actividad principal es aquella que genera el mayor valor 
+añadido, seguida por actividades secundarias también realizadas por la entidad y que generan productos 
+destinados a terceros; y luego por actividades auxiliares necesarias y que apoyan la realización de las anteriores.  
+3.2.1. Estructura de la CIIU rev.4  
+CIIU rev.4 sigue una estructura que considera los siguientes grupos:  
+A. Agricultura, ganadería, silvicultura y pesca  
+ 
+3 Por ejemplo, una persona que se desempeña como auxiliar de aseo en un colegio, pero es contratada por una empresa 
+externa que paga su sueldo, quedará clasificada dentro de la rama de actividad económica “Enseñanza”. 
+
+=== PDF PAGE 10 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           10 
+ 
+  
+ 
+B. Explotación de minas y canteras  
+C. Industrias manufactureras  
+D. Suministro de electricidad, gas, vapor y aire acondicionado  
+E. Suministro de agua; evacuación de aguas residuales, gestión de desechos y descontaminación  
+F. Construcción  
+G. Comercio al por mayor y al por menor; reparación de vehículos automotores y motocicletas  
+H. Transporte y almacenamiento  
+I. Actividades de alojamiento y servicio de comidas  
+J. Información y comunicaciones  
+K. Actividades financieras y de seguros  
+L. Actividades inmobiliarias  
+M. Actividades profesionales, científicas y técnicas  
+N. Actividades de servicios administrativos y de apoyo  
+O. Administración pública y defensa; planes de seguridad social de afiliación obligatoria  
+P. Enseñanza  
+Q. Actividades de atención de la salud humana y de asistencia social  
+R. Actividades artísticas, de entretenimiento y recreativas  
+S. Otras actividades de servicios  
+T. Actividades de los hogares como emplea dores; actividades no diferenciadas de los hogares como 
+productores de bienes y servicios para uso propio  
+U. Actividades de organizaciones y órganos extraterritoriales  
+Estos, se generan en base a la distinción de características estratégicas de las activida des en aspectos tales como 
+los bienes y servicios que son producidos, los usos dados a los anteriores; y también los insumos, procesos y 
+tecnología asociada al desarrollo de la actividad. 
+3.2.2. Estrategia operativa para la codificación de las actividades según CIIU rev.4  
+En consideración de los requerimientos de la nomenclatura utilizada, se consideraron los siguientes criterios para la 
+interpretación de la información de la s bases y clasificación de las respuestas en secciones (1 dígito) y clases (4 
+dígitos).  
+- Características de los bienes producidos y servicios prestados: por ejemplo, la realización de asesorías 
+técnicas a organismos educacionales califica dentro de la sección “Actividades profesionales, científicas y 
+técnicas” y no como “Enseñanza”.  
+- Usos de los bienes y servicios: por ejemplo, la elaboración de estructuras metálicas no califica dentro de la 
+sección “Construcción”, sino dentro de la “Industria manufacturera”, cuyos productos serán luego 
+utilizados en la construcción.  
+- Aspectos relativos a los i nsumos, procesos y tecnologías de producción: por ejemplo, la cría de animales 
+para la venta involucra procesos distintos a la mera venta de animales vivos, por lo tanto, no corresponde 
+su calificación dentro del grupo “Comercio”, sino “Agricultura, ganade ría, silvicultura y pesca”. Otro 
+ejemplo relevante es la elaboración de comida para su venta en la vía pública, de manera informal o 
+ambulante: estos quedan clasificados dentro “Actividades de alojamiento y servicio de comidas” y no 
+
+=== PDF PAGE 11 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           11 
+ 
+  
+ 
+dentro de “Comercio”, y a que la actividad involucra procesos adicionales a la mera compra -venta de 
+artículos elaborados por otras unidades.  
+Otros aspectos de especial relevancia considerados son:  
+- Cuando existe integración vertical de actividades, es importante prestar atención  al producto final: por 
+ejemplo, una combinación de tala de árboles con aserradero debe clasificarse dentro del aserrado, en tanto 
+constituye una aportación mayor de valor al producto final.  
+- Se considera en todo momento que las unidades económicas a clasi ficar tienen actividades primarias, 
+secundarias y auxiliares. Por ejemplo: una persona que se declara conductor de camiones para una 
+empresa que se dedica a la elaboración de madera debe ser clasificada por esta última actividad y no como 
+una actividad de transporte.  
+3.3. Codificación de preguntas de respuesta abierta o semi-abierta 
+ 
+En la codificación de otras variables, se incluyeron del tipo “Especifique” y otras de pregunta abierta. La 
+codificación de estas variables fue abordada en base a tres criterios principales: 
+ 
+- Criterio 1: capturar el sentido de la respuesta u reinterpretarlo en términos de las opciones y categorías 
+originalmente disponibles para la pregunta. Por ejemplo, al preguntar por sistema de salud, las categorías 
+incluyen “FF.AA. y del Orden”. Sin embargo, los entrevistados no se veían reflejados en esas categorías y 
+respondían en la parte abierta de la pregunta, “CAPREDENA” o “DIPRECA” o “Sistema FACH”, que hacen 
+clara referencia a la categoría más general reflejada en la pregunt a. En estos casos, se codificó con el valor 
+que le correspondía a la versión de la categoría en la pregunta original. 
+ 
+- Criterio 2: no habiendo logrado empatar la respuesta abierta con la categoría original, se intentó adoptar 
+una categorización dinámica en cada respuesta, basada en la densidad de respuestas similares. De esta 
+manera, se buscaron expresiones y criterios de agrupación para lograr que varias respuestas cayeran 
+dentro de una misma categoría. 
+ 
+- Criterio 3: si la respuesta era muy extraña, ini nteligible o no correspondía a la categoría, se le asignó el 
+código correspondiente a “No sabe”. 
+En la ¡Error! No se encuentra el origen de la referencia. , se muestra un ejemplo de lo que se puede encontrar en 
+las bases de datos. 
+
+=== PDF PAGE 12 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           12 
+ 
+  
+ 
+Tabla 2. Ejemplo de variables codificadas en la encuesta Presencial 
+Base de datos Nombre Variable Etiqueta 
+Codificación 
+Descripción de Variable 
+MÓDULO_A_Carreras a14_cod1 a14_cod_LBL VAR_COD: ¿Cuál es el nombre de la carrera que estudió?' 
+MÓDULO_A_Carreras a14_cod2 a14_cod_LBL VAR_COD: ¿Cuál es el nombre de la carrera que estudió?' 
+MÓDULO_A_Carreras a17_b_cod a17_b_cod_LBL VAR_COD: País en que estudió o está estudiando esta 
+carrera.' 
+MÓDULO_A_Entrevistado a12_r_e_cod a12_r_e_cod_LBL VAR_COD: ¿Por qué no ha terminado sus estudios o no se 
+ha titulado? Especifique' 
+MÓDULO_B_Historia_Laboral b9_c_e_cod b9_c_e_cod_LBL VAR_COD: ¿Con quién tiene(tenía) un acuerdo o contrato 
+de trabajo? Especifique' 
+MÓDULO_B_Historia_Laboral CIIU_1dig_cat CIIU_1dig_cat_LBL VAR_COD: Codificación variable b9_d con CIIU Rev.4 a 1 
+dígito con categorías 
+MÓDULO_B_Situacion_Actual b38_f_cod b38_f_cod_LBL VAR_COD: ¿Por qué no se atendió?' 
+MÓDULO_C_Entrevistado c6p_i_1_e_cod2 frecuencias_LBL VAR_COD: Indique la periodicidad de la bonificación o 
+gratificación. Especifiqu 
+MÓDULO_C_Entrevistado c6p_i_1_e_cod1 frecuencias_LBL VAR_COD: Indique la periodicidad de la bonificación o 
+gratificación. Especifiqu 
+MÓDULO_C_Entrevistado c6p_i_2_e_cod2 frecuencias_LBL VAR_COD: Indique la periodicidad de la remuneración en 
+especies o regalías. Espe 
+MÓDULO_C_Entrevistado c6p_i_2_e_cod1 frecuencias_LBL VAR_COD: Indique la periodicidad de la remuneración en 
+especies o regalías. Espe 
+MÓDULO_C_Entrevistado c8_p_e_cod frecuencias_LBL VAR_COD: Indique la periodicidad de los consumos. 
+Especifique' 
+MÓDULO_C_Entrevistado c17_6_e_cod c17_6_e_cod_LBL VAR_COD: En los últimos, ¿recibió ingresos por concepto 
+de otro tipo de pensión? 
+MÓDULO_C_Entrevistado c18_1_e_cod c18_e_cod_LBL VAR_COD: ¿Qué institución le paga la pensión de vejez o 
+Jubilación, incluyendo a 
+MÓDULO_C_Entrevistado c18_2_e_cod c18_e_cod_LBL VAR_COD: ¿Qué institución le paga la pensión de invalidez 
+laboral? Especifique' 
+MÓDULO_C_Entrevistado c18_3_e_cod c18_e_cod_LBL VAR_COD: ¿Qué institución le paga la pensión de invalidez 
+no laboral? Especifiqu 
+MÓDULO_C_Entrevistado c18_4_e_cod c18_e_cod_LBL VAR_COD: ¿Qué institución le paga la pensión de viudez 
+(Montepío)? Especifique' 
+MÓDULO_C_Entrevistado c18_5_e_cod c18_e_cod_LBL VAR_COD: ¿Qué institución le paga la pensión de 
+orfandad? Especifique' 
+MÓDULO_C_Entrevistado c18_6_e_cod c18_e_cod_LBL VAR_COD: ¿Qué institución le paga el otro tipo de 
+pensión? Especifique' 
+MÓDULO_C_Entrevistado c30_3_e_cod2 c30_3_e_cod_LBL VAR_COD: En los últimos 12 meses, ¿recibió otro subsidio? 
+Especifique' 
+MÓDULO_C_Entrevistado c30_3_e_cod1 c30_3_e_cod_LBL VAR_COD: En los últimos 12 meses, ¿recibió otro subsidio? 
+Especifique' 
+Fuente: Elaboración propia a partir de la base de la Encuesta Presencial, EPS VII Ronda. 
+ 
+ 
+4. Clasificación Internacional Normalizada de la Educación según CINE 2011 
+La Clasificación Internacional Normalizada de la Educación (CINE) forma parte de la familia  internacional de 
+Clasificaciones Económicas y Sociales de las Naciones Unidas, las cuales  son empleadas a nivel mundial en la 
+elaboración de estadísticas con el objetivo de acopiar y analizar datos comparables a nivel internacional de manera 
+
+=== PDF PAGE 13 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           13 
+ 
+  
+ 
+consistente. Dentro de estas, la CINE representa una clasificación de referencia que permite ordenar los programas 
+educativos y sus  respectivas certificaciones por niveles de educación y campos de estudio. Su elaboración es el  
+resultado de un acuerdo internacional adoptado formalmente por la Conferencia General de los  Estados Miembros 
+de la UNESCO.4 
+La CINE se ha concebido como un marco que facilita la clasificación de actividades educativas,  tal como son 
+definidas en los programas y las certificaciones otorgadas por estos, en categorías  consensuadas a nivel 
+internacional. En consecuencia, las definiciones y conceptos básicos de la CINE se han formulado de modo que sean 
+universalmente válidos y aplicables al espectro total de sistemas educativos. 
+La CINE clasifica los programas educativos de acuerdo con  sus contenidos en función de dos  variables de 
+clasificación cruzadas: niveles de educación (Anexo II de CINE 93 ) y campos de educación (Anexo IV de CINE 93). La 
+CINE 2011 presenta una revisión de la clasificación de los  niveles de educación propuesta en la versión anterior 
+(CINE 1997).  
+La clasificación de programas e ducativos propuesta en la CINE utiliza dos sistemas paralelos  de codificación, uno 
+para programas (Programas-CINE o CINE-P) y otro para logro educativo  (Logro-CINE o CINE-A). en la EPS VII Ronda, 
+se ha empleado el CINE -P para la clasificación de programas educativos. Este sistema cuenta con nueve niveles  
+(clasificación a 1 dígito) , en tanto que dentro de cada nivel  se utilizan dimensiones complementarias con el objeto 
+de destacar categorías o subcategorías adicionales, si fuera pertinente (a 2 y 3 dígitos). 
+1.1.1. Criterios de codificación aplicados 
+Para la clasificación de programas educativos, se emplearon las variables a12_n, a12_c, a12_e y a12_d y , en unos 
+pocos casos , a la respuesta da da en a14 (Magíster y Doctorado ). Esto permitió la clasificación de los niveles 
+educativos alcanzados por los entrevistados y los integrantes de su hogar. 
+A esta clasificación CINE -P se le agregó una categoría que refleja analfabetismo, o no haber concurrido a un 
+establecimiento de educación formal. Esta categoría no está incluida en la CINE, porque ésta sólo refleja educación 
+recibida. 
+Adicionalmente, se aplicó la clasificación CINE en base al campo (medicina, artes, ciencias)  para las carreras 
+universitarias. Esto se hizo en función de la información de Carreras del Módulo A, pregunta a14. A esta 
+clasificación se la denomina CINE-C. 
+En el caso de la encuesta Presencial, se aplicó al entrevistado y a los miembros del hogar. En el caso de la encuesta 
+de Continuidad, la clasificación se aplicó a las personas de 45 o menos años de edad a quienes se preguntó por esta 
+información de educación. En la encuesta de Re-Entrevista, no se pregunta por educación. 
+1.1.2. Codificación CINE 2011 – P: Programas Educativos 
+1.1.2.1. Codificación a un dígito 
+Código Descripción Recodificación 
+0 Educación de la primera infancia 1000 
+1 Educación primaria 1 
+ 
+4 Estos párrafos han sido tomados de CINE 93 (2011), ya ue explican claramente de qué se trata la clasificación.  
+
+=== PDF PAGE 14 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           14 
+ 
+  
+ 
+Código Descripción Recodificación 
+2 Educación secundaria baja 2 
+3 Educación secundaria alta 3 
+4 Educación postsecundaria no terciaria 4 
+5 Educación terciaria de ciclo corto 5 
+6 Grado en educación terciaria o nivel equivalente 6 
+7 Nivel de maestría, especialización o equivalente 7 
+8 Nivel de doctorado o equivalente 8 
+9 No clasificado en otra parte 9 
+888 Nunca cursó un programa educativo 888 
+El código especial “888” se incluyó por razones de completitud, ya que la clasificación CINE sólo contempla 
+situaciones en que se ha recibido educación, excluyendo analfabetismo. 
+La categoría “0” se recodificó a “1000” debido a la forma en que los softwares de bases de datos interpretan los 0 a 
+la izquierda en campos numéricos. Por lo tanto, en la base de datos, la categoría “0”se encuentra codificada como 
+“1000”. 
+1.1.2.2. Codificación a 2 dígitos 
+Código Descripción Recodificación 
+01 Educación de la primera infancia: Desarrollo educacional de la primera 
+infancia 1001 
+02 Educación de la primera infancia: Educación preprimaria 1002 
+10 Educación primaria: Educación primaria 10 
+24 Educación secundaria baja: General 24 
+25 Educación secundaria baja: Vocacional 25 
+34 Educación secundaria alta: General 34 
+35 Educación secundaria alta: Vocacional 35 
+44 Educación postsecundaria no terciaria: General 44 
+45 Educación postsecundaria no terciaria: Vocacional 45 
+54 Educación terciaria de ciclo corto: General 54 
+55 Educación terciaria de ciclo corto: Vocacional 55 
+64 Grado en educación terciaria o nivel equivalente: Académica 64 
+65 Grado en educación terciaria o nivel equivalente: Profesional 65 
+66 Grado en educación terciaria o nivel equivalente: Orientación no 
+especificada 66 
+74 Nivel de maestría, especialización o equivalente: Académica 74 
+75 Nivel de maestría, especialización o equivalente: Profesional 75 
+76 Nivel de maestría, especialización o equivalente: Orientación no 
+especificada 76 
+84 Nivel de doctorado o equivalente: Académica 84 
+85 Nivel de doctorado o equivalente: Profesional 85 
+86 Nivel de doctorado o equivalente: Orientación no especificada 86 
+
+=== PDF PAGE 15 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           15 
+ 
+  
+ 
+Código Descripción Recodificación 
+99 No clasificado en otra parte 99 
+555 Educación de la primera infancia en forma parcial 555 
+666 Educación primaria en forma parcial (sin conclusión de nivel) 666 
+777 Sin Información suficiente para clasificar 777 
+888 Nunca cursó un programa educativo 888 
+999 Codificado a un dígito 999 
+Las categorías comenzadas con “0” se recodifican a “1000” debido a la forma en que los softwares de bases de 
+datos interpretan los 0 a la izquierda en campos numéricos. Por lo tanto, en las bases de datos, la categoría “01”se 
+encuentra codificada como “1001”, y la categoría “02”, como “1002”. 
+Los códigos “555” y “666” se incluyen como situaciones especiales que no están contempladas en la codificación 
+CINE, en que no se hace especial mención de las situaciones en que la educación de la primera infancia y primar ia 
+se reciben en forma parcial. 
+El código “777” se aplica cuando no hay información suficiente para realizar una adecuada clasificación. 
+El código especial “888” se incluyó por razones de completitud, ya que la clasificación CINE sólo contempla 
+situaciones en que se ha recibido educación, excluyendo analfabetismo. 
+Para aquellos casos en que no existe información suficiente (por ejemplo, porque el entrevistado especificaba nivel 
+educativo, pero no indicaba si lo había finalizado), se aplica el código “999” q ue implica que la codificación sólo se 
+pudo realizar a un dígito sin mayores especificaciones. 
+1.1.3.  Codificación CINE 2011 – C: Grupos Amplios y Campos de Educación 
+Código Descripción Recodificación 
+0 Programas generales 1000 
+01 Programas básicos 1001 
+08 Programas de alfabetización y de aritmética 1008 
+09 Desarrollo personal 1009 
+1 Educación 1 
+14 Formación de personal docente y ciencias de la educación 14 
+2 Humanidades y artes 2 
+21 Artes 21 
+22 Humanidades 22 
+3 Ciencias sociales, educación comercial y derecho 3 
+31 Ciencias sociales y del comportamiento 31 
+32 Periodismo e información 32 
+34 Educación comercial y administración 34 
+38 Derecho 38 
+4 Ciencias 4 
+42 Ciencias de la vida 42 
+44 Ciencias físicas 44 
+46 Matemáticas y estadística 46 
+
+=== PDF PAGE 16 ===
+   
+ 
+Producto 1 – Encuesta de Protección Social 2019                                                                                           16 
+ 
+  
+ 
+Código Descripción Recodificación 
+48 Informática 48 
+5 Ingeniería, industria y construcción 5 
+52 Ingeniería y profesiones afines 52 
+54 Industria y producción 54 
+58 Arquitectura y construcción 58 
+6 Agricultura 6 
+62 Agricultura, silvicultura y pesca 62 
+64 Veterinaria 64 
+7 Salud y servicios sociales 7 
+72 Medicina 72 
+76 Servicios sociales 76 
+8 Servicios 8 
+81 Servicios personales 81 
+84 Servicios de transporte 84 
+85 Protección del medio ambiente 85 
+86 Servicios de seguridad 86 
+99 Sectores desconocidos o no especificados 99 
+Las categorías comenzadas con “0” se recodifican a “1000” debido a la forma en que los softwares de bases de 
+datos interpretan los 0 a la izquierda en campos numéricos. Por lo tanto, en la base de datos, por ejemplo, la 
+categoría “01”se encuentra codificada como “1001”. La recodificación se puede observar en la tabla anterior, 
+columna “Recodificación”, en las celdas “grisadas”. 
+ 

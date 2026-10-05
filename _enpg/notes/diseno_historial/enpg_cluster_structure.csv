@@ -1,0 +1,8 @@
+"year","design_label","n","n_strata","n_psu","lonely_strata","psu_cross_strata","persons_per_psu_median","persons_per_psu_mean","persons_per_psu_max"
+2012,"PSU + REGION",17154,15,2069,0,0,7,8.291,30
+2014,"PSU + REGION",20113,15,2333,0,0,7,8.6211,33
+2016,"PSU + REGION",19147,15,2000,0,0,8,9.5735,61
+2018,"PSU + REGION",19427,16,3185,0,0,5,6.0995,35
+2020,"REGION only - no validated PSU",16662,16,NA,NA,NA,NA,NA,NA
+2022,"PSU + REGION",17454,16,2654,0,0,6,6.5765,12
+2024,"PSU + REGION",18668,16,2692,0,0,7,6.9346,17

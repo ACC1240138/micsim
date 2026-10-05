@@ -1,0 +1,793 @@
+
+=== PDF PAGE 1 ===
+            
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+“ TELEFÓNICO
+REENTREVISTA”
+2019
+COMUNA
+FOLIO -
+Fecha de la Entrevista
+2020
+Hora de la Entrevista
+Inicio
+Término
+ “Buenos (días/tardes/noches), mi nombre es ___________ y pertenezco a 
+la empresa IPSOS.      En conjunto con la Subsecretaria de Previsión Social, 
+del Ministerio del Trabajo, estamos aplicando la Encuesta de Protección Social 
+con el propósito de obtener información para mejorar políticas públicas en el 
+ámbito de las pensiones. 
+Por efectos de la Pandemia, estamos aplicando una versión resumida de la 
+Encuesta que el/la entrevistado/a respondió en el pasado, ahora será de 
+manera telefónica y tendrá una duración aproximada 10 minutos. A nombre 
+de Ipsos, y como una forma de valorar su tiempo nos gustaría que recibiera un 
+Gift Card de regalo de 5 mil pesos para compras en supermercados y tiendas 
+de retail.
+Le recordamos que sus respuestas son confidenciales y su participación 
+es completamente voluntaria. 
+Nota al encuestador: Si el entrevistado desea revisar veracidad del estudio 
+o contactarse algún encargado del mismo, puede entregar la siguiente 
+información:
+Información general
+Página web: http://www.ipsos.cl/eps/
+Encargados del estudio
+Correo electrónico IPSOS: info.eps@ipsoschile.cl
+Correo electrónico Subsecretaría de Previsión Social: atencionEPS@
+previsionsocial.gob.cl 
+Teléfono Subsecretaría de Previsión Social: (56-2) 28279819
+AUTORIZACIÓN PARA GRABAR ENTREVISTA
+Para fines de control de calidad se grabarán algunas preguntas durante la entrevista.
+
+=== PDF PAGE 2 ===
+Teléfono1 código de área - fono Comuna: Región:
+Villa / Población: Localidad:
+Correo electrónico (e_mail)
+Dirección:
+EL SELECCIONADO SE CAMBIÓ DE DIRECCIÓN A: 
+
+=== PDF PAGE 3 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+3
+   Módulo: Hogar
+1. Nombre de los 
+integrantes del hogar
+A8. Sexo
+A9. Edad
+A2a. ¿Pertenece actualmente a su hogar?
+Hombre Mujer
+Sí, continúa en 
+el hogar Pase 
+a A.4
+No, ya no 
+pertenece al 
+hogar
+Sí, nuevo 
+integrante 
+Pase a A.4
+1 1 2 1 2 3
+2 1 2 1 2 3
+3 1 2 1 2 3
+4 1 2 1 2 3
+5 1 2 1 2 3
+6 1 2 1 2 3
+7 1 2 1 2 3
+8 1 2 1 2 3
+9 1 2 1 2 3
+10 1 2 1 2 3
+11 1 2 1 2 3
+12 1 2 1 2 3
+13 1 2 1 2 3
+14 1 2 1 2 3
+15 1 2 1 2 3
+16 1 2 1 2 3
+17 1 2 1 2 3
+18 1 2 1 2 3
+19 1 2 1 2 3
+20 1 2 1 2 3
+21 1 2 1 2 3
+22 1 2 1 2 3
+23 1 2 1 2 3
+
+=== PDF PAGE 4 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+4
+  Módulo: Hogar                                                              
+Integrante 
+del hogar 
+Nº
+A4. ¿Cuál es su relación de parentesco con…? 
+      LEER NOMBRE DE CADA INTEGRANTE, 
+ESCUCHAR RESPUESTA Y CLASIFICAR
+1. Entrevistado
+2. Esposo(a) o pareja
+3. Hijo(a) de ambos
+4. Hijo(a) sólo del entrevistado
+5. Hijo(a) sólo del esposo(a)/ pareja 
+6. Padre o madre 
+7. Suegro(a) 
+8. Yerno o nuera 
+9. Nieto(a) 
+10. Hermano(a) 
+11. Cuñado(a) 
+12. Abuelo(a) 
+13. Otro familiar 
+14. No familiar 
+15.	 Servicio	doméstico	puertas	adentro	
+88. No responde 
+99. No sabe
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+A5. ¿Cuál es el parentesco que tiene con el jefe(a) de Hogar? 
+       
+     LEER NOMBRE DE CADA INTEGRANTE, ESCUCHAR RESPUESTA Y 
+CLASIFICAR
+1. Jefe(a) de hogar 
+2. Esposo(a) o pareja 
+3. Hijo(a) de ambos 
+4. Hijo(a) sólo del jefe 
+5. Hijo(a) sólo del esposo(a)/ pareja 
+6. Padre o madre 
+7. Suegro(a) 
+8. Yerno o nuera 
+9. Nieto(a) 
+10. Hermano(a) 
+11. Cuñado(a) 
+12. Abuelo(a) 
+13. Otro familiar 
+14. No familiar 
+15.	 Servicio	doméstico	puertas	adentro	
+88. No responde 
+99. No sabe
+
+=== PDF PAGE 5 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+5
+  Módulo: Hogar   
+  Módulo: B   
+  
+  
+AC100 ¿Usted o algún miembro de su hogar ha sido diagnosticado con COVID positivo?
+       
+       ESCUCHAR Y CLASIFICAR. SI RESPONDE SI, PREGUNTAR ¿QUIÉN?  (RESPUESTA MULTIPLE) 
+1.	 Sí,	el	entrevistado	fue	diagnosticado
+2. Sí, otro miembro del hogar
+3.	 No,	nadie	[Respuesta	única]
+8.	 No	sabe	[Respuesta	única]
+9.	 No	responde	[Respuesta	única]
+NV. Según lo registrado, la última vez que respondió la Encuesta de 
+Protección Social fue en _____________ de ______________. 
+En esta fecha, usted declaró estar: _____________________________            
+      LEER ACTIVIDAD Y LUGAR SI ESTABA TRABAJANDO 
+Actividad:	___________________________________________												
+Empresa	o	lugar	de	trabajo:	________________________________________
+    ¿Está correcto?
+     1. Sí
+     2. No  -->   Pasar a NV_i
+     8. No responde
+     9. No sabe
+NV_i. ¿Me podría indicar qué información no está correcta?  
+						ENTREVISTADOR:	MODIFICAR	INFORMACIÓN	QUE	EL	
+ENTREVISTADO DECLARA COMO INCORRECTA
+1.	 Situación	laboral:	____________________________
+2.	 Actividad:	____________________________
+3.	 Lugar:	____________________________
+
+=== PDF PAGE 6 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+6
+  Módulo: B                                                                              
+TODOS TODOS SOLO SI B2a=9 (OTRA SITUACIÓN)
+ B2a_inicio_m - 
+B2a_inicio_a
+Mes y año de inicio
+B2a. Me podría indicar en qué situación se encontraba 
+en _________ de ___________
+      
+1..               Trabajando 
+2. Realizando trabajos esporádicos o pololos
+3. Buscando trabajo por primera vez 
+4. Estudiando 
+5. Cesante 
+6.	 Retirado	o	Jubilado	
+7. Cuidando niños
+8. En casa con licencia médica** 
+9. Otra situación
+B25a. ¿En qué otra situación se encontraba?
+        ESCUCHAR Y CLASIFICAR, SONDEAR SI ES NECESARIO
+10. Enfermedad o discapacidad 
+11. Otras responsabilidades personales o familiares 
+12. Embarazo 
+13.	 Realizaba	la	práctica**
+14. Quehaceres de hogar 
+15.	 Rentista	
+16. No le interesaba trabajar 
+17. Estaba haciendo el servicio militar 
+18. Cuidados de personas mayores o 
+                    personas con Discapacidad 
+19. Cree que no encontrará trabajo 
+20. Se cansó de buscar trabajo 
+21. Algún miembro del hogar no le permite trabajar 
+22. Vacaciones o permisos**
+23.	 Por	horario	o	jornada	variable	o	flexible**
+24.	 Huelga,	conflicto	laboral**
+25. Trabajo es estacional 
+26. No tuvo pedidos (clientes)**
+27. Suspensión temporal del trabajo**
+28. Decidió no buscar trabajo
+29. Otro 
+88. No responde  
+99. No sabe
+1 Mes Año
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+
+=== PDF PAGE 7 ===
+7
+  Módulo: B                                                                              
+SOLO SI ESTABA TRABAJANDO    (B2a=1 o 2) TODOS SOLO SI ESTABA TRABAJANDO (B2a=1 o 2)
+SÓLO CUANDO HA TRABAJADO 
+COMO DEPENDIENTE DESDE 
+04/2020
+SOLO SI MODIFICÓ SU 
+CONTRATO A RAÍZ DE LA 
+PANDEMIA (BC100=1)
+TODOS
+B5. ¿Cuál (era) es su 
+ocupación u oficio, o qué 
+hace o hacía Ud. en ese 
+trabajo? 
+ABIERTA
+NOMBRE_EMPRESA (B0). 
+¿Cuál es (era) el nombre 
+de la empresa, institución 
+u hogar que le pagó el 
+sueldo en ese trabajo? 
+ABIERTA
+B2a_termino_mX- 
+B2a_termino_aX. ¿Hasta 
+cuándo se encontró en 
+esta situación? Indique 
+mes y año
+B8.
+En esta ocupación, ¿Ud. trabajaba como…
+1.Patrón o empleador 
+2.Trabajador por cuenta propia 
+3.Empleado u obrero del sector público
+4.Empleado u obrero del sector privado
+5.Servicio	doméstico	puertas	adentro	
+6.Servicio	doméstico	puertas	afuera	
+7.Familiar No remunerado 
+8.FF.AA. y de Orden 
+BC100.
+¿Su empleador modificó su 
+contrato de trabajo a raíz de la 
+Pandemia por Covid 19?
+B2a_termino_mY - B2a_termi-
+no_aY .
+¿Cuándo cambiaron sus condi-
+ciones laborales o contractuales? 
+Indique mes y año
+B2a_termino_m - B2a_
+termino_a.
+Fecha de término
+ANOTAR MES Y AÑO DE 
+TÉRMINO DE LA SITUA-
+CIÓN OCUPACIONAL
+Mes Año SI NO Mes Año Mes Año
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+1 2
+Encuesta de Protección Social Telefónico - Reentrevista
+
+=== PDF PAGE 8 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+8
+  Módulo: B                                                                              
+ENLACE.	En	_______________	de	________________	declaró	estar:
+Estado:	_________________________
+Trabajo:	________________________
+Lugar:	__________________________
+Y	en	______________	de	________________	declaró	estar:
+Estado:	__________________________
+Trabajo:	_________________________
+¿Se trata del mismo trabajo o situación?
+1. Sí 
+2. No 
+8. No responde 
+9. No sabe
+SÓLO SI ESTÁ/ESTABA TRABAJANDO COMO DEPENDIENTE                          
+(B2a=1 o 2 y B8=3, 4, 5 O 6)
+SÓLO SI ESTÁ/ESTABA 
+TRABAJANDO (B2a=1 
+o 2 & B8=1, 2, 3, 4, 
+5 O 6)
+S Ó L O  S I  E S TÁ / E S TA B A  T R A B A J A N D O                                                                     
+(B2a=1 o 2 y B8=1, 2, 3, 4, 5, 6 U 8)
+B9a. En este trabajo, ¿firmó 
+contrato de trabajo?       
+     ESCUCHAR Y CLASIFICAR
+1.	Sí,	tiene	contrato	y	lo	firmó	
+2.	No,	tiene	contrato,	pero	no	
+ha	firmado	
+3.	No,	no	tiene	contrato	
+--> Pasar a B9d
+8. No responde 
+9. No sabe
+B9b. ¿La relación 
+contractual de este trabajo 
+es/era del tipo 
+       ESCUCHAR Y CLASIFICAR
+1.	Sí,	tiene	contrato	y	lo	
+firmó	
+2.	No,	tiene	contrato,	pero	
+no	ha	firmado	
+3.	No,	no	tiene	contrato	
+10. No responde 
+11. No sabe
+B9d. ¿Qué clase de 
+actividad realiza la 
+empresa, industria 
+o servicio donde 
+desempeña(ba) ese 
+trabajo? 
+ABIERTA
+B11. ¿En este 
+trabajo usted 
+da(ba) boletas?
+1. Sí, da boleta 
+de servicios 
+(honorarios) 
+2. Sí, da boleta 
+de compra y 
+venta (facturas) 
+3. No 
+8. No responde 
+9. No sabe
+B12. ¿Cuál fue el ingreso líquido 
+mensual promedio en su trabajo?
+INDIQUE MONTO EN $
+Indique 
+monto 
+en $
+Recibí 
+de mi 
+fondo 
+de 
+cesantía
+NR NS
+1 2 8 9
+2 2 8 9
+3 2 8 9
+4 2 8 9
+5 2 8 9
+6 2 8 9
+7 2 8 9
+8 2 8 9
+9 2 8 9
+10 2 8 9
+11 2 8 9
+12 2 8 9
+13 2 8 9
+14 2 8 9
+15 2 8 9
+16 2 8 9
+17 2 8 9
+18 2 8 9
+19 2 8 9
+20 2 8 9
+21 2 8 9
+22 2 8 9
+
+=== PDF PAGE 9 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+9
+  Módulo: B                                                                              
+SOLO SI ESTABA TRABAJANDO    (B2a=1 o 2) SÓLO SI BC100=1
+B13. ¿Cuántas horas 
+semanales trabajaba en 
+este empleo?
+B22. ¿Cuál es el motivo del término de la relación 
+laboral?
+     ESCUCHAR Y CLASIFICAR
+1. No aplica (No ha cambiado de trabajo)
+2. Mutuo acuerdo de las partes 
+3. Renuncia 
+4.	Vencimiento	del	contrato	o	fin	del	trabajo	o	servicio	
+que dio origen al contrato 
+5. Despido por causa imputable a trabajador 
+6. Despido por necesidades de la empresa 
+7. Cierre de la empresa 
+8. Encontró un mejor trabajo 
+9. Condiciones de salud o invalidez 
+10. Se pensionó 
+11. Caso fortuito o fuerza mayor 
+12.  Fue obligada/o a cerrar su negocio (*)
+13. Su empleador se acogió a la Ley de Protección del 
+Empleo (*)
+14. Tuvo que cerrar su negocio por falta de demanda (*)
+15. Suspensión temporal del trabajo por crisis sanitaria 
+(*)
+16. Otra 
+88. No responde (NO LEER)
+99. No sabe (NO LEER
+BC101. 
+Usted indicó que en este trabajo se modificaron sus condiciones laborales. Por favor, señale cuál o cuáles modificaciones ocurrieron…
+       LEER ALTERNATIVAS
+SI NO SI NO SI NO SI NO SI NO SI NO
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1
+Se suspendió su 
+contrato de trabajo 
+por acto de autoridad 
+(cuarentena) por 
+medio de la Ley de 
+Protección del Empleo
+Se acordó un pacto de 
+suspensión temporal 
+del contrato de trabajo 
+por medio de la Ley de 
+Protección del Empleo
+Se acordó un pacto de 
+reducción temporal de 
+la jornada de trabajo 
+por medio de la Ley de 
+Protección del Empleo
+Sus empleadores 
+redujeron su jornada 
+laboral
+Sus empleadores 
+redujeron su salario
+Sus empleadores 
+cambiaron sus 
+actividades o tareas
+2 3 4 5 6
+
+=== PDF PAGE 10 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+10
+  Módulo: B                                                                              
+  Módulo: C                                                                              
+SOLO SI TRABAJA EN ÚLTIMA SITUACIÓN (B2A=1 O 2)
+BC102.  Del total de horas trabajadas la semana pasada, 
+¿cuántas realizó bajo la modalidad de teletrabajo desde su 
+casa?
+             
+SOLO SI TRABAJA EN ÚLTIMA SITUACIÓN (B2A=1 O 2)
+BC104. Considerando sus funciones y tareas en su empresa o 
+negocio, ¿Cuál de las siguientes afirmaciones representan mejor su 
+opinión sobre la modalidad de teletrabajo?  
+        LEER ALTERNATIVAS.
+1.	 No	podría	desarrollar	mis	funciones	en	absoluto
+2.	 Podría	desarrollar	algunas	pocas	funciones
+3.	 Podría	desarrollar	buena	parte,	pero	no	todas	mis	funciones	actuales
+4.	 Podría	desarrollar	mis	funciones	de	manera	igualmente	efectiva
+5.	 Podría	desarrollar	mis	funciones	de	manera	más	efectiva.
+8. No responde
+9. No sabe
+     SOLO SI TRABAJA COMO INDEPENDIENTE EN ÚLTIMA SITUACIÓN 
+(B8=1 O 2) 
+     B27a. ¿Tiene iniciación de actividades o está registrado/a en 
+el Servicio de impuestos internos? 
+1 . Sí
+2 . No
+3.  No responde
+4. No sabe
+             
+SOLO SI TRABAJA COMO INDEPENDIENTE EN ÚLTIMA SITUACIÓN 
+(B8=102)
+B29a. En su empresa, ¿Le han informado o capacitado sobre la 
+forma de prevenir riesgos para la salud?  
+1. Sí 
+2. No  ---> Pasar a B32a
+8. No responde --->   Pasar a B32a
+9. No sabe   ---> Pasar a B32a
+CC100. Si compara los ingresos actuales de su 
+hogar con los recibidos en enero de 2020, estos, 
+¿disminuyeron, se mantuvieron o aumentaron 
+por efectos relacionados con la Pandemia Covid 
+19? 
+       ESCUCHAR Y CLASIFICAR
+1. Disminuyeron
+2. Se mantuvieron -->  Pasar a CC102
+3. Aumentaron
+             
+CC101. ¿Por qué disminuyeron/aumentaron?  
+      ESCUCHAR Y ANOTAR MOTIVO. RESPUESTA MULTIPLE
+1. Disminuyeron por pérdida del empleo de algún miembro del hogar.
+2.	 Disminuyeron	por	suspensión	de	temporal	de	empleo	de	algún	miembro	del	hogar.
+3.	 Disminuyeron	por	término	de	proyecto	o	actividad	laboral.
+4.	 Disminuyeron	por	el	cierre	obligado	de	las	actividades	en	la	que	se	desempeñaba.	
+5.	 Disminuyeron	los	ingresos	por	menores	ventas	de	negocio	propio	o	actividad	familiar
+6.	 Aumentaron	los	ingresos	por	mayores	ventas	de	negocio	o	actividad	económica.
+7.	 Aumentaron	los	ingresos	por	cambio	de	empleo.
+8.	 Otro,	¿cuál?	______________
+BC103. En su actual trabajo, ¿Le han…  
+         LEER ALTERNATIVAS
+SI NO No Sabe No 
+Responde
+1 …informado sobre formas de prevenir contagios de COVID-19? 1 2 8 9  
+2 …entregado elementos de protección personal para no sufrir contagios de COVID-19 1 2 8 9
+
+=== PDF PAGE 11 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+11
+  Módulo: C                                                                              
+   Módulo: D                                                                              
+CC102. En los últimos 6 meses, ¿cuál de los siguientes subsidios o ayudas implementados por el Estado para enfrentar la Pandemia Covid 19 ha recibido…? 
+         LEER ALTERNATIVAS
+SI NO No Sabe No Responde
+1 Bono COVID-19 ($50.000 por hogar, familia o causante del SUF) 1 2 8 9
+2 Ingreso Familiar de Emergencia (Hasta $100.000 por integrante de la familia) 1 2 8 9
+3 	Subsidio	Ingreso	Mínimo	Garantizado 1 2 8 9
+4 Ayuda para pago de arriendos y subsidios para crédito hipotecario 1 2 8 9
+5 Préstamo Solidario del Estado 1 2 8 9
+D7. La vivienda que ocupa es:  
+       MARCAR SEGÚN RESPUESTA DADA EN PRIMERA                           
+PART DE EPS 2009
+1. Propia pagada 
+2.	 Propia	pagándose	
+3.	 Propia	compartida	con	otros	hogares	
+4. Arrendada                 Pasar a DC102
+5. Cedida por empresa 
+6. Cedida por familiar o amigo 
+7. Allegados 
+8.	 Usufructo																																												 Pasa a D38-a
+9. Heredada 
+88. No responde (NO LEER) 
+99. No sabe (NO LEER)
+             
+SOLO SI VIVIENDA ES PROPIA PAGÁNDOSE, D7=2
+DC100. ¿Tuvo problemas para pagar su crédito hipotecario por 
+efectos relacionados con la pandemia a raíz de la Pandemia Covid 
+19?  
+      ESCUCHAR Y MARCAR ALTERNATIVA
+1.    Sí 
+2. No           Pasar a DC102
+8. No responde             Pasar a DC102
+9. No sabe              Pasar a DC102
+DC101. Para poder pagar su cuota del crédito hipotecario, usted…:
+         LEER ALTERNATIVAS
+SI NO No Sabe No Responde
+1 Accedió a la postergación del pago de cuotas del banco sin crédito de consu-
+mo asociado 1 2 8 9
+2 Accedió a la postergación del pago de cuotas del banco con crédito de consu-
+mo asociado 1 2 8 9
+3  No pudo acceder a postergar el pago de su crédito hipotecario y adeuda su 
+cuota. 1 2 8 9
+SOLO SI VIVIENDA ES ARRENDADA, D7=4
+DC102. ¿Tuvo problemas para pagar su arriendo por efectos relacionados con la pandemia a raíz de la Pandemia Covid 19?       
+      
+1. Sí
+2. No
+8. No responde
+9. No sabe
+
+=== PDF PAGE 12 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+12
+   Módulo: D                                                                           
+DC104 ¿Usted considera que las deudas en su hogar como consecuencia de la Pandemia Covid 19...? 
+1. Disminuyeron
+2. Se mantuvieron
+8. Aumentaron 
+D37a. ¿Usted posee alguno de los siguientes instrumentos financieros?
+         LEER ALTERNATIVAS
+D37a D.37m. Monto (Indique Monto en pesos)
+Sí No No Aplica
+1 Cuenta corriente 1 2
+2 Linea de crédito bancaria 1 2
+3 Tarjetas de crédito bancarias 1 2
+4 Casas comerciales 1 2
+5 Préstamos de consumos bancarios 1 2
+6 Préstamos	de	consumo	en	financieras 1 2
+7 Créditos automotrices 1 2
+8 Crédito social 1 2
+9 Deudas educacionales (crédito universitario, prestamos, otros) 1 2
+10 Crédito de prestamistas 1 2
+11 Otras deudas 1 2
+DC103. Debido a la Pandemia Covid 19, ¿los siguientes gastos mensuales de su hogar disminuyeron, se mantuvieron o aumentaron? 
+         LEER ALTERNATIVAS
+Disminuyeron NO No Sabe No  Aplica
+1 Alimentación 1 2 3 -
+2 Vestuario 1 2 3 -
+3 Agua, luz, gas, teléfono, cable, gastos comunes y otro servicio básico 1 2 3 -
+4 Transporte	y	movilización	(micro,	metro,	buses,	bencina	o	combustible) 1 2 3 -
+5 Servicio	doméstico 1 2 3 7
+6 Gasto total 1 2 3 -
+DC105.  Desde que se inició la Pandemia Covid 19 ¿usted …?  
+         LEER ALTERNATIVAS
+Sí No No  Aplica
+1 …ha tenido que recurrir a préstamos o transferencias de familiares o amigos para cubrir los 
+gastos del hogar 1 2 7
+2 …ha recibido ayuda económica de parte de su empleador 1 2 7
+3 …ha vendido vehículos, propiedades, materiales o equipos de trabajo 1 2 7
+4 …ha otorgado préstamos o ayuda monetaria a amigos o familiares 1 2 7
+5 …dejó de recibir pagos por concepto de arriendo de inmuebles o vehículos 1 2 7
+6 ...ha	usado	sus	fondos	del	seguro	de	cesantía 1 2 7
+7 …ha usado o hará uso de sus fondos de AFP 1 2 7
+
+=== PDF PAGE 13 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+13
+  Módulo: D                                                                           
+  Módulo: F                                                                          
+SOLO HA USADO FONDOS DE AFP (DC105_7=1)
+DC106. ¿A qué destinará o destinó el dinero retirado de sus fondos de AFP?
+         ESCUCHAR Y CLASIFICAR, RESPUESTA MÚLTIPLE
+1.	 Compra	de	alimentos	e	insumos	básicos	
+2.	 Pago	de	deudas	de	consumo	
+3.	 Pago	de	cuentas	de	servicios	básicos
+4.	 Pago	de	arriendo	o	crédito	hipotecario	
+5.	 Inversión	para	algún	proyecto	o	negocio
+6.	 Compra	de	otros	artículos	de	consumo
+7.	 Compra	de	artículos	para	acondicionar	el	hogar	por	causa	de	la	pandemia	(electrodomésticos,	artículos	tecnológicos,	etc).	
+8.	 Ahorro	para	proyectos	futuros
+9. Dar el pie para un auto
+10.	 Inversión	en	Fondos	Mutuos,	depósito	a	plazo.
+11. Cuenta 2 o Cuenta de Ahorro Voluntario
+12.	 Otro,	¿cuál?
+88.  No sabe 
+99.  No responde 
+FC100. ¿Desde que comenzó la Pandemia usted recibió asistencia médica de emergencia por Covid 19?      
+      
+1. Sí
+2. No
+FC101. En relación al último mes, está… 
+         LEER AFIRMACIONES Y ESCALA
+Menos de lo 
+habitual
+Igual que 
+siempre
+Más de lo 
+habitual NA NR NS
+1 Consumiendo más bebidas alcohólicas 1 2 8 7 8 9
+2 Fumando 1 2 8 7 8 9
+3  Comiendo sano 1 2 8 7 8 9
+4 Ejercitando 1 2 8 7 8 9
+
+=== PDF PAGE 14 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+14
+  Módulo: F                                                                        
+F69. A continuación le haremos algunas preguntas para saber cómo se ha sentido en el último tiempo, ¿Con qué frecuencia le han molestado los siguientes 
+problemas durante las últimas 2 semanas? 
+      LEER AFIRMACIONES Y LEER ESCALA, RECORDAR ESCALA CADA 3 AFIRMACIONES
+Nunca Varios 
+días
+Más de la 
+mitad de los 
+días
+Casi todos 
+los días NR
+1 Tener poco interés o placer en hacer cosas 1 2 3 4 9
+2 Sentirse	desanimado(a)	deprimido(a),	o	sin	esperanza 1 2 3 4 9
+3 Con problemas para quedarse o mantenerse dormido(a) o dormir dema-
+siado 1 2 3 4 9
+4 Sentirse	cansado(a)	o	tener	poca	energía 1 2 3 4 9
+5 Tener	poco	apetito	o	comer	en	exceso 1 2 3 4 9
+6 Sentir	falta	de	amor	propio	o	que	sea	un	fracaso	o	que	se	decepcionara	a	si	
+mismo o a su familia 1 2 3 4 9
+7 Tener	dificultad	para	concentrarse	en	cosas	tales	como	leer	periódico	o	
+mirar la televisión 1 2 3 4 9
+8
+Se mueve o habla tan lentamente que otro se podría dar cuenta de esto, o 
+de lo contrario, está tan agitado(a) o inquieto(a) que se mueve mucho más 
+de lo acostumbrado
+1 2 3 4 9
+9 Se le han ocurrido pensamientos de que sería mejor estar muerto(a) o de 
+hacerse daño de alguna manera 1 2 3 4 9
+SOLO SI ALGUNA DE LAS AFIRMACIONES DE F69 ES MAYOR A 1
+F69a. Si usted se identificó con cualquiera de los problemas antes mencionados, ¿cuán difícil se le ha hecho cumplir con su trabajo, 
+atender su casa, o relacionarse con otras personas debido a estos problemas? 
+         LEER ALTERNATIVAS 
+1. Nada en absoluto 
+2.	 Algo	difícil	
+3.	 Muy	difícil	
+4.	 Extremadamente	difícil
+
+=== PDF PAGE 15 ===
+Encuesta de Protección Social Telefónico - Reentrevista
+15
+  Despedida                                                                         
+CORREO. ¿Tiene correo electrónico?
+1. Si
+2. No              Pasar a DIRECCIÓN
+CORREO2.  
+1. ¿Cuál es su correo electrónico?:   ____________________ 
+2. Favor vuelva a escribir correo electrónico:  ____________________ 
+DIRECCIÓN. ¿Cuál es su dirección y teléfono?
+1.	Calle/Avenida:	___________________	
+2.	Numeración:	____________________	
+3.	Departamento/block:	_____________	
+4.	Comuna:	_______________________
+5.	Región:	________________________
+6.	Teléfono: ______________________ 
+Muchas gracias por participar en esta encuesta. Para entregar el regalo necesitaremos algunos datos de contacto. Esta información 
+también nos servirá para el control de calidad de la encuesta.
+
+=== PDF PAGE 16 ===
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+“TELEFÓNICO
+REENTREVISTA”
+2019

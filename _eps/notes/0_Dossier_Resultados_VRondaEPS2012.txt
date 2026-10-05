@@ -1,0 +1,985 @@
+
+=== PDF PAGE 1 ===
+1 
+ 
+  
+ 
+ 
+ 
+ 
+Dossier 
+Resultados 
+ Encuesta de Protección Social V Ronda 
+año 2012 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dossier Informe Resultados 
+V Ronda EPS 2012 
+Observatorio Previsional 
+
+=== PDF PAGE 2 ===
+2 
+El presente documento, constituye un dossier de materiales cuyo carácter es 
+metodológico y que fueron elaborados por la Unidad Observatorio 
+Previsional de la Subsecretaría de Previsión Social, a partir del trabajo 
+realizado tanto por expertos como consultoras contratadas para evaluar los 
+resultados de la V Ronda EPS 2012.
+
+=== PDF PAGE 3 ===
+3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Tabla de contenido 
+ 
+I. Resumen ejecutivo ........................................................................................................... 4 
+II. Informe de resultados V Ronda de la Encuesta de Protección Social 2012 ............ 8 
+Antecedentes ............................................................................................................................ 8 
+Etapas de la EPS V Ronda 2012 .............................................................................................. 9 
+Estrategia de Corrección de los Factores de Expansión Originales ............................... 13 
+Resultados ................................................................................................................................ 14 
+Probabilidades de Selección ................................................................................................. 15 
+Factores Base .......................................................................................................................... 16 
+Factores Base Ajustados por no Respuesta en el caso de Corte Transversal ............... 17 
+Factores de Corte Transversal Corregidos ......................................................................... 18 
+Factores Longitudinales......................................................................................................... 22 
+Conclusiones ............................................................................................................................ 23 
+III. Anexos .............................................................................................................................. 24 
+ 
+  
+
+=== PDF PAGE 4 ===
+4 
+ 
+ 
+I. Resumen ejecutivo  
+ 
+La Encuesta de Protección Social (EPS) representa una de las principales innovaciones, en términos de 
+diseño de encuestas, de los últimos 15 años en Chile: fue la primera en dar seguimiento a lo largo del 
+tiempo a una misma persona; y, se constituyó en la de mayor tamaño en su tipo.  
+ 
+El foco de la EPS, desde su origen, ha sido la recopilación de información sobre el mercado laboral y la 
+seguridad social; en un comienzo, el principal objetivo fue obtener estadísticas y análisis representativos de 
+la población de afiliados al sistema de pensiones, incluyendo tanto a personas con trabajo como aquéllas 
+que ya habían cumplido su etapa laboral (o pensionadas). En otras palabras, los afiliados al sistema de AFP y 
+al sistema antiguo de pensiones (INP/IPS).  
+ 
+La primera ronda de la EPS fue levantada el año 2002; en 2004, el alcance de la encuesta se amplió de 
+manera que cubrió al total de la población chilena de 18 años y más, de esta forma se incluyeron los no 
+afiliados al sistema de pensiones que antes no se consideraban. 
+ 
+En virtud de que se entrevista a las mismas personas en distintos años (lo que también se conoce como 
+encuesta “panel”), la muestra original de entrevistados se ha ido reduciendo en cada nueva ronda de la 
+encuesta porque: 
+ 
+1. Las personas pueden cambiar de domicilio y se pierde el contacto con ellas. 
+ 
+2. Las personas pueden cansarse de responder y negarse a participar en una nueva ronda de la EPS. 
+ 
+3. Las personas pueden fallecer. 
+ 
+Las tres causales de no seguir participando en la encuesta, antes mencionadas, se denominan 
+estadísticamente “atrición”; que haya atrición, significa que la muestra original del año 2002 ha ido 
+disminuyendo de tamaño en cada nueva ronda de la encuesta. En virtud de esto, se realiza un 
+procedimiento estadístico que consiste en complementar la muestra original denominado “refresco”. El año 
+2004, se realizó un refresco de la muestra de la EPS. 
+ 
+Durante los años 2006 y 2009 se realizaron la tercera y cuarta rondas de la encuesta, respectivamente, 
+mismas que consistieron en el  seguimiento de las personas entrevistadas en las rondas previas. No hubo 
+refresco de muestra en estos casos. 
+ 
+Las cuatro primeras rondas de la EPS fueron levantadas por el Centro de Microdatos de la Universidad de 
+Chile. 
+ 
+El año 2012 se llevó a cabo la quinta ronda de la EPS y la Subsecretaría de Previsión Social, previa licitación, 
+contrató los servicios del Observatorio Social de la Universidad Alberto Hurtado (OSUAH) en adelante el 
+“adjudicatario”. 
+ 
+Las principales tareas del ADJUDICATARIO fueron: 
+ 
+1. Implementar los procesos de diseño y pre -testeo del cuestionario, recolección de datos, 
+procesamiento de datos, análisis de datos y difusión de resultados 
+ 
+2. Desarrollar metodologías para la imputación de datos, creación de indicadores de ingresos, y 
+creación de factores de expansión (fórmulas algebraicas que permiten que cada persona de una 
+muestra, represente a muchas otras que no están en la muestra). 
+ 
+En el desarrollo de la quinta ronda de la EPS se presentaron una serie de dificultades técnicas e 
+incumplimientos por parte del ADJUDICATARIO, sus últimos tres informes fueron rechazados por la 
+Subsecretaría. Se indicó, en ese momento, que se presentaban deficiencias significativas especialmente en 
+el cálculo de los factores de expansión. 
+ 
+A raíz de lo anterior, se determinó que los datos no era recomendable utilizarlos en el estado en que se 
+encontraban; además, la cantidad de encuestas logradas fue bastante in ferior a lo establecido en el 
+contrato y a lo requerido para mantener los estándares de calidad de una encuesta tipo panel como la EPS. 
+ 
+
+=== PDF PAGE 5 ===
+5 
+ 
+En ese contexto, a fines del año 2013 un grupo de expertos realizó una serie de consultorías legales y 
+técnicas para ev aluar la situación de la quinta ronda y poder decidir el uso o no de los datos 
+correspondientes. Esos informes, concluyeron lo siguiente: 
+ 
+1. Los datos recolectados no eran válidos para la producción de estadísticas oficiales en materia de 
+previsión social, ya que la metodología para hacer que los datos de la muestra pudieran representar 
+a toda la población mayor de 18 años en Chile, presentaba serias deficiencias tanto en su 
+documentación como en los procedimientos utilizados. Es importante tener presente que , para que 
+una encuesta pueda representar a toda la población se elaboran “factores de expansión”; los 
+factores de expansión entregados por el ADJUDICATARIO no eran los correctos. 
+ 
+2. Al comparar los datos entregados por el ADJUDICATARIO con las rondas anteriores de la EPS, se 
+obtienen tasas de respuesta
+1 muy por debajo de los esperado, aproximadamente 20 puntos 
+porcentuales menos. Adicionalmente, se observó un importante sesgo en las personas que 
+respondieron versus las que no respondieron asociadas a caracte rísticas de sexo, edad y ubicación 
+geográfica. Los factores de expansión calculados por el ADJUDICATARIO no consideraron este 
+aspecto, mostrando graves problemas para representar a la población chilena mayor de 18 años.  
+ 
+El año 2014 luego del cambio de au toridades, la Subsecretaría de Previsión Social siguiendo los lineamientos 
+sugeridos por los expertos contrató una consultoría para corregir los problemas detectados en la quinta 
+ronda de la EPS (2012). Dicha consultoría consistió de las siguientes actividades: 
+ 
+1. Revisión de la metodología aplicada por el ADJUDICATARIO. 
+ 
+2. Re-cálculo de los factores de expansión. 
+ 
+3. Diagnóstico respecto a la factibilidad de utilizar la información recabada en la quinta ronda, con 
+fines de inferencia estadística. 
+  
+Los resultados encontrados fueron: 
+ 
+1. Existen diferencias importantes entre el Marco Muestral
+2 y la población (INE) en las personas más 
+jóvenes (18-19 años), y en las personas de 65 años y más. Dado que uno de los principales objetivos 
+de la muestra de refresco es justamente compensar por el envejecimiento de la muestra, fue 
+preocupante detectar qu e la población de personas entre 18 y 19 años, justamente donde se 
+debería concentrar en parte importante el refresco de la muestra, estuvo subestimada en el Marco 
+Muestral.  
+ 
+En contraste, para rondas anteriores de la EPS, las tasas de respuesta en la pob lación de 55 años y 
+más habían sido altas; así, la atrición nunca fue un problema grave en estos tramos de edad y 
+tampoco la subestimación del Marco Muestral. 
+  
+2. En particular, el Marco Muestral de la EPS 2012 sobre -estima a la población de 65 años y más, l o 
+que puede deberse a que los datos no se cruzaron con información de defunciones del registro civil. 
+ 
+3. Asimismo, se presentan diferencias entre la población estimada según el Marco Muestral y la 
+población estimada a partir de la Encuesta Casen 2011.  
+ 
+4. Estas diferencias son muy significativas en algunas comunas, el caso más extremo fue la comuna de 
+Santiago en la Región Metropolitana, donde según el Marco Muestral la población era de 780 mil 
+personas a diciembre de 2011, pero según la Encuesta Casen del mism o año fue de 128 mil 
+personas. 
+ 
+Otras comunas como Independencia, Providencia, San Miguel, Putre, Maria Elena, Puchuncavi, 
+Quintero y Olmué presentan diferencias cercanas al 100% entre ambas fuentes de información. 
+ 
+                                                           
+1 Las “tasas de respuesta”, se refieren a la proporción de personas entrevistadas que en una encuesta responden. 
+Mientras más alta es la tasa de respuesta, mayor es el logro de una encuesta.  
+2 “Marco Muestral”, es la población de referencia que se toma al selec cionar una muestra sobre la que se aplicará una 
+encuesta. Cada encuesta tiene su propio marco muestral, al cual debe ajustarse la muestra al aplicarse los factores de 
+expansión. 
+
+=== PDF PAGE 6 ===
+6 
+ 
+5. La muestra de refresco para la EPS 2012 se seleccionó a partir de las mismas unidades primarias de 
+muestreo (comunas) del diseño original de la EPS 2002 (a excepción de la comuna de Alto Hospicio 
+que no pertenecía al diseño original pero fue incorporada en la muestra de refresco). Este 
+procedimiento, mantener las comunas del diseño original, es apropiado mientras se pueda justificar 
+que la distribución geográfica de la población por regiones y comunas no muestra grandes cambios 
+entre el año 2002 y 2012; sin embargo, el ADJUDICATARIO no aportó nin gún antecedente que 
+pudiera corroborar esto. 
+ 
+6. La fracción de muestreo
+3 utilizada en la EPS 2002 para los afiliados al Sistema de Pensiones fue 
+0.0038 aproximadamente, y la de los no afiliados en la EPS 2004 fue 0.0085. El diseño muestral 
+original de la EPS  era tal que cada uno de los individuos seleccionados en la muestra, tenía igual 
+probabilidad de ser seleccionado.  
+ 
+En un escenario ideal para la selección de la muestra de refresco se deberían haber mantenido 
+dichas fracciones de muestreo, sin embargo, si por un tema de costos era necesario seleccionar una 
+muestra menor a la que se requiere para mantener la fracción de muestreo, se podía hacer; de 
+hecho, en el caso de la selección de la muestra de refresco EPS 2012 la fracción de muestreo 
+utilizada por el ADJUDICATARIO en los antiguos afiliados fue 0.0019, en los nuevos afiliados 0.0067 
+y en los no afiliados 0.0019. 
+ 
+7. Como se señala en el punto anterior, aún y cuando es aceptable desde un punto de vista de costos 
+modificar las fracciones de muestreo, se de be mantener que la probabilidad de selección sea 
+constante entre los individuos, es decir, se debe mantener la propiedad del diseño muestral EPSEM 
+(Equal Probability of Selection Method)
+4. En el caso de la muestra de refresco de la EPS 2012, no se 
+mantuvo esta propiedad, seleccionando individuos en cada comuna con distintas probabilidades, lo 
+que generó una muestra desbalanceada y con más varianza 5 de la que se alcanzaría con una 
+muestra EPSEM.  
+   
+8. A partir de la revisión de los procedimientos de estas dos primeras etapas (construcción del marco 
+muestral y selección de la muestra de refresco), se concluyó que la muestra seleccionada por el 
+ADJUDICATARIO no tuvo las mismas características de las muestras seleccionadas en rondas 
+anteriores de la EPS, lo que af ectó el diseño original de la encuesta y tuvo efectos que no pueden 
+corregirse en el corto plazo, aunque sí en el mediano plazo. 
+ 
+9. Por otra parte, la revisión de los resultados del trabajo de campo muestran que en la quinta ronda 
+hubieron problemas con el c ontacto de los entrevistados notablemente superiores que en rondas 
+anteriores de la encuesta, lo que generó sesgos en la muestra de entrevistados efectivos: 
+ 
+9.1 Se observó que variables como sexo, edad, estatus en el sistema de pensiones y región fueron 
+todas variables que afectaron la probabilidad de contacto y la probabilidad de respuesta 
+condicional en contacto
+6. 
+ 
+9.2 Si bien, al factor de expansión base se puede aplicar un factor de ajuste por no respuesta 
+estimado a partir de un modelo propensity que consider a las variables antes mencionadas, 
+mientras mayor sea el sesgo y mientras mayor sea el factor de ajuste mayor será la varianza 
+introducida en las estimaciones. 
+ 
+En síntesis, el principal producto de la consultoría para la corrección de los factores de expa nsión fue la re-
+elaboración y cálculo de los mismos para una muestra de 15,995 entrevistados en la EPS 2012 (excluyendo 
+fallecidos y personas con falta de información en variables clave para el cálculo de los factores de 
+expansión). 
+ 
+                                                           
+3 “Fracción de muestreo”, es la proporción que dentro del Marco Muestral representa la muestra 
+seleccionada para aplicar una encuesta. 
+4 Método de igual probabilidad de selección de las unidades muestrales. 
+5 La varianza de un indicador es el rango de valores que puede tomar: a mayor varianza, mayor es también 
+dicho rango y menos confiable dicho indicador. 
+6 La probabilidad de respuesta condicional en contacto, se refiere a la probabilidad de que personas 
+contactadas respondan la encuesta. A veces, una persona contactada puede negarse a responder la 
+encuesta. 
+
+=== PDF PAGE 7 ===
+7 
+ 
+Asimismo, en la consultoría se alerta respecto a que los factores de expansión re -estimados pueden generar 
+estimaciones con varianza elevada comparada con rondas anteriores de la EPS. Se debe tener presente que, 
+estimaciones con mayor varianza, entregan resultados poco robustos  e inestables, con un elevado intervalo 
+de confianza lo que dificulta la toma de decisiones en base a estas estimaciones.  
+ 
+Finalmente, se determinó que el incremento en la varianza de la muestra EPS 2012, con respecto a las 
+rondas anteriores, se debió a dos factores:  
+ 
+1. El proceso de selección de la muestra de refresco no utilizó un diseño EPSEM, donde cada uno 
+de los individuos (dependiendo del tipo de muestra) tiene igual probabilidad de selección . En la 
+EPS (al igual que en la mayoría de las encuestas) se utiliza un muestreo complejo, en dos etapas, 
+para minimizar costos. El muestreo complejo tiende por si sólo a aumentar la varianza con respecto 
+a un muestreo aleatorio simple. Para compensar este  incremento en la varianza se procura 
+seleccionar a cada individuo de la muestra con igual probabilidad, procedimiento que fue realizado 
+en la selección de la muestra 2002 y el refresco del 2004. Sin embargo, en la EPS 2012 no se 
+mantuvo este criterio lo q ue provocó que la muestra de la quinta ronda fuera menos eficiente que 
+la de las rondas anteriores.  
+  
+2. Fuerte sesgo producido por las bajas tasas de contacto en la muestra de la EPS 2012 , lo que 
+resultó en bajas tasas de respuesta si se compara con rondas anteriores, a esto se sumó que la no 
+respuesta no fue aleatoria sino que estuvo en función de las características demográficas y 
+previsionales de los individuos. El sesgo en la no respuesta hizo indispensable incorporar en el 
+factor de expansión un ajuste que permitió compensar por la no respuesta, este factor de ajuste 
+incrementó la varianza de las estimaciones. 
+ 
+De esta forma, y debido a los problemas antes mencionados en la determinación del marco muestral, 
+selección de la muestra, y tasa de respuesta en  la EPS 2012, es probable que el uso de los datos no sea 
+capaz de generar estadísticas representativas de la población con una varianza aceptable, lo que no 
+permitiría obtener estimaciones confiables.  
+ 
+Por tanto, se recomienda que el uso de los datos sea restringido a la muestra, o bien ocupar los factores de 
+expansión corregidos pero teniendo la advertencia y conciencia de que las estimaciones obtenidas pueden 
+presentar varianzas elevadas y poco robustas.  
+ 
+  
+
+=== PDF PAGE 8 ===
+8 
+ 
+ 
+II. Informe de resultados V Ronda de la Encuesta de Protección Social 2012 
+ 
+A continuación se exponen las principales conclusiones metodológicas y los lineamientos estratégicos para la 
+presentación de resultados de la V Ronda de la Encuesta de Protección Social (EPS) de lineados por la Unidad 
+Observatorio Previsional, dependiente de la Dirección de Estudios de la Subsecretaría de Previsión Social.  
+Antecedentes 
+ 
+En virtud de informes elaborados tanto por profesionales de la Dirección de Estudios de la SPS, como por 
+consultores ext ernos (Carolina Casas- Cordero, Pablo Marshall , Edmundo Melipillán y Steven Heeringa)
+7 se 
+concluyó que la V Ronda de la EPS no logró los objetivos definidos en el proceso de licitación de la encuesta, 
+debido a que: 
+1. Los factores de expansión de la encuesta, tanto transversales como longitudinales, no se 
+encontraban debidamente validados. 
+ 
+2. Se recomendó a la SPS revisar, y en caso de ser necesario re-estimar los factores de expansión de la 
+V Ronda EPS. 
+ 
+3. La ausencia de fact ores de expansión metodológicamente válidos, impide el uso de la información 
+recabada en la encuesta con fines de inferencia estadística. 
+ 
+A partir de las recomendaciones de  los expertos referidos, se procedió a la contratación de una consultoría 
+que estuvo a cargo de Javiera Vásquez (experta en el diseño muestral de la EPS ) quien formó parte de los 
+equipos técnicos a cargo de los aspectos metodológicos de la encuesta desde su origen el año 2002 hasta su  
+cuarta versión el año 2009. Los resultados de la consultoría fueron los siguientes: 
+1. En la V Ronda de la EPS no se respetó el diseño original EPSEM (Equal Probability of Selection 
+Method), lo cual significó que las unidades de muestreo ( o personas) no fueran elegidas con igual 
+probabilidad. El problema de  no mantener este tipo de diseño es que , una vez seleccionada la 
+muestra, cualquier corrección posterior en el cálculo de los factores de expansión no subsana e l 
+error de origen que afecta la varianza de los estimadores. 
+ 
+2. Asimismo, la construcción del marc o muestral no fue prolija: existieron diferencias respecto de las 
+proyecciones de población oficiales que calcula el INE. 
+ 
+3. Lo anterior provocó que algunas comunas quedaran sobre -representadas en tanto que otras sub -
+representadas. 
+ 
+4. En consecuencia, las varianzas asociadas de los estimadores se incrementaron significativamente.  
+ 
+5. Como resultado se obtuvo factores de expansión 8 anormalmente elevados para lo que se había 
+observado históricamente en la encuesta. 
+ 
+6. La corrección de factores se centró en el ajuste por no respuesta y en la etapa de post -
+estratificación. Ahora bien, en virtud de que la selección inicial de muestra no es susceptible de 
+corrección, luego de la corrección los factores continúan siendo elevados.  
+ 
+  
+                                                           
+7 Carolina Casas-Cordero: “Comentarios y Observaciones para la Entrega de Resultados EPS 2012”; 
+   Pablo Marshall: “Análisis de la Encuesta de protección Social 2012”; 
+   Edmundo Melipillán y Steven Heeringa: “Análisis Técnico de los Resultados del Levantamiento de Datos de la V Encuesta  
+de Protección Social (2012)”. 
+8 Tanto de corte transversal, como longitudinales. 
+
+=== PDF PAGE 9 ===
+9 
+ 
+Etapas de la EPS V Ronda 2012 
+ 
+El año 2002 comenzó a aplicarse en Chile, por primera vez, una encuesta panel de personas que estuvo 
+orientada a recoger información previsional y, específicamente, del sistema de pensiones. La segunda ronda 
+de esta encuesta se realizó el año 2004, y desde  entonces se denominó “Encuesta de Protección Social” 
+(EPS) la que ha tenido, hasta el año 2012, 5 ediciones. 
+La V Ronda de la Encuesta de Protección Social (EPS), contempló las siguientes etapas: 
+1. Actualización de cuestionario, realizada por el Centro de M icrodatos de la Universidad de Chile 
+(CMD) durante el año 2011. 
+  
+2. Refresco del marco muestral de la encuesta, llevado a cabo por el CMD durante el año 2011. 
+ 
+3. Implementación del trabajo de campo, a cargo del Observatorio Social de la Universidad Alberto 
+Hurtado (OSUAH, en adelante el “adjudicatario”) entre septiembre de 2012 y agosto de 2013.  
+En total, fue un operativo estadístico desarrollado a lo largo de aproximadamente dos años si se considera la 
+preparación de instrumentos (cuestionario), el refresco d e la muestra (para compensar atrición), y el 
+trabajo en terreno propiamente tal. 
+A pesar de los recursos destinados al proyecto, se produjeron los siguientes inconvenientes que 
+obstaculizaron su buen desempeño: 
+1. No se realizaron los esfuerzos suficientes para recontactar al panel de encuestados.  Esto queda de 
+manifiesto por la significativa pérdida de muestra panel, ya que únicamente se  logró ubicar a 
+aproximadamente el 77% de lo que, en un comienzo, se había pro puesto como objetivo el 
+ADJUDICATARIO. 
+ 
+2. No se respetó el diseño muestral EPSEM original aplicado en las cuatro rondas previas de la 
+encuesta. 
+ 
+3. No se siguió la metodología para la elaboración de los factores de expansión, tanto de corte 
+transversal como longitudinales, que se había implementado en las cuatro rondas previas de la 
+encuesta. Como se verá más adelante, todos los expertos consultados concluyeron que los factores 
+de expansión debían recalcularse. 
+ 
+Durante el primer trimestre del año 2013 , se encargó a la empresa STATCOM un trabajo de supervisión 
+externa
+9 que implicó re -entrevistar una sub -muestra de encuestas logradas (522) y no logradas (102) 
+reportadas por el adjudicatario del proyecto10 al mes de diciembre del año 2012. 
+Los primeros problemas de contacto que estaba experimentando el trabajo de campo, quedaron de 
+manifiesto luego del estudio de STATCOM: 
+1. La complicación principal no era el rechazo a responder la encuesta, sino que las direcciones de los 
+entrevistados fueran las correctas para poderlos ubicar. 
+ 
+2. Asimismo, se reportaron algunas inconsistencias entre lo reportado por el oferente adjudicado y lo 
+que los entrevistados revelaban en la re-entrevista aplicada por STATCOM. En particular, se observó 
+que una proporción de encuestas que habían  sido clasificadas como “logradas” en realidad no lo 
+estaban. 
+ 
+                                                           
+9 Informe Final: Supervisión Externa Encuesta de Protección Social. 
+10 La V Ronda de la EPS fue ejecutada por el Observatorio Social de la Universidad Alberto Hurtado. 
+
+=== PDF PAGE 10 ===
+10 
+ 
+A pesar de los síntomas detectados en el trabajo de supervisión externa, reportados en marzo del año 2013, 
+no se tomaron las medidas correctivas que los subsanaran 11. De acuerdo al reporte de STATCOM, era posible 
+todavía a la mitad del proceso de levantamiento re-convertir encuestas “no logradas” si se seguía un 
+protocolo riguroso de contacto del cual no hay evidencia que se hubiese implementado a la luz de lo que se 
+observa en la siguiente tabla: 
+Tabla 1: Distribución de muestra según tipo de marco, V 
+Ronda EPS 2012. 
+Tipo Muestra Logro Propuesta  Brecha  
+Panel 9.484 12.274 2.947 
+Refresco Afiliados Antiguos 1.410 1.060 Logrado 
+Muestra Nuevos Afiliados 3.715 3.823 176 
+Refresco No Afiliados 1.605 1.600 49 
+Total 16.214 18.757 3.172 
+                  Fuente: Elaboración propia, Observatorio Previsional SPS-Mintrab, 2013. 
+De la tabla 1, se deriva que existió una brecha total de 3.172 encuestas no logradas (aproximadamente 17% 
+de la propuesta de encuestas ofertada); más preocupante aún es que, cuando se observa exclusivamente el 
+componente de panel, dicha brecha fue de 2.947 encuestas no logradas  (cerca de 24% de la propuesta para 
+panel ofertada).  
+Se debe tener presente que la propuesta del OSUAH tenía como objetivo, solamente, recontactar un 85% del 
+panel de no fallecidos contactado en la IV Ronda 2009 12; y apenas un 76% del panel de no fallecidos de la III 
+Ronda 2006 de la encuesta. Es decir, la meta del oferente adjudicado en la V Ronda no era particularmente 
+exigente y a pesar de ello no alcanzó dicha meta. 
+Considerando todos estos antecedentes, al finalizar el año  2013 se hizo evidente qu e tal y cual estaba la 
+información recabada durante la V Ronda EPS no era factible de ser publicada; an te ese escenario, las 
+autoridades de la época optaron por revisar exhaustivamente el proceso solicitando los siguientes estudios: 
+1. Carolina Casas- Cordero: Serie de informes entregados a lo largo del año 2013, titulados 
+“Comentarios y Observaciones para la Entrega de Resultados EPS 2012”. 
+ 
+2. Pablo Marshall: “Análisis de la Encuesta de Previsión Social 2012”. Octubre 2013. 
+ 
+3. Edmundo Melipillán y Steven Heeringa: “Análisis Técnico de los Resultados del Levantamiento de 
+Datos de la V Encuesta de Protección Social (2012)”. Octubre 2013. 
+  
+                                                           
+11 No existe ningún documento oficial en el que se indiquen directrices a tomar, para agilizar el re -contacto de 
+informantes, a partir del informe evacuado por STATCOM. Así como tampoco quedó en actas indicación alguna a este 
+respecto. 
+12 Cuadro 3.1 Informe elaborado por Javiera Vásquez (pg.19). 
+
+=== PDF PAGE 11 ===
+11 
+ 
+Cada uno de los consultores referidos sugirió los siguientes cursos de acción: 
+1. Carolina Casas-Cordero: 
+ 
+i. Realizar una validación de resultados. 
+ii. Solicitar al ADJUDICATARIO subsanar errores y omisiones. 
+iii. Recalcular y documentar los factores de expansión transversales y longitudinales. 
+En este informe se señala que el retraso en la entrega de resultados debía subsanarse a la 
+brevedad, y que no era recomendable publicar los resultados que se tenían de la EPS 2012 ni 
+siquiera como “datos prelimninares”.  
+Específicamente, se sugirió la contratación de una consultoría externa para que recalculara los 
+factores de expansión; se indicó que, en la medida en que no se corrigiera este problema, la 
+información de la EPS 2012 no debía utilizarse. 
+2. Pablo Marshall: 
+ 
+i. Corregir el desbalance muestral generado por una no respuesta que no fue 
+aleatoria. 
+ii. Recalcular los factores de expansión. 
+En el informe se indica que, en consideración de que el principal problema del trabajo de campo  
+fue el no contacto, debe analizarse si la no respuesta fue o no aleatoria y corregirla; el sentido de 
+esto era compensar eventuales desbalances, que pudieran h aberse dado, al momento de 
+seleccionar las unidades muestrales. 
+De acuerdo a Marshall, las razones del bajo re-contacto de entrevistados en la EPS 2012 fueron, por 
+un lado las viviendas sin moradores, y más grave aún la no realización de un debido 
+empadronamiento antes de aplicar la encuesta. 
+3. Edmundo Melipillán y Steven Heeringa: 
+ 
+i. Reintroducir la metodología de propensity score para ajustar no respuesta. 
+ii. Recalcular los factores de expansión. 
+En este informe se estableció que, la EPS 2012, tuvo una participación promedio muy inferior a la 
+media histórica observada de esta encuesta al pasar, de aproximadamente 80% de la muestra 
+seleccionada, a cerca del 53% de participación; coincide, con otros de los informes, respecto de los 
+problemas de empadronamiento y re-contacto de informantes que tuvo la V Ronda de la encuesta. 
+Melipillán y Heeringa realizaron, adicionalmente, un análisis respecto de la aleatoriedad de la no 
+respuesta a través de un modelo propensity scores del que concluye ron que la probabilidad de no 
+responder la encuesta dependió de las características personales de los entrevistados. 
+En virtud de los informes elaborados por los consultores externos ya referidos, así como por profesionales de 
+la Dirección de Estudios de la SPS, se concluyó que la V Ro nda de la EPS no logró los objetivos que se 
+definieron en el proceso de licitación. Y se definió una hoja de ruta, para poder publicar los resultados, 
+consistente en: 
+  
+
+=== PDF PAGE 12 ===
+12 
+ 
+ 
+1. Calcular las probabilidades de selección de las unidades muestrales (individuos) , que fueron 
+utilizadas por el ADJUDICATARIO. 
+ 
+2. Recalcular la no respuesta utilizando el método propensity scores. 
+ 
+3. Recalcular el ajuste de post -estratificación, convergiendo a cifras poblacionales (total país) de 
+acuerdo a las proyecciones demográficas (para mayores de 18 años) oficiales del INE. 
+Cabe mencionar que no fue posible que el ADJUDICATARIO subsanara las materias referidas por los expertos, 
+por tanto se optó por corregir los factores de expansión para lo cual se contrató una consultoría con tal fin. 
+Además de los problemas de campo asociados al no contacto con los entrevistados (es decir, atrición), los 
+factores de expansión tanto transversales como longitudinales de la encuesta no fueron validados por los 
+expertos que los revisaron. La recomend ación de todos los informes fue que los factores de expansión 
+debían re-calcularse, ya que: 
+1. Se desconocía la forma en que se calcularon las probabilidades de selección de los individuos 
+muestrales. 
+ 
+2. El nivel de no respuesta rebasó ampliamente lo observado en rondas anteriores de la encuesta. 
+ 
+3. Se alteró el ajuste por no respuesta, transitando de un ajuste del tipo “propensity” a otro del tipo 
+“weighting class”. 
+ 
+  
+
+=== PDF PAGE 13 ===
+13 
+ 
+Estrategia de Corrección de los Factores de Expansión Originales 
+ 
+La ausencia de factores de expansión metodológicamente válidos para la V Ronda de la EPS 2012, impedía el 
+uso de la información recabada en la encuesta con fines de inferencia estadística. Por ello, a partir de las 
+recomendaciones evacuadas por los expertos antes señalados, se procedi ó a la contratación de una 
+consultoría que estuvo a cargo de Javiera Vásquez experta en diseño muestral de la EPS quien formó parte 
+del equipo técnico de la encuesta desde su origen el año 2002 y participó en ella hasta su cuarta versión 
+(2009). Los resultados de la consultoría fueron los siguientes: 
+1. En la V Ronda de la EPS no se respetó el diseño original EPSEM (Equal Probability of Selection 
+Method), lo cual significó que las unidades de muestreo no fueran elegidas de forma proporcional. 
+ 
+2. Lo anterior provocó que algunas comunas quedaran sobre -representadas en tanto que otras sub -
+representadas. 
+ 
+3. Como resultado se obtuvieron factores de expansión anormalmente elevados respecto a lo 
+observado históricamente en la encuesta. 
+ 
+4. En consecuencia, las varianzas asociadas de los estimadores se incrementaron significativamente.  
+ 
+Ahora bien, se debe tener presente que una vez seleccionada la muestra cualquier corrección posterior en el 
+cálculo de los factores de expansión no subsana e l error de origen que afecta la varianza de los estimadores 
+ya que las probabilidades de selección no correspondieron a un diseño EPSEM; en ese contexto, el trabajo 
+realizado consistió en: 
+1. Se re-estimaron las probabilidades de selección y se verificó afijación de la muestra. 
+ 
+2. Con las probabilidades de selección reconstruidas, y bajo el entendido de que no pueden ser 
+modificadas, se utilizaron en las siguientes etapas de la elaboración de los factores de expansión. 
+ 
+3. Se hizo un ajuste por no respuesta, empleando el método propensity; en esta etapa se distinguió 
+entre factores de corte transversal y factores longitudinales. 
+ 
+4. Se ajustó por post -estratificación para obtener los factores de expansión finales, tanto de corte 
+transversal como longitudinales.  
+ 
+5. Los f actores longitudinales se elaboraron, únicamente, para el panel de personas que fue 
+entrevistado en todas las rondas (5.920 individuos). 
+ 
+  
+
+=== PDF PAGE 14 ===
+14 
+ 
+Resultados  
+ 
+Para interpretar adecuadamente los resultados, es importante revisar la estadística descriptiva básica de los 
+factores de expansión corregidos; ello supone tener presente que los factores finales, tanto de corte 
+transversal como longitudinales, se construyeron en tres etapas: 
+ 
+ 
+Tabla 2: Etapas para la elaboración de los factores de 
+expansión corregidos EPS 2012. 
+Etapa Factor 
+Transversal 
+Factor 
+Longitudinal 
+Estimación Probabilidades 
+Selección Si Si 
+Ajuste por no respuesta 
+(probabilidad de respuesta 
+dado contacto) 
+Si No 
+Ajuste por no respuesta 
+(probabilidad de pertenecer 
+al panel a lo largo de las 
+cinco rondas) 
+No Si 
+Ajuste de post-
+estratificación  Si Si 
+Total de Personas 15.995 5.920 
+                                      Fuente: Elaboración propia, Observatorio Previsional SPS-Mintrab, 2015.                     
+                                      
+Respecto a las probabilidades de selección, el trabajo de corrección consistió esencialmente en 
+reconstruirlas ya que esa información no fue entregada por el ADJUDICATARIO ; una vez realizado ello, no 
+podían modificarse y debían usarse tal cual estaban aunque fuesen erróneas y no respetaran el diseño EPSEM 
+original de la encuesta. 
+El ajuste de no respuesta se realizó a través de modelos propensity (propensity scores); la única diferencia, 
+entre los factores de corte transversal y los longitudinales, reside e n que mientras para los primeros se 
+calcula la probabilidad de respuesta condicional en que la persona fue contactada, en los últimos se 
+considera la probabilidad de pertenecer al panel o haber sido entrevistado en las cinco rondas de la EPS
+13. 
+  
+                                                           
+13 Revisar documento de Javiera Vásquez “Factores de Expansión Quinta Ronda Encuesta de Protección Social”. Informe 
+Final, abril de 2015. 
+
+=== PDF PAGE 15 ===
+15 
+ 
+Probabilidades de Selección14 
+ 
+La primer etapa en el cálculo de los factores de expansión, es la estimación de las probabilidades de 
+selección de los individuos de la muestra. Se reconstruyeron éstas probabilidades para, posteriormente, 
+ajustar por no respuesta y post-estratificar. 
+El principal resultado en esta etapa, fue constatar que el diseño muestral de la V Ronda EPS no respetó la 
+normativa EPSEM; esto significa que, ya en la primera fase de elaboración de los factores de expansión, se 
+cometió un error que fo rzosamente se arrastra en las siguientes fases: no pueden intervenirse las 
+probabilidades de selección originales. Adicionalmente, en virtud de que no todas las unidades muestrales 
+tuvieron idéntica probabilidad de selección, las varianzas de los estimador es de la EPS V Ronda son 
+anormalmente elevadas
+15. 
+El desbalance en el diseño muestral de la V Ronda EPS se refleja en la tabla 3, donde se muestran las 
+fracciones de muestreo para la muestra de refresco las comunas de selección forzosa: 
+Tabla 3: Probabilidad de selección, muestra refresco en comunas de selección forzosa 
+Tipo de Muestra Media Mínimo Máximo Mediana N 
+Refresco Antiguo 0,0019934 0,0006891 0,0026545 0,0020148 1036 
+Refresco Nuevos 0,0080324 0,0026205 0,0193258 0,0073089 2938 
+Refresco no Afiliados 0,0023331 0,0010373 0,0063517 0,0021376 1284 
+Total 0,0054507 0,0006891 0,0193258 0,0046583 5258 
+                 Fuente: Elaboración propia, Observatorio Previsional SPS-Mintrab, 2015. 
+ 
+La probabilidad de selección, para cada individuo de una comuna de selección forzosa, debe ser una 
+constante; hasta el año 2009 esa constante fue aproximadamente 0,0038, pero el año 2012 (atendiendo a 
+una disminución de las fracciones de muestreo debido a costos) para el caso del refresco antiguo debía 
+haber sid o 0,0018; del refresco nuevo 0,0067; mientras que del refresco de no afiliados 0,0022. Sin 
+embargo, la tabla 3, demuestra que dichas probabilidades no fueron constantes lo que viola el supuesto 
+EPSEM como se ha mencionado más arriba. 
+La inversa de las prob abilidades de selección, constituye el primer factor de expansión que se calcula (o 
+factor “base”), mismo que posteriormente se corrige por no respuesta y, finalmente, se post-estratifica para 
+obtener el factor final que expande a totales poblacionales definidos en el marco.  
+  
+                                                           
+14 Un listado completo de las probabilidades de selección según comuna, se encuentra disponible en informe de Javiera 
+Vásquez citado en nota 6. 
+15 Ibidem. 
+
+=== PDF PAGE 16 ===
+16 
+ 
+Factores Base 
+ 
+Como se indicó, el factor base es la inversa de la probabilidad de selección de cada individuo muestral. La 
+tabla 4, muestra una estadística descriptiva de los factores base agregados por región: 
+Tabla 4: Factor Base por Región, V Ronda EPS 2012 
+Región media mínimo máximo p25 mediana p75 N 
+0 1.526,3 222,0 6.153,0 530,0 1.397,0 2.065,0 55 
+1 769,1 55,0 5.733,0 237,0 707,0 888,0 219 
+2 731,4 42,0 11.667,0 187,0 544,0 858,0 465 
+3 432,1 11,0 5.172,0 61,0 241,0 526,0 291 
+4 555,0 19,0 9.657,0 154,0 419,0 519,0 609 
+5 585,6 25,0 14.944,0 134,5 459,0 630,0 1.812 
+6 496,4 41,0 8.924,0 156,0 384,0 496,0 931 
+7 478,1 15,0 8.942,0 149,0 420,0 525,0 1.080 
+8 530,3 8,0 10.353,0 130,0 414,0 546,0 1.985 
+9 566,1 14,0 8.522,0 122,0 460,0 627,0 788 
+10 472,5 1,0 11.109,0 91,0 321,0 484,0 738 
+11 393,6 44,0 1.963,0 87,0 302,0 556,0 161 
+12 562,1 57,0 6.760,0 113,0 463,0 578,0 153 
+13 666,2 31,0 31.569,0 215,0 475,0 649,0 6.248 
+14 465,0 28,0 10.683,0 78,0 358,0 451,0 265 
+15 666,8 49,0 11.337,0 206,0 542,0 598,0 196 
+Total 594,4 1,0 31.569,0 162,0 436,0 605,0 15.996 
+Fuente: Elaboración propia, Observatorio Previsional SPS-Mintrab, 2015. 
+ 
+Una vez calculadas las probabilidades de selección, se obtienen sus inversas y se agregan todos los 
+individuos muestrales; el factor base no puede corregirse, ya que depende directamente de la distribución 
+de muestra ejecutada por el ADJUDICATARIO  sobre la que no es posible intervenir (ya que el trabajo de 
+campo de cualquier ronda de la encuesta no se puede repetir). 
+De la tabla 4, se aprecia que en la región Metropolitana hubo una persona con un factor base de 31.569,0 
+que da indicios de los problemas de r epresentatividad de la muestra utilizada el año 2012 originados en un 
+diseño inadecuado que no respetó las premisas metodológicas de las rondas previas de la encuesta. 
+La región “cero”, considera personas que por problemas en el trabajo de campo estuvieron  asignadas a una 
+región. La mediana de factor base para esta subpoblación fue de 1.397,0; es decir, la distribución del factor 
+base en este grupo de individuos sugiere que fueron quienes tuvieron los mayores factores base (o lo que es 
+igual, las menores probabilidades de selección: la relación entre ambos conceptos es inversa). 
+  
+
+=== PDF PAGE 17 ===
+17 
+ 
+Factores Base Ajustados por no Respuesta en el caso de Corte Transversal 
+ 
+Una vez calculado  el factor base se aplicó un modelo de propensity  scores para corregir por no respuesta, 
+en el caso de los factores transversales: 
+Tabla 5: Factores Base Ajustando Respuesta por región, V Ronda EPS 2012 
+Región media mínimo máximo p25 mediana p75 N 
+0 2.550,5 287,0 13.085,0 920,0 2.333,0 3.094,0 55 
+1 1.105,7 71,0 7.423,0 426,0 1.044,0 1.370,0 219 
+2 1.385,6 81,0 24.812,0 362,0 989,0 1.760,0 464 
+3 836,5 23,0 9.484,0 162,0 406,0 1.053,0 291 
+4 1.103,7 42,0 20.537,0 387,0 757,0 1.219,0 609 
+5 861,8 45,0 22.394,0 243,0 627,5 1.016,0 1.812 
+6 747,2 53,0 13.373,0 286,0 553,0 783,0 931 
+7 770,8 29,0 13.021,0 293,0 623,0 893,0 1.080 
+8 897,0 15,0 20.777,0 236,0 659,0 1.050,0 1.985 
+9 922,5 27,0 15.627,0 270,0 683,5 1.146,5 788 
+10 1.029,9 2,0 23.625,0 241,0 685,0 1.156,0 738 
+11 630,7 73,0 3.278,0 156,0 445,0 897,0 161 
+12 996,6 83,0 11.287,0 250,0 710,0 1.094,0 153 
+13 1.262,4 46,0 67.137,0 472,0 904,0 1.341,5 6.248 
+14 906,5 54,0 21.439,0 173,0 698,0 948,0 265 
+15 1.065,4 63,0 20.789,0 353,0 812,0 1.123,5 196 
+Total 1.055,9 2,0 67.137,0 339,0 746,0 1.172,0 15.995 
+Fuente: Elaboración propia, Observatorio Previsional SPS-Mintrab, 2015. 
+ 
+Al ajustar por no respuesta, el factor base tiende a incrementarse; de esta forma, en la región 
+Metropolitana el máximo factor ajustado llegó a 67.137,0. La mediana refleja que, en todas las regiones, 
+este ajuste significó mayores factores de expansión que se traducen en mayores varianzas y en menor 
+capacidad de inferencia estadística. 
+Al analizar la tabla 5, se colige que existen individuos en la muestra que por sí m ismos representan a 
+decenas de miles de personas en la población abierta lo cual es una alerta para quienes utilicen esta 
+información expandida en términos de las conclusiones que puedan derivarse de los datos. 
+A medida que se realizan los distintos ajuste s al factor base el factor resultante se va incrementando, sin 
+embargo en el ajuste de post -estratificación que lleva la población muestral al total del marco, se logra 
+acotar los factores de corte transversal. 
+ 
+  
+
+=== PDF PAGE 18 ===
+18 
+ 
+Factores de Corte Transversal Corregidos 
+ 
+Los factores ajustados por no respuesta, deben pasar por un nuevo ajuste relativo al marco de post -
+estratificación. Es decir, se debe garantizar que la muestra expandida coincida con la población del marco 
+muestral que le dio origen. 
+La tabla 6, muestra un a estadística descriptiva de los ajustes de post -estratificación que se implementaron 
+para hacer calzar la muestra expandida con los totales poblacionales definidos en el marco: 
+ 
+Tabla 6: Coeficientes de ajuste de post-estratificación por región, V Ronda EPS 
+2012 
+Región media mínimo máximo p25 mediana p75 N 
+0 0,59 0,01 1,89 0,57 0,72 0,75 55 
+1 0,85 0,03 1,89 0,73 0,75 0,99 219 
+2 0,83 0,01 1,89 0,73 0,75 0,99 464 
+3 0,86 0,01 1,43 0,73 0,75 1,02 291 
+4 0,80 0,01 1,89 0,73 0,75 0,99 609 
+5 0,82 0,01 1,89 0,73 0,75 0,99 1.812 
+6 0,80 0,01 1,63 0,73 0,75 0,99 931 
+7 0,82 0,01 1,89 0,73 0,75 0,99 1.080 
+8 0,81 - 1,89 0,73 0,75 0,99 1.985 
+9 0,79 - 1,89 0,73 0,75 0,99 788 
+10 0,83 0,01 1,89 0,73 0,75 0,99 738 
+11 0,83 0,01 1,89 0,73 0,75 0,99 161 
+12 0,85 0,01 1,43 0,73 0,75 0,99 153 
+13 0,82 - 1,89 0,73 0,75 0,99 6.248 
+14 0,84 0,01 1,89 0,73 0,75 0,99 265 
+15 0,79 0,01 1,63 0,73 0,75 0,99 196 
+Total 0,82 - 1,89 0,73 0,75 0,99 15.995 
+              Fuente: Elaboración propia, Observatorio Previsional SPS-Mintrab, 2015. 
+ 
+La mediana y la media referidas en la tabla 6, se encuentran por debajo del valor uno, lo que indica que los 
+ajustes de post-estratificación sirvieron para aminorar la magnitud de los factores de expansión. Ahora bien, 
+hubo algunos casos en que el ajuste fue al alza, según lo denotan máximos cercanos a dos. 
+ 
+  
+
+=== PDF PAGE 19 ===
+19 
+ 
+ 
+ 
+Tabla 7: Factores de Expansión Corregidos por región, V Ronda EPS 2012 
+Región mean min max p25 p50 p75 N 
+0 1.075,1 23,0 5.195,0 564,0 823,0 1.559,0 55 
+1 885,3 11,0 5.443,0 450,0 724,0 1.024,0 219 
+2 1.060,0 2,0 23.392,0 338,0 754,5 1.316,0 464 
+3 602,6 1,0 5.874,0 119,0 242,0 837,0 291 
+4 842,2 1,0 21.140,0 361,0 539,0 858,0 609 
+5 655,4 1,0 16.745,0 215,5 466,0 755,0 1.812 
+6 553,7 1,0 9.806,0 208,0 428,0 580,0 931 
+7 590,3 1,0 9.547,0 256,0 467,5 654,0 1.080 
+8 661,9 - 15.536,0 168,0 510,0 777,0 1.985 
+9 658,0 - 11.685,0 267,0 510,0 828,0 788 
+10 766,8 1,0 17.674,0 151,0 511,0 819,0 738 
+11 491,7 2,0 5.530,0 94,0 333,0 694,0 161 
+12 816,4 4,0 13.477,0 262,0 576,0 864,0 153 
+13 961,2 - 66.347,0 373,0 682,0 1.058,0 6.248 
+14 686,6 1,0 15.720,0 180,0 483,0 763,0 265 
+15 791,2 1,0 20.544,0 390,0 595,0 829,0 196 
+Total 795,2 - 66.347,0 267,0 559,0 891,0 15.995 
+  Fuente: Elaboración propia, Observatorio Previsional SPS-Mintrab, 2015. 
+ 
+La tabla 7, corrobora que el ajuste de post-estratificación moderó la magnitud de los factores de expansión; 
+de esta forma los máximos se redujeron y, por ejemplo, en la región Metropolitana el individuo que tenía el 
+mayor factor de expansión pasó de 67.137,0 a 66.347,0.  
+Cabe notar que hubo valores mínimos menores a uno, pero que se imputan al valor uno sin que ello afecte 
+los resultados generales obtenidos ya que son muy pocos casos.  
+  
+
+=== PDF PAGE 20 ===
+20 
+ 
+La tabla 8 muestra los resultados finales, ya expandidos por región de la V Ronda EPS 2012: 
+Tabla 8: Población Expandida Factor Corregido por Región, V Ronda 
+EPS 2012 
+Región Hombres Mujeres Total Distribución 
+Regional 
+Tarapacá 111.041 97.372 208.413 1,6% 
+Antofagasta 247.602 235.295 482.897 3,8% 
+Atacama 109.230 89.693 198.923 1,6% 
+Coquimbo 259.668 245.996 505.664 4,0% 
+Valparaíso 561.751 639.270 1.201.021 9,4% 
+O'Higgins 225.313 327.042 552.355 4,3% 
+Maule 337.065 312.987 650.052 5,1% 
+Biobío 666.297 692.506 1.358.803 10,7% 
+Araucanía 265.860 293.630 559.490 4,4% 
+De los Lagos 288.905 299.785 588.690 4,6% 
+Aysén 35.214 45.781 80.995 0,6% 
+Magallanes 60.528 58.594 119.122 0,9% 
+Metropolitana 2.876.331 2.944.005 5.820.336 45,8% 
+De los Ríos 80.387 107.655 188.042 1,5% 
+Arica 74.824 69.770 144.594 1,1% 
+(En blanco) 24.989 34.139 59.128 0,5% 
+Total 6.225.005 6.493.520 12.718.525 100,0% 
+1/Cálculo en base a población de 18 años y más. 
+                                             Fuente: Elaboración propia, Observatorio Previsional SPS-Mintrab, 2015. 
+La población total de 18 años y más, expandida, calza con la proyección 2011 del INE que es de 12.718.513; 
+la diferencia de doce personas se debe a redondeo de cifras. Más aún, cuando se corrigen las personas que 
+tenían un factor final menor a uno y se llevan a uno el total expan dido nacional suma 12.718.539; cifra ésta 
+última, marginalmente distinta al total oficial del INE. 
+Tabla 9: Comparación de Factores de Expansión Finales, V Ronda EPS 
+Indicador  
+Factor de 
+Expansión 
+ADJUDICATARIO1 
+Factor de Expansión 
+Corregido2 
+Factor de Expansión 
+Corregido Imputado2 
+Tamaño Muestra 15.998 15.995 15.995 
+Muestra Expandida 14.329.757 12.718.525 12.718.539 
+Diferencia respecto a 
+proyecciones del INE 776.596,0 12,0 26,0 
+Media 895,7 795,2 795,2 
+Mínimo 0,0 0,0 1,0 
+Máximo 13.056,0 66.347,0 66.347,0 
+p25 551,0 267,0 267,0 
+Mediana 757,0 559,0 559,0 
+p75 1.077,0 891,0 891,0 
+p99 3.490,0 5.123,0 5.123,0 
+ 
+Población mayor 
+o igual a 15 
+años 
+Población mayor o igual a 18 años 
+Proyección INE3 13.553.161 12.718.513 
+ 1/ Incluye personas de 15 años y más. 
+ 2/ Incluye personas de 18 años y más.  
+ 3/ proyecciones del INE año 2011. 
+                             Fuente: Elaboración propia, Observatorio Previsional SPS-Mintrab, 2015. 
+La tabla 9 es un resumen comparativo entre los factores finales de corte transversal elaborados por el 
+ADJUDICATARIO, y aquéllos corregidos por Javiera Vásquez; en el primer caso, la comparación es relativa a 
+la población mayor de 15 años en tanto que en el segundo a la población mayor de 18 años. Como se 
+observa, el factor transversal del ADJUDICATARIO se aleja sensiblemente de las proyecciones del INE para el 
+
+=== PDF PAGE 21 ===
+21 
+ 
+año 2011; en contrapartida, los factores corregidos por Javiera Vásquez no tienen diferencias significativas 
+respecto de las proyecciones oficiales de población16. 
+  
+                                                           
+16 Respecto de los factores corregidos por Javiera Vásquez, la diferencia entre los corregidos y los corregidos -imputados 
+estriba en que éstos últimos están restringidos a tener como mínimo el valor uno. 
+
+=== PDF PAGE 22 ===
+22 
+ 
+Factores Longitudinales 
+ 
+Los factores longitudinales solamente fueron calculados por Javiera Vásquez, el ADJUDICATARIO  no entregó 
+este cálculo; estos factores, establecen la cifra poblacional de personas que se han mantenido en la muestra 
+en todas las rondas de la EPS 17. En la tabla 2 se indica que, el n úmero de personas que ha participado de 
+todas las rondas hasta la V, fue de 5.920 individuos. 
+Tabla 10: Factores de Expansión Longitudinales, V Ronda EPS 2012 
+Región media mínimo máximo p25 mediana p75 N 
+0 2.741,5 176,0 7.625,0 393,0 3.124,5 4.235,0 18 
+1 2.189,2 115,0 11.105,0 325,0 1.425,0 2.877,0 66 
+2 4.940,6 39,0 29.210,0 1.521,0 2.156,0 6.800,0 103 
+3 6.166,0 32,0 31.783,0 1.104,0 1.634,0 5.665,0 65 
+4 1.365,0 26,0 4.579,0 186,0 584,0 3.072,0 259 
+5 1.367,8 5,0 7.680,0 179,0 813,0 2.639,0 703 
+6 1.223,5 4,0 9.859,0 137,0 658,0 2.468,0 433 
+7 1.161,4 5,0 7.151,0 160,0 546,5 2.125,0 460 
+8 1.446,8 13,0 16.602,0 215,0 817,0 3.106,0 714 
+9 1.516,4 13,0 6.212,0 196,0 866,0 3.426,0 303 
+10 1.918,9 12,0 66.707,0 209,5 780,0 3.510,0 292 
+11 1.710,4 98,0 5.440,0 243,0 360,0 4.344,0 43 
+12 1.392,7 59,0 5.256,0 224,0 301,0 1.458,0 57 
+13 2.199,2 13,0 232.748,0 296,0 1.098,0 3.532,0 2.239 
+14 2.092,0 14,0 19.127,0 201,0 820,0 3.899,0 81 
+15 1.576,5 7,0 4.260,0 197,0 1.012,0 3.357,5 84 
+Total 1.843,6 4,0 232.748,0 233,5 880,0 3.009,0 5.920 
+                                 Fuente: Elaboración propia, Observatorio Previsional SPS-Mintrab, 2015. 
+Los factores longitudinales son aún mayores que los de corte transversal, en la región Metropolitana una 
+persona llega a tener un factor de 237.748,0 lo que no es razonable y se debe al problema más usual en toda 
+muestra de panel: la pérdida de muestra por atrición. Nunca se han publicado los factores longitudinales de 
+la EPS, esta sería la primera oportunidad en que se realiza y por lo mismo debe advertirse a los usuarios. 
+  
+                                                           
+17 En rigor, se pueden establecer distintos tipos de factores longitudinales; se optó por solamente calcular los de la 
+población que se ha mantenido en todas las rondas de la EPS. 
+
+=== PDF PAGE 23 ===
+23 
+ 
+Conclusiones 
+ 
+A partir de las recomendaciones realizadas por los expertos respecto a los resultados de la EPS V Ronda 
+2012, así como de la corrección de los factores de expansión que se implement ó, la Subsecretaría de 
+Previsión Social tomó la decisión de liberar las bases de datos atendiendo a sus obligaciones con respecto a 
+la Ley de Transparencia. Sin embargo, se enfatiza que esta ronda de la EPS no fue un producto logrado y, 
+por lo mismo, no de be utilizarse con fines de inferencia estadística como tampoco en el diseño de políticas 
+públicas. 
+La sexta ronda de la EPS, actualmente en ejecución, se está haciendo cargo de mitigar los siguientes 
+problemas no resueltos por la ronda previa: 
+1. Empadronar, con debida anticipación y bajo normas de muestreo estrictas, a la muestra de refresco 
+de nuevos no afiliados. 
+2. Localizar y contactar, con antelación, a la muestra de refresco de nuevos afiliados. 
+3. Recuperar a la mayor cantidad posible de personas del panel, perdidas durante la quinta ronda. 
+4. Reparar el diseño EPSEM original de la EPS. 
+5. Fidelizar a los integrantes del panel, a través del diseño de incentivos apropiados de participación. 
+Asimismo, la experiencia de la quinta ronda ha significado un cambio en la estrategia de adjudicación del 
+proyecto. En ese sentido, para la nueva ronda se optó por un esquema en el que no se dependiera de un 
+único proveedor, de suerte que se ha impreso una mayor competencia en el proceso de ejecución de la 
+encuesta que exige a la  Subsecretaría un mayor control de cada etapa del mismo y, a los proveedores, un 
+mayor esfuerzo para ganarse las adjudicaciones velando por aumentar la calidad en sus entregas. 
+ 
+ 
+  
+
+=== PDF PAGE 24 ===
+24 
+ 
+III. Anexos 
+ 
+Junto al presente dossier se publican, en forma separada, los siguientes anexos: 
+1. Guía Técnica para el acceso a las bases de datos de la EPS V Ronda 2012. 
+ 
+2. Informe de Supervisión Externa Encuesta de Protección Social 2012. 
+ 
+3. Carolina Casas-Cordero: “Comentarios y Observaciones para la Entrega de Resultados EPS 2012”.  
+Informe 4. Diciembre de 2013. 
+ 
+4. Pablo Marshall: “Análisis de la Encuesta de Previsión Social 2012”. Octubre 2013. 
+5. Edmundo Melipillán y Steven Heeringa: “Análisis Técnico de los Resultados del Levantamiento de 
+Datos de la V Encuesta de Protección Social (2012)”. Octubre 2013. 
+ 
+6. Javiera Vásquez: “Factores de Expansión Quinta Ronda Encuesta de Protección Social”. Informe 
+Final. Abril de 2015. 
+ 
+  
+
+=== PDF PAGE 25 ===
+25 
+ 
+ 
+ 
+ 

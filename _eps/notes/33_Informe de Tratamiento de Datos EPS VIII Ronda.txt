@@ -1,0 +1,1090 @@
+
+=== PDF PAGE 1 ===
+Informe de Tratamiento de datos VIII Ronda Encuesta de Protección Social                                           1 
+ 
+ 
+ 
+VIII RONDA ENCUESTA DE 
+PROTECCIÓN SOCIAL 
+ 
+Informe de 
+Tratamiento de Datos 
+
+
+=== PDF PAGE 2 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           2 
+ 
+  
+ 
+Contenido 
+ 
+1. INTRODUCCIÓN ................................................................................................................................... 3 
+2. VALIDACIONES Y EDICIÓN ............................................................................................................... 4 
+2.1 Generalidades de las validaciones y edición ................................................................................... 4 
+2.2 Bases crudas y la construcción de las bases de datos finales .......................................................... 4 
+2.3 Bases de datos entregadas ............................................................................................................... 5 
+2.3.1 Acerca de las variables codificadas ................................................................................................. 6 
+2.3.2 Acerca de las variables editadas ...................................................................................................... 7 
+2.4 Validaciones .................................................................................................................................... 7 
+2.4.1 Outliers ............................................................................................................................................ 9 
+3. IMPUTACIONES .................................................................................................................................. 11 
+3.1 Consideraciones previas ................................................................................................................ 11 
+3.2 Mecanismos de pérdida de datos ................................................................................................... 12 
+3.3 Eliminación de variables de tramo en la recolección de información ........................................... 13 
+3.4 Imputación de nivel educacional ................................................................................................... 13 
+3.5 Imputación de variables de ingreso y arriendo .............................................................................. 14 
+3.5.1 Imputación de ingreso promedio mensual laboral ........................................................................ 19 
+3.5.2 Imputación de arriendo .................................................................................................................. 20 
+3.6 Consideraciones finales sobre imputaciones ................................................................................. 22 
+4. REFERENCIAS ..................................................................................................................................... 23 
+5. ANEXOS ............................................................................................................................................... 25 
+5.1 ANEXO 1 – Edición de la base de datos ....................................................................................... 25 
+ 
+ 
+  
+
+=== PDF PAGE 3 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           3 
+ 
+  
+ 
+1. INTRODUCCIÓN 
+La creación de las bases de datos de la EPS VIII Ronda implicó un exhaustivo proceso de validación y edición 
+para asegurar la calidad y consistencia de los datos. Utilizando el software nativo de IPSOS, iField, las bases 
+de datos fueron inicialmente generad as y descargadas en formato SPSS, para luego ser migradas a Stata. 
+Este proceso técnico garantizó que las bases nativas fueran adecuadamente tratadas y estructuradas para 
+su posterior análisis. 
+El tratamiento de las bases de datos desde su versión 'cruda' se realizó íntegramente en Stata 14 MP. Este 
+proceso comenzó con una revisión detallada de las bases crudas, que incluían información de contacto, 
+datos recolectados en las entrevistas y llaves para cruzar información pública con el levantamiento 
+realizado. A través de un software desarrollado en Stata, las bases crudas de vivos, personas fallecidas y en 
+situación de discapacidad se transformaron en bases finales sin intervención humana, siguiendo una lógica 
+de estructura 'wide' para datos contemporáneos y 'long' para datos que involucraban múltiples episodios 
+o personas. 
+Finalmente, los archivos generados se entregaron en formato Stata '.dta' , con nombres que indican 
+claramente a qué módulo del cuestionario pertenecen y si están dirigidos al e ntrevistado(a) u hogar. La 
+codificación de variables se llevó a cabo para estandarizar la información heterogénea proporcionada por 
+los(as) entrevistados(as), y se realizaron ediciones para corregir “outliers”, valores inconsistentes y otros 
+errores, asegurando que los datos fueran fiables y utilizables para análisis estadísticos exhaustivos. 
+ 
+ 
+ 
+ 
+  
+
+=== PDF PAGE 4 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           4 
+ 
+  
+ 
+ 
+2. VALIDACIONES Y EDICIÓN  
+2.1 Generalidades de las validaciones y edición 
+A continuación, se detallan y explican las acciones de validación y edición que fueron necesarias para la 
+creación de las bases finales de datos de la EPS VIII Ronda. Las bases de datos fueron generadas a través 
+del software nativo de IPSOS, iField. Estas bases nativas se descargaron en formato SPSS, y luego se 
+migraron a Stata. 
+ 
+2.2  Bases crudas y la construcción de las bases de datos finales 
+El tratamiento total de las bases de datos, desde su versión “cruda”, es decir, la versión original generada 
+por el software nativo de recolección de datos se ha realizado en Stata 14 MP . El proceso inició con la 
+revisión de las bases iniciales (crudas), lo que incluyó la base de contacto, que describe el trabajo de campo 
+y proporciona información sobre el resultado de cada visita a los hogares; la base de datos recolectada en 
+las entrevistas ; y las llaves que permiten cruzar información pública con el leva ntamiento de datos  
+realizado1. 
+El software desarrollado en Stata procesa los tres tipos de bases crudas correspondientes a los tres tipos 
+de cuestionarios (vivos, personas fallecidas y en situación de discapacidad ) y construye automáticamente 
+las bases finales sin necesidad de intervención humana. Respecto a la estructura de las bases de datos 
+generadas, se siguió la siguiente lógica: 
+• Si la información en un módulo específico es contemporánea para el Entrevistado(a), la base de 
+datos resultante es de tipo ' wide'. Esto significa que cada columna representa una variable 
+independiente y cada fila corresponde a un Entrevistado(a), con toda su información contenida en 
+una sola línea o registro de observación en la base de datos. 
+• Si la información involucraba múltiples episodios o diferentes personas  relacionadas con el (la) 
+entrevistado(a), la base de datos resultante es de tipo ' long'. En este caso,  cada columna sigue 
+representando una variable independiente , pero cada fila se refiere a una persona o episodio 
+asociado con un entrevistado(a), por lo que puede haber muchas líneas o registros de observaciones 
+dentro de la base de datos que hacen referencia al mismo entrevistado(a). Cada uno de estos 
+registros o filas se identifica con la variable 'orden', que indica el orden en que se debe presentar la 
+información según las instrucciones de cada módulo en el cuestionario. 
+ 
+1 Todos los contrastes que implicaron el uso de información proveniente de olas anteriores se hicieron empleando información 
+pública que se puede acceder desde la web de la SPS. 
+
+=== PDF PAGE 5 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           5 
+ 
+  
+ 
+ 
+Como ejemplo de este último caso , en el “módulo I: Historia Individual” del cuestionario de Vivos, 
+el módulo se dividió en 3 partes debido a que la información contenida en él tenía tres núcleos bien 
+definidos: (i) información contemporánea d el Entrevistado(a) ('wide'), (ii) enumeración de 
+información de parejas ('long'), y (iii) enumeración de información de hijos(as) ('long'). 
+En definitiva, cada base de datos tiene una estructura particular que se adapta al tipo de información que 
+contiene. En general, los programas utilizados para el análisis y estudio estadístico de datos cuentan con 
+funciones que permiten cambiar fácilmente los formatos de las bases de datos, en caso de que la forma en 
+que se entregan (o se hacen disponibles públicamente) no se ajuste a los objetivos del usuario. 
+ 
+2.3  Bases de datos entregadas 
+Los archivos generados durante el proceso están en formato Stata '.dta'. Las etiquetas utilizadas en los 
+archivos corresponden al nombre de los módulos de cada cuestionario de la encuesta y a quién está dirigido 
+el cuestionario ( entrevistado(a), hogar u otro ). En todos los casos, es la persona  entrevistada quien 
+responde la encuesta, o un informante idóneo en los casos de personas fallecidas o personas en situación 
+de discapacidad. Los archivos de las bases de datos tienen los siguientes sufijos que expresan su contenido: 
+• MODULO_X_Contenido.dta: corresponde a la base de datos del módulo de referencia en formato 
+Stata 14. 
+En la Tabla 2.1 se expone cada una de las bases de datos  entregadas. En esta, se identifica si forma parte 
+del cuestionario de fallecidos, personas en situación de discapacidad o vivos. Dentro de la misma, también 
+se identifica el módulo al que corresponde cada base de datos. Adicionalmente, también está la columna 
+“Tipo de registro” que identifica la combinación que hace un registro único, por ejemplo, si la base de datos 
+representa a cada persona una única vez  (un registro por persona) o si una observación es única con el 
+identificador de la persona y la variable orden (definida en el anterior ítem). 
+ 
+Tabla 2.1. Listado de bases de datos entregadas 
+Orden Cuestionario Base de datos Módulo Tipo de registro 
+1 Vivos MODULO_A_Carreras Módulo A Registros duplicados (long) 
+2 Vivos MODULO_A_Entrevistado Módulo A Registros únicos 
+3 Vivos MODULO_B_Historia_Laboral Módulo B Registros duplicados (long) 
+5 Vivos MODULO_B_Situacion_Actual Módulo B Registros únicos 
+6 Vivos MODULO_C_Entrevistado Módulo C Registros únicos 
+7 Vivos MODULO_D_Entrevistado Módulo D Registros únicos 
+8 Vivos MODULO_E_Entrevistado Módulo E Registros únicos 
+
+=== PDF PAGE 6 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           6 
+ 
+  
+ 
+9 Vivos MODULO_F_Entrevistado Módulo F Registros únicos 
+10 Vivos MODULO_G_Entrevistado Módulo G Registros únicos 
+11 Vivos MODULO_H_Entrevistado Módulo H Registros únicos 
+12 Vivos MODULO_Hogar Módulo Hogar Registros duplicados (long) 
+13 Vivos MODULO_I_Entrevistado Módulo I Registros únicos 
+14 Vivos MODULO_I_Hijos Módulo I Registros duplicados (long) 
+15 Vivos MODULO_I_Parejas Módulo I Registros duplicados (long) 
+16 Vivos MODULO_J_Entrevistado Módulo J Registros únicos 
+17 Vivos MODULO_L_Entrevistado Módulo L Registros únicos 
+18 Vivos MODULO_L_CDH Módulo L Registros duplicados (long) 
+19 Vivos MODULO_L_CFH Módulo L Registros duplicados (long) 
+20 Vivos MODULO_Q_Entrevistado Módulo Q Registros únicos 
+21 PSD MODULO_A_Hogar Módulo A Registros duplicados (long) 
+22 PSD MODULO_P Módulo P Registros únicos 
+23 PSD MODULO_P_ Historia_Laboral Módulo P Registros duplicados (long) 
+24 Fallecidos MODULO_A_Hogar Módulo A Registros duplicados (long) 
+25 Fallecidos MODULO_M Módulo M Registros únicos 
+26 Fallecidos MODULO_M_ Historia_Laboral Módulo M Registros duplicados (long) 
+Fuente: elaboración propia. 
+ 
+2.3.1 Acerca de las variables codificadas 
+La encuesta de la EPS en su VIII Ronda requirió un trabajo exhaustivo y extenso de codificación que se 
+realizó de dos maneras: 
+• La codificación de las glosas de las variables de ocupación principal y de actividad económica 
+del lugar de trabajo de los entrevistados, basándose en las nomenclaturas CINE, CIUO -08, 
+CIUO-08.CL y CIIU Rev.4. y CISE. 
+ 
+• La codificación de preguntas abiertas o semiabiertas, que en su mayoría incluyen 
+descripciones de situaciones diferentes a las establecidas en las categorías ofrecidas por el 
+o la encuestador(a) a través de un 'tarjetero'. Estas alternativas son parte del diseño del 
+cuestionario y, en general, son cubren de manera exhaustiva las posibles situaciones. Sin 
+embargo, las personas entrevistadas pueden no entender la pregunta, no prestar atención 
+a las alternativas disponibles en el tarjetero o sentir la necesida d de dar algún detalle 
+adicional que consideran no está representado en estas opciones.  
+
+=== PDF PAGE 7 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           7 
+ 
+  
+ 
+Para mayor detalle del proceso de codificación, véase el reporte especialmente desarrollado sobre este 
+proceso (‘EPS 2023 - Reporte de Codificación EPS VIII.docx’). 
+ 
+2.3.2 Acerca de las variables editadas 
+En general, hay tres tipos de ediciones  sobre las variables: outliers, valores inconsistentes con el contexto 
+y valores inconsistentes. En la sección “Anexos” se explica el contenido de cada uno de estos y se detallan 
+las variables donde se incurrió en cada una. 
+ 
+2.4 Validaciones 
+Siendo la EPS una encuesta compleja, tanto por el contenido y profundidad de sus preguntas, como por el 
+esfuerzo que implica para el entrevistado responderlas, los datos recolectados requieren asegurar su 
+calidad, completitud, homogeneidad y adecuación de la información recolectada a los criterios establecidos 
+y a las buenas prácticas.  
+Una parte de este proceso corresponde a la validación de datos que permite asegurar que todas las piezas 
+de información cumplan con la calidad y los criterios establecidos en cuanto al flujo de los cuestionarios 
+(orden y correspondencia de las preguntas), filtros de entrada, rangos de respuesta, valores extremos 
+(outliers) y valores raros (incoherentes con el contexto). La validación se realiza en dos etapas del trabajo:  
+• concomitante, es decir, al tiempo que se está recolectando la información, mediante las 
+validaciones, controles de saltos de cuestionario, y verificación de rangos de respuestas.  
+• Ex post, mediante la aplicación de mallas de validación generales que corroboran la 
+correspondencia y rangos de las respuestas, flujo del cuestionario, y coherencia global de la 
+información recolectada. En esta etapa, las bases de datos pueden ser sujet as de edición 
+para asegurar cuadratura o coherencia de la información recolectada. 
+Estos ajustes realizados a las bases de datos permiten obtener una encuesta que se comporta como una 
+unidad informativa tal y como fue concebida. 
+Nótese que, en todos los casos, las actividades se desarrollan a partir de las validaciones, que corresponden 
+a las actividades que establecen la manera en que serán tratadas las situaciones que se consideran 
+anómalas. 
+El trabajo de validación expost se realiz ó mediante programación de mallas de validación tipo batch, las 
+que permiten ser replicadas en las distintas validaciones parciales. Ipsos utiliz ó el programa STATA para la 
+malla de validación, cuyo código fue construido en base a un archivo Excel de apoyo que contenía los 
+criterios de revisión. 
+
+=== PDF PAGE 8 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           8 
+ 
+  
+ 
+La malla de validación programada por Ipsos permite: 
+• Incluir validaciones lógicas complejas 
+• Automatización de ejecución de reportes y de validación. 
+• Validar según tipos de preguntas 
+• Generar un reporte de validación, de acuerdo con las inconsistencias encontradas en la 
+ejecución de la malla Batch, pudiendo con ello detectar rápidamente cuál es la pregunta y 
+registro donde se ha producido una inconsistencia. 
+• Obtención de resumen de casos no válidos, vacíos o incompletos 
+• Detectar valores fuera de rango. 
+El funcionamiento general de la malla de validación es el siguiente: 
+• Mediante un código en STATA, se valida cada variable para determinar si cuenta con 
+información en los casos en que correspondía una respuesta. 
+• Se identifica aquellos casos en que la respuesta no se encuentra dentro de los valores válidos 
+• Se identifica aquellas variables que cuentan con respuesta cuando no debería haber, 
+siguiendo el flujo lógico de la encuesta. 
+Para cada chequeo lógico, pregunta a pregunta,  se genera una  variable auxiliar que registra la revisión y 
+que asume valores 0 (ausencia de error) y valores 1 (error). Con esto es posible detectar la casilla específica 
+y el caso que tiene alguna anomalía que es necesario subsanar. 
+La siguiente tabla muestra cómo se generan las variables auxiliares para detección de errores de flujo y 
+rango, tomando como ejemplo algunas variables del módulo A: 
+ 
+Tabla 2. Ejemplo de construcción de reglas de validación de flujo y rango 
+Nombre 
+de 
+Variable 
+Flujo  Comandos (=0 si OK, =1 si ERROR) Comandos (=0 si OK, =1 si ERROR) Respuestas 
+Válidas 
+a2_a !=. gen aux_a2_a=0 if (a2_a!=.) replace aux_a2_a=1 if (a2_a==.) 1-3 
+a8 !=. if (a2_a==1 | 
+a2_a==3) 
+gen aux_a8=0 if (a8!=.) & (a2_a==1 | 
+a2_a==3) 
+replace aux_a8=1 if (a8==.) & 
+(a2_a==1 | a2_a==3) 1-2 
+
+=== PDF PAGE 9 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           9 
+ 
+  
+ 
+a9 !=. if (a2_a==1 | 
+a2_a==3) 
+gen aux_a9=0 if (a9!=.) & (a2_a==1 | 
+a2_a==3) 
+replace aux_a9=1 if (a9==.) & 
+(a2_a==1 | a2_a==3) 1-120 
+a8_a !=. if (a9>4) gen aux_a8_a=0 if (a8_a!=.) & (a9>4) replace aux_a8_a=1 if (a8_a==.) & 
+(a9>4) 1-6:88:99 
+a8_a_e !="" if (a8_a==6) gen aux_a8_a_e=0 if (a8_a_e!="") &  
+(a8_a==6) 
+replace aux_a8_a_e=1 if 
+(a8_a_e=="") &  (a8_a==6)   
+a8_b 
+!=. if (a9>4) & 
+((a8==1 & 
+a8_a==2) | (a8==2 
+& a8_a==1) | 
+(a8_a==5 | 
+a8_a==6 )) 
+gen aux_a8_b=0 if (a8_b!=.) & (a9>4) 
+& ((a8==1 & a8_a==2) | (a8==2 & 
+a8_a==1) | (a8_a==5 | a8_a==6 )) 
+replace aux_a8_b=1 if (a8_b==.) & 
+(a9>4) & ((a8==1 & a8_a==2) | 
+(a8==2 & a8_a==1) | (a8_a==5 | 
+a8_a==6 )) 
+1-2:88:99 
+Fuente: elaboración propia. 
+ 
+La tabla contiene distintas  columnas con las que se construyen las reglas de validación, que incluyen  las 
+condiciones de entrada a la pregunta (filtro), los rangos de la variable y la corrección en el caso de que la 
+pregunta por el flujo de la encuesta no deba tener valores . Finalmente, el proceso genera una variable 
+auxiliar, dicotómica, donde 0=no existe error, y 1=contiene error.  
+ 
+2.4.1 Outliers 
+Los outliers o valores extremos, son respuestas que se encuentran fuera de rangos razones para la 
+distribución de una variable (ya sea por encima o por debajo de la distribución). En general estos valores se 
+deben a errores de tipeo del encuestador o de reporte del Entrevistado(a), y que no generan resultados 
+plausibles. Mayoritariamente,  estos casos se marcan como 'No sabe' para que el usuario de la base decida 
+si someterlos a procesos de imputación o validaciones más exhaustivas. Los cortes se definen con una lógica 
+especial para cada caso, dependiendo de la pregunta y los valores que representan. 
+Caso distinto opera para para las variables de arriendo e ingreso, donde las imputaciones de los outliers 
+siguen las reglas explicadas más adelante en el capítulo de imputaciones.  
+Para todas las variables “Especifique”, los valores numéricos, o combinaciones de valores numéricos con 
+alfanuméricos en sus respuestas, fueron tratados en la codificación. Por lo tanto, la variable original 
+contiene estos datos tal como fueron recolectado s, mientras que la variable de codificación contiene los 
+valores codificados en que esas respuestas numéricas fueron pasadas a “No sabe”. 
+
+=== PDF PAGE 10 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           10 
+ 
+  
+ 
+Al final de este reporte, se anexa una lista de ediciones e imputaciones que no siguen un criterio genérico 
+estadístico, sino que más bien un análisis caso a caso que resulta de la revisión particular de cada caso en  
+ 
+  
+
+=== PDF PAGE 11 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           11 
+ 
+  
+ 
+3. IMPUTACIONES  
+3.1 Consideraciones previas 
+Como toda encuesta compleja, la E ncuesta de Protección Social VIII Ronda ha requerido de ajustes 
+posteriores al resultado del trabajo de campo. Estos ajustes se realizan para asegurar calidad, completitud 
+y adecuación de la información recolectada a los criterios establecidos y a las buenas prácticas. Dado que 
+las encu estas son el producto del trabajo de personas y el aporte de información de los (as) 
+entrevistados(as), se encuentran sujetas a la falibilidad habitual de cualquier acción humana. 
+Para resolver el problema de no respuesta al ítem, es decir, cuando las personas deciden no entregar 
+información en alguna pregunta particular, se han realizado imputaciones siguiendo los procedimientos 
+detallados en esta sección. Las razones para la no respuesta al ítem son variadas: dificultades para entender 
+la pregunta, falta de concentración en el momento, dificultades para lograr condensar y resumir o sintetizar 
+la información, esfuerzo involucrado en la elaboración de  la respuesta, problemas de memoria, etc. El 
+resultado es información incompleta , que habitualmente se codifica como “No Sabe / No Responde”. Sin 
+embargo, esa información puede ser vital para entender el comportamiento de la población. 
+Es por ello por lo que se recurre a las imputaciones, es decir, a obtener información a través de distintos 
+métodos estadísticos para lograr completar el conjunto informativo generado por la encuesta y poder hacer 
+inferencia estadística. Son diversos los  métodos disponibles en la literatura, y todos tienen sus ventajas y 
+desventajas, y , éstas parten con los supuestos empleados para declarar la validez de una imputación.2 
+En la EPS, tradicionalmente, se han imputado variables como la edad ( apoyado en registros 
+administrativos), el nivel educativo, los ingresos laborales y los arriendos (reales o estimados) pagados por 
+la vivienda principal del entrevistado. Esta última variable es de las más complicadas y con mayor tasa de 
+no respuesta, ya que impl ica imaginar, si es que  no se arrienda efectivamente la vivienda, cuál sería el 
+precio pagado por arriendo de una vivienda de similares condiciones en el sector. Esto pone una presión 
+importante en los entrevistados, que terminan no respondiendo a la pregunta.  
+En este informe, se propone y muestra una forma de abordar la imputación de datos en  base a buenas 
+prácticas observadas en otras encuestas , y a la calidad de datos que la EPS ha logrado reunir. Se imputan 
+tres variables de la EPS VIII Ronda: nivel educativo máximo alcanzado, ingresos laborales promedio 
+mensuales y arriendo (real o supuesto) promedio mensual pagado por la vivienda habitada por la persona 
+entrevistada. 
+A continuación, se presentan los supuestos detrás del comportamiento de la información faltante, para 
+luego abordar la imputación de educación, ingresos y arriendo en la presente encuesta.  
+ 
+2 Existe una amplia literatura para recorrer. Algunos clásicos que se sugiere revisar incluyen Allison (2001), Carlin et al.  (2003, 
+2008), Lee y Carlin (2010), Marchenko y Eddings (2011), Rubin (1987, 1996), Schafer (1997), Medina y Galván (2007), Little y 
+Rubin (1987, 2002), Van Buuren (2017), entre otros referentes en la materia. 
+
+=== PDF PAGE 12 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           12 
+ 
+  
+ 
+3.2 Mecanismos de pérdida de datos 
+Como se mencionó anteriormente, las razones para no responder pueden ser muchas. Si n embargo, sin 
+importar las razones particulares de  no respuesta que se observen, ni el patrón que esta siga en el 
+cuestionario, se debe precisar qué tipo pérdida de información se está observando, pues de ella dependerá 
+la metodología más apropiada para imputar. En la literatura, se reconocen ampliamente tres casos (Wood 
+et al., 2019): 
+1) Pérdida aleatoria (“Missing at random” o MAR), definida por Rubin (1976): este tipo de pérdida de 
+información implica que el dato faltante no depende de variables no observadas, pero puede 
+deberse ( explicarse) por la información contenida en variables observadas. Por ejemplo, si los 
+hombres son más o menos propensos a responder alguna pregunta sobre ingresos, o si tienden a 
+exagerar o sub-dimensionar la respuesta, o si las mujeres son menos propensas a revelar su 
+situación de salud en la encuesta que los ho mbres (no respuesta parcial), se puede decir que el 
+mecanismo de pérdida de información que se observa es MAR. 
+2) Pérdida totalmente aleatoria (“Missing completely at random” o MCAR): en este caso, la pérdida 
+de información no está relacionada con información observable o no observable. En particular, las 
+razones son enteramente ajenas a la encuesta en sí. Por lo tanto, la información faltante (total o 
+parcial) es simplemente un subconjunto de la información total que sí se logró recolectar. 
+3) Pérdida no aleatoria (“Missing not at random” o MNAR): este tipo de pérdida de información es 
+estudiada por Little y Rubin (2014), quienes aseguran que cuando la información no observada que 
+tiene la persona entrevistada es el factor que determina la información aportada por el 
+entrevistado en la encuesta, entonces se debe modelar la pérdida de información (por ejemplo, se 
+pueden utilizar imputaciones múltiples) para reemplazar esta información perdida y evitar sesgos 
+en los resultados. Sin embargo, se debe  tener conocimiento (o información) previa  sobre la 
+observación, algo que está disponible para los participantes en olas anteriores de la EPS, pero no 
+es posible obtener para las 5.020 observaciones de Nacimientos 2023. 
+Las variables que se imputan en esta ronda se encuentran en el cruce de las tres categorías. El nivel 
+educativo no reportado puede deberse más a problemas de comprensión o deseo de no evidenciar alguna 
+situación (por ejemplo, analfabetismo o baja escolaridad o nivel educativo no finalizado). 
+Por su parte, los ingresos generalmente están atados a múltiples sesgos en sus reportes, algunos de ellos 
+convertidos en datos faltantes. Lo mismo sucede con los arriendos, en especial  si el informante no está 
+pagando arriendo y, en su lugar, debe reportar una estimación de ese monto. 
+En todo caso, frente a esta incertidumbre acerca del mecanismo originador de los datos, conviene utilizar 
+técnicas robustas a pérdidas de información MNAR, que sería el caso más nocivo. Por esta razón, en el caso 
+de las variables de ingresos y arriendos, se emplean imputaciones múltiples, que han probado ser 
+
+=== PDF PAGE 13 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           13 
+ 
+  
+ 
+mecanismos muy resilientes (y, para muchos, los únicos adecuados actualmente) para controlar la pérdida 
+de datos no aleatoria (van Buuren, 2017). 
+ 
+3.3 Eliminación de variables de tramo en la recolección de información 
+En esta ola de la encuesta, se han observado mayores tasas de no respuesta al ítem, principalmente por la 
+eliminación de los tramos en las variables en las que se pregunta por un monto (ingresos, gastos, arriendos, 
+entre otros). 
+En el periodo de ajuste de cuestionario se consensuó con la contraparte la eliminación de las tablas de 
+tramos, para los casos en que una persona señalaba no querer responder. Este cambio se debe, entre otras 
+razone, a la revisión del “Enfoque de Derechos” de la encuesta, debido a que se presiona a las personas 
+para que den una respuesta aun en el caso de que han señalado no tener la disposición a responder. 
+Dicho de otro modo, la aplicación de los principios de este enfoque implica que no ha existido en la encuesta 
+preguntas que permitan insistir con la recolección de datos cuando una respuesta a resultado en No Sabe 
+/ No responde. 
+Sin embargo, este cambio también se debe a la complejidad para los cálculos de indicadores de monto, ya 
+que para cada persona que responde un tramo se debía calcular un valor imputado (típicamente la media 
+de este mismo tramo), lo que también incluía distorsiones en los indicadores. 
+Como resultado, en la presente versión de la EPS no  se tiene información de tramos de variables 
+cuantitativas como arriendo (real o presunto), ingresos laborales, gastos de diversa índole, etc. Por lo tanto, 
+se pierde una fuente de información adicional que estaba presente en las olas anteriores de la encuesta. 
+Tómese por caso la variable arriendo para tener una noción de los efectos del “Enfoque de Derechos” en 
+la pérdida de información: históricamente, las tasas de no respuesta para este ítem de la EPS han estado 
+alrededor del 20% hasta la ola 2020. Sin embargo, en la presente ola esta ta sa de no respuesta al ítem se 
+alzó a 34,8%. En rondas anteriores, los tramos de arriendo (variable auxiliar preguntada después de obtener 
+un No sabe / No responde) cubría tasas de no respuesta de entre 12% y 18%, logrando que la no respuesta 
+al ítem rondara el 20% en promedio. 
+ 
+3.4 Imputación de nivel educacional 
+El nivel educativo es una variable clave para entender el contexto socioeconómico de los entrevistados, y 
+suele ser  información que éstos entregan  sin mayores inconvenientes. Sin embargo , en esta ronda , se 
+observaron algunos casos de información faltante. 
+
+=== PDF PAGE 14 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           14 
+ 
+  
+ 
+Dado que la variable educación típicamente se utiliza en niveles para realizar análisis, se decidió construir 
+la variable de tramos de educación. Esta variable se construyó en base  a las variables de curso y nivel 
+máximo de educación alcanzado, según auto -reporte de la persona entrevistada. La variable fue definida 
+en 5 tramos educativos: Ninguna educación (0), Básica (1), Media (2), Técnica Superior (3) y Universitaria 
+(4).  
+Toda la información no reportada (No sabe / No responde) se pasó a dato perdido. Esto resultó en 81 casos 
+faltantes (0,5% de no respuesta).  
+Para completar los valores faltantes, se llevó a cabo  una imputación cold deck, empleando información 
+consistente reportada en rondas anteriores de la EPS. La consistencia se chequeó en cada caso para 
+asegurarse de que la educación (curso y nivel) se mantenía o se incrementaba entre olas, siguiendo la lógica 
+del proceso educativo. 
+En la siguiente tabla se muestra la distribución de frecuencias inicial, las donaciones de cada ola, desde la 
+más reciente hasta la más antigua, y la distribución final. 
+ 
+Tabla 3.1. EPS 2023 – Imputación de tramos de educación 
+ 
+Fuente: elaboración propia. 
+ 
+El proceso de imputación cold deck  no fue suficiente para cubrir los déficits de información del tramo 
+educacional. Tal como puede observarse en las últimas columnas de la Tabla 3.1, la variable de tramo 
+educativo se encuentra incompleta para esta encuesta, faltando 6 casos que corresponden a personas 
+encuestadas por primera vez en la ronda actual.  
+ 
+3.5 Imputación de variables de ingreso y arriendo 
+
+
+=== PDF PAGE 15 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           15 
+ 
+  
+ 
+Las variables de ingreso y arriendo presentan, habitualmente, mayores  tasas de no respuesta al ítem. 
+Adicionalmente, algunos de los valores reportados aparecen como valores extremos ( outliers) o 
+sospechosos de ser el resultado de ingreso erróneo del dato en los sistemas de levantamiento de encuestas. 
+Para evitar que los datos ausentes o aquellos erróneamente reportados generen distorsiones en  la 
+medición, se recurre a la imputación para obtener variables con mejor comportamiento estadístico, que no 
+distorsionan la distribución original de los datos, al tiempo que mejoran la inferencia estadística. 
+En la presente ronda de la encuesta, se revisaron las siguientes variables: 
+• Ingreso laboral promedio mensual del último trabajo: variable b12 en montos 
+• Arriendo estimado mensual: variable d8_a en montos 
+En la Tabla 3.2, se muestran los datos faltantes para cada variable que resultan de la no respuesta y de la 
+determinación de outliers o datos no fiables. 
+ 
+Tabla 3.2. Datos faltantes de ingresos y arriendos en la EPS 2023 
+Panel A. Datos faltantes para Arriendo Mensual (15.788 obs.) 
+ 
+Panel B. Datos faltantes para Ingreso Promedio Mensual del entrevistado ocupado (7.861 obs.) 
+ 
+Nota: observaciones sin datos (“Obs=.”)  corresponden a valores No Sabe / No Responde y outliers (valores fuera del rango 
+razonable definido para este estudio:  $100.000 < 𝑖𝑛𝑔𝑟𝑒𝑠𝑜 𝑙𝑎𝑏𝑜𝑟𝑎𝑙 < $10.000.000 ; $100.000 < 𝑎𝑟𝑟𝑖𝑒𝑛𝑑𝑜 𝑚𝑒𝑛𝑠𝑢𝑎𝑙 <
+$6.000.000). 
+Fuente: elaboración propia. 
+ 
+En el caso de los arriendos, la pérdida de información alcanzó al 3 5,8% de la muestra (5. 659 casos sobre 
+15.788), mientras que los ingresos laborales presentaron una pérdida de información de 14,3% (1.123 casos 
+sobre 7.861). Se consideró que todos aquellos que declaraban tener ocupación (7.888 casos) y no eran de 
+
+
+=== PDF PAGE 16 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           16 
+ 
+  
+ 
+la categoría “trabajo de familiar no remunerado”  (27 casos), debían tener respuesta en este ítem  (7.861 
+casos). Nótese también que se introdujo un “ruido” a los valores declarados dado que los redondeos en el 
+reporte de estas cifras son habituales. El ruido introducido en ambas variables corresponde a valores 
+uniformes entre $0 y $1.000, lo que no cambia la sustancia del reporte de los entrevistados, pero agrega 
+variabilidad a la estimación estadística. 
+Para realizar la imputación se adoptó el método de imputaciones múltiples con ecuaciones encadenadas, 
+que es bastante robusto  a MNAR y otros mecanismos más complejos de perdida de datos .3 Las 
+imputaciones múltiples, si bien pueden aparecer como una estrategia complicada, son una buena forma de 
+resolver el problema de datos faltantes generando la menor distorsión posible. Además, han  demostrado 
+ser muy eficientes en muchos entornos, mejorando la calidad de los estimadores sin poner en riesgo  el 
+sesgo. 
+En sí, la imputación múltiple es una metodología de simulación que permite completar múltiples veces los 
+sets de datos. Siguiendo las reglas de Rubin (1987, 1996), es posible obtener estimadores robustos e 
+insesgados. Se debe tener en cuenta que la imputación múltiple es un procedimiento sencillo de reemplazo 
+de información faltante por múltiples versiones de un mismo dato . Dado esto, se puede partir  de la 
+imputación tradicional, replicarla y aplicar las reglas de Rubin para obtener mejores estimadores. Las reglas 
+de Rubin también ayudan a controlar la incertidumbre causada por los datos faltantes, por lo que  el 
+conjunto de datos también mejora. 
+Sin embargo, al contrario  de otros métodos como cold deck , hot deck , medias predictivas, etc., esta 
+metodología no está interesada en un valor particular del dato faltante, sino más bien en su distribución y 
+cómo ésta contribuye a explicar la distribución conjunta de la población. Entonces, el foco no está en una 
+imputación, sino en el uso de  múltiples imputaciones para resolver un conjunto predictivo del 
+comportamiento poblacional. Puesto en  términos prácticos, no nos interesa , por ejemplo,  el salario 
+promedio mensual no declarado de un entrevistado (a), sino el promedio y la varianza de salarios de los 
+entrevistados de la encuesta. 
+Para imputar los salarios y el arriendo, se usó la variante de ecuaciones encadenadas (conocida como MICE) 
+que permite retroalimentar,  iteración tras iteración, el sistema de imputación, apoyando cada nueva 
+imputación en los valores obtenidos anteriormente. Si bien es intensiva en cómputo, tiene la ventaja de ser 
+muy flexible y generar estimadores eficientes (Carlin et al., 2003). 
+Los modelos que se emplearon incluyeron  variables sociodemográficas (sexo, edad, educación, 
+composición del hogar), del mercado laboral (CIUO, CIIU), previsionales, propiedad de la vivienda , y 
+participación en la EPS (para controlar por posibles sesgos MNAR). Dadas las características de las dos 
+variables imputadas, se utilizaron regresiones censuradas que establecieron las siguientes cotas: 
+ 
+3 En Chile, esta metodología se emplea en la Encuesta Financiera de Hogares del Banco Central de Chile , y fue introducida en la 
+ronda anterior de la EPS para la imputación de estos mismos conceptos.  
+
+=== PDF PAGE 17 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           17 
+ 
+  
+ 
+$100.000 < 𝑖𝑛𝑔𝑟𝑒𝑠𝑜 𝑙𝑎𝑏𝑜𝑟𝑎𝑙 < $10.000.000 
+$100.000 < 𝑎𝑟𝑟𝑖𝑒𝑛𝑑𝑜 𝑚𝑒𝑛𝑠𝑢𝑎𝑙 < $6.000.000 
+Dado que la imputación múltiple con ecuaciones encadenadas es un proceso iterativo cuando la pérdida 
+de datos no es monótona, se debe chequear la convergencia de las series encadenadas para asegurar que 
+no haya comportamientos anómalos (por ejemplo, divergencia persistente de la media de las imputaciones, 
+o cambios bruscos en su varianza). Para ello, se realizó un ejercicio de imputación simulada con 50 réplicas 
+cuyos resultados, en términos de media y desviación standard de las imputaciones de ambas variab les, se 
+muestran en la Figura 3.3. 
+ 
+Figura 3.3. Convergencia de imputaciones de ingreso laboral y arriendo 
+Panel A. Ingreso laboral 
+ 
+Panel B. Arriendo estimado 
+ 
+Fuente: elaboración propia. 
+ 
+Si bien se ha discutido mucho el tema, no hay un acuerdo sobre el número de réplicas a utilizar en la 
+imputación. En general, éstas van entre 5 y 20 como sugerencia, aunque algunos establecen que “más es 
+mejor”, y que debería haber tantas réplicas como celdas individuales faltantes se deban imputar. Sin 
+
+
+=== PDF PAGE 18 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           18 
+ 
+  
+ 
+embargo, los tiempos de cómputo establecen límites razonables a éstas. En el caso de la EPS 2023, 
+siguiendo las sugerencias más habituales, se incluyeron 6 réplicas.4 
+Los datos completos, que se encuentran en la base de datos de imputaciones, quedaron configurados según 
+se muestra en la Tabla 3.4. 
+ 
+Tabla 3.4. Resultado final del proceso de imputación de ingresos laborales y arriendos 
+ 
+Nota: el reporte se encuentra expresado en idioma inglés, ya que es la salida oficial del software empleado para realizar las 
+imputaciones, Stata 17.  
+Fuente: elaboración propia. 
+ 
+El comportamiento de las cadenas de imputaciones, en donde se puede ver la convergencia de cada una 
+de las réplicas imputadas, se puede observar en la Figura 3.5. 
+ 
+4 Agregar más replicas sólo requiere cambiar un par ámetro en el modelo y correr nuevamente el software, por lo que es trivial 
+incluir más casos. En la Encuesta Financiera de Hogares del Banco Central de Chile, por ejemplo, se emplean 30 réplicas, aunque 
+no se ha podido justificar adecuadamente la razón de esa cantidad. 
+
+
+=== PDF PAGE 19 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           19 
+ 
+  
+ 
+ 
+ 
+Figura 3.5. Comportamiento de la convergencia de las cadenas de imputación 
+Panel A. Ingreso laboral 
+ 
+Panel B. Arriendo estimado 
+ 
+Fuente: elaboración propia. 
+ 
+3.5.1 Imputación de ingreso promedio mensual laboral 
+Para el caso de los ingresos mensuales, el comportamiento de las distribuciones original, imputada, y 
+completada para cada una de las iteraciones, tiene el siguiente aspecto: 
+ 
+
+
+=== PDF PAGE 20 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           20 
+ 
+  
+ 
+ 
+Figura 3.6. Comportamiento de las imputaciones – Ingreso Laboral Promedio Mensual 
+ 
+Fuente: elaboración propia. 
+ 
+3.5.2 Imputación de arriendo 
+En el caso de los arriendos, las distribuciones se comportan según se muestra en la Figura 3.7. 
+ 
+ 
+
+
+=== PDF PAGE 21 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           21 
+ 
+  
+ 
+ 
+Figura 3.7. Comportamiento de las imputaciones – Arriendo estimado de la vivienda particular 
+ 
+Fuente: elaboración propia. 
+ 
+Para mostrar el efecto que tiene la incorporación de información imputada, se puede observar la Tabla 3.8. 
+Allí, se muestra la distribución del ingreso promedio mensual y del arriendo estimado mensual obtenido 
+con y sin ponderaciones (es decir, dependiendo de si tomamos en cuenta o no los factores de expansión 
+de corte transversal), e incorporando o no información imputada. Nótese, por ejemplo, que los montos de 
+ingreso mensual promedio son mayores cuando se aplican ponderaciones e imputaciones, pues una de las 
+razones de pérdida de información es que las personas tienden a ocultar sus ingresos si estos son altos. 
+Este fenómeno recibe el nombre de reversión a la media: las personas tienden a reportar un valor promedio 
+para alguien en su condición, antes que el verdadero valor de la variable en cuestión. 
+ 
+
+
+=== PDF PAGE 22 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           22 
+ 
+  
+ 
+ 
+Tabla 3.8. Comparación de los efectos de las ponderaciones e imputaciones 
+ 
+Fuente: elaboración propia. 
+ 
+3.6 Consideraciones finales sobre imputaciones 
+En esta propuesta de imputaciones, se incorporaron nuevamente las imputaciones múltiples como técnica 
+más robusta y cada vez más extendida en el tratamiento moderno de datos  (esta técnica fue introducida 
+en el tratamiento de imputaciones en la EPS 2020) . El uso de esta técnica se ha hecho más sencillo dado  
+que la mayoría de los softwares estadísticos incorporan procedimientos para procesar el conjunto 
+informativo. Sin embargo, la intensidad computacional sigue siendo un tema a tener en cuenta si se lo 
+compara con otros métodos uni- y multi-variados de imputación única, como hotdeck o medias predictivas. 
+La ganancia con  esta metodología se encuentra  en la inferencia. Mejores y  más robustos indicadores 
+permiten tener una mejor aproximación a los fenómenos, sin depender de los valores específicos de las 
+imputaciones. 
+Se destaca el hecho de  que, en general, es más útil para los investigadores contar con herramientas, 
+orientaciones e información que les permitan hacer sus propias imputaciones, que entregar sets de datos 
+imputados, como se hace con algunas encuestas. Esto implica dejar información suficiente a disposición del 
+usuario para que lleve adelante los procesos. 
+  
+
+
+=== PDF PAGE 23 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           23 
+ 
+  
+ 
+4. REFERENCIAS 
+• Allison, P. D. (2001). Missing Data. Thousand Oaks, CA: Sage. 
+• Card, D. y N. A. Smith (2015). "Automated Coding of Open-Ended Survey Responses," draft paper. 
+• Carlin, J. B., J. C. Galati, y P. Royston (2008). A new framework for managing and analyzing multiply 
+imputed data in Stata. Stata Journal 8: 49—67. 
+• Carlin, J. B., N. Li, P. Greenwood, y C. Coffey (2003). Tools for analyzing multiple imputed datasets. 
+Stata Journal 3: 226—244. 
+• Dillman, D. A., & Christian, L. M. (2005). “Survey mode as a source of instability in responses across 
+surveys,” Field Methods, 17(30), 30-52. 
+• Emde, M., & Fuchs, M. (2012). “Using adaptive questionnaire design in open -ended questions: A 
+field experiment,” Paper presented at the American Association for Public Opinion Research 
+(AAPOR) 67th Annual Conference, San Diego, USA. 
+• Giorgetti, D., I. Prodanof y F. Sebastiani (2002). "Automated Coding of Open -ended Surveys: 
+Technical and Ethical Issues," International Conference on Universal Knowledge and Language. 
+ICUKL-2002, Goa, India, 25-29 November 2002. 
+• Organización Internacional del Trabajo (s.f) Estructura de la CIUO-08 y concordancias previas con la 
+CIUO-88. Recuperado de: https://www.ilo.org/public/spanish/bureau/stat/isco/isco08/index.htm 
+ 
+• INE (2008) CIUO 08.CL Clasificador Chileno de Ocupaciones. Recuperado de: 
+http://webanterior.ine.cl/docs/default-source/publicaciones/2018/ciuo-08.cl-clasificador-chileno-
+de-ocupaciones.pdf?sfvrsn=50bd58d2_4 
+• Lee, K. J., y J. B. Carlin (2010). Multiple imputation for missing data: Fully conditional specification 
+versus multivariate normal imputation. American Journal of Epidemiology 171: 624—632. 
+• Little, R. J., y D. Rubin (1987). Statistical analysis with missing data, New York, Wiley. 
+• Little, R. J., y D. Rubin (2002), Statistical analysis with missing data (2nd Ed.), New York, Wiley. 
+• Little, R. J. y D. Rubin (20 20). Statistical analysis with missing data  (3rd ed.). John Wiley & Sons: 
+Boston, MA. 
+• Marchenko, Y. V., y W. D. Eddings (2011). A note on how to perform multiple-imputation diagnostics 
+in Stata. Webpage: http://www.stata.com/users/ymarchenko/midiagnote.pdf   
+• Medina, F. y M. Galván (2007). Imputación de datos: teoría y práctica. Serie Estudios Estadísticos y 
+Prospectivos, No. 54, CEPAL. 
+
+=== PDF PAGE 24 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           24 
+ 
+  
+ 
+• Naciones Unidas (2009) Clasificación Industrial Internacional Uniforme de todas las actividades 
+económicas (CIIU). Informes Estadísticos, Serie M, No.4/Rev.4. Recuperado de:  
+https://unstats.un.org/unsd/publication/SeriesM/seriesm_4rev4s.pdf 
+• Rubin, D. B. (1987). Multiple Imputation for Nonresponse in Surveys. New York: Wiley. 
+• Rubin, D. B. (1996). Multiple imputation after 18+ years. Journal of the American Statistical 
+Association 91: 473—489. 
+• Rubin, D. (1976). Inference and missing data. Biometrika, Vol. 581–592. 
+• Schafer, J. L. (1997). Analysis of Incomplete Multivariate Data. Boca Raton, FL: Chapman & Hall/CRC. 
+• Schonlau M. y M. P. Couper (2016). "Semi -automated categorization of open -ended questions," 
+Survey Research Methods (2016), Vol. 10(2):143-152. 
+• Van Buuren, S. (2017). Flexible imputation of missing data. (Sec. Ed.) Boca Raton, FL: CRC Press 
+• Wood, Josepihne, Gregory Matthews, Jennifer Pellowski y Ofer Harel (2019). “Comparing Different 
+Planned Missingness Designs in Longitudinal Studies.” Sankhya B, Vol. 81:226–250. 
+• Züll, C. (2016). “Open -Ended Questions,” GESIS Survey Guidelines. Mannheim, Germany: GESIS – 
+Leibniz Institute for the Social Sciences. doi: 10.15465/gesis-sg_en_002. 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+=== PDF PAGE 25 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           25 
+ 
+  
+ 
+ 
+5. ANEXOS 
+5.1 ANEXO 1 – Edición de la base de datos 
+La edición de la base de datos se realizó bajo 3 circunstancias: 
+- Outliers: valores extremos, ya sea por encima o por debajo de la distribución, que hemos 
+considerado resultado de errores de tipeo del encuestador o de reporte del Entrevistado(a), y que 
+no generan resultados plausibles. En general, estos casos se marcan como 'No sabe' para que el 
+usuario de la base decida si someterlos a procesos de imputación o validaciones más exhaustivas.  
+Sin embargo, los outliers de las variables de arriendo e ingreso  promedio mensual son imputadas  
+siguiendo las reglas explicadas previamente. 
+- Valores inconsistentes con el contexto: se trata de información que se puede compartir o contrastar 
+con otras variables de la encuesta y que lleva a la conclusión de que no son correctas o, al menos, 
+plausibles. 
+- Valores inconsistentes: son aquellos valores que pueden interpretarse como una falta de intención 
+de entregar una respuesta (por ejemplo, información expresada en 'Especifique' que no es 
+contrastable con la realidad) o valores que no concuerdan con el contexto económico reportado en 
+la encuesta (por ejemplo, un gasto familiar en educación de $56 millones para una familia con 
+ingresos de menos de un millón de pesos promedio mensuales).  
+A continuación, se detalla la edición realizada módulo por módulo en el cuestionario a personas vivas. 
+ 
+Módulo A – Entrevistado(a) 
+- Se verificó que la variable a9 (edad) sea consistente con la fecha de nacimiento. Es por este motivo 
+que, en aquellos casos que el cálculo derivado de la resta entre la fecha de aplicación de la entrevista 
+y la fecha de nacimiento arrojó una diferencia, se  procedió a una edición. Esto ocurrió solamente 
+en 11 casos. 
+- Se creó la variable auxiliar “escolaridad_ed” que contiene una estimación de los años de escolaridad 
+de los Entrevistado(a)s(as) basados en la combinación de máximo nivel educativo alcanzado (a12_n) 
+y máximo curso aprobado en el nivel (a12_c). Esta nueva v ariable contiene los códigos 80 
+“Ninguno”, 88 “No responde” y 99 “No sabe”. 
+- Se corrigieron 23 casos inconsistentes relacionados a la variable A8 y A8b acerca de orientación 
+sexual y de género. Estos casos fueron asignados con el valor “88” No responde. 
+ 
+
+=== PDF PAGE 26 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           26 
+ 
+  
+ 
+ 
+Módulo A – Carrera 
+- Se ajustaron las fechas de inicio y termino de carrera de 181 casos que indicaron haber terminado 
+sus estudios superiores el mismo año en que iniciaron (variables a15_a y a15_b). Se consideró como 
+reemplazo la duración mínima de 1 año. 
+- Se ajustaron 3 casos en los que las personas declararon haber terminado su educación (a15_b) antes 
+de la fecha de inicio(a15_a). Se invirtieron los años declarados. 
+- Se ajustó 1 caso donde la persona indicó que financió sus estudios superiores con 9 fuentes de 
+financiación distintas. Esto fue reemplazado con la opción 9 “No Sabe”. 
+- Se ajustaron 9 casos que indicaron que se titularon (a19) antes de terminar la carrera  (a15_b). Se 
+invirtieron los años declarados. 
+ 
+Módulo B – Historia Laboral 
+- Situación laboral: 
+o Existen 20 casos que no tenían información en la fecha de inicio, pero que se podían deducir 
+de la respuesta de las otras historias laborales.  
+o Existen 35 casos que no tenían información en la fecha de término, pero que se podían 
+deducir de la respuesta de las otras historias laborales.    
+o Hay 3 casos que no tenían información en b5, para los cuáles se les asignó un “no responde” 
+o Hay 7 casos que no tenían información en b0, en estos casos se les asignó un “no responde”.   
+ 
+- Codificaciones de empleo, actividad y situación ocupacional: 
+o Se realizaron codificaciones en función de la información que se logró recuperar en terreno. 
+Los detalles se encuentran en la sección “Codificación de variables seleccionadas”. 
+o En el caso de la CIIU rev. 4 a un dígito, se utiliza una codificación alfanumérica. Por lo tanto, 
+para aplicar la descripción completa, se creó una variable auxiliar llamada CIIU_1dig_cat que 
+recupera la misma información en codificación numérica. Las etiq uetas aplicadas 
+corresponden a las categorías alfanuméricas junto con la descripción propia de cada 
+categoría. De esta manera, se dispone de una variable con la codificación original y una 
+variable con codificación numérica, útil para tabulaciones e inform es donde es importante 
+la descripción de cada categoría de actividad. 
+ 
+Módulo B – Situación Actual 
+
+=== PDF PAGE 27 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           27 
+ 
+  
+ 
+- Variables no propias de la base: Se incorporaron a la base, las variables b2_a y b8 para último 
+episodio laboral ya que sirven de referencia para tabulaciones, cruces y chequeos de consistencia. 
+ 
+Módulo C – Entrevistado(a) 
+- Para realizar la validación y edición de esta base, se incorporaron las variables b2_a y b8 de la base 
+de datos de la última historia laboral disponible de cada entrevistado(a). 
+- La condición de entrada para contestar la pregunta C30 en las variables C30_6 y C30_7 es tener más 
+de 65 años. En 2 casos, el script aplicó un salto a pesar de que el Entrevistado(a) contaba con esta 
+condición. En ambas situaciones, se codificó la alternativa “No responde”.  
+- Los valores superiores a 18.000.000 en la variable C8_m fueron codificados en la alternativa 9 “No 
+sabe” al ser considerados valores muy altos. 
+- Los valores superiores a 18.000.000 en la variable C22_e fueron codificados en la alternativa 9 “No 
+sabe” al ser considerados valores muy altos. 
+- Los valores superiores a 10.000.000 en la variable C30_m_g fueron codificados en la alternativa 9 
+“No sabe” al ser considerados valores muy altos. 
+- Los valores superiores a 15.000.000 en la variable C34 fueron codificados en la alternativa 9 “No 
+sabe” al ser considerados valores muy altos. 
+- Los valores superiores a 3.000.000 en la variable C33_m_g fueron codificados en la alternativa 9 
+“No sabe” al ser considerados valores muy altos. 
+ 
+Módulo D – Entrevistado(a) 
+- La condición de entrada para contestar la pregunta D9_a_2 es que la vivienda propia es de otro 
+integrante del hogar (D_9_1=3). En un caso, el script aplicó un salto en D9_a_2, a pesar de que 
+efectivamente la vivienda era de otro integrante. Ante este escenario, se asignó un “No responde”.  
+- Los valores superiores a 8.000.000 en la variable d8_a fueron codificados en la alternativa 9 “No 
+sabe” al ser considerados valores muy altos. 
+- Los valores superiores a 1. 000.000 en la variable d12_b fueron codificados en la alternativa 9 “No 
+sabe” al ser considerados valores muy altos. 
+- Los valores superiores a 10. 000.000 en la variable d14 fueron codificados en la alternativa 9 “No 
+sabe” al ser considerados valores muy altos. 
+- Se ajustaron 4 casos que declararon pagar en dividendos en d14, el mismo valor que tiene su 
+vivienda (a17_a). La variable d14 fue reemplazada con un 9 “No sabe”. 
+- Se ajustaron 6 casos en los cuales las personas declaran, deber 1 o más millones en la variable 
+d30_m, más que el valor total de los bienes declarados en d29_m. Se le asignó un valor 9 “No sabe”. 
+- Se ajustaron 12 casos en los cuales la persona entrevistada indica que hay una o más de una persona 
+del hogar que es propietaria o socia de un negocio, pero en la pregunta d31_b no identifican quien 
+
+=== PDF PAGE 28 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           28 
+ 
+  
+ 
+es la persona dueña o socia de un negocio. Se ajustaron las respuestas de las variables d31_b_1 a 
+d31_b_5 con un 9 “No sabe”. 
+- Se ajustaron 16 casos en los cuales las personas indicaron que tienen deuda en su línea de crédito 
+por más de 8 millones , variable d37m_2. Fueron codificados en la alternativa 9 “No sabe” al ser 
+considerados valores muy altos. 
+- Se ajustaron  2 casos en los cuales las personas indicaron que tienen préstamos de consumo 
+bancario por más de 80 millones, variable d37m_5. Fueron codificados en la alternativa 9 “No sabe” 
+al ser considerados valores muy altos. 
+- Se ajustó un caso en el cual la persona indica que tiene un préstamo de consumo en financieras por 
+más de 600 millones , variable d37m_6. F ueron codificados en la alternativa 9 “No sabe” al ser 
+considerados valores muy altos. 
+- Existen 12 casos en los cuales las personas indicaron que tienen créditos educacionales por 33 o 
+más millones (variable d37m_9). En la ronda anterior el máximo valor declarado fue de 22 millones. 
+Fueron codificados en la alternativa 9 “No sabe” al ser considerados valores muy altos. 
+- Se ajustó 1 caso en el cual la persona indico que tiene un préstamo de parientes o amigos por 100 
+millones, variable d37m_10. Fueron codificados en la alternativa 9 “No sabe” al ser considerados 
+valores muy altos. 
+- Se ajustaron 27 casos en los cuales las personas indicaron que si lograban conseguir el ingreso del 
+hogar para 6 meses (d38_a), pero al responder las opciones de donde lo conseguirían, indican en 
+todas las opciones registradas en las preguntas d38_c_* que no, este fluj o es inconsistente.  Se 
+asignó la opción Sí  en la variable d38_c_11 y la respuesta “No  sabe” en la variable d38_c_11_e y 
+d38_c_11_e_cod 
+- Se ajustaron 321 casos en los cuales las personas respondieron no sabe, no responde o indicaron 
+que no podrían conseguir el ingreso del hogar para 6 meses (d38_a), pero al responder la pregunta 
+d38_b, respondieron que podrían conseguir más de la mitad, la mitad o menos de la mitad , razón 
+por la que deberían haber respondido en las preguntas d38_c_* la opción si, no sabe o no responde 
+en al menos una de las alternativas de la pregunta d38_c_*.  Se asignó la opción Sí en la variable 
+d38_c_11 y la respuesta “No sabe” en la variable d38_c_11_e y d38_c_11_e_cod 
+ 
+ 
+Módulo E – Entrevistado(a) 
+- Variables no propias de la base: Se incorporaron a la base, las variables C17_1, C17_2 y C17_3 
+(Estado de jubilación), a8 (sexo) y a9 (edad), ya que sirven de referencia para tabulaciones, cruces 
+y chequeos de consistencia. 
+- La condición de entrada para contestar la pregunta E69 (Postulación al bono por hijo) es ser mujer 
+de 65 años o más. En un caso, el script aplicó un salto en E69. En esta situación, se asignó un “No 
+responde”. 
+- A modo de referencia, en esta ronda de la EPS la variable e57 hace referencia a la pregunta 
+“¿Cumple usted con los requisitos para acceder a una Pensión Garantizada Universal o PGU?”. En la 
+
+=== PDF PAGE 29 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           29 
+ 
+  
+ 
+VI Ronda (2015) existía otra pregunta con la misma numeración que detalla los beneficios que 
+tendrían los familiares si el entrevistado fallece.   
+- Fueron ajustadas la cantidad de personas a la que se pregunta sobre su postulación al bono por hijo 
+e69, debido a que es mayor a la cantidad de personas que debe haber por el filtro (si respondieron 
+si a la pregunta e66).   
+- Fueron c orregidas las respuestas de la pregunta e69, debido a que hay 13 personas de sexo 
+masculino a los que se les pregunta postulación al bono por hijo y esta pregunta debe realizarse 
+sólo a mujeres.   
+ 
+ 
+Módulo F – Entrevistado(a) 
+- Para realizar la validación de esta base, se incorporaron las variables a8 (sexo) y a9 (edad) de cada 
+entrevistado(a). 
+- La condición de entrada para contestar la pregunta F54_e_2 (realización del examen de la próstata) 
+es ser hombre. En un caso, el script aplicó un salto en esta pregunta, ante lo cual se asignó un “No 
+responde”. 
+- Se ajustó 1 caso donde existía respuesta en F5 cuando se responde F1 = 8. Fue asignado a valor 
+missing debido a ser un error de flujo. 
+ 
+Módulo G – Entrevistado(a) 
+- La condición de entrada para contestar la pregunta G11 (n° de capacitaciones finalizadas) es haber 
+realizado alguna durante un periodo determinado. En dos casos, el script aplicó un salto en esta 
+pregunta, ante esto, se asignó un “No responde”. 
+- Se ajustaron 20 casos donde en la variable “G.10 Desde la última vez que respondió la encuesta 
+(Panel) o desde que tenía 15 años (Nacimiento), ¿ha recibido algún tipo de capacitación laboral, 
+sindical, recreacional u otro curso de nivelación educacional (básico, medio CH o medio TP)?”, la 
+pregunta “G.11 ¿Cuántos cursos de capacitación ha realizado en este periodo?”  contiene la 
+respuesta 0. Estos valores fueron recodificados con la opción 9 “No sabe”. 
+ 
+Módulo L – Entrevistado(a) 
+- Variables no propias de la base: Se incorpor ó a la base de datos la variable auxiliar “npersonas2” 
+que indica la cantidad de personas que conforman el hogar del entrevistado. Esto permite hacer 
+chequeos de consistencia. 
+
+=== PDF PAGE 30 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           30 
+ 
+  
+ 
+- En el procesamiento, se creó una variable adicional de chequeo de consistencia, denominada 
+L1_check, que se encuentra en las bases intermedias, y que tiene en cuenta que algunos hogares 
+pueden tener registrado un número de miembros mayor a 1, pero en la práctica, estos miembros 
+no viven en el hogar, y el hogar es, de facto, unipersonal. 
+- Se revisó cada uno de los registros del módulo, contrastando con la estructura del hogar remanente 
+(personas que aun permanecen dentro del hogar), se hicieron los ajustes de casos que fueron 
+reportados como cuidados fuera del hogar y correspondían a persona s miembros del hogar, doble 
+reporte de personas cuidadas, y personas cuidadas fuera del hogar que antes pertenecían al hogar.  
+- En general, la información reportada era suficiente para completar adecuadamente los registros de 
+las personas cuidadas. Esto permitió reconstruir el módulo sin pérdida de información. 
+- Se hicieron ajustes de consistencia las preguntas L.1, L.2, L.14 y L.21, en función del ajuste del 
+reporte de personas cuidadas dentro y fuera del hogar. 
+- El chequeo exhaustivo del módulo permitió crear 3 bases de datos, en las que la base de datos 
+Módulo_L_Entrevistado contiene información sobre el Entrevistado individual. Las otras dos bases 
+de datos contienen información sobre personas cuidadas dentro del hogar (Módulo_L_CDH) y fuera 
+del hogar (Módulo_L_CFH). 
+ 
+Módulo L – CDH 
+- Esta base de datos contiene información sobre cada persona dentro del hogar que es declarada 
+como “cuidada” por la persona entrevistada. Se incorporaron en esta base de datos variables de 
+relación de parentesco con la persona entrevistada, sexo y edad, que han sido tomadas del módulo 
+Hogar y que permiten completar la caracterización de las personas cuidadas dentro del hogar sin 
+necesidad de recurrir a información traída desde otra base de datos. 
+- Los registros de esta base de datos sólo son posibles para personas entrevistadas que no habitan 
+en hogares unipersonales (condición de entrada a variable L.1).  
+ 
+Módulo L – CFH 
+- Esta base de datos contiene información sobre cada persona cuidada fuera del hogar que ha sido 
+declarada como tal por la persona entrevistada. La base de datos contiene toda la caracterización 
+de la persona cuidada junto a aspectos relacionados con el cuidado de la persona. 
+- Se corrigieron manualmente 111 declaraciones de relaciones de parentesco de la persona cuidada 
+con la persona cuidad ora ya que era evidente la mala interpretación de la pregunta. Entre los 
+errores más habituales estaba el confundir la relación de parentesco de la persona cuidada respecto 
+al cuidador, reportando este relación en lugar de la relación entre el cuidador y la persona cuidada 
+(por ejemplo, se reportaba que la persona cuidada era el nieto, cuando era el abuelo, y el nieto era 
+
+=== PDF PAGE 31 ===
+   
+ 
+                                         de Protección Social 2019                                                                                           31 
+ 
+  
+ 
+el cuidador). Se debe revisar la redacción de esta pregunta (tal vez agregar una ejemplificación), 
+para lograr mayor precisión en la respuesta entregada en la encuesta, sin necesidad de recurrir a 
+un ajuste manual basada en la información complementaria entregada por la persona entrevistada. 
+- En la variable L.18 , la cantidad de horas máximas que deberían estar registradas es 168 (24 horas 
+los 7 días de la semana). El valor superior a este número (11000 horas) fue ajustado ya que 
+correspondía a un error de tipeo. Quedó fijado en 110 horas. 
+ 
+Módulo H – Entrevistado(a) 
+- Variables no propias de la base: Se incorporó a la base, la variable auxiliar “muestra” que indica el 
+tipo de muestra: Panel o Nacimiento. Dado que este módulo lo responden los “Nacimientos”, sirve 
+para validar que se hayan aplicado las preguntas a este segmento. 
+ 
+Módulo Hogar 
+- Variables no propias de la base: Las variables a1 (nombre de pila), a2_a (pertenencia al hogar), a8 
+(sexo), a9 (edad) y npersonas2 (N° personas del hogar), no están contenidas en este módulo según 
+la composición del cuestionario, sin embargo, al tratarse de un módulo que describe al resto de los 
+integrantes del hogar, se hace necesario contar con esta información que está presente en la base 
+cruda, no solo para efectos informativo, sino que también de validación de flujo. 
+ 
+ 
+Módulo I Hijos 
+- Se ajustó l a variable año de nacimiento  (i21_anio), que debería contener sólo información de los 
+hijos nacidos desde 2020 en adelante o desde la última ronda entrevistado; pero hay años de 
+nacimientos de hijos registrados desde 1968.  Para realizar el ajuste, se consideró la última ronda 
+de la encuesta contestada. Todos los casos fuera de rango fueron eliminados de la base de datos. 

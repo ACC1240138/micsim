@@ -1,0 +1,50 @@
+Package: micsim
+Title: FONDECYT 1240138: Chilean Alcohol-Policy Microsimulation
+Version: 0.0.0.9000
+Description: Notebooks, scripts and encrypted data bundles for the FONDECYT 1240138 project.
+    This file only declares the R packages the project uses, so that renv::snapshot() records them.
+Depends: R (>= 4.4.0)
+Imports:
+    arrow,
+    data.table,
+    devtools,
+    digest,
+    dplyr,
+    DT,
+    fitdistrplus,
+    forcats,
+    ggplot2,
+    gridExtra,
+    gtools,
+    haven,
+    here,
+    htmltools,
+    IRdisplay,
+    IRkernel,
+    janitor,
+    jsonlite,
+    knitr,
+    MASS,
+    MicSim,
+    mvtnorm,
+    nanoparquet,
+    openssl,
+    patchwork,
+    purrr,
+    quarto,
+    readr,
+    readxl,
+    rio,
+    rvest,
+    sandwich,
+    scales,
+    stringr,
+    survey,
+    tibble,
+    tidyr,
+    tidyselect,
+    withr,
+    writexl,
+    xml2,
+    zip
+Encoding: UTF-8

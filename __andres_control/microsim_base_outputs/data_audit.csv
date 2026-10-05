@@ -1,0 +1,8 @@
+"year","raw_n","domain_n","never_n","former_n","current_n","unknown_status","current_gpd_missing","current_gpd_zero","current_hed_missing","design_status"
+2012,17154,16322,3989,5358,6893,82,312,0,264,"PSU + region proxy strata"
+2014,20113,19326,4089,6202,8904,131,836,12,757,"PSU + region proxy strata"
+2016,19147,18354,4150,6703,7304,197,485,0,464,"PSU + region proxy strata"
+2018,19427,18734,4260,6648,7484,342,757,0,553,"PSU + region proxy strata"
+2020,16662,16114,3512,5953,6512,137,563,0,527,"Weights only; no validated clustering SE"
+2022,17454,17023,4260,6656,5999,108,383,0,350,"PSU + region proxy strata"
+2024,18668,18231,5601,6963,5528,139,408,0,348,"PSU + supplied ESTRATO"

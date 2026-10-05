@@ -1,0 +1,8 @@
+"parameter","value","interpretation"
+"rho",0.8,"Unidentified persistence; sensitivity 0 and 0.95"
+"minimum_age",15,"Entry at age 15"
+"maximum_age",65,"Exit at age 66; older-age benefits excluded"
+"n_sim",25000,"Synthetic population scale"
+"replicates",5,"Monte Carlo repeats, not parameter uncertainty"
+"grams_per_drink",12,"Inherited survey measurement convention"
+"forecast_driver_reference_year",2024,"Exposure driver and HMD qx held at 2024 for 2025-2034"

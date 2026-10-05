@@ -1,0 +1,2607 @@
+
+=== PDF PAGE 1 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Diseño Muestral y Factores de Expansión de la 
+VI Ronda EPS 
+ 
+ 
+
+
+=== PDF PAGE 2 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+2 
+Tabla de contenido 
+1 INTRODUCCIÓN 3 
+2 ANTECEDENTES 4 
+3 DETERMINACIÓN DE LA MUESTRA PARA LA VI RONDA EPS 7 
+4 SELECCIÓN DE LA MUESTRA DE REFRESCO PARA LA VI RONDA EPS 9 
+4.1 DISEÑO MUESTRAL DE LA ENCUESTA DE PROTECCIÓN SOCIAL 9 
+4.2 DISEÑO MUESTRAL DE LA EPS 2002 10 
+4.2.1 POBLACIÓN OBJETIVO 10 
+4.2.2 DISEÑO METODOLÓGICO 10 
+4.2.3 MARCO MUESTRAL 11 
+4.2.4 DISEÑO MUESTRAL POR CLUSTER, ESTRATIFICACIÓN EN DOS ETAPAS 12 
+4.3 MUESTRA REFRESCO VI RONDA EPS 17 
+5 RESULTADOS DEL TRABAJO DE CAMPO DE LA VI RONDA EPS 19 
+6 FACTORES DE EXPANSIÓN 21 
+6.1 FACTORES DE EXPANSIÓN DE LA MUESTRA DE CORTE TRANSVERSAL 24 
+6.1.1 FACTOR DE EXPANSIÓN BASE 27 
+6.1.2 FACTOR DE AJUSTE POR NO RESPUESTA 28 
+6.1.3 POST-ESTRATIFICACIÓN 50 
+6.1.4 ANÁLISIS ESTADÍSTICO DEL FACTOR DE EXPANSIÓN 53 
+6.2 FACTORES DE EXPANSIÓN DE LA MUESTRA LONGITUDINAL 53 
+6.2.1 PANEL 2002-2004-2006-2009-2015 53 
+6.2.2 PANEL 2004-2006-2009-2015 54 
+ 
+  
+
+=== PDF PAGE 3 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+3 
+1 Introducción 
+ 
+La Encuesta de Protección Social (EPS) ha sido diseñada desde el inicio como una encuesta 
+longitudinal, donde la unidad de análisis y seguimiento es el individuo seleccionado. La  
+encuesta fue aplicada por primera vez el año 2002 con representatividad a nivel de afiliados 
+al sistema de pensiones (AFP o INP), su segunda ronda a fines de 2004 y co mienzos de 
+2005, en la cual una nueva muestra de no afiliados al sistema de pensiones fue incorporada 
+junto con una actualización (refresco) de los afiliados al sistema de AFP, para de esta forma 
+en el año 2004 representar toda la población de 18 años y más. Una tercera ronda fue 
+levantada a fines del año 2006 y comienzos del 2007, la cuarta ronda del estudio fue 
+levantada entre Abril y Diciembre de 2009, la quinta ronda fue levantada entre Octubre de 
+2012 y Agosto de 2013 , sin embargo esta ronda fue publ icada con reparos debido a los 
+malos resultados del trabajo de campo (baja tasa de respuesta) y a la falta de consistencia 
+con rondas anteriores en la selección de la muestra de refresco. Entre los meses de abril y 
+julio del año 2016 fue levantada la sexta ronda de la encuesta, donde se intentó contactar 
+y entrevistar a todas las personas pertenecientes al panel, independientemente de la última 
+ronda en que hayan sido entrevistados, y además se seleccionó una muestra de refresco 
+para incorporar todas las personas que cumplieron 18 años desde la última actualización de 
+la muestra en el año 2004. Esta encuesta es realizada por encargo de la Subsecretaria de 
+Previsión Social del Ministerio del Trabajo y Previsión Social. El Cuadro Nº1.1 a continuación 
+presenta las principales características de las 6 rondas de la EPS realizadas hasta la fecha. 
+ 
+Cuadro Nº1.1 
+Descripción del Trabajo de Campo (EPS2002 – EPS2015) 
+Ronda 
+EPS Año Periodo de Trabajo de Campo Duración 
+Tamaño 
+Muestral 
+Entrevistas 
+logradas 
+1 2002 Mayo 2002 - Enero 2003 8 meses  30,687   16,309  
+2 2004 Noviembre 2004 - Mayo 2005 6 meses  21,674   16,727  
+3 2006 Noviembre 2006 - Julio 2007 8 meses  19,822   16,443  
+4 2009 Abril 2008 - Abril 2009 12 meses  19,512   14,463  
+5 2012 Septiembre 2012 - Agosto 2013 11 meses  30,730   16,214  
+6 2015 Abril 2016 - Julio 2016 4 meses  33,644   16,906  
+Fuente: Elaboración propia 
+Nota: Si bien los datos de la V Ronda fueron publicados, no se recomienda el uso estadístico de ellos, 
+dado los problemas en el desarrollo del trabajo de campo y la selección de la muestra de refresco. 
+ 
+El objetivo de este informe el presentar el diseño muestral de la VI Ronda EPS, el que 
+básicamente contemplo el seguimiento de la muestra panel y la selección de una muestra 
+de refresco para representar a Junio de 2015 la población de 18 años y más, así co mo el 
+cálculo de los factores de expansión de corta transversal y longitudinales.  
+  
+
+=== PDF PAGE 4 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+4 
+2 Antecedentes 
+ 
+La EPS es una encuesta longitudinal del tipo panel fijo más nacimientos1. Un panel fijo 
+involucra el intento de recolectar datos de encuesta de las mismas unidades en múltiples 
+ocasiones. Después de la selección inicial de la muestra, no se realizan adiciones a la 
+muestra original. En principio, las únicas pérdidas de elegibilidad de la muest ra son los 
+fallecidos e impedidos fí sica o mentalmente, en este último caso existen dos tipos de 
+personas “impedidas”, aquellos que de manera temporal se encuentran en una situación 
+que les impide responder, por ejemplo, hospitalización, cárcel, viaje, etc, y aquellos que se 
+encuentran en una situación permanente que les impide responder la encuesta, por ejemplo, 
+discapacidad cognitiva, sordera, etc . Un panel fijo más nacimientos  es como el panel 
+fijo, con la diferencia de que se van agregando regularmente al panel muestras con 
+“nacimientos” de la población. Típicamente, en cada ronda de recolección de datos se 
+agrega una muestra de las unidades que han “nacido” en la población desde la última vez 
+que se recolectaron datos de la misma. Este diseño es preferible a un panel fijo, si es que 
+hay un número no trivial de nacimientos en una población durante la vida del panel , y si 
+existe el deseo de representar a la población de corte transversal en cada ronda de 
+recolección de datos, así como también a la población longitudinal de “sobrevivientes” de la 
+primera ronda de la encuesta. 
+ 
+En general, los paneles fijos se usan cuando se selecciona una única muestra, y la seguimos 
+para que entregue información acerca de cambios en sus características. El panel fijo, más 
+nacimientos, se utiliza cuando se desea contar además con estimaciones de corte transversal 
+en forma adicional a estimaciones de cambio longitudinal. 
+ 
+En virtud de los antecedentes antes presentados , y de las consideraciones técnicas que 
+definen el tipo de diseño de estudio que es la Encuesta de Protección Social, se propuso la 
+siguiente muestra para la VI Ronda EPS 2015: 
+ 
+1. Seguir a todas las personas que fueron entrevistadas alguna vez en la EPS, 
+independientemente de si hubieran sido o no contactadas en una o más rondas 
+previas. Al ser un panel fijo, esta estrategia es fundamental para la calidad del panel 
+y su permanencia en e l tiempo. El siguiente cuadro , muestra la distribución de la 
+muestra panel a la cual se hizo seguimiento en la VI Ronda EPS, bajo los supuestos 
+de tasa de respuesta ahí presentados, se puede proyectar la cantidad de entrevistas 
+del panel a ser realizadas. Naturalmente, se excluye aquellas personas fallecidas 
+                                                 
+ 
+ 
+1 Los nacimientos son las personas que pasan a forma parte de la población objetivo, en el caso de 
+la EPS la población objetivo corresponde a las personas residentes en Chile (en las 15 regiones del 
+país excluyendo isla de pascua y juan fernandez) que tengan 18 años y más.  
+ 
+
+=== PDF PAGE 5 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+5 
+donde se entrevistó a algún sobreviviente, dado que esta persona al fallecer deja de 
+ser elegible en la población objetivo, y justamente se hace una entrevista a sus 
+sobrevivientes para dar un cierre a cada uno de estos casos. 
+ 
+Cuadro Nº2.1 
+Muestra Panel para la VI Ronda EPS 
+  n Estimación TR n proyectado 
+2002 914 10% 91 
+2002-2004 725 20% 145 
+2002-2004-2006 1146 35% 401 
+2002-2004-2006-2009 3363 43% 1,446 
+2002-2004-2006-2009-2012 5846 84% 4,911 
+2002-2004-2006-2012 490 84% 412 
+2002-2004-2009 339 43% 146 
+2002-2004-2009-2012 233 84% 196 
+2002-2006 432 35% 151 
+2002-2006-2009 544 43% 234 
+2002-2006-2009-2012 578 84% 486 
+2002-2006-2012 122 84% 102 
+2002-2009 233 43% 100 
+2002-2009-2012 95 84% 80 
+2004 232 20% 46 
+2004-2006 328 35% 115 
+2004-2006-2009 1058 43% 455 
+2004-2006-2009-2012 1670 84% 1,403 
+2004-2006-2012 127 84% 107 
+2004-2009 110 43% 47 
+2004-2009-2012 64 84% 54 
+Total 18,649   11,128 
+ Fuente: Elaboración propia 
+ 
+2. Seleccionar una muestra que permitiera representar los “nacimientos” entre el 01 de 
+Enero de 2004 y el 30 de Junio de 2015. 
+ 
+Al ser la EPS un panel fijo + nacimientos es importante, en algunas o todas las 
+rondas, refrescar la muestra con la población que se incorpora a la población 
+objetivo. El año 2004, la EPS comenzó a tener representatividad de toda la población 
+de 18 años y más  residente en Chile; en dicha ronda se hizo un seguimiento de la 
+muestra de afiliados, que se complementó con una muestra de nuevos afiliados entre 
+Septiembre de 2001 y Diciembre de 2003, y una muestra de no afiliados (a partir de 
+un empadronamiento de viviendas). De esta manera, se logró que la muestra de la 
+EPS representara a la totalidad de la población adulta del país. 
+ 
+
+=== PDF PAGE 6 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+6 
+En las siguientes rondas (2006 y 2009), no se hizo refresco de la muestra; es decir, 
+las personas que en la población h ubieran cumplido 18 años a partir de Enero de 
+2004 no fueron incorporadas en la muestra; por ello, si bien estas rondas sirven para 
+obtener estadísticas de la dinámica de la población que tenía 18 años y más en el 
+año 2003, no sirven para obtener estadísticas de corte transversal representativas 
+de la población de 18 años y más del país. 
+ 
+Si bien, el año 2012, se hizo un refresco éste no cumplió con las características de 
+diseño de la EPS: fue necesario descartarlo y no se utilizó. 
+ 
+De esta forma, para que la VI Ronda EPS 2015 representara a la población de 18 
+años y más a Junio de 2015 , se seleccionó una muestra represent ativa de  la 
+población que cumplió 18 años entre Enero de 2004 y Junio de 2015. Esto fue 
+equivalente a q ue, en cada ronda , se hubiera seleccionad o una muestra para 
+representar los nacimientos entre rondas (Figura Nº2.1). 
+ 
+Figura Nº2.1 
+Esquema Muestra EPS 
+
+=== PDF PAGE 7 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+7 
+ 
+Fuente: Elaboración propia 
+ 
+ 
+ 
+3 Determinación de la muestra para la VI Ronda EPS 
+ 
+Como se mencionaba en la sección anterior, una parte de la muestra de la VI Ronda EPS se 
+compuso de las personas del Panel seleccionadas en el año 2002 o en el año 2004 , y que 
+fueron entrevistadas al menos en una ronda de la EPS, excluyendo la personas fallecidas. 
+Esta parte de la muestra, estuvo compuesta por 18.649 personas, de las que 15.060 fueron 
+individuos seleccionados y entrevistados en la primera ronda (R1) que se denominarán 
+“Afiliados 2002”; 2.673 fueron seleccionados y entrevistados como no afiliados por primera 
+vez en el año 2004 (R2), que se denominarán “No Afiliado 2004”; y 916 fueron seleccionados 
+y entrevistados por primera vez como nuevos afiliados en el año 2004 (R2) , que se 
+denominarán “Nuevo Afiliado 2004”, estos nombres sirven para identificar la ronda de origen 
+
+
+=== PDF PAGE 8 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+8 
+de selección del entrevistado. La distribución de esta muestra , según presencia en las 
+distintas rondas del estudio, se presentó en el Cuadro Nº2.1. 
+ 
+También, como se mencionaba en la sección anterior para la VI Ronda EPS 2015 se propuso 
+seleccionar una muestra de refresco que permitiese (a Junio de 2015 ) contar con una 
+muestra representativa de las población de 18 años y más; el objetivo, era seleccionar una 
+muestra que representara a la población que cumplió 18 años entre Enero de 2004 y Junio 
+de 2015, considerando que el último refresco (válido) fue realizado en Diciembre de 2003. 
+ 
+A partir del marco muestral administrativo proporcionado por la Subsecretaría de Previsión 
+Social (SPS), se identificó un total de 3.463.970 personas nacidas entre el 01 de Enero de 
+1986 y el 30 de Junio de 1997, los que corresponden a las personas que cumplieron 18 años 
+entre el 01 de Enero de 2004 y el 30 de Junio de 2015. En el Cuadro Nº3.1, se caracteriza 
+este marco muestral según edad, estatus de afiliación al sistema de pensiones, y estatus de 
+defunción. 
+ 
+Cuadro Nº3.1 
+Caracterización Marco Muestral de Personas Nacidas entre el 01 de Enero de 1986 y el 30 
+de Junio de 1997 
+Edad al 30/06/2015 N Afiliados % Afiliados Fallecidos % Fallecidos 
+18 271,469 78,081 28.8 3,942 1.5 
+19 275,968 142,351 51.6 4,381 1.6 
+20 288,233 186,164 64.6 4,812 1.7 
+21 294,056 210,337 71.5 5,184 1.8 
+22 300,691 227,399 75.6 5,780 1.9 
+23 311,034 244,690 78.7 6,507 2.1 
+24 321,057 262,676 81.8 7,058 2.2 
+25 325,719 275,607 84.6 7,758 2.4 
+26 323,809 279,496 86.3 8,278 2.6 
+27 312,509 272,973 87.3 8,713 2.8 
+28 298,187 261,151 87.6 8,446 2.8 
+29 141,238 123,627 87.5 4,188 3 
+Total 3,463,970 2,564,552 74 75,047 2.2 
+Fuente: Elaboración propia a partir de “Base Universo Personas” proporcionada por la SPS 
+ 
+Para determinar el tamaño  de muestra, del refresco a seleccionar , a partir del marco 
+muestral administrativo se consideraron los siguientes antecedentes: 
+ 
+a. En el año 2002 se entrevistaron un total de 17 .246 personas afil iadas al 
+sistema de pensiones (16 .263 entrevistados vivos y 983 entrevistados 
+fallecidos). 
+
+=== PDF PAGE 9 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+9 
+b. En el año 2004 se entrevistaron 3 .830 nuevas personas incorporadas a la 
+muestra (940 nuevos afiliados y 2.860 no afiliados) 
+c. Así, sumando ambas muestras , se obtiene q ue estos 21.076 individuos 
+representan a las 14.745.660 personas en el marco muestral administrativo 
+proporcionado por la SPS2 que cumplieron 18 años antes de Enero de 2004. 
+d. Utilizando esta misma fracción (21 .076/14.745.660=0.0014293) se obtuvo 
+que en la VI Ronda EPS 2015 deberían entrevistarse (vivos+fallecidos) 4.951 
+personas pertenecientes a la población de aquellos que cumplieron 18 años 
+y más entre el 01 de Enero de 2004 y el 30 de Junio de 2015, este número 
+se obtiene al aplicar la fracción 0.0014293  a la población de 3,463,970 
+personas que cumplieron 18 años entre el 01 de Enero de 2004 y el 30 de 
+Junio de 2015. 
+e. Teniendo en consideración que la muestra proveniente de registros 
+administrativos no cuenta con la información de contacto ideal o más 
+actualizada, se propuso seleccionar una muestra de 15 .000 individuos para 
+el refresco de la VI Ronda EPS 2015. 
+ 
+4 Selección de la muestra de refresco para la VI Ronda EPS 
+ 
+Las selección de la muestra, se hizo a través del mismo diseño utilizado en la selección de 
+la muestra de afiliados en el año 2002, el refresco de afiliados y muestra de no afiliados. Se 
+consideraron, como Unidades Primarias de Muestreo, las mismas comunas definidas en el 
+diseño original del año 2002 y replicado en las muestras del año 2004. 
+ 
+4.1 Diseño muestral de la Encuesta de Protección Social 
+ 
+En su diseño original, la EPS, fue pensada como una encuesta de carácter longitudinal para 
+generar una muestra representativa de la población afiliada al sistema de pensiones ; en 
+principio, pueden existir afiliados al sistema de pensiones que tengan menos de 18 años de 
+edad (esta restricción de edad no fue impuesta en el diseño original de la muestra del año 
+2002). E l año 2004 se amplió la población objetivo de la EPS, incorporándose a los no 
+afiliados al sistema de pensiones ; para la selección de la muestra de no afiliados , se 
+consideró un marco muestral de individuos que, al menos, tuviera 18 años a Diciembre de 
+2003. De esta manera, a partir del año 2004 la EPS se basa en una muestra que es 
+representativa de la población total de 18 años o más (a Diciembre de 2003). 
+                                                 
+ 
+ 
+2 El marco muestral proporcionado por la SPS cuenta con 18.603.560 individuos, de los cuales 393.930 nacieron 
+después del 30 de Junio de 1997, los que fueron excluidos ya que tienen menos de 18 años de edad al 30 de 
+Junio de 2015. De los restantes 18.209.630 individuos que t enían 18 años y más al 30 de Junio de 2015, 
+3.463.970 cumplieron 18 años entre el 01 de Enero de 2004 y el 30 de Junio de 2015, y los restantes 14.745.660 
+cumplieron 18 años antes del 01 de Enero de 2004. 
+
+=== PDF PAGE 10 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+10 
+4.2 Diseño Muestral de la EPS 2002 
+ 
+El diseño metodológico de la selección de la muestra fue realizado por el Departamento de 
+Economía de la Facultad de Ciencias Económicas y Administrativas (Universidad de Chile), 
+institución que tiene una extensa experiencia en el diseño y aplicación de encuestas 
+representativas en Chile. En dicha oportunidad, destacó la participación en el equipo del 
+Departamento de Economía (en calidad de consultor) del Sr. Steven Heeringa3. Asimismo, 
+en el desarrollo de esta tarea, destacó la estrecha coordinación de la contraparte técnica 
+del proyecto conformada por la División de Planificación y Estudios de la Subsecretaría de 
+Previsión Social. 
+ 
+4.2.1 Población objetivo 
+ 
+La población objetivo de la primera ronda de la EPS, contempló a la población chilena afiliada 
+al sistema de pensiones, lo que incluye afiliados al antiguo sistema de pensiones (sistema 
+de reparto o INP) y los afiliados al sistema de pensiones vigente desde 1981 (sistema de 
+capitalización individual o AFP). Se excluyó , explícitamente, de la población objetivo a los 
+miembros de las Fuerzas Armadas y del orden  (por contar con su propio sistema de 
+seguridad social); y a un pequeño porcentaje de la población chilena que residen en áreas 
+de difícil acceso.  
+ 
+4.2.2 Diseño Metodológico 
+ 
+La muestra representativa a la que se aplicó la primera encuesta, en el año 2002, se obtuvo 
+a partir del universo de afiliados al sistema de pensiones tanto de capitalización individual 
+como del sistema de reparto (actualmente en extinción), información proporcionada por la 
+Superintendencia de Administradoras de Fondos de Pensiones y por el Instituto de 
+Normalización Previsional.  
+ 
+Para ello, la Superintendencia de AFP y el INP proporcionaron una base de datos innominada 
+de todos los afiliados al sistema previsional de capitalización individual, es decir, se omitió 
+todo campo que permitiera la identificación personal de los individuos . Esto constituyó el 
+marco muestral para la primera ronda de la EPS, el año 2002. 
+ 
+Dado que el objetivo del trabajo a realizar es el diseño de una muestra representativa a 
+nivel nacional que permita la sistematización y análisis de la información sobre densidad de 
+cotizaciones en el sistema de capitalización individual, se consideró como  población de 
+                                                 
+ 
+ 
+3 Experto en diseños muestrales complejos, PhD. y Director de la Unidad de Diseño y Análisis de 
+Encuestas del Institute for Social Research de la Universidad de Michigan 
+
+=== PDF PAGE 11 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+11 
+referencia a todos los afiliados desde 1981 hasta agosto de 2001 registrados en los archivos 
+administrativos de las siete AFP que estaban vigentes en el sistema , así como también en 
+el INP. 
+ 
+Se procedió, entonces, a seleccionar una “muestra histórica” de todos los individuos afiliados 
+al sistema en 1981 o después, que a agosto de 2001, estuvieran en alguna de las siguientes 
+condiciones: 
+ 
+(1) trabajando, 
+(2) cesantes o fuera de la fuerza de trabajo, 
+(3) pensionados o 
+(4) fallecidos. 
+ 
+Es necesario enfatizar que, conceptualmente, los pensionados y un subgrupo de los afiliados 
+fallecidos debían ser incluidos en la población de referencia, por cuanto éstos formaron parte 
+del universo de afiliados al sistema en algún momento del tiempo después de 198 1. Su 
+actual pensión de vejez, o de sobrevivencia, que causaron es el resultado del desempeño 
+previsional durante la vida activa. Luego, el no incluirlos en la muestra representativa 
+censuraría los datos relativos al patrón de comportamiento de las cohortes de edad al que 
+esos individuos pertenecen, compr ometiendo la representatividad de la muestra 
+seleccionada. 
+ 
+4.2.3 Marco Muestral 
+ 
+La Superintendencia de Administradoras de Fondos de Pensiones y el Instituto de 
+Normalización Previsional proporcionaron al Departamento de Economía información acerca 
+de la totalidad de los afiliados al sistema. En el Cuadro Nº4.1 se muestra la composición de 
+la población afiliada, al sistema de pensiones, a Enero de 2002.  
+ 
+El marco muestral -referencia para la selección de la muestra - de 8.074.673 afiliados al 
+sistema de pensione s fue construido a partir de la combinación de las bases de datos 
+proporcionadas por el INP y la Superintendencia de AFP. Utilizando el número de RUT , se 
+chequearon los duplicados, se realizó un análisis para detectar la causa por la cual se generó 
+el dupl icado, luego los duplicados fueron eliminados de acuerdo a reglas de decisión 
+determinadas por el equipo de trabajo a cargo del diseño muestral. 
+ 
+Además del número de RUT, el marco muestral contaba con las siguientes variables: 
+ 
+- Sistema de pensiones (AFP o INP) 
+- Comuna  
+- Región de residencia 
+- Estatus en el sistema de pensiones (activo, pensionado o fallecido) 
+
+=== PDF PAGE 12 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+12 
+- Sexo 
+- Edad 
+- Fecha de afiliación 
+ 
+ 
+Cuadro 4.1 
+Marco Muestral Encuesta de Protección Social 
+Estatus de Afiliación AFP INP Total 
+Activos 6,161,463 965,318 7,126,781 
+Pensionados 362,203 381,321 743,524 
+Fallecidos 70,149 134,219 204,368 
+Total 6,593,815 1,480,858 8,074,673 
+       Fuente: Bravo, D., Heeringa, S., Quijada, S. y Vásquez, J. (2011) 
+ 
+4.2.4 Diseño muestral por cluster, estratificación en dos etapas 
+ 
+En contraste con otras encuestas para estudiar la población chilena, como por ejemplo la 
+encuesta CASEN, la selección de la muestra de la EPS no hubiera sido eficiente si es que 
+esta hubiese sido seleccionada utilizado un diseño muestral basado en áreas ge ográficas, 
+dado que el objetivo era obtener una muestra representativa de afiliados al sistema de 
+pensiones (personas) y no una muestra representativa de hogares.  
+ 
+Una primera alternativa , consistió en seleccionar de manera aleatoria a los individuos 
+afiliados al sistema de pensiones a partir del marco muestral construido usando las bases 
+de datos del INP y de la Superintendencia de AFP ; sin embargo, esta metodología hubiera 
+generado una muestra con una excesiva dispersión geográfica y , por lo tanto , menos 
+eficiente en términos de costos. 
+ 
+Así, para obtener una muestra representativa de los afiliados al sistema de pensiones, se 
+consideró como mejor opción la utilización de un diseño en dos etapas estratificado por 
+clusters (Kish, 1965, Survey Sampling). El diseño muestral, en dos etapas, asegura que cada 
+afiliado elegible en el universo de individuos afiliados tendrá similar probabilidad de ser 
+seleccionado y, al mismo tiempo, provee una forma más eficiente de agrupamiento de la 
+muestra.  
+ 
+En consideración con la decisión anterior, y teniendo en cuenta la información disponible 
+para cada afiliado del marco muestral, se seleccionó la variable comuna como la unidad más 
+pequeña y fehaciente para formar los clusters (agrupamientos) de los individuos en los 
+registros del sistema de pensiones. El muestreo bietápico , estuvo basado en una primera 
+etapa en selección de comunas. En la segunda etapa, se estratifica a los afiliados en las 
+comunas seleccionadas en la 1° etapa, según diversas características relevantes, tal  como 
+se indica más adelante. 
+
+=== PDF PAGE 13 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+13 
+ 
+Primera Etapa: Selección de comunas 
+ 
+Las comunas pertenecientes al Gran Santiago más San Bernardo y Puente Alto fueron 
+incluidas con probabilidad igual a uno en la primera etapa, así como también las comunas 
+con más de 60.000 habitantes; es decir, las que representan las mayores ciudades de Chile. 
+Coyhaique, como capital de la XI región, también fue incluida con certeza, a pesar de tener 
+una población de 45.485 habitantes en el año 20004. 
+ 
+Por lo tanto, 81 comunas fueron seleccionadas con probabilidad uno lo que (en conjunto) 
+representa aproximadamente un 72% del total de la población chilena5. 
+ 
+Del resto de las 285 comunas del país incluidas en la encuesta Casen 2000,  32 fueron 
+elegidas en la primera etapa de selección. P ara ello, se estratificaron las comunas según 
+región, ingreso per cápita y población. Esto es, todas las comunas pertenecientes a una 
+misma región se ordenaron según el ingreso per cápita de los habitantes en forma 
+descendente. 
+ 
+Con este orden , se formaron  grupos de comunas que en conjunto tuvieron 100.000 
+habitantes aproximadamente6; luego, en cada región, se formaron entre 1 y 6 estratos de 
+comunas con una desviación estándar intra -regional del número de habitantes en cada 
+estrato entre 4.134 y 7.893 y una desviación estándar nacional de 15.216. El que los estratos 
+tengan tamaños poblacionales parecidos, hace que la primera etapa sea estadísticamente 
+más eficiente. 
+ 
+De cada estrato se seleccionó 1 comuna que representara a toda la población de las 
+restantes comunas en el estrato. Entonces, el objetivo primero de la definición de los 
+estratos es agrupar comunas similares entre sí. Dadas las diferencias geográficas y de 
+actividad económica entre las regiones, se intentó respetar los límites regionales formando 
+estratos para comunas dentro de una misma región. Asimismo, como variable relacionada 
+con la condición socio -económica de la comuna , se utilizó el ingreso per cápita y se 
+agruparon las comunas con ingreso per cápita similares7. 
+                                                 
+ 
+ 
+4 La Selección de comunas auto-representativas fue hecha en base a la población de cada comuna reportada en 
+la encuesta CASEN 2000. Coyhaique se incluyó ya que ninguna ciudad de la región de Aysén cuenta con 60.000 
+o más. 
+5 Según información proveniente de la Encuesta CASEN 2000. 
+6 Además del ingreso per cápita promedio de la comuna, se formaron estratos según años de escolaridad 
+promedio de la población y con la tasa de pobreza. Asimismo, como una alternativa a la agrupación en torno a 
+100.000 habitantes, se intentó agrupar comunas que sumaran 70.000 individuos. Finalmente , la combinación 
+ingreso per-cápita y 100.000 habitantes resultó ser la combinación con mejores propiedades estadísticas . La 
+información de ingreso per-cápita, escolaridad y tasa de pobreza se obtiene de la Encuesta Casen. 
+7 El ingreso per-cápita de la comuna se estima a través de la encuesta Casen 2000. 
+
+=== PDF PAGE 14 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+14 
+ 
+Una vez formados los estratos (32), se seleccionó una comuna por estrato con probabilidad 
+proporcional al tamaño (PPT) para cada comuna en un estrato. Se procedió de la siguiente 
+forma: 
+ 
+1. Se calculó la población acumulada del estrato. 
+2. Se generó un número aleatorio, con distribución uniforme entre 1 y el tamaño del 
+estrato. 
+3. Se ubicó el número aleatorio en los intervalos de población acumulada formados por 
+las comunas del estrato. 
+4. La comuna seleccionada fue aquella que conten ía, en su intervalo , el número 
+aleatorio. 
+ 
+Por ejemplo, supongamos que hemos formado el siguiente estrato de comunas de la quinta 
+región: 
+Cuadro Nº4.2 
+Ejemplo estratos para la quinta región 
+Región Comuna Población Ingreso pc Acum Inferior  Superior 
+5 LOS ANDES 55,236 223,843 55,236 1 55,236 
+5 SANTO DOMINGO 7,450 185,980 62,686 55,237 62,686 
+5 RINCONADA 6,406 167,489 69,092 62,687 69,092 
+5 PAPUDO 4,410 159,913 73,502 69,093 73,502 
+5 EL QUISCO 11,232 156,500 84,734 73,503 84,734 
+5 PANQUEHUE 6,267 155,970 91,001 84,735 91,001 
+5 CALLE LARGA 9,179 149,410 100,180 91,002 100,180 
+5 ALGARROBO 10,555 145,728 110,735 100,181 110,735 
+ 
+ 
+Las comunas están ordenadas de mayor a menor ingreso per-cápita. Se crea una columna 
+con la población acumulada, vemos que la última comuna (Algarrobo) acumula una 
+población total del estrato de 110 .735; posteriormente, se debe generar un número 
+aleatorio uniforme entre 1 y 110 .735, supongamos que este número es igual a 74 .567, 
+tenemos que ubicar este número en el intervalo de población de cada comuna, en este caso 
+el número aleatorio se ubica en el intervalo de la comuna El Quisco, por lo cual ésta sería la 
+comuna seleccionada para representar el estrato. 
+ 
+La razón entre el tamaño (población) comunal y el tamaño (población) del estrato  
+corresponde a la probabilidad con la cuál fue seleccionada esta comuna (f1).  
+ 
+Es importante mencionar, que las dos variables utilizadas en la primera etapa de selección 
+(población comunal e ingreso per cápita), fueron obtenidas a partir de la encuesta CASEN 
+2000 y no de l os datos de los afiliados al sistema previsional. Se adoptó esta estrategia , 
+
+=== PDF PAGE 15 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+15 
+debido a dos razones: (1) al momento de seleccionar las comunas no se contaba con los 
+registros de los afiliados para conocer el real tamaño de cada comuna; y, más importante, 
+(2) los datos institucionales de los afiliados que se obtuvieron para la selección de individuos 
+(segunda etapa de la selección de la muestra), no incluían la condición socio -económica, 
+como por ejemplo, el ingreso, los años de educación, etc. 
+ 
+Segunda Etapa: Selección de los afiliados 
+ 
+La segunda etapa de selección , consistió en elegir a los afiliados dentro de cada comuna 
+seleccionada (ya fuera auto-representativa o no auto -representativa). A diferencia de la 
+primera etapa, en este proceso se utilizaron los datos proporcionados por las 
+Administradoras de Fondos de Pensiones. Un tamaño muestral del orden de 20.000 casos, 
+parecía razonable considerando la indudable y clara importancia para el análisis y diseño de 
+políticas relativas al sistema de pensiones. Esta fue, de hecho, la recomendación de tamaño 
+muestral realizada por el Dr. Steve Heeringa, más allá del tamaño de la población chilena o 
+de cada país en general, el tamaño muestral debe ser tal que permita llegar al nivel de 
+desagregación y detalle necesari o para obtener la representatividad adecuada de ciertos 
+grupos de interés a la hora de fundamentar y evaluar propuestas específicas. El tamaño de 
+la muestra de referencia fue de 30.000 casos para considerar las no respuestas o problemas 
+de direcciones. 
+ 
+Así, considerando el número deseado de afiliados a seleccionar y el total de afiliados en las 
+comunas seleccionadas, se calculó la tasa de muestreo total: 
+ 
+𝑓 = 𝑛 𝑚𝑢𝑒𝑠𝑡𝑟𝑎𝑙
+𝑁 𝑝𝑜𝑏𝑙𝑎𝑐𝑖𝑜𝑛𝑎𝑙 = 𝑓1 ∙ 𝑓2 = 0.003802 
+ 
+Ya calculado f1, se obtiene f2 que representa la tasa a la que se seleccionará a los individuos 
+en cada comuna. 
+ 
+Finalmente, dentro de cada comuna seleccionada , se ordena a los afiliados según las 
+siguientes variables: 
+ 
+(1) condición del afiliado (activo, pensionado, fallecido); 
+(2) sexo y 
+(3) edad o fecha de afiliación para los afiliados al sistema antes o después de 1981, 
+respectivamente. 
+ 
+Una vez que los afiliados estuvieron ordenados según estos criterios, se seleccionaron 
+aplicando el intervalo de selección para cada comuna, definido como el recíproco de f2. 
+ 
+
+=== PDF PAGE 16 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+16 
+Siguiendo el ejemplo anterior, la comuna El Quisco fue seleccionada para representar el 
+estrato 1 de la quinta región, la probabilidad con la que esta comuna fue seleccionada es: 
+ 
+𝑓1 = 11.232
+110.735 = 0.1014 
+ 
+ 
+De esta forma, la probabilidad con la que los individuos de esta comuna deben ser 
+seleccionados es: 
+ 
+𝑓2 = 𝑓
+𝑓1
+= 0.00367
+0.1014 = 0.0362 
+ 
+En la comuna hay un total de 11 .232 individuos, por lo cual se deben seleccionar un total 
+de 406 personas. 
+ 
+𝑛 = 11.232 × 0.0362 = 406 
+ 
+Estos 406 casos se pueden seleccionar mediante un muestreo aleatorio simple sistemático, 
+para esto el intervalo (paso) de selección corresponde al inverso de f2, en este caso es 28. 
+Entonces, una vez ordenados los individuos de la comuna seleccionada de acuerdo a lo s 
+criterios antes mencionados, se genera un número aleatorio uniforme entre 1 y 28, 
+supongamos que sale el número 11, esto significa que la persona 11 de este listado es la 
+primera seleccionada de esta comuna, luego la segunda persona seleccionada es la persona 
+en la posición 11+28=39, y así sucesivamente hasta barrer todo el listado. El resultado , 
+será una muestra de 406 individuos. 
+ 
+ 
+Se debe tener presente que , en la primera fase , la selección de las comunas de la 
+formación de los estratos se hace a part ir de la mejor estimación que se tenga de la 
+población por comunas y sus características, razón por la cual se utilizó la Encuesta Casen 
+2000. Dado que esta era la única información disponible a nivel de comunas, con 
+información sociodemográfica que permit e una mejor agrupación de comunas para la 
+conformación de estratos homogéneos.  
+ 
+Luego, en la segunda etapa, se procede a seleccionar a los individuos del listado 
+proveniente de los registros administrativos  (marco muestral) ; por esto, se requiere 
+ajustar la población de cada comuna del estrato a las poblaciones de las comunas según 
+el marco muestral donde efectivamente se hizo la selección, ya que la población efectiva 
+esta dada por este marco muestral. Así, a partir de la población efectiva en las comunas, 
+estratos se realiza el cálculo de f1, f2, paso y n de cada comuna. 
+ 
+
+=== PDF PAGE 17 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+17 
+Es importante señalar, que la metodología de selección de la muestra en dos etapas podría 
+ser menos eficiente que una selección aleatoria estratificada. Sin embargo, para este 
+proyecto en particular, el efecto de seleccionar a los afiliados por clusters (comuna 
+seleccionada en la primera etapa) es atenuado por dos características del diseño: primero, 
+más del 70% de los afiliados residen en las comunas auto representativas y, dado que no 
+se realiza más agrupamiento entre comunas, esta gran mayoría de afiliados no está sujeta 
+a agrupamientos adicionales ; segundo, para el restante 30% de la población, que se 
+encuentra en las comunas no auto-representativas, no se hizo un agrupamiento geográfico 
+localizado dentro de cada comuna, esto es, la comuna es la unidad geográfica más pequeña 
+que se utilizó. En los diseños muestrales multi -etápicos, además de la primera etapa de 
+selección de comunas, se utiliza una segunda etapa de muestreo según áreas locales de 
+residencia dentro de cada comuna (por ejemplo , los segmentos en las encuestas Casen). 
+Esta etapa adicional, aumenta la varianza muestral e introduce la correlación entre estas 
+últimas unidades de agrupación. En el archivo Excel “Factor de expansión Base EPS.xls” en 
+la hoja “Selecc_R1” se presenta la selección de la s comunas, la muestra objetivo en cada 
+una de ellas, y las probabilidades de selección de primera y segunda etapa. 
+ 
+En resumen, se espera que la pérdida en precisión del diseño en dos etapas sea muy 
+pequeña en relación a las significativas ganancias en términos de costo -eficiencia de la 
+muestra finalmente seleccionada. 
+ 
+4.3 Muestra refresco VI Ronda EPS  
+ 
+Las selección de la muestra  de refresco para la VI Ronda EPS  2015, se hizo a través del 
+mismo diseño utilizado en la selección de la muestra de afiliados en el año 2002, y el refresco 
+de afiliados y muestra de no afiliados del año 2004: utilizando, como Unidades Primarias de 
+Muestreo, las mismas comunas definidas en el diseño original del año 2002 y replicado en 
+las muestras del año 2004. 
+ 
+Para la selección de la muestra de refresco , se solicitó a registro civil información de 
+direcciones y comuna para el marco muestral de 3.463.970 personas nacidas entre el 01 de 
+Enero de 1986 y el 30 de Junio de 1997. 
+ 
+El Registro Civil, entregó de vuelta una base de datos con el identificador de comuna para  
+3.331.257 observaciones8. De las cuales 12.864 no estaban en la petición (marco muestral) 
+original, por lo cual fueron elim inadas. De esta forma, para 145 .577 observaciones no se 
+tuvo información proveniente del Registro Civil. 
+ 
+                                                 
+ 
+ 
+8 El nombre de la base de datos es EPS_COMUNAS_MUESTRA.dta 
+
+=== PDF PAGE 18 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+18 
+La Subsecretaría de Previsión Social , también envió información de direcciones obtenidas 
+del marco muestral administrado por la institución para complementar la información 
+faltante; se lograron complementar 3 .452 direcciones que no estaban disponibles en 
+Registro Civil. 
+ 
+El resultado final, se presenta en el Cuadro Nº4.3.  
+ 
+Cuadro Nº4.3 
+Información de direcciones y comuna disponible para el marco muestral 
+Fuente N % 
+Registro Civil 3,318,393 95.8% 
+SPS 3,452 0.1% 
+No tiene info 142,125 4.1% 
+Total 3,463,970 100% 
+                                  Fuente: Elaboración propia. 
+ 
+Con la información disponible por comuna se procedió a calcular la población de elegibles 
+en cada una de ellas para, con esta información, poblar la planilla de selección de la muestra 
+de refresco9. 
+ 
+La planilla de selección contiene las comunas que fueron  utilizadas originalmente en el 
+diseño muestral de la EPS, separando aquellas que fueron seleccionadas con probabilidad 
+unitaria y aquellas que fueron seleccionadas para representar un estrato. La población 
+distribuida en estas comunas suma un total de 3.250.561.  
+ 
+Como se mencionaba en la sección anterior , se determinó un tamaño muestral para el 
+refresco de 15 mil personas con lo cual la fracción de muestreo fue de 0.00461459. 
+ 
+Utilizando esta información, y la información de población de cada comuna y de los estratos, 
+se procedió a calcular f 1 (que es 1 para las comunas auto -representadas, e igual a la 
+población de la comuna sobre la población del estrato para las comunas no auto -
+representadas). Determinado f1, se obtiene f2, dividiendo f en f1. El inverso de f2, determina 
+el paso utilizado para la selección10. 
+ 
+La muestra fi nal enviada a terreno fue de 14 .995 personas, esta muestra se denominó 
+“Refresco 2015”. 
+                                                 
+ 
+ 
+9 El nombre de este archivo es “Factor de expansión Base EPS.xls2, en la hoja “Selecc_R6” 
+10 La selección se hace a través del do-file selección_refresco_6aRonda.do 
+
+=== PDF PAGE 19 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+19 
+5 Resultados del trabajo de campo de la VI Ronda EPS 
+ 
+El trabajo de campo de la VI Ronda de la EPS fue realizado entre los meses de abril y julio 
+del año 2016. El Cuadro Nº5.1 muestra un resumen del resultado del trabajo de campo en 
+cuanto a la muestra contactada, la muestra lograda y la cantidad de entrevistados vivos, 
+según tipo de muestra, distinguien do entre el panel y el refresco, y dentro del panel 
+separando a las personas según la presencia en rondas anteriores del estudio. 
+ 
+Cuadro Nº5.1 
+Resultados del trabajo de campo VI Ronda EPS 
+ 
+Fuente: Elaboración propia 
+ 
+Del total de 33 .644 personas pertenecientes a la muestra de la VI Ronda, se lograron 
+contactar 20.105 personas, de las cuales 12.352 fueron personas pertenecientes al panel y 
+7.753 personas pertenecientes a la muestra de refresco. 
+ 
+Se considera como logro tanto a las personas contacta das y entrevistadas, como aquellas 
+que se logró un contacto pero no fue posible entrevistar porque se encontraba fallecida , o 
+impedida física y/o mentalmente para responder la encuesta. De esta forma, el porcentaje 
+de logro fue de un 53.5% (18 .007 personas), siendo en el panel 59.9% y en el refresco 
+45.6%. 
+ 
+Con respecto a los entrevistados vivos, se lograron un total de 16 .906 entrevistas: 10.128 
+de la muestra panel y 6.778 de la muestra refresco. Como porcentaje de la muestra , pero 
+excluyendo a los fallecidos o impedidos, esto representa un 51.9%. 
+ 
+El Cuadro Nº5.2 presenta las tasas de respuesta, cooperación y rechazo según tipo de 
+muestra y participación longitudinal.  
+ 
+La tasa de respuesta (RR) corresponde a la cantidad de en trevistados sobre el total de 
+personas en la muestra, pero excluyendo las personas fallecidas o impedidas para 
+Muestra
+n n % n % n % n % n % n %
+Muestra Panel 18,649 12,352 66.2 11,163 59.9 10,128 57.5 692 3.7 271 1.5 72 0.4
+2002-2004-2006-2009-2012 5,846 4,837 82.7 4,553 77.9 4,399 77.3 108 1.8 21 0.4 25 0.4
+2002-2004-2006-2009 3,363 2,180 64.8 1,959 58.3 1,567 52.7 290 8.6 86 2.6 16 0.5
+2002-2004-2006-2012 490 327 66.7 298 60.8 290 60.2 6 1.2 1 0.2 1 0.2
+2002-2004-2006 1,146 502 43.8 405 35.3 328 30.7 50 4.4 24 2.1 3 0.3
+2002-2004-2009-2012 233 185 79.4 171 73.4 163 72.4 6 2.6 2 0.9 0.0
+2002-2004-2009 339 193 56.9 163 48.1 138 43.9 21 6.2 4 1.2 0.0
+2002-2004 725 275 37.9 202 27.9 164 23.9 20 2.8 15 2.1 3 0.4
+2002-2006-2009-2012 578 439 76.0 401 69.4 387 68.6 6 1.0 3 0.5 5 0.9
+2002-2006-2009 544 297 54.6 257 47.2 226 44.1 21 3.9 8 1.5 2 0.4
+2002-2006-2012 122 75 61.5 66 54.1 63 52.9 2 1.6 1 0.8 0.0
+2002-2006 432 164 38.0 115 26.6 92 22.5 14 3.2 6 1.4 3 0.7
+2002-2009-2012 95 67 70.5 57 60.0 56 59.6 0.0 1 1.1 0.0
+2002-2009 233 109 46.8 88 37.8 77 34.7 7 3.0 2 0.9 2 0.9
+2002 914 240 26.3 156 17.1 120 13.7 13 1.4 21 2.3 2 0.2
+2004-2006-2009-2012 1,670 1,392 83.4 1,328 79.5 1,292 79.1 24 1.4 7 0.4 5 0.3
+2004-2006-2009 1,058 677 64.0 625 59.1 485 52.8 85 8.0 50 4.7 5 0.5
+2004-2006-2012 127 88 69.3 79 62.2 78 61.9 1 0.8 0.0 0.0
+2004-2006 328 140 42.7 104 31.7 83 27.0 6 1.8 15 4.6 0.0
+2004-2009-2012 64 49 76.6 44 68.8 42 67.7 2 3.1 0.0 0.0
+2004-2009 110 50 45.5 44 40.0 37 35.9 6 5.5 1 0.9 0.0
+2004 232 66 28.4 48 20.7 41 18.2 4 1.7 3 1.3 0.0
+Muestra Refresco 14,995 7,753 51.7 6,844 45.6 6,778 45.4 27 0.2 7 0.0 32 0.2
+Total 33,644 20,105 59.8 18,007 53.5 16,906 51.9 719 2.1 278 0.8 104 0.3
+I mpedidosLogroContacto Entrevistados vivos Fallecidos con cuestionario Fallecidos sin cuestionario
+
+=== PDF PAGE 20 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+20 
+responder, así en el caso de la sexta ronda de la EPS 2015 la tasa de respuesta en la muestra 
+panel fue de 57.5% y en la muestra de refresco 45.4 %; cabe destacar, que existe gran 
+variabilidad en la tasa de respuesta en la muestra panel dependiendo de la presencia o 
+participación que han tenido las personas a lo largo del estudio. Por ejemplo, para aquellas 
+personas que ingresaron a la muestra en el año 2002 y han participado en todas las rondas 
+del estudio, la tasa de respuesta es 77.3%, y 79.1% en las personas que ingresaron en el 
+año 2004 y han participado en todas las rondas; pero en aquellas personas que, por ejemplo, 
+sólo habían sido entrevistadas en el año 2002, la tasa de respuesta es 13.7%. 
+ 
+Cuadro Nº5.2 
+Tasa de respuesta, cooperación y rechazo de la VI Ronda EPS 
+ 
+Fuente: Elaboración propia. 
+Nota: se excluyen de los cálculos a las personas fallecidas (CDF=231) o impedidas (CDF=232). 
+ 
+La tasa de cooperación (COOP) corresponde a la proporción de personas entrevistadas sobre 
+el total de personas contactadas; en este caso, también se excluyeron del denominador a 
+las personas fallecidas o impedidas, de esta forma la tasa de cooperación corresponde a las 
+personas entrevistadas sobre el total de personas contactadas y con posibilidades de 
+contestar la encuesta. En la VI Ronda, se obtuvo una tasa de cooperación de 89%, siendo 
+89.5% en la muestra panel y 88.2% en la muestra refresco, nuevamente se pres entan 
+diferencias importantes en la tasa de cooperación en la muestra panel dependiendo de la 
+Responde RR COOP Rechaza REF
+N % % N %
+Muestra Panel 10,128 57.5 89.5 917 5.2
+2002-2004-2006-2009-2012 4,399 77.3 93.9 251 4.4
+2002-2004-2006-2009 1,567 52.7 87.6 173 5.8
+2002-2004-2006-2012 290 60.2 90.9 21 4.4
+2002-2004-2006 328 30.7 77.2 71 6.6
+2002-2004-2009-2012 163 72.4 92.1 12 5.3
+2002-2004-2009 138 43.9 82.1 24 7.6
+2002-2004 164 23.9 69.2 49 7.1
+2002-2006-2009-2012 387 68.6 91.1 33 5.9
+2002-2006-2009 226 44.1 85.0 23 4.5
+2002-2006-2012 63 52.9 87.5 9 7.6
+2002-2006 92 22.5 65.2 36 8.8
+2002-2009-2012 56 59.6 84.8 9 9.6
+2002-2009 77 34.7 78.6 15 6.8
+2002 120 13.7 58.8 54 6.2
+2004-2006-2009-2012 1,292 79.1 95.3 55 3.4
+2004-2006-2009 485 52.8 90.3 33 3.6
+2004-2006-2012 78 61.9 89.7 7 5.6
+2004-2006 83 27.0 69.7 25 8.1
+2004-2009-2012 42 67.7 89.4 5 8.1
+2004-2009 37 35.9 86.0 5 4.9
+2004 41 18.2 69.5 7 3.1
+Muestra Refresco 6,778 45.4 88.2 570 3.8
+Total 16,906 51.9 89.0 1487 4.6
+
+=== PDF PAGE 21 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+21 
+participación que han tenido los entrevistados a lo largo del estudio, en aquellas personas 
+que han participado en todas las rondas desde su selección, la tasa de  cooperación es 
+cercana al 95%. 
+ 
+La tasa de rechazo (REF) corresponde a la proporción de la muestra que rechaza el estudio, 
+en este caso también se excluyen del denominador a los fallecidos e impedidos. En la VI 
+Ronda de la EPS 2015, se obtuvo una tasa de rechazo del 4.6%, siendo 5.2% en la muestra 
+panel y 3.8% en la muestra refresco. En este caso , también se obtienen menores tasa de 
+rechazo en la muestra panel (con mayor participación a lo largo del estudio). 
+6 Factores de expansión 
+ 
+Para que los análisis y estudios basados en encuestas con diseño muestral probabilístico 
+tengan validez sobre toda la población objetivo, se debe utilizar un ponderador en la 
+estimación de cualquier variable de interés, que da cuenta del número de personas de la 
+población que representa un individuo que participa en dicha encuesta. Este ponderador se 
+conoce como “factor de expansión”. Así, dado los datos recolectados para una muestra 𝑠𝑡, 
+se pueden  obtener estimaciones para la población 𝑈𝑡 (por ejemplo, el  promedio de la 
+variable 𝑦𝑡 que fue medida en el momento 𝑡), para esto se utiliza el factor de expansión. 
+ 
+En el Diagrama Nº 6.1, podemos apreciar cómo la muestra a través del factor de expansión 
+logra representar a la población. En este ejemplo, se obtiene una muestra estratificada, en 
+el primer estrato se seleccionan 10 individuos de una población de 100, de esta forma la  
+probabilidad de selección es 0. 10, el factor de expansión entonces es el inverso de la 
+probabilidad de selección, así cada un o de los 10 individuos seleccionados en este estrato 
+tiene un factor de expansión igual a 10, al sumar los ponderadores de estos 10 individuos 
+se obtiene la población de 100. En el estrato 2 también se seleccionan con probabilidad 0.10 
+y el factor de expansión es 10, los 5 individuos de la muestra suman sus ponderadores a la 
+población de 50. En el tercer estrato se selecciona una muestra de 4 de una población de 
+80, la probabilidad de selección  es 0. 05, y el ponderador es 20, al sumas la muestra 
+ponderada se obtiene la población de 80. 
+ 
+ 
+ 
+Diagrama Nº 6.1: Factor de expansión para representar la población 
+
+=== PDF PAGE 22 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+22 
+ 
+Fuente: Factores de expansión en encuestas longitudinales, J. Vásquez (2016). CISS-BID. 
+ 
+ 
+En una encuesta longitudinal, en general, se calculan factores de expansión de corte 
+transversal y factores de expansión longitudinales. El factor de expansión de corte 
+transversal considera toda la muestra de personas entrevistadas , en el momento 𝑡, para 
+representar a la población en este mismo momento del tiempo.  
+ 
+Sin embargo, el factor de expansión longitudinal considera la muestra de persona s 
+entrevistada en distintos momentos del tiempo que pueden ser de interés para el  análisis 
+longitudinal, para representar a la población; por ejemplo, si una encuesta panel ti ene 
+rondas en 2006, 2009, 2012 y 2015, un posible factor de expansión longitudinal es para 
+representar las personas entrevistadas en 2009 y 2015, teniendo como objetivo analizar la 
+dinámica de variables claves y sus cambios en estos años. Otro análisis de interés podría 
+ser la muestra entrevistada en todos los años, para estudiar cambios en variables en todos 
+estos años. 
+ 
+En el Diagrama N°  6.2, se presentan los distintos factores de expansión que es posible 
+obtener sólo considerando las tres primeras rondas del estudio de la Encuesta de Protección 
+Social. En la primera ronda, en el año 2002, se seleccionó una muestra para representar a 
+las personas afiliadas al sistema de pensiones, así, en esta primera ronda sólo fue necesario 
+computar un factor de expansió n que es para representar el corte transversal de afiliados 
+al sistema de pensiones en el año 2002. En este caso los factores de expansión representan 
+
+
+=== PDF PAGE 23 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+23 
+a la población de afiliados del país únicamente. En el año 2004, se hizo un seguimiento de 
+las personas e ntrevistadas en el año 2002 , además se agregó muestra de refresco para 
+capturar los nuevos afiliados al sistema de pensiones y a los no afiliados al sistema de 
+pensiones; de esta forma, la muestra de panel entrevistada en el año 2002 más la muestra 
+de refresco tenía por objetivo representar la población de 18 años y más del año 2004. Así, 
+en la segunda ronda , se computó el factor de expansión de corte transversal para 
+representar la población de 18 años y más al 2004, y además se construyó el factor de 
+expansión para la muestra longitudinal de afiliados entrevistados en el año 2002 y 2004. El 
+año 2006 no se adicionó muestra de refresco y los esfuerzos estuvieron concentrados en 
+entrevistar, nuevamente, la muestra de personas ya entrevistada en el año 2004 y/o 2002. 
+Es así como , en el año 2006 , es posible calcular los factores de expansión de corte 
+transversal para representar la población de 18 años y más al año 2006  (considerando a 
+todas las personas entrevistadas en esta ronda), y además es posible calcular tres factores 
+de expansión longitudinal: factor longitudinal afiliados 2002-2004-2006, factor de expansión 
+longitudinal afiliados 2002-2006 y factor de expansión longitudinal población 18 años y más 
+2004-2006. Cuándo se emplea cada uno de estos factores de expansión, dependerá de los 
+objetivos de análisis; en el primer caso, interesa estudiar variables que cambian en el tiempo 
+para la población de afiliados en el sistema de pensiones (por ejemplo, cómo ha cambiado 
+la densidad de cotización en estos tres años ); en el segundo caso, también nos interesa 
+obtener estadísticas para la población de afiliados al sistema de pensiones pero estudiar 
+cambios en las variables entre el año 2002 y 2006, la diferencia con el primer caso se da 
+(principalmente) porque en las encuestas longitudinales la muestra que responde todas las 
+rondas es menor que la muestra que responde dos de ellas, una consecuencia de esto es 
+que resulta mayor el  tamaño muestral al estudiar cambios sólo entre 2002 y 2006,  otro 
+ejemplo podría ser el caso que justo se haya implementado una política pública en el año 
+2004 y queremos ver su efectividad analizando el antes y el después ; el tercer factor de 
+expansión, es para la población total de 18 años y más, ya que en el año 2004 en la EPS se 
+incorporó la muestra de no afiliados y el estudio pasó a ser representativo de la población 
+de 18 años y más, en este caso por ejemplo, nos podría interesar estudiar cambios en la 
+tasa de participación en el sistema de pensiones entre 2004 y 2006. 
+ 
+Mientras más rondas se hayan levantado del estudio, existen mayores posibilidades de 
+cálculo de factores de expansión longitudinal; en general, se definen sólo algunos de ellos 
+(los que resulten claves para el análisis de interés ), como en los ejemplos antes 
+mencionados. 
+ 
+Para la VI Ronda de la EPS 2015, se calcularon tres factores de expansión: 
+ 
+(a) Factor de expansión de corte transversal 
+(b) Factor de expansión longitudinal 2002-2004-2006-2009-2015 
+(c) Factor de expansión longitudinal 2004-2006-2009-2015 
+ 
+
+=== PDF PAGE 24 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+24 
+ 
+Diagrama Nº 6.2 
+Factores de expansión Encuesta de Protección Social 
+2002, 2004 y 2006 
+   
+Fuente: Factores de expansión en encuestas longitudinales, J. Vásquez (2016). CISS-BID. 
+ 
+ 
+6.1 Factores de expansión de la muestra de corte transversal 
+ 
+Los factores de expansión para la muestra de corte transversal de la VI Ronda EPS  2015, 
+se calcularon tomando como factor base el inverso de la probabilidad de selección ajustado 
+por la no respuesta en la ronda de origen del seleccionado. Así, en esta VI Ronda se 
+disponen de 4 tipos de muestras (según su origen): 
+ 
+1- Afiliados 2002: corresponde  a la muestra de afiliados al sistema de pensiones 
+seleccionados para ser entrevistados en la primera ronda de la EPS, realizada en el 
+año 2002. El factor de expansión base, corresponde al inverso de la probabilidad de 
+selección ajustado por la no respuesta que se obtuvo en cada una de las comunas 
+relativas a los conglomerados seleccionados ; e ste ajuste por no respuesta , es 
+simplemente el ratio entre la muestra seleccionada en la comuna y la muestra 
+lograda en la comuna. (Ver Hoja “Fact_Sel_R1” en el archiv o Excel “Factor de 
+Expansión Base EPS.xls”). 
+2- No Afiliados 2004: corresponde a la muestra de personas no afiliadas al sistema de 
+pensiones, seleccionadas para ser entrevistadas en la segunda ronda de la EPS 
+realizada en el año 2004, y así completar una muestra representativa de la población 
+de 18 años y más. El factor de expansión base, al igual que en el caso anterior, 
+corresponde al inverso de la probabilidad de selección ajustado por la no respuesta  
+
+
+=== PDF PAGE 25 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+25 
+en la ronda de origen del seleccionado (2004 ); este ajuste por no respuesta es , 
+simplemente, el ratio entre la muestra seleccionada en la comuna y la muestra 
+lograda en la comuna. (Ver Hoja “Fact_Sel_R2noafi” en el archivo Excel “Factor de 
+Expansión Base EPS.xls”). 
+3- Nuevos Afiliados 2004: corresponde a la muest ra de afiliados entre Septiembre de 
+2001 y Diciembre de 2003, se trata de l refresco de la muestra de afiliados 
+seleccionados en la primera ronda ; el factor de expansión base, al igual que en el 
+caso anterior, corresponde al inverso de la probabilidad de selección ajustado por la 
+no respuesta en la ronda de origen del seleccionado (2004). Como en los casos 
+anteriores, este ajuste por no respuesta es simplemente el ratio entre la muestra 
+seleccionada en la comuna y la muestra lograda en la comuna. (Ver Hoja 
+“Fact_Sel_R2nuevos” en el archivo Excel “Factor de Expansión Base EPS.xls”). 
+4- Refresco 2015: corresponde a la muestra de refresco seleccionada para compensar 
+el envejecimiento del panel que fue actualizado , por última vez , en Diciembre de 
+2003; de esta forma , esta muestra representa a la población de personas que 
+cumplieron 18 años de edad entre Enero de 2004 y Junio de 2015 (de esta forma se 
+pudo contar, en la VI Ronda EPS  2015, con una muestra que representa a  la 
+población de 18 años y más a Junio de 2015). El factor de expansión base, al igual 
+que en los casos anteriores, corresponde al inverso de la probabilidad de selección 
+ajustado por la no respuesta de la comuna de selección. (Ver Hoja “Fact_Sel_R6” en 
+el archivo Excel “Factor de Expansión Base EPS.xls”). 
+ 
+El Cuadro Nº 6.1 presenta la muestra nominal, la muestra contactada y  los entrevistados, 
+según tipo de muestra. 
+Cuadro Nº 6.1 
+Distribución de la muestra nominal, contactados y entrevistados según tipo de muestra 
+Tipo de muestra Muestra 
+nominal 
+Vivos no impedidos 
+Fallecidos Impedidos Contacto Respuesta/Contacto 
+Afiliados 2002 15,060 9,069 8,070 759 62 
+No afiliados 2004 2,673 1,714 1,591 194 9 
+Nuevos afiliados 2004 916 534 467 10 1 
+Refresco 2015 14,995 7,687 6,778 34 32 
+Total 33,644 19,004 16,906 997 104 
+ 
+Fuente: Elaboración propia 
+ 
+Se lograron un total de 18.007 casos, el logro incluye los entrevistados vivos más las 
+personas fallecidas (con o sin entrevista a familiar aplicada a algún sobreviviente) y las 
+personas impedidas física o mentalmente para responder la encuesta. 
+ 
+Los entrevistados vivos alcanzaron un total de 16.906 casos, los que se distribuyeron entre 
+10.128 de la muestra panel y 6.778 de la muestra refresco. A estos 16.906 se les calculó el 
+
+=== PDF PAGE 26 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+26 
+ponderador o factor de expansión para representar la población de 18 años y más a Junio 
+de 2015; para lo cual, se procedió de la siguiente manera: 
+ 
+1- Se obtuvo el factor de expansión base, según el origen de la selección (2002, 2004 
+o 2015). 
+2- Para cada uno de los tipos de muestras, por separado, se estimó un modelo de no 
+respuesta para generar los ajustes por no respuesta  en base a la metodología de 
+propensity. La estimación de este modelo contempló: primero, estimar un modelo 
+de contacto en función de variables explicativas que est uvieran disponibles tanto 
+para los entrevistados en esta ronda como para los no entrevistados 11, y 
+posteriormente estimar un modelo de respuesta condicional en el contacto. 
+3- Estimados ambos modelos, e independientemente de si la persona fue entrevistada 
+o no en la VI Ronda 2015, se obtuvo la probabilidad de contacto y la probabilidad 
+de respuesta condicional en contacto predicha para cada persona en función de sus 
+características; el producto de estas probabilidades , corresponde a la probabilidad 
+predicha de respuesta incondicional en contacto o propensity. Ambos modelos se 
+estimaron con el factor de expansión base a través de la metodología logit. 
+4- Se construyeron deciles de la muestra utilizando el propensity, y se calculó el valor 
+promedio del propensity en cada decil; el inverso de este promedio, correspondió al 
+ajuste por no respuesta. 
+5- Una vez completado este proceso, para cada tipo de muestra, se expandió la muestra 
+total (sin distinguir por tipo)  utilizando el factor de expansión base ajustado por la 
+no respuesta, y se comparó la distribución de la muestra expandida con las 
+proyecciones de poblaciones del INE a Junio 2015. Se crearon celdas por tramos de 
+edad, sexo y regiones, y se calcularon ajustes de post-estratificación en cada una de 
+estas celdas. Las celdas utilizadas son las siguientes: 
+ 
+- Sexo 
+o Hombre 
+o Mujer 
+- Tramos de edad: 
+o 18-29 
+o 30-49 
+o 50+ 
+- Regiones: 
+o XV-I-II-III 
+o VI 
+                                                 
+ 
+ 
+11 Se utilizaron como regresores: sexo, tramos de edad, nivel educacional, tipo de sistema de pensiones (AFP o 
+INP), si la persona se encuentra pensionada o no, regiones y las presencias en cada una de las rondas de la 
+EPS. 
+
+=== PDF PAGE 27 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+27 
+o V 
+o VI 
+o VII 
+o VIII 
+o IX 
+o X-XIV 
+o XI-XII 
+o RM 
+ 
+En el Cuadro Nº6.2 se presenta la población proyectada a Junio de 2015 según el Instituto 
+Nacional de Estadísticas (INE), para cada una de las celdas definidas. 
+ 
+Cuadro Nº 6.2 
+Proyección de la población de 18 años y más a Junio 2015 según sexo, edad y región 
+ 
+Fuente: Elaboración propia en base a proyecciones del INE a Junio de 2015 
+ 
+A continuación, se describen cada una de estas etapas en mayor detalle. 
+6.1.1 Factor de expansión base 
+ 
+Tal como se mencionaba anteriormente, el factor de expansión base corresponde al inverso 
+de la probabilidad de selección en la muestra de origen de la persona incluyendo un ajuste 
+por no respuesta (comunal) geográfico en la unidades primarias de muestreo aplicado en la 
+primera ronda. 
+ 
+En la planilla Excel “Factor de expansión Base EPS.xls”, se adjuntan las planillas de selección 
+para cada una de las rondas 2002, 2004 y 2015 que define el factor de expansión base para 
+cada una de las personas en la muestra de la VI Ronda  2015 dependiendo de su origen 
+(selección, por primera vez, para participar en el estudio). 
+ 
+18-29 30-49 50+ 18-29 30-49 50+ Total
+XV-I-II-III 155,397 233,339 182,770 139,713 206,558 180,633 1,098,410
+IV 76,496 104,869 100,144 74,664 105,824 111,497 573,494
+V 182,078 245,834 247,911 173,823 246,196 298,855 1,394,697
+VI 86,320 127,210 129,152 83,512 125,861 135,463 687,518
+VII 101,281 139,801 145,340 100,902 143,507 155,334 786,165
+VIII 213,452 282,549 282,356 210,206 294,983 316,692 1,600,238
+IX 100,261 130,083 129,693 100,466 135,689 143,527 739,719
+X-XIV 123,531 176,446 163,533 118,054 171,506 174,410 927,480
+XI-XII 26,243 41,819 37,720 23,365 37,937 36,238 203,322
+RM 714,882 1,069,099 895,242 699,665 1,086,319 1,084,731 5,549,938
+Total 1,779,941 2,551,049 2,313,861 1,724,370 2,554,380 2,637,380 13,560,981
+Hombres Mujeres
+
+=== PDF PAGE 28 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+28 
+6.1.2 Factor de ajuste por no respuesta 
+ 
+Dos métodos son los más populares para ajustar por no respuesta. El primero consiste en 
+establecer celdas homogéneas mediante el cruce de variables auxiliares, y calcular la tasa 
+de respuesta en cada una de estas celdas, el inverso de esta tasa de respuesta corresponde 
+al factor de ajuste por no respuesta ; este método es utilizado cuando no existen muchas 
+variables disponibles tanto para los que responden como los que no responden, entonces la 
+generación de las celdas es simple, sin embargo, una desventaja de este método es que se 
+requiere una cantidad mínima de observaciones en cada celda  (lo que supone una gran 
+cantidad de observaciones a ser distribuidas en cada celda ). El segundo método , 
+corresponde al de propensity score que , en vez de formar celdas , estima mediante un 
+modelo de probabilidad la propensión a q ue una persona responda ; este método tiene la 
+ventaja de utilizar mayor cantidad de información (t odas las variables disponibles) . A 
+continuación se presentan ambos métodos, aunque para la VI Ronda EPS 2015 se utilizó el 
+método propensity por las ventajas en cuanto a la cantidad de variables a utilizar. 
+ 
+Método de ajuste por celdas 
+ 
+Como se mencionaba en el párrafo anterior, este método se utiliza cuando se dispone de 
+una cantidad razonable de observaciones pero no existe mucha información (variables) 
+disponible tanto para las personas que responden como las que no responden. 
+  
+Este método consiste en separar la muestra en 𝑐 = 1, 2, … , 𝐶 grupos excluyentes entre ellos, 
+o celdas de ajuste por no respuesta, que se forman en base a una o más variables auxiliares 
+que deben estar disponibles tanto para las personas que responden la encuesta como para 
+las que no responden; las celdas, son formadas a través de la tabulación cruzada de estas 
+variables y deben ser homogéneas con respecto a las mismas: el objetivo, es formar celdas 
+donde las unidades que la conforman tengan la misma propensión a responder. 
+ 
+Para cada celda se construye un factor de ajuste por no respuesta, el que se obtiene de 
+dividir la suma de los ponderadores base de toda la muestra en tre la suma de los 
+ponderadores base de las unidades que responden. Sea ∑ 𝑤𝑖
+𝑏𝑎𝑠𝑒
+𝑖 ∈ 𝑛𝑐  la suma de los 
+ponderadores base de las unidades 𝑖, tanto que responden como que no responden, en la 
+celda 𝑐, y sea  ∑ 𝑤𝑖
+𝑏𝑎𝑠𝑒
+𝑖 ∈ 𝑟𝑐  la suma de los ponderadores  base de las unidades 𝑖 que 
+responden en la celda 𝑐, entonces el factor de ajuste por no respuesta de todas las unidades 
+𝑖 en la celda 𝑐 que responden será: 
+ 
+𝑓𝑛𝑟,𝑐 =
+∑ 𝑤𝑖
+𝑏𝑎𝑠𝑒
+𝑖 ∈ 𝑛𝑐
+∑ 𝑤𝑖
+𝑏𝑎𝑠𝑒
+𝑖 ∈ 𝑟𝑐   
+ 
+e igual a cero para los que no responden. 
+ 
+
+=== PDF PAGE 29 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+29 
+De esta forma, el ponderador ajustado por no respuesta es igual a: 
+ 
+𝑤𝑛𝑟 = 𝑓𝑛𝑟,𝑐 ∙ 𝑤𝑏𝑎𝑠𝑒 
+ 
+Este método requiere que el tamaño de muestra sea lo suficientemente grande como para 
+que cada celda tenga una estimación estable de la tasa de respuesta. Cuando las celdas 
+tienen pocas observaciones el factor de ajuste por no respuesta es  muy elevado, y se 
+pueden producir bastantes diferencias entre los factores de ajustes de las distintas celdas; 
+esto, generalmente, aumentará el error cuadrático medio, tanto a través del sesgo como la 
+varianza de los factores. Por ello, existen ciertas reglas que usualmente se utilizan a la hora 
+de formar las celdas: (1) que el número mínimo de personas que responden en cada celda 
+no sea menor a 20 y (2) tienen que haber menos personas que no responden que las que 
+responden de manera que el factor de ajuste por no respuesta sea menor a 2 (Lepidus & 
+Williams, 2001). 
+ 
+Método de Propensity Score 
+ 
+Esta metodología fue sugerido por David, Little, Samuhel, & Triest en 1983, como una simple 
+extensión de la teoría de Propensity Score de Rosenbaum y Rubin (1983), desarrollada en 
+el contexto de matching para estudios observacionales. 
+ 
+La respuesta a una e ncuesta es modelada como la realización de un proceso de variable 
+latente, se tiene una variable indicador (o binaria) que toma valor 1 si la persona responde 
+la encuesta y 0 sino responde la encuesta: 
+ 
+𝑅𝑖 = {1    𝑆𝑖 𝑟𝑒𝑠𝑝𝑜𝑛𝑑𝑒 
+0    𝑁𝑜 𝑟𝑒𝑠𝑝𝑜𝑛𝑑𝑒 
+ 
+Y existe una variable latente 𝑅𝑖
+∗ que es continua pero no observada, de manera tal que en 
+el proceso de decisión individual de responder o no la encuesta, uno observa que la persona 
+responde la encuesta si  𝑅𝑖
+∗ > 0, se puede pensar que esta variab le latente representa la 
+“motivación” de la persona a responder la encuesta. Esta variable latente , puede ser 
+modelada linealmente en función de variables explicativas y un error: 
+ 
+𝑅𝑖
+∗ = 𝑥𝑖
+′𝛽 + 𝑢𝑖 
+ 
+De esta forma, la probabilidad de que la unidad 𝑖 responda la encuesta se puede modelar 
+de la siguiente manera: 
+ 
+p(𝑥𝑖) = Pr(𝑅𝑖
+∗ > 0) = Pr(𝑥𝑖
+′𝛽 + 𝑢𝑖 > 0) 
+            = Pr(𝑢𝑖 > −𝑥𝑖
+′𝛽) 
+            = 1 − 𝐹(−𝑥𝑖
+′𝛽) = 𝐹(𝑥𝑖
+′𝛽) 
+
+=== PDF PAGE 30 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+30 
+ 
+Donde 𝐹(∙) es una función de probabilidad acumulada; bajo el supuesto de que es normal 
+el modelo de respuesta binaria, el modelo se denomina “PROBIT”, y en el caso de que sea 
+logística: “LOGIT”. 
+ 
+La ventaja de esta metodología es que puede utilizar toda la información disponible , tanto 
+para las personas que  responden como para las que no responden, no existiendo 
+limitaciones por el tamaño de las celdas (como en la metodología anterior ). Además, el 
+factor de ajuste por no respuesta obtenido por esta metodología tenderá a ser más estable 
+y “suave”. 
+ 
+Una vez estimado el modelo para la probabilidad de responder, ya sea por la metodología 
+PROBIT o LOGIT, es posible predecir para cada una de las personas  (independientemente 
+de que respondan o no) cuál es la probabilidad de responder dadas sus características (𝑥𝑖): 
+ 
+𝑝̂(𝑥𝑖) = 𝐹(𝑥𝑖
+′𝛽̂) 
+ 
+El propensity, puede ser utilizado de dos maneras para obtener el factor de ajuste por no 
+respuesta: 
+(1) De manera individual, considerando el inverso de  𝑝̂(𝑥𝑖) como factor de ajuste por 
+no respuesta. 
+(2) Estratificando o creando celdas a partir de 𝑝̂(𝑥𝑖), y usar el mismo factor de ajuste 
+para todas las unidades en la celda; por ejemplo, el inverso de la tasa de respuesta 
+de la celda o el inverso del propensity promedio de la celda. Usualmente , se 
+recomiendan 5 celdas; cuando las muestras son más grandes, se pueden crear más 
+celdas y ayudar a que estas sean más homogéneas en las variables explicativas y 
+propensity score.  
+Al igual que con la metodología de celdas, el ponderador ajustado por no respuesta es igual 
+a: 
+ 
+𝑤𝑛𝑟 = 𝑓𝑛𝑟 ∙ 𝑤𝑏𝑎𝑠𝑒 
+ 
+En la VI Ronda EPS 2015, se utilizó la metodología de propensity para obtener los ajuste s 
+por no respuesta; para ello, se estimaron por separado los modelos de respuesta de cada 
+uno de los tipos de muestras antes definidos. En todos los casos , se estimó primero un 
+modelo de probabilidad de contacto mediante la metodología logit y , luego, un modelo de 
+probabilidad de respuesta condicional en contacto. 
+ 
+ 
+ 
+
+=== PDF PAGE 31 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+31 
+6.1.2.1 Afiliados 2002 
+ 
+Una parte de la muestra panel de la VI Ronda EPS 2015, se compuso de afiliados 2002 que 
+fueron seleccionados para participar por primera vez en el estudio dicho año. Esta parte de 
+la muestra panel, consistió de 15.060 personas (de las que 821 era personas fallecidas o 
+impedidas física y/o mentalmente para responder la encuesta, por lo que fueron excluidas 
+para la estimación de los modelos de probabilidad de contacto y de respuesta condicional 
+en contacto). Así, se consideró una sub-muestra de 14 .239 personas de la muestra de 
+afiliados EPS 2002 para la estimación de los ajustes por no respuesta con la metodología 
+propensity. 
+ 
+Para el modelo de probabilidad de contacto y de probabilidad de respuesta condicional en 
+contacto, se utilizaron variables explicativas que están disponibles tanto para las personas 
+que responden la encuesta como las que no responden ; se asume que , estas variables 
+explicativas, tienen algún grado de causalidad y correlación con la probabilidad de 
+respuesta. En el caso de los afiliados 200 2, fue posible obtener información del marco 
+muestral administrativo y de la primera ronda del estudio (EPS 2002); las variables utilizadas 
+fueron las siguientes: 
+ 
+ Tramos de edad: utilizando la edad calculada , a Junio de 2015, en base a la fecha 
+de nacimie nto obtenida del marco muestral administrativo se defin ieron los 
+siguientes tramos de edad, de manera tal que esta muestra quede bien distribuida 
+en estas categorías de edad: 
+ 
+o 18-44 años (categoría base en la estimación del modelo) 
+o 45-54 años 
+o 55-64 años 
+o 65 años y más 
+ 
+ Región: se generan 15 variables binarias (o dummies) para cada una de las regiones 
+del país, se excluye del modelo la dummy correspondiente a la región metropolitana 
+quedando esta categoría como base para la interpretación del modelo. La regió n 
+corresponde a la última región de entrevista, la que está asociada a la dirección de 
+contacto para la VI Ronda EPS 2015. 
+ 
+ Sexo: se utiliza la variable binaria que toma valor 1 para los hombres y 0 para las 
+mujeres, de esta forma la categoría base son las  mujeres. Esta información se 
+obtiene del marco administrativo. 
+ 
+ Nivel educacional: se definieron tres niveles educacionales en base la información 
+de la EPS 2002: 
+ 
+
+=== PDF PAGE 32 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+32 
+o Menor a media completa (categoría base en la estimación del modelo) 
+o Media completa 
+o Superior 
+ 
+ Participación en ronda anteriores:  se generan categorías de acuerdo a la 
+participación de las personas (entrevistas) en las rondas 2002, 2004, 2006, 2009 y 
+2012, luego se definen variables dummies para cada una de estas categorías: 
+ 
+o 2002-2004-2006-2009-2012 (categoría base en la estimación del modelo) 
+o 2002-2004-2006-2009 
+o 2002-2004-2006-2012 
+o 2002-2004-2006 
+o 2002-2004-2009-2012 
+o 2002-2004-2009 
+o 2002-2004 
+o 2002-2006-2009-2012 
+o 2002-2006-2009 
+o 2002-2006-2012 
+o 2002-2006 
+o 2002-2009-2012 
+o 2002-2009 
+o 2002 
+ 
+ Pensionado: dummy que toma valor 1 si la persona se encuentra pensionada a Junio 
+de 2015, esta información se obtiene del marco muestral administrativo. 
+ 
+ Afiliado AFP: dummy que toma valor 1 si la persona se encuentra afiliada al sistema 
+de AFP y 0 s i se encuentra afiliada al sistema de INP a Junio de 2015, esta 
+información se obtiene del marco muestral administrativo. 
+ 
+ Número de cotizaci ones en la cuenta obligatoria del sistema de AFP: cantidad de 
+cotizaciones en la cuenta obligatoria del sistema de AFP a Junio de 2015, esta 
+información se obtiene del marco muestral administrativo. 
+El Cuadro Nº 6.2, muestra los efectos marginales estimados de cada una de estas variables 
+explicativas sobre la probabilidad de contacto y sobre la probabilidad de respuesta 
+condicional en contacto de las personas de la muestra “Afiliados 2002”. 
+ 
+Los resultados sobre la probabilidad de contacto muestran que: 
+ 
+ Los hombres tienen 3.4 puntos porcentuales menos de probabilidad de contacto que 
+las mujeres. 
+
+=== PDF PAGE 33 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+33 
+ Las personas entre 45 y 54 años de edad tienen 5.6 puntos porcentuales más de 
+probabilidad de contacto que las personas menores de 45 años, las personas entre 
+55 y 64 a ños 9.4 puntos porcentuales más , y las personas de 65 años y más 5.4 
+puntos porcentuales más de probabilidad de contacto; así, las personas menores de 
+45 años de edad son el grupo con menor probabilidad de contacto. 
+ Las personas de la región XIV son las ún icas que no tienen diferencia significativa 
+en la probabilidad de contacto con respecto a las personas de la región 
+metropolitana, en todas las otras regiones la probabilidad de contacto es superior ; 
+la región con mayor probabilidad de contacto , es la XI donde en promedio tienen 
+16.9 puntos porcentuales más de probabilidad de contacto que las personas de la 
+región metropolitana. 
+ El número de cotizaciones obligatorias en el sistema de AFP, a Junio de 2015, no es 
+una variable estadísticamente significativa para explicar la probabilidad de contacto. 
+ El sistema de pensiones (AFP o INP) , tampoco es una variable estadísticamente 
+significativa en explicar la probabilidad de contacto. 
+ El estar pensionado aumenta en 10.5 puntos porcentuales la probabilidad  de 
+contacto. 
+ El nivel de participación en rondas anteriores , en general , es una variable 
+estadísticamente significativa. Solamente las personas que han participado en las 
+rondas 2002 -2004-2009 y 2012 no muestran una diferencia significativa con 
+respecto a las que han participado en todas las rondas , todas las otras categorías 
+tienen menor probabilidad de contacto. 
+Con respecto a la probabilidad de respuesta condicional en contacto: 
+ 
+ El sexo y la edad , no son variables significativas en la probabilidad de respuesta 
+condicional en contacto. 
+ A mayor nivel educacional , menor es la probabilidad de respuesta condicional en 
+contacto: las personas con educación media completa tienen 4.1 puntos 
+porcentuales menos de probabilidad y las personas con educación superior 4.7 
+puntos porcentuales menos de probabilidad, que las personas con educación menor 
+a media completa, de responder una vez que fueron contactadas. 
+ 
+Cuadro Nº 6.3 
+Efectos marginales sobre probabilidad de contacto y respuesta condicional en contacto 
+Tipo de muestra: Afiliados 2002 
+
+=== PDF PAGE 34 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+34 
+ 
+Fuente: Elaboración propia 
+Notas: las estimaciones se hacen con los factores de expansión base, mediante metodología logit. El 
+modelo de probabilidad de contacto no incluye las dummies de nivel educacional. 
+ 
+ Las personas de la IV y XI regiones son las únicas que en promedio tienen mayor 
+probabilidad de respuesta condicional en contacto que las perso nas de la región 
+metropolitana: 3.3 puntos porcentuales y 7.4 puntos porcentuales más , 
+respectivamente. 
+ El número de cotizaciones en el sistema de AFP y el sistema de pensiones (AFP o 
+INP), no son variables estadísticamente significativas. 
+Efecto marginal p-value Efecto marginal p-value
+Hombre -0.034 0.001 0.001 0.862
+45-54 años 0.056 0.000 0.010 0.222
+55-64 años 0.094 0.000 0.010 0.294
+65 años y más 0.054 0.008 -0.028 0.100
+Media completa - - -0.041 0.000
+Superior - - -0.047 0.000
+I 0.161 0.000 0.014 0.546
+II 0.080 0.002 -0.024 0.239
+III 0.145 0.000 -0.003 0.883
+IV 0.084 0.000 0.033 0.005
+V 0.034 0.024 -0.019 0.090
+VI 0.109 0.000 0.020 0.077
+VII 0.125 0.000 -0.002 0.901
+VIII 0.048 0.001 0.014 0.116
+IX 0.082 0.000 0.016 0.235
+X 0.126 0.000 0.020 0.063
+XI 0.169 0.000 0.074 0.000
+XII 0.121 0.001 0.003 0.901
+XIV 0.050 0.124 -0.034 0.254
+XV 0.095 0.007 0.006 0.826
+Nº Cotizaciones 0.000 0.267 0.000 0.814
+Pensionado 0.105 0.000 0.043 0.000
+Afiliado AFP -0.003 0.889 -0.001 0.952
+2002-2004-2006-2009 -0.274 0.000 -0.077 0.000
+2002-2004-2006-2012 -0.203 0.000 -0.036 0.125
+2002-2004-2006 -0.436 0.000 -0.186 0.000
+2002-2004-2009-2012 -0.065 0.139 -0.045 0.194
+2002-2004-2009 -0.322 0.000 -0.140 0.000
+2002-2004 -0.479 0.000 -0.292 0.000
+2002-2006-2009-2012 -0.089 0.001 -0.029 0.144
+2002-2006-2009 -0.322 0.000 -0.112 0.000
+2002-2006-2012 -0.254 0.000 -0.055 0.249
+2002-2006 -0.479 0.000 -0.325 0.000
+2002-2009-2012 -0.137 0.021 -0.105 0.061
+2002-2009 -0.413 0.000 -0.171 0.002
+2002 -0.560 0.000 -0.384 0.000
+N
+Pseudo-R2
+Probabilidad predicha
+Probabilidad de contacto
+14,239
+0.1531
+0.65
+9,069
+0.0902
+0.91
+Probabilidad de respuesta/contacto
+
+=== PDF PAGE 35 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+35 
+ Las personas pensionadas tienen 4.3 puntos porcentuales más de probabilidad de 
+respuesta condicional en contacto que las personas no pensionadas. 
+ Con respecto a la participación en rondas anteriores de la EPS, las personas que 
+participaron en la ronda 2012 pero no en toda s las rondas, no muestran diferencia 
+significativa en la probabilidad de respuesta condicional en contacto con respecto a 
+las personas que han respondido en todas las rondas. Mientras más lejana fue la 
+última vez que participaron, menor es la probabilidad de respuesta condicional en 
+contacto. 
+Una vez estimados ambos modelos, se utiliza cada uno de ellos para obtener la probabilidad 
+predicha de contacto y la probabilidad predicha de respuesta condicional en contacto en 
+función de las características de cada persona; estas probabilidades, se predicen tanto para 
+los que respondieron la VI Ronda 2015 como para los que no respondieron: 
+ 
+Probabilidad predicha de contacto: 
+ 
+𝑝̂𝐶(𝑥𝑖) = 𝐹(𝑥𝑖
+′𝛽̂𝐶) 
+ 
+Probabilidad predicha de respuesta condicional en contacto: 
+ 
+𝑝̂𝑅/𝐶(𝑥𝑖) = 𝐹(𝑥𝑖
+′𝛽̂𝑅/𝐶) 
+ 
+Donde 𝛽̂𝐶 y 𝛽̂𝑅/𝐶, corresponden a los coeficientes estimados en los modelos logit respectivos.  
+ 
+Luego, la probabilidad de respuesta incondicional en contacto (propensity) es igual a: 
+ 
+𝑝𝑟𝑜𝑝𝑒𝑛𝑠𝑖𝑡𝑦 = 𝑝̂𝑅(𝑥𝑖) = 𝑝̂𝐶(𝑥𝑖) ∙ 𝑝̂𝑅/𝐶(𝑥𝑖) 
+ 
+El propensity, es utilizado para hacer grupos de individuos con tasa de respuesta 
+homogénea; esto se hace mediante la construcción de deciles, a través del valor calculado 
+del propensity12. 
+ 
+El Cuadro Nº 6.3 muestra los valores mínimos, máximos y promedio de los propensity en 
+cada decil. 
+ 
+  
+                                                 
+ 
+ 
+12 Para la construcción de los deciles también se utiliza la muestra ponderada con los factores de expansión 
+base. 
+
+=== PDF PAGE 36 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+36 
+ 
+Cuadro Nº 6.3 
+Máximo, mínimo y promedio del propensity por decil 
+Tipo de muestra: Afiliados 2002 
+Decil Mínimo Promedio Máximo 
+1 0.069 0.135 0.193 
+2 0.193 0.253 0.321 
+3 0.321 0.378 0.421 
+4 0.421 0.464 0.507 
+5 0.507 0.556 0.604 
+6 0.604 0.648 0.683 
+7 0.683 0.710 0.736 
+8 0.736 0.757 0.780 
+9 0.780 0.800 0.818 
+10 0.818 0.849 0.938 
+                             Fuente: Elaboración propia 
+ 
+El inverso de los valores promedio del propensity , por decil, es utilizado como factor de 
+ajuste por no respuesta; este ajuste, es el mismo para todas las personas del decil. Luego, 
+el factor de expansión aju stado por la no respuesta se obtiene de multiplicar el factor de 
+expansión base (de cada persona) por este factor de ajuste. 
+ 
+El do-file “Factores de Ajuste por No Respuesta_Afiliados 2002.do”, realiza la estimación de 
+los modelos y cálculo de los factores de ajuste por no respuesta. 
+6.1.2.2 Nuevos afiliados 2004 
+ 
+Otro componente de la muestra panel de la VI Ronda EPS 2015, fue la sub-muestra de 
+nuevos afiliados 2004 correspond iente a las personas que fueron seleccionadas para 
+participar por primera vez en el estudio el año 2004 (con el objeto de refrescar la muestra 
+de afiliados seleccionada en el año 2002). Esta sub-muestra consistió de 916 personas, de 
+las que 11 se encontraban fallecidas o impedidas física y/o mentalmente para responder la 
+encuesta (por lo que fueron excluidas para la estimación de los modelos de probabilidad de 
+contacto y de respuesta condicional en contacto); de esta manera, la sub-muestra utilizada 
+para la estimación de los ajustes por no respuesta con la metodología propensity  fue de 
+905 personas correspondiente a nuevos afiliados 2004. 
+ 
+Para los modelos de probabilidad de contacto y de probabilidad de respuesta condicional en 
+contacto, se utilizaron variables explicativas que están disponibles tanto para las personas 
+que responden la encuesta como las que no responden, y que a su vez tienen algún grado 
+de causalidad y correlación con la probabilidad de respuesta. Para esta sub-muestra, fue 
+posible obtener información del marco muestral administrativo , así como de la ronda EPS 
+2004. Las variables utilizadas fueron las siguientes: 
+
+=== PDF PAGE 37 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+37 
+ 
+ Tramos de edad: utilizando la edad calculada a Junio de 2015 en base a la fecha de 
+nacimiento obtenida del marco muestral administrativo, se definieron los siguientes 
+tramos de edad, de manera tal que esta muestra quedara bien distribuida en estos 
+grupos: 
+ 
+o 18-34 años (categoría base en la estimación del modelo) 
+o 35-44 años 
+o 45 y más años 
+ 
+Estos tramos de edad , se diferencian con respecto a los de la muestra “Afiliados 
+2002” porque se definen de acuerdo a las características de esta muestra : es más 
+joven que la anterior. 
+ 
+ Región: se genera ron 15 variables binarias (o dummies) para cada una de las 
+regiones del país, se excluye d el modelo la dummy correspondiente a la región 
+metropolitana quedando esta categoría como base para la interpretación del modelo. 
+La región corresponde a la última región de entrevista, la que está asociada a la 
+dirección de contacto para la VI Ronda EPS 2015. 
+ 
+ Sexo: se utiliza la variable binaria que toma valor 1 para los hombres y 0 para las 
+mujeres, de esta forma la categoría base son las mujeres. Esta información se 
+obtiene del marco administrativo. 
+ 
+ Nivel educacional: se definieron tres niveles educacionales en base la informació n 
+de la EPS 2004: 
+ 
+o Menor a media completa (categoría base en la estimación del modelo) 
+o Media completa 
+o Superior 
+ 
+ Año de la última entrevista: corresponde a la última ronda de la EPS (la más reciente) 
+en que la persona fue contactada y entrevistada, se generan dummies para los años: 
+ 
+o 2012 (categoría base en la estimación del modelo) 
+o 2009 
+o 2006 
+o 2004 
+ 
+Debido a que esta sub-muestra consta de solo 900 observaciones 
+(aproximadamente), no se pueden generar dummies con tanto detalle  de 
+participación longitudinal como en el caso de la muestra “Afiliados 2002”. 
+
+=== PDF PAGE 38 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+38 
+ Número de cotizaci ones en la cuenta obligatoria del sistema de AFP: cantidad de 
+cotizaciones en la cuenta obligatoria del sistema de AFP a Junio de 2015, esta 
+información se obtiene del marco muestral administrativo. 
+En este caso, no se utilizó la variable pensionado ya que es una muestra más joven que la 
+de “Afiliados 2002”, tampoco se utilizó la variable de sistema de afiliación ya que todos son 
+pertenecientes al sistema de AFP. 
+ 
+El Cuadro Nº 6.4, muestra los efectos marginales estimados de cada una de estas variables 
+explicativas sobre la probabilidad de contacto y sobre la probabilidad de respuesta 
+condicional en contacto de las personas de la sub-muestra “Nuevos afiliados 2004”. 
+ 
+Los resultados sobre la probabilidad de contacto muestran que: 
+ 
+ Los hombres tienen 11.5 puntos porcentuales menos de probabilidad de contacto 
+que las mujeres. 
+ Las personas entre 35 y 44 años de edad, tienen 14.1 puntos porcentuales más de 
+probabilidad de contacto que las  personas menores de 35 años, y las personas de 
+45 años y más tienen 12.8 puntos porcentuales más de probabilidad de contacto. 
+ Las personas de  las regiones II, X, XI, XII, XIV y XV no tienen diferencias 
+significativas en la probabilidad de contacto , respecto a las personas de la región 
+metropolitana. Las personas residentes en las otras regiones , tienen mayor 
+probabilidad de contacto que las personas de la región metropolitana. 
+ El número de cotizaciones obligatorias en el sistema de AFP a Junio de 2015, en esta 
+sub-muestra, es estadísticamente significativo y de signo negativo lo que indica que 
+mientras mayor es el número de cotizaciones menor es la probabilidad de contacto. 
+ Las personas entrevistadas por última vez en el año 2009 tienen 32.4 puntos 
+porcentuales menos de probabil idad de contacto  que las personas que fueron 
+entrevistadas por última vez en el año 2012, las que fueron entrevistadas por última 
+vez en el 2006 tiene 36.2 puntos porcentuales menos, y las que fueron entrevistadas 
+únicamente en el 2004 tienen 54 puntos porcentuales menos de probabilidad de 
+contacto que las personas entrevistadas por última vez en el año 2012. 
+ Con respecto a la probabilidad de respuesta condicional en contacto: 
+ 
+ Los hombres tienen 6.8 puntos porcentuales menos de  probabilidad de respuesta 
+condicional en contacto que las mujeres. 
+ Las personas entre 35 y 44 años de edad tienen 9.7 puntos porcentuales más de 
+probabilidad de respuesta condicional en contacto que las personas menores de 35 
+años, y las personas de 45 añ os y más tienen 5.8 puntos porcentuales más de 
+probabilidad de respuesta condicional en contacto que las personas menores de 35 
+años de edad. 
+
+=== PDF PAGE 39 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+39 
+ El nivel educacional no es estadísticamente significativo al predecir la probabilidad 
+de respuesta condicional en contacto. 
+ El número de cotizaciones en el sistema es estadísticamente significativo, e indica 
+que a mayor número de cotizaciones mayor es la probabilidad de respuesta 
+condicional en contacto. 
+ Las personas que respondieron por última vez en el 2009 , no tien en diferencia 
+significativa en la probabilidad de respuesta condicional en contacto respecto a las 
+personas entrevistadas por última vez en el año 2012. Las personas entrevistadas 
+en 2006 por última vez, tienen 17.1 puntos porcentuales menos de probabilidad de 
+respuesta condicional en contacto que las personas entrevistadas por última vez en 
+el 2012, y las personas entrevistadas sólo en el 2004, 24 puntos porcentuales menos. 
+Cuadro Nº 6.5 
+Efectos marginales sobre probabilidad de contacto y respuesta condicional en contacto 
+Tipo de muestra: Nuevos afiliados 2004 
+ 
+Fuente: Elaboración propia 
+Notas: las estimaciones se hacen con los factores de expansión base mediante metodología logit. El 
+modelo de probabilidad de contacto , no incluye las dummies de nivel educacional.  Y el modelo de 
+probabilidad de respuesta condicional en contacto no incluye las dummies regionales, dado que estas 
+no son estadísticamente significativas. 
+ 
+Efecto marginal p-value Efecto marginal p-value
+Hombre -0.115 0.050 -0.068 0.037
+35-44 años 0.141 0.063 0.097 0.000
+45 años y más 0.128 0.053 0.058 0.023
+Media completa - - -0.061 0.187
+Superior - - -0.048 0.188
+I 0.394 0.074 - -
+II -0.003 0.105 - -
+III 0.367 0.065 - -
+IV 0.131 0.097 - -
+V 0.096 0.075 - -
+VI 0.060 0.089 - -
+VII 0.208 0.065 - -
+VIII 0.100 0.069 - -
+IX 0.092 0.083 - -
+X -0.046 0.106 - -
+XI -0.234 0.230 - -
+XII 0.244 0.154 - -
+XIV 0.245 0.122 - -
+XV 0.100 0.143 - -
+Nº Cotizaciones -0.001 0.000 0.001 0.004
+2009 -0.324 0.047 -0.054 0.164
+2006 -0.362 0.064 -0.171 0.035
+2004 -0.540 0.036 -0.240 0.086
+N
+Pseudo-R2
+Probabilidad predicha 0.55 0.91
+Probabilidad de contacto Probabilidad de respuesta/contacto
+905 534
+0.1848 0.1136
+
+=== PDF PAGE 40 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+40 
+Una vez estimados ambos modelos se empleó cada uno de ellos para obtener la probabilidad 
+predicha de contacto y la probabilidad predicha de respuesta condicional en contacto en 
+función de las características de cada persona, estas probabilidades se predicen tanto para 
+los que respondieron la VI Ronda 2015 como para los que no respondieron: 
+ 
+Probabilidad predicha de contacto: 
+ 
+𝑝̂𝐶(𝑥𝑖) = 𝐹(𝑥𝑖
+′𝛽̂𝐶) 
+ 
+Probabilidad predicha de respuesta condicional en contacto: 
+ 
+𝑝̂𝑅/𝐶(𝑥𝑖) = 𝐹(𝑥𝑖
+′𝛽̂𝑅/𝐶) 
+ 
+Donde 𝛽̂𝐶 y 𝛽̂𝑅/𝐶, corresponden a los coeficientes estimados en los modelos logit respectivos.  
+ 
+Luego, la probabilidad de respuesta incondicional en contacto (propensity) es igual a: 
+ 
+𝑝𝑟𝑜𝑝𝑒𝑛𝑠𝑖𝑡𝑦 = 𝑝̂𝑅(𝑥𝑖) = 𝑝̂𝐶(𝑥𝑖) ∙ 𝑝̂𝑅/𝐶(𝑥𝑖) 
+ 
+El propensity es utilizado para hacer grupos de individuos con tasa de respuesta homogénea, 
+esto se hace mediante la construcción de deciles a través del valor calculado del propensity. 
+ 
+El Cuadro Nº 6.6 muestra los valores mínimos, máximos y promedio de los propensity en 
+cada decil. 
+Cuadro Nº 6.6 
+Máximo, mínimo y promedio del propensity por decil 
+Tipo de muestra: Nuevos afiliados 2004 
+Decil Mínimo Promedio Máximo 
+1 0.030 0.090 0.141 
+2 0.146 0.179 0.215 
+3 0.216 0.261 0.295 
+4 0.295 0.332 0.385 
+5 0.386 0.436 0.477 
+6 0.478 0.516 0.557 
+7 0.557 0.603 0.625 
+8 0.625 0.677 0.723 
+9 0.724 0.764 0.798 
+10 0.799 0.840 0.945 
+                             Fuente: Elaboración propia 
+ 
+El inverso de los valores promedios del propensity, por decil, son utilizados como factor de 
+ajuste por no respuesta; este ajuste es el mismo para todas las personas del decil. Luego, 
+
+=== PDF PAGE 41 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+41 
+el factor de expansión ajustado por la no respuesta se obtiene de multiplicar el factor de 
+expansión base por este factor de ajuste. 
+ 
+El do -file “Factores de Ajuste por No Respuesta_ Nuevos Afiliados 2004.do” realiza la 
+estimación de los modelos y cálculo de los factores de ajuste por no respuesta. 
+6.1.2.3 No afiliados 2004 
+ 
+El último componente de la muestra panel de la VI Ronda EPS 2015, fue la sub-muestra de 
+no afiliados 2004 corresponde a las personas que fueron seleccionadas para participar por 
+primera vez en el estudio en el año 2004 (pensados como complemento de la muestra de 
+afiliados, para obtener una muestra representativa de la población de 18 años y más al año 
+2004). Esta sub-muestra consistió de 2.673 personas, de las que 203 se encontraba n 
+fallecidas o impedidas física y/o mentalmente para responder la encuesta  (estas personas 
+fueron excluidas para la estimación de los modelos de probabilidad de contacto y de 
+respuesta condicional en contacto). De esta forma, se utilizó una muestra de 2.470 personas 
+de la muestra de no afiliados 2004 para la estimación de los ajustes por no respuesta con 
+la metodología propensity. 
+ 
+Para el modelo de probabilidad de contacto y d e probabilidad de respuesta condicional en 
+contacto, se utilizaron variables explicativas que estaban disponibles tanto para las personas 
+que respondieron la encuesta como las que no respondieron, y que se asume tienen algún 
+grado de causalidad y correlación con la probabilidad de respuesta. Para esta muestra, fue 
+posible obtener información del marco muestral administrativo y de la primera ronda del 
+estudio (EPS 2004). Las variables utilizadas, fueron las siguientes: 
+ 
+ Tramos de edad: utilizando la edad calculada a Junio de 2015 en base a la fecha de 
+nacimiento obtenida del marco muestral administrativo se definen los siguientes 
+tramos de edad , para que esta muestra quede bien distribuida en los grupos de 
+edad: 
+ 
+o 18-34 años (categoría base en la estimación del modelo) 
+o 35-44 años 
+o 45-54 años 
+o 55-64 años 
+o 65 años y más 
+ 
+ Región: se generan 15 variables binarias (o dummies) para cada una de las regiones 
+del país, se excluye del modelo la dummy correspondiente a la región metropolitana 
+quedando esta categoría como base para la interpretación del modelo. La región 
+corresponde a la última región de entrevista, la que está asociada a la dirección de 
+contacto para la VI Ronda EPS 2015. 
+
+=== PDF PAGE 42 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+42 
+ Sexo: se utiliza la variable binaria que toma valor 1 para los hombres y 0 para las 
+mujeres, de esta forma la categoría base son las mujeres. Esta información se 
+obtiene del marco administrativo. 
+ 
+ Nivel educacional: se definen tres niveles educacionales en base a la información de 
+la EPS 2004: 
+ 
+o Menor a media completa (categoría base en la estimación del modelo) 
+o Media completa 
+o Superior 
+ 
+ Participación en ronda s anteriores: se generan categorías de acuerdo a la 
+participación de las personas (entrevistas) en las rondas 2004, 2006, 2009 y 2012, 
+luego se definen variables dummies para cada una de estas categorías: 
+ 
+o 2004-2006-2009-2012 (categoría base en la estimación del modelo) 
+o 2004-2006-2009 
+o 2004-2006-2012 
+o 2004-2006 
+o 2004-2009-2012 
+o 2004-2009 
+o 2004 
+ 
+ Pensionado: dummy que toma valor 1 si la persona se encuentra pensionada a Junio 
+de 2015, esta información se obtiene del marco muestral administrativo. 
+ 
+ Afiliado AFP: dummy que toma valor 1 si la persona se encuentra afiliada al sistema 
+de AFP y 0 si se encuentra afiliada al sistema de INP a Junio de 2015, esta 
+información se obtiene del marco muestral  administrativo. A pesar de que esta 
+muestra fue originalmente seleccionada como no afiliados al sistema de pensiones, 
+en el trascurso del estudio se podrían haber afiliado ; por tanto, e sta variable 
+representa su situación a Junio de 2015 en el sistema de pensiones. 
+ 
+ Número de cotizaciones en la cuenta obligatoria del sistema de AFP: cantidad de 
+cotizaciones en la cuenta obligatoria del sistema de AFP a Junio de 2015, esta 
+información se obtiene del marco muestral administrativo. A pesar de que esta 
+muestra fue originalmente seleccionada como no afiliados al sistema de pensiones, 
+en el trascurso del estudio se podrían haber afiliado : esta variable representa su 
+situación a Junio de 2015 en el sistema de pensiones. 
+En el Cuadro Nº 6.6 se muestran los efectos marginales estimados, de cada una de estas 
+variables explicativas, sobre la probabilidad de contacto y sobre la probabilidad de respuesta 
+condicional en contacto de las personas de la sub-muestra “No afiliados 2004”. 
+
+=== PDF PAGE 43 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+43 
+ 
+Los resultados sobre la probabilidad de contacto indican que: 
+ 
+ Los hombres tienen 3.7 puntos porcentuales menos de probabilidad de contacto que 
+las mujeres, pero esta diferencia es significativa sólo al 10% de nivel de significancia. 
+ Las personas entre 35 y 44 años de edad no tienen diferencias significativas con las 
+personas menores de 35 años en la probabilidad de contacto, como tampoco con las 
+personas de 65 años y más. Sin embargo, las personas entre 45 y 54 años de edad 
+tienen 11.3 puntos porcentuales más de probabilidad de contacto que las personas 
+menores de 35 años y las personas entre 55 y 64 años 12.8 puntos porcentuales 
+más. 
+ Las personas de las regiones IV, XI, XII, XIV y XV no tienen diferencias significativas, 
+en la probabilidad de contacto, respecto a las personas de la región metropolitana. 
+Las personas residentes en las otras regiones, tienen mayor probabilidad de contacto 
+que las personas de la región metropolitana. 
+ El número de cotizaciones obligatorias en el sistema de AFP no es estadísticamente 
+significativo. 
+ Las personas pensionadas tienen 13.7 puntos porcentuales más de probabilidad de 
+contacto que las personas que no se encuentran pensionadas. 
+ Las personas afiliadas al sistema de AFP , a Junio de 2015 , tienen 8 puntos 
+porcentuales menos de probabilidad de contacto que las personas no afiliadas al 
+sistema de pensiones.  
+  
+
+=== PDF PAGE 44 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+44 
+Cuadro Nº 6.7 
+Efectos marginales sobre probabilidad de contacto y respuesta condicional en contacto 
+Tipo de muestra: No afiliados 2004 
+ 
+Fuente: Elaboración propia. 
+Notas: las estimaciones se hacen con los factores de expansión base mediante metodología logit ; el 
+modelo de probabilidad de contacto no incluye las dummies de nivel educacional , y el modelo de 
+probabilidad de respuesta condicional en contacto no incluye las dummies regionales. 
+ 
+ Las personas que han participado en las rondas 2004, 2009 y 2012 son las únicas 
+que no tienen diferencia significativa en la probabilidad de contacto con las personas 
+que han sido entrevistadas en todas las rondas, para el resto mientras menor 
+participación en el estudio menor es la probabilidad de contacto. 
+Efecto marginal p-value Efecto marginal p-value
+Hombre -0.037 0.097 -0.013 0.304
+35-44 años 0.026 0.444 0.003 0.852
+45-54 años 0.113 0.000 0.008 0.633
+55-64 años 0.128 0.000 0.013 0.468
+65 años y más 0.025 0.533 -0.005 0.856
+Media completa - - -0.022 0.218
+Superior - - -0.074 0.021
+I 0.205 0.000 - -
+II 0.110 0.006 - -
+III 0.164 0.001 - -
+IV -0.017 0.726 - -
+V 0.110 0.000 - -
+VI 0.148 0.000 - -
+VII 0.068 0.062 - -
+VIII 0.066 0.012 - -
+IX 0.074 0.021 - -
+X 0.092 0.005 - -
+XI -0.149 0.173 - -
+XII 0.096 0.229 - -
+XIV 0.037 0.528 - -
+XV 0.101 0.177 - -
+Nº Cotizaciones 0.000 0.589 0.000 0.046
+Pensionado 0.137 0.000 0.032 0.084
+Afiliado AFP -0.080 0.001 0.007 0.631
+2004-2006-2009 -0.271 0.000 -0.038 0.020
+2004-2006-2012 -0.176 0.009 -0.008 0.804
+2004-2006 -0.454 0.000 -0.219 0.000
+2004-2009-2012 -0.125 0.242 -0.090 0.190
+2004-2009 -0.436 0.000 -0.171 0.059
+2004 -0.556 0.000 -0.247 0.001
+N
+Pseudo-R2
+Probabilidad predicha 0.73 0.95
+Probabilidad de contacto Probabilidad de respuesta/contacto
+2,470 1,714
+0.1872 0.1260
+
+=== PDF PAGE 45 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+45 
+Con respecto a la probabilidad de respuesta condicional en contacto: 
+ 
+ El sexo y la edad no son variables significativas. 
+ Las personas con educación superior , tienen 7.4 puntos porcentuales menos de 
+probabilidad de respuesta condicional en contacto que las personas con educación 
+menor a media completa. 
+ El número de cotizaciones en el sistema es estad ísticamente significativo, e indica 
+que a mayor número de cotizaciones mayor es la probabilidad de respuesta 
+condicional en contacto. 
+ Los pensionados tienen mayor probabilidad de respuesta condicional en contacto, 
+pero esta diferencia es significativa sólo al 10%. 
+ Mientras más antigua fue la última participación de la persona en el estudio, menor 
+es la probabilidad de respuesta condicional en contacto ; por ejemplo, las personas 
+que participaron en 2004 y 2006 tienen 21.9 puntos porcentuales menos de 
+probabilidad de respuesta condicional en contacto que aquellos que han participado 
+en todas las rondas. 
+Una vez estimados ambos modelos se utiliza cada uno de ellos para obtener la probabilidad 
+predicha de contacto, y la probabilidad predicha de respuesta condicional en contacto en 
+función de las características de cada persona; estas probabilidades, se predicen tanto para 
+los que respondieron la VI Ronda 2015 como para los que no respondieron: 
+ 
+Probabilidad predicha de contacto: 
+ 
+𝑝̂𝐶(𝑥𝑖) = 𝐹(𝑥𝑖
+′𝛽̂𝐶) 
+ 
+Probabilidad predicha de respuesta condicional en contacto: 
+ 
+𝑝̂𝑅/𝐶(𝑥𝑖) = 𝐹(𝑥𝑖
+′𝛽̂𝑅/𝐶) 
+ 
+Donde 𝛽̂𝐶 y 𝛽̂𝑅/𝐶, corresponden a los coeficientes estimados en los modelos logit respectivos.  
+ 
+Luego, la probabilidad de respuesta incondicional en contacto (propensity) es igual a: 
+ 
+𝑝𝑟𝑜𝑝𝑒𝑛𝑠𝑖𝑡𝑦 = 𝑝̂𝑅(𝑥𝑖) = 𝑝̂𝐶(𝑥𝑖) ∙ 𝑝̂𝑅/𝐶(𝑥𝑖) 
+ 
+El propensity, es utilizado para hacer grupos de individuos con tasa de respuesta 
+homogénea, esto se hace mediante la construcción de deciles a través del valor calculado 
+del propensity. 
+ 
+El Cuadro Nº 6.7 muestra los valores mínimos, máximos y promedio de los propensity en 
+cada decil. 
+
+=== PDF PAGE 46 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+46 
+Cuadro Nº 6.8 
+Máximo, mínimo y promedio del propensity por decil 
+Tipo de muestra: No afiliados 2004 
+Decil Mínimo Promedio Máximo 
+1 0.044 0.152 0.249 
+2 0.249 0.325 0.410 
+3 0.411 0.487 0.555 
+4 0.556 0.605 0.645 
+5 0.646 0.678 0.716 
+6 0.716 0.744 0.775 
+7 0.775 0.806 0.826 
+8 0.827 0.847 0.861 
+9 0.861 0.878 0.893 
+10 0.893 0.913 0.952 
+                             Fuente: Elaboración propia 
+ 
+El inverso de los valores promedio del propensity , por decil, se emplean como factor de 
+ajuste por no respuesta; este ajuste, es el mismo para todas las personas del decil. Luego, 
+el factor de expansión ajustado por la no respuesta se obtiene de multiplicar e l factor de 
+expansión base por este factor de ajuste. 
+ 
+En el do-file “Factores de Ajuste por No Respuesta_No Afiliados 2004.do” está programada 
+la estimación de los modelos, y el cálculo de los factores de ajuste por no respuesta. 
+6.1.2.4 Refresco 2015 
+ 
+La muestra de refresco 2015 corresponde a las personas seleccionadas para participar en 
+esta VI Ronda EPS 2015, con el objetivo de refrescar la muestra y poder representar la 
+población de 18 años y más a Junio de 2015 . Esta muestra consistió en 14.995 personas, 
+de las cuales 66 se encontraba n fallecidas o impedida s física y/o mentalmente para 
+responder la encuesta (estas personas fueron excluidas para la estimación de los modelos 
+de probabilidad de contacto y de respuesta condicional en contacto ). De e sta forma, se 
+utilizó una muestra de 14.929 personas de la muestra de refresco 2015 para la estimación 
+de los ajustes por no respuesta con la metodología propensity. 
+ 
+Para el modelo de probabilidad de contacto y de probabilidad de respuesta condicional en 
+contacto, se utilizaron variables explicativas que estaban disponibles tanto para las personas 
+que respondieron la encuesta como las que no respond ieron, que a su vez tienen algún 
+grado de causalidad y correlación con la probabilidad de respuesta. Para esta muestra, solo 
+fue posible obtener información del marco muestral administrativo: 
+ 
+ Edad: se utiliza la edad calculada a Junio de 2015, en base a la fecha de nacimiento 
+obtenida del marco muestral administrativo. A diferencia de las muestras anteriores, 
+
+=== PDF PAGE 47 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+47 
+se empleó directamente la variable e dad, ya que la muestra está formada por un 
+grupo relativamente homogéneo: personas jóvenes entre 18 y 29 años de edad. 
+ Región: se generan 15 variables binarias (o dummies) para cada una de las regiones 
+del país, se excluye del modelo la dummy correspondiente a la región metropolitana 
+quedando esta categoría como base para la interpretación del modelo. La región 
+corresponde a la última región de entrevista, la que está asociada a la dirección de 
+contacto para la VI Ronda EPS. 
+ Sexo: se utiliza la variable binaria que toma valor 1 para los hombres y 0 para las 
+mujeres, de esta forma la categoría base son las mujeres. Esta información se 
+obtiene del marco administrativo. 
+ Afiliado AFP: dummy que toma valor 1 si la persona se encuentra afiliada al sistema 
+de AFP y 0 si se encuentra afiliada al sistema de INP a Junio de 2015, esta 
+información se obtiuvo del marco muestral administrativo.  
+ Número de cotizaciones en la cuenta obligatoria del sistema de AFP: cantidad de 
+cotizaciones en la cuenta obligatoria del sistema de AFP a Junio de 2015 ; esta 
+información, se obtuvo del marco muestral administrativo.  
+El Cuadro Nº 6.8, muestra los efectos marginales estimados de cada una de estas variables 
+explicativas sobre la probabilidad de co ntacto y sobre la probabilidad de respuesta 
+condicional en contacto de las personas de la muestra “Refresco 2015”. 
+ 
+Los resultados sobre la probabilidad de contacto muestran que: 
+ 
+ Los hombres tienen 5.2 puntos porcentuales menos de probabilidad de contacto que 
+las mujeres. 
+ Cada año adicional de edad , disminuye en 2.3 puntos porcentuales la probabilidad 
+de contacto. Si bien parece un resultado contradisctorio al obtenido en las otras 
+muestras, ha que tener presente que la muestra de refresco es de personas jóvenes 
+(entre 18 y 29 años) y este efecto marginal se debe interepretar como que dentro 
+de este grupo de personas jóvenes un año más de edad disminuye la probabilidad 
+de contacto. 
+ En todas las  regiones la probabilidad de contacto es superior a la región 
+metropolitana. 
+ Mientras mayor es el número de cotizaciones mayor es la probabilidad de contacto. 
+ Los afiliados al sistema de AFP tienen 2.8 puntos porcentuales más de probabilidad 
+de contacto que los no afiliados. 
+Con respecto a la probabilidad de respuesta condicional en contacto: 
+ 
+ Los hombres tienen 2.4 puntos porcentuales menos de probabilidad de respuesta 
+condicional en contacto que las mujeres. 
+ A mayor edad menor es la probabilidad de respuesta condicional en contacto, por 
+cada año adicional de edad, la probabilidad se reduce en 0.5 puntos porcentuales. 
+
+=== PDF PAGE 48 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+48 
+ Las personas de las regiones II, III, V, VI, VIII, X, XI y XII no tienen diferencias 
+significativas con las personas de la región metro politana en la probabilidad de 
+respuesta condicional en contacto. 
+ Los afiliados al sistema de AFP tienen 3.1 puntos porcentuales más de probabilidad 
+de respuesta condicional en contacto, que los no afiliados al sistema de pensiones. 
+Cuadro Nº 6.9  
+Efectos marginales sobre probabilidad de contacto y respuesta condicional en contacto 
+Tipo de muestra: Refresco 2015 
+ 
+Fuente: Elaboración propia 
+Notas: las estimaciones se hacen con los factores de expansión base mediante metodología logit.  El 
+modelo de probabilidad de respuesta condicional en contacto , no incluye la variable del número de 
+cotizaciones. 
+ 
+Una vez estimados ambos modelos, se utilizó cada uno de ellos para obtener la probabilidad 
+predicha de contacto y la probabilidad predicha de respuesta condicional en contacto en 
+función de las características de cada persona, estas probabilidades se predicen tanto para 
+los que respondieron la VI Ronda 2015 como para los que no respondieron: 
+ 
+ 
+ 
+ 
+Efecto marginal p-value Efecto marginal p-value
+Hombre -0.052 0.000 -0.024 0.003
+Edad -0.023 0.000 -0.005 0.000
+I 0.258 0.000 0.058 0.001
+II 0.087 0.000 -0.005 0.788
+III 0.329 0.000 -0.049 0.083
+IV 0.133 0.000 0.059 0.000
+V 0.129 0.000 -0.001 0.963
+VI 0.127 0.000 0.019 0.239
+VII 0.152 0.000 0.048 0.000
+VIII 0.101 0.000 0.007 0.543
+IX 0.094 0.000 0.068 0.000
+X 0.047 0.020 0.017 0.335
+XI 0.212 0.000 0.018 0.620
+XII 0.162 0.001 -0.015 0.720
+XIV 0.178 0.000 0.041 0.089
+XV 0.105 0.004 0.056 0.017
+Nº Cotizaciones 0.001 0.000 - -
+Afiliado AFP 0.028 0.020 0.031 0.006
+N
+Pseudo-R2
+Probabilidad predicha 0.47 0.88
+Probabilidad de contacto Probabilidad de respuesta/contacto
+14,929 7,687
+0.0267 0.0145
+
+=== PDF PAGE 49 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+49 
+Probabilidad predicha de contacto: 
+ 
+𝑝̂𝐶(𝑥𝑖) = 𝐹(𝑥𝑖
+′𝛽̂𝐶) 
+ 
+Probabilidad predicha de respuesta condicional en contacto: 
+ 
+𝑝̂𝑅/𝐶(𝑥𝑖) = 𝐹(𝑥𝑖
+′𝛽̂𝑅/𝐶) 
+ 
+Donde 𝛽̂𝐶 y 𝛽̂𝑅/𝐶, corresponden a los coeficientes estimados en los modelos logit respectivos.  
+ 
+Luego, la probabilidad de respuesta incondicional en contacto (propensity) es igual a: 
+ 
+𝑝𝑟𝑜𝑝𝑒𝑛𝑠𝑖𝑡𝑦 = 𝑝̂𝑅(𝑥𝑖) = 𝑝̂𝐶(𝑥𝑖) ∙ 𝑝̂𝑅/𝐶(𝑥𝑖) 
+ 
+El propensity, se emplea para hacer grupos de individuos con tasa de respuesta homogénea, 
+esto se hace mediante la construcción de deciles a través del valor calculado del propensity. 
+ 
+El Cuadro Nº 6.9 muestra los valores mínimos, máximos y promedio de los propensity en 
+cada decil. 
+Cuadro Nº 6.10 
+Máximo, mínimo y promedio del propensity por decil 
+Tipo de muestra: Refresco 2015 
+Decil Mínimo Promedio Máximo 
+1 0.179 0.262 0.296 
+2 0.296 0.314 0.331 
+3 0.332 0.345 0.358 
+4 0.358 0.372 0.385 
+5 0.385 0.396 0.408 
+6 0.408 0.421 0.433 
+7 0.433 0.446 0.460 
+8 0.460 0.476 0.492 
+9 0.492 0.513 0.537 
+10 0.537 0.581 0.734 
+                             Fuente: Elaboración propia 
+ 
+El inverso de los valores promedios del propensity, por decil, son utilizados como factor de 
+ajuste por no respuesta, este ajuste es el mismo para todas las personas del decil. Luego, 
+el factor de expansión ajustado por la no respuesta se obtiene de multiplicar el factor de 
+expansión base por este factor de ajuste. 
+ 
+En el do-file “Factores de Ajuste por No Respuesta_Refresco 2015.do”, está la programación 
+para la estimación de los modelos y el cálculo de los factores de ajuste por no respuesta. 
+
+=== PDF PAGE 50 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+50 
+ 
+6.1.3 Post-estratificación 
+ 
+Una vez ajustados por no respuesta los factores de expansión, el último paso consiste en 
+aprovechar la disponibilidad de datos auxiliares (cuyos totales son conocidos para la 
+población objetivo), estos datos permiten corregir los problemas de cobertura y reducir los 
+errores estándar. Por datos auxiliares s e entiende n como aquella información que está 
+disponible para el marco completo o la población objetivo, ya sea a nivel de individuos o en 
+forma agregada; estos datos pueden venir del marco muestral, registros administrativos, 
+estadísticas publicadas, u otras fuentes.  
+ 
+La post-estratificación es implementada al interior de celdas de calibración formadas por el 
+cruce de todas las categorías de las variables auxiliares utilizadas , y permite construir 
+ponderadores que puedan reproducir la población de cada celda. De esta forma, el 
+ponderador final es: 
+ 
+𝑤𝑖 = 𝑑𝑖 ∙ 𝑁𝛾
+𝑁̂𝛾
+ 
+ 
+Donde: 𝑑𝑖 = 𝑤𝑖
+𝑛𝑟 cuando se ha realizado un ajuste por no respuesta al ponderador base, 𝑁𝛾 
+es la población en el estrato (celda de calibración) 𝛾, y 𝑁̂𝛾 es la población estimada en e l 
+estrato 𝛾 a través del ponderador: 
+ 
+𝑁̂𝛾 = ∑ 𝑑𝑗
+𝑗 ∈ 𝑠𝛾
+ 
+ 
+donde 𝑠𝛾 son las unidades muestrales en el estrato 𝛾.  
+ 
+En la VI Ronda EPS se utilizaron las celdas de calibración forma das por las siguientes 
+variables: 
+ 
+- Sexo 
+o Hombre 
+o Mujer 
+- Tramos de edad: 
+o 18-29 
+o 30-49 
+o 50+ 
+- Regiones: 
+o XV-I-II-III 
+o VI 
+
+=== PDF PAGE 51 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+51 
+o V 
+o VI 
+o VII 
+o VIII 
+o IX 
+o X-XIV 
+o XI-XII 
+o RM 
+ 
+Los datos poblaciones se obtuvieron de las proyecciones de població n del INE a Junio de 
+2015, estos se presentan en el Cuadro Nº 6.10. 
+ 
+Cuadro Nº 6.11 
+Proyección de la población de 18 años y más a Junio 2015 según sexo, edad y región 
+ 
+Fuente: Elaboración propia en base a proyecciones del INE a Junio de 2015. 
+ 
+Por otra parte, el Cuadro 6.11 muestra la distribución de la muestra de personas 
+entrevistadas en la VI Ronda EPS 2015 en estas mismas celdas, y el Cuadro 6.12 la muestra 
+ponderada o expandida utilizando el factor de expansión con ajustes por no respuesta. 
+ 
+Cuadro Nº 6.12 
+Muestra de personas entrevistadas vivas en la VI Ronda EPS 
+ 
+Fuente: Elaboración propia 
+18-29 30-49 50+ 18-29 30-49 50+ Total
+XV-I-II-III 155,397 233,339 182,770 139,713 206,558 180,633 1,098,410
+IV 76,496 104,869 100,144 74,664 105,824 111,497 573,494
+V 182,078 245,834 247,911 173,823 246,196 298,855 1,394,697
+VI 86,320 127,210 129,152 83,512 125,861 135,463 687,518
+VII 101,281 139,801 145,340 100,902 143,507 155,334 786,165
+VIII 213,452 282,549 282,356 210,206 294,983 316,692 1,600,238
+IX 100,261 130,083 129,693 100,466 135,689 143,527 739,719
+X-XIV 123,531 176,446 163,533 118,054 171,506 174,410 927,480
+XI-XII 26,243 41,819 37,720 23,365 37,937 36,238 203,322
+RM 714,882 1,069,099 895,242 699,665 1,086,319 1,084,731 5,549,938
+Total 1,779,941 2,551,049 2,313,861 1,724,370 2,554,380 2,637,380 13,560,981
+Hombres Mujeres
+18-29 30-49 50+ 18-29 30-49 50+ Total
+XV-I-II-III 360 140 206 332 151 226 1,415
+IV 174 86 144 161 106 152 823
+V 343 181 303 357 209 388 1,781
+VI 176 101 189 182 128 210 986
+VII 227 150 246 260 138 225 1,246
+VIII 357 204 441 402 242 423 2,069
+IX 176 97 187 207 80 211 958
+X-XIV 203 133 245 215 171 233 1,200
+XI-XII 56 35 53 57 45 60 306
+RM 1,240 562 981 1,347 706 1,286 6,122
+Total 3,312 1,689 2,995 3,520 1,976 3,414 16,906
+Hombres Mujeres
+
+=== PDF PAGE 52 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+52 
+ 
+ 
+ 
+Cuadro Nº 6.13 
+Muestra expandida de personas entrevistadas vivas en la VI Ronda EPS 
+ 
+Fuente: Elaboración propia, utilizando el factor de expansión base ajustado por la no respuesta con 
+el método de propensity. 
+ 
+El ajuste de post -estratificación es, simplemente, el ratio entre la población y la muestra 
+expandida en cada una de las celdas de calibración definida. Estos valores se presentan en 
+el Cuadro Nº 6.13. 
+ 
+Cuadro Nº 6.14 
+Factor de ajuste por post-estratificación 
+ 
+Fuente: Elaboración propia. 
+ 
+Finalmente, el factor de expansión definitivo para la muestra de corte transversal de la VI 
+Ronda EPS 2015 es el factor ajustado por no respuesta multiplicado por el factor de ajuste 
+de post-estratificación; en el do-file “Postestratificacion.do” se encuentra la programación 
+del factor de expansión definitivo. 
+ 
+ 
+ 
+18-29 30-49 50+ 18-29 30-49 50+ Total
+XV-I-II-III 333,494 223,722 261,102 292,879 209,847 256,394 1,577,438
+IV 147,598 99,174 125,937 133,218 114,853 145,863 766,643
+V 374,450 226,505 299,483 347,019 243,801 426,074 1,917,332
+VI 176,850 100,438 138,369 155,076 111,473 226,933 909,139
+VII 178,204 135,311 198,843 196,650 128,011 218,710 1,055,729
+VIII 418,358 226,404 420,442 415,153 289,894 501,969 2,272,220
+IX 180,712 113,351 190,971 196,813 97,956 250,763 1,030,566
+X-XIV 248,278 146,041 210,766 238,845 186,723 228,133 1,258,786
+XI-XII 50,625 40,994 47,807 47,456 45,740 72,453 305,075
+RM 1,972,125 911,370 1,142,467 1,909,327 1,037,172 1,688,175 8,660,636
+Total 4,080,694 2,223,309 3,036,187 3,932,436 2,465,470 4,015,467 19,753,563
+Hombres Mujeres
+18-29 30-49 50+ 18-29 30-49 50+
+XV-I-II-III 0.4660 1.0430 0.7000 0.4770 0.9843 0.7045
+IV 0.5183 1.0574 0.7952 0.5605 0.9214 0.7644
+V 0.4863 1.0853 0.8278 0.5009 1.0098 0.7014
+VI 0.4881 1.2666 0.9334 0.5385 1.1291 0.5969
+VII 0.5683 1.0332 0.7309 0.5131 1.1211 0.7102
+VIII 0.5102 1.2480 0.6716 0.5063 1.0176 0.6309
+IX 0.5548 1.1476 0.6791 0.5105 1.3852 0.5724
+X-XIV 0.4976 1.2082 0.7759 0.4943 0.9185 0.7645
+XI-XII 0.5184 1.0201 0.7890 0.4924 0.8294 0.5002
+RM 0.3625 1.1731 0.7836 0.3664 1.0474 0.6425
+Hombres Mujeres
+
+=== PDF PAGE 53 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+53 
+ 
+ 
+6.1.4 Análisis estadístico del factor de expansión 
+ 
+El Cuadro Nº 6.14 muestra las estadísticas descriptivas básicas de los factores de expansión 
+para la muestra de corte transversal de la VI Ronda EPS 2015 en cada una de sus etapas: 
+factor base, factor con ajuste por no respuesta y factor final con ajuste por post -
+estratificación, para los 16.906 personas entrevistadas vivas en la EPS 2015. 
+ 
+Cuadro Nº 6.15 
+Factores de expansión base, con ajuste por no respuesta y final 
+Corte transversal EPS 2015 
+ 
+Fuente: Elaboración propia. 
+ 
+Por otra parte, en el Cuadro Nº 6.15 se muestran algunas estadísticas básicas calculadas a 
+partir de los datos de la VI Ronda EPS 2015, con los factores de expansión en sus distintas 
+etapas. 
+ 
+Cuadro Nº 6.16 
+Estadísticas descriptivas y efecto del factor de expansión 
+ 
+Fuente: Elaboración propia 
+ 
+6.2 Factores de expansión de la muestra longitudinal 
+6.2.1 Panel 2002-2004-2006-2009-2015 
+ 
+Factor Base Factor con Ajuste por No Respuesta Factor Final EPS 2015
+Casos Totales 16,906 16,906 16,906
+Promedio 599 1,168 802
+Desviación estándar 348 906 851
+Suma ponderada 10,125,693 19,753,564 13,560,980
+Cuantiles
+Mínimo 201 239 183
+Percentil 10 397 569 370
+Percentil 25 437 685 436
+Mediana 477 944 556
+Percentil 75 553 1,338 853
+Percentil 90 1,223 1,907 1,401
+Máximo 6,519 24,975 29,297
+Factor Base Factor con Ajuste por No Respuesta Factor Final EPS 2015
+Sexo 100 100 100
+   Hombre 43.5 47.3 49.0
+   Mujer 56.6 52.7 51.0
+Tramos de edad 100 100 100
+18-29 32.7 48.0 25.8
+30-49 22.6 22.0 37.7
+50+ 44.7 30.0 36.5
+% Afiliado (E1=1) 71.2 73.5 76.4
+% Trabaja (B2=2) 50.4 54.6 57.8
+% Independiente (B8=1 o B8=2) 29.5 28.1 29.1
+
+=== PDF PAGE 54 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+54 
+En el Cuadro Nº 6.1 se mostraba que la muestra de “Afiliados 2002” está compuesta por 
+15.060 personas (de las cuales 821 personas se encontraban fallecidas o impedidas física 
+y/o mentalmente para responder la encuesta). De esta forma, la muestra “Afiliados 2002” 
+en condiciones de responder la  encuesta fue de 14.239 personas, de estos 5 .966 fueron 
+entrevistados en las rondas 2002, 2004, 2006, 2009 y 2015. 
+ 
+Para calcular el factor de expansión de esta muestra panel , se siguió un procedimiento 
+bastante similar al implementado para el cálculo de los factores de expansión transversales: 
+ 
+- Se comienza con los fa ctores base obtenidos en la primera ronda de la EPS 
+(2002). 
+- Se realiza un ajuste por la probabilidad de pertenecer a este panel, es decir, por 
+la probabilidad de haber contestado en todas las rondas del estudio. Este modelo 
+se estima mediante la metodología logit en función de variables explicativas como 
+sexo, edad, región, estatus en el sistema de pensiones y nivel educacional. 
+- Una vez estimado el modelo , se utiliza para obtener para cada observación la 
+probabilidad predicha de responder en todas las rondas del estudio (propensity), 
+que a su vez s e emplea para generar deciles , y luego el factor de ajuste 
+corresponde al inverso del propensity promedio del decil. 
+- Un vez generado el factor de expansión con ajuste por probabilidad de estar en 
+panel, se hace una post-estratificación por celdas. 
+En la carpeta “Factor Panel EPS 2002-2004-2006-2009-2015” se adjuntan los do-files y Excel 
+utilizado para el cálculo de este factor de expansión. 
+ 
+6.2.2 Panel 2004-2006-2009-2015 
+ 
+En el Cuadro Nº 6.1 se mostraba que la sub-muestra de “Afiliados 2002” está compuesta 
+por 15.060 personas (de las cuales 821 se encontraban fallecidas o impedidas física y/o 
+mentalmente para responder la encuesta). De esta manera, la sub-muestra “Afiliados 2002” 
+en condiciones de responder fue de 14 .239 personas, de las cuales 5.966 fueron 
+entrevistados en las rondas 2004, 2006, 2009 y 2015. La sub-muestra de “Nuevos afiliados 
+2004” está compuesta por 916 personas (de las que 11 personas se encontraban fallecidas 
+o impedidas física y/o mentalmente para responder la encuesta ). De esta forma, la sub-
+muestra “ Nuevos afiliados 2004 ” en condiciones de responder la  encuesta es de 905 
+personas, de éstas 383 fueron entrevistadas en las rondas 2004, 2006, 2009 y 2015.  La 
+sub-muestra de “No afiliados 2004” está compuesta por 2 .673 personas (de ellas, 203 se 
+encontraban fallecidas o impedidas física y/o mentalmente para responder la encuesta). De 
+esta forma, la sub-muestra “No afiliados 2004” en condiciones de responder la encuesta es 
+de 2,470 personas, de estos 1,394 han sido entrevistados en las rondas 2004, 2006, 2009 
+y 2015. 
+ 
+
+=== PDF PAGE 55 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+55 
+Para calcular el factor de expansión de esta muestra panel se sigue un procedimiento 
+bastante similar al implementado pa ra el cálculo de los factores de expansión  de corte 
+transversal: 
+ 
+- Se comienza con los factores bases obtenidos en la primera ronda de la EPS , 
+2002 para la muestra “Afiliados 2002” y 2004 para las muestras “Nuevos Afiliados 
+2004” y “No Afiliados 2004”. 
+- Se realiza un ajuste por la probabilidad de pertenecer a este panel, es decir, por 
+la probabilidad de haber contestado en todas las rondas del estudio. Este modelo 
+se estima mediante la metodología logit en función de variables explicativas como 
+sexo, edad, región, estatus en el sistema de pensiones y nivel educacional.  La 
+estimación se hace por separado por tipo de muestra. 
+- Una vez estimado el modelo , se utiliza para obtener por cada observación la 
+probabilidad predicha de responder en todas las rondas del es tudio (o 
+propensity), la que a su vez se emplea para generar deciles, y luego el factor de 
+ajuste corresponde al inverso del propensity promedio del decil. 
+- Un vez generando el factor de expansión con ajuste por probabilidad de estar en 
+panel, se hace una post-estratificación por celdas. 
+En la carpeta “ Factor Panel EPS 2004-2006-2009-2015” se adjuntan los do -files y Excel 
+utilizado para el cálculo de este factor de expansión. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+=== PDF PAGE 56 ===
+Diseño Muestral y Factores de Expansión VI Ronda EPS – Santiago de Chile, 2016 
+ 
+ 
+56 
+ 

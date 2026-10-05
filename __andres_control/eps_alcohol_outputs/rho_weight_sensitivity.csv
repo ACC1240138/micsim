@@ -1,0 +1,2 @@
+"weighting","n","n_eff","phi","rho_interval","lower","upper","rho_annual","annual_lower","annual_upper","annual_time_min","annual_time_max","flag"
+"baseline_weight_endpoint_respondents_not_attrition_corrected",3224,2004.37014912481,0.285015325962379,0.458131443851884,0.394568651416963,0.517330605516362,0.903509408052232,0.886136570351171,0.917895437176048,0.896023258064686,0.910001138270317,"conditional_AR1_only"

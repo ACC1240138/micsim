@@ -1,0 +1,716 @@
+
+=== PDF PAGE 1 ===
+Encuesta de Protección Social 2023
+1
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+2023
+CUESTIONARIO FALLECIDOS
+Comuna
+Folio -
+Nombre: Apellido Paterno:  Apellido Materno:
+Fecha de Nacimiento:                               Dirección:
+Teléfono principal: código de área – fono:                    Comuna:                                 Región:
+Villa/Población:               Localidad:     
+Buenos (días/tardes/noches), mi nombre es ___________, pertenezco a la empresa IPSOS que, en 
+conjunto con la Subsecretaria de Previsión Social del Ministerio del Trabajo, estamos aplicando la 
+Encuesta de Protección Social 2023 con el propósito de obtener información estadística sobre la 
+población chilena que será utilizada para elaborar y desarrollar políticas públicas.
+ 
+Agradecemos su disposición para participar en este estudio, respondiendo algunas preguntas 
+sobre la situación de (Nombre de persona fallecida).
+La entrevista tendrá una duración de aproximadamente 20 minutos. Le recordamos que sus 
+respuestas son confidenciales y su participación es completamente voluntaria, pudiéndose retirar 
+en cualquier momento sin ninguna consecuencia. 
+Si usted tiene alguna pregunta sobre este estudio, puede contactarse con el equipo encargado.
+Nota al encuestador/a: Si la persona entrevistada desea revisar veracidad del estudio o contactarse 
+algún profesional del mismo, puede entregar la siguiente información:
+ 
+Información general
+Página web: http://chile.ipsoslatam.com/eps 
+Equipo encargado del estudio
+Correo electrónico Subsecretaría de Previsión Social: atencionEPS@previsionsocial.gob.cl
+Teléfono Subsecretaría de Previsión Social: (56-2) 28279828
+COMUNA
+FOLIO
+INFORMACIÓN DE LA ENTREVISTA
+Fecha 1ª visita: Resultado 1ª visita:
+Fecha 2ª visita: Resultado 2ª visita:
+Fecha 3ª visita: Resultado 3ª visita:
+Fecha de la Entrevista
+Hora de la Entrevista
+Inicio
+Término
+
+
+=== PDF PAGE 2 ===
+Encuesta de Protección Social 2023
+2
+Módulo A: Información General de las y los integrantes del hogar                                                                             
+A.1. Nombre de pila de todos los integrantes del hogar, se entiende como
+integrante del hogar a todas aquellas personas que integran el hogar y 
+que se fueron hace 12 meses o menos.
+TOTAL DE PERSONAS DEL HOGAR INCLUYE MENORES DE 18 AÑOS Y PERSONAS 
+MAYORES
+ANOTE O VERIFIQUE QUE ESTÉN TODOS(AS)
+A.8. ¿Cuál es el sexo de…? 
+LEER NOMBRE DE CADA INTEGRANTE
+1. Hombre
+2. Mujer
+A.9. ¿Qué edad tiene (tendría)…?
+AÑOS CUMPLIDOS. CORREGIR SI EDAD 
+CARGADA NO ES CORRECTA
+N° A.1 A.8 A.9
+1.
+2. 
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+A TODOS LOS INFORMANTES DE LAS PERSONAS FALLECIDAS
+
+=== PDF PAGE 3 ===
+Encuesta de Protección Social 2023
+3
+M.2. ¿Cuál era la relación de parentesco de (Nombre de la persona 
+fallecida) con el Jefe(a) de Hogar?
+ LEER ALTERNATIVAS
+1. Jefe(a) del hogar
+2. Cónyuge o Pareja
+3. Hijo(a) / Hijastro(a)
+4. Otro familiar
+5. No familiar
+M5b. ¿Qué edad tenía el entrevistado al fallecer?
+ AÑOS CUMPLIDOS
+888. No responde (NO LEER)
+999. No sabe (NO LEER)
+M5c. ¿Qué causó la muerte de (Nombre de la persona fallecida)?
+ ESCUCHAR Y MARCAR ALTERNATIVA
+1. Cáncer
+2. Ataque al corazón
+3. Ataque cerebral
+4. Otras enfermedades cardiovasculares relacionadas
+5. Enfermedades respiratorias
+6. AccidentePase a M5f
+7. Otra. EspecifiquePase a M5c.e
+88. No responde (NO LEER) Pase a M5e
+99. No sabe (NO LEER) Pase a M5e
+M5c.e Especifique
+M5d. ¿Cuánto tiempo estuvo enfermo/a el/la fallecido/a antes de 
+morir?
+ ESCUCHAR Y MARCAR ALTERNATIVA
+1. No estuvo enfermo/a, falleció repentinamente
+2. 1 a 2 horas
+3. Menos de 24 horas
+4. Un día o más, pero menos de una semana
+5. Una semana o más, pero menos de un mes
+6. Un mes o más, pero menos de 1 año
+7. Un año o más
+88. No responde (NO LEER)
+99. No sabe (NO LEER)
+M5e. ¿Usted diría que fue una muerte inesperada?
+1. Sí
+2. No
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+M.1. Nombre de pila de la persona fallecida
+M.3. Sexo de (Nombre de la persona fallecida)
+1. Hombre
+2. Mujer
+M.4. ¿Cuál era el estado civil de (Nombre de la persona fallecida) 
+antes de morir?
+ ESCUCHAR Y MARCAR ALTERNATIVA
+1. Casado(a)
+2. Conviviente
+3. Anulado(a)
+4. Con pareja a través de Acuerdo de Unión Civil (AUC)
+5. Separado(a) de unión legal
+6. Viudo (a)
+7. Soltero(a)
+8. Divorciado(a)
+88. No responde (NO LEER)
+99. No sabe (NO LEER)
+M2.1. ¿Cuál era su relación de parentesco con (Nombre de la 
+persona fallecida)?
+     ESCUCHAR Y MARCAR ALTERNATIVA
+1. Esposo(a) o pareja
+2. Hjio(a) de ambos
+3. Hijo(a) sólo de la persona entrevistada
+4. Hijo(a) sólo del esposo(a)/ pareja
+5. Padre o madre
+6. Suegro(a)
+7. Yerno o nuera
+8. Nieto(a)
+9. Hermano(a)
+10. Cuñado(a)
+11. Abuelo(a)
+12. Otro u otra familiar
+13. No familiar
+14. Servicio doméstico puertas adentro
+M5a. ¿Cuál fue la fecha exacta del fallecimiento?
+ ANOTE DÍA, MES Y AÑO
+ENTREVISTADOR(A) LAS PREGUNTAS DEBEN DE SER HECHAS A UNA PERSONA QUE CONVIVA O QUE CONOZCA BIEN A LA PERSONA 
+ENTREVISTADA, Y QUE SEA MAYOR DE 18 AÑOS
+M5a_día M5a_mes M5a_año
+88. No responde 
+99. No sabe 
+(NO LEER)
+88. No responde
+99. No sabe
+(NO LEER)
+8888. No responde
+9999. No sabe
+(NO LEER)
+M1.1. ¿Cuál es su nombre?
+
+=== PDF PAGE 4 ===
+Encuesta de Protección Social 2023
+4
+M5f. ¿En qué lugar falleció?
+ ESCUCHAR Y MARCAR ALTERNATIVA
+1. En su casa (de la persona fallecida))
+2. En la casa de un familiar
+3. En la casa de un no familiar
+4. En un hospital
+5. En un hospicio
+6. En un establecimiento de larga estadía (ELEAM)
+7. En una residencial
+8. En un albergue
+9. En una ambulancia/vehículo camino al hospital
+10. Otro. Pase a M5f.e
+88. No Responde (NO LEER)
+99. No sabe (NO LEER)
+M5f.e Especifique
+M11.Desde la última vez que respondió la encuesta, ¿en qué 
+sistema previsional se encontraba cotizando (Nombre de la 
+persona fallecida)?
+ LEER ALTERNATIVAS
+1. AFP
+2. INP
+3. CAPREDENA
+4. DIPRECA
+5. Otro sistema. Pase a M11.e
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+M11.e Especifique
+M10. Desde la última vez que respondió la encuesta, ¿(Nombre 
+de la persona fallecida) se encontraba cotizando en algún sistema 
+previsional antes de su fallecimiento?
+1. Sí
+2. NoPase a M12
+8. No Responde (NO LEER) Pase a M12
+9. No sabe (NO LEER) Pase a M12
+M12. ¿A qué sistema previsional de salud pertenecía (Nombre de la 
+persona fallecida)?
+ SI DICE FONASA, PREGUNTAR POR EL GRUPO (A, B, C, O D)
+1. Sistema público FONASA Grupo A
+2. Sistema público FONASA Grupo B
+3. Sistema público FONASA Grupo C
+4. Sistema Público FONASA Grupo D
+5. Sistema público FONASA. No sabe el grupo
+6. FF.AA. y de Orden
+7. ISAPRE. Pase a M12.7.e
+8. Ninguno (Particular)Pase a M0c
+9. Otro Sistema. Pase a M12.e
+88. No Responde (NO LEER) Pase a M0c
+99. No sabe (NO LEER) Pase a M0c
+M12.e Especifique
+M13. ¿(Nombre de la persona fallecida) era cotizante o carga 
+familiar?
+1.CotizantePase a M0c
+2.Carga
+8.No Responde (NO LEER) Pase a M0c
+9.No sabe (NO LEER) Pase a M0c
+M14. ¿De quién era carga familiar (Nombre de la persona 
+fallecida)?
+ ESCUCHAR Y MARCAR ALTERNATIVA
+1. Padre
+2. Madre
+3. Hijo(a)
+4. Cónyuge
+5. Otro
+8. No Responde (NO LEER) Pase a M0c
+9. No sabe (NO LEER) Pase a M0c
+M9. A (Nombre de la persona fallecida), ¿le había sido 
+diagnosticada alguna de las siguientes condiciones médicas por 
+un(a) doctor(a)?
+ LEER CADA CONDICIÓN MÉDICA
+1. Sí
+2. No
+88. No responde (NO LEER)
+99. No sabe (NO LEER)
+Condición Médica M9
+M9.1 Asma o enfisema pulmonar (problemas 
+respiratorios)
+M9.2 Depresión
+M9.3 Diabetes
+M9.4 Hipertensión o presión alta
+M9.5 Problemas cardíacos
+M9.6 Cáncer
+M9.7 Artritis o artrosis
+M9.8 Enfermedad renal
+M9.9 Derrame cerebral
+M9.10 Enfermedad mental
+M9.11 VIH/SIDA
+M.9.12 Otra  Pase a M.9.12.e
+M12.7.e. Nombre de Isapre
+M.9.12.e. Especifique
+
+=== PDF PAGE 5 ===
+Encuesta de Protección Social 2023
+5
+M0g.a M0g.b
+M0g_01. Comer o alimentarse (incluyendo cortar comida y 
+llenar los vasos)
+M0g_02. Bañarse (incluyendo entrar y salir de la tina) 
+M0g_03. Moverse/desplazarse dentro de la casa
+M0g_04. Usar el baño o "WC"
+M0g_05. Acostarse y levantarse de la cama 
+M0g_06. Vestirse
+M0g_07. Salir a la calle
+M0g_08. Hacer compras o ir al médico
+M0g_09. Realizar sus tareas del hogar
+M0g_10. Hacer o recibir llamadas o utilizar otro medio 
+para comunicarse (mensaje de texto o audio, Whatsapp)
+M0g_11. Caminar largas distancias
+M0g_12. Ejercicio extenuante o intenso
+M.15. ¿Pertenecía esta persona al hogar de (Nombre de la persona 
+fallecida)?
+1. Sí
+2. No
+8. No Responde (NO LEER)
+9. No Sabe (NO LEER)
+ ENTREVISTADOR LEER: LAS SIGUIENTES PREGUNTAS SON ACERCA 
+DE LAS DIFICULTADES QUE PUDIERA HABER TENIDO, LA PERSONA 
+FALLECIDA, PARA REALIZAR CIERTAS ACTIVIDADES, DEBIDO SOLO A 
+SU ESTADO DE SALUD Y SIN CONSIDERAR DISPOSITIVOS DE AYUDA O 
+PERSONAS QUE LE AYUDEN.
+M0g.a ¿Cuánta dificultad tenía (Nombre de la persona fallecida) 
+para realizar las siguientes actividades?
+ LEER TODAS LAS ALTERNATIVAS. RESPUESTA MÚLTIPLE
+1. Ninguna  Pase a M.18b
+2. Leve
+3. Moderada
+4. Severa
+5. Extrema /no puede hacerlo
+M0g.b (Nombre de la persona fallecida), ¿con qué frecuencia 
+recibió ayuda de otra persona para realizar las siguientes 
+actividades?
+ LEER TODAS LAS ALTERNATIVAS. RESPUESTA MÚLTIPLE
+1. Nunca
+2. Casi nunca
+3. Algunas veces
+4. Muchas veces
+5. Siempre
+8. No responde (NO LEER) 
+9. No sabe (No leer)
+M0c. (Nombre de la persona fallecida), ¿Con qué regularidad 
+practicaba deporte o alguna actividad física?
+ LEER ALTERNATIVAS
+1. Todos los días
+2. 5 a 6 veces por semana
+3. 3 a 4 veces por semana
+4. 1 a 2 veces por semana
+5. 1 a 3 veces al mes
+6. Algunas veces al año
+7. Nunca o casi nunca
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+M0d. (Nombre de la persona fallecida), ¿Fumaba?
+1. Sí
+2. No
+8. No Responde (NO LEER)
+9. No sabe (NO LEER)
+M0f. (Nombre de la persona fallecida), ¿Consumía bebidas 
+alcohólicas como cerveza, vino, pisco u otros licores? 
+ LEER CADA BEBIDA
+1. Sí
+2. No  Pase a siguiente
+88. No responde (NO LEER)  Pase a siguiente
+99. No sabe (NO LEER)  Pase a siguiente
+Bebida alcohólica M0f
+M0f.1 Cerveza
+M0f.2 Vino
+M0f.3 Pisco u otro licor
+
+=== PDF PAGE 6 ===
+Encuesta de Protección Social 2023
+6
+M18b M19b M19b.e M20b
+1. Jubilación o Pensión 
+de Vejez 
+2. Pensión de invalidez  
+3. Pensión de viudez 
+(Montepío) 
+4. Pensión de orfandad
+5. Otro tipo de 
+pensión 
+  SI CONTESTÓ NO (M18B=2,8 Ó 9) EN TODAS LAS ALTERNATIVAS  PASE A M27
+M18b. (Nombre de la persona 
+fallecida), ¿recibía ingresos por 
+concepto de:
+ LEER ALTERNATIVAS
+1. Sí
+2. No  Pase a siguiente
+8. No responde (NO LEER)  Pase a 
+M27
+9. No sabe (NO LEER)  Pase a M27
+M19b. ¿Qué institución le pagaba este ingreso?
+ LEER PENSIÓN O PENSIONES
+1. AFP
+2. INP
+3. CAPREDENA
+4. DIPRECA
+5. Mutual de Accidentes del Trabajo
+6. Cía. de Seguros
+7. Administrador de Fondos Cesantía
+8. Otra institución  Pase a M19b.e Especifique
+88. No Responde (NO LEER)
+99. No sabe (NO LEER)
+M20b. ¿Cuánto recibía 
+mensualmente?
+ ANOTE MONTO EN PESOS
+  OBSERVACIONES                                                                                                                                                             
+
+=== PDF PAGE 7 ===
+Encuesta de Protección Social 2023
+7
+  PENSIONADOS POR VEJEZ                                                                                                                                                             
+M25. ¿Cuáles fueron las principales razones por la que jubiló o se 
+pensionó?  
+ ESCUCHAR Y MARCAR ALTERNATIVAS
+1. Quería aumentar sus ingresos con nuevos proyectos laborales
+2. Quería usar Fondos o Excedentes de libre disposición
+3. Lo convenció un agente de ventas
+4. Por problemas de salud
+5. Quería dedicarse a otras actividades no laborales
+6. Cumplió años de servicio (INP , DIPRECA o CAPREDENA)
+7. La empresa le ofreció un plan de retiro
+8. Porque realizaba trabajos pesados
+9. Quedó sin trabajo y le quedaba poco tiempo para jubilar
+10. Recibió regalo o dinero del agente de ventas
+11. Cumplió edad legal de retiro
+12. Por discapacidad o invalidez
+13. Otra razón.  Pase a M25.e
+14. Ninguna otra
+M25.e Especifique
+SÓLO PARA FALLECIDOS CON JUBILACIÓN O PENSIÓN DE VEJEZ (M18b_1=1). EL RESTO  Pase a M27
+M21b. ¿En qué fecha se jubiló o se pensionó? Señale mes y año
+SI NO RECUERDA MES, ANOTE 0 
+M22. Después de pensionarse, ¿siguió trabajando?
+1. Sí
+2. No
+8. No Responde (NO LEER) 
+9. No sabe (NO LEER)
+M21b_m mes M21b_a año
+88. No responde
+99. No sabe
+8888. No responde
+9999. No sabe
+M25_1 
+Primera Razón
+M25_2 
+Segunda Razón
+M25_3 
+Tercera Razón
+
+=== PDF PAGE 8 ===
+Encuesta de Protección Social 2023
+8
+  PENSIONES DE SOBREVIVENCIA/HERENCIAS
+Sobreviviente
+ CONSULTE 
+POR CADA 
+UNO DE ESTOS 
+PARENTESCOS 
+Y ANOTE LOS 
+BENEFICIOS 
+CUANDO 
+CORRESPONDA
+M27. (Nombre 
+de la persona 
+fallecida), ¿dejó 
+algún beneficio 
+del sistema de 
+pensiones?
+1.Sí
+2.No
+  Pase a otro
+8.No sabe (NO LEER)
+  Pase a otro
+9.No responde (NO 
+LEER)
+  Pase a otro
+7.No aplica (no 
+tenía)
+  Pase a otro
+M28. ¿Qué beneficio dejó?
+ MARQUE X EN BENEFICIO QUE CORRESPONDA AL 
+PARENTESCO. PUEDEN SER MAS DE UNA ALTERNATIVA
+M28.1 Una pensión 
+M28.2 Una Herencia 
+M28.3 Cuota Mortuoria
+M28.4 Seguro de Vida
+M28.5 Otro beneficio.Especifique M28.e
+M29. ¿Cuántas personas 
+recibieron este beneficio?
+ ANOTE CUANTAS PENSIONES 
+A CADA PARENTESCO 
+CONSULTADO
+Lea parentesco M27 M28_1 M28_2 M28_3 M28_4 M28_5 M28_e M29
+1 Cónyuge
+2 Pareja AUC
+3 Hijos(as) 
+4 Madre o Padre 
+de sus hijos
+5 Otros 
+familiares 
+M31
+a. Bienes Raíces
+b. Otros bienes
+c. Activos (acciones, bonos, etc)
+d. Negocios (negocios o empresas)
+e. Deudas
+    SI CONTESTÓ NO (M31=2,88 Ó 99) EN TODAS LAS ALTERNATIVAS PASE A M33
+M31. ¿(Nombre de la persona fallecida) dejó herencia en bienes, activos, etc. o deudas?
+ LEER ALTERNATIVAS
+1. Sí
+2. No Pase a siguiente
+88. No Responde (NO LEER) Pase a siguiente
+99. No sabe (NO LEER) Pase a siguiente
+
+=== PDF PAGE 9 ===
+Encuesta de Protección Social 2023
+9
+  HISTORIA LABORAL                                                                                                                                                             
+M33. Describa todas las situaciones que haya 
+realizado desde la última vez que respondió la 
+encuesta hasta la fecha de deceso.
+INDIQUE LA FECHA DE INICIO Y DE TÉRMINO DE CADA 
+SITUACIÓN
+POR SITUACIONES, ENTENDEREMOS HABER ESTADO 
+TRABAJANDO, CESANTE, BUSCANDO TRABAJO POR 
+PRIMERA VEZ O INACTIVO ( ESTAR ESTUDIANDO,
+ESTAR JUBILADO, DEDICARSE A QUEHACERES DEL 
+HOGAR, ETC).
+M34. En ese período, ¿en cuál de las siguientes 
+situaciones se encontraba?
+1. Trabajando
+2. Cesante FIN Encuesta
+3. Buscando trabajo por 1ª vez FIN Encuesta
+4. Inactivo (Estar estudiando, estar jubilado, dedicarse a 
+quehaceres del hogar, etc.) Pase a M46
+ AHORA VAMOS A HABLAR DEL PERIODO CUANDO EL FALLECIDO SE ENCONTRABA 
+TRABAJANDO
+M36. ¿Cuál era su ocupación u oficio, o qué hacía en ese trabajo? 
+    DESCRIBA DETALLADAMENTE LA ACTIVIDAD QUE REALIZA(BA). NO BASTA ANOTAR: 
+EMPLEADO(A), OBRERO(A), AGRICULTOR(A), COMERCIANTE, JORNALERO(A)
+M0. ¿Cuál era el nombre de la empresa, institución u hogar que le pagaba el sueldo en 
+ese trabajo?
+M37. Este trabajo era de tipo:
+ LEER ALTERNATIVAS
+1. Permanente
+2. De temporada o estacional
+3. Ocasional o eventual
+4. A prueba
+5. Por plazo o tiempo determinado
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+AHORA LE PEDIRÉ QUE DESCRIBA TODAS LAS ACTIVIDADES QUE EL FALLECIDO HAYA REALIZADO DESDE LA FECHA DE DECESO HASTA LA 
+ÚLTIMA VEZ QUE RESPONDIÓ ENCUESTA
+M33.i. Fecha de inicio M33.t.  Fecha de término
+M33im M33ia M33tm M33ta M34 M36 M0 M37
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+=== PDF PAGE 10 ===
+Encuesta de Protección Social 2023
+10
+  HISTORIA LABORAL                                                                                                                                                             
+M38. ¿Qué clase de actividad realiza la empresa, industria o servicio 
+donde desempeñaba ese trabajo?
+    DESCRIBA la actividad a que se dedica la empresa, negocio o establecimiento 
+en que la persona realiza su actividad u ocupación principal. En el caso de los 
+trabajadores(as) que son del tipo transitorio, anotar la actividad que realiza la 
+empresa en que presta sus servicios.
+M40. ¿En esta ocupación, el/la fallecido(a) trabajaba como:
+ LEER ALTERNATIVAS
+1. Patrón o empleador
+2. Trabajador por cuenta propia
+3. Empleado u Obrero del Sector Público
+4. Empleado u Obrero del Sector Privado
+5. Servicio Doméstico Puertas Adentro
+6. Servicio Doméstico Puertas Afuera
+7. Familiar No remunerado
+8. FF.AA. y de Orden
+88. No responde (NO LEER)
+99. No sabe (NO LEER)
+M41. En este trabajo, el/la fallecido(a), ¿había firmado contrato de 
+trabajo?
+1. Sí, tenía contrato y lo firmó
+2. No, tenía contrato pero no lo firmó
+3. No tenía contrato
+88. No responde (NO LEER)
+99. No sabe (NO LEER)
+M43. Durante este trabajo, 
+¿se encontraba (Nombre de la 
+persona fallecida) afiliado(a) a 
+algún sindicato?
+1. Sí
+2. No
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+M44. (Nombre de la persona 
+fallecida), ¿Se encontraba 
+cotizando en algún sistema 
+Previsional?
+ SI DICE QUE SI, PREGUNTAR 
+¿CUÁL?
+1. Sí, AFP
+2. Sí, IPS (Ex INP) 
+3. Sí, CAPREDENA
+4. Sí, DIPRECA
+5. Sí, Otra Caja
+6. Sí, no sabe donde cotizó
+7. No cotizó
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+M45. ¿Cuál fue el motivo 
+por el que dejó este 
+trabajo?
+ ESCUCHAR Y MARCAR 
+ALTERNATIVAS
+1. No aplicable (fallecido(a) no 
+se cambió de trabajo)
+2. Mutuo acuerdo de las partes
+3. Renuncia
+4. Vencimiento del contrato o 
+fin del trabajo o servicio que 
+dio origen al contrato
+5. Despido por causa 
+imputable a trabajador(a)
+6. Despido por necesidades de 
+la empresa
+7. Cierre de la empresa
+8. Encontró un mejor trabajo
+9. Condiciones de salud o 
+situación de discapacidad
+10. Se pensionó
+11. Caso fortuito o fuerza 
+mayor
+12. Otra
+88. No responde (NO LEER)
+99. No sabe (NO LEER)
+Todos FIN
+OCUPADOS ( PARA PERÍODOS EN QUE ESTABA TRABAJANDO M34=1)
+M38 M40 M41 M43 M44 M45
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+=== PDF PAGE 11 ===
+Encuesta de Protección Social 2023
+11
+LISTADO DE REGIONES DE CHILE  HISTORIA LABORAL
+INACTIVOS
+M46. ¿Cuál fue la razón de la inactividad del fallecido?
+1. Enfermedad o discapacidad
+2. Cuidado de los(as) niños(as)
+3. Otras responsabilidades personales o familiares
+4. Embarazo
+5. Estudiaba o se estaba capacitando
+6. Realizaba la práctica
+7. Quehaceres de hogar
+8. Jubilado(a), pensionado(a) o montepío
+9. Rentista
+10. No le interesaba trabajar
+11. Estaba haciendo el servicio militar
+12. Cuidados de personas mayores o personas con discapacidad
+13. Creyó que no encontrará trabajo
+14. Se cansó de buscar empleo
+15. Algún miembro del hogar no le permite trabajar
+16. Vacaciones o permisos
+17. Licencia médica
+18. Por horario o jornada variable o flexible
+19. Huelga, conflicto laboral
+20. Trabajo es estacional
+21. No tuvo pedidos (clientes)
+22. Suspensión temporal del trabajo
+23. Otro
+88. No responde (NO LEER)
+99. No sabe (NO LEER)
+M46
+1
+2
+3
+4
+5
+6
+7
+8
+9  
+10
+11
+12
+13
+14
+15
+I Tarapacá
+II Antofagasta
+III Atacama
+IV Coquimbo
+V Valparaíso
+VI O´Higgins
+VII Maule
+VIII Biobío
+IX Araucanía
+X Los Lagos
+XI Aysén
+XII Magallanes
+XIV Los Ríos
+XV Arica y Parinacota
+XVI Ñuble
+RM Metropolitana
+
+=== PDF PAGE 12 ===
+Encuesta de Protección Social 2023
+12
+  OBSERVACIONES                                                                                                                                                             
+
+=== PDF PAGE 13 ===
+Encuesta de Protección Social 2023
+13
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+2023

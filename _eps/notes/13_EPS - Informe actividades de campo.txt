@@ -1,0 +1,587 @@
+
+=== PDF PAGE 1 ===
+ 
+ 
+                 1 
+ 
+   
+ 
+    
+ 
+ 
+LEVANTAMIENTO VII RONDA DE LA 
+ENCUESTA DE PROTECCIÓN SOCIAL 
+ 
+Informe trabajo de campo  
+ 
+    Abril, 2021  
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 2 ===
+ 
+ 
+                 2 
+ 
+ 
+Contenido 
+ 
+1. Introducción ............................................................................................................................................. 3 
+1. RESULTADOS DEL TRABAJO DE CAMPO ...................................................................................... 4 
+2.1  Logro de encuestas y estadísticas del trabajo de campo de la encuesta Presencial .......................... 5 
+2.2  Logro de Trabajo de campo y estadísticas de la encuesta de Continuidad ....................................... 7 
+2.3  Logro de Trabajo de campo y estadísticas de la Re-Entrevista ........................................................ 9 
+2.4 Supervisión y control de calidad ..................................................................................................... 13 
+2.4.1 Supervisión en la encuesta Presencial ......................................................................................... 13 
+2.4.2 Supervisión de las encuestas telefónicas ..................................................................................... 14 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+=== PDF PAGE 3 ===
+   
+ 
+                 3 
+ 
+  
+ 
+1. INTRODUCCIÓN 
+En este informe se detallan las actividades del trabajo de campo desarrolladas durante la VII Ronda de 
+la Encuesta de Protección Social, así como los desafíos que se presentaron para la coordinación y gestión 
+del proyecto. 
+ 
+Por actividad de campo se entien de al proceso de levantamiento de encuestas y a todos aquellos 
+procesos asociados para su adecuada ejecución. Este puede ser descrito en dos momentos, el primero 
+de ellos  corresponde al levantamiento de encuestas realizado de manera presencial  entre el 14 de 
+diciembre de 2019 y 22 de marzo de 2020 cuando, a nivel nacional, se tomaron las primeras medidas de 
+confinamiento como consecuencia de la llegada del virus SARS-CoV-2. El segundo momento corresponde 
+al levantamiento de encuestas realizado de manera telefónica, que compendió desde el 28 de agosto 
+hasta el 10 de diciembre de 2020. 
+ 
+A su vez, las actividades del trabajo de campo de las encuesta presencial y telefónica se pueden describir 
+cronológicamente tomando en cuenta la preparación y ejecución del mismo. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+=== PDF PAGE 4 ===
+   
+ 
+                 4 
+ 
+  
+ 
+1. RESULTADOS DEL TRABAJO DE CAMPO 
+Tomando en cuenta el total de la muestra de panel entrevistada en la EPS, tanto en su fase presencial como 
+la etapa complementaria de contacto telefónico  (continuidad), Ipsos logró un total de  13.951 encuestas 
+efectivas. 
+Cabe destacar que, si bien las encuestas Presencial y de Continuidad estuvieron dirig idas a una misma 
+población en dos momentos del tiempo diferente, no es aconsejable, por el momento, tratarlas como una 
+única muestra. Esto se debe a las conclusiones obtenidas en el estudio sobre Factibilidad de Combinación 
+de las muestras de corte transversal de estas dos encuestas, realizado a pedido de la SPS. En dicho informe, 
+la evidencia recolectada y analizada, indican que no es posible concluir que las muestras sean 
+estadísticamente iguales. Sin embargo, tal como se indica en el Informe referido, se requiere continuar este 
+análisis para concluir definitivamente acerca de la posibilidad de emplear o no estas encuestas en forma 
+conjunta. 
+En el siguiente cuadro se observa el detalle del logro de encuestas por región y a nivel nacional, para ambas 
+etapas de la EPS VII Ronda:  
+Tabla 1. Logro de encuestas efectivas EPS VII Ronda, encuesta Presencial, según región de los panelistas 
+Región  Encuestas 
+presenciales  
+Encuestas 
+telefónicas 
+(continuidad) 
+Total de panelistas 
+encuestados 
+ TARAPACÁ  94 69 163 
+ ANTOFAGASTA  302 98 400 
+ ATACAMA  228 102 330 
+ COQUIMBO  299 262 561 
+ VALPARAÍSO  669 342 1011 
+ LIBERTADOR BERNARDO OHIGGINS  354 678 1032 
+ MAULE  318 489 807 
+ BIOBÍO  1.216 411 1.627 
+ ARAUCANÍA  225 539 764 
+ LOS LAGOS  675 167 842 
+ AYSÉN  36 25 61 
+ MAGALLANES  111 59 170 
+ METROPOLITANA  3.700 1.710 5.410 
+ LOS RÍOS  217 58 275 
+ ARICA Y PARINACOTA  92 71 163 
+ ÑUBLE  119 216 335 
+ TOTAL  8.655 5.296 13.951 
+                                   Fuente: Ipsos Public Affairs – VII Ronda EPS 
+Para el caso de la encuesta de continuidad, cabe destacar que se logró superar el mínimo comprometido 
+de 5.000 casos, definidos en los términos de referencia del contrato corre spondiente, como se puede 
+observar en esta misma tabla. 
+
+=== PDF PAGE 5 ===
+   
+ 
+                 5 
+ 
+  
+ 
+Adicionalmente, se logró re -entrevistar a un total de 2.225 personas que habían contestado la EPS 
+presencial que se interrumpió por la pandemia, muestra que representa un insumo relevante para estudiar 
+el impacto de la crisis sanitaria en variables laborales y previsionales de los chilenos. 
+2.1  Logro de encuestas y estadísticas del trabajo de campo de la encuesta Presencial 
+El trabajo de campo presencial se desarrolló en un periodo de 102 días, obteniéndose un total de 8.655 
+entrevistas válidamente aplicadas, 14.270 registros con CDF (direcciones de panelistas recorridas) y 20.678 
+visitas efectuadas en todas las regiones del país. 
+ 
+Tabla 2. Resumen de direcciones visitadas, encuestas aplicadas y porcentaje de logro en la encuesta 
+Presencial 
+Muestra Nominal Muestra Objetivo Total direcciones con 
+CDF 
+Total  
+Encuestas aplicadas Porcentaje de logro 
+24.883 18.000 14.270 8.655 48% 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+Las encuestas aplicadas a la fecha de cierre parcial en marzo, producto de la pandemia correspondió a un  
+48% de logro respecto de la muestra objetivo de la EPS VII RONDA, logro que fue evaluado positivamente 
+por la SPS tomando en cuenta el contexto en que se encontraba el país luego del estallido social de octubre 
+de 2019, así como el período estival en que se llevó a cabo este trabajo de levantamiento  (diciembre a 
+marzo).  
+La siguiente tabla resume la información del terreno presencial, con el número de panelistas visitados, el 
+total de entrevistas logradas por región, con su respectiva tasa de respuesta y porcentaje de logro respecto 
+de la muestra objetivo:  
+Tabla 3. Recuento de direcciones visitadas y encuestas efectivas por región en la encuesta Presencial 
+Región   Total direcciones 
+visitadas  
+Total entrevistas 
+completas por 
+región 
+Tasa de respuesta 
+Porcentaje de 
+logro al 22 de 
+marzo* 
+ TARAPACÁ  208 94 45% 34% 
+ ANTOFAGASTA  585 302 52% 54% 
+ ATACAMA  399 228 57% 67% 
+ COQUIMBO  419 299 71% 36% 
+ VALPARAÍSO  1.155 669 58% 36% 
+ LIBERTADOR BERNARDO OHIGGINS  636 354 56% 37% 
+ MAULE  582 318 55% 28% 
+ BIOBÍO  1.766 1.216 69% 73% 
+ ARAUCANÍA  348 225 65% 25% 
+ LOS LAGOS  1.049 675 64% 69% 
+ AYSÉN  85 36 42% 28% 
+ MAGALLANES  128 111 87% 61% 
+ METROPOLITANA  6.050 3.700 61% 55% 
+ LOS RÍOS  377 217 58% 70% 
+
+=== PDF PAGE 6 ===
+   
+ 
+                 6 
+ 
+  
+ 
+Región   Total direcciones 
+visitadas  
+Total entrevistas 
+completas por 
+región 
+Tasa de respuesta 
+Porcentaje de 
+logro al 22 de 
+marzo* 
+ ARICA Y PARINACOTA  203 92 45% 41% 
+ ÑUBLE  198 119 60% 31% 
+ TOTAL  14.188 8.655 61% 48% 
+* Porcentaje de logro respecto a la muestra objetivo de 18.000 casos a nivel nacional. 
+Fuente: Ipsos Public Affairs – EPS VII RONDA 
+ 
+Se destaca el 61% de tasa de respuesta obtenida a la fecha de cierre del terreno presencial en marzo, 
+número que venía subiendo con el avance de las semanas en terreno, en la medida que se iban visitando 
+los hogares un mayor número de veces y concretando con ello los agendamientos que el personal de 
+terreno generaba en visitas prelimin ares o porque finalmente se lograba ubicar a los panelistas luego de 
+intentos fallidos. 
+ 
+En la Tabla 4, se exponen los principales indicadores de logro a nivel agregado para la encuesta presencial, 
+específicamente las tasas de logro, de respuesta, de cooperación, de rechazo y de contacto. 
+ 
+Tabla 4. Indicadores de logro de la encuesta Presencial (pre-pandemia) 
+Indicadores de logro Porcentaje 
+Tasa de logro (*) 62% 
+Tasa de respuesta (*) 61% 
+Tasa de cooperación (*) 61% 
+Tasa de rechazo (*) 5% 
+Tasa de contacto 71% 
+            Fuente: Ipsos Public Affairs – VII Ronda EPS 
+ 
+Sobre los códigos de disposición final  obtenidos durante el levantamiento presencial,  del total de 20.678 
+visitas, se evidencia que las mayores dificultades para lograr las encuestas estuvieron en la imposibilidad 
+de encontrar a un número importante de panelistas al momento de la visita: 17% de los CDF termina con 
+una vivienda ocupada sin moradores presentes, un 7% con  un entrevistado no disponible  cambios de 
+domicilio 7%, informante inubicable 6% y un 4% de casos en la imposibilidad de ubicar la dirección de 
+referencia: 
+ 
+Figura 1. Principales CDF sobre el total de 20.678 visitas presenciales de la encuesta Presencial 
+
+=== PDF PAGE 7 ===
+   
+ 
+                 7 
+ 
+  
+ 
+ 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+ 
+2.2  Logro de Trabajo de campo y estadísticas de la encuesta de Continuidad 
+La encuesta de Continuidad , como se menciona anteriormente, tuvo el objetivo de e ncuestar a los 
+panelistas que no fueron entrevistados en la etapa presencial desarrollada previo al inicio de la pandemia. 
+En virtud que la continuidad del proyecto de levantamiento original implicó proceder a la aplicación de un 
+método diferente de recolección de datos, el principal desafío estuvo en disponer de números telefónicos 
+fidedignos y actualizados de toda la muestra.  
+Dado que la base de datos del panel contaba al inicio de este proyecto con 17.217 de 24.883 registros con 
+teléfono y que, además, estos teléfonos no se encontraban validados, la actividad de poblamiento se hizo 
+indispensable para preparar el trabajo de campo con el objetivo de conseguir la muestra definida para el 
+estudio. De acuerdo con lo solicitado por la SPS, y en base a los alcances establecidos en el contrato del 
+proyecto, Ipsos ejecutó esta tarea bajo un protocolo que asegurara resguardar la confi dencialidad de la 
+información sensible que se estaba manejando, toda vez que el poblamiento de datos sería realizado por 
+un tercero. 
+Es importante destacar que, además del trabajo de poblamiento, Ipsos realizó la depuración de la base de 
+datos de teléfonos proveniente del panel histórico de la EPS entregada por la SPS, y de la base de datos de 
+contacto levantada en la EPS presencial entre diciembre de 2019 y marzo de 2020. En este trabajo de 
+depuración se verificó que los teléfonos contaran con todos los dígitos necesarios para un llamado efectivo, 
+
+
+=== PDF PAGE 8 ===
+   
+ 
+                 8 
+ 
+  
+ 
+dejando la base lista para ser trabajada en terreno. Adicionalmente, se limpiaron los correos electrónicos, 
+para que la base resultante tuviera la menor cantidad posible de errores.    
+En total, se contabilizan  93 días corridos de trabajo de campo  para esta encuesta , recorriéndose 15.209 
+registros y lográndose un total de 5.296 encuestas finalizadas. Considerando este dato, obtuvo un logro de 
+encuestas que representa el 106% de la muestra objetivo: 
+ 
+Tabla 5. Resumen de recorrido, encuestas finalizadas y porcentaje de logro en la encuesta de 
+Continuidad 
+Muestra Nominal Muestra Objetivo Total casos con CDF Total  
+Encuestas finalizadas Porcentaje de logro 
+16.227 5.000 15.209 5.296 106% 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+ 
+Respecto a los porcentajes de logro por región, los más altos se dieron en la región de la Araucanía y Ñuble 
+y Magallanes. Por el contrario, las regiones con resultados más bajos son Antofagasta y Aysén.  
+En la Tabla 6, se expone la cantidad de encuestas aplicadas por región en la encuesta telefónica de 
+continuidad y el porcentaje de logro al cierre del levantamiento.  
+Cabe señalar que la muestra objetivo por región se estableció de manera proporcional a los tamaños de la 
+muestra nominal disponible para cada una de ellas: 
+Tabla 6. Porcentaje de logro por región en la encuesta de Continuidad 
+ Región  Muestra Objetivo   Total de  
+Encuestas Aplicadas   Porcentaje de Logro  
+1  TARAPACÁ  82 69 84% 
+2  ANTOFAGASTA  149 98 66% 
+3  ATACAMA  79 102 129% 
+4  COQUIMBO  259 262 101% 
+5  VALPARAÍSO  247 342 138% 
+6  LIBERTADOR BERNARDO O'HIGGINS  636 678 107% 
+7  MAULE  416 489 118% 
+8  BIOBÍO  384 411 107% 
+9  ARAUCANÍA  322 539 167% 
+10  LOS LAGOS  219 167 76% 
+11  AYSÉN  48 25 52% 
+12  MAGALLANES  39 59 152% 
+13  METROPOLITANA  1.868 1.710 92% 
+14  LOS RÍOS  53 58 109% 
+15  ARICA Y PARINACOTA  68 71 105% 
+16  ÑUBLE  131 216 165% 
+   TOTAL DE DIRECCIONES  5.000 5.296 106% 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+
+=== PDF PAGE 9 ===
+   
+ 
+                 9 
+ 
+  
+ 
+ 
+En la Tabla 7, se exponen los principales indicadores de logro a nivel agregado para la encuesta de 
+continuidad, específicamente las tasas de logro, de respuesta, de cooperación, de rechazo y de contacto. 
+ 
+Tabla 7. Indicadores de logro de la encuesta de Continuidad 
+Indicadores de logro Porcentaje 
+Tasa de logro (*) 35% 
+Tasa de respuesta (*) 35% 
+Tasa de cooperación (*) 78% 
+Tasa de rechazo (*) 10% 
+Tasa de contacto 45% 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+ 
+En primer lugar, se puede señalar que la tasa de contacto llegó a un 45%. Este indicador mide la proporción 
+de registros contactados sobre el total de registros recorridos y, por lo tanto, indica que 4 de cada 10 fueron 
+contactados de manera exitosa ya sea para aplicar la encuesta o rechazarla, entre otras alternativas. De 
+este dato se infiere que 55% de los registros no fue contactado lo cual se debió a diversos motivos siendo 
+el más frecuente no contestar el teléfono o haber llamado a un teléfono que no correspondía al panelista. 
+ 
+En segundo lugar, la tasa de cooperación llegó al 78%. Este indicador mide la cantidad de panelistas que 
+respondieron la entrevista completa sobre el total de registros que fueron contactados. Este indicador se 
+valora positivamente, dado que existió una buena disposición de los panelistas a responder la encuesta una 
+vez que se pasaba la barrera del contacto inicial. 
+ 
+En tercer lugar, se observa una tasa de logro de 35% que indica la proporción de encuestas aplicadas sobre 
+el total de registros recorridos. Este indicador global fue creciendo paulatinamente con el avance del 
+levantamiento y significativamente cuando se pasó a la estrategia de visitar los hogares para conseguir 
+números de teléfono actualizados. 
+ 
+Finalmente, la tasa de rechazo se mantuvo en un nivel bajo, cerrando el terreno en un 10% , porcentaje 
+mayor a lo obtenido en la etapa presencial (5%). 
+ 
+2.3  Logro de Trabajo de campo y estadísticas de la Re-Entrevista 
+La encuesta de Re-Entrevista se desarrolló entre el 28 de agosto y el 19 de octubre. Esta encuesta tuvo el 
+objetivo de entrevistar nuevamente a los panelistas que respondieron la encuesta en la etapa presencial 
+previo al inicio de la pandemia , para medir los efectos de la crisis sanitaria en los indicadores laborales y 
+previsionales. 
+
+=== PDF PAGE 10 ===
+   
+ 
+                 10 
+ 
+  
+ 
+En total, se contabilizaron 52  días de levantamiento de información, 2.225 encuestas finalizadas, y el 
+recorrido completo de los 5.907 registros de la muestra, sobre los que hizo un total de 15 .119 llamadas 
+telefónicas. 
+ 
+Tabla 8. Resumen de llamadas, encuestas finalizadas y porcentaje de logro en la encuesta de 
+Continuidad 
+Muestra Nominal Muestra Objetivo Total de casos con CDF 
+(personas llamadas) 
+Total de 
+Encuestas Finalizadas Porcentaje de Logro 
+5.9071 1.800 5.907 2.225 124% 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+ 
+El número de encuestas finalizadas (2.225) represent ó un 124% de porcentaje de logro sobre la muestra 
+mínima que se fijó como objetivo (1.800 encuestas).  
+La distribución de la muestra a nivel regional tuvo muy buena dispersión de los casos obtenidos a lo largo 
+de todo Chile, como se aprecia en la Tabla 9. 
+Tabla 9. Porcentaje de logro por región en la encuesta de Re-Entrevista 
+ Región Muestra Objetivo 
+proporcional Encuestas aplicadas Porcentaje de logro 
+1  TARAPACÁ  20 25 122% 
+2  ANTOFAGASTA  62 56 90% 
+3  ATACAMA  48 64 135% 
+4  COQUIMBO  65 86 133% 
+5  VALPARAÍSO  137 181 132% 
+6  LIBERTADOR BERNARDO O'HIGGINS  73 103 141% 
+7  MAULE  68 92 135% 
+8  BIOBÍO  245 296 121% 
+9  ARAUCANÍA  48 56 118% 
+10  LOS LAGOS  140 154 110% 
+11  AYSÉN  9 7 79% 
+12  MAGALLANES  22 21 94% 
+13  METROPOLITANA  773 964 125% 
+14  LOS RÍOS  45 59 130% 
+15  ARICA Y PARINACOTA  19 22 115% 
+16  ÑUBLE  25 39 158% 
+   TOTAL   1.800 2.225 124% 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+ 
+Hasta el cierre del levantamiento (19 de octubre de 2020), se logró recorrer el 100% de la muestra nominal 
+(5.907 casos) de la encuesta de Re-Entrevista. 
+ 
+ 
+
+=== PDF PAGE 11 ===
+   
+ 
+                 11 
+ 
+  
+ 
+ 
+En la Tabla 10, se exponen los principales indicadores al cierre del levantamiento , incluyendo las tasas de 
+logro, de respuesta, de cooperación, de rechazo y de contacto. 
+ 
+Tabla 10. Indicadores de logro en la encuesta de Re-Entrevista 
+Indicadores de logro Porcentaje 
+Tasa de logro (*) 37,7% 
+Tasa de respuesta (*) 38,1% 
+Tasa de cooperación (*) 80,0% 
+Tasa de rechazo (*) 4,7% 
+Tasa de contacto 47,1% 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+ 
+Estos indicadores permiten tener un panorama resumido del levantamiento y una evaluación sencilla del 
+trabajo de contacto. En primer lugar, se puede señalar que la tasa de contacto alcanz ó un 47,1%. Este 
+indicador mide la proporción de registros que contes taron el teléfono ya sea para responder la encuesta, 
+concertar una cita o rechazar la entrevista, entre otros . Se excluyen aquellos casos en que, si bien alguien 
+contesta el teléfono, se trata de un número equivocado. De aquí se infiere que en el 52,9% restante de los 
+casos no se logró contactar a la persona seleccionada para contestar la EPS. 
+ 
+Si bien este número puede parecer bajo, se obtuvo por contrapartida una baja tasa de rechazo (4,7%) y una 
+muy buena tasa de cooperación (80%),  indicador que mide la cantidad de panelistas que respondieron la 
+entrevista completa sobre el total de registros que contestaron el teléfono. Este resultado es el que hace 
+posible llegar a la muestra objetivo a pesar de la baja tasa de contacto obtenida. 
+ 
+Con todo lo de scrito anteriormente, la tasa de logro final de la encuesta fue de 37,7%, dato que indica la 
+proporción de encuestas aplicadas sobre el total de registros llamados.  
+ 
+El éxito del logro en la encuesta de Re-Entrevista se debe, de acuerdo con el análisis que Ipsos hace de estas 
+cifras, como de datos más cualitativos reportados por los encuestadores y el equipo de terreno, a una serie 
+de distintos factores, entre los que se destacan los siguientes: 
+ 
+a) El buen trabajo del equipo que levantó la encuesta presencial entre noviembre de 2019 y marzo de 
+2020, antes de la pandemia.  
+b) La pulcritud de los encuestadores al digitar con muy pocos errores el número de contacto entregado 
+en la visita presencial. 
+c) El incentivo entregado para contestar, que fue muy valorado por los entrevistados y que aportó de 
+manera considerable para lograr una buena tasa de cooperación. 
+
+=== PDF PAGE 12 ===
+   
+ 
+                 12 
+ 
+  
+ 
+d) El buen funcionamiento de la estrategia de comunicación e información a los entrevistados, que 
+incluyó derivar las dudas a la contraparte, para que por medio de un llamado telefónico la gente se 
+cerciorara de la veracidad del llamado de Ipsos. 
+ 
+Los códigos de disposición final, o CDF, describen el resultado final del registro presente en la base de datos 
+luego de realizada una o más llamadas. Según lo mostrado en el Figura 2, del total de 5.904 casos recorridos, 
+el 38% concluyó en una encuesta efectiva . El segundo CDF más recurrente, con 29% de los casos, es “no 
+contestó el teléfono ”, lo que grafica la dif icultad para encontrar a los panelistas en los distintos intentos 
+que se realizaron durante el trabajo de campo. También se destaca el 12% para el CDF “grabadora o buzón 
+de voz” que aparece en tercer lugar de la lista de la figura: 
+ 
+ 
+Figura 2. CDF sobre el total de teléfonos recorridos en la encuesta de Re-Entrevista 
+ 
+ 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+ 
+El porcentaje de teléfonos con problemas (equivocados, fuera de servicio y sin tono) alcanza un porcentaje 
+bajo, a diferencia de l o ocurrido en la encuesta de continuidad donde costó mucho más obtener tasas de 
+logro que aseguren obtener la muestra fijada para el proyecto.  
+ 
+Si bien se hizo un proceso de poblamiento tanto para Re-Entrevista como para continuidad, la actualización 
+de los teléfonos recogidos presencialmente a través de los propios entrevistado s fue un factor relevante 
+para completar la muestra. 
+ 
+
+
+=== PDF PAGE 13 ===
+   
+ 
+                 13 
+ 
+  
+ 
+2.4 Supervisión y control de calidad  
+Dado que la VII Ronda de la Encuesta de Protección Social involucró la aplicación de encuestas en dos 
+modalidades, presencial y telefónica, el proceso supervisión se aplicó de distinta manera en cada una. Por 
+un lado, para la encuesta presencial, la supervisión fue implementada desde un enfoque multimodal (visitas 
+a las direcciones, llamados telefónicos y escuchas de las entrevistas), mientras que para las encuestas 
+telefónicas se utilizó únicamente la escucha de audios. 
+ 
+Previo al trabajo de campo presenci al y telefónico, se confeccionaron manuales de supervisión con el 
+objetivo de informar los principales aspectos que el equipo encargado para este fin debía considerar. El 
+proceso de supervisión se desarrolló de manera paralela al trabajo de campo y, por lo  tanto, su duración 
+fue equivalente al mismo, entre el 14 de diciembre de 2019 y el 22 de marzo de 2020, para el trabajo 
+presencial, con una extensión de un par de días luego de aplicada la última encuesta, y entre el 28 de agosto 
+y el 12 de diciembre para las encuestas telefónicas (incluidas la encuesta de continuidad y Re-Entrevista) 
+2.4.1 Supervisión en la encuesta Presencial 
+Para obtener 8.655 encuestas válidas se supervisaron un total de 4.179 encuestas. El porcentaje de 
+supervisión alcanzó un 48% a nivel nacional. 
+ 
+Tabla 11. Totales y porcentaje de supervisión según tipo de cuestionario 
+Tipo de cuestionario Total supervisiones Porcentaje de supervisión 
+Vivos 3.405 44% 
+Fallecidos 413 80% 
+Impedidos 339 100% 
+Total 4.179 48% 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+ 
+El porcentaje de supervisión estuvo 23 puntos porcentuales por arriba de lo planificado originalmente 
+(25%). En las tres técnicas se supervisó un porcentaje que estuvo por sobre lo comprometido en la 
+propuesta técnica, destacándose la supervisión telefónica que alcanzó un 19% de la muestra, muy por 
+encima del 5% planificado al inicio del proyecto. En  la Tabla 12, se expone el total y porcentaje de 
+supervisión por técnica. 
+ 
+Tabla 12. Totales y porcentaje de supervisión según técnica de supervisión en la encuesta Presencial 
+ Total supervisiones % supervisado 
+Escucha de audios 1.310 15% 
+Supervisión Telefónica 1.631 19% 
+Supervisión Presencial 1.238 14% 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+
+=== PDF PAGE 14 ===
+   
+ 
+                 14 
+ 
+  
+ 
+ 
+Como resultado d el proceso de supervisión  en la encuesta presencial, se anularon 82 registros, lo que 
+corresponde a un 1% del total supervisado. Respecto a los motivos de anulación, la principal causa se debió 
+a que no ha bía respondiente en la revisión del audio de la entrevista , lo que hacía suponer un fraude de 
+entrevista que luego se corroboró con visitas presenciales a los domicili os de los panelistas, separándose 
+inmediatamente a las personas involucradas del equipo de terreno. 
+2.4.2 Supervisión de las encuestas telefónicas 
+Para cumplir el objetivo de monitorear la correcta aplicación metodológica de las encuestas telefónicas (de 
+Continuidad y Re-Entrevista), se trabajó exclusivamente con la escucha de los audios de las encuestas. En 
+ambos estudios telefónicos se alcanzó un 30% de supervisión, cifra superior al 25% comprometido en la 
+propuesta técnica. 
+Tabla 13. Porcentaje de supervisión según tipo de cuestionario 
+Tipo de cuestionario Porcentaje de supervisión 
+Encuesta de Continuidad 
+Porcentaje de supervisión 
+Encuesta de Re-Entrevista 
+Vivos 30% 28% 
+Fallecidos 33% 29% 
+Impedidos 34% 71% 
+Fuente: Ipsos Public Affairs – VII Ronda EPS 
+ 
+Como resultado del proceso de supervisión, se anularon 3 registros de la encuesta de Re-Entrevista y 32 de 
+la encuesta de continuidad, en ambos casos representa a menos del 1% de las encuestas ingresadas al 
+sistema, por lo que se puede afirmar que durante el desarrollo del trabajo de campo telefónico no se han 
+identificado problemas críticos que conlleven anulaciones masivas de encuestas.  La principal causa de 
+anulación es la aplicación de la encuesta a una persona que no corresponde al panelista (familiares 
+correspondientes a los hogares, pero no a la persona que correspondía). 
+ 
+ 

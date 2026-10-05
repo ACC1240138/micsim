@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "date": "2026-09-21T14:29:00.140773-03:00",
+  "notebook": "__andres_control/eps_alcohol_prevalencia_persistencia.ipynb",
+  "code_cells": 20,
+  "inline_checks": 12,
+  "csv_files": 43,
+  "png_figures": 7,
+  "html_tables": 19,
+  "html_figures": 7,
+  "notebook_language": "English",
+  "report_language": "Spanish",
+  "local_links_valid": true,
+  "actual_data_executed": true,
+  "known_rho_estimates_preserved": true,
+  "calvo_lifetime_proxy_n": 2526,
+  "strict_three_negative_n": 1567,
+  "enpg_unsupported_older_estimates": "NA",
+  "artifact_sha256": {
+    "__andres_control/eps_alcohol_prevalencia_persistencia.ipynb": "26335e22787ff5af1cfbfbcfa579daad62b4dc0d8e704087ab240e50899d06a1",
+    "__andres_control/eps_alcohol_prevalencia_persistencia.html": "1a0e4e9b661cee89bb8f8d32ae2d73be419b3f80997cb3a486fe4b64f17b2b0a",
+    "__andres_control/eps_alcohol_prevalencia_persistencia_informe.md": "325518128ab06951b1a256c28015cd92dfff1904e1433a01986ef4988eab93b6"
+  }
+}

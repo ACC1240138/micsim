@@ -1,0 +1,4 @@
+"sex","n","interval_first","interval_second","long_observed","long_implied_product","discrepancy","interpretation"
+"All",1744,0.565876689476752,0.588096788364257,0.478280551953439,0.332790263691476,0.145490288261963,"descriptive_same_people_not_a_formal_test"
+"Men",684,0.586811725126505,0.540968705941158,0.405177224459483,0.317446779572784,0.0877304448866986,"descriptive_same_people_not_a_formal_test"
+"Women",1060,0.431509375007206,0.562236777324401,0.468701088435243,0.242610440389318,0.226090648045925,"descriptive_same_people_not_a_formal_test"

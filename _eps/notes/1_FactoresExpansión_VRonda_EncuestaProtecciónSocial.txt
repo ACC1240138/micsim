@@ -1,0 +1,2524 @@
+
+=== PDF PAGE 1 ===
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Factores de Expansión Quinta Ronda Encuesta De 
+Protección Social 
+ 
+ 
+ 
+Javiera Vásquez Núñez1 
+ 
+ 
+ 
+ 
+ 
+INFORME FINAL 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Santiago de Chile, 30 de Abril de 2015 
+ 
+                                                        
+1 Investigadora del Centro UC de Encuesta y Estudios Longitudinales y del Instituto de Sociología, Pontificia 
+Universidad Católica de Chile. 
+ 
+
+
+=== PDF PAGE 2 ===
+2 
+ 
+Resumen Ejecutivo 
+ 
+ 
+La Encuesta de Protección Social (EPS) representa la innovación más importante en 
+los últimos 15 años en Chile. Ha sido la primera encuesta longitudinal levantada en 
+Chile y la de mayor extensión, recopilando información relevante sobre el mercado 
+laboral y seguridad social en la población chilena.  
+ 
+Esta encuesta fue diseñado en sus inicio como una encuesta longitudinal cuyo objetivo 
+era obtener estadísticas y análisis representativos de la población de afiliados al 
+sistema de pensiones chilenos, incluyend o tanto personas activas como pensionadas 
+afiliados al sistema de AFP y al sistema antiguo de pensiones (INP/IPS). La Primera 
+Ronda de la Encuesta de Protección Social fue levantada en el año 2002. En el año 
+2004 los objetivos de la encuesta fueron ampliados para cubrir el total de la población 
+chilena de 18 años y más, de esta forma se incluyeron los no afiliados al sistema de 
+pensiones. Así en el año 2004 se realizó la segunda entrevista para aquellos afiliados 
+al sistema de pensiones entrevistados por pr imera vez en el año 2002 y la primera 
+entrevista para los no afiliados incorporados en esta ronda, adicionalmente se 
+incorporó una muestra de refresco de los afiliados para compensar la perdida de la 
+primera ronda. En los años 2006 y 2009 se realizó la ter cera y cuarta ronda de la EPS, 
+respectivamente, la que consistió en le seguimiento de las personas entrevistadas en 
+las rondas previas. 
+ 
+En el año 2012 estaba previsto realizar la Quinta Ronda de la EPS, para esto en el año 
+2011 se realizó una licitación pública y como resultado de tal proceso la Subsecretaría 
+de Previsión Social contrató los servicios del Observatorio Social de la Universidad 
+Alberto Hurtado (OSUAH) para: 
+ 
+(1) La implementación de los procesos de diseño y pretesteo del cuestionario, 
+recolección de datos, procesamiento de datos, análisis de datos y difusión de 
+resultados 
+(2) Desarrollo de metodologías para la imputación de datos, creación de 
+indicadores de ingresos, y creación de factores de expansión (transversales y 
+longitudinales). 
+ 
+En el desarrollo de la Quinta Ronda de la EPS se presentaron una serie de dificultades 
+técnica e incumplimientos por parte del OSUAH, los últimos tres informes fueron 
+rechazados por la subsecretaria indicando que se presentaban deficiencias 
+significativas especialmente en el cálculo de los factores de expansión, determinando 
+que los datos no eran posibles de ser utilizados en su estado actual. Además la 
+cantidad de encuestas logradas fue bastante inferior a lo establecido en el contrato y a 
+lo requerido para mantener la calidad de los datos longitudinales. 
+ 
+La situación actual es que los datos de la Quinta Ronda de la EPS no han sido 
+publicados, a fines del año  2013 se realizaron una serie de consultorías legales y 
+técnicas para evaluar la situación de esta ronda y poder decidir el uso o no de los 
+
+=== PDF PAGE 3 ===
+3 
+ 
+datos correspondientes. Del informe de la consultora Carolina Casas -Cordero se 
+concluye que los datos recolectados n o son válidos para la producción de estadísticas 
+oficiales en materia de previsión social, y que los factores de expansión transversales 
+y longitudinales presentan una serie de deficiencias tanto en su documentación como 
+en los procedimientos utilizados. C on respecto a la evaluación realizada por los 
+consultores Steven G. Heeringa y Edmundo Melipillán, ellos destacan que comparando 
+la EPS2012 con las rondas anteriores se obtienen tasas de respuestas muy por debajo 
+de los esperado , aproximadamente 20 puntos porcentuales inferior. Adicionalmente 
+se observa un importante sesgo en las personas que responden versus las que no 
+responden asociadas a las características de sexo, edad y ubicación geográfica. Y 
+finalmente, los factores de expansión calculados por el O SUAH no consideraron este 
+aspecto, mostrando serias deficiencias para representar a la población objetivo. El 
+consultor Pablo Marshall reporta conclusiones similares, una reducción significativa 
+en la tasa de respuesta mostrando importante sesgo por sexo, edad, tipo de muestra y 
+zona geográfica. 
+ 
+El objetivo de la presente consultoría, encargada por la Subsecretaría de Previsión 
+Social del Ministerio del Trabajo, es calcular los factores de expansión de corte 
+transversal correspondiente a la Quinta Ronda de la Encuesta de Protección Social 
+(EPS2012), así como los factores de expansión longitudinales para el panel de 
+entrevistados 2002-2012. Para cumplir con este objetivo se realizaron las siguientes 
+actividades: 
+ 
+1.- Revisión del marco muestral 2012 
+2.- Revisión Selección Muestra de Refresco EPS2012 
+3.- Revisión del resultado del Trabajo de campo EPS2012 
+4.- Calculo de los factores de expansión de corte transversal 
+5.- Calculo de los factores de expansión longitudinal 
+ 
+Los resultados encontrados son los siguientes: 
+ 
+ Existen diferencias importantes entre el Marco Muestral y la población (INE)  
+en las personas más jóvenes (18 -19 años), y en las personas de 65 años y más. 
+Dado que uno de los principales objetivos de la muestra de refresco es 
+justamente compensar p or el envejecimiento de la muestra, es preocupante 
+notar que la pob lación de personas entre 18  y 19 años, justamente donde se 
+debería concentrar en parte importante el refresco de la muestra, está siendo 
+fuertemente subestimada en el marco muestral. Por el contrario, en general, las 
+tasas de respuesta en la población de 55 años y más es bastante elevada en 
+todas las rondas de la EPS, así la atrición no es un problema grave en estos 
+tramos de edad, y de alguna forma el problema de subestimación del marco 
+muestral tampoco.  
+ En particular, el marco muestral sobre estima la población de 65 años y más, lo 
+que puede ser debido a que los datos no han sido cruzado con información de 
+defunciones del registro civil. 
+
+=== PDF PAGE 4 ===
+4 
+ 
+ En general se presentan diferencias en la población estimada según el Marco 
+Muestral y la población estimada a partir de la Encuesta Casen 2011.  
+ Estas diferencias son muy significativas en algunas comunas, el caso más 
+extremo es la comuna de Santiago en l a Región Metropolitana, donde según el 
+marco muestral la población es de 780 mil personas, pero según la Encuesta 
+Casen 2011 es 128 mil personas. Otras comunas como Independencia, 
+Providencia, San Miguel, Putre, Maria Elena, Puchuncavi, Quintero y Olmue 
+presentan diferencias casi en un 100% entre ambas fuentes de información. 
+ La muestra de refresco se seleccionó a partir de las mismas unidades primarias 
+de muestreo (comunas) del diseño original. A excepción de la comuna de Alto 
+Hospicio que no pertenecía al  diseño original pero fue incorporada en la 
+muestra de refresco. Este procedimiento, mantener las comunas del diseño 
+original, es apropiado mientras se pueda justificar que la distribución 
+geográfica de la población por regiones y comunas no muestra grandes 
+cambios entre el año 2002 y 2012. 
+ La fracción de muestreo utilizada en la EPS 2002 para los afiliados al Sistema 
+de Pensiones fue 0.0038 aproximadamente, y la de los no afiliados en la EPS 
+2004 fue 0.00085. Además el diseño muestral de la EPS es tal que cada uno de 
+los individuos seleccionados en la muestra tiene igual probabilidad de 
+selección 0.0038 en el caso de los afiliados y 0.00085 en el caso de los no 
+afiliados. En un escenario ideal  para la selección de la muestra de refresco se 
+deberían haber mantenido dichas fracciones de muestreo, sin embargo, si por 
+un tema de costos es necesario seleccionar una muestra menor a la que se 
+requiere para mantener la fracción de muestreo, es posible. En el caso de la 
+selección de la muestra de refresco EPS 2012 la fracción de muestreo en los 
+antiguos afiliados fue 0.0019, en los nuevos afiliados 0.0067 y en los no 
+afiliados 0.0019. 
+ Como se mencionaba en el punto anterior, aún cuando es aceptable desde un 
+punto de vista de costos modificar las fracciones de muestreo , se debe 
+mantener que la probabilidad de selección sea constante entre los individuos, 
+es decir, se debe mantener la propiedad del diseño muestral EPSEM (Equal 
+Probability of Selection Method). En el caso de la muestra de refresco de la EPS 
+2012, no se mantuvo esta propiedad, seleccionando individuos en cada comuna 
+con distintas probabilidades, lo que genera una muestra con más varianza de la 
+que lograría una muestra EPSEM.    
+ A partir de la revisión de los procedimientos de estas dos primeras etapas  
+(construcción del marco muestral y selección de la muestra de refresco) , se 
+puede concluir que la muestra seleccionada no tendrá las mismas 
+características de las muestras seleccionadas en rondas anteriores, afectando 
+la construcción del panel de datos. 
+ La revisión de los resultados del trabajo de campo muestran que en la quinta 
+ronda hubieron problemas con el contacto de los entrevistados notablemente 
+superior a los años anteriores, y lo que podrían generar importantes sesgos en 
+la muestra de entrevistados efectivos. 
+
+=== PDF PAGE 5 ===
+5 
+ 
+ Se observa que variables como sexo, edad, estatus y sistema de pensiones y 
+región son todas variables que afectan la probabilidad de contacto y la 
+probabilidad de respuesta condicional en contacto. 
+ Si bien, al factor de expansión base se puede aplic ar un factor de ajuste por no 
+respuesta estimado a partir de un modelo propensity que considera las 
+variables antes mencionadas, mientras mayor sea el sesgo y mientras mayor 
+sea el factor de ajuste mayor será la varianza introducida en las estimaciones. 
+ 
+En resumen, a través del presente estudio se hace entrega a la Subsecretaría de 
+Previsión Social los factores de expansión de la muestra de 15,995 entrevistados en la 
+EPS 2012 (se excluyen a los fallecidos y a las personas con falta de información en 
+variables claves para el cálculo de los factores de expansión), sin embargo, estos 
+factores de expansión pueden generar estimaciones con varianza bastante elevada 
+comparada con rondas anteriores de la EPS , estimaciones con mayor varianza nos 
+entrega resultados p oco robustos e inestables, con un elevado intervalo de confianza 
+lo que dificulta la toma de decisiones en base a estas estimaciones.  
+ 
+El incremento en la varianza de la muestra EPS 2012, con respecto a las rondas 
+anteriores, se debe a dos factores:  
+ 
+- El proceso de selección de la muestra de refresco no utilizó un diseño 
+EPSEM, donde cada uno de los individuos (dependiendo del tipo de 
+muestra) tiene igual probabilidad de selección. El diseño más eficiente es el 
+muestreo aleatorio simple, en la EPS y al igu al que en la mayoría de las 
+encuestas se utilizó un muestreo complejo, en dos etapas, para minimizar 
+costos. El muestreo complejo tien de por si sólo a aumentar la varianza con 
+respecto a un muestreo aleatorio simple. Para compensar este incremento en 
+la va rianza se procura seleccionar a cada individuo de la muestra con igual 
+probabilidad, procedimiento que fue realizado en la selección de la muestra 
+2002 y el refresco del 2004. Sin embargo, en la EPS 2012 no se mantuvo este 
+criterio haciendo la muestra de l a quinta ronda menos eficiente que la de las 
+rondas anteriores.   
+- Fuerte sesgo producido por las bajas tasas de contacto en la muestra de la 
+EPS 2012, lo que resulta en bajas tasas de respuesta comparado con rondas 
+anteriores, a lo que se suma que la no respuesta no es aleatoria sino que 
+depende de las características demográficas y previsionales de los individuos.  
+El sesgo en la no respuesta hace indispensable incorporar en el factor de 
+expansión un ajuste que permita compensar por la no respuesta, este factor de 
+ajuste incrementa la varianza de las estimaciones. 
+ 
+De esta forma, y debido a los problemas antes mencionados en la determinación del 
+marco muestral, selección de la muestra, y tasa de respuesta en la EPS 2012, la 
+recomendación es que el uso de los  datos no será capaz de obtener estadísticas 
+representativas de la población con una varianza aceptable y que permita obtener 
+estimaciones confiables. El uso de los datos debería ser restringido a un uso muestral , 
+el que por cierto no será representativo de la población , o bien ocupar los factores de 
+
+=== PDF PAGE 6 ===
+6 
+ 
+expansión pero teniendo la advertencia y conciencia de que las estimaciones 
+obtenidas pueden presentar varianzas elevadas y poco robustas.  
+ 
+ 
+ 
+ 
+ 
+  
+
+=== PDF PAGE 7 ===
+7 
+ 
+CONTENIDOS 
+1 INTRODUCCIÓN 9 
+2 DISEÑO MUESTRAL ENCUESTA DE PROTECCIÓN SOCIAL 11 
+2.1 DISEÑO MUESTRAL DE LA EPS 2002 11 
+2.1.1 POBLACIÓN OBJETIVO 11 
+2.1.2 DISEÑO METODOLÓGICO 11 
+2.1.3 MARCO MUESTRAL 12 
+2.1.4 DISEÑO MUESTRAL POR CLUSTER, ESTRATIFICACIÓN EN DOS ETAPAS 13 
+2.2 DISEÑO MUESTRAL DE LA EPS 2004 18 
+3 RESULTADOS DEL TRABAJO DE CAMPO EPS 2002-2009 19 
+3.1 TASAS DE CONTACTO Y RESPUESTA PARA GRUPOS DE INTERÉS 19 
+4 DISEÑO MUESTRAL REFRESCO EPS (PROPUESTA CMD 2011) 21 
+4.1 PROCEDIMIENTO DE EMPADRONAMIENTO DE LA MUESTRA NUEVA 22 
+4.2 DETERMINACIÓN DEL MARCO MUESTRAL PARA LA SELECCIÓN DE LA MUESTRA EPS 2011 24 
+4.3 TAMAÑO MUESTRAL EPS 2011 26 
+4.4 DISEÑO MUESTRAL EPS 2011 27 
+4.4.1 MUESTRA DE NUEVOS AFILIADOS Y REFRESCO DE AFILIADOS 28 
+4.4.2 MUESTRA DE NUEVOS NO AFILIADOS Y REFRESCO DE NO AFILIADOS 31 
+4.4.3 ESPECIFICACIONES Y SUPUESTOS  DEL DISEÑO MUESTRAL. 31 
+5 DISEÑO MUESTRAL IMPLEMENTADO EPS 2012 32 
+5.1 DESCRIPCIÓN DEL PROCEDIMIENTO PARA LA CONSTRUCCIÓN DEL MARCO MUESTRAL 32 
+5.2 CARACTERÍSTICAS DEL MARCO MUESTRAL 34 
+5.2.1 DISTRIBUCIÓN SEGÚN SEXO Y EDAD 34 
+5.2.2 DISTRIBUCIÓN SEGÚN ESTATUS EN EL SISTEMA DE PENSIONES 36 
+5.2.3 DISTRIBUCIÓN SEGÚN COMUNAS 37 
+5.3 DETERMINACIÓN DE LOS TAMAÑOS MUESTRALES 47 
+5.4 DISEÑO MUESTRAL EPS 2012 50 
+5.4.1 SELECCIÓN DE COMUNAS 50 
+5.4.2 PROBABILIDADES DE SELECCIÓN 50 
+6 RESULTADOS TRABAJO DE CAMPO EPS 2012 51 
+7 FACTORES DE EXPANSIÓN EPS 2012 57 
+7.1 FACTOR BASE 58 
+7.2 FACTOR DE AJUSTE POR NO RESPUESTA 59 
+7.3 FACTOR DE AJUSTE POR POST-ESTRATIFICACIÓN 59 
+8 REFERENCIAS 62 
+ANEXO A: UNIDADES PRIMARIAS DE MUESTREO EPS 2002 64 
+ANEXO B: SELECCIÓN COMUNAS EPS 2012 68 
+
+=== PDF PAGE 8 ===
+8 
+ 
+ANEXO C: PROBABILIDADES DE SELECCIÓN EN EPS 2012 75 
+C.1 ANTIGUOS AFILIADOS 75 
+C.1.1 COMUNAS AUTO-REPRESENTADAS 75 
+C.1.2 COMUNAS NO AUTO-REPRESENTADAS 76 
+C.2 NUEVOS AFILIADOS 77 
+C.2.1 COMUNAS AUTO-REPRESENTADAS 77 
+C.2.2 COMUNAS NO AUTO-REPRESENTADAS 78 
+C.3 NO AFILIADOS 79 
+C.3.1 COMUNAS AUTO-REPRESENTADAS 79 
+C.3.2 COMUNAS NO AUTO-REPRESENTADAS 80 
+ 
+  
+
+=== PDF PAGE 9 ===
+9 
+ 
+1 Introducción 
+ 
+La Encuesta de Protección Social representa la innovación más importante registrada 
+en los últimos 15 años en Chile, en el ámbito de la información sobre el mercado 
+laboral y la seguridad social, es la primera encuesta longitudinal levantada en Chile y 
+la de mayor extensión. 
+ 
+Esta encuesta fue aplicada por primera vez el año 2002 con representatividad a nivel 
+de afiliados al sistema de pensiones (AFP o INP), su segunda ronda a fines de 2004 y 
+comienzos de 2005, en la cual una nueva muestra de no afiliados al sistema de 
+pensiones fue incorp orada junto con una actualización de los afiliados al sistema de 
+AFP. Una tercera ronda fue levantada a fines del año 2006 y comienzos del 2007, la 
+cuarta ronda del estudio fue levantada entre Abril y Diciembre de 2009 , y finalmente 
+la quinta ronda fue lev antada entre Octubre de 2012 y Agosto de 2013. Esta encuesta 
+es realizada por encargo de la Subsecretaria de Previsión Social del Ministerio del 
+Trabajo y Previsión Social . El Cuadro 1.1 a continuación presenta las principales 
+características de las 5 rondas de la EPS realizadas hasta la fecha. 
+ 
+Cuadro 1.1 
+Descripción del Trabajo de Campo (EPS2002 – EPS 2012) 
+ 
+ 
+ 
+La Encuesta de Protección Social, en sus cuatro  primeras versi ones, ha sido 
+fundamental para el análisis y diseño de políticas públicas en Chile. En particular, el 
+diagnóstico y la evidencia empírica proporcionada en estas encuestas, permitió 
+identificar las principales falencias en el sistema previsional chileno, co nstituyéndose 
+en uno de los principales insumos de trabajo del Consejo Asesor Presidencial para la 
+reforma de Pensiones, y para el proceso de elaboración y discusión de la Reforma 
+Previsional, lo que posteriormente, culmina con la Ley 20.255 promulgada por  el 
+gobierno de Michelle Bachelet. 
+ 
+Después de las dos primeras rondas de las encuesta, y cuando esta concretó  su 
+potencial al ser el primer panel de datos mic roeconómicos en Chile, se pudo  por 
+primera vez hacer un estudio detallado de cuáles son los principales aspectos del 
+sistema previsional que requerían revisión y una reforma. 
+ 
+En m arzo de 2006 se forma el Consejo Asesor para la Reforma Previsional , cu ya 
+misión fue entregar un diagnó stico del hasta entonces sistem a de pensiones vigentes, 
+donde la Encuesta de Protección Social fue el instrumento fundamental. Luego , en 
+diciembre del mismo año la Presidenta Michelle Bachelet envía el proyecto del ley al 
+Ronda EPS Año Periodo de Trabajo de Campo Duración Tamaño Muestral Entrevistas logradas
+1 2002 Mayo 2002 - Enero 2003 8 meses 30687 16309
+2 2004 Noviembre 2004 - Mayo 2005 6 meses 21674 16727
+3 2006 Noviembre 2006 - Julio 2007 8 meses 19822 16443
+4 2009 Abril 2008 - Abril 2009 12 meses 19512 14463
+5 2012 Septiembre 2012 - Agosto 2013 11 meses 30730 16214
+
+=== PDF PAGE 10 ===
+10 
+ 
+Congreso, el que es aprobado el 23 de enero de 2007. En esta misma fecha (noviembre 
+2006-enero 2007) se realizaba la tercera ronda de la Encuesta de Protección Social, lo 
+que permite tener el escenario justo antes de la aplicación de la Reforma Previsional , 
+la cual fue promulg ada en marzo de 2008. Luego en j ulio de 2008 entran en vigencia 
+los primeros beneficios de la Reforma Previsional : Pensión Básica Solidaria al 40% de 
+la población de menores ingresos por un monto de 60 mil pesos, y el Aporte 
+Previsional Voluntario. En o ctubre de 2008 entran en vigencia  el Subsidio a la 
+Contratación de Trabajadores Jóvenes, y el Ahorro P revisional de la clase media y 
+colectivo. 
+ 
+En abril de 2009 se comienza a aplicar la cuarta ronda de la Encuesta de Pro tección 
+Social, hasta el 20 de d iciembre de 2009. Al mismo tiempo, que en j ulio de 2009 se 
+incrementaba el monto de la Pensión Básica Solidaria a 75 mil pesos, y entraba en 
+vigencia el Bono por hijo. 
+ 
+Hoy la Encuesta de Protección Social sigue siendo un instrumento extremadamente 
+importante, porque nos permitirá evaluar los principales aspectos de la Reforma 
+Previsional: el conocimiento de las personas sobre los beneficios que puede obtener 
+del sistema de pensiones, como se han visto afectado los ingresos de los hogares 
+gracias al aumento de cobertura y monto  de la Pensión Básica Solidaria, participación 
+de la población en la decisión de Ahorro Previsional Voluntario, etc. 
+ 
+Tras cuatro rondas del estudio y considerando el envejecimiento de los entrevistados 
+y muerte muestral se estimó la necesidad de una actualización de la muestra para el 
+levantamiento de la quinta ronda del estudio. Con este objetivo la Subsecretaría de 
+Previsión Social a contrató al Centro de Microdatos del Departamento de Economía de 
+la Universidad de Chile (CMD) para definir una propuesta de  diseño muestral para la 
+implementación de la Encuesta de Protección Social 2012  de manera que esta sea 
+representativa de la población chilena de 18 años o más.  La propuesta de selección de 
+la muestra de refresco se encuentra disponible en el documento “ Estudio Diagnóstico, 
+Propuesta de Mejora y Definición Muestra EPS 2011”. 
+ 
+En el año 2011 la Subsecretaría de Previsión Social contrató los servicios del 
+Observatorio Social de la Universidad Alberto Hurtado, dentro de los servicios se 
+contempló la selección de la muestra de refresco, la recolección de datos de la Quinta 
+Ronda de la Encuesta de Protección Social y el calculo de los factores de expansión de 
+la EPS2012 (quinta ronda). 
+ 
+El objetivo de este informe es hacer una evaluación del proceso de selección de la 
+muestra de refresco del año 2011 , así como del cálculo de los factores de expansión, 
+además de elaborar una nueva propuesta de factores de expansión que sea 
+consistente con el diseño de la EPS y con las metodologías de cálculo de factores d e 
+expansión implementado en las rondas anteriores.  
+
+=== PDF PAGE 11 ===
+11 
+ 
+2 Diseño Muestral Encuesta de Protección Social 
+ 
+En su diseño original la EPS fue pensada como una encuesta de carácter longitudinal  
+para generar una muestra representativa de la población afiliada al sistema de 
+pensiones, en principio pueden existir afiliados al sistema de pensiones que tengan 
+menos de 18 años de edad y esta restricción de edad no fue impuesta en el diseño de 
+la muestra del año 2002. En el año 2004 la EPS amplía su población objetivo 
+incorporando los no afiliados al sistema de pensiones, para la selección de la muestra 
+de no afiliados se consideró un marco muestral de individuos que al menos tuviera 18 
+años a Diciembre de 2003. De esta manera, a partir del año 2004 la EPS se basa en una 
+muestra que es representativa de la población total del país de 18 años o más a 
+Diciembre de 2003. 
+2.1 Diseño Muestral de la EPS 2002 
+ 
+El diseño metodológico de la selección de la muestra fue realizado por el 
+Departamento de Economía de la Facultad de Ciencias Eco nómicas y Administrativas 
+de la Universidad de Chile, institución que tiene una extensa experiencia en el diseño y 
+aplicación de encuestas representativas en Chile. En esta oportunidad, cabe destacar 
+la participación en el equipo del Departamento de Econom ía, en calidad de consultor, 
+del Sr. Steven Heeringa, experto en diseños muestrales complejos, PhD. y Director de 
+la Unidad de Diseño y Análisis de Encuestas del Institute for Social Research de la 
+Universidad de Michigan. Asimismo, en el desarrollo de esta tarea, destacó la estrecha 
+coordinación de la contraparte técnica conformada por la División de Planificación y 
+Estudios de la Subsecretaría de Previsión Social. 
+ 
+2.1.1 Población objetivo 
+ 
+La población objetivo de la primera ronda de la EPS contempló a la pobl ación chilena 
+afiliada al sistema de pensiones, lo que incluye afiliados al antiguo sistema de 
+pensiones ( sistema de reparto o INP) y los afiliados al sistema de pensiones vigente 
+desde 1981 (sistema de capitalización individual o AFP ). Se excluyó explícitamente de 
+la población objetivo a los miembros de las Fuerzas Armadas y del orden, por contar 
+con su propio sistema de seguridad social; y a un pequeño porcentaje de la población 
+chilena que residen en áreas de difícil acceso.  
+ 
+2.1.2 Diseño Metodológico 
+ 
+La mue stra representativa a la que se aplicó la primera encuesta en el año 2002 se 
+obtuvo a partir del universo de afiliados al sistema de pensiones tanto de 
+capitalización individual como del sistema de reparto actualmente en extinción, 
+información proporcionada por la Superintendencia de Administradoras de Fondos de 
+Pensiones y por el Instituto de Normalización Previsional.  
+ 
+
+=== PDF PAGE 12 ===
+12 
+ 
+Para ello, la Superintendencia de AFP y el INP proporcionaron al Departamento de 
+Economía una base de datos innominada de todos los afiliados al sistema previsional 
+de capitalización individual, es decir, se omitió todo campo que permitiera la 
+identificación personal de los individuos, esto constituye el marco muestral para la 
+primera ronda de la EPS. 
+ 
+Dado que el objetivo del trabajo a realizar es el diseño de una muestra representativa 
+a nivel nacional que permita la sistematización y análisis de la información sobre 
+densidad de cotizaciones en el sistema de capitalización individual, se consideró como 
+población de referencia a todos los afiliados desde 1981 hasta agosto de 2001 
+registrados en los archivos administrativos de las siete AFP que estaban vigentes en el 
+sistema así como también en el INP. 
+ 
+Se procedió, entonces, a seleccionar una “muestra histórica” de todos los individuos 
+afiliados al sistema en 1981 o después, que a agosto de 2001 estuvieran en alguna de 
+las siguientes condiciones: 
+ 
+(1) trabajando, 
+(2) cesantes o fuera de la fuerza de trabajo, 
+(3) pensionados o 
+(4) fallecidos. 
+ 
+Es necesario enfatizar que, conceptualmente, los pensionados y un subgrupo de los 
+afiliados fallecidos debían ser incluidos en la población de referencia, por cuanto éstos 
+formaron parte del universo de afiliados al sistema en algún momento del tiempo 
+después de 1981. Su actual pensión de vejez o de sobrevivencia que causaron es el 
+resultado del desempeño previsional durante la vida activa. Luego, el no incluirlos en 
+la muestra representativa censuraría los datos relativos al patrón de comportamiento 
+de las cohortes de edad al que esos individuos pertenecen, comprometiendo la 
+representatividad de la muestra seleccionada. 
+ 
+2.1.3 Marco Muestral 
+ 
+La Superintendencia de Administradoras de Fondos de Pensiones y el Instituto de 
+Normalización Previsional proporcionaron al Departamento de Economía información 
+acerca de la totalidad de los afiliados al sistema. El Cuadro 2.1 presenta la composición 
+de la población afiliada al sistema de pensiones a Enero de 2002.  
+ 
+El marco muestral -referencia para la selección de la muestra-  de 8074673 afiliados al 
+sistema de pensio nes fue construido a partir de la combinación de las bases de datos 
+proporcionadas por el INP y la Superintendecia de AFP. Utilizando el número de RUT 
+se chequearon los duplicados, se realizó un análisis para detectar la causa por la cuál 
+se generó el dupl icado, luego los duplicados fueron eliminados de acuerdo a reglas de 
+decisión determinadas por el equipo de trabajo a cargo del diseño muestral. 
+ 
+
+=== PDF PAGE 13 ===
+13 
+ 
+Además del número de RUT el marco muestral contaba con las siguientes variables: 
+ 
+- Sistema de pensiones (AFP o INP) 
+- Comuna  
+- Región de residencia 
+- Estatus en el sistema de pensiones (activo, pensionado o fallecido) 
+- Sexo 
+- Edad 
+- Fecha de afiliación 
+ 
+ 
+Cuadro 2.1 
+Marco Muestral Encuesta de Protección Social 
+ 
+ 
+Fuente: Bravo, D., Heeringa, S., Quijada, S. y Vásquez, J. (2011) 
+ 
+ 
+2.1.4 Diseño muestral por cluster, estratificación en dos etapas 
+ 
+En contraste con otras encuestas para estudiar la población chilena, como por ejemplo 
+la encuesta CASEN, la selección de la muestra de la EPS  no hubiera sido eficiente si es 
+que esta hubi ese sido seleccionada utilizado un diseño muestral basado  en áreas 
+geográficas, dado que el objetivo era obtener una muestra representativa de afiliados 
+al sistema de pensiones y no una muestra representativa de hogares.  
+ 
+Una primera alternativa consistió  en seleccionar de manera aleatoria a los individuos 
+afiliados al sistema de pensiones a partir del marco muestral construido a partir de las 
+bases de datos del INP y de la Superintendencia de AFP, sin embargo esta metodología 
+hubiera entregado una muestra con una excesiva dispersión geográfica y por lo tanto 
+menos eficiente en términos de costos. 
+ 
+Así, para obtener una muestra representativa de los afiliados al sistema de pensiones, 
+se consideró como mejor opción la utilización de un diseño en dos etapas estratificado 
+por clusters (Kish, 1965, Survey Sampling ). El diseño muestral en dos etapas asegura 
+que cada afiliado elegible en el universo de individuos afiliados tendrá similar 
+probabilidad de ser seleccionado y, al mismo tiempo, provee una forma más eficiente 
+de agrupamiento de la muestra.  
+ 
+En consideración con la decisión anterior, y teniendo en cuenta la información 
+disponible para cada afiliado del marco muestral, se consideró la variable comuna 
+Estatus de Afiliación AFP INP Total
+Activos 6,161,463 965,318 7,126,781
+Pensionados 362,203 381,321 743,524
+Fallecidos 70,149 134,219 204,368
+Total 6,593,815 1,480,858 8,074,673
+
+=== PDF PAGE 14 ===
+14 
+ 
+como la uni dad más pequeña y fehaciente para formar los clusters (agrupamientos) 
+de los individuos en los registros del sistema de pensiones. El muestreo bietápico 
+estuvo basado en una primera etapa de selección de comunas. La segunda etapa 
+estratifica a los afiliado s en las comunas seleccionadas en la 1° etapa, según diversas 
+características relevantes, tal como se indica más adelante. 
+ 
+Primera Etapa: Selección de comunas 
+ 
+Las comunas pertenecientes al Gran Santiago más San Bernardo y Puente Alto fueron 
+incluidas con  probabilidad igual a uno en la primera etapa, así como también las 
+comunas con más de 60.000 habitantes, es decir las que representan las mayores 
+ciudades de Chile. Coyhaique, como capital de la XI región, también fue incluida con 
+certeza, a pesar de tener una población de 45.485 habitantes en el año 2000
+2. 
+ 
+Por lo tanto, 81 comunas fueron seleccionadas con probabilidad uno, las que en 
+conjunto representan aproximadamente un 72% del total de la población chilena3. 
+ 
+Del resto de las 285 comunas del país inc luidas en la encuesta Casen 2000, 32 fueron 
+elegidas en la primera etapa de selección. Para ello, se estratificaron las comunas 
+según región, ingreso per cápita y población. Esto es, todas las comunas 
+pertenecientes a una misma región se ordenaron según el  ingreso per cápita de los 
+habitantes en forma descendente. 
+ 
+Con este orden se formaron grupos de comunas que en conjunto tuvieron 100.000 
+habitantes aproximadamente
+4. Luego, en cada región se formaron entre 1 y 6 estratos 
+de comunas, con una desviación es tándar intra-regional del número de habitantes en 
+cada estrato entre 4.134 y 7.893 y una desviación estándar nacional de 15.216. El que 
+los estratos tengan tamaños poblacionales parecidos, hace que la primera etapa sea 
+estadísticamente más eficiente. 
+ 
+De cada estrato se seleccionó 1 comuna que representara a toda la población de las 
+restantes comunas en el estrato. Entonces, el objetivo primero de la definición de los 
+estratos es agrupar comunas similares entre sí. Dadas las diferencias geográficas y de 
+actividad económica entre las regiones, se intentó respetar los límites regionales 
+formando estratos para comunas dentro de una misma región. Asimismo, como 
+                                                        
+2 La Selección de comunas auto -representativas fue hecha en base a la población de cada 
+comuna reportada en la encuesta CASEN 2000. Coyhaique se incluyó ya que ninguna ciudad 
+de la región de Aysén cuenta con 60.000 o más. 
+3 Según información proveniente de la Encuesta CASEN 2000. 
+4 Además del ingreso per cápita promedio de la comuna, se formaron estratos según años de 
+escolaridad promedio de la población y con la tasa de pobreza. Asimismo, como una 
+alternativa a la agrupación en torno  a 100.000 habitantes, se intentó agrupar comunas que 
+sumaran 70.000 individuos. Finalmente la combinación ingreso per -cápita y 100.000 
+habitantes resultó ser la combinación con mejores propiedades  estadísticas. La información 
+de ingreso per-cápita, escolaridad y tasa de pobreza se obtiene de la Encuesta Casen. 
+
+=== PDF PAGE 15 ===
+15 
+ 
+variable relacionada con la condición socio -económica de la comuna se utilizó el 
+ingreso per cápita y se agruparon las comunas con ingreso per cápita similares5. 
+ 
+Una vez formados los estratos (32), se seleccionó una comuna por estrato con 
+probabilidad proporcional al tamaño (PPT) para cada comuna en u n estrato. Se 
+procede de la siguiente forma: 
+ 
+1. Se calcula la población acumulada del estrato 
+2. Se genera un número aleatorio con distribución uniforme entre 1 y el tamaño 
+del estrato 
+3. Se ubica el número aleatorio en los intervalos de población acumulada 
+formados por las comunas del estrato. 
+4. La comuna selecci onada es aquella que contiene en su intervalo el número 
+aleatorio. 
+ 
+Por ejemplo, supongamos que hemos formado el siguiente estrato de comunas de la 
+quinta región: 
+ 
+ 
+ 
+Las comunas están ordenadas de mayor a menor ingreso per -cápita. Se crea una 
+columna con la población acumulada, vemos que la última comuna (Algarrobo) 
+acumula una población total del estrato de 110735. Luego se debe generar un número 
+aleatorio uniforme entre 1 y 110735, supongamos que este número es igual a 74567, 
+tenemos que ubicar este número en el intervalo de población del cada comuna, en este 
+caso el número aleatorio se ubica en el intervalo de la comuna El Quisco, por lo cuál 
+esta sería la comuna seleccionada para representar el estrato. 
+ 
+La razón entre el tamaño (población) comunal y el tamaño (población) del estrato  
+corresponde a la probabilidad con la cuál fue seleccionada esta comuna (f
+1).  
+ 
+Es importante mencionar que las dos variables utilizadas en la primera etapa de 
+selección (pob lación comunal e ingreso per cápita) fueron obtenidas a partir de la 
+encuesta CASEN 2000 y no de los datos de los afiliados al sistema previsional. Se 
+adoptó esta estrategia debido a dos razones: (1) al momento de seleccionar las 
+comunas no se contaba con lo s registros de los afiliados para conocer el real tamaño 
+                                                        
+5 El ingreso per-cápita de la comuna se estima a través de la encuesta Casen 2000. 
+
+
+=== PDF PAGE 16 ===
+16 
+ 
+de cada comuna; y más importante (2) los datos institucionales de los afiliados que se 
+obtuvieron para la selección de individuos (segunda etapa de la selección de la 
+muestra), no incluían la condición socio- económica, como por ejemplo, el ingreso, los 
+años de educación, etc. 
+ 
+Segunda Etapa: Selección de los afiliados 
+ 
+La segunda etapa de selección consistió en elegir a los afiliados dentro de cada 
+comuna seleccionada, ya sea auto -representativa o no auto -representativa. A 
+diferencia de la primera etapa, en este proceso se utilizaron los datos proporcionados 
+por las Administradoras de Fondos de Pensiones. Un tamaño muestral del orden de 
+20.000 casos parecía razonable considerando la indudable y clara importancia para el 
+análisis y diseño de políticas relativas al sistema de pensiones. Esta fue, de hecho, la 
+recomendación de tamaño muestral realizada por el Dr. Steve Heeringa, más allá del 
+tamaño de la población chilena o de cada país en general, el tamaño muestral debe ser 
+tal que permita llegar al nivel de desagregación y detalle necesario para obtener la 
+representatividad adecuada de ciertos grupos de interés a la hora de fundamentar y 
+evaluar propuestas específicas. El tamaño de la muestra de referenc ia fue de 30.000 
+casos para considerar las no respuestas o problemas de direcciones. 
+ 
+Así, considerando el número deseado de afiliados a seleccionar y el total de afiliados 
+en las comunas seleccionadas, se calculó la tasa de muestreo total: 
+ 
+00367.021 =⋅== fflpoblacionaN
+muestralnf  
+ 
+Ya calculad o f 1, se obtiene f 2 que representa la tasa a la que se seleccionará a los 
+individuos en cada comuna. 
+ 
+Finalmente, dentro de cada comuna seleccionada se ordena a los afiliados según las 
+siguientes variables: 
+ 
+(1) condición del afiliado (activo, pensionado, fallecido); 
+(2) sexo y 
+(3) edad o fecha de afiliación para los afiliados al sistema antes o después de 1981, 
+respectivamente. 
+ 
+Una vez que los afiliados estuvieron ordenados según estos criterios, se seleccionaron 
+aplicando el intervalo de selección para cada comuna, definido como el recíproco de f
+2. 
+ 
+Siguiendo el ejemplo anterior, la comuna El Quisco fue seleccionada para representar 
+el estrato 1 de la quinta región, la probabilidad con la que esta comuna fue 
+seleccionada es: 
+ 
+
+=== PDF PAGE 17 ===
+17 
+ 
+𝑓𝑓1 = 11232
+110735 = 0.1014 
+  
+ 
+De esta forma, la probabilidad con la que los individuos de esta comuna deben ser 
+seleccionados es: 
+ 
+𝑓𝑓2 = 𝑓𝑓
+𝑓𝑓1
+= 0.00367
+0.1014 = 0.0362 
+ 
+En la comuna hay un total de 11232 individuos por lo cual se deben seleccionar un 
+total de 406 individuos. 
+ 
+𝑛𝑛 = 11232 × 0.0362 = 406 
+ 
+Estos 406 casos se pueden seleccionar mediante un muestreo aleatorio simple 
+sistemático, para esto el intervalo (paso) de selección c orresponde al inverso de f
+2, en 
+este caso es 28. Entonces, una vez ordenados los individuos de la comuna 
+seleccionada de acuerdo a los criterios antes mencionados, se genera un número 
+aleatorio uniforme entre 1 y 28, supongamos que sale el número 11, esto significa que 
+la persona 11 de este listado es la primera seleccionada de esta comuna, luego la 
+segunda persona seleccionada es la persona en la posición 11+28=39, y así 
+sucesivamente hasta barrer todo el listado. El resultado será una muestra de 406 
+individuos. 
+ 
+ 
+Es importante señalar, que la metodología de selección de la muestra en dos etapas 
+podría ser menos eficiente que una selección aleatoria estratificada. Sin embargo, para 
+este proyecto en particular, el efecto de seleccionar a los afiliados por clusters dentro 
+de cada comuna seleccionada en la primera etapa es atenuado por dos características 
+del diseño. Primero, más del 70% de los afiliados residen en las comunas auto 
+representativas y, dado que no se realiza más agrupamiento entre comunas, esta gran 
+mayoría de afiliados no está sujeta a agrupamientos adicionales. Segundo, para el 
+restante 30% de la población, que se encuentra en las comunas no 
+Se debe tener presente que en la primera fase la selección de las comunas de la 
+formación de los estratos se hace a partir de la mejor estimación que se tenga de la 
+población por comunas y sus características, razón por la cuál se ha utilizado la 
+Encuesta Casen. 
+ 
+Luego, en la segunda etapa cuando se procede a seleccionar los individuos del 
+listado proveniente de los registros administrativos, por lo cuál se debe ajustar la 
+población de cada comuna de del estrato la las poblaciones de las comunas según 
+los registros administrativos, y son estos números los que se utilizan para el 
+cálculo de f1, f2, paso y n de cada comuna 
+
+=== PDF PAGE 18 ===
+18 
+ 
+autorepresentativas, no se hizo un agrupamiento geográfico localizado dentro de cada 
+comuna, esto es, l a comuna es la unidad geográfica más pequeña que se utiliza. En los 
+diseños muestrales multi- etápicos, además de la primera etapa de selección de 
+comunas, se utiliza una segunda etapa de muestreo según áreas locales de residencia 
+dentro de cada comuna (por  ejemplo los segmentos en las encuestas Casen). Esta 
+etapa adicional aumenta la varianza muestral e introduce la correlación entre estas 
+últimas unidades de agrupación.  En el Anexo A se presenta la selección de comunas 
+auto-representadas y no auto-representadas de la EPS 2002. 
+ 
+En resumen, se espera que la pérdida en precisión del diseño en dos etapas sea muy 
+pequeña en relación a las significativas ganancias en términos de costo-eficiencia de la 
+muestra finalmente seleccionada. 
+ 
+2.2 Diseño Muestral de la EPS 2004 
+ 
+La EPS 2002 se diseñó como una muestra representativa de la población afiliada al 
+sistema de pensiones. Más precisamente, se seleccionó una muestra de todos los 
+individuos afiliados al sistema de pensiones (INP o AFP) entre 1981 y Agosto de 2001 
+a partir de un listado innominado del total de afiliados proveniente del INP y la 
+Superintendencia de AFP. La razón por la cual se utilizó este marco muestral fue que 
+la principal pregunta de la autoridad era la densidad de cotizaciones de los afiliados al 
+sistema y para esta población se tenía el universo de individuos. 
+ 
+La principal innovación de la EPS 2004 fue incorporar a la población no afiliada al 
+sistema de pensiones. Un ajuste menor fue ajustar la nueva muestra a individuos que 
+al menos tuvieran 18 año s a Diciembre de 2003. El procedimiento para realizar esta 
+ampliación del marco muestral fue el siguiente: 
+ 
+ Se procedió a actualizar el listado total de afiliados, a Diciembre de 2003. El 
+total de afiliados ascendió a 8,75 millones de personas, correspondiendo a 
+nuevos afiliados (afiliados entre Agosto de 2001 y Diciembre de 2003) algo 
+menos de 600 mil personas. 
+ De acuerdo a la información proveniente del Censo de Población y Vivienda de 
+Abril de 2002, la proyección de mayores de 18 años a Diciembre de 2003  
+ascendió a algo más de 11 millones de personas.  
+ Por consiguiente, el universo estimado de no afiliado s es de 2,2 5 millones de 
+personas. 
+ Para obtener un marco muestral de no afiliados a Diciembre de 2003 se utilizó 
+información proveniente de un empadronam iento de hogares a nivel nacional 
+realizado en Diciembre de 2003 por el Centro de Microdatos del Departamento 
+de Economía de la Universidad de Chile. De este empadronamiento se obtuvo, 
+además de la  composición etaria y por género del hogar, la respuesta a una 
+pregunta sobre afiliación al sistema de pensiones equivalente a la realizada en 
+el cuestionario de la EPS 2002. De aquí se obtuvo, entonces, un listado de 
+
+=== PDF PAGE 19 ===
+19 
+ 
+individuos de 18 años y más no afiliado al sistema de pensiones. Es de este 
+listado del que se obtiene una muestra que se utiliza en la EPS 2004.  
+ La muestra de no afiliados y nuevos afiliados se obtiene siguiendo los mismos 
+procedimientos aplicados  el año 2002 para la obtención de la muestra de 
+afiliados. En una primera etapa se seleccionaron las comunas ya utilizadas para 
+la selección de afiliados. En una segunda etapa se seleccionó a un grupo de no 
+afiliados y de nuevos afiliados dentro de cada comuna seleccionada en 
+proporción a la población de cada comuna. 
+ 
+En consecuencia, a partir de 2004, la E PS se basa en una muestra que es 
+representativa de la población total del país de 18 años y más, a Diciembre de 2003. 
+3 Resultados del Trabajo de Campo EPS 2002-2009 
+ 
+3.1 Tasas de contacto y respuesta para grupos de interés 
+ 
+El siguiente cuadro muestra un resumen de la distribución de la muestra, contacto y 
+respuesta en el panel 2002-2009. 
+ 
+Cuadro 3.1 
+Resultados del Trabajo de Campo EPS 2002-2009 
+ 
+ 
+Fuente: Elaboración propia en base a información presentada  en Bravo, D., Heeringa, S., Quijada, S. y 
+Vásquez, J. (2011) 
+ 
+ 
+La muestra para la realización de la primera ronda del estudio estaba sobre 
+dimensionada con el objetivo de obtener una muestra de línea base para el panel de 
+entre 15,000 y 20,000 entrevistas. De esta muestra de 30,687 afiliados al sistema de 
+pensiones se logró entrevistar a 16,309 afiliados no fallecidos, y a 937 af iliados 
+fallecidos (familiares), la entrevista a los familiares de las personas fallecidas 
+constituye una entrevista de cierre, la persona deja de pertenecer al panel. 
+Entrevistados no fallecidos Entrevistados fallecidos No responde No contacto Muestra total
+EPS 2002 16,309 937 3,769 9,723 30,687
+EPS 2004 16,727 267 1,859 2,821 21,674
+   Panel 12,927 267 1,100 2,015 16,309
+   Nuevos Afiliados 940 0 329 718 1,987
+   No Afiliados 2,860 0 430 88 3,378
+EPS 2006 16,443 288 1,196 1,895 19,822
+   Entrevistado 2004 14,695 227 771 1,034 16,727
+   No Entrevistado 2004 1,748 61 425 861 3,095
+EPS 2009 14,463 457 1,666 2,926 19,512
+   Sólo EPS 2004 180 11 65 182 438
+   EPS 2004 y 2006 2,794 72 169 294 3,329
+   Entrevistado 2004 333 18 278 649 1,278
+   No Entrevistado 2004 1,146 36 214 351 1,747
+   Entrevistado 2004 579 42 285 447 1,353
+   No Entrevistado 2004 9,431 278 655 1,003 11,367
+
+=== PDF PAGE 20 ===
+20 
+ 
+ 
+La muestra para la segunda ronda tomo como base los 16,309 afiliados entrevistados 
+en el 2002, pero además se incorporó una muestra de 1,987 nuevos afiliados y 3,378 
+no afiliados. En la ronda 2004 se entrevistaron 16,727 afiliados y no afiliados no 
+fallecidos.  
+ 
+Para la ronda del año 2006 se tomó el total de entrevistados del año 2004 (16,727) 
+más los afiliados entrevistados en el año 2002 y que no fueron contactados ni 
+entrevistados en el año 2004, lo que suma una muestra para el año 2006 de 19,822.  
+ 
+Finalmente, la muestra para la ronda 2009 está formada por la muestra del año 2006 
+excluyendo las personas fallecidas en esa ronda.  
+ 
+La siguiente tabla muestra la tasa de respuesta (incondicional en contacto) por región 
+para la ronda 2009, que resume la perdida muestral que se obtiene por región: 
+ 
+Cuadro 3.2 
+Tasa de Respuesta Incondicional por Región 
+Afiliados y No Afiliados 2009 
+ 
+ 
+Y la siguiente tabla por sexo y edad: 
+ 
+  
+Región %
+I 84.0
+II 68.7
+III 59.2
+IV 81.8
+V 79.6
+VI 87.2
+VII 82.1
+VIII 82.3
+IX 85.2
+X 76.1
+XI 66.7
+XII 76.6
+RM 69.2
+Total 75.8
+
+=== PDF PAGE 21 ===
+21 
+ 
+Cuadro 3.3 
+Tasa de Respuesta Incondicional por Sexo y Edad 
+Afiliados y No Afiliados 2009 
+ 
+4 Diseño Muestral Refresco EPS (Propuesta CMD 2011) 
+ 
+En el año 2011 el Centro de Microdatos de la Universidad de Chile, por encargo de la 
+Subsecretaría de Previsión Social realizó el estudio “Estudio Diagnóstico, Propuesta de 
+Mejora y Definición Muestra E PS 2011”, en el que se propone el diseño muestral para 
+la quinta ronda de la EPS. 
+ 
+La muestra original de la EPS fue seleccionada en cada estrato con probabilidad de 
+muestreo calculada desde el total de la población nacional afiliada al sistema de 
+pensiones (AFP o INP) entre Enero de 1980 y Diciembre de 2001. Luego en 2004 se 
+agrego al panel una muestra de no afiliados y de nuevos afiliados hasta diciembre de 
+2003.  Las muestras para los afiliados y nuevos afiliados al sistema de pensiones 
+siempre ha sido s eleccionada con probabilidad igual en cada estrato de acuerdo al 
+diseño muestral original. Luego la fracción de muestreo utilizada para incluir a los 
+afiliados en la muestra de la EPS ha sido f=0.003746822, tanto en 2002 como en 2004. 
+De acuerdo a estos antecedentes la recomendación del Profesor Heeringa fue 
+mantener esta tasa para la actualización de la muestra de afiliados desde 2004 a 2009.  
+En el estudio se estipuló que para determinar el tamaño de muestra de los nuevos 
+afiliados es necesario contar con los siguientes antecedentes: 
+ 
+- Es necesario producir una vinculación de los datos de la EPS con los registros 
+administrativos de la superintendencia de pensiones, que permita para la 
+muestra actual de la EPS, actualizar el estatus de la persona en el sistema de 
+pensiones a Diciembre de 2010 o la última fecha disponible de estos registros, 
+siguiendo con los procedimientos de resguardo de confidencialidad 
+usualmente estipulados entre las instituciones involucradas.  
+- Obtener el marco muestral de afiliados al s istema de AFP a Diciembre de 2010 
+que debe incluir las variables de selección: estatus en el sistema de pensiones 
+(activo, pensionado), sexo, edad, y fecha de afiliación. Es importante mencionar 
+que se requiere contar con TOTAL de afiliados al sistema de A FP a Diciembre 
+de 2010, ya que no sólo se debe actualizar los nuevos afiliados desde Diciembre 
+Edad Mujeres Hombres Total
+<25 78.5 69 73
+25-35 73.2 69.1 71.1
+35-45 75.4 70.5 72.9
+45-55 80.4 74.8 77.6
+55-65 80.4 78.5 79.4
+65-75 80.6 80.1 80.3
+75-85 76.2 79.7 77.9
+>85 69.4 63.2 66.9
+Total 77.6 74 75.8
+
+=== PDF PAGE 22 ===
+22 
+ 
+de 2003, sino además corregir por el sesgo regional y etario que se ha 
+producido en la muestra. 
+- Además de la actualización para los nuevos afiliados, se debe tam bién realizar 
+una actualización de la muestra para los no afiliados . Para cumplir con este 
+objetivo, una alternativa consiste en realizar un empadronamiento de hogares 
+focalizado en las comunas y segmentos poblacionales donde es más probable 
+encontrar a po blación no afiliada identificando estas unidades a través de 
+encuestas de hogares recientes, como casen 2009, donde se identifican las 
+áreas geográficas más probables donde se encuentren individuos con estas 
+características, luego se seleccionan los segmentos asociados a estas áreas para 
+la construcción de un marco muestral secundario que permita aumentar la 
+representatividad de este grupo en la muestra de la EPS. Este 
+empadronamiento se debe realizar con una encuesta filtro que permita 
+determinar el estatus de cada uno de los integrantes del hogar en el sistema de 
+pensiones, de forma tal de que conformado este marco muestral secundario se 
+pueda realizar una selección centralizada en oficina asegurando la 
+representación de los no afiliados. Una segunda alter nativa, es disponer de los 
+registros administrativos de la Subsecretaria de Previsión Social para la 
+entrega del beneficio “Bono por hijo” donde además de tener información de la 
+madre beneficiario se tiene registro de cada uno de los hijos, lo que permite al 
+cruzar con las bases de datos de AFP e INP identificar quienes no están 
+afiliados al sistema de pensiones.   
+ 
+ 
+4.1 Procedimiento de empadronamiento de la muestra nueva 
+ 
+La tarea de empadronamiento, consiste en la obtención en terreno de un listado de 
+direcciones correspondientes a viviendas particulares que se encuentren dentro de un 
+área definida por el Censo de Población y Viviendas de Abril de 2002, denominada 
+Sector de Empadronamiento Censal. El ordenamiento de estas direcciones dentro de la 
+hoja de registro debe ser igual al observado en terreno, siguiendo algunas reglas 
+básicas para realizar el recorrido del área a empadronar que se explicarán más 
+adelante. 
+ 
+Para realizar este empadronamiento se hace entrega de un croquis del Sector de 
+Empadronamiento Censal y un conjunto de hojas especialmente diseñadas para el 
+registro de la información relevante. 
+ 
+Además se entregan definiciones básicas de Vivienda, Hogar, Miembros del Hogar y de 
+alguna otra característica relevante para la construcción del marco muestral. 
+ 
+Al personal que realizará el empadronamiento se le hará entrega de una fotocopia con 
+la demarcación del área o unidad de muestreo a empadronar. En el caso urbano la 
+unidad de muestreo corresponde a una manzana censal o parte de ella, delimitada con 
+lápiz d e color o destacador. En este croquis la manzana es definida mediante los 
+
+=== PDF PAGE 23 ===
+23 
+ 
+nombres de las calles que la circundan. Una vez en terreno, la primera tarea consiste 
+en identificar en forma precisa la manzana a empadronar, para lo cual se sugiere 
+realizar un rec orrido previo del área, que le permita verificar si las calles 
+corresponden a la manzana señalada, y a continuación iniciar el empadronamiento en 
+el punto de partida señalado en el croquis. 
+ 
+Respecto del registro de las direcciones, el trabajo consiste en recorrer el área 
+asignada anotando en la hoja de direcciones todos los hogares que encuentren en ella. 
+ 
+Se comienza el listado en el lugar señalado con una flecha ( ) en el croquis del área a 
+empadronar, como se muestra en la figura 1. Se continua en el sentido contrario al 
+movimiento de los punteros del reloj, es decir en la dirección indicada por la flecha 
+() que indica el punto de partida en el croquis. Debe cubrir el área entera dentro de 
+los límites señalados con destacador. 
+ 
+Figura 4.1 
+Ejemplo de croquis para empadronamiento 
+ 
+Cabe señalar que el área a empadronar a veces corresponde a un número 
+determinado de pisos y no a un edificio completo. Luego se empadronan sólo los pisos 
+señalados en el croquis. En otras ocasiones el área a empadronar correspo nde a una 
+parte de la manzana definida en la sección Observaciones  de la misma hoja con el 
+croquis. 
+ 
+En el croquis las calles que rodean la manzana están bien especificadas. A medida que 
+se recorre la manzana, se asigna un número correlativo de orden, partiendo de 1, a 
+cada calle y a continuación traslade este número y el nombre de la calle a su hoja de 
+empadronamiento.   
+ 
+
+
+=== PDF PAGE 24 ===
+24 
+ 
+El procedimiento antes descrito, permite actualizar el marco muestral con las nuevas 
+construcciones que se han levantado desde la fecha del Censo hasta hoy, en cada una 
+de las manzanas seleccionadas, pero no así la creación de nuevos segmentos. 
+ 
+El proceso de actualización de marco muestral y empadronamiento, también permite 
+identificar si las construcciones corresponden o no a viviendas, solucionando de esta 
+forma el problema de incluir en el marco muestral a construcciones como recintos 
+militares, cárceles, hogares de ancianos, hospitales de cuidado permanente etc.  
+ 
+La realización de una encuesta filtro (mini encuesta) se hace necesaria para la 
+construcción del marco muestral  especifico requerido por la contraparte y consiste 
+en un pequeño cuestionario que de cuenta de las dimensiones necesarias para 
+identificar a los miembros del hogar, genero, edad y su condición como afiliado o no al 
+sistema de pensiones. Entre las variables a incorporar en el instrumento se 
+encuentran las siguientes: identificación de jefe de hogar, sexo, edad, relación de 
+parentesco, entre otras a concordar con la contraparte. El objetivo de este 
+instrumento es obtener la información necesaria para identificar a las personas 
+elegibles dentro del hogar y, de esa manera, construir el marco muestral secundario 
+para la selección de la muestra. 
+ 
+4.2 Determinación del marco muestral para la selección de la muestra EPS 
+2011 
+ 
+La encuesta de Protección desde sus inicios ha sido una de las encuestas más 
+complejas que se realizan en nuestro país, no tan sólo por los tópicos que aborda en 
+torno a la protección social sino que siempre ha tenido un gran desafío metodológico 
+en cuanto a la conformación del marco muestral y posterior selección de la muestra.  
+ 
+En el 2002 en su primera versión la EPS ya tuvo un marco muestral dual donde se 
+obtienen dos muestras de distintas fuentes de información, las bases de datos de los 
+afiliados de la s uperintendencia de AFP y las bases de datos de los afiliados del INP, 
+seleccionando individuos en base a las variables de estratificación que fueron 
+geográficas y socioeconómicas. Luego en 2004 se incorporó un nuevo marco muestral 
+de no afiliados para lograr una representatividad a nivel nacional de toda la población 
+mayor de 18 años, sumando 3 fuentes de información para obtener la muestra,  que 
+consistió en un marco muestral secundario de hogares que se construyó a partir de los 
+datos de CASEN 2003 para identificar las áreas más probables donde encontrar a los 
+no afiliados y del Censo 2002 de donde se seleccionan las manzanas censales las que 
+son empadronadas para luego seleccionar los no afiliados de este marco. 
+ 
+Por consiguiente la EPS es una encuesta qu e posee 3 marcos muestrales diferentes, lo 
+que agrega dificultad al cálculo de los factores de expansión pero que logra una 
+representatividad en toda la población de 18 años y más, la que obedece a los 
+propósitos de la encuesta. 
+ 
+
+=== PDF PAGE 25 ===
+25 
+ 
+La muestra para la EPS 2011 podría tener un grado de dificultad aún mayor 
+dependiendo de la alternativa que la Subsecretaría elija para la selección de las 
+muestras de refresco que la EPS necesita para mantener la representatividad de la 
+población a  nivel nacional en las siguientes 3 rondas. 
+ 
+La EPS necesita una muestra de refresco para los nuevos afiliados y para los afiliados 
+antiguos, lo que sin duda no incorpora ninguna dificultad adicional pues se mantiene 
+el marco muestral de la Superintendencia de AFPs que es el marco ind icado para este 
+tipo de muestra, donde se mantiene la muestra de la EPS 2009 a la que se suman los 
+tamaños muestrales de las muestras nuevas de afiliados. 
+ 
+El refresco para los afiliados y pensionados al INP tampoco suma una marco muestral 
+nuevo por lo que hasta el momento son marcos muestrales conocidos y ya trabajados. 
+ 
+La dificultad se presenta en la muestra de nuevos no afiliados (personas entre 18 y 24 
+años) y no afiliados antiguos, para los que se tienen al menos 3 opciones de marco 
+muestral: 
+ 
+1.- Realizar al igual que en 2002 la creación de un marco muestral secundario 
+actualizado a partir de los datos del Censo 2002 que es el último Censo disponible. 
+Esto implica, realizar un procedimiento de empadronamiento y encuesta filtro que 
+permita identificar mediante el autoreporte si las personas están o  no afiliadas al 
+sistema de pensiones. Luego esta información debe ser chequeada  a través de los rut 
+de las personas o bien a través de las fechas de nacimiento en las bases de afiliados 
+tanto de las AFPs co mo del INP. De esta manera se obtendría una base de datos con 
+variables demográficas y geográficas que permitirán seleccionar la muestra con las 
+características de las rondas previas de la EPS.  
+Esta alternativa es la que recomendamos fuertemente ya que cu mple con todos los 
+requisitos necesarios para la selección de una buena muestra con representatividad 
+nacional, manteniendo los estándares de selección de las EPS previas. 
+ 
+2.- Usar una submuestra de la CASEN 2006 o 2009 y de ella extraer una submuestra 
+de quienes respondieron no estar afiliados al sistema de pensiones y chequear esa 
+información en terreno. Esto es posible debido a que CASEN tiene representatividad 
+nacional, provincial y comunal, lo que permitiría cumplir con todos los objetivos de la 
+encuesta. Sin embargo, también se debería realizar una verificación de que las 
+personas son efectivamente no afiliados, los datos de CASEN 2009 muestran que en 
+un 21% de los hogares tienen al menos un no afiliado y en la mayor parte de los casos 
+existen dos per sonas no afiliadas por hogar. Lo que reafirma la idea de refrescar la 
+muestra de no afiliados a través de una muestra nueva a partir del CENSO, ya que los 
+datos de CASEN deberán ser pedidos directamente a MIDEPLAN, lo que podría 
+demorar los procesos y los datos de la encuesta podrían estar destinados a generar un 
+panel propio a partir de los datos de ambas CASENES, no se puede dejar de mencionar 
+que el panel actual de CASEN es una submuestra de CASEN 2006 por lo que la 
+probabilidad de que un individuo hubiera sido entrevistado más de una vez aumenta y 
+
+=== PDF PAGE 26 ===
+26 
+ 
+podría afectar las tasas de respuesta por el cansancio de los entrevistados que además 
+deberán seguir en la muestra por las siguientes rondas de la EPS. 
+ 
+3.- Utilizar las bases asociadas a los beneficios de la Reforma Previsional, en particular 
+el Bono por Hijo que permitiría identificar que integrantes del hogar serían afiliados y 
+quienes no serían afiliados al sistema. Es importante recalcar que a la fecha de hoy esa 
+base de datos no cuenta con las variables geográficas mínimas para ser utilizada como 
+marco muestral. Al menos esta base de datos debe contener datos de región y comuna. 
+También es sumamente relevante la calidad de las direcciones las que no se presentan 
+en la base de datos que hemos analizado. Si se pueden cruzar con fuentes de 
+información confiables en cuanto a la veracidad de las direcciones el problema podría 
+minimizarse. 
+Es importante recordar que la tasa de respuesta de la EPS 2002 fue alrededor del 
+50%, lo que se debió principalmente a la mal a calidad de las direcciones de aquella 
+muestra. 
+Un aspecto importante es que la población con probabilidades de ser seleccionada es 
+mayormente de bajos ingresos lo que generaría una muestra sesgada. 
+ 
+4.3 Tamaño muestral EPS 2011 
+ 
+El tamaño muestral objetivo d e la EPS 2002 fue 20.000 individuos entrevistados, 
+luego de la cuarta ronda el tamaño muestral objetivo de la EPS es de 19.512, llegando 
+a un  número de entrevistas de 15.108  en 2009, total que incluye las entrevistas 
+parciales y los entrevistados por los individuos fallecidos, donde las entrevistas 
+completas corresponden a 14.463. Este resultado motiva que la EPS tenga una 
+muestra de refresco para su quinta ronda.  
+ 
+De acuerdo al análisis previo realizado de la muestra de la EPS 2009, es claro que para 
+mantener la representatividad de la muestra sobre la población mayor de 18 años se 
+necesita nueva muestra para los siguientes tipos de entrevistados: 
+ 
+1.- Incorporar nuevos afiliados desde 2004 en adelante 
+2.- Incorporar afiliados previo a 2004 de acuerdo a las tasas de respuesta, en 
+particular para balancear la muestra en las regiones del norte del país y región 
+metropolitana. 
+ 
+3.- Muestra de No Afiliados, refrescando de esta manera tanto los nuevos no afiliados 
+como los no afiliados previos a 2004. 
+ 
+El tamaño muestral esperado para la muestra entrevistada en 2009 se presenta en el 
+Cuadro 4.1, asumiendo una tasa de respuesta del 85%, lo que es cercana a las tasas de 
+respuesta obtenidas para la muestra entrevistada en la muestra previa en cada ronda. 
+ 
+Cuadro 4.1 
+Tamaño muestral esperado para la muestra entrevistada en 2009 
+
+=== PDF PAGE 27 ===
+27 
+ 
+ 
+ 
+Fuente: Bravo, D., Heeringa, S., Quijada, S. y Vásquez, J. (2011) 
+ 
+En previas EPS se ha tratado de contactar a entrevistados de la ronda inmediatamente 
+previa y de la anterior a ella, sin em bargo en la quinta ronda la recomendación del 
+CMD fue concentrar los esfuerzos en quienes respondieron y quienes no respondieron 
+en 2009. 
+ 
+Para complementar el tamaño muestral esperado para la muestra existente a 
+continuación se presentan los tamaños  muestrales de las muestras de refresco en el 
+Cuadro 4.2. 
+ 
+Cuadro 4.2 
+Tamaño muestral para nueva muestra EPS 2011 
+ 
+ 
+Fuente: Bravo, D., Heeringa, S., Quijada, S. y Vásquez, J. (2011) 
+* Incluye elegibilidad, contacto y entrevistados de la línea base 
+** Asume un promedio de 1.5 de no afiliados por hogar que podrían ser entrevistados 
+ 
+ 
+Luego, la muestra total esperada para la EPS 2011 se presenta en el Cuadro 4.3, con un 
+total esperado de 18.757 entrevistados para representar a la población nacional. 
+ 
+Cuadro 4.3 
+Distribución de la Muestra por Tipo de Entrevistado 
+ 
+ 
+Fuente: Bravo, D., Heeringa, S., Quijada, S. y Vásquez, J. (2011) 
+  
+4.4 Diseño muestral EPS 2011 
+ 
+Tipo de Afiliación al sistema Entrevistados 2009 Tasa de Respuesta Esperada Entrevistados esperados en 2011
+AFP Activo 9,783 0,85 8,316
+AFP Pensionado 1,323 0,85 1,125
+INP Activo 812 0,85 690
+INP Pensionado 1,290 0,85 1,097
+No-Afiliado 1,232 0,85 1,047
+Total 14,440 0,85 12,274
+EPS 2011 Nueva muestra Tamaño Muestra 2011 Tasa de repuesta esperada* Muestra esperada para 2011
+AFP Refresco 2000 0,53 1060
+Nuevos afiliados 7213 0,53 3823
+No-afiliados** 6667 0,24 1600
+Total 15880 5423
+Tipo de Entrevistado Tamaño Muestral Porcentaje de la Muestra 2009 Porcentaje de la Población
+AFP 14323 76% 71%
+INP 1787 10% 12%
+No-afiliado 2647 14% 17%
+Total 18757 100% 100%
+
+=== PDF PAGE 28 ===
+28 
+ 
+4.4.1 Muestra de Nuevos Afiliados y refresco de Afiliados 
+ 
+Ambas muestras tanto de Nuevos Afiliados como la muestra de refresco de los 
+afiliados previo a 2004 deberán seguir el mismo procedimiento, la diferencia se dará 
+en que para los nuevos afiliados las bases de la Superintendencia de AFP deberán ser 
+posteriores a Diciembre de 2003 y para la muestra de ref resco deberá utilizarse una 
+base de datos de afiliados hasta diciembre 2003. En ambas bases es relevante 
+chequear que los entrevistados no se encuentren fallecidos para no mermar la 
+muestra en su año de entrada. 
+ 
+Dado los objetivos del estudio, resulta altamente ventajoso desde el punto de vista 
+científico y estadístico, seleccionar la muestra directamente de las bases de datos del 
+sistema de pensiones. Como la alternativa de escoger una muestra aleatoria simple 
+(MAS) de afiliados puede resultar económicamente ineficiente por la alta dispersión 
+de los elementos dentro del territorio nacional, la mejor opción es  seleccionar una 
+muestra estratificada, por conglomerados y bietápica (Kish, 1965). El diseño muestral 
+bietápico nos asegura que cada afiliado elegibl e en la población objetivo tenga igual 
+probabilidad de ser entrevistado. 
+ 
+En las bases de datos del sistema de pensiones, la unidad más pequeña y confiable de 
+escoger como conglomerado es la comuna , de acuerdo a lo realizado tanto en 2002 
+como para la muestra 2004 de nuevos afiliados. 
+ 
+La muestra de la EPS 2011 debe seguir el mismo procedimiento que en las versiones 
+previas que es el que se describe a continuación: 
+ 
+La muestra bietápica está compuesta por una muestra primaria de comunas seguida 
+de una muestra secundaria estratificada de afiliados al interior cada comuna. Todas 
+las comunas de la Región Metropolitana deben ser  incluidas en la muestra primaria 
+con probabilidad unitaria, excepto cuatro, con una población menor de 15.000 
+habitantes, que son  representadas por una de ellas seleccionadas  aleatoriamente, 
+según el diseño muestral de las EPS previas .  Además se incluye en forma forzosa a las 
+33 comunas con población de 60.000 ó más habitantes, que representan las ciudades 
+más grandes de Chile. También se  incluye en la muestra primaria con probabilidad 
+unitaria, la comuna de Coyhaique, capital de la Undécima Región, con una población 
+estimada al año 20 11 de 58.625 habitantes. En conjunto , estas comunas “auto -
+representadas” representan aproximadamente el 73% de la población nacional.  
+ 
+Después de marginar del marco muestral 37 comunas por estar ubicadas en el 
+territorio insular, áreas de difícil acceso o zonas de veraneo, las 224 comunas 
+restantes de Chile fueron deben ser agrupadas en 32 estratos “no auto -representados” 
+de la etapa primaria. Estos estratos son definidos en función de la composición de la 
+población urbana/rural de la región, y de otras características socio-económicas de las 
+comunas no auto –representadas. En cada estrato no auto –representado se debe 
+seleccionar una comuna para representar la p oblación del mismo. La selección de la 
+
+=== PDF PAGE 29 ===
+29 
+ 
+muestra primaria de comunas en cada estrato no auto -representado se debe realizar 
+con la probabilidad proporcional a su tamaño (PPT). La medida de tamaño (MDT) 
+para cada comuna y estrato de comunas fue el total de afiliados del sistema de 
+pensiones registrados en el marco muestral de afiliados.  
+ 
+Una vez seleccionada la muestra primaria de comunas, se calculan las fracciones de 
+muestreo para seleccionar los afiliados dentro de cada una de ellas. Puesto que en la 
+primera etapa, las comunas fueron seleccionadas con probabilidad unitaria o con la 
+probabilidad proporcional a su tamaño, en la segunda etapa, o al interior de cada 
+comuna, la fracción de muestreo de afiliados s e calcula en forma independiente según 
+los métodos estándares para el muestreo óptimo de probabilidad igual en dos etapas. 
+Los registros de afiliados en cada comuna muestreada deben ser  extraídos del marco 
+muestral principal, ordenados según las variables de estratificación, y a continuación 
+se debe seleccionar una muestra sistemática de afiliados con la fracción de muestreo 
+ya calculada. 
+ 
+La expresión general que define la probabilidad de selección en el muestreo en dos 
+etapas es la siguiente: 
+21 * fff = =0,00367 
+ 
+comuna
+estrato
+estrato
+comuna
+M
+C
+M
+Mf *=  
+donde: 
+Mcomuna = número total de afiliados en la comuna; 
+Mestrato = número total de afiliados en el estrato de comunas;  
+Cestrato = constante específica del estrato (f / Mestrato). 
+ 
+Para obtener una muestra de n afiliados con igual probabilidad de selección de de una 
+población de tamaño N, la fracción de  muestreo total se calcula como el cociente 
+simple, f=n/N. 
+ 
+La fracción de muestreo de primera etapa, f 1, se calculó por separado para cada 
+estrato de comunas. Por definición, para las comunas auto–representadas, f1=1,0. 
+ 
+La fracción de muestreo de segunda etapa, f 2, es la fracción con la cual se 
+seleccionaron los afiliados elegibles dentro de la muestra primaria de comunas para 
+su contacto y entrevista. Esta fracción de submuestreo “dentro de la UPM” es única en 
+cada estrato o UPM (Unidad Primaria de Muestreo). 
+ 
+El valor recíproco de f 2, es el intervalo de selección utilizado para la selección 
+estratificada sistemática de afiliados de la base de datos ordenada con la muestra 
+primaria. 
+ 
+Debido a la correlación intraclase de las características y los comportamientos de las 
+poblaciones locales, una muestra estratificada seleccionada en conglomerados puede 
+
+=== PDF PAGE 30 ===
+30 
+ 
+ser estadísticamente menos eficiente que una muestra estratificada seleccionada al 
+azar. En el diseño propuesto para la EPS, la preocupación por el impacto de  
+conglomerar la muestra en comunas dentro de primera etapa de selección es 
+atenuada por dos características del diseño. En primer lugar, se espera que más del 
+70% de los afiliados residan en comunas auto -representadas y puesto que no hay 
+conglomeración adicional dentro de estas comunas, la mayor parte de la muestra no 
+estará afectada por la conglomeración. En segundo lugar, en el 30% restante de la 
+muestra, que será seleccionada dentro de las comunas no auto -representadas, no 
+habrá conglomeración geográfica de la muestra al interior de las comunas. En diseños 
+muestrales multi- etápicos que consideran como unidades primarias de selección las 
+comunas y como unidades secundarias, áreas residenciales menores dentro de las 
+comunas (por ejemplo, la manzana), la may or parte de la varianza en los datos en 
+estudios socioeconómicos se puede asociar a esta segunda etapa. La explicación para 
+esta observación empírica se apoya en patrones típicos de segmentación 
+socioeconómica a nivel residencial local en comparación con u na comuna tipo de 
+áreas geográficas más grandes. El diseño bietápico propuesto para la EPS no incluye 
+conglomeración geográfica dentro de las comunas no auto -representadas de la 
+muestra primaria, y por lo tanto, no existe mayor contribución de la segunda etapa a 
+la varianza muestral o a la correlación intraclase de las unidades de última etapa. En 
+resumen, se espera que las pérdidas de precisión asociadas al diseño menos eficiente 
+sean muy pequeñas – y la elección de un diseño bi-etápico sea la óptima. 
+ 
+La estratificación de la muestra de este estudio responde a dos propósitos:  
+ 
+El primero es utilizar muestreo estratificado para aumentar la precisión (reducir el 
+error de muestreo) de las estimaciones de los parámetros de la población en estudio. 
+En esta etapa, las variables de estratificación que podrían ser más eficaces para 
+mejorar la precisión de los estimadores totales (estadígrafos, coeficientes descriptivos 
+de la regresión) requeridos para el análisis de las contribuciones al Fondo de 
+Pensiones son: 1)  condición de afiliado  (activo, pensionado, fallecido ); 2) género; 3) 
+edad; 4) fecha de afiliación y 5) un índice empírico de la densidad de las últimas 
+contribuciones al plan de jubilación del afiliado. Aunque la asignación de la muestra a 
+cada estrato sea proporcional a la población de éste (diseño muestral equiprobable o 
+autoponderado), es posible lograr ganancias de precisión debido a la estratificación de 
+la muestra para los estimadores del estudio.  
+ 
+El segundo propósito para la estratificación de la muestra es definir explícitamente las 
+subpoblaciones objetivo que serán muestreadas no proporcionalmente para 
+garantizar un número adecuado de casos para el análisis de subpoblaciones 
+importantes (por ejemplo: región, área urbana/rural). Bajo condiciones especiales 
+tales como heterogeneidad de la varianza o diferencias de costos de recolección de 
+datos por estrato, un diseño muestral no proporcional puede aumentar la precisión de 
+los estimadores en relación a un muestreo proporcional. Generalmente, la exper iencia 
+empírica en encuestas a poblaciones grandes ha demostrado que los objetivos del 
+muestreo no proporcional coinciden raramente con los requisitos de los diseños de 
+asignación óptimos. La mayoría de las decisiones de sobremuestrear un subgrupo u 
+
+=== PDF PAGE 31 ===
+31 
+ 
+otro, incrementa el error de muestreo de los estimadores debido a la ponderación no -
+óptimo que se requiere para que la muestra entregue estimaciones insesgadas de los 
+parámetros de la población.   
+ 
+Para esta encuesta el procedimiento de muestreo equiprobable   se  debe clasificar a 
+todos los expedientes del afiliado por comuna, tipo de institución (INP o AFP); estatus 
+en el sistema de pensiones, género, edad y fecha de la afiliación.  
+ 
+4.4.2 Muestra de Nuevos No Afiliados y refresco de No Afiliados 
+ 
+La selección de la muestra de Nuevos No afiliados así como la de refresco de No 
+Afiliados se debe realizar con las mismas características de la muestra de Nuevos 
+Afiliados y refresco de Afiliados, es decir se seleccionan las mismas comunas que la 
+EPS ha tenido en todas las rondas previas y luego seleccionar un no afiliado por hogar 
+dentro de la comuna seleccionada.  
+ 
+La selección de los no afiliados previos a Diciembre 2003 se debe realizar en base a la 
+tabla 58 donde se hace referencia al tamaño regional c on el porcentaje de 
+sobredimensión mínimo necesario para lograr el número de encuestas efectivas 
+requeridas. En las comunas dentro de cada región la selección debe ser proporcional 
+al tamaño de no afiliados dentro de cada comuna en la región que correspond a a la 
+selección de la muestra, dado que no se tiene el número exacto de la población de no 
+afiliados al sistema en las etapas de selección se debe calcular la fracción de muestreo 
+tal como en la muestra del punto X.1.  
+ 
+4.4.3 Especificaciones y supuestos  del diseño muestral. 
+ 
+La importancia de la EPS para los analistas de políticas sociales chilenos está clara. Un 
+tamaño  muestral del orden de 20.000 casos es razonable dado el nivel de detalle 
+requerido por el estudio, precisión aceptable para el análisis posterior de las 
+subpoblaciones de interés.  
+ 
+La selección de una muestra de afiliados al fondo de pensiones que estén asignados en 
+forma única a comunas basados en la mejor información disponible de dirección en el 
+marco muestral no basta para conglomerar los lugares donde los afiliados serán 
+entrevistados. Los afiliados pueden moverse desde la dirección registrada en el marco 
+muestral y necesitarán ser reubicados en su nueva dirección. La elegibilidad de los 
+afiliados para la muestra se debe basar en la comuna en la cual fueron asignados en 
+forma única en el marco muestral. La mayoría de los movimientos serán locales y la 
+entrevista al afiliado será realizada la misma comuna o en otra cercana. Los 
+movimientos de larga distancia por casualidad pueden tener su destino en una 
+dirección que esté dentro o cerca de otra comuna que tenga un equipo de 
+encuestadores. Los encargados del estudio y el equipo de investigación necesitarán 
+proporcionar la dirección en cómo manejar los casos donde el afiliado de la muestra 
+
+=== PDF PAGE 32 ===
+32 
+ 
+se h a trasladado a las lugares distantes de la comuna de la muestra o no tengan 
+personal que lo entreviste en ese sitio. En los estudios del Sistema de Seguridad Social 
+de los EE.UU., una minoría significativa, son los participantes o beneficiarios que viven 
+al exterior. 
+5 Diseño Muestral implementado EPS 2012 
+ 
+Como ya mencionaba con anterioridad, la EPS está pensada para representar a la 
+población de 18 años y más, tanto afiliados como no afiliados al Sistema de Pensiones. 
+De esta forma, la muestra en cada una de sus rondas debe ser capaz de mantener la 
+representatividad de esta población, además de las sub -poblaciones de interés: 
+afiliados al sistema de AFP, afiliados al sistema de INP y no afiliados.  
+ 
+A continuación se presenta el diseño muestral implementado finalmente en la Quinta 
+Ronda de la EPS (EPS 2012). 
+5.1 Descripción del Procedimiento para la Construcción del Marco Muestral 
+ 
+Para refrescar la muestra de la EPS, es necesario generar una muestra de nuevos 
+afiliados al sistema de pensiones, una muestra de refresco de los antiguos afiliados al 
+sistema de pensiones, y una muestra de refresco de los no afiliados. 
+ 
+El objetivo fue construir un marco muestral para la población de 18 años y más, donde 
+se pudiese distinguir a los afiliados al sistema de AFP de los no afiliados al sistema de 
+pensiones, y a los antiguos de los nuevos afiliados. 
+ 
+Para la elaboración de la nueva muestra la Subsecretaría de Previsión Social (SPS) 
+creó un marco muestral donde el RUN de las personas de 18 años y más es asociado a 
+una comuna, y además es posible identificar su estado de afiliación a algún sistema 
+previsional. Para ello se utilizaron las siguientes fuentes de información: 
+ 
+1- Instituto de Previsión Social (IPS): esta fuente contaba con datos actualizados 
+al 2012 de la variable comuna y datos actualizados al 2008 de dirección y 
+comuna. 
+2- Superintendencia de Pensiones (AFP): se dispone de información de comuna y 
+dirección desde Enero de 2011 
+3- Seguro de Cesantía (AFC) 
+4- Ficha de Protección Social (FPS) 
+ 
+El orden en que se dio uso a la información para la construcción del marco muestral 
+fue el siguiente: 
+ 
+A) Afiliados antiguos: para aquellos que realizaron alguna transacción con el IPS a 
+propósito de beneficios de la Reforma Previsional o son pensionados del 
+Sistema Antiguo: 
+
+=== PDF PAGE 33 ===
+33 
+ 
+ 
+a. Datos IPC más reciente, excepto para la RM, para cuyos casos ocupada el 
+último lugar 
+b. Datos IPS histórico disponible 
+c. Dato Ficha de Protección Social 
+d. Dato Seguro de Cesantía 
+e. Dato de la AFP 
+ 
+B) Afiliados nuevos: Para aquellos que se afiliaron a la AFP desde 2 011 (fecha 
+desde la cual se disponible de la relación entre RUN y comuna desde AFP) 
+ 
+a. Dato de AFC 
+b. Datos AFP más reciente 
+c. Dato FPS 
+d. Datos IPS 
+ 
+C) No afiliados 
+ 
+a. Datos FPS 
+b. Datos AFC 
+c. Datos IPS 
+d. Datos AFP 
+ 
+Para aquellos casos en que no hubo posibilidad de asignar una dirección, se utilizó 
+como “proxy” la información de la base de datos del Bono por hijo, que permite 
+vincular RUN de madre con RUN de hijos, y de esta manera con RUN de hermanos 
+(por línea materna). 
+ 
+El protocolo de asignación de la comuna, utilizando esta “proxy” fue el siguiente: 
+ 
+- Si el sujeto sin comuna tiene menos de 30 años (a 2011), se le asigna la comuna 
+de la madre. 
+- Si el sujeto sin comuna es madre, se le asigna la comuna con la mayor cantidad 
+de hijos menores de 30 años (si los tuviere).  
+- Si el sujeto sin comuna no está contemplado en las situaciones anteriores, se 
+asigna la comuna que registra la mayor cantidad de p arientes (hijos, hermanos 
+por línea materna y madre).  
+ 
+Los casos que presentaron mayores dificultades de asignación fueron: 
+ 
+- Hombres mayores de 60 años  
+- Personas de 80 años y más 
+- Los menores cuyas madres no están integrados a ningún sistema previsional 
+ 
+
+=== PDF PAGE 34 ===
+34 
+ 
+5.2 Características del Marco Muestral 
+ 
+5.2.1 Distribución según sexo y edad 
+ 
+De acuerdo a la información del Instituto Nacional de Estadísticas (INE) , en el año 
+2011 la población de 18 años y más era de 12,718,513, por lo cual se esperaría que de 
+alguna forma el marco muestral construido por la SPS fuera capaz de replicar esta 
+población. El Cuadro 5.1 muestra la distribución por género y edad de la población del 
+año 2011 estimada  por el INE.  
+ 
+El Cuadro 5.2 muestra la misma distribución pero de la población estimada según el 
+marco muestral construido.  El Cuadro 5.3 muestra la comparación entre la población 
+estimada por edad y sexo según el marco muestral, y la población del INE. 
+ 
+Cuadro 5.1 
+Población de 18 años y más (2011) 
+ 
+Fuente: Elaboración propia en base a INE 
+ 
+  
+
+
+=== PDF PAGE 35 ===
+35 
+ 
+Cuadro 5.2 
+Población de 18 años y más según Marco Muestral EPS 2012 
+ 
+Fuente: Elaboración propia en base a Marco 
+Muestral EPS 20126 
+ 
+Cuadro 5.3 
+Población de 18 años y más según Marco Muestral EPS 2012 e INE 
+ 
+Fuente: Elaboración propia en base a información del INE y Marco Muestral EPS 2012 
+ 
+ Podemos notar que existen diferencias entre el Marco Muestral y la población 
+(INE) en las personas más jóvenes (18-19 años), y en las personas de 65 años y 
+más. Dado que uno de los principales objetivos de la muestra de refresco es 
+justamente compensar por el envejecimiento de la muestra, es preocupante 
+notar que l a población de personas entre 18  y 19 años, justamente donde se 
+debería concentrar en parte importante el refresco de la muestra, está siendo 
+subestimada en el marco muestral , especialmente en el caso de los hombres . 
+                                                        
+6 El archivo correspondiente al marco muestral y que fue proporcionado por la Su bsecretaria de 
+Previsión Social se denomina “wk_marco_comuna_without_duplicates.dta". 
+
+
+=== PDF PAGE 36 ===
+36 
+ 
+Por el contrario, en general, las tasas de respuesta en la población de 55 años y 
+más es bastante elevada en todas las rondas de la EPS, así la atrición no es un 
+problema grave en estos tramos de edad, y de alguna forma el problema de 
+subestimación del marco muestral tampoco.  
+ En particular, el marco muestral sobre estima la población de 65 años y más , lo 
+que puede ser debido a que los datos no han sido cruzado con información de 
+defunciones del registro civil. 
+ 
+5.2.2 Distribución según estatus en el sistema de pensiones 
+ 
+En el informe final de la EPS 2012, en la sección 8.10, se presentan los datos 
+correspondientes al marco muestral EPS 2012 según género y estatu s de afiliación. 
+(Ver Cuadro 5.4). En el informe no se indica con exactitud si la población considerada 
+en el marco muestral es aquella de 18  años y más o de 15 años y más, y el universo 
+estimado es mayor a aquel que se puede obtener de la base de datos correspondiente 
+al marco muestral EPS2012. 
+ 
+Cuadro 5.4 
+Población según Marco Muestral EPS 2012 
+ 
+ 
+Fuente: Levantamiento de la Encuesta Panel –  Quinta 
+Encuesta de Protección Social. Informe Fina l, Noviembre 
+2013. Universidad Alberto Hurtado. 
+Nota: El universo presentado en este cuadro no coincide 
+con el que se presenta en el cuadro 5.2, elaborado a 
+partir de la base de datos disponible del marco muestral. 
+Pero, por parte, en la base disponible del marco muestral 
+no se pueden construir las categorías del estatus actual 
+en el sistema de pensiones, y por lo tanto no se puede 
+reconstruir este cuadro presentado en el Informe Final 
+del OSUAH. 
+ 
+En el Cuadro 5.5  se presenta la estimación de las poblaciones según estatus de 
+afiliación proporcionado por la Superintendencia de Pensiones a Diciembre de 2011. 
+ 
+ 
+ 
+ 
+Estatus afiliación Hombres Mujeres Total
+Activo AFP 4,791,543 4,152,379 8,943,922
+Activo IPS 338,274 421,127 759,401
+No afiliado 1,233,971 1,727,613 2,961,584
+Pensionado AFP 547,049 505,626 1,052,675
+Pensionado IPS 248,884 415,872 664,756
+Total 7,159,721 7,222,617 14,382,338
+
+=== PDF PAGE 37 ===
+37 
+ 
+Cuadro 5.5 
+Población según Datos Administrativos (Diciembre 2011) 
+ 
+Fuente: Superintendencia de Pensiones. Los no afiliados se 
+obtienen por diferencia, restando a la población de 18 
+años y más estimada según el INE, los afiliados activos y 
+pensionados del sistema de pensiones (AFP+INP). 
+ 
+Al comparar los cuadro 5.4 y 5.5 se aprecian importantes diferencias entre el marco 
+muestral y las estimaciones poblacionales proporcionadas por la Superintendencia de 
+Pensiones en todas las subpoblaciones a excepción de los afiliados activos del sistema 
+de AFP. 
+ 
+5.2.3 Distribución según comunas 
+ 
+El diseño muestral de la EPS requiere que en una primera etapa se seleccionen 
+comunas, en el Cuadro 5.6 se muestra la población estimada por comunas según el 
+marco muestral, y la población estimada por comunas según la Encuesta CASEN 2011. 
+ 
+ 
+Cuadro 5.6(a) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+  
+
+
+=== PDF PAGE 38 ===
+38 
+ 
+Cuadro 5.6(b) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+Cuadro 5.6(c) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+Cuadro 5.6(d) 
+Población de 18 años y más estimada por comunas 
+ 
+
+
+=== PDF PAGE 39 ===
+39 
+ 
+Cuadro 5.6(d) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 40 ===
+40 
+ 
+Cuadro 5.6(e) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+
+=== PDF PAGE 41 ===
+41 
+ 
+Cuadro 5.6(f) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+ 
+  
+
+
+=== PDF PAGE 42 ===
+42 
+ 
+Cuadro 5.6(g) 
+Población de 18 años y más estimada por comunas 
+ 
+
+
+=== PDF PAGE 43 ===
+43 
+ 
+Cuadro 5.6(h) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+ 
+  
+
+
+=== PDF PAGE 44 ===
+44 
+ 
+Cuadro 5.6(i) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+ 
+  
+
+
+=== PDF PAGE 45 ===
+45 
+ 
+Cuadro 5.6(j) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+ 
+Cuadro 5.6(k) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+ 
+  
+
+
+=== PDF PAGE 46 ===
+46 
+ 
+Cuadro 5.6(l) 
+Población de 18 años y más estimada por comunas  
+ 
+
+
+=== PDF PAGE 47 ===
+47 
+ 
+Cuadro 5.6(m) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+ 
+Cuadro 5.6(n) 
+Población de 18 años y más estimada por comunas 
+ 
+ 
+ 
+ 
+ En general se presentan diferencias en la población estimada según el Marco 
+Muestral y la población estimada a partir de la Encuesta Casen 2011.  
+ Estas diferencias son muy significativas en algunas comunas, el caso más 
+extremo es la comuna de Santiago en la Región Metropolitana, donde según el 
+marco muestral la población es de 780 mil personas, pero según la Encuesta 
+Casen 2011 es 128 mil personas. Otras comunas como Independencia, 
+Providencia, San Miguel, Putre, Maria Elena, Puchuncavi, Quintero y Olmue 
+presentan diferencias casi en un 100% entre ambas fuentes de información. 
+ 
+5.3 Determinación de los tamaños muestrales 
+ 
+De acuerdo a lo descrito en el I nforme final del OSUAH, la Subsecretaría de Previsión 
+Social determino la selección de una muestra de 3449 antiguos afiliados, esperando 
+una tasa de respuesta del 31%, una muestra de 7890 nuevos afiliados, esperando una 
+tasa de respuesta de 48% y una muestra de 1600 no afiliados, esperando una tasa de 
+respuesta del 44%. 
+
+
+=== PDF PAGE 48 ===
+48 
+ 
+ 
+Sin embargo, de acuerdo a los archivos de la muestra 7 proporcionados por la 
+Subsecretaría de Previsión Social y que corresponden a la documentación entregada 
+por el OS UAH, la muestra total de la EPS 2012 es de 30,730 individuos, sin embargo, 
+de acuerdo a la definición de la muestra se establece que sólo se seguirán a los 
+individuos del panel entrevistados en el año 2006 y/o 2009, pero 9 individuos que se 
+encuentran en la muestra correspondiente al panel no fueron entrevistados 
+efectivamente en una de estas dos rondas, por lo cuál fueron excluidos del análisis. El 
+Cuadro 5.7 muestra la distribución de la muestra: 
+ 
+Cuadro 5.7 
+Muestra EPS 2012 
+ 
+Fuente: Elaboración propia en base a “marco muestral.dta” 
+ 
+Las poblaciones estimadas según el marco muestral en los sub -grupos de muestreo 
+son las siguientes: 
+ 
+Cuadro 5.8 
+Marco Muestral EPS 2012 
+ 
+Fuente: Elaboración propia en base a 
+“wk_marco__comuna_without_duplicates.dta” 
+ 
+En el año 2002 se seleccionaron aproximadamente 30000 afiliados al sistema de 
+pensiones de un marco muestral formado por aproximadamente 8 millones de 
+afiliados, es decir, la fracción de muestreo fue de 0.0037. Luego, en el año 2004 se 
+seleccionaron aproximadamente 2000 nuevos afiliados de una población de 530 mil, 
+                                                        
+7 El archivo con la muestra total de la EPS 2012 proporcionado por la SPS se llama “marco 
+muestral.dta”. 
+
+
+=== PDF PAGE 49 ===
+49 
+ 
+manteniendo la fracción de muestreo de 0.0037 de los afiliados utilizada en el año 
+2002. En el año 2004 también se incorporó una muestra de no afiliados, donde se 
+seleccionaron 3400 de una poblac ión aproximada de 4 millones, es decir, se utilizó 
+una fracción de muestreo de 0.00085 en la población de no afiliados. 
+ 
+En un escenario ideal, sin restricciones presupuestaria, la selección de la muestra de 
+refresco debería mantener las fracciones de mues treo originales. De esta forma, la 
+selección de la muestra debería haber tenido los siguientes tamaños muestrales: 
+ 
+Cuadro 5.9 
+Estimación muestra de refresco EPS2012 con fracción de muestreo original 
+ 
+ 
+ 
+Sin embargo, es natural que por un pensar que por un  tema presupuestario la 
+cantidad de casos en la muestra de refresco se puede reducir, y efectivamente si se 
+aplica las tasas de respuesta esperadas de 85% en la muestra panel y 50% en la 
+muestra de refresco se terminaría con una muestra de entrevistas efec tivas bastante 
+superior a la de rondas anteriores: 
+ 
+Cuadro 5.10 
+Estimación entrevistas esperadas EPS2012 con fracción de muestreo original 
+ 
+ 
+De esta forma, parece aceptable y no se anticipa una dificultad en que en la muestra de 
+refresco se haya utilizado  una fracción de muestreo menor a la de rondas anteriores 
+en el caso de los afiliados, y mayor a la de rondas anteriores en el caso de los no 
+afiliados. En particular, con respecto a los no afiliados se entiende que en esta 
+oportunidad se haya utilizado una fracción de muestreo mayor considerando que el 
+marco muestral proviene de datos administrativos y no de un empadronamiento de 
+hogares como en el año 2004. En términos estadísticos, el cambio en la fracción de 
+muestreo sólo afecta la varianza de las estim aciones obtenidas de la muestra, pero no 
+afecta la comparabilidad de la muestra panel. 
+ 
+De esta forma, a partir de la información proporcionada por la SPS con respecto al 
+marco muestral y muestra de la EPS 2012, se estima que las fracciones de muestreo 
+utilizadas fueron las siguientes: 
+ 
+ 
+ 
+
+
+=== PDF PAGE 50 ===
+50 
+ 
+Cuadro 5.11 
+Fracciones de muestreo utilizadas en la muestra EPS 2012 
+ 
+ 
+ 
+5.4 Diseño Muestral EPS 2012 
+5.4.1 Selección de Comunas 
+ 
+En el Anexo B se presentan la selección de comunas realizadas en el diseño muestral 
+de la EPS 2012 para la muestra de refresco. Las comunas seleccionadas se pueden 
+inferir al revisar el archivo con la muestra para la quinta ronda, separando la muestra 
+panel de la muestra de refresco. Así, lo que se presenta es un proceso de 
+reconstrucción de cómo se cre e que fue realizada esta selección en base al 
+procedimiento establecido y las comunas que se observan en la muestra, ya que no se 
+dispone de un programa (dofile) que nos entregue exactamente el procedimiento 
+realizado. 
+ 
+A partir de esta revisión se puede c oncluir que se utilizaron las mismas unidades 
+primerias de muestreo definidas en el año 2002, es decir, las mismas comunas auto -
+representadas y no auto-representadas. Este procedimiento es apropiado siempre que 
+se pueda afirmar que la composición geográfic a de la población chilena no ha 
+cambiado de manera drástica entre 2002 y 2012, pero se desconoce si dicho análisis 
+fue realizado. 
+ 
+5.4.2 Probabilidades de selección 
+ 
+En el Cuadro 5.11 se presentaron las fracciones de muestreo que se estiman se 
+utilizaron en la selección de la muestra para la EPS 2012, esta estimación se basa en la 
+muestra observada y el marco muestral y corresponde simplemente a la fracción 
+entre el tamaño de la muestra y el tamaño de la población. 
+ 
+El diseño muestral de la EPS ha sido planteado desde sus inicios como un diseño 
+EPSEM, es decir, donde cada unidad seleccionada tiene igual probabilidad. Este tipo de 
+diseño permite disminuir la varianza de las estimaciones, y es especialmente 
+importante en diseños complejos multietápicos donde la varianza se ve incrementada 
+con respecto a una muestra aleatoria simple. 
+ 
+De esta forma, al igual como se hizo en la muestra de la EPS 2002 y la muestra de 
+refresco de la EPS 2004, se hubiera esperado que la muestra de refresco de la EPS 
+2012 hubiese sido sele ccionada de forma tal de mantener este tipo de diseño y que 
+
+
+=== PDF PAGE 51 ===
+51 
+ 
+cada uno de los individuos pertenecientes a la muestra hubiese tenido la misma 
+probabilidad de selección dependiendo del tipo de muestra: afiliados, nuevos afiliados 
+y no afiliados. 
+ 
+Al revisar con detalle, comuna por comuna, la muestra seleccionada se puede concluir 
+que este tipo de diseño NO fue aplicado en la muestra EPS 2012, lo cuál puede afectar 
+seriamente las varianzas de las estimaciones que se obtengan a partir de estos datos. 
+ 
+En el Cuadro 5.12 se presentan 11 comunas auto -representadas y sus respectivas 
+probabilidades de selección utilizadas. Por ejemplo, la comuna de Iquique tiene una 
+población de antiguos afiliados de 125,931, la muestra panel de afiliados es 150 y la 
+muestra de refresco de antiguos afiliados de 28, así se puede inferir que la fracción de 
+muestreo aplicada en esta comuna fue de (150+28)/125931, equivalente a 0.001413. 
+Si se hubiese utilizado la fracción de muestreo correspondiente a la muestra de 
+antiguos afil iados, la cual fue de 0.0019, esta comuna debería haber tenido una 
+muestra de 237 afiliados, como ya 150 están en la muestra panel, la muestra de 
+refresco tendría que haber sido de 87, mayor a los 28 casos seleccionados para el 
+refresco. Si vemos en el cuadro 5.12 esto se repite para las 10 restantes comunas 
+mostradas en el cuadro como ejemplo, todas ellas tienen fracción de muestreo 
+diferentes, indicando que la muestra de refresco NO fue seleccionada para que cada 
+individuo tenga igual probabilidad de selección. 
+ 
+En el Anexo C se presentan para cada una de las muestras (afiliados, nuevos afiliados y 
+no afiliados) la muestra de refresco que se hubiera esperado si se hubiese aplicado el 
+diseño original del estudio, igual probabilidad de selección para todos l os individuos, 
+y se muestran las probabilidades de selección efectivamente utilizadas en la selección 
+de la muestra de la EPS 2012. 
+ 
+Cuadro 5.12 
+Probabilidades de selección de la muestra EPS 2012 (antiguos afiliados) 
+ 
+6 Resultados Trabajo de Campo EPS 2012 
+ 
+La muestra nominal de la EPS 2012 fue de 30,730 casos, sin embargo, 9 de ellos 
+fueron eliminados del análisis ya que en términos efectivos son personas del panel 
+pero que fueron entrevistados antes del 2006, y de acuerdo a la descripción de la 
+muestra esto s no formaban parte de la muestra objetivo. El Cuadro 6.1 muestra la 
+distribución de la muestra nominal de la EPS 2012. 
+
+
+=== PDF PAGE 52 ===
+52 
+ 
+Cuadro 6.1 
+Distribución de la muestra nominal EPS 2012 según tipo de muestra 
+ 
+ 
+ 
+De la muestra de 30,721 se lograron entrevistar 15,996 personas y 216 sobrevivientes 
+de fallecidos, por lo cuál el total de entrevistados fue de 16,212 , con lo cuál la tasa de 
+respuesta de la EPS 2012 fue de 52.8% . Comparado con las rondas anteriores, la tasa 
+de respuesta es bastante inferior. En el Cuadro 6.2  muestra un resumen de las tasa de 
+respuesta obtenidas en las cinco rondas de la EPS , podemos notar que en el año 2012 
+se obtuvo una tasa de respuesta bastante inferior a las rondas previas, e incluso 
+inferior a la de la primera ronda. En especial, llama l a atención la baja tasa de 
+respuesta de la muestra panel comparada con las rondas anteriores, considerando 
+que estos individuos ya habían sido entrevistados en rondas previas, se hubiera 
+esperado como mínimo una tasa de respuesta entre 75 y 80% en esta muestra, sin 
+embargo, sólo se logró entrevistar a un 60.7% de estos individuos. Las bajas tasas de 
+respuesta en las muestras de refresco de alguna forma eran esperables dado que la 
+selección y la información de direcciones proviene de datos administrativos lo s que 
+usualmente son de baja calidad, sin embargo, igual son menores a las obtenidas en el 
+año 2002 donde la selección e información de direcciones de igual forma provenía de 
+datos administrativos. 
+ 
+Cuadro 6.2 
+Comparación de las tasas de respuesta de la EPS 2012 con rondas previas 
+ 
+ 
+
+
+=== PDF PAGE 53 ===
+53 
+ 
+En el Cuadro 6.3 se puede inferir que el principal problema se produce en la tasa de 
+contacto de los entrevistado, tanto de la muestra panel como la muestra refresco. La 
+tasa de rechazo es baja. 
+ 
+Cuadro 6.3 
+Resultados del trabajo de campo EPS 2012 por tipo de muestra 
+ 
+ 
+La Tasa de Contacto para el total de la muestra (excluyendo fallecidos) es de un 
+59.7%, y la tasa de respuesta condicional en contacto es 88.9%, sin embargo, en el 
+Cuadro 6.4 se pueden apreciar algunas difer encias según características demográficas 
+y previsionales de la muestra seleccionada.  
+ 
+Cuadro 6.4 
+Características demográficas y previsional de la muestra, contactados y entrevistados 
+(excluye fallecidos) 
+ 
+ 
+Por ejemplo, la tasa de contacto es más alta en las mujeres que en los hombres, al igual 
+que la tasa de respuesta condicional en contacto, de esta forma, la cantidad de mujeres 
+entrevistadas es proporcionalmente mayor que la de los hombres entrevistados. 
+
+
+=== PDF PAGE 54 ===
+54 
+ 
+También se puede observar que la tasa de contacto y respuesta condicional en 
+contacto se ve incrementada con la edad de la persona seleccionada, por ejemplo, 
+mientras en las personas entre 18 y 29 años de edad la tasa de contacto es 
+aproximadamente un 55%, en las personas de 65 años y más es de un 66%, y la tasa 
+de respuesta en los más jóvenes (condicional en contacto) es 85.4% mientras en los 
+mayores 92.4%. Por otra parte, la tasa de respuesta y contacto son mayores en las 
+personas pertenecientes al IPS y en los pensionados. 
+ 
+Los Cuadros 6.5 y 6.6 muest ras los resultados anteriores por tipo de muestra, 
+separando entre panel y refresco, observando los mismos patrones, tasas de contacto 
+y respuesta mayores en las mujeres, en las personas con más edad, en los afiliados al 
+IPS y en los pensionados, para ambo s tipos de muestra. Además se puede notar que 
+las tasas de contacto y respuesta son mayores en la muestra panel que en la muestra 
+de refresco. 
+ 
+Cuadro 6.5 
+Características demográficas y previsional de la muestra, contactados y entrevistados 
+(excluye fallecidos) 
+Muestra Panel 
+ 
+ 
+  
+
+
+=== PDF PAGE 55 ===
+55 
+ 
+Cuadro 6.6 
+Características demográficas y previsional de la muestra, contactados y entrevistados 
+(excluye fallecidos) 
+Muestra Refresco 
+ 
+ 
+Los resultados anteriores nos permiten caracterizar de manera parcelada las 
+características que afectan la tasa de contacto y la tasa de respuesta condicional en 
+contacto, la estimación de un modelo logístico nos permite estimar como estas 
+características afectan conjuntamente la probabilidad de contacto y la probabilidad de 
+respuesta condicional en contacto. 
+ 
+El Cuadro 6.7 muestra los Odd Ratios de contacto estimados de acuerdo a las 
+características demográficas, donde además se incluyó la variable región,  y las 
+variables previsionales, tanto para la muestra panel como para la muestra de refresco. 
+Los resultados muestran que condicional en las otras características, las mujeres 
+tienen una mayor tasa de contacto que los hombres y que las personas más jóvenes  
+tienen una menor probabilidad de contacto, las personas del IPS en la muestra panel 
+tienen una menor probabilidad de contacto pero en la muestra de refresco una mayor 
+probabilidad de contacto, comparado con las personas afiliadas a AFP. 
+ 
+Con respecto a la probabilidad de respuesta condicional en contacto, también se 
+puede observar en el Cuadro 6.8 que las mujeres tienen mayor probabilidad de 
+respuesta que los hombres, que las personas más jóvenes del panel tienen menor 
+probabilidad de respuesta. 
+ 
+  
+
+
+=== PDF PAGE 56 ===
+56 
+ 
+Cuadro 6.7 
+Odd ratios estimados para los predictores de las variables de resultados de contacto 
+ 
+ 
+  
+
+
+=== PDF PAGE 57 ===
+57 
+ 
+Cuadro 6.8 
+Odd ratios estimados para los predictores de las variables de resultados de respuesta 
+condicional en contacto 
+ 
+7 Factores de Expansión EPS 2012 
+ 
+El factor de expansión para los entrevistados en la EPS 2012 se obtiene de la 
+multiplicación del factor base por el factor de ajuste por no respuesta y por el factor 
+de ajuste por post-estratificación. 
+ 
+
+
+=== PDF PAGE 58 ===
+58 
+ 
+1. Factor base: el factor base para la EPS 2012 se obtiene de manera distinta 
+dependiendo del tipo de muestra: 
+a. Muestra panel: en la muestra panel el factor base corresponde al factor 
+de expansión de la última ronda de entrevista, 2006 o 2009. 
+b. Muestra refresco: corresponde al inverso de la probabilidad de 
+selección (f=f1xf2) 
+2. Factor de ajuste por no respuesta: el procedimiento de ajuste del factor base 
+por la no respuesta, mediante el uso de propensity scores sigue las siguientes 
+etapas: 
+a. Estimar la probabilidad de contacto  para cada una de las sub -muestras 
+analizadas (panel y refresco) en función de los predictores descritos en 
+la sección anterior. Esto se hace a través de un modelo logístico binario. 
+b. Estimar la probabilidad de respuesta condicional en contacto para cada 
+una de las sub -muestras analizadas (panel y ref resco) en función de los 
+predictores descritos en la sección anterior. Esto se hace a través de un 
+modelo logístico binario. 
+c. Se estiman ambas probabilidades estimadas para obtener un factor de 
+ajuste del factor base denominado propensity score. 
+d. Para evitar un incremento excesivo en las varianzas tras el ajuste por no 
+respuesta mediante propensity score, se procede a agrupar los 
+propensity scores en deciles, y se reemplazan dentro de cada decil los 
+valores de propensity individuales, por los promedios de los  propensity 
+en dicho decil 
+e. Finalmente, el factor de ajuste del factor base corresponde al inverso del 
+promedio de los propensity obtenidos en el paso anterior. 
+3. Factor de ajuste por post- estratificación: para calcular este factor de ajuste de 
+determinar cel das de variables demográficas o previsionales sobre las cuales 
+queremos que la muestra quede bien representada en cuanto a su 
+proporcionalidad. El ratio entre la población efectiva y la muestra expandida 
+en cada celda corresponde al factor de ajuste por post-estratificación. 
+ 
+𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓2012 = 𝑓𝑓 × 𝑓𝑓
+𝑛𝑛𝑛𝑛 × 𝑓𝑓𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝 
+ 
+7.1 Factor base 
+ 
+Para la muestra panel el factor base corresponde al factor de expansión de la EPS 
+2009 si la persona fue entrevistada por última vez en la EPS 2009 o al factor de 
+expansión de la EPS 2006 si la persona fue entrevistada por última vez en el año 2006. 
+ 
+Para la muestra de refresco el factor base corresponde al inverso de la probabilidad 
+de selección, el que proviene de la multiplicación de la probabilidad de selección de 
+las unidades primarias (f1) y la probabilidad de selección de los individuos al interior 
+de las unidades primarias (f2), dependiendo de la comuna del individuo seleccionado 
+en el marco muestral recibe esta probabilidad y este factor base. 
+ 
+
+=== PDF PAGE 59 ===
+59 
+ 
+𝑓𝑓 = �
+𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓 𝑓𝑓𝑓𝑓𝑓𝑓 2009 𝑠𝑠𝑠𝑠 𝑓𝑓𝑓𝑓𝑓𝑓 𝑓𝑓𝑛𝑛𝑓𝑓𝑓𝑓𝑓𝑓𝑒𝑒𝑠𝑠𝑠𝑠𝑓𝑓𝑓𝑓𝑒𝑒𝑓𝑓 2009
+𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓 𝑓𝑓𝑓𝑓𝑓𝑓 2006 𝑠𝑠𝑠𝑠 𝑓𝑓𝑓𝑓𝑓𝑓 𝑓𝑓𝑛𝑛𝑓𝑓𝑓𝑓𝑓𝑓𝑒𝑒𝑠𝑠𝑠𝑠𝑓𝑓𝑓𝑓𝑒𝑒𝑓𝑓 2006
+𝑓𝑓1 × 𝑓𝑓2 𝑠𝑠𝑠𝑠 𝑓𝑓𝑠𝑠 𝑒𝑒𝑓𝑓 𝑙𝑙𝑓𝑓 𝑚𝑚𝑓𝑓𝑓𝑓𝑠𝑠𝑓𝑓𝑓𝑓𝑓𝑓 𝑒𝑒𝑓𝑓 𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑠𝑠𝑓𝑓𝑓𝑓         
+ 
+ 
+7.2 Factor de ajuste por no respuesta 
+ 
+A partir de los modelos logísticos bin arios presentados en los Cuadros 6.7 y 6.8 se 
+obtienen los propensity scores a través de la multiplicación de la estimación de las 
+probabilidades de contacto y respuesta condicional en contacto. Utilizando los valores 
+de los propensity scores se construyen deciles y para cada decil se calcula el factor de 
+ajuste por no respuesta. El Cuadro 7.1 muestra el factor de ajuste por no respuesta 
+(𝑓𝑓
+𝑛𝑛𝑛𝑛). 
+ 
+Cuadro 7.1 
+Tasa de respuesta y factor de ajuste por deciles de propensity score 
+ 
+ 
+7.3 Factor de ajuste por post-estratificación 
+ 
+El Cuadro 7.2 muestra las 28 celdas definidas para obtener el ajuste por post-
+estratificación, estas celdas se definen de manera tal que la muestra quede 
+representando la proporcionalidad de estas celdas de interés, además se posee la  
+restricción práctica de que las celdas deben poseer al menos 30 observaciones 
+muestrales. Además en este mismo cuadro se presenta el respectivo ajuste de la celda, 
+el que corresponde al ratio entre la población de la celda y la muestra expandida en la 
+celda. 
+ 
+  
+
+
+=== PDF PAGE 60 ===
+60 
+ 
+Cuadro 7.2 
+Celdas de post-estratificación y factor de ajuste 
+ 
+ 
+La base de datos factor_EPS2012.dta (en formato STATA) contiene los factores de 
+expansión elaborados a través de este estudio, donde se puede distinguir cada una de 
+las etapas involucradas en el calculo, la siguiente figura muestra el esquema de dicha 
+base de datos: 
+ 
+ 
+
+
+=== PDF PAGE 61 ===
+61 
+ 
+7.4 Factor de expansión panel EPS2002-EPS2012 
+ 
+Un total de 5920 personas han sido entrevistadas en la cinco rondas del estudio, dado 
+que la muestra del año 2002 fue c onstruida para representar a los afiliados al sistema 
+de pensiones, para el panel de entrevistados 2002 -2012 se computará un factor de 
+expansión que permita expandir esta muestra al total de afiliados al sistema de 
+pensiones en el año 2012. 
+ 
+El procedimiento para obtener los factores de expansión del panel es exactamente 
+igual al antes descrito, pero en vez de estimar un modelo para la probabilidad de 
+contacto y respuesta, se estima un modelo para la probabilidad de pertenecer al panel 
+o haber sido entrevis tado en las cinco rondas del estudio.  El Cuadro 7.3 muestra la 
+estimación del modelo de probabilidad de pertenecer al panel (haber sido 
+entrevistado en las cinco rondas del estudio) 
+ 
+Cuadro 7.3 
+Odd ratios estimados para los predictores de las variables de pertenecer al panel 
+ 
+ 
+
+
+=== PDF PAGE 62 ===
+62 
+ 
+Una vez estimado el modelo se procede a predecir la probabilidad de pertenecer al 
+panel, propensity, y luego se construyen quintiles para calcular la tasa de respuesta de 
+cada uno de ellos. El inverso de la tasa de respuesta es utilizado como factor de ajuste 
+por no respuesta. 
+ 
+Una vez ajustado el factor de expansión base  por la no respuesta, o en este caso, la no 
+pertenencia al panel, se procede a realizar el ajuste por post- estratificación. El Cuadro 
+7.4 muestra las celdas definidas para este ajuste así como el ajuste aplicado. 
+ 
+ 
+Cuadro 7.4 
+Celdas de post-estratificación y factor de ajuste 
+ 
+ 
+ 
+La base de datos factor_EPS2012_panel.dta (en formato STATA) contiene los factores 
+de expansión elaborados a través de este estudio para el panel de 5920 entrevistados 
+en las cinco rondas del estudio. Debido a la alta tasa de no respuesta en el panel de 
+datos obtenida a través del trabajo de campo del año 2012, y el fuerte sesgo en esta no 
+respuesta, algunos valores de los factores de expansión del panel son elevados lo que 
+genera mucha varianza y sensibilidad en las estimación, se recomienda utilizar estos 
+factores con cautela y teniendo presente que pueden generar estimaciones poco 
+robustas.
+ 
+  
+
+
+=== PDF PAGE 63 ===
+63 
+ 
+8 Referencias 
+ 
+Bravo, D., Heeringa, S., Quijada, S. y Vásquez, J. (2011). “ Estudio Diagnóstico, 
+Propuesta de Mejora y Definición Muestra EPS 2011”. 
+ 
+Casas-Cordero, Carolina. (2013.) “Comentarios y recomendaciones para la entrega de 
+resultados EPS 2012”. 
+ 
+Heeringa G., Steven y Melipillán, Edmundo. (2013). “Análisis Técnico de los resultados 
+del levantamiento de datos de la V Encuesta de Protección Social (2012)”. 
+ 
+Marshall, Pablo. (2013). “Análisis de la Encuesta de Previsión Social 2012”. 
+ 
+Subsecretaría de Previsión Social. “Minuta Muestra EPS 2012”. 
+ 
+Subsecretaría de Previsión Social (Octubre 2012). “Presentación: Procedimientos en 
+Muestra EPS 2012”. 
+ 
+Universidad Alberto Hurtado. (Noviembre 2013). Levantamiento de la Encuesta Panel 
+– Quinta Encuesta de Protección Social. Informe Final.  
+ 
+Valliant, R., Dever, J. and  Kreuter, F. (2013). “Practical tools for designing and 
+weighting survey samples”. Statistics for Social and Behavioral Sciences, Spinger: New 
+York. 
+  
+
+=== PDF PAGE 64 ===
+64 
+ 
+ANEXO A: Unidades Primarias de Muestreo EPS 2002 
+ 
+ 
+
+
+=== PDF PAGE 65 ===
+65 
+ 
+ 
+
+
+=== PDF PAGE 66 ===
+66 
+ 
+ 
+
+
+=== PDF PAGE 67 ===
+67 
+ 
+ 
+ 
+  
+
+
+=== PDF PAGE 68 ===
+68 
+ 
+Anexo B: Selección comunas EPS 2012 
+ 
+A continuación se presenta la selección de comunas realizada en el diseño muestral de 
+la EPS 2012 para la muestra de refresco. Las comunas seleccionadas se pueden inferir 
+al revisar el archivo con la muestra para la quinta ronda, separando la muestra panel 
+de la muestra de refresco. Así, lo que se presenta es un proceso de reconstrucción de 
+cómo se cree que fue realizada esta selección en base al procedimiento establecido y 
+las comunas que se observan en la muestra, ya que no se dispone de un programa (do  
+file) que nos entregue exactamente el procedimiento realizado. 
+ 
+Al observar el Cuadro B.1 podemos notar que en la primera región se seleccionó 
+muestra de refresco en las comunas de Iquiq ue y Alto Hospicio. La segunda comuna 
+no forma parte de las comunas seleccionadas en el diseño original. Según la 
+estimación de población de Casen 2011, debería ser incluida con probabilidad unitaria 
+si es que se hubieran redefinido las unidades primarias de muestre en la EPS 2012. 
+ 
+Cuadro B.1 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+En la segu nda región se seleccionaron las comunas de Antofagasta, Calama y 
+Tocopilla. Estas tres comunas fueron seleccionadas en el año 2002, las dos primeras 
+como comunas auto-representadas, y Tocopilla en presentación de un estrato. 
+ 
+Cuadro B.2 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+En la Tercera Región se seleccionaron las comunas de Copiapó y Chañaral, ambas 
+corresponden a comunas seleccionadas en el diseño original del año 2002, la primera 
+con probabilidad unitaria y la segunda para representar a un estrato. 
+ 
+Cuadro B.3 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+
+
+=== PDF PAGE 69 ===
+69 
+ 
+ 
+En esta región aparecen cinco comunas con muestra de refresco, La Serena, 
+Coquimbo, Ovalle, Vi cuña y Combarbalá. Estas comunas corresponden exactamente a 
+las seleccionadas en el año 2002, las primeras tres como comunas auto -presentadas, y 
+las últimas dos para representar los dos estratos de comunas de la región 
+ 
+Cuadro B.4 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+En la quinta región se observa lo mismo que en las regiones anteriores, las mismas 
+comunas del diseño original fueron seleccionadas para la muestra de refresco, y lo 
+mismo se observa en todas las restantes regiones, ver Cuadros B.5 a B.15. 
+ 
+De esta forma se puede concluir que se utilizaron las unidades primerias de muestreo 
+(comunas) definidas en el año 2002 para la selección de la muestra de refresco, la 
+única excepción es la comuna de Alto Hospicio que no fue seleccionada en el año 20 02 
+y tiene muestra de refresco. 
+ 
+ 
+  
+
+
+=== PDF PAGE 70 ===
+70 
+ 
+Cuadro B.5 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+Cuadro B.6 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 71 ===
+71 
+ 
+Cuadro B.7 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+Cuadro B.8 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+ 
+
+
+=== PDF PAGE 72 ===
+72 
+ 
+Cuadro B.9 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+Cuadro B.10 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+  
+
+
+=== PDF PAGE 73 ===
+73 
+ 
+Cuadro B.11 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+Cuadro B.12 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+Cuadro B.13 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 74 ===
+74 
+ 
+Cuadro B.14 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+ 
+Cuadro B.15 
+Comunas seleccionadas en refresco EPS 2012 
+ 
+  
+
+
+=== PDF PAGE 75 ===
+75 
+ 
+Anexo C: Probabilidades de selección en EPS 2012 
+C.1 Antiguos afiliados 
+C.1.1 Comunas auto-representadas 
+ 
+ 
+
+
+=== PDF PAGE 76 ===
+76 
+ 
+C.1.2 Comunas no auto-representadas 
+ 
+ 
+*La comuna de Alto Hospicio no pertenece a las comunas del diseño original de la EPS y con la 
+información proporcionada no se puede determinar si fue seleccionada para representar un estr ato o 
+auto-representada, se asumirá que fue seleccionada con probabilidad unitaria.  
+  
+
+
+=== PDF PAGE 77 ===
+77 
+ 
+C.2 Nuevos afiliados 
+C.2.1 Comunas auto-representadas 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 78 ===
+78 
+ 
+C.2.2 Comunas no auto-representadas 
+ 
+ 
+*La comuna de Alto Hospicio no pertenece a las comunas del diseño original de la EPS y con la 
+información proporcionada no se puede determinar si fue seleccionada para representar un estrato o 
+auto-representada, se asumirá que fue seleccionada con probabilidad unitaria.  
+ 
+  
+
+
+=== PDF PAGE 79 ===
+79 
+ 
+C.3 No afiliados 
+C.3.1 Comunas auto-representadas 
+ 
+ 
+
+
+=== PDF PAGE 80 ===
+80 
+ 
+C.3.2 Comunas no auto-representadas 
+ 
+ 
+*La comuna de Alto Hospicio no pertenece a las comunas del diseño original de la EPS y con la 
+información proporcionada no se puede determinar si fue seleccionada para representar un estrato o 
+auto-representada, se asumirá que fue seleccionada con probabilidad unitaria. 
+ 
+ 
+ 
+ 
+ 
+ 

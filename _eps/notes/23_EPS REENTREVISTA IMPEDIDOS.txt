@@ -1,0 +1,558 @@
+
+=== PDF PAGE 1 ===
+            
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+“REENTREVISTA 
+IMPEDIDOS”
+2019
+COMUNA
+FOLIO -
+Fecha de la Entrevista
+2020
+Hora de la Entrevista
+Inicio
+Término
+ “Buenos (días/tardes/noches), mi nombre es ___________ y pertenezco a 
+la empresa IPSOS.      En conjunto con la Subsecretaria de Previsión Social, 
+del Ministerio del Trabajo, estamos aplicando la Encuesta de Protección Social 
+con el propósito de obtener información para mejorar políticas públicas en el 
+ámbito de las pensiones. 
+Por efectos de la Pandemia, estamos aplicando una versión resumida de la 
+Encuesta que el/la entrevistado/a respondió en el pasado, ahora será de 
+manera telefónica y tendrá una duración aproximada 10 minutos. A nombre 
+de Ipsos, y como una forma de valorar su tiempo nos gustaría que recibiera un 
+Gift Card de regalo de 5 mil pesos para compras en supermercados y tiendas 
+de retail.
+Le recordamos que sus respuestas son confidenciales y su participación es 
+completamente voluntaria. 
+Nota al encuestador: Si el entrevistado desea revisar veracidad del estudio 
+o contactarse algún encargado del mismo, puede entregar la siguiente 
+información:
+Información general
+Página web: http://www.ipsos.cl/eps/
+Encargados del estudio
+Correo electrónico IPSOS: info.eps@ipsoschile.cl
+Correo electrónico Subsecretaría de Previsión Social: atencionEPS@
+previsionsocial.gob.cl 
+Teléfono Subsecretaría de Previsión Social: (56-2) 28279819
+AUTORIZACIÓN PARA GRABAR ENTREVISTA
+Para fines de control de calidad se grabarán algunas preguntas durante la entrevista.
+
+=== PDF PAGE 2 ===
+Teléfono1 código de área - fono Comuna: Región:
+Villa / Población: Localidad:
+Correo electrónico (e_mail)
+Dirección:
+EL SELECCIONADO SE CAMBIÓ DE DIRECCIÓN A: 
+
+=== PDF PAGE 3 ===
+Encuesta de Protección Social 2019- Reentrevista
+3
+  Módulo I: Información Entrevistado
+Nombre: Apellido Paterno: Apellido Materno:
+P1.- ¿Cuál es el nombre de pila del entrevistado? (PERSONA IMPEDIDA)
+P2.- Sexo del entrevistado (a):
+1. Hombre               2. Mujer 
+P3.- ¿Cuál es la relación de parentesco de el/la entrevistado(a) con el Jefe(a) de Hogar? 
+        ESCUCHAR RESPUESTA Y CLASIFICAR 
+1. Jefe(a) del hogar 2. Cónyuge o Pareja 3. Hijo(a) / Hijastro(a)
+11. Otro familiar 12. No familiar
+P18.- ¿Cómo calificarías el estado de salud del entrevistado/a?
+        LEER ALTERNATIVAS
+1. Muy Bueno 2. Bueno 3. Regular 
+4. Malo 5. Muy Malo
+CCI100. Si compara los ingresos actuales de su hogar con los recibidos en enero de 2020, estos, ¿disminuyeron, se mantuvieron o 
+aumentaron por efectos relacionados con la Pandemia Covid 19? 
+        ESCUCHAR Y CLASIFICAR 
+1. Disminuyeron 2. Se mantuvieron 3. Aumentaron 
+P4.- ¿Cuál es el estado civil de el/la entrevitado (a)?
+        ESCUCHAR RESPUESTA Y CLASIFICAR 
+1. Casado(a) 2. Conviviente 3. Anulado(a)
+4. Con pareja a través de 
+Acuerdo de Unión Civil 
+(AUC)
+5. Separado(a) de unión 
+legal
+6. Separado(a) de 
+unión de hecho
+7. Viudo(a) 8. Soltero(a) 9. Divorciado 88. No responde
+99. No sabe
+P5.- Aproximadamente ¿cuál ha sido el ingreso mensual del hogar del entrevistado/a en los últimos 12 meses?
+INDIQUE EL MONTO MENSUAL PROMEDIO EN $
+No Sabe 8
+No responde 9
+
+=== PDF PAGE 4 ===
+Encuesta de Protección Social 2019- Reentrevista
+4
+Módulo I: Información Entrevistado                                                                         
+Módulo II: Activos y Patrimonio del Entrevistado y Total del Hogar                                                                        
+  
+CCI101. ¿Por qué disminuyeron/ aumentaron?
+     ESCUCHAR Y ANOTAR MOTIVO 
+1. Disminuyeron por pérdida del empleo de algún miembro del hogar.
+2. Disminuyeron por suspensión de temporal de empleo de algún miembro del hogar.
+3. Disminuyeron por término de proyecto o actividad laboral.
+4. Disminuyeron por el cierre obligado de las actividades en la que se desempeñaba. 
+5. Disminuyeron los ingresos por menores ventas de negocio propio o actividad familiar
+6. Aumentaron los ingresos por mayores ventas de negocio o actividad económica.
+7. Aumentaron los ingresos por cambio de empleo.
+8. Otro, ¿cuál? ____________________
+CCI102. En los últimos 6 meses, ¿cuál de los siguientes subsidios o ayudas implementados por el Estado para enfrentar la Pandemia Covid 19 ha 
+recibido…?
+      LEER ALTERNATIVAS
+SÍ NO
+1 Bono COVID-19 1 2
+2 Ingreso Familiar de Emergencia 1 2
+3 Subsidio Ingreso Mínimo Garantizado 1 2
+4 Ayuda para pago de arriendos y subsidios para crédito hipotecario 1 2
+5 Préstamo Solidario del Estado 1 2
+D41. ¿Cuál es el gasto aproximado mensual que su hogar realiza en…? 
+          INDIQUE MONTO EN $. SI NO TIENE GASTO EN ALGÚN ÍTEM, ANOTE CERO.
+D7. La vivienda que ocupa es:
+1. Propia pagada 
+2. Propia pagándose               Pasar a D100
+3.	 Propia	compartida	con	otros	hogares	
+4. Arrendada                 Pasar a D101
+5. Cedida por empresa 
+6. Cedida por familiar o amigo 
+7. Allegados 
+8.	 Usufructo	
+9. Heredada 
+88. No responde (NO LEER) 
+99. No sabe (NO LEER)
+D100. Durante el último mes, ¿Tuvo 
+problemas para pagar su crédito 
+hipotecario por causas relacionadas con 
+la pandemia? 
+      ESCUCHAR Y CLASIFICAR
+1. Sí
+2. No
+D101. Durante el último mes, ¿Tuvo 
+problemas para pagar su arriendo? 
+      ESCUCHAR Y CLASIFICAR
+1. Sí
+2. No
+1 Alimentación
+2 Vestuario
+3 Agua
+4 Luz
+5 Gas
+6 Teléfono
+7 Cable
+8 Gastos Comunes 
+9 Otro Servicio Básico
+10 Transporte y movilización
+(micro, metro, buses o combustible)
+11 Servicio doméstico
+
+=== PDF PAGE 5 ===
+Encuesta de Protección Social 2019- Reentrevista
+5
+Módulo II: Activos y Patrimonio del Entrevistado y Total del Hogar                                                                        
+  
+D38. Si debido a una emergencia usted 
+necesita conseguir en total medio 
+año de ingreso de su hogar, ¿podría 
+conseguir dicha suma de dinero, en el 
+plazo de un mes?:
+      ESCUCHAR Y CLASIFICAR
+1. Sí
+2. No
+8.      No responde 
+9.     No sabe 
+DC105. Durante la última semana, ¿usted o algún miembro de su hogar…? 
+       ESCUCHAR Y CLASIFICAR
+SÍ No
+1 …ha tenido que recurrir a préstamos o transferencias de familiares o 
+amigos para cubrir los gastos del hogar
+1 2
+2 …ha recibido ayuda económica de parte de su empleador 1 2
+3 …ha vendido activos tales como (dar ejemplos) 1 2
+4 …ha otorgado préstamos o ayuda monetaria a amigos o familiares 1 2
+5 …dejó de recibir pagos por concepto de arriendo de inmuebles o 
+vehículos
+1 2
+6 …ha usado sus fondos del seguro de cesantía 1 2
+7 …ha usado o hará uso de sus fondos de AFP 1 2
+DC106. (SÓLO SI DC105_7=1) ¿A qué destinará o destinó el dinero retirado de sus fondos de AFP? 
+     ESCUCHAR Y CLASIFICAR, MÚLTIPLE
+1. Compra de alimentos e insumos básicos 
+2. Pago de deudas de consumo 
+3. Pago de cuentas de servicios básicos
+4. Pago de arriendo o crédito hipotecario 
+5. Inversión para algún proyecto o negocio
+6. Compra de otros artículos de consumo
+7. Compra de artículos para acondicionar el hogar por causa de la pandemia (electrodomésticos, artículos tecnológicos, etc). 
+8. Ahorro para proyectos futuros
+9. Dar el pie para un auto
+10. Inversión en Fondos Mutuos, depósito a plazo.
+11. Cuenta 2 o Cuenta de Ahorro Voluntario
+12. Otro, ¿Cuál?
+88.            No sabe
+99.            No responde
+
+=== PDF PAGE 6 ===
+Encuesta de Protección Social 2019- Reentrevista
+6
+Módulo III: Salud 
+Módulo IV: Historia Laboral 
+  
+  
+F100. ¿Usted o algún miembro de su hogar ha sido diagnosticado con 
+COVID positivo?:
+     ESCUCHAR Y CLASIFICAR. SI REPONDE SÍ, PREGUNTAR ¿QUIÉN?
+1.	 Sí,	el	entrevistado	fue	diagnosticado
+2.	 Sí,	otro	miembro	del	hogar
+3. No, nadie 
+8. No sabe 
+9. No responde 
+F101. ¿Desde que comenzó la Pandemia usted recibió 
+asistencia médica de emergencia? 
+      ESCUCHAR Y CLASIFICAR
+1. Sí
+2. No
+NV200. Según lo registrado, la última vez que respondió la Encuesta 
+de Protección Social fue en_________________ de _____________
+	En	esta	fecha	declaró	estar:_______________________________
+LEER ACTIVIDAD Y LUGAR SI ESTABA TRABAJANDO
+Actividad: ______________________
+Empresa o lugar de trabajo: ____________________
+¿Está	correcto?
+1. Sí
+2. No                    Pasar a NV200_i
+8.      No responde
+9.      No sabe 
+NV200_i. ¿Me podría indicar qué información no está 
+correcta? 
+						ENTREVISTADOR:	MODIFICAR	INFORMACIÓN	QUE	EL	
+ENTREVISTADO DECLARA COMO INCORRECTA
+1.	 Situación	laboral:	__________________________
+2.	 Actividad:	________________________________
+3.						Lugar:	___________________________________
+P28. Ahora le pediré que describa todas las situaciones que el/la entrevistado/a haya realizado desde la última vez que respondió la 
+encuesta hasta hoy  
+       POR SITUACIONES, ENTENDEREMOS HABER ESTADO TRABAJANDO, CESANTE, BUSCANDO TRABAJO POR PRIMERA VEZ O INACTIVO 
+(ESTAR ESTUDIANDO, ESTAR JUBILADO, DEDICARSE A QUEHACERES DEL HOGAR, ETC).
+
+=== PDF PAGE 7 ===
+Encuesta de Protección Social 2019- Reentrevista
+8
+SÓLO	SI 	ESTÁ/	ESTABA 	TRABAJANDO	 (P29=1)
+P30.  ¿Cuál era su 
+ocupación u oficio? 
+Si en este período 
+realizaba más de un 
+trabajo, refiérase al 
+principal
+  DESCRIBA 
+DETALLADAMENTE 
+LA ACTIVIDAD QUE 
+REALIZA(BA)
+P0. ¿Cuál es 
+(era) el nombre 
+de la empresa, 
+institución u 
+hogar que le pagó 
+el sueldo en ese 
+trabajo?
+  
+P31.  Este trabajo era de tipo: 
+     LEER ALTERNATIVAS
+1.	Permanente
+2.	De	temporada	o	estacional
+3.	Ocasional	o	eventual
+4. A prueba
+5.	Por	plazo	o	tiempo	determinado
+8. No responde
+9. No sabe 
+TODOS
+ P29. Me podría indicar 
+en qué situación se 
+encontraba en 
+_________ de ________
+  LEER ALTERNATIVAS 
+1. Trabajando
+2.	Cesante
+3.	Buscando	trabajo	por	1ª	vez
+4.	Inactivo
+8.	No	sabe/No	responde
+P28.i.m- 
+P28.i.a
+Mes y año 
+de inicio
+P28.t.mX – 
+P28.t.aX
+¿Hasta 
+cuándo se 
+encontró 
+en esta 
+situación?
+Indique mes 
+y año
+  
+P28.i.m. P28. i.a. P28.t.m. P28.t.a
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+Módulo IV: Historia Laboral 
+                                                                              
+
+=== PDF PAGE 8 ===
+Encuesta de Protección Social 2019- Reentrevista
+9
+SÓLO 	SI	ESTÁ/	ESTABA 	TRABAJANDO 	COMO 	DEPENDIENTE 	DESDE 	ABRIL 	2020 SÓLO	SI 	PC100=1 TODOS
+P33. ¿En esta ocupación, el/la 
+fallecido(a) trabajaba como:
+  LEER ALTERNATIVAS
+1.	Patrón	o	empleador
+2.	Trabajador	por	cuenta	propia
+3.	Empleado	u	Obrero	del	Sector	Público
+4.	Empleado	u	Obrero	del	Sector	Privado
+5.	Servicio	Doméstico	Puertas	Adentro
+6.	Servicio	Doméstico	Puertas	Afuera
+7. Familiar No remunerado
+8. FF.AA. y de Orden
+PC100. ¿Su empleador modificó 
+su contrato de trabajo a raíz de la 
+Pandemia por Covid 19?
+1. Sí                Pasar P28.t-m- P28.t.a
+2. No
+  
+P28.t.mY – P28.t.aY .
+¿Cuándo cambiaron sus 
+condiciones laborales o 
+contractuales? Indique mes 
+y año
+P28.t.m – P28.t.a
+     ANOTAR MES Y AÑO DE 
+TÉRMINO DE LA SITUACIÓN 
+OCUPACIOINAL
+    P28.t.mY  P28.t.aY  P28.t.m  P28.t.a
+Módulo IV: Historia Laboral                                                                            
+
+=== PDF PAGE 9 ===
+Encuesta de Protección Social 2019- Reentrevista
+10
+SÓLO 	SI	SU	EMPLEADOR 	MODIFICÓ 	SU	CONTRATO 	DE	TRABAJO 	A	RAÍZ 	DE	LA	
+PANDEMIA 	POR	COVID 	19	(PC100=1)
+PC101. Usted indicó que en este trabajo se modificaron sus 
+condiciones laborales. Por favor, señale cuál o cuáles modificaciones 
+ocurrieron…
+         LEER  ALTERNATIVAS 
+Se suspendió su 
+contrato de trabajo 
+por acto de autoridad 
+(cuarentena) por 
+medio de la Ley de 
+Protección del Empleo
+Se acordó un pacto 
+de suspensión 
+temporal del contrato 
+de trabajo por 
+medio de la Ley de 
+Protección del Empleo 
+suspensión temporal 
+del contrato de 
+trabajo por medio de 
+la Ley de Protección 
+del Empleo
+Se acordó un pacto de 
+reducción temporal de 
+la jornada de trabajo 
+por medio de la Ley de 
+Protección del Empleo
+Sí No Sí No Sí No
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+SÓLO	SI 	ESTÁ/ESTABA 	TRABAJANDO	 (P29=1)
+P32. ¿Qué 
+actividad 
+realiza la 
+empresa, 
+industria o 
+servicio donde 
+desempeñaba 
+este trabajo? 
+P34. En este 
+trabajo, el/la 
+entrevistado/a, 
+¿había firmado 
+contrato de 
+trabajo? 
+  SI DICE 
+QUE NO, 
+PREGUNTAR 
+SI TIENE 
+CONTRATO 
+Y	NO	FIRMÓ	
+O NO TIENE 
+CONTRATO
+1. Sí, tenía contrato 
+y lo firmó
+2. No, tenía 
+contrato, pero no 
+lo firmó
+3. No tenía contrato
+8. No responde
+9. No sabe
+P36. ¿Cuál fue el motivo por el 
+que dejó este trabajo? SA
+  ESCUCHA Y CLASIFICAR
+12. No aplicable (fallecido no se 
+cambió de trabajo)
+1. Mutuo acuerdo de las partes
+2. Renuncia
+3. Vencimiento del contrato o fin 
+del trabajo o servicio que dio 
+origen al contrato
+4. Despido por causa imputable a 
+trabajador
+5. Despido por necesidades de la 
+zempresa
+6. Cierre de la empresa
+7. Encontró un mejor trabajo
+8. Condiciones de salud o invalidez
+9. Se pensionó
+10. Caso fortuito o fuerza mayor
+11. Otra
+88. No responde
+99.No sabe
+N° B.13 B.16.a B.17
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+  Módulo IV: Historia Laboral                                                                              
+
+=== PDF PAGE 10 ===
+Encuesta de Protección Social 2019- Reentrevista
+11
+SÓLO 	SI	SU	EMPLEADOR 	MODIFICÓ 	SU	CONTRATO 	DE	TRABAJO 	A	RAÍZ 	DE	LA	
+PANDEMIA 	POR	COVID 	19	(PC100=1)
+PC101. Usted indicó que en este trabajo se modificaron sus 
+condiciones laborales. Por favor, señale cuál o cuáles modificaciones 
+ocurrieron…
+         LEER  ALTERNATIVAS 
+Se suspendió su 
+contrato de trabajo 
+por acto de autoridad 
+(cuarentena) por 
+medio de la Ley de 
+Protección del Empleo
+Se acordó un pacto 
+de suspensión 
+temporal del contrato 
+de trabajo por 
+medio de la Ley de 
+Protección del Empleo 
+suspensión temporal 
+del contrato de 
+trabajo por medio de 
+la Ley de Protección 
+del Empleo
+Se acordó un pacto de 
+reducción temporal de 
+la jornada de trabajo 
+por medio de la Ley de 
+Protección del Empleo
+Sí No Sí No Sí No
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+  Módulo IV: Historia Laboral                                                                               
+SÓLO 	SI	SU	EMPLEADOR 	MODIFICÓ 	SU	CONTRATO 	DE	TRABAJO 	A	RAÍZ 	DE	LA	
+PANDEMIA 	POR	COVID 	19	(PC100=1)
+PC101. Usted indicó que en este trabajo se modificaron sus 
+condiciones laborales. Por favor, señale cuál o cuáles modificaciones 
+ocurrieron…
+         LEER  ALTERNATIVAS 
+Sus empleadores 
+redujeron su jornada 
+laboral
+Sus empleadores 
+redujeron su jornada 
+laboral
+Sus empleadores 
+cambiaron sus actividades 
+o tareas
+Sí No Sí No Sí No
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+1 2 1 2 1 2
+SOLO	SI 	ESTÁ/ESTABA 	INACTIVO	 (P29=4)
+P37. ¿Cuál fue la razón de la inactividad del entrevistado/a? 
+  ESCUCHA Y CLASIFICAR
+1. Enfermedad o discapacidad
+2. Cuidado de los niños
+3. Otras responsabilidades personales o familiares
+4. Embarazo
+5. Estudiaba o se estaba capacitando
+6. Realizaba la práctica
+7. Quehaceres de hogar
+8. Jubilado, pensionado o montepío
+9. Rentista
+10. No le interesaba trabajar
+11. Estaba haciendo el servicio militar
+12. Cuidados de personas mayores o personas con discapacidad
+13. Cree que no encontrará trabajo
+14. Se cansó de buscar empleo
+15. Algún miembro del hogar no le permite trabajar
+16. Vacaciones o permisos
+17. Licencia médica
+18. Por horario o jornada variable o flexible
+19. Huelga, conflicto laboral
+20. Trabajo es estacional
+21. No tuvo pedidos (clientes)
+22. Suspensión temporal del trabajo
+23. Otro
+88. No responde
+99. No sabe
+B.17
+
+=== PDF PAGE 11 ===
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+2019

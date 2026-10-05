@@ -1,0 +1,622 @@
+
+=== PDF PAGE 1 ===
+            
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+“CONTINUIDAD 
+IMPEDIDOS”
+2019
+COMUNA
+FOLIO -
+Fecha de la Entrevista
+2020
+Hora de la Entrevista
+Inicio
+Término
+ “Buenos (días/tardes/noches), mi nombre es ___________ y pertenezco a 
+la empresa IPSOS.      En conjunto con la Subsecretaria de Previsión Social, 
+del Ministerio del Trabajo, estamos aplicando la Encuesta de Protección Social 
+con el propósito de obtener información para mejorar políticas públicas en el 
+ámbito de las pensiones. 
+Por efectos de la Pandemia, se está aplicando una encuesta para 
+actualizar la información que (INSERTAR  NOMBRE DE ENTREVISTADO) 
+________________________respondió en el pasado, ahora será de manera 
+telefónica y tendrá una duración aproximada 10 minutos. A nombre de Ipsos, 
+y como una forma de valorar su tiempo nos gustaría que recibiera un Gift Card 
+de regalo de 5 mil pesos para compras en supermercados y tiendas de retail.
+Le recordamos que sus respuestas son confidenciales y su participación es 
+completamente voluntaria. 
+Nota al encuestador: Si el entrevistado desea revisar veracidad del estudio 
+o contactarse algún encargado del mismo, puede entregar la siguiente 
+información:
+Información general
+Página web: http://www.ipsos.cl/eps/
+Encargados del estudio
+Correo electrónico IPSOS: info.eps@ipsoschile.cl
+Correo electrónico de
+Subsecretaría de Previsión Social: atencionEPS@previsionsocial.gob.cl 
+Teléfono Subsecretaría de Previsión Social: (56-2) 28279819
+AUTORIZACIÓN PARA GRABAR ENTREVISTA
+Para fines de control de calidad se grabarán algunas preguntas durante la entrevista.
+
+=== PDF PAGE 2 ===
+Teléfono1 código de área - fono Comuna: Región:
+Villa / Población: Localidad:
+Correo electrónico (e_mail)
+Dirección:
+EL SELECCIONADO SE CAMBIÓ DE DIRECCIÓN A: 
+
+=== PDF PAGE 3 ===
+Encuesta de Protección Social 2019- Continuidad Impedido
+3
+  Módulo I: HOGAR 
+P3.- ¿Cuál es la relación de parentesco de el/la entrevistado(a) con el Jefe(a) de Hogar? 
+        ESCUCHAR RESPUESTA Y CLASIFICAR 
+1. Jefe(a) del hogar 2. Cónyuge o Pareja 3. Hijo(a) / Hijastro(a)
+11. Otro familiar 12. No familiar
+P6 ¿Cómo evaluaría usted que es la memoria del entrevistado/a en la actualidad?
+        LEER ALTERNATIVAS
+1. Muy Buena 2. Buena 3. Regular 
+4. Mala 5. Muy Mala
+P4.- ¿Cuál es el estado civil de el/la entrevitado (a)?
+        ESCUCHAR RESPUESTA Y CLASIFICAR 
+1. Casado(a) 2. Conviviente 3. Anulado(a)
+4. Con pareja a través de 
+Acuerdo de Unión Civil 
+(AUC)
+5. Separado(a) de 
+unión legal
+6. Separado(a) de unión 
+de hecho
+7. Viudo(a) 8. Soltero(a)
+9. Divorciado 88. No responde 99. No sabe
+P5.- Aproximadamente ¿cuál ha sido el ingreso mensual del hogar del entrevistado/a en los últimos 12 meses?
+INDIQUE EL MONTO MENSUAL PROMEDIO EN $
+No Sabe 8
+No responde 9
+P1.-Nombre de pila de entrevistado (PERSONA IMPEDIDA)
+     
+P2.- Sexo del entrevistado 
+    Nombre: Apellido Paterno: Apellido Materno:
+1. Hombre               2. Mujer 
+P7-P17. El/la entrevidado/a 
+        LEER CADA PREGUNTA Y ESCALA. RECORDAR ESCALA CADA 3 PREGUNTAS 
+Sí
+es 
+capaz
+Nunca lo ha 
+hecho pero 
+podría hacerlo
+Con 
+alguna 
+dificultad
+Nunca lo ha 
+hecho y tendría 
+dificultad ahora
+Necesita 
+ayuda
+No 
+es 
+capaz
+P7 ¿Es capaz de administrar su propio dinero? 1 2 3 4 5 6
+P8 ¿Es capaz de hacer compras solo(a) (por ejemplo la comida o ropa)? 1 2 3 4 5 6
+P9 ¿Es capaz de calentar el agua para el café o el té y apagar la cocina? 1 2 3 4 5 6
+P10 ¿Es capaz de preparar la comida? 1 2 3 4 5 6
+P11 ¿Es capaz de mantenerse al tanto de los acontecimientos y de lo que pasa en el 
+vecindario? 1 2 3 4 5 6
+P12 ¿Es capaz de poner atención, entender y discutir un programa de radio, televi-
+sión o un artículo del periódico? 1 2 3 4 5 6
+P13 ¿Es capaz de recordar compromisos y acontecimientos familiares? 1 2 3 4 5 6
+P14 ¿Es capaz de administrar y manejar sus propios medicamentos? 1 2 3 4 5 6
+P15 ¿Es capaz de andar por el vecindario y encontrar el camino de vuelta a casa? 1 2 3 4 5 6
+P16 ¿Es capaz de saludar a sus amigos(as) adecuadamente? 1 2 3 4 5 6
+P17 ¿es capaz de quedarse solo(a) en casa sin problemas? 1 2 3 4 5 6
+
+=== PDF PAGE 4 ===
+Encuesta de Protección Social 2019- Continuidad Impedidos
+4
+Módulo I: Hogar                                                                        
+P19. El/la entrevistado/a, ¿Tiene alguna de las siguientes condiciones permanentes o de larga duración? 
+      LEER ALTERNATIVAS
+SÍ NO
+Dificultad para hablar 1 2
+Dificultad para desplazarse 1 2
+Dificultad para oír 1 2
+Dificultad para ver 1 2
+Dificultad para escribir o tomar cosas con las manos 1 2
+Dificultad para memorizar o recordar 1 2
+P20. A el/la entrevistado(a), ¿le ha sido diagnosticada alguna de las siguientes condiciones médicas por un doctor? 
+       LEER ENFERMEDADES UNA A UNA Y ESPERAR RESPUESTA
+SÍ NO NR NS
+1 Asma o Enfisema pulmonar 1 2 8 9
+2 Depresión 1 2 8 9
+3 Diabetes 1 2 8 9
+4 Hipertensión o Presión alta 1 2 8 9
+5 Problemas cardíacos 1 2 8 9
+6 Cáncer 1 2 8 9
+7 Artritis o Artrosis 1 2 8 9
+8 Enfermedad renal 1 2 8 9
+9 Derrame cerebral 1 2 8 9
+10 Enfermedad mental 1 2 8 9
+11 VIH / SIDA 1 2 8 9
+12 Covid 19 1 2 8 9
+13 Sobrepeso u obesidad 1 2 8 9
+      
+P18 ¿Cómo calificaría el estado de salud del entrevistado?
+        LEER ALTERNATIVAS
+1. Muy Bueno 2. Bueno 3. Regular 
+4. Malo 5. Muy Malo
+P21. El/la entrevistado/a, ¿Toma medicamentos o remedios 
+diariamente?
+1. Sí
+2. No                    Pasa a P.23
+P .22. El/la entrevistado/a, ¿En qué medida necesita tomar 
+medicamentos para realizar sus actividades diarias? 
+    
+     LEER ALTERNATIVAS 
+1. Nada
+2. Poco
+3. Bastante
+4. Mucho
+P23. ¿A qué sistema previsional de salud pertenece el/la 
+entrevistado/a)?
+   SI ENTREVISTADO/A DICE FONASA, PREGUNTAR POR
+ EL GRUPO (A, B, C, O D)
+1. Sistema público FONASA Grupo A (indigente)
+2. Sistema público FONASA Grupo B
+3. Sistema público FONASA Grupo C
+4. Sistema Público FONASA Grupo D
+5. Sistema público FONASA. No sabe el grupo
+6. FF.AA. y de Orden
+7. ISAPRE. Especifique 
+8. Ninguno (Particular)           Pase a P.26.a
+9. Otro Sistema. Especifique 
+88. No Responde            Pase a P.26.a
+99. No sabe            Pase a P.26.a
+
+=== PDF PAGE 5 ===
+Encuesta de Protección Social 2019- Continuidad Impedido
+5
+Módulo I: Hogar                                                                        
+  
+P24. ¿El entrevistado/a es cotizante o carga familiar? 
+1. Cotizante           Pasa a P26a
+2. Carga  
+8. No responde         Pasa a P26a
+9. No sabe             Pasa a P26a
+P25. El/la entrevistado(a), ¿de quién es carga familiar?
+   ESCUCHAR RESPUESTA Y CLASIFICAR 
+1. Padre
+2. Madre
+3. Hijo(a)
+4. Cónyuge
+5. Otro
+8. No Responde
+9. No sabe
+P26a El/la entrevistado/a ¿cuánta dificultad tiene para realizar las siguientes actividades? 
+       LEER ACTIVIDADES, LEER ESCALA AL PRINCIPIO Y LUEGO CADA 3 ACTIVIDADES
+Ninguna Leve Moderada Severa Extrema/ no 
+puede hacerlo
+1 Comer (incluyendo cortar comida y llenar los vasos) 1 2 3 4 5
+2 Bañarse (incluyendo entrar y salir de la tina) 1 2 3 4 5
+3 Moverse/desplazarse dentro de la casa 1 2 3 4 5
+4 Utilizar el W.C. o retrete 1 2 3 4 5
+5 Acostarse y levantarse de la cama 1 2 3 4 5
+6 Vestirse 1 2 3 4 5
+7 Salir a la calle 1 2 3 4 5
+8 Hacer compras o ir al médico 1 2 3 4 5
+9 Realizar sus tareas del hogar 1 2 3 4 5
+10 Hacer o recibir llamadas 1 2 3 4 5
+11 Caminar largas distancias 1 2 3 4 5
+12 Ejercicio extenuante o intenso 1 2 3 4 5
+      
+P .26.b (SÓLO SI P26a>1) El/la entrevistado/a, ¿con qué frecuencia recibió ayuda de otra persona para realizar las siguientes actividades? 
+       LEER ACTIVIDADES, LEER ESCALA AL PRINCIPIO Y LUEGO CADA 3 ACTIVIDADES
+Nunca Casi nunca Algunas 
+veces Siempre No sabe/ No 
+responde
+1 Comer (incluyendo cortar comida y llenar los vasos) 1 2 3 4 8
+2 Bañarse (incluyendo entrar y salir de la tina) 1 2 3 4 8
+3 Moverse/desplazarse dentro de la casa 1 2 3 4 8
+4 Utilizar el W.C. o retrete 1 2 3 4 8
+5 Acostarse y levantarse de la cama 1 2 3 4 8
+6 Vestirse 1 2 3 4 8
+7 Salir a la calle 1 2 3 4 8
+8 Hacer compras o ir al médico 1 2 3 4 8
+9 Realizar sus tareas del hogar 1 2 3 4 8
+10 Hacer o recibir llamadas 1 2 3 4 8
+11 Caminar largas distancias 1 2 3 4 8
+12 Ejercicio extenuante o intenso 1 2 3 4 8
+      
+P27a. ¿Requiere el entrevistado/a o algún miembro de su hogar 
+ser cuidado por alguna persona?
+1. Sí
+2. No          Pase a NV200
+P .27.b Esta persona que cuida del entrevistado/a o de algún 
+miembro de su hogar es:
+   LEER ALTERNATIVAS
+1. Miembro del hogar
+2. Familiar que no pertenece al hogar
+3. Personal de servicio
+
+=== PDF PAGE 6 ===
+Encuesta de Protección Social 2019- Continuidad Impedidos
+6
+P .27.c ¿Cuántos días al mes, en promedio esta persona lo cuida?
+ INDIQUE DÍAS 
+P .27.d ¿Esta persona recibe alguna remuneración por cuidar al 
+entrevistado o de algún integrante de su hogar?  
+1. Sí
+2. No        Pase a NV200
+P .27.e ¿Cuánto le pagan al mes? 
+ INDIQUE MONTO EN $________________
+8. No responde 
+9. No sabe 
+NV200. Según lo registrado, la última vez que respondió la 
+Encuesta de Protección Social fue en ______________ de 
+__________.
+En esta fecha, usted declaró estar: 
+__________________________
+     LEER ACTIVIDAD Y LUGAR SI ESTABA TRABAJANDO 
+Actividad:__________________________________
+Empresa o lugar de trabajo: ___________________
+¿Está correcto?
+1. Sí
+2. No
+8. No responde
+9. No sabe
+TODOS SÓLO SI ESTÁ/ESTABA TRABAJANDO (P29=1)
+P28.i.m- 
+P28.i.a
+Mes y año 
+de inicio
+P28.t.mX – 
+P28.t.aX
+¿Hasta cuándo 
+se encontró 
+en esta 
+situación? 
+Indique mes 
+y año
+P29. En ese período, 
+¿en cuál de las 
+siguientes situaciones se 
+encontraba?
+1. Trabajando
+2. Cesante
+3. Buscando trabajo por 
+1ª vez
+4. Inactivo
+8. No sabe/No responde
+P30. ¿Cuál (era) 
+es su ocupación 
+u oficio, o qué 
+hace o hacía Ud. 
+en ese trabajo? Si 
+en este período 
+realizaba más de un 
+trabajo, refiérase al 
+principal
+P0.  ¿Cuál es (era) el 
+nombre de la empresa, 
+institución u hogar que 
+le pagó el sueldo en ese 
+trabajo?
+P31. Este trabajo era de tipo: 
+      LEER ALTERNATIVAS
+1. Permanente
+2. De temporada o estacional
+3. Ocasional o eventual
+4. A prueba
+5. Por plazo o tiempo determinado
+8. No responde
+9. No sabe
+Mes Año Mes Año
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+
+=== PDF PAGE 7 ===
+Encuesta de Protección Social 2019- Continuidad Impedido
+7
+  
+P .NV200_i. (SÓLO SI NV=2) ¿Me podría indicar qué información no 
+está correcta?  
+      ENTREVISTADOR: MODIFICAR INFORMACIÓN QUE EL 
+ENTREVISTADO DECLARA COMO INCORRECTA
+1. Situación laboral: ______________________
+2. Actividad: _________________________
+3. Lugar: ____________________________
+INTRODUCCION_P28. AHORA LE PEDIRÉ QUE DESCRIBA TODAS LAS 
+ACTIVIDADES QUE EL/LA ENTREVISTADO/A HAYA REALIZADO DESDE 
+___________________HASTA HOY
+28. Describa todas las situaciones que Ud. haya realizado 
+desde ____________________ hasta hoy 
+ 
+      INDIQUE LA FECHA DE TÉRMINO DE CADA SITUACIÓN
+POR SITUACIONES, ENTENDEREMOS HABER ESTADO 
+TRABAJANDO, CESANTE, BUSCANDO TRABAJO POR 
+PRIMERA VEZ O INACTIVO (ESTAR ESTUDIANDO, ESTAR 
+JUBILADO, DEDICARSE A QUEHACERES DEL HOGAR, ETC).
+SÓLO SI ESTÁ/ESTABA TRABAJANDO (P29=1) SÓLO SI ESTÁ/ESTABA TRABAJANDO 
+COMO DEPENDIENTE DESDE ABRIL 2020 SÓLO SI PC100=1 TODOS
+P33.¿En esta ocupación, el/la fallecido(a) 
+trabajaba como:
+     LEER ALTERNATIVAS
+1. Patrón o empleador
+2. Trabajador por cuenta propia
+3. Empleado u Obrero del Sector Público
+4. Empleado u Obrero del Sector Privado
+5. Servicio Doméstico Puertas Adentro
+6. Servicio Doméstico Puertas Afuera
+7. Familiar No remunerado
+8. FF.AA. y de Orden
+PC100. ¿Su empleador modificó 
+su contrato de trabajo a raíz de la 
+Pandemia por Covid 19?
+P28.t.mY – P28.t.aY .
+¿Cuándo cambiaron sus 
+condiciones laborales o 
+contractuales? Indique 
+mes y año
+P28.t.m – P28.t.a
+Indique mes y año de 
+término 
+ANOTAR MES Y AÑO DE 
+TÉRMINO DE LA SITUACIÓN 
+OCUPACIONAL
+Mes Año Mes Año
+
+=== PDF PAGE 8 ===
+Encuesta de Protección Social 2019- Continuidad Impedidos
+8
+SÓLO SI ESTÁ/ESTABA TRABAJANDO (P29=1)
+P32. ¿Qué actividad realiza la 
+empresa, industria o servicio 
+donde desempeñaba este 
+trabajo?
+P34. En este trabajo, el/la 
+entrevistado/a, ¿había firmado 
+contrato de trabajo? 
+     SI DICE QUE NO, PREGUNTAR 
+SI TIENE CONTRATO Y NO FIRMÓ 
+O NO TIENE CONTRATO
+1. Sí, tenía contrato y lo firmó
+2. No, tenía contrato, pero no lo 
+firmó
+3. No tenía contrato
+8. No responde
+9. No sabe
+P36. ¿Cuál fue el motivo por el que dejó este trabajo? 
+     ESCUCHAR Y CLASIFICAR
+12. No aplicable (fallecido no se cambió de trabajo)
+1. Mutuo acuerdo de las partes
+2. Renuncia
+3. Vencimiento del contrato o fin del trabajo o servicio que dio origen al contrato
+4. Despido por causa imputable a trabajador
+5. Despido por necesidades de la empresa
+6. Cierre de la empresa
+7. Encontró un mejor trabajo
+8. Condiciones de salud o invalidez
+9. Se pensionó
+10. Caso fortuito o fuerza mayor
+11. Otra
+88. No responde
+99.No sabe
+Mes Año
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+Ahora vamos a hablar del periodo entre _______________ y ________________, donde según lo señalado por Usted, se encontraba:
+Estado: __________________________________________
+Actividad: ________________________________________
+Empresa/ Institución/ Hogar: ________________________
+       REPETIR ESTA INTRODUCCIÓN PARA CADA SITUACIÓN IDENTIFICADA EN P29
+
+=== PDF PAGE 9 ===
+Encuesta de Protección Social 2019- Continuidad Impedido
+9
+  
+SÓLO SI SU EMPLEADOR MODIFICÓ SU CONTRATO O CONDICIONES DE TRABAJO A RAÍZ DE LA PANDEMIA POR 
+COVID 19 (PC100=1)
+SOLO SI ESTÁ/ESTABA INACTIVO 
+(P29=4)
+PC101. Usted indicó que en este trabajo se modificaron sus condiciones laborales. Por favor, señale cuál o cuáles 
+modificaciones ocurrieron…
+     LEER ALTERNATIVAS
+P37. ¿Cuál fue la razón de la 
+inactividad del entrevistado/a? 
+     ESCUCHAR RESPUESTA Y 
+CLASIFICAR
+1. Enfermedad o discapacidad
+2. Cuidado de los niños
+3. Otras responsabilidades 
+personales o familiares
+4. Embarazo
+5. Estudiaba o se estaba capacitando
+6. Realizaba la práctica
+7. Quehaceres de hogar
+8. Jubilado, pensionado o montepío
+9. Rentista
+10. No le interesaba trabajar
+11. Estaba haciendo el servicio 
+militar
+12. Cuidados de personas mayores o 
+personas con discapacidad
+13. Cree que no encontrará trabajo
+14. Se cansó de buscar empleo
+15. Algún miembro del hogar no le 
+permite trabajar
+16. Vacaciones o permisos
+17. Licencia médica
+18. Por horario o jornada variable o 
+flexible
+19. Huelga, conflicto laboral
+20. Trabajo es estacional
+21. No tuvo pedidos (clientes)
+22. Suspensión temporal del trabajo
+23. Otro
+88. No responde
+99. No sabe
+1. Se suspendió 
+su contrato de 
+trabajo por acto 
+de autoridad 
+(cuarentena) 
+por medio 
+de la Ley de 
+Protección del 
+Empleo
+2. Se acordó un 
+pacto de sus-
+pensión tempo-
+ral del contrato 
+de trabajo por 
+medio de la Ley 
+de Protección 
+del Empleo
+3. Se acordó 
+un pacto de 
+reducción 
+temporal de 
+la jornada de 
+trabajo por 
+medio de la Ley 
+de Protección 
+del Empleo
+4. Sus empleado-
+res redujeron su 
+jornada laboral
+5.Sus empleado-
+res redujeron su 
+salario
+6.Sus empleadores 
+cambiaron sus 
+actividades o 
+tareas
+Sí No Sí No Sí No Sí No Sí No Sí No
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+
+=== PDF PAGE 10 ===
+Encuesta de Protección Social 2019- Continuidad Impedidos
+10
+  
+CONSENTIMIENTO_I. Para finalizar, me gustaría saber si acepta que la Subsecretaría de Previsión Social pueda vincular sus 
+respuestas dadas en la presente encuesta con datos administrativos del Estado para uso de investigación y análisis de políticas 
+públicas.
+1. Sí
+2. No 
+8. No sabe/ No responde
+CORREO_IMPEDIDOS. ¿Tiene correo electrónico?
+1. Si
+2. No, ¿me podría dar su dirección? _________________________________            PASE A DESPEDIDA
+CORREO2_IMPEDIDOS.
+1. ¿Cuál es su correo electrónico?:   ____________________ 
+2. Favor vuelva a escribir correo electrónico:  ____________________ 
+  
+  
+P40_1_1.  El/la entrevistado, ¿recibía ingresos por concepto de 
+Jubilación o Pensión de Vejez?  
+1. Sí
+2. No         PASE A CONSENTIMIENTO_I
+8. No responde        PASE A CONSENTIMIENTO_I
+9. No Sabe         PASE A CONSENTIMIENTO_I
+P44. Después de pensionarse, 
+¿siguió trabajando?
+      
+1. Sí
+2. No 
+8. No sabe/ No responde
+Módulo I: Hogar                                                                        
+Consentimiento_I                                                                
+Despedida                                                                
+Muchas gracias por participar en esta encuesta. 
+ Para entregar el regalo necesitaremos algunos datos de contacto. 
+Esta información también nos servirá para el control de calidad de la encuesta.
+
+=== PDF PAGE 11 ===
+Encuesta de Protección Social 2019- Continuidad Impedido
+11
+
+=== PDF PAGE 12 ===
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+2019

@@ -1,0 +1,645 @@
+
+=== PDF PAGE 1 ===
+Encuesta de Protección Social 2019
+1
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+2019
+CUESTIONARIO FALLECIDOS
+Comuna
+Folio -
+Nombre: Apellido Paterno:  Apellido Materno:
+Fecha de Nacimiento:                               Dirección:
+Teléfono principal: código de área – fono:                    Comuna:                                 Región:
+Villa/Población:               Localidad:     
+Buenos (días/tardes/noches), mi nombre es _________________________________, pertenezco 
+a la empresa IPSOS que, en conjunto con la Subsecretaria de Previsión Social estamos conduciendo 
+la Encuesta de Protección Social 2019. 
+ 
+El propósito de este estudio es obtener información estadística sobre la población chilena que será 
+utilizada para elaborar y desarrollar políticas públicas.  
+ 
+Estaríamos complacidos si pudiese participar de este estudio respondiendo algunas preguntas 
+sobre la situación de (nombre entrevistado fallecido). Las entrevista tendrá una duración 
+aproximada de 20 minutos.  Les recordamos que las respuestas son confidenciales y la 
+participación es completamente voluntaria, pudiéndose retirar en cualquier momento sin ninguna 
+consecuencia. 
+ 
+Si usted tiene alguna pregunta sobre este estudio, puede contactarse con los encargados de éste, 
+al mail info.eps@ipsoschile.cl
+COMUNA
+FOLIO
+INFORMACIÓN DE LA ENTREVISTA
+Fecha 1ª visita: Resultado 1ª visita:
+2020
+Fecha 2ª visita: Resultado 2ª visita:
+2020
+Fecha 3ª visita: Resultado 3ª visita:
+2020
+Fecha de la Entrevista
+2020
+Hora de la Entrevista
+Inicio
+Término
+
+
+=== PDF PAGE 2 ===
+Encuesta de Protección Social 2019
+2
+M.2. ¿Cuál era la relación de parentesco del entrevistado con el 
+Jefe(a) de Hogar?
+ LEER ALTERNATIVAS
+1. Jefe(a) del hogar
+2. Cónyuge o Pareja
+3. Hijo(a) / Hijastro(a)
+11. Otro familiar
+12. No familiar
+M5b. ¿Qué edad tenía el entrevistado al fallecer?
+ AÑOS CUMPLIDOS
+88. No responde
+99. No sabe
+M5c. ¿Qué causó la muerte del entrevistado?
+ ESCUCHAR Y MARCAR ALTERNATIVA
+1. Cáncer
+2. Ataque al corazón
+3. Ataque cerebral
+4. Otras enfermedades cardiovasculares relacionadas
+5. Enfermedades respiratorias
+6. Accidente Pase a M5f
+7. Otra. EspecifiquePase a M5c.e
+8. No respondePase a M5e
+9. No sabePase a M5e
+M5c.e 
+M5d. ¿Cuánto tiempo estuvo enfermo/a el/la fallecido/a antes de 
+morir?
+ ESCUCHAR Y MARCAR ALTERNATIVA
+1. No estuvo enfermo/a, falleció repentinamente
+2. 1 a 2 horas
+3. Menos de 24 horas
+4. Un día o más, pero menos de una semana
+5. Una semana o más, pero menos de un mes
+6. Un mes o más, pero menos de 6 meses
+7. 6 meses o más, pero menos de un año
+8. Un año o más
+88. No responde
+99. No sabe
+M5e. ¿Usted diría que fue una muerte inesperada?
+1. Sí
+2. No
+8. No responde
+9. No sabe
+M.1. Nombre de pila del Fallecido
+M.3. Sexo del fallecido (a)
+1. Hombre
+2. Mujer
+M.4. ¿Cuál es el estado civil del entrevistado/a?
+ ESCUCHAR Y MARCAR ALTERNATIVA
+1. Casado(a)
+2. Conviviente
+3. Anulado(a)
+4. Con pareja a través de Acuerdo de Unión Civil (AUC)
+5. Separado(a) de unión legal
+6. Separado(a) de unión de hecho
+7. Viudo(a)
+8. Soltero(a)
+9. Divorciado
+88. No responde
+99. No sabe
+M5a. ¿Cuál fue la fecha exacta del fallecimiento?
+ ANOTE DÍA, MES Y AÑO
+A TODOS LOS FALLECIDOS
+M5a_día M5a_mes M5a_año
+88. No responde
+99. No sabe
+88. No responde
+99. No sabe
+88. No responde
+99. No sabe
+
+=== PDF PAGE 3 ===
+Encuesta de Protección Social 2019
+3
+M5f. ¿En qué lugar falleció?
+ ESCUCHAR Y MARCAR ALTERNATIVA
+1. En su casa (del fallecido)
+2. En la casa de un familiar
+3. En la casa de un no familiar
+4. En un hospital
+5. En un hospicio
+6. En un asilo de ancianos
+7. En una residencial
+8. En un albergue
+9. En una ambulancia/vehículo camino al hospital
+10. Otro. EspecifiquePase a M5f.e
+88. No Responde
+99. No sabe
+M5f.e
+M11. ¿En qué sistema previsional se encontraba cotizando el/la 
+fallecido(a)?
+ LEER ALTERNATIVAS
+1. AFP
+2. INP
+3. CAPREDENA
+4. DIPRECA
+5. Otro sistema. EspecifiquePase a M11.e
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+M11.e
+M10. ¿El/la fallecido(a) se encontraba cotizando en algún sistema 
+previsional antes de su fallecimiento?
+1. Sí
+2. NoPase a M12
+8. No RespondePase a M12
+9. No sabePase a M12
+M12. ¿A qué sistema previsional de salud pertenecía el/la 
+fallecido(a)?
+	 SI 	DICE 	FONASA, 	PREGUNTAR 	POR	EL	GRUPO 	(A,	B,	C,	O	D)
+1. Sistema público FONASA Grupo A (indigente)
+2. Sistema público FONASA Grupo B
+3. Sistema público FONASA Grupo C
+4. Sistema Público FONASA Grupo D
+5. Sistema público FONASA. No sabe el grupo
+6. FF.AA. y de Orden
+7. ISAPRE. EspecifiquePase a M12.e
+8. Ninguno (Particular)Pase a M0c
+9. Otro Sistema. EspecifiquePase a M12.e
+88. No RespondePase a M0c
+99. No sabePase a M0c
+M12.e
+M13. ¿El/la fallecido(a) era cotizante o carga familiar?
+1.CotizantePase a M0c
+2.Carga
+8.No RespondePase a M0c
+9.No sabePase a M0c
+M14. El/la fallecido(a), ¿de quién era carga familiar?
+ ESCUCHAR Y MARCAR ALTERNATIVA
+1. Padre
+2. Madre
+3. Hijo(a)
+4. Cónyuge
+5. Otro
+8. No RespondePase a M0c
+9. No sabePase a M0c
+M9. A el/la fallecido(a), ¿le había sido diagnosticada alguna de las 
+siguientes condiciones médicas por un doctor?
+ LEER CADA CONDICIÓN MÉDICA
+1. Sí
+2. No
+8. No responde
+9. No sabe
+Condición Médica M9
+M9_01 Asma o Enfisema pulmonar
+M9_02 Depresión
+M9_03 Diabetes
+M9_04 Hipertensión o Presión alta
+M9_05 Problemas cardíacos
+M9_06 Cáncer
+M9_07 Artritis o Artrosis
+M9_08 Enfermedad renal
+M9_09 Derrame cerebral
+M9_10 Enfermedad mental
+M9_11 VIH / SIDA
+
+=== PDF PAGE 4 ===
+Encuesta de Protección Social 2019
+4
+M0g.a M0g.b
+M0g_01. Comer (incluyendo cortar comida y llenar los vasos)
+M0g_02. Bañarse (incluyendo entrar y salir de la tina) 
+M0g_03. Moverse/desplazarse dentro de la casa
+M0g_04. Utilizar el W.C. o retrete
+M0g_05. Acostarse y levantarse de la cama 
+M0g_06. Vestirse
+M0g_07. Salir a la calle
+M0g_08. Hacer compras o ir al médico
+M0g_09. Realizar sus tareas del hogar
+M0g_10. Hacer o recibir llamadas
+M0g_11. Caminar largas distancias
+M0g_12. Ejercicio extenuante o intenso
+M.15. ¿Pertenece esta persona al hogar de el/la fallecido (a)?
+1. Sí
+2. No
+8. No Responde
+9. No Sabe
+ ENTREVISTADOR LEER: LAS SIGUIENTES PREGUNTAS SON ACERCA DE 
+LAS	DIFICULTADES 	QUE	PUDIERA 	HABER 	TENIDO, 	EL/LA 	FALLECIDO(A), 	
+PARA	REALIZAR 	CIERTAS 	ACTIVIDADES, 	DEBIDO 	SOLO 	A	SU	ESTADO 	DE	
+SALUD Y SIN CONSIDERAR DISPOSITIVOS DE AYUDA O PERSONAS QUE 
+LE AYUDEN.
+M0g.a El/la fallecido(a), ¿cuánta dificultad tenía para realizar las 
+siguientes actividades?
+ LEER TODAS LAS ALTERNATIVAS. RESPUESTA MÚLTIPLE
+1. Ninguna  Pase a M.18b
+2. Leve
+3. Moderada
+4. Severa
+5. Extrema /no puede hacerlo
+M0g.b El/la fallecido(a), ¿con qué frecuencia recibió ayuda de otra 
+persona para realizar las siguientes actividades?
+ LEER TODAS LAS ALTERNATIVAS. RESPUESTA MÚLTIPLE
+1. Nunca
+2. Casi nunca
+3. Algunas veces
+4. Muchas veces
+5. Siempre
+6. No sabe/ No responde
+M0c. El/la fallecido(a), ¿Con qué regularidad practicaba deporte o 
+alguna actividad física?
+ LEER ALTERNATIVAS
+1. Todos los días
+2. 5 a 6 veces por semana
+3. 3 a 4 veces por semana
+4. 1 a 2 veces por semana
+5. 1 a 3 veces al mes
+6. Algunas veces al año
+7. Nunca o casi nunca
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+M0d El/la fallecido(a), ¿Fumaba?
+1. Sí
+2. No
+8. No Responde
+9. No sabe
+M0f. El/la fallecido(a), ¿Consumía bebidas alcohólicas como 
+cerveza, vino, pisco u otros licores? 
+	 LEER 	CADA 	BEBIDA
+1. Sí
+2. No  Pase a siguiente
+8. No responde  Pase a siguiente
+9. No sabe
+Bebida alcohólica F13
+F13_01 Asma o Enfisema pulmonar
+F13_03 Vino
+F13_03 Pisco u otro licor
+
+=== PDF PAGE 5 ===
+Encuesta de Protección Social 2019
+5
+M18b M18b M19b.e M19b
+1. Jubilación o Pensión 
+de Vejez 
+2. Pensión de invalidez
+3. Pensión de viudez 
+(Montepío) 
+4. Pensión de orfandad
+5. Otro tipo de 
+pensión 
+		SI	CONTESTÓ	NO	 (M18B=2,8	Ó	9)	EN	TODAS	LAS	ALTERNATIVAS	 	PASE	A 	M27
+M18b. El/la fallecido(a), ¿recibía 
+ingresos por concepto de:
+ LEER ALTERNATIVAS
+1. Sí
+2. No  Pase a siguiente
+8. No responde  Pase a siguiente
+9. No sabe  Pase a siguiente
+M19b. ¿Qué institución le pagaba este ingreso?
+ LEER PENSIÓN O PENSIONES
+1. AFP
+2. INP
+3. CAPREDENA
+4. DIPRECA
+5. Mutual de Accidentes del Trabajo
+6. Cía. de Seguros
+7. Administrador de Fondos Cesantía
+8. Otra institución  Pase a M19b.e Especifique
+88. No Responde
+99. No sabe
+M20b. ¿Cuánto recibía 
+mensualmente?
+ ANOTE MONTO EN PESOS
+  OBSERVACIONES                                                                                                                                                             
+
+=== PDF PAGE 6 ===
+Encuesta de Protección Social 2019
+6
+  PENSIONADOS POR VEJEZ                                                                                                                                                             
+M25. ¿Cuáles fueron las principales razones por la que jubiló o se 
+pensionó?  
+ ESCUCHAR Y MARCAR ALTERNATIVAS
+1. Quería aumentar sus ingresos con nuevos proyectos laborales
+2. Quería usar Fondos o Excedentes de libre disposición
+3. Lo convenció un agente de ventas
+4. Por problemas de salud
+5. Quería dedicarse a otras actividades no laborales
+6. Cumplió años de servicio (INP , DIPRECA o CAPREDENA)
+7. La empresa le ofreció un plan de retiro
+8. Porque realizaba trabajos pesados
+9. Quedó sin trabajo y le quedaba poco tiempo para jubilar
+10. Recibió regalo o dinero del agente de ventas
+11. Cumplió edad legal de retiro
+12. Por discapacidad o invalidez
+13. Otra razón. Especifique Pase a M25.e
+14. Ninguna otra
+M25.e
+SÓLO PARA FALLECIDOS CON JUBILACIÓN O PENSIÓN DE VEJEZ (M18b_1=1). EL RESTO  Pase a M27
+M21b. ¿En qué fecha jubiló o se pensionó? Señale mes y año
+SI NO RECUERDA MES, ANOTE 0 
+M22. Después de pensionarse, ¿siguió trabajando?
+1. Sí
+2. No
+8.	No	Responde	/		No	sabe
+M21b_m mes M21b_m año
+88. No responde
+99. No sabe
+88. No responde
+99. No sabe
+M25_1 
+Primera Razón
+M25_2 
+Segunda Razón
+M25_3 
+Tercera Razón
+
+=== PDF PAGE 7 ===
+Encuesta de Protección Social 2019
+7
+  PENSIONES DE SOBREVIVENCIA/HERENCIAS
+Sobreviviente
+ CONSULTE 
+POR CADA 
+UNO DE ESTOS 
+PARENTESCOS 
+Y ANOTE LOS 
+BENEFICIOS 	
+CUANDO 
+CORRESPONDA
+M27. El/la 
+fallecido(a), ¿dejó 
+algún beneficio 
+del sistema de 
+pensiones?
+1.Sí
+2.No
+  Pase a otro
+3.No sabe
+  Pase a otro
+8.No responde
+  Pase a otro
+9.No aplica (no 
+tenía)
+  Pase a otro
+M28. ¿Qué beneficio dejó?
+	 MARQUE 	X	EN	BENEFICIO 	QUE	CORRESPONDA 	AL	
+PARENTESCO. PUEDEN SER MAS DE UNA ALTERNATIVA
+M28.1 Una pensión 
+M28.2 Una Herencia 
+M28.3 Cuota Mortuoria
+M28.4 Seguro de Vida
+M28.5 Otro beneficio.Especifique M28.e
+M29. ¿Cuántas personas 
+recibieron este beneficio?
+ ANOTE CUANTAS PENSIONES A 
+CADA PARENTESCO CONSULTADO
+Lea parentesco M27 M28_1 M28_2 M28_3 M28_4 M28_5 M28_e M29
+1 Cónyuge
+2 Pareja AUC
+3 Hijos(as) 
+4 Madre o Padre 
+de sus hijos
+5 Otros 
+familiares 
+M28_1
+a. Bienes Raíces
+b. Otros bienes
+c. Activos (acciones, bonos, etc)
+d. Negocios (negocios o empresas)
+e. Deudas
+				SI	CONTESTÓ 	NO	(M31=2,8	Ó	9)	EN	TODAS 	LAS	ALTERNATIVAS PASE A M33
+M31. ¿El fallecido dejó herencia en bienes, activos, etc. o deudas?
+ LEER ALTERNATIVAS
+1. Sí
+2. No Pase a siguiente
+8. No Responde Pase a siguiente
+9. No sabe Pase a siguiente
+
+=== PDF PAGE 8 ===
+Encuesta de Protección Social 2019
+8
+  HISTORIA LABORAL                                                                                                                                                             
+M33. Describa todas las situaciones que haya 
+realizado desde la fecha de deceso hasta la 
+última vez que respondió la encuesta.
+INDIQUE LA FECHA DE INICIO Y DE TÉRMINO DE 
+CADA SITUACIÓN
+POR	SITUACIONES, 	ENTENDEREMOS 	HABER 	
+ESTADO 	TRABAJANDO, 	CESANTE, 	BUSCANDO 	
+TRABAJO 	POR	PRIMERA 	VEZ	O	INACTIVO 	(	ESTAR	
+ESTUDIANDO,
+ESTAR	JUBILADO, 	DEDICARSE 	A	QUEHACERES 	DEL	
+HOGAR, 	ETC).
+M34. En ese período, ¿en cuál de las siguientes 
+situaciones se encontraba?
+1. Trabajando
+2. Cesante FIN Encuesta
+3. Buscando trabajo por 1ª vez FIN Encuesta
+4. Inactivo (Estar estudiando, estar jubilado, dedicarse 
+a quehaceres del hogar, etc.) Pase a M46
+	 AHORA 	VAMOS 	A	HABLAR 	DEL	PERIODO 	CUANDO 	EL	FALLECIDO 	SE	ENCONTRABA 	
+TRABAJANDO
+M36. ¿Cuál era su ocupación u oficio? Si en este período realizaba más de un trabajo, 
+refiérase al principal
+M0. ¿En qué empresa o institución trabajaba?
+M37. Este trabajo era de tipo:
+ LEER ALTERNATIVAS
+1. Permanente
+2. De temporada o estacional
+3. Ocasional o eventual
+4. A prueba
+5. Por plazo o tiempo determinado
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+AHORA 	LE	PEDIRÉ 	QUE	DESCRIBA 	TODAS 	LAS	ACTIVIDADES 	QUE	EL	FALLECIDO 	HAYA	REALIZADO 	DESDE 	LA	FECHA 	DE	DECESO 	HASTA	LA	
+ÚLTIMA VEZ QUE RESPONDIÓ ENCUESTA
+mes y año 
+inicio
+mes y año 
+término
+M33im M33ia M33ta M33ta M34 M36 M0 M37
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+=== PDF PAGE 9 ===
+Encuesta de Protección Social 2019
+9
+  HISTORIA LABORAL                                                                                                                                                             
+M38. ¿Qué actividad realiza la empresa, industria o servicio donde 
+desempeñaba este trabajo?
+M40. ¿En esta ocupación, el/la fallecido(a) trabajaba como:
+ LEER ALTERNATIVAS
+1. Patrón o empleador
+2. Trabajador por cuenta propia
+3. Empleado u Obrero del Sector Público
+4. Empleado u Obrero del Sector Privado
+5. Servicio Doméstico Puertas Adentro
+6. Servicio Doméstico Puertas Afuera
+7. Familiar No remunerado
+8. FF.AA. y de Orden
+88. No responde (NO LEER)
+99. No sabe (NO LEER)
+M41. En este trabajo, el/la fallecido(a), ¿había firmado contrato de 
+trabajo?
+1. Sí, tenía contrato y lo firmó
+2. No, tenía contrato pero no lo firmó
+3. No tenía contrato
+8. No responde
+9. No sabe
+M43. Durante este trabajo, ¿se 
+encontraba el/la fallecido(a) 
+afiliado a algún sindicato?
+1. Sí
+2. No
+8. No responde
+9. No sabe
+M44. El/la fallecido(a), ¿Se 
+encontraba cotizando en algún 
+sistema Previsional?
+ SI DICE QUE SI, PREGUNTAR 
+¿CUÁL?
+1. Sí, AFP (Adm. Fondos Pensiones)
+2. Sí, INP [Servicio de Seguro Social, 
+Caja Nacional Empleados 
+Públicos (CANAEMPU), Caja 
+de Empleados Particulares 
+(EMPART)]
+3. Sí, Caja de Previsión de la 
+Defensa Nacional(CAPREDENA)
+4. Sí, Dirección de Previsión de 
+Carabineros (DIPRECA)
+5. Sí, Otra Caja
+6. Sí, no sabe donde cotizó
+7. No cotizó
+8. No responde
+9. No sabe
+M45. ¿Cuál fue el motivo 
+por el que dejó este 
+trabajo?
+ ESCUCHAR Y MARCAR 
+ALTERNATIVAS
+1. Mutuo acuerdo de las partes
+2. Renuncia
+3. Vencimiento del contrato o 
+fin del trabajo o servicio que 
+dio origen al contrato
+4. Despido por causa 
+imputable a trabajador
+5. Despido por necesidades de 
+la empresa
+6. Cierre de la empresa
+7. Encontró un mejor trabajo
+8. Condiciones de salud o 
+invalidez
+9. Se pensionó
+10. Caso fortuito o fuerza 
+mayor
+11 .Otra
+12. No aplicable (fallecido no 
+se cambió de trabajo)
+88. No responde 
+99. No sabe
+Todos FIN
+OCUPADOS ( PARA PERÍODOS EN QUE ESTABA TRABAJANDO M34=1)
+M38 M40 M41 M43 M44 M45
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+=== PDF PAGE 10 ===
+Encuesta de Protección Social 2019
+10
+LISTADO DE REGIONES DE CHILE  HISTORIA LABORAL
+INACTIVOS
+M46. ¿Cuál fue la razón de la inactividad del fallecido?
+1. Enfermedad o discapacidad
+2. Cuidado de los niños
+3. Otras responsabilidades personales o familiares
+4. Embarazo
+5. Estudiaba o se estaba capacitando
+6. Realizaba la práctica
+7. Quehaceres de hogar
+8. Jubilado, pensionado o montepío
+9. Rentista
+10. No le interesaba trabajar
+11. Estaba haciendo el servicio militar
+12. Cuidados de personas mayores o personas con discapacidad
+13. Cree que no encontrará trabajo
+14. Se cansó de buscar empleo
+15. Algún miembro del hogar no le permite trabajar
+16. Vacaciones o permisos
+17. Licencia médica
+18. Por horario o jornada variable o flexible
+19. Huelga, conflicto laboral
+20. Trabajo es estacional
+21. No tuvo pedidos (clientes)
+22. Suspensión temporal del trabajo
+23. Otro
+88. No responde
+99. No sabe
+M46
+1
+2
+3
+4
+5
+6
+7
+8
+9  
+10
+11
+12
+13
+14
+15
+XV Arica y Parinacota
+I Tarapacá
+II Antofagasta
+III Atacama
+IV Coquimbo
+V Valparaíso
+RM Metropolitana
+VI O’Higgins
+VII Maule
+XVI Ñuble
+VIII Biobío
+IX Araucanía
+XIV Los Ríos
+X Los Lagos
+XI Aysén
+XII Magallanes
+
+=== PDF PAGE 11 ===
+Encuesta de Protección Social 2019
+11
+  OBSERVACIONES                                                                                                                                                             
+
+=== PDF PAGE 12 ===
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+2019

@@ -1,0 +1,1700 @@
+
+=== PDF PAGE 1 ===
+VIII Ronda Encuesta de Protección Social – EPS 2023                                                                                1 
+ 
+ 
+ 
+VIII RONDA ENCUESTA DE 
+PROTECCIÓN SOCIAL 
+ 
+Informe de Trabajo de 
+Campo 
+
+
+=== PDF PAGE 2 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               2 
+ 
+  
+ 
+Contenido 
+1. INTRODUCCIÓN ........................................................................................................................................ 3 
+1.1. Grupo Objetivo ..................................................................................................................................... 3 
+1.2. Muestra de la VIII EPS ........................................................................................................................... 3 
+1.3. Objetivos de la encuesta ...................................................................................................................... 4 
+2. FICHA TÉCNICA DE LA VIII RONDA EPS ..................................................................................................... 6 
+3. ACTIVIDADES DE GESTIÓN DE LA VIII RONDA EPS ................................................................................... 7 
+3.1. Resumen de actividades de Gestión de la Encuesta ............................................................................ 7 
+3.2. Material informativo y soporte comunicacional ................................................................................ 10 
+3.3. Selección de personas encuestadoras ............................................................................................... 19 
+3.4. Capacitación y evaluación de personal de terreno ............................................................................ 20 
+3.5. Organización del trabajo de campo ................................................................................................... 22 
+3.6. Georreferenciación de direcciones .................................................................................................... 23 
+3.7. Prueba piloto ...................................................................................................................................... 24 
+3.8. Recolección y procesamiento de datos .............................................................................................. 25 
+4. CUESTIONARIOS ..................................................................................................................................... 30 
+4.1. Creación y revisión de cuestionarios .................................................................................................. 30 
+4.2. Cuestionario electrónico .................................................................................................................... 32 
+4.3. Tarjetero ............................................................................................................................................. 33 
+5. SUPERVISIÓN .......................................................................................................................................... 35 
+5.1. Acompañamiento en terreno de la Subsecretaría de Previsión Social .............................................. 35 
+5.2. Actividades de supervisión directa ..................................................................................................... 36 
+6. SEGURIDAD DE LA INFORMACIÓN ......................................................................................................... 40 
+ 
+  
+
+=== PDF PAGE 3 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               3 
+ 
+  
+ 
+1. INTRODUCCIÓN 
+La Encuesta de Protección Social (EPS), creada en 2002 por la Subsecretaría de Previsión Social, es el estudio 
+más completo sobre el sistema de protección social en Chile, diseñado para describir longitudinalmente el 
+comportamiento previsional de la población mayor de 18 años, siguiendo a las mismas personas a lo largo 
+del tiempo bajo un enfoque de derechos y perspectiva de género.  Su principal objetivo es describir 
+longitudinalmente el comportamiento previsional de la población de 18 años y más, sus principales 
+dimensiones y determinantes, bajo un enfoque de derechos y perspectiva de género.  Además, entrega 
+información relevante sobre diversas áreas, como educación, salud, seguridad social, capacitación laboral, 
+patrimonio y activos, historia familiar y características del hogar. 
+Los resultados de esta encuesta se utilizan tanto en el ámbito académico como en el análisis y diseño de 
+políticas públicas. La información proporcionada por este instrumento fue fundamental como base para el 
+diagnóstico realizado por la Comisión Asesora Presidencial sobre el Sistema de Pensiones (2015) y para la 
+elaboración de la Reforma Previsional del 2008 (Ley 20.255). 
+La presente ronda de la EPS corresponde a la octava medición o ronda (VIII), dando continuidad a la serie 
+histórica de rondas que se han desarrollado en los años 2002  (I), 2004 (II), 2006 (III), 2009 (IV), 2012 (V), 
+2015 (VI) y 2020 (VII).  
+Aunque el objetivo inicial de la EPS radica en la riqueza de la información que proporciona , este año se 
+incluyó una revisión de los objetivos específicos . Este proceso incluyó una actualización del cuestionario 
+para adaptarlo a los cambios laborales y previsionales que se han dado en los últimos años, asegurando así 
+que la encuesta siga siendo una herramienta relevante y útil para el análisis y diseño de políticas públicas. 
+1.1. Grupo Objetivo 
+La muestra objetivo de la Encuesta de Protección Social ( EPS) está compuesta por personas de 18 años o 
+más. Dado que se trata de una encuesta longitudinal, el grupo objetivo contactado y encuestado en la VIII 
+Ronda de la EPS incluye a quienes han participado en cualquiera de sus versiones anteriores, quienes son 
+recontactados para cada nueva ronda. 
+En el caso de las personas de la muestra que se enc ontraran fallecidas durante el trabajo de campo , se 
+aplicó un cuestionario de cierre dirigido a los familiares o al infórmate idóneo correspondiente. De manera 
+similar, cuando se trató de personas en situación de discapacidad, se les aplicó un cuestionario especial a 
+los familiares o personas responsables correspondientes. 
+1.2. Muestra de la VIII EPS 
+La muestra de la VIII Ronda de la Encuesta de Protección Social (EPS) está compuesta por personas que 
+forman parte del panel de la EPS, es decir, aquellas que han sido entrevistadas en todas o en al menos 
+
+=== PDF PAGE 4 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               4 
+ 
+  
+ 
+alguna de las versiones anteriores de la encuesta , y corresponde a 23.730 personas . En esta ronda, e l 
+objetivo fue concretar 12.000 encuestas entre entrevistados vivos, fallecidos y en situación de discapacidad 
+pertenecientes al panel. 
+En esta versión, debido al envejecimiento natural del panel, se agregó una muestra de nacimientos , 
+correspondiente a personas que cumplieron 18 años entre junio de 2015 y julio de 2023. La inclusión de 
+este grupo permite inyectar población joven a la muestra, compensando el envejecimiento cercano a siete 
+años experimentado desde la última actualización válida del marco realizada en 2015. 
+De acuerdo con  lo anterior, se seleccionaron 15.146 casos de nacimiento, es decir, personas nuevas que 
+pasarán a formar parte del panel de la encuesta en las siguientes rondas, y cuyo objetivo fue realizar 5.000 
+encuestas de personas vivas. 
+1.3. Objetivos de la encuesta 
+El objetivo general de la Encuesta de Protección Social (EPS) es  describir longitudinalmente  el 
+comportamiento previsional de la población de 18 años y más, sus principales dimensiones y 
+determinantes, bajo un enfoque de derechos y perspectiva de género1. 
+ 
+Además, la EPS busca lograr los siguientes objetivos específicos: 
+ 
+1. Describir el nivel de conocimiento de los instrumentos y políticas de protección social en materia 
+previsional de las personas de 18 años y más, en el período de estudio. 
+2. Determinar la elegibilidad para la obtención de subsidios estatales no contributivos (pensión 
+focalizada y pensión mínima) de las personas de 18 años y más, dada su situación previsional en el 
+período en estudio.  
+3. Estimar y caracterizar la participación actual en el sistema de pensiones chileno en el esquema no 
+contributivo y contributivo de las personas de 18 años y más, en su modalidad obligatoria y 
+voluntaria. 
+4. Estimar y caracterizar la capacidad de respuesta económica ante variaciones de los ingresos 
+regulares de las personas de 18 años y más , debido a contingencias originadas en la situación 
+laboral, trabajo de cuidado o crisis de salud, sobrevinientes o potenciales.  
+5. Describir la situación de protección social previsional del trabajo remunerado y no remunerado de 
+las personas de 18 años y más, tanto en relación con la calidad del empleo, formalidad e 
+informalidad y al interior del hogar con el trabajo de cuidado.  
+6. Estimar y caracterizar las dinámicas de comportamiento previsional contributivo de las personas de 
+18 años y más a través de su vida e historia laboral. 
+ 
+1 Todo el cuestionario cuenta con lenguaje inclusivo evitando reproducir estereotipos de género y resguardando los principios d e igualdad y 
+no discriminación de ninguna persona. 
+
+=== PDF PAGE 5 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               5 
+ 
+  
+ 
+7. Describir los determinantes del comportamiento previsional, contributivo y no contributivo, de las 
+personas de 18 años y más, según la historia y situación actual individual y familiar, características 
+sociodemográficas y condiciones de salud. 
+8. Describir la percepción respecto de temas coyunturales relacionados directamente con la 
+protección social previsional, componentes o sus dimensiones de las personas de 18 años y más2.  
+9. Formular orientaciones para la implementación de la siguiente ronda EPS, fundadas en las 
+conclusiones, discusiones y recomendaciones técnicas derivadas de los resultados obtenidos en la 
+ronda medida. 
+  
+ 
+2 En esta versión de la Encuesta no se realizaron preguntas de coyuntura, aunque el objetivo se mantiene ya que permite evaluar en cada 
+medición, la necesidad realizar preguntas específicas asociadas a contingencia. 
+
+=== PDF PAGE 6 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               6 
+ 
+  
+ 
+2. FICHA TÉCNICA DE LA VIII RONDA EPS 
+Tabla 1. Ficha técnica VIII Ronda EPS 2023 
+Organismo responsable de la 
+encuesta Subsecretaría de Previsión Social (SPS). 
+Empresa ejecutante Ipsos Chile 
+Tipo de estudio Estudio cuantitativo de carácter longitudinal (tipo panel), con aplicación de 
+encuestas presenciales en las 16 regiones del país. 
+Población objetivo 
+Población de 18 años y más 
+La muestra incluye a las personas seleccionadas en rondas anteriores, junto 
+con una nueva cohorte de participantes que se incorporan al panel 
+(nacimientos), específicamente aquellas nacidas entre el 1 de julio de 1997 
+y el 30 de junio de 2005. 
+Unidad de análisis Personas 
+Representatividad Nacional 
+Marco muestral 
+Seleccionados en rondas anteriores para la muestra de panel, y base de 
+datos del Registro Civil para muestra de nacimientos, con información de 
+afiliación al sistema de pensiones.  
+Diseño de la muestra de 
+nacimientos 
+Diseño probabilístico , estratificado. Se consideraron, como Unidades 
+Primarias de Muestreo, las mismas comunas definidas en el diseño original 
+del año 2002 y replicado en las muestras del año 2004 y 2015. 
+Formato de recolección de datos Encuesta aplicada a través de dispositivos móviles, programada mediante 
+software iField, desarrollado y propiedad de Ipsos. 
+Fecha de trabajo de campo El trabajo de campo se desarrolló entre el miércoles 11 de octubre y lunes 
+10 de junio de 2024. 
+Control de calidad 
+Supervisión mediante visitas presenciales para corroborar preguntas clave 
+de los cuestionarios, verificación telefónica y  escucha de los aud ios de 
+algunas preguntas seleccionadas de la encuesta. 
+ 
+ 
+  
+
+=== PDF PAGE 7 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               7 
+ 
+  
+ 
+3. ACTIVIDADES DE GESTIÓN DE LA VIII RONDA EPS 
+La gestión de la encuesta requirió de una serie de actividades que incluyeron la organización logística de 
+los equipos de terreno y supervisión, así como la preparación de los cuestionarios y los materiales de apoyo 
+a las personas encuestadoras. 
+La planificación del trabajo de campo se realizó en base a la experiencia de Ipsos en la VII ronda de la EPS 
+(ejecutada entre 2019 y 2020), considerando e incorporando algunos aprendizajes relacionados con la 
+gestión del terreno y localización (búsqueda de direcciones) de las personas a entrevistar, un aspecto clave 
+en encuestas longitudinales en donde es necesario ubicar a personas específicas para darles seguimiento 
+en el tiempo.  El presente capítulo describe las principales actividades realizadas para llevar a cabo el 
+levantamiento de la encuesta. 
+3.1. Resumen de actividades de Gestión de la Encuesta 
+La gestión de la encuesta incluyó diversas acciones diseñadas para asegurar la calidad y efectividad del 
+proceso. A modo de resumen, se presenta la siguiente tabla con las principales actividades realizadas: 
+Tabla 2. Principales actividades de gestión del trabajo de campo 
+ 
+Etapa Actividad – medio de ejecución 
+Preparación de material 
+informativo 
+Para asegurar una comunicación clara y efectiva con las personas participantes 
+del estudio, se prepararon diversos materiales informativos que facilitaron el 
+entendimiento y la colaboración en la encuesta. Estos materiales incluyeron: 
+• Página Web del estudio, que incluyó sistema de verificación de personas 
+encuestadoras habilitadas, preguntas y respuestas frecuentes, objetivos del 
+estudio, fechas de levantamiento y datos de contacto para consultas. 
+• Díptico informativo para para el contacto con las personas entrevistadas , 
+proporcionando detalles clave del estudio. 
+• Carta de invitación formal del estudio enviada por parte de la Subsecretaría 
+para invitar a participar los y las participantes a formar parte del estudio. 
+• Video del subsecretario de Previsión Social, cargados en los dispositivos 
+electrónicos de las personas encuestadoras. 
+Consolidación del 
+cuestionario final3 
+ 
+Se diseñó el cuestionario en formato Word, incluyendo nuevas preguntas y 
+realizando ajustes de fraseo con una perspectiva de género. En esta versión del 
+cuestionario se incorporaron las instrucciones de programación, tanto para el 
+registro de los Códigos d e Disposición Final de Casos (CDF) como para las 
+encuestas dirigidas a personas vivas, fallecidas y en situación de discapacidad. 
+ 
+3 Para detalles de la programación de cuestionario, ver capítulo 4. 
+
+=== PDF PAGE 8 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               8 
+ 
+  
+ 
+Etapa Actividad – medio de ejecución 
+Una vez finalizada esta versión del cuestionario, se procedió a la diagramación  
+de un cuestionario con diseño. 
+Programación de 
+cuestionario  
+El cuestionario fue programado en dispositivos electrónicos, mediante sistema 
+iField (propiedad de Ipsos). Este sistema permite la captura de posición GPS y la 
+grabación de audio de las encuestas para fines de supervisión. 
+Programación de registro 
+de visitas a las personas 
+entrevistadas e informes 
+de Códigos de 
+Disposición Final de 
+Casos (CDF) 
+Se programó el registro de las visitas a las personas entrevistadas en el mismo 
+sistema, lo que permitió: 
+- Contar con el registro o historial de cada persona entrevistada en la VIII 
+ronda de la EPS y generar los informes de CDF (Códigos de Disposición 
+Final de Casos) 
+- Obtener información periódica sobre el avance del terreno. 
+- Tener reportes en línea de la gestión por los(as) encuestadores(as), 
+incluyendo el número de visitas realizadas, encuestas efectivas y, en 
+general revisión del rendimiento del equipo para gestión de las y los(as) 
+jefes(as) de terreno. 
+Se construyó un archivo de precarga de datos del panel, donde además de la 
+dirección, nombre la persona panelista, se cargan datos de su historia laboral y 
+familiar levantados en las rondas previas de la EPS.  
+Selección de personas 
+encuestadoras 
+Se utilizó como base a las personas encuestadoras que aplicaron la VII 
+ Ronda de la EPS (cerca de 100 personas), más una selección de personas 
+profesionales por tratarse de una encuesta compleja que requería personas con 
+experiencia en este tipo de levantamientos. 
+Capacitación y 
+evaluación de 
+encuestadores/as 
+Se realizaron capacitaciones presenciales en todas las regiones del país , a 
+cargo del equipo de profesionales del estudio. Estas incluyeron una evaluación 
+final para medir los conocimientos sobre la encuesta y la aplicación práctica en 
+el contacto con los(as) entrevistados(as).  Paralas nuevas personas 
+encuestadoras que se incorporaron durante el periodo de trabajo de campo , 
+también se realizaron algunas capacitaciones de forma online a lo largo del 
+levantamiento. 
+Georreferenciación de 
+direcciones 
+Las direcciones de las personas entrevistadas fueron georreferenciadas y 
+agrupadas en "clusters" para optimizar el trabajo de los (as) encuestadores(as). 
+Esto permitió organizar rutas de recorrido más eficientes, ya que las direcciones 
+asignadas a cada encuestador estaban ubicadas cerca unas de otras. 
+Prueba Piloto Para evaluar la efectividad y precisión del cuestionario antes de su 
+implementación a gran escala, se llevó a cabo una prueba piloto. En esta fase, 
+se aplicaron 100 encuestas en las regiones Metropolitana, Valparaíso y Los Ríos. 
+
+=== PDF PAGE 9 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               9 
+ 
+  
+ 
+Etapa Actividad – medio de ejecución 
+Supervisión Para garantizar la calidad y veracidad de los datos recopilados, se 
+implementaron diversas técnicas de supervisión. Estas técnicas permitieron un 
+control riguroso y complementario de distintos aspectos del proceso de 
+encuesta: 
+• 10% de verificación presencial en terreno. 
+• 5% escucha de audios de las encuestas. 
+• 5% de verificación telefónica. 
+ 
+Además, se utilizó la posición GPS registrada en los dispositivos para validar 
+direcciones donde se realizaron las encuestas. 
+Fuente: Ipsos Chile 
+  
+
+=== PDF PAGE 10 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               10 
+ 
+  
+ 
+3.2. Material informativo y soporte comunicacional 
+El trabajo de levantamiento de las encuestas contó con un conjunto de materiales de información y 
+soporte comunicacional para las personas encuestadas, con el objetivo de generar confianza y asegurar 
+que se trataba de un proceso serio y formal. Estos materiales permitieron informar, por distintas vías, el 
+trabajo realizado y el uso que se les d aría a los datos recolectados. A continuación, se presenta la lista 
+de actividades y materiales de información que fueron preparados antes del trabajo de campo: 
+▪ Elaboración de página Web del estudio : el equipo de desarrollo Web de Ipsos generó  una 
+página web de la encuesta que contribuyó a entregar confiabilidad a los participantes.  
+En las siguientes imágenes se muestran las secciones de la página Web: 
+Figura 1. Inicio - Página Web 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 11 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               11 
+ 
+  
+ 
+Figura 2. Buscador de encuestadores(as) - Página Web 
+ 
+Figura 3. Preguntas Frecuentes - Página Web 
+ 
+
+
+=== PDF PAGE 12 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               12 
+ 
+  
+ 
+Figura 4. Mensaje invitando a participar - Página Web 
+ 
+Figura 5. Difusión  
+ 
+ 
+
+
+=== PDF PAGE 13 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               13 
+ 
+  
+ 
+ 
+Figura 6. Contacto - Página Web 
+ 
+▪ Díptico informativo: el material gráfico de presentación que más ayudó a generar confianza en 
+el proceso de visita s y apertura de los hogares en la EPS VIII ronda fue el díptico informativo , 
+elaborado específicamente para el contacto con las personas entrevistadas, tanto de la muestra 
+panel como de nacimientos. 
+ Este díptico sirvió como un elemento de comunicación clave para el equipo de terreno  en el 
+primer contacto con las personas entrevistadas, siendo un apoyo para transmitir los objetivos 
+de la encuesta, la veracidad del proceso y los canales de comunicación de las personas 
+seleccionadas con Ipsos y la SPS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 14 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               14 
+ 
+  
+ 
+ 
+Figura 7. Díptico informativo usado por Ipsos para la VIII Ronda de la EPS (Panel – página 1) 
+ 
+Figura 8. Díptico informativo usado por Ipsos para la VIII Ronda de la EPS (Panel – página 2) 
+ 
+ 
+
+
+=== PDF PAGE 15 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               15 
+ 
+  
+ 
+Figura 9. Díptico informativo usado por Ipsos para la VIII Ronda de la EPS (Muestra de 
+nacimientos – página 1) 
+ 
+Figura 10. Díptico informativo usado por Ipsos para la VIII Ronda de la EPS (Nacimientos – 
+página 2) 
+ 
+Fuente: VIII Encuesta de Protección Social EPS, de la Subsecretaría de Prevención Social 
+
+
+=== PDF PAGE 16 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               16 
+ 
+  
+ 
+▪ Video de autoridad de la Subsecretaría de Previsión social: se grabó un video con el Subsecretario 
+de Previsión Social, Claudio Reyes Barrientos, invitando a participar de la EPS VIII ronda. 
+La grabación fue insertada en la página Web , para ser utilizado como medio de generación de 
+confianza en la apertura del hogar. 
+Figura 11. Video Subsecretario del Trabajo: 
+  
+Fuente: VIII Encuesta de Protección Social EPS, de la Subsecretaría de Prevención Social 
+▪ Correo electrónico oficial del proyecto : para recibir consultas de manera formal y canalizar la 
+comunicación en una sola dirección de correo  por cada institución , se generó la casilla 
+atencionEPS@previsionsocial.gob.cl de la SPS. El correo se encontraba descrito tanto en la página 
+web, los dípticos entregados y la carta de invitación a participar del estudio.  
+▪ Call Center para entrevistados: se habilitó una línea telefónica para que las personas encuestadas 
+pudieran contactarse en caso de tener alguna duda sobre el estudio, disponible de lunes a viernes 
+en horario de 9:00 a 18:30 horas, gestionada por Ipsos y la Subsecretaría de Previsión Social.  
+Para esta ronda de la EPS, a diferencia de la anterior ejecutada en 2019-2020, se recibieron una gran 
+cantidad de llamadas y correos electrónicos , tanto de las personas entrevistadas como de otras 
+personas de la población, incluyendo vecinos/as, autoridades municipales, entre otros. 
+ 
+Como se indica más adelante, la sensación de inseguridad pública ha generado un mayor 
+cuestionamiento a las visitas de aplicación de encuestas en general, lo que impacta en el interés de 
+las personas por verificar que el proceso es real y que no se está si endo víctima de fraude u otro 
+delito.  
+ 
+La mayoría de los llamados fueron dirigidos a la contraparte en la Subsecretaría de Previsión Social, 
+debido a que era el organismo público a cargo de la encuesta. Las llamadas y correos facilitaron en 
+gran medida que se concreten encuestas, sobre todo en sectores donde la comunidad completa se 
+había comunicado entre sí, para evitar que se contestara la encuesta. 
+
+
+=== PDF PAGE 17 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               17 
+ 
+  
+ 
+▪ Carta oficial del estudio: Para invitar a participar a una nueva versión de la EPS, la Subsecretaría de 
+Previsión Social diseñó una carta de bienvenida tanto para los(as) entrevistados(as) antiguos (panel) 
+o nuevos ( nacimientos), la cual debía ser entregada junto con el díptico detallado en la sección 
+anterior. La carta de bienvenida fue firmada por el Subsecretario de Previsión Social e indicaba que 
+Ipsos Chile sería la empresa encargada de implementar el trabajo de campo. Junt o a esto se 
+especificaron los teléfonos y correos de contacto disponibles para que los seleccionados pudieran 
+resolver dudas en caso de requerirlo. 
+Figura 12. Carta de bienvenida al estudio 
+ 
+▪ Identificación de Encuestadores(as) 
+
+
+=== PDF PAGE 18 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               18 
+ 
+  
+ 
+Las personas del equipo de levantamiento de encuestas portaron una credencial con el logo de Ipsos y 
+la subsecretaría al momento realizar de las visitas a los domicilios de las personas seleccionadas para 
+responder. 
+ 
+Figura 13. Credencial de encuestadores/as EPS  
+ 
+Como se observa en la credencial de ejemplo, este documento incluyó un código QR que llevaba directo al 
+sitio Web de la EPS, para facilitar la verificación de la certificación de la persona encuestadora. 
+▪ Otras estrategias de comunicación empleadas en el VIII Ronda: puntos de prensa, comunicación 
+con autoridades locales, etc. 
+La comunicación oficial con autoridades locales ya sea regionales o comunales, se gestionó a través de 
+dos vías. 
+1. En primer lugar, la Subsecretaría, al inicio del levantamiento, gestionó puntos de prensa con las 
+Seremi para informar a través de distintos medios de comunicación sobre la ejecución de la VIII 
+Ronda de la EPS. Las publicaciones de estos puntos de prensa fueron subidos al sitio Web para 
+mayor visibilidad  (estos enlaces se pueden encontrar en la siguiente URL: 
+https://chile.ipsoslatam.com/eps/#difusion ). 
+2. Por otro lado, y ya avanzado el trabajo de campo, se generó un oficio para ser enviado a las 
+municipalidades, donde se solicitó el apoyo para que la asociación de municipalidades bajara la 
+información a los municipios  y que estos  validaran la aplicación de la encuesta cuando los 
+vecinos realizaran consultas sobre su veracidad. 
+  
+
+
+=== PDF PAGE 19 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               19 
+ 
+  
+ 
+3.3. Selección de personas encuestadoras 
+Para la selección de las personas responsables de la recolección de información, tanto encuestadores 
+como encuestadoras, Ipsos diseñó un proceso de reclutamiento enfocado en garantizar la calidad y 
+eficiencia del levantamiento de datos. Se priorizó a quien es contaban con experiencia previa en 
+encuestas de alta complejidad, comenzando por incorporar al personal que participó en la ronda 
+anterior de la Encuesta de Protección Social (EPS). Además, se complementó con personas seleccionadas 
+de listados de personas encuestadoras que habían participado en otros estudios similares realizados por 
+la empresa. Este enfoque implicó que una parte importante del equipo esta ba familiarizado con este 
+tipo de encuestas, la dinámica de seguimiento de las personas entrevistadas y el sistema de trabajo, lo 
+que contribuyó  significativamente a mejorar las tasas de respuesta y la eficiencia general del 
+levantamiento. 
+Se privilegió trabajar con personal con experiencia en aplicación de encuestas, considerando que este 
+perfil mostró un mejor rendimiento en comparación con quienes no habían trabajado como 
+encuestadores y encuestadoras tanto en la EPS anterior como en otros estudios similares.  
+Al final del levantamiento, se contabilizaron 374 personas encuestadoras que aplicaron al menos una 
+encuesta durante todo el trabajo de campo, sin embargo, el número de personas capacitadas sobrepasó 
+las 700, lo que muestra la alta deserción de muchos quienes al pasar la etapa de entrenamiento se les 
+dificultó en demasía la  localización de las personas y aplicación de las encuestas. Es importante 
+mencionar también, que se debieron realizar capacitaciones adicionales a las del inicio del 
+levantamiento, para ir reforzando algunos equipos que fueron perdiendo personal por la dificultad del 
+trabajo de terreno. 
+Rol de las personas encuestadoras: 
+Para poder llevar a cabo una entrevista exitosa las personas encuestadoras  debieron cumplir las 
+siguientes funciones:  
+• Localizar a las personas y/o viviendas seleccionadas en la muestra. Tarea fundamental 
+tratándose de una encuesta longitudinal donde se debe hacer seguimiento de las personas, 
+incluso si han cambiado de domicilio. 
+• Motivar a las personas seleccionadas a participar en el estudio, utilizando todo el material de 
+información generado para transmitir confianza a la población encuestada. 
+• Registrar las respuestas de los(as) entrevistados(as) según el protocolo de recolección de 
+datos establecido. 
+• Registrar los motivos por los que una encuesta no pudo ser aplicada (CDF) 
+
+=== PDF PAGE 20 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               20 
+ 
+  
+ 
+3.4. Capacitación y evaluación de personal de terreno 
+Para llevar a cabo un trabajo de campo estandarizado y de acuerdo con los protocolos metodológicos y 
+técnicos elaborados para el estudio, se realizar on jornadas de entrenamiento de todo el personal que 
+trabajó en el levantamiento de las encuestas (personas encuestadoras, coordinadoras y supervisoras). 
+El trabajo de entrenamiento de las personas encuestadoras estuvo a cargo de distintos profesionales del 
+equipo directivo, incluyendo la jefa de proyecto, el director ejecutivo, el coordinador de instrumentos, 
+la coordinadora de terreno y el equipo técnico responsable (ver cargos y funciones en capítulo de equipo 
+de trabajo). Todo el personal que llevó a cabo las capacitaciones contaban con experiencia en este tipo 
+de entrenamientos y, en su mayoría, había participado en la capacitación de la EPS 2019-2020. 
+Para la capacitación del personal de terreno, que comenzó con la jornada de la Región Metropolitana el 
+21 de agosto de 2023, se prepararon una serie de materiales de soporte para el entrenamiento. 
+a) Presentación de la capacitación (archivo formato .PPT) 
+b) Manual de personas encuestadoras 
+c) Manual de supervisión 
+La presentación de la capacitación fue elaborada a partir del archivo empleado en la capacitación de la VII 
+Ronda de la EPS,  incorporando mejoras  en algunos contenidos que requerían ajustes  y agregando las 
+aclaraciones necesarias sobre los nuevos módulos o preguntas . Se realizaron principalmente 
+modificaciones en la introducción y presentación general del estudio, acotando secciones reiterativas para 
+dar espacio a una nueva sección que explica el uso de los mapas y las direcciones georreferenciadas , 
+herramientas fundamentales  para la ubicación de las personas seleccionadas para la EPS. 
+Cada una de las capacitaciones constó de dos jornadas diarias de aproximadamente 8 horas. Las fechas y 
+zonas de capacitación realizadas se detallan en la siguiente tabla: 
+Tabla 3. Programación de capacitaciones EPS 
+Día 1 Día 2 Región Ciudad 
+21-08-2023 22-08-2023 RM Santiago 
+22-08-2023 23-08-2023 VIII Región Concepción 
+24-08-2023 25-08-2023 RM Santiago 
+24-08-2023 25-08-2023 IX Región Temuco 
+24-08-2023 25-08-2023 IV Región La Serena 
+29-08-2023 30-08-2023 V Región Valparaíso 
+30-08-2023 31-08-2023 III Región Copiapó 
+31-08-2023 01-09-2023 VI Región Rancagua 
+
+=== PDF PAGE 21 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               21 
+ 
+  
+ 
+En cada una de las jornadas, participaron tanto los(as) encuestadores(as) como el equipo de supervisión 
+local. Adicionalmente, el equipo contraparte participó en algunas sedes regionales apoyando el trabajo 
+de entrenamiento y resolviendo dudas del equipo d e campo (Santiago, Concepción, Valparaíso, Talca, 
+Rancagua, Puerto Montt).  
+El programa de capacitación fue elaborado siguiendo la presentación del archivo PowerPoint de apoyo 
+al entrenamiento. El programa que se llevó a cabo en cada jornada de capacitación fue el siguiente: 
+Tabla 4. Programa de Capacitación Final 
+Día 1 Horario 
+Presentación Inicial – Bienvenida 09:30-09:40 
+Descripción del proyecto, objetivos, muestra, cobertura 09:40-10:00 
+Protocolo de contacto y apertura del hogar 10:00-11:00 
+Descanso – Café 11:00-11:20 
+Hoja de ruta y registro de visitas 11:20-11:40 
+Cuestionario: módulos A y B – ejercicios 11:40-13:00 
+Almuerzo 13:00-14:15 
+Cierre módulo B 14:15-15:00 
+Módulos C-E 15:00-16:15 
+ 
+Día 2 Horario 
+Cuestionario - módulos F en adelante 09:30-11:00 
+Descanso – Café 11:00-11:15 
+Ejercicios de cuestionario - Rol playing en parejas 11:15-13:00 
+Almuerzo 13:00-14:15 
+Evaluación – prueba de conocimiento 14:15-15:30 
+Revisión de resultados – despedida 15:30-16:00 
+Día 1 Día 2 Región Ciudad 
+31-08-2023 01-09-2023 I Región Iquique 
+31-08-2023 01-09-2023 XIV Región Valdivia 
+31-08-2023 01-09-2023 XV Región Arica 
+05-09-2023 06-09-2023 X Región Puerto Montt 
+07-09-2023 08-09-2023 II Región Antofagasta 
+05-09-2023 06-09-2023 XVI Región Chillán 
+06-09-2023 07-09-2023 VII Región Talca 
+07-09-2023 08-09-2023 XII Región Punta Arenas 
+07-09-2023 08-09-2023 XI Región Coyhaique 
+
+=== PDF PAGE 22 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               22 
+ 
+  
+ 
+3.5. Organización del trabajo de campo 
+La organización del trabajo de campo fue estructurada para asegurar una ejecución eficiente de l 
+levantamiento de la encuesta. La supervisión y coordinación de los equipos de levantamiento fueron 
+elementos clave en este proceso, asegurando que cada fase del trabajo de campo se realizara de 
+acuerdo con los estándares establecidos. 
+El trabajo de campo se dividió en varios niveles de responsabilidad y coordinación: 
+ 
+Figura 14. Organigrama de trabajo de campo 
+ 
+El equipo de trabajo de campo y el equipo de supervisión fueron coordinados por el director ejecutivo  
+con el apoyo del Coordinador de Instrumentos. El equipo de coordinación gestionó a los /as 
+encuestadores/as, proporcionando todo el material necesario para el correcto funcionamiento de los 
+equipos, incluidas rutas con mapas y direcciones, dispositivos de captura, y otros materiales de trabajo 
+en terreno incluidos en la estrategia de contacto. Además, este equi po estuvo a cargo del control del 
+avance de las encuestas y el monitoreo del protocolo de visitas. Cualquier duda metodológica o técnica 
+de los/as encuestadores/as fue resuelta por el equipo de coordinación, que trabajó con dos asistentes 
+zonales, quienes a su vez supervisaron a cuadrillas de encuestadores. 
+
+
+=== PDF PAGE 23 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               23 
+ 
+  
+ 
+Equipo de coordinación de campo 
+• Jefes zonales o asistentes : Dos jefaturas zonales que se encargaron de la comunicación con los 
+encuestadores de la Región Metropolitana y de otras regiones. Sus tareas incluían mantener una 
+comunicación periódica con los equipos regionales y los /as encuestadores/as enviados desde 
+Santiago, llevar un registro de rechazos u otras situaciones de contingencia y mantener actualizados 
+los reportes de avance. También trabajaron en el monitoreo del avance de campo, el despacho del 
+material a regiones y otras tareas administrativas. 
+• Coordinadores Regionales: En todas las regiones se contó con un coordinador  o coordinadora de 
+equipo, al cual reportaban los encuestadores de la zona. Los /as jefe/as regionales cumplían varias 
+funciones, incluyendo la coordinación del equipo de encuestadores locales, entrega de material 
+cartográfico, selección de hogares a entrevistar, y la comunicación con el equipo central sobre el 
+avance y cualquier contingencia. 
+Equipo de supervisión 
+El equipo de supervisión operó de manera independiente del equipo de coordinación para validar la 
+correcta ejecución del trabajo de campo. Este equipo estuvo compuesto por: 
+• Supervisores y supervisoras presenciales. 
+• Supervisores y supervisoras telefónicos y de audio. 
+Este enfoque independiente aseguró que el trabajo de campo se realizara según los estándares y 
+protocolos establecidos. 
+3.6. Georreferenciación de direcciones 
+Se incorporó en la preparación del trabajo de campo una herramienta que permite ingresar las 
+direcciones a un sistema de georreferenciación, el cual sirvió para la elaboración y organización del 
+trabajo de terreno en rutas geográficas de recorrido para las personas encuestadoras. 
+De esta manera, cada persona recibía un conjunto de direcciones cercanas, minimizando la pérdida de 
+tiempo en traslados y recorrido de zonas extensas, concentrando geográficamente el trabajo y así 
+haciendo más eficiente la ejecución del terreno. 
+El siguiente es un ejemplo de mapa utilizado en la EPS, en un sector de la ciudad de Temuco. Como se 
+puede apreciar en la figura, la información en el plano permite que el conjunto de direcciones asociadas 
+al mapa número 4207 (puntos rojos), pueda ser asig nado a una sola persona, para que concentre su 
+recorrido en dicho sector: 
+ 
+
+=== PDF PAGE 24 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               24 
+ 
+  
+ 
+Figura 15. Ejemplo de Mapa de la EPS  
+ 
+Fuente: VIII Encuesta de Protección Social EPS de la Subsecretaría de Prevención Social 
+Para cada punto del mapa (dirección), se generó un link de acceso a Google Maps, con las coordenadas 
+X,Y que se obtienen del proceso de geolocalización. Dicho enlace permitió al equipo de terreno acceder 
+al mapa digital para entender las distancias, ver claramente el sector a visitar, o programar la ruta desde 
+su hogar hasta la dirección, como lo hacen las aplicaciones de este tipo (entre otras funcionalidades).   
+3.7. Prueba piloto 
+Para la ejecución de una prueba preparatoria del trabajo de campo, se llevó a cabo un piloto del estudio, 
+consistente en la aplicación de 100 encuestas, en direcciones especialmente seleccionadas para este 
+efecto, no provenientes de la muestra de la EPS. 
+La prueba piloto se realizó en la Región Metropolitana, Valparaíso y Los Ríos. 
+
+
+=== PDF PAGE 25 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               25 
+ 
+  
+ 
+El piloto tuvo un diseño cuasiexperimental, en el sentido de que intentó reproducir lo más fielmente las 
+condiciones que se darían en el trabajo de campo definitivo, con el fin de levantar recomendaciones de 
+mejora en base a los resultados observados, pero con el levantamiento de observaciones no aleatoria4.  
+Los objetivos que guiaron la aplicación de la prueba piloto fueron: 
+• Aportar evidencia para mejorar el proceso de capacitación de encuestadores  
+• Anticipar mejoras para la coordinación de los equipos de terreno a cargo de la encuesta 
+• Calibrar la diagramación del cuestionario 
+• Probar el cuestionario haciendo foco en la duración de las entrevistas 
+• Sugerir otro tipo de mejoras que puedan estimarse necesarias en los documentos a utilizar en el 
+trabajo de campo (manuales de encuestadores, cartas de invitación, díptico informativo, etc.) 
+• Medir los tiempos de aplicación y controlar la fluidez que se adquiere con la capacitación de 
+encuestadores. 
+Al finalizar el piloto, se tomaron distintas medidas, tanto en términos de la exclusión de preguntas para 
+evitar un tiempo muy extenso de aplicación, como ajustes de fraseos y alternativas de preguntas . Por 
+otro lado, se hicieron ajustes a las capacitaciones tomando recomendaciones de las dificultades 
+encontradas en terreno.  
+3.8. Recolección y procesamiento de datos 
+El trabajo de campo de la VIII Ronda de la EPS se realizó entre el miércoles 11 de octubre de 2023 y lunes 
+10 de junio de 2024. 
+El inicio de la recolección de datos se realizó de manera escalonada entre las distintas regiones, a medida 
+que se iban consolidando los equipos y entregándose el material de apoyo. 
+Durante la implementación del trabajo de campo de esta ronda de la EPS se fueron desarrollando 
+reuniones semanales, en las que el equipo Ipsos fue comunicando una serie de dificultades que 
+generaron un avance más lento de lo esperado, en términos de la aplicación de encuestas. Ya en el mes 
+de enero, se solicitó una extensión del plazo de terreno debido a la menor tasa de logro obtenida 
+respecto a lo esperado a esa fecha. 
+El siguiente gráfico muestra la evolución semanal de encuestas obtenidas, donde se observa el periodo 
+de bajo logro entre fines de diciembre y comienzos de enero, fecha en la que se solicitó la extensión de 
+plazo del levantamiento: 
+ 
+4 Sobre diseños cuasiexperimentales véase Hernández Sampieri, 2004, página 204. “Metodología de la Investigación Social” 
+
+=== PDF PAGE 26 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               26 
+ 
+  
+ 
+Gráfico 1. Encuestas logradas por semana de terreno5 
+  
+*La semana 35 considera encuestas levantadas solo el lunes 10 de junio. 
+Además de la baja tasa de logro descrita en enero, también se puede destacar el aumento general 
+obtenido en las semanas que van desde el mes de marzo en adelante, con el mejor rendimiento logrado 
+en la semana 28 (cerrando el mes de abril) con 944 encuestas, para luego bajar en las últimas semanas 
+de mayo y junio como era esperable debido a que se disponía de menor cantidad de muestra para visitar. 
+El principal inconveniente para la aplicación de esta ronda fue el problema de seguridad pública  que 
+vive el país. La población  mostró una mayor reticencia a contestar encuestas presenciales por temor a 
+sufrir situaciones delictuales de distinto tipo, que han afectado las tasas de respuesta tanto de la EPS 
+como de otras encuestas.  
+Si bien se prepararon una serie de protocolos de trabajo en terreno para dar seguridad a las personas 
+entrevistadas (Carta formal, credenciales, dípticos, verificación de identidad de las y los encuestadores, 
+video del Subsecretario), el aumento de la desco nfianza tuvo un impacto importante que se puede 
+desglosar en las siguientes situaciones registradas en el levantamiento: 
+- Uno de los efectos de la inseguridad consistió en la disminución del bloque horario en el que se 
+realizan con mayor frecuencia las encuestas . Si años atrás la mayor efectividad se lograba 
+ 
+5 El trabajo de campo se realizó hasta el mes de mayo, sin embargo, considerando que algunos(as) encuestadores y 
+encuestadoras habían agendado entrevistas con personas posterior a esa fecha, se otorgó un margen de tiempo adicional para 
+llevar a cabo dichas encuestas en el mes de junio de 2024. A pesar de ello, el trabajo en su totalidad concluyó en mayo de 2024. 
+140
+283
+360331
+453
+557
+475
+420428
+320
+274
+326
+447
+512
+462437448
+584
+512
+655
+538
+697
+737
+531533
+660
+855
+944910
+661
+499
+217
+333
+541
+22
+0
+100
+200
+300
+400
+500
+600
+700
+800
+900
+1000
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35
+Encuestas logradas por semana
+
+
+=== PDF PAGE 27 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               27 
+ 
+  
+ 
+después de las 18 horas, cuando las personas estaban en sus casas después de sus actividades 
+cotidianas, ese bloque se volvió menos efectivo ante la inseguridad que aumenta al llegar el 
+horario nocturno. 
+- Ante la desconfianza generalizada, en distintas comunas del país, se solicitaba el respaldo de la 
+municipalidad para la aplicación de las encuestas. Para muchas personas, la autoridad válida para 
+la autorización de las visitas a los domicilios dejó de ser el gobierno central, lo que implicó que 
+nuestro equipo no pudiera aplicar las encuestas en algunos sectores donde los vecinos y vecinas, 
+generalmente comunicados por grupos de chat, se coordinaban para no aceptar la aplicación 
+hasta que alguien del municipio corroborara la veracidad de la encuesta. El caso más complejo se 
+vivió en la comuna de San Vicente de Tagua-Tagua, en la región de O’Higgins, donde se retuvo a 
+una encuestadora y se le tomaron fotos para enviarlas por chat a los vecinos y la misma 
+municipalidad. Otras comunas donde se solicitó conversar con el municipio fueron Coltauco, en 
+la misma región, y Huechuraba en la RM. 
+ 
+- Impacto de los problemas de seguridad en el equipo de terreno . Los problemas de seguridad 
+tuvieron un impacto significativo en el equipo de terreno, afectando tanto su bienestar como la 
+operatividad del levantamiento de datos. En diversas zonas, se reportaron incidentes que 
+involucraron intentos de asalto y amenazas a los/as encuestadores/as, lo que generó un ambiente 
+de temor y desconfianza entre los miembros del equipo. Esta situación provocó la deserción de 
+algunos encuestadores(as) y una creciente reticencia a realizar visitas en horarios nocturnos o en 
+áreas consideradas peligrosas. 
+ 
+Como resumen de las medidas que se tomaron para mitigar el impacto de los problemas de seguridad 
+se destaca lo siguiente: 
+a) La Subsecretaría de Previsión Social se contactó con las municipalidades a través de un comunicado 
+oficial, además de realizaron llamados  específicos a  personas específicas  clave, incluyendo 
+representantes de juntas vecinales y otros actores clave en los municipios con problemas (incluyendo 
+San Vicente de Tagua-Tagua donde se dio el caso más complejo). Estas acciones tenían como objetivo 
+informar sobre el levantamiento de la encuesta y las personas encargadas de realizar la, asegurando 
+una comunicación clara y una colaboración efectiva en todo el proceso. 
+b) Ipsos coordinó con los equipos para que las viviendas de sectores peligrosos fueran visitadas en 
+horarios diurnos. 
+c) Se dio la instrucción  que las zonas  identificadas como peligrosas fueran visitadas por dos o más 
+personas. 
+d) Se solicitó al equipo de coordinadores regionales identificar previamente los sectores que podrían 
+representar mayor peligro, con el propósito de alertar a los encuestadores y encuestadoras antes de 
+realizar las visitas, asegurando así su seguridad durante el trabajo de campo.  
+e) Se financió el arriendo de vehículos a personas que debían recorrer zonas complejas.  
+ 
+
+=== PDF PAGE 28 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               28 
+ 
+  
+ 
+Por otra parte, entre el 2 y 3 de febrero de 2024 la Región de Valparaíso se vio afectada por una serie 
+de incendios que destruyeron más de 15 mil viviendas, principalmente de las comunas de Viña del Mar, 
+Valparaíso y Quilpué. 
+La emergencia impactó directamente a 361 casos de la lista de seleccionados para la EPS (147 panelistas 
+y 114 casos de nacimientos). Este catastro se realizó mediante una georreferenciación de la muestra con 
+las capas geográficas informadas por el Gobierno en los sitios web públicos.  
+Inmediatamente después del incendio, los equipos de Ipsos y la Subsecretaría de Previsión Social  
+consideraron la ejecución de un plan de contingencia que incluía no solo la exclusión momentánea de 
+estos casos afectados directamente, sino que también en las comunas aledañas a los siniestros, ya que 
+hubo un estado de alarma general en la zona que afectaba la medición (cortes de tránsito, personas 
+movilizándose para ayudar a los damnificados, encuestadores y encuestadoras con familiares en la zona, 
+e intervención en general de estas comunas).  
+Dada esta situación, se consideraron las siguientes medidas: 
+a) Para las comunas de Valparaíso, Viña del Mar y Quilpué suspender la aplicación presencial de 
+encuestas, hasta el mes de marzo. 
+b) El resto de las comunas de la región continuaría operando de manera normal, reforzando a la V 
+región costa (San Felipe, Los Andes) con encuestadores de Santiago. 
+c) Las encuestas en las zonas afectadas directamente por los incendios se retomarían en el mes de 
+marzo. 
+d) Más tarde, en el mes de abril, al notarse el efecto de la baja cantidad de encuestas logradas, se 
+reforzó el equipo de la Región de Valparaíso con encuestadores de la Araucanía (Región que cerró 
+tempranamente el terreno) y de la RM, con el fin de recuperar el bajo logro de los meses de febrero 
+y marzo. 
+ 
+La muestra finalmente levantada en la región de Valparaíso correspondió a un total de 1,526 casos, 
+representando el 83% de la muestra objetivo que fue definida al comienzo del terreno. Si se considera 
+que a inicios de abril el logro en la región era de 38% , este número es positivo ante el impacto de la 
+catástrofe y el tiempo que ha demorado en normalizarse la situación. Desde el punto de vista estadístico, 
+se considera un número robusto para representar correctamente a la población de la región en la 
+muestra nacional. 
+Otros problemas de terreno 
+1.- Dificultades de ubicación de los panelistas son siempre un factor de alta dificultad en las encuestas 
+longitudinales, sin embargo, el equipo de terreno expresó desde el inicio del trabajo de campo la especial 
+preocupación por la mayor complejidad existente respecto a la ronda anterior de la encuesta.  
+Producto de que hay una gran cantidad de personas que provienen de la muestra de 2002 y 2004, las 
+cuales tienen una muy baja tasa de respuesta , la búsqueda de estas personas se hizo particularmente 
+
+=== PDF PAGE 29 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               29 
+ 
+  
+ 
+compleja, lo que generó desmotivación en el equipo de encuestadores/as que con el correr del trabajo 
+de campo notan que hay un grupo importante de casos que es muy difícil de ubicar. 
+Por otro lado, dado que en esta ocasión la EPS incluyó una muestra de nacimientos, no se contaba con 
+una dirección donde se hubiera aplicado una encuesta previa . En lugar de eso, se disponía  únicamente 
+de información proveniente de datos administrativos. Esto generó dificultades con esta muestra, ya que 
+en muchos casos fue necesario visitar múltiples direcciones con el fin de lograr el contacto con las 
+personas seleccionadas de dicha muestra. 
+Esta situación es importante de evaluar en las encuestas de panel, ya que la muestra envejece cada vez 
+más y la probabilidad de encontrar a personas que no han contestado desde las primeras rondas se hace 
+cada vez menor, con el consiguiente desgaste del equipo de terreno.   
+2.- Dificultad recordación historias laborales: el formato en el que se registra la historia laboral de las y 
+los entrevistados facilita la recordación (incluyendo el uso del cuadernillo de registro), sin embargo, esto 
+no es suficiente para aquellos casos en que se entrevista a panelistas que respondieron la última vez 
+hace muchos años. Completar las historias laborales desde 2004, 2006, por ejemplo, se hace una tarea 
+muy compleja ya que la recordación mes a mes de las actividades requiere un esfuerzo de memoria que 
+no todos pueden realizar con exactitud, por lo que incrementa el tiempo en el que se realiza la encuesta 
+ocasionando que se requiera más cantidad de encuestadores . Sobre esto, se recomienda para futuras 
+mediciones, hacer algunas pruebas cognitivas con historias laborales antiguas y buscar alternativas para 
+mejorar la recordación. Es importante tener en cuenta, que una forma alternativa de apelar a la memoria 
+de las personas podría mejorar la calidad de los datos, pero el problema no será eliminado del todo 
+debido al tiempo transcurrido para el registro. 
+3.- Rechazos: Si bien el rechazo llegó al 5% de las visitas, el personal de campo report ó que muchas 
+personas, sin dar una negativa directa, utilizaban otras estrategias para no contestar la encuesta. Entre 
+ellas pedir a otra persona del hogar que informara que este no se encontraba al momento de la visita o 
+simplemente pedirles a las personas encuestadoras que volvieran otro día en varias ocasiones seguidas, 
+dilatando la ejecución y finalmente no dando la entrevista.  
+  
+
+=== PDF PAGE 30 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               30 
+ 
+  
+ 
+4. CUESTIONARIOS  
+Para la EPS se programan distintos cuestionarios, ya que como se trata de una encuesta longitudinal, existen 
+personas que salen del panel, ya sea porque fallecen o porque se encuentran en situaciones que se les hace 
+imposible contestar la encuesta (personas en situación de discapacidad permanente). 
+En estos dos últimos casos, se trabaja con un cuestionario de cierre de la historia del panelista, que cuenta 
+con un número reducido de preguntas que se aplican a un informante idóneo que generalmente es un 
+familiar de esta persona. 
+De esta manera, la EPS 2023 contó con 3 tipos de cuestionarios:  
+a) para personas vivas y que se mantienen en el panel. 
+b) para informantes idóneos que conocen la situación laboral y previsional de las personas fallecidas, 
+c) para informantes idóneos que conocen la situación laboral y previsional de  personas en situación 
+de discapacidad permanente para contestar. 
+Es importante recalcar que l os dos últimos cuestionarios sirven para darle un cierre al seguimiento de los 
+panelistas, ya que no serán contactados en futuras rondas de la encuesta. 
+El cuestionario de personas vivas corresponde al cuestionario completo de la EPS y a las personas que 
+siguen formando parte del panel. 
+Figura 16. Cuestionarios de la EPS 
+ 
+4.1. Creación y revisión de cuestionarios 
+Al tratarse de una encuesta longitudinal, el cuestionario de la EPS  puede tener cambios limitados. Si bien 
+es importante que la encuesta se actualice siguiendo los ajustes al sistema previsional, estos cambios 
+siempre son analizados en función de no alterar la riqueza informativa longitudinal que entrega la encuesta. 
+En función de lo anterior, la generación del cuestionario parte de la base de la encuesta aplicada en la ronda 
+anterior. Sobre ese instrumento base, se trabajó en algunos ajustes que se enumeran a continuación: 
+
+
+=== PDF PAGE 31 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               31 
+ 
+  
+ 
+- Revisión de todo el cuestionario con una perspectiva de género. Se ajustaron textos y fraseos de 
+preguntas para contar con una redacción inclusiva. 
+- En el módulo B de historias laborales se incorporó la pregunta sobre el tamaño de la empresa 
+(número de trabajadores) 
+- Se ajustaron preguntas respecto al pilar solidario, cambiando las anteriores que hacían referencias 
+a la antigua Pensión Básica Solidaria, por la Pensión Garantizada Universal (PGU). Sobre esta nueva 
+pensión, se incluyeron algunas preguntas que apunta a levantar información sobre el conocimiento 
+que las personas tienen de esta política. 
+- Se incluyeron preguntas en un nuevo módulo de cuidados (módulo L de la encuesta). El objetivo de 
+este módulo es levantar información que caracterice a las personas que realizan actividades de 
+cuidados de personas, ya sea de manera remunerada como no remunerada, y levantar información 
+sobre las personas que cuidan, el tiempo destinado a estas labores y otros datos de contexto. 
+- Se redujo el módulo G de capacitación y el J de calidad de vida. 
+- Se agregaron preguntas sobre el lugar de trabajo para levantar los casos en que las personas tiene 
+teletrabajo o que trabajen con plataformas digitales y aplicaciones. 
+- En el módulo Q se realizó un ejercicio de aversión al riesgo, que implicaba tres preguntas sucesivas 
+sobre la preferencia de tipos de trabajos que significaban mayor o menor variabilidad de ingresos.  
+Estas preguntas fueron recuperadas de la EPS VI Ronda , facilitando la comparabilidad de ellas a 
+través del tiempo.  
+- Para esta versión de la EPS se realizó una revisión del concepto de protección social, revisión teórica 
+que derivó en algunos ajustes menores al cuestionario.  
+La estructura final de la encuesta, en términos de los módulos que la componen es la siguiente: 
+I. Módulo A: Información de los integrantes del hogar 
+II. Módulo B: Historia Laboral 
+III. Módulo C: Ingresos del Entrevistado e Ingreso Total del Hogar 
+IV. Módulo D: Activos y Patrimonio del Entrevistado y Total del Hogar 
+V. Módulo E: Protección Social 
+VI. Módulo F: Salud 
+VII. Módulo G: Capacitación 
+VIII. Módulo I: Historia Individual 
+IX. Módulo J: Calidad de Vida 
+X. Módulo H: Historia Familiar 
+XI. Módulo Hogar: Situación Laboral, de Salud y Previsional del resto de los integrantes del 
+hogar 
+XII. Módulo L: Economía del Cuidado 
+XIII. Módulo Q: Coyuntura 
+
+=== PDF PAGE 32 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               32 
+ 
+  
+ 
+Una vez que el cuestionario tuvo su versión final, se diagramó un cuestionario con diseño para los usuarios 
+de la información de la encuesta. 
+Figura 17. Portada del cuestionario diagramado de personas Vivas 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4.2. Cuestionario electrónico 
+Al tratarse de una encuesta compleja, en términos de la lógica de saltos de preguntas y validación interna, 
+la EPS requiere que su aplicación en formato electrónico, de manera que la persona encuestadora siga el 
+flujo lógico de la encuesta de manera automática. 
+ 
+
+
+=== PDF PAGE 33 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               33 
+ 
+  
+ 
+De esta manera, una vez que se contó con la encuesta final, esta fue programada en el aplicativo iField 
+mediante el cual Ipsos programa las encuestas en dispositivos electrónicos. 
+ 
+El Software permite generar cuestionarios versátiles, compatibles con distintos tipos de dispositivos, entre 
+otras ventajas que se enumeran a continuación: 
+  
+- Integración en una plataforma única la recolección de datos y el sistema de manejo de campo. 
+- Integración con sistema “Dimensions”, utilizado por Ipsos para el procesamiento estadístico de 
+las encuestas (validación, generación de tablas estadísticas). 
+- Reporte automatizado de control de muestras (por comuna, región, sexo, edad o cualquier 
+rango ingresado al crear cada proyecto). 
+- Geolocalización y seguimiento en línea de los encuestadores. 
+- Grabación silenciosa de las encuestas, permitiendo verificación posterior de los audios. 
+- Vinculación directa con el área de supervisión: se configura de antemano cuáles son las 
+preguntas a supervisar en Back Checking. 
+ 
+4.3. Tarjetero 
+Las tarjetas sirven para ayudar en algunos casos a la persona entrevistada a contestar la encuesta. Esto 
+debido a que en ésta se muestran las alternativas de respuesta de ciertas preguntas que poseen muchas 
+opciones, y contribuyen como ayuda de memoria para el(la) entrevistado(a).  
+ 
+Figura 18. Ejemplo Tarjeta 
+ 
+ 
+ 
+El uso de tarjetas se especifica en el dispositivo electrónico al momento de aplicarse las preguntas que 
+corresponden. Cada tarjeta tiene como encabezado un número correlativo que sirve para ordenarlas de 
+manera secuencial y el número de la pregunta para hacer el seguimiento en el cuestionario . Al momento 
+de aplicarse una pregunta, que requiere apoyo de este material, la instrucción de su uso se despliega en el 
+dispositivo con un color que resalta respecto al texto de la pregunta que se debe leer; la instrucción de su 
+
+
+=== PDF PAGE 34 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               34 
+ 
+  
+ 
+uso es obligatoria con el objetivo de que sea un estándar de aplicación en todas las preguntas que 
+corresponde. 
+ 
+Parte de la supervisión de la EPS, en esta ronda, incluyó el chequeo del uso de las tarjetas de manera de 
+asegurar que se cumpliera con este estándar. 
+  
+
+=== PDF PAGE 35 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               35 
+ 
+  
+ 
+5. SUPERVISIÓN 
+5.1. Acompañamiento en terreno de la Subsecretaría de Previsión Social 
+En paralelo al inicio del trabajo de campo de la EPS, la Subsecretaría de Previsión Social realizó 
+acompañamientos en terreno a las personas encuestadoras de Ipsos, con el objetivo de verificar en terreno 
+todo el proceso de contacto y aplicación de las encuestas. 
+Este trabajo se llevó a cabo las primeras semanas de trabajo de campo, y sirvió por una parte para que el 
+equipo de la Subsecretaría conociera de primera fuente las dificultades que presenta el contacto y 
+aplicación de encuestas, junto con levantar alertas y recomendaciones de mejora de todo el proceso. 
+Ipsos coordinó con  los jefes de terreno regionales para la selección de las personas encuestadoras que 
+saldrían a terreno con la contraparte. Por lo general las salidas se realizaron a media mañana, horario en 
+que habitualmente los equipo comienzan a visitar las direcciones. 
+De esta manera, la contraparte podía hacer el seguimiento completo de la rutina de trabajo que implicaba: 
+- Organización de la ruta de movilización (en base a las direcciones y puntos GPS entregados para 
+localización de las direcciones). 
+- Visita a los sectores correspondientes 
+- Contacto con el entrevistado/a , u otras personas del hogar que pudieran recibir a los/as 
+encuestadores. 
+- Proceso de información sobre el motivo de la visita, explicación general de la encuesta, entrega 
+de materiales (Carta, díptico informativo) 
+- Agendamiento de nuevas visitas en caso de ser necesario 
+- Llenado de la hoja de ruta digital con los códigos de disposición de casos. 
+- Aplicación de la encuesta (lectura correcta de las preguntas, usos de tarjetas, problemas de 
+comprensión de algún fraseo en particular, etc.) 
+Durante el proceso de supervisión se identificaron diversas alertas, entre ellas dificultades en el uso 
+correcto del tarjetero para la aplicación de las preguntas, necesidad de optimizar la organización de las 
+rutas de salida a terreno para mejorar la efic iencia, insuficiente familiaridad con ciertos aspectos del 
+cuestionario que afectaba la fluidez en su aplicación y observaciones sobre la redacción y comprensión 
+de algunas preguntas, lo que requería ajustes para facilitar su entendimiento tanto por parte de los 
+encuestadores como de las personas entrevistadas. Estas alertas permitieron tomar medidas 
+correctivas y realizar mejoras durante el desarrollo del levantamiento de datos.  Ipsos consideró esta 
+
+=== PDF PAGE 36 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               36 
+ 
+  
+ 
+información en las reuniones posteriores que tuvo con el equipo de campo, insistiendo sobre algunos 
+puntos de mejora que habían sido detectados de manera generalizada. 
+5.2. Actividades de supervisión directa 
+Para esta ronda de la EPS se dispusieron distintos tipos de verificaciones con medios tradicionales y otros 
+que operan con las herramientas tecnológicas disponibles. El propósito de usar distintos métodos de 
+supervisión es poder apuntar a distintos objetiv os de calidad, haciendo que el proceso sea eficiente en 
+términos de la relación costo y cantidad de encuestas verificadas, permitiendo así una mayor cobertura 
+del proceso.  
+El proceso de supervisión del estudio estuvo compuesto por tres modalidades: presencial, telefónica y 
+escuchas telefónicas.  
+La supervisión directa se realizó post-campo, es decir, se verificó el 63% de todas las encuestas en forma 
+posterior a la visita de los encuestadores a las personas seleccionadas para participar.  
+El proceso de supervisión del estudio tuvo las siguientes modalidades: 
+1. Supervisión post campo presencial : Un supervisor visita las direcciones aplicadas para verificar la 
+efectiva aplicación de la encuesta y re -aplica algunas preguntas para verificar que lo levantado por el 
+encuestador corresponde con lo indicado por el entrevistado. Uno de los objetivos cla ve de la 
+supervisión presencial es verificar, en terreno, que la encuesta fue aplicada a las personas indicadas y 
+que se realizó en la dirección registrada en el sistema, lo que resulta relevante para el estudio que tiene 
+un carácter longitudinal. 
+ 
+Este tipo de supervisión tenía como piso mínimo apuntar al 10% del total de encuestas aplicadas y fue 
+distribuida entre todas las regiones del país, por lo que se contó con personas supervisoras en terreno 
+para todo el territorio. 
+ 
+2. Supervisión Post campo telefónica:  Consistió en la verificación de domicilio y re -entrevista de 
+preguntas clave del cuestionario, mediante un llamado telefónico. Este formato de supervisión tenía 
+como piso mínimo el 5% de entrevistas efectivas, para lo cual se dispuso de 4 personas realizando estos 
+llamados de verificación desde las oficinas centrales de Ipsos. 
+3. Supervisión mediante escuchas: Hoy Ipsos funciona con un sistema que incorpora la escucha de las 
+entrevistas aplicadas , gracias a que los audios de cada una de las encuestas son grabados en los 
+dispositivos electrónicos en que se aplican. De esta manera, además de la data levantada se genera un 
+archivo de audio que permitió: 
+a) Confirmar que la encuesta fue efectivamente aplicada a otra persona (descartando falseos del 
+tipo en que el encuestador llena la encuesta por sí mismo). 
+
+=== PDF PAGE 37 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               37 
+ 
+  
+ 
+b) Confirmar que la encuesta fue aplicada en su totalidad. 
+c) Verificar que lo registrado por el encuestador en el dispositivo, es exactamente lo que el 
+entrevistado dijo. 
+d) Verificar que las respuestas no están siendo guiadas por el encuestador. 
+e) Asegurar que se dieron las instrucciones correctas sobre respuestas múltiples, únicas, sondeo de 
+preguntas abiertas, entre otros. 
+Los números utilizados para el contacto telefónico correspondieron a los indicados por los propios 
+encuestados(as) durante la aplicación de la encuesta. Los casos que no pudieron ser contactados ya sea 
+porque no tenían teléfono o porque el número ingresado tenía algún error, se derivaron a supervisión 
+presencial. 
+Para lo anterior se consideró un piso mínimo de 5% de las entrevistas. Cabe destacar que, por el largo 
+de la aplicación de la EPS, no fue posible grabar las encuestas en su totalidad, debido a que se generarían 
+archivos con un peso que haría imposible una descarga fluida de la información. Para este caso,  se 
+seleccionaron aquellas preguntas claves tanto para el flujo de la encuesta como aquellas que revistan 
+mayor relevancia para la contraparte.  
+Todo el proceso de supervisión comenzó el 14 de octubre de 2023, es decir, en la primera semana de 
+trabajo de campo. 
+Hasta el cierre de campo se supervisaron  10.840 encuestas, lo que representa un 63% del total de 
+encuestas aplicadas. La mayor parte de la supervisión fue telefónica (4.618 encuestas supervisadas). En 
+la tabla siguiente se expone el resultado y se describe el estado de resultado de la cobertura del proceso 
+diferenciado por región y modalidad de supervisión. 
+Tabla 5. Supervisión por región y modalidad 
+Región Región 
+N° 
+encuestas 
+aplicadas en 
+total 
+N° 
+supervisión 
+escucha 
+N° 
+supervisión 
+teléfono 
+N° 
+supervisión 
+presencial 
+Total 
+supervisado 
+% de 
+supervisión 
+1  TARAPACÁ  272 92 83 20 195 72% 
+2  ANTOFAGASTA  555 189 129 138 456 82% 
+3  ATACAMA  260 58 104 28 190 73% 
+4  COQUIMBO  861 81 226 116 423 49% 
+5  VALPARAÍSO  1.526 378 365 153 896 59% 
+6  LIBERTADOR BERNARDO O'HIGGINS  859 199 242 147 588 68% 
+7  MAULE  875 257 255 147 659 75% 
+8  BIOBÍO  1.449 422 432 216 1.070 74% 
+9  ARAUCANÍA  1.190 221 282 146 649 55% 
+10  LOS LAGOS  1000  227 409 159 795 80% 
+11  AYSÉN  166 25 47 36 108 65% 
+12  MAGALLANES  157 26 71 21 118 75% 
+13  METROPOLITANA  7.079 1.339 1.727 1.076 4.142 59% 
+14  LOS RÍOS  320 54 90 56 200 63% 
+15  ARICA Y PARINACOTA  206 55 80 45 180 87% 
+
+=== PDF PAGE 38 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               38 
+ 
+  
+ 
+Región Región 
+N° 
+encuestas 
+aplicadas en 
+total 
+N° 
+supervisión 
+escucha 
+N° 
+supervisión 
+teléfono 
+N° 
+supervisión 
+presencial 
+Total 
+supervisado 
+% de 
+supervisión 
+16  ÑUBLE  327 55 76 40 171 52% 
+  17.102 3.678 4.618 2.544 10.840 63% 
+Fuente: Ipsos Public Affairs – EPS 2023 
+Procedimiento para cotejar la información levantada en terreno con la Supervisión 
+Para cada uno de los tipos de supervisión se diseñaron pautas guías del trabajo del equipo que ejecutaba 
+el control de calidad. 
+Para el chequeo de lo respondido por el/la encuestado/a se descargaba periódicamente la base de datos 
+de la encuesta y se enviaba a cada supervisor la información que debía cotejar, ya sea en la visita presencial, 
+la llamada telefónica o la escucha de los audios. 
+El siguiente es un ejemplo de las supervisiones presenciales, donde se puede observar la información 
+recibida por los y las supervisoras: 
+Tabla 6. Confirmación Preguntas Supervisión Terreno-Telefónico 
+Composición del hogar N° Personas ola 
+anterior 
+N° Personas 
+Actual Edad 
+Mes de 
+encuesta 
+anterior 
+Año ola 
+anterior Estado 
+1. JUAN: Sí, continua en el hogar 
+2. PERSONA 2 (HOMBRE 29 AÑOS): 
+No, ya no pertenece al hogar 
+2 2 58 Junio 2002 Trabajando 
+1. DORIS: Sí, continua en el hogar 
+2. PERSONA 2 (HOMBRE 70 AÑOS): 
+Sí, continua en el hogar 
+3. PERSONA 3 (HOMBRE 38 AÑOS): 
+Sí, continua en el hogar 
+3 3 68 Julio 2002 Trabajando 
+1. JUAN: Sí, continua en el hogar 
+2. CLARA: Sí, continua en el hogar 
+6 2 72 Setiembre 2002 Trabajando 
+1. ENRIQUE: Sí, continua en el 
+hogar 
+2. PERSONA 2 (HOMBRE 68 AÑOS): 
+Sí, continua en el hogar 
+3. PERSONA 3 (HOMBRE 39 AÑOS): 
+No, ya no pertenece al hogar 
+4. PERSONA 4 (MUJER 31 AÑOS): 
+No, ya no pertenece al hogar 
+4 4 62 Julio 2002 Trabajando 
+1. MÓNICA: Sí, continua en el 
+hogar 
+2. ROBERTO: Sí, continua en el 
+hogar 
+3 3 64 Junio 2002 Trabajando 
+
+=== PDF PAGE 39 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               39 
+ 
+  
+ 
+Composición del hogar N° Personas ola 
+anterior 
+N° Personas 
+Actual Edad 
+Mes de 
+encuesta 
+anterior 
+Año ola 
+anterior Estado 
+3. GERMAN: Sí, continua en el 
+hogar 
+Fuente: VIII Encuesta de Protección Social EPS, de la Subsecretaría de Prevención Social 
+ 
+Junto con esta información, el supervisor recibía la dirección y el teléfono de la persona entrevistada para 
+verificar la información de contacto. Para cada celda (información que corresponde a una pregunta de la 
+encuesta), el equipo que realizaba la verificación debía llenar una planilla con el estado (OK si la 
+información coincidía con lo levantado). 
+Tabla 7. Confirmación Preguntas Supervisión Escucha 
+A1. Nombre de pila de 
+todos los integrantes 
+del hogar 
+A8. Sexo 
+A9. ¿Qué 
+edad tiene 
+usted? 
+E3. Es posible que ya me 
+haya mencionado esto, pero 
+¿se encuentra cotizando 
+actualmente? 
+Es posible que me haya 
+mencionado esto antes, pero 
+¿tiene usted algún tipo de 
+discapacidad? 
+OK OK OK OK OK 
+OK OK OK OK OK 
+OK OK OK OK OK 
+OK OK OK OK OK 
+OK OK OK OK OK 
+OK OK OK OK OK 
+OK OK OK OK OK 
+OK OK OK OK OK 
+OK OK OK OK OK 
+Fuente: VIII Encuesta de Protección Social EPS, de la Subsecretaría de Prevención Social 
+Actividades de supervisión indirecta 
+Además de las actividades descritas en el punto anterior, la EPS contó con una revisión sobre las bases de 
+datos que permitió verificar ciertos criterios básicos para pasar como encuesta válida. 
+Esta revisión constó de dos momentos. El primero es una revisión manual realizada por la coordinadora de 
+terreno que de manera periódica revisaba algunos elementos básicos como la completitud de los casos, los 
+tiempos de aplicación de la encuesta y la cantidad de entrevistas aplicada por cada encuestador/a. Esta 
+revisión permitía levantar alertas para que algunas encuestas pasaran a supervisión directa. 
+Algunos casos que se consideraban para pasar a supervisión directa luego de esta revisión fueron: 
+- Encuestas de un mismo encuestador sin teléfono de contacto 
+
+=== PDF PAGE 40 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               40 
+ 
+  
+ 
+- Un número alto de encuestas realizadas por un mismo encuestador el mismo día 
+- Encuestas de duración menor a 15 minutos 
+- Encuestas con falta de información  relevante (historias laborales, variables de muestra como sexo 
+edad u otras)   
+El segundo momento es una supervisión mediante un código programado para revisar la completitud de 
+las encuestas, dentro del proceso de validación de datos. Acá se chequean que los datos tuvieran la 
+información mínima requerida para considerarse una encuesta válida , considerando los datos como sexo, 
+comuna de residencia, región, edad (variables básicas para el cálculo de factores de expansión).   
+6. SEGURIDAD DE LA INFORMACIÓN 
+De acuerdo a los requerimientos de la Subsecretaría de Previsión Social, relacionados con la planificación 
+y ejecución de protocolos que aseguren la protección de los datos personales de los encuestados de la 
+EPS, así como la información confidencial que se genera en  el proyecto, Ipsos preparó un plan de 
+seguridad basado en las políticas implementadas por el Grupo Ipsos a nivel global, la certificación y 
+protocolos derivados de la norma ISO 20252, y soportado en las componentes de hardware y software 
+implementados por la compañía. Este plan correspond ió a la primera actividad a desarrollar junto con 
+el inicio del servicio de Ipsos en el marco del desarrollo de la VIII ronda de la EPS. 
+- Certificación ISO 20252 
+Con respecto a las normas internas de la empresa, es importante mencionar que Ipsos Chile fue auditado 
+en 2016 para obtener la certificación de la norma ISO 20252, sobre prácticas específicas de calidad y 
+buenas prácticas en la realización de estudios de opinión y de mercado. El año 2022, Ipsos se sometió a 
+una nueva auditoría para renovar esta certificación, la cual fue exitosamente superada y renovada hasta 
+el año 2025. 
+La Norma ISO 20252 es una norma especialmente desarrollada para organizaciones que realizan 
+estudios de opinión pública, con particular énfasis en la seguridad de la información y en la protección 
+de la información sensible.   
+Cabe destacar que el grupo Ipsos a nivel mundial está impulsando la certificación en la 27001, que está 
+en proceso de finalización para Brasil, donde tenemos nuestro centro de operaciones y Data Center para 
+IT en Latinoamérica. Además, las políticas de seguridad de la información y protección sensible de Ipsos 
+Chile siguen los lineamientos del grupo a nivel mundial que han sido elaborados en concordancia con la 
+27001. 
+En términos concretos, y respecto a la ejecución de la EPS 2023, se puede mencionar que la empresa 
+cuenta con políticas alineadas a esta norma y que están orientadas principalmente a dos dimensiones: 
+
+=== PDF PAGE 41 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               41 
+ 
+  
+ 
+▪ Restringir el acceso no autorizado a información sensible o datos relacionados con la identidad 
+de los encuestados. 
+▪ Resguardar debidamente que la información gestionada o custodiada por Ipsos se encuentre 
+debidamente respaldada, hasta el momento que su política o el proyecto requiera de su 
+debida eliminación. 
+ 
+- Restricción de acceso a información sensible 
+El personal Ipsos que t uvo acceso a la información sensible, relacionada con la identidad de los 
+encuestados, estuvo limitada estrictamente a aquellas personas que requerían realizar alguna actividad 
+con estos datos, ya sea para la organización del trabajo en terreno como para la ubicación de los 
+entrevistados incluidos en la muestra.  
+En términos concretos, la siguiente tabla se detalla los profesionales que h icieron uso de esta 
+información, las actividades relacionadas y los datos específicos a los que tuvieron acceso: 
+Tabla 8. Personal con acceso a información sensible 
+ 
+Nombre Profesional - Cargo Actividad relacionada con el manejo de 
+datos sensibles 
+Datos que se utilizaron 
+Coordinador de Desarrollo 
+de Instrumentos 
+Responsable de la seguridad de la 
+información, recibió la información de 
+contacto desde la contraparte y estuvo a 
+cargo de la distribución a los y las 
+profesionales que hicieron uso de los datos. 
+Nombre, dirección y datos de 
+identificación de la persona 
+entrevistada. 
+Director de TI y Scripting  Carga de base de datos en sistema IField 
+para posterior aplicación en terreno en los 
+dispositivos electrónicos 
+Nombre, dirección y datos de 
+identificación de la persona 
+entrevistada 
+Coordinador/ra de terreno Organización de la base de datos con las 
+direcciones para asignación y entrega a las 
+personas encuestadoras 
+Nombre, dirección y datos de 
+identificación de la persona 
+entrevistada 
+Equipo de Encuestadores/as Recepción y búsqueda de direcciones en 
+terreno. 
+Recibieron una lista con las direcciones 
+asignadas, junto con la dirección de las 
+personas entrevistadas que les 
+corresponden 
+Encargado de 
+georreferenciación de las 
+direcciones 
+Georreferenciación de direcciones y 
+elaboración de rutas de recorrido de las 
+personas encuestadoras 
+Recibió un folio de cada caso y la 
+dirección de la persona entrevistada. 
+No manipuló otros datos como 
+nombres, u otros datos de 
+identificación personal 
+
+=== PDF PAGE 42 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               42 
+ 
+  
+ 
+Nombre Profesional - Cargo Actividad relacionada con el manejo de 
+datos sensibles 
+Datos que se utilizaron 
+Jefe de supervisión Gestión de supervisión de las direcciones y 
+entrega a los equipos a cargo del control de 
+calidad  
+Nombre, dirección y datos de 
+identificación de la persona 
+entrevistada, sólo de aquellos casos 
+que sean seleccionados para control de 
+calidad 
+Equipo de Supervisión Verificación de la aplicación de la encuesta 
+en las direcciones asignadas 
+Recibieron una lista con las direcciones 
+asignadas, junto con la dirección de los 
+entrevistados y entrevistadas que les 
+correspondió supervisar 
+Fuente: Ipsos Chile 
+Toda la información y archivos para uso interno fueron enviados internamente por el sistema Ipsos 
+transfer, encriptados con clave y contraseña que fue entregada de manera verbal. 
+El resto de los profesionales que requi rieron manipular, procesar, codificar o validar la información 
+levantada en la encuesta, recibieron las bases de datos de manera innominada, sin información sensible 
+de los entrevistados, con un folio identificador que permitió hacer vinculación con otra información.  
+- Protocolo de seguridad, almacenamiento y respaldo de la información 
+El protocolo de almacenamiento de información de Ipsos cubre 3 áreas:  
+• La información elaborada por los profesionales de la empresa (jefes /as de proyecto, analistas, 
+jefes/as de terreno, supervisores/as) 
+• Las bases de datos de los proyectos (bases de respuestas / encuestas resultantes, datos de 
+contacto, marcos muestrales, etc.)  
+• La información que está siendo levantada en terreno (información que el encuestador y el 
+supervisor están “ejecutando”). 
+La información creada y gestionada por los profesionales de Ipsos, así como las bases de datos de los 
+proyectos, son gestionadas de forma local, basándose principalmente en un entorno Microsoft 
+(servidores Windows Server2003 Enterprise, sistemas operativos  Windows para los computadores, y 
+gestión de correos electrónicos vía Outlook).  
+- Servidores de Archivos - File Server 
+Parte de las actividades requeridas en las políticas de Ipsos, está el respaldar semanalmente la 
+información relativa a los proyectos en los servidores de archivos en base s al menos semanal. Se 
+configura para cada unidad y para cada profesional su propio directorio de respaldo. Estos servidores 
+son de acceso exclusivo dentro la red Ipsos. La configuración de este sistema consta de:  
+
+=== PDF PAGE 43 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               43 
+ 
+  
+ 
+• Un servidor con Windows Server 2003 Enterprise. 
+• Un servidor Centos OS 6, de respaldo. 
+Ambos servidores se encuentran físicamente localizados en las oficinas de Operaciones (Pedro de 
+Valdivia 555, Providencia). La política de respaldo de esta información considera: 
+• Respaldo semanal en hardware (diferenciales), almacenada al interior de la instalación. 
+• Respaldo mensual cinta (completa), almacenada en oficinas de avenida Pedro de Valdivia 555, 
+Providencia. 
+Esto permite una recuperación del sistema en un máximo de 16 horas, de acuerdo, a las políticas de 
+seguridad y continuidad operacional de la empresa. 
+- Servidores de Bases de Datos  
+La información de bases de datos es almacenada en 9 servidores (4 con Windows Server 2003 Enterprise 
+y SQL Server 2005; 3 con Windows Server 2008 R2 y SQL Server 2008 R2; 1 Servidor Debian 6.0 Squeeze 
+y Mysql 5.5; 1 Servidor Centos 5.5 y Mysql 5.0).  
+• Respaldo diario (hotbackup) en hardware (diferenciales), almacenada al interior de la instalación. 
+• Respaldo mensual cinta (completa), almacenada en oficinas de avenida Pedro de Valdivia 555, 
+Providencia. 
+ 
+- Etapa de terreno (iField) y procesamiento de datos 
+El levantamiento de la información de la encuesta se realiz ó mediante dispositivos electrónicos, los 
+que están habilitados con el sistema iField. 
+Las principales características del almacenamiento de información de este sistema son:  
+• El sistema de levantamiento de datos no guarda la información de los encuestados en el teléfono 
+móvil con el que se realiza la encuesta, habiendo una transmisión inmediata de los datos al 
+servidor central, una vez que se ha finalizado la entrevista. Esto i mpide que terceras personas 
+accedan a los datos de los encuestados en caso de robo o pérdida del dispositivo electrónico.  
+Esto no ocurre cuando la encuesta queda suspendida o pausada, pero los datos se mantienen 
+encriptados en el dispositivo sin posibilidad de acceso. 
+• El Tablet y la aplicación tiene configurada clave de acceso por lo que, en caso de pérdida del 
+dispositivo, la información almacenada no está disponible para quien lo tenga en sus manos. 
+• El sistema permite borrar la aplicación y la información almacenada en dispositivos no 
+autorizados o reportados como robados/ extraviados. 
+- Sistemas de procesamiento de la información 
+
+=== PDF PAGE 44 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               44 
+ 
+  
+ 
+En términos generales, Ipsos ocupa soluciones Microsoft para sus servidores, computadores 
+personales, y sistema de correos (Outlook). Esto permite configurar de forma centralizada los permisos 
+de acceso (a servidores, cuentas de correos, sistemas de intercambio de información, etc.) de acuerdo 
+a los perfiles de los profesionales y requerimientos del proyecto, mediante el uso de Active Directory, 
+que es el servicio de directorio en una red distribuida de computadores. Utiliza distintos protocolos, 
+principalmente LDAP, DNS, DHCP y Kerberos. Su estructura jerárquica permite mantener una serie de 
+objetos relacionados con componentes de una red, como usuarios, grupos de usuarios, permisos y 
+asignación de recursos y políticas de acceso. 
+El procesamiento de información se hace desde los siguientes softwares: 
+• MS SQL Server, almacenamiento de datos. 
+• MySQL, almacenamiento de datos. 
+• SPSS y Dimensios (de IBM) para procesamiento, ejecución de malla de validación. 
+Los accesos a SQL y MySQL se mantienen controlados mediante Active Directory, en tanto el uso de los 
+archivos en SPSS sigue el siguiente protocolo: 
+• Para el procesamiento de la información, y la ejecución de mallas de validación, el jefe del área 
+de procesamiento recibe la información de la encuesta sin los datos de contacto de los 
+entrevistados. El director de terreno descarg ó la base de datos y separ ó toda la información de 
+las respuestas de las encuestas de los datos identificables (nombre, dirección, etc). 
+• La información relativa a la paradata, como Disposición de Casos (estado de la encuesta: en 
+ejecución, en supervisión, terminada, vivienda desocupada, etc), encuestador asignado, fecha de 
+medición, coordenadas de realización de la encuesta, etc. junto con la información de contacto 
+(nombre, dirección, RUT) y algunas respuestas de identificación (fecha de nacimiento, sexo) son 
+puestos a disposición del equipo de supervisión y coordinación central del proyecto, para 
+asegurar la calidad de la información recopilada así como el avance del trabajo en terreno. 
+Repositorio de Archivos digitales 
+De acuerdo con lo requerido por la contraparte, y con el fin de facilitar las comunicaciones entre ambos 
+equipos, se habilit ó un repositorio seguro donde se compart ía toda la información relevante para el 
+seguimiento del proyecto, evitando el envío de correos electrónicos con archivos que tuvieran 
+información confidencial o sensible. 
+Se consideró que el sistema alojara la siguiente información: 
+Material oficial del estudio: 
+• Bases de datos con información de contacto de la muestra. 
+• Versiones finales de cuestionarios, tarjetas y material de apoyo. 
+• Versiones finales del material informativo: carta de invitación, consentimiento para uso de los 
+datos, díptico informativo, entre otros. 
+
+=== PDF PAGE 45 ===
+   
+ 
+Pr 
+o VIII Ronda Encuesta de Protección Social                               45 
+ 
+  
+ 
+• Archivo con avance de encuestas, actualizado una vez a la semana. 
+• Informes y productos oficiales del estudio. 
+• Carta Gantt actualizada del proyecto 
+ 

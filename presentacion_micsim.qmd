@@ -1,0 +1,354 @@
+---
+title: "Microsimulación FONDECYT"
+subtitle: "Avances del Proyecto"
+date: today
+date-format: "MMMM YYYY"
+lang: es
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    toc: true
+    toc-depth: 1
+    toc-title: "Contenidos"
+    incremental: false
+    logo: ""
+    footer: "MicSim FONDECYT — Avances"
+    transition: slide
+    highlight-style: github
+execute:
+  echo: false
+  warning: false
+---
+
+# 1. Mortalidad {background-color="#2c3e50"}
+
+## Bases de Datos {.smaller}
+
+### Defunciones
+
+- **Defunciones 1990–2021** → `defunciones_1.rds` / `defunciones_2.rds`
+  - Series de mortalidad por causa, sexo y edad
+  - Cobertura nacional
+
+### Proyecciones de Población
+
+- **INE Proyecciones** (`ine_proyecciones`)
+  - Denominadores para el cálculo de tasas
+  - Proyecciones por sexo y grupo etario
+
+---
+
+## Scripts — Paper: Mortality Trends {.smaller}
+
+### Cálculo de PAF
+
+- Fracción Atribuible a la Población (*Population Attributable Fraction*)
+- Integra exposición, riesgo relativo y distribución de consumo
+
+### Funciones de PAF e Integración Trapezoidal
+
+```r
+# Estructura general
+paf_fn <- function(rr_fn, exposure_dist, ...) {
+  # Integración trapezoidal sobre la distribución de consumo
+  ...
+}
+```
+
+### Incertidumbre
+
+- Bootstrapping sobre distribución de consumo
+- Propagación del error en RR
+
+---
+
+## Scripts — PIF Binge {.smaller}
+
+### Funciones de PIF e Incorporación de Shifts
+
+- *Potential Impact Fraction* (PIF): escenarios contrafactuales
+- **Shifts** en la distribución de consumo: traslados de la distribución bajo escenarios de política
+
+$$
+\text{PIF} = \frac{\int RR(x)\, p(x)\, dx - \int RR(x)\, p'(x)\, dx}{\int RR(x)\, p(x)\, dx}
+$$
+
+### Incertidumbre
+
+- Simulación de escenarios bajo incertidumbre paramétrica
+- Intervalos de credibilidad al 95%
+
+---
+
+## Avances {.smaller}
+
+::: {.columns}
+::: {.column width="50%"}
+### PAF (2008–2022)
+
+- Matriz de resultados: **1.248 × 8**
+- Dimensiones: causas × años × sexo × edad
+- Cálculo completo para el período
+
+```r
+PAF FINAL  # disponible en sesión
+```
+:::
+::: {.column width="50%"}
+### PIF — Injuries
+
+- Matriz de resultados: **144 × 16**
+- Escenarios de política para lesiones (*injuries*)
+- Incluye shifts en distribución de consumo
+
+```r
+`PIF injuries`  # disponible en sesión
+```
+:::
+:::
+
+---
+
+## Pendiente {.smaller}
+
+::: {.callout-important}
+## Lo que falta
+
+**Expandir PIF para otras causas de muerte**
+
+- Actualmente el PIF solo cubre *injuries*
+- Se debe incorporar a los **Former Drinkers** (*ex-bebedores*) en el cálculo del PIF para las demás causas
+- Los ex-bebedores tienen un perfil de riesgo distinto al de los bebedores actuales y los abstinentes
+:::
+
+### Implicancia
+
+El no considerar ex-bebedores puede sesgar el PIF hacia abajo, subestimando el impacto potencial de políticas de reducción de consumo en causas crónicas (e.g., hígado, cáncer, cardiovascular).
+
+---
+
+# 2. Elasticidad {background-color="#1a5276"}
+
+## Bases de Datos {.smaller}
+
+### Encuesta de Presupuestos Familiares (EPF)
+
+| Base | Año | Formato |
+|------|-----|---------|
+| `epf_2022.rds` | 2022 | Armonizada |
+| `epf_2017.rds` | 2017 | Armonizada |
+
+### Bases Crudas
+
+- **Personas**: características sociodemográficas del hogar
+- **Gastos**: registros de gasto por ítem y hogar
+- Fuente: INE Chile
+
+---
+
+## Scripts {.smaller}
+
+### `EPF ARMONIZATION.R`
+
+- Creación del *pooled cross-sectional* (2017 + 2022)
+- Limpieza y manipulación:
+  - Homologación de categorías de gasto entre ondas
+  - Construcción de **valores unitarios** como proxy de precios (*Deaton method*)
+  - Deflactación y estandarización de variables
+
+---
+
+## Scripts — `Elasticity own_cross_UV.R` {.smaller}
+
+### Estimaciones
+
+- **Elasticidades propias**: cambio % en demanda ante cambio % en precio propio
+- **Elasticidades cruzadas**: efecto del precio de un bien sobre la demanda de otro
+
+### Heterogeneidad
+
+- Interacciones con **quintil de ingreso**: el efecto precio varía por nivel socioeconómico
+- Interacciones con **nivel de consumo**: distinción entre bebedores leves, moderados e intensos
+
+---
+
+## Limitaciones {.smaller}
+
+::: {.callout-warning}
+## Supuesto crítico
+
+**El precio no afecta la probabilidad de participación**
+
+Se asume que la variación de precios solo afecta la *cantidad* consumida entre quienes ya consumen (*intensive margin*), sin modificar la decisión de consumir o no (*extensive margin*).
+:::
+
+### Consecuencias
+
+- La elasticidad estimada corresponde solo al **margen intensivo**
+- El efecto total de una política de precios podría estar **subestimado** si el precio también desincentiva el inicio del consumo
+- Supuesto común en la literatura de valores unitarios (Deaton, 1988), pero relevante de documentar
+
+---
+
+# 3. Simulación {background-color="#4a235a"}
+
+## Espacio de Estados {.smaller}
+
+El núcleo del modelo es una microsimulación de eventos discretos implementada con el paquete **`MicSim`** de R.
+
+### Estados de consumo de alcohol
+
+```
+Non-drinker  →  Cat1 (leve)  →  Cat2 (moderado)  →  Cat3 (intenso)
+```
+
+Cada individuo en la población sintética porta atributos de:
+
+| Dimensión | Niveles |
+|-----------|---------|
+| Sexo | Hombre / Mujer |
+| Categoría de edad | 15–29 / 30–44 / 45–59 / 60+ |
+| Consumo alcohol | Non-drinker / Cat1 / Cat2 / Cat3 |
+| Estado vital | Vivo / Muerto |
+
+---
+
+## Población Sintética {.smaller}
+
+- Generada a partir de la **ENPG (Encuesta Nacional de Presupuestos y Gastos)** como población de arranque
+- Estado inicial de consumo asignado con `prepare_baseline_pop_alcohol()`, que mapea valores `cvolaj` de la ENPG a los niveles canónicos del modelo
+- Pesos de expansión (`exp`) permiten representatividad poblacional
+
+```r
+varInitStates <- rbind(
+  c("m", "0", "NM", "no", "Abstainer"),
+  c("f", "0", "NM", "no", "Abstainer")
+)
+initStatesProb <- c(0.515, 0.485)
+```
+
+---
+
+## Script: `MWE.R` {.smaller}
+
+Ejemplo mínimo (*Minimal Working Example*) que valida la estructura del modelo antes de correr la microsimulación completa.
+
+### Lo que implementa
+
+- Definición del espacio de estados (`states`, `stateSpace`)
+- Construcción de la matriz de transición con `buildTransitionMatrix()`
+- Funciones de hazard por estado de consumo (modelo **Gompertz**)
+
+```r
+# Mortalidad diferenciada por nivel de consumo
+ModerateDead <- function(age, calTime, duration) {
+  a <- 0.00005; b <- 0.09
+  a * exp(b * age)
+}
+HeavyDead <- function(age, calTime, duration) {
+  a <- 0.0001; b <- 0.10
+  a * exp(b * age)
+}
+```
+
+---
+
+## Script: `Alcohol Transitions FINAL.R` {.smaller}
+
+### Pseudo-panel por *rank matching*
+
+No existe panel longitudinal → se construye un pseudo-panel emparejando individuos de rondas consecutivas de la ENPG por cuantil de consumo dentro de celdas (sexo × grupo de edad).
+
+### Modelo de transiciones
+
+Regresión logística ordinal (`MASS::polr`) ajustada sobre el pseudo-panel:
+
+$$
+\text{state}_{t+2} \sim \text{state}_t \times \text{agecat} + \text{state}_t \times \text{sex} + \text{sex} \times \text{agecat}
+$$
+
+### Simulación multi-año
+
+```r
+run_simulation_alcohol(pop0, model_ord_final,
+                       years = 2008:2022, alpha = 0.5)
+```
+
+El parámetro `alpha` escala las probabilidades de transición (control de *stickiness*).
+
+---
+
+## Script: `Alcohol Transitions_CALIB.R` {.smaller}
+
+El modelo sin calibrar puede no reproducir las prevalencias observadas en años fuera del entrenamiento (2018, 2020, 2022). Se implementan tres esquemas de calibración:
+
+| Esquema | Parámetros | Método de optimización |
+|---------|-----------|------------------------|
+| **Global** | δ (1 parámetro) | Brent |
+| **Por estado previo** | δ_{Cat1}, δ_{Cat2}, δ_{Cat3} (3 par.) | Nelder-Mead |
+| **Ajuste de umbrales** | κ₁, κ₂, κ₃ (3 par.) | Nelder-Mead |
+
+Función de pérdida: **SSE** sobre prevalencias estratificadas por año × sexo × grupo de edad × categoría.
+
+$$
+\mathcal{L}(\theta) = \sum_{y,s,a,k} \left(\hat{p}_{y,s,a,k}(\theta) - p^{\text{obs}}_{y,s,a,k}\right)^2
+$$
+
+---
+
+## Avances en Simulación {.smaller}
+
+::: {.columns}
+::: {.column width="35%"}
+### Completado
+
+- ✅ MWE funcional con `MicSim`
+- ✅ Pseudo-panel construido (2008–2016)
+- ✅ Modelo ordinal ajustado
+- ✅ Tres esquemas de calibración implementados
+
+### Pendiente
+
+- 🔄 Calibración de parámetros de transición
+- 🔄 Simulación de ciclos completos
+
+### Estado actual
+
+El gráfico muestra la brecha entre simulado y observado **antes de calibrar**.
+:::
+::: {.column width="65%"}
+![Prevalencias simuladas vs. observadas por categoría de consumo (sin calibrar)](FONDECYT-REGULAR-/sin calibrar.png){fig-alt="Gráfico de líneas que compara prevalencias simuladas en rojo versus observadas en negro por categoría de consumo de alcohol"}
+:::
+:::
+
+---
+
+# Resumen General {background-color="#145a32"}
+
+## Estado del Proyecto {.scrollable}
+
+| Módulo | Componente | Estado |
+|--------|-----------|--------|
+| Mortalidad | PAF 2008–2022 | ✅ Completo |
+| Mortalidad | PIF — Injuries | ✅ Completo |
+| Mortalidad | PIF — Otras causas (Former Drinkers) | 🔄 En desarrollo |
+| Elasticidad | Armonización EPF | ✅ Completo |
+| Elasticidad | Estimación elasticidades | ✅ Completo |
+| Simulación | MWE + espacio de estados | ✅ Completo |
+| Simulación | Modelo ordinal de transiciones | ✅ Completo |
+| Simulación | Calibración de parámetros | 🔄 Pendiente |
+| Simulación | Simulación de ciclos completos | 🔄 Pendiente |
+| Microsimulación | Integración PAF/PIF + Elasticidad | 🔄 Pendiente ||
+
+---
+
+## Próximos Pasos {.smaller}
+
+::: {.incremental}
+1. **Calibrar parámetros de transición** del modelo ordinal de alcohol (global, por estado, por umbrales)
+2. **Simular ciclos completos** sobre la población sintética con parámetros calibrados
+3. **Incorporar Former Drinkers** en el cálculo del PIF para causas crónicas
+4. **Expandir PIF** más allá de *injuries* al resto de las causas de mortalidad
+5. **Integrar módulos**: conectar elasticidades con matrices PAF/PIF en la microsimulación
+:::

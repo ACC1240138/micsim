@@ -1,0 +1,571 @@
+
+=== PDF PAGE 1 ===
+            
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+“FALLECIDOS”
+2019
+COMUNA
+FOLIO -
+Fecha de la Entrevista
+2020
+Hora de la Entrevista
+Inicio
+Término
+ “Buenos (días/tardes/noches), mi nombre es ___________ y pertenezco a 
+la empresa IPSOS.      En conjunto con la Subsecretaria de Previsión Social, 
+del Ministerio del Trabajo, estamos aplicando la Encuesta de Protección Social 
+con el propósito de obtener información para mejorar políticas públicas en el 
+ámbito de las pensiones. 
+Por efectos de la Pandemia, se está aplicando una encuesta para 
+actualizar la información que (INSERTAR  NOMBRE DE ENTREVISTADO) 
+________________________respondió en el pasado, ahora será de manera 
+telefónica y tendrá una duración aproximada 10 minutos. A nombre de Ipsos, 
+y como una forma de valorar su tiempo nos gustaría que recibiera un Gift Card 
+de regalo de 5 mil pesos para compras en supermercados y tiendas de retail.
+Le recordamos que sus respuestas son confidenciales y su participación es 
+completamente voluntaria. 
+Nota al encuestador: Si el entrevistado desea revisar veracidad del estudio 
+o contactarse algún encargado del mismo, puede entregar la siguiente 
+información:
+Información general
+Página web: http://www.ipsos.cl/eps/
+Encargados del estudio
+Correo electrónico IPSOS: info.eps@ipsoschile.cl
+Correo electrónico de
+Subsecretaría de Previsión Social: atencionEPS@previsionsocial.gob.cl 
+Teléfono Subsecretaría de Previsión Social: (56-2) 28279819
+AUTORIZACIÓN PARA GRABAR ENTREVISTA
+Para fines de control de calidad se grabarán algunas preguntas durante la entrevista.
+
+=== PDF PAGE 2 ===
+Teléfono1 código de área - fono Comuna: Región:
+Villa / Población: Localidad:
+Correo electrónico (e_mail)
+Dirección:
+EL SELECCIONADO SE CAMBIÓ DE DIRECCIÓN A: 
+
+=== PDF PAGE 3 ===
+Encuesta de Protección Social 2019- Fallecidos
+3
+  Módulo I: HOGAR 
+  
+M3. Sexo de fallecido(a) 
+1. Hombre 2. Mujer 
+M4.- ¿Cuál es el estado civil de el/la entrevitado (a)?
+        ESCUCHAR RESPUESTA Y CLASIFICAR 
+1. Casado(a) 2. Conviviente 3. Anulado(a) 4. Con pareja a través de Acuerdo de Unión Civil (AUC)
+5. Separado(a) de unión legal 6. Separado(a) de unión de hecho 7. Viudo(a) 8. Soltero(a)
+9. Divorciado 88. No responde 99. No sabe
+M1.-Nombre de pila de fallecido/a:      M2.- ¿Cuál es la relación de parentesco de el/la entrevistado(a) con el 
+Jefe(a) de Hogar? 
+   ESCUCHAR RESPUESTA Y CLASIFICAR    
+1. Jefe(a) del hogar         2. Cónyuge o Pareja       3. Hijo(a) / Hijastro(a)
+11. Otro familiar             12. No familiar
+Nombre: Apellido Paterno: Apellido Materno:
+M5c. ¿Qué causó la muerte del entrevistado? 
+       
+       ESCUCHAR Y MARCAR ALTERNATIVA 
+1 Cáncer
+2 Ataque al corazón
+3 Ataque cerebral
+4 Otras enfermedades cardiovasculares relacionadas
+5 Enfermedades respiratorias
+6 Accidente
+7 Otra. Especifique
+8 Covid19 (coronavirus)
+88 No responde
+99 No sabe
+M5d. ¿Cuánto tiempo estuvo enfermo/a el/la fallecido/a antes de 
+morir?  
+        ESCUCHAR Y MARCAR ALTERNATIVA 
+1 1. No estuvo enfermo/a, falleció repentinamente
+2 1 a 2 horas
+3 Menos de 24 horas
+4 Un día o más, pero menos de una semana
+5 Una semana o más, pero menos de un mes
+6 Un mes o más, pero menos de 6 meses
+7 6 meses o más, pero menos de un año
+8 Un año o más
+9 No responde
+99 No sabe
+   M5b. ¿Qué edad tenía el entrevistado al fallecer? 
+    AÑOS CUMPLIDOS
+    
+M5.- Aproximadamente ¿cuál ha sido el ingreso mensual del hogar 
+del entrevistado/a en los últimos 12 meses?
+Día 88. Responde 99. No Sabe
+Mes 88. Responde 99. No Sabe
+Año 88. Responde 99. No Sabe
+88. Responde
+99. No Sabe
+M5e. ¿Usted diría que fue una muerte inesperada? 
+        
+1. Sí
+2. No 
+8. No Responde
+8. No Sabe 
+
+=== PDF PAGE 4 ===
+Encuesta de Protección Social 2019- Fallecidos
+4
+Módulo I: Hogar                                                                        
+M9. A el/la fallecido(a), ¿le había sido diagnosticada alguna de las siguientes condiciones médicas por un doctor? 
+       LEER ENFERMEDADES UNA A UNA Y ESPERAR RESPUESTA
+SÍ NO NR NS
+1 Asma o Enfisema pulmonar 1 2 8 9
+2 Depresión 1 2 8 9
+3 Diabetes 1 2 8 9
+4 Hipertensión o Presión alta 1 2 8 9
+5 Problemas cardíacos 1 2 8 9
+6 Cáncer 1 2 8 9
+7 Artritis o Artrosis 1 2 8 9
+8 Enfermedad renal 1 2 8 9
+9 Derrame cerebral 1 2 8 9
+10 Enfermedad mental 1 2 8 9
+11 VIH / SIDA 1 2 8 9
+12 Covid 19 1 2 8 9
+13 Sobrepeso u obesidad 1 2 8 9
+      
+M10. ¿El/la fallecido(a) se encontraba cotizando en algún sistema 
+previsional antes de su fallecimiento?
+1. Sí
+2. No                    Pasa a M.12
+3.      No Responde 
+M11. ¿En qué sistema previsional se encontraba cotizando el/la 
+fallecido(a)?  
+     LEER ALTERNATIVAS 
+1. AFP
+2. INP
+3. CAPREDENA
+4. DIPRECA
+5. Otro sistema. Especifique:
+8. No responde
+9. No sabe
+M12. ¿A qué sistema previsional de salud pertenecía el/la 
+fallecido(a)?
+   SI DICE FONASA SONDEAR A QUÉ GRUPO PERTENECÍA
+1. Sistema público FONASA Grupo A (indigente)
+2. Sistema público FONASA Grupo B
+3. Sistema público FONASA Grupo C
+4. Sistema Público FONASA Grupo D
+5. Sistema público FONASA. No sabe el grupo
+6. FF.AA. y de Orden
+7. ISAPRE. Especifique
+8. Ninguno (Particular)
+9. Otro Sistema. Especifique: _____________________
+88. No responde
+99. No sabe
+M13. ¿El/la fallecido(a) era cotizante o carga familiar?
+1. Cotizante              Pasar a M0c
+2. Carga  
+8. No responde               Pasar a M0c
+9. No sabe                Pasar a M0c
+M14. El/la fallecido(a), ¿de quién era carga familiar?
+  ESCUCHAR Y MARCAR ALTERNATIVA 
+1. Padre
+2. Madre
+3. Hijo(a)
+4. Cónyuge
+5. Otro
+8. No responde
+9. No sabe
+M0c. El/la fallecido(a), ¿Con qué regularidad practicaba 
+deporte o alguna actividad física? 
+  LEER ALTERNATIVAS
+1. Todos los días
+2. 5 a 6 veces por semana
+3. 3 a 4 veces por semana
+4. 1 a 2 veces por semana
+5. 1 a 3 veces al mes
+6. Algunas veces al año
+7. Nunca o casi nunca
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+M0d El/la fallecido(a), ¿fumaba? 
+1. Sí
+2. No
+8. No Responde
+9. No sabe
+
+=== PDF PAGE 5 ===
+Encuesta de Protección Social 2019- Fallecidos
+5
+Módulo I: Hogar                                                                        
+  M0f. El/la fallecido(a), ¿Consumía…?  
+      LEER ALTERNATIVAS
+SÍ NO NR NS
+1 Cerveza 1 2 8 9
+2 Vino 1 2 8 9
+3 Pisco u otro licor 1 2 8 9
+M18b. El fallecido(a), ¿recibía ingresos por concepto de jubilación?:
+1. Sí
+2. No          Pasar a M31
+3. No responde         Pasar a M31
+4. No sabe           Pasar a M31
+M21b.  ¿En qué fecha jubiló o se pensionó? Señale mes y año
+   SI NO RECUERDA EL MES ANOTE “0"
+P25. El/la entrevistado(a), ¿de quién es carga familiar?
+   ESCUCHAR RESPUESTA Y CLASIFICAR 
+1. Padre
+2. Madre
+3. Hijo(a)
+4. Cónyuge
+5. Otro
+8. No Responde
+9. No sabe
+M22. Después de pensionarse, ¿siguió trabajando?
+  
+1. Sí
+2. No          
+3. No responde        
+4. No sabe
+M31. ¿El fallecido dejó…? 
+       LEER ACTIVIDADES, 
+SÍ NO NR NS
+A Herencia en Bienes raíces 1 2 3 4
+B Herencia de Otros bienes 1 2 3 4
+C Herencia en Activos (acciones, bonos, etc) 1 2 3 4
+D Negocios (negocios o empresas) 1 2 3 4
+E Deudas 1 2 3 4
+      
+NV100. Según lo registrado, la última vez que el/la 
+fallecido/a respondió la Encuesta de Protección Social fue en 
+_________________ de _____________________
+En esta fecha, declaró estar: __________________________
+   LEER ACTIVIDAD Y LUGAR SI ESTABA TRABAJANDO 
+Actividad: ____________________________
+Empresa o lugar de trabajo: __________________________
+¿Está correcto?
+1. Sí
+1. No       Pasar a NV100_i
+8. No responde
+9. No sabe
+NV100_i. ¿Me podría indicar qué información no está 
+correcta?  
+    ENTREVISTADOR: MODIFICAR INFORMACIÓN QUE EL 
+ENTREVISTADO DECLARA COMO INCORRECTA
+1. Situación laboral: ______________________
+2. Actividad: ________________________
+3. Lugar: _______________________
+   LEER ALTERNATIVAS
+1. Miembro del hogar
+2. Familiar que no pertenece al hogar
+3. Personal de servicio
+Mes:  
+Año:  
+M33. Describa todas las situaciones que haya realizado desde ____________ de ____________ a la fecha de deceso  
+POR SITUACIONES, ENTENDEREMOS HABER ESTADO TRABAJANDO, CESANTE, BUSCANDO TRABAJO POR PRIMERA VEZ O INACTIVO 
+(ESTAR ESTUDIANDO, ESTAR JUBILADO, DEDICARSE A QUEHACERES DEL HOGAR, ETC).
+REGISTRE PRIMER PERIODO DEL FALLECIDO Y DESPUÉS SEÑALE LA SITUACIÓN EN QUE SE ENCONTRABA EN ESTE PERIODO
+
+=== PDF PAGE 6 ===
+Encuesta de Protección Social 2019- Fallecidos
+6
+  
+TODOS SÓLO SI ESTÁ/ESTABA TRABAJANDO (M34=1)
+M33.i.m- 
+M33.i.a
+Mes y año 
+de inicio
+M34. Me podría indicar 
+en qué situación se 
+encontraba en _________ 
+de __________. 
+    LEER ALTERNATIVAS
+1. Trabajando
+2. Cesante
+3. Buscando trabajo por 
+1ª vez
+4. Inactivo
+M34.t.mX – 
+M34.t.aX
+¿Hasta cuándo 
+se encontró en 
+esta situación? 
+Indique
+mes y año
+M36. ¿Cuál (era) es su 
+ocupación u oficio, o 
+qué hace o hacía Ud. 
+en ese trabajo? 
+M0. ¿En qué empresa o 
+institución trabajaba?
+M37. Este trabajo era de tipo: 
+    LEER ALTERNATIVAS
+1. Permanente
+2. De temporada o estacional
+3. Ocasional o eventual
+4. A prueba
+5. Por plazo o tiempo determinado
+8. No responde (NO LEER)
+9. No sabe (NO LEER)
+Mes Año Mes Año
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+Módulo I: Hogar                                                                        
+
+=== PDF PAGE 7 ===
+Encuesta de Protección Social 2019- Fallecidos
+7
+  
+SÓLO SI ESTÁ/ESTABA TRABAJANDO (M34=1)
+SÓLO SI ESTÁ/ESTABA TRA-
+BAJANDO COMO DEPEN-
+DIENTE DESDE ABRIL 2020
+SÓLO SI MC100=1 TODOS
+M40. ¿En esta ocupación, el/la fallecido(a) 
+trabajaba como:
+     LEER ALTERNATIVAS
+1. Patrón o empleador
+2. Trabajador por cuenta propia
+3. Empleado u Obrero del Sector Público
+4. Empleado u Obrero del Sector Privado
+5. Servicio Doméstico Puertas Adentro
+6. Servicio Doméstico Puertas Afuera
+7. Familiar No remunerado
+8. FF.AA. y de Orden
+88. No responde
+99. No sabe
+MC100.
+¿Su empleador modificó su 
+contrato de trabajo a raíz de 
+la Pandemia por Covid 19
+M34.t.mY – M34.t.aY .
+¿Cuándo cambiaron sus 
+condiciones laborales o 
+contractuales? Indique 
+mes y año
+M34.t.m – M34.t.a
+Sí No Mes Año Mes Año
+Módulo I: Hogar                                                                        
+
+=== PDF PAGE 8 ===
+Encuesta de Protección Social 2019- Fallecidos
+8
+SÓLO SI ESTÁ/ESTABA 
+TRABAJANDO (M34=1) SÓLO SI ESTÁ/ESTABA TRABAJANDO COMO DEPENDIENTE (M40=3, 4, 5 O 6)
+M38. ¿Qué actividad realiza la 
+empresa, industria o servicio 
+donde desempeñaba este 
+trabajo? 
+M41. En este trabajo, el/la 
+fallecido(a), ¿había firmado 
+contrato de trabajo?  
+      RESPUESTA ÚNICA
+ESCUCHAR Y CLASIFICAR 
+1. Sí, tenía contrato y lo firmó
+2. No, tenía contrato pero no 
+lo firmó
+3. No tenía contrato
+8. No responde
+9. No sabe
+M43. Durante este trabajo, ¿se 
+encontraba el/la fallecido(a) afiliado a 
+algún sindicato?
+1. Sí
+2. No
+8. No responde
+9. No sabe
+M45. ¿Cuál fue el motivo por el que dejó este 
+trabajo? 
+      RESPUESTA ÚNICA
+ESCUCHAR Y MARCAR ALTERNATIVAS
+12. No aplicable (fallecido no se cambió de 
+trabajo) 
+1. Mutuo acuerdo de las partes
+2. Renuncia
+3. Vencimiento del contrato o fin del trabajo o 
+servicio que dio origen al contrato
+4. Despido por causa imputable a trabajador
+5. Despido por necesidades de la empresa
+6. Cierre de la empresa
+7. Encontró un mejor trabajo
+8. Condiciones de salud o invalidez
+9. Se pensionó
+10. Caso fortuito o fuerza mayor
+11. Otra
+88. No responde
+99.No sabe
+Sí No Nr Ns
+1 1 2 8 9
+2 1 2 8 9
+3 1 2 8 9
+4 1 2 8 9
+5 1 2 8 9
+6 1 2 8 9
+7 1 2 8 9
+8 1 2 8 9
+9 1 2 8 9
+10 1 2 8 9
+11 1 2 8 9
+12 1 2 8 9
+13 1 2 8 9
+14 1 2 8 9
+15 1 2 8 9
+16 1 2 8 9
+17 1 2 8 9
+18 1 2 8 9
+19 1 2 8 9
+20 1 2 8 9
+Ahora vamos a hablar del periodo entre ____________ y ________________, donde según lo señalado por Usted, el/la fallecido/a se 
+encontraba:
+Estado: __________________
+Actividad: _____________________
+Empresa/ Institución/ Hogar: _______________________
+    INGRESAR ESTE PRELUDIO PARA CADA SITUACIÓN 
+
+=== PDF PAGE 9 ===
+Encuesta de Protección Social 2019- Fallecidos
+9
+  
+SÓLO SI SU EMPLEADOR MODIFICÓ SU CONTRATO DE TRABAJO A RAÍZ DE LA PANDEMIA POR COVID 19 (MC100=1) SOLO SI ESTÁ/ESTABA INACTIVO 
+(P29=4)
+MC101. Usted indicó que en este trabajo se modificaron sus condiciones laborales. Por favor, señale cuál o cuáles 
+modificaciones ocurrieron…
+     LEER ALTERNATIVAS
+M46. ¿Cuál fue la razón de la 
+inactividad del entrevistado/a? 
+     ESCUCHAR RESPUESTA Y 
+CLASIFICAR
+1. Enfermedad o discapacidad
+2. Cuidado de los niños
+3. Otras responsabilidades 
+personales o familiares
+4. Embarazo
+5. Estudiaba o se estaba capacitando
+6. Realizaba la práctica
+7. Quehaceres de hogar
+8. Jubilado, pensionado o montepío
+9. Rentista
+10. No le interesaba trabajar
+11. Estaba haciendo el servicio 
+militar
+12. Cuidados de personas mayores o 
+personas con discapacidad
+13. Cree que no encontrará trabajo
+14. Se cansó de buscar empleo
+15. Algún miembro del hogar no le 
+permite trabajar
+16. Vacaciones o permisos
+17. Licencia médica
+18. Por horario o jornada variable o 
+flexible
+19. Huelga, conflicto laboral
+20. Trabajo es estacional
+21. No tuvo pedidos (clientes)
+22. Suspensión temporal del trabajo
+23. Otro
+88. No responde
+99. No sabe
+Se suspendió 
+su contrato de 
+trabajo por acto 
+de autoridad 
+(cuarentena) 
+por medio 
+de la Ley de 
+Protección del 
+Empleo
+Se acordó un 
+pacto de sus-
+pensión tempo-
+ral del contrato 
+de trabajo por 
+medio de la Ley 
+de Protección 
+del Empleo
+Se acordó 
+un pacto de 
+reducción 
+temporal de 
+la jornada de 
+trabajo por 
+medio de la Ley 
+de Protección 
+del Empleo
+Sus empleadores 
+redujeron su 
+jornada laboral
+Sus empleadores 
+redujeron su 
+salario
+Sus empleadores 
+cambiaron sus 
+actividades o 
+tareas
+Sí No Sí No Sí No Sí No Sí No Sí No
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+1 2 1 2 1 2 1 2 1 2 1 2
+
+=== PDF PAGE 10 ===
+Encuesta de Protección Social 2019- Fallecidos
+10
+  
+Muchas gracias por participar en esta encuesta. Para entregar el regalo necesitaremos algunos datos de contacto. Esta información 
+también nos servirá para el control de calidad de la encuesta
+NOMBRE_INFORMANTE_F. ¿Cuál es su nombre? ____________________
+1. Sí
+2. No           Pasar a Dirección_F
+CORREO2_F. 
+    ESCRIBA EN MINÚSCULAS
+1. ¿Cuál es su correo electrónico?:   ____________________ 
+2. Favor vuelva a escribir correo electrónico:  ____________________ 
+DIRECCIÓN_F. ¿Cuál es su dirección y teléfono?
+1. Calle/Avenida: ___________________ 
+2. Numeración: ____________________ 
+3. Departamento/block: _____________ 
+4. Comuna: _______________________
+5. Región: ________________________
+6. Teléfono: ______________________ 
+Despedida_Fallecidos                                                                
+Muchas gracias por participar en esta encuesta. 
+ Para entregar el regalo necesitaremos algunos datos de contacto. 
+Esta información también nos servirá para el control de calidad de la encuesta.
+
+=== PDF PAGE 11 ===
+Encuesta de Protección Social 2019- Fallecidos
+11
+
+=== PDF PAGE 12 ===
+ENCUESTA DE 
+PROTECCIÓN 
+SOCIAL
+2019

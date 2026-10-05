@@ -1,0 +1,3577 @@
+
+=== PDF PAGE 1 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Imputaciones de Corte Transversal de la  
+VI Ronda de la Encuesta de Protección Social 
+ 
+ 
+Diciembre, 2016. 
+
+
+=== PDF PAGE 2 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+2 
+Tabla de Contenidos 
+ 
+ 
+1 INTRODUCCIÓN 3 
+2 REVISIÓN DE LA LITERATURA 4 
+2.1 EL PROBLEMA DE LA NO RESPUESTA 4 
+2.2 MECANISMOS DE NO RESPUESTA 4 
+2.3 IMPUTACIÓN DE DATOS PERDIDOS EN ENCUESTAS DE HOGARES EN CHILE 7 
+3 ANÁLISIS DE LA NO RESPUESTA AL ITEM EPS 2015 8 
+3.1 EDICIÓN E IMPUTACIÓN DE DATOS EN LA EPS 8 
+3.2 PORCENTAJE DE NO RESPUESTA AL ITEM 9 
+3.3 DESCRIPCIÓN DE VARIABLES CON DATOS PERDIDOS A IMPUTAR 12 
+3.4 PATRONES DE NO RESPUESTA AL ITEM 16 
+3.5 MECANISMOS DE NO RESPUESTA AL ITEM 18 
+3.6 CONCLUSIÓN ANÁLISIS DE NO RESPUESTA AL ITEM 21 
+4 MÉTODOS DE IMPUTACIÓN APLICADOS EN EPS 2015 22 
+4.1 IMPUTACIÓN POR MEDIAS CONDICIONADAS 24 
+4.2 IMPUTACIÓN HOT DECK 27 
+4.3 IMPUTACIÓN COLD DECK 28 
+5 IMPUTACIÓN MONTO DE INGRESO LABORAL 29 
+5.1. RESULTADOS DE IMPUTACIÓN DE CORTE TRANSVERSAL SIN PONDERAR 29 
+5.2. COMPARACIÓN DE ESTIMACIONES DE CORTE TRANSVERSAL PONDERADAS 32 
+6 IMPUTACIÓN MONTO DE ALQUILER IMPUTADO 34 
+6.1. RESULTADOS DE IMPUTACIÓN DE CORTE TRANSVERSAL SIN PONDERAR 34 
+6.2. COMPARACIÓN DE ESTIMACIONES DE CORTE TRANSVERSAL PONDERADAS 36 
+7 IMPUTACIÓN DE TRAMO DE NIVEL EDUCACIONAL 38 
+7.1. RESULTADOS DE IMPUTACIÓN LONGITUDINAL SIN PONDERAR 38 
+7.2. RESULTADOS DE IMPUTACIÓN DE CORTE TRANSVERSAL SIN PONDERAR 43 
+7.3. COMPARACIÓN DE ESTIMACIONES DE CORTE TRANSVERSAL PONDERADAS 45 
+8 CONCLUSIONES Y DISCUSIÓN 48 
+9 REFERENCIAS 53 
+10 ANEXO 55 
+12.1. NÚMERO DE DONANTES POR CELDA, IMPUTACIONES YTRAB 55 
+12.2. NÚMERO DE DONANTES POR CELDA, IMPUTACIONES ALQ 59 
+12.3. DESCRIPCIÓN DE BASE DE DATOS IMPUTADA EPS 2015 62 
+12.4. LIBRO DE CÓDIGOS DE BASE IMPUTADA EPS 2015 63 
+ 
+
+=== PDF PAGE 3 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+3 
+1 Introducción 
+ 
+El proceso de producción de una encuesta compleja  y de gran envergadura  como la 
+Encuesta de Protección Social (EPS) no termina con la etapa de recolección de datos sino 
+que continúa usualmente con la revisión y validación de los datos  recolectados. 
+Adicionalmente algunas encuestas incorporan también un proceso de imputación de datos, 
+el que se desarrolla en coordinación con el proceso de edición y validación.  
+ 
+Es fundamental implementar estas actividades posteriores al trabajo de campo ya que se 
+pueden presentan dos situaciones – (1) error en los datos recolectados, y (2) falla total (o 
+parcial) en recolectar datos . La primera situación se conoce como “error de medición” y, 
+dependiendo de la naturaleza del problema, puede contribuir a sesgar las estimaciones que 
+se desarrollen a partir de los datos observados (recolectados). El proceso de edición y 
+validación de datos tratar de corregir este problema. La segunda situación se conoce como 
+“error de no respuesta al item” y, dependiendo de la magnitud y naturaleza del problema, 
+puede repercutir tanto en el sesgo como en la varianza de las estimaciones desarrolladas. 
+El proceso de imputación de datos busca hacerse cargo de este último problema.  
+ 
+En EPS 2015 se buscó  evaluar alternativas para el tratamiento de la no respuesta al item 
+(“datos perdidos”) para una selección de variables que fueran relevantes para la publicación 
+de resultados de la VI ronda. En este documento s e presenta la metodología y resultados 
+de la evaluación de tres alternativas para el análisis con datos perdidos – imputación por 
+medias condicionadas, imputación vía hot deck aleatorio e imputación vía cold deck.  
+ 
+Los métodos evaluados en este informe son relativamente sencillos de implementar y  
+comunicar a los usuarios. Encuestas que ponen a disposición pública datos imputados, como 
+por ejemplo la Casen1 en Chile o la HRS2 en Estados Unidos, utilizan (o partieron utilizando) 
+variantes de estos métodos de imputación. Métodos de imputación (o análisis)  más 
+sofisticados como los que se basan en modelos bayesianos, ecuaciones encadenadas, o de 
+imputaciones múltiples, entre otros, no son evaluados en este informe. Estos métodos, si 
+bien cuentan con mayor soporte teórico, no están exentos de críticas y su uso se encuentra 
+más extendido entre analistas que entre productores de datos . En atención a estas 
+consideraciones, el presente informe se plantea como una instancia inicial de un proceso de 
+investigación que debiera continuar profundizándose en el tiempo a través de  (1) la 
+evaluación de métodos más sofisticados  para el tratamiento de datos perdidos , y (2) la 
+incorporación al análisis de datos perdidos de las rondas anteriores del panel EPS3. 
+ 
+El presente informe se organiza como sigue - en la sección 2 se presenta el contexto general 
+del problema de la no respuesta al ítem, mientras que en la sección 3 se presentan análisis 
+de los porcentajes, los patrones y los mecanismos de no respuesta al ítem para una selección 
+de variables de la EPS 2015. L a sección 4 se describe las metodologías utilizadas para la 
+                                                 
+ 
+ 
+1 Casen: Encuesta de Caracterización Socioeconómica Nacional.  
+2 HRS: Health and Retirement Survey. 
+3 Para la EPS 2009 se desarrollaron imputaciones para una selección de variables relacionadas con ingresos y 
+patrimonio de la ronda 2009 , sin embargo no están a dis posición pública  ni los datos ni las metodologías 
+implementadas. 
+
+=== PDF PAGE 4 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+4 
+imputación de variables  y las secciones 5-7 presentan los resultados. La discusión de 
+resultados y recomendaciones para investigación futura se presentan en la sección 8 y las 
+referencias bibliográfica s en la sección 9. Los programas estadísticos utilizados para el 
+desarrollo de este informe se presentan en un archivo electrónico adjunto.  
+ 
+ 
+2 Revisión de la literatura 
+ 
+2.1 El problema de la no respuesta 
+ 
+A pesar de los esfuerzos y estrategias implementadas, todas las encuestas sufren de no 
+respuesta. Hay dos tipos de no respuesta – no respuesta a la unidad (cuando no se logra 
+que el individuo seleccionado conteste la encuesta) , y la no respuesta al ítem (cuando no 
+se logran respuestas para algunas de las preguntas de la encuesta). Ambos tipos de no 
+respuesta tienen un doble impacto en la calidad de los datos que se recolectan: (1) potencial 
+sesgo de no respuesta, y (2) reducción del tamaño efectivo de muestra  (que genera 
+disminución de la precisión de las estimaciones). Para reducir el impacto de la no respuesta 
+a la unidad y al ítem los productores de datos utilizan ajustes estadísticos como la 
+ponderación ( weighting) y la  imputación ( imputation) respectivamente. Otras opciones 
+incluyen “no hacer nada” , y usar sólo los datos de quienes responden  (complete case 
+analysis), o usar “sustitutos” durante el proceso de recolección de datos (Andridge y Littel, 
+2010).  
+ 
+Existen diversas razones por las que el informante no entrega toda la información solicitada, 
+entre las que se pueden mencionar el desconocimiento sobre la utilidad de la información 
+recolectada por la encuesta, aburrimiento, vergüenza, desconfianza, omisión involuntaria o 
+simplemente el no querer responder temas sensibles para él o ella. No sólo la falta de 
+información en algunas variables es un problema, sino también la presencia de datos 
+anómalos o poco probables. Si bien, el primer resguardo para evitar estos problemas es el 
+diseño correcto del cuestionario y el buen desarrollo del trabajo de campo, aun cumpliendo 
+con esto, la falta de información en algunas variables o la presencia de datos anómalos 
+estará presente en cualquier encuesta. 
+ 
+El fenómeno de la no respuesta al ítem está asociado a tres mecanismos (Beatty & Herman, 
+2002): (1) cuanto saben las personas acerca del tema, (2) sus juicios acerca de la precisión 
+de su conocimiento y lo que la pregunta parece requerir, y (3) su voluntad de reportar la 
+respuesta. Los primeros dos factores son cognitivos o informativos, mientras que el tercero 
+es motivacional. Este modelo, aplicado a preguntas de ingreso, predice que los entrevistados 
+no van a responder preguntas de ingresos cuando, por ejemplo, (1) no sepan el ingreso 
+familiar, (2) tengan una idea vaga del monto, pero asuman que la pregunta exige una 
+cantidad exacta, o (3) sepan la respuesta, pero no estén dispuestos a revelarla al 
+encuestador o a la institución a cargo del estudio.  
+ 
+2.2 Mecanismos de no respuesta 
+  
+El porcentaje de datos perdidos se encuentra relacionado, directamente, con la calidad de 
+la inferencia estadística. A pesar de ello, no existe en la literatura un punto de corte que 
+establezca un porcentaje aceptable de datos perdidos en una base de datos para garantizar 
+
+=== PDF PAGE 5 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+5 
+la validez de las inferencias estadísticas (Dong y Peng, 2013); Schafer (1999), por ejemplo, 
+establece que una tasa de pérdida menor al 5% no tiene consecuencias; Bennet (2001), 
+sostiene que los análisis estadísticos probablemente estarán sesgados cuando se tiene más 
+de 10% de datos perdidos; Tabachnick y Fidell ( 2012), sostienen que el mecanismo y el 
+patrón de pérdida de datos tienen un mayor impacto que la pro porción de datos perdidos 
+en los resultados de una investigación.  
+ 
+La Figura 2 permite ilustrar algunos “patrones de perdida” de información, donde la base 
+de datos se interpreta como una matriz en que las filas corresponden a las observaciones y 
+las columnas las variables de interés. En la parte (a) de la figura podemos notar que la falta 
+de información se concentra en una sola variable de in terés 𝑌, lo cual se conoce como 
+patrón univariado. En la parte (b) se observa un patrón de omisión de información 
+escalonado o monótono, que es característico de estudios longitudinales en donde 𝑌𝑗 
+representa el valor de la variable de interés en la j-ésima ronda. Finalmente, en la parte (c) 
+se presenta un patrón aleatorio, donde en cualquier celda pueden existir datos faltantes, es 
+decir la falta de información no está determinada por algún patrón en particular y conocido.  
+ 
+El concepto “mecanismo generador de la no respuesta” fue formalizado por Rubin en el año 
+1976 y distingue tres tipos: 
+ 
+1. No respuesta completamente aleatoria (MCAR) 
+2. No respuesta aleatoria (MAR) 
+3. No respuesta no aleatoria (NMAR) 
+ 
+A los registros sin información se le identifica con una v ariable binaria ( 𝑍), esta variable 
+toma valor 1 si es que el dato existe y 0 si es que no existe. Sea 𝑌𝑐𝑜𝑚 = (𝑌𝑜𝑏𝑠, 𝑌𝑚𝑖𝑠) la 
+variable de interés, en donde 𝑌𝑜𝑏𝑠 e 𝑌𝑚𝑖𝑠 corresponde al vector de datos observados y 
+faltantes, respectivamente; se afirma, que un proceso de datos faltantes se genera en forma 
+aleatoria (MAR) si la distribución de los valores observados no depende del patrón de 
+comportamiento de los registros sin información 𝑌𝑚𝑖𝑠: 
+ 
+Pr(𝑍|𝑌𝑐𝑜𝑚) = Pr(𝑍|𝑌𝑜𝑏𝑠) 
+ 
+Esta situación se presenta en las encuestas de hogares, pero no en cualquier variable. En 
+los estudios de nivel de vida, por ejemplo, se reconoce que la falta de respuesta en las 
+familias “ricas” está correlacionada con sus ingresos; y, por tanto, no se satisface el supuesto 
+MAR. Sin embargo, cuando la omisión se presenta en la rama de actividad o en la categoría 
+ocupacional, la falta de información no necesariamente guarda relación con el nivel de 
+ingresos de las personas, y el supuesto MAR podría satisfacerse. 
+ 
+Un caso esp ecial es el llamado proceso completamente aleatorio ( MCAR), el cual ocurre 
+cuando la omisión no depende de los datos observados: 
+ 
+Pr(𝑍|𝑌𝑐𝑜𝑚) = Pr(𝑍) 
+ 
+Por otra parte, cuando existe dependencia entre los datos completos y los faltantes (𝑌𝑚𝑖𝑠), 
+se dice que 𝑌𝑚𝑖𝑠 no sigue un proceso aleatorio (Missing not at Random, MNAR). Es común 
+referirse a los procesos MAR como mecanismos de no respuesta ignorable, en tanto que 
+
+=== PDF PAGE 6 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+6 
+MNAR significa que la falta de respuesta no puede ser ignorada en el proceso de 
+construcción del estimador, ni al analizar las relaciones de causalidad entre variables. 
+ 
+En la práctica, es común que se presenten situaciones en que los datos faltantes no siguen 
+un patrón completamente aleatorio (MCAR) y tampoco aleatorio (MAR). Está  demostrado 
+que la falta de respuesta se asocia, por ejemplo, al estatus económico de la familia, al área 
+geográfica de residencia del hogar, al nivel de estudio de las personas, y en estas situaciones 
+el patrón de datos omitidos no puede ni debe ser ignorado (MNAR).  
+En las encuestas de educación y del mercado de trabajo la omisión está asociada a las 
+unidades de observación, ya que es habitual que después de algún tiempo los informantes 
+se nieguen a participar, se cambien de casa, o los estudiantes emigre n a otro 
+establecimiento educativo.  
+ 
+Considere el patrón de datos faltantes en el que los valores de la variable 𝑋 = (𝑋1, 𝑋2, … , 𝑋𝑝) 
+existen en todas las observaciones, pero en algunos casos se desconoce el valor de 𝑌. 
+Cuando los datos provienen de una m uestra aleatoria, los patrones de datos omitidos —
+MAR, MCAR y MNAR — pueden interpretarse a partir de 𝑋 e 𝑌. MCAR significa que la 
+probabilidad de que falte 𝑌 no depende de los valores de 𝑋 e 𝑌 (ni de los propios ni de las 
+otras observaciones), MAR asume que la probabilidad de que falte 𝑌 puede depender de 𝑋 
+pero no de 𝑌, en tanto que MNAR se interpreta en el sentido de que la probabilidad de que 
+existan datos omitidos depende de 𝑌.  
+ 
+Cuando se explicita que la no respuesta es MCAR, entonces las unidades observadas tienen 
+un comportamiento estadístico que se comparte con las unidades no observadas, por lo que 
+la no respuesta se puede identificar solo gracias a las variables Z (conocidas y observadas).  
+Si bien lo que se busca es que la no respuesta sea MCAR, trabajar y realizar consultas sobre 
+la información parcial (ignorando las celdas vacías) puede llevar a un investigador a tomar 
+decisiones y realizar informes con información errónea (o con un error efectivo mayor).  
+ 
+Una de las formas de combatir, y buscar soluciones para, la no respuesta es a través de la 
+imputación de datos. Existen variados métodos de imputación, que se ajustan de acuerdo a 
+las particularidades de la información contenida en una base de datos. Respecto a la forma 
+para determinar cuáles son las mejores aproximaciones a los datos, existen numerosos 
+documentos de trabajo y metodologías planteadas para las encuestas. 
+ 
+Por otra parte, en las encuestas con diseño complej o en general el porcentaje de datos 
+faltantes es bajo y se concentra en una parte específica de la muestra con ciertas 
+características; así, en estos casos, puede ser preferible utilizar metodologías simples de 
+imputación de datos que las herramientas más sofisticadas. Los autores Medina y Galván 
+(2007), señalan que un método de imputación simple potencialmente  reproduce mejor las 
+características de la subpoblación de interés que un algoritmo que considera a toda la 
+muestra. 
+ 
+ 
+  
+
+=== PDF PAGE 7 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+7 
+Figura 2. Ilustración de Patrones de datos faltantes. 
+ 
+ 
+ 
+ 
+Fuente: Series Estudios Estadísticos y Prospectivos Nº54 
+ 
+2.3 Imputación de datos perdidos en encuestas de hogares en Chile 
+ 
+La imputación de datos no es una práctica común en las encuestas de hogares en Chile. Las 
+excepciones son la encuesta de Caracterización Socioeconómica Nacional (Casen), la 
+Encuesta Financiera de Hogares (EFH), la Encuesta Suplementaria de Ingresos (ESI) y la 
+Encuesta de Presupuestos Familiares (EPF). Las encuestas ESI y EPF, levantadas por el INE, 
+imputan ingresos (laboral y jubilaciones) y gastos utilizando variantes del método de Hot 
+Deck4. 
+ 
+La encuesta Casen produce imputaciones para un conjunto importante de variables 
+asociadas a diversas fuentes de ingresos de los hogares. El método utilizado para imputar 
+los ingresos del trabajo, jubilaciones y rentas vitalicias corresponde a “medias 
+condicionadas”, mientras que para imputar el alquiler se utiliza el “hot deck secuencial”. 
+Para subsidios y transferencias del estado de montos fijos, se imputa el valor del monto fijo 
+a los outliers que superan el monto fijo. Cada variable se imputa una sola vez ( single 
+imputation) y en forma independiente de las otras, por lo que las metodologías se pueden 
+caracterizar como univariadas5. 
+ 
+La Encuesta Financiera de Hogares produce imputaciones para distintas fuentes de ingreso 
+y patrimonio agregadas a nivel de hogar. Se utiliza el método de imputación encadenado 
+(chain equations) disponible en el paquete estadístico Stata. Todas las variables se imputan 
+en forma conjunta, lo cual se conoce en la literatura como imputación multivariada. Cada 
+variable se imputa 30 veces, y los parámetros se estiman utilizando los métodos de 
+combinación de Rubin para imputaciones múltiples (multiple imputation)6. 
+ 
+ 
+                                                 
+ 
+ 
+4 Ver mas antecedentes en documentos del trabajo de la EPF, INE (2014). 
+5 Ver detalles de los procedimientos de corrección de no respuesta en Cepal  (2016) y Ministerio de Desarrollo 
+Social (2016). 
+6 Ver detalles del procedimiento de imputación de datos en la EFH en Banco Central (2013). 
+
+
+=== PDF PAGE 8 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+8 
+3 Análisis de la No Respuesta al Item EPS 2015 
+ 
+Ante la presencia de datos faltantes en algunas variables clave de la EPS 2015 es importante 
+evaluar ambos – tanto la prevalencia (severidad del problema), como la identificación de los 
+mecanismos que explican los da tos perdidos. Las secciones que siguen presentan  la 
+descripción del procesamiento de datos en la EPS (sección 3.1),  resultados del análisis de 
+la prevalencia de la no respuesta (sección 3.2), el patrón de datos perdidos (sección 3.3) y 
+los mecanismos de n o respuesta (sección 3.4) para una selección de variables de la EPS 
+2015. 
+ 
+3.1 Edición e imputación de datos en la EPS 
+ 
+El objetivo final del proceso de edición y validación de datos es producir una base de datos 
+consistente  y con la menor cantidad de errores posible. Notar los énfasis – (1) no es posible 
+evaluar la validez de todos los reportes entregados por los entrevistados, en vez de eso se 
+busca lograr que los reportes sean consistentes, y (2) nunca es posible eliminar todos los 
+errores en los reportes, se busca minimizarlos. Restricciones de tiempo y costos inciden en 
+la determinación de qué y cuanto editar. Resultados del proceso de edición/validación 
+incluyen desde dejar los datos tal y como están (i.e., no modificar), modificar los datos 
+observados con información auxiliar, o reemplazar los datos observados por datos perdidos. 
+ 
+En la EPS históricamente se han implementado acciones de validación y consistencia de 
+datos tales como: revisión de la implementación de saltos de pregunta, revisión de rango y 
+recorrido de variables, revisión de aplicación de códigos especiales (ej. 88 “No Sabe”, 99 
+“No Responde”) y revisión de valores extremos (outliers). En rondas anteriores de la EPS el 
+proceso de edición/validación de datos ha sido exclusivamente de corte transversal, es decir, 
+se revisa la consistencia de las respuestas solo al interior de la base de datos recolectada 
+en la ronda actual sin considerar comparaciones con los datos recolectados en rondas 
+anteriores. Para la VI Ronda 2015, sin embargo, se incorporó la revisión longitudinal de los 
+datos para una selección de variables 7. El Informe de Edición y Validación de datos EPS 
+2015 da cuenta de estos resultados. 
+ 
+Durante el proceso de edición/validación, los datos que son identificados con errores o 
+inconsistencias se corrigen si es que se dispone de información externa que permita 
+realizarlo. Por ejemplo, cuando se identifican casos con un alto nivel de inconsistencia o 
+valores perdidos, se traspasa el caso al equipo de Supervisión, quien realiza un llamado  
+telefónico a la vivienda para corroborar datos de la aplicación y, en caso de ser pertinente, 
+completar información que no haya sido capturada en la aplicación presencial. Ahora bien,  
+si no se cuenta con información adicional, se genera una variable indi cadora de error y se 
+deja el dato tal y como fue recolectado. Algunos de estos casos serán revisados en el 
+proceso de imputación de datos. Por ejemplo, cuando se detectan ingresos laborales muy 
+grandes o muy pequeños en una ronda (revisión corte transversa l), o cuando se detectan 
+                                                 
+ 
+ 
+7 Las variables: edad, sexo y educación del entrevistado, se revisaron contra los datos de rondas anteriores para 
+todos los entrevistados que participaron en, al menos, una ronda anterior a la VI Ronda 2015. Las variables: 
+ingreso laboral e ingreso total del hogar, se revisaron contra las rondas anteriores para aquellos casos con 
+respuestas extremas (outliers) en la VI Ronda 2015. 
+
+=== PDF PAGE 9 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+9 
+cambios muy severos en el nivel educacional reportado entre rondas del panel (revisión 
+longitudinal). 
+ 
+El proceso de imputación de datos, consiste en generar datos plausibles para aquellos datos 
+identificados con problemas durante el proceso de recolección y/o edición/validación de 
+datos. Se pueden identificar dos tipos de problemas: 
+ 
+(1) Los valores perdidos (missing data), que corresponden a los códigos asociados a 
+las respuestas “No Sabe” y “No Responde” registrados durante el proces o de 
+recolección de datos. La participación de los entrevistados en la encuesta es 
+voluntaria y, de esta forma, ellos pueden optar por no responder cualquier pregunta 
+del cuestionario. Si no conocen la información, entonces pueden responder “ no 
+sabe”. Los códigos asociados a estas respuestas están incorporados en el 
+cuestionario y generan vacíos de información para los analistas de los datos.  
+ 
+(2) Los valores inconsistentes, corresponden a los datos identificados durante el 
+proceso de edición/validación de dat os. El problema acá no es la falta de 
+información, como el caso anterior, sino que la sospecha de que la información 
+existente sea errónea. Es el caso de las respuestas extremas ( outliers), se pueden 
+generar sesgos importantes en la estimación de los estad ísticos de interés. La 
+variabilidad también aumenta en presencia de valores extremos. 
+ 
+Si la proporción de datos perdidos por estas causas es alta, pueden constituir un problema 
+serio para el análisis de los datos. Por una parte, se genera incremento en la  varianza al 
+contar con menos datos para el cálculo de los estadísticos de interés. Por otra parte, si los 
+datos no están perdidos al azar, se puede generar también sesgo en la estimación de los 
+parámetros de interés. Por esta razón, los datos perdidos son  usualmente candidatos a 
+imputación. 
+ 
+3.2 Porcentaje de No Respuesta al Item 
+ 
+En la base de datos EPS 2015 los valores identificados con el símbolo “.” en Stata y con “ ” 
+(blanco) en SPSS, corresponden a instancias válidas de datos perdidos asociadas a saltos 
+de pregunta. Por ejemplo, la pregunta sobre “ingresos laborales” solo se aplica a las 
+personas que trabajan remuneradamente - a todo el resto de las personas no se le s hace 
+esta pregunta y se deja marcado un “.”  o “ ” (blanco) para ellos. Este tipo de datos perdidos 
+en la base de datos no constituye lo que se denomina “no respuesta al item”, simplemente 
+refleja el hecho de que distintas preguntas se aplican a distintas subpoblaciones dentro de 
+la encuesta.  
+ 
+La no respuesta al ítem , que es el foco de nuestro interés , viene dada por las categorías 
+“No Sabe” y “No Responde” que se registran en la base EPS 2015 con los códigos “8´s” y 
+“9´s” respectivamente. A nivel general, las preguntas de la EPS 2015 presentaron tasas de 
+no respuesta al ítem en un rango acotado. La Tabla 3.1 presenta el porcentaje de no 
+respuesta al item para una selección de variables en la EPS 2015. Se puede observar que 
+las tasas más altas de no respu esta están asociadas a preguntas sobre montos como el 
+arriendo efectivo/estimado (17%), el ingreso total familiar (16,7%) y los ingresos laborales 
+(8,5%). Preguntas como nivel educacional y otras sociodemográficas están en el rango de 
+
+=== PDF PAGE 10 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+10 
+2-5%, sin embargo la mayor parte de las preguntas presentan tasas mucho más bajas  
+(<1%).  
+ 
+Preguntas sobre tramos monetarios, que se aplican solo a quienes no saben o no responden 
+preguntas sobre montos, tienen una tasa de no respuesta en el rango de 2-5%. Por ejemplo, 
+en la EPS 2015 se aplicó la pregunta sobre tramos de ingreso laboral (b12t) a las 761 
+personas que declararon No Sabe o No Responde a la pregunta de monto de  ingreso laboral 
+(b12) – de ellas 708 reportaron un tramo de ingreso y 53 optaron por no responder.  La 
+pregunta de tramos de ingreso es, para la EPS, una pregunta útil para rescatar información 
+(parcial) que de otra manera estaría completamente perdida para el estudio.  
+ 
+Los resultados que aquí se presentan están en línea con los que se encuentran en la  
+literatura para preguntas acerca de montos y tramos de ingresos, donde se pueden observar 
+tasas de no respuesta al ítem entre 20 -40% (Moore et al., 1999; Olson et al., 1999). En 
+contraste, se observan tasas entre 1-4% para otro tipo de preguntas (De Leew , 1992). La 
+Tabla 3.2 en Yang et al. (2010), con datos sobre tres grandes encuestas de hogares en 
+Estados Unidos, también muestra datos de no respuesta a preguntas de ingresos en el rango 
+de 12-35%. Sin embargo, aquí también se ilustra la reducción en el p orcentaje de datos 
+perdidos cuando se aplican preguntas de tramos de ingreso a los que no responden montos 
+de ingreso. Para la CEQ 2003, por ejemplo, el porcentaje de no respuesta al monto de 
+ingreso baja de 35% a 19% al utilizar tramos.  
+ 
+El uso de tramos  de ingreso es una práctica habitual en encuestas con preguntas sobre 
+montos de ingreso. En la EPS, las preguntas de ingresos se hacen en formato abierto, es 
+decir, se pregunta directamente por el monto (ej. Cuál fue su ingreso líquido el mes 
+pasado?). Para reducir la no respuesta, una de las estrategias utilizadas en la EPS consiste 
+en reducir la demanda cognitiva del reporte (mecanismo #2 arriba) a través del uso de una 
+pregunta de seguimiento sobre tramos de ingreso (ej. menos de 50.000? Entre 50.000 – 
+99.999? etc) que se aplica a quienes declaran no saber/no responden la pregunta directa 
+de montos.  
+ 
+  
+
+=== PDF PAGE 11 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+11 
+Tabla 3.1. Porcentaje de no respuesta al item, variables seleccionadas de la EPS 
+2015. 
+ 
+Ítem 
+ 
+tipo Nombre 
+variable 
+Sub 
+poblacion 
+ 
+n miss % miss 
+Preguntas sobre montos      
+monto ing hogar (mensual) Continua c34 16.906 2825 16,71% 
+monto ing laboral (mensual) Continua ytrab 9.009 761 8,45% 
+monto alquiler vivienda (mensual) Continua NRalq 16.906 2876 17,02% 
+Preguntas sobre tramos      
+tramo ing laboral (mensual) Categórica ytrabt 9.009 53 0,59% 
+tramo alquiler vivienda (mensual) Categórica NRalqt 16.906 466 2,76% 
+Preguntas sociodemográficas      
+tramo educacional Categórica teduc 16.906 363 2,15% 
+años escolaridad Continua esc 16.906 132 0,78% 
+estado de salud Categórica a10 16.906 22 0,13% 
+trabajo permanente Binaria b6 9.037 7 0,08% 
+boletas trabajo Binaria b11 8.986 31 0,34% 
+parentesco  Categórica a5 16.906 6 0,04% 
+etnia Categórica a10b 16.906 172 1,02% 
+categoria ocupacional Categórica b8 9.037 0 0,00% 
+sexo Binaria a8 16.906 0 0,00% 
+edad Continua a9 16.906 0 0,00% 
+region Categórica region 16.906 0 0,00% 
+Fuente: Elaboración propia. 
+ 
+Tabla 3.2. Tasas de respuesta a preguntas de ingreso en varios estudios. 
+ 
+Nombre del 
+estudio 
+Tasas de no respuesta  al ítem Modo recolección 
+datos 
+Tipo de pregunta 
+Monto Ingreso Tramo Ingreso 
+CPS  
+marzo 1990 
+18,4% No reportado En persona y 
+Teléfono 
+Pregunta monto, varios tipos 
+de ingreso 
+CPS  
+marzo 1996 
+12,2% No reportado En persona y 
+Teléfono 
+Pregunta monto, varios tipos 
+de ingreso 
+CPS  
+Marzo 2000 
+27,2% No reportado En persona y 
+Teléfono 
+Pregunta monto, varios tipos 
+de ingreso 
+CPS  
+2002-2003 
+14,2%  En persona y 
+Teléfono 
+Pregunta monto, varios tipos 
+de ingreso 
+NIS  
+4/97-1/98 
+17,1% 14,2% Teléfono Pregunta monto, Pregunta 
+Tramo (NS/NR) 
+NIS  
+2/98-3/98 
+32,0% 13,9% Teléfono Pregunta monto, Pregunta 
+Tramo (NS/NR) 
+NIS  
+2000 
+27,8% 14,2% Teléfono Pregunta monto, Pregunta 
+Tramo (NS/NR) 
+CEQ  
+2002-2003 
+19,9%  En persona Pregunta monto, Pregunta 
+Tramo (NS/NR) 
+CEQ  
+2003 
+35,0% 19,0% En persona Pregunta monto, Pregunta 
+Tramo (NS/NR) 
+Notas: CPS=Current Population Survey; NIS= National Inmunization Survey; CEQ=Consumer Expenditure 
+Quarterly Survey. Fuente: Yang et al. (2010). 
+ 
+
+=== PDF PAGE 12 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+12 
+3.3 Descripción de variables con datos perdidos a imputar 
+ 
+Lo que sigue de este informe se concentra en el análisis de tres variables – el monto (YTRAB) 
+y tramos (YTRABT) de ingresos del trabajo, el monto (ALQ) y tramos (ALQT) de alquiler de 
+vivienda, y los tramos de nivel educacional (TEDUC). Las estadísticas descriptivas de las 
+variables a analizar y las originales se presentan en las Tablas 3.3 y 3.6 respectivamente. 
+ 
+La variable original “b12”, monto de ingresos laborales, se aplicó solo a quienes trabajan 
+remuneradamente (n=9.009). En base a ella se crearon dos variables para estos análisis  
+(ver en Tabla 3.4): 
+ 
+ La variable YTRAB es igual a b12 en los montos mayores a $0. Los 761 casos 
+asociados a No sabe (=8) y No responde (=9) en b12 se codificaron como perdidos 
+(=.) en YTRAB. Los 7.897 casos perdidos originales, que corresponden a quienes no 
+trabajan o trabajan sin remuneración y no se les hace esta pregunta, se mantienen 
+como datos perdidos (=.).  Así, YTRAB es una variable continua con 8248 
+observaciones válidas que va n desde $10.000 hasta $9.000.000  y con media 
+$422.894. 
+ 
+ La variable YTRAB0 es igual a YTRAB, pero se asignó valor $0 a los 7.897 casos 
+con datos perdidos en b12 (que corresponden a las personas que no trabajan 
+remuneradamente). Así, YTRAB es una variable continua con 16.145 valores válidos 
+que van desde $0 hasta $9.000.000 con media $216.044. 
+ 
+La variable original “b12t”, tramo de ingresos laborales, se aplicó solo a las 761 personas 
+que respondieron No Sabe o No responde en mon to de ingresos laborales (b12) lo cual 
+genera 8.248 datos perdidos (=.) para las personas que reportaron montos válidos de 
+ingreso en b12. En base a b12t se crearon dos variables para estos análisis (ver en Tabla 
+3.4): 
+ 
+ La variable YTRABT se genera sobre l a base de b12t, pero reemplaza los “datos 
+perdidos” de b12t por tramos válidos a todas las personas que reportaron montos 
+de ingresos en b12 . Por ejemplo, a las personas que reportaron percibir $450.000 
+de ingresos laborales en b12 se les asignó el tramo 6  “De $ 400.001 a $ 500.000” 
+en YTRABT. Los 53 casos asociados a No sabe (=88) y No responde (=99) en b12t, 
+sin embargo, se codificaron como perdidos (=.) ya que representan rechazos 
+efectivos a responder la pregunta de tramos de ingresos. Los 7.897 casos perdidos 
+originales, que corresponden a quienes no trabajan o trabajan sin remuneración y 
+no se les hace esta pregunta, se mantienen como datos perdidos (=.) Así, YTRABT 
+es una variable de 12 categorías, con 8.956 casos válidos, que van desde “Menos o 
+igual a $50.000” a “Más de $1.000.000”. 
+ 
+ La variable YTRABT0 es igual a YTRABT, pero se asignó el tramo 0 a los 7.897 
+casos con datos perdidos en b12t que corresponden a las personas que no trabajan 
+remuneradamente. Así, YTRABT es una variable categórica de 13 categorías, con 
+16.853 casos válidos, que van desde “0” a “Más de $1.000.000”. 
+
+=== PDF PAGE 13 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+13 
+La variable  original d88, monto efectivo/estimado del valor del alquiler de la residencia, se 
+aplica a todas las personas (n=16.906). A partir de ella se creó la variable ALQ (ver en Tabla 
+3.5): 
+ 
+ La variable ALQ es prácticamente igual a d8 en los montos mayores a $0. Se 
+codificaron como perdidos (=.) los 1.886 casos que respondieron No sabe (=8), los 
+517 que No responde (=9) y los 441 casos que reportaron como valor “$0”. También 
+se asignó código de perdido (=.) a los 8 casos con valores menores a $10.000 y los 
+26 casos mayores a $10.000.000 . Los valores $0 reportados se dejaron como 
+perdidos para imputación, ya que se espera contar con un estimado del valor de 
+arriendo de la residencia, y estos son por definición mayores a $0. Los valores 
+extremadamente pequeños o  grandes de arriendo pueden ser reales o bien error 
+en el registro de la información. Se revisó la distribución de variable arriendo 
+estimado en la Encuesta Casen  2015 (v229) y se determinó editar a “perdidos” los 
+valores extremos reportados en EPS 2015 que van más allá de los observados en 
+Casen 2015. Así, ALQ es una variable continua con 14.028 valores válidos que van 
+desde $10.000 hasta $5.000.000 con media $ 184.796. 
+ 
+La variable  original d8t, tramo del valor del alquiler de la residencia, se aplicó solo a las 
+2.403 personas que respondieron No Sabe o No responde en monto de arriendo imputado 
+(d8) lo cual genera 14.503 datos perdidos (=.) para las personas que reportaron montos 
+válidos de alquiler en d8. A partir de d8t se creó la variable ALQT (ver en Tabla 3.5): 
+ 
+ La variable ALQT se genera sobre la base de d8t, pero reemplaza los 14.503 “datos 
+perdidos”  de d8t por tramos válidos para todas las personas que reportaron montos 
+de arriendo en d8. Por ejemplo, a las personas que reportaron alquiler por $130.000 
+en d8 se les asignó el tramo 3 “De $ 100.001 a $ 200.000” en ALQT. Los 25 casos 
+asociados a No sabe (=88) y No responde (=99) en d8t, sin embargo, se codificaron 
+como perdidos (=.) ya que representan rechazos efectivos a responder la pregunta 
+de tramos de alquiler. También se codificaron como perdidos los 34 outliers (valores 
+extremos altos y bajos) y l os 441 casos que reportaron arriendo por valor $0. Así, 
+ALQT es una variable categórica de 13 categorías, con 16.406 casos válidos, que van 
+desde “Menos o igual a $15.000” a “Más de $220.000”. 
+ 
+La variable TEDUC se aplicó a todas las personas (n=16.906). E sta es una variable 
+categórica y sus 8 categorías se construyen a partir de las preguntas asociadas al nivel de 
+educación (a12n) y el último curso aprobado (a12c). Los 363 casos perdidos (=.) se 
+generaron en forma automática debido a los códigos asociados a No sabe (=8) y No 
+responde (=9) de las variables de origen (a12n, a12c). Ver en Tabla 3.6. 
+                                                 
+ 
+ 
+8 La pregunta d8 en la EPS 2015 es “Aproximadamente, cuánto paga (o tendría que pagar) al mes por el 
+arriendo de esta vivienda o pieza?” 
+9 La pregunta v22 en la encuesta Casen 2015 es “Cuanto se paga de arriendo en este sector por viviendas 
+similares a la suya?”. El fraseo de la pregunta Casen 2015 no es igual al de EPS 2015, pero ambas buscan 
+recolectar la misma información - el monto mensual estimado de arriendo del lugar de residencia del 
+entrevistado. Hasta el año 2009, el fraseo de Casen era similar al de la EPS, sin embargo dada la gran 
+cantidad de datos perdidos en esta pregunta se modificó el fraseo a la versión actual con el objetivo de aclarar 
+mejor el significado y reducir la no respuesta a este item. 
+
+=== PDF PAGE 14 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+14 
+Tabla 3.3. Estadísticas descriptivas de variables originales y creadas para 
+análisis de educación, ingreso laboral y alquiler imputado. ESP 2015. 
+ 
+ 
+    Variable |        Obs        Mean    Std. Dev.       Min        Max 
+-------------+--------------------------------------------------------- 
+         b12 |      9,009    387172.7    439300.2          8    9000000 
+       ytrab |      8,248    422894.3    442362.4      10000    9000000 
+      ytrab0 |     16,145    216044.1    380335.4          0    9000000 
+-------------+--------------------------------------------------------- 
+        b12t |        761    11.11695    21.24211          1         88 
+      ytrabt |      8,956    5.183452    2.443729          1         12 
+     ytrabt0 |     16,853    2.754584    3.140746          0         12 
+-------------+--------------------------------------------------------- 
+          d8 |     16,906    227989.7     2780458          0   2.50e+08 
+         alq |     14,028    184796.6    198257.5      10000    5000000 
+-------------+--------------------------------------------------------- 
+         d8t |      2,403    8.726176    9.812264          1         99 
+        alqt |     16,406    9.476228    3.135566          1         13 
+-------------+--------------------------------------------------------- 
+       teduc |     16,543    4.707913    1.785577          1          8 
+-------------+--------------------------------------------------------- 
+ 
+ 
+ 
+Tabla 3.4. Variable original y creadas para análisis de ingresos del trabajo, EPS 
+2015. 
+ 
+Monto de ingresos del trabajo B12 YTRAB YTRAB0 
+Igual a $0 0 0 7.897 
+Mayor a $0 8.248 8.248 8.248 
+No sabe / No responde 761 0 0 
+Perdidos (“.”) 7.897 8.658 761 
+Total 16.906 16.906 16.906 
+Tramo de ingresos del trabajo B12T YTRABT YTRABT0 
+Tramo 0 (= $0) 0 0 7.897 
+Tramos 1 a 12 (<=$50.000 a >=$1.000.000) 708 8.956 8.956 
+No sabe / No responde 53 0 0 
+Perdidos (“.”) 16.145 7.950 53 
+Total 16.906 16.906 16.906 
+ 
+Tabla 3.5. Variable original y creadas para análisis de alquiler imputado, EPS 
+2015. 
+ 
+Monto de alquiler imputado D8 ALQ 
+Igual a $0 441 0 
+Mayor a $0 14.062 14.028 
+No sabe / No responde 2.403 0 
+Perdidos (“.”) 0 2.878 
+Total 16.906 16.906 
+Tramo de alquiler imputado D8T ALQT 
+Tramo 0 (= $0) 0 0 
+Tramos 1 a 13 (<=$15.000 a >=$220.000) 2.378 16.406 
+No sabe / No responde 25 0 
+Perdidos (“.”) 14.503 500 
+Total 16.906 16.906 
+ 
+ 
+
+=== PDF PAGE 15 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+15 
+Tabla 3.6. Distribución de variables categóricas originales de ingreso laboral, 
+alquiler imputado y tramos de nivel educacional, sin ponderar, EPS 2015. 
+ 
+ 
+// A. Distribución de variable creada TEDUC, nivel de educación en tramos. 
+ 
+TEDUC       |      Freq.     Percent        Cum. 
+------------+----------------------------------- 
+    Ninguna |        296        1.75        1.75 
+  BasicaInc |      2,288       13.53       15.28 
+  BasicaCom |      1,719       10.17       25.45 
+   MediaInc |      2,427       14.36       39.81 
+   MediaCom |      4,761       28.16       67.97 
+ TecnicaSup |      2,214       13.10       81.07 
+    UnivInc |      1,647        9.74       90.81 
+    UnivCom |      1,191        7.04       97.85 
+      NS/NR |        363        2.15      100.00 
+------------+----------------------------------- 
+      Total |     16,906      100.00 
+ 
+// B. Distribución de variable original b12t, tramo de ingreso laboral.  
+ 
+B12T                      |      Freq.     Percent        Cum. 
+--------------------------+----------------------------------- 
+Menos o igual a  $ 50.000 |         56        0.33        0.33 
+  De $ 50.001 a $ 100.000 |         49        0.29        0.62 
+ De $ 100.001 a $ 200.000 |         80        0.47        1.09 
+ De $ 200.001 a $ 300.000 |        136        0.80        1.90 
+ De $ 300.001 a $ 400.000 |        115        0.68        2.58 
+ De $ 400.001 a $ 500.000 |         77        0.46        3.03 
+ De $ 500.001 a $ 600.000 |         53        0.31        3.35 
+ De $ 600.001 a $ 700.000 |         28        0.17        3.51 
+ De $ 700.001 a $ 800.000 |         30        0.18        3.69 
+ De $ 800.001 a $ 900.000 |         18        0.11        3.80 
+ De $ 900.001 a 1.000.000 |         16        0.09        3.89 
+       Mas de $ 1.000.000 |         50        0.30        4.19 
+              No responde |         53        0.31        4.50 
+                        . |     16,145       95.50      100.00 
+--------------------------+----------------------------------- 
+                    Total |     16,906      100.00 
+ 
+// C. Distribución de variable original D8T, tramo de alquiler imputado.  
+ 
+D8T                     |      Freq.     Percent        Cum. 
+------------------------+----------------------------------- 
+Menos o igual a $15.000 |        302        1.79        1.79 
+  De $15.001 a $ 30.000 |         58        0.34        2.13 
+  De $30.001 a $ 40.000 |         72        0.43        2.56 
+  De $40.001 a $ 50.000 |         98        0.58        3.13 
+  De $50.001 a $ 60.000 |        137        0.81        3.95 
+ De $ 60.001 a $ 80.000 |        196        1.16        5.10 
+  De $80.001 a $ 90.000 |        135        0.80        5.90 
+  De $90.001 a $100.000 |        201        1.19        7.09 
+ De $100.001 a $120.000 |        267        1.58        8.67 
+ De $120.001 a $150.000 |        204        1.21        9.88 
+ De $150.001 a $180.000 |        174        1.03       10.91 
+ De $180.001 a $220.000 |        179        1.06       11.97 
+        Mas de $220.000 |        355        2.10       14.07 
+            No responde |          6        0.04       14.10 
+                No sabe |         19        0.11       14.21 
+                      . |     14,503       85.79      100.00 
+------------------------+----------------------------------- 
+                  Total |     16,906      100.00 
+ 
+Fuente: Elaboración propia. 
+ 
+ 
+  
+
+=== PDF PAGE 16 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+16 
+3.4 Patrones de No respuesta al Item  
+ 
+Un primer análisis útil realizar es identificar los patrones de datos perdidos. Las Tablas 3.7 
+y 3.8 presentan los patrones de no respuesta para las variables TEDUC , YTRAB010 y ALQ, 
+donde “1” representa casos completos y “0” representa datos perdidos para cada variable.  
+ 
+La Tabla 3.7 presenta en patrón de datos perdidos para las variables originales de ingreso 
+laboral y alquiler, ignorando el hecho de que se dispone de las variables auxiliares de tramo 
+para asistir en la recuperación de los datos perdidos de estas variables. Como se puede 
+observar en la primera línea de la Tabla 3.7 hay 13.337 observaciones con casos completos 
+para las tres variables (patrón “1 1 1”), lo que corresponde al 79% de los datos. Este 
+resultado es preocupante ya que, por ejemplo, si se quisiera hacer un análisis de regresión 
+multivariada de arri endo imputado  (ALQ) sobre ingreso laboral  (YTRAB0) y nivel de 
+educación (TEDUC) se perdería el 21% de los datos al no contarse con datos completos 
+para alguna de las tres variables. El patrón de no respuesta más severo es cuando falta el 
+alquiler  (2.649 perdidos). El patrón general de pérdida de las tres variables es aleatorio, ya 
+que no se puede clasificar como monótono o univariado. 
+ 
+La EPS implementa, sin embargo, una estrategia para recuperar los caso perdidos  en las 
+preguntas sobre montos que consiste en aplicar una pregunta sobre tramos.  La Tabla 3.8 
+presenta el patrón de datos perdidos para las tres variables considerando que se utiliza la 
+información en las variables de tramo para imputar los datos perdidos de ingresos laborales 
+y alquiler. Como se puede observar, el total de casos completos sube a 16.004  para el 
+patrón “1 1 1”, lo que corresponde a un 95% de los datos. En este escenario, el análisis de 
+regresión mutlivariada planteado anteriormente tendría un 5% de datos perdidos. En este 
+escenario, los patrones de datos faltantes más severos se dan cuando falta el alquiler (488 
+casos) y el nivel educacional (350 casos). 
+ 
+Las variables sobre tramos tienen potencial para ayudar a recuperar parte importante de la 
+información que se pierde en las preguntas sobre montos de ingreso laboral y alquiler. Las 
+Tablas 3.9 y 3.10 presentan los patrones de respuesta para las preguntas de monto y tramos 
+de ingreso laboral y alquiler respectivamente. La Tabla 3.9 presenta resultados para las 
+9.009 personas que trabajan por remuneración. Se puede observar que 761 personas no 
+respondieron la pregunta de montos y de ellas 53 no respondieron la pregunta sobre tramos 
+de ingreso. La Tabla 3.10 presenta resultados para todas las personas. Se puede observar 
+que 2.378 personas no tienen valores válidos de montos y de ellas 500 tampoco tienen 
+respuestas válidas de tramos de alquiler. Como se puede ve rificar, el patrón general de 
+pérdida para ambos sets de variables es monótono por diseño, ya que solo se aplican las 
+preguntas de tramos a quienes declaran “No Sabe” o “No Responde”  la pregunta de montos. 
+ 
+Estos resultados tienen implicancias en los métodos de imputación a considerar. Los 
+patrones monótonos, por ejemplo, pueden ser tratados con imputaciones secuenciales 
+condicionales independientes, mientras que el patrón aleatorio requiere recursividad y 
+                                                 
+ 
+ 
+10 Se usa YTRAB0, en vez de YTRAB, para consignar con “0” los casos que no trabajan - de esta forma no se 
+contabilizan los casos perdidos “por diseño” como casos perdidos por “no respuesta”. 
+
+=== PDF PAGE 17 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+17 
+dependencia de las imputaciones, o bien de un modelo multivariado que explique su 
+distribución conjunta.  
+ 
+ 
+Tabla 3.7. Patrones de datos perdidos para variables TEDUC, YTRAB0, ALQ. 
+Todas las personas. 
+ 
+                
+Variable     | type     obs   mv   variable label 
+-------------+------------------------------------------------------------- 
+teduc        | float  16543  363   Nivel Educacional - Categorica 
+ytrab0       | float  16145  761   Monto Ingreso Laboral - Original con 0's 
+alq          | float  14028 2878   Alquiler efectivo o imputado 
+--------------------------------------------------------------------------- 
+   Missing-value patterns(1 means complete) 
+ 
+              |   Pattern 
+    Frequency |  1  2  3 
+  ------------+------------- 
+       13,337 |  1  1  1 
+        2,469 |  1  1  0 
+          445 |  1  0  1 
+          292 |  1  0  0 
+          234 |  0  1  1 
+          105 |  0  1  0 
+           12 |  0  0  0 
+           12 |  0  0  1 
+  ------------+------------- 
+       16,906 | 
+ 
+  Variables are  (1) teduc  (2) ytrab0  (3) alq 
+ 
+ 
+ 
+Tabla 3.8. Patrones de datos perdidos para variables TEDUC, YTRABT0, ALQT. 
+Todas las personas. 
+ 
+ 
+Variable     | type     obs   mv   variable label 
+-------------+------------------------------------------------------------- 
+teduc        | float  16543  363   Nivel Educacional - Categorica 
+ytrabt0      | float  16853   53   Tramo Ingreso Laboral - Original con 0's 
+alqt         | float  16406  500   Tramo de Alquiler efectivo o imputado 
+--------------------------------------------------------------------------- 
+   Missing-value patterns(1 means complete) 
+ 
+              |   Pattern 
+    Frequency |  1  2  3 
+  ------------+------------- 
+       16,004 |  1  1  1 
+          488 |  1  1  0 
+          350 |  1  0  1 
+           51 |  0  1  1 
+           11 |  1  0  0 
+            1 |  0  0  0 
+            1 |  0  0  1 
+  ------------+------------- 
+       16,906 | 
+ 
+  Variables are  (1) ytrabt0  (2) teduc  (3) alqt 
+ 
+ 
+ 
+  
+
+=== PDF PAGE 18 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+18 
+Tabla 3.9. Patrones de datos perdidos para variables YTRAB, YTRABT0. Solo  
+personas que trabajan remuneradamente. 
+ 
+ 
+Variable     | type     obs   mv   variable label 
+-------------+----------------------------------------------------- 
+ytrab        | float   8248  761   Monto Ingreso Laboral - Original 
+ytrabt       | float   8956   53   Tramo Ingreso Laboral - Original 
+------------------------------------------------------------------- 
+   Missing-value patterns(1 means complete) 
+ 
+              |   Pattern 
+    Frequency |  1  2 
+  ------------+------------- 
+        8,248 |  1  1 
+          708 |  1  0 
+           53 |  0  0 
+  ------------+------------- 
+        9,009 | 
+ 
+  Variables are  (1) ytrabt  (2) ytrab 
+ 
+ 
+ 
+Tabla 3.10. Patrones de datos perdidos para variables ALQ, ALQT. Todas las 
+personas. 
+ 
+ 
+Variable     | type     obs   mv   variable label 
+-------------+---------------------------------------------------------- 
+alq          | float  14028 2878   Alquiler efectivo o imputado 
+alqt         | float  16406  500   Tramo de Alquiler efectivo o imputado 
+------------------------------------------------------------------------ 
+   Missing-value patterns(1 means complete) 
+ 
+              |   Pattern 
+    Frequency |  1  2 
+  ------------+------------- 
+       14,028 |  1  1 
+        2,378 |  1  0 
+          500 |  0  0 
+  ------------+------------- 
+       16,906 | 
+ 
+  Variables are  (1) alqt  (2) alq 
+ 
+ 
+ 
+3.5 Mecanismos de No Respuesta al Item  
+ 
+Según la teoría, la estrategia de imputar los datos perdidos  solo es capaz de corregir los 
+sesgos de no respuesta cuando el mecanismo que subyace al fenómeno de datos perdidos 
+es Missing at Random (MAR). Una forma de cotejar la plausibilidad del supuesto de MAR es 
+verificar si el indicador del patrón de no respuesta está asociado con variables (mecanismos) 
+observadas en la base de datos.  
+ 
+Los indicadores de no respuesta de las variables de educación, ingreso y alquiler  se 
+denominan NRteduc, NRytrab y NRalq respectivamente, donde “1”=dato perdido, “0”=dato 
+válido y “.”=no aplica. La Tabla 3.11 presenta las estadísticas descriptivas de los indicadores 
+de no respuesta.  La Tabla 3.12 presenta la distribución del porcentaje de no respuesta 
+según variables observadas que se sospecha están relacionadas con el patrón de no 
+respuesta para cada uno de los items. Como se puede observar, varias  de las variables 
+
+=== PDF PAGE 19 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+19 
+examinadas están asociadas al patrón de respuesta de manera estadísticamente significativa 
+al 95% de confianza (ver Test F en tabla): 
+ 
+ Personas de mayor edad, jefes de hogar, identificados con alguna etnia, que no 
+trabajan, que declaran mala salud y que residen en la zona norte tienen más 
+probabilidad de no responder las preguntas de nivel educacional. 
+ 
+ Personas de mayor edad, que son jefes de hogar y que residen en las regiones del 
+norte del país tienen más probabilidad de no responder la pregunta de monto ingreso 
+laboral.  
+ 
+ Personas jóvenes y de mayor edad, identificados con alguna etnia, que no trabajan, 
+que declaran mala salud, que residen en la zona norte tienen más probabilidad de 
+no responder las preguntas de monto de alquiler. Mientras que personas que viven 
+en departamento o en viviendas arrendadas tienen menor probabilidad de responder 
+las preguntas de monto de alquiler. 
+ 
+Estos resultados son parcialmente consistentes con la literatura, donde variables como la 
+edad, el sexo, la educación y la raza han mostrado influencia en la probabilidad de que los 
+entrevistados entreguen datos perdidos en preguntas de encuestas (Bell, 19 94; Craig y 
+McCann, 1978; Ferber, 1996; Riphahan y Serfling, 2005). 
+ 
+ 
+Tabla 3.11. Estadísticas descriptivas de variables indicadoras del patrón de no 
+respuesta de las variables de educación, ingreso laboral y alquiler imputado. 
+ESP 2015. 
+ 
+ 
+    Variable |        Obs        Mean    Std. Dev.       Min        Max 
+-------------+--------------------------------------------------------- 
+     NRteduc |     16,906    .0214717    .1449547          0          1 
+     NRytrab |      9,009    .0844711    .2781084          0          1 
+       NRalq |     16,906    .1702354    .3758506          0          1 
+ 
+ 
+ 
+  
+
+=== PDF PAGE 20 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+20 
+Tabla 3.12. Porcentaje de no respuesta al ítem, según variables observadas en 
+EPS 2015. 
+ 
+  TEDUC YTRAB ALQ 
+item categorías 
+% 
+perdidos 
+Test F 
+(pvalue) 
+% 
+perdidos 
+Test F 
+(pvalue) 
+% 
+perdidos 
+Test F 
+(pvalue) 
+Todos   2,15%   8,45%   17,02%  
+edad 15-24 0,87% 80,68 5,9% 54,32 18,6% 125,96 
+  25-34 1,49% 0,0000 7,1% 0,0000 14,4% 0,0000 
+  35-44 1,65%  9,1%  13,2%  
+  45-54 2,84%  9,4%  14,2%  
+  55-64 3,19%  9,0%  17,1%  
+  65+ 3,46%   15,4%   22,9%  
+sexo Hombre 2,14% 0,01 8,9% 3,14 17,5% 2,05 
+  Mujer 2,16%  0,9218 7,8%  0,0764 16,6% 0,1523 
+etnia no 1,94% 32,72 8,4% 0,75 16,7% 14,89 
+  si 4,14%  0,0000 9,2%  0,3872 20,5% 0,0001 
+jefe hogar no 1,26% 64,91 7,3% 11,43 17,4% 1,39 
+  si 3,05%  0,0000 9,3%  0,0007 16,7% 0,2391 
+trabaja no 2,39% 4,10 na na 20,3% 109,80 
+  si 1,94%  0,0428 8,4%   14,2% 0,0000 
+salud regular a mala 2,87% 22,45 7,5% 3,65 18,4% 12,39 
+  buena a excelente 1,76%  0,0000 8,8%  0,0560 16,3% 0,0004 
+macrozona Centro 1,52% 135,15 6,9% 19,23 15,6% 190,41 
+  Norte 5,44% 0,0000 11,3% 0,0002 24,5% 0,0000 
+  RM 1,55%  8,1%  13,0%  
+  Sur 1,88%  8,9%  19,9%  
+Tipo vivienda Pieza 1,6% 5,22 4,4% 10,15 18,1% 25,80 
+ Casa 2,2% 0,0735 8,7% 0,0062 17,4% 0,0000 
+ Departamento 1,3%  8,1%  11,4%  
+Situación de 
+ocupación de 
+la vivienda 
+ 
+Otro 2,2% 5,21 7,3% 5,43 18,7% 190,09 
+Arrendada 1,4% 0,0737 7,9% 0,0661 5,6% 0,0000 
+propia 2,3%  8,9%  18,3%  
+n  16.906  9.009  16.906  
+
+=== PDF PAGE 21 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+21 
+3.6 Conclusión análisis de No Respuesta al Item  
+ 
+Los análisis del porcentaje y el mecanismo de no respuesta permiten informar la decisión 
+de implementar o no alguna estrategia de imputación de datos para tratar el problema de 
+los datos perdidos en la EPS 2015. 
+ 
+Si el porcentaje de datos perdidos es relativamente pequeño, de 1 -2%, la recomendación 
+más común en la literatura es no hacer nada ya que la baja incidencia del problema hace 
+contraproducente el esfuerzo necesario  (de desarrollar modelos de imputación)  para 
+corregirlo. Las variables TEDUC, YTRAB y ALQ  presentan porcentajes de datos perdidos de 
+2,15%, 8,45% y 17% respectivamente, lo cual sugiere que sería adecuado implementar 
+alguna estrategia de imputación.  
+ 
+El análisis del mecanismo de no respuesta también permite informar la decisión acerca de 
+imputar o no. Si el mecanismo de  no respuesta es completamente aleatoria (MCAR), 
+entonces el riesgo de sesgo de no respuesta es relativamente menor , aunque si el 
+porcentaje de no respuesta es elevado de todas formas se pierde precisión de las 
+estimaciones debido a la disminución del tamaño muestral. Si el mecanismo de no respuesta 
+es aleatorio (MAR), es decir depende de observables, entonces es recomendable imputar 
+condicionando en los predictores del patrón de no respuesta. El supuesto de MCAR se 
+considera muy fuerte y difícil de sostener. Para evaluar el supuesto de MAR se testeó la 
+evidencia de asociación entre cada uno de los  indicadores de no respuesta y un set de 
+variables observadas. Los resultados de este análisis en esta sección permiten rechazar la 
+hipótesis “perdidos completamente al azar” (MCAR) para las variables TEDUC, YTRAB y ALQ 
+ya que se identifican varias variables asociadas al patrón de no respuesta. Esto significa que 
+se descarta la opción de realizar análisis de casos completos con las variables TEDUC, YTRAB 
+y ALQ. 
+ 
+Dado que la no respuesta en TEDUC , YTRAB y ALQ  está, al menos, asociada a los 
+observables que se presentan en la Tabla 3.12, se asumirá para efectos de este informe 
+que la no respuesta es MAR – perdidos al azar. Bajo este escenario tiene sentido evaluar 
+distintos métodos de imputación para tratar de corregir, aunque sea parcialmente, el sesgo 
+asociado a la no respuesta en estos items. 
+ 
+En atención a los resultados del análisis de los patrones de no respuesta, que confirman el 
+patrón monótono de pérdida de datos entre YTRA e YTRABT y entre ALQ y ALQT, se 
+procederá a imputar primero las variables de montos (YTRAB, ALQ) a partir de las variables 
+de tramos (YTRABT, ALQT). A continuación se procederá a imputar la variable TEDUC y lo 
+que quede de imputar en las variables YTRAB y ALQ. La sección que sigue describe las 
+distintas variantes de las metodologías de imputación evaluadas en la EPS 2015. 
+ 
+ 
+  
+
+=== PDF PAGE 22 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+22 
+4 Métodos de Imputación aplicados en EPS 2015 
+ 
+Las variables focales de interés para esta investigación son las variables tramo de nivel 
+educacional (TEDUC), el monto de ingreso laboral (YTRAB) y el monto de alquiler imputado 
+(ALQ). Estas variables tienen particularidades que las hacen ejemplos interesantes para este 
+primer análisis de las imputaciones en la EPS. 
+ 
+ La información auxiliar contenida en los datos históricos puede ser de gran ayuda 
+para el proceso de imputación de esta y otras variables de sim ilar estabilidad en el 
+tiempo. Para las personas que han sido entrevistadas en rondas anteriores del panel 
+EPS, se hará uso de información histórica acerca de TEDUC para imputar los datos 
+perdidos en TEDUC de la ronda 2015. Esto es posible bajo el supuesto  de que el 
+nivel de educación alcanzado es  una característica de los entrevistados que no 
+debiera variar mucho en el tiempo, o si lo hace debiera ser en forma ascendente (y 
+no descendiente o errática). A quienes no cumplan con las condiciones para el uso 
+de información histórica, y a quienes participen por primera vez en el estudio, se les 
+aplicará otro método de imputación. La Figura 4.1 ilustra este procedimiento. 
+ 
+ Las variables YTRAB y ALQ cuentan con información auxiliar relevante recolectada 
+en la misma ronda 2015  - la información acerca de tramos que reportan los 
+entrevistados que No saben o No responden la pregunta sobre ingreso laboral  o 
+alquiler imputado respectivamente . Dado que el patrón de no respuesta de las 
+variables  monto y tramo es monótono por diseño, se procederá a imputar primero 
+los tramos y a continuación los montos. La Figura 4.2 ilustra este procedimiento para 
+las variables YTRABT e YTRAB. El mismo procedimiento se sigue para las va riables 
+ALQ y ALQT. 
+ 
+Para la s variables YTRAB y ALQ  se aplicaron dos métodos distintos  de imputación con 
+algunas variantes: (1) método de media condicionada y (2) método hot deck  aleatorio 
+estratificado. Para la imputación de TEDUC se aplicaron tres métodos distintos con algunas 
+variantes: (1) método de mediana condicionada, (2) método hot deck aleatorio estratificado, 
+y (3) método cold deck.  
+ 
+La sección que sigue describe en mayor detalle los métodos implementados para cada una 
+de las estrategias de imputación y sus variantes.  Algunas características generales a las 
+estrategias de imputación implementadas: 
+ 
+1. La variables TEDUC, YTRAB y ALQ se imputaron en forma independiente (imputación 
+univariada, no multivariada); 
+ 
+2. Se realizó un único ciclo de imputaciones para cada método (imputación simple, no 
+múltiple); 
+ 
+3. Todas las variables auxiliares utilizadas para imputar corresponden a variables 
+observadas en la ronda actual de la EPS (imputación de corte transversal , no 
+longitudinal). 
+  
+
+=== PDF PAGE 23 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+23 
+Figura 4.1. Diagrama de proceso de imputación MIXTO de variable tramos de nivel 
+educacional (TEDUC) en la EPS 2015. 
+ 
+ 
+ 
+ 
+ 
+Figura 4.2. Diagrama del procedimiento de imputación de la variable YTRAB  
+en la EPS 2015. 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 24 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+24 
+4.1 Imputación por medias condicionadas 
+ 
+El método de imputación conocido como medias/medianas condicionadas consiste en dividir 
+la muestra total en clases (celdas) de acuerdo a los valores de las variables auxiliares 
+utilizadas para la imputación. En cada clase/celda de imputación se asigna la media/mediana 
+de los que responden a todos los casos p erdidos en la misma celda  (Kalton y Kasprzyk ,  
+1986). 
+ 
+En esta investigación se utilizó la mediana para la variable categórica TEDUC y la media 
+para las variables continuas YTRAB y ALQ. Para comparar alternativas se crearon 4 celdas 
+de ajuste para las imputaciones de TEDUC y 7 celdas para las imputaciones de YTRAB  y 
+ALQ. La Tabla 4 presenta las especificaciones para cada celda y variable a imputar , las 
+cuales representan opciones típicamente utilizadas en la literatura y en la práctica para la 
+imputación de datos perdidos: 
+ 
+ La “Celda 0”, por ejemplo, corresponde a la opción más básica que consiste en 
+calcular la media (o mediana) en la muestra completa - sin particiones (= 1 celda) 
+– para luego imputar ese único valor estimado a todos los casos con datos perdidos. 
+ 
+ La “Celda 1” corresponde a la opción demográfica básica que consiste en calcular la 
+media (mediana) en cada una de las 12 particiones de la muestra que vienen dados 
+por el cruce de las categorías de sexo y edad definidas. A continuación se imputa el 
+valor que corresponda a cada caso perdido según su clasificación demográfica de 
+sexo y edad correspondiente. Dado que estas variables demográficas están 
+usualmente re lacionadas con muchos fenómenos de interés medido en las 
+encuestas, la configuración de la Celda 1 tiene la ventaja de que puede ser utilizada 
+para imputar a muchas variables de interés.  
+ 
+ La “Celda 2” se genera a partir de los ventiles de la predicción de la probabilidad de 
+responder el item de interés. Este método, conocido como estratificación en la 
+probabilidad de responder (response propensity stratification) consiste en estimar la 
+probabilidad de responder de cada persona, 𝑝(𝑥), a partir de la regre sión del 
+indicador de respuesta en las covariables 𝑥, para luego crear celdas (estratos) 
+homogéneas en la probabilidad de responder  (Little, 1986). La predicción de la 
+probabilidad de responder (el propensity score, 𝑝̂(𝑥)) se puede calcular para todas 
+las personas y es en sí mismo una medida de distancia. En esta aplicación se incluyen 
+tres tipos de predictores en el modelo: (1) predictores de la probabilidad de 
+responder el ítem analizado; (2) variables que reflejan el diseño muestral complejo 
+de la EPS;  y (3) variables que reflejan dominios de interés para publicación de 
+resultados EPS. 
+ 
+ La “Celda 3” se genera a partir de los ventiles de la predicción lineal del ítem de  
+interés. Este método, conocido como predictive mean metric, consiste en estimar la 
+predicción lineal, 𝑥𝑖
+𝑇𝛽̂, del valor del ítem 𝑦, para la persona 𝑖 que no responde, a 
+partir de la regresión de 𝑦 en 𝑥 que utiliza solo los datos de los que responden. En 
+la literatura, la estratificación via medias predictivas o la propensión a responder han 
+sido comparadas en el contexto del método hot -deck (Haziza y Beaumont, 2007) y 
+del método de medias condicionadas (Little, 1986). En ambos contextos se ha 
+
+=== PDF PAGE 25 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+25 
+demostrado que cualquier de las dos métricas puede ser utilizada para reducir el 
+sesgo de no respuesta, sin embargo solo la métrica de la media predictiva tiene el 
+potencial de reducir además la varianza (Andridge y Little, 2010). En esta aplicación 
+se incluyen tres tipos de predictores en el modelo: (1) predictores del ítem analizado; 
+(2) variables que reflejan el diseño muestral complejo de la EPS; y (3) variables que 
+reflejan dominios de interés para publicación de resultados EPS. 
+ 
+ Las Celdas “4”, “5” y “6” se generaron para la imputación de YTRAB. La Celda 4 
+corresponde a los 12 tramos de ingreso  de la variable YTRABT . L a Celda 5 
+corresponde a la clasificación cruzada de 8  tramos de ingreso y los quintiles de la 
+misma propensión a responder estimada para la Celda 2, lo que termina generando 
+40 celdas de ajuste. La Celda 6 corresponde a la clasificación cruzada de 8 tramos 
+de ingreso y los quintiles de la misma predicción lineal estimada para la celda 3, lo 
+que termina generando 40 celdas de ajuste. 
+ 
+ La Celda “7” se genera a partir de la clasificación cruzada del tipo de vivienda (3 
+categorías) y el número de piezas de la vivienda (5 categorías), lo que genera 15 
+celdas de ajuste para el análisis de la variable ALQ. 
+ 
+ Las Celdas “ 8”, “9” y “10” se generaron par a la imputación de ALQ. La Celda 8 
+corresponde a los 13 tramos de alquiler de la variable ALQT. La Celda 9 corresponde 
+a la clasificación cruzada de 9  tramos de alquiler y los quintiles de la misma 
+propensión a responder estimada para la variable ALQ, lo que termina generando 45 
+celdas de ajuste. La Celda 10 corresponde a la clasificación cruzada de 9 tramos de 
+ingreso y los quintiles de la misma predicción lineal estimada para ALQ, lo que 
+termina generando 45 celdas de ajuste. 
+ 
+Las variables que caracterizan el diseño muestral de la EPS, como el factor de expansión, el 
+tipo de afiliado y el tipo de muestra, se incluyeron como covariables en los modelos de la 
+probabilidad de responder y la media predictiva. También se incluyeron variables que 
+identifican dominios de interés de la EPS, como las subpoblaciones dadas por sexo, edad y 
+situación ocupacional. Esta lista no es exhaustiva, pero de todas maneras sirve para hacer 
+el punto de que es útil incorporar a los modelos de imputación variables utiliza das en los 
+análisis planeados de la encuesta. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 26 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+26 
+Tabla 4. Definición de la composición de las celdas de ajuste utilizadas en el procedimiento de imputación por 
+medias/medianas condicionadas y hot deck aleatorio estratificado. 
+ 
+Nombre Número de 
+celdas 
+Variables incluidas en 
+imputaciones TEDUC 
+Variables incluidas en 
+imputaciones YTRAB 
+Variables incluidas en 
+imputaciones ALQ 
+Celda 0 
+ 
+1 Constante=1 Constante=1 Constante=1 
+Celda 1 12 Sexo (2 categorías) * Edad (6 
+categorías) 
+Sexo (2 categorías) * Edad (6 
+categorías) 
+-- 
+Celda 2 20 Ventiles de la probabilidad de 
+responder al ítem, según edad 
+(continua), etnia (binaria), jefe de 
+hogar (binaria), ocupado (binaria), 
+salud (binaria), macrozona (4 
+categorías) 
+Ventiles de la probabilidad de 
+responder al ítem, según edad 
+(continua), jefe de hogar (binaria), 
+asalariado (binaria), macrozona (4 
+categorías) 
+Ventiles de la probabilidad de 
+responder al ítem, según edad 
+(continua), jefe de hogar (binaria), 
+asalariado (binaria), macrozona (4 
+categorías) 
+Celda 3 20 Ventiles de la predicción lineal del 
+ítem, según edad (continua), edad al 
+cuadrado (continua), jefe de hogar 
+(binaria), ocupado (binaria), salud 
+(binaria), macrozona (4 categorías)  , 
+factor_EPS2015, tipomuestra, afiliado, 
+etc. 
+Ventiles de la predicción lineal del 
+ítem, según edad, nivel educacional 
+(12 categorías), jefe de hogar 
+(binaria), sexo (binaria), etnia 
+(binaria), asalariado (binaria), salud 
+(binaria), macrozona (4 categorías) , 
+factor_EPS2015, tipomuestra, afiliado, 
+etc. 
+Ventiles de la predicción lineal del 
+ítem, según edad (continua), edad al 
+cuadrado (continua), nivel educacional 
+(12 categorías), jefe de hogar 
+(binaria), sexo (binaria), etnia 
+(binaria), asalariado (binaria), salud 
+(binaria), macrozona (4 categorías)  , 
+factor_EPS2015, tipomuestra, afiliado, 
+etc. 
+Celda 4 
+ 
+12 -- Tramos de ingreso (12 categorías) -- 
+Celda 5 40 -- Tramos de ingreso ( 8 categorías) * 
+Quintiles PScore (5 categorías) 
+-- 
+Celda 6 40 -- Tramos de ingreso (8 categorías) * 
+Quintiles PredMean (5 categorías) 
+-- 
+Celda 7 15 -- -- Tipo de vivienda (3 categorías) * 
+Número de Piezas (5 categorías) 
+Celda 8 9 -- -- Tramos de alquiler (9 categorías) 
+ 
+Celda 9 45 -- -- Tramos de alquiler (9 categorías) * 
+Quintiles PScore (5 categorías) 
+Celda 10 45 -- -- Tramos de alquiler (9 categorías) * 
+Quintiles PredMean (5 categorías) 
+
+=== PDF PAGE 27 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+27 
+4.2 Imputación Hot Deck 
+ 
+El procedimiento de imputación no paramétrico denominado hot-deck fue desarrollado con 
+el propósito de preservar la distribución de probabilidad de las variables con datos 
+incompletos (Madow, Nisselson y Olkin, 1983). El método tiene como objetivo llenar los 
+registros vacíos (receptores) con información de campos con información completa 
+(donantes), y los datos faltantes se reemplazan a partir de una selección aleatoria de valores 
+observados, lo cual no introduce sesgos en la varianza del estimador. Históricamente, el 
+nombre del método viene del uso de tarjetas perforadas para almacenar información en los 
+computadores antiguos. El térmi no “deck” hace referencia a la baraja de tarjetas de 
+información donante disponible para un non-respondent, y el término “hot” hace referencia 
+a que la baraja está caliente pues actualmente está siendo procesada; ésta característica, 
+contrasta con el métod o cold-deck donde se utiliza información procesada anteriormente 
+como donante (ejemplo, datos de la ronda anterior de una encuesta longitudinal). 
+ 
+El algoritmo consiste en ubicar registros completos e incompletos, identificar características 
+comunes de donantes y receptores, y decidir los valores que se utilizarán para imputar los 
+datos omitidos. Para la aplicación del procedimiento es fundamental generar agrupaciones 
+que garanticen que la imputación se llevará a cabo entre observaciones con características 
+comunes, y la selección de los donantes se realiza en forma aleatoria evitando que se 
+introduzcan sesgos en el estimador de la varianza.  
+ 
+Existen variantes del procedimiento hot-deck; el “algoritmo secuencial”, parte de un proceso 
+de ordenación de los da tos en cada subgrupo y selecciona donantes en la medida que 
+recorre el archivo de datos. Su aplicación supone que la falta de respuesta se distribuye en 
+forma aleatoria en cada una de las categorías, pero en caso de que la falta de respuesta se 
+concentre en un estrato con pocas observaciones es posible que se generen estimadores 
+sesgados en la medida que el procedimiento seleccione varias veces el mismo donante. Por 
+su parte, el “método aleatorio” identifica registros sin datos y elige en forma estocástica al 
+donante; también, existe la posibilidad de que el donante sea el “vecino más cercano” al 
+registro sin datos y la selección se efectúa a partir de la definición de criterios de distancia.  
+ 
+Para esta investigación se utilizó una de las variantes del método – el hot deck aleatorio – 
+implementado en el comando “hotdeckvar” desarrollado por Matthias Schonlau para el 
+paquete estadístico Stata (Schonlau, 2006) 11. El algoritmo implementado en hotdeckvar  
+identifica como observaciones “donantes” a todas aquellas que no tienen datos perdidos en 
+todas las variables especificadas para la construcción de los estratos (celdas) de imputación. 
+Si una misma unidad “receptora” tiene varios datos perdidos, estos son reemplazados con 
+valores de una misma observación “donante” con el objetivo de preservar las correlaciones 
+entre las variables imputadas . Los donantes son elegidos al azar entre el set de posibles 
+donantes al interior de las celdas de imputación12.  
+ 
+                                                 
+ 
+ 
+11 El programa hotdeckvar se puede descargar directamente en Stata a través del comando “net install”. 
+12 Si se especifica [in] o [if], tanto los valores a ser imputados como los donantes serán especificados en función 
+de los condicionantes [in] o [if]. También, es posible utilizar el comando [by] para imputar dentro de las 
+categorías definidas por [by]. 
+
+=== PDF PAGE 28 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+28 
+Para comparar alternativas, tanto en el contexto del hot deck aleatorio como en contraste 
+con el método de medias condicionadas, se utilizaron las mismas celdas de ajuste ya 
+presentadas en la Tabla 4. De esta manera, e l método de imputación implementado se  
+puede caracterizar como hot deck aleatorio estratificado (stratified random hot deck) ya que 
+la implementación del procedimiento considera la utilización de celdas de ajuste (estratos) 
+a través de la opción [by]. 
+ 
+4.3 Imputación Cold Deck 
+ 
+El método de imputación Cold-Deck considera valores de imputación que son independientes 
+a los datos de la base de datos analizada. En este sentido, se utilizan otras fuentes de 
+información complementarias para corregir los problemas de no respuesta, como lo son 
+parámetros poblacionales conocidos, datos administrativos, o datos de mediciones 
+anteriores (Grittner et al., 2012).  
+ 
+Dado el carácter longitudinal de la encuesta, en esta aplicación se toma como referencia 
+(“donantes”) los datos de últimas mediciones, los que son utilizados para reemplazar ítems 
+con valores perdidos. Por este motivo la implementación de Cold Deck en la EPS 2015 debe 
+considerar variables que tengan estabilidad en el tiempo, por lo que se define utilizar como 
+variable a imputar el tramo educacional de los encuestados (“teduc”), el cual refleja el nivel 
+de educación más alto alcanzado. Esta es una variable que debe ser constante o aumentar 
+en el tiempo, por lo que se puede establecer que mediante el método de imputación se 
+contará con un valor que pertenece a la trayectoria educacional del encuestado reportada 
+en una medición anterior. Cabe señalar que este mecanismo sólo será evaluado en aquellos 
+casos que pertenecen a la muestra panel, el resto de los casos pertenecientes a la muestra 
+de refresco serán imputados con otros métodos.  De esta forma, el método propuesto se 
+puede caracterizar como “mixto” ya que considera dos métodos de imputación para la 
+misma variable (ver Figura 5.1). 
+ 
+El método Cold Deck será aplicado solo a los casos del panel E PS que cuenten con  datos 
+históricos de educación que sean confiables, es decir, en aquellos casos donde se cuent e 
+con una secuencia plausible de los reportes del nivel educacional pasados. Los casos con 
+secuencias de educación histórica inconsistentes, así como también los casos que participan 
+por primera vez en el panel, serán imputados con otros métodos.  
+ 
+Para esta investigación se u tilizaron criterios similares a los presentados por Fitz enberger, 
+Osikominu y Völter (2006) para elaborar una definición operativa de “secuencia plausible”.  
+Primero, se estableció que el nivel educacional de las personas puede poseer variaciones en 
+el tiempo, siempre y cuando estas sean ascendentes. Por ejempl o, un valor inconsistente 
+se obtiene cuando, por ejemplo, en una primera medición se reporta “Educación Superior” 
+y en una medición posterior un nivel menor (por ejemplo: “Básica completa”). Dado que la 
+pregunta refleja el nivel mayor nivel educacional del  encuestado, un retroceso sería una 
+inconsistencia. No obstante, no se sabe si el error se produjo en la primera medición (sobre-
+reporte), en la segunda medición (sub-reporte), o en ambas. Dada esta incertidumbre, en 
+este apartado se revisarán aquellos casos que poseen valores perdidos en tramo educacional 
+y cuentan con una secuencia válida (consistente) a través del tiempo. 
+  
+  
+
+=== PDF PAGE 29 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+29 
+Para que un caso sea parte de una secuencia válida, se establece lo siguiente: 
+ 
+a. Posee información en, al menos, tres mediciones, 
+b. Escolaridad no presenta variación en el tiempo, 
+c. Escolaridad presenta variación ascendente en el tiempo. 
+ 
+Los casos analizados en esta aproximación cold deck deben cumplir la consideración “a”; 
+dado que la muestra de la EPS 2015 incluyó muestra de refresco,  estos casos fueron 
+automáticamente descartados de esta fase. El resto de los casos se consideraron como 
+secuencia válida si cumplían la condición “b” o “c”, en caso contrario se catalogaron como 
+inválidos.  
+ 
+ 
+5 Imputación Monto de Ingreso Laboral  
+ 
+Para la imputación de YTRAB se aplicaron dos métodos distintos con algunas variantes: (1) 
+método de media condicionada y (2) método hot deck aleatorio estratificado. A continuación 
+se presentan estos resultados. 
+ 
+5.1. Resultados de imputación de corte transversal sin ponderar 
+ 
+Las Tablas 5.1 y 5.2 presentan estadísticas descriptivas univariadas de la  variable original 
+YTRAB y las 7  variantes de los métodos de imputación bajo análisis. La primera tabla 
+presenta datos solo para los datos imputados (n=761), mientras que la segunda presenta 
+datos para la muestra completa (n=16.906). Algunos resultados de interés a partir de las 
+primeras 4 variantes de imputación que no hicieron uso de la información acerca de tramos 
+de ingreso (sin tramos) en la Tabla 5.1: 
+ 
+ Las 4 variantes de la imputación media asignaron valores en torno al centro de masa, 
+mientras que l as 4 variantes del hot deck aleatorio hicieron uso de  un rango más 
+amplio de dispersión de los datos (ver mínimos y máximos observados).  
+ 
+ Como consecuencia del punto anterior se observa mayor dispersión de las variantes 
+hot deck, lo cual se ve reflejada en desv estándar mayores que las observadas para 
+la imputación de medias. El caso más extremo corresponde a la imputación global 
+de la media (Celda 0), con cero variabilidad en los datos imputados (d.e.=0), ya que 
+asigna el mismo valor (“ytrab=422.894 pesos”) a los 761 casos perdidos. 
+ 
+Cuando se comparan los resultados con las 3 variantes que si hicieron uso de la información 
+de tramos de ingreso para la conformación de celdas de imputación (con tramos) se tiene 
+lo siguiente: 
+ 
+ Bajo ambos métodos (hot deck o media condicionada), tanto el valor promedio de 
+las imputaciones como la dispersión es mayor cuando se usa información sobre los 
+tramos de ingreso en el proceso de imputación. 
+ 
+
+=== PDF PAGE 30 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+30 
+ Dado que la variable tramos de ingreso entrega información mucho más cercana a 
+la variable de interés, ignorarla en el proceso de imputación produce imputaciones 
+sesgadas a la baja (subestimadas).  
+ 
+ Al menos 51 de los 761 casos perdidos recibió un monto imputado con más de un 
+millón de pesos, ya que pertenecían a la celda de ajuste con el mayor tramo de 
+ingreso. De estos 51 casos, 50 corresponden a tramos reportados directamente por 
+el entrevistado y 1 corresponde a tramo imputado.  
+ 
+Si bien es cierto el análisis de los datos imputados (n=761) muestra con claridad los efectos 
+de las distintas variantes implementadas, estas diferencias se ven algo atenuadas al replicar 
+el análisis con toda la muestra (n=16.609). La Tabla 5.2 muestra estos resultados: 
+ 
+ Los métodos de medias condicionadas “sin tramos” reducen la dispersión original de 
+los datos pasando de d.e. = 442.362, para los casos completos, a d.e. = 423.000 
+aprox. para las 4 variantes de medias condicionadas sin tramos. 
+ 
+ Las variantes 7 variantes hot deck y las 3 variantes de las medias condicionadas “con 
+tramos” mantienen niveles de dispersión en torno al nivel de la variable original sin 
+imputar. 
+ 
+ También se puede observar un ligero aumento de la media en las variantes que 
+utilizaron la información acerca de los tramos de ingreso. 
+  
+  
+
+=== PDF PAGE 31 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+31 
+Tabla 5.1. Estadísticas descriptivas univariadas, sin ponderar, de la variable 
+original YTRAB y las 12 variantes imputadas. Solo para el conjunto de datos 
+perdidos imputados (n=761 casos). 
+ 
+      n media desv. est. min max 
+Variable Original           
+    ytrab 0 . . . . 
+Imputación Medias Condicionadas         
+ Sin tramos           
+   Celda 0: Global 761 422.894 0 422.894 422.894 
+   Celda 1: Sex*Edad 761 429.686 84.639 235.527 532.027 
+   Celda 2: PScore20 761 417.278 43.559 286.560 474.633 
+   Celda 3: PredMean20 761 452.173 215.702 171.678 954.173 
+  Con tramos       
+   Celda 4: Tramos 761 467.200 461.659 37.105 1.972.381 
+  Celda 5: Tramos*PScore5 761 463.091 417.935 66.761 2.032.500 
+    Celda 6: Tramos*PredMean5 761 456.012 396.498 65.270 1.783.949 
+Imputación Hot Deck      
+  Sin tramos       
+   Celda 0: Global 761 388.917 348.592 15.000 6.000.000 
+   Celda 1: Sex*Edad 761 416.421 429.202 10.000 6.000.000 
+   Celda 2: PScore20 761 412.544 406.163 15.000 5.000.000 
+   Celda 3: PredMean20 761 440.688 400.448 20.000 4.250.000 
+  Con tramos       
+   Celda 4: Tramos 761 468.801 577.665 10.000 9.000.000 
+  Celda 5: Tramos*PScore5 761 452.618 488.964 14.000 6.400.000 
+    Celda 6: Tramos*PredMean5 761 450.401 444.633 10.000 4.000.000 
+ 
+  
+
+=== PDF PAGE 32 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+32 
+Tabla 5.2. Estadísticas descriptivas univariadas, sin ponderar, de la variable 
+original YTRAB y las 12 variantes imputadas. Todos los casos en la muestra EPS 
+2015 (n=16.906 casos). 
+ 
+      n media desv. est. min max 
+Variable Original           
+    ytrab 8.248 422.894 442.362 10.000 9.000.000 
+Imputación Medias Condicionadas         
+ Sin tramos           
+   Celda 0: Global 9.009 422.894 423.265 10.000 9.000.000 
+   Celda 1: Sex*Edad 9.009 423.468 423.982 10.000 9.000.000 
+   Celda 2: PScore20 9.009 422.420 423.457 10.000 9.000.000 
+   Celda 3: PredMean20 9.009 425.368 427.954 10.000 9.000.000 
+  Con tramos      
+   Celda 4: Tramos 9.009 426.637 444.169 10.000 9.000.000 
+  Celda 5: Tramos*PScore5 9.009 426.290 440.471 10.000 9.000.000 
+    Celda 6: Tramos*PredMean5 9.009 425.692 438.750 10.000 9.000.000 
+Imputación Hot Deck      
+  Sin tramos      
+   Celda 0: Global 9.009 420.024 435.310 10.000 9.000.000 
+   Celda 1: Sex*Edad 9.009 422.348 441.246 10.000 9.000.000 
+   Celda 2: PScore20 9.009 422.020 439.408 10.000 9.000.000 
+   Celda 3: PredMean20 9.009 424.397 438.984 10.000 9.000.000 
+  Con tramos       
+   Celda 4: Tramos 9.009 426.772 455.489 10.000 9.000.000 
+  Celda 5: Tramos*PScore5 9.009 425.405 446.534 10.000 9.000.000 
+    Celda 6: Tramos*PredMean5 9.009 425.218 442.596 10.000 9.000.000 
+ 
+5.2. Comparación de estimaciones de corte transversal ponderadas 
+ 
+La Tabla 5.3 muestra los percentiles 5, 25, 50, 75 y 95 de la variable original YTRAB sin 
+imputar en la columna (2), y los percentiles asociados a las variables imputadas mediante 
+el método de las medias condicionadas en las columnas (3) a (9). Como se puede observar 
+en las columnas (7) a (9), el valor en la parte baja de la distribución (p05) cae de $100.000 
+a $80.000 cuando se incorporan los “tramos de ingreso” como variable de ajuste para 
+desarrollar las imputaciones. En la parte alta de la distribución, por otra pa rte, se observa 
+el fenómeno contrario. En las columnas (7) a (9) se puede ver como los valores asociados 
+a los percentiles p75 y p95 suben de $500.000 a $540.000 y de $1.100.000 a 1.400.000 
+respectivamente cuando se utilizan los tramos de ingreso en el proceso de imputación.  
+ 
+La Tabla 5.4 muestra los percentiles asociados a las variables imputadas mediante el método 
+hot deck. Como se puede observar, el mismo fenómeno se repite con la parte baja de la 
+distribución disminuyendo y la parte alta aumentando. To das las estimaciones están 
+ponderadas con el factor de expansión de corte transversal de la EPS 2015.  Se utilizó el 
+comando svy en Stata 14 para informar acerca del diseño de la muestra.  
+
+=== PDF PAGE 33 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+33 
+ 
+Este resultado es consistente con lo observado en las tablas descri ptivas univariadas. A 
+diferencia de lo observado con la variable nivel educacional, aquí si se observan diferencias 
+en los resultados bajo distintos métodos de imputación. La diferencia fundamental la hace 
+el uso de la variable “tramos de ingreso” en la conformación de las celdas de imputación. Si 
+tomamos la información contenida en la variable tramos como una buena proxy del valor 
+verdadero del monto del ingreso laboral, entonces tenemos que cuando el método de 
+imputación ignora esta variable se subestima la parte alta de la distribución (p75, p95) y se 
+sobreestima la parte más baja (p05).  
+ 
+Cabe recordar que, a diferencia de la variable TEDUC – que presenta solo un 2% de datos 
+perdidos – la variable YTRAB presenta un 17% de datos perdidos. Por esta razón, es 
+razonable esperar que las imputaciones tengan un efecto en las estimaciones. 
+ 
+ 
+Tabla 5.3. Percentiles de ingresos del trabajo para la variable original sin 
+imputar y para las variables imputadas con el método de medias condicionadas. 
+Estimaciones ponderadas. 
+ 
+Pcentil 
+ 
+Sin 
+imputar 
+ 
+Imputados Medias Condicionadas 
+Global Sex*Edad PScore20 
+PredMea
+n20 Tramo 
+Tramo*P
+Score5 
+Tramo*Pr
+edMean5 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) 
+p05 100.000 100.000 100.000 100.000 100.000 85.897 80.000 80.000 
+p25 250.000 250.000 250.000 250.000 250.000 250.000 250.000 250.000 
+p50 350.000 370.000 350.000 357.187 350.000 350.000 350.000 350.000 
+p75 510.000 500.000 510.000 500.000 540.000 540.000 540.000 540.000 
+p95 1.100.000 1.100.000 1.100.000 1.100.000 1.100.000 1.200.000 1.332.395 1.400.000 
+N 8.248 9.009 9.009 9.009 9.009 9.009 9.009 9.009 
+ 
+ 
+Tabla 5.4. Percentiles de ingresos del trabajo para la variable original sin 
+ponderar y para las variables imputadas con el método hot deck aleatorio 
+estratificado. Estimaciones ponderadas. 
+ 
+Pcentil 
+ 
+Sin 
+imputar 
+ 
+Imputados Hot Deck Aleatorio Estratificado 
+Global Sex*Edad PScore20 
+PredMea
+n20 Tramo 
+Tramo*P
+Score5 
+Tramo*Pr
+edMean5 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) 
+p05 100.000 100.000 100.000 100.000 100.000 80.000 80.000 80.000 
+p25 250.000 250.000 250.000 250.000 250.000 250.000 250.000 250.000 
+p50 350.000 350.000 350.000 350.000 350.000 350.000 350.000 350.000 
+p75 510.000 500.000 500.000 500.000 520.000 540.000 540.000 540.000 
+p95 1.100.000 1.100.000 1.100.000 1.100.000 1.100.000 1.200.000 1.200.000 1.200.000 
+N 8.248 9.009 9.009 9.009 9.009 9.009 9.009 9.009 
+ 
+
+=== PDF PAGE 34 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+34 
+ 
+6 Imputación Monto de Alquiler Imputado  
+ 
+Para la imputación de ALQ se aplicaron dos métodos distintos con algunas variantes: (1) 
+método de media condicionada y (2) método hot deck aleatorio estratificado. A continuación 
+se presentan estos resultados. 
+ 
+6.1. Resultados de imputación de corte transversal sin ponderar 
+ 
+Las Tablas 6.1 y 6.2 presentan estadísticas descriptivas univariadas de la variable original 
+ALQ y las 7 variantes de los métodos de imputación bajo análisis. La primera tabla presenta 
+datos solo para los datos imputados (n=2.878), mientras que la segunda presenta datos 
+para la muestra completa (n=16.906). Algunos resultados de interés en la Tabla 6.1: 
+ 
+ El promedio del valor del alquiler es menor cuando se usa el dato del tramo de 
+alquiler en la conformación de las celdas de ajuste.  
+ 
+ La dispersión de los datos es menor con el método de Media Condicionada que con 
+el método Hot Deck. 
+ 
+ Las imputaciones hot deck generan un rango más amplio que las medias 
+condicionadas. 
+ 
+La Tabla 6.2 muestra los resultados para todos los casos en la muestra (n= 16.609). Acá 
+también se puede oobservar que el monto promedio de alquiler es menor cuando se utiliza 
+información acerca de tramos de ingreso para conformar las celdas de amputación, tanto 
+para el método de medias condicionadas como para el hotdeck. De la misma forma se puede 
+verificar que las variantes hot deck presentan mayor variabilidad  que el resto. 
+ 
+ 
+  
+
+=== PDF PAGE 35 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+35 
+Tabla 6.1. Estadísticas descriptivas univariadas, sin ponderar, de la variable 
+original ALQ y las 14 variantes imputadas. Solo para el conjunto de datos 
+perdidos imputados (n=2.878 casos). 
+ 
+      n media desv. est. min max 
+Variable Original           
+    alq 0 . . . . 
+Imputación Medias Condicionadas         
+ Sin tramos           
+   Celda 0: Global 2.878 184.797 0 184.797 184.797 
+   Celda 7: TipoViv*Piezas 2.878 188.190 56.786 93.642 451.029 
+   Celda 2: PScore20 2.878 182.385 10.914 162.388 199.509 
+   Celda 3: PredMean20 2.878 182.464 76.348 82.705 405.493 
+  Con tramos      
+   Celda 8: Tramos 2.878 149.565 108.411 48.037 368.705 
+  Celda 9: Tramos*PScore5 2.878 149.713 108.603 46.912 381.108 
+    Celda 10: Tramos*PredMean5 2.878 149.941 110.594 44.510 473.472 
+Imputación Hot Deck      
+  Sin tramos      
+   Celda 0: Global 2.878 180.967 186.327 10.000 5.000.000 
+   Celda 7: TipoViv*Piezas 2.878 180.967 186.327 10.000 5.000.000 
+   Celda 2: PScore20 2.878 176.783 168.165 10.000 3.000.000 
+   Celda 3: PredMean20 2.878 184.016 192.045 10.000 4.000.000 
+  Con tramos       
+   Celda 8: Tramos 2.878 147.092 153.475 10.000 3.500.000 
+  Celda 9: Tramos*PScore 2.878 151.971 207.638 10.000 4.000.000 
+    Celda 10: Tramos*PredMean 2.878 154.114 205.743 10.000 5.000.000 
+  
+
+=== PDF PAGE 36 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+36 
+Tabla 6.2. Estadísticas descriptivas univariadas, sin ponderar, de la variable 
+original ALQ y las 14 variantes imputadas. Todos los casos en la muestra EPS 
+2015 (n=16.906 casos). 
+ 
+      n media desv. est. min max 
+Variable Original           
+    alq 14.028 184.797 198.258 10.000 5.000.000 
+Imputación Medias Condicionadas         
+ Sin tramos           
+   Celda 0: Global 16.906 184.797 180.595 10.000 5.000.000 
+   Celda 7: TipoViv*Piezas 16.906 185.374 182.112 10.000 5.000.000 
+   Celda 2: PScore20 16.906 184.386 180.653 10.000 5.000.000 
+   Celda 3: PredMean20 16.906 184.400 183.323 10.000 5.000.000 
+  Con tramos      
+   Celda 8: Tramos 16.906 178.799 186.521 10.000 5.000.000 
+  Celda 9: Tramos*PScore5 16.906 178.824 186.536 10.000 5.000.000 
+    Celda 10: Tramos*PredMean5 16.906 178.863 186.729 10.000 5.000.000 
+Imputación Hot Deck      
+  Sin tramos      
+   Celda 0: Global 16.906 184.145 196.278 10.000 5.000.000 
+   Celda 7: TipoViv*Piezas 16.906 185.634 199.161 10.000 5.000.000 
+   Celda 2: PScore20 16.906 183.432 193.485 10.000 5.000.000 
+   Celda 3: PredMean20 16.906 184.664 197.208 10.000 5.000.000 
+  Con tramos       
+   Celda 8: Tramos 16.906 178.378 191.895 10.000 5.000.000 
+  Celda 9: Tramos*PScore 16.906 179.209 200.260 10.000 5.000.000 
+    Celda 10: Tramos*PredMean 16.906 179.573 199.878 10.000 5.000.000 
+ 
+ 
+6.2. Comparación de estimaciones de corte transversal ponderadas 
+ 
+La Tabla 6.3 muestra los percentiles 5, 25, 50, 75 y 95 de la variable original ALQ sin imputar 
+en la columna (2), y los percentiles asociados a las variables imputadas mediante el método 
+de las medias condicio nadas en las columnas (3) a (9). Como se puede  observar, no se 
+producen mayores cambios en los percentiles a excepción de los asociados a los métodos 
+de imputación de la media condicionada Global (Celda 0) y según la propensión a responder 
+(Celda 2) en las columnas (3) y (4) de la Tabla 6.3. En estas dos columnas se observa: 
+ 
+ un abultamiento del valor de la mediana (percentil 50, p50); 
+ que el valor en la parte baja de la distribución (p05) sube de $50.000 a $60.000 y 
+luego vuelve en torno al valor inicial cuando se incorporan los “tramos de ingreso” 
+como variable de ajuste para desarrollar las imputaciones (columnas (7) a (9)); 
+
+=== PDF PAGE 37 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+37 
+ Que en la parte alta de la distribución los valores asociados a l percentil 75 (p75) 
+bajan de $ 250.000 a $ 200.000 cuando se ignoran los tramos de ingreso en el 
+proceso de imputación.  
+La Tabla 5.4 muestra los percentiles asociados a las variables imputadas mediante el método 
+hot deck. Como se puede observar, no se producen mayores cambios en los percentiles a 
+excepción de los asociado s a los métodos de imputación hot deck que hacen uso de la 
+información sobre tramos de alquiler imputado en las columnas (7) a (9), donde se observa 
+una ligera disminución en el percentil 75 que pasa de $250.000 a $240.000.  
+ 
+Todas las estimaciones están p onderadas con el factor de expansión de corte transversal 
+de la EPS 2015. Se utilizó el comando svy en Stata 14 para informar acerca del diseño de la 
+muestra.  
+ 
+ 
+Tabla 6.3. Percentiles de alquiler imputado para la variable original sin imputar 
+y para las variables imputadas con el método de medias condicionadas. 
+Estimaciones ponderadas. 
+ 
+Pcentil 
+ 
+Sin 
+imputar 
+ 
+Imputados Medias Condicionadas 
+Global Sex*Edad PScore20 
+PredMea
+n20 Tramo 
+Tramo*P
+Score5 
+Tramo*Pr
+edMean5 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) 
+p05 50.000 60.000 60.000 60.000 60.000 48.037 47.486 48.767 
+p25 100.000 110.000 110.000 100.000 100.000 100.000 100.000 100.000 
+p50 150.000 184.797 173.866 150.000 165.235 150.000 150.000 150.000 
+p75 250.000 200.000 200.000 250.000 250.000 240.000 240.000 240.000 
+p95 400.000 400.000 400.000 405.493 400.000 400.000 400.000 402.834 
+N 14.028 16.906 16.906 16.906 16.906 16.906 16.906 16.906 
+ 
+ 
+Tabla 6.4. Percentiles de alquiler imputado para la variable original sin 
+ponderar y para las variables imputadas con el método hot deck aleatorio 
+estratificado. Estimaciones ponderadas. 
+ 
+Pcentil 
+ 
+Sin 
+imputar 
+ 
+Imputados Hot Deck Aleatorio Estratificado 
+Global Sex*Edad PScore20 
+PredMea
+n20 Tramo 
+Tramo*P
+Score5 
+Tramo*Pr
+edMean5 
+(1) (2) (3) (4) (5) (6) (7) (8) (9) 
+p05 50.000 50.000 50.000 50.000 50.000 50.000 50.000 50.000 
+p25 100.000 100.000 100.000 100.000 100.000 100.000 100.000 100.000 
+p50 150.000 150.000 150.000 150.000 150.000 150.000 150.000 150.000 
+p75 250.000 250.000 250.000 250.000 250.000 240.000 240.000 240.000 
+p95 400.000 400.000 400.000 445.000 400.000 400.000 400.000 400.000 
+N 14.028 16.906 16.906 16.906 16.906 16.906 16.906 16.906 
+  
+
+=== PDF PAGE 38 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+38 
+7 Imputación de Tramo de Nivel Educacional  
+ 
+Para la imputación de TEDUC se aplicaron tres métodos distintos con algunas variantes:  y 
+(1) método cold deck, (2) método de mediana condicionada, y (3) método hot deck aleatorio 
+estratificado. Aquí se presentan los resultados de estas estrategias. 
+ 
+7.1. Resultados de imputación longitudinal sin ponderar 
+ 
+El método de imputación Cold Deck utilizado aquí consiste en imputar los datos perdidos de 
+TEDUC en EPS 2015 utilizando información reportada en rondas anteriores para TEDUC por 
+los miembros  antiguos del panel. Previo a imputar los casos, sin embargo, se deben evaluar 
+los datos disponibles para identificar aquellos que cumplen con criterios de calidad 
+establecidos para ser utilizados para estos fines. 
+ 
+La Tabla 7.1 muestra los resultados de la revisión longitudinal de los datos disponibles para 
+los 16.906 personas entrevistadas en la EPS 2015.  Para estos efectos se considera 
+“miembros nuevos” a las personas que ingresan por primera vez a la muestra EPS en la VI 
+ronda (EPS 2015) y “miembros antiguos” a las personas que ingresaron al panel EPS en 
+alguna de las 4 rondas anteriores del panel (EPS 2002, EPS 2004, EPS 2006 o EPS 2009). 
+ 
+Los resultados en la tabla muestran que un 40% de los 16.906 entrevistados en EPS 2015 
+corresponden a “miembros  nuevos” y 60% a “miembros antiguos”. Entre quienes no 
+responden TEDUC en 2015 , sin embargo,  se puede observar que son más los miembros 
+antiguos (80%) que los miembros nuevos (20%). 
+ 
+De los 10.128 miembros antiguos del panel, se puede observar que 98% ha reportado 
+TEDUC en 2 o más oportunidades (rondas) y solo un 2% lo ha hecho en solo 1 oportunidad. 
+La misma tendencia se observa entre los casos perdidos con 97% y 3% de los casos 
+respectivamente.  
+ 
+De los 9.964 miembros antiguos con 2 o más reportes de TEDUC en la historia del panel, se 
+tiene que 52% fueron clasificados como con “secuencias consistentes” según las reglas 
+establecidas para este análisis - es decir, secuencias donde el nivel de educación reportado 
+entre 2002 y 2009 (1) se mantuvo constante en el tiempo o (2) aumentó en el tiempo. El 
+restante 48% corresponde a “secuencias inconsistentes” donde se observa (1) 
+decrecimiento o (2) alzas y bajas en el nivel de educación reporta do en el tiempo. Entre 
+quienes reportaron datos perdidos en TEDUC el 2015, sin embargo, el porcentaje de 
+secuencias consistentes es ligeramente mayor alcanzando un 61%. 
+ 
+La Tabla 7.2 ilustra la base de datos longitudinal utilizada para analizar el tipo de secuencias 
+de los miembros antiguos del panel, donde cada observación  (IdEnc) corresponde a un 
+miembro del panel que respondió en EPS 2015. Las variables teduc02 a teduc15 muestran 
+el tramo de educación reportado en las 5 rondas del panel, la variable NRteduc15 indica con 
+“1” la no respuesta a TEDUC en EPS 2015, la variable miss_teduc identifica el número de 
+datos perdidos para la variable TEDUC en las 4 rondas previas del panel (2002 a 2009), y 
+la variable sec_inv identifica con un “1” las secuencias inválidas y con un “0” las secuencias 
+válidas. 
+ 
+
+=== PDF PAGE 39 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+39 
+De acuerdo a esta ilustración, se observa que el IdEnc = 121 tiene dato perdido (=.) en la 
+variable teduc15, no obstante, sí reportó nivel de educación en las 4 rondas anteriores. Al 
+analizar el patrón de respuesta, sin embargo, no se encuentra una secuencia válida puesto 
+que existe una evolución inconsistente del nivel educacional reportado por el encuestado, 
+pasando de educación “Media Completa” en el 2002 a “Media Incompleta” e n 2004, para 
+volver a “Media Completa” el 2009. Por otra parte, se observa que el IdEnc = 234 sí posee 
+una secuencia válida ya que todos los valores reportados en rondas anteriores corresponden 
+a educación “Media Completa”.  
+ 
+Siguiendo con la metodología p ropuesta, los datos perdidos en TEDUC 2015 que estaban 
+asociados a miembros del panel con secuencias válidas  se completaron ( imputaron) 
+utilizando el nivel de educación más recientemente reportado por el entrevistado. Para el  
+IdEnc = 234, por ejemplo, se imputó en  EPS2015 la categoría “Media Completa” reportada 
+en EPS 2009, mientras que para el caso IdEnc = 17034, se imputó en  EPS2015 la categoría 
+“Media Completa” reportada en EPS 2004. Los casos con secuencias inválidas como IdEnc 
+= 121, por otra parte, se dejaron con dato perdido para EPS 2015. 
+ 
+En total se imputaron 171 de los 363 datos perdidos en TEDUC 2015 y se dejaron como 
+perdidos los restantes 110. El procedimiento aquí descrito permitió reducir la tasa de no 
+respuesta al ítem de 2,82% (n=363) a un 1,1% (n=110).  
+ 
+La Tabla 7.3 presenta la distribución del nivel educacional para los casos imputados (n=171) 
+y para el total de los casos disponibles en 2015 antes (n=16.543) y después (n=16.714) de 
+imputación. Los paneles A y B muestran perfiles distintos para la distribución del nivel 
+educacional de los casos imputados y los casos completos antes de imputación. Tomando 
+las 2 categorías de educación básica en  conjunto (ed. básica completa +  incompleta), se 
+tiene que l os casos imputados tienen mucha más educación básica ( 46%) que los casos 
+completos ( 24%) del 2015 . Tomando las tres categorías de educación superior  en su 
+conjunto (ed. técnica superior, ed. universitaria completa e incompleta), se tiene que los 
+casos imputados tienen mucha menos educación superior (11%) que los casos completos 
+(30%) del 2015.  
+ 
+Estas diferencias, sin embargo, desaparecen cuando se analiza la distribución del nivel 
+educacional para los casos completos después de imputación (n=16.714). Esto se puede 
+observar al comparar la distribución de los casos del panel A y C en la Tabla 7.3. Las 
+estadísticas descriptiva de los datos imputados y los casos completos después de imputación 
+se presentan también en las Tablas 7.4 y 7.5, junto con los resultados de los métodos de 
+imputación de medias condicionadas y hot deck que se describen a continuación. 
+ 
+ 
+  
+
+=== PDF PAGE 40 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+40 
+Tabla 7.1. Distribución de los casos perdidos de TEDUC en EPS 2015 según número de 
+rondas anteriores con datos completos y tipo de secuencia.  
+ 
+Tipo muestra Todos los casos en  
+EPS 2015 
+Solo casos perdidos en 
+EPS 2015 
+ n % n % 
+Miembros Nuevos EPS 2015 6.778 40% 74 20% 
+Miembros Antiguos del Panel EPS 10.128 60% 289 80% 
+Total 16.906 100% 363 100% 
+Respondió TEDUC en 1 ronda anterior 164 2% 8 3% 
+Respondió TEDUC en 2+ rondas anteriores 9.964 98% 281 97% 
+Subtotal 1 10.128 100% 289 100% 
+Secuencia Inconsistente 4.752 48% 110 39% 
+Secuencia Consistente 5.212 52% 171 61% 
+Subtotal 2 9.964 100% 281 100% 
+Fuente: Elaboración propia. 
+  
+
+=== PDF PAGE 41 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+41 
+Tabla 7.2. Ejemplo de base de datos utilizada para identificar los casos con reportes longitudinales confiables de nivel 
+de educación (TEDUC) para los miembros del panel EPS entrevistados en 2015. 
+ 
+ 
+ +---------------------------------------------------------------------------------------------------------------------------+ 
+ | IdEnc   tipo_muestra      teduc02             teduc04      teduc06      teduc09   teduc15  NRteduc15  miss_teduc  sec_inv | 
+ |---------------------------------------------------------------------------------------------------------------------------| 
+ |      121          1     MediaCom    Media Incompleta     MediaInc     MediaCom         .          1          0          1 | 
+ |      205          1     MediaCom                   .     MediaCom      UnivCom         .          1          1          0 | 
+ |      234          1     MediaCom      Media completa     MediaCom     MediaCom         .          1          0          0 | 
+ |      242          1     MediaInc    Media Incompleta     MediaCom     MediaCom         .          1          0          0 | 
+ |      259          1     MediaCom      Media completa     MediaCom     MediaCom         .          1          0          0 | 
+ |---------------------------------------------------------------------------------------------------------------------------|  
+ |      493          1     MediaCom      Media completa     MediaCom     MediaCom         .          1          0          0 | 
+ |      496          1    BasicaInc             Ninguna      Ninguna            .         .          1          1          1 | 
+ |      497          1     MediaCom      Media completa     MediaCom     MediaCom         .          1          0          0 | 
+ |      498          1   TecnicaSup                   .    BasicaCom            .         .          1          2          1 | 
+ |      517          1     MediaInc    Media Incompleta     MediaInc     MediaInc         .          1          0          0 | 
+ |---------------------------------------------------------------------------------------------------------------------------| 
+ |    16731          1    BasicaInc   Basica Incompleta            .    BasicaInc         .          1          1          0 | 
+ |    16817          1    BasicaInc      Media completa            .     MediaInc         .          1          1          1 | 
+ |    16819          1    BasicaInc   Basica Incompleta            .            .         .          1          2          0 | 
+ |    17034          1    BasicaCom      Media completa            .            .         .          1          2          0 | 
+ |    17056          1     MediaInc    Media Incompleta            .            .         .          1          2          0 | 
+ |---------------------------------------------------------------------------------------------------------------------------| 
+ 
+ 
+   
+
+=== PDF PAGE 42 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+42 
+Tabla 7.3. Distribución de nivel educacional para todos los casos antes y 
+después de imputación, y solo para los casos imputados. EPS 2015. 
+ 
+ 
+ 
+// (A) Distribución de TEDUC antes de imputación 
+ 
+      Nivel | 
+Educacional | 
+          - | 
+ Categorica |      Freq.     Percent        Cum. 
+------------+----------------------------------- 
+    Ninguna |        296        1.79        1.79 
+  BasicaInc |      2,288       13.83       15.62 
+  BasicaCom |      1,719       10.39       26.01 
+   MediaInc |      2,427       14.67       40.68 
+   MediaCom |      4,761       28.78       69.46 
+ TecnicaSup |      2,214       13.38       82.84 
+    UnivInc |      1,647        9.96       92.80 
+    UnivCom |      1,191        7.20      100.00 
+------------+----------------------------------- 
+      Total |     16,543      100.00 
+ 
+ 
+// (B) Distribución de TEDUC solo para los casos imputados 
+ 
+Tramo Nivel | 
+Educacional | 
+- Imp. Cold | 
+       Deck |      Freq.     Percent        Cum. 
+------------+----------------------------------- 
+    Ninguna |          1        0.58        0.58 
+  BasicaInc |         53       30.99       31.58 
+  BasicaCom |         28       16.37       47.95 
+   MediaInc |         27       15.79       63.74 
+   MediaCom |         43       25.15       88.89 
+ TecnicaSup |         11        6.43       95.32 
+    UnivInc |          6        3.51       98.83 
+    UnivCom |          2        1.17      100.00 
+------------+----------------------------------- 
+      Total |        171      100.00 
+ 
+ 
+// (C) Distribución de TEDUC después de imputación 
+ 
+Tramo Nivel | 
+Educacional | 
+- Imp. Cold | 
+       Deck |      Freq.     Percent        Cum. 
+------------+----------------------------------- 
+    Ninguna |        297        1.78        1.78 
+  BasicaInc |      2,341       14.01       15.78 
+  BasicaCom |      1,747       10.45       26.24 
+   MediaInc |      2,454       14.68       40.92 
+   MediaCom |      4,804       28.74       69.66 
+ TecnicaSup |      2,225       13.31       82.97 
+    UnivInc |      1,653        9.89       92.86 
+    UnivCom |      1,193        7.14      100.00 
+------------+----------------------------------- 
+      Total |     16,714      100.00 
+ 
+ 
+  
+
+=== PDF PAGE 43 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+43 
+7.2. Resultados de imputación de corte transversal sin ponderar 
+ 
+Los métodos de imputación de Medias Condicionadas y Hot Deck  Aleatorio utilizados aquí 
+consisten en imputar los datos perdidos de TEDUC en EPS 2015 utilizando, en distinta 
+medida, información auxiliar recolectada en la misma EPS 2015 para conformar celdas de  
+imputación. Las Tablas 7.4 y 7.5 presentan estadísticas descriptivas de los resultados de los 
+distintos métodos de imputación bajo análisis. La primera tabla presenta datos solo para los 
+datos imputados (n=363), mientras que la segunda presenta datos para la muestra 
+completa (n=16.906). Se incluyen también las estadísticas asociadas al método cold deck a 
+modo de comparación. 
+ 
+Algunos resultados de interés a partir de la Tabla 7.4: 
+ 
+ Las 4 variantes de la imputación mediana asignaron valores en torno al centro de 
+masa, en el rango de las categorías 3 a 6. Las 4 variantes del hot deck aleatorio, por 
+otra parte, hicieron uso del rango completo de dispersión  observado de los datos 
+con rangos entre 1 y 8.  
+ 
+ La mayor dispersión de las variantes hot deck también se ve reflejada en mayores 
+niveles de desv estándar que las  variantes de imputación mediana. El caso más 
+extremo corresponde a la imputación global de la mediana (Celda 0), con cero 
+variabilidad en los datos imputados (d.e.=0), ya que asigna el mismo valor 
+(“teduc=5”) a los 363 casos perdidos. 
+ 
+ En cuanto al valor promedio, se observan niveles más altos en ambos ajustes 
+globales (Celda 0) y niveles más bajos en el resto de las variantes que hacen uso de 
+información auxiliar para la conformación de las celdas de imputación. Est os 
+resultados parecen indicar que los datos perdidos están asociados a personas con 
+menor educación, y que el uso de información auxiliar es relevante para reducir parte 
+del sesgo de no respuesta observado. 
+ 
+ Los resultados de la imputación cold deck  van en la misma línea del punto anterior. 
+Como se puede observar en la tabla el nivel promedio de educación imputado a 
+partir de los reportes históricos es mucho menor (=3,73) que cualquiera de las 
+variantes de medias condicionadas y hot deck. Cabe recordar, sin embargo, que los 
+resultados cold deck solo representan a los miembros antiguos del panel, ya que 
+para los miembros nuevos no se dispone de información histórica en el panel. 
+ 
+Si bien es cierto el análisis de los datos imputados (n=363) muestra con claridad los efectos 
+de los distintos métodos implementados, estas diferencias se ven completamente atenuadas 
+al replicar en análisis con toda la muestra (n=16.609). La Tabla 7.5 muestra las mismas 
+estadísticas univariadas y, como se puede observar, no se distinguen diferencias en l a 
+dispersión de los datos, en el promedio, ni tampoco en el recorrido (rango) de las variables 
+imputadas.  
+ 
+  
+
+=== PDF PAGE 44 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+44 
+Tabla 7.4. Estadísticas descriptivas univariadas, sin ponderar, de la variable 
+original TEDUC y las 8 variantes imputadas. Solo para el conjunto de datos 
+perdidos imputados (n=363 casos) en la muestra EPS 2015. 
+ 
+    n media desv. est. min max 
+Variable original           
+  teduc 0 . . . . 
+Imputación Mediana Condicionada         
+  Celda 0: Global 363 5,00 0,00 5 5 
+  Celda 1: Sex*Edad 363 4,25 0,96 3 6 
+  Celda 2: PScore 363 4,08 0,87 3 6 
+  Celda 3: PredMean 363 4,21 1,18 2 6 
+Imputación Hot Deck           
+  Celda 0: Global 363 4,69 1,84 1 8 
+  Celda 1: Sex*Edad 363 4,35 1,93 1 8 
+  Celda 2: PScore 363 4,14 1,80 1 8 
+  Celda 3: PredMean 363 4,00 1,75 1 8 
+Imputación Cold Deck         
+  teduc_cd 171 3,73 1,55 1 8 
+ 
+ 
+Tabla 7.5. Estadísticas descriptivas univariadas, sin ponderar, de la variable 
+original TEDUC y las 8 variantes imputadas. Todos los casos (n=16.906 casos) 
+en la muestra EPS 2015. 
+ 
+    n media desv. est. min max 
+Variable original           
+  teduc 16.543 4,71 1,79 1 8 
+Imputación Mediana Condicionada         
+  Celda 0: Global 16.906 4,71 1,77 1 8 
+  Celda 1: Sex*Edad 16.906 4,70 1,77 1 8 
+  Celda 2: PScore 16.906 4,69 1,77 1 8 
+  Celda 3: PredMean 16.906 4,70 1,78 1 8 
+Imputación Hot Deck           
+  Celda 0: Global 16.906 4,71 1,79 1 8 
+  Celda 1: Sex*Edad 16.906 4,70 1,79 1 8 
+  Celda 2: PScore 16.906 4,70 1,79 1 8 
+  Celda 3: PredMean 16.906 4,69 1,79 1 8 
+Imputación Cold Deck      
+ teduc_cd 16.714 4,70 1,79 1 8 
+  
+
+=== PDF PAGE 45 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+45 
+7.3. Comparación de estimaciones de corte transversal ponderadas 
+ 
+Los análisis de la sección anterior permiten hacerse una idea preliminar del funcionamiento 
+de las distintas estrategias de imputación. Para realizar un análisis más acabado, sin 
+embargo, se deben (1) evaluar estadísticos de interés para la EPS y (2) tomar en cuenta el 
+diseño muestral complejo de la encuesta EPS al momento de producir las estimaciones de 
+interés. Para efectos de este análisis, se compararon resultados de la distribución porcentual 
+de casos para las 8 categorías de nivel educacional. Se util izó el comando svy en Stata 14 
+para informar acerca del diseño de la muestra.  
+ 
+La Tabla 7.6 muestra los resultados de la estimación del porcentaje de personas en distintos 
+niveles educacionales utilizando distintos métodos de imputación. Las columnas (1) y (2) 
+presentan estimaciones sin imputar (análisis de casos completos) para las 16.543 casos sin 
+datos perdidos en TEDUC. La columna (1) presenta estimaciones sin ponderar y la columna 
+(2) las estimaciones ponderadas utilizando el factor de expansión de corte transversal de la 
+EPS 2015. Algunos resultados de la Tabla 7.6.:  
+ 
+ No se observan mayores diferencias entre las distribuciones en las columnas (1) y 
+(2), pero como es de esperar se observa la subestimación de los errores estándares 
+de las estimaciones sin ponderar de la columna 2. Dado el diseño muestral complejo 
+de la EPS 2015, las estimacio nes de referencia para comparar los métodos 
+alternativos de imputación corresponden a las ponderadas que se presentan en la 
+columna (3). 
+ 
+ Las columnas (4) a (7) presentan las estimaciones asociadas a las 4 variantes del 
+método de mediana condicionada. A ni vel general, no se observan mayores 
+diferencias con la distribución de casos completos de la columna (2). La única 
+estimación que se diferencia ligeramente corresponde al porcentaje con educación 
+media completa, que pasa de 28,9% en la columna (3) a 30,6% en la columna (4). 
+Este resultado se explica porque el método en la columna (4) imputa la mediana de 
+la muestra completa, que corresponde a la categoría “5=educ. media completa”, a 
+todos los casos perdidos.  
+ 
+ Las columnas (8) a (11) presentan las estimacio nes asociadas a las 4 variantes del 
+método hot deck aleatorio. A nivel general, no se observan mayores diferencias con 
+la distribución de casos completos de la columna 2, ni tampoco entre sus 4 variantes 
+o las 4 variantes del método de medias condicionadas. Los errores estándar tampoco 
+cambian en comparación con los casos completos, probablemente porque la 
+potencial reducción del error de muestreo asociada a la recuperación de casos no se 
+ve compensada por el pequeño porcentaje de “recuperación” de casos perdidos. 
+ 
+ La columna (12) presenta los resultados imputados via cold  deck. Tampoco se 
+observan diferencias con respecto a los datos sin imputar o a los datos imputados 
+con los otros métodos. 
+ 
+Podemos concluir entonces que, para efectos de la estimación de la distribución del nivel de 
+educación, cualquiera de los métodos revisados entrega sustantivamente los mismos 
+resultados. Este resultado se podría explicar debido a que el porcentaje de casos imputados 
+
+=== PDF PAGE 46 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+46 
+es relativamente pequeño – 2,3% - y por lo tanto no afecta de forma relevante estadísticas 
+descriptivas para la muestra completa. Se debe tener cuidado de no generalizar este 
+resultado, ya que este solo dice relación con la estimación de la distribución porcentual del 
+nivel de educación, sin embargo habría q ue evaluar cómo se ven afectados otros 
+estimadores de interés - como cuantiles o coeficientes de regresión - ya sea a nivel de la 
+muestra completa o de subgrupos poblacionales de interés.  
+ 
+
+=== PDF PAGE 47 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+47 
+Tabla 7.6. Estimación del porcentaje de personas según nivel educacional (TEDUC), según distintos métodos de 
+imputación. 
+ 
+ Nivel de 
+Educación 
+ 
+ 
+Sin Ponderar Ponderado Ponderados    Ponderados    Ponderado 
+ Sin imputar Sin imputar  Medias Condicionadas Hot Deck Aleatorio Cold Deck 
+  Global Sex*Edad PScore20 PredMean20 Global Sex*Edad PScore20 PredMean20  
+ (1)  (2)  (3)  (4)  (5)  (6)  (7)  (8)  (9)  (10)  (11) (12) 
+  b/se* b/se b/se b/se b/se b/se b/se b/se b/se b/se b/se 
+Ninguna 1,79 1,73 1,69 1,69 1,69 1,69 1,72 1,76 1,72 1,75 1,71 
+  0,10 0,12 0,12 0,12 0,12 0,12 0,12 0,12 0,12 0,12 0,12 
+Básica Inc 13,83 14,04 13,70 13,70 13,70 13,90 13,98 14,17 14,21 14,23 14,21 
+  0,27 0,35 0,34 0,34 0,34 0,35 0,35 0,35 0,35 0,35 0,35 
+Básica Com 10,39 10,70 10,44 11,05 11,25 10,79 10,68 10,66 10,79 10,79 10,74 
+  0,24 0,34 0,33 0,34 0,35 0,33 0,33 0,33 0,33 0,34 0,34 
+Media Inc 14,67 14,79 14,43 15,09 15,38 15,08 14,71 14,83 14,81 14,82 14,80 
+  0,28 0,38 0,37 0,38 0,38 0,38 0,38 0,38 0,38 0,38 0,38 
+Media Com 28,78 28,89 30,61 29,23 28,76 29,14 28,77 28,93 28,93 28,70 28,82 
+  0,35 0,50 0,51 0,50 0,50 0,50 0,49 0,50 0,50 0,49 0,50 
+Técnica Sup 13,38 12,56 12,25 12,36 12,34 12,53 12,66 12,45 12,35 12,59 12,52 
+  0,26 0,39 0,38 0,38 0,38 0,39 0,39 0,38 0,38 0,39 0,39 
+Univ Inc 9,96 8,26 8,06 8,06 8,06 8,06 8,44 8,19 8,15 8,22 8,25 
+  0,23 0,35 0,34 0,34 0,34 0,34 0,36 0,34 0,34 0,35 0,35 
+Univ Com 7,20 9,04 8,83 8,83 8,83 8,83 9,04 9,01 9,04 8,91 8,94 
+  0,20 0,40 0,39 0,39 0,39 0,39 0,39 0,39 0,40 0,39 0,39 
+N 16.543 16.543 16.906 16.906 16.906 16.906 16.906 16.906 16.906 16.906 16.714 
+Nota: (*) b= proporción, se=error estándar de la proporción. (**) Estimaciones ponderadas utilizan el factor de expansión “factor_EPS2015”. Errores estándar en columnas (3) a 
+(12) calculados con método de Linearizacion de Taylor, utilizando comando svy en Stata 14. 
+
+=== PDF PAGE 48 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+48 
+8 Conclusiones y Discusión 
+ 
+Acerca de la imputación de nivel educacional 
+ 
+El porcentaje de datos perdidos es relativamente bajo para TEDUC (2,15%), y la literatura 
+recomienda usualmente “no hacer nada” cuando la tasa de pérdida está en torno al 1-2%. 
+Sin embargo el mecanismo de pérdida de TEDUC en la EPS 2015 no es completamente al 
+azar y, dada la relevancia de esta variable en los análisis de la EPS, es recomendable imputar 
+datos perdidos a pesar de la baja prevalencia del problema. 
+ 
+Dada la existencia de información histórica para los antiguos afiliados, y bajo supuestos 
+razonables para las trayectorias de educación, es posible determinar un conjunto de reglas 
+que permitan recuperar información individual de los miembros  antiguos del panel para 
+imputar datos perdidos. La estrategia implementada aquí permitió reducir la tasa de no 
+respuesta al ítem de 2,15 a 1,1% con esta estrategia. 
+ 
+ La estrategia propuesta para identificar casos válidos para imputación con datos del 
+panel fue conservadora al exigir reporte constante en el tiempo o en ascenso. A 
+futuro, se debieran evaluar reglas alternativas que consideren otras variables 
+auxiliares, como por ejemplo la edad de los entrevistados, para determinar cuando 
+una secuencia es vá lida. O bien examinar con más detalle las secuencias y tomar 
+acciones distintas cuando las inconsistencias son relativamente “menores” (ej. solo 
+1 de 4 reportes inconsistentes en la secuencia).  
+ 
+ En la misma línea anterior, también se podría complementar la información faltante 
+– tanto para los casos del panel como para los miembros nuevos - con datos de 
+registros administrativos en educación. 
+ 
+ Es importante también identificar qué otras variables en la EPS podrían verse 
+beneficiadas de una estrategia simi lar de edición/imputación de datos en base a 
+reportes históricos del panel. Características como la Ocupación/Oficio, por ejemplo, 
+suelen ser relativamente constantes en el tiempo y podrían ser revisadas en el 
+contexto del panel. 
+ 
+Los análisis aquí presentados también se hicieron cargo de evaluar alternativas para tratar 
+con los casos que no disponen de información longitudinal para imputación, como es el  caso 
+de los miembros nuevos del panel (muestras de refresco) y los miembros del panel con 
+secuencias de educación inconsistentes en el tiempo.  
+ 
+ Los métodos de medias condicionadas y hot deck aleatorio evaluados no arrojaron 
+diferencias significativas en la estimación de la distribución del nivel educacional. La 
+consistencia entre los métodos es una señal positiva, ya que no es deseable que los 
+resultados sean demasiado dependientes del método de imputación implementado.  
+ 
+ Sin embargo, se pudo observar que las imputaciones vía hot deck  permiten reflejar 
+de manera más cercana el comportamiento de los datos observados. Por esta razón, 
+se recomienda su uso para análisis univariados como los presentado en este informe. 
+ 
+
+=== PDF PAGE 49 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+49 
+ Entre las 4 variantes analizadas para TEDUC, se recomienda utilizar la variante que 
+conformó las celdas de imputación en base a la media predictiva ya que esta  permite 
+mayor flexibilidad para acomodar un amplio número de predictores, tanto continuos 
+como categóricos. Este método, además, ha demostrado reducir el sesgo y la 
+varianza en estudios de simulación en el contexto de la imp utación univariada 
+examinada en este informe (ver Haziza y Beaumont, 2007). 
+ 
+El análisis de las secuencias de TEDUC para el panel 2002 -2009, por otra parte,  dejó en 
+evidencia un problema aún mayor al de los datos perdidos (2,3%) que es la inconsistencia 
+de las secuencias para casi la mitad de los casos del panel (48%). Si bien el foco de este 
+informe fue implementar una estrategia para reducir el potencial sesgo de no respuesta, es 
+importante levantar el punto del error de medición que presenta la variable  TEDUC e 
+identificar estrategias para reducirlo.  
+ 
+Una estrategia utilizada por encuestas longitudinales para resolver el problema de la 
+inconsistencia de los reportes en el tiempo es la “entrevista dependiente”. Para variables 
+que se asumen relativamente constantes en el tiempo, pero que pueden cambiar como 
+educación u ocupación, se precargan las respuestas entregadas en rondas anteriores y se 
+pide al entrevistado que confirme si ha habido cambio o no en la aplicación actual. De esta 
+forma, cualquier inconsistencia registrada en rondas anteriores se puede resolver en forma 
+directa con el entrevistado y bases de datos con rectificaciones longitudinales se ponen a 
+disposición de los usuarios. 
+ 
+Acerca de la imputación de montos de ingreso laboral y alquiler imputado 
+ 
+En esta implementación se utiliza ron modelos distintos para la imputación de las dos 
+variables de montos evaluadas – ingreso laboral y alquiler imputado. En este contexto de 
+análisis exploratorio es una estrategia razonable, sin embargo si se planea a futuro optar 
+por implementar un ejercicio de imputación más masivo, con tal vez decenas de variables 
+siendo imputadas, es importante evaluar los pros y contras de customizar modelos para 
+cada variable versus identificar un set de predictores comunes para ciertos grupos de 
+variables. 
+ 
+ La Health and Retirement Survey, por ejemplo, reduce la información de más de 70 
+predictores extrayendo los 20 componentes principales para sus modelos de 
+imputación de dos grandes grupos de variables – los ingresos por una parte y el 
+patrimonio por otra parte.  
+ 
+ Otro punto relevante interesante de la HRS es que se desarrollan dos sets de 
+imputaciones para cada variable – un set de “corte transversal ” y otro set 
+“longitudinal”. La diferencia más importante entre ambos modelos es el uso de  los 
+datos pasados (𝑦𝑡−1) y futuros (𝑦𝑡+1) de la variable objeto de imputación (𝑦𝑡). En la 
+práctica, esto implica que la base de datos con las imputaciones longitudinales está 
+siempre disponible con un desfase de una ronda hacia atrás. 
+ 
+Los análisis aquí presentados se hiciero n cargo de evaluar alternativas de imputación que 
+solo usan datos de corte transversal  para imputación. En particular, se buscó comparar 
+resultados que hicieran uso (y no) de una variable auxiliar altamente preductiva de los datos 
+
+=== PDF PAGE 50 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+50 
+perdidos - las preguntas sobre “tramos” que se hace a quienes optan por no responder la 
+pregunta principal sobre “montos” monetarios.   
+ 
+ Los métodos de medias condicionadas y hot deck aleatorio evaluados arrojaron 
+diferencias significativas en la estimación de la distribución (percentiles) del ingreso 
+laboral y del alquiler imputado.  
+ 
+ Los métodos que no hacían uso de la información sobre los tramos de ingreso 
+laboral, por ejemplo, subestimaron la parte alta de la distribución (p75, p95) y  
+sobreestimaron la parte más baja (p05).  
+ 
+ Si se trabaja bajo el supuesto de que la información contenida en la variable tramos 
+es una buena proxy del valor verdadero del monto del ingreso laboral, entonces es 
+recomendable utilizar métodos que incorporen esta información en los modelos de 
+imputación.  
+ 
+ Entre las 7 variantes analizadas para YTRAB y ALQ, se recomienda utilizar la variante 
+que conformó las celdas de imputación en base a la media predictiva ya que esta  
+permite mayor flexibilidad para acomodar un amplio número de predictores, tanto 
+continuos como categóricos. Este método, además, ha demostrado reducir el sesgo 
+y la varianza en estudios de simulación en el contexto de la imputación univariada 
+examinada en este informe (ver Haziza y Beaumont, 2007). 
+ 
+Comentarios Generales 
+ 
+Los métodos evaluados aquí corresponden a las opciones metodológicas más sencillas de 
+implementar en el contexto de  los análisis de datos perdidos, sin embargo son varias las 
+variantes de estos mismos métodos que no fueron revisadas en esta oportunidad y que 
+debieran considerarse a futuro. 
+  
+ En este ejercicio se consideró solo la implementación del hot deck aleatorio, sin 
+embargo existen mé todos alternativos de selección de donante  como la selección 
+del vecino mas cercano (nearest neighbor). 
+ 
+ La confirmación de las celdas de imputación se hizo en base a variables ya existentes 
+o bien en base a cuantiles de la propensión de responder o la media predictiva. Otras 
+opciones a evaluar para la conformación de celdas incluyen los árboles de decisión 
+(CHAID) o la extracción de componentes principales. Este último método es utilizado 
+en la Health and Retirement Survey  para la conformación de predictores para los 
+modelos multivariados de imputación de ingresos y patrimonio. 
+ 
+ Variantes más sofisticadas del  hot deck incluyen el hot deck hierárquico , que va 
+creando y colapsando las celdas de ajuste en atención a la priorización de variables 
+
+=== PDF PAGE 51 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+51 
+establecida y otros parámetros como el mínimo de donantes por celda o máximo de 
+veces de uso del mismo donante para imputación. 
+En esta oportunidad s e optó por  evaluar estas estrategias para privilegiar la discusión y 
+comunicación de resultados con todo el espectro de usuarios  de las bases de datos EPS. 
+Sin embargo, es importante seguir profundizando el estudio del fenómeno de los datos 
+perdidos en la EPS con metodologías más sofisticadas de imputación y/o análisis de datos. 
+ 
+ La variables YTRAB, TEDUC y ALQ se imputaron en forma independiente una de 
+otra, lo que se conoce como imputación univariada. A futuro, se debieran evaluar 
+alternativas de imputación multivaridas, que imputen en forma conjunta todas las 
+variables bajo evaluación, de manera de preservar las correlaciones entre las 
+variables imputadas. En el contexto del hot deck una extensión natural es el hot 
+deck multivariado que usa el “mismo donante” para imputar todos los datos perdidos 
+de una misma observación. Otras alternativas más sofisticadas son los métodos 
+paramétricos multivariados ( Bayesian) o los métodos de ecuaciones encadenadas 
+(Chained Equations). 
+ 
+ Se realizó un único ciclo de imputaciones para cada método, lo que se conoce como 
+imputación simple. Futuras extensiones debieran producir imputaciones múltiples 
+para cada variable imputada y producir estimaciones utilizando las reglas de 
+combinación de Rubin . El uso de imputaciones múltiples permite dar cuenta del 
+componente de variabilidad asociado al proceso de imputación – estimaciones de 
+varianza (y test estadísticos) desarrollados en base a imputaciones simples están 
+subestimados. Actualmente paquetes estadísticos como Stata (comando MI) y SPSS 
+(comando MI IMPUTE), extensamente utilizados en Chile, cuentan con módulos 
+tanto para implementar como analizar datos con imputaciones múltiples. 
+ 
+ A excepción del método cold deck, los métodos implementados hiciero n uso 
+exclusivamente de variables observadas en la EPS 2015. Para variables que están 
+correlacionadas en el tiempo, como podrían ser los ingresos y patrimonio en el caso 
+de la EPS, es razonable plantearse modelos de imputación inter -temporales que 
+hagan uso de los datos de rondas pasadas y futuras. Encuestas como la Health and 
+Retirement Survey (HRS) y la Survey of Consumer Finances (SCF) en Estados Unidos, 
+hacen uso de modelos de series de tiempo para imputar este tipo de variables con 
+el objetivo de mejorar la precisión de las imputaciones. El adecuado modelamiento 
+de los datos es fundamental en estas encuestas que pueden llegar a presentar 
+porcentajes de datos perdidos en torno al 40% para este tipo de variables.  
+ 
+En Chile, la encuesta Financiera de Hogares (Banco Central) y la Encuesta de Presupuestos 
+Familiares (INE) tienen experiencia en la implementación de metodologías más sofisticadas 
+de imputación de datos para variables relacionadas con ingreso, gasto y patrimonio de los 
+hogares en Chile. Sería recomendable intercambiar experiencias y recomendaciones con los 
+equipos de trabajo de estas instituciones para avanzar en un tema que es complejo y sin 
+mucha visibilidad en el contexto de la publicación de estadísticas oficiales. 
+  
+
+=== PDF PAGE 52 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+52 
+ 
+En este informe, y a modo de análisis exploratorio, se optó enfocar los esfuerzos del ejercicio 
+de imputación en tres variables con características útiles para explorar ciertos aspectos de 
+los métodos a evaluar: 
+ 
+ La variable categórica TEDUC se seleccionó para evaluar la factibilidad de utilizar la 
+información histórica del panel para imputar datos. Se optó por TEDUC categórica y 
+no los años de escolaridad continua porque la variable categorizada es la más 
+utilizada en la publicación de estadísticas oficiales de la EPS.  
+ 
+ Las variables continuas YTRAB y ALQ se seleccionaron por su alto porcentaje de 
+datos perdidos (17% aprox) y a la disponibilidad de información auxiliar relevante – 
+el reporte de “tramos” para quienes optan por no responder a la pregunta sobre 
+montos de ingreso y alquiler.  
+ 
+A futuro, sin embargo, es importante identificar las variables – o grupos de variables – que  
+son prioritarias para imputar en la EPS. Para considerar: 
+ 
+ Dada la correlación entre fenómenos de interés, tiene sentido imputar ciertos 
+conjuntos de variables en forma simultánea. Por ejemplo, la asociación entre los 
+ingresos del trabajo y el nivel educacional. O más evidentemente los componentes 
+de partidas de ingreso/gasto que luego se suman para formar un total. Encuestas 
+como la HRS y la SCF imputan familias completas de variables de ingreso, patrimonio 
+y gasto en forma conjunta. 
+ 
+ Dado el interés en publicar estadística para subgrupos específicos de la población, 
+como las aperturas por nivel educaciones, situación ocupacional o tipo de afiliación  
+al sistema, las variables que identifican estos subgrupos (dominios de interés) son 
+también candidatas para imputación. 
+ 
+Para terminar, cabe recordar que lo más relevante es que el modelo de imputación tiene 
+que ser coherente con el modelo que será ocupad o por el investigador en sus análisis  
+(Schafer, 1997). Siendo tantas y tan diversas las preguntas de investigación de los analistas 
+de la EPS, y tantas las alternativas disponibles para el tratamiento de los datos perdidos, se 
+hace necesario establecer una agenda de investigación permanente en torno a este tópico 
+que se desarrolle de manera independiente al proceso bianual de recolección de datos de 
+la EPS.  
+ 
+En este punto, la estrategia implementada por la Health and Retirement Survey  es 
+nuevamente relevante. Inicialmente, las im putaciones de datos estuvieron a cargo del 
+mismo recolector de datos – el Institute for Social Research de la Universidad de Michigan, 
+quien implementó imputaciones de co rte transversal, univariadas, utilizando métodos hot 
+deck y medias condicionadas para las primeras rondas de la HRS. Actualmente, sin embargo, 
+la tarea de imputación de los datos de la HRS está a cargo de la Corporación RAND, quien 
+pone a disposición de los usuarios imputaciones múltiples de corte transversa l y 
+longitudinales para un amplio número de variables utilizando modelos más sofisticados. Este 
+debiera ser un modelo a evaluar para futuras implementaciones de imputaciones de datos 
+en la EPS. Para más antecedentes acerca de la estrategia seguida por la HRS ver Pantoja et 
+al. (2016) y Hurd et al. (2016).  
+
+=== PDF PAGE 53 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+53 
+9 Referencias 
+ 
+Andridge, R. R., & Little, R. J. (2010). A review of hot deck imputation for survey non ‐
+response. International statistical review, 78(1), 40-64. 
+ 
+Barzi, F., & Woodward, M. (2004). Imputations of missing values in practice: results from imputations 
+of serum cholesterol in 28 cohort studies. American Journal of Epidemiology, 160(1), 34-45. 
+ 
+Bennett DA. How can I deal with missing data in my study? Aust N Z J Public Health. 
+2001;25(5):464–469. 
+ 
+Dong, Y., & Peng, C.-Y. J. (2013). Principled missing data methods for researchers. SpringerPlus, 2, 
+222. http://doi.org/10.1186/2193-1801-2-222 
+ 
+Durrant, G. B. (2005). Imputation methods for handling item -nonresponse in the social sciences: a 
+methodological review.  ESRC National Centre for Research Methods and Southampton Statistical 
+Sciences Research Institute. NCRM Methods Review Papers NCRM/002. 
+ 
+Eurostat yearbook 2003.  The Statistical guide to Europe, European Commission, Eurostat. ISSN , 
+1681-4789. 
+ 
+Fitzenberger, B., Osikominu, A. & R. Völter (2006). Imputation Rules to Improve the Education 
+Variable in the IAB Employment Subsample. Discussion Paper No. 05 -10. Disponible en: 
+http://doku.iab.de/fdz/events/2005/Osikominu.pdf  
+ 
+Grittner, U., Gmel, G., Ripatti, S., Bloomfield, K., & Wicki, M. (2011). Missing value imputation in 
+longitudinal measures of alcohol consumption. International journal of methods in psychiatric 
+research, 20(1), 50-61. 
+ 
+Haziza, D. and Beaumont, J. -F. (2007), On the Construction of Imputation Classes in Surveys . 
+International Statistical Review, 75: 25–43. doi:10.1111/j.1751-5823.2006.00002.x 
+ 
+Hurd, M., Meijer, E., Maldoff, M., and Rohwedder, S. (2016). Improved wealth measures in the Health 
+and Retirement Study. RAND Labor and Population. 
+ 
+Little, R. J. (1988). A test of missing completely at random for multivariate data with missing 
+values. Journal of the American Statistical Association, 83(404), 1198-1202. 
+ 
+Madow, W., Nisselson, H., Olkin, I., & Rubin, D. (1983). Incomplete Data in Sample Surveys, vols 1-
+3. New York. 
+ 
+Medina, F., & Galván, M. (2007). estudios estadísticos y prospectivos. Imputación de datos: Teoría y 
+práctica. División Estadísitca y proyecciones Económicas Naciones Unidas. CEPAL. 
+ 
+Philip Pantoja, Delia Bugliari, Nancy Campbell, Chris Chan, Orla Hayden, Michael Hurd, Regan Main, 
+Joshua Mallett, Colleen McCullough, Erik Meijer, Michael Moldoff, Susann Rohwedder, Patricia 
+St.Clair (2016). RAND HRS Income and Wealth Imputations, Version P. RAND Center for the Study 
+of Aging. 
+ 
+Perez, A., Dennis, R. J., Gil, J. F., Rondón, M. A., & López, A. (2002). Use of the mean, hot deck and 
+multiple imputation techniques to predict outcome in intensive care unit patients in 
+Colombia. Statistics in medicine, 21(24), 3885-3896. 
+ 
+Tang, L., Song, J., Belin, T. R., & Unützer, J. (2005). A comparison of imputation methods in a 
+longitudinal randomized clinical trial. Statistics in medicine, 24(14), 2111-2128. 
+
+=== PDF PAGE 54 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+54 
+ 
+Schonlau, M. (2006), hotdeckvar, Stata Program. Version 1.1.0. Downloadable from Stata using “net 
+install”. 
+Schafer JL. Multiple imputation: a primer. Stat Methods in Med. 1999;8(1):3–15. 
+Tabachnick BG, Fidell LS. Using multivariate statistics. 6. Needham Heights, MA: Allyn & Bacon; 
+2012. 
+ 
+The American Association for Public Opinion Research. 2011. Standard Definitions: Final Dispositions 
+of Case Codes and Outcome Rates for Surveys. 7th edition. AAPOR. 
+ 
+Twisk, J., & de Vente, W. (2002). Attrition in longitudinal studies: how to deal with missing 
+data. Journal of clinical epidemiology, 55(4), 329-337. 
+  
+
+=== PDF PAGE 55 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+55 
+10 Anexo 
+ 
+12.1. Número de donantes por celda, imputaciones YTRAB 
+ 
+ 
+.         table celda0, c(count NRytrab sum NRytrab mean NRytrab)                
+ 
+------------------------------------------------------- 
+   celda0 |    N(NRytrab)   sum(NRytrab)  mean(NRytrab) 
+----------+-------------------------------------------- 
+        1 |         9,009            761       .0844711 
+------------------------------------------------------- 
+ 
+ 
+.         table celda1, c(count NRytrab sum NRytrab mean NRytrab)                
+ 
+------------------------------------------------------- 
+group(eda | 
+d_cat     | 
+sex)      |    N(NRytrab)   sum(NRytrab)  mean(NRytrab) 
+----------+-------------------------------------------- 
+        1 |           653             40       .0612557 
+        2 |           882             50       .0566893 
+        3 |         1,065             73       .0685446 
+        4 |         1,249             91       .0728583 
+        5 |           643             52       .0808709 
+        6 |           762             76       .0997375 
+        7 |           832             64       .0769231 
+        8 |         1,016            110       .1082677 
+        9 |           518             49       .0945946 
+       10 |           875             77           .088 
+       11 |           150             25       .1666667 
+       12 |           364             54       .1483517 
+------------------------------------------------------- 
+ 
+ 
+.         table celda2, c(count NRytrab sum NRytrab mean NRytrab)                
+ 
+------------------------------------------------------- 
+20        | 
+quantiles | 
+of        | 
+psytrab   |    N(NRytrab)   sum(NRytrab)  mean(NRytrab) 
+----------+-------------------------------------------- 
+        1 |           832             42       .0504808 
+        2 |           745             34       .0456376 
+        3 |           765             51       .0666667 
+        4 |           696             46        .066092 
+        5 |           734             46       .0626703 
+        6 |           661             37       .0559758 
+        7 |           635             39       .0614173 
+        8 |           534             48       .0898876 
+        9 |           419             31       .0739857 
+       10 |           393             37       .0941476 
+       11 |           419             54       .1288783 
+       12 |           279             39       .1397849 
+       13 |           353             39       .1104816 
+       14 |           369             43       .1165312 
+       15 |           305             31       .1016393 
+       16 |           278             32       .1151079 
+       17 |           220             34       .1545455 
+       18 |           156             30       .1923077 
+       19 |           137             29       .2116788 
+       20 |            79             19       .2405063 
+------------------------------------------------------- 
+ 
+  
+
+=== PDF PAGE 56 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+56 
+.         table celda3, c(count NRytrab sum NRytrab mean NRytrab)                
+ 
+------------------------------------------------------- 
+20        | 
+quantiles | 
+of        | 
+pmytrab   |    N(NRytrab)   sum(NRytrab)  mean(NRytrab) 
+----------+-------------------------------------------- 
+        1 |           337             33       .0979228 
+        2 |           277             23       .0830325 
+        3 |           306             22       .0718954 
+        4 |           324             22       .0679012 
+        5 |           352             27       .0767045 
+        6 |           290             29             .1 
+        7 |           368             19       .0516304 
+        8 |           379             22       .0580475 
+        9 |           345             32       .0927536 
+       10 |           401             31       .0773067 
+       11 |           489             39       .0797546 
+       12 |           499             38       .0761523 
+       13 |           470             45       .0957447 
+       14 |           524             38       .0725191 
+       15 |           530             46       .0867925 
+       16 |           468             31       .0662393 
+       17 |           629             49       .0779014 
+       18 |           661             64        .096823 
+       19 |           692             67       .0968208 
+       20 |           668             84       .1257485 
+------------------------------------------------------- 
+ 
+ 
+.         table celda4, c(count NRytrab sum NRytrab mean NRytrab)                
+                                   
+ 
+------------------------------------------------------- 
+group(ytr | 
+abt_hd1)  |    N(NRytrab)   sum(NRytrab)  mean(NRytrab) 
+----------+-------------------------------------------- 
+        1 |           249             58       .2329317 
+        2 |           426             52       .1220657 
+        3 |         1,024             89       .0869141 
+        4 |         2,762            151       .0546705 
+        5 |         1,678            129       .0768772 
+        6 |           979             81       .0827375 
+        7 |           560             55       .0982143 
+        8 |           351             29       .0826211 
+        9 |           267             31       .1161049 
+       10 |           164             19       .1158537 
+       11 |           179             16       .0893855 
+       12 |           370             51       .1378378 
+------------------------------------------------------- 
+  
+
+=== PDF PAGE 57 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+57 
+.         table celda5, c(count NRytrab sum NRytrab mean NRytrab)                
+ 
+------------------------------------------------------- 
+group(xti | 
+le5       | 
+ytrabt_8c | 
+)         |    N(NRytrab)   sum(NRytrab)  mean(NRytrab) 
+----------+-------------------------------------------- 
+        1 |            79             12       .1518987 
+        2 |           270             14       .0518519 
+        3 |         1,078             36       .0333952 
+        4 |           672             39       .0580357 
+        5 |           360             29       .0805556 
+        6 |           186             16       .0860215 
+        7 |           200             13           .065 
+        8 |           193             14       .0725389 
+        9 |           124             15       .1209677 
+       10 |           215             19       .0883721 
+       11 |           758             31       .0408971 
+       12 |           506             27       .0533597 
+       13 |           319             21       .0658307 
+       14 |           192             14       .0729167 
+       15 |           207             15       .0724638 
+       16 |           243             28       .1152263 
+       17 |           158             18        .113924 
+       18 |           215             19       .0883721 
+       19 |           417             36       .0863309 
+       20 |           230             26       .1130435 
+       21 |           129              7       .0542636 
+       22 |           102             12       .1176471 
+       23 |           122             21       .1721312 
+       24 |           137             22       .1605839 
+       25 |           185             30       .1621622 
+       26 |           211             23       .1090047 
+       27 |           371             32       .0862534 
+       28 |           201             23       .1144279 
+       29 |           110             10       .0909091 
+       30 |            61              7       .1147541 
+       31 |            67              7       .1044776 
+       32 |            99             13       .1313131 
+       33 |           129             35       .2713178 
+       34 |           113             14       .1238938 
+       35 |           138             16        .115942 
+       36 |            69             14       .2028985 
+       37 |            61             14       .2295082 
+       38 |            19              6       .3157895 
+       39 |            22              4       .1818182 
+       40 |            41              9       .2195122 
+------------------------------------------------------- 
+ 
+ 
+  
+
+=== PDF PAGE 58 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+58 
+.         table celda6, c(count NRytrab sum NRytrab mean NRytrab)                
+ 
+------------------------------------------------------- 
+group(xti | 
+le6       | 
+ytrabt_8c | 
+)         |    N(NRytrab)   sum(NRytrab)  mean(NRytrab) 
+----------+-------------------------------------------- 
+        1 |           307             31       .1009772 
+        2 |           355             29       .0816901 
+        3 |           425             19       .0447059 
+        4 |           103             11       .1067961 
+        5 |            27              2       .0740741 
+        6 |            14              3       .2142857 
+        7 |             7              3       .4285714 
+        8 |             6              2       .3333333 
+        9 |           165             24       .1454545 
+       10 |           251             17       .0677291 
+       11 |           602             26       .0431894 
+       12 |           226             17       .0752212 
+       13 |            73              9       .1232877 
+       14 |            28              1       .0357143 
+       15 |            20              1            .05 
+       16 |            24              2       .0833333 
+       17 |           107             21       .1962617 
+       18 |           200             18            .09 
+       19 |           725             45        .062069 
+       20 |           382             31       .0811518 
+       21 |           170             15       .0882353 
+       22 |            64              5        .078125 
+       23 |            45              3       .0666667 
+       24 |            41              2       .0487805 
+       25 |            54             17       .3148148 
+       26 |           145             20        .137931 
+       27 |           634             34       .0536278 
+       28 |           517             35       .0676983 
+       29 |           285             24       .0842105 
+       30 |           152             12       .0789474 
+       31 |           120             10       .0833333 
+       32 |            85              8       .0941176 
+       33 |            42             17       .4047619 
+       34 |            73              5       .0684932 
+       35 |           376             27       .0718085 
+       36 |           450             35       .0777778 
+       37 |           424             31       .0731132 
+       38 |           302             34       .1125828 
+       39 |           426             43        .100939 
+       40 |           557             72       .1292639 
+------------------------------------------------------- 
+ 
+  
+
+=== PDF PAGE 59 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+59 
+12.2. Número de donantes por celda, imputaciones ALQ 
+ 
+ 
+.         table celda0, c(count NRalq sum NRalq mean NRalq) 
+ 
+------------------------------------------------- 
+   celda0 |    N(NRalq)   sum(NRalq)  mean(NRalq) 
+----------+-------------------------------------- 
+        1 |      16,906         2878     .1702354 
+------------------------------------------------- 
+ 
+ 
+.         table celda2, c(count NRalq sum NRalq mean NRalq) 
+ 
+------------------------------------------------- 
+20        | 
+quantiles | 
+of psalq  |    N(NRalq)   sum(NRalq)  mean(NRalq) 
+----------+-------------------------------------- 
+        1 |         846           31      .036643 
+        2 |         845           57     .0674556 
+        3 |         845           64     .0757396 
+        4 |         846           72     .0851064 
+        5 |         845           61     .0721893 
+        6 |         845           86     .1017751 
+        7 |         846          100     .1182033 
+        8 |         845          129     .1526627 
+        9 |         845          113     .1337278 
+       10 |         845          114     .1349112 
+       11 |         846          140     .1654846 
+       12 |         845          156     .1846154 
+       13 |         845          150     .1775148 
+       14 |         846          165     .1950355 
+       15 |         845          163     .1928994 
+       16 |         845          204     .2414201 
+       17 |         846          202     .2387707 
+       18 |         845          266     .3147929 
+       19 |         845          264      .312426 
+       20 |         845          341     .4035503 
+------------------------------------------------- 
+ 
+ 
+.         table celda3, c(count NRalq sum NRalq mean NRalq) 
+ 
+------------------------------------------------- 
+20        | 
+quantiles | 
+of pmalq  |    N(NRalq)   sum(NRalq)  mean(NRalq) 
+----------+-------------------------------------- 
+        1 |         846          137     .1619385 
+        2 |         845          135     .1597633 
+        3 |         845          166     .1964497 
+        4 |         846          167     .1973995 
+        5 |         845          171     .2023669 
+        6 |         845          159     .1881657 
+        7 |         846          140     .1654846 
+        8 |         845          146     .1727811 
+        9 |         845          156     .1846154 
+       10 |         845          134     .1585799 
+       11 |         846          132     .1560284 
+       12 |         845          156     .1846154 
+       13 |         845          154     .1822485 
+       14 |         846          129     .1524823 
+       15 |         845          141     .1668639 
+       16 |         845          123     .1455621 
+       17 |         846          120      .141844 
+       18 |         845          122     .1443787 
+       19 |         845          123     .1455621 
+       20 |         845          167     .1976331 
+------------------------------------------------- 
+  
+
+=== PDF PAGE 60 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+60 
+.         table celda8, c(count NRalq sum NRalq mean NRalq)                      
+ 
+------------------------------------------------- 
+group(alq | 
+t_9c)     |    N(NRalq)   sum(NRalq)  mean(NRalq) 
+----------+-------------------------------------- 
+        1 |       1,979          727     .3673573 
+        2 |       1,510          234     .1549669 
+        3 |         386          146     .3782384 
+        4 |       2,045          255     .1246944 
+        5 |       1,341          306     .2281879 
+        6 |       2,652          288     .1085973 
+        7 |         971          204     .2100927 
+        8 |       2,206          242     .1097008 
+        9 |       3,816          476     .1247379 
+------------------------------------------------- 
+ 
+ 
+.         table celda9, c(count NRalq sum NRalq mean NRalq) 
+ 
+------------------------------------------------- 
+group(xti | 
+le9       | 
+alqt_9c)  |    N(NRalq)   sum(NRalq)  mean(NRalq) 
+----------+-------------------------------------- 
+        1 |         334           43     .1287425 
+        2 |         290           10     .0344828 
+        3 |          99            9     .0909091 
+        4 |         357           20     .0560224 
+        5 |         296           25     .0844595 
+        6 |         553           18     .0325497 
+        7 |         232           17     .0732759 
+        8 |         439           26     .0592255 
+        9 |         782           56     .0716113 
+       10 |         305           81     .2655738 
+       11 |         262           22     .0839695 
+       12 |          68           21     .3088235 
+       13 |         378           29     .0767196 
+       14 |         285           56     .1964912 
+       15 |         559           46     .0822898 
+       16 |         205           26     .1268293 
+       17 |         517           39     .0754352 
+       18 |         802           56     .0698254 
+       19 |         348          120     .3448276 
+       20 |         271           36     .1328413 
+       21 |          64           29      .453125 
+       22 |         451           49     .1086475 
+       23 |         262           53     .2022901 
+       24 |         566           68     .1201413 
+       25 |         178           37     .2078652 
+       26 |         458           40     .0873362 
+       27 |         783           91     .1162197 
+       28 |         379          141     .3720317 
+       29 |         323           60     .1857585 
+       30 |          78           35      .448718 
+       31 |         426           67      .157277 
+       32 |         251           73     .2908367 
+       33 |         541           71     .1312384 
+       34 |         180           57     .3166667 
+       35 |         429           55     .1282051 
+       36 |         774          123     .1589147 
+       37 |         613          342     .5579119 
+       38 |         364          106     .2912088 
+       39 |          77           52     .6753247 
+       40 |         433           90     .2078522 
+       41 |         247           99     .4008097 
+       42 |         433           85     .1963048 
+       43 |         176           67     .3806818 
+       44 |         363           82     .2258953 
+       45 |         675          150     .2222222 
+------------------------------------------------- 
+
+=== PDF PAGE 61 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+61 
+.         table celda10, c(count NRalq sum NRalq mean NRalq) 
+ 
+------------------------------------------------- 
+group(xti | 
+le10      | 
+alqt_9c)  |    N(NRalq)   sum(NRalq)  mean(NRalq) 
+----------+-------------------------------------- 
+        1 |         970          253     .2608247 
+        2 |         614           78     .1270358 
+        3 |         129           40     .3100775 
+        4 |         592           77     .1300676 
+        5 |         277           48     .1732852 
+        6 |         453           50     .1103753 
+        7 |         113           17     .1504425 
+        8 |         139           19     .1366906 
+        9 |          95           23     .2421053 
+       10 |         463          188     .4060475 
+       11 |         452           72      .159292 
+       12 |         118           47     .3983051 
+       13 |         565           61     .1079646 
+       14 |         348           71      .204023 
+       15 |         653           71     .1087289 
+       16 |         210           41     .1952381 
+       17 |         351           31     .0883191 
+       18 |         221           34     .1538462 
+       19 |         245          112     .4571429 
+       20 |         232           44     .1896552 
+       21 |          81           34     .4197531 
+       22 |         463           57     .1231102 
+       23 |         346           82     .2369942 
+       24 |         663           70     .1055807 
+       25 |         257           52     .2023346 
+       26 |         571           59     .1033275 
+       27 |         523           68     .1300191 
+       28 |         185          107     .5783784 
+       29 |         138           26     .1884058 
+       30 |          38           15     .3947369 
+       31 |         266           34     .1278196 
+       32 |         242           68     .2809917 
+       33 |         577           52     .0901213 
+       34 |         255           56     .2196078 
+       35 |         632           68     .1075949 
+       36 |       1,048          121      .115458 
+       37 |         116           67     .5775862 
+       38 |          74           14     .1891892 
+       39 |          20           10           .5 
+       40 |         159           26      .163522 
+       41 |         128           37     .2890625 
+       42 |         306           45     .1470588 
+       43 |         136           38     .2794118 
+       44 |         513           65     .1267056 
+       45 |       1,929          230     .1192328 
+------------------------------------------------- 
+ 
+ 
+ 
+  
+
+=== PDF PAGE 62 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+62 
+12.3. Descripción de base de datos imputada EPS 2015 
+ 
+La base de datos “eps6-impute-data03.dta” tiene 16.906 observaciones y 18 variables. Las 
+variables que comienzan con la sigla “NR” corresponden a los indicadores de los valores 
+imputados (ej. NRteduc), también conocidos como “banderas de imputación” ( imputation 
+flags). Los códigos “1” están asociados a los valores imputados y los códigos “0” a los valores 
+reportados por los entrevistados. Las variables con los sufijos “_ime” e “_ihd” corresponden 
+a las variables con valores imputados según los métodos de medias/medianas condicionadas 
+(ej. teduc_ime0) y hot deck respectivamente (ej. teduc_ihd0). La variable “IdEncuesta” 
+corresponde al folio único asignado a cada entrevistado la EPS 2015. Con esta variable se 
+puede ligar  la base de datos  “ eps6-impute-data03.dta” con cualquiera de las bases de 
+datos de la EPS 2015. 
+ 
+ 
+Tabla A1. Estadísticas descriptivas de variables en la base de datos “eps6-impute-
+data03.dta” 
+ 
+ 
+ 
+    Variable |        Obs        Mean    Std. Dev.       Min        Max 
+-------------+--------------------------------------------------------- 
+  IdEncuesta |     16,906    32367.83    28930.25        102      74995 
+     NRteduc |     16,906    .0214717    .1449547          0          1 
+  NRteduc_cd |        171           1           0          1          1 
+       teduc |     16,543    4.707913    1.785577          1          8 
+    teduc_cd |     16,714    4.697918    1.786012          1          8 
+-------------+--------------------------------------------------------- 
+  teduc_ihd3 |     16,906    4.692713    1.787807          1          8 
+     NRytrab |      9,009    .0844711    .2781084          0          1 
+    NRytrabt |      9,009     .005883    .0764791          0          1 
+       ytrab |      8,248    422894.3    442362.4      10000    9000000 
+      ytrabt |      8,956    5.183452    2.443729          1         12 
+-------------+--------------------------------------------------------- 
+  ytrabt_hd1 |      9,009     5.17982    2.441789          1         12 
+  ytrab_ihd6 |      9,009    425217.8      442596      10000    9000000 
+       NRalq |     16,906    .1702354    .3758506          0          1 
+      NRalqt |     16,906    .0295753    .1694175          0          1 
+         alq |     14,028    184796.6    198257.5      10000    5000000 
+-------------+--------------------------------------------------------- 
+        alqt |     16,406    9.476228    3.135566          1         13 
+    alqt_hd7 |     16,906    9.479179    3.136745          1         13 
+   alq_ihd10 |     16,906    179573.3    199878.4      10000    5000000 
+ 
+ 
+ 
+ 
+  
+
+=== PDF PAGE 63 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+63 
+12.4. Libro de Códigos de Base Imputada EPS 2015 
+ 
+ 
+-------------------------------------------------------------------------------- 
+IdEncuesta                                          Identificador del encuestado 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (long) 
+ 
+                 range:  [102,74995]                  units:  1 
+         unique values:  16,906                   missing .:  0/16,906 
+ 
+                  mean:   32367.8 
+              std. dev:   28930.3 
+ 
+           percentiles:        10%       25%       50%       75%       90% 
+                              3040      7309   15133.5     65096     71105 
+ 
+-------------------------------------------------------------------------------- 
+NRteduc                                                              (unlabeled) 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+ 
+                 range:  [0,1]                        units:  1 
+         unique values:  2                        missing .:  0/16,906 
+ 
+            tabulation:  Freq.  Value 
+                        16,543  0 
+                           363  1 
+ 
+-------------------------------------------------------------------------------- 
+NRteduc_cd                                                           (unlabeled) 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+ 
+                 range:  [1,1]                        units:  1 
+         unique values:  1                        missing .:  16,735/16,906 
+ 
+            tabulation:  Freq.  Value 
+                           171  1 
+                        16,735  . 
+ 
+-------------------------------------------------------------------------------- 
+teduc                                             Nivel Educacional - Categorica 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+                 label:  teducl 
+ 
+                 range:  [1,8]                        units:  1 
+         unique values:  8                        missing .:  363/16,906 
+ 
+            tabulation:  Freq.   Numeric  Label 
+                           296         1  Ninguna 
+                         2,288         2  BasicaInc 
+                         1,719         3  BasicaCom 
+                         2,427         4  MediaInc 
+                         4,761         5  MediaCom 
+                         2,214         6  TecnicaSup 
+                         1,647         7  UnivInc 
+                         1,191         8  UnivCom 
+                           363         .   
+ 
+  
+
+=== PDF PAGE 64 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+64 
+-------------------------------------------------------------------------------- 
+teduc_cd                                Tramo Nivel Educacional - Imp. Cold Deck 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+                 label:  teducl 
+ 
+                 range:  [1,8]                        units:  1 
+         unique values:  8                        missing .:  192/16,906 
+ 
+            tabulation:  Freq.   Numeric  Label 
+                           297         1  Ninguna 
+                         2,341         2  BasicaInc 
+                         1,747         3  BasicaCom 
+                         2,454         4  MediaInc 
+                         4,804         5  MediaCom 
+                         2,225         6  TecnicaSup 
+                         1,653         7  UnivInc 
+                         1,193         8  UnivCom 
+                           192         .   
+ 
+-------------------------------------------------------------------------------- 
+teduc_ihd3             Tramo Nivel Educacional - Imp. HotDeck: Celda3 PredLineal 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+                 label:  teducl 
+ 
+                 range:  [1,8]                        units:  1 
+         unique values:  8                        missing .:  0/16,906 
+ 
+            tabulation:  Freq.   Numeric  Label 
+                           304         1  Ninguna 
+                         2,380         2  BasicaInc 
+                         1,774         3  BasicaCom 
+                         2,488         4  MediaInc 
+                         4,839         5  MediaCom 
+                         2,251         6  TecnicaSup 
+                         1,664         7  UnivInc 
+                         1,206         8  UnivCom 
+ 
+-------------------------------------------------------------------------------- 
+NRytrab                                                              (unlabeled) 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+ 
+                 range:  [0,1]                        units:  1 
+         unique values:  2                        missing .:  7,897/16,906 
+ 
+            tabulation:  Freq.  Value 
+                         8,248  0 
+                           761  1 
+                         7,897  . 
+ 
+-------------------------------------------------------------------------------- 
+NRytrabt                                                             (unlabeled) 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+ 
+                 range:  [0,1]                        units:  1 
+         unique values:  2                        missing .:  7,897/16,906 
+ 
+            tabulation:  Freq.  Value 
+                         8,956  0 
+                            53  1 
+                         7,897  . 
+ 
+  
+
+=== PDF PAGE 65 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+65 
+-------------------------------------------------------------------------------- 
+ytrab                                           Monto Ingreso Laboral - Original 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (float) 
+ 
+                 range:  [10000,9000000]              units:  1 
+         unique values:  403                      missing .:  8,658/16,906 
+ 
+                  mean:    422894 
+              std. dev:    442362 
+ 
+           percentiles:        10%       25%       50%       75%       90% 
+                            150000    250000    310000    500000    750000 
+ 
+-------------------------------------------------------------------------------- 
+ytrabt                                          Tramo Ingreso Laboral - Original 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+ 
+                 range:  [1,12]                       units:  1 
+         unique values:  12                       missing .:  7,950/16,906 
+ 
+                  mean:   5.18345 
+              std. dev:   2.44373 
+ 
+           percentiles:        10%       25%       50%       75%       90% 
+                                 3         4         5         6         9 
+ 
+-------------------------------------------------------------------------------- 
+ytrabt_hd1                 Tramo Ingreso Laboral - Imp. HotDeck: Celda1 Edad*Sex 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+ 
+                 range:  [1,12]                       units:  1 
+         unique values:  12                       missing .:  7,897/16,906 
+ 
+                  mean:   5.17982 
+              std. dev:   2.44179 
+ 
+           percentiles:        10%       25%       50%       75%       90% 
+                                 3         4         5         6         9 
+ 
+-------------------------------------------------------------------------------- 
+ytrab_ihd6          Monto Ingreso Laboral - Imp. HotDeck: Celda6 YTRABT*PredMean 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (float) 
+ 
+                 range:  [10000,9000000]              units:  1 
+         unique values:  403                      missing .:  7,897/16,906 
+ 
+                  mean:    425218 
+              std. dev:    442596 
+ 
+           percentiles:        10%       25%       50%       75%       90% 
+                            140000    250000    318000    500000    760000 
+ 
+-------------------------------------------------------------------------------- 
+NRalq                                                                (unlabeled) 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+ 
+                 range:  [0,1]                        units:  1 
+         unique values:  2                        missing .:  0/16,906 
+ 
+            tabulation:  Freq.  Value 
+                        14,028  0 
+
+=== PDF PAGE 66 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+66 
+                         2,878  1 
+ 
+-------------------------------------------------------------------------------- 
+NRalqt                                                               (unlabeled) 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+ 
+                 range:  [0,1]                        units:  1 
+         unique values:  2                        missing .:  0/16,906 
+ 
+            tabulation:  Freq.  Value 
+                        16,406  0 
+                           500  1 
+ 
+-------------------------------------------------------------------------------- 
+alq                                                 Alquiler efectivo o imputado 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (float) 
+ 
+                 range:  [10000,5000000]              units:  1 
+         unique values:  185                      missing .:  2,878/16,906 
+ 
+                  mean:    184797 
+              std. dev:    198258 
+ 
+           percentiles:        10%       25%       50%       75%       90% 
+                             70000    100000    150000    200000    300000 
+ 
+-------------------------------------------------------------------------------- 
+alqt                                       Tramo de Alquiler efectivo o imputado 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+ 
+                 range:  [1,13]                       units:  1 
+         unique values:  13                       missing .:  500/16,906 
+ 
+                  mean:   9.47623 
+              std. dev:   3.13557 
+ 
+           percentiles:        10%       25%       50%       75%       90% 
+                                 5         8        10        12        13 
+ 
+-------------------------------------------------------------------------------- 
+alqt_hd7           Tramo Alquiler Imputado - Imp. HotDeck: Celda7 Tipoviv*Piezas 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (byte) 
+ 
+                 range:  [1,13]                       units:  1 
+         unique values:  13                       missing .:  0/16,906 
+ 
+                  mean:   9.47918 
+              std. dev:   3.13675 
+ 
+           percentiles:        10%       25%       50%       75%       90% 
+                                 5         8        10        12        13 
+ 
+-------------------------------------------------------------------------------- 
+alq_ihd10         Monto Alquiler Imputado - Imp. HotDeck: Celda10 Tramo*PredMean 
+-------------------------------------------------------------------------------- 
+ 
+                  type:  numeric (float) 
+ 
+                 range:  [10000,5000000]              units:  1 
+         unique values:  185                      missing .:  0/16,906 
+ 
+                  mean:    179573 
+              std. dev:    199878 
+
+=== PDF PAGE 67 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+67 
+ 
+           percentiles:        10%       25%       50%       75%       90% 
+                             60000    100000    150000    200000    300000 
+ 
+
+=== PDF PAGE 68 ===
+Terreno VI Ronda EPS - Centro UC Encuestas – Santiago de Chile, 2016 
+ 
+ 
+68 
+ 

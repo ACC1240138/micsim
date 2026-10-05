@@ -1,0 +1,1647 @@
+
+=== PDF PAGE 1 ===
+ 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Informe Final VI Ronda EPS 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 2 ===
+ 2 
+TABLA DE CONTENIDO 
+1 Informe Final de la VI Ronda EPS .......................................................................... 3 
+1.1 Preparación del trabajo de campo .................................................................... 3 
+1.1.1 Difusión de información sobre la encuesta ................................................... 3 
+1.1.2 Reuniones de coordinación ........................................................................ 3 
+1.1.3 Seguridad de los datos .............................................................................. 6 
+1.1.4 Diseño y programación del cuestionario ...................................................... 6 
+1.1.5 Elaboración de materiales de trabajo de campo ........................................... 8 
+1.1.6 Selección del equipo de trabajo .................................................................. 8 
+1.1.7 Capacitaciones ......................................................................................... 16 
+1.2 Ejecución del trabajo de campo ....................................................................... 17 
+1.2.1 Organización del trabajo en terreno ........................................................... 17 
+1.2.2 Protocolo de contacto ............................................................................... 21 
+1.2.3 Sistema de incentivos ............................................................................... 23 
+1.2.4 Gestión del trabajo de campo .................................................................... 24 
+1.2.5 Supervisión ............................................................................................. 26 
+1.2.6 Detección casos difíciles ........................................................................... 30 
+1.2.7 Resultados del trabajo de campo ............................................................... 32 
+1.3 Revisión y validación de bases de datos ........................................................... 35 
+1.3.1 Validación y codificación ........................................................................... 36 
+1.3.2 Imputación .............................................................................................. 37 
+1.3.3 Factores de expansión .............................................................................. 40 
+ 
+
+=== PDF PAGE 3 ===
+ 3 
+1 Informe Final de la VI Ronda EPS 
+ 
+El presente informe recopila las principales actividades llevadas a cabo para la ejecución del 
+terreno de la VI Ronda EPS. Las actividades que se presentan a continuación, se realizaron 
+entre los meses de noviembre 2015 y noviembre del 2016 y se presentan según el orden 
+de su ejecución. 
+En términos generales se definieron tres grandes etapas: preparación del trabajo de campo, 
+ejecución del trabajo de campo, y revisión y validación de bases de datos. 
+ 
+1.1 Preparación del trabajo de campo 
+ 
+1.1.1 Difusión de información sobre la encuesta 
+Para la VI Ronda EPS, CEEL diseñó y puso en funcionamiento una página web al servicio de 
+los encuestados del estudio. Si bien el principal objetivo de la página fue proporcionar 
+información a las personas entrevistadas, también se dispuso de información relevante para 
+investigadores y académicos de manera tal de generar interés en los datos recolectados en 
+este estudio. 
+La página WEB se encuentra habilitada, y en funcionamiento, en el siguiente link: 
+www.encuestaprotecionsocial.cl 
+En adición a la página web, el CEEL habilitó un número telefónico para responder las 
+diversas consultas que las personas entrevistadas puedan tener. Este servicio, tiene horario 
+de oficina y funcionó de lunes a viernes, entre los meses de marzo y julio de 2016  
+ 
+1.1.2 Reuniones de coordinación 
+Durante todo el proceso , se llevaron a cabo reuniones de coordinación entre el equipo 
+ejecutor y la contraparte. Estas reuniones fueron de vital importancia para el éxito del 
+proyecto, ya que permitieron generar todas las acciones necesarias para resolver los 
+obstáculos enfrentados durante la ejecución del mismo. 
+El proyecto comenzó su ejecución el día 19 de noviembre de 2015, ese mismo día fue 
+realizada la reunión de inicio donde se revisaron los principales aspectos de la Carta Gantt; 
+la segunda reunión fue realizada el 01 de diciembre de 2015, donde se revisó la propuesta 
+para el diseño de la página WEB de la VI Ronda EPS; la tercera reunión, fue realizada el 09 
+de diciembre de 2015 donde se revisaron de manera general las principales modificaciones 
+propuestas para el cuestionario de la sexta ronda; la cuarta reunión, fue realizada el 17 de 
+diciembre de 2015 donde se revisaron las principales dudas y comentario s con respecto a 
+
+=== PDF PAGE 4 ===
+ 4 
+los módulos A al E del cuestionario; la quinta reunión, fue realizada el 06 de enero de 2016, 
+en la cual el principal tema a tratar fue la revisión del resto del cuestionario : módulos F-
+Hogar para elaborar la versión definitiva del mismo. También se hizo la solicitud de la 
+muestra para comenzar a trabajar en el archivo a ser administrado durante el trabajo de 
+campo. La sexta reunión, fue realizada el 22 de enero de 2016, en la cual el principal tema 
+fue la estrategia para la actualización de la muestra de la sexta ronda; la séptima reunión, 
+fue realizada el 10 de febrero de 2016, en la cual los principales temas revisados fueron la 
+organización del trabajo de campo y de las capacitaciones; la octava reunión, fue realizada 
+el 24 de febrero de  2016, y se revisó el estado de los materiales de capacitación y la 
+programación de las tablets; la novena reunión, fue realizada el 1 de marzo de 2016, en la 
+cual se revisaron los últimos detalles de las capacitaciones y se conversó sobre la malla de 
+validación; la décima reunión, fue realizada el 17 de marzo de 2016, en la cual se manifestó 
+el interés por parte de la Subsecretaría de sacar un comunicado de prensa, se recibió 
+retroalimentación sobre las jornadas de capacitación, y se reforzó la importancia del apoyo 
+en terreno; la undécima reunión, fue realizada el 5 de abril de 2016, y tuvo por principales 
+objetivos revisar el estado de avance y la experiencia del equipo de la Subsecretaría en sus 
+salidas a terreno en diferentes comunas de distintas regiones, a lo largo de todo el país; la 
+duodécima reunión, fue realizada el 22 de abril de 2016 en la que de igual forma que en la 
+reunión anterior se tuvo como principal objetivo revisar el estado de avance del trabajo de 
+campo, revisar la experiencia del equipo de la Subsecretaría que estuvo en terreno, y revisar 
+las estrategias planteadas por el CEEL para mejorar el avance, disminuir la rotación de 
+encuestadores y fortalecer el manejo del cuestionario en terreno; la decimotercera reunión, 
+fue realizada el 09 de mayo de 2016, se revisó el estado de avance del trabajo de campo y 
+la experiencia del equipo de la Subsecretaría en terreno. Además, se informó sobre una 
+nueva fuente de información de direcciones que estaría disponible a partir del Registro Social 
+de Hogares1. La decimocuarta reunión fue el día 17 de mayo de 2016, en ella se revisaron 
+las estrategias empleadas por el CEEL para mejorar el avance del trabajo de campo, se 
+planteó que el mayor desafío hacia delante era barrer todas las direcciones gene rando un 
+Código de Disposición Final (CDF) para cada persona en la muestra, para esto se propuso 
+entrenar un grupo de personas, visitadores, cuya función fue solamente visitar la muestra 
+para discriminar aquellas direcciones donde el entrevistado se encuen tra y es posible 
+concretar una entrevista de aquellas donde no vive el entrevistado o la dirección no existe, 
+para de esta forma hacer menos desgastante el trabajo del encuestador. La decimoquinta 
+reunión, fue realizada el 31 de mayo de 2016, al igual que en las reuniones previas se revisó 
+                                           
+ 
+1 El Registro Social de Hogares es el sistema que reemplazó a la Ficha de Protección Social desde el 01 de enero 
+de 2016, con el objetivo de apoyar la postulación y selección de beneficiarios de las instituciones y organismos 
+del Estado que otorgan prestaci ones sociales. El Registro Social de Hogares es un sistema de información 
+construido con información aportada por el hogar y bases de datos que posee el Estado 
+
+=== PDF PAGE 5 ===
+ 5 
+el estado de avance del trabajo de campo, evaluando las estrategias implementadas y 
+planteando las nuevas estrategias para los desafíos que seguían hacia delante. 
+Durante la decimosexta reunión , realizada el 14 de junio d e 2016, se revisó el estado de 
+avance del trabajo de campo, evaluando las estrategias implementadas y extendiendo la 
+estrategia de visitadores en la Región Metropolitana; la decimoséptima reunión, realizada el 
+21 de junio de 2016, se refirió al trabajo de supervisión del terreno. Se informó de la 
+implementación de la supervisión con tablets en vez de papel , y se coordinó la visita de 
+profesionales de la Subsecretaría para acompañar la supervisión. Durante la decimoctava 
+reunión, realizada el 28 de junio de 2016, se revisó el estado de avance del trabajo de 
+campo, evaluando las estrategias implementadas y dando cuenta de nuevas capacitaciones; 
+la decimonovena reunión, realizada el 12 de julio de 2016, se refirió tanto al avance del 
+trabajo de terreno, como a la supervisión. Se informó sobre la implementación de estrategias 
+particulares para zonas difíciles.  Durante la vigésima reunión , realizada el 26 de julio de 
+2016, se revisó el estado de avance general del trabajo de campo, la supervisión y la revisión 
+de fallecidos; adicionalmente, la Subsecretaría planteó que  organizaría un seminario 
+internacional entre el 23 y 24 de marzo de 2017 . Durante la vigesimoprimera reunión , 
+realizada el 9 de agosto de 2016, se revisó el estado de avance general del trabajo de campo 
+y la supervisión, dando cuenta del logro final de encuestas. Se confirmó, además,  la 
+disponibilidad de Jere Behrman y Steve Heeringa para el seminario de marzo. 
+La vigesimosegunda reunión, se llevó a cabo el día 23 de agosto, en ella se revisó el cierre 
+del trabajo de terreno, el estado de las supervisiones y el cronograma de entrega de los 
+siguientes productos. Durante la vigesimotercera reunión, efectuada el 15 de septiembre , 
+se revisaron: los CDF finales, la metodología utilizada en el proceso de validación de las 
+encuestas, y el estado de las supervisiones. 
+La vigesimocuarta reunión realizada el día 21 de septiembre tuvo por obj etivo revisar la 
+metodología de imputaciones. Se acordó que sólo se realizarán imputaciones en las bases 
+analíticas, utilizando la metodología de hot-deck por ser una metodología estadísticamente 
+correcta y simple para presentar los resultados. 
+La vigesimoquinta reunión se llevó a cabo el día 5 de octubre, en ella se revisó: la entrega 
+del producto 10, la fecha de realización del seminario  internacional antes referido , su 
+cronograma, y las próximas fechas relevantes de entrega de productos. 
+Durante la vigesimosexta reunión, efectuada el 18 de octubre, se revisaron los contenidos 
+de los siguientes informes, la fecha de realización del seminario , y sus principales 
+contenidos, así como el “Tríptico de resultados” que será enviado a medios de comunicación, 
+asistentes al seminario, y entrevistados. 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 6 ===
+ 6 
+1.1.3 Seguridad de los datos 
+El Centro UC elaboró un Plan de Seguridad de Datos, mediante el cual la información 
+recolectada a partir de las encuestas era almacenada en med ios digitales 
+independientemente de su origen (papel o dispositivos electrónicos), esta información fue 
+asegurada tanto en su almacenamiento como en su consistencia y fidelidad. 
+La seguridad del sistema estaba resguardada con mecanismos de control de acces o por 
+medio de usuarios, claves y roles, que actuando en conjunto conceden o niegan los accesos 
+a diversos módulos y tareas dentro del sistema. Las claves, se encontraban encriptadas para 
+una mayor seguridad. 
+Los sistemas fueron implementados sobre una red privada, sin acceso a internet, donde los 
+datos eran almacenados directamente sobre un servidor de datos central en esta misma red 
+privada. El acceso al servidor estuvo protegido por Firewall, con lo cual se mitigaron 
+eventuales problemas de seguridad ante posibles accesos no autorizados. 
+Una vez que la información se encontraba en formato digital y almacenada, en los servidores 
+para garantizar la seguridad de los datos, se contó con métodos de seguridad tanto a nivel 
+de software de la plataforma web como a nivel de estructura de los servidores; además, se 
+contemplaron protocolos de respaldo de la información  como la realización de tres copias 
+diarias de los datos. 
+ 
+1.1.4 Diseño y programación del cuestionario 
+El cuestionario se diseñó en formato papel , y luego se programó para ser aplicado en 
+dispositivo electrónico o tablet ; ambas versiones, fueron revisadas y validadas antes del 
+inicio del trabajo de terreno. El cuestionario final constó con los siguientes módulos: 
+Tabla 1. Módulos cuestionario EPS 2015 
+Información general sobre los integrantes del hogar 
+Módulo A: Educación 
+Módulo B: Historia Laboral 
+Módulo C: Ingresos del entrevistado e ingreso total del hogar 
+Módulo D: Activos y patrimonio del entrevistado y total del hogar 
+Módulo E: Protección social 
+Módulo F: Salud 
+Módulo G: Capacitación 
+Módulo I: Historia individual 
+Módulo J: Calidad de vida 
+Módulo Q: Coyuntura previsional y opinión 
+Módulo H: Historia familiar 
+Situación laboral, de salud y previsional del resto de los integrantes del hogar 
+Fuente: Elaboración propia 
+
+=== PDF PAGE 7 ===
+ 7 
+El formulario en Tablet, incluyó todos los saltos de preguntas y validaciones de preguntas, 
+de manera de facilitar la posterior revisión de la base de datos. 
+Del formulario papel se imprimieron 4.000 ejemplares, para la ev entualidad de que a un 
+20% de la muestra hubiese que aplicar la encuesta en papel, dejando un excedente de 
+aproximadamente 400 ejemplares a disposición de la Subsecretaría para el uso que ellos 
+estimaran conveniente. 
+Las características del cuadernillo fueron las siguientes: 
+ 
+Tamaño 
+El cuadernillo cerrado tiene un tamaño de 21,6cm de ancho x 27,9cm de alto (conocido 
+como tamaño “carta”). Extendido , es de 43,2cm de ancho x 27,9cm. La segunda hoja, 
+correspondiente a la segunda cuartilla (páginas 3 y 4), tiene una solapa de 12,6cm. 
+ 
+Papel 
+El papel seleccionado para el cuadernillo es el Bond de 90grs. 
+ 
+Colores 
+El cuadernillo está diseñado con 2 colores, el negro estándar del CMYK y el PANTONE 290 
+U, por tiro y retiro. 
+ 
+Número de páginas y cuartillas 
+El cuadernillo tiene un total de 72 páginas, incluyendo portada y contraportada, equivalente 
+a 18 cuartillas. 
+ 
+Encuadernación 
+El cuadernillo se encuaderno con 2 corchetes al lomo.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 8 ===
+ 8 
+1.1.5 Elaboración de materiales de trabajo de campo 
+Como materiales de apoyo del trabajo en terreno , se elaboró un manual de trabajo de 
+campo para encuestadores; este documento, tuvo como objetivo estandarizar la aplicación 
+del instrumento y servir de guía para la aplicación durante el trabajo de campo. 
+Además, se elaboraron hojas de ruta que contaba n con la información del entrevistado y 
+sus direcciones; este instrumento, fue la guía principal en la búsqueda de los seleccionados. 
+Junto con las hojas de ruta, se mapearon las direcciones generando croquis de identificación 
+de direcciones que permitieran localizar de forma más rápida y efectiva la vivienda. 
+ 
+1.1.6 Selección del equipo de trabajo 
+La oferta laboral para Coordinadores de Zona y Coordinadores de Grupo se publicó en el 
+sitio web del Centro UC ( www.encuestas.uc.cl/Postulaciones/), la semana del 11 de  enero 
+de 2016. La oferta tuvo una vigencia de una semana, y se avisó a las personas que contaran 
+con experiencia de trabajo en el Centro UC en proyectos anteriores; la postulación se realizó, 
+exclusivamente, a través del sitio web del Centro UC. 
+El Centro UC , cuenta con un protocolo de selección de coordinadores y encuestadores 
+común a gran parte de sus proyectos ; si bien los instrumentos utilizados son similares, en 
+los distintos estudios (prueba de conocimiento del instrumento a aplicar y test de 
+personalidad), el perfil de cargo que se genera es particular según los requerimientos de 
+cada uno. 
+De esta manera, para la VI Ronda de la EPS, se utilizaron los siguientes criterios de selección 
+para los Coordinadores de Zona: 
+- Persona con experiencia en liderazgo y manejo de grupos en zonas geográficas 
+extensas (más de una región en algunos casos); que pueda reaccionar a los 
+acontecimientos, o a distintas eventualidades informadas por el coordinador de 
+grupo. Además, esta persona velará por el avance del terreno y por la calidad del 
+trabajo realizado por el equipo general  revisando el 10% de los cuestionarios , 
+entregados por cada coordin ador de grupo a su cargo, cada semana ; para esto, 
+deberá manejar sistemas computacionales a nivel intermedio, especialmente office, 
+pues para realizar esta revisión se le desplegará parte del cuestionario en formato 
+“pdf” con las respuestas del encuestado, junto con indicadores de rendimiento. 
+ 
+- Experiencia en la administración de costos y la regulación de los gastos del terreno.  
+- Con flexibilidad y ética  para cumplir , con lo requerido, según los estándares de 
+calidad del Centro UC. 
+- Con capacidad de recibir ideas de su equipo, que fomenten la eficiencia del trabajo, 
+así como también mantener relaciones estrechas con su equipo pudiendo detectar 
+situaciones difíciles a tiempo y darles solución a corto plazo. 
+
+=== PDF PAGE 9 ===
+ 9 
+Tomando en cuenta estos criterios, la oferta laboral se publicó indicando las siguientes 
+funciones asociadas al cargo de Coordinador de Zona, así como requisitos a cumplir al 
+momento de postular. 
+Funciones 
+- Gestión de recursos de personal y económicos en la región asignada. 
+- Supervisión diaria del trabajo real izado por sus coordinadores de grupo o 
+encuestadores, según corresponda. 
+- Capacitar encuestadores. 
+- Informar, diariamente, al Coordinador Nacional respecto a la situación de su región. 
+- Entregar estados de avance con una periodicidad mínima de una semana, al 
+Coordinador Nacional. 
+Requisitos 
+- Experiencia como coordinadora de zona o sede , en al menos dos estudios de gran 
+escala a nivel nacional, en los últimos tres años. 
+- Experiencia, como encuestador, en al menos cinco estudios con muestra mayor a 
+5.000 casos. 
+- Licencia de enseñanza media. 
+- Responsabilidad y liderazgo. 
+- Ser proactivo y ordenado. 
+- Buenas habilidades sociales. 
+- Manejo de Office nivel usuario o superior. 
+- Deseable: Capacidad para gestionar equipos de encuestadores sin experiencia, y 
+manejo de tecnología Tablet en, al menos, dos encuestas de gran escala. 
+En cuanto a los Coordinadores de Grupo, se consideraron los siguientes criterios de 
+selección. 
+- Persona con experiencia en liderar equipos de trabajo, especialmente personas que 
+trabajan en terreno y que requieren hacer supervisión constante.  
+- Que mantenga un orden sistemático del trabajo realizado, buscando siempre 
+fomentar la eficiencia del trabajo según los protocolos dispuestos para esto; además, 
+debe ser capaz de ayudar a su equipo a encontrar las mejor es estrategias de 
+promoción de la participación de la población a encuestar.  
+- Debe conocer sobre la administración de fondos, que serán utilizados directamente 
+por este cargo y, por supuesto, fiscalizar del uso adecuado de estos por parte de su 
+equipo. Debe mantener informado, y ordenado, todo el flujo de fondos entregado a 
+su coordinador Zonal. 
+- Debe velar por el cumplimiento de las metas dadas por el estudio. En este caso, 
+debe buscar estrategias para lograr la cantidad de encuestas necesarias por semana 
+según su zona de trabajo. 
+
+=== PDF PAGE 10 ===
+ 10 
+- Mantener supervisión constante sobre el desempeño de su equipo en terreno, que 
+implica la aplicación de las encuestas, el lineamiento con los protocolos, y el trato al 
+encuestado. 
+En base a estos criterios, se levantó la oferta la boral a través de la plataforma del Centro 
+UC indicando las funciones a cumplir por el Coordinador de Grupo, así como los requisitos 
+que debía cumplir el postulante para ser considerado. Se aclaró que, el Coordinador de 
+Grupo, trabaja bajo las órdenes de un Coordinador de Zona. 
+Funciones 
+- Gestión de recursos de personal y económicos en las comunas asignadas. 
+- Supervisión diaria del trabajo realizado por sus encuestadores, integrando esta 
+información en la plataforma de control de muestra. 
+- Revisión de Hojas de Ruta. 
+- Informar diariamente, a su Coordinador de Zona, respecto a la situación de las 
+comunas que le han sido asignadas. 
+- Entregar estados de avance , con una periodicidad mínima de tres días, al 
+Coordinador de Zona que corresponda. 
+Requisitos 
+- Experiencia co mo coordinador de grupos de encuestadores en , al menos , dos 
+estudios de gran escala a nivel nacional en los últimos tres años. 
+- Experiencia como encuestador en, al menos, tres estudios. 
+- Licencia de enseñanza media. 
+- Responsabilidad y liderazgo. 
+- Ser proactivo y ordenado. 
+- Buenas habilidades sociales. 
+- Manejo de Office nivel usuario o superior. 
+- Deseable: Capacidad para gestionar equipos de encuestadores sin experiencia, y 
+manejo de tecnología Tablet en, al menos, dos encuestas de gran escala. 
+Una vez recibidos lo s CV de los postulantes para ambos cargos, en base a los criterios 
+referidos, se realizó la selección del equipo final de Coordinadores para la EPS VI Ronda. Es 
+importante mencionar, que en caso de que hubiese habido postulantes a Coordinador de 
+Zona que n o cumplieran con los requisitos para este cargo, pero sí para el cargo de 
+Coordinador de Grupo, se les consideró para este último (de modo de no dejarlos fuera del 
+proceso). 
+De esta manera, se realizó una primera selección de postulantes; las personas que pasaron 
+esta primera etapa fueron invitadas a participar de la capacitación, donde se realizó un 
+segundo proceso de selección. 
+En la capacitación, se aplicó a los postulantes a Coordinador una evaluación consistente en 
+una prueba de contenidos y un test psicológico; los que se explican a continuación. 
+
+=== PDF PAGE 11 ===
+ 11 
+Prueba de Contenidos: Al finalizar la jornada de capacitación, se realizó una prueba de 
+contenidos a todos los participantes de la capacitación; esta evaluación, consistió en una 
+prueba que buscó medir el co nocimiento de los coordinadores tanto respecto a conceptos 
+asociados a la Encuesta EPS (necesarios para una adecuada aplicación del instrumento ), 
+como respecto a temas revisados durante la jornada de capacitación. En caso que se 
+observara una falta de comp rensión de contenidos, se procedió a reforzar dichos 
+conocimientos en una sesión complementaria con el Coordinador Nacional de Terreno.  
+La prueba contó con las siguientes preguntas: 
+1. Por favor , describa qué implica ser un cotizante y un afiliado : ¿en qué s e 
+diferencian?. 
+ 
+2. Pedro tiene 48 años y estudió 2 carreras universitarias, sin embargo, no terminó la 
+primera carrera, trabajó 1 año y luego volvió a estudiar una segunda carrera, la cual 
+si terminó. La primera carrera la comenzó a estudiar el año 1990 , y la segunda el 
+año 1998. Ambas carreras fueron financiadas con crédito fiscal. 
+¿Cómo se llenaría esta información en la tabla en cuanto a su educación? 
+ 
+N° A.14 Nombre carrera A.15.a A.15.b A.16.a A.18 A.19 A.22_1 A.22_2 A.22_3 
+1                   
+2                   
+3                   
+4                   
+5                   
+ 
+ 
+3. ¿Cuándo comienza la historia laboral y cómo se registra en la encuesta? Refiérase a 
+entrevistados nuevos y antiguos. 
+ 
+4. ¿Qué significa estar inactivo laboralmente? 
+ 
+5. Si tuvo dos trabajos simultáneamente, ¿cuál se registra? 
+ 
+[ ] a. Ambos para no perder el dato. 
+
+=== PDF PAGE 12 ===
+ 12 
+[ ] b. Al que dedicó más horas. 
+[ ] c. Al que implicó mejores ingresos. 
+[ ] d. Al que dedicó más horas. Si ambos trabajos tienen igual número de 
+horas, el de mayor ingreso. 
+[ ] e. El actual solamente. 
+ 
+6. ¿Qué se considera el sueldo líquido? 
+ 
+7. En el Modulo C: en la pregunta 29, al ingresar el monto, se debe indicar el: 
+ 
+[ ] a. Monto mensual. 
+[ ] b. Monto total de los 12 meses. 
+[ ] c. Ingreso promedio en los últimos 6 meses. 
+[ ] d. Solo el monto del último mes. 
+ 
+8. ¿Qué tipos de pensión existen? Explique, brevemente, cada uno. 
+ 
+Test Psicológico:  Al finalizar la jornada de capacitación, también se aplicó a los 
+participantes un test psicológico. Este test corresponde al Big Five Inventory, el cual es una 
+prueba psicológica breve, que indica rasgos de personalidad de la persona, en base a cinco 
+áreas: apertura a la experiencia, conciencia, extraversión, amabilidad y neuroticismo.  
+Los coordinadores, debían ser personas con alta conciencia y extraversión, además de bajo 
+neuroticismo. De esta manera, serán personas competentes, ordenados, disciplinados, 
+activos, y energéticos, con baja tendencia a la ansiedad, hostilidad y depresión. Debían, 
+asimismo, tener apertura a la experiencia y amabilidad media, sin ser ésta demasiado baja, 
+de modo que puedan ser personas creativas, que propongan soluciones diferentes ante los 
+problemas, pero que esto no sea un impedimento para la realización del trabajo solicitado, 
+así como confiadas y empáticas. 
+Según el perfil para cada cargo, y el cumplimiento que presentaron los postulantes, se 
+realizó la selección final de cargos.  
+Por otra parte, los encuestadores que se buscaron para ser parte del equipo de terreno de 
+la VI Ronda de la Encuesta de Protección Social, debían cumplir con el siguiente perfil de 
+cargo. 
+- Persona idealmente con experiencia en la aplicación de cuestionarios a hogares, con 
+duraciones no menores a media hora. 
+
+=== PDF PAGE 13 ===
+ 13 
+- Que tenga, idealmente, experiencia en el m anejo de encuestados difíciles o en 
+contextos de difícil aplicación. 
+- Persona con capacidad de mantener orden y sistematización, del trabajo realizado, 
+a través del reporte diario entregado a su coordinador de grupo. 
+- Apto para trabajar en equipo, sin dificultades para seguir instrucciones y protocolos 
+entregados por la autoridad (Coordinador de Grupo y Zona).  
+- Con capacidad para aprender nuevas habilidades y conocimientos que le permitan 
+trabajar según los estándares del Centro UC y de acuerdo a lo que el pr oyecto 
+requiera. 
+- Que muestre disposición al trabajo en terreno. 
+- Que mantengan comunicación fluida con su coordinador de grupo. 
+- Que sea sensible, y empático, ante situaciones que puedan ocurrir en el desempeño 
+de su trabajo (aplicación a cuestionario de fallecido, persona de difícil trato, tercera 
+edad, entre otros). 
+En base a este perfil, se elaboró la oferta laboral, indicando funciones y requisitos que los 
+encuestadores de este proyecto debieran cumplir. 
+Requisitos 
+- Ser mayor de 18 años. 
+- Buenas habilidades sociales. 
+- Capacidad para seguir instrucciones. 
+- Responsabilidad y puntualidad. 
+- Deseable: Experiencia en uso de Tablet. 
+- Deseable: Experiencia previa en la realización de encuestas presenciales. 
+Funciones  
+- Visitar las direcciones asignadas.  
+- Llenar de forma correcta el cuestionario en la Tablet y subir las encuestas al sistema. 
+- Llevar registro en la Tablet de las visitas que realiza. 
+- Reportar de forma diaria a su coordinador. 
+- Devolver, en buenas condiciones, el material asignado.  
+Estos fueron los criterios d e selección tomados en consideración al momento de hacer la 
+revisión de currículum vitae, a partir de la cual se realizó la primera etapa de selección de 
+postulantes. Los postulantes que fueron seleccionados en esta primera etapa, fueron 
+invitados a participar de la capacitación de encuestadores; en esta instancia, el Coordinador 
+de sede realizó la segunda selección, a partir de su desempeño durante la jornada, y en el 
+test psicológico.  
+Se puede destacar el gran interés que concit ó la VI Ronda de la Encuesta de Protección 
+Social 2015, contando con una alta asistencia a las capacitaciones en todas las zonas  en 
+que se dividió el país . De los 488 postulantes convocados a la primera instancia de 
+
+=== PDF PAGE 14 ===
+ 14 
+capacitación, asistieron 425 personas, es  decir, un 87% de los convocados. Asimismo, la 
+gran mayoría de los encuestadores fueron seleccionados de manera posterior a la 
+capacitación (85%), lo que demostró una alta responsabilidad de éstos durante la totalidad 
+de las jornadas, de modo de prestar atención a las exposiciones de los diferentes módulos 
+de la encuesta, y realizar preguntas de manera de asegurar un correcto levantamiento de 
+datos en terreno. 
+Los encuestadores seleccionados son personas que en el test psicológico presentaron alta 
+amabilidad y extraversión, lo que implica que son personas con alta empatía y confianza, al 
+igual que con alta asertividad y sociabilidad; asimismo, presentan bajo neuroticismo, lo que 
+implica una baja timidez, hostilidad y depresión; e indican conciencia y apertur a a la 
+experiencia medias, de modo que son personas ordenadas, sin que esto implique baja 
+flexibilidad, y creativos sin faltar a la tarea encomendada. 
+En cuanto a la selección de los encuestadores debe indicarse que entre los convocados a la 
+capacitación se produce el primer filtro: asistencia a ambas jornadas de capacitación, la que 
+es verificada por el Coordinador.  
+Luego de esto, el grupo de postulantes que asistió a la totalidad de las jornadas de 
+capacitación, se sometió a la evaluación del Coordinador ; esta evaluación, consistió en la 
+aplicación de un test psicológico, y la observación que hizo el Coordinador respecto al 
+manejo del cuestionario logrado por el encuestador durante la capacitación, y su 
+preparación para trabajar en terreno. El test psicológico aplicado correspondió al Big Five 
+Inventory, que ya fue explicado en los criterios de selección; por su parte, dentro de las 
+jornadas se generó un ejercicio práctico de aplicación de cuestionario con Tablet, lo que 
+permitió al Coordinador observar cómo se desenvolvían los encuestadores tanto en el 
+protocolo de encuesta como en el manejo que lograban del instrumento. En caso que las 
+tablets no hubieran estado disponibles durante la jornada de capacitación, se generó una 
+instancia posterior de interacción entre el Coordinador y el encuestador a fin de asegurar 
+su manejo de este dispositivo. En base a estas dos evaluaciones, el Coordinador seleccionó 
+a quienes conformarían el equipo de terreno de la EPS. 
+Los Supervisores de la VI Ronda de la EPS estuvieron a cargo de un Coordinador de Control, 
+quien trabajaba centralizadamente desde la Región Metropolitana. Considerando e sto, el 
+Coordinador de Control fue un profesional que cumplió con el siguiente perfil de cargo. 
+- Persona con experiencia en la coordinación de equipos de trabajo a distancia. 
+- Que tuviera experiencia en aplicación de encuestas a hogares, idealmente en 
+cuestionarios de supervisión. 
+- Con aptitudes de liderazgo, pero capacidad para trabajar en equipo. 
+- Persona con buenas habilidades sociales, de modo de mantener motivado a su 
+equipo de trabajo. 
+- Que fuera respetuosa de los protocolos de trabajo. 
+
+=== PDF PAGE 15 ===
+ 15 
+- Con capacidad para aprender nuevas habilidades y conocimientos que le permitieran 
+trabajar según los estándares del Centro UC , y de acuerdo a lo que el proyecto 
+requiriera. 
+- Que mostrara buena disposición para el trabajo en terreno. 
+- Que fuera disciplinado y organizado en su trabajo. 
+En base a este perfi l, se reclutó a un Coordinador de Control entre las personas que ya 
+habían realizado labores de este tipo en estudios anteriores del Centro UC, de modo de 
+asegurar que fuera una persona de confianza demostrad a en otras ocasiones, y así 
+garantizar la buena calidad de su trabajo. 
+Funciones 
+- Supervisión diaria del trabajo realizado por sus supervisores, integrando esta 
+información en la plataforma de control de muestra. 
+- Revisión de Hojas de Ruta. 
+- Informar semanalmente al Coordinador Nacional de Terreno, respecto a la situación 
+de las comunas que les han sido asignadas. 
+- Entregar estados de avance con una periodicidad mínima de siete días. 
+ 
+Requisitos 
+- Experiencia como coordinador de grupos de encuestadores en , al menos , dos 
+estudios de gran escala a nivel nacional en los últimos tres años. 
+- Experiencia como encuestador en, al menos, tres estudios. 
+- Licencia de enseñanza media. 
+- Responsabilidad y liderazgo. 
+- Ser proactivo y ordenado. 
+- Buenas habilidades sociales. 
+- Manejo de Office nivel usuario o superior. 
+- Deseable: Capacidad para gestionar equipos de encuestadores sin experiencia, y 
+manejo de tecnología Tablet en, al menos, dos encuestas de gran escala. 
+En cuanto a los supervisores a seleccionar, éstos debían ser personas que cumplieran con 
+un perfil que, aunque tuviera similitudes con el del encuestador, no es exactamente el 
+mismo, requiriendo ciertas particularidades. El perfil del supervisor, fue el siguiente: 
+- Persona, idealmente, con experiencia en encuestas a hogares, y/o encuestas de 
+supervisión. 
+- Persona con buenas habilidades sociales, empática y que genere confianza en los 
+encuestados. 
+- Que tuviera la capacidad de captar la atención de los encuestados, ya sea de manera 
+telefónica o presencial, por un tiempo suficiente como para poder realizar la 
+supervisión. 
+
+=== PDF PAGE 16 ===
+ 16 
+- Que fuera ordenado, con capacidad para trabajar por sí solo, pero a la vez seguir los 
+protocolos que requiere su trabajo. 
+- Que mantuviera una comunicación fluida , y constante , con su Coordinador de 
+Control. 
+- Que mostrara buena disposición para el trabajo en terreno. 
+Según este perfil, se buscó a los supervisores para cada una de las zonas en las que se 
+desarrolló la EPS, de modo de asegurar la calidad de los datos recogidos. 
+1.1.7 Capacitaciones 
+La capacitación de coordinadores se realizó de manera centralizada, en  la ciudad de 
+Santiago, durante tres jornadas completas de un mínimo de ocho horas cada una. Las fechas 
+de la capacitación de coordinadores fueron entre los días 2 y 4 de marzo  de 2016; esta 
+capacitación estuvo a cargo del Centro UC , y contó con la participación de representantes 
+de la Subsecretaría de Previsión Social, quienes fueron responsables de hacer la 
+presentación del estudio al equipo de coordinadores, así como de estar presentes durante 
+la jornada de capacitación para apoyar al equipo UC frente a dudas técnicas y de definiciones 
+durante la capacitación2.   
+La capacitación de encuestadores se realizó de forma descentralizada. Cada zona realizó su 
+capacitación, llevada a cabo por los coordinadores de zona, los coordinadores de sede y los 
+coordinadores de grupo. Un integrante del equipo interno del Centro UC , viajó a las zonas 
+que contaba n con mayor cantidad de muestra para apoyar la capacitación de 
+encuestadores3. Estas capacitaciones , se realizaron en cada una de las regiones y  
+consideraron las siguientes ciudades: 
+ 
+ Arica 
+ Iquique 
+ Antofagasta 
+ Calama 
+ Copiapó 
+ Coquimbo/La Serena 
+ Valparaíso/Viña del Mar 
+ Santiago 
+ Rancagua 
+ Talca 
+ Curicó 
+                                           
+ 
+2 Programa de capacitación en Anexo N°1 
+3 Programa de capacitación en Anexo N°1 
+
+=== PDF PAGE 17 ===
+ 17 
+ Concepción 
+ Chillán 
+ Temuco 
+ Valdivia 
+ Puerto Montt 
+ Coyhaique 
+ Punta Arenas 
+ 
+ 
+ 
+1.2 Ejecución del trabajo de campo 
+ 
+1.2.1 Organización del trabajo en terreno 
+En la propuesta para el levantamiento de datos en terreno de la VI Ronda de la Encuesta 
+de Protección Social, el Centro UC señaló que el trabajo de campo estaría dirigido por la 
+figura de “Coordinador de Trabajo de Campo”, quien, a través del “Coordinador Nacional de 
+Terreno”, estaría a cargo de cada una de las zonas del país donde se estuviera aplicando la 
+EPS. En dichas zonas, se podían dar tres escenarios posibles relativos a su organización 
+jerárquica (ver figura 1). 
+Figura 1. Organigrama Equipo de Terreno 
+ Fuente: Elaboración propia 
+
+
+=== PDF PAGE 18 ===
+ 18 
+ 
+Esto ocurrió así, con la excepción de algunas comunas donde fue el mismo Coordinador de 
+Zona el encargado de coordinar a sus encuestadores ; a continuación, se muestra la 
+organización jerárquica de cada zona, distinguiendo los diferentes tipos de estructura. 
+Como se puede apreciar en la figura 2, catorce zonas contaron  con una organización 
+jerárquica en la que e l Coordinador de Zona se encargó  directamente de su grupo  de 
+encuestadores. Este fue el caso de zonas que no corresponden a las regiones con mayor 
+cantidad de muestra, pero a la vez presentan una cantidad lo suficientemente grande como 
+para ser una zona separada de otras de mayor tamaño de las que podrían depender. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Figura 2. Zonas con Coordinador de Zona y Encuestadores 
+ 
+Fuente: Elaboración propia 
+ 
+En la figura 3, se puede observar que existieron cuatro zonas en las que se dio el segundo 
+tipo de estructura jerárquica en terreno, consistente en un Coordinador de Zona que contó 
+
+
+=== PDF PAGE 19 ===
+ 19 
+con varios Coordinadores de Grupo a su cargo. Por tanto, el Coordinador de Zona no tuvo 
+un grupo propio de encu estadores; esta estructura, se dio en regiones en que la muestra 
+fue bastante grande y, por tanto, el Coordinador de Zona se enc argó de administrar la 
+muestra y repartirla entre sus  Coordinadores de Grupo. En este tipo  de estructura, en 
+algunos casos hubo varios Coordinadores de Grupo en una misma ciudad, y Coordinadores 
+de Grupo en otras ciudades dentro de la misma región, usándose como sede la capital 
+regional. 
+En el caso de Santiago, esta estructura se dio de manera doble, puesto que se tuvieron dos 
+Coordinadoras de Zona cada una con sus propios Coordinadores de Grupo. Esto se planificó 
+así, debido a la cantidad de muestra asociada a la Región Metropolitana. 
+ 
+ 
+ 
+ 
+ 
+ 
+Figura 3. Zonas con Coordinador de Zona y Coordinadores de Grupo 
+ 
+Fuente: Elaboración propia 
+ 
+Como se puede apreciar en la figura 3, hubo dos zonas en las que el Coordinador de Zona 
+contó con un Coordinador de Grupo y, a la vez, con su propio grupo de encuestadores. Esta 
+estructura, se generó en regiones en las que la muestra en cada sede fue muy pequeña 
+como para tener Coordinadores Zonales en cada una pero a la vez la muestra no era lo 
+
+
+=== PDF PAGE 20 ===
+ 20 
+suficientemente grande como para que fuera eficiente contar con un Coordinador Zonal y 
+un Coordinador Grupal por cada ciudad sede (fue el caso de la Región de Valparaíso). 
+En estas zonas , Temuco y Talca , el Coordinador Zonal se encargó  del gr upo de 
+encuestadores que trabajó en la sede regional, y existió un Coordinador de Grupo en la otra 
+sede de la región. En el caso de Talca, la Coordinadora Zonal coordinó a los encuestadores 
+tanto de Talca como de Curicó, debido a la cercanía entre ambas ciudades. 
+ 
+
+=== PDF PAGE 21 ===
+ 21 
+Figura 4. Zonas con Coordinador de Zona a cargo de Encuestadores y Coordinador de 
+Grupo 
+ 
+Fuente: Elaboración propia 
+1.2.2 Protocolo de contacto 
+La muestra EPS 2015 estuvo compuesta por dos tipos de registros: los que fueron parte de 
+la muestra EPS 2012 (ya sea de personas entrevistadas o no entrevistadas en esa ronda), 
+y los registros que forma ron parte de la muestra de refresco  (de personas que fueron 
+entrevistadas por primera vez en la ronda 2015), las que fueron seleccionadas de un marco 
+administrativo. 
+Los encuestadores, cumplieron un rol fundamental en el proceso de recolección de datos de 
+la EPS ya que fueron los responsables de la implementación de dos grandes procesos – la 
+localización y el reclutamiento de los miembros de la muestra.  
+ El proceso de localización y verifica ción de  las direcciones y datos de 
+contacto consistió en : (1) re -localizar a los “miembros antiguos del panel”, 
+utilizando las direcciones y datos de contacto recolectados en rondas anteriores; (2) 
+localizar por primera vez a los “nuevos mie mbros afiliados”, utilizando los nombres 
+y direcciones disponibles en registros administrativos provistos por la Subsecretaría 
+de Previsión Social; y (3) localizar por primera vez a los “nuevos miembros no -
+afiliados”, utilizando los nombres y direcciones p rovistas por la Subsecretaría de 
+Previsión Social.  
+ El proceso de reclutamiento, o petición de información, consistió en: (1) volver 
+a solicitar la participación en el estudio a los “miembros antiguos del panel”; y (2) 
+informar y motivar a los “miembros nuevos” (afiliados y no-afiliados) a participar en 
+el estudio. 
+ 
+
+
+=== PDF PAGE 22 ===
+ 22 
+a) Acerca del proceso de localización y verificación de domicilios y contacto 
+de encuestados. 
+El CEEL rec ibió todo el material levantado , por otras instituciones , relativo a la 
+localización y con tactos de los entrevistados ; los profesionales del CEEL revisaron, 
+analizaron y actualizaron los datos de contactos. A priori, y partir de la experiencia en 
+estudios anteriores de esta envergadura, el proceso de verificación, y localización de los 
+encuestados se realizó durante el trabajo de campo.  
+El registro de la actualización de la información de contacto fue realizado en las Tablet, 
+por lo cual toda la información relativa a: la identificación de la persona, dirección 
+completa, tipología de Disposició n Final de Casos fue permanentemente registrada 
+durante el trabajo de campo en el Sistema de Control y Seguimiento de la Muestra.  
+b) Acerca del proceso de reclutamiento o petición de información 
+Las instituciones que trabajan en el campo de la investigación con personas, desde los 
+laboratorios que prueban medicamentos experimentales a través de ensayos clínicos , 
+hasta los centros de investigación que miden actitudes y comportamientos a través de 
+encuestas a la población, tienen la responsabilidad ética de desarrollar su actividad bajo 
+principios y códigos de buenas prácticas que velen por la integridad de sus 
+investigaciones. Existen muchas publicaciones referidas a prácticas éticas de la 
+investigación, pero en el contexto de la investigación con encuestas una de las más 
+relevantes es el “Código de Ética Profesional del Instituto Estadístico Internacional ” 
+(1986). En el mundo anglosajón, los referentes actuales más relevantes para la práctica 
+de la investigación social son los códigos publicados por la American Statistical 
+Association of Public Opinion and Research  (AAPOR, 2015)4 y el Economic and Social 
+Research Council (ESRC, 2012)5.  
+En el contexto chileno, la Ley 20.120 sobre Investigación Científica en el Ser Humano6, 
+y su Reglamento 7, se enmarcan exclusivamente en el ámbito de las investigaciones 
+biomédicas y no abarcan las investigaciones sociales ; el Instituto Nacional de 
+Estadísticas, por otra parte, elaboró en 2013 el Código de Buenas Prácticas de las 
+Estadísticas Chilenas, sin embargo ellas conforman un marco de referencia acotado a 
+                                           
+ 
+4 Ver “ The Code of Professional Ethics and Practices” (AAPOR, Revised 2015) en: 
+http://www.aapor.org/AAPORKentico/AAPOR_Main/media/Code-of-Ethics-Changes/AAPOR-Code-Final-Council-Approved-
+Language_May-11-2015.pdf  
+5 Ver “ESRC Framework for Research Ethics (FRE) 2010” (Updated in 2012) en: 
+: http://www.esrc.ac.uk/files/funding/guidance-for-applicants/esrc-framework-for-research-ethics-2010/  
+6 Ver Ley 20.120 (SALUD, 2011) en: http://www.leychile.cl/Navegar?idNorma=253478  
+7 Ver Decreto 30 (SALUD, 2013) en: http://www.leychile.cl/Navegar?idNorma=1032919  
+
+=== PDF PAGE 23 ===
+ 23 
+las entidades responsables de elaborar estadísticas oficiales en Chile 8. En atención a la 
+relevancia y pertinencia para la actividad que realiza el Centro UC, éste organismo  
+adhiere al Código de Ética y Prácticas Profesionales de la AAPOR y, por consiguiente, se 
+encuentra comprometido a  mantener: los más altos  estándares de  competencia 
+científica, la integridad, la responsabilidad y la transparencia en el diseño, la realización, 
+el análisis y la presentación de informes  de su trabajo y en sus interacciones con los 
+participantes, los clientes y los usuarios de sus investigaciones.  
+En relación al contacto con participantes, cabe mencionar que durante el año 2015 cerca 
+del 80% de los miembros del panel EPS fueron contactados por contratistas de la 
+Subsecretaría de Previsión Social con el objetivo de actualizar datos de contacto y 
+recordar la aplicación de una nueva ronda de entrevistas 9. A todos los miembros del  
+panel, se les informó que serían entrevistados próximamente por lo que, a juicio de la 
+Subsecretaría de Previsión Social, la aplicación de la encuesta debería fluir sin 
+contratiempos mayores 10. También , en 2015 , un contratista de la Subsecretaría de 
+Previsión Social contactó y seleccionó la muestra de 3.500 nuevos miembros (afiliados 
+y no-afiliados)11. 
+  
+1.2.3 Sistema de incentivos 
+El CEEL diseñó 3 instrumentos que tuvieron por objetivo incentivar a las personas 
+seleccionadas a participar en el estudio , aumentando la probabilidad de que acced ieran a 
+responder la encuesta. Además, considerando que es una encuesta longitudinal y que es 
+necesario que la participación de los entrevistados no disminuya en el tiempo, se diseñó un 
+cuarto instrumento donde se entregó a las personas entrevistadas un resumen de los 
+principales resultados de la VI Ronda de la EPS motivándolos a seguir participando en rondas 
+futuras del estudio (proceso que también se denominó de “fidelización”).  
+La estructura de incentivos fue permanente, buscó por un lado fomentar la participación en 
+el estudio (tanto de la muestra panel como de la muestra refresco) y, por otro, mantener a 
+los participantes informados y contactados. 
+                                           
+ 
+8 “Este Código de Buenas Prácticas se basa en quince princip ios, cuyo propósito consiste en aumentar la confianza de los 
+usuarios en la autoridad estadística y reforzar la calidad de las estadísticas que se elaboran y difunden bajo la responsabilidad 
+de dicha autoridades, fomentando al mismo tiempo la aplicación de los mejores métodos y prácticas internacionales en materia 
+de las estadísticas públicas y oficiales”  (INE 2013, pág. 3). 
+9 Ver en respuesta Nº3 a preguntas de licitación: “(…) la Subsecretaría dispone de información reciente respecto a los domicilios 
+de la muestra completa a entrevistar. Por un lado, se tiene la verificación de domicilios de más del 80% de la muestra panel 
+(…)” 
+10 Ver en respuesta Nº3 a preguntas de licitación. 
+11 Ver en respuesta Nº3 a preguntas de licitación: “(…) por otro, se dispondrá del empadronamiento de los nuevos no afiliados 
+así como de las direcciones de los nuevos no afiliados.” 
+
+=== PDF PAGE 24 ===
+ 24 
+De acuerdo a esto, se entregó en  la primera visita la carta de presentación, el calendario 
+EPS con información del estudio, y un tríptico; todos estos materiales, contaron con datos 
+de contacto y logos de las instituciones participantes ya que se consideraron como factores 
+que entregaban seguridad al encuestado. Una vez publicados los resultados, éstos serán 
+entregados a los encuestados por correo electrónico y a través de la página web de la EPS 
+2016, de manera de visibilizar el aporte de la información entregada. Todas estas entregas 
+contarán con un medio de verificación que será entregado a la Subsecretaría.  
+1- Calendario 2016: en el calendario se marcaron los meses en que la EPS se 
+encontraría en proceso de recolección de información (trabajo de campo), además 
+entregó información del tel éfono de contacto (servicio telefónico de atención de 
+encuestados) y la página WEB de la VI Ronda que contiene información adicional del 
+estudio, donde se podía verificar el nombre de los encuestadores e ingresar 
+preguntas mediante la sección de contacto. 
+2- Folleto de Bienvenida para los encuestados VI Ronda EPS (tríptico): este folleto 
+explica qué es la Encuesta de Protección Social, indica cuál ha sido su impacto en 
+las políticas públicas, el número de personas que han sido entrevistadas en cada 
+ronda, los contenidos de la encuesta, y algunos resultados que pueden llamar la 
+atención de los encuestados. Finalmente, se indica por  qué es importante la 
+participación de la persona seleccionada ; también, se entrega la información de 
+contacto del Coordinador Nacional de Terreno del CEEL (en caso de que la persona 
+tenga alguna duda).  
+ 
+1.2.4 Gestión del trabajo de campo 
+Durante el trabajo de campo de la Encuesta de Protección Social se entregaron cargas de 
+trabajo fijas a cada encuestador ; estas cargas de trabajo , fueron organizadas por cada 
+coordinador de grupo utilizando como criterios proximidad geográfica de las unidades 
+muestrales y dificultad de las comunas, como puede ser la mayor dispersión de los casos, 
+lugares de difícil acceso o menor disposición a contestar. El proceso de elaboración de cargas 
+de trabajo se realizó en cada sede , una vez que los equipos recib ieron la muestra de la 
+Encuesta de Protección Social. Por cargas de trabajo se entendió un conjunto de direcciones 
+u órdenes de trabajo que recibió el encuestador previo al inicio del trabajo de campo. Estas 
+cargas de trabajo correspond ieron a un set de hojas de ruta , donde se identificaban las 
+direcciones primarias y secundarias, una dirección primaria correspondió a la ubicación del 
+entrevistado en la última EPS de la cual participó y una dirección secundaria la ubicación 
+registrada en rondas anteriores . En general , las cargas de trabajo dependieron de la 
+disponibilidad de encuestadores en cada zona, sin embargo, estas fluctuaron entre 5 y 10 
+direcciones por encuestador. Para la estimación de carga de trabajo preliminar , se utilizó 
+como cantidad promedio de direcciones por encuestador 7 direcciones a la semana. En total, 
+se estimaron 2.667 cargas de trabajo de tamaño promedio 7 direcciones. En la siguiente 
+Tabla se detalla la distribución por región.  
+
+=== PDF PAGE 25 ===
+ 25 
+ 
+ 
+ 
+ 
+Tabla 4. Número de Cargas de Trabajo  
+Región 
+Muestra 
+objetivo total 
+estimada 
+Número de Cargas de 
+Trabajo        (Carga 
+promedio=7 encuestas 
+semanales) 
+Semanas de 
+Levantamiento 
+Número de 
+Encuestadores  
+1 201 28,7 8 4 
+2 564 80,6 16 5 
+3 337 48,1 8 6 
+4 854 122,0 12 10 
+5 1.957 279,6 12 23 
+6 987 141,0 8 18 
+7 1.191 170,1 12 14 
+8 2.329 332,7 16 21 
+9 937 133,9 12 11 
+10 1.078 154,0 8 19 
+11 150 21,4 8 3 
+12 187 26,7 8 3 
+13 7.343 1049,0 16 66 
+14 319 45,6 8 6 
+15 215 30,7 8 4 
+Total 18.649 2664,1 16 167 
+Fuente: Elaboración propia 
+Nota: Las semanas de levantamiento se estiman por comuna, en base a la muestra objetivo. Lo 
+presentado en esta tabla corresponde a la comuna con mayores semanas de levantamiento en la región.    
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 26 ===
+ 26 
+1.2.5 Supervisión 
+ 
+En encuestas que utilizan encuestadores, es esencial evaluar el desempeño de éstos durante 
+el trabajo de campo; en la literatura, se distinguen cuatro áreas para la evaluación de los 
+encuestadores (Biemer and Lyberg, 2005): 
+ Detección y prevención de falsificación de información; 
+ Cumplimiento de reglas e instrucciones para el encuestaje (presentadas en 
+capacitación); 
+ Desempeño en actividades administrativas (no encuestaje); 
+ Identificación de problemas en la interface cuestionario-encuestador. 
+ 
+Existen distintas estrategias que permiten evaluar las cuatro áreas identificadas; en la EPS 
+2015, se supervisó en forma directa el 100% de los cuestionarios entregados por cada 
+encuestador y en forma indirecta al menos el 15% de las encu estas realizadas por cada 
+encuestador. Con una muestra objetivo de n=18.000 hogares a entrevistar, esto último 
+implicó supervisar aproximadamente 2.700 casos.  
+En la EPS 2015, se utilizaron tres métodos distintos de supervisión: 
+ Revisión de Cuestionarios : consistió en revisar una selección de preguntas 
+estratégicas y/o complejas , del 100% de los cuestionarios aplicados por cada 
+encuestador. Esta revisión, la realizó directamente el jefe del encuestador a través 
+de la inspección visual del cuestionario. 
+ Re-Entrevista Tradicional: consistió en volver al hogar entrevistado para : (1) 
+preguntar acerca de hechos relacionados con la aplicación de la entrevista original, 
+y (2) volver a aplicar preguntas seleccionadas del cuestionario EPS 2015. Esta 
+estrategia se aplicó al 15% de los cuestionarios aplicados por cada encuestador. 
+ Re-Entrevista con Reconciliación: consistió en volver al hogar entrevistado, para 
+verificar las respuestas provistas en la entrevista original (a preguntas seleccionadas 
+del cuestionario EPS 2015) y resolver cualquier discrepancia con los entrevistados , 
+directamente. Esta estrategia se implementó, en e l 15% de los cuestionarios 
+aplicados por cada encuestador. 
+No existe un método, que sea mejor que otro, para todas las áreas de desempeño que se 
+busca evaluar en los encuestadores; por esta razón, a través de una estrategia multi-método 
+se pretendió cubrir de mejor forma la evaluación de las distintas áreas.  
+La siguiente tabla presenta los resultados de la aplicación de encuestas de supervisión ; en 
+total se realizaron 2.569 aplicaciones, de ellas 1.645 fueron presenciales y 924 telefónicas. 
+ 
+
+=== PDF PAGE 27 ===
+ 27 
+Tabla 5. Resultados Supervisión Indirecta 
+SEDE Supervisión 
+Objetivo 
+Supervisión 
+Presencial 
+Lograda 
+Supervisión 
+Telefónica 
+Lograda 
+% 
+01 Arica 36 23 13 100% 
+02 Iquique 48 84 8 192% 
+03 Antofagasta 50 32 17 98% 
+04 Calama 35 8 17 71% 
+05 Copiapó 51 53 14 131% 
+07 La Serena 89 56 26 92% 
+08 Ovalle 38 33 13 121% 
+09 Valparaíso 155 119 45 106% 
+10 San Felipe 60 7 25 53% 
+11 Quillota 38 26 20 121% 
+12 San Antonio 18 14 6 111% 
+13 Rancagua 90 70 30 111% 
+14 San Fernando 59 38 20 98% 
+15 Talca 104 61 48 105% 
+17 Linares 84 26 32 69% 
+18 Concepción 174 130 79 120% 
+19 Los Ángeles 86 32 29 71% 
+20 Chillán 54 10 19 54% 
+21 Temuco 78 38 25 81% 
+22 Angol 69 43 22 94% 
+23 Valdivia 42 36 12 114% 
+24 Puerto Montt 41 30 15 110% 
+25 Osorno 48 37 17 113% 
+26 Castro 54 35 18 98% 
+27 Coyhaique 23 15 10 109% 
+28 Punta Arenas 24 20 12 133% 
+29 Santiago 528 274 206 91% 
+30 Santiago 396 295 126 106% 
+TOTAL 2549 1645 924 101% 
+Fuente: Elaboración propia 
+ 
+El procedimiento de selección de encuestas , a las cuales se aplicó el cuestionario de 
+supervisión, se presenta a continuación.  
+A partir de los datos ingresados de encuestas logradas, se seleccionaron de forma aleatoria 
+encuestas de cada encuestador para ser supervisadas. Esta selección se realizó 
+considerando que se incluyeran todas las sedes donde se aplicaron encuestas, y a todos los 
+
+=== PDF PAGE 28 ===
+ 28 
+encuestadores que hubieran participado del proceso. Esto fue importante, para evitar que 
+se generaran errores sistemáticos por parte de encuestadores o en ciertas zonas específicas.  
+Adicionalmente a las encuestas seleccionadas por la coordinación ce ntral del CEEL, cada 
+coordinador de sede podía aplicar el cuestionario de supervisión a los casos que estimase 
+necesario (selección discreta), por ejemplo, ante la sospecha de falsificación por parte de 
+un encuestador ; estos casos , debían ser informados a la coordinación central para ser 
+incluidos en la muestra de supervisión indirecta. 
+Para cada sede, se seleccionó un total de encuestas a supervisar de manera que cumpliera 
+con las cuotas de 10% presencial y 5% telefónico. De esta forma, cada coordinador de sede 
+recibía un listado de folios que debía ser supervisado de manera presencial, mientras que 
+los llamados telefónicos se realizaron desde Santiago. Si en terreno no fue posible ubicar a 
+un entrevistado para aplicar el cuestionario de supervisión, el coo rdinador informaba a la 
+coordinación central para que fuese incluido en los llamados telefónicos, y se le entregaba 
+un nuevo caso a supervisar de manera presencial. 
+Una vez seleccionadas las encuestas a supervisar, los controladores, que son encuestadores 
+con experiencia y que han sido previamente capacitados tanto en el proceso de la encuesta 
+como en el proceso de supervisión, asistían o se comunicaban telefónicamente con la 
+persona seleccionada y procedían a aplicar el cuestionario de supervisión.  
+El cuestionario o pauta de supervisión, contenía preguntas detalladas sobre los siguientes 
+aspectos: i) cumplimiento del protocolo de entrevista, ii) la verificación de la aplicación del 
+cuestionario, iii) la completitud del desarrollo del cuestionario, iv) el manejo de la situación 
+de entrevista por parte del encuestador , y v) l a efectiva aplicación de algunos ítems 
+considerados claves. 
+La encuesta de supervisión , podía realizarse en Tablet o en papel ; una vez realizada la 
+encuesta de supervisión , podían surgir tres resultados distintos: encuesta aprobada sin 
+comentarios, encuesta aprobada con comentarios y encuesta reprobada. El primer caso, es 
+cuando la supervisión demuestra que el encuestador aplicó la encuesta de la manera 
+requerida y no hay mayores comentarios a realizar ; el segundo caso , ocurre cuando la 
+encuesta se realizó bien en su mayoría, pero existen ciertos errores o sugerencias que el 
+encuestador debe recibir para una próxima aplicación; finalmente, una encuesta reprobada 
+será eliminada de la base de datos y deberá volver a realizarse. 
+Los ítemes claves del cuestionar io de supervisión, sobre los cuales se aprobó la encuesta 
+fueron los siguientes: 
+• CNF.010 ¿Vive en este domicilio [NOMBRE ENTREVISTADO], [SEXO  
+ENTREVISTADO], [EDAD ENTREVISTADO]?. 
+• CNF.050 En el último mes, ¿vino un encuestador a hacerle una encuesta?. 
+• CNF.060 ¿Recuerda Usted haber respondido esta encuesta o que  alguien de su 
+familia la haya respondido por Usted?. 
+
+=== PDF PAGE 29 ===
+ 29 
+• REP.010 Por favor, ¿podría indicarme los nombres de las personas que  viven 
+habitualmente en su hogar?. 
+• REP.070 ¿Usted se encontraba trabajando al momento de responder la encuesta?. 
+• REP.150 ¿Se encuentra afiliado al sistema previsional, es decir, cotiza o ha cotizado 
+alguna vez en su vida?. 
+ 
+Una encuesta fue rechazada si se presentaron las siguientes situaciones: 
+ Que en el domicilio registrado no viva el entrevistado (pregunta CNF.010). 
+ Que el entrevistado señale no haber recibido la visita de un encuestador (pregunta 
+CNF.050). 
+ Que el entrevistado señale no haber respondido el cuestionario (CNF.060). 
+ Que todos los integrantes del hogar indicado por el entrevistado no coincidan con 
+los integrantes registrados en el cuestionario original (pregunta REP.010). Para 
+cotejar lo anterior, el cuestionario en Tablet presenta ba la respuesta del 
+entrevistado, en el cuestionario original. 
+ Que la situación laboral d el entrevistado difiera de lo señalado en la entrevista 
+original (pregunta REP.070). Para corroborar lo anterior, el cuestionario en Tablet 
+presentaba la respuesta del entrevistado en el cuestionario original. 
+ Que la situación previsional del entrevistado difiera de lo señalado en la entrevista 
+original (pregunta REP.150). Para comprobar lo anterior, el cuestionario en Tablet 
+presentaba la respuesta del entrevistado en el cuestionario original. 
+Finalmente, el equipo de controladores le informaba al Coordinador de Control los resultados 
+de las supervisiones y , éste, era quien le transmitía Coordinador Nacional de Terreno  los 
+resultados del proceso, proveyendo la retroalimentación necesaria al Coordinador de Sede 
+y encuestadores para mejorar su trabajo en terreno. 
+El total de cuestionarios de supervisión aplicados es de 2.569 casos , de los cuales 2.25 4 
+fueron casos seleccionados de manera aleatoria y 315 de forma discrecional. Lo anterior , 
+correspondió al 101% del total de encuestas por supervisar. 
+De los 324 encuestadores que participaron del levantamiento de la EPS  2015, 306 (95%) 
+fue supervisado al menos con una encuesta control.  
+En cuanto a los resultados del proceso de supervisión, se tuvo que un 99,8% de los 
+entrevistados fueron localizados nuevamente en las direcciones registradas en la primera 
+encuesta. 
+ 
+ 
+ 
+
+=== PDF PAGE 30 ===
+ 30 
+1.2.6 Detección casos difíciles 
+Un ejercicio constante del trabajo de campo, establecido expresamente en las bases de la 
+licitación además, fue determinar los c asos que dificultaban el avance del terreno. Estos 
+casos se tipificaron de la siguiente manera: 
+Caso Difícil Tipo 1: Rechazo sostenido del entrevistado, se identifican aquellos folios con 
+al menos dos visitas con resultado CDF=211 (se rechazó la entrevista), y que cada visita 
+haya sido realizada por encuestadores distintos.  
+ 
+Caso Difícil Tipo 2: Viviendas de difícil acceso, como, por ejemplo: edificios antiguos, sin 
+conserje, que tienen acceso cerrado todo el día. Se identifican aquellos folios cuya última 
+visita, corresponda al CDF=22312 (se impidió acceso a la vivienda). 
+ 
+Caso Difícil Tipo 3: Viviendas recurrentemente vacías. Se trata de aquellos folios con 3 o 
+más visitas, y en horarios diferentes, con resultado 224. 
+ 
+Caso Difícil Tipo 4: Entrevistados difíciles de ubicar. Son los folios con 3 o más visitas, y 
+en horarios diferentes, con resultado 225. 
+ 
+Caso Difícil Tipo 5: Problemas de idioma. Se trata de resultados de visitas, con CDF=233.  
+ 
+Caso Difícil Tipo 6: Áreas peligrosa o de difícil acceso. Son los resultados de visitas, con 
+CDF=317. 
+ 
+Caso Difícil Tipo 7: Direcciones no encontradas. Se identifican con los resultados de visitas 
+CDF=318. 
+ 
+Caso Difícil Tipo 8. Cambio de dirección desconocida. Se identifican con los resultados de 
+visitas, CDF=320. 
+ 
+Caso Difícil Tipo  9. Direcciones que no corresponden a viviendas, o viviendas 
+desocupadas. Se identifican los folios cuya última visita , tenga resultado CDF=451, 452, 
+453, 454, 461, y 462. 
+ 
+ 
+ 
+ 
+ 
+                                           
+ 
+12 Ver detalle de códigos de disposición final en Anexo N°2 
+
+=== PDF PAGE 31 ===
+ 31 
+ 
+ 
+ 
+
+=== PDF PAGE 32 ===
+ 32 
+1.2.7 Resultados del trabajo de campo 
+La Tabla 6 presenta los principales resultados del trabajo de la ronda VI EPS. 
+ 
+Tabla 6. Resultados del trabajo de campo VI Ronda EPS 
+  
+Mues
+tra Contacto Logro 
+Entrevistados 
+vivos 
+Fallecidos con 
+cuestionario 
+Fallecidos sin 
+cuestionario 
+Impedi
+dos 
+  n n % n % n % n % n % n % 
+Muestra Panel 
+18.64
+9 
+12.3
+52 
+66,
+2 
+11.1
+63 
+59,
+9 10.128 57,5 692 3,7 271 1,5 72 
+0,
+4 
+2002-2004-2006-
+2009-2012 5.846 4.837 
+82,
+7 4.553 
+77,
+9 4.399 77,3 108 1,8 21 0,4 25 0,4 
+2002-2004-2006-
+2009 3.363 2.180 
+64,
+8 1.959 
+58,
+3 1.567 52,7 290 8,6 86 2,6 16 0,5 
+2002-2004-2006-
+2012 490 327 
+66,
+7 298 
+60,
+8 290 60,2 6 1,2 1 0,2 1 0,2 
+2002-2004-2006 1.146 502 
+43,
+8 405 
+35,
+3 328 30,7 50 4,4 24 2,1 3 0,3 
+2002-2004-2009-
+2012 233 185 
+79,
+4 171 
+73,
+4 163 72,4 6 2,6 2 0,9   0,0 
+2002-2004-2009 339 193 
+56,
+9 163 
+48,
+1 138 43,9 21 6,2 4 1,2   0,0 
+2002-2004 725 275 
+37,
+9 202 
+27,
+9 164 23,9 20 2,8 15 2,1 3 0,4 
+2002-2006-2009-
+2012 578 439 
+76,
+0 401 
+69,
+4 387 68,6 6 1,0 3 0,5 5 0,9 
+2002-2006-2009 544 297 
+54,
+6 257 
+47,
+2 226 44,1 21 3,9 8 1,5 2 0,4 
+2002-2006-2012 122 75 
+61,
+5 66 
+54,
+1 63 52,9 2 1,6 1 0,8   0,0 
+
+=== PDF PAGE 33 ===
+ 33 
+2002-2006 432 164 
+38,
+0 115 
+26,
+6 92 22,5 14 3,2 6 1,4 3 0,7 
+2002-2009-2012 95 67 
+70,
+5 57 
+60,
+0 56 59,6   0,0 1 1,1   0,0 
+2002-2009 233 109 
+46,
+8 88 
+37,
+8 77 34,7 7 3,0 2 0,9 2 0,9 
+2002 914 240 
+26,
+3 156 
+17,
+1 120 13,7 13 1,4 21 2,3 2 0,2 
+2004-2006-2009-
+2012 1.670 1.392 
+83,
+4 1.328 
+79,
+5 1.292 79,1 24 1,4 7 0,4 5 0,3 
+2004-2006-2009 1.058 677 
+64,
+0 625 
+59,
+1 485 52,8 85 8,0 50 4,7 5 0,5 
+2004-2006-2012 127 88 
+69,
+3 79 
+62,
+2 78 61,9 1 0,8   0,0   0,0 
+2004-2006 328 140 
+42,
+7 104 
+31,
+7 83 27,0 6 1,8 15 4,6   0,0 
+2004-2009-2012 64 49 
+76,
+6 44 
+68,
+8 42 67,7 2 3,1   0,0   0,0 
+2004-2009 110 50 
+45,
+5 44 
+40,
+0 37 35,9 6 5,5 1 0,9   0,0 
+2004 232 66 
+28,
+4 48 
+20,
+7 41 18,2 4 1,7 3 1,3   0,0 
+Muestra Refresco 
+14.99
+5 
+7.75
+3 
+51,
+7 
+6.84
+4 
+45,
+6 6.778 45,4 27 0,2 7 0,0 32 
+0,
+2 
+Total 
+33.64
+4 
+20.1
+05 
+59,
+8 
+18.0
+07 
+53,
+5 16.906 51,9 719 2,1 278 0,8 104 
+0,
+3 
+ 
+Fuente: Elaboración propia 
+
+=== PDF PAGE 34 ===
+ 34 
+ 
+Del total de 33 .644 personas pertenecientes a la muestra de la VI Ronda  EPS 2015, se 
+lograron contactar 20.105 personas, de las cuales 12 .352 son personas pertenecientes al 
+panel y 7.753 son personas pertenecientes a la muestra de refresco. 
+Se consideró como logro, tanto a las personas contactadas y entrevistadas como aquellas 
+que hubo contacto pero no fue posible entrevistarlas porque esta se encontraba fallecida o 
+impedida física y/o mentalmente para responder la encuesta. De esta forma, el porcentaje 
+de logro fue de un 53, 5% (18,007 personas), siendo en el panel 59 ,9% y en el refresco 
+45,6%.  
+Con respecto a los entrevistados vivos, se lograron un total de 16.906 entrevistas: 10.128 
+de la muestra panel y 6 .778 de la muestra refresco. Como porcentaje de la muestra , 
+excluyendo a los fallecidos o impedidos, esto representa un 51,9%. 
+La Tabla 7 presenta las tasas de respuesta, cooperación y rechazo según tipo de muestra y 
+participación longitudinal.  
+ 
+La tasa de respuesta (RR) corresponde a la cantidad de entrevistados , sobre el total de 
+personas en la muestra pero excluyendo a las personas fallecidas o impedidas para 
+responder; así, en el caso de la sexta ronda de la EPS, la tasa de respuesta en la muestra 
+panel fue de 57, 5% y en la muestra de refresco  45,4%; cabe destacar, que existe gran 
+variabilidad en la tasa de respuesta en la muestra panel dependiendo de la presencia o 
+participación que han tenido las personas a lo largo del estudio, por ejemplo, para aquellas 
+personas que ingresaron a la muestra en el año 2002 (y han participado en todas las rondas 
+del estudio) la tasa de respuesta es 77,3%, y 79,1% en las personas que ingresaron en el 
+año 2004 y han estado en todas las rondas sub-siguientes. En contraste, aquellas personas 
+que han sido entrevistadas en menos número de rondas cae la tasa de respuesta, en el caso 
+extremo quienes solo participaron en el año 2002 la tasa de respuesta es 13,7%. 
+ 
+Tabla 7. Tasa de respuesta, cooperación y rechazo de la VI Ronda EPS 
+  RR COOP REF 
+  % % % 
+Muestra panel 57,5 89,5 5,2 
+2002-2004-2006-2009-2012 77,3 93,9 4,4 
+2002-2004-2006-2009 52,7 87,6 5,8 
+2002-2004-2006-2012 60,2 90,9 4,4 
+2002-2004-2006 30,7 77,2 6,6 
+2002-2004-2009-2012 72,4 92,1 5,3 
+2002-2004-2009 43,9 82,1 7,6 
+2002-2004 23,9 69,2 7,1 
+2002-2006-2009-2012 68,6 91,1 5,9 
+
+=== PDF PAGE 35 ===
+ 35 
+2002-2006-2009 44,1 85 4,5 
+2002-2006-2012 52,9 87,5 7,6 
+2002-2006 22,5 65,2 8,8 
+2002-2009-2012 59,6 84,8 9,6 
+2002-2009 34,7 78,6 6,8 
+2002 13,7 58,8 6,2 
+2004-2006-2009-2012 79,1 95,3 3,4 
+2004-2006-2009 52,8 90,3 3,6 
+2004-2006-2012 61,9 89,7 5,6 
+2004-2006 27 69,7 8,1 
+2004-2009-2012 67,7 89,4 8,1 
+2004-2009 35,9 86 4,9 
+2004 18,2 69,5 3,1 
+Muestra refresco 45,4 88,2 3,8 
+Total 51,9 89 4,6 
+ 
+          Fuente: Elaboración propia. 
+          Nota: se excluyen de los cálculos a las personas fallecidas (CDF=231) o impedidas (CDF=232). 
+ 
+La tasa de cooperación (COOP) corresponde a la proporción de personas entrevistas sobre 
+el total de personas contactadas, en este caso también se excluyeron del denominador a 
+las personas fallecidas o impedidas, de esta forma la tasa de cooperación corresponde a las 
+personas entrevistadas sobre el total de personas contactadas y con posibilidades de 
+contestar la encuesta. En la VI Ronda EPS 2015, se obtuvo una tasa de cooperación de 89% 
+(89.5% en la muestra panel y 88.2% en la muestra refresco ); nuevamente, se presentan 
+diferencias importantes en la tasa de cooperación en la muestra panel dependiendo de la 
+participación que han tenido los entrevistados a lo largo del estudio, en aquellas personas 
+que han participado en todas las rondas desde su selección la tasa de cooperación es 
+cercana al 95%. 
+La tasa de rechazo (REF), corresponde a la proporción de la muestra que rechaza el estudio, 
+en este caso también se excluyen del denominador fallecidos e impedidos. En la VI Ronda 
+EPS 2015 se obtuvo una tasa de rechazo del 4.6% (5.2% en la muestra panel y 3.8% en la 
+muestra refresco). En este caso , también se obtienen menores tasa s de rechazo en la 
+muestra panel. 
+ 
+1.3 Revisión y validación de bases de datos  
+ 
+
+=== PDF PAGE 36 ===
+ 36 
+1.3.1 Validación y codificación 
+a. Validación Módulo B: Historias Laborales 
+ En este módulo lo primero fue cuadrar la fecha de inicio de la primera historia laboral 
+(orden=1) con Enero de 2009 en el caso de la muestra panel, y con la fecha (mes y 
+año) en que el individuo cumplió 15 años en el caso de la muestra de refresco. Para 
+lograr esto, se aplicaron los siguientes criterios: 
+o En caso de que un individuo de la muestra panel tuviera una fecha de inicio 
+anterior a Enero de 2009, se truncó la historia para que siempre comenzara 
+desde Enero de 2009. 
+o Para la muestra refresco, se calculó la fecha en que la persona cumplió 15 
+años de edad de acuerdo a la fecha reportada en la encuesta (base 
+PORTADA) o a la fecha proveniente del marco muestral administrativo ; 
+además, se utilizó como complemento la información de la variable a9 (edad) 
+reportada en el Módulo A de la encuesta. 
+o En caso de que la fecha de inicio de la primera historia, no coincidiera con la 
+fecha en que la persona cumplió 15 años de edad (160 casos), se procedió 
+a revisar cada uno de los mismos: 
+ En caso de que la primera historia reportada fuese anterior a la fecha 
+en que la persona cumplió los 15 años de edad, se truncó la historia 
+para que comenzara en la fecha que la persona cumplió 15 años de 
+edad. 
+ En caso de que la primera historia reportada fuese posterior a la fecha 
+en que la persona cumplió 15 años de edad , y esta primera historia 
+fuera de inactividad, se cambió la fecha de inicio a cuando la persona 
+cumplió 15 años de edad. En caso de que la primera historia fuera de 
+trabajo, y la diferencia entre ambas fechas menor a 6 meses se 
+amplió la primera historia modificando la fecha de inicio a la fecha en 
+que cumplió 15 años de edad, pero si la diferencia era superior a 6 
+meses se agregó una historia inicial con inactividad. 
+ 
+ El siguiente paso fue cuadrar los universos de cada una de las preguntas de acuerdo 
+a los saltos y filtros de cada una de ellas. 
+b. Validación Módulo D: Patrimonio 
+ Se cuadraron los universos de las preguntas de acuerdo a los saltos y filtros, de cada 
+una de ellas. 
+ En el caso de las preguntas de montos, se unificaron los códigos de no respuesta 9 
+(No sabe) y 8 (No responde), en muchos casos hay respuestas 99, 9999, etc. que 
+se entienden que corresponde a un “No sabe” (9) o 88, 888, 8888, etc . que se 
+entiende que corresponden a un “No Responde” (8). 
+
+=== PDF PAGE 37 ===
+ 37 
+c. Variables de Oficio y Actividad 
+Las variables B5 y B9d , del cuestionario de la Encuesta de Protección Social , 
+consultan sobre el oficio y la actividad económica de la empresa o industria donde 
+se desempañaba el encuestado para cada una de las historias laborales declaradas. 
+Estas dos preguntas requieren una codificación estándar, comparable a otros 
+estudios nacionales o internacionales, para los cuales se utilizó el Manual de 
+Clasificación Internacional Uniforme de Ocupaciones (CIUO -88) de la Organiza ción 
+Internacional del Trabajo (OIT), y el Manual de Clasificación Internacional de 
+Industria (CIIU).  
+Adicionalmente, se realizó la codificación de los oficios declarados para los padres o 
+tutores de los entrevistados (variables H.10. MA y H.10.PA, del módulo H) siguiendo 
+la misma normativa. 
+Este trabajo, fue realizado por un equipo de 10 personas durante un plazo de 4 
+semanas. El primer día de trabajo , consistió en la capacitación del cuestionario de 
+EPS (preguntas relacionadas con la historia laboral) y del CIUO-88 junto con las 
+reglas y principios básicos de la codificación. Finalmente , se realizó un ejercicio de 
+marcha blanca para que los codificadores pudieran resolver consultas y 
+acostumbrarse al trabajo con la planilla Excel. Desde el segundo día , se trabajó en 
+la codificación de los datos ; a cargo del equipo de codificadores , estuvo una 
+supervisora encargada de resolver consultas, asignar y consolidar el trabajo diario y 
+revisar aleatoriamente el trabajo de cada codificador.  A modo de control de calidad, 
+o supervisión del proceso de codificación , se realizó una recodificación de una 
+muestra del tamaño 10% de cada variable codificada, mediante un segundo 
+codificador. 
+En total, se codificaron 25.137 registros de oficio del entrevistado, 25.029 registros 
+de actividad económica , y 9.623 registro s de oficio de los padres o tutores del 
+entrevistado. 
+ 
+d. Variables de respuesta abierta 
+Además de las variables de oficio y actividad , la EPS cuenta con 84 variables de 
+respuesta abierta  que generalmente corresponde n a los “Especifique” de las 
+alternativas “Otro(a)” ; a continuación, se presenta el detalle de las preguntas 
+abiertas codificadas y la cantidad de registros en cada una de ellas.  
+1.3.2 Imputación 
+El procedimiento de imputación de datos en la VI Ronda de la EPS se realizó en las siguientes 
+etapas: 
+ 
+
+=== PDF PAGE 38 ===
+ 38 
+1. Primero, se contó con una base de datos validada donde efectivamente se tuvo 
+claridad (para cada una de las variables de la base de datos ) respecto a  qué 
+observaciones no tenían información, en los rangos admisibles, y qué observaciones 
+tenían valores “válidos”. 
+2. Una vez que se contó con la base de datos validada, se eligió un sub-conjunto de 
+variables en las cuales se consideró necesario la imputación de datos, ya sea por la 
+cantidad de observaciones “sin dato” o por la relevancia de contar con el 100% de 
+las observaciones con dato para dicha variable. 
+3. Una vez determinado este list ado de variables , se clasificaron en tres grupos de 
+variables: (1) variable que se cuenta con información de rondas anteriores que no 
+cambian en el tiempo y por lo tanto se puede utilizar el valor de la ronda anterior 
+para ser imputado, (2) variables con las que se cuenta con información de registros 
+administrativos y este registro puede ser utilizado para imputar el dato, y (3) 
+variables que no cumplen con los criterios anteriores y se debe utilizar algún 
+procedimiento de imputación de datos en base a la información de la VI Ronda EPS 
+2015 así como información de rondas anteriores y datos administrativos (como 
+covariables). 
+4. A las variables del tercer listado, se les aplicó la prueba de Little para determinar el 
+proceso que daba origen a la falta de observaciones. 
+5. Se determinó cuáles eran las variables que tenían mayor correlación con las variables 
+del listado (3) que se debían imputar. 
+6. Se aplicaron los distintos mecanismos, de imputación, en cada una de las variables 
+teniendo presente las ventajas y desventajadas de cada una de las metodologías así 
+como las características de las variables a ser imputadas: 
+a. Imputación Hot-deck. 
+b. Imputación múltiple. 
+c. Expectation Minimization (EM). 
+7. Finalmente, se hizo  un análisis de los resultados obtenidos con la imputación, 
+analizando los estadísticos de tendencia central, di spersión, asimetría y curtósis lo 
+que permitió decidir cuál de las metodologías implementadas era la más apropiada. 
+  
+
+=== PDF PAGE 39 ===
+ 39 
+La Figura 5 esquematiza este procedimiento. 
+ 
+Figura 5. Procedimiento para la imputación de datos VI Ronda EPS 
+ 
+Fuente: Elaboración propia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+=== PDF PAGE 40 ===
+ 40 
+1.3.3 Factores de expansión 
+ 
+Los factores de expansión para la muestra de corte transversal de la VI Ronda EPS , se 
+calcularon tomando como factor base el inverso de la probabilidad de selección ajustado 
+por la no respuesta en la ronda de origen del seleccionado. Así, en esta VI Ronda EPS 2015 
+se dispuso de 4 tipos de muestra (según su origen): 
+ 
+1- Afiliados 2002: corresponde a la muestra de afiliados al sistema de pensiones 
+seleccionados para ser entrevistados en la primera ronda de la EPS realizada en el 
+año 2002. El factor de expansión base, corresponde al inverso de la probabilidad de 
+selección ajustado por la no respuesta que se obtuvo en cada una de las comunas 
+de los conglomerados seleccionados; este ajuste por no respuesta, es simplemente 
+el ratio entre la muestra seleccionada en la comu na y la muestra lograda en la 
+comuna. (Ver Hoja “Fact_Sel_R1” en el archivo Excel “Factor de Expansión Base 
+EPS.xls”). 
+2- No Afiliados 2004: corresponde a la muestra de personas no afiliadas al sistema de 
+pensiones seleccionadas para ser entrevistadas en la s egunda ronda de la EPS 
+realizada en el año 2004, y así completar una muestra representativa de la población 
+de 18 años y más. El factor de expansión base, al igual que en el caso anterior, 
+corresponde al inverso de la probabilidad de selección ajustado por la no respuesta  
+en la ronda de origen del seleccionado (2004). Este ajuste por no respuesta , es 
+simplemente el ratio entre la muestra seleccionada en la comuna y la muestra 
+lograda en la comuna. (Ver Hoja “Fact_Sel_R2noafi” en el archivo Excel “Factor de  
+Expansión Base EPS.xls”). 
+3- Nuevos Afiliados 2004: corresponde a la muestra de afiliados entre Septiembre de 
+2001 y Diciembre de 2003, corresponde al refresco de la muestra de afiliados 
+seleccionados en la primera ronda. El factor de expansión base, al igua l que en el 
+caso anterior, corresponde al inverso de la probabilidad de selección ajustado por la 
+no respuesta en la ronda de origen del seleccionado (2004). Este ajuste por no 
+respuesta, es simplemente el ratio entre la muestra seleccionada en la comuna y la 
+muestra lograda en la comuna. (Ver Hoja “Fact_Sel_R2nuevos” en el archivo Excel 
+“Factor de Expansión Base EPS.xls”). 
+4- Refresco 2015: corresponde a la muestra de refresco seleccionada para compensar 
+el envejecimiento del panel que fue actualizado , por última vez, en Diciembre de 
+2003; de esta forma , esta muestra representa a la población de personas que 
+cumplieron 18 años de edad entre Enero de 2004 y Junio de 2015. Así, se contó en 
+la VI Ronda EPS 2015 con una muestra que representó a la población de 18 años y 
+más a Junio de 2015. El factor de expansión base, al igual que en los casos 
+anteriores, corresponde al inverso de la probabilidad de selección ajustado por la no 
+respuesta de la comuna de selección. (Ver Hoja “Fact_Sel_R6” en el archivo Excel 
+“Factor de Expansión Base EPS.xls”). 
+
+=== PDF PAGE 41 ===
+ 41 
+La Tabla 9 presenta la muestra nominal, la muestra contactada, y los entrevistados, según 
+tipo de muestra. 
+ 
+Tabla 9. Distribución de la muestra nominal, contactados y entrevistados según tipo de 
+muestra 
+Tipo de muestra Muestra 
+nominal 
+Vivos no impedidos 
+Fallecidos Impedidos 
+Contacto Respuesta/Contacto 
+Afiliados 2002 15,060 9,069 8,070 759 62 
+No afiliados 2004 2,673 1,714 1,591 194 9 
+Nuevos afiliados 2004 916 534 467 10 1 
+Refresco 2015 14,995 7,687 6,778 34 32 
+Total 33,644 19,004 16,906 997 104 
+Fuente: Elaboración propia 
+ 
+Se lograron un total de 18.007 casos, el logro incluyó los entrevistados vivos más las 
+personas fallecidas (con o sin entrevista a familiar sobreviviente), y las personas impedidas 
+física o mentalmente para responder la encuesta. 
+Los entrevistados vivos alcanzan un total de 16.906 casos, los que se distribuyen entre 
+10.128 de la muestra panel y 6.778 de la muestra refresco. A estos 16.906 se les calculó el 
+ponderador o factor de expansión para representar la población de 18 años y más, a Junio 
+de 2015; para lo cual, se procedió de la siguiente manera: 
+ 
+1- Se obtuvo el factor de expansión base, según el origen de la selección (2002, 2004 
+o 2015). 
+2- Para cada uno de los tipos de muestras, por separado, se estimó un modelo de no 
+respuesta para generar los ajustes por no respuesta en base a la metodología de 
+propensity. La estimación de este modelo , contempló, primero estimar un modelo 
+de contacto en función de variabl es explicativas que estuvieran disponibles tanto 
+para los entrevistados en esta ronda como para los no entrevistados 13, y luego 
+estimar un modelo de respuesta condicional en el contacto. 
+3- Estimados ambos modelos, e independiente de si la persona fue entrevis tada o no 
+en la VI Ronda EPS 2015, se obtuvo la probabilidad de contacto y la probabilidad de 
+respuesta condicional en contacto predicha para cada persona en función de sus 
+                                           
+ 
+13 Se utilizan como regresores: sexo, tramos de edad, nivel educacional, tipo de sistema de pensiones (AFP o 
+INP), si la persona se encuentra pensionada o no, regiones y las presencias en cada una de las rondas de la 
+EPS. 
+
+=== PDF PAGE 42 ===
+ 42 
+características. El producto de estas probabilidades corresponde a la probabilidad 
+predicha de respuesta incondicional en contacto o propensity. Ambos modelos, se 
+estiman con el factor de expansión base a través de la metodología logit. 
+4- Se construyeron deciles de la muestra utilizando el propensity, y se calculó el valor 
+promedio del propensity en cada decil; posteriormente, se obtuvo el inverso de este 
+promedio lo cual corresponde al ajuste por no respuesta. 
+5- Una vez completado este proceso , para cada tipo de muestra , se tomó la muestra 
+total (sin distinguir por tipo) y se expandió utilizando el factor de expansión base 
+ajustado por la no respuesta, y se comparó la distribución de la muestra expandida 
+con las proyecciones de población del INE a junio de 2015. Se crearon celdas por 
+tramos de edad, sexo y regiones, y se calcula ron ajustes de post-estratificación en 
+cada una de estas celdas. Las celdas utilizadas son las siguientes: 
+ 
+- Sexo 
+o Hombre 
+o Mujer 
+- Tramos de edad: 
+o 18-29 
+o 30-49 
+o 50+ 
+- Regiones: 
+o XV-I-II-III 
+o VI 
+o V 
+o VI 
+o VII 
+o VIII 
+o IX 
+o X-XIV 
+o XI-XII 
+o RM 
+ 
+ 
+ 
+ 

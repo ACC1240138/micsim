@@ -1,0 +1,84 @@
+
+=== PDF PAGE 1 ===
+Guía Técnica de Acceso a la Información:                                                                    
+Encuesta de Protección Social (EPS) V Ronda 2012 
+ 
+1. Presentación 
+La presente guía está orientada a los usuarios de las bases de datos de la Encuesta de 
+Protección Social (EPS) V Ronda aplicada el año 2012. En ella, se indica cómo acceder a 
+las distintas bases de datos de la EPS,  así como a los factores de expansión que se 
+encuentran disponibles para  las mismas. 
+Para el trabajo y tratamiento de información, se utiliza el programa estadístico y 
+econométrico Stata. 
+2. Acceso y solicitud de los datos 
+La Subsecretaría de Previsión Social 1 en julio del 2013 puso a disposición del público 
+general la Encuesta de Protección Social (EPS), para los años 2002, 2004, 2006, y 2009  
+Ojo aclarar que 2012, se pone a disposición a partir de septiembre de 2015. 
+Las bases de datos de la EPS se puede n entregar en dos versiones, la primera es con 
+datos innominados y la segunda es con datos administrativos innominados. La diferencia 
+entre ambas bases se debe a que la base de datos con datos administrativos se le agrega 
+la historia previsional de afiliados activos, pensionados y fallecidos, elaborada por la 
+Superintendencia de Pensiones. Para poder acceder a dichas bases de datos, el usuario 
+debe aceptar las condiciones de uso de la misma, así como llenar un formulario de 
+acceso.  
+ 
+Una vez realizada la solicitud, la Subsecretaría de Previsión Social evaluará el 
+requerimiento y dará respuesta de aceptación o rechazo de la solicitud, la que  será 
+notificada a través de correo electrónico en un plazo máximo de 20 días hábiles, 
+contando desde la recepción de la solicitud. Este plazo podrá ser prorrogado 
+excepcionalmente por otros 10 días hábiles, cuando existan circunstancias que lo 
+fundamenten. 
+3. Estructura de las bases de datos de la EPS 2012 
+Dada la gran cantidad de información recolectada en la EPS 2012 y, considerando  que 
+existen conjuntos de preguntas y secciones en donde el entrevistado puede responder 
+más de una vez 2, se hace imposible ent regar toda la información en una sola base de 
+datos. En consecuencia y con la finalidad de que el trabajo que se realice con las bases 
+de datos sea lo más ordenado posible, la información se particionó en 20 bases de datos 
+distintas. 
+ 
+Estas bases de datos incorporan una variable llamada Folio (folio_n) ; cada uno de estos 
+Folios representa las respuestas de un individuo en particular. A través de este Folio , se 
+puede realizar la unión longitudinal con las versiones anteriores de la EPS, o también se 
+puede efectuar la unión con los factores de expansión correspondientes.  
+                                                           
+1 http://www.previsionsocial.gob.cl/subprev/ 
+2 Por ejemplo, distintas características para cada una de las historias laborales o responder a las preguntas relacionadas a 
+las carreras universitarias o cursos (puede que algún entrevistado tenga más de una carrera o curso),   
+
+=== PDF PAGE 2 ===
+ 
+A continuación se describe brevemente cada una de las bases de datos de la EPS 2012: 
+ 
+Tabla 1: Descripción de Bases de datos EPS 2012 
+ 
+Nombre de Base de datos N° Variables N° Observaciones 
+Capacitación fallecidos 26 220 
+Capacitación vivos 26 16.603 
+Carreras 20 1.190 
+Entrevistado 949 15.998 
+Entrevistado fallecido 949 216 
+Factor_EPS20123 5 15.998 
+Factor_EPS2012_Original4 3 15.998 
+Factor_EPS2012_panel 2 5.920 
+Historia familiar 39 17.734 
+Historia familiar fallecidos 39 140 
+Historia Individual 128 15.998 
+Historia Individual fallecidos 128 216 
+Historia laboral 49 27.020 
+Historia laboral fallecidos 49 252 
+Salud 166 15.998 
+Salud fallecidos 166 216 
+Sub módulo composición del hogar 23 59.717 
+Sub módulo composición del hogar fallecidos 23 611 
+Sub módulo laboral ingresos fallecidos 349 611 
+Sub módulo laboral ingresos  349 59.711 
+ 
+                                                           
+3 La base de datos “factor_EPS2012” cuenta con tres tipos de factores de expansión de tipo longitudinal. La variable 
+factor_EPS2012 hace referencia al factor de expansión corregido de acuerdo a las recomendaciones de los expertos. La 
+variable factor_EPS2012_Imputado corresponde al factor de expansión tipo transversal corregido imputando los valores de 
+0 por 1. Y por último la variable “factor” corresponde a los factores de expansión originales proporcionados por el 
+oferente adjudicado. Para mayor información remitirse a los documentos técnicos elaborados por expertos. 
+ 
+4 La base de datos factor_EPS2012_Orignal contiene el factor de expansión de tipo transversal original entregado por el 
+oferente adjudicado de la V ronda EPS. 

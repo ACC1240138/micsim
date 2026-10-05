@@ -1,0 +1,9 @@
+﻿# renv must not scan inherited / reference material: its legacy scripts load packages that are not part of this project.
+jrt/
+notes/
+_enpg/notes/
+_eps/notes/
+_enpg/docs/
+_eps/docs/
+_bib/
+_sessions/

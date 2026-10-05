@@ -1,0 +1,30 @@
+# Checks that no plaintext microdata is tracked and that every encrypted bundle decrypts to its md5.
+# Needs the repository secret ACC_DATA_KEY (Settings > Secrets and variables > Actions).
+name: data-check
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  bundles:
+    runs-on: ubuntu-latest
+    env:
+      LANG: C.UTF-8
+      ACC_DATA_KEY: ${{ secrets.ACC_DATA_KEY }}
+      RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"   # this job only needs openssl + data.table: skip the project renv library
+    steps:
+      - uses: actions/checkout@v4
+      - name: No plaintext microdata or oversized files tracked
+        run: |
+          bad=$(git ls-files | grep -v '\.md5\.csv$' | grep -Ei '\.(dta|sav|parquet|zip|7z|jsonl)$|(^|/)(ENPG_BINGE|ENPG_FULL|enpg20[0-9]{2}|data_binge[^/]*|epf_20[0-9]{2})\.rds$|(^|/)DEFUNCIONES[^/]*\.csv$' || true)
+          big=$(git ls-files -z | xargs -0 -r du -m | awk '$1 > 50' || true)
+          if [ -n "$bad$big" ]; then echo "::error::Plaintext microdata or file > 50 MB tracked"; echo "$bad"; echo "$big"; exit 1; fi
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+      - name: Install R packages
+        run: Rscript -e 'install.packages(c("openssl", "data.table"))'
+      - name: Unit test of _tools/acc_data.R
+        run: Rscript _tools/test_acc_data.R
+      - name: Decrypt every bundle and verify md5
+        if: env.ACC_DATA_KEY != ''
+        run: Rscript _tools/check_bundles.R

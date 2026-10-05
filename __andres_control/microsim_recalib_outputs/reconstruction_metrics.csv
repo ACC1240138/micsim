@@ -1,0 +1,4 @@
+"metric","cells","bias","rmse","mae","working_interval_coverage","mean_monte_carlo_sd","interpretation"
+"current",56,-2.95724314774659e-05,0.00515941420589347,0.00403756825609187,1,0.00864681120561076,"Seven-wave calibration reproduced by the engine; not held-out validation"
+"gpd",56,-0.0147044055311152,0.105285724716832,0.0806796649459628,1,0.184355179947154,"Seven-wave calibration reproduced by the engine; not held-out validation"
+"hed",56,-0.0446430894776556,0.0635863673831452,0.0505190577606775,0.645833333333333,0.013310581466285,"Seven-wave calibration reproduced by the engine; not held-out validation"

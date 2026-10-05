@@ -1,0 +1,5454 @@
+
+=== PDF PAGE 1 ===
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Informe Final 
+ 
+ 
+ 
+Supervisión Externa  
+Encuesta de Protección Social 
+2012 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+STATCOM Estadísticos Consultores Limitada 
+Marzo 2013 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Europa 1961 – Providencia – Santiago – Chile 
+                                           Teléfono   25994777 www.statcom.cl
+  
+
+
+=== PDF PAGE 2 ===
+ 
+2 
+ 
+RESUMEN EJECUTIVO 
+ 
+ 
+El presente estudio corresponde a la supervisión de la Encuesta de Protección Social a cargo de 
+la Subsecretaria de Previsión Social del gobierno de Chile. Dicha encuesta fue aplicada a fines de  
+2012 y comienzos de 2013 por el Observatorio Social de la universidad Alberto Hurtado. 
+ 
+Statcom se suma a este trabajo para supervisar, evaluar y analizar dos dimensiones de la 
+mencionada experiencia. En primer término se establece evaluar la ejecución y aplicación de EPS 
+en términos de planificación y efectividad, revisando procedimientos, bases de contactos e 
+idoneidad de encuestadores.  
+ 
+En est e sentido Statcom demuestra que es posible realizar esta aplicación en los tiempos 
+establecidos por la Subsecretaría, re -entrevistando a personas de la primera medición y sumando 
+entrevistas efectivas (No Logradas  en primera medición), en base a un trabajo de contactabilidad  
+en todas las direcciones entregadas para este efecto  y persevera en una cita agendada hasta en 
+cuarta oportunidad. 
+ 
+Se suma el análisis comparativo de ambas mediciones, indagando en los factores que 
+determinarían eventuales cambios o variaciones en las respuestas. La estrategia desarrolla análisis 
+univariados y bivariados para dos módulos del cuestionario de relevancia estratégica para la 
+Subsecretaría, esto son el modulo B: Historia Laboral, y el modulo C: Ingresos Familiares, el detalle 
+de los otros módulos de la encuesta se puede encontrar en Anexos. 
+  
+
+=== PDF PAGE 3 ===
+ 
+3 
+ 
+TABLA DE CONTENIDOS 
+ 
+ 
+RESUMEN EJECUTIVO ............................................................................................................... 2 
+1. ANTECEDENTES GENERALES .................................................................................................  5 
+1.1. OBJETIVOS ...................................................................................................................................... 5 
+2. DISEÑO DEL ESTUDIO ........................................................................................................... 6 
+2.1 DISEÑO Y SELECCIÓN DE LA MUESTRA .................................................................................................... 6 
+2.1.1 Distribución de las muestras .................................................................................................... 10 
+2.1.2 Procedimiento de selección de muestra ................................................................................... 12 
+2.2 DISEÑO DE INSTRUMENTOS ................................................................................................................ 13 
+2.3 DISEÑO PRE-TEST ............................................................................................................................. 14 
+3. DESCRIPCIÓN GENERAL DEL TRABAJO DE CAMPO: .............................................................. 16 
+3.1 RECLUTAMIENTO ENCUESTADORES ...................................................................................................... 16 
+3.2 CAPACITACIÓN ................................................................................................................................ 18 
+3.3 SUPERVISIÓN Y CONTROL DE CALIDAD .................................................................................................. 19 
+4. RESULTADOS OPERACIONALES ........................................................................................... 22 
+4.1 INICIO DE TERRENO ........................................................................................................................... 22 
+4.2 ENVÍO DE MATERIAL ......................................................................................................................... 23 
+4.3 TÉRMINO DE TERRENO ...................................................................................................................... 24 
+4.4 REEMPLAZOS ................................................................................................................................... 24 
+4.5 ESTADO DE DISPOSICIÓN FINAL DE LA MUESTRA ..................................................................................... 25 
+5. ELABORACIÓN DE BASE DE DATOS DE ANÁLISIS: .................................................................  35 
+5.1 DIGITACIÓN .................................................................................................................................... 35 
+
+=== PDF PAGE 4 ===
+ 
+4 
+ 
+5.2 VALIDACIÓN .................................................................................................................................... 35 
+5.3 CREACIÓN BASE DE DATOS: ................................................................................................................ 35 
+5.4 HOMOLOGACIÓN DE BASES DE DATOS STATCOM Y OSUAH: ................................................................. 36 
+6. CONCEPTUALIZACIÓN METODOLÓGICA PARA ESTIMAR VARIABILIDAD ENTRE MEDICIONES 37 
+6.1 ERROR DE MEDICIÓN EN ENCUESTAS DE HOGARES: ................................................................................ 37 
+6.1.1 Cuantificación del error de medición:....................................................................................... 38 
+6.2 RE-ENTREVISTA PARA DETERMINAR LA VARIANZA SIMPLE DE LA RESPUESTA: ............................................... 39 
+6.3  CONSTRUCCIÓN DE INDICADORES GENERALES ....................................................................................... 39 
+6.4 CONSTRUCCIÓN DE INDICADORES DE CAMBIO ....................................................................................... 40 
+6.5 CONSTRUCCIÓN DE INDICADORES DE DIFERENCIA ................................................................................... 41 
+7. ESTRATEGIA DE ANÁLISIS ................................................................................................... 42 
+7.1  ANÁLISIS COMPARATIVO DE LOS RESULTADOS ...................................................................................... 43 
+7.2 MODULO HISTORIA LABORAL ............................................................................................................. 45 
+7.2.1 Análisis Bivariado ..................................................................................................................... 47 
+7.3 MODULO INGRESOS ......................................................................................................................... 70 
+7.3.1 Análisis Bivariado ..................................................................................................................... 73 
+8. DISCUSIÓN FINAL ............................................................................................................. 104 
+9. BIBLIOGRAFÍA .................................................................................................................. 106 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 5 ===
+ 
+5 
+ 
+1. Antecedentes generales 
+ 
+El presente informe incluye los aspectos conceptuales considerados en la medición tales como el 
+diseño de muestra, el instrumental de campo y los procedimientos generales de aplicación de las 
+re-entrevistas, cuyo objetivo era la supervisión del trabajo de levantamiento de datos que lleva a 
+cabo la empresa responsable de la encuesta EPS del año 2012.  
+Además, el informe incluye los aspectos operacion ales, tales como el estado de disposición final 
+de la muestra, la supervisión, los planes de contingencia, la elaboración de la base de datos y la 
+validación de esta, la homologación  de bases de datos Statcom y OSUAH, libro de códigos y DVD 
+de capacitación enviado a regiones extremas. 
+ 
+1.1. Objetivos 
+ 
+Realizar aplicación presencial de la re-entrevista de la encuesta EPS, con el propósito de: 
+• Averiguar qué entrevistados falsifican los datos o entregan información dispar en 
+mediciones distintas. 
+• Evaluar si los ent revistadores no entienden bien los procedimientos de aplicación y 
+eventualmente deberían recibir mayor capacitación. 
+• Conocer varianza simple de respuesta. 
+• Estimar el sesgo de la respuesta. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 6 ===
+ 
+6 
+ 
+2. Diseño del Estudio 
+ 
+La Quinta Encuesta de Protección Social es de carácter longitudinal, realizando un seguimiento a 
+las personas previamente entrevistadas en la EPS . Además, cuenta con un grupo  de refresco, 
+constituida tanto por personas pertenecientes al universo anterior de la EPS (18 años de edad al 
+año 2004) como de personas que ingresan al universo de la EPS (que han cumplido 18 años desde 
+el año 2004). De esta forma la EPS resultante de la actual medición será una encuesta 
+representativa de la población de afiliados y no afiliados al sistema de pension es mayores de 18 
+años. El mandante espera lograr un total de 18.757 entrevistas, distribuidas en la zona norte, 
+centro y sur del país, más la Región Metropolitana.  
+ 
+Teniendo en cuenta que la EPS considera entrevistas a personas y también contiene un módul o 
+para hogares, los términos “entrevistado” y “hogar”, se utilizarán indistintamente a lo largo de 
+este informe, entendiendo que se refieren a los casos a entrevistar durante la encuesta. 
+ 
+2.1 Diseño y selección de la muestra 
+ 
+De acuerdo a lo señalado en los términos de referencia se requiere que la muestra a supervisar 
+corresponda a una selección aleatoria y representativa de la muestra original.  
+El tamaño de muestra que se propone es de 800 casos distribuidos según se indica en el cuadro 
+siguiente. 
+Cuadro 1: Muestra Tipo de Encuesta 
+Estratos (Tipo de Encuesta) Muestra 
+Entrevistas Logradas 500 
+Entrevistas No Logradas 300 
+Total 800 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 7 ===
+ 
+7 
+ 
+Para la elaboración del diseño de la muestra se ha acordado considerar como sujetos de re -
+entrevista o re-contacto los siguientes: 
+- Encuestas Logradas que  corresponde a un total de 2101 casos informados por OSUAH al 
+29 de diciembre de 2012 
+- Encuestas No Logradas que  corresponde a un total de 1256 registros obtenidos aplicando 
+los siguientes criterios: 
+De los casos “no logrados” reportados por el OSUAH (3001 casos) se observa que 223 casos tienen 
+código 36 (no se encontró dirección), 2 .462 casos tienen código 37 (no existe dirección en la 
+comuna) y 130 casos tienen código 38 (no se conoce a entrevistado en el domicilio), cabe 
+consignar que en la base de datos entregada a STATCOM se registran casos con domicilios en 
+comunas que no pertenecen a la región informada. La Subsecretaría cruzó la información de 
+contacto y pudo establecer que de los 2.815 casos que están en estas tres situaciones, hay 951 
+casos que sí registran dirección al interior de la comuna. 
+De los casos clasificados como “rechazo duro” se incluyeron - de acuerdo a la nomenclatura de 
+OSUAH- casos en que simplemente no hubo c ontacto en la 4a visita (  encuestado habitaba el 
+domicilio). Estos casos, que corresponden a código 224 también serán incluibles en esta muestra 
+(4 casos). 
+Finalmente se agregará a estos, 301 casos que han registrado problemas de  contactabilidad (a 
+diciembre 2012), que también se deben re-revisar. 
+El diseño de las muestras de re-entrevistas, tanto las logradas como las No logradas considera tres 
+grandes variables de estratificación en la distribución del tamaño de muestra de cada tipo, a saber, 
+sede y tipo de encuesta (panel).   
+En el cuadro 2 siguiente se describe  el número de casos según tipo de encuestas para el universo 
+de las Logradas, que para efectos del diseño, se constituyen en el universo a considerar. 
+  
+
+=== PDF PAGE 8 ===
+ 
+8 
+ 
+Cuadro 2: Universo de Logradas Supervisión Externa EPS total y según sede 
+Sede 
+TIPO DE MUESTRA 
+No (Refresco) Sí (Panel) Total general 
+Región 01 - Sede Iquique 26 21 47 
+Región 02 - Sede Antofagasta 5 4 9 
+Región 03 - Sede Copiapó 34 24 58 
+Región 04 - La Serena 02 5 16 21 
+Región 05 - Sede Valparaíso 01 60 72 132 
+Región 05 - Sede Valparaíso 02 30 54 84 
+Región 05 - Sede Valparaíso 03 56 100 156 
+Región 06 - Sede Rancagua 62 66 128 
+Región 07 - Sede Talca 01 104 142 246 
+Región 07 - Sede Talca 02 5 27 32 
+Región 07 - Sede Talca 03 
+ 
+3 3 
+Región 08 - Concepción 01 55 83 138 
+Región 08 - Concepción 02 19 51 70 
+Región 08 - Concepción 03 69 134 203 
+Región 09 - Sede Temuco 27 72 99 
+Región 10 - Puerto Montt 01 35 57 92 
+Región 10 - Puerto Montt 02 
+ 
+3 3 
+Región 11 - Sede Coyhaique 23 18 41 
+Región 12 - Sede Punta Arenas 14 27 41 
+Región 13 - Sede Santiago 01 19 42 61 
+Región 13 - Sede Santiago 02 57 91 148 
+Región 13 - Sede Santiago 03 12 29 41 
+Región 13 - Sede Santiago 04 3 4 7 
+Región 13 - Sede Santiago 05 19 54 73 
+Región 13 - Sede Santiago 06 12 6 18 
+Región 13 - Sede Santiago 07 4 1 5 
+Región 13 - Sede Santiago 08 8 35 43 
+Región 14 - Sede Valdivia 7 24 31 
+Región 15 - Arica 19 52 71 
+Total general 789 1312 2101 
+Peso relativo 38% 62% 100% 
+
+=== PDF PAGE 9 ===
+ 
+9 
+ 
+Por otra parte, el universo a considerar para la muestra de las N o Logradas se detalla en el cuadro 
+3, haciendo notar que el universo final quedo conformado por N=1256 registros. En el cuadro 
+siguiente se incluye la distribución del universo de No Logradas. 
+Cuadro 3: Universo de No logradas Supervisión Externa EPS total y según sede 
+SEDE 
+TIPO DE MUESTRA 
+No (Refresco) Sí (Panel) Total general 
+Región 01 - Sede Iquique - - - 
+Región 02 - Sede Antofagasta 8 4 12 
+Región 03 - Sede Copiapó 6 10 16 
+Región 04 - La Serena 02 2 1 3 
+Región 05 - Sede Valparaíso 01 - - - 
+Región 05 - Sede Valparaíso 02 2 6 8 
+Región 05 - Sede Valparaíso 03 10 9 19 
+Región 06 - Sede Rancagua  1 1 
+Región 07 - Sede Talca 01 7 6 13 
+Región 07 - Sede Talca 02 1 1 2 
+Región 07 - Sede Talca 03 1  1 
+Región 08 - Concepción 01 48 51 99 
+Región 08 - Concepción 02 7 6 13 
+Región 08 - Concepción 03 21 8 29 
+Región 09 - Sede Temuco 0 0 0 
+Región 10 - Puerto Montt 01 38 5 43 
+Región 10 - Puerto Montt 02 2 1 3 
+Región 11 - Sede Coyhaique 13 0 13 
+Región 12 - Sede Punta Arenas 19 10 29 
+Región 13 - Sede Santiago 01 138 59 197 
+Región 13 - Sede Santiago 02 75 43 118 
+Región 13 - Sede Santiago 03 51 15 66 
+Región 13 - Sede Santiago 04 110 10 120 
+Región 13 - Sede Santiago 05 64 18 82 
+Región 13 - Sede Santiago 06 179 32 211 
+Región 13 - Sede Santiago 07 48 12 60 
+Región 13 - Sede Santiago 08 56 17 73 
+Región 14 - Sede Valdivia 12 4 16 
+Región 15 - Arica 9 0 9 
+Total general 927 329 1256 
+Peso relativo 74% 26% 100% 
+
+=== PDF PAGE 10 ===
+ 
+10 
+ 
+2.1.1 Distribución de las muestras 
+La distribución de los tamaños de muestra n=500 para el caso de las Logradas y n=300 para el caso 
+de las N o logradas según las variables de estratificación antes señaladas se hará mediante 
+asignación fija, de modo de contar con al menos 10 casos de Logradas  y 5 casos de N o logradas 
+por sede. Esto tiene  por objeto poder contar con un mínimo de casos para aplicar el modelo 
+multinivel utilizando como factor la variable sede . En el cuadro 4 se incluye la distribución 
+propuesta para las Logradas. 
+Cuadro 4: Muestra de Logradas según Sede y Tipo de encuesta (muestra ideal) 
+SEDE 
+DISTRIBUCION MUESTRA (n=500) 
+TIPO DE MUESTRA 
+ 
+No (Refresco) Sí (Panel) Total 
+Región 01 - Sede Iquique 6 5 11 
+Región 02 - Sede Antofagasta - - - 
+Región 03 - Sede Copiapó 8 6 14 
+Región 04 - La Serena 02 - 10 10 
+Región 05 - Sede Valparaíso 01 10 20 30 
+Región 05 - Sede Valparaíso 02 10 15 25 
+Región 05 - Sede Valparaíso 03 15 20 35 
+Región 06 - Sede Rancagua 15 15 30 
+Región 07 - Sede Talca 01 25 32 57 
+Región 07 - Sede Talca 02 - 10 10 
+Región 07 - Sede Talca 03 - - - 
+Región 08 - Concepción 01 13 20 33 
+Región 08 - Concepción 02 5 12 17 
+Región 08 - Concepción 03 16 32 48 
+Región 09 - Sede Temuco 5 19 24 
+Región 10 - Puerto Montt 01 10 12 22 
+Región 10 - Puerto Montt 02 - - - 
+Región 11 - Sede Coyhaique 5 5 10 
+Región 12 - Sede Punta Arenas 5 5 10 
+Región 13 - Sede Santiago 01 5 10 15 
+Región 13 - Sede Santiago 02 15 20 35 
+Región 13 - Sede Santiago 03 4 6 10 
+
+=== PDF PAGE 11 ===
+ 
+11 
+ 
+Región 13 - Sede Santiago 04 - - - 
+Región 13 - Sede Santiago 05 5 12 17 
+Región 13 - Sede Santiago 06 - - - 
+Región 13 - Sede Santiago 07 - - - 
+Región 13 - Sede Santiago 08 4 6 10 
+Región 14 - Sede Valdivia 5 5 10 
+Región 15 - Arica 5 12 17 
+Total general 191 309 500 
+Peso relativo 38% 62% 100% 
+ 
+Es importante notar que hay sedes en las que no  se realizaron encuestas debido a que el número 
+de encuestas Logradas es bajo respecto de lo señalado como cuota mínima, sin embargo, esto no 
+provoca una distorsión en la representatividad de la muestra final en el ámbito de región. 
+En el caso de la muestra de No lograda s la distribución final de la muestra es como se indica en el 
+cuadro 5. 
+Cuadro 5: Muestra de No Logradas según Sede y Tipo de encuesta (muestra ideal) 
+SEDE DISTRIBUCION MUESTRA (n=300) 
+TIPO DE MUESTRA 
+No (Refresco) Sí (Panel) Total 
+Región 03 - Sede Copiapó 1 3 4 
+Región 05 - Sede Valparaíso 02 - 3 3 
+Región 05 - Sede Valparaíso 03 4 4 8 
+Región 07 - Sede Talca 01 2 2 4 
+Región 08 - Concepción 01 12 12 24 
+Región 08 - Concepción 02 2 1 3 
+Región 08 - Concepción 03 5 2 7 
+Región 10 - Puerto Montt 01 9 1 10 
+Región 11 - Sede Coyhaique 3 - 3 
+Región 12 - Sede Punta Arenas 5 2 7 
+Región 13 - Sede Santiago 01 35 12 47 
+Región 13 - Sede Santiago 02 20 8 28 
+
+=== PDF PAGE 12 ===
+ 
+12 
+ 
+Región 13 - Sede Santiago 03 12 4 16 
+Región 13 - Sede Santiago 04 25 4 29 
+Región 13 - Sede Santiago 05 16 4 20 
+Región 13 - Sede Santiago 06 40 10 50 
+Región 13 - Sede Santiago 07 10 4 14 
+Región 13 - Sede Santiago 08 12 5 17 
+Región 14 - Sede Valdivia 3 1 4 
+Región 15 - Arica 2 - 2 
+Total general 218 82 300 
+Peso relativo 73% 27% 100% 
+ 
+2.1.2 Procedimiento de selección de muestra 
+ 
+El marco muestral a utilizar para la selección de la muestra de re-entrevistas, tanto Logradas como 
+No logradas, corresponderá a los registros entregados por OSUAH.  En cada celda o estrato se hará 
+una selección por muestreo aleatorio simple de las re -entrevistas a realizar, identificando las  
+originales y sus respectivos reemplazos. 
+Cada entrevista mantendrá un único identificador, común a ambas  mediciones (original y re -
+entrevista), lo que facilitará a posteriori el manejo de la base de datos de análisis. 
+En el caso de las L ogradas dado que se llevará a cabo un análisis multinivel para el factor sede  
+sobre los indicadores de cambio se requiere de un mínimo de casos para las estimaciones, número 
+que se ha fijado en 10 casos. 
+ En el caso de las No logradas el no considera el criterio de las 10 fue por las siguientes razones: 
+- La distribución está muy con centrada en las grandes regiones y por un tema de 
+representatividad de los resultados a nivel general es conveniente clasificar en sedes más 
+pequeñas. 
+- El universo es más pequeño por lo que el análisis multinivel del factor sede se realizará 
+sobre una agrupación de regiones (regiones v/s RM). 
+- Se mantienen  las sedes que están consideradas en el caso de las L ogradas, lo que 
+corresponde más bien a una razón operacional y de tiempo. 
+
+=== PDF PAGE 13 ===
+ 
+13 
+ 
+2.2 Diseño de instrumentos 
+ 
+Luego de la elaboración del instrumento de recolección de datos definitivo, que fue aprobado por 
+la Subsecretaría de Previsión Social como método de supervisión confiable, Statcom realizó una 
+revisión exhaustiva del cuestionario completo a aplicar en las e ntrevistas originales en conjunto 
+con la contraparte, llegando a un formato consensuado para las encuestas Logradas como para las 
+No logradas. 
+Uno de los acuerdos consensuados fue agregar al instrumento nuevas variables que permitieran 
+explicar las eventuales diferencias que se observen entre ambas entrevistas, tales como: 
+preguntas con respecto al comportamiento del encuestador, al cuestionario (extensión, claridad 
+de las preguntas y sus alternativas, comprensión y precisión de las respuestas) y al context o en el 
+cual se desarrolló la entrevista. Estas preguntas fueron extraídas de modelos ya existentes 
+utilizados para medir la calidad de estos ámbitos en procesos de características afines. La 
+respuesta a cada interrogante sería operacionalizada en indicado res y utilizados en el análisis de 
+las re-entrevistas. 
+Se realizaron dos cuestionarios diferentes, por un lado, un cuestionario para aquellas encuestas 
+Logradas en la primera aplicación; por otro lado, un cuestionario para aquellas encuestas que no 
+fueron Logradas en la primera aplicación. El objetivo de cada cuestionario es el siguiente: 
+Encuestas Logradas: El objetivo principal de este cuestionario era re -entrevistar a aquellas 
+personas que ya habían contestado la encuesta EPS. El objetivo secundario fue identificar a 
+aquellas personas que no le hayan realizado nunca la encuesta EPS. 
+Encuestas no Logradas: El cuestionario tuvo como objetivo principal poder lograr una encuesta de 
+estos hogares antes no logrados.  
+ 
+Ambos cuestionarios son idénticos en el tip o de información que se pretendió  recolectar. Sin 
+embargo, la diferencia entre ambos es: 
+En el caso de l a encuesta lograda se agregaron variables con respecto al comportamiento del 
+encuestador, en relación al cuestionario (extensión, claridad de las pregun tas y sus alternativas, 
+comprensión y precisión de las respuestas) y al contexto en el cual se desarrolló la entrevista. 
+
+=== PDF PAGE 14 ===
+ 
+14 
+ 
+Otra diferencia entre los cuestionarios es la cantidad de ítems y preguntas que contiene cada uno, 
+pues el cuestionario de los casos lo grados no considera todos los ítems del cuestionario original, 
+en cambio el cuestionario de los casos no logrados es la encuesta original usada por OSUAH. 
+2.3 Diseño Pre-test 
+ 
+Para elaborar el instrumento de recolección de datos definitivo, para que fuera  aprobado por la 
+contraparte, se realizó no solo una revisión exhaustiva del cuestionario completo a aplicar en las 
+entrevistas originales, sino también se evalu ó la posibilidad de agregar al i nstrumento variables 
+que permiten explicar las eventuales diferencias que se observaron  entre ambas entrevistas, tales 
+como preguntas respecto al comportamiento del evaluador, al cuestionario (extensión, claridad de 
+las preguntas y sus alternativas, comprensión y precisión de las respuestas) y al contexto en el cual 
+se desarrolló la entrevis ta. Estas preguntas se extraen  de modelos ya existentes utilizados para 
+medir la calidad de estos ámbitos en procesos de características afines, por ejemplo: 
+- ¿El encuestador mostro credencial al realizar el contacto? 
+- ¿Insistió en la importancia de participación? 
+- ¿Respondió de manera clara las dudas que pudiese tener el entrevistado sobre el estudio? 
+- ¿Manejaba de manera clara los conceptos utilizados en el instrumento de medición? 
+- ¿Manejaba la lógica del instrumento de manera efectiva (tarjetas, saltos, filtros, etc.)? 
+- A su juicio, con una nota del 1 al 7, ¿Cómo evaluaría usted el desempeño del encuestador? 
+- Al momento en que se le efectuó la entrevista, con respecto a las condiciones de tiempo, 
+usted: contaba con suficiente tie mpo para responder la entrevista, contaba con suficiente 
+tiempo pero no quise responder la entrevista, no contaba con suficiente tiempo, etc. 
+ 
+La respuesta a cada una de estas interrogantes puede ser operacionalizada en indicadores que 
+serán utilizados en el análisis de las re-entrevistas. 
+Una vez definida la primera versión del instrumento, se realizó  un pre-test  con el fin de revisar y 
+validar dicho instrumento. No se contempló que fuese de carácter probabilístico, por dos razones: 
+1. interesa solo evaluar el instrumento en cuanto a formato y no en contenido; 2. debido a que los 
+tiempos disponibles para comenzar la fase real son muy cortos 
+
+=== PDF PAGE 15 ===
+ 
+15 
+ 
+Se aplicó dicho instrumental a una muestra dirigida en comunas del Gran Santiago divididos por 
+NSE y sexo, entregando información importante sobre: 
+- Formato del Instrumento. 
+- Orden en que están formuladas las preguntas. 
+- Categorías de respuesta. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 16 ===
+ 
+16 
+ 
+3. Descripción general del trabajo de campo: 
+ 
+A continuación se detallan los procedimientos de selección, capacitación y supervisión realizados a 
+los encuestadores Statcom con exigencias acordes al aseguramiento de la calidad de la presente 
+supervisión a la EPS. 
+3.1 Reclutamiento encuestadores 
+ 
+El equipo, destinado a la realización del estudio Supervisión Exte rna de la encuesta EPS, estuvo 
+compuesto por una Jefa Nacional de Campo, 39 encuestadores de vasta experiencia en estudios 
+sociales y probabilísticos, y un supervisor nacional. 
+ 
+El criterio de selección para los encuestadores se basó principalmente en  el c umplimiento de  
+consideraciones mínimas en su Currículum Vitae, con requisito excluyente de contar con  al menos 
+2 años de experiencia en estudios de muestras nominadas y/o que hayan tenido que realizar 
+funciones de supervisión en alguno de ello. Para esto s e pidió que completara el cuestionario de 
+las encuestas Logradas (TIPO A), luego se seleccionó a aquellos encuestadores más aptos, es decir, 
+se seleccionó a aquellos encuestadores que tenían menos de un 20% de error al aplicar el 
+cuestionario. De acuerdo a lo anterior, todos los encuestadores que participaron de este p roceso 
+de selección aprobaron. Los encuestadores seleccionados fueron los siguientes: 
+ 
+Cuadro 6: Encuestadores Seleccionados 
+Región Encuestador Hoja 
+de 
+ruta 
+A B C D E F G I J K C. 
+HOGAR 
+TOTAL 
+XV Alejandra Fuentes 100 100 90 100 100 100 100 100 100 100 100 100 99 
+I Patricia Ramírez 100 100 94 100 100 100 100 100 100 100 100 100 99 
+III Mercedes Arias 100 100 80 100 100 100 100 100 100 100 100 90 97 
+IV Ricardo Aranda 100 100 100 100 100 100 100 100 100 100 100 100 100 
+V Marisol Ulloa 100 100 100 100 100 100 100 100 100 100 100 100 100 
+V María Trigo 100 100 100 100 89 100 100 100 100 100 100 100 99 
+V Sonia Pong 100 100 87 100 100 100 100 100 100 100 100 100 98 
+VI Andrea Zambra 100 100 100 100 95 100 100 100 100 100 100 100 99 
+VII Cristina Zambra 100 100 100 100 100 100 100 100 100 100 100 100 100 
+VIII Marianela Styl 100 100 100 95 100 100 100 100 100 100 100 80 97 
+VIII Pamela Macuada 100 100 96 100 100 100 100 100 100 100 100 100 99 
+
+=== PDF PAGE 17 ===
+ 
+17 
+ 
+VIII Sandra Huilcaman 100 100 96 100 100 100 100 100 100 100 100 100 99 
+VIII Ricardo Aranda 100 100 83 100 100 100 100 100 100 100 100 85 97 
+VIII Carol Parra 100 100 100 100 100 100 100 100 100 100 100 100 100 
+IX Sonia Barría 100 100 100 100 100 100 100 100 100 100 100 100 100 
+X Andrés Moraga 100 100 100 80 99 100 100 100 100 100 100 95 97 
+X Iván Manzano 100 100 100 100 100 100 100 100 100 100 100 100 100 
+X France Marty 100 100 100 100 100 100 100 100 100 100 100 100 100 
+X Wilibaldo Vargas 100 100 95 100 100 100 100 100 100 100 100 100 99 
+XI Sylvia Almonacid 100 100 100 100 100 100 100 100 100 100 100 91 99 
+XII Estrella Candia 100 100 100 100 100 100 100 100 100 100 100 100 100 
+XIV Wilibaldo Vargas 100 100 80 95 100 100 100 100 100 100 100 100 97 
+XIV Andrés Moraga 100 100 100 100 97 100 100 100 100 100 100 100 99 
+XIII Ricardo Aranda 100 100 95 100 88 100 100 100 100 100 100 100 98 
+XIII Fernando Vega 100 100 86 100 100 100 100 100 100 100 100 100 98 
+XIII Verónica Rubio 100 100 100 100 100 100 100 100 100 100 100 100 100 
+XIII Irene Costa 100 100 100 100 100 100 100 100 100 100 100 100 100 
+XIII Diana Venegas 100 100 100 100 100 100 100 100 100 100 100 100 100 
+XIII Isabel Jorquera 100 100 100 100 100 100 100 100 100 100 100 100 100 
+XIII Camila Guiñes 100 100 90 100 100 100 100 100 100 100 100 100 99 
+XIII Cecilia Montoya 100 100 81 100 100 100 100 100 100 100 100 100 98 
+XIII Margarita Díaz 100 100 90 100 100 100 100 100 100 100 100 100 99 
+XIII Diana Galindo 100 100 95 100 100 100 100 100 100 100 100 100 99 
+XIII Karen Vergara 100 100 100 100 94 100 100 100 100 100 100 100 99 
+XIII Ximena González 100 100 100 100 100 100 100 100 100 100 100 100 100 
+XIII Víctor Santibáñez 100 100 100 98 100 100 100 100 100 100 100 100 99 
+XIII Olga González 100 100 100 100 100 100 100 100 100 100 100 85 100 
+XIII Claudio Alvarado 100 100 100 100 86 100 100 100 100 100 100 85 97 
+XIII Gemita Vásquez 100 100 95 100 100 100 100 100 100 100 100 100 99 
+ 
+Los 39 encuestadores seleccionados no desempeñaron su trabajo durante todo el proceso de 
+recolección de información, puesto que existió rotación de personal porque algunos de los 
+encuestadores seleccionados salieron de vacaciones y otros decidieron trabajar con OSUAH.   
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 18 ===
+ 
+18 
+ 
+3.2 Capacitación 
+ 
+Con el objeto de cautelar y controlar los sesgos de los encuestadores, la capacitación de Statcom 
+se basó en el entrenamiento recibido por parte de los encuestadores EPS de OSUAH, acordando 
+que los encuestadores STATCOM asistieran a la capacitación realizada por OSUAH el 4 de enero de 
+2013. En el mismo sentido, cuando fue necesario agregar nuevos encuestadores a lo largo del 
+estudio, en la capacitación de OSUAH se encontraba el jefe de proyecto para que estuviera en 
+condiciones de realizar nuevas capacitaciones con los nuevos encuestadores. 
+Además se realizó una segunda capacitación con el fin de exponer y explicar todos aquellos 
+instrumentos necesarios para la aplicación de la encuesta de supervisión de Statcom. 
+Efectuándose en dos modalidades: presencial y no presencial. El contenido de ambas modalidades 
+de capacitación es idéntico, pero cambia el formato en que se realiza. La capacitación por Skype se 
+basa en una “video llamada” donde el encargado de capacitar se contacta con aquellos 
+evaluadores que viven en regiones lejanas. Al encuestador se le envía por correo electrónico todo 
+el material que se utilizó en la capacitación presencial y se le pide que lo imprima, así al momento 
+de realizar la video llamada cuenta con todos los instrumentos, logrando entender en detalle su 
+labor en el estudio. 
+Capacitación Presencial 
+Fecha capacitación: 09-01-2013  
+Lugar de capacitación: oficinas de Statcom 
+Encuestadores asistentes: 13 
+ 
+Capacitación No Presencial 
+Fecha capacitación: 10-01-2013 a 18-01-2013  
+Lugar de capacitación: oficinas de Statcom 
+Jefes Regionales asistentes: 11 
+ 
+ 
+Los instrumentos que fueron utilizados para la capacitación son: “Presentación de la supervisión 
+externa” (.pptx), manual del trabajo de campo, instructivo del encuestador, carta de presentación 
+del encuestador (.docx), hoja de ruta de aplicación, cuestionarios y tarjeteros. 
+
+=== PDF PAGE 19 ===
+ 
+19 
+ 
+Las capacitaciones consistieron en explicar detalladamente los siguientes temas: 
+• Presentación del estudio. 
+• Presentación de estándares. 
+• Presentación muestreo de hogares. 
+• Presentación reemplazos de entrevistados. 
+• Lectura del cuestionario. 
+• Tiempo de resolución de dudas. 
+ 
+La capacitación se realizó 4 días después de la capacitación recibida por OSUAH, puesto que la 
+aprobación de los cuestionarios fue el día 7 de enero y era necesario imprimirlos para poder 
+distribuirlos a todas las regiones y así los encuestadores, el día d e la capacitación, tuvieran el 
+material en su poder.  
+ 
+3.3 Supervisión y control de calidad 
+Una vez terminado el terreno y con todo el material devuelto se inició el proceso de revisión, 
+dicho proceso tenía como objetivo evaluar la consistencia de las re -entrevistas entregadas por los 
+encuestadores en los siguientes puntos: 
+ 
+• Información completa proporcionada por el entrevistado. 
+• Cada variable con su respectiva respuesta. 
+• Uso de filtros correspondientes. 
+• Aplicación de instrucciones específicas de cada pregunta. 
+ 
+Realizado el proceso de revisión, las encuestas se entregaban a supervisión donde se evaluaba la 
+calidad de las encuestas de acuerdo a los estándares exigidos por Statcom al personal de campo. 
+ 
+ 
+
+=== PDF PAGE 20 ===
+ 
+20 
+ 
+La supervisión se desarrolló a mediados del trabajo de campo y se mantuvo hasta el cierre, 
+asegurando la calidad en todo el proceso. En este caso en particular, las actividades fueron 
+principalmente:  
+• Correcta utilización de materiales de parte del encuest ador: credenciales, cartas 
+de presentación, encuestas, tarjeteros, entre otros. 
+• Consistencia en preguntas, para ello se realizan algunas de las preguntas más 
+relevantes del cuestionario para verificar la respuesta. 
+• Se consulta a los entrevistados la opinió n sobre la calidad del trabajo del 
+encuestador, amabilidad, entrega clara y correcta de la información, entre otros. 
+ 
+El proceso de selección de la muestra a supervisar fue de carácter aleatorio a partir de las 
+encuestas efectivas entregadas por cada encue stador. Cabe destacar que se supervisó 
+adicionalmente una muestra para aquellos encuestadores ante los cuales exist ían dudas de 
+acuerdo al reporte de los Jefes Regionales y/o del Director de Campo. Dicha supervisión se 
+concentró en las encuestas con dudas, emanadas ya sea del proceso de revisión o del control de 
+los propios Jefes de Campo, incluso a solicitud de ellos mismos. 
+En e stos casos, dado que cada encuestado fue entrevistado dos veces, se propuso solo llevar a 
+cabo la supervisión telefónica con un informante calificado. Este nuevo contacto fue informado 
+verbalmente durante el proceso de re -encuestaje. Se propuso su pervisar un 40% del trabajo 
+realizado por cada encuestador de STATCOM en forma telefónica.  
+Para ello se designó una persona del equipo de STATCOM con experiencia en supervisión, que no 
+participó en la ejecución del terreno. Además se elaboró una ficha estandarizada de supervisión, la 
+cual responde a un protocolo de supervisión que incorpora todas las instrucciones.  
+El jefe de Supervisión asistió a la capacitación realizada en dependencias de Statcom,  
+incorporando de esta forma los mismos contenidos y alcances prácticos que el equipo de 
+encuestadores, revisando en conjunto la ficha estandarizada que se realizó para la supervisión. 
+ 
+ 
+
+=== PDF PAGE 21 ===
+ 
+21 
+ 
+Las principales conclusiones en la supervisión son las siguientes: 
+1. Sobre el total de 522 encuestas, se han llamado a 233 casos  de los cuales se logró 
+supervisar 52 entrevistados. El porcentaje total supervisado correspondió a un 45%, 
+logrando contactarse con el 10% de los casos logrados. 
+ 
+2. La conclusión de la supervisión da cuenta que la efectividad del Estudio es aceptable 
+debido a que:  
+• El 7% de las personas encuestadas no recuerdan que le s hayan realizado las encuestas 2 
+veces, quienes dicen que sólo Statcom les realizó el cuestionario o no recuerdan que 
+institución fue la responsable de aplicarle el cuestionario. 
+• Todas las personas supervisadas consideraron que el trato y conocimiento del estudio del 
+encuestador era adecuado, tal como se puede ver reflejado en las notas promedios 
+entregadas a los encuestadores en diferentes ámbitos: 
+- La nota promedio de las personas supervisadas acerca del manejo del cuestionario 
+y la capacidad de encuestador para resolver dudas es de un 6,1. 
+- La nota promedio de las personas supervisadas sobre la in formación que el 
+encuestador entregó sobre la supervisión externa de la encuesta EPS fue de un 
+6,1. 
+- La nota promedio entregada al profesionalismo que reflejó el encuestador durante 
+la aplicación de la re-entrevista es de un 6,5. 
+ 
+3. Por último, el 52% de las personas supervisadas asegura que el encuestador utilizó las 
+tarjetas como apoyo en la realización del cuestionario, un 3% dice que el encuestador no 
+utilizó el tarjetero y el 45% de los entrevistados no lo recuerda. 
+
+=== PDF PAGE 22 ===
+ 
+ 
+4. Resultados operacionales 
+ 
+A continuación se presentan los aspectos generales del trabajo de campo, tales como el inicio y 
+termino del trabajo en terreno, envío de material y las decisiones que se tomaron de acuerdo a los 
+distintos escenarios (reemplazos). 
+4.1 Inicio de terreno 
+El terreno comenzó el día jueves 10 de enero en la Región Metropolitana y en el resto de las 
+regiones el terreno comenzó en la semana del 14 de enero, puesto que dependía del día en que el 
+encuestador era capacitado.  
+Para lograr las 500 encuestas de los casos LOGRADOS, se realizaron las siguientes actividades: 
+-Se contactó por teléfono al encuestado para agendar una cita en los casos que el teléfono 
+correspondía. 
+-Para aquellas zonas rurales donde las distancias eran muy largas se envió a los encuestadores 
+en auto. 
+-Se hizo un barrido de todas las direcciones por “googlemaps” para entregarle mapas con las 
+direcciones a los encuestadores que no encontraron la vivienda en la primera visita. 
+Para lograr al menos las 100 encuestas de los casos No logrados , el e ncuestador debía ir 
+directamente a las 4 direcciones entregadas. 
+A mediados del trabajo en terreno, se identificó que el rescate de información estaba siendo más 
+lento de lo presupuestado , puesto que en el 60% de los casos no se encontraba al entrevistado, 
+además uno de los principales problemas que informaron los encuestadores es que las distancias 
+entre las direcciones eran muy extensas, lo que le impedía al encuestador realizar más de 6 visitas 
+diarias a hogares incidiendo en su rendimiento diario con un máximo de una o dos encuestas 
+diarias. 
+El proceso de revisión y digitación también era lento, pues esta actividad duraba 
+aproximadamente 30 minutos por encuesta, lo que tampoco estaba presupuestado en u n primer 
+momento. 
+
+=== PDF PAGE 23 ===
+ 
+23 
+ 
+Analizando esta situación, las medidas que se implementaron fueron: 
+1. Se aumentó el número de encuestadores, quienes en el momento de la capacitación son y 
+serán evaluados. La evaluación consta de la realización del cuestionario entre los 
+presentes y quienes logren un 80% del cuestionario rellenado correctamente son 
+aceptados en el estudio. 
+ 
+2. Se reforzó el call center, para que se pudieran agendar más visitas en los casos de las 
+encuestas LOGRADAS y además, estas personas son las encargadas d e buscar la dirección 
+de los casos donde no sea encontrada la vivienda. Para las encuestas NO LOGRADAS, el 
+call center les entregará a los encuestadores la verificación de las direcciones del lugar 
+donde debe ir. 
+ 
+3. El cuestionario al tener tantos filtros se volvía un poco confuso y los encuestadores podían 
+llegar a equivocarse. Es por eso que se mantuvo al menos 8 revisores diarios que vayan 
+identificando los problemas de las encuestas. 
+ 
+4. Una vez revisados los cuestionarios fue necesario corregir los que venían con algún 
+problema o en ausencia de alguna información relevante. S TATCOM dedicó un equipo de  
+5 personas  encargadas de contactar a los entrevistados y conseguir la información 
+faltante.  
+ 
+4.2 Envío de material 
+Toda la información que se entregó , informa el rol del Ministerio del Trabajo y Previsión Social 
+como mandante  y se desliga a éste como institución de cualquier contingencia que esté en el 
+marco de la aplicación de la encuesta que sea de responsabilidad de Statcom. 
+Todo el material con el qu e se trabajó en terreno (cuestionarios, tarjetas, manuales, lápices, 
+tarjetas, etc.) fue trasladado a lo largo de todo Chile a través de una empresa especializada (Chile 
+Express) el día 10 de enero y entregado a los encuestadores de la Región Metropolitana el mismo 
+día de la capacitación (9 de enero).  
+ 
+
+=== PDF PAGE 24 ===
+ 
+24 
+ 
+Chile Express  asegura la confidencialidad de la información, devolviendo el material en caso que 
+no llegue a los destinatarios y asegurando que todo lo enviado no se dañe durante el traslado. No 
+obstante, t odos los encuestadores recibieron el material que les corresponde a más tardar el 
+domingo 13 de enero. 
+ 
+4.3 Término de Terreno 
+Al igual que el inicio del terreno, el término de este ocurrió en dos fechas diferentes. Por un lado, 
+el terreno de los folios lo grados terminó el 17 de febrero y por otro lado, se terminó el terreno de 
+los folios no logrados el 24 de febrero. Todo el material se inventario  en oficina el martes 26 de 
+febrero. 
+ 
+4.4 Reemplazos 
+Se utilizó el criterio de reemplazo cuando, de acuerdo a las normas de reemplazo, un 
+entrevistado potencial (después de haber sido sorteado) no fue entrevistable por las siguientes 
+razones: 
+ 
+1. El sujeto seleccionado se niega a responder el cuestionario (Rechazo). 
+2. No fue ubicable luego de 4 visitas. 
+3. El sujeto selec cionado no se encuentra en la ciudad, su regreso es en una fecha muy 
+posterior a lo previsto. 
+4. El sujeto está enfermo o tiene impedimentos físicos graves o psicológicos (enfermos 
+mentales, personas drogadas o ebrias, etc.), lo que imposibilita para contestar la encuesta. 
+Esta razón no incluye a analfabetos ni a no videntes por cuanto a ellos se les ayuda con la 
+lectura de las tarjetas. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 25 ===
+ 
+25 
+ 
+4.5 Estado de disposición final de la muestra 
+ 
+Existen una variedad de clasificaciones de disposiciones finales en las encuestas, tal como se 
+expone en el texto “Estándar Definitions” (AAPOR, 2009)  donde un comité revisó más de una 
+docena estudios y sus clasificaciones eran todas diferentes, distinguiendo entre siete y veintiocho 
+categorías, por lo que las categorías no eran comparables entre encuestas. De acuerdo a esta 
+confusión de disposición final , y con la intención de comparar los informes EPS 2012 de OSUAH y 
+la Supervisión Externa de la encuesta EPS 2012, este estudio se basó en la propuesta de AAPOR 
+donde proponen un sistema de clasificación estandarizado para la disposición final de los casos de 
+la muestra, y una serie de fórmulas que utilizan los códigos para defin ir y calcular los diferentes 
+tipos.  
+ 
+El trabajo de campo se realizó en 14 Regiones del país (se excluyó la región de Antofagasta, tal 
+como se explica en el apartado de diseño muestral), logrando una cobertura de 23 sedes a lo largo 
+de todo el país. El det alle de estos 522 casos, el estado final de la re -entrevista y las encuestas no 
+logradas, a continuación en cuadros 7 y 8. 
+ 
+  
+
+=== PDF PAGE 26 ===
+ 
+26 
+ 
+Cuadro 7: Estado Final de la muestra de encuestas Logradas 
+SEDE DISTRIBUCION MUESTRA (n=500) 
+TIPO DE MUESTRA Total 
+No (Refresco) Sí (Panel) 
+n Logradas n Logradas n Logradas 
+Región 01 - Sede Iquique 6 4 5 3 11 7 
+Región 03 - Sede Copiapó 8 11 6 4 14 15 
+Región 04 - La Serena 02 - - 10 10 10 10 
+Región 05 - Sede Valparaíso 01 10 8 20 17 30 25 
+Región 05 - Sede Valparaíso 02 10 7 15 14 25 21 
+Región 05 - Sede Valparaíso 03 15 13 20 21 35 34 
+Región 06 - Sede Rancagua 15 8 15 12 30 20 
+Región 07 - Sede Talca 01 25 18 32 31 57 49 
+Región 07 - Sede Talca 02 - 3 10 9 10 12 
+Región 08 - Concepción 01 13 8 20 21 33 29 
+Región 08 - Concepción 02 5 4 12 12 17 16 
+Región 08 - Concepción 03 16 14 32 27 48 41 
+Región 09 - Sede Temuco 5 4 19 19 24 23 
+Región 10 - Puerto Montt 01 10 10 12 12 22 22 
+Región 11 - Sede Coyhaique 5 5 5 5 10 10 
+Región 12 - Sede Punta Arenas 5 4 5 5 10 9 
+Región 13 - Sede Santiago 01 5 6 10 9 15 15 
+Región 13 - Sede Santiago 02 15 16 20 18 35 34 
+Región 13 - Sede Santiago 03 4 5 6 5 10 10 
+Región 13 - Sede Santiago 05 5 5 12 12 17 17 
+Región 13 - Sede Santiago 08 4 6 6 4 10 10 
+Región 14 - Sede Valdivia 5 6 5 4 10 10 
+Región 15 - Arica 5 3 12 19 17 22 
+Total general 191 168 309 293 500 461 
+ 
+Es necesario indicar el proceso por el cual las cifras han ido cambiando en el tiempo, esto es, de un 
+universo de 2.101 encuestas logradas,  STATCOM realiza 522 encuestas logradas , para luego 
+solicitar folios a OSUAH con una respuesta de 485 casos.  En una tercera etapa se descubren casos 
+código 4, es decir solo con información de identificación (portada cuestionario), quedando fuera 
+de la muestra. De los 452 casos restantes, al homologar ambas bases de datos 30 casos no logran 
+finalizar el procedimiento exitosamente, con lo que la muestra final de logradas  quedó en 426 
+casos. 
+
+=== PDF PAGE 27 ===
+ 
+27 
+ 
+ 
+ 
+Cuadro 8: Estado Final de la muestra de encuestas no Logradas 
+SEDE DISTRIBUCION MUESTRA (n=300) 
+TIPO DE MUESTRA 
+No (Refresco) Sí (Panel) Total 
+n Logradas n Logradas n Logradas 
+Región 03 - Sede Copiapó 1 2 3 2 0 4 
+Región 05 - Sede Valparaíso 02 - 2 3 2 3 2 
+Región 05 - Sede Valparaíso 03 4 6 4 0 8 7 
+Región 07 - Sede Talca 01 2 2 2 1 4 3 
+Región 08 - Concepción 01 12 7 12 5 24 12 
+Región 08 - Concepción 02 2 3 1 2 3 5 
+Región 08 - Concepción 03 5 6 2 2 7 8 
+Región 10 - Puerto Montt 01 9 9 1 1 10 10 
+Región 11 - Sede Coyhaique 3 2 - 0 3 2 
+Región 12 - Sede Punta Arenas 5 4 2 3 7 7 
+Región 13 - Sede Santiago 01 35 4 12 2 47 6 
+Región 13 - Sede Santiago 02 20 0 8 1 28 1 
+Región 13 - Sede Santiago 03 12 1 4 0 16 1 
+Región 13 - Sede Santiago 04 25 3 4 0 29 3 
+Región 13 - Sede Santiago 05 16 7 4 0 20 7 
+Región 13 - Sede Santiago 06 40 10 10 0 10 10 
+Región 13 - Sede Santiago 07 10 1 4 1 14 2 
+Región 13 - Sede Santiago 08 12 2 5 3 17 5 
+Región 14 - Sede Valdivia 3 3 1 2 4 5 
+Región 15 - Arica 2 1 - 0 2 1 
+Total general 218 76 82 27 102 101 
+ 
+ 
+El resultado final del terreno dependió de cuatro situaciones ocurridas  durante el terreno, dichas 
+situaciones fueron: 
+ 
+1. Aquellas que OSUAH logró y que también fueron Logradas por Statcom 
+2. Aquellas no Logradas por OSUAH y que fueron Logradas por Statcom 
+3. Aquellas no Logradas por Statcom y Logradas por OSUAH 
+4. Aquellas no Logradas por OSUAH y no Logradas por Statcom 
+
+=== PDF PAGE 28 ===
+ 
+28 
+ 
+Es posible ver el resultado de disposición final de la muestra en  Tabla 1 y Tabla 2. Los códigos de 
+disposición están divididos en tres categorías. En primer lugar, se en cuentra las entrevistas que 
+están compuestas por dos códigos: aquellas encuestas completas y parciales, q ue corresponden 
+de acuerdo a estándares ampliamente utilizados a la proporción de todas las preguntas 
+respondidas o la administración de todas las preguntas pertinentes.  
+ 
+• Las encuestas parciales corresponden a aquellos cuestionarios que fueron contestados  
+entre 50% y 80% del total de preguntas.  
+• En cambio, se considera un cuestionario completo cuando es contestado en un 80% o 
+más.  
+En segundo lugar tenemos las encuestas elegibles en los cuales no se obtuvo ninguna entrevista, 
+dicha categoría está compuesta por tres códigos: Denegación o cancelación, no contacto y otros 
+casos.  
+• La cancelación de la entrevista corresponde a los casos en que se ha hecho algún contacto 
+con el hogar y un miembro de la familia responsable se negó a hacer la entrevista.  
+• El no contacto puede ocurrir en tres ocasiones: 1) no es posible acceder al edificio, no se 
+encontró la dirección o demandado, 3) el entrevistado no está disponible.  
+• Por último, otros casos de encuestas elegibles y que no se tuvo ninguna entrevistas 
+corresponde a situaciones en las que el demandado era elegible y no negó realizar la 
+encuesta, pero no se logró obtener la entrevista por 1)  mu erte, 2) inconveniente físico o 
+mental, 3)problemas en el lenguaje, 4)entre otros.  
+En tercer lugar, está  la categoría no elegible son aquellos casos donde el hogar elegido no tiene 
+moradores. Dicha categoría está compuesta por los siguientes códigos: fuer a de la muestra, 
+unidades no residenciales, vivienda desocupada, viviendas sin informante elegible y situaciones 
+donde las cuotas han sido llenadas. 
+ 
+• Fuera de la muestra: son aquellas unidades de la muestra que fueron incorrectamente 
+incluidos, por ejemplo por la dirección.  
+• Unidades no residenciales: Son aquellos lugares donde no hay hogares, sino que 
+corresponden a empresas, oficinas, instituciones públicas, alojamientos de grupo, entre 
+otras. 
+
+=== PDF PAGE 29 ===
+ 
+29 
+ 
+• Viviendas desocupadas: corresponde a casos donde sí hay una casa pero se encuentra 
+desocupada puesto que son casas temporales (por ejemplo, casa de veraneo). 
+• Unidades de vivienda sin encuestas elegibles: Son aquellos casos que no habita ninguna 
+persona mayor de 18 años capaz de contestar la encuesta. 
+• Por último, en  aquellos estudios donde se emplea una cuota, los entrevistadores se 
+encontraran con situaciones donde la cuota ya ha sido llenada. Por ejemplo, la cuota de 
+género.  
+  
+
+=== PDF PAGE 30 ===
+ 
+ 
+Tabla 1: Tabla rendimiento marco muestral y disposición final Logradas  
+ 
+CÓDIGO DE DISPOSICIÓN FINAL 
+REGIÓN Total 
+general I III IV V VI VII VIII IX X XI XII XIII XIV XV 
+13= Se concertó cita              6 6 
+35= Vivienda desocupada 2    3 6 3        14 
+36= No se encontró dirección  1 1 6  1 2  4   24  1 40 
+38= No lograda, en la dirección 
+no se conoce al entrevistado 5 3 1 16 3 3 13   1  1 1  47 
+111= Entrevista completa en 
+primera visita  12 10 61 12 52 62 22 18 6 2 55 10 3 325 
+112= Entrevista completa en 
+segunda visita 6 1  9 1 6 4 1 4 4 5 22  1 64 
+113= Entrevista completa en 
+tercera visita    4   3    3 9  10 29 
+114= Entrevista completa en 
+cuarta visita    1   24     1  8 34 
+211= Se niega, no tiene tiempo  4 3 4 5 5 13 9 6 4 4 3 2 5 67 
+221= No está disponible (volver) 
+primera visita 4   12  3  2 1   1  1 24 
+222= No está disponible (volver) 
+segunda visita     2    1 1  4   8 
+223= No está disponible (volver) 
+tercera visita 1    1 1 2   2  9  7 23 
+231 Persona no está presenta 
+(volver) 5   12 3 5 3 2 2 3 1 15  8 59 
+241= Vivienda habitada sin 
+moradores presentes en primera 
+visita 
+22 9  8  7 26 26 27     2 127 
+242 Vivienda habitada sin 
+moradores presentes en 
+segunda visita  3     4 16 11   4  20 58 
+243= Vivienda habitada sin 
+moradores presentes en tercera 
+visita 
+6 1     10 10 5    4 6 42 
+250= No se logró comunicación 
+con la persona (idioma, 
+discapacidad)    1 1         1 3 
+260= No lograda, entrevistado 
+falleció     1          1 
+Total general 51 34 15 134 32 89 169 88 79 21 15 148 17 79 971 
+
+=== PDF PAGE 31 ===
+ 
+ 
+En el cuadro, es posible identificar que el mayor problema de contactabilidad de los hogares 
+corresponde a los códigos de rechazo, informante no se encuentra y viviendas ocupadas sin 
+moradores. Sin embargo, los códigos de las categorías de informante elegible y no elegible no se 
+tuvieron que utilizar en gran medida, siendo el gran problema de contacto los códigos de la 
+categoría de entrevista. 
+ 
+Las disposiciones finales se pueden calcular según las siguientes tasas: 
+ 
+a. Tasa de respuesta: Corresponde el número de encuestas completas dividido por el 
+número de entrevistas (completas más parcial) más el número de no rechazo y 
+entrevistas, además de todos los casos de elegibilidad desconocido. 
+ 
+b. Tasa de contacto: Mide la proporción de  todos los casos en los que algún miembro 
+responsable de la vivienda fue contactado por el encuestador. Se calcula usando 
+sumando las entrevistas (completas más parciales) más las encuestas rechazadas y otros. 
+ 
+ 
+c. Tasa de rechazo: Es la proporción de todos l os casos en que una unidad de vivienda o el 
+demandado se niega a realizar la entrevista, o se rompe el contacto de todos los casos 
+potencialmente elegible. Corresponde al número de negaciones dividido por las 
+entrevistas (completas más parcial), además de las que no responden, además de los 
+casos de elegibilidad dudosa. 
+ 
+d. Tasa de c ooperación: Es la proporción de todos los casos entrevistados de todas las 
+unidades elegibles siempre contactadas. Corresponde al número de entrevistas 
+completas dividido por el número de entrevistas (completas más parcial) más el número 
+de no -entrevistas que involucran la identificación y el contacto con un derecho 
+demandado. 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 32 ===
+ 
+32 
+ 
+El resultado de logro de las encuestas Logradas fue de 633 contactos:  
+• Tasa de respuesta: Del total de los casos que podrían haber contestado la encuesta, el 
+57% lo contestó. 
+• Tasa de c ontacto: Del total de casos que podrían haber contestado la encuesta, se 
+contactó al 66%. 
+• Tasa de rechazo: Del total de casos que podrían haber contestado la encuesta, el 8% no 
+quiso contestarla. 
+• Tasa de c ooperación: Del total de casos que podrían haber contestado la encuesta, el 
+86% colaboró con el estudio. 
+ 
+Es necesario indicar el proceso por el cual las cifras han ido cambiando en el tiempo, esto es, de un 
+universo de 2.101 encuestas logradas, STATCOM realiza 522 encuestas logradas , para luego 
+solicitar folios a OSUAH con una respuesta de 485 casos.  En una tercera etapa se descubren casos 
+código 4, es decir solo con información de identificación (portada cuestionario), quedando fuera 
+de la muestra. De los 457 casos restantes, al homologar ambas bases de datos 30 casos no logran 
+finalizar el procedimiento exitosamente, con lo que la muestra final de logradas  quedó en 426 
+casos.  
+
+=== PDF PAGE 33 ===
+ 
+ 
+Tabla 2: Tabla rendimiento marco muestral y disposición final No Logradas  
+ 
+CDF REGIÓN Total 
+general   III V VII VIII X XI XII XIII XIV XV 
+13= Se concertó cita           0 
+35= Vivienda desocupada     2  1    3 
+36= No se encontró dirección 2 10 3 100 28 12 10 420 9 8 602 
+38= No lograda, en la dirección no se 
+conoce al entrevistado 2 4 8 16 6 1 5 112 3 1 158 
+43= Entrevistado que declara NUNCA 
+haber contestado            0 
+111= Entrevista completa en primera 
+visita 3 5 2 24 10 2 5 14 5 1 71 
+112= Entrevista completa en segunda 
+visita 1 5 1     11   18 
+113= Entrevista completa en tercera 
+visita        2   2 
+114= Entrevista completa en cuarta visita       2 8   10 
+211= Se niega, no tiene tiempo       1 97   98 
+221= No está disponible (volver) primera 
+visita           0 
+222= No está disponible (volver) segunda 
+visita 1          1 
+223= No está disponible (volver) tercera 
+visita        19   19 
+231 Persona no está presenta (volver)     1   1   2 
+241= Vivienda habitada sin moradores 
+presentes en primera visita 2 1  5    6   14 
+242 Vivienda habitada sin moradores 
+presentes en segunda visita 8 3  1    27   39 
+243= Vivienda habitada sin moradores 
+presentes en tercera visita    19   7 203 1  230 
+250= No se logró comunicación con la 
+persona (idioma, discapacidad)     1      1 
+260= No lograda, entrevistado falleció         1  1 
+261= Jornada de trabajo prolongado o 
+bisemanal         1  1 
+Total general 19 28 14 166 48 15 31 920 20 10 1270 
+
+=== PDF PAGE 34 ===
+  
+34 
+ 
+En el cuadro anterior es posible identificar el rescate de 102 entrevistas respecto al margen total 
+de 1.271 casos no logrados por OSUAH, avance que enfrentó las problemáticas de domicilios no 
+ubicables (602), errores en la numeración o en los que el/la entrevistado/a había hecho abandono 
+del domicilio (158), así como de viviendas habitadas sin moradores presentes inclusive al tercer 
+intento (230). 
+ 
+Cabe considerar que la VIII región es la que registra más entrevistas de primera oportunidad en el 
+país, destacándose también el aporte de R.M., V región y X región. 
+ 
+Así, las disposiciones finales para estos 971 casos de encuestas No Logradas son: 
+ 
+• Tasa de respuesta: Del total de los casos que podrían haber contestado la 
+encuesta, el 8% lo contestó. 
+• Tasa de c ontacto: Del  total de casos que podrían haber contestado la 
+encuesta, se contactó al 17%. 
+• Tasa de rechazo: Del total de casos que podrían haber contestado la encuesta, 
+el 8% no quiso contestarla. 
+• Tasa de c ooperación: Del total de casos que podrían haber contestado la 
+encuesta, el 46% colaboró con el estudio. 
+ 
+  
+
+=== PDF PAGE 35 ===
+  
+35 
+ 
+5. Elaboración de base de datos de análisis: 
+Este proceso se enmarca en un trabajo sistemático por etapas que tiene por objetivo generar 
+insumos de calidad que permitan analizar los datos desde fuentes depuradas y confiables. 
+5.1 Digitación 
+ 
+El proceso de digitación de la información se realizó desde el 15 de enero hasta el 26 de febrero en 
+el cual trabajaron cinco personas. Se efectuó la digitación en un sistema diseñado especialmente 
+para el estudio (Sistema desarrollado en Visual Basic sobre base de datos Access). La digitación se 
+ejecutó dos veces, para que en la superposición de ambas se identifiquen los problemas de 
+traspaso del papel a medio digitalizado. Este procedimiento permite corregir en un 100% los  
+errores de digitación. El sistema no está diseñado para entregar reportes estadísticos, solo detecta 
+los errores y solicita la corrección de la entrada de datos. 
+5.2 Validación 
+ 
+A partir del sistema Visual Basic, se realizó la comparación de las bases de datos obtenidas de la 
+doble digitación. Este sistema comparó en cada encuesta, uno a uno los campos de la base, 
+indicando en cuál de ellos se produjo la diferencia y desplegando ambos datos permitiendo 
+corregir en pantalla inmediatamente el problema. La ve ntaja principal del sistema es la rapidez 
+con que se puede corregir las diferencias. 
+5.3 Creación base de datos: 
+ 
+La creación de la base de datos final, en formato SPSS, con todas las variables y value  labels, se 
+realizó una vez que se completó la etapa de  comparación y validación de las bases de datos. Se 
+consideró también la elaboración de un Libro de Códigos, que corresponde a la descripción de 
+todas las variables, categorías de respuesta, nombre de preguntas y valores (adjuntado como 
+anexo), dicho libro  de código es distinto a la base de datos puesto que viene en formato Word y 
+describe cada variable con sus respectivas categorías. 
+  
+
+=== PDF PAGE 36 ===
+  
+36 
+ 
+5.4 Homologación de bases de datos STATCOM y OSUAH: 
+ 
+Con el objetivo de conocer la variabilidad de las respuestas es necesario homolog ar las bases de 
+OSUAH y de STATCOM. De esta manera será posible hacer los análisis estadísticos necesarios para 
+identificar la varianza. 
+De acuerdo a lo anterior, para conocer el porcentaje de igualdad que existe entre la información 
+recolectada por S TATCOM y OSUAH se realizará una serie de homologaciones  entre las bases de 
+datos (folio como identificador de casos). 
+ 
+STATCOM propone la realización de dos bases de datos. Por un lado, se creará la base denominada 
+BDSE que corresponde a toda l a información levantada en el trabajo de campo  (452 encuestas 
+logradas). Por otro lado, se creará la base BARE (Base para Análisis de Re -entrevista) que tendrá la 
+información pareada de los 500 casos de las encuestas Logradas , para el análisis comparativo que 
+se realizará con las entrevistas completas de la entrevista original (solo 423 casos consiguieron 
+parearse entre ambas bases de datos). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 37 ===
+  
+37 
+ 
+6. Conceptualización metodológica para estimar variabilidad entre mediciones 
+ 
+El objetivo fundamental de este proyecto es estimar y explicar la variabilidad que se presenta en 
+un conjunto de variables de la EPS  mediante la aplicación de la metodología de re -entrevistas, 
+procedimiento descrito en la literatura como apropiado para analizar los errores de medición en 
+encuestas a hogares. 
+ 
+La re -entrevista es la medición repetida de la misma unidad en una encuesta mediante 
+entrevistas. Permiten formular las mismas o algunas preguntas de la entrevista inicial. 
+Este procedimiento en el contexto del actual proyecto, tiene los siguientes objetivos: 
+• Averiguar si se produce algún nivel de falsificación los datos. 
+• Conocer si algún perfil de entrevistadores no entienden bien los procedimientos y por ende 
+no los aplican correctamente. 
+• Estimar la varianza simple de la respuesta. 
+• Estimar el sesgo de la respuesta. 
+Los dos primeros objetivos permiten obtener información sobre los errores de medición 
+resultantes de efectos asociados al entrevistador. Los dos últimos aportan información sobre los 
+errores de medición debido al efecto conjunto de las cuatro causas: entrevistados, cuestionario, 
+informante y forma de recopilación de datos. 
+6.1 Error de medición en encuestas de hogares: 
+ 
+EI error de medición se define como la diferencia entre el valor de una característica dada por el 
+informante y el verdadero valor (pero desconocido) de esa característica.  Por tanto, el error de 
+medición está relacionado con la observación de la variable a través del proceso de recopilación 
+de datos de la encuesta y, en c onsecuencia, algunas veces se conoce con el nombre de "error de 
+observación" (Groves, 1998 citado por Kasprzyk, 2007). 
+ 
+EI error de medición puede dar lugar tanto a sesgos como a errores variables (varianza) en una 
+estimación de ensayos repetidos de la enc uesta. EI sesgo de medición o el sesgo de respuesta se 
+producen como dirección o pauta sistemática en la diferencia entre las respuestas de los 
+informantes a una pregunta y los valores verdaderos.  
+
+=== PDF PAGE 38 ===
+  
+38 
+ 
+La varianza se produce si los valores se comunican de mane ra diferente cuando se repiten las 
+preguntas sobre las unidades (hogares, personas, entrevistadores y cuestionario) que son la causa 
+de error. La varianza de la respuesta simple refleja la variación aleatoria de la respuesta de un 
+informante a una pregunta de la encuesta cuando la pregunta se repite. Los efectos variables que 
+los entrevistadores pueden tener en las respuestas de los informantes pueden ser una causa de 
+error variable, que se conoce como varianza del entrevistador. 
+ 
+Kasprzyk, 2007, señala que hay varios planteamientos para estudiar el error de medición los cuales 
+son: 
+• Evaluar el error de medición utilizando datos de otra procedencia realizando análisis en 
+forma agregada. 
+• Obtener medidas repetidas de algunas de las unidades. 
+• Seleccionar sub -muestras aleatorias de toda la muestra de la encuesta y aplicar 
+tratamientos diferentes, como preguntas o cuestionarios alternativos o diferentes modos 
+de recopilación de datos. 
+• EI error de medición se puede evaluar en contextos cualitativos.  
+ 
+ 
+Biemer y otros (1991) citado por Kasprzyk, 2007 identifican cuatro causas fundamentales del error 
+de medición: 
+• Cuestionario. 
+• Método de recopilación de datos. 
+• Entrevistador. 
+• Informante. 
+6.1.1 Cuantificación del error de medición: 
+ 
+Los métodos para cuantificar los errores de medición que se plantean son:  
+• Experimentos con aleatoriedad Método de investigación cognitiva Re-entrevistas. 
+• Estudios de comprobación de registros  
+• Estudios sobre la varianza del entrevistador. 
+• Codificación del comportamiento del entrevistador. 
+ 
+
+=== PDF PAGE 39 ===
+  
+39 
+ 
+6.2 Re-entrevista para determinar la varianza simple de la respuesta: 
+ 
+La re -entrevista para determinar la varianza simple de la respuesta es una repetición 
+independiente de los procedimientos de la entrevista original. En la medida de lo posible se 
+repiten exactamente todas las directrices, procedimientos y procesos de la primera entrevista. 
+Por su parte, la definición de los indicadores a utilizar considerará la siguiente nomenclatura: 
+• Xij: valor observado en la i-ésima medición1 (i=1,2) para el j-ésimo individuo2 (j=1 a n) 
+• si
+2 : estimador de la varianza muestra de cada variable en la i-esima medición (i=1,2) 
+ 
+6.3  Construcción de indicadores generales 
+Para describir de una manera resumida el comportamiento de cada una de las variables en ambos 
+levantamientos se crearán los siguientes indicadores: 
+- Un estadístico estimado a partir de este tipo de re- entrevistas es la Tasa de Diferencia 
+Bruta (GDR) que se calcula como: 
+GDR= (1/n)*Σ(X1j– X2j)2 j=1,…,n 
+ 
+ 
+ 
+- Otro indicador es la Varianza Simple de Respuesta que se calcula como: 
+ 
+SVR=GDR/2 
+ 
+- En el caso de variables que tienen dos posibles resultados (dicotómica), la GDR es igual al 
+porcentaje de casos que tenían respuestas diferentes en la entrevista original y en la re -
+entrevista. 
+ 
+ 
+ 
+                                                           
+1Corresponde a las entrevistas originales y a la re-entrevistas  
+2Corresponderá a una persona o un hogar, dependiendo de la base de análisis 
+
+=== PDF PAGE 40 ===
+  
+40 
+ 
+- índice de Incongruencia (IOI), que mide la proporción de la varianza de la población total 
+atribuida a la varianza simple de la respuesta: 
+IOI=GDR/ (s1
+2 + s2
+2) 
+Dónde s1
+2es la varianza de la muestra para la entrevista original y s 2
+2 es la varianza de la muestra 
+para la re -entrevista. De acuerdo a lo sugerido por el National Center for Education Statistics3, 
+una forma de analizar e interpretar el valor resultante es aplicar el siguiente criterio: 
+• IOI < 20   : valor bajo y aceptable 
+• IOI>= 20 y IOI<= 50  : valor moderado 
+• IOI> 50   : valor alto 
+ 
+Las medidas de la varianza de la respuesta, la GDR y el IOI  proporcionan información sobre la 
+fiabilidad y coherencia de las respuestas de las preguntas de una encuesta. Es importante notar 
+que la GDR es más difícil de interpretar que el índice de inconsistencia (IOI) por lo que su utilidad 
+está más bien centrada en la comparabilidad entre preguntas, en el sentido de poder establecer 
+en cuales se observa una mayor variabilidad, pero relacionadas a su propia escala. 
+6.4 Construcción de indicadores de cambio 
+ 
+El análisis comparativo de los resultados se realizará a partir de la creación de un indicador de 
+cambio para cada variable. Su construcción se realizó a partir de la comparación de ambas 
+levantamientos, donde el indicador de cambio toma el: 
+• Valor 1 si ambas respuestas son DISTINTAS 
+• Valor 0 si ambas respuestas son IGUALES  
+Dicho indicador será analizado para cada una de las variables de cada uno de los módulos del 
+cuestionario. El porcentaje de cambio será calculado usando como base las personas que deberían 
+haber contestado la pregunta bajo el filtro que cumple la condición en la encuesta original 
+(OSUAH). 
+ 
+ 
+ 
+                                                           
+3Measurement Error Studies (NCES 1997, 97-464) 
+
+=== PDF PAGE 41 ===
+  
+41 
+ 
+6.5 Construcción de indicadores de diferencia 
+ 
+Adicionalmente al indicador de cambio se llevó a cabo la creación de los diferenciales absolutos 
+para variables cuya escala es continua, específicamente en el módulo de ingresos y de vivienda. 
+ 
+El uso de este diferencial tiene como objetivo, cuantificar la magnitud de la diferencia de aquellas 
+variables que hayan tenido un cambio en la comparación de los le vantamientos e identificar que 
+variables asociadas a la encuesta (entrevistado, hogar, entorno, etc.) explican dicho cambio. 
+ 
+En el caso del módulo de ingresos se pueden identificar dos tipos de indicadores basados en la 
+diferencia: 
+- Si uno de los dos registros posee un 0 y el otro registra $ 
+- Si uno de los dos registros posee un valor $ y el otro un valor $’  
+Ambas diferencias se calculan directamente entre el registro OSUAH y el registro STATCOM. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 42 ===
+  
+42 
+ 
+7. Estrategia de análisis 
+ 
+El presente análisis consistió en la realización de una serie de re -entrevistas que tuvieron como 
+objeto la supervisión del trabajo de levantamiento de datos. El objeto de esta metodología fue 
+aplicar un análisis comparativo entre las respuestas que pudiese entregar,  idealmente, un mismo 
+entrevistado frente al contacto, encuestador e instrumento original y frente a un encuestador 
+distinto y un extracto de las preguntas ya aplicadas, esta vez en un periodo de tiempo distinto. A 
+partir de esto se evaluó no solo el grado  de diferencia existente en las respuestas al momento de 
+realizar ambas mediciones, sino también se identificó otros factores que inciden en la variabilidad 
+de los resultados. 
+ 
+Para el análisis descriptivo de las variables se crearon dos indicadores: un indicador de cambio con 
+la finalidad identificar cuáles son las variables que variaron entre la primera aplicación y la 
+segunda aplicación, y un indicador de diferencia para cuantificar el valor de cambio en aquellas 
+variables cuantitativas. Además de la aplicación de varios indicadores (GDR, SVR y IOI) para 
+conocer el comportamiento de cada variable. 
+ 
+Por una parte, se realizó una regresión logística para aquellas variables que sufrieron un cambio, 
+con la intención de identificar cuáles son las variables que  determinan dicho cambio. En otras 
+palabras, la regresión logística permitió modelar cuál es la probabilidad de que exista cambio o no 
+en las diferentes variables el valor o nivel de del mismos. 
+ 
+Por otro lado, para aquellas variables que expresarán el cam bio de una medición a otra, ya sea el 
+diferencial continuo o discreto (cambio) , se  aplicó un modelo multinivel con el objeto de 
+descomponer la varianza en diferentes niveles, para calcular el porcentaje explicado por cada uno 
+de ellos, tal como se explicó en la sección anterior. 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 43 ===
+  
+43 
+ 
+7.1  Análisis comparativo de los resultados 
+ 
+Tras la homologación  de las bases de encuestas Logradas se obtiene un total de 420 casos  
+(Explicación de cambios en las cifras en pág.32), los cuales presentan diferencias en sus respuestas 
+entre cada medición como se revisará a continuación en este informe. A continuación tabla 
+descriptiva con información general de la muestra: 
+ 
+Tabla 3: Descriptivo logradas base homologada 
+TOTAL SEXO 
+  
+Tipo de entrevistado 
+  
+Macrozona Tramos de edad 
+  
+  
+Total Mujer Hombre Panel Refresco Centro Norte Sur 
+Adulto 
+joven 
+(Menores 
+36 años) 
+Adulto(37 
+años-65 
+años) 
+Adulto 
+mayor 
+(mayo
+r 65 
+años) 
+427 262 165 272 155 239 42 146 113 196 118 
+ 
+ 
+ 
+Grafico 1: Distribución Sexo muestra         
+ 
+(Fuente: Elaboración propia. Base homologada Logradas) 
+ 
+La muestra presenta mayoría femenina en género . Mientras que en  la distribución geográfica, se 
+observa la concentración demográfica en el centro y sur del país, lo que se explica por la presencia 
+de las regiones más pobladas del país, XIII, VIII y V. 
+ 
+ 
+ 
+ 
+61,4 
+38,6 
+SEXO 
+Mujer
+Hombre
+
+=== PDF PAGE 44 ===
+  
+44 
+ 
+Grafico 2: Distribución Macrozona muestra 
+ 
+(Fuente: Elaboración propia. Base homologada Logradas) 
+ 
+ 
+Prácticamente la mitad de los encuestados pertenecen al tramo de edad Adulto (37 años –  65 
+años). 
+ 
+Grafico 3: Distribución Tramos de edad muestra 
+ 
+ 
+(Fuente: Elaboración propia. Base homologada Logradas) 
+ 
+ 
+ 
+ 
+ 
+56,0% 
+9,8% 
+34,2% 
+Macrozona 
+Centro
+Norte
+Sur
+26,5% 
+45,9% 
+27,6% 
+Tramos de edad 
+Adulto joven (Menores 36
+años)
+Adulto(37 años-65 años)
+Adulto mayor (mayor 65 años)
+
+=== PDF PAGE 45 ===
+  
+45 
+ 
+7.2 Modulo Historia Laboral 
+ 
+En conjunto con la Subsecretaría se acuerda que los módulos de mayor relevancia para el estudio, 
+modulo B: Historia Laboral  y modulo C: Ingresos Familiares , serán la base de este análisis, 
+indicando las variables con mayor y menor cambio respecto a las mediciones realizadas. Los 
+restantes módulos y sus tablas se pueden revisar en Anexos. 
+ 
+A continuación se presentan los indicadores generales de cambios por pregunta mencionados en 
+Conceptualización metodológica para estimar variabilidad entre mediciones: 
+ 
+Tabla 4: Indicadores generales de cambio, modulo B Historia Laboral 
+  
+B2 En ese 
+período, ¿en cuál 
+de las siguientes 
+situaciones se 
+encontraba? 
+B3 ¿Hizo 
+algún 
+negocio, 
+"pololo", u 
+otra actividad 
+por cuenta 
+propia al 
+menos por 
+una hora? 
+B4 ¿En qué región 
+trabajaba? 
+B6 Este trabajo 
+es/era de tipo: 
+B8 ¿En esta 
+ocupación, 
+Ud. 
+trabaja/ba 
+como: 
+% de 
+Cambio 
+50.30% 54.80% 45.80% 63.70% 58.30% 
+n=755 n=398 n=336 n=336 n=336 
+GDR - 2.19 - - - 
+SVR - 1.095 - - - 
+Desviación 
+estándar 
+encuesta 
+original 
+- 0.000 - - - 
+Desviación 
+estándar 
+re-
+encuesta 
+- 0.000 - - - 
+IOI - - - - - 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 46 ===
+  
+46 
+ 
+ 
+Tabla 5: Indicadores generales de cambio, modulo B Historia Laboral 
+  
+B9a En este 
+trabajo, ¿firmó 
+contrato de 
+trabajo? 
+B9b La 
+relación 
+contractual 
+de este 
+trabajo es / 
+era del tipo: 
+B10 ¿Qué tipo de 
+horario tiene/tenía 
+en este trabajo? 
+B11 En este trabajo, 
+¿estaba usted a 
+honorarios y 
+entregaba boletas 
+de honorarios a su 
+empleador o 
+clientes? 
+B12m 
+Incluyendo 
+descuentos, 
+¿cuál es/era el 
+ingreso 
+líquido 
+mensual 
+promedio? 
+% de 
+Cambio 
+59.80% 67.10% 53.60% 48.50% - 
+n=291 n=234 n=336 n=336 n=339 
+GDR - - - 1.67 47413079757 
+SVR - - - 0.835 23706539879 
+Desviación 
+estándar 
+encuesta 
+original 
+- - - 0.277 128993.4528 
+Desviación 
+estándar 
+re-
+encuesta 
+- - - 0.210 163922.323 
+IOI - - - 6.911 0.545 
+ 
+Tabla 6: Indicadores generales de cambio, modulo B Historia Laboral 
+  
+B13 ¿Cuántas 
+horas 
+semanales 
+trabaja (ba) 
+en este 
+empleo? 
+B14 ¿En 
+qué lugar 
+realiza 
+(ba) esta 
+actividad 
+laboral? 
+B15 ¿Cuántas 
+personas 
+trabaja/ban en 
+total en esta 
+empresa (en 
+Chile)? 
+B16 ¿Se 
+encontraba 
+afiliado a algún 
+sindicato? 
+B25 ¿Cuál 
+fue la razón 
+de su 
+inactividad? 
+B26 
+¿Participó 
+usted en 
+algún 
+Programa 
+de Empleo 
+de 
+Emergencia 
+del Estado? 
+% de 
+Cambio 
+- 67.30% - 50.30% 64.70% 39.70% 
+n=336 n=336 n=270 n=336 n=283 n=755 
+GDR 1043.37 - 4987461.29 1.71 - 1.5 
+SVR 521.685 - 2493730.645 0.855 - 0.75 
+Desviación 
+estándar 
+encuesta 
+original 
+15.105 - 4902.795 0.314 - 0.108 
+Desviación 
+estándar 
+re-
+encuesta 
+13.823 - 2306.257 0.288 - 0.158 
+IOI 1.244 - 0.085 4.716 - 20.464 
+ 
+
+=== PDF PAGE 47 ===
+  
+47 
+ 
+7.2.1 Análisis Bivariado 
+ 
+En la sección se hace una descripción de las diferencias estadísticas detectadas en cada unos 
+de los segmentos definidos por las variables escogidas para representar cada ámbito en  relación a 
+los indicadores de cambio construidos para cada variable del módulo. 
+ 
+B2. En ese período, ¿en cuál de las siguientes situaciones se encontraba? 
+ 
+La siguiente tabla de cambio vincula la información registrada en medición OS UAH (Filas, 
+horizontal) con los cambios a medición STATCOM (Columnas, verticales). Los casilleros marcados 
+en color celeste no registran cambios entre ambas mediciones. 
+ 
+Tabla 7: Cambio pregunta B2 En ese período, ¿en cuál de las siguientes situaciones se encontraba? 
+  
+B2 En ese período, ¿en cuál de las siguientes situaciones se 
+encontraba? 
+Trabajando Cesante 
+Buscando 
+trabajo por 1ª 
+vez Inactivo 
+Situación en el período Trabajando 188 10 2 27 
+Cesante 14 1 1 12 
+Buscando trabajo por 1ª 
+vez 1 0 0 0 
+Inactivo 46 5 2 162 
+ 
+Se presentan diferencias respecto a la opción Trabajando  de la primera medición , es decir 
+cambian las cifras de cesante, buscando trabajo por 1° vez  e inactivo en la segunda medición. Para 
+más detalle sobre factores asociados al tipo de trabajo se revisará más adelante en pregunta B6. 
+ 
+Al vincular la s ituación laboral por tramo de edad , la mayor diferencia ( 64%) se presenta en el 
+segmento más joven, es decir los menores de 36 años de edad. Este cambio es proporcionalmente 
+mayor a los otros dos tramos, confirmando una diferencia significativa respecto a la situación 
+laboral. A su vez el adulto (37 años-65 años) presenta una diferencia significativa (54%) respecto a 
+adulto mayor (mayor 65 años) con un 32% de cambio. 
+ 
+ 
+ 
+
+=== PDF PAGE 48 ===
+  
+48 
+ 
+Tabla 8: B2 En ese período, ¿en cuál de las siguientes situaciones se encontraba?, según Tramos de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 35,7 45,6 68,0 
+CAMBIO % 64,3 54,4 32,0 
+Total Total (%) 100,0 100,0 100,0 
+n real 272 333 150 
+ 
+Respecto al estado civil, el mayor cambio en tanto situación laboral se presenta en el segmento 
+soltero o viudo con un 5 8%. Mientras que la vida en pareja de casado o conviviente  presenta el 
+menor cambio con un 48%, respecto a la situación laboral al momento de las mediciones. 
+ 
+ 
+Tabla 9: B2 En ese período, ¿en cuál de las siguientes situaciones se encontraba?, según  Estado civil 
+  
+Estado civil 
+Casado o 
+conviviente 
+Separado o 
+divorciado Soltero o viudo 
+SIN CAMBIO % 51,1 46,9 41,2 
+CAMBIO % 48,9 53,1 58,8 
+Total Total (%) 100,0 100,0 100,0 
+n real 368 64 323 
+ 
+Por su parte el grupo  de refresco, es decir encuestados por primera vez que no participaron en el 
+registro del año 2009,  presenta un mayor cambio en la respuesta sobre la situación laboral del 
+momento respecto a los encuestados de muestra panel. 
+ 
+Tabla 10: B2 En ese período, ¿en cuál de las siguientes situaciones se encontraba?, Tipo de entrevistado 
+  
+Tipo de entrevistado 
+Panel Refresco 
+SIN CAMBIO % 52,4 38,6 
+CAMBIO % 47,6 61,4 
+Total Total (%) 100,0 100,0 
+n real 431 324 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 49 ===
+  
+49 
+ 
+B3. ¿Hizo algún negocio, “pololo”, u otra actividad por cuenta propia al menos por una 
+hora?  
+ 
+Tabla 11: B3 ¿Hizo algún negocio, “pololo”, u otra actividad por cuenta propia al menos por una hora? , según Tramos 
+de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 19,6 39,4 74,0 
+CAMBIO % 80,4 60,6 26,0 
+Total Total (%) 100,0 100,0 100,0 
+n real 112 155 131 
+ 
+Se presenta un importante cambio (80%) en el segmento adulto joven (menores de 36 años), 
+respecto a los segmentos adulto (37 años-65 años) y adulto mayor  (mayor de 65 años), similar a 
+los resultados de la pregunta B2, en que el segmento más joven supera al siguiente y así 
+sucesivamente. 
+ 
+Tabla 12: B3 ¿Hizo algún negocio, “pololo”, u otra actividad por cuenta propia al menos por una hora? , según  Estado 
+civil 
+  
+Estado civil 
+Casado o 
+conviviente 
+Separado o 
+divorciado Soltero o viudo 
+SIN CAMBIO % 51,8 48,3 37,5 
+CAMBIO % 48,2 51,7 62,5 
+Total Total (%) 100,0 100,0 100,0 
+n real 193 29 176 
+ 
+Tal como en la pregunta B2, el estado civil soltero o viudo presenta diferencias respecto a las otras 
+opciones. Si bien es una diferencia menor, da cuenta de un antecedente respecto a cambios en la 
+respuesta. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 50 ===
+  
+50 
+ 
+Tabla 13: B3 ¿Hizo algún negocio, “pololo”, u otra actividad por cuenta propia al menos por una hora? , según Tipo de 
+entrevistado 
+  
+Tipo de entrevistado 
+Panel Refresco 
+SIN CAMBIO % 53,3 34,5 
+CAMBIO % 46,7 65,5 
+Total Total (%) 100,0 100,0 
+n real 227 171 
+ 
+El grupo de refresco presenta nuevamente cambios respecto a la primera medición con un 6 5% 
+mientras el grupo panel registra un 46% de cambio, esto indica diferencias en ambas mediciones 
+respecto a la situación laboral y trabajos esporádicos o negocios. 
+ 
+ 
+B6. Este trabajo es/era de tipo:  
+ 
+Los resultados a esta pregunta presentaron cambios respecto a ambas mediciones, principalmente 
+en la distribución de quienes declararon trabajo permanente  en la primera medición. 
+ 
+La siguiente tabla de cambio vincula la información registrada en medición OSUAH (Filas, 
+horizontal) con los cambios a medición STATCOM (Columnas, verticales). Los casilleros marcados 
+en color celeste no registran cambios entre ambas mediciones. 
+ 
+Tabla 14: Cambio pregunta B6 Este trabajo es/era de tipo: 
+  
+B6 Este trabajo es/era de tipo: 
+Permanente 
+De 
+temporada 
+o estacional 
+Ocasional o 
+eventual A prueba 
+Por plazo o 
+tiempo 
+determinado 
+Trabajo permanente Permanente 109 7 9 0 3 
+De temporada o 
+estacional 11 8 3 0 2 
+Ocasional o eventual 8 3 3 0 1 
+A prueba 0 0 0 0 0 
+Por plazo o tiempo 
+determinado 13 6 0 0 2 
+ 
+
+=== PDF PAGE 51 ===
+  
+51 
+ 
+Mientras el grupo refresco presenta cambió al 75%, el grupo panel registra un 60%, esta diferencia 
+confirma lo presentado en Tabla 11 respecto al cambio de respuesta, derivando del trabajo 
+permanente a de temporada o estacional y ocasional o eventual. 
+ 
+Tabla 15: B6 Este trabajo es/era de tipo: según Tipo de entrevistado 
+  
+Tipo de entrevistado 
+Panel Refresco 
+SIN CAMBIO % 44,4 25,0 
+CAMBIO % 55,6 75,0 
+Total Total (%) 100,0 100,0 
+n real 196 140 
+ 
+ 
+B9b. La relación contractual de este trabajo es/era del tipo:  
+ 
+Las diferencias entre ambas mediciones se indican en Tabla 13 por casos que pasaron de plazo 
+indefinido a otras categorías de respuesta. 
+ 
+La siguiente tabla de cambio vincula la información registrada en medición OSUAH (Filas, 
+horizontal) con los cambios a medición STATCOM (Columnas, verticales). Los casilleros marcados 
+en color celeste no registran cambios entre ambas mediciones. 
+ 
+Tabla 16: Cambio pregunta B9b La relación contractual de este trabajo es/era del tipo: 
+  
+B9b La relación contractual de este trabajo es / era del tipo: 
+Plazo 
+indefinido 
+Plazo 
+fijo 
+Por obra, 
+faena o 
+servicio 
+De 
+aprendizaje 
+Servicios 
+transitorios Subcontratación 
+No 
+responde 
+No 
+sabe 
+Relación 
+contractual 
+Plazo indefinido 66 5 4 0 0 0 0 0 
+Plazo fijo 11 5 10 0 1 0 0 0 
+Por obra, faena o 
+servicio 0 2 6 0 0 0 0 0 
+De aprendizaje 0 0 1 0 0 0 0 0 
+Servicios 
+transitorios 0 1 0 0 0 0 0 0 
+Subcontratación 0 1 0 0 0 0 0 0 
+No responde 0 0 0 0 0 0 0 0 
+No sabe 0 0 0 0 0 0 0 0 
+ 
+
+=== PDF PAGE 52 ===
+  
+52 
+ 
+Respecto al tipo de contrato, las mayores diferencias se presentan en la zona centro  con un 69%, 
+seguido de la zona sur con un 6 6%. Es necesario señalar que la zona centro abarca desde la V 
+región a la VII, incluyendo a la región metropolitana por supuesto. 
+ 
+Tabla 17: B9b La relación contractual de este trabajo es/era del tipo: según Macrozona 
+  
+Macrozona 
+Centro Norte Sur 
+SIN CAMBIO % 30,3 47,6 33,3 
+CAMBIO % 69,7 52,4 66,7 
+Total Total (%) 100,0 100,0 100,0 
+n real 132 21 81 
+ 
+ 
+B10. ¿Qué tipo de horario tiene/tenía en este trabajo? 
+ 
+Las variaciones entre cada medición indican respuestas distintas frente al horario laboral. Similar a 
+la pregunta anterior en que la respuesta referente al tipo de contrato presentó cambios, en Tabla 
+15 señala las variaciones desde una respuesta que informa un horario laboral diurno , hacia el 
+horario laboral nocturno o ambas opciones inclusive. 
+ 
+La siguiente tabla de cambio vincula la información registrada en medición  OSUAH (Filas, 
+horizontal) con los cambios a medición STATCOM (Columnas, verticales). Los casilleros marcados 
+en color celeste no registran cambios entre ambas mediciones. 
+ 
+Tabla 18: Cambio pregunta B10 ¿Qué tipo de horario tiene/tenía en este trabajo? 
+  
+B10 ¿Qué tipo de horario tiene/tenía en este trabajo? 
+Diurno Nocturno 
+Diurno y 
+nocturno 
+No 
+responde No sabe 
+Tipo de Horario Diurno 141 3 8 1 2 
+Nocturno 0 1 2 0 0 
+Diurno y nocturno ( 
+Rotativo o turnos ) 15 0 15 0 0 
+No responde 0 0 0 0 0 
+No sabe 0 0 0 0 0 
+ 
+El grupo refresco presenta nuevamente diferencias en lo que a aspectos laborales refiere, con un 
+63% respecto al 53% de cambio que presenta el grupo panel. 
+
+=== PDF PAGE 53 ===
+  
+53 
+ 
+ 
+Tabla 19: B10 ¿Qué tipo de horario tiene/tenía en este trabajo?, según Tipo de entrevistado 
+  
+Tipo de entrevistado 
+Panel Refresco 
+SIN CAMBIO % 53,1 37,9 
+CAMBIO % 46,9 62,1 
+Total Total (%) 100,0 100,0 
+n real 196 140 
+ 
+ 
+B25. ¿Cuál fue la razón de su inactividad? 
+ 
+Esta pregunta consta de 23 opciones de respuesta, por lo que es relevante revisar la variabilidad 
+entre mediciones. Como por ejemplo el cambio en las respuestas por sexo, en donde la categ oría 
+mujer cambia en un 69% respecto al 49% de cambio en hombre. 
+ 
+Tabla 20: B25 ¿Cuál fue la razón de su inactividad?, según Sexo 
+ 
+  
+SEXO 
+Mujer Hombre 
+SIN CAMBIO % 30,4 50,7 
+CAMBIO % 69,6 49,3 
+Total Total (%) 100,0 100,0 
+n real 214 69 
+ 
+ 
+Otro cambio importante es el que refleja al vincular la razón de inactividad con tramo de edad. Así, 
+el tramo adulto joven (menores de 36 años) alcanza un 86 % de cambio, seguido del 69 % que 
+registra el tramo adulto  (37 años - 65 años) y bastante más distante del 4 7% del tramo adulto 
+mayor (mayor 65 años). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 54 ===
+  
+54 
+ 
+Tabla 21: B25 ¿Cuál fue la razón de su inactividad?, según Tramos de edad 
+ 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 13,7 30,1 53,0 
+CAMBIO % 86,3 69,9 47,0 
+Total Total (%) 100,0 100,0 100,0 
+n real 73 93 117 
+ 
+ 
+B26. ¿Participó usted en algún Programa de Empleo de Emergencia del Estado? 
+ 
+El tramo de edad adulto joven (menores de 36 años) presenta un 4 9% de cambio respecto a la 
+primera medición, lo que indica respuestas distintas en relación a los programas de empleo 
+estableciendo la mayor diferencia en contraste con  los tramos de edad adulto  (37 años -65 años) 
+con 39% y adulto mayor (mayor 65 años) con 22% de cambio. 
+ 
+Tabla 22: B26 ¿Participó usted en algún Programa de Empleo de Emergencia del Estado?, según Tramos de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 50,4 60,4 78,0 
+CAMBIO % 49,6 39,6 22,0 
+Total Total (%) 100,0 100,0 100,0 
+n real 272 333 150 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 55 ===
+  
+55 
+ 
+La zona sur  presenta mayores cambios respecto a la consulta por programas de empleo de 
+emergencia del estado con un 49%, por sobre la zona centro 33% y la zona norte 27%. 
+ 
+Tabla 23 :B26 ¿Participó usted en algún Programa de Empleo de Emergencia del Estado?, según Macrozona 
+  
+Macrozona 
+Centro Norte Sur 
+SIN CAMBIO % 66,6 72,7 50,8 
+CAMBIO % 33,4 27,3 49,2 
+Total Total (%) 100,0 100,0 100,0 
+n real 377 55 323 
+ 
+El grupo  refresco presenta una diferencia mayor (47%) al grupo panel  (33%), coincidiendo con 
+anteriores preguntas en que el grupo al que por primera vez  se le aplica la encuesta presenta 
+mayor cambio. 
+ 
+Tabla 24: B26 ¿Participó usted en algún Programa de Empleo de Emergencia del Estado?, según Tipo de entrevistado 
+  
+Tipo de entrevistado 
+Panel Refresco 
+SIN CAMBIO % 66,1 52,5 
+CAMBIO % 33,9 47,5 
+Total Total (%) 100,0 100,0 
+n real 431 324 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 56 ===
+  
+56 
+ 
+Modelos logísticos  
+ 
+Tabla 25: Modelo logístico por pregunta, modulo B Historia Laboral 
+  
+B2 En ese período, 
+¿en cuál de las 
+siguientes 
+situaciones se 
+encontraba? 
+B3 ¿Hizo algún 
+negocio, "pololo", 
+u otra actividad 
+por cuenta propia 
+al menos por una 
+hora? 
+B4 ¿En qué 
+región 
+trabajaba? 
+B6 Este trabajo 
+es/era de tipo: 
+B8 ¿En esta 
+ocupación, Ud. 
+trabaja/ba 
+como: 
+  Riesgos relativos asociados (Odds ratio) 
+Sexo 0,77  0,84 0,83 1,03 0,89 
+Tipo 
+entrevistado 1,2  1,18 1,85* 2,82* 1,26 
+Pertenece a 
+alguna etnia 0,76  0,53 0,69 0,82 0,69 
+Años de 
+escolaridad 0,97  0,97 0,95 0,92* 0,95 
+Evaluación 1 1,11* 1,08 1,11 1,1 1,11 
+Evaluación 2 1  1 1 0,99 1 
+Entorno 1 1  0,99 0,98 0,97 0,85 
+Entorno 2 0,82  0,76 0,74 0,7 0,84 
+Evaluación 4 1,24  2,4* 1 1,41 1,61 
+Evaluación 7 0,67  1,21 0,48* 0,58 0,75 
+Evaluación 10 1,15  1,34 1,59 0,88 0,8 
+Evaluación 11 1,64  1,03 4,46* 23,01* 2,46 
+Evaluación 6 0,71  0,44 1,01 0,81 0,74 
+Citófono 0,37  0,27 0,27 0,2* 0,46 
+Puerta/Reja 
+cerrada 0,71  0,58 1,12 1,17 0,85 
+Entrada 
+Compartida  
+puede ser 
+cerrada 
+0,79  1,19 0,87 1,06 1,28 
+Entrada 
+Compartida no 
+puede ser 
+cerrada 
+1,72  0,89 1,57 1,14 1,9 
+Separado o 
+divorciado 1,52  1,45 2,17 4,35* 4,29* 
+Soltero o viudo 1,31  1,5 1,77 2,02* 2,08* 
+Departamento 1,27  1,76 2,57 1,85 1,25 
+Pieza 1,09  - 1,68 1,75 0,94 
+Mediagua 0,57  0,19 0,89 1,26 1,23 
+Cesante 95,6* 0 - - - 
+ 
+Inactivo 1,21  0 - - - 
+Norte 0,85  0,63 1,23 0,75 1,06 
+Sur 1,15  1,17 1,33 1,41 1,03 
+Edad 0,98* 0,95* 1,02 1 1,02 
+nº de casos 663 359 330 330 330 
+Pseudo R2 0.170 0.311 0.101 0.146 0.080 
+ 
+ 
+
+=== PDF PAGE 57 ===
+  
+57 
+ 
+B2.  
+En ese período, ¿en cuál de las siguientes situaciones se encontraba?
+ 
+Al observar el modelo planteado para la probabilidad de cambio de respuesta sobre ocupación 
+durante el periodo, se puede decir que aquellas personas que le hicieron preguntas al encuestador 
+poseen un 37% menos posibilidades de cambiar su respuesta a esta pregunta. Además se observa 
+que la edad es otro factor importante, a mayor edad menor es la probabilidad de cambio de 
+respuesta. 
+ 
+ 
+B3. 
+¿Hizo algún negocio, "pololo", u otra actividad por cuenta propia al menos por una hora? 
+ 
+En esta pregunta el cambio puede ser explicado por si el encuestador llamó para fijar una cita 
+previa y por la edad. Las personas a las cuales se les llamo para agendar una cita para la encuesta 
+poseen el doble de probabilidad de cambiar su respuesta que aquellas que no, además a mayor 
+edad meno r es la probabilidad de cambio.  Aquí la sede está siendo un factor importante para 
+explicar la variabilidad de la respuesta. 
+ 
+B4. 
+¿En qué región trabajaba? 
+ 
+Con respecto a la región se puede observar que las personas que responden por primera vez la 
+encuesta poseen un 85% más posibilidades de cambio que los catalogados como panel .  Las 
+personas que le hicieron preguntas al encuestador sobre la encuesta poseen un 52% menos 
+chance de modificar la respuesta original, además aquellas personas que se contactaron con 
+alguien más para resolver dudas sobre la encuesta poseen una mayor chance de cambio. Para este 
+caso la sede no influye en la explicación de la variabilidad de la respuesta. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 58 ===
+  
+58 
+ 
+B6. 
+Este trabajo es/era de tipo: 
+ 
+En este caso, los entrevistados catalogados como refresco, registran casi 3 veces más posibilidades 
+de cambio, además aquellas personas que poseen más años de escolaridad poseen una  menor 
+probabilidad de cambio. Aquellas personas que se contactaron con alguien más para resolver 
+dudas sobre la encuesta poseen una mayor chance de cambio, también aquellas personas cuya 
+casa posee citófono poseen un 80% menos posibilidades de cambio. Ade más los solteros y los 
+separados, poseen una mayor probabilidad de cambio de respuesta.  En este caso la s ede no 
+aporta información sobre la variabilidad. 
+ 
+ 
+B8.  
+¿En esta ocupación, Ud. trabaja/ba como:
+ 
+Tan solo el estado civil explica este cambio, aquellos que son solteros, viudos o separados poseen 
+una mayor chance de contestar de manera distinta a la segunda encuesta.  La Sede no  aporta 
+información sobre la variabilidad. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 59 ===
+  
+59 
+ 
+ 
+Tabla 26: Modelo logístico por pregunta, modulo B Historia Laboral 
+  
+B9a En este 
+trabajo, ¿firmó 
+contrato de 
+trabajo? 
+B9b La relación 
+contractual de 
+este trabajo es / 
+era del tipo: 
+B10 ¿Qué 
+tipo de 
+horario 
+tiene/tenía 
+en este 
+trabajo? 
+B11 En este 
+trabajo, ¿estaba 
+usted a 
+honorarios y 
+entregaba 
+boletas de 
+honorarios a su 
+empleador o 
+clientes? 
+B14 ¿En qué 
+lugar 
+realiza(ba) 
+esta actividad 
+laboral? 
+  Riesgos relativos asociados (Odds ratio) 
+Sexo 0,84 0,75 0,97 0,84 1,12 
+Tipo 
+entrevistado 1,78 1,17 2,43* 1,95* 1,51 
+Pertenece a 
+alguna etnia 0,99 0,99 0,71 0,85 0,69 
+Años de 
+escolaridad 0,94 0,82* 0,98 0,98 0,91* 
+Evaluación 1 1,09 1,09 1,08 1,07 1,04 
+Evaluación 2 0,99 1 1 1 1 
+Entorno 1 0,85 0,88 1 0,97 0,99 
+Entorno 2 0,66 0,83 0,76 0,71 0,98 
+Evaluación 4 1,61 2,61* 0,87 1,17 1,43 
+Evaluación 7 0,82 0,92 0,57* 0,67 0,88 
+Evaluación 10 0,82 0,79 1,83* 1,1 0,86 
+Evaluación 11 3,82* 21,9* 3,41* 2,66 4,95* 
+Evaluación 6 1,02 1,09 1,05 0,97 1,94 
+Citófono 0,37 0,19 0,22 0,27 0,52 
+Puerta/Reja 
+cerrada 1,21 1,43 1,04 0,81 1,04 
+Entrada 
+Compartida  
+puede ser 
+cerrada 
+0,88 0,85 0,81 0,74 0,74 
+Entrada 
+Compartida no 
+puede ser 
+cerrada 
+3,3 3,82 1,48 1,46 2,31 
+Separado o 
+divorciado 2,51 3,36 1,7 1,76 2,23 
+Soltero o viudo 1,14 1,64 1,8* 1,75 1,14 
+Departamento 0,6 2,04 1,71 1,47 1,61 
+Pieza 1,73 1,7 0,84 0,95 1,22 
+Mediagua 3,82 0,99 0,55 0,74 0,49 
+Cesante - - - - - 
+Inactivo - - - - - 
+Norte 0,83 0,59 0,84 1,14 1,26 
+Sur 1,01 0,77 1,26 1,25 0,7 
+Edad 1,01 0,97 1,02* 1,03* 1,01 
+nº de casos 276 231 330 330 330 
+Pseudo R2 0.080 0.164 0.102 0.073 0.070 
+ 
+
+=== PDF PAGE 60 ===
+  
+60 
+ 
+B9a.  
+En este trabajo, ¿firmó contrato de trabajo?
+Aquellas personas que se contactaron con alguien más para resolver dudas poseen una chance 
+mayor de cambio de respuesta. La sede no influye en la explicación de la variabilidad. 
+ 
+ 
+B9b.  
+ La relación contractual de este trabajo es / era del tipo:
+A medida que la escolaridad aumenta la probabilidad de cambio disminuye, además aquellas 
+personas que se les llamo para agendar una cita y que llamaron a alguien más para resolver dudas 
+sobre la encuesta poseen un probabilidad superior de cambio de respuesta.  En este caso la sede 
+es un factor importante para explicar la variabilidad del cambio. 
+ 
+ 
+B11. 
+ En este trabajo, ¿estaba usted a honorarios y entregaba boletas de honorarios a su 
+empleador o clientes? 
+Los entrevistados de refresco poseen una mayor probabilidad de cambio, además las que se 
+contactaron con alguien más para resolver dudas y las de mayor edad tienen un mayor porcentaj e 
+de cambio. La sede es importante para explicar la variabilidad de respuesta. 
+ 
+B12m.  
+Incluyendo descuentos, ¿cuál es/era el ingreso líquido mensual promedio?
+ 
+Para el caso del ingreso líquido promedio las variables que influyen en la explicación de la cantidad 
+de cambio es el sexo donde los hombres poseen una mayor diferencia en las respuestas. Aquellas 
+personas que pertenecen a una etnia poseen una mayor diferencia en los ingresos.  En   el caso de 
+la escolaridad a medida que esta aumenta, también aumenta la diferencia entre los montos 
+entregados por los entrevistados en la primera encuesta y la encuesta realizada por STATCOM. 
+Además aquellas personas a las que se les concertó cita y quienes llamaron a alguien para resolver 
+dudas sobre la encuesta, poseen una mayor diferencia en los montos, también se observa que 
+aquellos individuos que poseen entrada compartida que no puede ser cerrada en su hogar tienen 
+una diferencia mayor a los que no  poseen entrada.  La  sede explica menos de un 1% de la 
+variabilidad de la diferencia. 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 61 ===
+  
+61 
+ 
+ 
+B13.  
+¿Cuántas horas semanales trabaja(ba) en este empleo?
+En el caso de las horas semanales trabajadas, la edad es la única variable importante para explicar 
+la diferencia entre las horas trabajadas. A mayor edad mayor es la diferencia.  La sede aporta un 
+6,35% de la explicación de la variabilidad. 
+ 
+ 
+B14.  
+¿En qué lugar realiza(ba) esta actividad laboral?
+Con respecto al lugar donde realizaba la actividad se encuentra que a mayor escolaridad menor es 
+la probabilidad de cambio en la respuesta, además aquella personas que contactaron  a alguien 
+para dudas poseen muchas más chances de cambiar la respuesta con respecto a la original.  La 
+sede no es un factor interesante en la explicación de la varianza. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 62 ===
+  
+62 
+ 
+ 
+Tabla 27: Modelo logístico por pregunta, modulo B Historia Laboral 
+  B16 ¿Se encontraba afiliado a 
+algún sindicato? 
+B25 ¿Cuál fue la razón de su 
+inactividad? 
+B26 ¿Participó 
+usted en algún 
+Programa de 
+Empleo de 
+Emergencia del 
+Estado? 
+  Riesgos relativos asociados (Odds ratio) 
+Sexo 0,76 0,44* 0,86 
+Tipo entrevistado 1,82* 0,77 1,48 
+Pertenece a alguna 
+etnia 0,61 0,8 1,1 
+Años de escolaridad 0,96 0,96 0,97 
+Evaluación 1 1,07 1,07 1,06 
+Evaluación 2 1 1,01 1 
+Entorno 1 0,98 0,97 1,02 
+Entorno 2 0,85 0,65 0,85 
+Evaluación 4 1,14 1,74 1,26 
+Evaluación 7 0,55* 0,61 0,64* 
+Evaluación 10 1,61 1,03 1,15 
+Evaluación 11 3,53* 0,69 0,81 
+Evaluación 6 0,89 0,32* 0,56* 
+Citófono 0,47 0,5 0,89 
+Puerta/Reja cerrada 0,91 0,56 0,8 
+Entrada Compartida  
+puede ser cerrada 0,93 1,16 1,11 
+Entrada Compartida 
+no puede ser 
+cerrada 
+1,24 0,92 1,43 
+Separado o 
+divorciado 1,63 0,83 1,83 
+Soltero o viudo 1,88* 0,75 1,36 
+Departamento 1,2 0,23 0,55 
+Pieza 0,79 - 1,28 
+Mediagua 0,7 1,29 0,23 
+Cesante - - 2,43* 
+Inactivo - - 0,66* 
+Norte 1,29 0,44 0,64 
+Sur 1,14 1,06 1,57* 
+Edad 1,02 0,96* 0,98* 
+nº de casos 330 272 663 
+Pseudo R2 0.074 0.192 0.101 
+ 
+ 
+
+=== PDF PAGE 63 ===
+  
+63 
+ 
+B15.  
+¿Cuántas personas trabaja/ban en total en esta empresa (en Chile)?
+Las diferencias expresadas pueden ser explicadas por el sexo, los hombre s poseen menor 
+diferencia que las mujeres,  el entorno también es un factor, aquellas viviendas donde la 
+percepción de inseguridad después de la 9 PM es mayor poseen una mayor diferencia en las cifras 
+de respuesta. Además aquellas personas que fueron llamadas para concertar una cita, tienen más 
+diferencia en las respuestas entre las encuestas.  La sede es un factor importante para la 
+explicación de la variabilidad, explica un 17% de esta. 
+ 
+B16.  
+¿Se encontraba afiliado a algún sindicato?
+El tipo de entrevistado no da cuenta de que  el grupo refresco registre una mayor probabilidad de 
+cambio que los de  grupo panel, aquellas personas que contactaron a alguien para dudas poseen 
+muchas más chances de cambiar la respuesta con respecto a la original. Además son solteros o 
+viudos poseen una mayor probabilidad de cambio que los casados o convivientes. La sede ayuda a 
+explicar la variabilidad de cambio en la respuesta. 
+ 
+B25.  
+ ¿Cuál fue la razón de su inactividad?
+Se observa que los hombres poseen menor probabilidad de cambio, además a aquellos que se les 
+aplicó el cuestionario con dispositivo electrónico posee menor probabilidad que los que fueron 
+aplicados en papel. La sede ayuda a explicar la variabilidad de respuesta. 
+ 
+ 
+ 
+B26.  
+¿Participó usted en algún Programa de Empleo de Emergencia del Estado?
+En este caso las variables influyentes son, los cesantes poseen una mayor probabilidad de cambio 
+que los que trabajan, en cambio los inactivos poseen menor chance que los que trabajan. Además, 
+a mayor edad meno r es la probabilidad de cambio.  La sede es importante para explicar la 
+variabilidad de las respuestas. 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 64 ===
+  
+64 
+ 
+Modelos logísticos multinivel 
+ 
+Tabla 28: Modelo logístico multinivel por pregunta, modulo B Historia Laboral 
+  
+B2 En ese período, 
+¿en cuál de las 
+siguientes 
+situaciones se 
+encontraba? 
+B3 ¿Hizo algún negocio, 
+"pololo", u otra 
+actividad por cuenta 
+propia al menos por 
+una hora? 
+B4 ¿En qué 
+región 
+trabajaba? 
+B6 Este trabajo 
+es/era de tipo: 
+B8 ¿En esta 
+ocupación, Ud. 
+trabaja/ba 
+como: 
+  Riesgos relativos asociados efectos fijos (Odds ratio) 
+Sexo 0,78 0,84 0,83 1,02 0,89 
+Tipo 
+entrevistado 1,13 1,2 1,9* 2,81* 1,26 
+Pertenece a 
+alguna etnia 0,65 0,56 0,6 0,82 0,67 
+Años de 
+escolaridad 0,96 0,96 0,94 0,92* 0,94 
+Evaluación 1 1,09 1,06 1,11 1,09 1,11 
+Evaluación 2 1,01 1 1 0,99 1 
+Entorno 1 1,03 0,98 0,99 0,97 0,84 
+Entorno 2 0,85 0,75 0,75 0,7 0,85 
+Evaluación 4 1,22 2,24* 0,95 1,43 1,63 
+Evaluación 7 0,63* 1,1 0,49* 0,58 0,76 
+Evaluación 10 1,15 1,4 1,63 0,86 0,79 
+Evaluación 11 1,89 1,17 4,91* 22,54* 2,53 
+Evaluación 6 0,74 0,46 1 0,8 0,74 
+Citófono 0,38 0,22 0,28 0,2* 0,47 
+Puerta/Reja 
+cerrada 0,69 0,68 1,01 1,16 0,82 
+Entrada 
+Compartida  
+puede ser 
+cerrada 
+0,71 1,1 0,83 1,03 1,26 
+Entrada 
+Compartida no 
+puede ser 
+cerrada 
+1,63 0,96 1,32 1,09 1,87 
+Separado o 
+divorciado 1,47 1,62 2,03 4,27* 4,18* 
+Soltero o viudo 1,28 1,47 1,84* 2,03* 2,08* 
+Departamento 1,09 1,62 2,78 1,87 1,25 
+Pieza 1,22 - 1,73 1,77 0,94 
+Mediagua 0,65 0,21 0,99 1,27 1,24 
+Cesante 100,83* - - - - 
+Inactivo 1,2 - - - - 
+Norte 0,82 0,63 1,27 0,74 1,06 
+Sur 1,02 1,03 1,17 1,38 0,98 
+Edad 0,97* 0,95* 1,02 1 1,02 
+  Efecto Aleatorio (estimación de varianza) 
+varianza Sede 0.238 0.334 0.188 0.032 0.046 
+ p-valor test de  
+razón de 
+verosimilitud 
+(con respecto 
+regresión 
+logística)  
+0.00 0.02 0.07 0.39 0.34 
+ 
+Se observa también que en este caso el modelo Multinivel es mejor que el modelo logístico, por lo 
+cual el nivel sede está influyendo en la variabilidad de la respuesta. 
+
+=== PDF PAGE 65 ===
+  
+65 
+ 
+ 
+Tabla 29: Modelo logístico multinivel por pregunta, modulo B Historia Laboral 
+  
+B9a En este 
+trabajo, ¿firmó 
+contrato de 
+trabajo? 
+B9b La relación 
+contractual de 
+este trabajo es / 
+era del tipo: 
+B10 ¿Qué tipo 
+de horario 
+tiene/tenía en 
+este trabajo? 
+B11 En este trabajo, 
+¿estaba usted a 
+honorarios y entregaba 
+boletas de honorarios a 
+su empleador o 
+clientes? 
+B14 ¿En qué 
+lugar realiza 
+(ba) esta 
+actividad 
+laboral? 
+  Riesgos relativos asociados efectos fijos (Odds ratio) 
+Sexo 0,82 0,65 0,65 0,83 1,12 
+Tipo 
+entrevistado 1,82 1,03 1,03 2,02* 1,52 
+Pertenece a 
+alguna etnia 0,98 1 1 0,71 0,67 
+Años de 
+escolaridad 0,94 0,8* 0,8* 0,96 0,91* 
+Evaluación 1 1,09 1,06 1,06 1,06 1,04 
+Evaluación 2 0,99 1 1 1,01 1,01 
+Entorno 1 0,85 0,85 0,85 1 0,99 
+Entorno 2 0,65 0,74 0,74 0,73 1 
+Evaluación 4 1,68 3,41* 3,41* 1,15 1,45 
+Evaluación 7 0,87 1,09 1,09 0,71 0,89 
+Evaluación 10 0,79 0,8 0,8 1,13 0,86 
+Evaluación 11 3,44 14,87* 14,87* 3,07* 5,03* 
+Evaluación 6 1 1,1 1,1 0,97 1,92 
+Citófono 0,38 0,18 0,18 0,28 0,53 
+Puerta/Reja 
+cerrada 1,19 1,24 1,24 0,68 1,01 
+Entrada 
+Compartida  
+puede ser 
+cerrada 
+0,84 0,84 0,84 0,66 0,71 
+Entrada 
+Compartida no 
+puede ser 
+cerrada 
+3,01 2,41 2,41 1,19 2,24 
+Separado o 
+divorciado 2,39 3,44 3,44 1,55 2,2 
+Soltero o viudo 1,18 1,86 1,86 1,76 1,12 
+Departamento 0,71 3,68 3,68 1,43 1,64 
+Pieza 1,65 1,49 1,49 0,96 1,22 
+Mediagua 4,07 1,07 1,07 0,8 0,48 
+Cesante - - - - - 
+Inactivo - - - - - 
+Norte 0,86 0,69 0,69 1,1 1,24 
+Sur 1 0,96 0,96 1,02 0,67 
+Edad 1,01 0,97 0,97 1,03* 1,01 
+  Efecto Aleatorio (estimación de varianza) 
+varianza Sede 0.182 0.552 0.683 0.282 0.047 
+ p-valor test de  
+razón de 
+verosimilitud 
+(con respecto 
+regresión 
+logística)  
+0.19 0.04 0.00 0.02 0.32 
+ 
+ 
+
+=== PDF PAGE 66 ===
+  
+66 
+ 
+Tabla 30: Modelo logístico multinivel por pregunta, modulo B Historia Laboral 
+  
+B16 ¿Se encontraba 
+afiliado a algún 
+sindicato? 
+B25 ¿Cuál fue la razón de 
+su inactividad? 
+B26 ¿Participó usted en 
+algún Programa de Empleo 
+de Emergencia del Estado? 
+  Riesgos relativos asociados efectos fijos (Odds ratio) 
+Sexo 0,75 0,4* 0,94 
+Tipo entrevistado 1,88* 0,77 1,32 
+Pertenece a alguna 
+etnia 0,53 0,84 0,8 
+Años de escolaridad 0,94 0,95 0,95 
+Evaluación 1 1,06 1,05 1,02 
+Evaluación 2 1,01 1,02 1,01 
+Entorno 1 0,98 0,96 1,09 
+Entorno 2 0,87 0,66 0,91 
+Evaluación 4 1,12 1,75 1,09 
+Evaluación 7 0,56 0,53 0,65 
+Evaluación 10 1,6 1,12 1,05 
+Evaluación 11 4,03* 0,74 1,15 
+Evaluación 6 0,86 0,32* 0,57 
+Citófono 0,51 0,51 0,88 
+Puerta/Reja cerrada 0,8 0,56 0,83 
+Entrada Compartida  
+puede ser cerrada 0,87 1,12 0,91 
+Entrada Compartida no 
+puede ser cerrada 1,09 0,95 1,43 
+Separado o divorciado 1,45 0,99 1,9 
+Soltero o viudo 1,91* 0,71 1,4 
+Departamento 1,17 0,2 0,41 
+Pieza 0,81 1258791 1,4 
+Mediagua 0,75 1,5 0,3 
+Cesante - - 2,41* 
+Inactivo - - 0,6* 
+Norte 1,33 0,35 0,6 
+Sur 0,96 0,94 1,45 
+Edad 1,01 0,95* 0,98* 
+  Efecto Aleatorio (estimación de varianza) 
+varianza Sede 0.222 0.251 0.669 
+ p-valor test de  razón 
+de verosimilitud (con 
+respecto regresión 
+logística)  
+0.03 0.06 < 0,0001 
+
+=== PDF PAGE 67 ===
+  
+67 
+ 
+Modelos lineales 
+Tabla 31: Modelo lineal por pregunta, modulo B Historia Laboral 
+  
+B12m Incluyendo 
+descuentos, ¿cuál es/era el 
+ingreso líquido mensual 
+promedio? 
+B13 ¿Cuántas horas 
+semanales trabaja (ba) 
+en este empleo? 
+B15 ¿Cuántas personas 
+trabaja/van en total en 
+esta empresa (en Chile)? 
+  Coeficientes beta estandarizados asociados 
+Sexo 0,22* -0,02 -0,18* 
+Tipo entrevistado -0,1 0,04 -0,03 
+Pertenece a alguna 
+etnia -0,12* 0,03 -0,03 
+Años de escolaridad 0,29* 0,08 0,09 
+Evaluación 1 0,13 0,05 0,03 
+Evaluación 2 -0,07 -0,04 0 
+Entorno 1 -0,09 0,07 0,07 
+Entorno 2 -0,11 0,04 0,22* 
+Evaluación 4 0,16* 0,07 0,18* 
+Evaluación 7 -0,07 0,01 -0,1 
+Evaluación 10 0,05 -0,04 -0,02 
+Evaluación 11 0,17* -0,06 0,05 
+Evaluación 6 -0,07 0,13 -0,06 
+Citófono -0,11 0,06 -0,04 
+Puerta/Reja cerrada 0,02 -0,07 0,03 
+Entrada Compartida  
+puede ser cerrada -0,04 -0,16 -0,04 
+Entrada Compartida 
+no puede ser 
+cerrada 
+0,13* 0,05 0 
+Separado o 
+divorciado 0,09 0,05 -0,1 
+Soltero o viudo 0 0,05 -0,13 
+Departamento -0,04 -0,01 -0,01 
+Pieza -0,03 -0,07 0 
+Mediagua 0,01 0,01 -0,04 
+Cesante - - - 
+Inactivo - - - 
+Norte 0,08 -0,11 0 
+Sur -0,05 -0,16 -0,07 
+Edad 0,08 0,28* -0,07 
+Constante - - - 
+nº de casos 323 184 264 
+R2 ajustado 0.253 0.005 0.038 
+ 
+ 
+
+=== PDF PAGE 68 ===
+  
+68 
+ 
+Modelos lineales multinivel 
+ 
+Tabla 32: Modelo lineal multinivel por pregunta, modulo B Historia Laboral 
+  
+B12m Incluyendo 
+descuentos, ¿cuál es/era el 
+ingreso líquido mensual 
+promedio? 
+B13 ¿Cuántas horas 
+semanales trabaja 
+(ba) en este 
+empleo? 
+B15 ¿Cuántas personas 
+trabaja/ban en total en 
+esta empresa (en 
+Chile)? 
+  Coeficientes beta asociados efectos fijos 
+Sexo 70035,75* -0,72 -836,68* 
+Tipo entrevistado -32588,09 0,8 -96,03 
+Pertenece a alguna etnia -62986,65* 0,94 -127,05 
+Años de escolaridad 11649,23* 0,29 41,9 
+Evaluación 1 7408,14 0,16 25,75 
+Evaluación 2 -915,7 -0,03 0,75 
+Entorno 1 -8600,51 0,5 137,75 
+Entorno 2 -21684,3 0,99 501,82* 
+Evaluación 4 52886,47* 2,96 1042,41* 
+Evaluación 7 -22904,61 0,46 -548,57 
+Evaluación 10 16859,44 -1,72 -273,93 
+Evaluación 11 113319,3* -3,87 568,2 
+Evaluación 6 -27494,31 4,4 -192,3 
+Citófono -95098,76 3,56 -580,14 
+Puerta/Reja cerrada 4822,61 -2,72 1,74 
+Entrada Compartida  puede 
+ser cerrada -17300,76 -6,09* -321,99 
+Entrada Compartida no 
+puede ser cerrada 101129,8* 3,98 -150,03 
+Separado o divorciado 48382,15 2,28 -788,19 
+Soltero o viudo 1285,78 1,46 -578,21 
+Departamento -29007,33 0,05 -109,26 
+Pieza -26755,87 -4,43 81,69 
+Mediagua 13016,21 1,48 -320,13 
+Cesante - - - 
+Inactivo - - - 
+Norte 48920,99 -4,78 -151,35 
+Sur -18732,84 -5,06 -476,3 
+Edad 759,64 0,24* -9,96 
+Constante 3388,87 -2,5 65,9 
+Estimación de los componentes de la varianza 
+Varianza Sede 150000000 12 829097 
+Varianza residuos 20700000000 178 4053847 
+% de varianza explicada 
+por el nivel 0.72% 6.35% 16.98% 
+p-valor test de razón de 
+verosimilitud (respecto al 
+modelo lineal) 
+0.397 0.121 <0,0001 
+ 
+ 
+ 
+
+=== PDF PAGE 69 ===
+  
+69 
+ 
+En la mayoría de las preguntas se repiten algunos factores importantes, por ejemplo la evaluación 
+4, la evaluación 11 y la edad. Se podría inferir que a mayor conocimiento de la encuesta existe más 
+sesgo en la información entregada, por lo cual el informan te contesta de manera “menos sincera” 
+la re entrevista.  
+ 
+Además la sede es un factor importante en la explicación de la variabilidad en la mayoría de las 
+preguntas, por lo cual se podría indicar como una sugerencia revisar los protocolos de capacitación 
+de los encuestadores, ya que en algunas sedes existen mayores tasas de cambio que en otras. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 70 ===
+  
+70 
+ 
+7.3 Modulo Ingresos 
+ 
+En conjunto con la Subsecretaría se acuerda que los módulos de mayor relevancia para el estudio, 
+modulo B: Historia Laboral  y modulo C: Ingresos Familiares , serán la base de este análisis, 
+indicando las variables con mayor y menor cambio respecto a las mediciones realizadas. Los 
+restantes módulos y sus tablas se pueden revisar en Anexos. 
+ 
+A continuación se presentan los indicadores generales de cambios por pregunta mencionados en 
+Conceptualización metodológica para estimar variabilidad entre mediciones: 
+ 
+ 
+Tabla 33: Indicadores generales de cambio, modulo C Ingresos Familiares 
+  
+C1a ¿Hizo 
+algún 
+negocio, 
+"pololo", u 
+otra 
+actividad por 
+cuenta 
+propia al 
+menos por 
+una hora? 
+C1a1 ¿Tuvo 
+algún trabajo 
+remunerado, 
+durante los 
+últimos 12 
+meses? 
+C1a2 ¿Hizo 
+algún 
+negocio, 
+"pololo", u 
+otra 
+actividad por 
+cuenta 
+propia al 
+menos por 
+una hora 
+durante los 
+últimos 12 
+meses? 
+C1b Este 
+trabajo 
+es/era de 
+tipo: 
+C2 En su 
+trabajo 
+principal, ¿ha 
+firmado (o 
+firmó) 
+contrato de 
+trabajo? 
+C2a La 
+relación 
+contractual 
+de este 
+trabajo es / 
+era del tipo: 
+% de Cambio 58.33% 60.62% 59.14% 82.19% 78.54% 89.73% 
+n=434 n=448 n=424 n=360 n=344 n=393 
+GDR 1.00 1.88 0.98 0.88 1.28   
+SVR 0.50 0.94 0.49 0.44 0.64 0.00 
+Desviación 
+estándar 
+encuesta 
+original 
+0.146 1.084 0.083 1.017 0.937 2.677 
+Desviación 
+estándar re-
+encuesta 
+0.071 0.971 0.101 1.282 1.911 3.105 
+IOI 19.064 0.444 28.726 0.165 0.142 0.000 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 71 ===
+  
+71 
+ 
+Tabla 34: Indicadores generales de cambio, modulo C Ingresos Familiares 
+  
+C3 En su trabajo 
+principal, ¿Cuál 
+fue su ingreso o 
+remuneración 
+líquida mensual 
+promedio de los 
+últimos 12 
+meses? 
+C4 Durante 
+el último 
+año 
+¿Cuántos 
+meses 
+trabajó en 
+su 
+ocupación 
+principal? 
+C5 Durante 
+el último 
+año, en los 
+meses en 
+que trabajó 
+en su 
+ocupación 
+principal: 
+¿Cuál fue su 
+jornada 
+laboral 
+promedio? 
+C5a ¿En esta 
+ocupación, 
+Ud. 
+trabaja/ba 
+como: 
+C6 ¿Recibió 
+alguna 
+bonificación 
+o 
+gratificación 
+durante los 
+últimos 12 
+meses?      
+C7 ¿Recibió 
+remuneración 
+en especies o 
+regalías 
+durante los 
+últimos 12 
+meses? 
+% de 
+Cambio 
+96.80% 84.08% 93.38% 78.31% 79.67% 72.98% 
+n=482 n=301 n=409 n=343 n=286 n=262 
+GDR 260293557613.24 18070.59493 105155.3092 2.595519 0.649764 0.617925 
+SVR 130146778806.62 9035.297465 52577.65461 1.2977595 0.324882 0.3089625 
+Desviación 
+estándar 
+encuesta 
+original 
+1118437.380 3.277 13.166 1.017 0.125 0 
+Desviación 
+estándar re-
+encuesta 
+178593.511 318.263 283.053 1.033 0.599 0.000 
+IOI 0.101 0.089 0.655 0.618 0.869 -- 
+ 
+ 
+ 
+Tabla 35: Indicadores generales de cambio, modulo C Ingresos Familiares 
+  
+C8 ¿Realizó algún retiro 
+de productos de su 
+negocio durante los 
+últimos 12 meses? 
+C9 Durante los últimos 
+12 meses, ¿ha tenido 
+otras ocupaciones 
+además del trabajo 
+principal? 
+C15b ¿Participa o ha 
+participado en los 
+últimos 12 meses en 
+algún Programa de 
+Empleo de Emergencia 
+del Estado? 
+% de Cambio 84.00% 71.46% 36.24% 
+n=84 n=313 n=349 
+GDR 0.196 0.690 0.818 
+SVR 0.098 0.345 0.409 
+Desviación estándar 
+encuesta original 0.126 0.111 0.063 
+Desviación estándar re-
+encuesta 0.000 0.287 0.000 
+IOI 6.185 3.653 101.818 
+ 
+
+=== PDF PAGE 72 ===
+  
+72 
+ 
+ 
+Tabla 36: Indicadores generales de cambio, modulo C Ingresos Familiares 
+  
+C16 ¿Realizó 
+declaración 
+de impuesto 
+a la renta el 
+año 2012? 
+C16a ¿Buscó 
+trabajo 
+remunerado 
+en las últimas 
+4 semanas? 
+C16b ¿Está 
+disponible 
+para 
+comenzar a 
+trabajar? 
+C16c ¿Por 
+qué no buscó 
+trabajo en las 
+últimas 
+cuatro 
+semanas? 
+C16e ¿Ha 
+trabajado 
+alguna vez? 
+C16f 
+¿Aceptaría 
+una oferta de 
+trabajo 
+remunerado? 
+% de Cambio 39.25% 48.61% 99.78% 63.00% 98.54% 75.04% 
+n=378 n=456 n=445 n=567 n=135 n=499 
+GDR 0.828 0.973 1.952 3.746 0.172 1.053 
+SVR 0.414 0.486 0.976 1.873 0.086 0.527 
+Desviación 
+estándar 
+encuesta 
+original 
+0.184 0.184 0.598 0.197 0.389 0.242 
+Desviación 
+estándar re-
+encuesta 
+0.128 0.219 1.013 1.596 0.500 0.291 
+IOI 8.240 5.933 0.706 0.724 0.214 3.670 
+ 
+ 
+ 
+ 
+ 
+Tabla 37: Indicadores generales de cambio, modulo C Ingresos Familiares 
+  
+C18 ¿Qué institución le 
+paga esta jubilación o 
+pensión? 
+C27a ¿Recibió alguna 
+Pensión Básica Solidaria 
+(PBS) o Aporte 
+Previsional Solidario 
+(APS)? 
+C28a ¿Recibió asignación 
+familiar en los últimos 12 
+meses? 
+% de Cambio 90.48% 52.62% 41.74% 
+n=133 n=503 n=402 
+GDR 64.681 5.938 0.826 
+SVR 32.341 2.969 0.413 
+Desviación estándar 
+encuesta original 15.576 1.125 0.231 
+Desviación estándar re-
+encuesta 40.800 1.593 0.183 
+IOI 0.017 0.780 4.757 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 73 ===
+ 
+ 
+7.3.1 Análisis Bivariado 
+ 
+A continuación se presentan los resultados de modulo  C, ingresos familiares, en relación a las 
+variables macrozona, sexo, tramo de edad, tipo de entrevistado, estado civil y tipo de vivienda.
+ 
+ 
+C1. ¿Tuvo algún trabajo remunerado, durante la última semana? 
+Las respuestas variaron hacia la opción no en la segunda medición. Como se verá en las siguie ntes 
+tablas también aumentaran las opciones no responde  o no sabe.
+ 
+ 
+La siguiente tabla de cambio vincula la información registrada en medición OSUAH (Filas, 
+horizontal) con los cambios a medición STATCOM (Columnas, verticales). Los casilleros marcados 
+en color celeste no registran cambios entre ambas mediciones. 
+ 
+Tabla 38: Cambio pregunta C1
+ 
+  
+C1 ¿Tuvo algún trabajo remunerado, durante la última 
+semana? 
+Si No No responde No sabe 
+Trabajo remunerado 
+durante la última 
+semana 
+Sí 114 115 4 0 
+No 63 309 3 1 
+No responde 1 1 0 0 
+No sabe 2 4 0 0 
+ 
+Frente a la consulta anterior, es la zona centro  la que presenta un mayor cambio (52%) en su 
+respuesta en relación a la medición anterior, en referencia a la zona sur (42%). 
+ 
+Tabla 39: C1 ¿Tuvo algún trabajo remunerado, durante la última semana? , según Macrozona
+ 
+  
+Macrozona 
+Centro Norte Sur 
+SIN CAMBIO % 47,4 48,1 58,0 
+CAMBIO % 52,6 51,9 42,0 
+Total Total (%) 100,0 100,0 100,0 
+n real 506 79 250 
+ 
+ 
+
+=== PDF PAGE 74 ===
+  
+74 
+ 
+Respecto a algún tipo de trabajo remunerado durante la última semana, son los solteros o viudos  
+los que presentan mayores diferencias (53%) respecto a los casados o convivientes (43%). 
+ 
+Tabla 40: C1 ¿Tuvo algún trabajo remunerado, durante la última semana? , según Estado civil 
+  
+Estado civil 
+Casado o 
+conviviente 
+Separado o 
+divorciado Soltero o viudo 
+SIN CAMBIO % 56,5 51,4 46,4 
+CAMBIO % 43,5 48,6 53,6 
+Total Total (%) 100,0 100,0 100,0 
+n real 375 37 403 
+ 
+ 
+El tramo de edad adulto joven (menores de 36 años), presenta resultados con un mayor cambio 
+(55%), respecto al tramo adulto mayor (mayor 65 años), en lo que refiere a trabajo remunerado. 
+ 
+Tabla 41:C1 ¿Tuvo algún trabajo remunerado, durante la última semana? , según Tramos de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 44,8 52,4 60,5 
+CAMBIO % 55,2 47,6 39,5 
+Total Total (%) 100,0 100,0 100,0 
+n real 353 330 152 
+ 
+ 
+ 
+C1a1.  ¿Tuvo algún trabajo remunerado, durante los últimos 12 meses?  
+La categoría hombre presenta un mayor cambio (60%) respecto a esta consulta, en relación al sexo 
+femenino (47%). 
+Tabla 42: C1a1 ¿Tuvo algún trabajo remunerado, durante los últimos 12 meses?, según  Sexo 
+ 
+  
+SEXO 
+Mujer Hombre 
+SIN CAMBIO % 52,1 39,2 
+CAMBIO % 47,9 60,8 
+Total Total (%) 100,0 100,0 
+n real 374 293 
+
+=== PDF PAGE 75 ===
+  
+75 
+ 
+Los más jóvenes cambian su respuesta en relación al trabajo remunerado del último año, así 
+adulto joven (menores de 36 años) registran un 60% respecto al cambio menor en adulto mayor  
+(mayor 65 años) con 39%. 
+ 
+Tabla 43: C1a1 ¿Tuvo algún trabajo remunerado, durante los últimos 12 meses?, según Tramos de edad 
+ 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 39,2 46,2 60,8 
+CAMBIO % 60,8 53,8 39,2 
+Total Total (%) 100,0 100,0 100,0 
+n real 283 236 148 
+ 
+ 
+Como ha sido la tendencia durante este capítulo, el grupo de refresco presenta un mayor cambio 
+que el grupo panel. 
+ 
+Tabla 44: C1a1 ¿Tuvo algún trabajo remunerado, durante los últimos 12 meses?, según Tipo de entrevistado 
+ 
+  
+Tipo de entrevistado 
+Panel Refresco 
+SIN CAMBIO % 51,6 38,5 
+CAMBIO % 48,4 61,5 
+Total Total (%) 100,0 100,0 
+n real 405 262 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 76 ===
+  
+76 
+ 
+C1a2. ¿Hizo algún negocio, "pololo", u otra actividad por cuenta propia al menos por una 
+hora durante los últimos 12 meses? 
+ 
+El mayor cambio se produce en la zona centro, situación similar a la que se revisa en este informe 
+al consultar por los programas de empleos de emergencia del estado. 
+ 
+Tabla 45: C1a2 ¿Hizo algún negocio, "pololo", u otra actividad por cuenta propia al menos por una hora durante los 
+últimos 12 meses?, según Macrozona 
+  
+Macrozona 
+Centro Norte Sur 
+SIN CAMBIO % 39,9 46,3 51,3 
+CAMBIO % 60,1 53,7 48,7 
+Total Total (%) 100,0 100,0 100,0 
+n real 401 67 195 
+ 
+ 
+Tabla 46: C1a2 ¿Hizo algún negocio, "pololo", u otra actividad por cuenta propia al menos por una hora durante los 
+últimos 12 meses?, según  Sexo 
+  
+SEXO 
+Mujer Hombre 
+SIN CAMBIO % 49,5 36,7 
+CAMBIO % 50,5 63,3 
+Total Total (%) 100,0 100,0 
+n real 374 289 
+ 
+ 
+Tabla 47: C1a2 ¿Hizo algún negocio, "pololo", u otra actividad por cuenta propia al menos por una hora durante los 
+últimos 12 meses?, según Tramos de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 35,1 44,0 60,5 
+CAMBIO % 64,9 56,0 39,5 
+Total Total (%) 100,0 100,0 100,0 
+n real 282 234 147 
+ 
+Tanto hombres como adulto joven (menores 36 años) presentan las mayores cifras de cambio 
+respecto a las otras categorías. 
+ 
+
+=== PDF PAGE 77 ===
+  
+77 
+ 
+Tabla 48: C1a2 ¿Hizo algún negocio, "pololo", u otra actividad por cuenta propia al menos por una hora durante los 
+últimos 12 meses?, según Tipo de entrevistado 
+  
+Tipo de entrevistado 
+Panel Refresco 
+SIN CAMBIO % 48,6 36,5 
+CAMBIO % 51,4 63,5 
+Total Total (%) 100,0 100,0 
+n real 403 260 
+ 
+ 
+En síntesis, frente a esta pregunta se presenta mayor cambio en hombre , en adulto joven 
+(menores de 36 años) y en grupo refresco (cada variable por separado en relación a la pregunta). 
+ 
+ 
+ 
+C1b. Este trabajo es/era de tipo: 
+ 
+Tal como se revisó en modulo B, Historia laboral , entre cada medición el valor asociado al tipo de 
+trabajo permanente se desagrega en otros tipos. 
+ 
+La siguiente tabla de cambio vincula la información registrada en medición OSUAH (Filas, 
+horizontal) con los  cambios a medición STATCOM (Columnas, verticales). Los casilleros marcados 
+en color celeste no registran cambios entre ambas mediciones. 
+ 
+Tabla 49: Cambio pregunta C1b 
+  
+C1b Este trabajo es/era de tipo: 
+Permanente 
+De 
+temporada 
+o 
+estacional 
+Ocasional 
+o 
+eventual 
+A 
+prueba 
+Por plazo o 
+tiempo 
+determinado Nr 
+Tipo de trabajo Permanente 67 13 13 1 4 1 
+De temporada o 
+estacional 6 4 4 0 1 0 
+Ocasional o 
+eventual 1 4 6 0 1 0 
+A prueba 2 0 0 0 0 0 
+Por plazo o 
+tiempo 
+determinado 
+7 1 0 0 1 0 
+ 
+
+=== PDF PAGE 78 ===
+  
+78 
+ 
+Estas diferencias y cambios en el tipo de trabajo se dan fundamentalmente en la zona norte  y 
+centro. 
+ 
+Tabla 50: C1b Este trabajo es/era de tipo, según Macrozona 
+  
+Macrozona 
+Centro Norte Sur 
+SIN CAMBIO % 16,6 15,6 30,3 
+CAMBIO % 83,4 84,4 69,7 
+Total Total (%) 100,0 100,0 100,0 
+n real 241 32 109 
+ 
+Tanto adulto mayor  (mayor de 65 años) como soltero o viudo son categorías que presentan el 
+mayor cambio en sus variables. 
+ 
+Tabla 51: C1b Este trabajo es/era de tipo, según Tramos de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 16,0 26,8 8,8 
+CAMBIO % 84,0 73,2 91,2 
+Total Total (%) 100,0 100,0 100,0 
+n real 169 179 34 
+ 
+Tal como en el modulo anterior, la categoría soltero o viudo presenta un mayor cambio frente a las 
+distintas preguntas. 
+ 
+Tabla 52: C1b Este trabajo es/era de tipo, según Estado civil 
+  
+Estado civil 
+Casado o 
+conviviente 
+Separado o 
+divorciado Soltero o viudo 
+SIN CAMBIO % 26,8 46,7 12,2 
+CAMBIO % 73,2 53,3 87,8 
+Total Total (%) 100,0 100,0 100,0 
+n real 183 15 180 
+ 
+ 
+ 
+
+=== PDF PAGE 79 ===
+  
+79 
+ 
+Mujer registra mayor cambio en sus respuestas (84%) que hombre (76%)  respecto al tipo de 
+trabajo. 
+ 
+Tabla 53: C1b Este trabajo es/era de tipo, según Sexo 
+  
+SEXO 
+Mujer Hombre 
+SIN CAMBIO % 15,5 23,8 
+CAMBIO % 84,5 76,2 
+Total Total (%) 100,0 100,0 
+n real 155 227 
+ 
+ 
+ 
+ 
+C2. En su trabajo principal, ¿ha firmado (o firmó) contrato de trabajo? 
+ 
+Tabla 54: C2 En su trabajo principal, ¿ha firmado (o firmó) contrato de trabajo? , según Macrozona 
+  
+  
+Macrozona 
+Centro Norte Sur 
+SIN CAMBIO % 19,1 15,6 39,4 
+CAMBIO % 80,9 84,4 60,6 
+Total Total (%) 100,0 100,0 100,0 
+n real 241 32 109 
+ 
+ 
+ 
+ 
+Tabla 55: C2 su trabajo principal, ¿ha firmado (o firmó) contrato de trabajo? , según Sexo 
+  
+SEXO 
+Mujer Hombre 
+SIN CAMBIO % 19,4 28,2 
+CAMBIO % 80,6 71,8 
+Total Total (%) 100,0 100,0 
+n real 155 227 
+ 
+ 
+ 
+Se repiten las mayorías de la pregunta anterior, zona norte, mujer, adulto mayor  y soltero o viudo, 
+son las categorías que presentan mayor cambio respecto a sus variables. 
+
+=== PDF PAGE 80 ===
+  
+80 
+ 
+ 
+ 
+ 
+Tabla 56: C2 su trabajo principal, ¿ha firmado (o firmó) contrato de trabajo? , según Tramos de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 18,9 33,5 5,9 
+CAMBIO % 81,1 66,5 94,1 
+Total Total (%) 100,0 100,0 100,0 
+n real 169 179 34 
+ 
+ 
+ 
+Tabla 57: C2 su trabajo principal, ¿ha firmado (o firmó) contrato de trabajo? , según Estado civil 
+  
+Estado civil 
+Casado o 
+conviviente 
+Separado o 
+divorciado Soltero o viudo 
+SIN CAMBIO % 31,7 46,7 16,1 
+CAMBIO % 68,3 53,3 83,9 
+Total Total (%) 100,0 100,0 100,0 
+n real 183 15 180 
+ 
+ 
+ 
+ 
+C2a. La relación contractual de este trabajo es / era del tipo:
+ 
+ 
+Tabla 58: C2a La relación contractual de este trabajo es / era del tipo, según Macrozona 
+  
+Macrozona 
+Centro Norte Sur 
+SIN CAMBIO % 9,1 9,4 18,3 
+CAMBIO % 90,9 90,6 81,7 
+Total Total (%) 100,0 100,0 100,0 
+n real 241 32 109 
+ 
+Valores parejos respecto al cambio, pero llama la atención alta cifra de la zona centro  (90%), 
+similar a la zona norte, pero con un n real muy distinto. 
+ 
+ 
+ 
+
+=== PDF PAGE 81 ===
+  
+81 
+ 
+Tabla 59: C2a  La relación contractual de este trabajo es / era del tipo, según Sexo 
+  
+SEXO 
+Mujer Hombre 
+SIN CAMBIO % 7,7 14,5 
+CAMBIO % 92,3 85,5 
+Total Total (%) 100,0 100,0 
+n real 155 227 
+ 
+ 
+C5a. ¿En esta ocupación, Ud. trabaja/ba como: 
+ 
+Las principales variaciones se dan en zona centro, mujer y adulto mayor. 
+ 
+Tabla 60: C5a ¿En esta ocupación, Ud. trabaja/ba como, según Macrozona 
+  
+Macrozona 
+Centro Norte Sur 
+SIN CAMBIO % 20,3 15,6 37,6 
+CAMBIO % 79,7 84,4 62,4 
+Total Total (%) 100,0 100,0 100,0 
+n real 241 32 109 
+ 
+Tabla 61:C5a ¿En esta ocupación, Ud. trabaja/ba como, según  Sexo 
+  
+SEXO 
+Mujer Hombre 
+SIN CAMBIO % 15,5 31,3 
+CAMBIO % 84,5 68,7 
+Total Total (%) 100,0 100,0 
+n real 155 227 
+ 
+Tabla 62: C5a ¿En esta ocupación, Ud. trabaja/ba como, según Tramos de edad 
+ 
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 24,3 29,1 5,9 
+CAMBIO % 75,7 70,9 94,1 
+Total Total (%) 100,0 100,0 100,0 
+n real 169 179 34 
+ 
+ 
+ 
+
+=== PDF PAGE 82 ===
+  
+82 
+ 
+C6. ¿Recibió alguna bonificación o gratificación durante los últimos 12 meses? 
+ 
+Las mujeres presentan una mayor variación e n su respuesta respecto a la comparación entre 
+ambas mediciones. 
+ 
+Tabla 63: C6 ¿Recibió alguna bonificación o gratificación durante los últimos 12 meses?, según sexo 
+  
+SEXO 
+Mujer Hombre 
+SIN CAMBIO % 16,7 28,3 
+CAMBIO % 83,3 71,7 
+Total Total (%) 100,0 100,0 
+n real 126 184 
+ 
+ 
+C7. ¿Recibió remuneración en especies o regalías durante los últimos 12 meses? 
+ 
+Tabla 64: C7 ¿Recibió remuneración en especies o regalías durante los últimos 12 meses?, según sexo 
+  
+SEXO 
+Mujer Hombre 
+SIN CAMBIO % 21,4 38,0 
+CAMBIO % 78,6 62,0 
+Total Total (%) 100,0 100,0 
+n real 126 184 
+ 
+C9. Durante los últimos 12 meses, ¿ha tenido otras ocupaciones además del trabajo 
+principal? 
+ 
+Tabla 65: C9 Durante los últimos 12 meses, ¿ha tenido otras ocupaciones además del trabajo principal?, según 
+Macrozona. 
+  
+Macrozona 
+Centro Norte Sur 
+SIN CAMBIO % 26,6 28,1 47,7 
+CAMBIO % 73,4 71,9 52,3 
+Total Total (%) 100,0 100,0 100,0 
+n real 241 32 109 
+ 
+Frente a esta pregunta, la zona centro y la norte , mantienen una variabilidad constante a lo largo 
+de este análisis. Mientras que mujer presenta un cambio de 78%, bastante superior al cambio en la 
+respuesta de hombre  con un 59%. 
+
+=== PDF PAGE 83 ===
+  
+83 
+ 
+ 
+Tabla 66: Durante los últimos 12 meses, ¿ha tenido otras ocupaciones además del trabajo principal?, según sexo 
+  
+SEXO 
+Mujer Hombre 
+SIN CAMBIO % 21,9 40,1 
+CAMBIO % 78,1 59,9 
+Total Total (%) 100,0 100,0 
+n real 155 227 
+ 
+El porcentaje de cambio en  adulto mayor supera con creces a las otras categorías con un 94% 
+frente al 69% de adulto joven y 60% de adulto. 
+ 
+Tabla 67: Durante los últimos 12 meses, ¿ha tenido otras ocupaciones además del trabajo principal?, según Tramos de 
+edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 30,8 39,7 5,9 
+CAMBIO % 69,2 60,3 94,1 
+Total Total (%) 100,0 100,0 100,0 
+n real 169 179 34 
+ 
+ 
+C15b. ¿Participa o ha participado en los últimos 12 meses en algún Programa de Empleo 
+de Emergencia del Estado? 
+ 
+Con menos variabilidad que otras respuestas, en este caso el adulto joven, el grupo refresco  y el 
+separado o divorciado son las categorías con mayor porcentaje de cambio. 
+ 
+Tabla 68 : C15b ¿Participa o ha participado en los últimos 12 meses en algún Programa de Empleo de Emergencia del 
+Estado?, según Tramos de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 68,3 76,7 78,9 
+CAMBIO % 31,7 23,3 21,1 
+Total Total (%) 100,0 100,0 100,0 
+n real 353 330 152 
+ 
+ 
+
+=== PDF PAGE 84 ===
+  
+84 
+ 
+ 
+Tabla 69: C15b ¿Participa o ha participado en los últimos 12 meses en algún Programa de Empleo de Emergencia del 
+Estado?, según Tipo de entrevistado 
+  
+Tipo de entrevistado 
+Panel Refresco 
+SIN CAMBIO % 78,3 66,5 
+CAMBIO % 21,7 33,5 
+Total Total (%) 100,0 100,0 
+n real 498 337 
+ 
+ 
+ 
+Tabla 70: C15b ¿Participa o ha participado en los últimos 12 meses en algún Programa de Empleo de Emergencia del 
+Estado?, según Estado civil 
+  
+Estado civil 
+Casado o 
+conviviente 
+Separado o 
+divorciado Soltero o viudo 
+SIN CAMBIO % 78,7 67,6 71,0 
+CAMBIO % 21,3 32,4 29,0 
+Total Total (%) 100,0 100,0 100,0 
+n real 375 37 403 
+ 
+ 
+C16. ¿Realizó declaración de impuesto a la renta el año 2012?
+ 
+Adulto joven y grupo de refresco  son las categorías con mayor variabilidad respecto a la consulta 
+por la declaración de impuesto a la renta. 
+ 
+Tabla 71:C16 ¿Realizó declaración de impuesto a la renta el año 2012?, según Tramos de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 65,2 72,4 76,3 
+CAMBIO % 34,8 27,6 23,7 
+Total Total (%) 100,0 100,0 100,0 
+n real 353 330 152 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 85 ===
+  
+85 
+ 
+ 
+ 
+Tabla 72:C16 ¿Realizó declaración de impuesto a la renta el año 2012?, según Tipo de entrevistado 
+  
+Tipo de entrevistado 
+Panel Refresco 
+SIN CAMBIO % 74,3 63,8 
+CAMBIO % 25,7 36,2 
+Total Total (%) 100,0 100,0 
+n real 498 337 
+ 
+ 
+C16a. ¿Buscó trabajo remunerado en las últimas 4 semanas? 
+ 
+Tabla 73: C16a ¿Buscó trabajo remunerado en las últimas 4 semanas?, según Tramos de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 52,9 63,9 65,1 
+CAMBIO % 47,1 36,1 34,9 
+Total Total (%) 100,0 100,0 100,0 
+n real 340 321 149 
+ 
+ 
+C16c. ¿Por qué no buscó trabajo en las últimas cuatro semanas? 
+ 
+Tabla 74: C16c ¿Por qué no buscó trabajo en las últimas cuatro semanas?, según Tramos de edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 33,4 47,9 49,0 
+CAMBIO % 66,6 52,1 51,0 
+Total Total (%) 100,0 100,0 100,0 
+n real 326 315 149 
+ 
+ 
+El adulto joven (menores 36 años) registra mayor variabilidad  en sus respuestas en ambas 
+mediciones respecto al trabajo remunerado de las últimas 4 semanas. 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 86 ===
+  
+86 
+ 
+C16f. ¿Aceptaría una oferta de trabajo remunerado? 
+ 
+Tabla 75: C16f ¿Aceptaría una oferta de trabajo remunerado? 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 17,4 25,7 50,0 
+CAMBIO % 82,6 74,3 50,0 
+Total Total (%) 100,0 100,0 100,0 
+n real 242 261 114 
+ 
+ 
+C27a. ¿Recibió alguna Pensión Básica Solidaria (PBS) o Aporte Previsional Solidario (APS)? 
+ 
+En esta pregunta, es  el adulto mayor  quien presenta mayores cambios en la respuesta entre 
+ambas mediciones. 
+ 
+Tabla 76: C27a ¿Recibió alguna Pensión Básica Solidaria (PBS) o Aporte Previsional Solidario (APS)?, según Tramos de 
+edad 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 54,4 59,1 45,7 
+CAMBIO % 45,6 40,9 54,3 
+Total Total (%) 100,0 100,0 100,0 
+n real 349 328 151 
+ 
+C28a. ¿Recibió asignación familiar en los últimos 12 meses? 
+ 
+Mientras que  el adulto joven presenta mayor variabilidad en esta pregunta a diferencia de la 
+anterior. 
+Tabla 77:C28a ¿Recibió asignación familiar en los últimos 12 meses?, según Tramos de edad
+ 
+  
+Tramos de edad 
+Adulto joven 
+(Menores 36 años) 
+Adulto(37 años-65 
+años) 
+Adulto mayor 
+(mayor 65 años) 
+SIN CAMBIO % 61,5 69,4 75,7 
+CAMBIO % 38,5 30,6 24,3 
+Total Total (%) 100,0 100,0 100,0 
+n real 353 330 152 
+
+=== PDF PAGE 87 ===
+  
+87 
+ 
+Modelos logísticos  
+Tabla 78: Modelo logístico por pregunta, modulo C Ingresos familiares
+ 
+  
+c1_c ¿Tuvo 
+algún trabajo 
+remunerado, 
+durante la 
+última 
+semana? 
+c1a_c ¿Hizo 
+algún 
+negocio, 
+"pololo", u 
+otra 
+actividad por 
+cuenta 
+propia al 
+menos por 
+una hora? 
+c1a1_c 
+¿Tuvo 
+algún 
+trabajo 
+remunerad
+o, durante 
+los últimos 
+12 meses? 
+c1a2_c ¿Hizo 
+algún negocio, 
+"pololo", u 
+otra actividad 
+por cuenta 
+propia al 
+menos por una 
+hora durante 
+los dos últimos 
+12 meses? 
+c1b_c 
+Este 
+trabajo 
+es/era 
+de tipo: 
+c2_c En su 
+trabajo 
+principal, 
+¿ha 
+firmado (o 
+firmó) 
+contrato de 
+trabajo? 
+  Riesgos relativos asociados (Odds Ratio) 
+Sexo 1,1 1,7* 1,73* 1,75* 0,62 0,71 
+Tipo de entrevistado 1,36 1,57* 1,57* 1,79* 1,23 0,96 
+Pertenece a alguna 
+etnia 1,37 1,79 1,61 1,69 0,66 1,11 
+Años de escolaridad 0,97 0,94* 0,92* 0,98 1,14 1,08 
+Evaluación 1 1,03 1,01 1,01 1,03 1,08 1,15* 
+Evaluación 2 1,01 1,01 1 1 0,99 0,99 
+Entorno 1 1,04 1,04 1,09 1,06 1,04 0,96 
+Entorno 2 0,79 0,86 0,85 0,8 0,99 0,86 
+Evaluación 4 0,79 0,65* 0,74 0,72 0,92 0,69 
+Evaluación 7 1,32 1,33 1,46 1,33 1,09 0,74 
+Evaluación 10 0,73 0,93 0,87 0,85 0,49* 0,4* 
+Evaluación 11 0,76 0,95 1,03 1,36 0,85 0,52 
+Evaluación 6 0,98 1,14 0,96 1,05 0,68 0,77 
+Citófono 1,61 2,42 2,15 1,66 0,65 1,16 
+Puerta/reja cerrada 0,88 0,82 0,82 0,91 1,42 0,69 
+Entrada compartida 
+que puede ser 
+cerrada 1,57* 
+1,66 1,73* 1,61 2,09 0,97 
+Entrada compartida 
+no puede ser cerrada 1,05 1,38 1,17 1,06 6,68 0,38 
+Separado o 
+divorciado 1,2 1,16 1,23 1,45 0,48 0,65 
+Soltero o viudo 1,23 0,91 0,95 1,43 2,26* 2,32* 
+Departamento 1,12 0,95 0,75 0,93 0,82 1,41 
+Pieza 1,76 1,21 0,98 1,46 -- 0,79 
+Mediagua 3,09* 2,36 1,72 1,77 1,77 1,71 
+Norte 0,96 0,98 0,71 0,71 0,45 0,79 
+Sur 0,65* 0,65 0,59* 0,66 0,52* 0,38* 
+Edad 0,98* 0,97* 0,97* 0,99 1 1,01 
+Número de casos  759 598 594 576 353 360 
+pseudo R2 0.0679 0.1009 0.1168 0.0687 0.1259 0.1542 
+ 
+
+=== PDF PAGE 88 ===
+  
+88 
+ 
+c1_c.  
+¿Tuvo algún trabajo remunerado, durante la última semana?
+Al observar el modelo planteado para la probabilidad de cambio en la respuesta sobre algún 
+trabajo remunerado durante la última semana, se puede destacar que si la persona encuestada 
+vive en una mediagua tiene 3,4 veces más posibilidades de cambiar su respuesta a la pregunta. 
+ 
+Además, por los resultados obtenidos, el modelo multinivel es mejor que el modelo logístico, por 
+lo que el nivel sede influye en la variabilidad de la respuesta.  
+ 
+c1a_c.  
+¿Hizo algún negocio, "pololo", u otra actividad por cuenta propia al menos por una hora?
+El cambio en las respuestas de esta pregunta puede ser explicado por el sexo, un hombre  tiene 
+70% más posibilidades de variar en su respuesta con respecto a una mujer, tipo de entrevistado, 
+un entrevistado del tipo refresco tiene 57% más de posibilidades de cambiar su respuesta, los años 
+de escolaridad, que a mayor cantidad de años la probabilidad de cambio en la respuesta es menor, 
+al igual que si el encuestador se contactó previamente con el encuestado. La misma situación se 
+repite si la persona encuestada vive en la zona sur. 
+ 
+Se observa también que en este caso el modelo logístico es mejor que el modelo  Multinivel, por lo 
+cual el nivel sede no está influyendo en la variabilidad de la respuesta. 
+ 
+c1a1_c. 
+¿Tuvo algún trabajo remunerado, durante los últimos 12 meses? 
+En esta pregunta el cambio puede ser explicado por el sexo del entrevistado , tipo de entrevistado, 
+años de escolaridad, la edad y si es que el entrevistado vive en la zona sur. A mayor edad menos es 
+la probabilidad de cambio, ocurriendo lo mismo con los años de escolaridad y si la persona 
+entrevistada vive en el sur.  
+ 
+Los factores que aumentan las posibilidades de que existe un cambio en la respuesta son que el 
+entrevistado sea hombre o que la persona entrevistada sea de tipo refresco . En este caso el nivel 
+sede no explica la variabilidad de la respuesta. 
+ 
+ 
+
+=== PDF PAGE 89 ===
+  
+89 
+ 
+c1a2_c. 
+¿Hizo algún negocio, "pololo", u otra actividad por cuenta propia al menos por una hora 
+ 
+durante los dos últimos 12 meses?
+Para esta pregunta sólo influyen el sexo y el tipo de entrevistado, es decir que si el entrevistado es 
+hombre o es refresco  existen mayores posibi lidades de cambiar la respuesta a la pregunta.  Para 
+este caso la sede no influye en la explicación de la variabilidad de la respuesta. 
+ 
+c1b.  
+Este trabajo es/era de tipo:
+En este caso, si la persona recibió un incentivo luego de contestar la encuesta existe  50% menos 
+de probabilidad de que exista un cambio en la respuest a. Si el entrevistado vive en la zona sur 
+existe un 48% menos probabilidades de que éste dé una respuesta distinta.  En este caso la Sede 
+no aporta información sobre la variabilidad. 
+ 
+c2.  
+En su trabajo principal, ¿ha firmado (o firmó) contrato de trabajo?
+Si la persona recibió un incentivo luego de contestar la encuesta existe la probabilidad de que 
+exista cambio en la respuesta es 15% mayor. Mientras mejor sea la evaluación de los 
+procedimientos, menor es la probabilidad de tener un cambio en la respuesta. Para el entrevistado 
+soltero o viudo existen 2 veces más posibilidades de un cambio en la respuesta. Para las personas 
+que viven en el sur, la probabilidad de cambio es sólo del 40%.La Sede n o aporta información 
+sobre la variabilidad. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 90 ===
+  
+90 
+ 
+ 
+Tabla 79: Modelo logístico por pregunta, modulo C Ingresos familiares
+ 
+ 
+c2a_c La 
+relación 
+contractual de 
+este trabajo es / 
+era del tipo: 
+c5a_c ¿En esta 
+ocupación, 
+Ud. trabaja/ba 
+como: 
+c6_c ¿Recibió 
+alguna 
+bonificación o 
+gratificación 
+durante los 
+últimos 12 
+meses? 
+c7_c 
+¿Recibió 
+remuneració
+n en 
+especies o 
+regalías 
+durante los 
+últimos 12 
+meses? 
+c9_c Durante 
+los últimos 12 
+meses, ¿ha 
+tenido otras 
+ocupaciones 
+además del 
+trabajo 
+principal? 
+c15b_c 
+¿Participa o 
+ha 
+participado 
+en los 
+últimos 12 
+meses en 
+algún 
+Programa 
+de Empleo 
+de 
+Emergencia 
+del Estado? 
+ Riesgos relativos asociados (Odds Ratio) 
+Sexo 0,5 0,39* 0,54 0,47* 0,43* 0,97 
+Tipo de 
+entrevistado 1,18 1,21 0,95 1,12 0,96 1,68* 
+Pertenece a 
+alguna etnia 1,19 1,01 1,71 1,08 1,43 1,48 
+Años de 
+escolaridad 1,08 1,09 1,07 1,08 1,09* 0,97 
+Evaluación 1 1,03 1,18* 1,18* 1,22* 1,1 0,98 
+Evaluación 2 0,97 0,97* 0,97 0,97* 0,99 1,01 
+Entorno 1 1,2 0,88 0,82 0,95 1,03 1,05 
+Entorno 2 1,25 0,67* 0,48* 0,67 0,87 0,7* 
+Evaluación 4 1,05 1 1,04 0,98 1,16 0,63* 
+Evaluación 7 0,9 0,93 1,63 1,06 0,91 0,98 
+Evaluación 10 0,5 0,32* 0,42* 0,36* 0,56* 0,87 
+Evaluación 11 1,02 0,71 2,79 0,5 0,59 0,78 
+Evaluación 6 0,62 0,66 0,49 0,51 0,65 1,25 
+Citófono 1,04 1,11 3,1 1,73 1,05 1,58 
+Puerta/reja 
+cerrada 0,9 1,04 0,63 0,84 1,05 0,83 
+Entrada 
+compartida que 
+puede ser 
+cerrada 1,26 
+1,05 1,17 
+1,55 
+1,1 
+1,32 
+Entrada 
+compartida no 
+puede ser 
+cerrada 2,16 
+0,4 1,47 
+0,82 
+0,6 
+0,74 
+Separado o 
+divorciado 0,8 0,56 1,64 1,03 0,71 1,68 
+Soltero o viudo 1,57 1,36 1,61 1,73 1,95* 1,1 
+Departamento -- 0,82 1,21 0,95 1,27 1,56 
+Pieza 0,72 3,95 -- -- 1,18 3,96* 
+Mediagua 1,72 4,42 9,62* 4,26 2,85 1,8 
+Norte 0,49 0,63 0,47 0,38 0,62 1,02 
+Sur 0,42* 0,5* 0,54 0,53 0,4* 0,69 
+Edad 1 1,02 1,02 1,01 1,02* 0,98* 
+Número de casos  346 360 289 289 360 759 
+pseudo R2 0.1025 0.1817 0.1441 0.1509 0.1329 0.0896 
+ 
+ 
+
+=== PDF PAGE 91 ===
+  
+91 
+ 
+c2a. 
+La relación contractual de este trabajo es / era del tipo:  
+En este caso sólo es influyente si la persona entrevistada viva en la zona  sur, disminuyendo las 
+probabilidades de cambio en la respuesta. La sede no influye en la explicación de la variabilidad. 
+ 
+c5a_c.   
+¿En esta ocupación, Ud. trabaja/ba como:
+Los factores que disminuyen las probabilidades de cambio en la respuesta son sexo del 
+entrevistado, evaluación del encuestador (a mejor evaluación menor es la probabilidad de 
+cambio),  mayor seguridad en el entorno después de las 9, si la persona recibió un incentivo luego 
+de contestar la encuesta y si vive en el sur.  Si el encuestado entrega una buena evaluación de los 
+procedimientos existe mayor  probabilidad de cambios.  En este caso la sede no explica la 
+variabilidad del cambio. 
+c6_c.   
+¿Recibió alguna bonificación o gratificación durante los últimos 12 meses?
+Si el entorno es seguro después de las 9 de la noche las probabilidades de cambio en la respuesta 
+se reducen en 50%. Si la persona entrevistada vive en una mediagua es casi 10 veces más probable 
+que haya cambio en la respuesta. La sede no explica la variabilidad de respuesta. 
+ 
+c7_c.  
+¿Recibió remuneración en especies o regalías durante los últimos 12 meses?
+Si el entrevistado es hombre , las probabilidades de cambio en la respuesta se reducen 
+aproximadamente al 50%. Si la persona recibió un incentivo luego de contestar la encuesta existe 
+un 64% menos de probabilidades de que exista un cambio en la respuesta. Si el entrevistado 
+realiza una buena evaluación de los procedimientos las probabilidades de cambio en la respuesta 
+aumentan en un 22%.La sede no explica la variabilidad de respuesta. 
+c9.  
+Durante los últimos 12 meses, ¿ha tenido otras ocupaciones además del trabajo principal?
+En este caso, s i el entrevistado es hombre  o si recibió un incentivo luego de la entrevista 
+disminuyen las posibilidades de cambio en las respuestas. A más años de escolaridad las 
+posibilidades de cambio aumentan, al igual que si la persona entrevistada es solter o o viudo. La 
+sede aporta un 30% de la explicación de la variabilidad. 
+c15b. 
+ ¿Participa o ha participado en los últimos 12 meses en algún Programa de Empleo de 
+  
+Emergencia del Estado?
+
+=== PDF PAGE 92 ===
+  
+92 
+ 
+Con respecto a esta pregunta, si el entrevistado vive en una pieza, las probabilidades de cambio en 
+la respuesta aumentan 4 veces. Si el entrevistado es del tipo refresco, las probabilidades 
+aumentan en un 68%.La sede es un factor importante en la explicación de la varianza. 
+Tabla 80: Modelo logístico por pregunta, modulo C Ingresos familiares
+ 
+ 
+c16_c 
+¿Realizó 
+declaració
+n de 
+impuesto a 
+la renta el 
+año 2012? 
+c16a_c 
+¿Buscó 
+trabajo 
+remunerad
+o en las 
+últimas 4 
+semanas? 
+c16c_c 
+¿Por qué 
+no buscó 
+trabajo 
+en las 
+últimas 
+cuatro 
+semanas
+? 
+c16f_c 
+¿Aceptaría 
+una oferta 
+de trabajo 
+remunerado
+? 
+c18_c 
+¿Qué 
+institución 
+le paga 
+esta 
+jubilación 
+o pensión? 
+c27a_c 
+¿Recibió 
+alguna Pensión 
+Básica 
+Solidaria (PBS) 
+o Aporte 
+Previsional 
+Solidaria (PBS) 
+o Aporte 
+Previsional 
+Solidario 
+(APS)? 
+c28a_c 
+¿Recibió 
+asignación 
+familiar en 
+los últimos 
+12 meses? 
+ Riesgos relativos asociados (Odds Ratio) 
+Sexo 0,91 1,26 1,34 1,77* 0,22 0,9 0,85 
+Tipo de 
+entrevistado 1,5* 1,11 0,88 0,83 2,34 1,25 1,91* 
+Pertenece a alguna 
+etnia 1,02 1,52 2,45* 1,16 -- 1,42 1,26 
+Años de 
+escolaridad 0,95* 0,97 0,97 0,9* -- 0,99 0,94* 
+Evaluación 1 0,96 1,03 1,04 0,96 0,95 0,99 0,95 
+Evaluación 2 1,02 1 0,99 0,99 0,9* 1 1,02 
+Entorno 1 1,08 1,23* 1,1 1,07 0,73 1,08 1 
+Entorno 2 0,84 0,97 0,93 0,96 0,24 0,77* 0,71* 
+Evaluación 4 0,72 0,78 1,26 2,04* 2,25 1,01 0,78 
+Evaluación 7 0,96 0,95 0,69* 1,17 53,72
+* 0,89 1,13 
+Evaluación 10 0,86 0,74 0,73 0,73 0,12* 0,6* 1,03 
+Evaluación 11 0,87 0,88 1,25 0,72 0,12 0,68 1,03 
+Evaluación 6 1,24 0,9 0,95 0,8 0,03* 1,55* 0,96 
+Citófono 2,28* 1,48 1,15 7,84* -- 0,98 1,03 
+Puerta/reja cerrada 0,82 1,3 0,65* 0,9 0,67 0,86 0,9 
+Entrada compartida 
+que puede ser 
+cerrada 1,25 
+1,27 
+0,82 
+1,19 0,61 1,23 
+1,43 
+Entrada compartida 
+no puede ser 
+cerrada 1,03 
+1,2 
+1,11 
+1,65 -- 0,61 
+1,03 
+Separado o 
+divorciado 1,45 1,52 1,23 1,22 0,2 1,52 1,35 
+Soltero o viudo 0,98 1,41 1,38 1,1 0,45 1,32 0,88 
+Departamento 1,26 0,47 0,41* 0,9 2,95 0,81 1,72 
+Pieza 3,14* 2,58 3,02 3 -- 1,94 3,01 
+Mediagua 1,37 1,55 1,33 0,87 -- 1,12 1,41 
+Norte 1,12 0,94 0,78 1,01 0,28 0,59 0,91 
+Sur 0,74 1,17 0,72 1,35 0,58 0,88 0,63* 
+Edad 0,97* 1 1 0,96* 0,92* 1 0,97* 
+Número de casos  759 734 719 570 106 752 759 
+pseudo R2 0.0744 0.0468 0.0477 0.1223 0.409
+4 0.0450 0.0899 
+ 
+
+=== PDF PAGE 93 ===
+  
+93 
+ 
+ 
+ 
+ 
+c16.  
+¿Realizó declaración de impuesto a la renta el año 2012?
+La diferencias observadas pueden ser explicadas por el tipo de entrevistado, los de tipo 
+refresco poseen mayor diferencia que los de tipo panel ,  si la vivienda posee citófono también 
+es un factor, aquellos e ntrevistados que viven en pieza poseen 3 veces más posibilidades de 
+presentar cambios en sus respuestas. La sede es un factor importante para la explicación de la 
+variabilidad. 
+ 
+c16a.   
+¿Buscó trabajo remunerado en las últimas 4 semanas?
+Para esta pregunta sólo influye el descuido del entorno, es decir si hay descuido, las 
+probabilidades de cambio son 26% mayores. La sede ayuda a explicar la variabilidad de cambio 
+en la respuesta. 
+ 
+c16c.   
+¿Por qué no buscó trabajo en las últimas cuatro semanas?
+Si la persona entrevistada pertenece a alguna etnia existen casi 3 veces más probabilidades de 
+que haya cambio en la respuesta. Los factores que hacen disminuir estas posibilidades son que 
+el entrevistado le haya hecho preguntas al encuestador sobre la encuesta, si la puerta o reja 
+está cerrada y que la persona entrevistada viva en un departamento.  La sede ayuda a explicar 
+la variabilidad de respuesta. 
+ 
+c16f.  
+¿Aceptaría una oferta de trabajo remunerado?
+En este caso las variables más influyentes son: el encuestador se c ontactó con el entrevistado 
+previo a la realización de la encuesta, que aumenta 2 veces la probabilidad de cambio en la 
+respuesta, y si la vivienda tiene citófono las probabilidades de cambio aumentan 7 veces.  La 
+sede es importante para explicar la variabilidad de las respuestas. 
+ 
+c18_c.  
+¿Qué institución le paga esta jubilación o pensión?
+En este caso la variable más influyente es  si el encuestador se contactó con el entrevistado 
+previo a la realización de la encuesta. La sede es importante para explicar la variabilidad de las 
+respuestas. 
+ 
+
+=== PDF PAGE 94 ===
+  
+94 
+ 
+ 
+c27a_c. 
+¿Recibió alguna Pensión Básica Solidaria (PBS) o Aporte Previsional Solidaria (PBS) o 
+ 
+Aporte Previsional Solidario (APS)?
+La variable que hace que las probabilidades de cambio aumenten es si la encuesta se realizó 
+con netbook o PDA. La sede es importante para explicar la variabilidad de las respuestas. 
+ 
+c28a_c.  
+¿Recibió asignación familiar en los últimos 12 meses?
+Si el entrevistado es de tipo refresco, las probabilidades de cambio en la respuesta aumentan 
+casi 2 veces y disminuyen a mayor años de escolaridad y si es que hay mayor seguridad 
+después de las 9 de la noche.  La sede no es importante para explicar la variabilidad de  las 
+respuestas. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 95 ===
+  
+95 
+ 
+ 
+ 
+Modelos logísticos multinivel 
+Tabla 81: Modelo logístico multinivel por pregunta, modulo C Ingresos familiares
+ 
+ 
+c1_c ¿Tuvo 
+algún 
+trabajo 
+remunerado
+, durante la 
+última 
+semana? 
+c1a_c 
+¿Hizo 
+algún 
+negocio, 
+"pololo", 
+u otra 
+actividad 
+por cuenta 
+propia al 
+menos por 
+una hora? 
+c1a1_c 
+¿Tuvo algún 
+trabajo 
+remunerado
+, durante los 
+últimos 12 
+meses? 
+c1a2_c ¿Hizo 
+algún negocio, 
+"pololo", u 
+otra actividad 
+por cuenta 
+propia al 
+menos por 
+una hora 
+durante los 
+dos últimos 
+12 meses? 
+c1b_c 
+Este 
+trabajo 
+es/era 
+de tipo: 
+C2_c En su 
+trabajo 
+principal, 
+¿ha 
+firmado (o 
+firmó) 
+contrato 
+de 
+trabajo? 
+ Riesgos relativos asociados efectos fijos (Odds ratio) 
+Sexo 1,13 1,7* 1,73* 1,75* 0,61 0,71 
+Tipo de entrevistado 1,31 1,57* 1,57* 1,79* 1,21 0,96 
+Pertenece a alguna etnia 1,45 1,79 1,61 1,69 0,69 1,11 
+Años de escolaridad 0,97 0,94* 0,92* 0,98 1,14 1,08 
+Evaluación 1 1,01 1,01 1,01 1,03 1,07 1,15* 
+Evaluación 2 1,01 1,01 1 1 0,99 0,99 
+Entorno 1 1,05 1,04 1,09 1,06 1,04 0,96 
+Entorno 2 0,79 0,86 0,85 0,8 0,99 0,86 
+Evaluación 4 0,71 0,65* 0,74 0,72 0,9 0,69 
+Evaluación 7 1,33 1,33 1,46 1,33 1,11 0,74 
+Evaluación 10 0,82 0,93 0,87 0,85 0,49* 0,4* 
+Evaluación 11 0,77 0,95 1,03 1,36 0,82 0,52 
+Evaluación 6 0,87 1,14 0,96 1,05 0,68 0,77 
+Citófono 1,9 2,42 2,15 1,66 0,7 1,16 
+Puerta/reja cerrada 0,92 0,82 0,82 0,91 1,44 0,69 
+Entrada compartida que 
+puede ser cerrada 1,6* 1,66 1,73* 1,61 2,05 0,97 
+Entrada compartida no 
+puede ser cerrada 1,03 1,38 1,17 1,06 7,71 0,38 
+Separado o divorciado 1,3 1,16 1,23 1,45 0,47 0,65 
+Soltero o viudo 1,29 0,91 0,95 1,43 2,32* 2,32* 
+Departamento 1,08 0,95 0,75 0,93 0,83 1,41 
+Pieza 1,96 1,21 0,98 1,46 -- 0,79 
+Mediagua 3,37* 2,36 1,72 1,77 1,73 1,71 
+Norte 0,92 0,98 0,71 0,71 0,48 0,79 
+Sur 0,58* 0,65 0,59* 0,66 0,51* 0,38* 
+Edad 0,98* 0,97* 0,97* 0,99 1 1,01 
+ Efecto Aleatorio (estimación de varianza) 
+varianza Sede .1234909 9.74e-10 8.75e-26 2.38e-10  3.08e-
+14 
+9.36e-
+15 
+p-valor test de  razón de 
+verosimilitud (con 
+respecto regresión 
+logística)  
+0.0217 1.00 1.00 1.00 1.00 1.00 
+
+=== PDF PAGE 96 ===
+  
+96 
+ 
+ 
+ 
+Tabla 82: Modelo logístico multinivel por pregunta, modulo C Ingresos familiares
+ 
+ 
+c2a_c La 
+relación 
+contractu
+al de este 
+trabajo es 
+/ era del 
+tipo: 
+c5a_c ¿En 
+esta 
+ocupació
+n, Ud. 
+trabaja/b
+a como: 
+c6_c 
+¿Recibió 
+alguna 
+bonificació
+n o 
+gratificació
+n durante 
+los últimos 
+12 meses? 
+c7_c 
+¿Recibió 
+remuneraci
+ón en 
+especies o 
+regalías 
+durante los 
+últimos 12 
+meses? 
+c9_c 
+Durante 
+los últimos 
+12 meses, 
+¿ha tenido 
+otras 
+ocupacion
+es además 
+del trabajo 
+principal? 
+c15b_c 
+¿Participa 
+o ha 
+participad
+o en los 
+últimos 
+12 meses 
+en algún 
+Programa 
+de 
+Empleo 
+de 
+Emergenci
+a del 
+Estado? 
+ Riesgos relativos asociados efectos fijos (Odds ratio) 
+Sexo 0,48 0,4* 0,54 0,48* 0,43* 1 
+Tipo de entrevistado 1,22 1,22 0,94 1,12 0,96 1,74* 
+Pertenece a alguna etnia 1,22 1,02 1,7 1,08 1,44 1,63 
+Años de escolaridad 1,08 1,09 1,07 1,08 1,09* 0,96 
+Evaluación 1 1,03 1,17* 1,18* 1,22* 1,1 0,93 
+Evaluación 2 0,97 0,97* 0,97 0,97* 0,99 1,02 
+Entorno 1 1,23 0,88 0,81 0,94 1,06 1,04 
+Entorno 2 1,25 0,68 0,47* 0,66 0,93 0,63* 
+Evaluación 4 1,06 0,98 1,04 0,99 1,11 0,56* 
+Evaluación 7 0,9 0,92 1,63 1,06 0,82 0,97 
+Evaluación 10 0,48 0,34* 0,41* 0,36* 0,64 0,93 
+Evaluación 11 1,05 0,71 2,74 0,49 0,53 0,84 
+Evaluación 6 0,59 0,64 0,48 0,51 0,53 0,95 
+Citófono 1,02 1,16 3,35 2 1,25 2,06 
+Puerta/reja cerrada 0,85 1,04 0,64 0,85 1,06 0,9 
+Entrada compartida que 
+puede ser cerrada 1,28 1,06 1,14 1,52 1,23 1,3 
+Entrada compartida no puede 
+ser cerrada 2,16 0,39 1,49 0,82 0,56 0,72 
+Separado o divorciado 0,84 0,56 1,64 1,03 0,65 2,17 
+Soltero o viudo 1,54 1,37 1,66 1,82 2,11* 1,25 
+Departamento -- 0,84 1,22 0,97 1,24 1,51 
+Pieza 0,72 4,29 -- -- 1,76 4,74* 
+Mediagua 1,66 4,57 9,74* 4,24 2,99 2,29 
+Norte 0,46 0,63 0,46 0,37 0,53 0,95 
+Sur 0,41* 0,46 0,54 0,52 0,31* 0,53 
+Edad 1 1,02 1,02 1,02 1,02* 0,98* 
+ Efecto Aleatorio (estimación de varianza) 
+varianza Sede 9.70e-20 .0641498 4.18e-12 .0063632 .3005708 .4214181 
+p-valor test de  razón de 
+verosimilitud (con respecto 
+regresión logística)  
+1.00 0.3737 1.00 0.4837 0.0528 0.0000 
+
+=== PDF PAGE 97 ===
+  
+97 
+ 
+ 
+ 
+Tabla 83: Modelo logístico multinivel por pregunta, modulo C Ingresos familiares
+ 
+ 
+c16_c 
+¿Realizó 
+declaración 
+de 
+impuesto a 
+la renta el 
+año 2012? 
+c16a_c 
+¿Buscó 
+trabajo 
+remunerad
+o en las 
+últimas 4 
+semanas? 
+c16c_c 
+¿Por qué 
+no buscó 
+trabajo 
+en las 
+últimas 
+cuatro 
+semanas? 
+c16f_c 
+¿Aceptaría 
+una oferta 
+de trabajo 
+remunerad
+o? 
+c27a_c ¿Recibió 
+alguna Pensión 
+Básica Solidaria 
+(PBS) o Aporte 
+Previsional 
+Solidaria (PBS) o 
+Aporte 
+Previsional 
+Solidario (APS)? 
+c28a_c 
+¿Recibió 
+asignación 
+familiar 
+en los 
+últimos 12 
+meses? 
+ Riesgos relativos asociados efectos fijos (Odds ratio) 
+Sexo 0,93 1,28 1,37 1,8* 0,91 0,86 
+Tipo de 
+entrevistado 1,54* 1,1 0,84 0,85 1,29 1,92* 
+Pertenece a alguna 
+etnia 1,09 1,63 2,53* 1,25 1,64 1,29 
+Años de escolaridad 0,95* 0,97 0,97 0,89* 0,99 0,94* 
+Evaluación 1 0,92 1,01 1,04 0,95 0,99 0,94 
+Evaluación 2 1,02 1 0,99 1 1 1,02 
+Entorno 1 1,08 1,23* 1,1 1,05 1,08 1 
+Entorno 2 0,78 0,93 0,91 0,88 0,75* 0,7* 
+Evaluación 4 0,66 0,7 1,08 1,92* 0,9 0,76 
+Evaluación 7 0,94 0,98 0,72 1,21 0,89 1,13 
+Evaluación 10 0,91 0,78 0,72 0,74 0,67* 1,04 
+Evaluación 11 0,87 0,95 1,46 0,78 0,71 1,05 
+Evaluación 6 1,02 0,81 0,96 0,74 1,42 0,89 
+Citófono 2,62* 1,79 1,6 10,96* 1,16 1,09 
+Puerta/reja cerrada 0,87 1,39 0,7 0,98 0,93 0,93 
+Entrada compartida 
+que puede ser 
+cerrada 1,22 
+1,28 0,8 1,06 1,23 1,42 
+Entrada compartida 
+no puede ser 
+cerrada 1 
+1,19 1,04 1,68 0,62 1,02 
+Separado o 
+divorciado 1,69 1,72 1,47 1,2 1,65 1,43 
+Soltero o viudo 1,04 1,53* 1,58* 1,22 1,43* 0,9 
+Departamento 1,27 0,45 0,4 0,93 0,72 1,73 
+Pieza 3,43* 2,62 3,45 2,67 2,23 3,06* 
+Mediagua 1,54 1,46 1,39 0,78 1,2 1,5 
+Norte 1,01 0,93 0,86 1,1 0,51 0,9 
+Sur 0,66 1,1 0,75 1,51 0,7 0,59* 
+Edad 0,97* 1 1 0,96* 1 0,97* 
+ Efecto Aleatorio (estimación de varianza) 
+varianza sede .2402383  .1564139  .2492491  .3890497  .1918036 .0622427 
+p-valor test de  
+razón de 
+verosimilitud (con 
+respecto regresión 
+logística)  
+0.0019 0.0248 0.0093 0.0041 0.0014 0.1670 
+
+=== PDF PAGE 98 ===
+  
+98 
+ 
+ 
+Modelos lineales 
+Tabla 84: Modelo lineales por pregunta, modulo C Ingresos familiares
+ 
+ 
+C3_d En su trabajo 
+principal, ¿Cuál fue su 
+ingreso o 
+remuneración líquida 
+mensual promedio de 
+los últimos 12 meses? 
+c4_d Durante el 
+último año 
+¿Cuántos meses 
+trabajó en su 
+ocupación 
+principal? 
+c5_d Durante el 
+último año, en 
+los meses en que 
+trabajó en su 
+ocupación 
+principal: ¿Cuál 
+fue su jornada 
+laboral 
+promedio? 
+ Coeficientes beta estandarizados asociados 
+Sexo -0,11* 0,12* 0,12* 
+Tipo de entrevistado -0,07 0,11 0,07 
+Pertenece a alguna etnia -0,02 -0,08 -0,08 
+Años de escolaridad 0 0,02 -0,05 
+Evaluación 1 0,04 0,12 0 
+Evaluación 2 0,02 -0,05 -0,05 
+Entorno 1 0,02 -0,12 -0,13 
+Entorno 2 0,07 -0,06 0,04 
+Evaluación 4 -0,08 -0,13* -0,04 
+Evaluación 7 0,11 -0,01 0 
+Evaluación 10 0,02 -0,07 -0,09 
+Evaluación 11 -0,04 0,06 0,04 
+Evaluación 6 0,02 -0,02 -0,09 
+Citófono -0,06 0,07 -0,1 
+Puerta/reja cerrada 0,12* 0,11 0,07 
+Entrada compartida que puede ser cerrada 0,02 -0,01 -0,04 
+Entrada compartida no puede ser cerrada -0,03 0,22* 0,11 
+Separado o divorciado 0,13* -0,06 0,09 
+Soltero o viudo -0,02 0,07 0,09 
+Departamento 0 -0,03 -0,04 
+Pieza -0,02 0,08 0,13* 
+Mediagua 0,06 0 0 
+Norte 0,01 0,06 -0,11 
+Sur 0,11 -0,03 0,03 
+Edad -0,06 -0,01 -0,03 
+Constante -- -- -- 
+nº de casos 360 360 360 
+R2 ajustado 0.0125 0.0535 0.0423 
+ 
+
+=== PDF PAGE 99 ===
+  
+99 
+ 
+ 
+c3_d. 
+En su trabajo principal, ¿Cuál fue su ingreso o remuneración líquida mensual promedio de 
+ 
+los últimos 12 meses?
+Si el entrevistado es hombre , la remuneración disminuye en 0,11 desviaciones estándar en 
+comparación a las mujeres . Si la puerta o reja está cerrada o si el entrevistado está separado  o 
+divorciado, las desviaciones estándar en el ingreso aumentan en 0,12 y 0,13 respectivamente.  La 
+sede no es importante para explicar la variabilidad de las respuestas. 
+ 
+c4_d.  
+Durante el último año ¿Cuántos meses trabajó en su ocupación principal?
+Si el entrevistado es hombre , la cantidad de meses trabajados aumenta en 0,12 desviaciones 
+estándar en comparación a las mujeres. Si el encuestador se contactó con el entrevistado 
+previamente a la realización de la encuesta la desviación estándar en la diferencia de meses 
+trabajados disminuye en 0,13 desviaciones estándar y si la entrada compartida no puede  ser 
+cerrada hay un aumento en 0,22 desviaciones estándar.  La sede no es importante para explicar la 
+variabilidad de las respuestas. 
+ 
+c5_d. 
+Durante el último año, en los meses en que trabajó en su ocupación principal: ¿Cuál fue su 
+ 
+jornada laboral promedio?
+La diferencia en la jornada laboral promedio aumenta 0,12 desviaciones estándar cuando el 
+entrevistado es hombre  y 0,13 veces si la persona entrevistada vive en una pieza . La sede no es 
+importante para explicar la variabilidad de las respuestas. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 100 ===
+  
+100 
+ 
+ 
+ 
+ 
+Tabla 85: Modelo lineales por pregunta, modulo C Ingresos familiares
+ 
+ 
+c16d_d ¿Cuántas 
+semanas buscó o 
+ha estado 
+buscando 
+trabajo? 
+c16h_d ¿Cuál es 
+el salario por el 
+cual Ud. Estaría 
+dispuesto a 
+trabajar? 
+c16g_d Pensando 
+en la jornada 
+laboral ¿Qué 
+alternativa de 
+jornada 
+aceptaría? 
+ Coeficientes beta estandarizados asociados 
+Sexo 0,31* 0,05 0,04 
+Tipo de entrevistado 0,14 -0,16 0,21* 
+Pertenece a alguna etnia -0,06 0,12 -0,06 
+Años de escolaridad 0,03 -0,3* 0,05 
+Evaluación 1 0,12 0,12 -0,08 
+Evaluación 2 -0,1 -0,19 0,06 
+Entorno 1 0,09 -0,18 0,06 
+Entorno 2 0,17 0,05 0,07 
+Evaluación 4 0,01 -0,39* 0,1 
+Evaluación 7 -0,19 0,2 -0,06 
+Evaluación 10 -0,19 -0,08 0,07 
+Evaluación 11 0,17 -0,07 0,08 
+Evaluación 6 0,15 -0,18 0,11 
+Citófono 0,18 0 0,16 
+Puerta/reja cerrada -0,06 0,04 -0,11 
+Entrada compartida que puede ser cerrada 0,05 -0,02 0,13 
+Entrada compartida no puede ser cerrada -0,13 0* -0,34 
+Separado o divorciado -0,03 -0,02 -0,19 
+Soltero o viudo -0,33* -0,14 -0,22 
+Departamento 0,06 -0,12 0,25 
+Pieza -0,09 0* -0,19 
+Mediagua 0,05 -0,03 -0,1 
+Norte -0,3* 0,19 0,01 
+Sur -0,08 0,09 -0,29* 
+Edad -0,17 -0,31 -0,06 
+Constante -- -- -- 
+nº de casos 80 78 126 
+R2 ajustado 0.1907 0.0841 0.1110 
+ 
+
+=== PDF PAGE 101 ===
+  
+101 
+ 
+ 
+c16d_d.  
+¿Cuántas semanas buscó o ha estado buscando trabajo?
+La diferencia en la jornada laboral promedio aumenta 0,31 desviaciones estándar cuando el 
+entrevistado es hombre y disminuye 0,3 desviaciones estándar cuando la persona vive en el norte 
+y 0,33 desviaciones estándar cuando la persona entrevistada es soltera o viuda.  La sede no es 
+importante para explicar la variabilidad de las respuestas. 
+ 
+c16h_d.  
+¿Cuál es el salario por el cual Ud. Estaría dispuesto a trabajar?
+La diferencia en salarios por el cual estaría dispuesto a trabajar disminuye 0,31 desviaciones 
+estándar por cada año extra de escolaridad. Si el encuestador contacta al entrevistado previo a la 
+entrevista se disminuye en 0,39 desviaciones estándar.  La sede no es importante para explicar la 
+variabilidad de las respuestas. 
+ 
+c16g_d.  
+Pensando en la jornada laboral ¿Qué alternativa de jornada aceptaría?
+La diferencia de jornada se ve afectada por el tipo de entrevistado y si la persona entrevistada vive 
+en la zona sur. La sede no es importante para explicar la variabilidad de las respuestas. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+=== PDF PAGE 102 ===
+  
+102 
+ 
+ 
+ 
+Modelos lineales multinivel 
+Tabla 86: Modelo lineales multinivel por pregunta, modulo C Ingresos familiares
+ 
+ 
+C3_d En su trabajo 
+principal, ¿Cuál fue su 
+ingreso o remuneración 
+líquida mensual promedio 
+de los últimos 12 meses? 
+c4_d Durante el último 
+año ¿Cuántos meses 
+trabajó en su 
+ocupación principal? 
+c5_d Durante el 
+último año, en los 
+meses en que 
+trabajó en su 
+ocupación 
+principal: ¿Cuál fue 
+su jornada laboral 
+promedio? 
+ Coeficientes beta asociados efectos fijos 
+Sexo -169809,5* 57,03* 54,08* 
+Tipo de entrevistado -100998,4 66,49* 39 
+Pertenece a alguna etnia -55161,43 -61,62 -55,83 
+Años de escolaridad 19,36 1,82 -2,37 
+Evaluación 1 10386,4 15,15* 2,63 
+Evaluación 2 1223,52 -1,5 -1,4 
+Entorno 1 10577,53 -19,63 -16,13 
+Entorno 2 64496,94 -31,21 2,7 
+Evaluación 4 -128925,9 -65,59 -21,11 
+Evaluación 7 171627,2 1,9 15,68 
+Evaluación 10 39110,62 -56,08 -51,51 
+Evaluación 11 -122793,7 86,91 58,29 
+Evaluación 6 45326,07 8,93 -32,46 
+Citófono -195859,2 68,21 -108,69 
+Puerta/reja cerrada 199276,9* 61 36,68 
+Entrada compartida que 
+puede ser cerrada 35522,1 0,47 -16,88 
+Entrada compartida no 
+puede ser cerrada -111338,1 322,9* 116,79 
+Separado o divorciado 494476,1* -76,68 87,44 
+Soltero o viudo -34201,21 28,53 23,3 
+Departamento 5919,11 -39,9 -22,93 
+Pieza -126641,5 130,22 179,53* 
+Mediagua 231560,3 -2,22 -3,09 
+Norte 23276,5 38,96 -96,24 
+Sur 189852 -18,85 10,48 
+Edad -837,46 -0,12 -0,2 
+Constante -41990,97 50,11 89,68 
+Estimación de los componentes de la varianza 
+Varianza Sede 0 3755.06 3492.86 
+Varianza residuos 57400000
+0000 64987.76 47013.63 
+% de varianza explicada por el nivel 0.00% 5.46% 6.92% 
+p-valor test de razón de verosimilitud 
+(respecto al modelo lineal) 1.000 0.0114 0.0030 
+
+=== PDF PAGE 103 ===
+  
+103 
+ 
+ 
+ 
+ 
+Tabla 87: Modelo lineales multinivel por pregunta, modulo C Ingresos familiares
+ 
+ 
+c16d_d ¿Cuántas 
+semanas buscó o ha 
+estado buscando 
+trabajo? 
+c16h_d ¿Cuál es el salario por el 
+cual Ud. Estaría dispuesto a 
+trabajar? 
+c16g_d Pensando en 
+la jornada laboral 
+¿Qué alternativa de 
+jornada aceptaría? 
+ Coeficientes beta asociados efectos fijos 
+Sexo 223,16* 19554,04 0,14 
+Tipo de entrevistado 117,11 -60926,96 1,05* 
+Pertenece a alguna 
+etnia -95,08 86904,71 -0,53 
+Años de escolaridad 1,81 -9437,7* 0 
+Evaluación 1 14,79 7459,44 -0,01 
+Evaluación 2 -2,66 -2172,54 0 
+Entorno 1 8,92 -21480,27 0,05 
+Entorno 2 58,72 12572,33 0,11 
+Evaluación 4 12,42 -143940,2* 0,5 
+Evaluación 7 -131,45 78806,83 -0,3 
+Evaluación 10 -157,96 -30970,39 0,16 
+Evaluación 11 410,08 -62798,3 1,43 
+Evaluación 6 138,11 -84007,2 0,88 
+Citófono 284,45 -3795,22 1,33 
+Puerta/reja cerrada -34,01 14349,13 -0,6 
+Entrada compartida que 
+puede ser cerrada 92,2 -13846,23 0,66 
+Entrada compartida no 
+puede ser cerrada -167,36 -- -5,2 
+Separado o divorciado -24,02 -28486,03 -2,81* 
+Soltero o viudo -190,86 -53695,23 -0,99 
+Departamento 43,63 -190448,2 2,79 
+Pieza -310,8 -- -4,49 
+Mediagua 55,75 -15249,75 -0,55 
+Norte -357,02* 140907,2 0,01 
+Sur -1,06 31732,26 -1,3* 
+Edad -2,54 -2779,43 -0,01 
+Constante 100,8 419990,9 3,61 
+Estimación de los componentes de la varianza 
+Varianza Sede 10875.34 0.00 0.51 
+Varianza residuos 85185.94 31000000000.00 3.66 
+% de varianza explicada 
+por el nivel 11.32% 0.00% 12.23% 
+p-valor test de razón de 
+verosimilitud (respecto 
+al modelo lineal) 
+0.1590 1.000 0.0979 
+ 
+ 
+
+=== PDF PAGE 104 ===
+  
+104 
+ 
+8. Discusión final 
+ 
+Según los resultados obtenidos es posible concluir que existe en todas las preguntas un porcentaje 
+de variabilidad en las respuestas. Dichos cambios se debe n principalmente a la temporalidad y 
+subjetividad de las preguntas así como también a factores asociados a los propios entrevistados, al 
+entorno, a la labor del encuestador y el trabajo de coordinación representado por el jefe de grupo. 
+ 
+En resumen se pueden afirmar tres elementos fundamentales para una próxima aplicación: 
+ 
+1. Planificación: Es posible cumplir con los tiempos establecidos en el cronograma para la 
+aplicación de las encuestas requeridas, tal como se demuestra en el tiempo de registro 
+para Logradas. Es posible conseguir encuestas de la categoría “No logradas” siempre que 
+se siga el protocolo de la cantidad de visitas (al menos 4). Si bien la tasa de respuesta en la 
+base de No logradas es menor, sí se pueden obtener encuestas en este segmento. 
+ 
+2. Ubicación: Un minucioso trabajo sobre las hojas de rutas permite avanzar y depurar a 
+información sobre dirección y domicilios, esto sumado a la contactabilidad vía telefónica o 
+la visita en cuarta instancia inclusive, permitió sumar 101 entrevistas a la muestra No 
+Logradas. 
+ 
+3. Análisis: Por el momento no se reflejan diferencias significativas (superiores al 20%) entr e 
+ambas mediciones. 
+ 
+Efecto de “aprendizaje”: la gente dijo menos cosas que en la primera medición para acortar la 
+duración de la encuesta 
+ 
+Tal y como se revis ó en el capitulo anterior, los grupos o tipos -tramos con mayor cambio entre 
+mediciones son el grupo refresco , adulto joven  (menores 36 años), soltero o viudo. En menor 
+medida en relación a la proporción, zona centro  y mujer presentan variabilidad en sus re spuestas 
+en varias de las preguntas revisadas. 
+ 
+
+=== PDF PAGE 105 ===
+  
+105 
+ 
+Se concluye además  que entre cada medición el encuestado desarrollaría cierto aprendizaje, 
+respecto al instrumento lo que incidiría en el cambio de las respuestas, tal y como se revisó en el 
+ejemplo de situación laboral actual . Se considera además que durante el mes de distancia entre 
+cada medición es posible que cambien distintas situaciones a una velocidad mayor a la esperada. 
+Por último es necesario profundizar en la supervisión a encuestadores y la precisión de la 
+información conocido el antecedente de varios casos que quedaron fuera de la muestra por 
+código de disposición final número 4, es decir encuestas que se tomaron por logradas  pero que al 
+realizar la supervisión arrojo diferencias de domicilio y personas desconocidas para la dirección 
+indicada como encuesta realizada. 
+ 
+  
+
+=== PDF PAGE 106 ===
+  
+106 
+ 
+9. Bibliografía 
+ (S/N). (2010). Post Enumeration Surveys. New York.: United Nations Secretariat, 
+Department of Economic and Social Affairs, Statistic Division. 
+ (S/N). (2007). Encuestas en hogares en países en desarrollo y transición. New York: 
+Departamento en asuntos económicos y Sociales, división de estadística. Naciones Unidas. 
+ AAPOR. (2009). American Association for public opinion research. Recuperado el Enero de 
+2013, de 
+http://www.aapor.org/AM/Template.cfm?Section=Standard_Definitions1&Template=/CM
+/ContentDisplay.cfm&ContentID=1814 
+ Alwin, D. (2007). Margins of Error. Wiley. 
+ Biemer, P. a. (1991). Approaches to the modeling of measurement erro. En P. B. (Eds), 
+Measurement Error in Surveys (págs. 487-516). Nueva York: Wiley. 
+ Campanelli, P. P. (1997). Can You Hear Me Knocking? An Investigation into the Impact of 
+Interviewers on Survey Response Rates. Londres: London: Social and Community Planning 
+Research. 
+ Coder, J. a.-R. (1996). Evaluating the Quality Income Data Collection in the Annual 
+Supplement to the March Current Population Survey and the Survey of Income and 
+Program Participation. SIPP Working Paper No. 9604, U.S. Bureau. 
+ Couper., G. M. (1998). Nonresponse in Household Interview Surveys. New York: John Wiley. 
+ De la Cruz, F. (2008). Modelos Multinivel. Revista Per. Epidemiol, vol 12 número 3. 
+ Groves, R. (1989). Survey Errors and Survey Costs. Wiley. 
+ Groves, R. (2003). Survey Methodology. New York: John Wiley and Sons. 
+ Groves, R. M. (2006). Nonresponse Rates and Nonresponse Bias in Household Surveys. 
+Public Opinion Quarterly 70(5), 64-75. 
+ Groves, R. M. (2008). The impact of nonresponse rates on nonresponse bias. Public 
+Opinion Quarterly, 72(2), 167-189. 
+ Keane, J. G. (1985). Evaluating Censuses og Population and Housing. Bureau of the Census, 
+United States of America, Department of commerce. . 
+ Lepkowski, J. K. (1990). Measurement Errors in Panel Surveys. International Conference on 
+Measurement Errors in Surveys. Tucson, Arizona: Institute for Social Research, University 
+of Michigan. 
+ Lepowski, J. M. (2002). Nonresponse in the second wave of longitudinal household 
+surveys. En R. M. eds. Groves, Survey Nonresponse. Chichester: Wiley. 
+ Lessler, J. a. (1992). Nonsampling error in surveys. New York: Wiley. 
+ Olson, K. (2006). Survey participation, nonresponse bias, measurement error bias, and 
+total bias. Public Opinion Quarterly, 70, 737-758. 
+ Pardo, A., & Ruiz, M. y. (2007). Cómo ajustar e interpretar modelos multinivel con SPSS. 
+Psicothema año/vol 19, número 002, 308-321. 
+ Sae-Ung, S. a. (1998). Analysis of Nonresponse Effects on Income and Poverty Time Series 
+Data from SIPP. . 
+ Salvucci, S., & Walter, E. a. (1997). Measuremen Error Studies. Washington, DC.: U.S 
+Department of Education, office of educational research and improvement. 
+ Saris, W. E. (1998). Variation in Response Functions: A Source of Measurement Error in 
+Attitude Research. Amsterdam: Sociometric Research Foundation. 
+ Shea, M. (10 de Febrero de 1995). memorandum to V. J. Huggins. SIPP Data Quality. 
+Internal Census Bureau. 
+
+=== PDF PAGE 107 ===
+  
+107 
+ 
+ Singh, R. P. (1989). Social Science Research Council Conference. Quality of SIPP Estimates. 
+In Individuals and Families in Transition: Understanding Change Through Longitudinal 
+Data. Annapolis, Maryland. 
+ Waite, P. J. (8 de Junio de 1995). Internal Census Bureau memorandum to M. J. Longini. 
+SIPP Nonresponse. . 
+ Williams, T. (1993). Internal Census Bureau memorandum. SIPP Variances for the First 
+Quarter of the 1990 Calendar Year. . 
+ 
+ 
+ 
+ 
+ 
+ÍNDICE DE TABLAS 
+ 
+TABLA 1: TABLA RENDIMIENTO MARCO MUESTRAL Y DISPOSICIÓN FINAL LOGRADAS ......................................30  
+TABLA 2: TABLA RENDIMIENTO MARCO MUESTRAL Y DISPOSICIÓN FINAL NO LOGRADAS ................................33 
+TABLA 3: DESCRIPTIVO LOGRADAS BASE HOMOLOGADA ...................................................................................43  
+TABLA 4: INDICADORES GENERALES DE CAMBIO, MODULO B HISTORIA LABORAL ............................................45  
+TABLA 5: INDICADORES GENERALES DE CAMBIO, MODULO B HISTORIA LABORAL ............................................46  
+TABLA 6: INDICADORES GENERALES DE CAMBIO, MODULO B HISTORIA LABORAL ............................................46  
+TABLA 7: CAMBIO PREGUNTA B2 EN ESE PERÍODO, ¿EN CUÁL DE LAS SIGUIENTES SITUACIONES SE 
+ENCONTRABA? ..........................................................................................................................................47  
+TABLA 8: B2 EN ESE PERÍODO, ¿EN CUÁL DE LAS SIGUIENTES SITUACIONES SE ENCONTRABA?, SEGÚN TRAMOS 
+DE EDAD ...................................................................................................................................................48  
+TABLA 9: B2 EN ESE PERÍODO, ¿EN CUÁL DE LAS SIGUIENTES SITUACIONES SE ENCONTRABA?, SEGÚN  ESTADO 
+CIVIL .........................................................................................................................................................48  
+TABLA 10: B2 EN ESE PERÍODO, ¿EN CUÁL DE LAS SIGUIENTES SITUACIONES SE ENCONTRABA?, TIPO DE 
+ENTREVISTADO .........................................................................................................................................48  
+TABLA 11: B3 ¿HIZO ALGÚN NEGOCIO, “POLOLO”, U OTRA ACTIVIDAD POR CUENTA PROPIA AL MENOS POR UNA 
+HORA? , SEGÚN TRAMOS DE EDAD ............................................................................................................49  
+TABLA 12: B3 ¿HIZO ALGÚN NEGOCIO, “POLOLO”, U OTRA ACTIVIDAD POR CUENTA PROPIA AL MENOS POR UNA 
+HORA? , SEGÚN  ESTADO CIVIL .................................................................................................................49  
+TABLA 13: B3 ¿HIZO ALGÚN NEGOCIO, “POLOLO”, U OTRA ACTIVIDAD POR CUENTA PROPIA AL MENOS POR UNA 
+HORA? , SEGÚN TIPO DE ENTREVISTADO ...................................................................................................50  
+TABLA 14: CAMBIO PREGUNTA B6 ESTE TRABAJO ES/ERA DE TIPO: ...................................................................50  
+TABLA 15: B6 ESTE TRABAJO ES/ERA DE TIPO: SEGÚN TIPO DE ENTREVISTADO .................................................51  
+TABLA 16: CAMBIO PREGUNTA B9B LA RELACIÓN CONTRACTUAL DE ESTE TRABAJO ES/ERA DEL TIPO: ...........51 
+TABLA 17: B9B LA RELACIÓN CONTRACTUAL DE ESTE TRABAJO ES/ERA DEL TIPO: SEGÚN MACROZONA ..........52 
+TABLA 18: CAMBIO PREGUNTA B10 ¿QUÉ TIPO DE HORARIO TIENE/TENÍA EN ESTE TRABAJO? ..........................52 
+TABLA 19: B10 ¿QUÉ TIPO DE HORARIO TIENE/TENÍA EN ESTE TRABAJO?, SEGÚN TIPO DE ENTREVISTADO .......53 
+TABLA 20: B25 ¿CUÁL FUE LA RAZÓN DE SU INACTIVIDAD?, SEGÚN SEXO ........................................................53  
+ 
+TABLA 21: B25 ¿CUÁL FUE LA RAZÓN DE SU INACTIVIDAD?, SEGÚN TRAMOS DE EDAD ....................................54 
+ 
+TABLA 22: B26 ¿PARTICIPÓ USTED EN ALGÚN PROGRAMA DE EMPLEO DE EMERGENCIA DEL ESTADO?, SEGÚN 
+TRAMOS DE EDAD .....................................................................................................................................54  
+TABLA 23 :B26 ¿PARTICIPÓ USTED EN ALGÚN PROGRAMA DE EMPLEO DE EMERGENCIA DEL ESTADO?, SEGÚN 
+MACROZONA ............................................................................................................................................55  
+TABLA 24: B26 ¿PARTICIPÓ USTED EN ALGÚN PROGRAMA DE EMPLEO DE EMERGENCIA DEL ESTADO?, SEGÚN 
+TIPO DE ENTREVISTADO ............................................................................................................................55  
+TABLA 25: MODELO LOGÍSTICO POR PREGUNTA, MODULO B HISTORIA LABORAL .............................................56  
+TABLA 26: MODELO LOGÍSTICO POR PREGUNTA, MODULO B HISTORIA LABORAL .............................................59  
+TABLA 27: MODELO LOGÍSTICO POR PREGUNTA, MODULO B HISTORIA LABORAL .............................................62  
+TABLA 28: MODELO LOGÍSTICO MULTINIVEL POR PREGUNTA, MODULO B HISTORIA LABORAL.........................64 
+TABLA 29: MODELO LOGÍSTICO MULTINIVEL POR PREGUNTA, MODULO B HISTORIA LABORAL.........................65 
+
+=== PDF PAGE 108 ===
+  
+108 
+ 
+TABLA 30: MODELO LOGÍSTICO MULTINIVEL POR PREGUNTA, MODULO B HISTORIA LABORAL.........................66 
+TABLA 31: MODELO LINEAL POR PREGUNTA, MODULO B HISTORIA LABORAL ..................................................67  
+TABLA 32: MODELO LINEAL MULTINIVEL POR PREGUNTA, MODULO B HISTORIA LABORAL ..............................68 
+TABLA 33: INDICADORES GENERALES DE CAMBIO, MODULO C INGRESOS FAMILIARES .....................................70 
+TABLA 34: INDICADORES GENERALES DE CAMBIO, MODULO C INGRESOS FAMILIARES .....................................71 
+TABLA 35: INDICADORES GENERALES DE CAMBIO, MODULO C INGRESOS FAMILIARES .....................................71 
+TABLA 36: INDICADORES GENERALES DE CAMBIO, MODULO C INGRESOS FAMILIARES .....................................72 
+TABLA 37: INDICADORES GENERALES DE CAMBIO, MODULO C INGRESOS FAMILIARES .....................................72 
+TABLA 38: CAMBIO PREGUNTA C1 .....................................................................................................................73  
+TABLA 39: C1 ¿TUVO ALGÚN TRABAJO REMUNERADO, DURANTE LA ÚLTIMA SEMANA? , SEGÚN MACROZONA 73 
+TABLA 40: C1 ¿TUVO ALGÚN TRABAJO REMUNERADO, DURANTE LA ÚLTIMA SEMANA? , SEGÚN ESTADO CIVIL
+ ................................................................................................................................................................. 74 
+TABLA 41:C1 ¿TUVO ALGÚN TRABAJO REMUNERADO, DURANTE LA ÚLTIMA SEMANA? , SEGÚN TRAMOS DE 
+EDAD ........................................................................................................................................................74  
+TABLA 42: C1A1 ¿TUVO ALGÚN TRABAJO REMUNERADO, DURANTE LOS ÚLTIMOS 12 MESES?, SEGÚN  SEXO ...74 
+ 
+TABLA 43: C1A1 ¿TUVO ALGÚN TRABAJO REMUNERADO, DURANTE LOS ÚLTIMOS 12 MESES?, SEGÚN TRAMOS 
+ 
+DE EDAD ...................................................................................................................................................75  
+TABLA 44: C1A1 ¿TUVO ALGÚN TRABAJO REMUNERADO, DURANTE LOS ÚLTIMOS 12 MESES?, SEGÚN TIPO DE 
+ 
+ENTREVISTADO .........................................................................................................................................75  
+TABLA 45: C1A2 ¿HIZO ALGÚN NEGOCIO, "POLOLO", U OTRA ACTIVIDAD POR CUENTA PROPIA AL MENOS POR 
+UNA HORA DURANTE LOS ÚLTIMOS 12 MESES?, SEGÚN MACROZONA .......................................................76  
+TABLA 46: C1A2 ¿HIZO ALGÚN NEGOCIO, "POLOLO", U OTRA ACTIVIDAD POR CUENTA PROPIA AL MENOS POR 
+UNA HORA DURANTE LOS ÚLTIMOS 12 MESES?, SEGÚN  SEXO ...................................................................76  
+TABLA 47: C1A2 ¿HIZO ALGÚN NEGOCIO, "POLOLO", U OTRA ACTIVIDAD POR CUENTA PROPIA AL MENOS POR 
+UNA HORA DURANTE LOS ÚLTIMOS 12 MESES?, SEGÚN TRAMOS DE EDAD ................................................76  
+TABLA 48: C1A2 ¿HIZO ALGÚN NEGOCIO, "POLOLO", U OTRA ACTIVIDAD POR CUENTA PROPIA AL MENOS POR 
+UNA HORA DURANTE LOS ÚLTIMOS 12 MESES?, SEGÚN TIPO DE ENTREVISTADO .......................................77  
+TABLA 49: CAMBIO PREGUNTA C1B ...................................................................................................................77  
+TABLA 50: C1B ESTE TRABAJO ES/ERA DE TIPO, SEGÚN MACROZONA ...............................................................78  
+TABLA 51: C1B ESTE TRABAJO ES/ERA DE TIPO, SEGÚN TRAMOS DE EDAD ........................................................78  
+TABLA 52: C1B ESTE TRABAJO ES/ERA DE TIPO, SEGÚN ESTADO CIVIL ..............................................................78  
+TABLA 53: C1B ESTE TRABAJO ES/ERA DE TIPO, SEGÚN SEXO ............................................................................79  
+TABLA 54: C2 EN SU TRABAJO PRINCIPAL, ¿HA FIRMADO (O FIRMÓ) CONTRATO DE TRABAJO? , SEGÚN 
+  
+MACROZONA ............................................................................................................................................79  
+TABLA 55: C2 SU TRABAJO PRINCIPAL, ¿HA FIRMADO (O FIRMÓ) CONTRATO DE TRABAJO? , SEGÚN SEXO ........79 
+TABLA 56: C2 SU TRABAJO PRINCIPAL, ¿HA FIRMADO (O FIRMÓ) CONTRATO DE TRABAJO? , SEGÚN TRAMOS DE 
+EDAD ........................................................................................................................................................80  
+TABLA 57: C2 SU TRABAJO PRINCIPAL, ¿HA FIRMADO (O FIRMÓ) CONTRATO DE TRABAJO? , SEGÚN ESTADO 
+CIVIL .........................................................................................................................................................80  
+TABLA 58: C2A LA RELACIÓN CONTRACTUAL DE ESTE TRABAJO ES / ERA DEL TIPO, SEGÚN MACROZONA ........80 
+TABLA 59: C2A  LA RELACIÓN CONTRACTUAL DE ESTE TRABAJO ES / ERA DEL TIPO, SEGÚN SEXO ....................81 
+TABLA 60: C5A ¿EN ESTA OCUPACIÓN, UD. TRABAJA/BA COMO, SEGÚN MACROZONA ......................................81  
+TABLA 61:C5A ¿EN ESTA OCUPACIÓN, UD. TRABAJA/BA COMO, SEGÚN  SEXO ..................................................81  
+TABLA 62: C5A ¿EN ESTA OCUPACIÓN, UD. TRABAJA/BA COMO, SEGÚN TRAMOS DE EDAD ..............................81 
+TABLA 63: C6 ¿RECIBIÓ ALGUNA BONIFICACIÓN O GRATIFICACIÓN DURANTE LOS ÚLTIMOS 12 MESES?, SEGÚN 
+SEXO .........................................................................................................................................................82  
+TABLA 64: C7 ¿RECIBIÓ REMUNERACIÓN EN ESPECIES O REGALÍAS DURANTE LOS ÚLTIMOS 12 MESES?, SEGÚN 
+SEXO .........................................................................................................................................................82  
+TABLA 65: C9 DURANTE LOS ÚLTIMOS 12 MESES, ¿HA TENIDO OTRAS OCUPACIONES ADEMÁS DEL TRABAJO 
+PRINCIPAL?, SEGÚN MACROZONA. ............................................................................................................82  
+TABLA 66: DURANTE LOS ÚLTIMOS 12 MESES, ¿HA TENIDO OTRAS OCUPACIONES ADEMÁS DEL TRABAJO 
+PRINCIPAL?, SEGÚN SEXO ..........................................................................................................................83  
+TABLA 67: DURANTE LOS ÚLTIMOS 12 MESES, ¿HA TENIDO OTRAS OCUPACIONES ADEMÁS DEL TRABAJO 
+PRINCIPAL?, SEGÚN TRAMOS DE EDAD......................................................................................................83  
+TABLA 68 : C15B ¿PARTICIPA O HA PARTICIPADO EN LOS ÚLTIMOS 12 MESES EN ALGÚN PROGRAMA DE EMPLEO 
+DE EMERGENCIA DEL ESTADO?, SEGÚN TRAMOS DE EDAD .......................................................................8 3 
+
+=== PDF PAGE 109 ===
+  
+109 
+ 
+TABLA 69: C15B ¿PARTICIPA O HA PARTICIPADO EN LOS ÚLTIMOS 12 MESES EN ALGÚN PROGRAMA DE EMPLEO 
+DE EMERGENCIA DEL ESTADO?, SEGÚN TIPO DE ENTREVISTADO ..............................................................84  
+TABLA 70: C15B ¿PARTICIPA O HA PARTICIPADO EN LOS ÚLTIMOS 12 MESES EN ALGÚN PROGRAMA DE EMPLEO 
+DE EMERGENCIA DEL ESTADO?, SEGÚN ESTADO CIVIL .............................................................................84  
+TABLA 71:C16 ¿REALIZÓ DECLARACIÓN DE IMPUESTO A LA RENTA EL AÑO 2012?, SEGÚN TRAMOS DE EDAD..84 
+TABLA 72:C16 ¿REALIZÓ DECLARACIÓN DE IMPUESTO A LA RENTA EL AÑO 2012?, SEGÚN TIPO DE 
+ENTREVISTADO .........................................................................................................................................85  
+TABLA 73: C16A ¿BUSCÓ TRABAJO REMUNERADO EN LAS ÚLTIMAS 4 SEMANAS?, SEGÚN TRAMOS DE EDAD ...85 
+TABLA 74: C16C ¿POR QUÉ NO BUSCÓ TRABAJO EN LAS ÚLTIMAS CUATRO SEMANAS?, SEGÚN TRAMOS DE EDAD
+ ................................................................................................................................................................. 85 
+TABLA 75: C16F ¿ACEPTARÍA UNA OFERTA DE TRABAJO REMUNERADO? ..........................................................86  
+TABLA 76: C27A ¿RECIBIÓ ALGUNA PENSIÓN BÁSICA SOLIDARIA (PBS) O APORTE PREVISIONAL SOLIDARIO 
+(APS)?, SEGÚN TRAMOS DE EDAD ............................................................................................................86  
+TABLA 77:C28A ¿RECIBIÓ ASIGNACIÓN FAMILIAR EN LOS ÚLTIMOS 12 MESES?, SEGÚN TRAMOS DE EDAD .......86 
+TABLA 79: MODELO LOGÍSTICO POR PREGUNTA, MODULO C INGRESOS FAMILIARES .........................................87  
+TABLA 80: MODELO LOGÍSTICO POR PREGUNTA, MODULO C INGRESOS FAMILIARES .........................................90  
+TABLA 81: MODELO LOGÍSTICO POR PREGUNTA, MODULO C INGRESOS FAMILIARES .........................................92  
+TABLA 82: MODELO LOGÍSTICO MULTINIVEL POR PREGUNTA, MODULO C INGRESOS FAMILIARES .....................95 
+TABLA 83: MODELO LOGÍSTICO MULTINIVEL POR PREGUNTA, MODULO C INGRESOS FAMILIARES .....................96 
+TABLA 84: MODELO LOGÍSTICO MULTINIVEL POR PREGUNTA, MODULO C INGRESOS FAMILIARES .....................97 
+TABLA 85: MODELO LINEALES POR PREGUNTA, MODULO C INGRESOS FAMILIARES...........................................98  
+TABLA 86: MODELO LINEALES POR PREGUNTA, MODULO C INGRESOS FAMILIARES.........................................100  
+TABLA 87: MODELO LINEALES MULTINIVEL POR PREGUNTA, MODULO C INGRESOS FAMILIARES ....................102 
+TABLA 88: MODELO LINEALES MULTINIVEL POR PREGUNTA, MODULO C INGRESOS FAMILIARES ....................103 
+ 
+ 
+ 
+ÍNDICE DE CUADROS 
+CUADRO 1: MUESTRA TIPO DE ENCUESTA .......................................................................................................... 6 
+CUADRO 2: UNIVERSO DE LOGRADAS SUPERVISIÓN EXTERNA EPS TOTAL Y SEGÚN SEDE .................................. 8 
+CUADRO 3: UNIVERSO DE NO LOGRADAS SUPERVISIÓN EXTERNA EPS TOTAL Y SEGÚN SEDE ............................. 9 
+CUADRO 4: MUESTRA DE LOGRADAS SEGÚN SEDE Y TIPO DE ENCUESTA (MUESTRA IDEAL) .............................10 
+CUADRO 5: MUESTRA DE NO LOGRADAS SEGÚN SEDE Y TIPO DE ENCUESTA (MUESTRA IDEAL) .........................11 
+CUADRO 6: ENCUESTADORES SELECCIONADOS ................................................................................................. 16 
+CUADRO 7: ESTADO FINAL DE LA MUESTRA DE ENCUESTAS LOGRADAS ............................................................26  
+CUADRO 8: ESTADO FINAL DE LA MUESTRA DE ENCUESTAS NO LOGRADAS ......................................................27  
+ 
+ 
+ 
+ÍNDICE DE GRAFICOS 
+ 
+GRAFICO 1: DISTRIBUCIÓN SEXO MUESTRA .......................................................................................................43  
+GRAFICO 2: DISTRIBUCIÓN MACROZONA MUESTRA ...........................................................................................44  
+GRAFICO 3: DISTRIBUCIÓN TRAMOS DE EDAD MUESTRA....................................................................................44  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,4 @@
+# CLAUDE.local.md — copy to CLAUDE.local.md on each machine (do not sync)
+- MACHINE_ID: <machine-tag>
+- Project root: <absolute path to project root on this machine>
+- R binary: <path, if non-default>

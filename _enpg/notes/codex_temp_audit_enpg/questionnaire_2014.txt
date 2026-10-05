@@ -1,0 +1,2272 @@
+===== PAGE 1 =====
+                                                                   Folio:
+
+
+
+CUESTIONARIO:
+ DÉCIMO PRIMER ESTUDIO NACIONAL DE DROGAS EN
+         POBLACIÓN GENERAL DE CHILE
+                                      Año 2014
+
+
+      Región                 Comuna               Zona          Segmento                 Vivienda          Hogar
+
+
+
+
+  Nombre Entrevistado (Familias con dos apellidos en caso de zonas rurales)
+
+
+
+
+  Dirección (calle, nº, depto. o casa si corresponde)
+
+
+
+
+  (Villa/Población) o (Localidad/Entidad)
+
+
+
+
+  Celular                              Teléfono                         1.     Urbano 1.            Casa
+
+                                                                        2.     RAU        2.        Departamento
+
+                                                                        3.     Rural
+
+
+  Comuna                                                 Observaciones en la dirección
+
+===== PAGE 2 =====
+                                                                         Folio:
+
+
+                                               MÓDULO SALUD Y TABACO
+ST_1) ¿Cómo inicia entrevista?                                  ST_5) ¿Qué edad tenía cuando fumó cigarrillos por pri-
+                                                                      mera vez? (Anote 88 No sabe, 99 No contesta)
+  1.      En Tablet.
+                                                                        En años cumplidos
+  2.      En papel, submuestra aleatoria.
+
+  3.      En papel, se traspasó del papel a la Tablet, porque
+          las condiciones de aplicación eran muy peligrosas.
+                                                                ST_6) ¿cuándo fue la última vez que fumó cigarrillos?
+ST_2) Hablando de su salud ¿Cómo calificaría Ud. su                   (Mostrar Tarjeta 2)
+      estado de salud, en general, durante los últimos
+      12 meses? (Mostrar Tarjeta 1)                               1.      Durante los últimos 30 días
+
+  1.      Muy malo                                                2.      Hace más de un mes, pero menos de un año
+
+  2.      Malo                                                    3.      Hace más de un año
+
+  3.      Regular                                                88.      No sabe
+
+  4.      Bueno                                                  99.      No contesta
+
+  5.      Muy Bueno                                             Alternativas 2, 3, 88 o 99 PASE A PREG. CE_1
+                                                                MÓDULO CIGARRILLOS ELECTRÓNICOS.
+  6.      Excelente
+                                                                ST_7) Piense solamente en los últimos 30 días, ¿Cuán-
+ 99.      No contesta                                                 tos días ha fumado cigarrillos?
+                                                                      (Anote 88 No sabe, 99 No contesta)
+ST_3) ¿Ha fumado Ud. cigarrillos alguna vez en su vida?                 N° de días (de 1 a 30)
+
+  1.      Sí
+
+  2.      No
+                                                                ST_8) ¿Más o menos cuántos cigarrillos diarios ha
+ 88.      No sabe                                                     fumado Ud. en estos últimos 30 días? (Si fuma
+                                                                      irregularmente considere un día típico) (Anote
+ 99.      No contesta                                                 88 No sabe, 99 No contesta)
+                                                                        N° de cigarrillos al día
+Alternativas 2, 88 o 99 PASE A PREGUNTA CE_1
+MÓDULO CIGARRILLOS ELECTRÓNICOS.
+
+ST_4) ¿Cuándo fue la primera vez que Ud. fumó ciga-
+      rrillos? (Mostrar Tarjeta 2)
+                                                                ST_9) ¿Cuánto tiempo pasa desde que se despierta
+  1.      Durante los últimos 30 días                                 hasta que se fuma su primer cigarrillo? (Mostrar
+                                                                      Tarjeta 3)
+  2.      Hace más de un mes, pero menos de un año
+                                                                  1.      Menos de 5 minutos
+  3.      Hace más de un año
+                                                                  2.      De 6 a 30 minutos
+ 88.      No sabe
+                                                                  3.      De 31 a 60 minutos
+ 99.      No contesta
+                                                                  4.      Más de 60 minutos
+
+                                                                 88.      No sabe
+
+                                                                 99.      No contesta
+
+
+
+
+                           ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                     -2-
+
+===== PAGE 3 =====
+ST_10) ¿Cuánto gastó Ud. en tabaco durante los              ST_11) Durante los últimos 12 meses, ¿ha tratado de
+     últimos 30 días? (Anote 88 No sabe, 99 No                    dejar de fumar?
+     contesta)
+                        Pesos                                 1.      Sí
+
+                                                              2.      No
+
+                                                             88.      No sabe
+
+                                                             99.      No contesta
+
+
+                                        MÓDULO CIGARRILLOS ELECTRÓNICOS
+CE_1) ¿Ud. conoce o ha escuchado hablar de los              CE_4) ¿Y cuándo fue la última vez que usó cigarrillos
+      cigarrillos electrónicos (“e-cigarettes”, vaporiza-        electrónicos? (Mostrar Tarjeta 2)
+      dores o aparatos electrónicos que liberan vapor
+                                                              1.      Durante los últimos 30 días
+      en vez de humo)?
+  1.      Sí                                                  2.      Hace más de un mes, pero menos de un año
+
+  2.      No                                                  3.      Hace más de un año
+
+ 88.      No sabe                                           Alternativas 2 o 3 PASE A CE_6
+                                                             88.      No sabe
+ 99.      No contesta
+                                                             99.      No contesta
+Alternativas 2, 88 o 99 PASE A PREG. SA_1 SECUENCIA
+AUTOAPLICADA DE ALCOHOL Y DROGAS.
+                                                            Alternativas 88 o 99 PASE A CE_7
+CE_2) ¿Ha usado Ud. cigarrillos electrónicos alguna
+                                                            CE_5) Piense solamente en los últimos 30 días,
+      vez en su vida?
+                                                                 ¿Cuántos días ha usado cigarrillos electrónicos?
+  1.      Sí                                                     (Anote 88 No sabe, 99 No contesta)
+                                                                    N° de días (de 1 a 30)
+  2.      No
+
+ 88.      No sabe
+
+ 99.      No contesta
+                                                            CE_6) Respecto a la última vez que Ud. usó cigarrillos
+Alternativas 2, 88 o 99 PASE A PREG. SA_1 -SECUENCIA            electrónicos, ¿Sabía Ud. si el dispositivo conte-
+AUTOAPLICADA DE ALCOHOL Y DROGAS.                                nía nicotina?
+                                                              1.      Sí
+CE_3) ¿Cuándo fue la primera vez que Ud. usó cigarri-
+     llos electrónicos? (Mostrar Tarjeta 2)                   2.      No
+  1.      Durante los últimos 30 días
+                                                             88.      No sabe
+  2.      Hace más de un mes, pero menos de un año
+                                                             99.      No contesta
+  3.      Hace más de un año
+                                                            OBSERVACIONES
+ 88.      No sabe
+
+ 99.      No contesta
+
+
+
+
+                           ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                     -3-
+
+===== PAGE 4 =====
+CE_7) ¿Por qué razón ha usado cigarrillos electróni-                                      CE_8) Tiene Ud. actualmente algún dispositivo de
+      cos? Porque son…                                                                         cigarrillo electrónico?
+
+
+
+
+                                                                        99. No contesta
+                                                                                            1.     Sí
+
+
+
+
+                                                          88. No sabe
+                                                                                            2.     No
+
+
+
+
+                                                  2. No
+                                          1. Sí
+                                                                                           88.     No sabe
+
+a. Más seguros que fumar cigarrillos                                                       99.     No contesta
+
+b. Más baratos que los cigarrillos
+
+c. Más fáciles de usar cuando no
+puedo fumar cigarrillos (por ej: en
+espacios cerrados)
+d. Una ayuda para dejar de fumar
+cigarrillos
+e. Simplemente por que si
+
+
+                          SECUENCIA AUTOAPLICADA DE ALCOHOL Y OTRAS DROGAS
+ SA_1) Ahora le voy a hacer algunas preguntas acerca del alcohol y drogas. Ud. puede contestar estas preguntas
+       por sí mismo (sin necesidad de que yo se las lea) o si prefiere puedo leérselas en voz alta. ¿Qué prefiere
+       Ud.?
+                          1.         El entrevistado prefiere contestar en voz alta las preguntas al encuestador
+
+                         2.          El entrevistado prefiere completar el cuestionario por sí mismo
+
+
+                                                             MÓDULO ALCOHOL
+OH_1) ¿Ha tomado Ud. alcohol (cerveza / malta, chi-                                       OH_3) ¿Qué edad tenía cuando consumió por prime-
+     cha, vino/ champaña, o licores fuertes) alguna                                            ra vez alcohol? (No considere cuando le dieron
+     vez en su vida?                                                                           a probar de niño) (Anote 88 No sabe, 99 No
+                                                                                               contesta)
+  1.       Sí
+                                                                                                  En años cumplidos
+  2.       No
+
+ 88.       No sabe
+
+ 99.       No contesta                                                                    OH_4) ¿Cuándo fue la última vez que Ud. consumió
+                                                                                               alcohol? (Mostrar Tarjeta 2)
+Alternativas 2, 88 o 99 PASE A PREG. MAR_1 MÓDULO
+MARIHUANA                                                                                   1.     Durante los últimos 30 días
+
+OH_2) ¿Cuándo fue la primera vez que Ud. consumió                                           2.     Hace más de un mes, pero menos de un año
+     alcohol en su vida? (Mostrar Tarjeta 2)                                              Alternativa 2 PASE A PREG. OH_10
+  1.       Durante los últimos 30 días                                                      3.     Hace más de un año
+  2.       Hace más de un mes, pero menos de un año                                        88.     No sabe
+  3.       Hace más de un año                                                              99.     No contesta
+ 88.       No sabe                                                                        Alternativas 3, 88 o 99 PASE A PREG. MAR_1 MÓDULO
+                                                                                          MARIHUANA
+ 99.       No contesta
+
+
+
+
+                               ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                         -4-
+
+===== PAGE 5 =====
+OH_5) Pensando solamente en los últimos 30 días,           OH_8) Durante los últimos 30 días, ¿Cuál fue la máxi-
+     ¿Cuántos días del mes ha tomado algún tipo de              ma cantidad de tragos que llegó a consumir en
+     alcohol? (Anote 88 No sabe, 99 No contesta)                una sola ocasión?
+                                                                (Anote 88 No sabe, 99 No contesta)
+        N° de días (de 1 a 30)
+                                                                (Mostrar Tarjeta 6)
+
+                                                                 Considerar como medida: una lata de cerveza, una
+                                                                 copa de vino o champaña, un trago de licor o un
+                                                                 combinado.
+OH_6) Durante los últimos 30 días. ¿Qué tipo de
+     bebida alcohólica tomó con más frecuencia?                   N° de tragos de alcohol:
+     (Mostrar Tarjeta 4)
+  1.      Cerveza
+
+  2.      Vino, champaña u otros espumantes                OH_9) ¿Aproximadamente cuánto gastó Ud. en alco-
+                                                                hol durante los últimos 30 días?
+  3.      Licores, destilados o combinados (pisco, ron,         (Anote 88 No sabe, 99 No contesta)
+          whisky, vodka, aguardiente u otro)
+  4.      Otro                                                                    Pesos
+
+ 88.      No sabe
+
+ 99.      No contesta
+                                                           OBSERVACIONES
+
+OH_7) Pensando en los últimos 30 días y tomando en
+     cuenta todos los tipos de bebidas alcohólicas,
+     Si es hombre: ¿Cuántas veces tomó 5 o más
+     tragos en una sola ocasión? (Mostrar tarjeta 5.1)
+     Si es mujer: ¿Cuántas veces tomó 4 o más tra-
+     gos en una sola ocasión? (Mostrar tarjeta 5.2)
+
+       Por “ocasión” nos referimos a un mismo momento,
+       por ejemplo en un período de dos horas
+       (Anote 88 No sabe, 99 No contesta)
+
+            N° de veces:
+
+
+
+
+ Tarjeta 5.1 Para Hombres considere:
+ • 5 latas de cerveza o aproximadamente 1 litro y
+   medio de cerveza
+ • 5 copas de vino o aproximadamente 1 botella
+   de vino (700 ml de vino aprox.)
+ • 5 combinados suaves o 3 combinados fuertes
+   (200 ml de ron, pisco, vodka u otro licor aprox.)
+
+
+ Tarjeta 5.2 Para Mujeres considere:
+ • 4 latas de cerveza o aproximadamente un poco
+   más de 1 litro de cerveza (1.300 ml de cerveza
+   aprox.)
+ • 4 copas de vino o aproximadamente o ¾ de una
+   botella de vino (550 ml de vino aprox.)
+ • 4 combinados suaves o un poco menos de 3
+   combinados fuertes (160 ml de ron, pisco, vo-
+   dka u otro licor aprox.)
+
+
+
+                             ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                       -5-
+
+===== PAGE 6 =====
+MARQUE CON UNA X                                                                   1 vez al      2a4           2a3         4 o más
+                                                                                    mes o       veces al     veces a la   veces a la
+                                                                        Nunca      menos          mes         semana       semana
+OH_10) ¿Qué tan seguido toma usted alguna bebida
+alcohólica?
+                                                                         0a2        3a4           5a6           7a9       10 o más
+                                                                        tragos     tragos        tragos        tragos      tragos
+OH_11) ¿Cuántos tragos suele tomar usted en un día típi-
+co de consumo de alcohol? (Mostrar Tarjeta 6)
+Utilice la escala de la Tarjeta 6 para estimar el número de tragos.
+
+
+              Tarjeta 6
+
+               1 TRAGO                                                     6 TRAGOS
+                Una botella o lata individual de cerveza (333 cc.)           Una botella de vino (750 cc.)
+                Un vaso de vino (140 cc.)
+                Un trago de licor (40 cc.) (Pisco, ron vodka, whisky)       8 TRAGOS
+                solo o combinado                                             Una caja de vino (1 litro)
+
+               1 TRAGO Y MEDIO                                             18 TRAGOS
+                Medio litro de cerveza                                       Una botella de licor (750 cc.)
+
+               3 TRAGOS
+                Un litro de cerveza
+
+
+
+
+                                                                                  Menos de                                 Todos o
+                                                                                  una vez al   Mensual-       Semanal-    casi todos
+                                                                        Nunca       mes         mente          mente       los días
+OH_12) ¿Qué tan seguido toma usted 6 o más tragos en
+una sola ocasión?
+OH_13) ¿Qué tan seguido, en el curso de los últimos 12
+meses, usted no pudo parar de beber una vez que había
+empezado?
+OH_14) ¿Qué tan seguido, en el curso de los últimos 12
+meses, su consumo de alcohol alteró el desempeño de
+sus actividades normales?
+OH_15) ¿Qué tan seguido, en el curso de los últimos 12
+meses, usted necesitó beber en la mañana para recupe-
+rarse de haber bebido mucho el día anterior?
+OH_16) ¿Qué tan seguido, en el curso de los últimos 12
+meses, usted tuvo remordimientos o sentimientos de
+culpa después de haber bebido?
+OH_17) ¿Qué tan seguido, en el curso de los últimos 12
+meses, usted no fue capaz de recordar lo que sucedió la
+noche anterior porque había estado bebiendo?
+
+                                                                                                  Sí, pero no en    Sí, en el último
+                                                                                      No          el último año           año
+OH_18) ¿Usted o alguna otra persona ha resultado físicamente
+herido debido a que usted había bebido alcohol?
+OH_19) ¿Algún familiar, amigo, médico u otro profesional de la
+salud ha mostrado preocupación por la forma en que usted consu-
+me bebidas alcohólicas o le ha sugerido que deje de beber?
+
+
+                            ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                      -6-
+
+===== PAGE 7 =====
+OH_20) Pensando en los últimos 30 días, ¿Ha com-            OH_23) ¿Ha puesto en peligro su integridad física a
+    prado alcohol en alguno de los siguientes luga-             causa del consumo recurrente de alcohol?
+    res? (Mostrar Tarjeta 7)                                        Como por ejemplo: ha estado a punto de chocar en
+       Respuesta Múltiple. MARQUE CON UNA X CUANDO                  auto o de sufrir cualquier otra clase de accidente.
+       CORRESPONDA.
+                                                               1.       Sí
+  1.       Bares, pubs o discotecas
+                                                              2.        No
+  2.       Restaurantes
+                                                             88.        No sabe
+  3.       Botillerías/licorerías
+                                                             99.        No contesta
+  4.       Supermercados
+                                                            OH_24) ¿Ha hecho algo bajo los efectos del alcohol
+  5.       Servicentros                                         que pudiera causarle problemas con la autori-
+                                                                dad pública o con la ley?
+  6.       Otros
+                                                                    Como conducir vehículos en ese estado, rayar pare-
+                                                                    des, destruir equipamiento público, molestar a los
+  7.       Ninguno de los anteriores                                vecinos, robar o algo parecido.
+                                                               1.       Sí
+OH_21) Durante los últimos 30 días, ¿Ha comprado
+     alcohol en alguno de los siguientes lugares?             2.        No
+     (Mostrar Tarjeta 8)
+       Respuesta Múltiple. MARQUE CON UNA X CUANDO           88.        No sabe
+       CORRESPONDA.
+                                                             99.        No contesta
+  1.       Ferias libres o mercados
+
+  2.       Fiestas particulares                             OH_25) ¿Ha tenido algún problema o han aumentado
+                                                                los problemas con su familia o amigos a causa
+  3.       Locales “clandestinos”                               de su consumo de alcohol?
+                                                                    Por ejemplo: discusiones serias o violencia.
+  4.       A la entrada de conciertos, estadios, eventos
+                                                               1.       Sí
+  5.       Productores artesanales
+                                                              2.        No
+  6.       Otros
+                                                             88.        No sabe
+  7.       Ninguno de los anteriores
+                                                             99.        No contesta
+
+       PARA LAS PREGUNTAS OH_22 A OH_25
+                                                            OBSERVACIONES
+         PIENSE EN LOS ÚLTIMOS 12 MESES
+OH_22) ¿Ha dejado de cumplir sus deberes en la
+    casa, en el trabajo o donde estudia a causa del
+    alcohol?
+       Como descuidar a los niños, faltar al trabajo o a
+       clases, bajar su rendimiento en el trabajo o en el
+       estudio, o perder el empleo.
+  1.       Sí
+
+  2.       No
+
+ 88.       No sabe
+
+ 99.       No contesta
+
+
+
+
+                              ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                         -7-
+
+===== PAGE 8 =====
+                                            MÓDULO MARIHUANA
+MAR_1) ¿Ha probado Ud. marihuana alguna vez en su         MAR_6) ¿Cuántos cigarros de marihuana consume Ud.
+    vida?                                                     al mes? (Anote 88 No sabe, 99 No contesta)
+  1.     Sí                                                                 N° de cigarros
+
+  2.     No
+
+ 88.     No sabe
+                                                          MAR_7) ¿Cuánto gastó Ud. en marihuana durante
+ 99.     No contesta                                          los últimos 30 días? (Anote 88 No sabe, 99 No
+                                                              contesta)
+Alternativas 2, 88 o 99 PASE A PREG. PB_1-MÓDULO
+PASTA BASE                                                                          Pesos
+
+MAR_2) ¿Cuándo fue la primera vez que Ud. consu-
+    mió marihuana en su vida? (Mostrar Tarjeta 2)
+  1.     Durante los últimos 30 días                      MAR_8) Según lo que Ud. sabe, ¿Cuánto cuesta un
+                                                              cigarro de marihuana? (Anote 88 No sabe, 99
+  2.     Hace más de un mes, pero menos de un año
+                                                              No contesta)
+  3.     Hace más de un año                                                     Pesos
+
+ 88.     No sabe
+
+ 99.     No contesta
+                                                          MAR_9) ¿Qué tipo de marihuana consumió con mayor
+                                                              frecuencia?
+MAR_3) ¿Qué edad tenía cuando probó marihuana por
+    primera vez? (Anote 88 No sabe, 99 No contesta)          1.       Marihuana prensada o “paraguaya”
+
+        En años cumplidos                                   2.        Marihuana verde o yerba
+
+                                                            3.        Marihuana Skunk o de alta potencia
+
+                                                           88.        No sabe
+MAR_4) ¿Cuándo fue la última vez que Ud. consumió
+    marihuana? (Mostrar Tarjeta 2)                         99.        No contesta
+  1.     Durante los últimos 30 días
+
+  2.     Hace más de un mes, pero menos de un año                 PARA LAS PREGUNTAS MAR_10 A MAR_19
+                                                                    PIENSE EN LOS ÚLTIMOS 12 MESES
+Alternativa 2 PASE A PREG. MAR_8
+  3.     Hace más de un año                               MAR_10) ¿Consumió marihuana para eliminar o para
+                                                              evitar que se presenten problemas como estos?
+ 88.     No sabe                                              (Mostrar Tarjeta 9)
+ 99.     No contesta                                         1.       Sí
+
+Alternativas 3, 88 o 99 PASE A PREG. PB_1 - MÓDULO         2.        No
+PASTA BASE
+                                                           88.        No sabe
+MAR_5) Pensando solamente en los últimos 30 días,
+    ¿Cuántos días del mes ha consumido marihua-            99.        No contesta
+    na? (Anote 88 No sabe, 99 No contesta)
+       N° de días (de 1 a 30)
+
+
+
+
+                            ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                      -8-
+
+===== PAGE 9 =====
+MAR_11) ¿Ha presentado estos problemas cuando          MAR_15) ¿Ha consumido marihuana a pesar de que
+    suspendía o disminuía el consumo de marihua-           tenía la intención de no hacerlo?
+    na? (Mostrar Tarjeta 9)
+                                                          1.    Sí
+  1.     Sí
+                                                         2.     No
+  2.     No
+                                                        88.     No sabe
+ 88.     No sabe
+                                                        99.     No contesta
+ 99.     No contesta
+                                                       MAR_16) ¿Ha terminado consumiendo marihuana en
+                                                           mayores cantidades de lo que Ud. pensó?
+ Tarjeta 9
+                                                          1.    Sí
+  Ansiedad, intranquilidad, irritabilidad
+                                                         2.     No
+  Estrés o depresión
+  Náuseas, vómitos                                     88.     No sabe
+  Problemas de concentración
+  Temblores                                            99.     No contesta
+  Ver, oír o sentir cosas inexistentes
+  Fatiga, somnolencia, fragilidad
+  Taquicardia                                         MAR_17) ¿Ha dejado de hacer o ha suspendido activi-
+  Problemas para dormir                                   dades sociales, laborales o recreativas debido
+                                                           al consumo de marihuana?
+                                                          1.    Sí
+MAR_12) ¿Ha sentido un deseo tan grande de usar
+    marihuana que no pudo resistir o pensar en           2.     No
+    nada más?
+  1.     Sí                                             88.     No sabe
+
+  2.     No                                             99.     No contesta
+
+ 88.     No sabe                                       MAR_18) ¿Ha dedicado más tiempo que antes a
+                                                           conseguir y consumir marihuana, o pasa más
+ 99.     No contesta                                       tiempo recuperándose de sus efectos?
+                                                          1.    Sí
+MAR_13) ¿Ha observado que para obtener el mismo
+    efecto con marihuana ha consumido mayor              2.     No
+    cantidad que antes?
+                                                        88.     No sabe
+  1.     Sí
+                                                        99.     No contesta
+  2.     No
+
+ 88.     No sabe                                       MAR_19) ¿Ha continuado consumiendo marihuana a
+                                                           pesar de que le ocasione problemas de salud
+ 99.     No contesta                                       física, emocionales o nerviosos?
+                                                          1.    Sí
+MAR_14) ¿Ha notado que la misma cantidad de mari-
+    huana tiene menos efecto en Ud. que antes?           2.     No
+  1.     Sí
+                                                        88.     No sabe
+  2.     No
+                                                        99.     No contesta
+ 88.     No sabe
+
+ 99.     No contesta
+
+
+
+
+                         ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                   -9-
+
+===== PAGE 10 =====
+                PARA LAS PREGUNTAS MAR_20 A MAR_23 PIENSE EN LOS ÚLTIMOS 12 MESES
+MAR_20) ¿Ha dejado de cumplir sus deberes en la                 MAR_22) ¿Ha hecho algo bajo los efectos de la mari-
+    casa, en el trabajo o donde estudia a causa de                  huana que pudiera causarle problemas con la
+    la marihuana? Como descuidar a los niños, faltar al             autoridad pública o con la ley? Como conducir
+       trabajo o a clases, bajar su rendimiento en el trabajo          vehículos en ese estado, rayar paredes, destruir
+       o en el estudio, o perder el empleo.                            equipamiento público, molestar a los vecinos, robar
+                                                                       o algo parecido.
+  1.       Sí
+                                                                  1.       Sí
+  2.       No
+                                                                  2.       No
+ 88.       No sabe
+                                                                 88.       No sabe
+ 99.       No contesta
+                                                                 99.       No contesta
+MAR_21) ¿Ha puesto en peligro su integridad física a
+    causa del consumo recurrente de marihuana?                  MAR_23) ¿Ha tenido algún problema o han aumenta-
+       Como por ejemplo: ha estado a punto de chocar en             do los problemas con su familia o amigos a cau-
+       auto o de sufrir cualquier otra clase de accidente.          sa de su consumo de marihuana? Por ejemplo:
+                                                                       discusiones serias o violencia.
+  1.       Sí
+                                                                  1.       Sí
+  2.       No
+                                                                  2.       No
+ 88.       No sabe
+                                                                 88.       No sabe
+ 99.       No contesta
+                                                                 99.       No contesta
+
+
+                                                   MÓDULO PASTA BASE
+PB_1) ¿Ha probado Ud. pasta base alguna vez en su               PB_3) ¿Qué edad tenía cuando probó pasta base por
+      vida?                                                           primera vez? (Anote 88 No sabe, 99 No contesta)
+  1.       Sí                                                            En años cumplidos
+
+  2.       No
+
+ 88.       No sabe
+                                                                PB_4) ¿Cuándo fue la última vez que Ud. consumió
+ 99.       No contesta                                                pasta base? (Mostrar Tarjeta 2)
+Alternativas 2, 88 o 99 PASE A PREG. COC_1 MÓDULO                1.       Durante los últimos 30 días
+COCAÍNA
+                                                                  2.       Hace más de un mes, pero menos de un año
+PB_2) ¿Cuándo fue la primera vez que Ud. consumió
+      pasta base en su vida? (Mostrar Tarjeta 2)                Alternativa 2 PASE A PREG. PB_8
+
+  1.       Durante los últimos 30 días                            3.       Hace más de un año
+
+  2.       Hace más de un mes, pero menos de un año              88.       No sabe
+
+  3.       Hace más de un año                                    99.       No contesta
+
+ 88.       No sabe                                              Alternativas 3, 88 o 99 PASE A PREG. COC_1 MÓDULO
+                                                                COCAÍNA
+ 99.       No contesta
+
+
+
+
+                            ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                      -10-
+
+===== PAGE 11 =====
+PB_5) Pensando solamente en los últimos 30 días,
+      ¿Cuántos días del mes ha consumido pasta              Tarjeta 9
+      base? (Anote 88 No sabe, 99 No contesta)
+                                                             Ansiedad, intranquilidad, irritabilidad
+       N° de días (de 1 a 30)                                Estrés o depresión
+                                                             Náuseas, vómitos
+                                                             Problemas de concentración
+                                                             Temblores
+                                                             Ver, oír o sentir cosas inexistentes
+PB_6) ¿Cuántos papelillos de pasta base consume Ud.          Fatiga, somnolencia, fragilidad
+      al mes? (Anote 88 No sabe, 99 No contesta)             Taquicardia
+                N° de papelillos                             Problemas para dormir
+
+                                                          PB_11) ¿Ha sentido un deseo tan grande de usar pasta
+                                                                base que no pudo resistir o pensar en nada
+                                                                más?
+PB_7) ¿Cuánto gastó Ud. en pasta base durante los
+      últimos 30 días? (Anote 88 No sabe, 99 No              1.     Sí
+      contesta)
+                                                            2.      No
+                        Pesos
+                                                           88.      No sabe
+
+                                                           99.      No contesta
+
+PB_8) Según lo que Ud. sabe, ¿Cuánto cuesta un
+      papelillo de pasta base? (Anote 88 No sabe, 99      PB_12) ¿Ha observado que para obtener el mismo
+      No contesta)                                             efecto con pasta base ha consumido mayor
+                                                               cantidad que antes?
+                    Pesos
+                                                             1.     Sí
+
+                                                            2.      No
+
+                                                           88.      No sabe
+  PARA LAS PREGUNTAS PB_9 A PB_18 PIENSE
+         EN LOS ÚLTIMOS 12 MESES                           99.      No contesta
+
+PB_9) ¿Consumió pasta base para eliminar o para
+                                                          PB_13) ¿Ha notado que la misma cantidad de pasta
+      evitar que se presenten problemas como estos?
+                                                               base tiene menos efecto en Ud. que antes?
+      (Mostrar Tarjeta 9)
+                                                             1.     Sí
+  1.     Sí
+                                                            2.      No
+  2.     No
+                                                           88.      No sabe
+ 88.     No sabe
+                                                           99.      No contesta
+ 99.     No contesta
+
+
+PB_10) ¿Ha presentado estos problemas cuando sus-         PB_14) ¿Ha consumido pasta base a pesar de que
+     pendía o disminuía el consumo de pasta base?              tenía la intención de no hacerlo?
+     (Mostrar Tarjeta 9)                                     1.     Sí
+  1.     Sí
+                                                            2.      No
+  2.     No
+                                                           88.      No sabe
+ 88.     No sabe
+                                                           99.      No contesta
+ 99.     No contesta
+
+
+
+
+                            ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                      -11-
+
+===== PAGE 12 =====
+PB_15) ¿Ha terminado consumiendo pasta base en
+     mayores cantidades de lo que Ud. pensó?
+                                                         PARA LAS PREGUNTAS PB_19 A PB_22 PIENSE
+                                                                EN LOS ÚLTIMOS 12 MESES
+  1.     Sí
+                                                       PB_19) ¿Ha dejado de cumplir sus deberes en la casa,
+  2.     No                                                 en el trabajo o donde estudia a causa de la
+                                                            pasta base?
+ 88.     No sabe                                              Como descuidar a los niños, faltar al trabajo o a
+                                                              clases, bajar su rendimiento en el trabajo o en el
+ 99.     No contesta                                          estudio, o perder el empleo.
+                                                         1.       Sí
+PB_16) ¿Ha dejado de hacer o ha suspendido activida-
+     des sociales, laborales o recreativas debido al     2.       No
+     consumo de pasta base?
+                                                        88.       No sabe
+  1.     Sí
+                                                        99.       No contesta
+  2.     No
+
+ 88.     No sabe                                       PB_20) ¿Ha puesto en peligro su integridad física a
+                                                            causa del consumo recurrente de pasta base?
+ 99.     No contesta                                          Como por ejemplo: ha estado a punto de chocar en
+                                                              auto o de sufrir cualquier otra clase de accidente.
+PB_17) ¿Ha dedicado más tiempo que antes a conse-        1.       Sí
+     guir y consumir pasta base, o pasa más tiempo
+     recuperándose de sus efectos?                       2.       No
+
+  1.     Sí                                             88.       No sabe
+
+  2.     No                                             99.       No contesta
+
+ 88.     No sabe
+                                                       PB_21) ¿Ha hecho algo bajo los efectos de la pasta
+ 99.     No contesta                                        base que pudiera causarle problemas con la
+                                                            autoridad pública o con la ley?
+                                                              Como conducir vehículos en ese estado, rayar pare-
+PB_18) ¿Ha continuado consumiendo pasta base a                des, destruir equipamiento público, molestar a los
+     pesar de que le ocasione problemas de salud              vecinos, robar o algo parecido.
+     física, emocionales o nerviosos?
+                                                         1.       Sí
+  1.     Sí
+                                                         2.       No
+  2.     No
+                                                        88.       No sabe
+ 88.     No sabe
+                                                        99.       No contesta
+ 99.     No contesta
+
+                                                       PB_22) ¿Ha tenido algún problema o han aumentado
+OBSERVACIONES                                               los problemas con su familia o amigos a causa
+                                                            de su consumo de pasta base?
+                                                              Por ejemplo: discusiones serias o violencia.
+
+                                                         1.       Sí
+
+                                                         2.       No
+
+                                                        88.       No sabe
+
+                                                        99.       No contesta
+
+
+
+
+                       ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                 -12-
+
+===== PAGE 13 =====
+                                              MÓDULO COCAÍNA
+COC_1) ¿Ha probado Ud. cocaína alguna vez en su           COC_5) Pensando solamente en los últimos 30 días,
+    vida?                                                     ¿Cuántos días del mes ha consumido cocaína?
+                                                              (Anote 88 No sabe, 99 No contesta)
+  1.     Sí
+                                                                    N° de días (de 1 a 30)
+  2.     No
+
+ 88.     No sabe
+
+ 99.     No contesta                                      COC_6) ¿Cuántos gramos de cocaína consume Ud. al
+                                                              mes? (Anote 88 No sabe, 99 No contesta)
+Alternativas 2, 88 o 99 PASE A PREG. TRANS_1 MÓDULO
+TRANQUILIZANTES SIN RECETA MÉDICA                                                Gramos
+
+COC_2) ¿Cuándo fue la primera vez que Ud. consu-
+    mió cocaína en su vida? (Mostrar Tarjeta 2)
+  1.     Durante los últimos 30 días
+                                                          COC_7) ¿Cuánto gastó Ud. en cocaína durante los
+                                                              últimos 30 días? (Anote 88 No sabe, 99 No
+  2.     Hace más de un mes, pero menos de un año
+                                                              contesta)
+  3.     Hace más de un año                                                          Pesos
+
+ 88.     No sabe
+
+ 99.     No contesta
+                                                          COC_8) Según lo que Ud. sabe, ¿Cuánto cuesta un
+COC_3) ¿Qué edad tenía cuando probó cocaína por               gramo de cocaína? (Anote 88 No sabe, 99 No
+    primera vez? (Anote 88 No sabe, 99 No contesta)           contesta)
+                                                                                 Pesos
+        En años cumplidos
+
+
+
+
+COC_4) ¿Cuándo fue la última vez que Ud. consumió                 PARA LAS PREGUNTAS COC_9 A COC_18
+    cocaína? (Mostrar Tarjeta 2)                                    PIENSE EN LOS ÚLTIMOS 12 MESES
+  1.     Durante los últimos 30 días                      COC_9) ¿Consumió cocaína para eliminar o para
+                                                              evitar que se presenten problemas como estos?
+  2.     Hace más de un mes, pero menos de un año
+                                                              (Mostrar Tarjeta 9)
+Alternativa 2 PASE A PREG. COC_8                            1.       Sí
+  3.     Hace más de un año
+                                                            2.        No
+ 88.     No sabe
+                                                           88.        No sabe
+ 99.     No contesta
+                                                           99.        No contesta
+Alternativas 3, 88 o 99 PASE A PREG. TRANS_1 MÓDULO
+TRANQUILIZANTES SIN RECETA MÉDICA
+
+
+
+
+                            ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                      -13-
+
+===== PAGE 14 =====
+COC_10) ¿Ha presentado estos problemas cuando          COC_14) ¿Ha consumido cocaína a pesar de que
+    suspendía o disminuía el consumo de cocaína?           tenía la intención de no hacerlo?
+    (Mostrar Tarjeta 9)
+                                                          1.    Sí
+  1.     Sí
+                                                         2.     No
+  2.     No
+                                                        88.     No sabe
+ 88.     No sabe
+                                                        99.     No contesta
+ 99.     No contesta
+                                                       COC_15) ¿Ha terminado consumiendo cocaína en
+                                                           mayores cantidades de lo que Ud. pensó?
+ Tarjeta 9
+                                                          1.    Sí
+  Ansiedad, intranquilidad, irritabilidad
+  Estrés o depresión                                    2.     No
+  Náuseas, vómitos
+                                                        88.     No sabe
+  Problemas de concentración
+  Temblores
+                                                        99.     No contesta
+  Ver, oír o sentir cosas inexistentes
+  Fatiga, somnolencia, fragilidad
+  Taquicardia                                         COC_16) ¿Ha dejado de hacer o ha suspendido activi-
+  Problemas para dormir                                   dades sociales, laborales o recreativas debido
+                                                           al consumo de cocaína?
+
+COC_11) ¿Ha sentido un deseo tan grande de usar           1.    Sí
+    cocaína que no pudo resistir o pensar en nada
+                                                         2.     No
+    más?
+  1.     Sí                                             88.     No sabe
+
+  2.     No                                             99.     No contesta
+
+ 88.     No sabe
+                                                       COC_17) ¿Ha dedicado más tiempo que antes a con-
+                                                           seguir y consumir cocaína, o pasa más tiempo
+ 99.     No contesta
+                                                           recuperándose de sus efectos?
+                                                          1.    Sí
+COC_12) ¿Ha observado que para obtener el mismo
+    efecto con cocaína ha consumido mayor canti-
+                                                         2.     No
+    dad que antes?
+  1.     Sí                                             88.     No sabe
+
+  2.     No                                             99.     No contesta
+
+ 88.     No sabe                                       COC_18) ¿Ha continuado consumiendo cocaína a
+                                                           pesar de que le ocasione problemas de salud
+ 99.     No contesta
+                                                           física, emocionales o nerviosos?
+                                                          1.    Sí
+COC_13) ¿Ha notado que la misma cantidad de cocaí-
+    na tiene menos efecto en Ud. que antes?              2.     No
+  1.     Sí
+                                                        88.     No sabe
+  2.     No
+                                                        99.     No contesta
+ 88.     No sabe
+
+ 99.     No contesta
+
+
+
+
+                         ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                   -14-
+
+===== PAGE 15 =====
+                PARA LAS PREGUNTAS COC_19 A COC_22 PIENSE EN LOS ÚLTIMOS 12 MESES
+COC_19) ¿Ha dejado de cumplir sus deberes en la              COC_21) ¿Ha hecho algo bajo los efectos de la co-
+    casa, en el trabajo o donde estudia a causa de               caína que pudiera causarle problemas con la
+    la cocaína?                                                  autoridad pública o con la ley?
+       Como descuidar a los niños, faltar al trabajo o a            Como conducir vehículos en ese estado, rayar pare-
+       clases, bajar su rendimiento en el trabajo o en el           des, destruir equipamiento público, molestar a los
+       estudio, o perder el empleo.                                 vecinos, robar o algo parecido.
+  1.       Sí                                                  1.       Sí
+
+  2.       No                                                  2.       No
+
+ 88.       No sabe                                            88.       No sabe
+
+ 99.       No contesta                                        99.       No contesta
+
+
+COC_20) ¿Ha puesto en peligro su integridad física a         COC_22) ¿Ha tenido algún problema o han aumen-
+    causa del consumo recurrente de cocaína?                     tado los problemas con su familia o amigos a
+       Como por ejemplo: ha estado a punto de chocar en          causa de su consumo de cocaína?
+       auto o de sufrir cualquier otra clase de accidente.          Por ejemplo: discusiones serias o violencia.
+  1.       Sí                                                  1.       Sí
+
+  2.       No                                                  2.       No
+
+ 88.       No sabe                                            88.       No sabe
+
+ 99.       No contesta                                        99.       No contesta
+
+
+OBSERVACIONES
+
+
+
+
+                            ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                      -15-
+
+===== PAGE 16 =====
+                               MÓDULO TRANQUILIZANTES SIN RECETA MÉDICA
+TRANS_1) ¿Ha pro-           TRANS_2) ¿Qué             TRANS_3) ¿Cuándo                                                                                            TRANS_4)           TRANS_5) ¿Cuánto
+bado Ud. alguno de          edad tenía cuan-          fue la última vez que                                                                                       Pensando           gastó Ud. en (nombre
+los siguientes tran-        do probó (nom-            consumió (nombre                                                                                            solamente en       del tranquilizante) sin
+quilizantes sin receta      bre del tran-             del tranquilizante) sin                                                                                     los últimos 30     receta médica durante
+médica alguna vez en        quilizante) sin           receta médica?                                                                                              días, ¿Cuántos     los últimos 30 días?
+su vida?                    receta médica por         Responda sólo respecto                                                                                      días del mes       (Anote 88 No sabe, 99 No
+                            primera vez?              de los medicamentos                                                                                         ha consumido       contesta)
+RESPUESTA MÚLTIPLE,         Responda sólo             tranquilizantes sin receta                                                                                  (nombre del
+MARQUE CON UNA X            respecto de los           médica que ha probado.
+                                                                                                                                                                  tranquilizan-
+CUANDO CORRESPONDA          medicamentos              (Mostrar Tarjeta 2)
+                                                                                                                                                                  te) sin receta
+                            tranquilizantes sin
+                                                                                                                                                                  médica?
+(Mostrar Tarjeta 10)        receta médica que
+
+
+
+
+                                                    1. Durante los últimos 30
+
+                                                                                2. Hace más de un mes,
+
+                                                                                                         3. Hace más de un año
+
+                                                                                                                                 88. No sabe
+
+                                                                                                                                               99. No contesta
+                                                                                                                                                                  (Anote 88 No
+                            ha probado.
+
+
+
+                                                       días
+
+                                                                                  pero menos de un año
+                                                                                                                                                                  sabe, 99 No con-
+                            (Anote 88 No sabe,
+                                                                                                                                                                  testa)
+                            99 No contesta)
+
+                                 En años
+                                cumplidos                                                                                                                             Nº de días              Pesos
+
+
+
+
+a. Alprazolam, Zotrán,
+   Ativán o Adox
+b. Valium o Diazepam
+c. Clonazepam, Ravo-
+   tril o Valpax
+d. Lorazepam o Am-
+  parax
+e. Clorodiacepóxido
+f. Bromacepam
+g. Zopiclona, Zolpi-
+  dem o Somno
+h. Dormonid o Mida-
+   zolam
+i. Rohypnol, Flunitra-
+   cepam o Ipnopen
+j. Ninguna de las
+   anteriores
+
+
+TRANS_1: Alternativa j PASE A PREG. OD_1 - MÓDULO OTRAS DROGAS
+TRANS_3: Cuando el entrevistado declare 2, 3, 88 o 99 pase a la siguiente droga. Si declara 2, 3, para todas PASE A PREG.
+         TRANS_6
+
+
+TRANS_6) Piense en la última vez que Ud. consumió tranquilizantes sin receta médica… ¿Como lo consiguió?
+  1.       Lo compré en una farmacia con una receta médi-                                                                             5.                         Me la regalaron
+           ca de otra persona
+  2.       Lo compré en una feria libre o mercado                                                                                88.                             No sabe
+
+  3.       Lo compré por internet                                                                                                99.                             No contesta
+
+  4.       Lo conseguí de otra forma, específique
+
+
+
+
+                           ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                     -16-
+
+===== PAGE 17 =====
+                                                  MÓDULO OTRAS DROGAS
+OD_1) ¿Ha probado Ud. Bebidas Energéticas (Battery,                  OD_3) ¿Ha probado Ud. alguna Bebida Energética
+     Red Bull, Dark Dog, etc.) alguna vez en su vida?                     combinada con Alcohol alguna vez en su vida?
+  1.         Sí                                                         1.      Sí
+
+  2.         No                                                         2.      No
+
+ 88.         No sabe                                                  88.       No sabe
+
+ 99.         No contesta                                              99.       No contesta
+
+Alternativas 2, 88 o 99 PASE A PREG. OD_5                           Alternativas 2, 88 o 99 PASE A PREG. OD_5
+OD_2) ¿Cuándo fue la última vez que Ud. consumió                     OD_4) ¿Cuándo fue la última vez que Ud. consumió
+     Bebidas Energéticas? (Mostrar Tarjeta 2)                             alguna Bebida Energética combinada con Alco-
+  1.         Durante los últimos 30 días                                  hol? (Mostrar Tarjeta 2)
+                                                                        1.      Durante los últimos 30 días
+  2.         Hace más de un mes, pero menos de un año
+                                                                        2.      Hace más de un mes, pero menos de un año
+  3.         Hace más de un año
+                                                                        3.      Hace más de un año
+ 88.         No sabe
+                                                                      88.       No sabe
+ 99.         No contesta
+                                                                      99.       No contesta
+
+OD_5) ¿Ha probado Ud. alguna de OD_6) ¿Cuándo fue la última vez que consumió (NOMBRE DROGA)?
+las siguientes drogas alguna vez RESPONDA SÓLO RESPECTO DE LAS DROGAS QUE HA PROBADO. (Mostrar Tarjeta 2)
+en su vida? RESPUESTA MÚLTIPLE.  1. Durante los 2. Hace más de un 3. Hace más de 88. No sabe 99. No contesta
+MARQUE CON UNA X CUANDO CO-                  últimos 30      mes, pero menos     un año
+RRESPONDA. (Mostrar Tarjeta 11)              días            de un año
+Alternativa f PASE A PREG. OD_7
+a. Hachís
+b. Marihuana sintética (Spice, K2)
+c. Éxtasis o MDMA
+d. Heroína
+e. Crack
+f. Ninguna de las anteriores
+
+OD_7) ¿Ha probado Ud. alguno               OD_8) ¿Cuándo fue la última vez que consumió (NOMBRE MEDICAMENTO
+de los siguientes medicamentos             ESTIMULANTE) sin receta médica? RESPONDA SÓLO RESPECTO DE LOS MEDICA-
+estimulantes sin receta médica             MENTOS ESTIMULANTES QUE HA PROBADO. (Mostrar Tarjeta 2)
+alguna vez en su vida?                     1. Durante los   2. Hace más de    3. Hace más de   88. No sabe    99. No contesta
+RESPUESTA MÚLTIPLE. MARQUE CON                últimos 30       un mes, pero      un año
+UNA X CUANDO CORRESPONDA.                     días             menos de un
+(Mostrar Tarjeta 12)                                           año
+Alternativa i PASE A PREG. OD_9
+a. Anfetaminas
+b. Cidrín
+c. Modafinilo o Mentix
+d. Ritalin, Metilfenidato, Aradix,
+   Concerta o Ritrocel.
+e. Escancil
+f. Cylert o Pemolina
+g. Anfepramona
+h. Fenproporex o Salcal
+i. Ninguna de las anteriores
+
+
+
+                               ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                         -17-
+
+===== PAGE 18 =====
+OD_9) ¿Ha probado Ud. alguna     OD_10) ¿Cuándo fue la última vez que consumió (NOMBRE DE LA METANFE-
+de las siguientes metanfetaminas TAMINA)?
+alguna vez en su vida?           RESPONDA SÓLO RESPECTO DE LAS METANFETAMINAS QUE HA PROBADO.
+RESPUESTA MÚLTIPLE. MARQUE CON (Mostrar Tarjeta 2)
+UNA X CUANDO CORRESPONDA.               1. Durante los   2. Hace más de    3. Hace más de   88. No sabe   99. No contesta
+(Mostrar Tarjeta 13)                       últimos 30       un mes, pero      un año
+                                           días             menos de un
+Alternativa c PASE A PREG. OD_11                           año
+a. Meth o Met, Crystal, Hielo (Ice),
+   Speed o Glass.
+b. Cristina, Anteta, Crack Mexicano,
+   Polvo amarillo, Batú, Cris, Tina
+c. Ninguna de las anteriores
+
+OD_11) ¿Ha probado Ud. alguna           OD_12) ¿Cuándo fue la última vez que consumió (NOMBRE DEL INHALA-
+de las siguientes sustancias inha-      BLE)?
+lables alguna vez en su vida?     RESPONDA SÓLO RESPECTO DE LAS SUSTANCIAS INHALABLES QUE HA PROBADO.
+RESPUESTA MÚLTIPLE. MARQUE CON (Mostrar Tarjeta 2)
+UNA X CUANDO CORRESPONDA.         1. Durante los 2. Hace más de 3. Hace más de 88. No sabe 99. No contesta
+(Mostrar Tarjeta 14)                 últimos 30     un mes, pero   un año
+                                     días           menos de un
+Alternativa k PASE A PREG. OD_13                   año
+a. Neoprén
+b. Bencina o parafina
+c. Tolueno
+d. Desodorantes ambientales o
+   corporales
+e. Pinturas en spray
+f. Acetona
+g. Éter u otros solventes volátiles
+   usados en pinturas
+h. Poppers
+i. Solventes para extintores de
+   incendios
+j. Cloruro de etilo
+k. Ninguna de las anteriores
+
+OD_13) ¿Ha probado Ud. alguno           OD_14) ¿Cuándo fue la última vez que consumió (NOMBRE DEL ALUCINÓ-
+de los siguientes alucinógenos          GENO)?
+alguna vez en su vida?            RESPONDA SÓLO RESPECTO DE LOS ALUCINÓGENOS QUE HA PROBADO.
+RESPUESTA MÚLTIPLE. MARQUE CON (Mostrar Tarjeta 2)
+UNA X CUANDO CORRESPONDA.         1. Durante los 2. Hace más de 3. Hace más de 88. No sabe 99. No contesta
+(Mostrar Tarjeta 15)                 últimos 30     un mes, pero   un año
+                                     días           menos de un
+Alternativa j PASE A PREG. OD_15                   año
+a. LSD u otros ácidos
+b. Polvo de ángel
+c. 25B-NBOMe o 25C-NBOMe
+d. Peyote, San Pedro
+e. Floripondio
+f. Hongos o Cucumelo
+g. Mescalina
+h. Belladona
+i. Ayahuasca
+j. Ninguna de las anteriores
+
+
+
+                               ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                         -18-
+
+===== PAGE 19 =====
+OD_15) ¿Ha probado Ud. alguno            OD_16) ¿Cuándo fue la última vez que consumió (NOMBRE DEL ANALGESI-
+de los siguientes analgésicos sin        CO) sin receta médica?
+receta médica alguna vez en su           RESPONDA SÓLO RESPECTO DE LOS ANALGÉSICOS QUE HA PROBADO.
+vida?                                    (Mostrar Tarjeta 2)
+RESPUESTA MÚLTIPLE. MARQUE CON 1. Durante los             2. Hace más de    3. Hace más de   88. No sabe   99. No contesta
+UNA X CUANDO CORRESPONDA.         últimos 30                 un mes, pero      un año
+(Mostrar Tarjeta 16)              días                       menos de un
+                                                             año
+Alternativa f PASE A PREG. OD_17
+a. Tramal o Tramadol
+b. Codeína
+c. Morfina
+d. Metadona
+e. Petidina
+f. Ninguna de las anteriores
+
+
+OD_17) ¿Ha probado Ud. alguno            OD_18) ¿Cuándo fue la última vez que consumió (NOMBRE DEL MEDICA-
+de los siguientes medicamentos           MENTO) sin receta médica?
+sin receta médica alguna vez en   RESPONDA SÓLO RESPECTO DE LOS MEDICAMENTOS SIN RECETA MÉDICA QUE HA
+su vida?                          PROBADO. (Mostrar Tarjeta 2)
+RESPUESTA MÚLTIPLE. MARQUE CON 1. Durante los   2. Hace más de 3. Hace más de 88. No sabe 99. No contesta
+UNA X CUANDO CORRESPONDA.           últimos 30     un mes, pero   un año
+(Mostrar Tarjeta 17)                días           menos de un
+                                                   año
+Alternativa f PASE A PREG. OD_19
+a. Fluoxetina, Pragmaten o Sostac
+b. Codetol, Tusigen, Sedopec,
+   Tosilab o Flemex
+c. Clormezanona
+d. Sedantol
+e. Dietilpropión
+f. Ninguna de las anteriores
+
+
+OD_19) ¿Ha probado Ud. alguna      OD_20) ¿Cuándo fue la última vez que consumió (NOMBRE DE LA SUSTAN-
+de las siguientes sustancias algu- CIA)?
+na vez en su vida?                 RESPONDA SÓLO RESPECTO DE LAS SUSTANCIAS QUE HA PROBADO.
+RESPUESTA MÚLTIPLE. MARQUE CON (Mostrar Tarjeta 2)
+UNA X CUANDO CORRESPONDA.                1. Durante los   2. Hace más de    3. Hace más de   88. No sabe   99. No contesta
+(Mostrar Tarjeta 18)                        últimos 30       un mes, pero      un año
+                                            días             menos de un
+Alternativa g PASE A PREG. OD_21                            año
+a. Sibutramina
+b. Tonaril, sin receta médica
+c. Anabólicos
+d. Esteroides
+e. Ketamina
+f. Mefedrona, Methylona o Sales
+   de baño
+g. Ninguna de las anteriores
+
+
+
+
+                                ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                          -19-
+
+===== PAGE 20 =====
+OD_21) ¿Alguna vez en su vida        OD_22) ¿Cuándo fue la última vez que se inyectó esa droga o sustancia?
+se ha inyectado alguna droga o       RRESPONDA SÓLO RESPECTO DE LAS DROGAS INYECTADAS QUE HA PROBADO.
+sustancia? ¿Cuál?                    (Mostrar Tarjeta 2)
+(Anote la droga en el espacio)       1. Durante los   2. Hace más de    3. Hace más de    88. No sabe   99. No contesta
+RESPUESTA MÚLTIPLE. MARQUE CON          últimos 30       un mes, pero      un año
+UNA X CUANDO CORRESPONDA.               días             menos de un
+                                                         año
+Alternativa d PASE A PREG. CC_1
+          MÓDULO CONSUMO Y
+          CONDUCCIÓN
+a.
+b.
+c.
+d. Ninguna
+
+
+                                     MÓDULO CONSUMO Y CONDUCCIÓN
+
+                              RESPONDEN SÓLO PERSONAS DE 17 AÑOS O MÁS
+CC_1) ¿Tiene licencia de conducir?                             CC_4) Durante los últimos 12 meses, ¿Ha manejado
+                                                                    algún vehículo después de haber consumido
+     1.      Sí
+                                                                    otra droga ilícita (como cocaína, éxtasis, pasta
+     2.      No                                                     base u otra)?
+                                                                  1.      Sí, especifique la droga:
+ 88.         No sabe
+
+ 99.         No contesta                                          2.      No
+Alternativas 2, 88 o 99 PASE A PREG. TRATA_1 MÓDULO
+                                                                 88.      No sabe
+TRATAMIENTO
+                                                                99.       No contesta
+CC_2) Durante los últimos 12 meses, ¿Ha manejado
+     algún vehículo después de haber consumido
+     alcohol (independiente de la cantidad consumi-            CC_5) Durante los últimos 12 meses, ¿Ha manejado al-
+     da)?                                                           gún vehículo después de haber consumido otra
+                                                                    droga lícita (como tranquilizantes, hipnóticos,
+     1.      Sí
+                                                                    barbitúricos, estimulantes, u otra)?
+     2.      No                                                   1.      Sí, especifique la droga:
+
+ 88.         No sabe
+                                                                  2.      No
+ 99.         No contesta
+                                                                 88.      No sabe
+CC_3) Durante los últimos 12 meses, ¿Ha manejado
+     algún vehículo después de haber consumido                  99.       No contesta
+     marihuana?
+     1.      Sí                                                OBSERVACIONES
+
+     2.      No
+
+ 88.         No sabe
+
+ 99.         No contesta
+
+
+
+
+                           ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                     -20-
+
+===== PAGE 21 =====
+                                                   MÓDULO TRATAMIENTO
+
+                                                      RESPONDEN TODOS
+TRATA_1) ¿Ha recibido Ud. alguna vez en su vida                TRATA_5) Durante los últimos 12 meses, ¿Ha sentido
+     algún tipo de tratamiento por el consumo de                    la necesidad de recibir algún tipo de ayuda o
+     alcohol o drogas?                                              tratamiento para disminuir o dejar de consumir
+       No incluya tratamientos para dejar de fumar.                 alcohol y/o drogas? (Mostrar Tarjeta 19)
+  1.       Sí                                                    1.      Si, solo por consumo de alcohol
+
+  2.       No                                                    2.      Si, solo por consumo de drogas
+
+Alternativa 2 PASE A PREG. TRATA_5                              3.      Si, por consumo de alcohol y drogas
+
+TRATA_2) ¿Durante los últimos 12 meses ha recibido               4.      No
+     Ud. algún tipo de tratamiento por el consumo
+     de alcohol o drogas?                                      Alternativa 4 PASE A PREG. SA_2 - MÓDULO
+       No incluya tratamientos para dejar de fumar.                           PERCEPCIÓN DE RIESGO
+
+  1.       Sí                                                  TRATA_6) Durante los últimos 12 meses, ¿Ha intenta-
+                                                                    do obtener algún tipo de ayuda o tratamiento
+  2.       No
+                                                                    para disminuir o dejar de consumir alcohol y/o
+Alternativa 2 PASE A PREG. TRATA_5                                 drogas? (Mostrar Tarjeta 19)
+                                                                 1.      Si, solo por consumo de alcohol
+TRATA_3) ¿Este tratamiento que Ud. recibió durante
+     los últimos 12 meses fue sólo por consumo de                2.      Si, solo por consumo de drogas
+     alcohol, sólo por consumo de drogas o por
+     consumo de alcohol y drogas?                                3.      Si, por consumo de alcohol y drogas
+  1.       Solo por consumo de alcohol
+                                                                 4.      No
+  2.       Solo por consumo de drogas
+
+  3.       Por consumo de alcohol y drogas
+
+TRATA_4) ¿Cuánto tiempo estuvo en este tratamiento
+                                                                   SA_2) LUEGO DE RESPONDER PREGUNTA
+     de drogas o alcohol?                                         TRATA_4, TRATA_5 O TRATA_6, POR FAVOR
+           Años          Meses                                   DEVUELVA EL CUESTIONARIO AL
+                                    PASE A PREG. SA_2 -                ENCUESTADOR
+                                     MÓDULO PERCEPCIÓN
+                                     DE RIESGO
+
+
+                                            MÓDULO PERCEPCIÓN DE RIESGO
+
+PR_1) ¿Cuál cree Ud. que es el riesgo que corre una 1. Ningún           2. Riesgo   3. Riesgo   4. Riesgo      88. No sabe
+persona que hace alguna de estas cosas? (Marque con    riesgo              leve        moderado    grande
+una X) (Mostrar Tarjeta 20)
+a. Fuma una o más de una cajetilla de cigarrillos al día
+b. Toma cinco o más tragos diariamente
+c. Prueba marihuana una o dos veces (uso experimental)
+d. Fuma marihuana frecuentemente
+e. Prueba cocaína una o dos veces (uso experimental)
+f. Usa cocaína frecuentemente
+g. Prueba pasta base una o dos veces (uso experimental)
+h. Usa pasta base frecuentemente
+i. Prueba éxtasis una o dos veces (uso experimental)
+j. Usa éxtasis frecuentemente
+
+
+
+                             ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                       -21-
+
+===== PAGE 22 =====
+                                               MÓDULO ENTORNO Y BARRIO
+EB_1) Hasta donde Ud. sabe, ¿alguien en su casa, dis-                   EB_2) ¿En su casa, y hasta
+      tinto de usted, tiene problemas con el consumo
+
+
+
+
+                                                                                                                                                                                                                    99. No contesta
+                                                                        donde Ud. conoce, alguien
+      de alcohol?                                                       usa o consume alguna de
+
+
+
+
+                                                                                                                                                                                                      88. No sabe
+                                                                        estas drogas?
+  1.         Sí
+                                                                        Si Ud. Lo hace no se consi-
+                                                                        dere.
+
+
+
+
+                                                                                                                                                                                    2. No
+                                                                                                                                                             1. Si
+  2.         No                                                         (Marque con una X)
+ 88.         No sabe                                                    a. Marihuana
+                                                                        b. Pasta base
+ 99.         No contesta
+                                                                        c. Cocaína
+
+
+EB_3) Hasta donde Ud. conoce, ¿Cuánto hay de las siguientes cosas
+
+
+
+
+                                                                                                                                                                                                                    99. No contesta
+en su barrio?
+(Marque con una X)
+
+
+
+
+                                                                                                                                                                                                     88. No sabe
+                                                                                                             2. Bastante
+(Mostrar Tarjeta 21)
+
+
+
+
+                                                                                           1. Mucho
+
+
+
+
+                                                                                                                                                                                    5. Nada
+                                                                                                                                                             4. Poco
+                                                                                                                                    3. Algo
+a. Tráfico de drogas
+b. Robos en las casas
+c. Rayado en las paredes, daños al alumbrado o cosas parecidas
+d. Consumo de drogas ilícitas en lugares públicos como en la calle o plazas
+e. Asaltos o robos en las calles
+f. Jóvenes parados no haciendo nada en las esquinas
+g. Balaceras y acciones violentas con armas de fuego
+h. Venta clandestina de alcohol
+
+EB_4) ¿Cuán difícil le sería a Ud. Conseguir alguna de las siguientes
+
+
+
+
+                                                                                                                                                                                                                    99. No contesta
+                                                                                                                                                          4. Le sería muy
+drogas?
+                                                                                                             2. Le sería fácil
+                                                                                        1. Le sería muy
+
+
+
+
+                                                                                                                                    3. Le sería difícil
+
+
+
+
+                                                                                                                                                                                 5. No podría
+                                                                                                                                                                                    conseguir
+(Marque con una X)
+
+
+
+
+                                                                                                                                                                                                     88. No sabe
+(Mostrar Tarjeta 22)
+
+
+                                                                                                                                                             difícil
+                                                                                           fácil
+
+
+
+
+a. Marihuana
+b. Cocaína
+c. Pasta base
+d. Éxtasis
+e. Anfetaminas sin receta
+
+EB_5) Y según lo que Usted sabe, ¿Cuánto tiempo se demoraría en conse-
+                                                                                                                                 2. Algunas pocas
+                                                                                                          1. Menos de una
+
+
+
+
+guir alguna de las siguientes drogas?
+                                                                                                                                                             3. Dentro del día
+
+                                                                                                                                                                                 4. Dentro de la
+
+
+
+                                                                                                                                                                                                      conseguirla
+                                                                                                                                                                                                   5. No podría
+
+
+
+
+(Marque con una X)
+                                                                                                                                                                                                                    88. No sabe
+                                                                                                                                                                                    semana
+
+
+
+
+(Mostrar Tarjeta 23)
+                                                                                                                                    horas
+                                                                                                             hora
+
+
+
+
+a. Marihuana
+b. Cocaína
+c. Pasta base
+d. Éxtasis
+e. Anfetaminas sin receta
+
+
+
+
+                             ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                       -22-
+
+===== PAGE 23 =====
+EB_6) ¿Y cuándo fue la última vez que una persona, conocida o EB_7) Si le han ofrecido. La última vez que le
+desconocida, le ofreció alguna de las siguientes drogas?      ofrecieron [nombre droga], ¿En cuál de los
+(Marque con una X) (Mostrar Tarjeta 24)                       siguientes lugares se la ofrecieron?
+* Pregunte por cada droga. Cuando el                                                                                                                               (Anote el número correspondiente)
+                                                                                                                                                                   (Mostrar Tarjeta 25)
+
+
+
+
+                                                                                                                                        0. Nunca me han ofrecido
+  entrevistado declare 0, pase a la si-
+
+
+
+
+                                                                               pero menos de un año
+                                                                            2. Hace más de un mes,
+                                             1. En los Últimos 30 días
+
+
+
+
+                                                                                                                3. Hace más de un año
+  guiente droga. Si declara Nunca para
+  todas, PASE A PREG. AM_1                                                                                                                                        1. En la casa
+                                                                                                                                                                   2. En los alrededores de la casa, barrio o comuna
+                                                                                                                                                                   3. En lugar de estudios o trabajo
+                                                                                                                                                                   4. En alrededores lugar de estudios o trabajo
+                                                                                                                                                                   5. En una fiesta, junta, discoteque, recitales
+                                                                                                                                                                   6. Por internet, mail o chat
+                                                                                                                                                                   7. En otro lugar
+
+a. Marihuana
+b. Cocaína
+c. Pasta base
+d. Éxtasis
+e. Anfetaminas sin receta
+
+
+                                             MÓDULO AUTORIDADES Y MEDIDAS
+
+AM_1) ¿Cree Ud. que el tema de la                                                                                                            AM_3) En esta tarjeta 27 (Mostrar Tarjeta 27) apa-
+                                                                                                      99. No contesta
+
+
+
+droga se encuentra entre las preo-                                                                                                               recen algunas medidas que las autoridades
+cupaciones centrales de:                                                                                                                         podrían reforzar para abordar efectivamente
+                                                                                       88. No sabe
+
+
+
+
+(Marque con una X)                                                                                                                               el problema de las drogas. ¿Cuál o cuáles cree
+                                                                                                                                                 Ud. que es o son más efectivas para abordar el
+                                                                         2. No
+                                             1. Si
+
+
+
+
+                                                                                                                                                 problema de la droga en su comuna?
+                                                                                                                                                                    (Señale 3 según orden de importancia)
+a. Las autoridades de la comuna (alcalde)?                                                                                                                          (Anote el número correspondiente)
+b. Parlamentarios (senadores/diputados)?
+                                                                                                                                                                    1. Aumentar el castigo a los traficantes
+c. Las autoridades de gobierno?                                                                                                                                     2. Establecer un castigo a los consumidores
+                                                                                                                                                                    3. Desarrollar campañas de prevención en colegios
+      PARA LAS PREGUNTAS AM_2 Y AM_3                                                                                                                                4. Hacer campañas a través de medios de comunica-
+    CONSIDERE EL ÁMBITO DE CONTROL DEL                                                                                                                                 ción
+                                                                                                                                                                    5. Aumentar los recursos policiales
+            TRÁFICO DE DROGAS                                                                                                                                       6. Entregar mayores fondos para tratamiento y rehabili-
+                                                                                                                                                                       tación
+AM_2) En su opinión y según lo que usted sabe                                                                                                                       7. Implementar acciones que faciliten la inclusión de
+     ¿Cómo evalúa usted el desempeño de las au-                                                                                                                        personas en vulnerabilidad social
+     toridades encargadas del control del tráfico de                                                                                                               99. No contesta
+     drogas en su comuna? (Mostrar Tarjeta 26)                                                                                                                       1ª Medida     2ª Medida    3ª Medida
+  1.         Excelente
+
+  2.         Muy buena
+
+  3.         Buena                                                                                                                           OBSERVACIONES
+
+  4.         Regular
+
+  5.         Mala
+
+  6.         Muy mala
+
+  7.         Pésima
+
+  8.         No sabe, no dispone de información suficiente
+             como para evaluar
+
+
+
+                             ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                       -23-
+
+===== PAGE 24 =====
+AM_4) En los últimos 12 meses                                                                             AM_6) ¿Sabe Ud. qué es el SENDA?
+¿Ha recibido alguna información                                                                             1.     Sí
+
+
+
+
+                                                                                        99. No contesta
+relacionada con la prevención del
+
+
+
+
+                                                                          88. No sabe
+consumo de alcohol u otras dro-
+
+
+
+
+                                                          77. No aplica
+                                                                                                            2.     No
+gas en alguno de estos lugares?
+(Marque con una X)                                                                                         88.     No sabe
+
+
+
+
+                                                  2. No
+                                          1. Si
+a. En el trabajo                                                                                           99.     No contesta
+b. En la escuela o colegio
+                                                                                                          Alternativas 2, 88 o 99 PASE A PREG. OP_1
+c. En la universidad                                                                                                                  MODULO OPINIÓN PÚBLICA
+d. En el consultorio o COSAM
+e. En el barrio, centro comunitario                                                                       AM_7) ¿Y qué hace el SENDA?
+f. En la iglesia                                                                                               ENCUESTADOR: RESPUESTA CORRECTA ES LA
+g. En la discoteca, pubs o lugares de                                                                          QUE VINCULA A SENDA CON ACCIONES DEL
+  carrete                                                                                                      GOBIERNO Y EL ESTADO EN MATERIA DE PRE-
+                                                                                                               VENCION, TRATAMIENTO E INTEGRACIÓN SO-
+AM_5) Hasta donde usted conoce,                                                                                CIAL DEL CONSUMO DE DROGAS Y ALCOHOL
+
+
+                                                                                        99. No contesta
+¿Existe algún tipo de programa
+para ayudar a las personas que                                            88. No sabe                       1.     Respuesta correcta
+                                                          77. No aplica
+
+
+tienen problemas de alcohol u
+otras drogas, en alguno de estos                                                                            2.     Respuesta incorrecta
+                                                  2. No
+                                          1. Si
+
+
+
+
+lugares? (Marque con una X)
+                                                                                                           88.     No sabe
+a. En el trabajo
+b. En la escuela o colegio                                                                                 99.     No contesta
+c. En la universidad
+d. En el consultorio o COSAM
+e. En el barrio, centro comunitario
+f. En la iglesia
+g. En la discoteca, pubs o lugares de
+  carrete
+
+                                                   MÓDULO OPINIÓN PÚBLICA
+
+OP_1) Pensando en el alcohol ¿Cuán de acuerdo está Ud. con las siguientes
+
+
+                                                                                                                                                                                    4. Muy en desacuerdo
+medidas?
+                                                                                                                             1. Muy de acuerdo
+
+
+
+
+                                                                                                                                                                                                                         99. No contesta
+                                                                                                                                                                 3. En desacuerdo
+
+(Marque con una X)
+                                                                                                                                                 2. De acuerdo
+
+
+
+
+(Mostrar Tarjeta 28)
+                                                                                                                                                                                                           88. No sabe
+
+
+a. Aumentar el impuesto a las bebidas alcohólicas
+b. Reducir el número de locales que venden bebidas alcohólicas
+c. Aumentar el límite de 18 a 21 años para comprar alcohol
+d. Aumentar las penas para quienes conducen vehículos en estado de ebriedad
+e. Eliminar el auspicio de bebidas alcohólicas para equipos o eventos deportivos
+f. Reducir la hora límite para vender alcohol en las noches
+
+
+
+
+                             ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                       -24-
+
+===== PAGE 25 =====
+OP_2) En relación con los cigarrillos y el alcohol…¿Cuán de acuerdo está Ud.
+
+
+
+
+                                                                                                                                                           4. Muy en desacuerdo
+con las siguientes frases?
+
+
+
+
+                                                                                            1. Muy de acuerdo
+
+
+
+
+                                                                                                                                                                                                            99. No contesta
+                                                                                                                                    3. En desacuerdo
+(Marque con una X)
+
+
+
+
+                                                                                                                    2. De acuerdo
+(Mostrar Tarjeta 28)
+
+
+
+
+                                                                                                                                                                                  88. No sabe
+a. El consumo de alcohol es el principal responsable de la delincuencia en este país
+b. El tabaco produce más daño que la marihuana
+c. Los cigarrillos electrónicos ayudan a la gente a dejar de fumar
+d. Los cigarrillos electrónicos son menos peligrosos que los cigarrillos
+e. Los cigarrillos electrónicos son menos adictivos que los cigarrillos
+
+OP_3) Respecto al tema drogas, ¿Cuán de acuerdo está Ud. con las siguien-
+
+
+
+
+                                                                                                                                                           4. Muy en desacuerdo
+tes frases?
+
+
+
+
+                                                                                            1. Muy de acuerdo
+
+
+
+
+                                                                                                                                                                                                            99. No contesta
+                                                                                                                                    3. En desacuerdo
+(Marque con una X)
+
+
+
+
+                                                                                                                    2. De acuerdo
+(Mostrar Tarjeta 28)
+
+
+
+
+                                                                                                                                                                                  88. No sabe
+a. La mayoría de los jóvenes fuma marihuana
+b. La marihuana produce menos daño que el alcohol
+c. El consumo y el tráfico de drogas es el principal responsable de la delincuencia en
+   este país
+d. La marihuana debería ser legal para los mayores de 18 años
+e. Las drogas han hecho más violentos a los delincuentes
+f. Se debería dejar tranquilos a los que consumen drogas: después de todo es asunto de
+   cada cual hacerlo o no
+
+OP_4) En relación a las propuestas de cambios a la ley de Drogas
+
+
+
+
+                                                                                                                                                           4. Muy en desacuerdo
+(Ley N°20.000) ¿Qué tan de acuerdo está con…?
+
+
+
+
+                                                                                                                                                                                  5. No conoce la ley
+                                                                                            1. Muy de acuerdo
+
+
+
+
+                                                                                                                                                                                                            99. No contesta
+(Marque con una X)                                                                                                                  3. En desacuerdo
+                                                                                                                    2. De acuerdo
+
+
+
+(Mostrar Tarjeta 29)
+
+
+
+
+a. Que se determinen las cantidades mínimas de droga para distinguir tráfico de peque-
+   ñas cantidades de consumo personal
+b. Que las faltas a la Ley de Drogas sean de competencia de los Juzgados de Policía Local
+c. Que la marihuana pase de lista 1) a lista 2)
+
+OP_5) Si Ud. tuviera que destinar $100 (cien pesos) para enfrentar el problema de alcohol en este país,
+     ¿cuánto destinaría a prevención (o educación), tratamiento (o rehabilitación), integración social y a control?
+     (Mostrar Tarjeta 30)
+                                                    1. Prevención o educación
+
+                                                    2. Tratamiento o rehabilitación
+
+                                                    3. Integración social
+
+                                                    4. Control del uso y venta
+
+                                                    Total (Chequear que sume 100)                               1                                      0                                                0
+
+
+
+
+                              ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                        -25-
+
+===== PAGE 26 =====
+OP_6) Si Ud. tuviera que destinar $100 (cien pesos) para enfrentar el problema de las drogas en este país, cuánto
+     destinaría a prevención (o educación), tratamiento (o rehabilitación), integración social y a control?
+     (Mostrar Tarjeta 30)
+                                                   1. Prevención o educación
+
+                                                   2. Tratamiento o rehabilitación
+
+                                                   3. Integración social
+
+                                                   4. Control del uso y venta
+
+                                                   Total (Chequear que sume 100)                                  1                                      0                                        0
+
+
+OP_7) Pensando ahora en drogas como marihuana, cocaína o pasta base
+
+
+
+
+                                                                                                                                                             4. Muy en desacuerdo
+¿Cuán de acuerdo está Ud. con las siguientes medidas?
+
+
+
+
+                                                                                              1. Muy de acuerdo
+
+
+
+
+                                                                                                                                                                                                      99. No contesta
+                                                                                                                                      3. En desacuerdo
+(Marque con una X)
+
+
+
+
+                                                                                                                      2. De acuerdo
+(Mostrar Tarjeta 28)
+
+
+
+
+                                                                                                                                                                                    88. No sabe
+a. Suspender el juicio de quienes han delinquido por primera vez a cambio de que
+   ingresen a un programa de tratamiento
+b. Dar la misma pena a quienes trafican con marihuana que los que trafican con cocaína o
+   pasta base
+c. Permitir el uso de marihuana para fines terapéuticos
+d. Autorizar que se registre a los alumnos/alumnas a la entrada de sus colegios para averi-
+   guar si portan alguna droga
+e. Penalizar el porte y consumo de marihuana aunque sea en pequeñas cantidades y
+   para uso personal
+
+OP_8) Según lo que Ud. sabe o cree, ¿Cuáles son las principales características de las personas que consumen
+     drogas?
+
+
+
+
+OBSERVACIONES
+
+
+
+
+                             ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                       -26-
+
+===== PAGE 27 =====
+                                    MÓDULO CARACTERIZACIÓN OCUPACIONAL
+CO_1) La semana pasada, ¿trabajó al menos una hora,           CO_5) ¿Cuál es la razón por la que no buscó trabajo o
+      sin considerar los quehaceres del hogar?                     realizó alguna gestión para iniciar una actividad
+  1.       Sí
+                                                                   por cuenta propia en las últimas cuatro semanas?
+                                                                      No lea las alternativas, registre la razón que el entrevista-
+                                                                      do considera más importante.
+Alternativa 1 PASE A PREGUNTA CO_6
+                                                                      Anote SOLO 1 de las razones
+  2.       No
+                                                              Posibilidad de empezar a trabajar pronto
+                                                                 1.    Consiguió trabajo que empezará pronto o iniciará
+CO_2) Aunque no trabajó la semana pasada, ¿realizó                     una actividad por cuenta propia
+     alguna actividad por lo menos durante una hora?            2.     Está esperando resultado de gestiones ya em-
+                                                                       prendidas
+       …por un salario o remuneración?
+                                                              Limitaciones de condiciones familiares o personales
+       …en su empresa o negocio?
+       …para la empresa o negocio de un familiar (con o sin     3.        No tiene con quien dejar a los niños
+       remuneración)?
+       …por pago en especies?                                   4.        No tiene con quien dejar a adultos mayores
+       …como aprendiz o realizando una práctica?
+       …de venta, sin incluir bienes del hogar?
+                                                                5.        No tiene con quien dejar a otro familiar
+       …agrícola, minera o artesanal para la venta?
+
+  1.       Sí                                                   6.        Está enfermo o tiene una discapacidad
+
+Alternativa 1 PASE A PREGUNTA CO_6                             7.        Percepción de limitaciones personales
+
+  2.       No                                                   8.     Piensa que nadie le dará trabajo (porque no cuenta
+                                                                       con la capacitación requerida, por su edad, etc.)
+                                                              Condiciones laborales no se adecuan a expectativas
+CO_3) Aunque no trabajó la semana pasada, ¿tenía
+     empleo del cual estuvo ausente temporalmente               9.        Las reglas, horarios y distancias de los trabajos no
+     por licencia, huelga, enfermedad, vacaciones,                        le acomodan
+     suspensión temporal u otra razón?                         10.        Ofrecen sueldos muy bajos
+
+  1.       Sí                                                 Tiene otra actividad o renta
+
+Alternativa 1 PASE A PREGUNTA CO_6                             11.       Quehaceres del hogar
+
+  2.       No                                                  12.        Estudiante
+
+                                                               13.        Jubilado(a), pensionado(a) o montepiada
+CO_4) ¿Buscó trabajo remunerado o realizó alguna
+     gestión para iniciar una actividad por cuenta             14.        Tiene otra fuente de ingreso (seguro de cesantía,
+     propia (negocio o empresa) en las últimas cuatro                     mesadas, rentas transferencias del Estado, etc.)
+     semanas?                                                 Otros
+  1.       Sí                                                  15.        Se cansó de buscar o cree que no hay trabajo
+                                                                          disponible
+Alternativa 1 PASE A PREGUNTA CO_6                            16.        Busca cuando realmente lo necesita o tiene traba-
+  2.       No                                                             jo esporádico
+                                                               17.        No tiene interés en trabajar
+
+                                                               18.        Otra razón
+
+                                                              PASE A PREG. DP_1 – MÓDULO DATOS PERSONALES DEL
+                                                               ENCUESTADO
+
+
+
+
+                             ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                       -27-
+
+===== PAGE 28 =====
+CO_6) ¿Cuál es su ocupación u oficio?                         CO_8) ¿A qué se dedica o qué hace el negocio, empre-
+                                                                   sa o institución donde usted trabaja?
+
+Encuestador: Si la persona hace más de un trabajo deje que   Describa la actividad a que se dedica la empresa, negocios
+ él elija uno de ellos.                                        o institución en que la persona realiza su actividad u ocupa-
+ Indique el nombre completo del empleo y facilite detalles,    ción principal.
+ por ejemplo:                                                  Ejemplos de descripción incompleta: fábrica, comercio,
+         - Recolector de frutas                                taller, etc. Ejemplos de descripción completa: fábrica de enva-
+         - Profesor de escuela nivel secundario                ses de vidrio, comercio de zapatillas, taller de reparación de
+         - Conductor de bus                                    autos, etc.
+         - Gerente de una empresa
+                                                              CO_9) ¿Cuál es el tamaño de la empresa o negocio
+CO_7) En su trabajo o negocio principal, ¿usted trabaja
+                                                                   donde Ud. trabaja? Incluya todas las oficinas o
+     como? (Mostrar Tarjeta 31)
+                                                                   sucursales de su empresa en el país
+   1.     Patrón o empleador/a
+                                                                1.       1 a 9 personas
+  2.      Trabajador/a por cuenta propia
+                                                                2.       10 a 49
+  3.      Empleado/a u obrero/a del sector público (Gobier-
+          no Central o Municipal)                               3.       50 a 199
+  4.      Empleado/a y obrero/a de empresas públicas
+                                                                4.       200 a 999
+  5.      Empleado/a y u obrero/a del sector privado
+                                                                5.       1000 personas o más
+  6.      Servicio doméstico puertas adentro
+                                                              99.        No contesta
+  7.      Servicio doméstico puertas afuera
+                                                              CO_10) Ha estado involucrado o tenido algún tipo de
+  8.      FF.AA. y del Orden                                       accidente laboral en los últimos 12 meses?
+
+  9.      Familiar no remunerado                                 1.      Sí
+
+Alternativa 9 PASE A PREG. DP_1 – MÓDULO DATOS                 2.       No
+PERSONALES DEL ENCUESTADO
+                                                               88.       No sabe
+
+                                                               99.       No contesta
+
+
+                                 MÓDULO DATOS PERSONALES DEL ENCUESTADO
+DP_1) ¿Cuántas personas viven en este hogar?                  DP_3) ¿Actualmente cuál es su estado de hecho?
+      (Anote 99 No contesta)
+                                                                 1.      Casado/a vive con su esposo/a
+               Personas
+                                                                2.       Conviviente o pareja de distinto sexo
+
+                                                                3.       Conviviente o pareja del mismo sexo
+
+DP_2) ¿Cuál es su estado civil actual (legal)?                  4.       No convive con pareja
+   1.     Soltero/a
+                                                              OBSERVACIONES
+  2.      Casado/a
+
+  3.      Divorciado/a
+
+  4.      Viudo/a
+
+  5.      Anulado/a
+
+
+
+
+                           ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                     -28-
+
+===== PAGE 29 =====
+DP_4) En Chile, la ley reconoce nueve pueblos indíge-   DP_6) ¿A qué sistema previsional de salud pertenece
+     nas (originarios), ¿pertenece usted o es descen-        usted?
+     diente de alguno de ellos?
+                                                           1.      Sistema público grupo A
+     (Mostrar Tarjeta 32)
+   1.    Aymara                                            2.      Sistema público grupo B
+
+  2.     Rapa Nui                                         3.       Sistema público grupo C
+
+  3.     Quechua                                          4.       Sistema público grupo D
+
+  4.     Mapuche                                           5.      Sistema público no sabe grupo
+
+  5.     Atacameño (Linkán Antai)                         6.       F.F.A.A y del Orden
+
+  6.     Coya                                              7.      ISAPRE
+
+  7.     Kawésqar (Alacalufes)                            8.       Ninguno (particular)
+
+  8.     Yagán (Yámana)                                   9.       Otro Sistema
+
+  9.     Diaguita                                        88.       No sabe
+
+ 10.     No pertenece a ningún pueblo indígena           99.       No contesta
+
+
+DP_5) ¿Cuál es su religión o Credo?                     DP_7) ¿Qué relación de parentesco tiene con el jefe/a
+                                                              de hogar? JEFE DE HOGAR SE DEFINE COMO LA
+   1.    Católica                                               PERSONA, HOMBRE O MUJER, RECONOCIDA COMO
+                                                                TAL POR LOS INTEGRANTES DEL HOGAR
+  2.     Evangélica o Protestante
+                                                           1.      Jefe de Hogar
+  3.     Judía
+                                                           2.      Esposo(a) /pareja
+  4.     Musulmana
+                                                          3.       Hijo/a de ambos
+  5.     Mormón
+                                                          4.       Hijo/a sólo del jefe
+  6.     Ortodoxa
+                                                           5.      Hijo sólo del esposo(a) /pareja
+  7.     Budista
+                                                          6.       Padre o madre
+  8.     Fe Bahá’í
+                                                           7.      Suegro(a)
+  9.     Testigo de Jehová
+                                                          8.       Yerno o nuera
+ 10.     Espiritualidad indígena
+                                                          9.       Nieto(a)
+  11.    Otra
+                                                         10.       Hermano(a)
+ 12.     Ninguna
+                                                          11.      Cuñado(a)
+
+                                                          12.      Otro familiar
+
+                                                          13.      No familiar
+
+                                                          14.      Servicio doméstico puertas adentro
+
+
+
+
+                          ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                    -29-
+
+===== PAGE 30 =====
+   SI LA PERSONA ENCUESTADA INDICA SER EL JEFE - JEFA DE HOGAR, ENTONCES NO DEBE CONTESTAR LAS
+  PREGUNTAS DP_8A, DP_9A, DP_10A, DP_11A. POR LO TANTO, DEBE CONTESTAR DP_8B, DP_9B, DP_10B, DP_11B.
+
+DP_8) Actualmente, ¿asiste a                                                 DP_12) ¿Cuál de estas situaciones se aplica mejor a su
+algún establecimiento educacio- a. Usted                    b. Jefe de            caso?
+nal? (Marque con una X)                                        hogar           1.       Ud. aporta ingreso único
+1. Si
+2. No                                                                          2.       Ud. aporta el ingreso principal pero existen otros
+88. No sabe                                                                             ingresos
+99. No contesta                                                                3.       Ud. aporta la mitad del ingreso del hogar
+
+DP_9) ¿Cuál es el nivel educacional                                            4.       Ud. aporta ingreso pero no es el principal del
+
+
+
+
+                                                                b. Jefe de
+más alto alcanzado o el nivel educacio-                                                 hogar
+
+
+
+
+                                                     a. Usted
+
+
+
+                                                                   hogar
+nal actual de usted y el jefe de hogar?                                        5.       Ud. no aporta ingresos al hogar
+(Marque con una X) (Mostrar Tarjeta 33)
+                                                                              88.       No sabe
+1. Nunca asistió
+2. Educación Especial (Diferencial)                                           99.       No contesta
+3. Primaria o preparatoria (Sistema Antiguo)
+4. Educación Básica
+                                                                             DP_13) Aproximadamente y considerando un mes
+5. Humanidades (Sistema Antiguo)                                                  normal, ¿en cuáles de estos rangos se ubica el
+6. Educación Media Científico Humanista                                           ingreso total del hogar al mes?
+7. Técnica Comercial, Industrial o Normalista                                     (Mostrar Tarjeta 34)
+   (Sistema Antiguo)
+                                                                                    Si hay más de un hogar en la vivienda, preguntar por el
+8. Educación Media Técnico Profesional                                              hogar del entrevistado
+9. Técnico de Nivel Superior                                                        Si es menor de edad intente conseguir esta informa-
+10. Profesional                                                                     ción con algún adulto
+11. Postítulo                                                                  1.       Menos de $100.000
+12. Magíster
+13. Doctorado                                                                  2.       Entre $100.001 y 200.000
+14. No Sabe
+                                                                               3.       Entre $200.001 y 300.000
+DP_10) ¿Completó el nivel edu-
+                                                                               4.       Entre $300.001 y 400.000
+cacional anteriormente declara-           a. Usted          b. Jefe de
+do? (Marque con una X)                                         hogar
+                                                                               5.       Entre $400.001 y 500.000
+1. Sí
+2. No                                                                          6.       Entre $500.001 y 750.000
+77. No aplica
+                                                                               7.       Entre $750.001 y 1.000.000
+DP_11) En este nivel educacional
+¿Cuál fue el último curso que             a. Usted         b. Jefe de          8.       Entre $1.000.001 y 1.500.000
+aprobó? (Marque con una X)                                    hogar
+                                                                               9.       Entre $1.500.001 y 2.000.000
+0. Sin estudios
+1. Primer año                                                                 10.       Más de $2.000.000
+2. Segundo año
+3. Tercer año                                                                 88.       No sabe
+4. Cuarto año
+                                                                              99.       No contesta
+5. Quinto año
+6. Sexto año
+7. Séptimo año
+8. Octavo año
+77. No Aplica
+88. No Sabe
+99. No contesta
+
+
+
+                               ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                        -30-
+
+===== PAGE 31 =====
+DP_14) Me gustaría que me contara un                                                               ANUNCIE POSIBLE VISITA DEL SUPERVISOR, PARA
+poco más en detalle sobre los ingresos                                                            EVITAR NEGACION A LA ENTREVISTA DE CONTROL Y
+de su hogar. Aproximadamente, ¿Cuánto                                                                     AGRADEZCA LA COLABORACIÓN.
+es el ingreso total mensual…                                                                      PARA LAS PREGUNTAS DP_16 Y DP_17 UD. SÓLO DEBE
+SI EL ENTREVISTADO ES MENOR DE EDAD                                                               OBSERVAR Y NO PREGUNTARLE AL ENTREVISTADO.
+INTENTE CONSEGUIR ESTA INFORMACIÓN
+
+
+
+
+                                                                                99. No contesta
+ENTRE ALGÚN ADULTO                                                                                DP_16) Calidad de la vivienda
+
+
+
+
+                                                  77. No Aplica
+                                                                  88. No sabe
+(Anote el monto declarado en pesos, y marque                                                             (Ver Tarjeta 36: “Calidad de la Vivienda”)
+con una X si No sabe o No contesta)
+                                                                                                    1.       Tipo 1. Casas o departamentos de gran lujo y muy
+                                                                                                             espaciosos.
+                                 Monto en Pesos                                                     2.       Tipo 2. Casas o departamentos espaciosos y
+1… del trabajo del primer    $                                                                               confortables.
+  perceptor (persona que
+  recibe)?                                                                                          3.       Tipo 3. Casas o departamentos de construcción
+                                                                                                             sólida, pero de apariencia modesta y en buen
+2… del trabajo del segundo   $
+  perceptor (persona que                                                                                     estado de conservación.
+  recibe)?                                                                                          4.       Tipo 4. Tres casos típicos:
+3… del trabajo del tercer    $                                                                               i) Construcción sólida, pero en mal estado de
+  perceptor (persona que                                                                                         conservación;
+  recibe)?                                                                                                   ii) Construcción sólida, buen estado de conser-
+4… por jubilaciones?         $                                                                                   vación, buena iluminación, pero existe hacina-
+                                                                                                                 miento;
+                                                                                                             iii) Casa prefabricada, aunque tenga cocina y
+5… por Dividendo (ac-        $                                                                                   baño independiente.
+  ciones, intereses por
+  depósitos, bonos)?                                                                                5.       Tipo 5. Se presentan tres casos:
+                                                                                                             i) Mejoras.- Casas de madera con pozos negros y
+6… por Arriendos?            $                                                                                   sin suministro de agua potable dentro del hogar;
+                                                                                                             i) Pocilga.- Habitación sucia y sin ventilación ni
+                                                                                                                 baño. La cocina, el comedor y dormitorio están
+7… por Aportes Familiares? $                                                                                     dentro de la misma habitación;
+                                                                                                             iii) Subterráneos insalubres con hacinamiento y/o
+                                                                                                                 promiscuidad.
+DP_15) ¿Recibió usted o alguien en su hogar el mes
+     pasado ingresos por algún subsidio municipal o                                               DP_17) Calidad del Barrio
+                                                                                                         (Ver Tarjeta 37: “Calidad del barrio”)
+     del Estado? (Mostrar Tarjeta 35)
+                                                                                                    1.       Tipo 1. Barrio residencial elegante, donde el valor
+  1.      Sí, especifique monto:
+                                                                                                             del terreno y el monto de los arriendos es alto.
+                                                                                                    2.       Tipo 2. Barrio residencial, todavía acomodado, de
+          (88 No sabe, 99 No contesta)                                                                       calles amplias, pero sin tanta área verde; casas
+                                                                                                             confortables y bien mantenidas
+  2.      No
+                                                                                                    3.       Tipo 3. Barrios de comercio o calles estrechas,
+ 88.      No sabe                                                                                            antiguas, sin áreas verdes, de menos agrado para
+                                                                                                             vivir y de valores medios de arrendamiento.
+ 99.      No contesta                                                                               4.       Tipo 4. Barrio obrero o barrio populoso o mal
+                                                                                                             ventilado. El valor de las viviendas está disminui-
+                                                                                                             do por la proximidad a talleres, fábricas, estacio-
+                                                                                                             nes de ferrocarriles, basurales, etc.
+ Tarjeta 35                                                                                         5.       Tipo 5. Barrio de mejoras y pocilgas desaseadas,
+                                                                                                             sin pavimentación, de mal aspecto y sin condicio-
+  SUBSIDIO FAMILAR (SUF)                                                                                    nes sanitarias.
+  SUBSIDIO FAMILIAR DUPLO
+  SUBSIDIO A LA DISCAPACIDAD MENTAL
+  SUBSIDIO DE CESANTÍA
+  PENSIÓN BÁSICA SOLIDARIA (PBS)
+  BONO DE PROTECCIÓN FAMILIAR Y EGRESO
+  OTROS BONOS (BONO PROTECCIÓN FAMILIAR,
+   BONO BASE FAMILIAR, BONO CONTROL DEL
+   NIÑO SANO, ETC)
+
+
+
+
+                             ESTUDIO NACIONAL DE DROGAS EN POBLACIÓN GENERAL DE CHILE
+                                                       -31-
+
+===== PAGE 32 =====
+DÉCIMO PRIMER ESTUDIO NACIONAL DE DROGAS EN
+        POBLACIÓN GENERAL DE CHILE
+

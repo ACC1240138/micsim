@@ -1,0 +1,4 @@
+"metric","cells","bias","rmse","interpretation"
+"current",56,-0.00284828293466851,0.043502856934558,"In-sample all-wave refit; one seed"
+"gpd",56,-0.118920500866138,0.540818274903946,"In-sample all-wave refit; one seed"
+"hed",56,-0.0498241482070799,0.0727975571661192,"In-sample all-wave refit; one seed"
