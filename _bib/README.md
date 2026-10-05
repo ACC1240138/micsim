@@ -1,17 +1,17 @@
-# _bib — bibliografía y material de apoyo
+# _bib — bibliography and supporting material
 
-`references.bib` está en claro. Los demás archivos (PDF, figuras y suplementos) están **cifrados archivo por archivo** (`<nombre>.tar.xz.enc`, con su `.md5.csv`); se cifran por precaución, porque no se asume licencia de redistribución.
+`references.bib` is plain text. The other files (PDFs, figures and supplements) are **encrypted file by file** (`<name>.tar.xz.enc`, with its `.md5.csv`); they are encrypted as a precaution, because no redistribution licence is assumed.
 
-Para tenerlos a mano:
+To have them at hand:
 
 ```r
 source(here::here("_tools", "acc_data.R"))
-acc_unpack_all("_bib")   # los deja en _bib/local/ (ignorada por git)
+acc_unpack_all("_bib")   # leaves them in _bib/local/ (ignored by git)
 ```
 
-Los informes ENPG 2012, 2014, 2016, 2018 y 2020 no se repiten aquí: son idénticos (md5) a los de `_enpg/docs/`.
+The ENPG 2012, 2014, 2016, 2018 and 2020 reports are not repeated here: they are identical (md5) to those in `_enpg/docs/`.
 
-## Archivos (33)
+## Files (33)
 
 - ADD-25-1576.pdf
 - Alcohol use, economic development and health burden_ A conceptual framework-main.pdf
