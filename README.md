@@ -4,6 +4,8 @@ Microsimulation of alcohol policies in Chile: alcohol-attributable mortality (PA
 
 The **microdata** (ENPG, EPS, DEIS, EPF) are in the repository **only in encrypted form**, never as plain text.
 
+**Setting up a new computer:** follow [INSTALL.md](INSTALL.md) (clone, `renv::restore()`, data key, checks).
+
 ## Data and key
 
 Bundles are `*.tar.xz.enc` files (tar.xz + AES-256-CTR + HMAC-SHA256), each with a `*.md5.csv` sidecar (file names, sizes and md5; no data). The key is the environment variable `ACC_DATA_KEY`:
