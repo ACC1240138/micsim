@@ -76,6 +76,8 @@ Download `DEFUNCIONES_FUENTE_DEIS_2024_2026_<DDMMYYYY>.zip` into `_deis/` (git i
 
 To resume a conversation: `source("_tools/acc_data.R"); acc_unpack_all("_sessions", "~/.claude/projects/<folder named after the clone path>")`. The folder is named after the clone's path (for example `C--Users-nDP-Documents-micsim`); open Claude Code once in the clone to see the exact name.
 
+Install in a new computer: see [SETUP.md](SETUP.md)
+
 ## Data policy
 
 - No plain microdata: no `.dta`, `.sav`, `.parquet`, `.zip` or `.jsonl` in git (see `.gitignore`).
