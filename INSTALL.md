@@ -55,6 +55,28 @@ Rscript _tools/smoke_data.R       # smoke_data: PASS
 
 ```r
 source("_tools/acc_data.R")
-acc_unpack_all("_bib")                                       # PDFs -> _bib/local/ (ignored by git)
-acc_unpack_all("_sessions", "~/.claude/projects/<folder>")   # Claude Code chats; open Claude Code once in the clone to see <folder>
+acc_unpack_all("_bib")   # PDFs -> _bib/local/ (ignored by git)
 ```
+
+Claude Code chats (so they show up in `/resume` when you open Claude Code in `micsim`). Run from the repository root:
+
+```r
+# Claude Code keeps chats in <home>/.claude/projects/<clone path with non-alphanumerics as "-">.
+# On Windows R's "~" is Documents, so use USERPROFILE (HOME on macOS/Linux).
+home <- Sys.getenv(if (.Platform$OS.type == "windows") "USERPROFILE" else "HOME")
+p <- file.path(home, ".claude", "projects", gsub("[^A-Za-z0-9]", "-", normalizePath(getwd())))
+dir.create(p, showWarnings = FALSE, recursive = TRUE)
+acc_unpack_all("_sessions", p)
+```
+
+## 6. Pushing from a computer with another GitHub account
+
+Inside `micsim` only (no `--global`), one command per line; Windows `cmd` does not accept `#` comments:
+
+```
+git remote set-url origin https://ACC1240138@github.com/ACC1240138/micsim.git
+git config user.name "ACC1240138"
+git config user.email "173552303+ACC1240138@users.noreply.github.com"
+```
+
+The first `git push` opens the browser to sign in as ACC1240138. GitHub Desktop pushes with its own signed-in account, so use the terminal for this repo.

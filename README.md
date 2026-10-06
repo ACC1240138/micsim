@@ -74,9 +74,17 @@ Download `DEFUNCIONES_FUENTE_DEIS_2024_2026_<DDMMYYYY>.zip` into `_deis/` (git i
 
 ## Claude Code chats
 
-To resume a conversation: `source("_tools/acc_data.R"); acc_unpack_all("_sessions", "~/.claude/projects/<folder named after the clone path>")`. The folder is named after the clone's path (for example `C--Users-nDP-Documents-micsim`); open Claude Code once in the clone to see the exact name.
+To resume a conversation, run from the repository root:
 
-Install in a new computer: see [SETUP.md](SETUP.md)
+```r
+source("_tools/acc_data.R")
+# Claude Code keeps chats in <home>/.claude/projects/<clone path with non-alphanumerics as "-">.
+# On Windows R's "~" is Documents, so use USERPROFILE (HOME on macOS/Linux).
+home <- Sys.getenv(if (.Platform$OS.type == "windows") "USERPROFILE" else "HOME")
+p <- file.path(home, ".claude", "projects", gsub("[^A-Za-z0-9]", "-", normalizePath(getwd())))
+dir.create(p, showWarnings = FALSE, recursive = TRUE)
+acc_unpack_all("_sessions", p)
+```
 
 ## Data policy
 
