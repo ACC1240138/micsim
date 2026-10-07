@@ -381,9 +381,10 @@ add_engine_fallback <- function(cell_factors) {
   # fills only cells where strict estimation is impossible, mainly 2020.
   #
   # Primary fallback rule:
-  #   use the closest following wave with a validated factor for the same
-  #   variable x age_group x sex cell. For the current data this means that
-  #   2020 borrows 2022 within the same cell.
+  #   2026-10-06 cc-cloud: C2. Use the closest PRECEDING wave with a validated factor for the
+  #   same variable x age_group x sex cell, so 2020 borrows 2018 (same MM2015 sampling
+  #   regime: PSU = block, stratum = commune x size) and not 2022 (MMV 2020 frame, UPM of
+  #   about 200 dwellings). Design variables must not be mixed across regimes.
   #
   # Secondary fallback rule:
   #   if no following validated year exists, use the median validated factor
@@ -397,8 +398,8 @@ add_engine_fallback <- function(cell_factors) {
   names(fallback)[names(fallback) == "factor_additional"] <- "fallback_factor_median_validated_cells"
   out <- merge(cell_factors, fallback, by = "variable", all.x = TRUE, sort = FALSE)
 
-  out$fallback_next_valid_year <- NA_integer_
-  out$fallback_factor_next_valid_year <- NA_real_
+  out$fallback_prev_valid_year <- NA_integer_          # 2026-10-06 cc-cloud: C2 (was *_next_*)
+  out$fallback_factor_prev_valid_year <- NA_real_
   missing_strict <- !is.finite(out$factor_additional)
 
   for (i in which(missing_strict)) {
@@ -406,23 +407,23 @@ add_engine_fallback <- function(cell_factors) {
       out$variable == out$variable[i] &
         out$age_group == out$age_group[i] &
         out$sex == out$sex[i] &
-        out$year > out$year[i] &
+        out$year < out$year[i] &
         is.finite(out$factor_additional),
       ,
       drop = FALSE
     ]
 
     if (nrow(same_cell) > 0L) {
-      same_cell <- same_cell[order(same_cell$year), , drop = FALSE]
-      out$fallback_next_valid_year[i] <- same_cell$year[[1L]]
-      out$fallback_factor_next_valid_year[i] <- same_cell$factor_additional[[1L]]
+      same_cell <- same_cell[order(same_cell$year, decreasing = TRUE), , drop = FALSE]
+      out$fallback_prev_valid_year[i] <- same_cell$year[[1L]]
+      out$fallback_factor_prev_valid_year[i] <- same_cell$factor_additional[[1L]]
     }
   }
 
   out$factor_for_engine <- out$factor_additional
   missing_factor <- !is.finite(out$factor_for_engine)
-  has_next_year <- missing_factor & is.finite(out$fallback_factor_next_valid_year)
-  out$factor_for_engine[has_next_year] <- out$fallback_factor_next_valid_year[has_next_year]
+  has_prev_year <- missing_factor & is.finite(out$fallback_factor_prev_valid_year)
+  out$factor_for_engine[has_prev_year] <- out$fallback_factor_prev_valid_year[has_prev_year]
 
   still_missing <- !is.finite(out$factor_for_engine)
   out$factor_for_engine[still_missing] <- out$fallback_factor_median_validated_cells[still_missing]
@@ -430,8 +431,8 @@ add_engine_fallback <- function(cell_factors) {
     is.finite(out$factor_additional),
     "own_cell_specific",
     ifelse(
-      has_next_year,
-      "fallback_next_valid_year_same_cell",
+      has_prev_year,
+      "fallback_prev_valid_year_same_cell",
       "fallback_median_validated_cells_same_variable"
     )
   )

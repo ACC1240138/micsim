@@ -1863,7 +1863,10 @@ compute_general_aaf_from_registry <- function(
   for (i in seq_along(years)) {
     y <- years[[i]]
     for (g in age_groups) {
-      record <- tryCatch(get_record(g), error = function(e) NULL)
+      # 2026-10-06 cc-cloud: B3. Keep the lookup error text instead of swallowing it.
+      record <- tryCatch(get_record(g), error = function(e) {
+        message("record lookup failed for ", output_name, " ", y, " group ", g, ": ", conditionMessage(e)); NULL
+      })
       hed_entry <- g_hed_list[[as.character(y)]][[g]]
       g_nhed <- if (!is.null(hed_entry)) hed_entry$nhed else NULL
       g_hed  <- if (!is.null(hed_entry)) hed_entry$hed  else NULL

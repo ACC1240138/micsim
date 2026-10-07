@@ -8205,3 +8205,79 @@ Contexto: migracion a repo nuevo `ACC1240138/micsim` (carpeta nueva `micsim` (ru
 * Bateria completa re-corrida BAJO renv (versiones del snapshot mas nuevas: dplyr 1.2.1, data.table 1.18.2.1, arrow 23.0.1.2): mismos resultados. `test_ypll_death_base` sigue fallando la reconciliacion por lo esperado (lactantes).
 * Obsoleto: `env/renv_*.lock` y `env/library_snapshot_*.csv` (otro PC, 303 paquetes, sin arrow ni here) quedan reemplazados por `renv.lock`; candidatos a eliminar (decision ACC).
 * Pendiente: instalar/autenticar `gh`; re-empaquetar la sesion en curso; Fase 6 (commit, repo publico, secreto `ACC_DATA_KEY`, expandPIF privado) solo con OK explicito en cada paso.
+
+
+2026-10-06 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: cierre expand_pif — decisiones fijadas con user (sin correr aun)
+
+Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expand_pif_registro_2026-10-06.md`. Prompt nube -> `prompt_fable_cierre_expand_pif_2026-10-06.md` (PENDIENTE actualizar con decisiones de abajo). Kimi P1-P4 llegaron: `__andres_control/p[1-4]kimi_*.md`.
+
+### Hechos
+* microsim_base `ms-apc-audit`: lee bundle `acc_data("_enpg/data_binge_sensitivity.rds.tar.xz.enc")` (commit acc1b70).
+* V1 CONFIRMADO bug: factor OMS anclaba media de BEBEDORES a 0.8*APC (salida guardada ms-apc-audit: media bebedores = 0.8*APC en 7 olas). Correcto: per capita poblacion (ltabs/fd=0) = 0.8*APC (Rehm 2010 texto completo verificado; Shield 2025 0.8 literal).
+* APC GHO SA_0000001688 (API, vintage 2026-06-15) = Kimi exacto: 2012 7.206, 2014 7.174, 2016 7.226, 2018 6.983, 2020 7.089, 2022 6.986, 2024 6.581 (=2023 arrastrado). Serie codificada (8.0/8.2/7.1/6.8/7.9) ~ Banco Mundial viejo; 7.9 sin fuente.
+* DEIS nueva version 06102026 empacada (acc_deis_update). 2024 y 2025 `identical()` vs 29092026; solo crece 2026. No mueve resultados.
+* B14: caida 2024 std (27.65->21.62/100k) ~2/3 por DEIS semanal preliminar (cirrosis -40%, VIH -40%), no exposicion.
+
+### Decisiones (user, 2026-10-06)
+* V1: corregir denominador per capita. APC -> serie GHO total actual. Densidad 0.789 se queda.
+* V2: fd = >30 dias se queda (Kimi P2). Propagar var RR_fd (ya fd_uncertainty=TRUE). Sick-quitter: no ahora.
+* V3: HED faltante NO se recodifica "no" (contra convencion OMS GHO 459). Excluir solo del indicador.
+* V4: cerrado (DEIS 2024 identico).
+* D1: 15-65 (= motor microsim), cota inferior. No ENS/EPS/carry-forward (Kimi P4 sugeria ENS: descartado por costo).
+* D2: urbano->nacional, declarar. D3: 2020 en calculo, marcado no comparable.
+* C1: pasar a Fable con inclinacion SI (declaracion por ola de microsim_respuestas §26: strata comuna 2012-18, COD_COMUNA 2022, PSU 2016 reconstruida, ESTRATO 2024); Fable fundamenta. C2: fallback 2020 -> 2018 (mismo regimen), no 2022. C3 resuelto. C4 si (export factor). C5 descartado.
+* B1: NO MICE. Convencion OMS (GHO 458/459) + Rehm 2010: faltante fuera solo del denominador de su indicador; queda en prevalencia de bebedor actual.
+* B2: filtrar AAF=1 a anios de ola (en bind_rows celda 49, no celda 15).
+* B5: Tabla 5 principal; IC IHD mujeres no confiables (cov diagonal) -> nota + Fable busca SE/cov en paper PUC.
+* B14: 2024 provisional; re-correr cuando DEIS publique oficial. No extrapolar.
+* IHD/IS: Tabla 5 PUC principal, WHO/Adam sensibilidad. NO mover celdas PUC (quedan al final del notebook).
+* AAF=1 en PIF: solo si JRT las incluyo (Fable revisa jrt/).
+* Papers JRT: otro carril.
+* RR: archivos Adam Sherk (cronicas = OMS 2024/Shield; IHD/IS/lesiones = InterMAHP 2018). Liver FD 2.23/2.68 sin tabla publica: declarar.
+* Operacion nube: clave SI en nube; Fable edita notebooks con comentario fecha + `cc-cloud`; outputs se guardan; DEIS version se explicita, no se fija; MACHINE_ID `cc-cloud`; usar /ponytail:ponytail pero codigo legible, autocontenido, sin funciones intermedias opacas; Fable decide forma (no predefinir scripts).
+* "Regla de oro" (reproducir 20260723 antes) ELIMINADA: comparar contra 20260723 DESPUES.
+
+### Pendiente
+* Repasar Q restantes con user. Actualizar prompt Fable. Commit/push de registro + prompt + encargos + este handoff + bundle DEIS 06102026 + _deis/README.
+* Orden: expand_pif -> build_ypll+test -> expand_pif2 (~13 h) -> expand_pif3 -> microsim.
+
+### Addendum Q (mismo dia, misma entrada)
+* Q7 (lambda ex-HED): PROVISIONAL lambda=0.5 principal, rango 0-1. User consulta fuente y puede cambiarlo. PIF lineal en lambda (R_exit=(1-l)R_l0 + l R_l1) -> 0.5 = punto medio EXACTO de corridas lambda=0/1 ya hechas, draw a draw (draws CRN): sin re-corrida. OJO: con lambda>0 HED deja de ser neutral en volumen -> arreglar `volume_reduction_pct` antes de publicar.
+* Q18 (one-pass, ahorra ~6 h en expand_pif2): lo evalua Fable con /ponytail:ponytail.
+* Q10 (estomago C16 + pancreas C25): historial 01-jun sacar (no IARC) -> 02-jun sensibilidad WHO-scope -> 25-jun depende referencia (Shield 2025 S6 no los trae; OMS 2024 si) -> 30-jun mantenidos, decision del user. PROPUESTO: fuera del principal (IARC + Shield S6), WHO 2024 con ellos = sensibilidad (`mortality_results_who_scope` ya existe). Falta ok user.
+* Q8 (metrica YLL): PROPUESTO yll_hmd principal (coherente con microsim), GBD TMRLT sensibilidad (+26%), legacy e0-edad solo comparacion historica (-8%). Borrar claim WPP de pif2 c41 (chile_e0_wpp2024 nunca usado). Falta ok user.
+* Q4 (AAF con signo): PROPUESTO neto principal + 1 linea de texto, sin tabla harmful-only. Falta ok user.
+* Textos en ingles de cada decision: en la conversacion del 2026-10-06 (user los pega en su doc).
+
+### Addendum Kimi P5 (mismo dia, misma entrada)
+* AAF=1 en PIF: NO entran. PIF declarado "parcial, 23 causas con RR" (InterMAHP §1.5; GBD 2016). Paper JRT (Ruiz-Tagle Maturana J [José], PHiP 2026) no tiene PIF. Wyper 2023 (Lancet 401:1361-70, doi 10.1016/S0140-6736(23)00497-X) muestra que AAF=1 si responden a politica -> PIF parcial = conservador, declarar.
+* Q7 FINAL: reportar 3 escenarios lambda = 0, 0.5, 1 (0.5 = interpolacion lineal exacta, sin re-corrida). Principal sugerido lambda=0 (Kimi P5; lambda=1 sin fuente publicada, ni en paper JRT). Cada lambda con su cambio implicito de consumo medio (arreglar `volume_reduction_pct`). Preguntar a JRT si lambda=1 sale de codigo/documento suyo.
+* Quitters inducidos por politica (Q25): escenarios actuales no inducen abandono -> no aplica a expand_pif2; pasa a microsim (regla SIMAH: quitter -> exbebedor con RR_fd).
+* Rezagos: estado estacionario principal (ya asi); rezagos (Holmes 2012 Tab 2) -> microsim.
+* Q4: PIF/AAF con signo, neto + por causa (ya existen). Sensibilidad "sin efecto protector" requiere corrida nueva -> limitacion declarada, no ahora.
+* Citas Kimi P5 corregidas: Wyper titulo real "...controlled interrupted time series study"; Barendregt & Veerman JECH 2010;64(3):209-12.
+* Q8 CERRADA (user ok): yll_hmd principal, GBD TMRLT sensibilidad, legacy solo comparacion; borrar claim WPP de pif2 c41.
+* Q4 CERRADA (user ok): neto + por causa; sin tabla harmful-only.
+* Q10: sigue PROPUESTA (fuera del principal, WHO-scope como sensibilidad); falta ok user.
+* Prompt Fable reescrito con todas las decisiones de esta entrada.
+
+
+2026-10-06 | DESKTOP_NDP_SGTV88L | Claude-Fable
+
+## CAVEMAN: cierre expand_pif, GATE 1 alcanzado (local, sin commit)
+
+### Hecho (con datos reales)
+* expand_pif.ipynb: V1 (per capita poblacion, factor por anio sin redondear, factor_CHMS igual), B1 (oh3 NA se queda; cvolaj "cur_na" para bebedor actual sin volumen util: cuenta en p_abs/p_form, no en gamma ni HED), V3 sin cambio, C4 (oms_factor_by_year.csv), B2 (AAF=1 solo olas, en bind_rows c50), B16, B17. Comentarios `# 2026-10-06 cc-cloud:`. Estructura intacta.
+* C2: revision_diseno 2020 toma 2018 (fallback_prev_valid_year). CSVs de diseno regenerados.
+* Corrida headless completa 20.5 min; 45 tablas AAF validadas; EXPAND_PIF_ARTIFACT_VALIDATION=PASS; check_bundles 49/49; test_ypll GATE PASSED 1188/1188 (117,918; constante actualizada); build_ypll -> YPLL_20261006.rds. Outputs NO guardados en el ipynb (Run All en Positron pendiente).
+* Antes/despues vs 20260723: expand_pif_before_after_20260723_vs_20261006_cause_sex.csv (+_year_age). Muertes atribuibles olas 24,337 -> 27,587 (+13.4%, todo por AAF; muertes solo cambian en 15-29 por lactantes DEIS, -26). AAF cronicos suben (ratio mediano general 1.51, HHD 1.61, cancer 1.40, lesiones 1.10, IHD ~1, IS pierde cardioproteccion). FA 97 -> 52 filas (sin anios impares).
+* expand_pif2.ipynb (sin corrida completa): Q7 6 escenarios `_mid` lambda=0.5 derivados (punto medio exacto, draw a draw) + avg_consumption_change_pct implicito por celda (lever en policy_vol_lever_pct); Q18 one-pass (sims en cache); B3; B10 stamp unico (PIF_ARTIFACT_STAMP); Q8 sin WPP; PIF declarado parcial 23 causas. Smoke serial 2024/n_sim 400: 15/15 PASS, derivado == motor lambda=0.5 a 1e-16.
+* expand_pif3.ipynb (estatico): B6, B7 (no borra figuras), Q7 labels "Half shift", B13 captions. validate_paf_draw_regeneration.R: 27720/10080/17640/2464.
+* Decisiones Fable: C1 NO (estratos comuna -> lonely PSU, factores inestables; region = conservador, solo IC); Q18 SI.
+
+### Pendiente
+* Q10 (user). IHD/IS Tabla 5 como principal: es cambio de pif3 (filas + draws, IC B5), no de expand_pif.
+* OJO: Rscript se cae al arrancar (0xC0000005) ~50% con .Rprofile/renv, 0% con --vanilla; mato clusters PSOCK en el smoke. Resolver antes de la corrida de 13 h.
+* Orden: Run All expand_pif en Positron (guardar outputs) -> expand_pif2 full -> validate expand_pif2 -> expand_pif3 -> ms-apc-audit (7 olas) -> GATE 2 -> commit (artefactos _20261006, bundle data_binge re-empacado).

@@ -20,7 +20,7 @@
 #     mismatched cells              == 0
 #     orphan cells, either side     == 0
 #     max |n_rebuilt - n_pipeline|  == 0        (exactly zero, not "small")
-#     total deaths                  == 117,944
+#     total deaths                  == 117,918   (2026-10-06 cc-cloud: was 117,944 before the DEIS infant fix)
 #     n_pipeline is integral to     <  1e-9     (proves the xlsx and the bundle are
 #                                                from the SAME engine run)
 #
@@ -33,8 +33,8 @@
 .t0 <- Sys.time()
 
 if (!exists("acc_root")) source(here::here("_tools", "acc_data.R"))
-setwd(file.path(acc_root(), "__andres_control"))
-source("ypll_icd_defs.R")
+# 2026-10-06 cc-cloud: B16. No setwd(); every path is anchored to acc_root().
+source(file.path(acc_root(), "__andres_control", "ypll_icd_defs.R"))
 
 cat("=============================================================\n")
 cat(" GATE: does the rebuilt death base reproduce the PIF pipeline's own counts?\n")
@@ -140,7 +140,9 @@ if (nrow(on_wave))                 fail <- c(fail, sprintf("%d rebuild-only cell
 if (nrow(only_pip))                fail <- c(fail, sprintf("%d cells only in the pipeline (our death set is MISSING deaths the PIF uses)", nrow(only_pip)))
 if (!identical(nrow(both), 1188L)) fail <- c(fail, sprintf("joined %d cells, expected 1188", nrow(both)))
 if (!isTRUE(maxdiff == 0))         fail <- c(fail, sprintf("max |diff| = %s, expected exactly 0", format(maxdiff)))
-if (sum(both$deaths) != 117944L)   fail <- c(fail, sprintf("total deaths %d, expected 117944", sum(both$deaths)))
+# 2026-10-06 cc-cloud: B20. 117,944 -> 117,918 after the DEIS 2012-2023 infant-age fix (edad_tipo; 26 deaths aged
+# 15-29 removed); re-derived from the 20261006 run (1188/1188 cells, max |diff| = 0).
+if (sum(both$deaths) != 117918L)   fail <- c(fail, sprintf("total deaths %d, expected 117918", sum(both$deaths)))
 
 if (length(fail)) {
   stop("\n*** GATE FAILED ***\n  ", paste(fail, collapse = "\n  "),

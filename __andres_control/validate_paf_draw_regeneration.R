@@ -157,9 +157,9 @@ if (base::identical(stage, "expand_pif2")) {
   results <- base::readRDS(results_path)
   applicable <- results[results$applicable, , drop = FALSE]
   baseline <- applicable[applicable$scenario_id == "baseline", , drop = FALSE]
-  assert_true(base::nrow(results) == 20160L, "Expected 20,160 main PIF result rows.")
-  assert_true(base::nrow(applicable) == 8400L, "Expected 8,400 applicable main PIF cells.")
-  assert_true(base::nrow(results) - base::nrow(applicable) == 11760L, "Unexpected non-applicable main PIF count.")
+  assert_true(base::nrow(results) == 27720L, "Expected 27,720 main PIF result rows (45 tables x 22 scenarios x 7 waves x 4 age groups; 2026-10-06 cc-cloud: Q7 adds 6 lambda = 0.5 scenarios).")
+  assert_true(base::nrow(applicable) == 10080L, "Expected 10,080 applicable main PIF cells.")
+  assert_true(base::nrow(results) - base::nrow(applicable) == 17640L, "Unexpected non-applicable main PIF count.")
   assert_true(base::all(base::is.finite(applicable$pif)), "Non-finite applicable main PIF point estimate.")
   assert_true(base::all(base::is.finite(applicable$pif_low)), "Non-finite applicable main PIF lower limit.")
   assert_true(base::all(base::is.finite(applicable$pif_up)), "Non-finite applicable main PIF upper limit.")
@@ -167,17 +167,17 @@ if (base::identical(stage, "expand_pif2")) {
   assert_true(base::all(baseline$pif == 0 & baseline$pif_low == 0 & baseline$pif_up == 0), "Main baseline is not exactly zero.")
   base::rm(results, applicable, baseline)
   base::invisible(base::gc(full = TRUE))
-  assert_draw_bundle(draws_path, "who_adam", "pif_draws", 8400L, results_path)
+  assert_draw_bundle(draws_path, "who_adam", "pif_draws", 10080L, results_path)
 
   table5_results <- base::readRDS(table5_results_path)
-  assert_true(base::nrow(table5_results) == 1792L, "Expected 1,792 Table 5 PIF rows.")
+  assert_true(base::nrow(table5_results) == 2464L, "Expected 2,464 Table 5 PIF rows (4 tables x 22 scenarios x 28 cells).")
   assert_true(base::all(table5_results$rr_source == "table5_puc"), "Table 5 result rr_source mismatch.")
   table5_applicable <- table5_results[table5_results$applicable, , drop = FALSE]
   assert_true(base::all(base::is.finite(table5_applicable$pif)), "Non-finite applicable Table 5 PIF.")
   assert_true(base::all(table5_applicable$pif_low <= table5_applicable$pif & table5_applicable$pif <= table5_applicable$pif_up), "Table 5 PIF interval ordering failure.")
   base::rm(table5_results, table5_applicable)
   base::invisible(base::gc(full = TRUE))
-  assert_draw_bundle(table5_draws_path, "table5_puc", "pif_draws", 1792L, table5_results_path)
+  assert_draw_bundle(table5_draws_path, "table5_puc", "pif_draws", 2464L, table5_results_path)
 
   injury_checks <- base::readRDS(injury_checks_path)
   if (base::is.list(injury_checks) && !base::is.null(injury_checks$report)) {

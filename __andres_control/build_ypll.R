@@ -46,9 +46,9 @@
 .t0 <- Sys.time()
 
 if (!exists("acc_root")) source(here::here("_tools", "acc_data.R"))
-setwd(file.path(acc_root(), "__andres_control"))
-source("ypll_icd_defs.R")
-source("life_tables_20260714.R")
+# 2026-10-06 cc-cloud: B16. No setwd(); every path is anchored to acc_root().
+source(file.path(acc_root(), "__andres_control", "ypll_icd_defs.R"))
+source(file.path(acc_root(), "__andres_control", "life_tables_20260714.R"))
 
 # Dated output, like every other artifact in this pipeline: the notebook's picker
 # prefers the newest embedded YYYYMMDD, so a rebuild produces YPLL_<today>.rds and wins
@@ -73,7 +73,7 @@ pipe <- ypll_pipeline_deaths()
 pipe$n <- round(pipe$n)
 chk <- merge(long, pipe[, c("year", "gender", "age_group", "disease", "n")],
              by = c("year", "gender", "age_group", "disease"))
-if (nrow(chk) != 1188L || any(chk$deaths != chk$n) || sum(chk$deaths) != 117944L) {
+if (nrow(chk) != 1188L || any(chk$deaths != chk$n) || sum(chk$deaths) != 117918L) {   # 2026-10-06 cc-cloud: B20, was 117944 (DEIS infant fix)
   stop("GATE FAILED inside build_ypll.R: the rebuilt death base does not reproduce the ",
        "PIF pipeline's counts (", nrow(chk), " joined cells, ",
        sum(chk$deaths != chk$n), " mismatches, ", sum(chk$deaths), " deaths). ",

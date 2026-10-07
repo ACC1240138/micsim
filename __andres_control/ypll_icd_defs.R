@@ -199,7 +199,7 @@ YPLL_AAF_BUNDLE <- .ypll_latest_by_date(
 # RESOLVED 2026-07-15 (edad_tipo). In the 2024 file, `edad_cant` is measured in
 # years only when `edad_tipo == 1`. Both expand_pif.ipynb and this independent
 # rebuild now apply that guard before the 15-65 filter. The resulting wave-year
-# base contains 117,944 deaths and reconciles exactly in all 1,188 cells. Keeping
+# base contains 117,918 deaths (117,944 before the 2026-10-05 DEIS 2012-2023 infant fix) and reconciles exactly in all 1,188 cells. Keeping
 # the same guard on both sides prevents infants recorded in days or hours from
 # being misclassified as adults.
 ypll_build_deaths <- function(death_dir = YPLL_DEATH_DIR) {

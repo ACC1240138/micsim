@@ -35,12 +35,12 @@ md5 of the rebuilt parquet: `8652ad198a74a2242234862b382cf6db`.
 
 ## 2024 onwards: `DEFUNCIONES_FUENTE_DEIS_2024_2026_<DDMMYYYY>.tar.xz.enc`
 
-The weekly DEIS CSV (Latin-1, `;`) packed as is. Current version `29092026`: 347,311 rows, last death 2026-09-26; 126,928 of them in 2024 (CSV md5 `f87f9c02efbf8891fb45a946057bd8a1`; zip md5 `7f907247b68a9f77112af82c44e750cb`).
+The weekly DEIS CSV (Latin-1, `;`) packed as is. Current version `06102026`: 349,782 rows, last death 2026-10-03; 126,928 of them in 2024 (CSV md5 `636c10f44802f229a631218cf9ee2463`; zip md5 `1e452158fb46cb0c640583ca51c65cce`). Previous version `29092026`: 347,311 rows (CSV md5 `f87f9c02efbf8891fb45a946057bd8a1`).
 
 Comparison across versions:
 
-- **2024** was byte-for-byte identical in the 2026-06-09, 2026-09-15 and 2026-09-29 releases.
-- **2025** was revised (~9,600 records) between June and September.
+- **2024** was byte-for-byte identical in the 2026-06-09, 2026-09-15 and 2026-09-29 releases, and its rows are `identical()` in the 2026-10-06 release.
+- **2025** was revised (~9,600 records) between June and September; unchanged between 2026-09-29 and 2026-10-06 (only 2026 grew: 93,917 → 96,388).
 
 The `AÑO` header comes in Latin-1; `acc_deis()` returns it as valid UTF-8 (the old parquet had it in invalid UTF-8).
 That is why `janitor::clean_names()` now gives **`ano`** instead of `a_o`: it is the only column that changes name; everything else is the same. With `ano`, the `mort24` built in `expand_pif` is `identical()` to the one built before from the old parquet (31,806 rows; same names and types).
