@@ -33,7 +33,9 @@ check <- function(cond, msg, extra = "") {
 ordered_ok <- function(df) {
   pts <- unlist(df[grep("_point$", names(df))]); los <- unlist(df[grep("_lower$", names(df))])
   ups <- unlist(df[grep("_upper$", names(df))])
-  all(is.finite(c(pts, los, ups))) && all(los <= pts + 1e-9) && all(pts <= ups + 1e-9) && all(ups <= 1 + 1e-9)
+  # 2026-10-07 cc-cloud: B12. raw MC percentiles: require lower <= upper only; report the point-outside count.
+  cat(sprintf("  B12: %d of %d cells with the point outside its interval\n", sum(los > pts + 1e-9 | pts > ups + 1e-9), length(pts)))
+  all(is.finite(c(pts, los, ups))) && all(los <= ups + 1e-9) && all(ups <= 1 + 1e-9)
 }
 x <- seq(0.1, 150, length.out = 700)
 mg <- list("2008" = lapply(1:4, function(j) list(estimate = c(shape = 2, rate = 0.08))))

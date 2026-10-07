@@ -8281,3 +8281,70 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 * Q10 (user). IHD/IS Tabla 5 como principal: es cambio de pif3 (filas + draws, IC B5), no de expand_pif.
 * OJO: Rscript se cae al arrancar (0xC0000005) ~50% con .Rprofile/renv, 0% con --vanilla; mato clusters PSOCK en el smoke. Resolver antes de la corrida de 13 h.
 * Orden: Run All expand_pif en Positron (guardar outputs) -> expand_pif2 full -> validate expand_pif2 -> expand_pif3 -> ms-apc-audit (7 olas) -> GATE 2 -> commit (artefactos _20261006, bundle data_binge re-empacado).
+
+
+2026-10-06 | DESKTOP_NDP_SGTV88L | Claude-Fable
+
+## CAVEMAN: expand_pif ejecutado in place; expand_pif2 en espera
+
+* Entorno: Positron trae quarto 1.10.18 y libs jupyter_client, pero SIN interprete Python -> no ejecutaba .ipynb headless. Instalado user-scope: Python 3.12.10 embeddable en %LOCALAPPDATA%\Programs\Python312 + pip + nbclient/nbconvert/nbformat; kernelspec `ir` (IRkernel 1.3.2, renv) en %APPDATA%\jupyter\kernels (ir44 ya existia). Nada en repo ni PATH. renv::status() limpio.
+* Ejecucion: runner nbclient (kernel `ir`, cwd = raiz del proyecto para que cargue .Rprofile/renv; QUARTO_PATH -> quarto de Positron).
+* expand_pif.ipynb EJECUTADO IN PLACE: 21.6 min, 65/65 celdas, 0 errores, outputs 20261006 guardados, codigo y estructura intactos. check_bundles 49/49; EXPAND_PIF_ARTIFACT_VALIDATION=PASS.
+* Crash R 0xC0000005 intermitente (arranque y makeCluster), R.dll. Causa probable: Sophos Intercept X (SophosED.dll + hmpalert inyectados en todo R). Pedir a IT exclusion de C:\Program Files\R\R-4.4.1\bin\x64\*.exe y libreria renv. Mitigacion: reintentar; workers que arrancan sobreviven.
+* expand_pif2: lanzado y abortado por hold del coordinador (sesion principal), por literatura nueva Kimi P7 (Q13 piso diseno, B12 clamp IC). ipynb restaurado a HEAD, sin artefactos pif2. expand_pif3 no corrido.
+* B5 (cov diagonal Tabla 5 IHD mujeres): user decide dejar como esta + limitacion.
+* Pendiente: user decide B12 y Q13 -> expand_pif2 full (~13 h, PIF_ARTIFACT_STAMP=20261006) -> validate expand_pif2 -> expand_pif3. Sin commit.
+
+
+2026-10-07 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: Kimi P6 (urbano, olas, DEIS 2024, CIE-10) + B12
+* B12 = B (user): punto plug-in, IC = percentiles MC sin forzar; contar celdas con punto fuera. Q13: piso 1 se queda (sin respuesta explicita del user -> sin cambio). Fable relanzado: B12 en motor/validadores -> re-ejecutar expand_pif in place -> expand_pif2 full -> expand_pif3.
+* P6 llego pegado en chat (no hay archivo en repo; pedir .md al user).
+* D2 urbano: P6 = triangular con APC + declarar (Castillo-Carniglia 2013 precedente). Ya se hace (V1/APC). Sin cambio.
+* D3 2020: P6 = indicador de ola + sensibilidad sin 2020 (SAMHSA/HP2030; SENDA ENPE 2011). Propuesto: tendencias con y sin 2020 en pif3 (sin re-corrida). Falta ok user.
+* B14 2024: P6 = provisional rotulado, tendencias con y sin 2024 (DEIS Res. Exenta 1380/2023: base preliminar vs oficial). Verificado 2026-10-07: oficial 1990_2024 aun NO publicada (404; patron de URL valido, 1990_2023 = 200).
+* Q12 codigos: W47-W48 NO existen en CIE-10 (P6, navegador OMS) -> decision nula. X30-X39: tradicion CRA/Chile los incluye (Taylor 2011; Castillo-Carniglia 2013/2014); codigo actual sigue Shield S6 estricto (excluidos). C11: precedentes ambos lados. Propuesto: mantener S6 estricto + declarar. Falta ok user.
+* P6 corrige premisas del registro: salto ponderado 2020->2022 = +16.0% (no +65.7%); ENPG 2018 afirma continuidad de preguntas (no "rediseno 2018").
+* Q13 CERRADA (user 2026-10-07): piso 1 en factor de diseno.
+* P6 transcrito a `__andres_control/p6kimi_urbano_olas_DEIS2024_CIE10_FONDECYT1240138.md` (Kimi no genero archivo).
+
+### Resumen de hallazgos principales (2026-10-06/07)
+* V1 era bug real: factor OMS anclaba media de BEBEDORES a 0.8*APC; corregido a per capita poblacion. Muertes atribuibles olas +13.4% (24,337 -> 27,587). Cirrosis H AAF 0.59->0.71.
+* APC = serie OMS GHO total (antes ~Banco Mundial viejo, 7.9 sin fuente).
+* B1 sin MICE (convencion OMS GHO 458/459 + Rehm 2010). B2 AAF=1 solo olas. C2 2020 <- 2018. C1 no (region, conservador). C4 factor exportado.
+* AAF=1 fuera del PIF (PIF parcial, 23 causas). Q7 lambda 0/0.5/1. Q8 yll_hmd. Q4 neto + por causa. Q10 pendiente.
+* IHD/IS Tabla 5 principal (pif3), B5 IC mujeres = limitacion. B12 = B. Q13 piso 1.
+* D1 15-65 (= microsim). D2 triangulado + declarar. D3 2020 marcada (+ propuesta tendencias sin 2020). B14 2024 provisional (oficial 2024 aun no publicada).
+* W47-W48 no existen en CIE-10. X30-X39: S6 estricto propuesto (pendiente ok).
+* R crash = probable Sophos Intercept X -> pedir exclusion a IT.
+* D3 CERRADA (user): 2020 marcada, SIN tendencias excluyendo 2020; declarar como limitacion que no se hizo la sensibilidad.
+* Q12 CERRADA (user): S6 estricto (X30-X39 fuera), declarar.
+* Q10 CERRADA (user 2026-10-07): estomago C16 + pancreas C25 FUERA del principal (IARC + Shield S6); reportar aparte como complemento adyacente, no dentro de tablas/figuras que replican JRT. pif2 no se re-corre (filas por causa ya existen); cambio en reporte de expand_pif y expand_pif3. Encargado a Fable.
+
+### Addendum Kimi P9 (2026-10-07) -> `p9kimi_Informe_AAF_causas_reporte_FONDECYT1240138.md`
+* Q10 confirmado: Tabla S6 Shield 2025 NO tiene filas C16/C25 (salta Oesophagus->Colon, Liver->Breast). IARC no los clasifica causales.
+* Q11 cervix C53: excluir como "sin funcion RR utilizable" (S6 cita fuente de VIH, sin figura RR), NO como "no causal".
+* Q9 mapeo 60-65 -> banda 35-64: mantener (analogo a contencion OMS), declarar.
+* Q22 procedencia RR: documentar sin reemplazar. Diabetes RR = Llamosas-Falcon "in preparation" (sin publicacion); HHD circular (OMS 2018). Higado FD 2.23/2.68 sin tabla publica; WCRF SLR exbebedores 2.58 (1.76-3.77) como referencia.
+* Q4: Kimi recomienda (fuerte) agregar tabla complementaria "solo dano" (RR<1 -> 1). User habia decidido sin tabla; requiere corrida nueva -> preguntar.
+* Citas corregidas: Liu F (no Liu Y) 2020 NMCD 30(8):1249-59 doi 10.1016/j.numecd.2020.03.018; Sherk 2019 IJERPH 16(24):4956 titulo "...National Drinking Guidelines and Alcohol Harm Monitoring Systems"; GBD 2020 Lancet 2022;400:185-235.
+* Q4 = A CONFIRMADA (user 2026-10-07, tras P9): neto + por causa; sin tabla "solo dano"; declarar limitacion (posible agregar si revisor la pide).
+
+### Addendum Kimi P10 (2026-10-07) -> `p10kimi_eleccion_metrica_YLL_tabla_vida_alcohol_Chile.md`
+* Confirma Q8: YLL con tabla HMD Chile (periodo 1x1; archivo local cubre hasta 2024, v6 2026-01-12) primaria; GBD 2019 TMRLT (e0 88.9) secundaria; sin descuento ni ponderacion por edad (convencion GBD 2010+/OMS GHE).
+* Nuevo: paradoja tabla nacional anio-especifica en crisis (Devleesschauwer 2020; Haneef 2021): e0 cae en 2020-2021 -> YLL por muerte baja. Kimi recomienda sensibilidad con tabla fija 2019. Afecta ola 2020. Propuesto: declarar como limitacion (decision user pendiente).
+* WPP 2024 / INE como sensibilidad: recomendado por Kimi; claim WPP ya se borro de pif2 c41 (no implementado). Propuesto: limitacion.
+* Lemp 2026 usa YPLL-75 sin tabla; Kilian 2025 NO reporta YLL. Legacy e0-edad = solo comparacion (Castillo-Carniglia 2013, umbral no encontrado).
+
+
+2026-10-07 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: renv universal (raiz + stubs .Rprofile + test + CI), sin commit
+* Causa del error del user en Positron: el notebook arranca R en `__andres_control/`; R lee solo el `.Rprofile` de la carpeta de inicio -> renv NO activo -> falta `here` -> "Run renv::restore()" -> restore falla "no lockfile" (lo busca en la subcarpeta). 2a causa: Positron arranca R en `c:/` (minuscula) y renv nombra la libreria con un hash de la ruta -> bootstrap de una 2a libreria vacia (`micsim-5e5da982` en la cache renv del usuario, solo trae renv; se puede borrar a mano).
+* Fix: el `.Rprofile` raiz lee el `.Renviron` raiz si existe, fija `RENV_PROJECT` = ruta canonica (normalizePath + letra de unidad en mayuscula), hace que el R no interactivo (workers PSOCK, Rscript, kernels Jupyter) omita el chequeo de sincronizacion de renv al cargar (~7 s) y despues hace `source("renv/activate.R")`. Stub identico (`_tools/.Rprofile`) en las 9 carpetas con codigo R, incl. jrt/ y _enpg/notes/ (ahi R ahora usa la libreria del proyecto). `micsim.Rproj` para RStudio (sin proyecto, RStudio no lee ningun `.Rprofile` del repo).
+* Test: `Rscript --vanilla _tools/test_renv_activation.R` -> PASS local en 0.29 min (20 arranques). Simulacion de clon nuevo: 9/9 (5 variantes rotas fallan, incl. las 2 lineas invertidas y un activate.R que ignora RENV_PROJECT). Revision adversarial con 9 agentes; el kernel Ark real de Positron (notebook y consola, `c:` en minuscula) carga la libreria canonica.
+* Cierre de R 0xC0000005 (Sophos): 1/40 arranques con renv, 0/40 sin renv; 1/300 vs 2/300 con el sandbox de renv on/off (p = 1) -> el sandbox no influye. El test reintenta 2 veces.
+* CI: `data-check` ya no apaga renv: `r-version: renv`, `use-public-rspm: false` (con true, setup-r exporta RENV_CONFIG_REPOS_OVERRIDE y pisa el snapshot fechado del lockfile), `renv::restore(packages = c("openssl","data.table"))`. Nuevo `.github/workflows/renv-check.yml` (ubuntu/windows/macos). NO corrido en GitHub (sin push).
+* AGENTS.md §4: regla nueva (no `source("renv/activate.R")`/`renv::load()`/`.libPaths()` en codigo; carpeta nueva con R -> copiar el stub). README/INSTALL al dia.
+* Pendiente user: commit + push y revisar renv-check/data-check; `_enpg/notes/codex_temp_audit_enpg/extract_questionnaires.R:1` hace `.libPaths()` con una ruta de otra maquina (legado, sin tocar). La entrada 2026-10-06 de este handoff tiene una ruta absoluta (regla §0): decide el user.

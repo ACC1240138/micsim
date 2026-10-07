@@ -1661,8 +1661,10 @@ compute_aaf_from_rr_record <- function(
         next
       }
       out[i, paste0(prefix, g, "_point")] <- min(res$point_estimate, 1)
-      out[i, paste0(prefix, g, "_lower")] <- min(res$lower_ci, res$point_estimate)
-      out[i, paste0(prefix, g, "_upper")] <- min(max(res$upper_ci, res$point_estimate), 1)
+      # 2026-10-07 cc-cloud: B12. Raw MC 2.5/97.5 percentiles; the deterministic point is no longer
+      # forced inside its interval (count and report the cells where it falls outside).
+      out[i, paste0(prefix, g, "_lower")] <- res$lower_ci
+      out[i, paste0(prefix, g, "_upper")] <- min(res$upper_ci, 1)
       captured <- .aaf_capture_cell_draws(
         res = res, return_sims = return_sims, n_sim = n_sim,
         output_name = output_name, disease = record$pipeline_disease,
@@ -1916,8 +1918,10 @@ compute_general_aaf_from_registry <- function(
         next
       }
       out[i, paste0(prefix, g, "_point")] <- min(res$point_estimate, 1)
-      out[i, paste0(prefix, g, "_lower")] <- min(res$lower_ci, res$point_estimate)
-      out[i, paste0(prefix, g, "_upper")] <- min(max(res$upper_ci, res$point_estimate), 1)
+      # 2026-10-07 cc-cloud: B12. Raw MC 2.5/97.5 percentiles; the deterministic point is no longer
+      # forced inside its interval (count and report the cells where it falls outside).
+      out[i, paste0(prefix, g, "_lower")] <- res$lower_ci
+      out[i, paste0(prefix, g, "_upper")] <- min(res$upper_ci, 1)
       captured <- .aaf_capture_cell_draws(
         res = res, return_sims = return_sims, n_sim = n_sim,
         output_name = output_name, disease = record$pipeline_disease,

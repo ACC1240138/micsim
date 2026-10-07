@@ -1,0 +1,22 @@
+# Checks that renv loads the project library the same way from the root and from every folder with R code
+# (where Positron, RStudio, Jupyter and Rscript start R), on Linux, Windows and macOS.
+name: renv-check
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  activation:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: renv          # the R version recorded in renv.lock
+          use-public-rspm: false   # true exports RENV_CONFIG_REPOS_OVERRIDE, and renv would skip the lockfile's dated snapshot
+          rtools-version: none     # Windows: renv itself is pure R, no toolchain needed
+      - name: renv activates the project from every folder
+        run: Rscript --vanilla _tools/test_renv_activation.R

@@ -40,12 +40,13 @@ The notebooks also use: `dplyr`, `tidyr`, `purrr`, `tibble`, `stringr`, `forcats
 
 `renv.lock` pins the **exact versions** of 169 packages (those in `DESCRIPTION` plus their dependencies) and the repository: a **dated** Posit Package Manager snapshot (`https://packagemanager.posit.co/cran/2026-04-23`). The environment is therefore the same today as a year from now.
 
-- **In a clone:** open R at the repository root (`.Rprofile` activates `renv` automatically) and run `renv::restore()`. Then `Rscript _tools/test_acc_data.R`.
+- **In a clone:** start R in the repository root or in any folder with R code, with any tool (Positron, Jupyter, `Rscript`; in RStudio open `micsim.Rproj`): `.Rprofile` activates `renv` automatically. Run `renv::restore()` (the first time from the Positron console or a terminal, see [INSTALL.md](INSTALL.md)), then `Rscript _tools/test_acc_data.R`.
+- **How renv activates:** R runs only the `.Rprofile` of the folder it starts in. The root `.Rprofile` activates `renv` with the canonical project path (Positron starts R in `c:/…`, which would otherwise give a second, empty library); every folder with R code has an identical stub `.Rprofile` (a copy of `_tools/.Rprofile`) that runs the root one. A new folder with R code needs a copy of the stub. If `.libPaths()` shows no `renv` path, R started in a folder without `.Rprofile` (outside the repository, or a folder without R code such as `_enpg/`): `setwd()` to the root and restart R. Non-interactive R (Rscript, PSOCK workers, Jupyter kernels) skips renv's load-time library/lockfile check (~7 s); run `renv::status()` to see it.
 - **The library is not in git:** it lives in the user's `renv` cache (`renv::paths$library()`); what is versioned is `renv.lock`.
 - **To add a package:** `renv::install("package")`, list it under `Imports` in `DESCRIPTION`, run `renv::snapshot()` and commit `renv.lock`.
 - **To rebuild from scratch** (only to change the date or the package set): `Rscript _tools/renv_setup.R`. The date is the day after the newest package version in the dependency closure when it was created (`ggplot2` 4.0.3 and `curl` 7.1.0, both published 2026-04-22).
-- `.renvignore` excludes `jrt/`, `notes/` and the document folders: their inherited code loads packages that are not part of the project.
-- CI (`data-check`) turns the `renv` autoloader off: it only needs `openssl` and `data.table`.
+- `.renvignore` excludes `jrt/`, `notes/` and the document folders: their inherited code loads packages that are not part of the project. R started in those folders still loads the project library (they have the stub), so that reference code cannot find packages outside `renv.lock`.
+- CI goes through `renv` like everything else: `data-check` restores only `openssl` and `data.table` (`renv::restore(packages = …)`, lockfile versions and dated snapshot); `renv-check` checks the activation on Linux, Windows and macOS.
 
 ## Tests (from the repository root)
 
@@ -53,9 +54,10 @@ The notebooks also use: `dplyr`, `tidyr`, `purrr`, `tibble`, `stringr`, `forcats
 Rscript _tools/test_acc_data.R   # encryption/decryption unit test (~1 s)
 Rscript _tools/check_bundles.R   # decrypts every bundle and compares its md5 with the .md5.csv sidecar (~2 min)
 Rscript _tools/smoke_data.R      # basic read of each source
+Rscript --vanilla _tools/test_renv_activation.R   # renv loads the same library from the root and every folder with R code (~20 s)
 ```
 
-`.github/workflows/data-check.yml` runs the bundle verification on GitHub (it needs the `ACC_DATA_KEY` secret).
+`.github/workflows/data-check.yml` runs the bundle verification on GitHub (it needs the `ACC_DATA_KEY` secret); `renv-check.yml` runs the renv activation test.
 
 ## Notebook order (`__andres_control/`)
 

@@ -163,7 +163,10 @@ if (base::identical(stage, "expand_pif2")) {
   assert_true(base::all(base::is.finite(applicable$pif)), "Non-finite applicable main PIF point estimate.")
   assert_true(base::all(base::is.finite(applicable$pif_low)), "Non-finite applicable main PIF lower limit.")
   assert_true(base::all(base::is.finite(applicable$pif_up)), "Non-finite applicable main PIF upper limit.")
-  assert_true(base::all(applicable$pif_low <= applicable$pif & applicable$pif <= applicable$pif_up), "Main PIF interval ordering failure.")
+  # 2026-10-07 cc-cloud: B12. raw MC percentiles; require lower <= upper and report the point-outside count.
+  assert_true(base::all(applicable$pif_low <= applicable$pif_up), "Main PIF interval reversed (lower > upper).")
+  base::message("B12: ", base::sum(applicable$pif_low > applicable$pif | applicable$pif > applicable$pif_up),
+                " of ", base::nrow(applicable), " applicable main PIF cells have the point outside its interval.")
   assert_true(base::all(baseline$pif == 0 & baseline$pif_low == 0 & baseline$pif_up == 0), "Main baseline is not exactly zero.")
   base::rm(results, applicable, baseline)
   base::invisible(base::gc(full = TRUE))
@@ -174,7 +177,9 @@ if (base::identical(stage, "expand_pif2")) {
   assert_true(base::all(table5_results$rr_source == "table5_puc"), "Table 5 result rr_source mismatch.")
   table5_applicable <- table5_results[table5_results$applicable, , drop = FALSE]
   assert_true(base::all(base::is.finite(table5_applicable$pif)), "Non-finite applicable Table 5 PIF.")
-  assert_true(base::all(table5_applicable$pif_low <= table5_applicable$pif & table5_applicable$pif <= table5_applicable$pif_up), "Table 5 PIF interval ordering failure.")
+  assert_true(base::all(table5_applicable$pif_low <= table5_applicable$pif_up), "Table 5 PIF interval reversed (lower > upper).")  # 2026-10-07 cc-cloud: B12. raw MC percentiles
+  base::message("B12: ", base::sum(table5_applicable$pif_low > table5_applicable$pif | table5_applicable$pif > table5_applicable$pif_up),
+                " of ", base::nrow(table5_applicable), " applicable Table 5 PIF cells have the point outside its interval.")
   base::rm(table5_results, table5_applicable)
   base::invisible(base::gc(full = TRUE))
   assert_draw_bundle(table5_draws_path, "table5_puc", "pif_draws", 2464L, table5_results_path)

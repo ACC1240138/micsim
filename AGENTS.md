@@ -71,6 +71,10 @@ Keep this reference visible:
 - Code comments and messages in English unless the user asks otherwise.
 - R packages are pinned by `renv.lock` (dated Posit Package Manager snapshot). Install new packages with `renv::install()`,
   list them in `Imports` of `DESCRIPTION`, run `renv::snapshot()` and commit `renv.lock`; do not install packages ad hoc outside renv.
+- renv activates only through `.Rprofile`: the root one, plus an identical stub (copy of `_tools/.Rprofile`) in every folder
+  with R code, so R started in the root or in any folder with R code, by any tool, loads the same library. Do not call
+  `source("renv/activate.R")`, `renv::load()`, `renv::activate()` or `.libPaths()` in code; a new folder with R code gets a
+  copy of the stub (CI checks it).
 
 ## 5. RR override constraints
 

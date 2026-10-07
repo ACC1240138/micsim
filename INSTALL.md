@@ -12,7 +12,11 @@ cd micsim
 
 ## 2. Packages with renv (~10–15 min)
 
-Open the `micsim` folder in Positron. renv activates itself.
+R started in the `micsim` folder or in any of its folders with R code activates renv for the whole repository, whatever
+the tool (Positron, Jupyter, a terminal; in RStudio open `micsim.Rproj`). Run the first restore from the Positron console or
+from a terminal at the root (`Rscript -e "renv::restore(prompt = FALSE)"`), with no other R session open: a Jupyter kernel
+starts only once IRkernel is in the project library, and two R sessions bootstrapping renv at once collide
+("failed to lock directory ... 00LOCK-renv": just restart R).
 
 ```r
 renv::restore(prompt = FALSE)   # installs the exact versions in renv.lock
@@ -22,6 +26,12 @@ renv::status()                  # must report no issues
 
 - Do **not** run `renv::init()` (the project already exists) or `renv::snapshot()` (only after deliberately adding a package, and then commit `renv.lock`).
 - If `snapshot()` leaves you with an `renv.lock` showing `-> *`, discard it with `git checkout -- renv.lock`.
+- If `.libPaths()` shows no `renv` path, or R printed a renv error at start, R is running on your user library: it started
+  in a folder without `.Rprofile` (outside the repository, or a folder without R code such as `_enpg/`), or renv could not
+  bootstrap (no network). Fix the cause, `setwd()` to the repository root and restart R (Positron restarts R in the current
+  working directory; RStudio only through `micsim.Rproj`).
+- Your `~/.Rprofile` is not read inside the repository (R reads a single `.Rprofile`). To load it as well, add
+  `RENV_CONFIG_USER_PROFILE=TRUE` to `~/.Renviron`.
 
 ## 3. Data key (~2 min)
 
@@ -46,6 +56,7 @@ Never type the key into a terminal, a script or a chat.
 Rscript _tools/test_acc_data.R    # acc_data tests: PASS
 Rscript _tools/check_bundles.R    # every bundle [OK]
 Rscript _tools/smoke_data.R       # smoke_data: PASS
+Rscript --vanilla _tools/test_renv_activation.R   # renv activation: PASS
 ```
 
 - If **all** bundles fail in `check_bundles`, the key is wrong.

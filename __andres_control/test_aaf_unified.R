@@ -159,8 +159,10 @@ res_c <- aaf_confint(gamma = list(estimate = c(shape = 0.85, rate = 0.03)),
                      x = x, n_sim = 800, n_pca = 200, seed = 2125)
 cat(sprintf("   %s: point=%.4f  CI=[%.4f, %.4f]  n_used=%d\n",
             rec$source_object, res_c$point_estimate, res_c$lower_ci, res_c$upper_ci, res_c$n_used))
-check(res_c$lower_ci <= res_c$point_estimate + 1e-6 && res_c$point_estimate <= res_c$upper_ci + 1e-6,
-      "IC ordenado lower<=point<=upper")
+# 2026-10-07 cc-cloud: B12. raw MC percentiles; the point may fall outside (reported, not failed).
+check(res_c$lower_ci <= res_c$upper_ci + 1e-6, "IC lower<=upper")
+cat(sprintf("   B12: point %s its raw MC interval\n",
+            if (res_c$lower_ci <= res_c$point_estimate + 1e-6 && res_c$point_estimate <= res_c$upper_ci + 1e-6) "inside" else "OUTSIDE"))
 check(res_c$upper_ci <= 1 + 1e-9, "AAF <= 1")
 
 # -----------------------------------------------------------------------------

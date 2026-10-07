@@ -10,7 +10,6 @@ jobs:
     env:
       LANG: C.UTF-8
       ACC_DATA_KEY: ${{ secrets.ACC_DATA_KEY }}
-      RENV_CONFIG_AUTOLOADER_ENABLED: "FALSE"   # this job only needs openssl + data.table: skip the project renv library
     steps:
       - uses: actions/checkout@v4
       - name: No plaintext microdata or oversized files tracked
@@ -20,9 +19,10 @@ jobs:
           if [ -n "$bad$big" ]; then echo "::error::Plaintext microdata or file > 50 MB tracked"; echo "$bad"; echo "$big"; exit 1; fi
       - uses: r-lib/actions/setup-r@v2
         with:
-          use-public-rspm: true
-      - name: Install R packages
-        run: Rscript -e 'install.packages(c("openssl", "data.table"))'
+          r-version: renv          # the R version recorded in renv.lock
+          use-public-rspm: false   # true exports RENV_CONFIG_REPOS_OVERRIDE, and renv would skip the lockfile's dated snapshot
+      - name: Restore the packages this job needs (renv.lock versions; the project .Rprofile activates renv)
+        run: Rscript -e 'renv::restore(packages = c("openssl", "data.table"), prompt = FALSE)'
       - name: Unit test of _tools/acc_data.R
         run: Rscript _tools/test_acc_data.R
       - name: Decrypt every bundle and verify md5
