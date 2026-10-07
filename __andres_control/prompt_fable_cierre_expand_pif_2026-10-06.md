@@ -28,6 +28,8 @@ No-objetivos: no trabajar en `microsim_*`, `eps_*` ni `elasticidad_*`; no extend
 
 **Git.** Trabaja en la rama `claude/cierre-expand-pif` (u otra que crees) y abre un PR a `main`. Nunca push a `main`.
 
+**Los notebooks se corrigen Y se ejecutan dentro del notebook, guardando los outputs.** Ese es el entregable. Ejecuta con `jupyter nbconvert --to notebook --execute --inplace <archivo>.ipynb` (kernel R vía IRkernel; si falta, instala Jupyter e `IRkernel::installspec()` al inicio de la sesión). **Prohibido** reemplazar la ejecución del notebook por una corrida del código extraído a un script: eso no deja outputs en el notebook y obliga al usuario a correrlo de nuevo. Un script extraído solo sirve para una prueba rápida previa. Si el entorno no puede ejecutar notebooks, **detente y avísale al usuario en el primer mensaje**, antes de editar nada; no sigas por otra vía en silencio.
+
 **Notebooks: autorización explícita del usuario.** Puedes editar `expand_pif.ipynb`, `expand_pif2.ipynb` y `expand_pif3.ipynb` y guardar sus outputs. Reglas:
 - Cada cambio lleva un comentario en el código: `# YYYY-MM-DD cc-cloud: <qué cambió y por qué>`.
 - **No cambies la estructura de los notebooks.** No muevas, fusiones ni reordenes celdas. Las celdas de la Tabla 5 (PUC) se quedan donde están, al final.
