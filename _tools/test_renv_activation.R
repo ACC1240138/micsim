@@ -22,6 +22,8 @@ if (length(differ)) stop(".Rprofile differs from _tools/.Rprofile in: ", paste(d
 
 # Children start clean: nothing inherited from this session tells them where the project or its library is.
 Sys.unsetenv(c("RENV_PROJECT", "R_LIBS", "R_LIBS_USER", "R_LIBS_SITE"))
+# On Linux/macOS, Rscript --vanilla exports these as "" (R shell script); "" would make the children skip every startup file.
+for (v in c("R_PROFILE_USER", "R_PROFILE", "R_ENVIRON_USER", "R_ENVIRON")) if (identical(Sys.getenv(v, NA), "")) Sys.unsetenv(v)
 Sys.setenv(RENV_CONFIG_USER_PROFILE = "FALSE")
 probe <- tempfile(fileext = ".R")
 writeLines(c(
