@@ -112,5 +112,7 @@ passing unit tests is not full-pipeline validation.
 - Never commit plain microdata (`.dta`, `.sav`, `.parquet`, `.zip`, `.jsonl`) and never decrypt into a repo folder.
   Intermediates derived from microdata are written with `acc_pack()` (for example `data_binge_sensitivity.rds`); when a
   bundle changes, pack it again and commit the new `.enc` and `.md5.csv`.
-- Anything that goes to git must be aggregate: notebook outputs must not show individual rows.
+- ENPG, DEIS, EPS and EPF are public, anonymized sources. Notebook outputs (and their rendered HTML) may show
+  example rows; mask clear quasi-identifiers (e.g. `comuna`) only in what is displayed. Raw microdata files still go
+  to git only as encrypted bundles.
 - Layout and provenance of each source: the `README.md` of `_enpg/`, `_eps/`, `_deis/`, `_epf/` and `_bib/`.

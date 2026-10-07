@@ -89,5 +89,5 @@ acc_unpack_all("_sessions", p)
 ## Data policy
 
 - No plain microdata: no `.dta`, `.sav`, `.parquet`, `.zip` or `.jsonl` in git (see `.gitignore`).
-- Only **aggregate** results are versioned; notebook outputs must not show individual rows.
+- The sources are public and anonymized: notebook outputs may show example rows, with clear quasi-identifiers (e.g. `comuna`) masked only in what is displayed. Raw microdata go to git only as encrypted bundles.
 - The SIMAH package is cited by DOI (`10.5281/zenodo.15641639`) instead of being vendored.
