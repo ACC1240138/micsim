@@ -8445,3 +8445,12 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 * pif3 vistas previas: pif3_preview_base_size <- 14 (c27; antes 20-23) + geom_text preview size 12->4 (c33/35/36). ark dibuja a 800x600 e ignora fig-width. TIFF/PDF exportados sin cambio. md pif3 seccion 7 detalla textos corregidos.
 * `__andres_control/_quarto.yml` repuesto (user): project type default, output-dir `..` -> HTML de notebooks de __andres_control en la raiz. Ruta relativa (multiplataforma); type default no limpia output-dir (website lo borraria = raiz). Probado en sandbox (testigo en raiz intacto) y real (pif2/pif3 -> raiz). Motivo de exclusion 2026-10-05 (DELL_LR) no registrado; repo viejo no accesible. Pendiente user: `__andres_control/expand_pif.html` (en git) duplicado viejo; mover a raiz al re-renderizar.
 * _quarto.yml render: "*.ipynb" + "!*.before_recovery_*.ipynb" (probado en sandbox). Render/preview de un notebook = solo ese; bare quarto render = todos.
+
+
+2026-10-08 | cc-cloud | Claude
+
+## CAVEMAN: Git Bash -> R no ve ~/.Renviron (arreglado)
+* Causa: R Windows define `~` = R_USER, si no HOME, si no Documentos. Git Bash (y Claude Code/Codex) fija HOME = C:\Users\<user>; el .Renviron con ACC_DATA_KEY esta en Documentos.
+* Fix por PC Windows (una vez, PowerShell): `R_USER` de usuario = Documentos (INSTALL.md §3). Reemplaza el "correr desde PowerShell" de la entrada anterior.
+* `.Rprofile` raiz: lee siempre ~/.Renviron (o R_ENVIRON_USER) y luego .Renviron raiz si existe. Antes, con .Renviron raiz presente, R arrancado en la raiz ignoraba ~/.Renviron (R lee uno solo).
+* Validado solo por CI (renv-check Linux/Windows/macOS, data-check); la nube no tiene R. Falta probar en Windows real desde Git Bash: `Rscript -e 'nzchar(Sys.getenv("ACC_DATA_KEY"))'`.
