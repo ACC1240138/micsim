@@ -2763,7 +2763,7 @@ Warning message:
 <h3 class="anchored" data-anchor-id="enpg">ENPG</h3>
 <section id="enpgs-daily-use-by-age-group-and-sexo-categorization" class="level4">
 <h4 class="anchored" data-anchor-id="enpgs-daily-use-by-age-group-and-sexo-categorization">ENPG’s Daily use by age group and sexo + categorization</h4>
-<p>National Household Survey on Drug Use: 2008-2022, three-stage sampling, non-institutionalized population at national and regional levels. Alcohol consumption was estimated by weighting for each subpopulation of interest: sex and age groups. For alcohol use, AUDIT-C included three questions: frequency and quantity of alcohol, and use and frequency of HED. These were then triangulated with per capita alcohol consumption estimates. The per capita benchmark was external to the survey and served as a correction factor. Capping was set at 150 g.</p>
+<p>National Household Survey on Drug Use (ENPG): 2012-2024, seven biennial waves (2012, 2014, 2016, 2018, 2020, 2022, 2024), three-stage sampling, non-institutionalized population at national and regional levels. Alcohol consumption was estimated by weighting for each subpopulation of interest: sex and age groups. For alcohol use, AUDIT-C included three questions: frequency and quantity of alcohol, and use and frequency of HED. These were then triangulated with per capita alcohol consumption estimates. The per capita benchmark was external to the survey and served as a correction factor. Capping was set at 150 g.</p>
 <ul>
 <li><code>volajohdia</code>: average daily grams or volume of alcohol.<br>
 </li>
@@ -2777,13 +2777,14 @@ Warning message:
 </li>
 <li><code>cvolaj</code>: consumption category, e.g., <code>ltabs</code> (lifetime abstainer) or <code>fd</code> (former drinker, if no alcohol in the last 30 days or more than 1 year).<br>
 </li>
-<li><code>years_vec</code>: analyzed years, 2008 to 2022.</li>
+<li><code>years_vec</code>: analyzed years, 2012 to 2024 (seven waves).</li>
 </ul>
 <p>Alcohol-consumption status was operationalized using the variable <code>cvolaj</code>, which classified respondents into lifetime abstainers (<code>ltabs</code>), former drinkers (<code>fd</code>), and current drinkers categorized by sex-specific average daily alcohol volume. Lifetime abstainers reported no alcohol use, while former drinkers had previous alcohol use but no recent/current drinking. Current drinkers were classified into four volume categories:<br>
-- <code>cat1</code>: &gt;=19.99 g/day in women, &gt;=39.99 g/day in men.<br>
-- <code>cat2</code>: 20&gt;=39.99 g/day in women, 40&gt;=59.99 g/day in men.<br>
-- <code>cat3</code>: 40&gt;=60 g/day in women, &gt;=60-100 g/day in men.<br>
-- <code>cat4</code>: &gt;60 g/day in women, &gt;100 g/day in men.</p>
+- <code>cat1</code>: &gt;0 to 19.99 g/day in women, &gt;0 to 39.99 g/day in men.<br>
+- <code>cat2</code>: 20 to 39.99 g/day in women, 40 to 59.99 g/day in men.<br>
+- <code>cat3</code>: 40 to 100 g/day in women, 60 to 100 g/day in men.<br>
+- <code>cat4</code>: &gt;100 g/day in women and men.</p>
+<p><code>cat1</code>-<code>cat4</code> are descriptive only: the AAF/PIF engine uses <code>cvolaj</code> only for the <code>ltabs</code>/<code>fd</code> prevalences and integrates current drinkers’ continuous volume (<code>volajohdia &gt; 0</code>) through the weighted gamma fit. <code>cat3</code> in women is closed at 100 g/day (WHO category III is open from 40 g/day) and <code>cat4</code> (&gt;100 g/day) is project-specific; document this before the categories are used in the simulation module.</p>
 <p>These categories describe average daily pure alcohol consumption and were distinct from the heavy episodic drinking indicator, which captured binge-pattern drinking among current drinkers <span class="citation" data-cites="ruiztagle2025potentially">(<a href="#ref-ruiztagle2025potentially" role="doc-biblioref">Ruiz-Tagle Maturana et al. 2025</a>)</span></p>
 <p>Build lists of positive daily consumption, separated by year, age group, sex, and HED/NHED. Then, for <code>volajohdia &gt; 0</code> (excluding abstainers), take the consumption list and fit a gamma distribution for each combination of year-age group-sex-HED/NHED, to smooth the distribution (<span class="citation" data-cites="gmel2011estimating">(<a href="#ref-gmel2011estimating" role="doc-biblioref">Gmel et al. 2011</a>)</span>).</p>
 </section>
@@ -2968,7 +2969,7 @@ Warning message:
 <h3 class="anchored" data-anchor-id="correct-variability">Correct variability</h3>
 <ul>
 <li><code>__andres_control\build_enpg_design_waves_2012_2024_list.R</code>: This script builds the lightweight ENPG design cache <code>enpg_design_waves_2012_2024_list.RDS</code> in the Raw data folder. It excludes 2008 and 2010, keeps only survey-design and alcohol-related variables, harmonizes IDs, weights, region/commune, PSU when available, sex/age raw variables, and the alcohol items needed later for abstention, former drinking, HED, and consumption. The goal is to keep raw-data parsing separate from the design-analysis code.</li>
-<li><code>__andres_control\revision_diseno_enpg_extension.R</code>: This advanced extension now reads the lightweight ENPG cache and joins it to <code>ENPG_BINGE.RDS</code>. Instead of applying one residual clustering factor estimated only from 2022/2024, it estimates the extra design effect separately by <code>year x tramo x sex x variable</code>, comparing the survey-design SE using <code>PSU + REGION</code> with the SE from Kish’s effective sample size. This is possible for 2012, 2014, 2016, 2018, 2022, and 2024 because those waves have a usable/validated PSU in the current files. For 2020, PSU is not validated/available, so the strict cell-specific factor is left non-estimable and an explicit fallback from the next wave is provided only for engine use.</li>
+<li><code>__andres_control\revision_diseno_enpg_extension.R</code>: This advanced extension now reads the lightweight ENPG cache and joins it to <code>ENPG_BINGE.RDS</code>. Instead of applying one residual clustering factor estimated only from 2022/2024, it estimates the extra design effect separately by <code>year x tramo x sex x variable</code>, comparing the survey-design SE using <code>PSU + REGION</code> with the SE from Kish’s effective sample size. This is possible for 2012, 2014, 2016, 2018, 2022, and 2024 because those waves have a usable/validated PSU in the current files. For 2020, PSU is not validated/available, so the strict cell-specific factor is left non-estimable and an explicit fallback from the previous validated wave of the same cell is provided only for engine use: 2020 borrows 2018, which shares the MM2015 sampling frame (2022 uses the MMV 2020 frame) (<code>factor_for_engine_source = fallback_prev_valid_year_same_cell</code>).</li>
 <li><code>__andres_control\enpg_design_table_cells_extension.csv</code>: This is the main output table for downstream use. It contains Kish <code>neff</code>, the strict cell-specific clustering factor, the engine-ready factor, corrected effective sample sizes, and a transparent source flag showing whether the factor is own-cell-specific or a fallback. It expands the design correction to the relevant simulation questions: <code>abs</code>, <code>form</code>, <code>hed</code>, and <code>consumption</code>, across sex and age tramos.</li>
 <li><code>__andres_control\enpg_cluster_factors_by_year_variable_tramo.csv</code>: This is the audit-facing clustering-factor output. It keeps the estimated factors by year, variable, tramo, and sex, making clear where the correction is directly measured and where it is not.</li>
 <li><code>__andres_control\enpg_design_join_audit.csv</code>: This checks that the lightweight design cache joins correctly back to the alcohol-analysis data. The verified join rate was 100% for all included waves, with validated PSU rows for all waves except 2020.</li>
@@ -8915,8 +8916,8 @@ Wrote: C:/Users/nDP/Documents/micsim/__andres_control/enpg_design_table_cells_ex
 </section>
 <section id="mortality" class="level3">
 <h3 class="anchored" data-anchor-id="mortality">Mortality</h3>
-<p>We read two official death records (one from 1990-2023 and anohter from 2025-2026, available from https://deis.minsal.cl/#datosabiertos), cleaned and standardized their columns (<code>gender</code>, <code>age_group</code>. <code>region</code>, <code>comuna</code>), filtered individuals aged 15 and older from 2008 onward, and saved them as a single file ready for analysis.</p>
-<p>As an update, we included records updated one week later (2026-06-09), and we did not restrict to external causes (<code>DIAG2</code>).</p>
+<p>We read the official DEIS death records (https://deis.minsal.cl/#datosabiertos): the encrypted bundle <code>_deis/DEFUNCIONES_DEIS_2012_2023_15plus</code> for 2012-2023 and, for 2024, the newest DEIS 2024-2026 release returned by <code>acc_deis()</code> (<code>ACC_DEIS_VERSION</code> pins one; the release used is printed in the <code>[acc_deis]</code> line of the output). Columns were cleaned and standardized (<code>gender</code>, <code>age_group</code>, <code>region</code>, <code>comuna</code>), deaths were restricted to ages 15-65 inclusive (age in years, <code>edad_tipo == 1</code>) from 2012 onward, and both sources were bound into a single table.</p>
+<p>We did not restrict to external causes (<code>DIAG2</code>).</p>
 <div id="aa471ddc" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-08T01:46:12.488200Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-08T01:46:12.486973Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-08T01:46:13.993742Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-08T01:46:13.992866Z&quot;}}" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
@@ -8968,7 +8969,7 @@ Wrote: C:/Users/nDP/Documents/micsim/__andres_control/enpg_design_table_cells_ex
 <span id="cb16-40"><a href="#cb16-40" aria-hidden="true" tabindex="-1"></a>    stop(<span class="st">&quot;Not found: &quot;</span>, path_deis_defunciones_90_23)</span>
 <span id="cb16-41"><a href="#cb16-41" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb16-42"><a href="#cb16-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb16-43"><a href="#cb16-43" aria-hidden="true" tabindex="-1"></a><span class="co"># JRT took it from DEFUNCIONES_FUENTE_DEIS_2024_2026_02062026, I took from 09062026</span></span>
+<span id="cb16-43"><a href="#cb16-43" aria-hidden="true" tabindex="-1"></a><span class="co"># JRT took it from DEFUNCIONES_FUENTE_DEIS_2024_2026_02062026; acc_deis() loads the newest release (see [acc_deis] in the output)</span></span>
 <span id="cb16-44"><a href="#cb16-44" aria-hidden="true" tabindex="-1"></a><span class="co"># 2026-06-30= Restricted to &lt;65 years old</span></span>
 <span id="cb16-45"><a href="#cb16-45" aria-hidden="true" tabindex="-1"></a><span class="co"># 2026-07-10= Restricted to &lt;=65 years old</span></span>
 <span id="cb16-46"><a href="#cb16-46" aria-hidden="true" tabindex="-1"></a>mort24 <span class="op">&lt;-</span> acc_deis() <span class="op">|&gt;</span> </span>
@@ -9006,7 +9007,7 @@ Wrote: C:/Users/nDP/Documents/micsim/__andres_control/enpg_design_table_cells_ex
 - <code>enven_int = 1</code> if X650-X659 (intentional poisoning)<br>
 - <code>enven_indet = 1</code> if Y150-Y159 (poisoning of undetermined intent)</p>
 <p><strong>Key changes</strong>: - Added helpers <code>icd_codes_s6()</code>, <code>icd_stems_s6()</code>, and <code>clean_icd10()</code> to generate 4-character codes (digits + “X”) and strip dots / uppercase before matching. - Kept X65 as fully alcohol-attributable (intentional self-poisoning by alcohol) in <code>aaf1</code> and excluded it from the self-harm partials. - Injury code lists set to Shield Table S6 definitions: road injuries (V01-V04, V06, V09-V80, V87, V89, V99), poisonings (X40, X43, X46-X48, X49; X45 excluded as 100%), falls (W00-W19), fire/heat (X00-X19), drowning (W65-W74), mechanical forces (W20-W38, W40-W43, W45, W46, W49-W52, W75, W76), self-harm (X60-X84 minus X65, plus Y870), and interpersonal violence (X85-Y09, Y871; Y35 removed). - <strong>Other unintentional injuries</strong>: Shield subrow 1590 (rest of V, W39, W44, W53-W64, W77-W99, X20-X29, X50-X59, Y40-Y86, Y88, Y89) <strong>plus W47-W48 and X30-X39</strong>, added to close the parent unintentional envelope (V01-X40, â€¦). NOTE: this <strong>diverges from Shield’s literal subrow</strong>, which excludes W47-W48 and X30-X39; remove those two ranges for strict Shield reproduction. - Non-injury (chronic) causes set to Shield Table S6: TB (A15-A19, B90), HIV/AIDS (B20-B24), lower respiratory infections (J09-J22, P23, U04), epilepsy (G40-G41), hypertensive disease (I10-I15), IHD (I20-I25), ischaemic stroke (G45-G46.8, I63, I65-I66, I67.2-I67.8, I69.3-I69.4), haemorrhagic stroke (I60-I62, I67.0-I67.1, I69.0-I69.2), cancers (lip/oral C00-C08, other pharyngeal C09-C10/C12-C14, oesophagus C15, colon/rectum C18-C21, liver C22, breast C50, cervix C53, larynx C32), diabetes (E10-E14 minus the <code>.2</code> renal codes), cirrhosis (K70, K74), and pancreatitis (K85-K86 minus K86.0). - <strong>Still not matching Shield (open items)</strong>: - <em>Extra causes</em>: stomach cancer (C16) and pancreatic cancer (C25) are retained but are NOT alcohol-causal in Shield Table S6 â†’ discard them (or set RR = 1) to match Shield’s structure. - <strong>Alcoholic cardiomyopathy (I42.6)</strong>: Shield Table S6 (row 1150) treats it as part of a <em>partial</em> cause (I30-I33, I38, I40, I42), not at 100%. We kept I426 at 100% in <code>aaf1</code> (<code>cardiomio_codes</code>). This departs from Shield on two counts: (1) I42.6 is counted from regression(Manthey method, regression-based estimate), and (2) the rest of row 1150 (I30-I33, I38, I40, I42 excluding I426: myocarditis, endocarditis, other cardiomyopathies) is <strong>not modeled at all</strong> as no usable RR exists in the WHO 2024.</p>
-<p>As of 2026-06-30, we also restricted mortality to &lt;65 years old for comparability with SENDAs use estimates.</p>
+<p>Since 2026-07-10, mortality is restricted to ages 15-65 inclusive (<code>age &lt;= 65</code>), matching the ENPG (SENDA) age range (2026-06-30 used &lt;65).</p>
 <div id="mort-trends-age-sex-chile11-mortalidad-etiqueta" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-08T01:46:17.484168Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-08T01:46:17.483525Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-08T01:46:18.199240Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-08T01:46:18.198484Z&quot;}}" data-results="hold" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
@@ -9455,7 +9456,7 @@ $ hiv              <span style="font-style:italic" class="ansi-bright-black-fg">
 <p><strong>Reproducible input contract.</strong> Earlier versions of this chunk silently depended on objects built in <code>revision_datos.ipynb</code> (<code>g_fem_list</code>, <code>g_male_list</code>, <code>g_fem_hed_list</code>, <code>g_male_hed_list</code>, <code>p_abs_list_*</code>, <code>p_form_list_*</code>, <code>p_hed_list_*</code>, <code>x_vals</code>, <code>x_vals_nhed</code>, <code>x_vals_hed</code>). Those objects are not constructed here, so the override was not reproducible on its own (flagged by Codex, P1/P2; see the handoff). The chunk now opens with an explicit input contract: <strong>Section 0</strong> rebuilds the consumption/prevalence lists in-notebook from the survey microdata using the corrected builders (single source of truth: <code>functions.R</code>), and only does so when the objects are not already present, keeping any upstream <code>revision_datos.ipynb</code> outputs authoritative. <strong>Section 1</strong> runs a deep preflight audit of every input before a single AAF is computed.</p>
 <p><strong>Corrected HED/binge semantics.</strong> Current drinkers are partitioned <strong>once</strong> into non-heavy (NHED) and heavy episodic drinkers (HED) and both are integrated over a <strong>single shared consumption grid</strong>; <code>p_hed</code> is the weighted fraction of HED <strong>among current drinkers</strong> (survey-weighted), not over the whole population. <code>x_vals_nhed</code> and <code>x_vals_hed</code> are forced identical to <code>x_vals</code>. This matches the reference implementation in <code>functions.R</code> and avoids the double-integration defect described in the change-log (2026-05-27).</p>
 <p>The resulting Adam-based AAF tables overwrite the previous pipeline disease-specific tables before the final <code>bind_rows()</code> step. This means that the final female and male AAF datasets use Adam’s updated RR assumptions while preserving the original output object names expected by the rest of the pipeline.</p>
-<p>The code also stores audit metadata and error records for each RR scope. These audit tables document which source objects, disease endpoints, sex groups, age mappings, and uncertainty assumptions were used. Former-drinker variance is recorded but not used in the current version, whereas injury HED/binge uncertainty is recorded and used for the current-drinker injury confidence intervals.</p>
+<p>The code also stores audit metadata and error records for each RR scope. These audit tables document which source objects, disease endpoints, sex groups, age mappings, and uncertainty assumptions were used. Former-drinker RR variance (<code>varLnRRFormer</code>) is propagated in the AAF confidence intervals (<code>fd_uncertainty = TRUE</code>) for the chronic/HHD and cardiovascular families and switched off for injuries (<code>fd_uncertainty = FALSE</code>, <code>rr_fd</code> = 1), whereas injury HED/binge uncertainty is recorded and used for the current-drinker injury confidence intervals.</p>
 <p>Finally, the code validates the overwritten AAF tables by checking for unexpected missing values, ensuring that all AAF estimates and confidence intervals remain within the <code>[-Inf, 1]</code> range, and confirming that lower, point, and upper estimates are correctly ordered. It also creates diagnostic tables identifying any upper confidence limits equal to 1, which may occur after bounded AAF confidence intervals are clipped.</p>
 <section id="who-2024-shield-2025-rr-source-to-pipeline-disease-map" class="level3">
 <h3 class="anchored" data-anchor-id="who-2024-shield-2025-rr-source-to-pipeline-disease-map">WHO 2024 &amp; Shield 2025 RR source to pipeline disease map</h3>
@@ -9606,6 +9607,7 @@ $ hiv              <span style="font-style:italic" class="ansi-bright-black-fg">
 </blockquote>
 <section id="change-log" class="level4">
 <h4 class="anchored" data-anchor-id="change-log">Change log</h4>
+<p><em>Dated entries are kept as history; the method sections above describe the current pipeline and supersede them.</em></p>
 <p>2026-05-27= During validation of the Adam/WHO injury RR override, we found that the HED/binge component was not implemented as a mutually exclusive partition of current drinkers. The calculation currently includes NHED plus two HED terms. With the current defaults (<em>x_vals_nhed = x_vals_hed = 0.1-150 g/day</em>), the HED distribution is integrated twice and both terms are multiplied by the full HED prevalence. This violates the intended structure: current drinkers should be split into NHED and HED only once. We also found that <code>p_hed</code> is recalculated in the mortality-trends path over all individuals with non-missing HED status, including abstainers, instead of among current drinkers and using survey weights, even when the model expected the fraction of HED in actual drinkers.</p>
 <p>2026-06-16= The functions needed to calculate PAF/AAFs are available in <code>__andres_control/aaf_unified.R</code></p>
 <p>2026-06-30= Reproducibility pass on the Adam/WHO RR override (addresses Codex P1/P2). The chunk no longer assumes <code>g_*_list</code> / <code>p_*_list</code> / <code>x_vals*</code> pre-exist: Section 0 rebuilds them in-notebook from <code>enpg_data</code> using the corrected builders (single source of truth: <code>functions.R</code>), only when they are missing, and Section 1 runs a deep preflight audit (structure, year-name alignment, <code>[0,1]</code> bounds, <code>p_abs + p_form &lt;= 1</code>, strictly-increasing positive grids) that stops <em>before</em> any AAF is computed. Confirmed that <code>udpate jun 26/functions.R</code> is the current/corrected source: it integrates current drinkers on a SINGLE grid and partitions them once into NHED <code>(1 - p_hed)</code> and HED <code>p_hed</code>, with <code>p_hed</code> measured among current drinkers using survey weights — i.e. the fix for the 2026-05-27 defect, which still lives in <code>PIF-BINGE.R</code> (the <code>identical(x_vals_nhed, x_vals_hed)</code> branch, lines ~389/481). <code>x_vals_nhed</code> and <code>x_vals_hed</code> are now forced identical to <code>x_vals</code>. OPEN: confirm the assumed structure of the non-HED <code>g_fem_list</code> / <code>g_male_list</code> against <code>__andres_control/aaf_unified.R::compute_*_aaf_from_registry</code> (see the ASSUMED CONTRACT note in Section 0).</p>
@@ -17041,6 +17043,7 @@ Table: Mean differences between current and archived AAFs (unweighted alcohol us
 |19 |Male   |Ischaemic Heart Disease        |    0.002|    0.004|    0.002|    0.000|</code></pre>
 </div>
 </div>
+<p><strong>Pending revalidation:</strong> this paragraph describes an earlier unweighted vs survey-weighted comparison; no current output in this notebook reproduces it.</p>
 <p>In the 60-65 age group, the attributable risk is lower using survey weights. Also, the alcohol use distribution changed their shape, and now it is closer to 0 and we see a heavier tail of greater use. This affects larynx cancer, where the risk keeps increasing with more alcohol use, while for hypertensive heart disease, however, the risk curve is different because the risk is greater with first drinks, but in moderate or severe use the curve flattens.</p>
 <div id="mort-trends-age-sex-chile6d-generate-aaf-table-who2024" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-08T02:04:45.449639Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-08T02:04:45.448745Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-08T02:04:45.570301Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-08T02:04:45.569565Z&quot;}}" data-results="hold" data-execution_count="21">
 <details class="code-fold">
@@ -28368,7 +28371,7 @@ OK standardization: spw = 1.0000 in 39 age group (std_age = std_chile2018_15plus
 <section id="recreate-the-tables-60" class="level4">
 <h4 class="anchored" data-anchor-id="recreate-the-tables-60">Recreate the tables 60+</h4>
 <p>The cancer comparison was rebuilt using a JRT-compatible mortality table generated by <code>__andres_control/make_jrt_compatible_cancer_table_ge60.R</code>.</p>
-<p>The script does not modify the notebook or the original pipeline objects. It reads JRT’s reference file, uses its row structure as the comparison template, and rebuilds our cancer mortality table from the raw DEIS mortality files. The main correction is that the <code>60+</code> age group is defined as all deaths occurring at age 60 or older, rather than the restricted <code>60-64</code> subset that had entered the shared notebook mortality object after the <code>edad_cant &lt; 65</code> filter. To make the mortality counts comparable with JRT, the script also harmonizes the ICD grouping used in the reference table. <code>Colorectal Cancer</code> is counted as <code>C18-C21</code>, which matches JRT’s counts. <code>Oral Cavity and Pharynx Cancer</code> combines the local oral-cavity and other-pharyngeal components into one JRT-compatible category. Attributable deaths are then recomputed using our WHO 2024 AAF estimates and the harmonized mortality counts. After this rebuild, the raw mortality counts match JRT exactly across the comparable cancer table, including the <code>60+</code> age group. Remaining differences in attributable deaths reflect differences in the AAF estimates, not differences in the underlying mortality counts.</p>
+<p>The script does not modify the notebook or the original pipeline objects. It reads JRT’s reference file, uses its row structure as the comparison template, and rebuilds our cancer mortality table from the raw DEIS mortality files. The main correction is that the <code>60+</code> age group is defined as all deaths occurring at age 60 or older, rather than the restricted subset of the shared notebook mortality object (<code>60-64</code> under the former <code>edad_cant &lt; 65</code> filter; <code>60-65</code> since 2026-07-10, <code>&lt;= 65</code>). To make the mortality counts comparable with JRT, the script also harmonizes the ICD grouping used in the reference table. <code>Colorectal Cancer</code> is counted as <code>C18-C21</code>, which matches JRT’s counts. <code>Oral Cavity and Pharynx Cancer</code> combines the local oral-cavity and other-pharyngeal components into one JRT-compatible category. Attributable deaths are then recomputed using our WHO 2024 AAF estimates and the harmonized mortality counts. After this rebuild, the raw mortality counts match JRT exactly across the comparable cancer table, including the <code>60+</code> age group. Remaining differences in attributable deaths reflect differences in the AAF estimates, not differences in the underlying mortality counts.</p>
 <div id="cell-mort-trends-age-sex-chile17-cancer-5a-comparison" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-08T02:04:49.442003Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-08T02:04:49.441207Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-08T02:04:52.257237Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-08T02:04:52.256563Z&quot;}}" data-results="hold" data-execution_count="37">
 <details class="code-fold">
 <summary>Code</summary>
@@ -46389,71 +46392,72 @@ $`Other Causes`
 <span id="cb107-48"><a href="#cb107-48" aria-hidden="true" tabindex="-1"></a>  theme_minimal()</span>
 <span id="cb107-49"><a href="#cb107-49" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb107-50"><a href="#cb107-50" aria-hidden="true" tabindex="-1"></a>fig4 <span class="op">&lt;-</span> mortality_results_cat <span class="op">%&gt;%</span></span>
-<span id="cb107-51"><a href="#cb107-51" aria-hidden="true" tabindex="-1"></a>  <span class="bu">filter</span>(gender <span class="op">==</span> <span class="st">&quot;Hombre&quot;</span>) <span class="op">%&gt;%</span></span>
-<span id="cb107-52"><a href="#cb107-52" aria-hidden="true" tabindex="-1"></a>  group_by(year, age_group, category) <span class="op">%&gt;%</span></span>
-<span id="cb107-53"><a href="#cb107-53" aria-hidden="true" tabindex="-1"></a>  summarise(</span>
-<span id="cb107-54"><a href="#cb107-54" aria-hidden="true" tabindex="-1"></a>    mort <span class="op">=</span> <span class="bu">sum</span>(mort, na.rm <span class="op">=</span> TRUE),</span>
-<span id="cb107-55"><a href="#cb107-55" aria-hidden="true" tabindex="-1"></a>    ll_mort <span class="op">=</span> <span class="bu">sum</span>(ll_mort, na.rm <span class="op">=</span> TRUE),</span>
-<span id="cb107-56"><a href="#cb107-56" aria-hidden="true" tabindex="-1"></a>    up_mort <span class="op">=</span> <span class="bu">sum</span>(up_mort, na.rm <span class="op">=</span> TRUE),</span>
-<span id="cb107-57"><a href="#cb107-57" aria-hidden="true" tabindex="-1"></a>    .groups <span class="op">=</span> <span class="st">&quot;drop&quot;</span></span>
-<span id="cb107-58"><a href="#cb107-58" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb107-59"><a href="#cb107-59" aria-hidden="true" tabindex="-1"></a>  group_by(age_group, year) <span class="op">%&gt;%</span></span>
-<span id="cb107-60"><a href="#cb107-60" aria-hidden="true" tabindex="-1"></a>  mutate(prop_mort <span class="op">=</span> mort <span class="op">/</span> <span class="bu">sum</span>(mort, na.rm <span class="op">=</span> TRUE)) <span class="op">%&gt;%</span></span>
-<span id="cb107-61"><a href="#cb107-61" aria-hidden="true" tabindex="-1"></a>  ungroup() <span class="op">%&gt;%</span></span>
-<span id="cb107-62"><a href="#cb107-62" aria-hidden="true" tabindex="-1"></a>  ggplot(aes(x <span class="op">=</span> year, y <span class="op">=</span> prop_mort, linetype <span class="op">=</span> category, shape <span class="op">=</span> category)) <span class="op">+</span></span>
-<span id="cb107-63"><a href="#cb107-63" aria-hidden="true" tabindex="-1"></a>  geom_line(linewidth <span class="op">=</span> <span class="dv">1</span>, color <span class="op">=</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
-<span id="cb107-64"><a href="#cb107-64" aria-hidden="true" tabindex="-1"></a>  geom_point(size <span class="op">=</span> <span class="fl">2.3</span>, color <span class="op">=</span> <span class="st">&quot;black&quot;</span>, fill <span class="op">=</span> <span class="st">&quot;white&quot;</span>, stroke <span class="op">=</span> <span class="fl">0.8</span>) <span class="op">+</span></span>
-<span id="cb107-65"><a href="#cb107-65" aria-hidden="true" tabindex="-1"></a>  scale_x_continuous(breaks <span class="op">=</span> seq(<span class="dv">2012</span>, <span class="dv">2024</span>, <span class="dv">2</span>)) <span class="op">+</span></span>
-<span id="cb107-66"><a href="#cb107-66" aria-hidden="true" tabindex="-1"></a>  scale_y_continuous(</span>
-<span id="cb107-67"><a href="#cb107-67" aria-hidden="true" tabindex="-1"></a>    breaks <span class="op">=</span> c(<span class="dv">0</span>, <span class="fl">0.2</span>, <span class="fl">0.4</span>, <span class="fl">0.6</span>, <span class="fl">0.8</span>),</span>
-<span id="cb107-68"><a href="#cb107-68" aria-hidden="true" tabindex="-1"></a>    limits <span class="op">=</span> c(<span class="dv">0</span>, <span class="dv">1</span>)</span>
-<span id="cb107-69"><a href="#cb107-69" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
-<span id="cb107-70"><a href="#cb107-70" aria-hidden="true" tabindex="-1"></a>  scale_shape_manual(values <span class="op">=</span> c(</span>
-<span id="cb107-71"><a href="#cb107-71" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cancer&quot;</span> <span class="op">=</span> <span class="dv">21</span>,</span>
-<span id="cb107-72"><a href="#cb107-72" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cardiovascular&quot;</span> <span class="op">=</span> <span class="dv">22</span>,</span>
-<span id="cb107-73"><a href="#cb107-73" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Injuries&quot;</span> <span class="op">=</span> <span class="dv">23</span>,</span>
-<span id="cb107-74"><a href="#cb107-74" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Neuropsychiatric&quot;</span> <span class="op">=</span> <span class="dv">24</span>,</span>
-<span id="cb107-75"><a href="#cb107-75" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Other Causes&quot;</span> <span class="op">=</span> <span class="dv">25</span>,</span>
-<span id="cb107-76"><a href="#cb107-76" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Fully Attributable&quot;</span> <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb107-77"><a href="#cb107-77" aria-hidden="true" tabindex="-1"></a>  )) <span class="op">+</span></span>
-<span id="cb107-78"><a href="#cb107-78" aria-hidden="true" tabindex="-1"></a>  scale_linetype_manual(values <span class="op">=</span> c(</span>
-<span id="cb107-79"><a href="#cb107-79" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cancer&quot;</span> <span class="op">=</span> <span class="st">&quot;solid&quot;</span>,</span>
-<span id="cb107-80"><a href="#cb107-80" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cardiovascular&quot;</span> <span class="op">=</span> <span class="st">&quot;dashed&quot;</span>,</span>
-<span id="cb107-81"><a href="#cb107-81" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Injuries&quot;</span> <span class="op">=</span> <span class="st">&quot;dotted&quot;</span>,</span>
-<span id="cb107-82"><a href="#cb107-82" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Neuropsychiatric&quot;</span> <span class="op">=</span> <span class="st">&quot;dotdash&quot;</span>,</span>
-<span id="cb107-83"><a href="#cb107-83" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Other Causes&quot;</span> <span class="op">=</span> <span class="st">&quot;longdash&quot;</span>,</span>
-<span id="cb107-84"><a href="#cb107-84" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Fully Attributable&quot;</span> <span class="op">=</span> <span class="st">&quot;twodash&quot;</span></span>
-<span id="cb107-85"><a href="#cb107-85" aria-hidden="true" tabindex="-1"></a>  )) <span class="op">+</span></span>
-<span id="cb107-86"><a href="#cb107-86" aria-hidden="true" tabindex="-1"></a>  facet_wrap(</span>
-<span id="cb107-87"><a href="#cb107-87" aria-hidden="true" tabindex="-1"></a>    <span class="op">~</span> age_group,</span>
-<span id="cb107-88"><a href="#cb107-88" aria-hidden="true" tabindex="-1"></a>    labeller <span class="op">=</span> as_labeller(c(<span class="st">&quot;1&quot;</span> <span class="op">=</span> <span class="st">&quot;15-29&quot;</span>, <span class="st">&quot;2&quot;</span> <span class="op">=</span> <span class="st">&quot;30-44&quot;</span>, <span class="st">&quot;3&quot;</span> <span class="op">=</span> <span class="st">&quot;45-59&quot;</span>, <span class="st">&quot;4&quot;</span> <span class="op">=</span> <span class="st">&quot;60-65&quot;</span>))</span>
-<span id="cb107-89"><a href="#cb107-89" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
-<span id="cb107-90"><a href="#cb107-90" aria-hidden="true" tabindex="-1"></a>  labs(</span>
-<span id="cb107-91"><a href="#cb107-91" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">&quot;Year&quot;</span>,</span>
-<span id="cb107-92"><a href="#cb107-92" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">&quot;Proportion of total alcohol-attributable deaths by cause&quot;</span>,</span>
-<span id="cb107-93"><a href="#cb107-93" aria-hidden="true" tabindex="-1"></a>    linetype <span class="op">=</span> <span class="st">&quot;Category&quot;</span>,</span>
-<span id="cb107-94"><a href="#cb107-94" aria-hidden="true" tabindex="-1"></a>    shape <span class="op">=</span> <span class="st">&quot;Category&quot;</span></span>
-<span id="cb107-95"><a href="#cb107-95" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
-<span id="cb107-96"><a href="#cb107-96" aria-hidden="true" tabindex="-1"></a>  theme_minimal(base_size <span class="op">=</span> <span class="dv">14</span>) <span class="op">+</span></span>
-<span id="cb107-97"><a href="#cb107-97" aria-hidden="true" tabindex="-1"></a>  theme(</span>
-<span id="cb107-98"><a href="#cb107-98" aria-hidden="true" tabindex="-1"></a>    legend.position <span class="op">=</span> <span class="st">&quot;right&quot;</span>,</span>
-<span id="cb107-99"><a href="#cb107-99" aria-hidden="true" tabindex="-1"></a>    legend.title <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">14</span>),</span>
-<span id="cb107-100"><a href="#cb107-100" aria-hidden="true" tabindex="-1"></a>    legend.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">12</span>),</span>
-<span id="cb107-101"><a href="#cb107-101" aria-hidden="true" tabindex="-1"></a>    strip.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">13</span>),</span>
-<span id="cb107-102"><a href="#cb107-102" aria-hidden="true" tabindex="-1"></a>    axis.title <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">15</span>),</span>
-<span id="cb107-103"><a href="#cb107-103" aria-hidden="true" tabindex="-1"></a>    axis.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">12</span>),</span>
-<span id="cb107-104"><a href="#cb107-104" aria-hidden="true" tabindex="-1"></a>    panel.grid.major <span class="op">=</span> element_line(color <span class="op">=</span> <span class="st">&quot;grey88&quot;</span>, linewidth <span class="op">=</span> <span class="fl">0.5</span>),</span>
-<span id="cb107-105"><a href="#cb107-105" aria-hidden="true" tabindex="-1"></a>    panel.grid.minor <span class="op">=</span> element_line(color <span class="op">=</span> <span class="st">&quot;grey93&quot;</span>, linewidth <span class="op">=</span> <span class="fl">0.3</span>)</span>
-<span id="cb107-106"><a href="#cb107-106" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb107-107"><a href="#cb107-107" aria-hidden="true" tabindex="-1"></a>ggsave(</span>
-<span id="cb107-108"><a href="#cb107-108" aria-hidden="true" tabindex="-1"></a>  filename <span class="op">=</span> <span class="bu">file</span>.path(acc_root(), <span class="st">&quot;__andres_control&quot;</span>, <span class="st">&quot;Figure 5.png&quot;</span>),</span>
-<span id="cb107-109"><a href="#cb107-109" aria-hidden="true" tabindex="-1"></a>  plot <span class="op">=</span> fig4,</span>
-<span id="cb107-110"><a href="#cb107-110" aria-hidden="true" tabindex="-1"></a>  width <span class="op">=</span> <span class="dv">9</span>,</span>
-<span id="cb107-111"><a href="#cb107-111" aria-hidden="true" tabindex="-1"></a>  height <span class="op">=</span> <span class="dv">7</span>,</span>
-<span id="cb107-112"><a href="#cb107-112" aria-hidden="true" tabindex="-1"></a>  units <span class="op">=</span> <span class="st">&quot;in&quot;</span>,</span>
-<span id="cb107-113"><a href="#cb107-113" aria-hidden="true" tabindex="-1"></a>  dpi <span class="op">=</span> <span class="dv">300</span>,</span>
-<span id="cb107-114"><a href="#cb107-114" aria-hidden="true" tabindex="-1"></a>  bg <span class="op">=</span> <span class="st">&quot;white&quot;</span></span>
-<span id="cb107-115"><a href="#cb107-115" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb107-51"><a href="#cb107-51" aria-hidden="true" tabindex="-1"></a>  dplyr::<span class="bu">filter</span>(year <span class="op">%%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>, year <span class="op">&gt;=</span> <span class="dv">2012</span>) <span class="op">%&gt;%</span>  <span class="co"># even ENPG waves, as in the displayed plot</span></span>
+<span id="cb107-52"><a href="#cb107-52" aria-hidden="true" tabindex="-1"></a>  <span class="bu">filter</span>(gender <span class="op">==</span> <span class="st">&quot;Hombre&quot;</span>) <span class="op">%&gt;%</span></span>
+<span id="cb107-53"><a href="#cb107-53" aria-hidden="true" tabindex="-1"></a>  group_by(year, age_group, category) <span class="op">%&gt;%</span></span>
+<span id="cb107-54"><a href="#cb107-54" aria-hidden="true" tabindex="-1"></a>  summarise(</span>
+<span id="cb107-55"><a href="#cb107-55" aria-hidden="true" tabindex="-1"></a>    mort <span class="op">=</span> <span class="bu">sum</span>(mort, na.rm <span class="op">=</span> TRUE),</span>
+<span id="cb107-56"><a href="#cb107-56" aria-hidden="true" tabindex="-1"></a>    ll_mort <span class="op">=</span> <span class="bu">sum</span>(ll_mort, na.rm <span class="op">=</span> TRUE),</span>
+<span id="cb107-57"><a href="#cb107-57" aria-hidden="true" tabindex="-1"></a>    up_mort <span class="op">=</span> <span class="bu">sum</span>(up_mort, na.rm <span class="op">=</span> TRUE),</span>
+<span id="cb107-58"><a href="#cb107-58" aria-hidden="true" tabindex="-1"></a>    .groups <span class="op">=</span> <span class="st">&quot;drop&quot;</span></span>
+<span id="cb107-59"><a href="#cb107-59" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">%&gt;%</span></span>
+<span id="cb107-60"><a href="#cb107-60" aria-hidden="true" tabindex="-1"></a>  group_by(age_group, year) <span class="op">%&gt;%</span></span>
+<span id="cb107-61"><a href="#cb107-61" aria-hidden="true" tabindex="-1"></a>  mutate(prop_mort <span class="op">=</span> mort <span class="op">/</span> <span class="bu">sum</span>(mort, na.rm <span class="op">=</span> TRUE)) <span class="op">%&gt;%</span></span>
+<span id="cb107-62"><a href="#cb107-62" aria-hidden="true" tabindex="-1"></a>  ungroup() <span class="op">%&gt;%</span></span>
+<span id="cb107-63"><a href="#cb107-63" aria-hidden="true" tabindex="-1"></a>  ggplot(aes(x <span class="op">=</span> year, y <span class="op">=</span> prop_mort, linetype <span class="op">=</span> category, shape <span class="op">=</span> category)) <span class="op">+</span></span>
+<span id="cb107-64"><a href="#cb107-64" aria-hidden="true" tabindex="-1"></a>  geom_line(linewidth <span class="op">=</span> <span class="dv">1</span>, color <span class="op">=</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
+<span id="cb107-65"><a href="#cb107-65" aria-hidden="true" tabindex="-1"></a>  geom_point(size <span class="op">=</span> <span class="fl">2.3</span>, color <span class="op">=</span> <span class="st">&quot;black&quot;</span>, fill <span class="op">=</span> <span class="st">&quot;white&quot;</span>, stroke <span class="op">=</span> <span class="fl">0.8</span>) <span class="op">+</span></span>
+<span id="cb107-66"><a href="#cb107-66" aria-hidden="true" tabindex="-1"></a>  scale_x_continuous(breaks <span class="op">=</span> seq(<span class="dv">2012</span>, <span class="dv">2024</span>, <span class="dv">2</span>)) <span class="op">+</span></span>
+<span id="cb107-67"><a href="#cb107-67" aria-hidden="true" tabindex="-1"></a>  scale_y_continuous(</span>
+<span id="cb107-68"><a href="#cb107-68" aria-hidden="true" tabindex="-1"></a>    breaks <span class="op">=</span> c(<span class="dv">0</span>, <span class="fl">0.2</span>, <span class="fl">0.4</span>, <span class="fl">0.6</span>, <span class="fl">0.8</span>),</span>
+<span id="cb107-69"><a href="#cb107-69" aria-hidden="true" tabindex="-1"></a>    limits <span class="op">=</span> c(<span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb107-70"><a href="#cb107-70" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
+<span id="cb107-71"><a href="#cb107-71" aria-hidden="true" tabindex="-1"></a>  scale_shape_manual(values <span class="op">=</span> c(</span>
+<span id="cb107-72"><a href="#cb107-72" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cancer&quot;</span> <span class="op">=</span> <span class="dv">21</span>,</span>
+<span id="cb107-73"><a href="#cb107-73" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cardiovascular&quot;</span> <span class="op">=</span> <span class="dv">22</span>,</span>
+<span id="cb107-74"><a href="#cb107-74" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Injuries&quot;</span> <span class="op">=</span> <span class="dv">23</span>,</span>
+<span id="cb107-75"><a href="#cb107-75" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Neuropsychiatric&quot;</span> <span class="op">=</span> <span class="dv">24</span>,</span>
+<span id="cb107-76"><a href="#cb107-76" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Other Causes&quot;</span> <span class="op">=</span> <span class="dv">25</span>,</span>
+<span id="cb107-77"><a href="#cb107-77" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Fully Attributable&quot;</span> <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb107-78"><a href="#cb107-78" aria-hidden="true" tabindex="-1"></a>  )) <span class="op">+</span></span>
+<span id="cb107-79"><a href="#cb107-79" aria-hidden="true" tabindex="-1"></a>  scale_linetype_manual(values <span class="op">=</span> c(</span>
+<span id="cb107-80"><a href="#cb107-80" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cancer&quot;</span> <span class="op">=</span> <span class="st">&quot;solid&quot;</span>,</span>
+<span id="cb107-81"><a href="#cb107-81" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cardiovascular&quot;</span> <span class="op">=</span> <span class="st">&quot;dashed&quot;</span>,</span>
+<span id="cb107-82"><a href="#cb107-82" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Injuries&quot;</span> <span class="op">=</span> <span class="st">&quot;dotted&quot;</span>,</span>
+<span id="cb107-83"><a href="#cb107-83" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Neuropsychiatric&quot;</span> <span class="op">=</span> <span class="st">&quot;dotdash&quot;</span>,</span>
+<span id="cb107-84"><a href="#cb107-84" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Other Causes&quot;</span> <span class="op">=</span> <span class="st">&quot;longdash&quot;</span>,</span>
+<span id="cb107-85"><a href="#cb107-85" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Fully Attributable&quot;</span> <span class="op">=</span> <span class="st">&quot;twodash&quot;</span></span>
+<span id="cb107-86"><a href="#cb107-86" aria-hidden="true" tabindex="-1"></a>  )) <span class="op">+</span></span>
+<span id="cb107-87"><a href="#cb107-87" aria-hidden="true" tabindex="-1"></a>  facet_wrap(</span>
+<span id="cb107-88"><a href="#cb107-88" aria-hidden="true" tabindex="-1"></a>    <span class="op">~</span> age_group,</span>
+<span id="cb107-89"><a href="#cb107-89" aria-hidden="true" tabindex="-1"></a>    labeller <span class="op">=</span> as_labeller(c(<span class="st">&quot;1&quot;</span> <span class="op">=</span> <span class="st">&quot;15-29&quot;</span>, <span class="st">&quot;2&quot;</span> <span class="op">=</span> <span class="st">&quot;30-44&quot;</span>, <span class="st">&quot;3&quot;</span> <span class="op">=</span> <span class="st">&quot;45-59&quot;</span>, <span class="st">&quot;4&quot;</span> <span class="op">=</span> <span class="st">&quot;60-65&quot;</span>))</span>
+<span id="cb107-90"><a href="#cb107-90" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
+<span id="cb107-91"><a href="#cb107-91" aria-hidden="true" tabindex="-1"></a>  labs(</span>
+<span id="cb107-92"><a href="#cb107-92" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">&quot;Year&quot;</span>,</span>
+<span id="cb107-93"><a href="#cb107-93" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">&quot;Proportion of total alcohol-attributable deaths by cause&quot;</span>,</span>
+<span id="cb107-94"><a href="#cb107-94" aria-hidden="true" tabindex="-1"></a>    linetype <span class="op">=</span> <span class="st">&quot;Category&quot;</span>,</span>
+<span id="cb107-95"><a href="#cb107-95" aria-hidden="true" tabindex="-1"></a>    shape <span class="op">=</span> <span class="st">&quot;Category&quot;</span></span>
+<span id="cb107-96"><a href="#cb107-96" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
+<span id="cb107-97"><a href="#cb107-97" aria-hidden="true" tabindex="-1"></a>  theme_minimal(base_size <span class="op">=</span> <span class="dv">14</span>) <span class="op">+</span></span>
+<span id="cb107-98"><a href="#cb107-98" aria-hidden="true" tabindex="-1"></a>  theme(</span>
+<span id="cb107-99"><a href="#cb107-99" aria-hidden="true" tabindex="-1"></a>    legend.position <span class="op">=</span> <span class="st">&quot;right&quot;</span>,</span>
+<span id="cb107-100"><a href="#cb107-100" aria-hidden="true" tabindex="-1"></a>    legend.title <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">14</span>),</span>
+<span id="cb107-101"><a href="#cb107-101" aria-hidden="true" tabindex="-1"></a>    legend.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">12</span>),</span>
+<span id="cb107-102"><a href="#cb107-102" aria-hidden="true" tabindex="-1"></a>    strip.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">13</span>),</span>
+<span id="cb107-103"><a href="#cb107-103" aria-hidden="true" tabindex="-1"></a>    axis.title <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">15</span>),</span>
+<span id="cb107-104"><a href="#cb107-104" aria-hidden="true" tabindex="-1"></a>    axis.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">12</span>),</span>
+<span id="cb107-105"><a href="#cb107-105" aria-hidden="true" tabindex="-1"></a>    panel.grid.major <span class="op">=</span> element_line(color <span class="op">=</span> <span class="st">&quot;grey88&quot;</span>, linewidth <span class="op">=</span> <span class="fl">0.5</span>),</span>
+<span id="cb107-106"><a href="#cb107-106" aria-hidden="true" tabindex="-1"></a>    panel.grid.minor <span class="op">=</span> element_line(color <span class="op">=</span> <span class="st">&quot;grey93&quot;</span>, linewidth <span class="op">=</span> <span class="fl">0.3</span>)</span>
+<span id="cb107-107"><a href="#cb107-107" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb107-108"><a href="#cb107-108" aria-hidden="true" tabindex="-1"></a>ggsave(</span>
+<span id="cb107-109"><a href="#cb107-109" aria-hidden="true" tabindex="-1"></a>  filename <span class="op">=</span> <span class="bu">file</span>.path(acc_root(), <span class="st">&quot;__andres_control&quot;</span>, <span class="st">&quot;Figure 5.png&quot;</span>),</span>
+<span id="cb107-110"><a href="#cb107-110" aria-hidden="true" tabindex="-1"></a>  plot <span class="op">=</span> fig4,</span>
+<span id="cb107-111"><a href="#cb107-111" aria-hidden="true" tabindex="-1"></a>  width <span class="op">=</span> <span class="dv">9</span>,</span>
+<span id="cb107-112"><a href="#cb107-112" aria-hidden="true" tabindex="-1"></a>  height <span class="op">=</span> <span class="dv">7</span>,</span>
+<span id="cb107-113"><a href="#cb107-113" aria-hidden="true" tabindex="-1"></a>  units <span class="op">=</span> <span class="st">&quot;in&quot;</span>,</span>
+<span id="cb107-114"><a href="#cb107-114" aria-hidden="true" tabindex="-1"></a>  dpi <span class="op">=</span> <span class="dv">300</span>,</span>
+<span id="cb107-115"><a href="#cb107-115" aria-hidden="true" tabindex="-1"></a>  bg <span class="op">=</span> <span class="st">&quot;white&quot;</span></span>
+<span id="cb107-116"><a href="#cb107-116" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -46488,72 +46492,73 @@ $`Other Causes`
 <span id="cb108-20"><a href="#cb108-20" aria-hidden="true" tabindex="-1"></a>  ))</span>
 <span id="cb108-21"><a href="#cb108-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb108-22"><a href="#cb108-22" aria-hidden="true" tabindex="-1"></a> mortality_results_cat_not_stomach_pancreas_cancer <span class="op">%&gt;%</span></span>
-<span id="cb108-23"><a href="#cb108-23" aria-hidden="true" tabindex="-1"></a>  <span class="bu">filter</span>(gender <span class="op">==</span> <span class="st">&quot;Hombre&quot;</span>) <span class="op">%&gt;%</span></span>
-<span id="cb108-24"><a href="#cb108-24" aria-hidden="true" tabindex="-1"></a>  group_by(year, age_group, category) <span class="op">%&gt;%</span></span>
-<span id="cb108-25"><a href="#cb108-25" aria-hidden="true" tabindex="-1"></a>  summarise(</span>
-<span id="cb108-26"><a href="#cb108-26" aria-hidden="true" tabindex="-1"></a>    mort <span class="op">=</span> <span class="bu">sum</span>(mort, na.rm <span class="op">=</span> TRUE),</span>
-<span id="cb108-27"><a href="#cb108-27" aria-hidden="true" tabindex="-1"></a>    ll_mort <span class="op">=</span> <span class="bu">sum</span>(ll_mort, na.rm <span class="op">=</span> TRUE),</span>
-<span id="cb108-28"><a href="#cb108-28" aria-hidden="true" tabindex="-1"></a>    up_mort <span class="op">=</span> <span class="bu">sum</span>(up_mort, na.rm <span class="op">=</span> TRUE),</span>
-<span id="cb108-29"><a href="#cb108-29" aria-hidden="true" tabindex="-1"></a>    .groups <span class="op">=</span> <span class="st">&quot;drop&quot;</span></span>
-<span id="cb108-30"><a href="#cb108-30" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">%&gt;%</span></span>
-<span id="cb108-31"><a href="#cb108-31" aria-hidden="true" tabindex="-1"></a>  group_by(age_group, year) <span class="op">%&gt;%</span></span>
-<span id="cb108-32"><a href="#cb108-32" aria-hidden="true" tabindex="-1"></a>  mutate(prop_mort <span class="op">=</span> mort <span class="op">/</span> <span class="bu">sum</span>(mort, na.rm <span class="op">=</span> TRUE)) <span class="op">%&gt;%</span></span>
-<span id="cb108-33"><a href="#cb108-33" aria-hidden="true" tabindex="-1"></a>  ungroup() <span class="op">%&gt;%</span></span>
-<span id="cb108-34"><a href="#cb108-34" aria-hidden="true" tabindex="-1"></a>  ggplot(aes(x <span class="op">=</span> year, y <span class="op">=</span> prop_mort, linetype <span class="op">=</span> category, shape <span class="op">=</span> category)) <span class="op">+</span></span>
-<span id="cb108-35"><a href="#cb108-35" aria-hidden="true" tabindex="-1"></a>  geom_line(linewidth <span class="op">=</span> <span class="dv">1</span>, color <span class="op">=</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
-<span id="cb108-36"><a href="#cb108-36" aria-hidden="true" tabindex="-1"></a>  geom_point(size <span class="op">=</span> <span class="fl">2.3</span>, color <span class="op">=</span> <span class="st">&quot;black&quot;</span>, fill <span class="op">=</span> <span class="st">&quot;white&quot;</span>, stroke <span class="op">=</span> <span class="fl">0.8</span>) <span class="op">+</span></span>
-<span id="cb108-37"><a href="#cb108-37" aria-hidden="true" tabindex="-1"></a>  scale_x_continuous(</span>
-<span id="cb108-38"><a href="#cb108-38" aria-hidden="true" tabindex="-1"></a>  breaks <span class="op">=</span> seq(<span class="dv">2012</span>, <span class="dv">2024</span>, <span class="dv">2</span>),</span>
-<span id="cb108-39"><a href="#cb108-39" aria-hidden="true" tabindex="-1"></a>  labels <span class="op">=</span> function(x) paste0(<span class="st">&quot;&#39;&quot;</span>, substr(<span class="im">as</span>.character(x), <span class="dv">3</span>, <span class="dv">4</span>))</span>
-<span id="cb108-40"><a href="#cb108-40" aria-hidden="true" tabindex="-1"></a>  )<span class="op">+</span></span>
-<span id="cb108-41"><a href="#cb108-41" aria-hidden="true" tabindex="-1"></a>  scale_y_continuous(</span>
-<span id="cb108-42"><a href="#cb108-42" aria-hidden="true" tabindex="-1"></a>    breaks <span class="op">=</span> c(<span class="dv">0</span>, <span class="fl">0.2</span>, <span class="fl">0.4</span>, <span class="fl">0.6</span>, <span class="fl">0.8</span>,<span class="dv">1</span>),</span>
-<span id="cb108-43"><a href="#cb108-43" aria-hidden="true" tabindex="-1"></a>    limits <span class="op">=</span> c(<span class="dv">0</span>, <span class="dv">1</span>)</span>
-<span id="cb108-44"><a href="#cb108-44" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
-<span id="cb108-45"><a href="#cb108-45" aria-hidden="true" tabindex="-1"></a>  scale_shape_manual(values <span class="op">=</span> c(</span>
-<span id="cb108-46"><a href="#cb108-46" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cancer&quot;</span> <span class="op">=</span> <span class="dv">21</span>,</span>
-<span id="cb108-47"><a href="#cb108-47" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cardiovascular&quot;</span> <span class="op">=</span> <span class="dv">22</span>,</span>
-<span id="cb108-48"><a href="#cb108-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Injuries&quot;</span> <span class="op">=</span> <span class="dv">23</span>,</span>
-<span id="cb108-49"><a href="#cb108-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Neuropsychiatric&quot;</span> <span class="op">=</span> <span class="dv">24</span>,</span>
-<span id="cb108-50"><a href="#cb108-50" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Other Causes&quot;</span> <span class="op">=</span> <span class="dv">25</span></span>
-<span id="cb108-51"><a href="#cb108-51" aria-hidden="true" tabindex="-1"></a>  )) <span class="op">+</span></span>
-<span id="cb108-52"><a href="#cb108-52" aria-hidden="true" tabindex="-1"></a>  scale_linetype_manual(values <span class="op">=</span> c(</span>
-<span id="cb108-53"><a href="#cb108-53" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cancer&quot;</span> <span class="op">=</span> <span class="st">&quot;solid&quot;</span>,</span>
-<span id="cb108-54"><a href="#cb108-54" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cardiovascular&quot;</span> <span class="op">=</span> <span class="st">&quot;longdash&quot;</span>,</span>
-<span id="cb108-55"><a href="#cb108-55" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Injuries&quot;</span> <span class="op">=</span> <span class="st">&quot;dotted&quot;</span>,</span>
-<span id="cb108-56"><a href="#cb108-56" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Neuropsychiatric&quot;</span> <span class="op">=</span> <span class="st">&quot;dotdash&quot;</span>,</span>
-<span id="cb108-57"><a href="#cb108-57" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Other Causes&quot;</span> <span class="op">=</span> <span class="st">&quot;longdash&quot;</span></span>
-<span id="cb108-58"><a href="#cb108-58" aria-hidden="true" tabindex="-1"></a>  )) <span class="op">+</span></span>
-<span id="cb108-59"><a href="#cb108-59" aria-hidden="true" tabindex="-1"></a>  facet_wrap(</span>
-<span id="cb108-60"><a href="#cb108-60" aria-hidden="true" tabindex="-1"></a>    <span class="op">~</span> age_group,</span>
-<span id="cb108-61"><a href="#cb108-61" aria-hidden="true" tabindex="-1"></a>    labeller <span class="op">=</span> as_labeller(c(<span class="st">&quot;1&quot;</span> <span class="op">=</span> <span class="st">&quot;15-29&quot;</span>, <span class="st">&quot;2&quot;</span> <span class="op">=</span> <span class="st">&quot;30-44&quot;</span>, <span class="st">&quot;3&quot;</span> <span class="op">=</span> <span class="st">&quot;45-59&quot;</span>, <span class="st">&quot;4&quot;</span> <span class="op">=</span> <span class="st">&quot;60-65&quot;</span>))</span>
-<span id="cb108-62"><a href="#cb108-62" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
-<span id="cb108-63"><a href="#cb108-63" aria-hidden="true" tabindex="-1"></a>  labs(</span>
-<span id="cb108-64"><a href="#cb108-64" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">&quot;Year&quot;</span>,</span>
-<span id="cb108-65"><a href="#cb108-65" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">&quot;Proportion of total alcohol-attributable deaths by cause&quot;</span>,</span>
-<span id="cb108-66"><a href="#cb108-66" aria-hidden="true" tabindex="-1"></a>    linetype <span class="op">=</span> <span class="st">&quot;Category&quot;</span>,</span>
-<span id="cb108-67"><a href="#cb108-67" aria-hidden="true" tabindex="-1"></a>    shape <span class="op">=</span> <span class="st">&quot;Category&quot;</span></span>
-<span id="cb108-68"><a href="#cb108-68" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
-<span id="cb108-69"><a href="#cb108-69" aria-hidden="true" tabindex="-1"></a>  theme_minimal(base_size <span class="op">=</span> <span class="dv">14</span>) <span class="op">+</span></span>
-<span id="cb108-70"><a href="#cb108-70" aria-hidden="true" tabindex="-1"></a>  theme(</span>
-<span id="cb108-71"><a href="#cb108-71" aria-hidden="true" tabindex="-1"></a>    legend.position <span class="op">=</span> <span class="st">&quot;right&quot;</span>,</span>
-<span id="cb108-72"><a href="#cb108-72" aria-hidden="true" tabindex="-1"></a>    legend.title <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">14</span>),</span>
-<span id="cb108-73"><a href="#cb108-73" aria-hidden="true" tabindex="-1"></a>    legend.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">12</span>),</span>
-<span id="cb108-74"><a href="#cb108-74" aria-hidden="true" tabindex="-1"></a>    strip.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">13</span>),</span>
-<span id="cb108-75"><a href="#cb108-75" aria-hidden="true" tabindex="-1"></a>    axis.title <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">15</span>),</span>
-<span id="cb108-76"><a href="#cb108-76" aria-hidden="true" tabindex="-1"></a>    axis.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">12</span>),</span>
-<span id="cb108-77"><a href="#cb108-77" aria-hidden="true" tabindex="-1"></a>    panel.grid.major <span class="op">=</span> element_line(color <span class="op">=</span> <span class="st">&quot;grey88&quot;</span>, linewidth <span class="op">=</span> <span class="fl">0.5</span>),</span>
-<span id="cb108-78"><a href="#cb108-78" aria-hidden="true" tabindex="-1"></a>    panel.grid.minor <span class="op">=</span> element_line(color <span class="op">=</span> <span class="st">&quot;grey93&quot;</span>, linewidth <span class="op">=</span> <span class="fl">0.3</span>)</span>
-<span id="cb108-79"><a href="#cb108-79" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb108-80"><a href="#cb108-80" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb108-81"><a href="#cb108-81" aria-hidden="true" tabindex="-1"></a>ggsave(</span>
-<span id="cb108-82"><a href="#cb108-82" aria-hidden="true" tabindex="-1"></a>  filename <span class="op">=</span> <span class="bu">file</span>.path(acc_root(), <span class="st">&quot;__andres_control&quot;</span>, <span class="st">&quot;Figure 5_not_panc_stomach.png&quot;</span>),</span>
-<span id="cb108-83"><a href="#cb108-83" aria-hidden="true" tabindex="-1"></a>  width <span class="op">=</span> <span class="dv">9</span>,</span>
-<span id="cb108-84"><a href="#cb108-84" aria-hidden="true" tabindex="-1"></a>  height <span class="op">=</span> <span class="dv">7</span>,</span>
-<span id="cb108-85"><a href="#cb108-85" aria-hidden="true" tabindex="-1"></a>  units <span class="op">=</span> <span class="st">&quot;in&quot;</span>,</span>
-<span id="cb108-86"><a href="#cb108-86" aria-hidden="true" tabindex="-1"></a>  dpi <span class="op">=</span> <span class="dv">300</span>,</span>
-<span id="cb108-87"><a href="#cb108-87" aria-hidden="true" tabindex="-1"></a>  bg <span class="op">=</span> <span class="st">&quot;white&quot;</span></span>
-<span id="cb108-88"><a href="#cb108-88" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb108-23"><a href="#cb108-23" aria-hidden="true" tabindex="-1"></a>  dplyr::<span class="bu">filter</span>(year <span class="op">%%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>, year <span class="op">&gt;=</span> <span class="dv">2012</span>) <span class="op">%&gt;%</span>  <span class="co"># even ENPG waves, as in Figure 5</span></span>
+<span id="cb108-24"><a href="#cb108-24" aria-hidden="true" tabindex="-1"></a>  <span class="bu">filter</span>(gender <span class="op">==</span> <span class="st">&quot;Hombre&quot;</span>) <span class="op">%&gt;%</span></span>
+<span id="cb108-25"><a href="#cb108-25" aria-hidden="true" tabindex="-1"></a>  group_by(year, age_group, category) <span class="op">%&gt;%</span></span>
+<span id="cb108-26"><a href="#cb108-26" aria-hidden="true" tabindex="-1"></a>  summarise(</span>
+<span id="cb108-27"><a href="#cb108-27" aria-hidden="true" tabindex="-1"></a>    mort <span class="op">=</span> <span class="bu">sum</span>(mort, na.rm <span class="op">=</span> TRUE),</span>
+<span id="cb108-28"><a href="#cb108-28" aria-hidden="true" tabindex="-1"></a>    ll_mort <span class="op">=</span> <span class="bu">sum</span>(ll_mort, na.rm <span class="op">=</span> TRUE),</span>
+<span id="cb108-29"><a href="#cb108-29" aria-hidden="true" tabindex="-1"></a>    up_mort <span class="op">=</span> <span class="bu">sum</span>(up_mort, na.rm <span class="op">=</span> TRUE),</span>
+<span id="cb108-30"><a href="#cb108-30" aria-hidden="true" tabindex="-1"></a>    .groups <span class="op">=</span> <span class="st">&quot;drop&quot;</span></span>
+<span id="cb108-31"><a href="#cb108-31" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">%&gt;%</span></span>
+<span id="cb108-32"><a href="#cb108-32" aria-hidden="true" tabindex="-1"></a>  group_by(age_group, year) <span class="op">%&gt;%</span></span>
+<span id="cb108-33"><a href="#cb108-33" aria-hidden="true" tabindex="-1"></a>  mutate(prop_mort <span class="op">=</span> mort <span class="op">/</span> <span class="bu">sum</span>(mort, na.rm <span class="op">=</span> TRUE)) <span class="op">%&gt;%</span></span>
+<span id="cb108-34"><a href="#cb108-34" aria-hidden="true" tabindex="-1"></a>  ungroup() <span class="op">%&gt;%</span></span>
+<span id="cb108-35"><a href="#cb108-35" aria-hidden="true" tabindex="-1"></a>  ggplot(aes(x <span class="op">=</span> year, y <span class="op">=</span> prop_mort, linetype <span class="op">=</span> category, shape <span class="op">=</span> category)) <span class="op">+</span></span>
+<span id="cb108-36"><a href="#cb108-36" aria-hidden="true" tabindex="-1"></a>  geom_line(linewidth <span class="op">=</span> <span class="dv">1</span>, color <span class="op">=</span> <span class="st">&quot;black&quot;</span>) <span class="op">+</span></span>
+<span id="cb108-37"><a href="#cb108-37" aria-hidden="true" tabindex="-1"></a>  geom_point(size <span class="op">=</span> <span class="fl">2.3</span>, color <span class="op">=</span> <span class="st">&quot;black&quot;</span>, fill <span class="op">=</span> <span class="st">&quot;white&quot;</span>, stroke <span class="op">=</span> <span class="fl">0.8</span>) <span class="op">+</span></span>
+<span id="cb108-38"><a href="#cb108-38" aria-hidden="true" tabindex="-1"></a>  scale_x_continuous(</span>
+<span id="cb108-39"><a href="#cb108-39" aria-hidden="true" tabindex="-1"></a>  breaks <span class="op">=</span> seq(<span class="dv">2012</span>, <span class="dv">2024</span>, <span class="dv">2</span>),</span>
+<span id="cb108-40"><a href="#cb108-40" aria-hidden="true" tabindex="-1"></a>  labels <span class="op">=</span> function(x) paste0(<span class="st">&quot;&#39;&quot;</span>, substr(<span class="im">as</span>.character(x), <span class="dv">3</span>, <span class="dv">4</span>))</span>
+<span id="cb108-41"><a href="#cb108-41" aria-hidden="true" tabindex="-1"></a>  )<span class="op">+</span></span>
+<span id="cb108-42"><a href="#cb108-42" aria-hidden="true" tabindex="-1"></a>  scale_y_continuous(</span>
+<span id="cb108-43"><a href="#cb108-43" aria-hidden="true" tabindex="-1"></a>    breaks <span class="op">=</span> c(<span class="dv">0</span>, <span class="fl">0.2</span>, <span class="fl">0.4</span>, <span class="fl">0.6</span>, <span class="fl">0.8</span>,<span class="dv">1</span>),</span>
+<span id="cb108-44"><a href="#cb108-44" aria-hidden="true" tabindex="-1"></a>    limits <span class="op">=</span> c(<span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb108-45"><a href="#cb108-45" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
+<span id="cb108-46"><a href="#cb108-46" aria-hidden="true" tabindex="-1"></a>  scale_shape_manual(values <span class="op">=</span> c(</span>
+<span id="cb108-47"><a href="#cb108-47" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cancer&quot;</span> <span class="op">=</span> <span class="dv">21</span>,</span>
+<span id="cb108-48"><a href="#cb108-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cardiovascular&quot;</span> <span class="op">=</span> <span class="dv">22</span>,</span>
+<span id="cb108-49"><a href="#cb108-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Injuries&quot;</span> <span class="op">=</span> <span class="dv">23</span>,</span>
+<span id="cb108-50"><a href="#cb108-50" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Neuropsychiatric&quot;</span> <span class="op">=</span> <span class="dv">24</span>,</span>
+<span id="cb108-51"><a href="#cb108-51" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Other Causes&quot;</span> <span class="op">=</span> <span class="dv">25</span></span>
+<span id="cb108-52"><a href="#cb108-52" aria-hidden="true" tabindex="-1"></a>  )) <span class="op">+</span></span>
+<span id="cb108-53"><a href="#cb108-53" aria-hidden="true" tabindex="-1"></a>  scale_linetype_manual(values <span class="op">=</span> c(</span>
+<span id="cb108-54"><a href="#cb108-54" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cancer&quot;</span> <span class="op">=</span> <span class="st">&quot;solid&quot;</span>,</span>
+<span id="cb108-55"><a href="#cb108-55" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Cardiovascular&quot;</span> <span class="op">=</span> <span class="st">&quot;longdash&quot;</span>,</span>
+<span id="cb108-56"><a href="#cb108-56" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Injuries&quot;</span> <span class="op">=</span> <span class="st">&quot;dotted&quot;</span>,</span>
+<span id="cb108-57"><a href="#cb108-57" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Neuropsychiatric&quot;</span> <span class="op">=</span> <span class="st">&quot;dotdash&quot;</span>,</span>
+<span id="cb108-58"><a href="#cb108-58" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;Other Causes&quot;</span> <span class="op">=</span> <span class="st">&quot;longdash&quot;</span></span>
+<span id="cb108-59"><a href="#cb108-59" aria-hidden="true" tabindex="-1"></a>  )) <span class="op">+</span></span>
+<span id="cb108-60"><a href="#cb108-60" aria-hidden="true" tabindex="-1"></a>  facet_wrap(</span>
+<span id="cb108-61"><a href="#cb108-61" aria-hidden="true" tabindex="-1"></a>    <span class="op">~</span> age_group,</span>
+<span id="cb108-62"><a href="#cb108-62" aria-hidden="true" tabindex="-1"></a>    labeller <span class="op">=</span> as_labeller(c(<span class="st">&quot;1&quot;</span> <span class="op">=</span> <span class="st">&quot;15-29&quot;</span>, <span class="st">&quot;2&quot;</span> <span class="op">=</span> <span class="st">&quot;30-44&quot;</span>, <span class="st">&quot;3&quot;</span> <span class="op">=</span> <span class="st">&quot;45-59&quot;</span>, <span class="st">&quot;4&quot;</span> <span class="op">=</span> <span class="st">&quot;60-65&quot;</span>))</span>
+<span id="cb108-63"><a href="#cb108-63" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
+<span id="cb108-64"><a href="#cb108-64" aria-hidden="true" tabindex="-1"></a>  labs(</span>
+<span id="cb108-65"><a href="#cb108-65" aria-hidden="true" tabindex="-1"></a>    x <span class="op">=</span> <span class="st">&quot;Year&quot;</span>,</span>
+<span id="cb108-66"><a href="#cb108-66" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> <span class="st">&quot;Proportion of total alcohol-attributable deaths by cause&quot;</span>,</span>
+<span id="cb108-67"><a href="#cb108-67" aria-hidden="true" tabindex="-1"></a>    linetype <span class="op">=</span> <span class="st">&quot;Category&quot;</span>,</span>
+<span id="cb108-68"><a href="#cb108-68" aria-hidden="true" tabindex="-1"></a>    shape <span class="op">=</span> <span class="st">&quot;Category&quot;</span></span>
+<span id="cb108-69"><a href="#cb108-69" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">+</span></span>
+<span id="cb108-70"><a href="#cb108-70" aria-hidden="true" tabindex="-1"></a>  theme_minimal(base_size <span class="op">=</span> <span class="dv">14</span>) <span class="op">+</span></span>
+<span id="cb108-71"><a href="#cb108-71" aria-hidden="true" tabindex="-1"></a>  theme(</span>
+<span id="cb108-72"><a href="#cb108-72" aria-hidden="true" tabindex="-1"></a>    legend.position <span class="op">=</span> <span class="st">&quot;right&quot;</span>,</span>
+<span id="cb108-73"><a href="#cb108-73" aria-hidden="true" tabindex="-1"></a>    legend.title <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">14</span>),</span>
+<span id="cb108-74"><a href="#cb108-74" aria-hidden="true" tabindex="-1"></a>    legend.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">12</span>),</span>
+<span id="cb108-75"><a href="#cb108-75" aria-hidden="true" tabindex="-1"></a>    strip.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">13</span>),</span>
+<span id="cb108-76"><a href="#cb108-76" aria-hidden="true" tabindex="-1"></a>    axis.title <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">15</span>),</span>
+<span id="cb108-77"><a href="#cb108-77" aria-hidden="true" tabindex="-1"></a>    axis.text <span class="op">=</span> element_text(size <span class="op">=</span> <span class="dv">12</span>),</span>
+<span id="cb108-78"><a href="#cb108-78" aria-hidden="true" tabindex="-1"></a>    panel.grid.major <span class="op">=</span> element_line(color <span class="op">=</span> <span class="st">&quot;grey88&quot;</span>, linewidth <span class="op">=</span> <span class="fl">0.5</span>),</span>
+<span id="cb108-79"><a href="#cb108-79" aria-hidden="true" tabindex="-1"></a>    panel.grid.minor <span class="op">=</span> element_line(color <span class="op">=</span> <span class="st">&quot;grey93&quot;</span>, linewidth <span class="op">=</span> <span class="fl">0.3</span>)</span>
+<span id="cb108-80"><a href="#cb108-80" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb108-81"><a href="#cb108-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb108-82"><a href="#cb108-82" aria-hidden="true" tabindex="-1"></a>ggsave(</span>
+<span id="cb108-83"><a href="#cb108-83" aria-hidden="true" tabindex="-1"></a>  filename <span class="op">=</span> <span class="bu">file</span>.path(acc_root(), <span class="st">&quot;__andres_control&quot;</span>, <span class="st">&quot;Figure 5_not_panc_stomach.png&quot;</span>),</span>
+<span id="cb108-84"><a href="#cb108-84" aria-hidden="true" tabindex="-1"></a>  width <span class="op">=</span> <span class="dv">9</span>,</span>
+<span id="cb108-85"><a href="#cb108-85" aria-hidden="true" tabindex="-1"></a>  height <span class="op">=</span> <span class="dv">7</span>,</span>
+<span id="cb108-86"><a href="#cb108-86" aria-hidden="true" tabindex="-1"></a>  units <span class="op">=</span> <span class="st">&quot;in&quot;</span>,</span>
+<span id="cb108-87"><a href="#cb108-87" aria-hidden="true" tabindex="-1"></a>  dpi <span class="op">=</span> <span class="dv">300</span>,</span>
+<span id="cb108-88"><a href="#cb108-88" aria-hidden="true" tabindex="-1"></a>  bg <span class="op">=</span> <span class="st">&quot;white&quot;</span></span>
+<span id="cb108-89"><a href="#cb108-89" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] &quot;Without pancreatic and stomach cancer, men&quot;</code></pre>
@@ -50944,7 +50949,13 @@ table5-ihd-is-aaf-step3-pre-dgs-formatting elapsed minutes: 0.01
 
 </div>
 </div>
-<p>The greatest detected differences in AAFs were in IHD among men aged 45–59 and 60–65, with ~25 more attributable deaths, respectively. These were followed by men with IHD in the 30–44 age group, with ~9 more attributable deaths.</p>
+<p>Largest differences in attributable deaths (PUC Table 5 − WHO 2024), range across the 2012-2024 waves (2026-10-07 run; the numbers drift with reruns, read the table above):</p>
+<ul>
+<li>IHD, men 45–59: +71.2 to +95.2 deaths (AAF difference 0.080–0.101).</li>
+<li>IHD, men 60–65: +25.7 to +55.4 deaths (AAF difference 0.041–0.070).</li>
+<li>IHD, men 30–44: +12.2 to +23.0 deaths (AAF difference 0.080–0.105).</li>
+</ul>
+<p>Since 2026-10-07, WHO is the main IHD RR source (both sexes) and Table 5 is a sensitivity analysis; ischaemic stroke keeps Table 5 as main (see the handoff).</p>
 </section>
 
 </main>
