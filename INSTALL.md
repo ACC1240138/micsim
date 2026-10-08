@@ -50,6 +50,14 @@ substr(openssl::sha256(Sys.getenv("ACC_DATA_KEY")), 1, 8)                # finge
 
 Never type the key into a terminal, a script or a chat.
 
+Windows only, once per computer: R's `~` is `R_USER`, else `HOME`, else Documents. Git Bash (also the shell of Claude Code
+and Codex) sets `HOME` to `C:\Users\<user>`, so R started from it would miss the `.Renviron` in Documents. Pin `~` to
+Documents for every tool, from PowerShell, then restart Git Bash and Positron:
+
+```powershell
+[Environment]::SetEnvironmentVariable('R_USER', [Environment]::GetFolderPath('MyDocuments'), 'User')
+```
+
 ## 4. Checks (~2 min, from the repository root, in a new terminal)
 
 ```bash
