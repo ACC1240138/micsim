@@ -8348,3 +8348,29 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 * CI: `data-check` ya no apaga renv: `r-version: renv`, `use-public-rspm: false` (con true, setup-r exporta RENV_CONFIG_REPOS_OVERRIDE y pisa el snapshot fechado del lockfile), `renv::restore(packages = c("openssl","data.table"))`. Nuevo `.github/workflows/renv-check.yml` (ubuntu/windows/macos). NO corrido en GitHub (sin push).
 * AGENTS.md §4: regla nueva (no `source("renv/activate.R")`/`renv::load()`/`.libPaths()` en codigo; carpeta nueva con R -> copiar el stub). README/INSTALL al dia.
 * Pendiente user: commit + push y revisar renv-check/data-check; `_enpg/notes/codex_temp_audit_enpg/extract_questionnaires.R:1` hace `.libPaths()` con una ruta de otra maquina (legado, sin tocar). La entrada 2026-10-06 de este handoff tiene una ruta absoluta (regla §0): decide el user.
+
+
+2026-10-07 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: Kimi P8 (fuente RR IHD/IS) -> `__andres_control/p8kimi_Justificación_fuente_RR_cardiopatía_isquémica_y_ACV_Chile.md`
+* Premisa vieja: encargo P8 decia "A = OMS principal (actual)". User ya habia fijado B (Tabla 5 principal) el 2026-10-06. Kimi recomienda A (fuerte) y califica B "contrario", sobre todo porque no encontro el informe PUC (404).
+* El informe SI esta en repo: `_bib/PUC-SENDA Estudios de costos alcohol.pdf.tar.xz.enc` (161 pp). Tabla 5 = pp. 60-62, con B1/EE1/B2/EE2/Fact/outcome/comparador/RR bebedor antiguo. Coeficientes en `aaf_table5_ihd_is_experiment.R` coinciden con el PDF.
+* Q3 (Fact, fuente, covarianza): texto principal no lo dice. "Especificaciones propias de cada problema" en Anexo 2, que va en CD (p. 161), NO en el PDF. Refs del cap. IV no citan Roerecke&Rehm 2012 ni Patra 2010 -> "misma familia" = inferencia Kimi, no documentada. Sin covarianza (solo EE). RR bebedor antiguo IHD mort H 1.25 [1.15-1.36] / M 1.54 [1.17-2.03] = Roerecke&Rehm 2011 exacto.
+* NUEVO (no de Kimi): IHD hombres mortalidad Tabla 5 = B1*x^0.5 + B2*x^3 (misma forma FP que OMS, b1 OMS en g/dia = -0.0504 vs PUC -0.0463). B2 impreso 0.000001, EE 0.000000 -> redondeado a 6 decimales; valor real en [0.5e-6, 1.5e-6). RR a 100 g/dia = 1.04 / 1.71 / 2.82 (b2 = 0.5/1.0/1.5e-6); a 150 g/dia = 3.1 / 16.6 / 89.6. OMS: 1.00 y 1.82. El IHD hombres de Tabla 5 (59 de 73 PIF con cambio de signo) depende de un coeficiente no recuperable del PDF.
+* Kimi verificado por calculo: salto OMS IHD H en 60 g/dia 0.957 -> 1.000; cruce IHD M en 30.38 g/dia. Ok.
+* Sensibilidad "sin cardioproteccion" (Kimi C): ya decidida como limitacion (P5, Q4 = A tras P9). Sin cambio.
+* Cabecera Kimi fechada 2026-10-08 (error de fecha).
+* PENDIENTE user: mantener Tabla 5 principal para IHD hombres, o volver a OMS principal (o pedir Anexo 2 / B2 completo a Margozzini-Zitko). Decidir antes de expand_pif3.
+* DECIDIDO (user 2026-10-07): opcion b. IHD: OMS 2018/2024 principal (ambos sexos), Tabla 5 sensibilidad. IS sin cambio (Tabla 5 principal; razon PIF vs OMS 1.02-1.04). Revierte "IHD/IS Tabla 5 principal" de 2026-10-06 solo para IHD -> ajustar plan pif3. Correo a Zitko (B2 completo, covarianza, Fact, Anexo 2) redactado; si responde, re-evaluar.
+
+
+2026-10-08 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: encargo Fable nube pif2+pif3 -> `__andres_control/prompt_fable_pif2_pif3_nube_2026-10-08.md`
+* Base `ecf6637`, rama `claude/pif2-pif3-nube`. expand_pif CERRADO: no se edita ni re-ejecuta in place.
+* expand_pif2 full + expand_pif3: SOLO en la nube (GitHub Actions; si no cabe, mejora en Claude Code cloud). NUNCA en el PC del user. Eficiencia con /ponytail:ponytail.
+* Hallazgo: pif2 celda 24 (run-grid) muere por pila de C: ark (Positron) 7.6 MB vs R.exe Windows 64 MB. Linux = ulimit -s (8 MB) -> `ulimit -s unlimited` en el runner. Causa probable (no confirmada): serializar closures RR con su entorno a workers PSOCK.
+* Hallazgo: IRkernel no muestra htmltools::browsable -> celdas vacias. expand_pif c11/c40/c41 vacias en ecf6637 (pendiente user, no tocar). pif2 c13/c54 y pif3 c7/c63: arreglo de 1 linea en el encargo.
+* Hallazgo: aaf_synchronised_draws_* gitignored (~95 MB) y pif3 los necesita -> regenerar en el runner ejecutando expand_pif a una COPIA; bundles regenerados deben = _20261007.
+* Texto expand_pif corregido por el user (1beb02b, ecf6637): cat1-cat4 (solo texto; cat1-4 no entran al calculo: solo ltabs/fd + volumen continuo), fallback 2020 = 2018, 15-65, DEIS.
+* Pendiente: Fable cloud ejecuta el encargo -> PR -> GATE 2 user.
