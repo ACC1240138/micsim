@@ -34,3 +34,6 @@ data_binge_sensitivity.rds
 ENPG_*.RDS
 enpg20??.RDS
 epf_20??.rds
+
+# htmlwidgets dependencies written by the kernel when a notebook shows a DT table; regenerated on each run, embedded in the self-contained HTML
+__andres_control/lib/

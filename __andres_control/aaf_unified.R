@@ -11,7 +11,7 @@
 #   .adam_confint_paf_binge()     injuries: 2 betas + HED (2 integrales, correcto)
 #   .aaf_cv()/.cv_cell()          IHD/IS J-curve + binge (cap), RR_FD fijo
 # y UNIFICA el PIF (antes en functions.R de injuries) con el PAF, sobre la MISMA
-# poblacion: el PAF es el caso particular del PIF con eliminacion total.
+# poblacion (mismo denominador R_obs). PAF = PIF solo si R_cf = 1 (ver abajo).
 #
 # Una sola formula, con incorporacion OPCIONAL ("de haber") de:
 #   * HED / binge          -> modelo de DOS componentes (NHED + HED), sin doble conteo
@@ -32,7 +32,15 @@
 #   PAF   = (R_obs - 1) / R_obs              (= num/(num+1); R_cf = 1, "cero alcohol")
 #   PIF   = (R_obs - R_cf) / R_obs           (R_obs IDENTICO al del PAF -> comparables)
 # El denominador es el riesgo POBLACIONAL total (incluye abstemios y ex-bebedores),
-# el mismo que usa el PAF; por eso PAF = PIF(eliminacion total).
+# el mismo que usa el PAF. Por eso PAF y PIF son fracciones de las muertes TOTALES:
+#   muertes evitadas = muertes TOTALES x PIF.  NO multiplicar muertes ATRIBUIBLES x PIF:
+#   subestima por un factor 1/PAF (2.5x-5x en la grilla pif2). PIF/PAF = parte de la
+#   carga atribuible que evita el escenario (una razon, no un conteo).
+# PAF = PIF solo con eliminacion TOTAL, es decir R_cf = 1: el contrafactual tambien debe
+# borrar el exceso de ex-bebedores (p_form*RR_FD) y, en lesiones, el termino binge fijo
+# (RR_binge(x < 1) = exp(b2 + b1) = 1.77-2.62). Los escenarios "volume"/"hed" no tocan
+# p_form*RR_FD, asi que PIF(shift -> 0) < PAF: no usarlo como chequeo. Identidad exacta:
+#   PIF = (PAF - PAF_cf) / (1 - PAF_cf),  con PAF_cf = (R_cf - 1) / R_cf.
 #
 # Contrafactuales del PIF (parametro `shift` = fraccion RETENIDA; 0.9 = -10%):
 #   scenario="hed"    : una fraccion (1-shift)*p_hed deja el binge -> pasa a NHED.

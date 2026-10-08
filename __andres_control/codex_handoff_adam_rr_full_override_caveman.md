@@ -8374,3 +8374,74 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 * Hallazgo: aaf_synchronised_draws_* gitignored (~95 MB) y pif3 los necesita -> regenerar en el runner ejecutando expand_pif a una COPIA; bundles regenerados deben = _20261007.
 * Texto expand_pif corregido por el user (1beb02b, ecf6637): cat1-cat4 (solo texto; cat1-4 no entran al calculo: solo ltabs/fd + volumen continuo), fallback 2020 = 2018, 15-65, DEIS.
 * Pendiente: Fable cloud ejecuta el encargo -> PR -> GATE 2 user.
+
+2026-10-08 | DESKTOP_NDP_SGTV88L | Codex
+
+## Primary IS PIF source and local Run All request
+* User explicitly requested Table 5 PUC as the primary IS source and local Run All after importing the Fable notebook changes from commit a81ed79.
+* expand_pif3 now selects Table 5 IS result rows and synchronized PIF draws together; IHD and other causes retain WHO/Adam. Original WHO grids/draws remain separate for source comparisons.
+* Selection requires matching dated PIF artifacts, analytical coverage, applicability, MC depth, seed/draw_id, and available engine/config/scenario hashes. The IS RR-geometry audit uses the existing Table 5 records without executing its AAF experiment.
+* Helpers and synthetic checks: pif3_primary_rr_sources.R and test_pif3_primary_rr_sources.R in this directory. Synthetic checks passed; full-pipeline validation remains pending.
+* expand_pif and its AAF/mortality artifacts were not modified. The descriptive AAF mortality table remains the explicitly labelled upstream WHO/Adam reference; avoidable burden is weighted by observed DEIS deaths/YLL.
+* Run All NOT started: Windows control located the Positron window but activation failed twice. User asked to make Positron visible before proceeding. No commit or push.
+
+
+2026-10-08 | cc-cloud | Claude-Fable
+
+## CAVEMAN: pif2+pif3 en GitHub Actions: codigo + workflow listos, push bloqueado, nada corrido
+* Rama claude/pif2-pif3-nube rebasada sobre main 9ae0714 (PR #1 ya mergeado -> rama nueva desde main, misma rama).
+* expand_pif2.ipynb (patch_expand_pif2_pif3_20261008.py; celdas 13/24/26/28/30/37/48/49/54). Causa real del crash de pila y la lentitud de run-grid: clusterApplyLB serializaba run_one() CON el frame entero del orquestador (todos los jobs + closures RR con su registry env) en cada tarea. Fix = run_aaf_cells_parallel: pool de closures exportado una vez, jobs con indices (pif2_pool_rr / pif2_run_pooled). Mismo motor, mismas semillas. Tambien en celda 37 (lesiones).
+* PIF2_N_CORES (runner 4 vCPU; el bundle trae 12). PIF2_PORTION="<anio>|<sexo>": celdas 24/37/48 calculan un trozo y lo guardan en pif2_portions/<stamp>/ (gitignored); sin la variable ensamblan los 14 trozos si existen (pif2_portion_run). Celdas 26/49 se detienen en trozo.
+* IRkernel + browsable: pif2_show / pif3_show (IRdisplay::display_html si jupyter.in_kernel). pif2 c13/28/30/54, pif3 c7/63. expand_pif c11/40/41 NO tocadas (pendiente user).
+* Test: test_pif2_split.py (ecf6637 == nuevo, paralelo == serial, dividido == sin dividir; 1e-12 + draws identicos; 3 tablas x 2 olas, n_sim 2000). NO corrido: la sesion nube no tiene R ni llega a CRAN/PPM (proxy 403).
+* Workflow expand-pif2-pif3.yml: smoke (draws AAF via expand_pif a copia + bundles == _20261007 tol 1e-8 + test + 1 trozo cronometrado) | full (14 trozos en matriz, job final ensambla, valida, pif3, commit a la rama). Accion compuesta r-notebook. apply-notebook-patch.yml = parche de notebooks en el runner (un solo uso, borrar).
+* BLOQUEO: la sesion nube NO puede hacer push (git 403 "Claude doesn't have GitHub access", MCP 403 integration, gh API escritura denegada por el proxy). 3b0affc/ecf6637 los subio la cuenta ACC1240138 desde el PC. Nada corrido en GitHub; sin PR. Commit local 7c7ce7d + bundle git entregado al user.
+* pif3: ya reporta OMS "(main)" para IHD e IS. "IS Tabla 5 principal" (2026-10-06) NO implementado (sustituir filas IS + draws). Decision user: A dejar OMS principal ambos + Tabla 5 sensibilidad (recomendado), B implementar despues.
+* Pendiente: instalar app GitHub de Claude en ACC1240138/micsim (o subir el bundle desde el PC) -> push -> apply-notebook-patch -> smoke -> full -> PR -> GATE 2. estado_ACC_expand_pif.md creado.
+
+2026-10-08 | DESKTOP_NDP_SGTV88L | Codex
+
+## Import of historical Claude-Fable cloud report
+* The preceding Claude-Fable entry was imported verbatim from bundle commit a81ed79 at the user's request. It describes the earlier cloud session, not current local decisions or verified execution.
+* Its pending IS-source decision is superseded by the user-authorized local Table 5 IS selection documented above. Full Run All remains pending; no cloud run is claimed.
+* estado_ACC_expand_pif.md was imported with its historical report preserved and a separately labelled local update. Cloud workflows were not imported. Existing handoff entries were retained; no commit or push.
+
+
+2026-10-08 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: expand_pif2 Run All local (ark), parada en test lesiones
+* Run All con ark (kernel Positron) via nbclient, a pedido del user, sobre pif2 con su fix de pila. Celda 24 OK (2 h 40). Paro 13:41 en c37 `pif2-injuries-full-test`: 20/21, falla `monotone_hed_ladder` 168/168. Artefactos `*_full_20261008.rds` guardados.
+* Bug del TEST, no del motor: ordena solo por % HED y mezcla 3 reglas de salida (conservative, `_mid`, `_rt`). Dentro de cada regla: 0/168 no monotonas. Pasaba antes por suerte: stable sort dejaba conservative < `_rt`; Q7 agrego `_mid` despues de `_rt` -> rt25 0.0668 > mid25 0.0655 = "baja". Fix: agrupar por regla en `pif2_inj_ladder_bad()`. PENDIENTE user (no tocar pif2 sin permiso).
+* Fable no lo vio: no tenia R en la nube, no corrio el test completo; su smoke usa otra celda; output viejo del notebook mostraba 21/21.
+* aaf_unified.R cabecera (solo comentario): PIF = fraccion de muertes TOTALES (evitadas = totales x PIF, no atribuibles x PIF); PAF = PIF solo si R_cf = 1; PIF(shift->0) < PAF por p_form*RR_FD; identidad PIF = (PAF-PAF_cf)/(1-PAF_cf). Lesiones: RR_binge(x<1) = 1.77-2.62 -> politica de volumen no sustituye HED.
+* Ojo: nbconvert --inplace mientras el user edita = pisa texto (expand_pif 2026-10-07). Git Bash HOME -> R no ve ~/.Renviron (Documents); correr desde PowerShell.
+* Pendiente: tras pif2 entero, .md de hallazgos en lenguaje simple (pedido user).
+
+
+2026-10-08 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: expand_pif2 completo (ark, 15:11-15:53) + reutilizacion verificada
+* c24/c37 reutilizan corrida <24 h si: sha256 results/draws = manifest; engine/registry/run_cfg/scenario_grid = provenance de draws; insumos c7 mas viejos; grilla y n_sim completos. Falla -> recalcula. PIF2_REUSE=0 fuerza. Probado en copia sandbox (3 min, artefactos restaurados por sha).
+* Escalera HED arreglada (agrupa por exit_rule): 21/21. Tabla 5 calculada completa (38 min, ya con pool de closures; draws via cache 0.2 min). 29 celdas sin error.
+* Bug de TEST pendiente (permiso user): c44 `monotone_increasing_rr` mezcla 7 anos (lican_male); por ano monotono. Fallaba ya en julio. Mensaje dice "J-curve" y no lo es.
+* c24 `age_support` = "15-65" (solo etiqueta, opcion A); auditorias reutilizadas muestran "15-64" hasta recalcular.
+* aaf_unified.R: comentario nuevo de cabecera RETIRADO durante la corrida (hash del motor incluye comentarios). Copia en scratchpad de la sesion. Reponerlo => proxima corrida recalcula grilla (~2.7 h). Decide user.
+* Hallazgos en lenguaje simple: `__andres_control/hallazgos_expand_pif2_20261008.md`. PIF<0 = diabetes mujeres (no IHD/IS). IHD: Tabla 5 da PIF volumen 5-12x OMS; IS ~igual. Combinados excluyen causas sin componente HED (trampa al sumar).
+* 16:03-16:46 re-run (42.9 min, reuse OK, Table 5 recalculada): c20 aviso [aaf-args] solo si descarta algo inesperado; c48 select() sin .data$; c44 monotone_increasing_rr por ola -> 17/17. 29 celdas sin error ni avisos de tidyselect.
+* 2024 baja muertes evitadas: -87 (vol -10%) = -78 por menos muertes (-77 cirrosis K70+K74: 1828 en 2022 -> 1181 en 2024; pico pandemia 2021-22; 2023=1287, 2025=1130, no es artefacto DEIS 2024) + -9 por PIF. K70 -37% 2022->2023 sin explicar (codificacion?). Detalle en hallazgos md seccion 8.
+* aaf_unified.R: comentario de cabecera REPUESTO (opcion A, user). Solo comentarios (0 lineas de codigo). Artefactos pif2 _20261008 guardan el hash del archivo previo (es el que los produjo); una corrida pif2 nueva recalcula la grilla. pif3 no afectado (compara hashes entre bundles OMS/Tabla 5 del mismo run).
+
+
+2026-10-08 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: expand_pif3 corrido (ark, 0.8 min) sobre pif2 _20261008
+* Fable pif3 (B6/B7/B13/Q7 labels, pif3_show c7/c63) ya estaba; Codex IS=Tabla 5 principal. Sin cambios nuevos al notebook. 32 celdas sin error; validaciones 11/11, Tabla 5 10/10, monotonia 1036 ok.
+* 2024 vol -30%: 546 muertes / 16905 AVP HMD (principal, 21 causas; con C16/C25: 557 / 17216). OMS vs PUC: IHD razon mediana 3.9 H / 2.5 M; IS ~1.0; 0 desacuerdos de signo.
+* Pendiente permiso user: Fig 5 pierde "Half shift" (factor levels; 18 filas); textos desactualizados (MD 52/56/58, Fig S1 "16 escenarios", Fig 1/3 "23 causas"); .data$ en select() c11/c46. Re-correr pif3 = <1 min.
+* expand_pif2 c48: tabla "WHO vs Table 5" muestra solo head(16) = filas baseline (0). Resultados bien; no se toca pif2 (re-correr = 2.7 h).
+* _quarto.yml (salida a raiz) NO existe: quedo fuera en la migracion desde expandPIF. HTML queda en __andres_control/.
+* Hallazgos: `__andres_control/hallazgos_expand_pif3_20261008.md`.
+* pif3 corregido y re-corrido (<1 min, 0 avisos): Fig 5 con Half shift (factor levels + dodge -1.1/0/+1.1; el NA de la leyenda venia de ahi); textos MD 8/10/28/32/39/41/50/52/56/58/61 al dia; 8 .data$ en select() (c11/c46). Patch: scratchpad patch_pif3_20261008.py. md: seccion 9 compara con corrida 2026-07-24 (volumen x2 por V1; HED +4-8%; IHD PUC/OMS 1.6->3.9; 73->0 signos).
+* pif3 vistas previas: pif3_preview_base_size <- 14 (c27; antes 20-23) + geom_text preview size 12->4 (c33/35/36). ark dibuja a 800x600 e ignora fig-width. TIFF/PDF exportados sin cambio. md pif3 seccion 7 detalla textos corregidos.
+* `__andres_control/_quarto.yml` repuesto (user): project type default, output-dir `..` -> HTML de notebooks de __andres_control en la raiz. Ruta relativa (multiplataforma); type default no limpia output-dir (website lo borraria = raiz). Probado en sandbox (testigo en raiz intacto) y real (pif2/pif3 -> raiz). Motivo de exclusion 2026-10-05 (DELL_LR) no registrado; repo viejo no accesible. Pendiente user: `__andres_control/expand_pif.html` (en git) duplicado viejo; mover a raiz al re-renderizar.
+* _quarto.yml render: "*.ipynb" + "!*.before_recovery_*.ipynb" (probado en sandbox). Render/preview de un notebook = solo ese; bare quarto render = todos.

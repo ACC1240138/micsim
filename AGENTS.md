@@ -119,4 +119,7 @@ passing unit tests is not full-pipeline validation.
 - ENPG, DEIS, EPS and EPF are public, anonymized sources. Notebook outputs (and their rendered HTML) may show
   example rows; mask clear quasi-identifiers (e.g. `comuna`) only in what is displayed. Raw microdata files still go
   to git only as encrypted bundles.
+- Publishable outputs stay in plain text, never in `acc_pack()` bundles: exported figures (`figure*.pdf`, `figure*.tiff`,
+  e.g. `__andres_control/figures_expand_pif3/`), aggregated tables and rendered HTML. Encryption is only for microdata,
+  intermediates derived from it, and copyrighted literature in `_bib/`.
 - Layout and provenance of each source: the `README.md` of `_enpg/`, `_eps/`, `_deis/`, `_epf/` and `_bib/`.
