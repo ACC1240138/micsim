@@ -19,7 +19,9 @@ acc_root <- function(path = getwd()) {
 
 acc_key <- function() {
   key <- Sys.getenv("ACC_DATA_KEY")
-  if (!nzchar(key)) stop("ACC_DATA_KEY is not set (~/.Renviron locally, repository secret on GitHub).")
+  if (!nzchar(key)) stop("ACC_DATA_KEY is not set (repository secret on GitHub). Locally R read ", file.path(path.expand("~"), ".Renviron"),
+                         " (found: ", file.exists("~/.Renviron"), ") and the project-root .Renviron. Windows + Git Bash: ",
+                         "HOME hides the file in Documents, so set R_USER once (INSTALL.md section 3) and open a new terminal.")
   key
 }
 
