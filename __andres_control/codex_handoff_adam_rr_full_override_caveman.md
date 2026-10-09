@@ -8454,3 +8454,17 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 * Fix por PC Windows (una vez, PowerShell): `R_USER` de usuario = Documentos (INSTALL.md §3). Reemplaza el "correr desde PowerShell" de la entrada anterior.
 * `.Rprofile` raiz: lee siempre ~/.Renviron (o R_ENVIRON_USER) y luego .Renviron raiz si existe. Antes, con .Renviron raiz presente, R arrancado en la raiz ignoraba ~/.Renviron (R lee uno solo).
 * Validado solo por CI (renv-check Linux/Windows/macOS, data-check); la nube no tiene R. Falta probar en Windows real desde Git Bash: `Rscript -e 'nzchar(Sys.getenv("ACC_DATA_KEY"))'`.
+
+
+2026-10-09 | cc-cloud | Claude
+
+## CAVEMAN: plan microsim revisado (5 items + entregable lunes 12-oct) + auditoria con datos reales
+* Plan: `__andres_control/plan_microsim_integracion_2026-10-09.md`. Anexos: `__andres_control/auditoria_microsim_2026-10-09/` (10 informes; 4 con verify independiente). Investigacion: `reports/Microsimulación de alcohol y mortalidad.md` + `research_notes/`. Nada de codigo/notebooks/salidas del repo cambiado.
+* Nube: R 4.3.3 apt FUERA de renv (PPM bloqueado), datos via acc_data/acc_deis a tempdir. Cifras a re-correr localmente con renv antes de citar.
+* HED -4,5 pp (media no ponderada 56 celdas; ponderado -5,3; 2018 -11): causa = ley Gamma de g/dia con demasiada masa cerca de 0, NO definicion (-0,12) ni dinamica (invariante a rho). Fix A offset celda x ola (calibracion por construccion); Fix B ley empirica (analitico, sin simular).
+* Persistencia: EPS mismas 1.744 personas 50+: rasgo+AR(1) lambda 0,453 / phi 0,679; AR(1) puro rechazado. Motor nunca 6,3 % vs ENPG 16-21 %: faltan abstemios de por vida (stayers); s no identificada por EPS. Para RR usar estado reportado transversal (regla SIMAH, D4b).
+* Mortalidad: deriva = denominador (exposicion HMD bajo stock INE), no muertes. Usar m = DEIS/INE + q a edad de enero; normalizador RR ponderado por hazard calculado en el control. Salidas `microsim_*_outputs` obsoletas (DEIS viejo, 1.815 muertes infantiles): no citar 0,970/0,945.
+* Puente RR: AAF persona-nivel = expand_pif a 5,8e-4 (poblacion sintetica, no motor); 2024 atribuibles 3.257,4 vs 3.258,0. Exbebedor 30 dias en ambos pipelines; 42,1 % bebio en el ano.
+* Bugs: locale C pierde 4.244 exbebedores (match "> 1 año"); test_aaf_compute/test_aaf_unified fallan (B9); dos vintages INE; DEIS 2024 provisional.
+* SIMAH leido en github charlotteprobst/simah v1.0.1 commit 2fd8c1ea8c95de0a7137e31db2560a5ceb60339d (equivalencia con Zenodo 0.1.1 no verificada). Plantilla IB + RR por causa = Lemp 2026, no Kilian 2025.
+* Pendiente user: decisiones de la tabla §5 del plan (escala/duracion IB, elegibilidad, HED, D3, D13); implementar `microsim_engine.R` + demo + test (§2) en maquina local con renv. Nada aprobado por ACC (Q24).
