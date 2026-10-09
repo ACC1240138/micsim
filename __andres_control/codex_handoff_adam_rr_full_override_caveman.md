@@ -8468,3 +8468,13 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 * Bugs: locale C pierde 4.244 exbebedores (match "> 1 año"); test_aaf_compute/test_aaf_unified fallan (B9); dos vintages INE; DEIS 2024 provisional.
 * SIMAH leido en github charlotteprobst/simah v1.0.1 commit 2fd8c1ea8c95de0a7137e31db2560a5ceb60339d (equivalencia con Zenodo 0.1.1 no verificada). Plantilla IB + RR por causa = Lemp 2026, no Kilian 2025.
 * Pendiente user: decisiones de la tabla §5 del plan (escala/duracion IB, elegibilidad, HED, D3, D13); implementar `microsim_engine.R` + demo + test (§2) en maquina local con renv. Nada aprobado por ACC (Q24).
+
+
+2026-10-09 | cc-cloud | Claude
+
+## CAVEMAN: especificacion formal del microsimulador BASE en formato del user
+* Doc: `__andres_control/microsim_especificacion_formal_2026-10-09.md` (formato del user: Parametros, Insumos, flujo anual, secciones 0-5 + mortalidad, stocks INE, validacion, ejemplo trabajado, tabla de 22 diferencias user vs codigo). Scripts: `__andres_control/auditoria_microsim_2026-10-09/scripts_especificacion_2026-10-09.tar.gz` (rutas de marcador). Ningun codigo/notebook cambiado.
+* Spec del user = notebook BASE (`ms_fit(2020)`, semillas 20260917+0:4, rho 0,8). Proyeccion 2025-2034 del notebook usa `ms_fit(2024)` (7 olas) y 1 semilla, no el modelo de entrenamiento.
+* Recalculado hoy (R 4.3.3 fuera de renv, DEIS 06102026): held-out prevalencia +9,71 pp / RMSE 10,22 / 0-16; g/d RMSE 1,11; HED RMSE 5,58. kappa train 0,9699 (M) / 0,9524 (H). Cambio vs export guardado = solo DEIS nuevo (sin 1.815 muertes infantiles).
+* Diferencias clave user vs codigo: (1) ex/nunca: codigo runif una vez al entrar; regla latente del user cada ano (V2) empeora nunca 2024 a 2,0 % (V0 5,0; V1 latente solo al entrar 6,6; ENPG 25,8) -> recomendado V1, no V2; (2) U_amount = U/p0 es errata (no es percentil); U/pc invertiria el orden; codigo usa latente propia; (3) mu y gamma HED por celda, no aditivos; HED sin ano y solo g>0; (4) categorias: cat0 mezcla no actuales; bordes [ ) vs ( ]; escala encuesta (D3); (5) INE 30-jun y HMD mx no se usan: motor usa qx HMD^kappa.
+* Pendiente user: decidir filas de la tabla §10 del doc; re-correr localmente con renv antes de citar.
