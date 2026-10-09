@@ -24,8 +24,8 @@
 "train2020_static2012","hed","cellmale:3",-3.44313149944885,"static2012",2020,FALSE
 "train2020_static2012","hed","cellmale:4",-4.12687922877022,"static2012",2020,FALSE
 "train2020_static2012","hed","base::log1p(gpd_survey)",2.34349847459725,"static2012",2020,FALSE
-"train2020_static2012","all_cause_mortality","female",0.976675998119906,"static2012",2020,FALSE
-"train2020_static2012","all_cause_mortality","male",0.957068652665794,"static2012",2020,FALSE
+"train2020_static2012","all_cause_mortality","female",0.969940178423565,"static2012",2020,FALSE
+"train2020_static2012","all_cause_mortality","male",0.952405323446457,"static2012",2020,FALSE
 "train2020_interp_hold","prevalence","knot:female:1:2012",-0.559602921556046,"interp_hold",2020,FALSE
 "train2020_interp_hold","prevalence","knot:female:1:2014",-0.273104378056343,"interp_hold",2020,FALSE
 "train2020_interp_hold","prevalence","knot:female:1:2016",-0.218837064761335,"interp_hold",2020,FALSE
@@ -115,8 +115,8 @@
 "train2020_interp_hold","hed","cellmale:3",-3.44313149944885,"interp_hold",2020,FALSE
 "train2020_interp_hold","hed","cellmale:4",-4.12687922877022,"interp_hold",2020,FALSE
 "train2020_interp_hold","hed","base::log1p(gpd_survey)",2.34349847459725,"interp_hold",2020,FALSE
-"train2020_interp_hold","all_cause_mortality","female",0.976675998119906,"interp_hold",2020,FALSE
-"train2020_interp_hold","all_cause_mortality","male",0.957068652665794,"interp_hold",2020,FALSE
+"train2020_interp_hold","all_cause_mortality","female",0.969940178423565,"interp_hold",2020,FALSE
+"train2020_interp_hold","all_cause_mortality","male",0.952405323446457,"interp_hold",2020,FALSE
 "train2020_linear_all","prevalence","cellfemale:1",-0.400046984499389,"linear_all",2020,FALSE
 "train2020_linear_all","prevalence","cellfemale:2",-0.346691539471751,"linear_all",2020,FALSE
 "train2020_linear_all","prevalence","cellfemale:3",-0.509424827782451,"linear_all",2020,FALSE
@@ -158,8 +158,8 @@
 "train2020_linear_all","hed","cellmale:3",-3.44313149944885,"linear_all",2020,FALSE
 "train2020_linear_all","hed","cellmale:4",-4.12687922877022,"linear_all",2020,FALSE
 "train2020_linear_all","hed","base::log1p(gpd_survey)",2.34349847459725,"linear_all",2020,FALSE
-"train2020_linear_all","all_cause_mortality","female",0.976675998119906,"linear_all",2020,FALSE
-"train2020_linear_all","all_cause_mortality","male",0.957068652665794,"linear_all",2020,FALSE
+"train2020_linear_all","all_cause_mortality","female",0.969940178423565,"linear_all",2020,FALSE
+"train2020_linear_all","all_cause_mortality","male",0.952405323446457,"linear_all",2020,FALSE
 "train2020_spline_shared","prevalence","cellfemale:1",-0.498016970083471,"spline_shared",2020,FALSE
 "train2020_spline_shared","prevalence","cellfemale:2",-0.3860960965164,"spline_shared",2020,FALSE
 "train2020_spline_shared","prevalence","cellfemale:3",-0.614658109398374,"spline_shared",2020,FALSE
@@ -189,8 +189,8 @@
 "train2020_spline_shared","hed","cellmale:3",-3.44313149944885,"spline_shared",2020,FALSE
 "train2020_spline_shared","hed","cellmale:4",-4.12687922877022,"spline_shared",2020,FALSE
 "train2020_spline_shared","hed","base::log1p(gpd_survey)",2.34349847459725,"spline_shared",2020,FALSE
-"train2020_spline_shared","all_cause_mortality","female",0.976675998119906,"spline_shared",2020,FALSE
-"train2020_spline_shared","all_cause_mortality","male",0.957068652665794,"spline_shared",2020,FALSE
+"train2020_spline_shared","all_cause_mortality","female",0.969940178423565,"spline_shared",2020,FALSE
+"train2020_spline_shared","all_cause_mortality","male",0.952405323446457,"spline_shared",2020,FALSE
 "reconstruction2024_interp_hold","prevalence","knot:female:1:2012",-0.559602921556046,"interp_hold",2024,FALSE
 "reconstruction2024_interp_hold","prevalence","knot:female:1:2014",-0.273104378056343,"interp_hold",2024,FALSE
 "reconstruction2024_interp_hold","prevalence","knot:female:1:2016",-0.218837064761335,"interp_hold",2024,FALSE
@@ -312,8 +312,8 @@
 "reconstruction2024_interp_hold","hed","cellmale:3",-3.43187585534892,"interp_hold",2024,FALSE
 "reconstruction2024_interp_hold","hed","cellmale:4",-4.0179337950418,"interp_hold",2024,FALSE
 "reconstruction2024_interp_hold","hed","base::log1p(gpd_survey)",2.30013220711777,"interp_hold",2024,FALSE
-"reconstruction2024_interp_hold","all_cause_mortality","female",0.969976905794678,"interp_hold",2024,FALSE
-"reconstruction2024_interp_hold","all_cause_mortality","male",0.944948622365421,"interp_hold",2024,FALSE
+"reconstruction2024_interp_hold","all_cause_mortality","female",0.964468198994437,"interp_hold",2024,FALSE
+"reconstruction2024_interp_hold","all_cause_mortality","male",0.941261826280727,"interp_hold",2024,FALSE
 "refit2024_linear_all","prevalence","cellfemale:1",-0.315629697533539,"linear_all",2024,FALSE
 "refit2024_linear_all","prevalence","cellfemale:2",-0.246280669995184,"linear_all",2024,FALSE
 "refit2024_linear_all","prevalence","cellfemale:3",-0.404519103673558,"linear_all",2024,FALSE
@@ -355,8 +355,8 @@
 "refit2024_linear_all","hed","cellmale:3",-3.43187585534892,"linear_all",2024,FALSE
 "refit2024_linear_all","hed","cellmale:4",-4.0179337950418,"linear_all",2024,FALSE
 "refit2024_linear_all","hed","base::log1p(gpd_survey)",2.30013220711777,"linear_all",2024,FALSE
-"refit2024_linear_all","all_cause_mortality","female",0.969976905794678,"linear_all",2024,FALSE
-"refit2024_linear_all","all_cause_mortality","male",0.944948622365421,"linear_all",2024,FALSE
+"refit2024_linear_all","all_cause_mortality","female",0.964468198994437,"linear_all",2024,FALSE
+"refit2024_linear_all","all_cause_mortality","male",0.941261826280727,"linear_all",2024,FALSE
 "refit2024_spline_shared","prevalence","cellfemale:1",-0.463634927521149,"spline_shared",2024,FALSE
 "refit2024_spline_shared","prevalence","cellfemale:2",-0.322117775269077,"spline_shared",2024,FALSE
 "refit2024_spline_shared","prevalence","cellfemale:3",-0.594928900555262,"spline_shared",2024,FALSE
@@ -386,5 +386,5 @@
 "refit2024_spline_shared","hed","cellmale:3",-3.43187585534892,"spline_shared",2024,FALSE
 "refit2024_spline_shared","hed","cellmale:4",-4.0179337950418,"spline_shared",2024,FALSE
 "refit2024_spline_shared","hed","base::log1p(gpd_survey)",2.30013220711777,"spline_shared",2024,FALSE
-"refit2024_spline_shared","all_cause_mortality","female",0.969976905794678,"spline_shared",2024,FALSE
-"refit2024_spline_shared","all_cause_mortality","male",0.944948622365421,"spline_shared",2024,FALSE
+"refit2024_spline_shared","all_cause_mortality","female",0.964468198994437,"spline_shared",2024,FALSE
+"refit2024_spline_shared","all_cause_mortality","male",0.941261826280727,"spline_shared",2024,FALSE

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- saved from url=(0136)file:///C:/Users/nDP/AppData/Local/Temp/MicrosoftEdgeDownloads/587298b5-41e9-4801-a528-a2d7b2364d3a/M%C3%B3dulo%20DIR%20en%20micsim.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Módulo DIR en micsim</title>
+<link rel="stylesheet" href="./2026_10_09_Modulo_DIR_micsim_files/css2">
+<style>
+/* Layout: one column; each figure is a claim, an SVG that shows the mechanism, and the decisions it leaves open. */
+:root {
+  --bg: #f3f6f7;
+  --surface: #ffffff;
+  --fg: #16232b;
+  --muted: #566771;
+  --line: #c3cfd6;
+  --accent: #0a7c76;
+  --accent-soft: #d6ede9;
+  --on-accent: #ffffff;
+  --warn: #9c4300;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1418;
+    --surface: #151d23;
+    --fg: #e3ebef;
+    --muted: #92a3ad;
+    --line: #2b3943;
+    --accent: #43c6bb;
+    --accent-soft: #123836;
+    --on-accent: #06211f;
+    --warn: #f0a45f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1418;
+  --surface: #151d23;
+  --fg: #e3ebef;
+  --muted: #92a3ad;
+  --line: #2b3943;
+  --accent: #43c6bb;
+  --accent-soft: #123836;
+  --on-accent: #06211f;
+  --warn: #f0a45f;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font: 15px/1.55 var(--font-body); padding-inline: 16px; padding-block: 28px 56px; }
+main { max-width: 980px; margin-inline: auto; display: flex; flex-direction: column; gap: 40px; }
+h1 { font-size: 26px; line-height: 1.2; font-weight: 600; margin: 0 0 8px; text-wrap: balance; }
+h2 { font-size: 18px; line-height: 1.3; font-weight: 600; margin: 0 0 6px; text-wrap: balance; }
+p { margin: 0; max-width: 68ch; }
+.lede { color: var(--muted); }
+.tag { font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+section { display: flex; flex-direction: column; gap: 12px; }
+figure { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.scroll { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+.scroll svg { display: block; width: 100%; min-width: 820px; height: auto; color: var(--fg); }
+figcaption { color: var(--muted); font-size: 14px; max-width: 74ch; }
+ul.open { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 4px; max-width: 74ch; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+td:first-child { font-weight: 600; white-space: nowrap; }
+code { font: 13px var(--font-mono); }
+.note { font-size: 13px; color: var(--muted); max-width: 74ch; }
+
+/* SVG vocabulary, all colors from tokens */
+svg .t  { font: 12px var(--font-body); fill: currentColor; }
+svg .tb { font: 600 12.5px var(--font-body); fill: currentColor; }
+svg .ts { font: 11px var(--font-body); fill: var(--muted); }
+svg .tm { font: 11px var(--font-mono); fill: var(--muted); }
+svg .ta { font: 600 12.5px var(--font-body); fill: var(--accent); }
+svg .tw { font: 12px var(--font-body); fill: var(--warn); }
+svg .tx { font: 600 12px var(--font-body); fill: var(--on-accent); }
+svg .c  { text-anchor: middle; }
+svg .box   { fill: var(--surface); stroke: var(--line); stroke-width: 1.5; }
+svg .slot  { fill: none; stroke: var(--line); stroke-width: 1.5; stroke-dasharray: 5 4; }
+svg .dir   { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; }
+svg .solid { fill: var(--accent); }
+svg .cont  { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 6 4; }
+svg .ln    { stroke: currentColor; stroke-width: 1.5; fill: none; }
+svg .lna   { stroke: var(--accent); stroke-width: 1.8; fill: none; }
+svg .lnw   { stroke: var(--warn); stroke-width: 1.3; fill: none; stroke-dasharray: 3 3; }
+svg .grid  { stroke: currentColor; stroke-width: 1; opacity: .12; }
+svg .cut   { stroke: currentColor; stroke-width: 1.3; opacity: .55; stroke-dasharray: 4 4; fill: none; }
+svg .fit   { fill: currentColor; opacity: .2; }
+svg .on    { fill: currentColor; }
+svg .off   { fill: none; stroke: currentColor; stroke-width: 1.5; }
+svg .mk    { fill: currentColor; }
+svg .mka   { fill: var(--accent); }
+</style>
+
+<main>
+  <header>
+    <p class="tag">micsim · propuesta de diseño</p>
+    <h1>Módulo DIR en la microsimulación</h1>
+    <p class="lede">DIR es el programa chileno de detección, intervención y referencia asistida (tamizaje AUDIT y intervención breve, BI, en atención primaria). Tres diagramas muestran dónde entraría en lo que ya existe: la evaluación temporal de §9, el ciclo anual del motor y la cadena hasta muertes y YPLL. Los parámetros salen de <code>research_notes/Microsimulación de alcohol y mortalidad/intervencion_breve.md</code> y son propuestas, no resultados.</p>
+  </header>
+
+  <section>
+    <div>
+      <p class="tag">1 · Evaluación temporal (§9)</p>
+      <h2>DIR ya está dentro de las ondas que §9 usa para probar</h2>
+    </div>
+    <figure>
+      <div class="scroll">
+        <svg viewBox="0 0 900 400" role="img" aria-label="Línea de tiempo 2012 a 2034. Las cuatro predicciones de §9 usan ondas hasta 2024 y llegan a 2 ondas. DIR actual está incluido en todas las ondas observadas. El incremento de DIR empieza en 2025, a 5 ondas del último dato, sin prueba temporal propia.">
+          <defs>
+            <marker id="ar1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="mk"></path></marker>
+          </defs>
+          <!-- year grid -->
+          <g class="grid"><line x1="60" y1="30" x2="60" y2="346"></line><line x1="128" y1="30" x2="128" y2="346"></line><line x1="196" y1="30" x2="196" y2="346"></line><line x1="264" y1="30" x2="264" y2="346"></line><line x1="332" y1="30" x2="332" y2="346"></line><line x1="400" y1="30" x2="400" y2="346"></line><line x1="468" y1="30" x2="468" y2="346"></line><line x1="536" y1="30" x2="536" y2="346"></line><line x1="604" y1="30" x2="604" y2="346"></line><line x1="672" y1="30" x2="672" y2="346"></line><line x1="740" y1="30" x2="740" y2="346"></line><line x1="808" y1="30" x2="808" y2="346"></line></g>
+          <g class="tm c"><text x="60" y="20">2012</text><text x="128" y="20">2014</text><text x="196" y="20">2016</text><text x="264" y="20">2018</text><text x="332" y="20">2020</text><text x="400" y="20">2022</text><text x="468" y="20">2024</text><text x="536" y="20">2026</text><text x="604" y="20">2028</text><text x="672" y="20">2030</text><text x="740" y="20">2032</text><text x="808" y="20">2034</text></g>
+
+          <!-- survey waves -->
+          <text x="10" y="52" class="tb">Ondas ENPG: ● observadas, ○ por venir</text>
+          <g class="on"><circle cx="60" cy="70" r="5"></circle><circle cx="128" cy="70" r="5"></circle><circle cx="196" cy="70" r="5"></circle><circle cx="264" cy="70" r="5"></circle><circle cx="332" cy="70" r="5"></circle><circle cx="400" cy="70" r="5"></circle><circle cx="468" cy="70" r="5"></circle></g>
+          <g class="off" style="stroke-dasharray:3 3"><circle cx="536" cy="70" r="5"></circle><circle cx="604" cy="70" r="5"></circle><circle cx="672" cy="70" r="5"></circle><circle cx="740" cy="70" r="5"></circle><circle cx="808" cy="70" r="5"></circle></g>
+
+          <!-- rolling-origin rows -->
+          <text x="10" y="106" class="tb">Rolling-origin de §9: la barra es el ajuste hasta el corte; la flecha, la predicción a la onda siguiente</text>
+          <rect x="60" y="124" width="136" height="8" class="fit"></rect><circle cx="196" cy="128" r="4" class="on"></circle><line x1="202" y1="128" x2="255" y2="128" class="ln" marker-end="url(#ar1)"></line><circle cx="264" cy="128" r="5" class="off"></circle><text x="278" y="132" class="tm">corte 2016 → predice 2018</text>
+          <rect x="60" y="146" width="204" height="8" class="fit"></rect><circle cx="264" cy="150" r="4" class="on"></circle><line x1="270" y1="150" x2="323" y2="150" class="ln" marker-end="url(#ar1)"></line><circle cx="332" cy="150" r="5" class="off"></circle><text x="346" y="154" class="tm">corte 2018 → predice 2020</text>
+          <rect x="60" y="168" width="272" height="8" class="fit"></rect><circle cx="332" cy="172" r="4" class="on"></circle><line x1="338" y1="172" x2="391" y2="172" class="ln" marker-end="url(#ar1)"></line><circle cx="400" cy="172" r="5" class="off"></circle><text x="414" y="176" class="tm">corte 2020 → predice 2022</text>
+          <rect x="60" y="190" width="340" height="8" class="fit"></rect><circle cx="400" cy="194" r="4" class="on"></circle><line x1="406" y1="194" x2="459" y2="194" class="ln" marker-end="url(#ar1)"></line><circle cx="468" cy="194" r="5" class="off"></circle><text x="482" y="198" class="tm">corte 2022 → predice 2024</text>
+
+          <!-- DIR already in data -->
+          <text x="10" y="228" class="tb">DIR actual (desde 2011): ya está en el consumo observado y, por tanto, en la línea base</text>
+          <rect x="60" y="238" width="748" height="18" class="dir"></rect>
+          <text x="70" y="251" class="t">≈8% de la población tamizada por año en 2018; BI a ≈6% de los tamizados</text>
+
+          <!-- projection -->
+          <text x="10" y="290" class="tb">Proyección 2025–2034</text>
+          <rect x="502" y="300" width="306" height="16" class="box"></rect><text x="510" y="312" class="t">regla base: hold-last (escenario central)</text>
+          <rect x="502" y="322" width="306" height="16" class="solid"></rect><text x="510" y="334" class="tx">+ BI nueva por DIR: solo el incremento</text>
+
+          <!-- last data + horizon -->
+          <line x1="485" y1="30" x2="485" y2="100" class="cut"></line><line x1="485" y1="206" x2="485" y2="346" class="cut"></line>
+          <text x="478" y="362" class="tm" text-anchor="end">último dato: 2024</text>
+          <path d="M468 372V380H808V372" class="ln"></path>
+          <text x="638" y="395" class="t c">10 años = 5 ondas adelante; §9 evaluó hasta 2 ondas (4 años)</text>
+        </svg>
+      </div>
+      <figcaption>§9 prueba solo la curva base, a 1 y 2 ondas. Como DIR ya opera en todas las ondas observadas, ninguna onda lo aísla: su incremento, que empieza en 2025, queda fuera de esa prueba y es un supuesto del escenario.</figcaption>
+    </figure>
+    <ul class="open">
+      <li>Con el principio de SIMAH, solo se simula la BI <em>nueva</em> respecto de la línea base; la BI actual ya está en el consumo observado.</li>
+      <li>§16 propone hold-last como escenario central. Propuesta: el incremento de DIR se suma a esa regla y no a la spline, cuya extrapolación a 10 años no es creíble.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div>
+      <p class="tag">2 · Ciclo anual del motor</p>
+      <h2>DIR se inserta en el paso 5, entre el g/día continuo y las categorías</h2>
+    </div>
+    <figure>
+      <div class="scroll">
+        <svg viewBox="0 0 900 500" role="img" aria-label="Ciclo anual de cinco pasos: registro de enero, muerte, envejecimiento, reconciliación de stock, exposición del año siguiente. El módulo DIR se inserta dentro del paso cinco, entre el g por día continuo y la recodificación de categorías. El paso dos, muerte, no cambia.">
+          <defs>
+            <marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="mk"></path></marker>
+            <marker id="ar2a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="mka"></path></marker>
+          </defs>
+          <!-- loop back -->
+          <path d="M780 44V24H80V42" class="ln" marker-end="url(#ar2)"></path>
+          <text x="430" y="17" class="tm c">año siguiente</text>
+
+          <!-- five steps -->
+          <rect x="10" y="44" width="140" height="64" rx="4" class="box"></rect>
+          <text x="80" y="68" class="tb c">1 · Registro</text><text x="80" y="88" class="ts c">enero, antes de muertes</text>
+          <rect x="185" y="44" width="140" height="64" rx="4" class="box"></rect>
+          <text x="255" y="68" class="tb c">2 · Muerte</text><text x="255" y="88" class="ts c">all-cause, por sexo</text>
+          <rect x="360" y="44" width="140" height="64" rx="4" class="box"></rect>
+          <text x="430" y="68" class="tb c">3 · Envejece</text><text x="430" y="88" class="ts c">sale a los 66 años</text>
+          <rect x="535" y="44" width="140" height="64" rx="4" class="box"></rect>
+          <text x="605" y="68" class="tb c">4 · Reconcilia</text><text x="605" y="88" class="ts c">stock INE de enero</text>
+          <rect x="710" y="44" width="140" height="64" rx="4" class="dir"></rect>
+          <text x="780" y="68" class="ta c">5 · Exposición</text><text x="780" y="88" class="ts c">del año siguiente</text>
+          <g><line x1="152" y1="76" x2="183" y2="76" class="ln" marker-end="url(#ar2)"></line><line x1="327" y1="76" x2="358" y2="76" class="ln" marker-end="url(#ar2)"></line><line x1="502" y1="76" x2="533" y2="76" class="ln" marker-end="url(#ar2)"></line><line x1="677" y1="76" x2="708" y2="76" class="ln" marker-end="url(#ar2)"></line></g>
+
+          <!-- hinge: death does not change -->
+          <line x1="255" y1="110" x2="255" y2="119" class="lnw"></line>
+          <text x="255" y="133" class="tw c">no cambia con DIR:</text>
+          <text x="255" y="148" class="tw c">las muertes cambian vía PIF (fig. 3)</text>
+
+          <!-- zoom into step 5 -->
+          <line x1="780" y1="110" x2="780" y2="168" class="lna"></line>
+          <rect x="10" y="168" width="880" height="318" rx="6" class="cont"></rect>
+          <text x="24" y="190" class="ta">Paso 5 por dentro: ms_exposure()</text>
+
+          <rect x="26" y="206" width="150" height="112" rx="4" class="box"></rect>
+          <text x="101" y="228" class="tb c">Persistencia</text><text x="101" y="248" class="ts c">AR(1) latente</text><text x="101" y="264" class="ts c">rho = 0,8 (supuesto)</text>
+          <rect x="206" y="206" width="150" height="112" rx="4" class="box"></rect>
+          <text x="281" y="228" class="tb c">Drivers del año</text><text x="281" y="248" class="ts c">p_current y g/día</text><text x="281" y="264" class="ts c">por sexo × edad</text><text x="281" y="280" class="ts c">(regla base de §9)</text>
+          <rect x="386" y="206" width="150" height="112" rx="4" class="box"></rect>
+          <text x="461" y="228" class="tb c">g/día continuo</text><text x="461" y="248" class="ts c">gamma por celda;</text><text x="461" y="264" class="ts c">conserva a quienes</text><text x="461" y="280" class="ts c">declaran 0 g/día</text>
+
+          <rect x="566" y="206" width="170" height="268" rx="4" class="dir"></rect>
+          <text x="578" y="228" class="ta">Módulo DIR (nuevo)</text>
+          <text x="578" y="252" class="t">a) Cascada anual</text><text x="578" y="268" class="ts">contacto APS → tamizaje</text><text x="578" y="283" class="ts">→ AUDIT 8–15 → BI</text>
+          <text x="578" y="306" class="t">b) Solo BI nueva</text><text x="578" y="322" class="ts">g/día × (1 + r)</text>
+          <text x="578" y="345" class="t">c) HED → no-HED</text><text x="578" y="361" class="ts">con p = 0,07, aparte</text>
+          <text x="578" y="384" class="t">d) Decae el efecto</text><text x="578" y="400" class="ts">de las BI anteriores</text>
+          <text x="578" y="425" class="tw">No crea abstemios.</text>
+          <text x="578" y="443" class="ts">Estado nuevo por persona:</text><text x="578" y="458" class="ts">año de la última BI y su r</text>
+
+          <rect x="766" y="206" width="118" height="112" rx="4" class="box"></rect>
+          <text x="825" y="228" class="tb c">Recodifica</text><text x="825" y="244" class="tb c">categorías</text><text x="825" y="264" class="ts c">después del g/día</text><text x="825" y="280" class="ts c">sin huecos en</text><text x="825" y="296" class="ts c">19,99/20 y 39,99/40</text>
+          <g><line x1="178" y1="262" x2="204" y2="262" class="ln" marker-end="url(#ar2)"></line><line x1="358" y1="262" x2="384" y2="262" class="ln" marker-end="url(#ar2)"></line><line x1="538" y1="262" x2="564" y2="262" class="lna" marker-end="url(#ar2a)"></line><line x1="738" y1="262" x2="764" y2="262" class="lna" marker-end="url(#ar2a)"></line></g>
+
+          <text x="26" y="352" class="tb">Hoy, sin DIR: el g/día continuo pasa directo a recodificar.</text>
+          <text x="26" y="374" class="t">Con DIR se inserta entre los dos: es el único cambio de arquitectura.</text>
+          <text x="26" y="396" class="t">Mismo orden que AGENTS.md §3: quién recibe BI → efecto →</text>
+          <text x="26" y="412" class="t">actualizar g/día continuo → recodificar categorías.</text>
+          <text x="26" y="440" class="ts">r base ≈ −8% (Kaner 2018); alternativas −12% H / −16% M (Manthey), −12,3% (SAPM).</text>
+        </svg>
+      </div>
+      <figcaption>El motor recorre cinco pasos por año. DIR modifica el g/día continuo dentro del paso 5, antes de derivar categorías, y agrega dos variables de estado por persona. La muerte del paso 2 sigue siendo independiente de la exposición.</figcaption>
+    </figure>
+    <ul class="open">
+      <li>Elegibilidad: DIR usa AUDIT 8–15 y la ENPG entrega g/día. Hay que mapear a bandas de g/día (SIMAH usa más de 20 en mujeres y más de 40 en hombres) o a AUDIT-C si la ENPG lo trae (no verificado).</li>
+      <li>Repetición: propuesta de reiniciar el reloj de decaimiento con cada BI nueva, sin acumular reducciones; la alternativa es una BI por persona (SAPM).</li>
+    </ul>
+  </section>
+
+  <section>
+    <div>
+      <p class="tag">3 · Integración</p>
+      <h2>Una sola rama agrega un paso; la diferencia sale del módulo PIF</h2>
+    </div>
+    <figure>
+      <div class="scroll">
+        <svg viewBox="0 0 900 400" role="img" aria-label="Dos ramas desde la misma población y semilla. La rama A es la línea base y no tiene BI nueva. La rama B agrega el paso de DIR que reduce el g por día y cambia HED. Ambas pasan por categorías y por el módulo PIF y RR, y la diferencia A menos B son las muertes y YPLL evitados.">
+          <defs>
+            <marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="mk"></path></marker>
+            <marker id="ar3a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" class="mka"></path></marker>
+          </defs>
+          <!-- shared start -->
+          <rect x="10" y="160" width="120" height="60" rx="4" class="box"></rect>
+          <text x="70" y="182" class="tb c">Misma población</text><text x="70" y="198" class="ts c">y semilla en A y B</text><text x="70" y="212" class="ts c">(comparación pareada)</text>
+          <path d="M130 190H155V88H178" class="ln" marker-end="url(#ar3)"></path>
+          <path d="M130 190H155V285H178" class="ln" marker-end="url(#ar3)"></path>
+
+          <!-- lane A -->
+          <text x="180" y="46" class="tb">A · Línea base (DIR actual ya incluido)</text>
+          <rect x="180" y="60" width="120" height="56" rx="4" class="box"></rect><text x="240" y="84" class="tb c">g/día continuo</text><text x="240" y="102" class="ts c">regla base</text>
+          <rect x="325" y="60" width="170" height="56" rx="4" class="slot"></rect><text x="410" y="92" class="ts c">sin BI nueva</text>
+          <rect x="520" y="60" width="100" height="56" rx="4" class="box"></rect><text x="570" y="84" class="tb c">Categorías</text><text x="570" y="102" class="ts c">incluye HED</text>
+          <g><line x1="300" y1="88" x2="323" y2="88" class="ln" marker-end="url(#ar3)"></line><line x1="495" y1="88" x2="518" y2="88" class="ln" marker-end="url(#ar3)"></line></g>
+
+          <!-- hinge notes -->
+          <text x="190" y="148" class="tw">Las muertes all-cause del motor son iguales en A y B:</text>
+          <text x="190" y="164" class="tw">la diferencia entra solo por PIF, no por el hazard.</text>
+          <text x="190" y="186" class="t">BI no crea abstemios: no activa el RR de ex-bebedor.</text>
+          <text x="190" y="202" class="t">HED cambia aparte del g/día (RD −0,07 → p = 0,07).</text>
+
+          <!-- lane B -->
+          <text x="180" y="230" class="tb">B · Escenario: BI incremental de DIR</text>
+          <rect x="180" y="257" width="120" height="56" rx="4" class="box"></rect><text x="240" y="281" class="tb c">g/día continuo</text><text x="240" y="299" class="ts c">regla base</text>
+          <rect x="325" y="240" width="170" height="90" rx="4" class="dir"></rect>
+          <text x="337" y="262" class="ta">DIR: BI nueva</text><text x="337" y="282" class="t">g/día × (1 + r)</text><text x="337" y="299" class="t">HED → no-HED, p = 0,07</text><text x="337" y="318" class="ts">solo BI nueva, no la actual</text>
+          <rect x="520" y="257" width="100" height="56" rx="4" class="box"></rect><text x="570" y="281" class="tb c">Categorías</text><text x="570" y="299" class="ts c">recodificadas</text>
+          <g><line x1="300" y1="285" x2="323" y2="285" class="lna" marker-end="url(#ar3a)"></line><line x1="495" y1="285" x2="518" y2="285" class="lna" marker-end="url(#ar3a)"></line></g>
+
+          <!-- shared PIF module -->
+          <rect x="650" y="60" width="120" height="270" rx="4" class="box"></rect>
+          <text x="710" y="150" class="tb c">Módulo PIF / RR</text>
+          <text x="710" y="170" class="ts c">RR por componente:</text><text x="710" y="185" class="ts c">actual · ex-bebedor</text><text x="710" y="200" class="ts c">· HED</text>
+          <text x="710" y="222" class="ts c">rezago en causas</text><text x="710" y="237" class="ts c">crónicas</text>
+          <g><line x1="620" y1="88" x2="648" y2="88" class="ln" marker-end="url(#ar3)"></line><line x1="620" y1="285" x2="648" y2="285" class="ln" marker-end="url(#ar3)"></line></g>
+
+          <!-- output -->
+          <rect x="800" y="150" width="90" height="80" rx="4" class="dir"></rect>
+          <text x="845" y="174" class="ta c">Δ = A − B</text><text x="845" y="194" class="ts c">muertes y YPLL</text><text x="845" y="209" class="ts c">evitados</text>
+          <line x1="772" y1="190" x2="798" y2="190" class="lna" marker-end="url(#ar3a)"></line>
+
+          <text x="180" y="358" class="ts">Solo se aplica la BI nueva: la BI actual de DIR ya está en el consumo observado (convención SIMAH).</text>
+          <text x="180" y="376" class="ts">Latencia: causas crónicas con rezago (SAPM); SIMAH excluye cánceres por latencia.</text>
+        </svg>
+      </div>
+      <figcaption>Las dos ramas comparten población y semilla y difieren en un paso: la BI nueva. Las muertes evitadas son la diferencia entre A y B calculada en el módulo PIF, que es donde el RR distingue bebedor actual, ex-bebedor y HED.</figcaption>
+    </figure>
+    <ul class="open">
+      <li>El motor usa el mismo hazard all-cause en ambas ramas (hoy la supervivencia no depende de la exposición), así que el efecto en mortalidad no puede entrar por el paso 2. AGENTS.md §2 y §5 piden mantener PIF separado de AAF y no arrastrar cambios entre módulos.</li>
+      <li>Escenarios por volumen de BI, no por tamizaje: en SIMAH ampliar solo el tamizaje no se distinguió de cero en YLL.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div>
+      <p class="tag">Parámetros propuestos</p>
+      <h2>Qué valores usaría cada paso y de dónde salen</h2>
+    </div>
+    <div class="scroll" style="background:transparent;border:0">
+    <table>
+      <thead><tr><th>Parámetro</th><th>Valor propuesto</th><th>Fuente</th><th>Estado</th></tr></thead>
+      <tbody>
+        <tr><td>Efecto base r</td><td>−8% relativo (−20 g/semana sobre 244 g/semana a 12 meses)</td><td>Kaner 2018, Cochrane</td><td>Leído en PubMed; conversión a % es inferencia</td></tr>
+        <tr><td>Alternativas de r</td><td>−12% hombres, −16% mujeres; −12,3% optimista</td><td>Manthey 2021; SAPM</td><td>Sensibilidad</td></tr>
+        <tr><td>HED → no-HED</td><td>p = 0,07 (alternativas 0,12 y OR 0,67)</td><td>SIMAH, Manthey; Jonas 2012; O'Connor 2018</td><td>RD −0,07 sin verificar contra el forest plot</td></tr>
+        <tr><td>Decaimiento</td><td>Pleno 4 años y lineal a 0 al año 10, o rebote lineal en 7 años</td><td>Manthey 2021; Angus 2014 (SAPM)</td><td>Elegir y declarar; SIMAH no lo reporta en el texto principal</td></tr>
+        <tr><td>Cascada Chile 2018</td><td>1.268.640 tamizados; 75.854 BI (≈6% de los tamizados); ≈8% de la población</td><td>Barticevic 2021</td><td>Leído; documentos DIPRES/MINSAL no abiertos</td></tr>
+        <tr><td>BI frente a folleto</td><td>Sensibilidad con 50% del efecto o nulo</td><td>Barticevic 2021; Poblete 2017</td><td>Supuesto: ambos ensayos chilenos no superaron al folleto</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="note">Nada de esto integra hoy el motor: la nota de investigación es del 2026-10-09 y no encontré código de DIR en el repositorio (búsqueda de «DIR» en R, Python y qmd). Estos diagramas son diseño propuesto y no muestran que la simulación chilena esté completa.</p>
+  </section>
+</main>
+
+</body></html>

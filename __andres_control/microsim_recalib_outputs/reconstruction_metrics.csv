@@ -1,4 +1,4 @@
 "metric","cells","bias","rmse","mae","working_interval_coverage","mean_monte_carlo_sd","interpretation"
-"current",56,-2.95724314774659e-05,0.00515941420589347,0.00403756825609187,1,0.00864681120561076,"Seven-wave calibration reproduced by the engine; not held-out validation"
-"gpd",56,-0.0147044055311152,0.105285724716832,0.0806796649459628,1,0.184355179947154,"Seven-wave calibration reproduced by the engine; not held-out validation"
-"hed",56,-0.0446430894776556,0.0635863673831452,0.0505190577606775,0.645833333333333,0.013310581466285,"Seven-wave calibration reproduced by the engine; not held-out validation"
+"current",56,-0.00026465293502045,0.00507949428775225,0.00385857698964575,1,0.00928083131700124,"Seven-wave calibration reproduced by the engine; not held-out validation"
+"gpd",56,-0.0221658597185783,0.105977262166481,0.0840464435256144,1,0.176308276765801,"Seven-wave calibration reproduced by the engine; not held-out validation"
+"hed",56,-0.0449700059435388,0.0638824857529664,0.050609988256227,0.625,0.013161906249743,"Seven-wave calibration reproduced by the engine; not held-out validation"
