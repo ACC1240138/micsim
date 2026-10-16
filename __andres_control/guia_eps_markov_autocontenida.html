@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guía EPS Markov</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Qué hace el notebook eps_markov_transitions_EN, qué tan bien funciona, sus limitaciones y las mejoras propuestas para la v2.">
+<style>
+/* Layout: one reading column (max 820px), section chips on top, figures scroll sideways inside their own box on phones */
+:root{
+  --bg:#F4F6F4; --surface:#FFFFFF; --ink:#17201E; --muted:#55615D; --line:#D7DEDA;
+  --accent:#1C6A84; --accent-2:#8DC3D6; --accent-soft:#E3EFF3; --on-accent:#FFFFFF; --on-accent-2:#0B2A34;
+  --warn:#8C5300; --warn-soft:#F6EBD6; --good:#2C6B45; --good-soft:#E1F0E6; --bad:#9E302A; --bad-soft:#F7E3E1;
+  --mark-gray:#8D9793; --code-bg:#EDF1EF;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#101513; --surface:#18201E; --ink:#E4EBE8; --muted:#9AA7A2; --line:#2A3431;
+    --accent:#5DB0CC; --accent-2:#2E6B80; --accent-soft:#14303A; --on-accent:#08202A; --on-accent-2:#E4EBE8;
+    --warn:#E3A54B; --warn-soft:#2D2313; --good:#6CC28F; --good-soft:#14281C; --bad:#E7796F; --bad-soft:#331918;
+    --mark-gray:#6F7A76; --code-bg:#1F2826; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101513; --surface:#18201E; --ink:#E4EBE8; --muted:#9AA7A2; --line:#2A3431;
+  --accent:#5DB0CC; --accent-2:#2E6B80; --accent-soft:#14303A; --on-accent:#08202A; --on-accent-2:#E4EBE8;
+  --warn:#E3A54B; --warn-soft:#2D2313; --good:#6CC28F; --good-soft:#14281C; --bad:#E7796F; --bad-soft:#331918;
+  --mark-gray:#6F7A76; --code-bg:#1F2826; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);font-variant-numeric:tabular-nums}
+.page{max-width:820px;margin:0 auto;padding-block:32px 64px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));display:flex;flex-direction:column;gap:40px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:2.4rem;letter-spacing:-0.01em}
+h2{font-size:1.65rem}
+h3{font-size:1.15rem}
+p{margin:0;max-width:68ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+code{font-family:var(--mono);font-size:.86em;background:var(--code-bg);padding:1px 5px;border-radius:4px}
+.eyebrow{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lede{font-size:1.08rem;color:var(--ink)}
+.meta{font-size:.9rem;color:var(--muted)}
+header{display:flex;flex-direction:column;gap:14px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px}
+nav.toc a{font-size:.88rem;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--surface);padding:4px 10px;border-radius:999px}
+nav.toc a:hover{border-color:var(--accent);color:var(--accent)}
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+button{font:inherit;font-size:.9rem;color:var(--accent);background:var(--surface);border:1px solid var(--accent);border-radius:8px;padding:6px 12px;cursor:pointer}
+button:hover{background:var(--accent-soft)}
+section{display:flex;flex-direction:column;gap:16px;scroll-margin-top:16px}
+.section-head{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:24px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card h3{font-size:1.05rem}
+.card p{font-size:.95rem;color:var(--muted)}
+.chip{align-self:flex-start;font-size:.74rem;letter-spacing:.04em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid transparent;white-space:nowrap}
+.chip.good{background:var(--good-soft);color:var(--good);border-color:var(--good)}
+.chip.warn{background:var(--warn-soft);color:var(--warn);border-color:var(--warn)}
+.chip.bad{background:var(--bad-soft);color:var(--bad);border-color:var(--bad)}
+.chip.neutral{background:var(--accent-soft);color:var(--accent);border-color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+.stat .k{font-size:.8rem;color:var(--muted)}
+.stat .v{font-family:var(--serif);font-size:1.5rem}
+ol.steps{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:8px;max-width:68ch}
+ul.plain{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px;max-width:70ch}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{font-weight:600;background:var(--accent-soft);color:var(--ink)}
+tr:last-child td{border-bottom:none}
+td.num,th.num{text-align:right;white-space:nowrap}
+figure{margin:0;display:flex;flex-direction:column;gap:8px}
+.fig-scroll{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px}
+.fig-scroll svg{display:block;width:100%;min-width:560px;height:auto}
+figcaption{font-size:.88rem;color:var(--muted);max-width:70ch}
+details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+details>summary{cursor:pointer;font-weight:600}
+details[open]>summary{margin-bottom:10px}
+details .inner{display:flex;flex-direction:column;gap:12px}
+.note{border-left:3px solid var(--warn);background:var(--warn-soft);padding:10px 14px;border-radius:0}
+.note p{color:var(--ink)}
+.prio{display:flex;flex-direction:column;gap:10px}
+.prio h3{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.item{display:grid;grid-template-columns:64px 1fr;gap:10px;align-items:start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.item .id{font-family:var(--mono);font-size:.85rem;color:var(--accent)}
+.item .body{display:flex;flex-direction:column;gap:4px;min-width:0}
+.item .body p{font-size:.93rem}
+.item .tags{display:flex;gap:6px;flex-wrap:wrap}
+dl.gloss{display:grid;grid-template-columns:minmax(120px,190px) 1fr;gap:6px 16px;margin:0}
+dl.gloss dt{font-weight:600}
+dl.gloss dd{margin:0;color:var(--muted)}
+footer{font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+.svg-bar{fill:var(--accent)}
+.svg-bar-2{fill:var(--accent-2)}
+.svg-bar-gray{fill:var(--mark-gray)}
+.svg-t{fill:var(--ink);font:13px var(--sans)}
+.svg-tb{fill:var(--ink);font:600 14px var(--sans)}
+.svg-tm{fill:var(--muted);font:12px var(--sans)}
+.svg-on-accent{fill:var(--on-accent);font:600 12px var(--sans)}
+.svg-on-accent-2{fill:var(--on-accent-2);font:600 12px var(--sans)}
+.svg-grid{stroke:var(--line);stroke-width:1}
+.svg-axis{stroke:var(--muted);stroke-width:1}
+.svg-ref{stroke:var(--ink);stroke-width:1.2;stroke-dasharray:4 3}
+.svg-box{fill:var(--surface);stroke:var(--line);stroke-width:1}
+.svg-box-accent{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1}
+.svg-arrow{stroke:var(--muted);stroke-width:1.4;fill:none}
+.svg-band{fill:var(--good-soft)}
+.svg-curve{stroke:var(--accent);stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.svg-leader{stroke:var(--muted);stroke-width:1;stroke-dasharray:2 3}
+.svg-pt{fill:var(--accent);stroke:var(--surface);stroke-width:2}
+.svg-pt-ink{fill:var(--ink);stroke:var(--surface);stroke-width:2}
+@media (max-width:520px){
+  h1{font-size:1.9rem}
+  h2{font-size:1.4rem}
+  .item{grid-template-columns:1fr}
+  dl.gloss{grid-template-columns:1fr}
+  dl.gloss dd{margin-bottom:6px}
+}
+@media (prefers-reduced-motion: reduce){*{scroll-behavior:auto}}
+@media print{nav.toc,.toolbar{display:none}.fig-scroll svg{min-width:0}}
+</style>
+</head>
+<body>
+
+
+<div class="page">
+
+<header>
+  <span class="eyebrow">FONDECYT 1240138 · microsimulación de alcohol · Chile</span>
+  <h1>Guía EPS Markov</h1>
+  <p class="lede">Qué hace el notebook <code>eps_markov_transitions_EN</code>, qué tan bien funciona, dónde falla y qué conviene mejorar en la v2. Está hecha con el código, las salidas guardadas y los cuestionarios de la EPS y la ENPG; nada se volvió a ejecutar.</p>
+  <p class="meta">16 de octubre de 2026 · 8.095 pares de transición de 5.365 personas · EPS rondas VI, VII presencial y VIII · adultos de 18 a 65 años en el origen</p>
+  <nav class="toc" aria-label="Secciones">
+    <a href="#esencial">Lo esencial</a>
+    <a href="#pipeline">Cómo funciona</a>
+    <a href="#datos">Datos y estados</a>
+    <a href="#pesos">Pesos e incertidumbre</a>
+    <a href="#modelos">Modelos</a>
+    <a href="#evaluacion">Evaluación</a>
+    <a href="#anual">Capa anual</a>
+    <a href="#hed">HED</a>
+    <a href="#limites">Limitaciones</a>
+    <a href="#mejoras">Mejoras para la v2</a>
+    <a href="#glosario">Glosario</a>
+    <a href="#fuentes">Fuentes</a>
+  </nav>
+  <div class="toolbar">
+    <button type="button" id="toggle-all">Abrir todos los detalles</button>
+    <span class="meta">Los bloques plegables traen el detalle técnico.</span>
+  </div>
+</header>
+
+<section id="esencial" aria-labelledby="h-esencial">
+  <div class="section-head">
+    <span class="eyebrow">Resumen</span>
+    <h2 id="h-esencial">Lo esencial</h2>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <span class="chip good">Funciona</span>
+      <h3>La matriz A reproduce las prevalencias</h3>
+      <p>Fuera de muestra, A predice 1,47 % en C3+C4 cuando se observa 1,44 %. Gamma predice 0,82 % y lognormal 1,09 %.</p>
+    </article>
+    <article class="card">
+      <span class="chip neutral">No decide</span>
+      <h3>Los mejores modelos están empatados</h3>
+      <p>La probabilidad típica que dan a lo observado va de 48,8 % (gamma) a 49,4 % (lognormal). Esa diferencia no condicionaría una publicación.</p>
+    </article>
+    <article class="card">
+      <span class="chip bad">Importa</span>
+      <h3>Lo que sí mueve los resultados</h3>
+      <p>Los gramos por trago, la aproximación de HED, la capa anual y la categoría C4, que tiene 29 personas de origen.</p>
+    </article>
+    <article class="card">
+      <span class="chip warn">Revisar</span>
+      <h3>La capa anual es exploratoria</h3>
+      <p>Con los mismos datos, la permanencia anual en C4 sale 0,10 con gamma y 0,40 con A. Las dos cuadran con lo que se ve a 4 años.</p>
+    </article>
+    <article class="card">
+      <span class="chip warn">Documentar</span>
+      <h3>El HED de la EPS es otra medida</h3>
+      <p>En la EPS, ≈20 % de los bebedores tiene una cantidad típica de 5 o más tragos (hombres) o 4 o más (mujeres). La ENPG mide al menos una ocasión en 30 días: 44 a 56 % según la ola.</p>
+    </article>
+    <article class="card">
+      <span class="chip good">Estable</span>
+      <h3>El cuestionario de alcohol no cambió</h3>
+      <p>F.13 a F.15 son iguales en las rondas VI, VII presencial y VIII. La VII de pandemia (continuidad y re-entrevista) no trae ese módulo.</p>
+    </article>
+  </div>
+</section>
+
+<section id="pipeline" aria-labelledby="h-pipeline">
+  <div class="section-head">
+    <span class="eyebrow">Recorrido</span>
+    <h2 id="h-pipeline">Cómo funciona el notebook</h2>
+  </div>
+  <figure>
+    <div class="fig-scroll">
+      <svg viewBox="0 0 680 250" role="img" aria-labelledby="pipe-t pipe-d">
+        <title id="pipe-t">Las seis etapas del notebook</title>
+        <desc id="pipe-d">Pares de la EPS, pesos, motores de transición, validación, incertidumbre y capa anual, en ese orden.</desc>
+        <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" class="svg-arrow"/></marker></defs>
+        <rect x="20" y="30" width="200" height="64" rx="8" class="svg-box-accent"/>
+        <text x="120" y="54" text-anchor="middle" class="svg-tb">1 · Pares de la EPS</text>
+        <text x="120" y="76" text-anchor="middle" class="svg-tm">VI→VII y VII→VIII</text>
+        <rect x="240" y="30" width="200" height="64" rx="8" class="svg-box"/>
+        <text x="340" y="54" text-anchor="middle" class="svg-tb">2 · Pesos</text>
+        <text x="340" y="76" text-anchor="middle" class="svg-tm">peso oficial × IPW</text>
+        <rect x="460" y="30" width="200" height="64" rx="8" class="svg-box"/>
+        <text x="560" y="54" text-anchor="middle" class="svg-tb">3 · Motores</text>
+        <text x="560" y="76" text-anchor="middle" class="svg-tm">A, ordinales, gamma…</text>
+        <rect x="20" y="150" width="200" height="64" rx="8" class="svg-box"/>
+        <text x="120" y="174" text-anchor="middle" class="svg-tb">4 · Validación</text>
+        <text x="120" y="196" text-anchor="middle" class="svg-tm">CV por persona, transporte</text>
+        <rect x="240" y="150" width="200" height="64" rx="8" class="svg-box"/>
+        <text x="340" y="174" text-anchor="middle" class="svg-tb">5 · Incertidumbre</text>
+        <text x="340" y="196" text-anchor="middle" class="svg-tm">jackknife y bootstrap</text>
+        <rect x="460" y="150" width="200" height="64" rx="8" class="svg-box-accent"/>
+        <text x="560" y="174" text-anchor="middle" class="svg-tb">6 · Capa anual</text>
+        <text x="560" y="196" text-anchor="middle" class="svg-tm">generador Q, exp(QΔ)</text>
+        <line x1="222" y1="62" x2="236" y2="62" class="svg-arrow" marker-end="url(#arr)"/>
+        <line x1="442" y1="62" x2="456" y2="62" class="svg-arrow" marker-end="url(#arr)"/>
+        <path d="M560 96 L560 122 L120 122 L120 146" class="svg-arrow" marker-end="url(#arr)"/>
+        <line x1="222" y1="182" x2="236" y2="182" class="svg-arrow" marker-end="url(#arr)"/>
+        <line x1="442" y1="182" x2="456" y2="182" class="svg-arrow" marker-end="url(#arr)"/>
+      </svg>
+    </div>
+    <figcaption>El orden de las celdas del notebook. Las etapas 1 y 6 son las que conectan con la microsimulación.</figcaption>
+  </figure>
+  <ol class="steps">
+    <li><strong>Pares de la EPS.</strong> Cada par es una persona observada en dos rondas seguidas: VI→VII (3,671 años en promedio) o VII→VIII (4,03 años). Se clasifica el consumo en el origen y en el destino.</li>
+    <li><strong>Pesos.</strong> Peso oficial de la EPS por un peso por probabilidad inversa (IPW) que corrige quién quedó con datos completos. Cada período suma su número de pares.</li>
+    <li><strong>Motores.</strong> Se estiman siete formas de predecir el destino desde el origen: la matriz empírica A, regresión multinomial, ordinales, gamma, lognormal y la réplica de JRT.</li>
+    <li><strong>Validación.</strong> Cada motor predice a personas que no vio (CV de 5 pliegues por persona, repetida 3 veces) y a otro período (transporte).</li>
+    <li><strong>Incertidumbre.</strong> El jackknife saca una UPM por vez (111 réplicas) y el bootstrap sortea personas (1.000 réplicas) para medir cuánto se mueven las matrices.</li>
+    <li><strong>Capa anual.</strong> Se busca una matriz de un año que, aplicada 3,7 o 4 veces, reproduzca las matrices entre rondas. Es la pieza que usaría la microsimulación.</li>
+  </ol>
+</section>
+
+<section id="datos" aria-labelledby="h-datos">
+  <div class="section-head">
+    <span class="eyebrow">Insumos</span>
+    <h2 id="h-datos">Datos y estados</h2>
+  </div>
+  <p>Seis estados en el origen y cinco en el destino. NC (no consumo actual) es N0 más FD y se usa solo en el destino. Los gramos por día salen de sumar, por bebida, días a la semana por vasos o copas por ocasión, por 12 g, dividido por 7.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Estado</th><th>Mujeres</th><th>Hombres</th><th class="num">Pares de origen</th></tr></thead>
+      <tbody>
+        <tr><td>N0, nunca bebió</td><td colspan="2">Sin consumo en la historia disponible</td><td class="num" rowspan="2">5.034 (con NC)</td></tr>
+        <tr><td>FD, ex bebedor</td><td colspan="2">Bebió antes, no bebe ahora</td></tr>
+        <tr><td>C1</td><td>más de 0 y menos de 20 g/día</td><td>más de 0 y menos de 40 g/día</td><td class="num">2.822</td></tr>
+        <tr><td>C2</td><td>20 a menos de 40</td><td>40 a menos de 60</td><td class="num">141</td></tr>
+        <tr><td>C3</td><td>40 a menos de 100</td><td>60 a menos de 100</td><td class="num">69</td></tr>
+        <tr><td>C4</td><td colspan="2">100 g/día o más</td><td class="num">29</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="meta">Pares de origen: C1 sumado desde la tabla de la celda de calibración; C2 a C4 según la revisión del notebook; N0 y FD por diferencia con 8.095.</p>
+  <details>
+    <summary>El cuestionario de alcohol de la EPS, ronda por ronda</summary>
+    <div class="inner">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Ronda</th><th>F.13 consumo</th><th>F.14 frecuencia</th><th>F.15 cantidad</th><th>Notas</th></tr></thead>
+          <tbody>
+            <tr><td>VI (2015)</td><td>"¿Consume Usted bebidas alcohólicas como….?" cerveza; vino; pisco u otro licor</td><td>"En el último mes, ¿cuántos días a la semana…?" (0 = menos de 1; 1 a 7)</td><td>"¿cuántos vasos o copas tomó aproximadamente?"</td><td>No responde 8 y 9</td></tr>
+            <tr><td>VII presencial</td><td>Igual, con tarjeta 50</td><td>Igual, "anote menos de 1 día"</td><td>Igual</td><td>Tarjeta 50 no disponible en la carpeta</td></tr>
+            <tr><td>VII continuidad y re-entrevista</td><td colspan="3">No existe el módulo</td><td>Solo "consumiendo más bebidas alcohólicas" en el último mes</td></tr>
+            <tr><td>VIII</td><td>Igual, sin tarjeta</td><td>Igual</td><td>Igual</td><td>No responde 88 y 99</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>F.13 no tiene período de referencia y F.15 no define el volumen del vaso. Por eso la VII entra solo con su muestra presencial: 7.800 personas, frente a 16.906 en la VI y 15.788 en la VIII.</p>
+    </div>
+  </details>
+</section>
+
+<section id="pesos" aria-labelledby="h-pesos">
+  <div class="section-head">
+    <span class="eyebrow">Diseño</span>
+    <h2 id="h-pesos">Pesos, diseño e incertidumbre</h2>
+  </div>
+  <p>La EPS elige comunas y después personas. Las comunas grandes entran seguro; con el resto se forman estratos de unos 100.000 habitantes y se elige una comuna por estrato. Por eso 32 de los 33 estratos tienen una sola UPM. El informe técnico de la VIII recomienda calcular errores con la comuna (<code>cluster_ID</code>), el estrato (<code>strata_ID</code>) y el peso final, que es lo que hace el notebook.</p>
+  <div class="stats">
+    <div class="stat"><div class="k">Peso efectivo por dispersión, VI→VII</div><div class="v">3.154</div><div class="k">de 4.702 pares</div></div>
+    <div class="stat"><div class="k">Peso efectivo por dispersión, VII→VIII</div><div class="v">1.938</div><div class="k">de 3.393 pares</div></div>
+    <div class="stat"><div class="k">Tamaño efectivo con diseño y pesos</div><div class="v">2.013 a 2.402</div><div class="k">de 8.095, para la prevalencia de consumo</div></div>
+  </div>
+  <p>Jackknife y bootstrap responden: si la encuesta hubiera caído en otras viviendas, ¿cuánto cambiaría la matriz? El jackknife saca una UPM por vez y vuelve a estimar el IPW, los modelos y la capa anual; el bootstrap sortea personas y vuelve a estimar el IPW, gamma y lognormal. La validación cruzada pregunta otra cosa: qué tan bien predice el modelo a personas que no vio. Por eso uno no reemplaza al otro.</p>
+  <details>
+    <summary>Por qué no se usan probabilidades por etapa, corrección por población finita ni la incertidumbre de los pesos oficiales</summary>
+    <div class="inner">
+      <p>La guía oficial no las usa: el informe técnico describe una linealización que solo depende de la primera etapa y da como ejemplo <code>svyset cluster_ID [pweight=factor_XS], strata(strata_ID), singleunit(certainty)</code>, y acepta bootstrap, jackknife o BRR. El notebook usa réplicas JKn, con la opción <code>adjust</code> para los estratos de una UPM (más conservadora) y <code>certainty</code> como sensibilidad: con <code>certainty</code> el error estándar es 8 % menor.</p>
+      <p>Para las comunas no autorrepresentadas la corrección por población finita es despreciable. Para las autorrepresentadas lo correcto sería usar unidades de segunda etapa, que los identificadores publicados no traen. El efecto de tratar los pesos oficiales como fijos tampoco tiene un sentido claro de antemano. Nada de esto está medido.</p>
+      <p>Los pesos oficiales tienen tres pasos: factor base, ajuste por atrición y no respuesta, y post-estratificación. El IPW del notebook se vuelve a estimar en cada réplica.</p>
+    </div>
+  </details>
+</section>
+
+<section id="modelos" aria-labelledby="h-modelos">
+  <div class="section-head">
+    <span class="eyebrow">Motores</span>
+    <h2 id="h-modelos">Modelos y predictores</h2>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Motor</th><th>Qué usa</th><th>Qué supone</th></tr></thead>
+      <tbody>
+        <tr><td>A (matriz empírica)</td><td>Tabla origen × sexo × grupo de edad × período; las celdas chicas se encogen hacia sexo, período y total</td><td>Ninguna forma; solo que celdas parecidas se comportan parecido</td></tr>
+        <tr><td>Multinomial y ordinales</td><td>Origen, sexo × edad (4 grupos), período, log de g/día previos, educación</td><td>Efectos lineales; los ordinales además ordenan las categorías</td></tr>
+        <tr><td>Gamma y lognormal</td><td>Lo mismo; predicen gramos y los cortan en C1 a C4</td><td>La forma de la distribución de gramos</td></tr>
+        <tr><td>JRT</td><td>Origen × edad, origen × sexo, sexo × edad, período</td><td>La especificación de JRT, sin educación ni gramos</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="meta">Ningún motor usa región, ocupación, ingreso ni estado civil. Educación, sus interacciones y la historia previa no mejoran nada detectable.</p>
+</section>
+
+<section id="evaluacion" aria-labelledby="h-eval">
+  <div class="section-head">
+    <span class="eyebrow">Validación</span>
+    <h2 id="h-eval">Cómo se evalúan los motores</h2>
+  </div>
+  <p>Para cada persona se mira qué probabilidad le dio el modelo a lo que de verdad le pasó. El log loss resume esas probabilidades con un promedio que castiga mucho haberle dado muy poca probabilidad a algo que ocurrió. Su versión legible es la probabilidad típica: e elevado a menos el log loss.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Modelo</th><th class="num">Persona 1</th><th class="num">Persona 2</th><th class="num">Persona 3</th><th class="num">Promedio simple</th><th class="num">Probabilidad típica</th></tr></thead>
+      <tbody>
+        <tr><td>X</td><td class="num">50 %</td><td class="num">50 %</td><td class="num">50 %</td><td class="num">50 %</td><td class="num">50 %</td></tr>
+        <tr><td>Y</td><td class="num">70 %</td><td class="num">70 %</td><td class="num">20 %</td><td class="num">53 %</td><td class="num">46 %</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="meta">Ejemplo inventado: Y tiene mejor promedio simple, pero falló feo con la persona 3 y el log loss prefiere a X.</p>
+  <figure>
+    <div class="fig-scroll">
+      <svg viewBox="0 0 680 292" role="img" aria-labelledby="ll-t ll-d">
+        <title id="ll-t">Probabilidad típica que cada motor dio a lo observado</title>
+        <desc id="ll-d">Sin modelo 44,3 %; JRT 48,6 %; gamma 48,8 %; A 48,9 %; ordinal dos partes 49,1 %; multinomial y ordinal simple 49,3 %; lognormal 49,4 %.</desc>
+        <line x1="280" y1="16" x2="280" y2="236" class="svg-grid"/>
+        <line x1="393" y1="16" x2="393" y2="236" class="svg-grid"/>
+        <line x1="507" y1="16" x2="507" y2="236" class="svg-grid"/>
+        <line x1="620" y1="16" x2="620" y2="236" class="svg-grid"/>
+        <text x="40" y="32" class="svg-t">Sin modelo (solo proporciones)</text>
+        <rect x="280" y="20" width="251" height="16" rx="3" class="svg-bar-gray"><title>Sin modelo: log loss 0,815; 44,3 %</title></rect>
+        <text x="539" y="32" class="svg-tm">44,3 %</text>
+        <text x="40" y="60" class="svg-t">JRT</text>
+        <rect x="280" y="48" width="275" height="16" rx="3" class="svg-bar"><title>JRT: log loss 0,7221; 48,6 %</title></rect>
+        <text x="563" y="60" class="svg-tm">48,6 %</text>
+        <text x="40" y="88" class="svg-t">Gamma</text>
+        <rect x="280" y="76" width="276" height="16" rx="3" class="svg-bar"><title>Gamma: log loss 0,7176; 48,8 %</title></rect>
+        <text x="564" y="88" class="svg-tm">48,8 %</text>
+        <text x="40" y="116" class="svg-t">A (tabla)</text>
+        <rect x="280" y="104" width="277" height="16" rx="3" class="svg-bar"><title>A: log loss 0,7148; 48,9 %</title></rect>
+        <text x="565" y="116" class="svg-tm">48,9 %</text>
+        <text x="40" y="144" class="svg-t">Ordinal dos partes</text>
+        <rect x="280" y="132" width="278" height="16" rx="3" class="svg-bar"><title>Ordinal dos partes: log loss 0,7105; 49,1 %</title></rect>
+        <text x="566" y="144" class="svg-tm">49,1 %</text>
+        <text x="40" y="172" class="svg-t">Multinomial</text>
+        <rect x="280" y="160" width="279" height="16" rx="3" class="svg-bar"><title>Multinomial: log loss 0,7081; 49,3 %</title></rect>
+        <text x="567" y="172" class="svg-tm">49,3 %</text>
+        <text x="40" y="200" class="svg-t">Ordinal simple</text>
+        <rect x="280" y="188" width="279" height="16" rx="3" class="svg-bar"><title>Ordinal simple: log loss 0,7081; 49,3 %</title></rect>
+        <text x="567" y="200" class="svg-tm">49,3 %</text>
+        <text x="40" y="228" class="svg-t">Lognormal</text>
+        <rect x="280" y="216" width="280" height="16" rx="3" class="svg-bar"><title>Lognormal: log loss 0,7055; 49,4 %</title></rect>
+        <text x="568" y="228" class="svg-tm">49,4 %</text>
+        <text x="280" y="254" text-anchor="middle" class="svg-tm">0 %</text>
+        <text x="393" y="254" text-anchor="middle" class="svg-tm">20 %</text>
+        <text x="507" y="254" text-anchor="middle" class="svg-tm">40 %</text>
+        <text x="620" y="254" text-anchor="middle" class="svg-tm">60 %</text>
+        <text x="450" y="278" text-anchor="middle" class="svg-tm">Probabilidad típica dada a lo que de verdad pasó</text>
+      </svg>
+    </div>
+    <figcaption>Todos los motores ganan entre 4,3 y 5,1 puntos sobre no tener modelo. Entre el mejor y el peor hay 0,8 puntos.</figcaption>
+  </figure>
+  <p>El promedio esconde dónde está la diferencia. Lo que necesita la microsimulación es que cada categoría tenga la prevalencia correcta, y ahí los motores sí se separan.</p>
+  <figure>
+    <div class="fig-scroll">
+      <svg viewBox="0 0 680 344" role="img" aria-labelledby="cal-t cal-d">
+        <title id="cal-t">Prevalencia predicha frente a observada en las categorías altas</title>
+        <desc id="cal-d">C3+C4: observado 1,44 %; A 1,47 %; ordinal dos partes 1,44 %; lognormal 1,09 %; gamma 0,82 %. C4: observado 0,39 %; A 0,40 %; ordinal dos partes 0,39 %; lognormal 0,28 %; gamma 0,10 %.</desc>
+        <text x="40" y="32" class="svg-tb">C3+C4 (≥40 g mujeres, ≥60 g hombres)</text>
+        <text x="498" y="32" class="svg-tm">observado 1,44 %</text>
+        <line x1="490" y1="40" x2="490" y2="156" class="svg-ref"/>
+        <text x="40" y="57" class="svg-t">A (tabla)</text>
+        <rect x="190" y="44" width="306" height="18" rx="3" class="svg-bar"><title>A: 1,47 %</title></rect>
+        <text x="504" y="57" class="svg-tm">1,47 %</text>
+        <text x="40" y="87" class="svg-t">Ordinal dos partes</text>
+        <rect x="190" y="74" width="300" height="18" rx="3" class="svg-bar"><title>Ordinal dos partes: 1,44 %</title></rect>
+        <text x="498" y="87" class="svg-tm">1,44 %</text>
+        <text x="40" y="117" class="svg-t">Lognormal</text>
+        <rect x="190" y="104" width="227" height="18" rx="3" class="svg-bar"><title>Lognormal: 1,09 % (24 % menos)</title></rect>
+        <text x="425" y="117" class="svg-tm">1,09 %</text>
+        <text x="40" y="147" class="svg-t">Gamma</text>
+        <rect x="190" y="134" width="171" height="18" rx="3" class="svg-bar"><title>Gamma: 0,82 % (43 % menos)</title></rect>
+        <text x="369" y="147" class="svg-tm">0,82 %</text>
+        <text x="40" y="200" class="svg-tb">C4 sola (100 g/día o más)</text>
+        <text x="498" y="200" class="svg-tm">observado 0,39 %</text>
+        <line x1="490" y1="208" x2="490" y2="324" class="svg-ref"/>
+        <text x="40" y="225" class="svg-t">A (tabla)</text>
+        <rect x="190" y="212" width="308" height="18" rx="3" class="svg-bar"><title>A: 0,40 %</title></rect>
+        <text x="506" y="225" class="svg-tm">0,40 %</text>
+        <text x="40" y="255" class="svg-t">Ordinal dos partes</text>
+        <rect x="190" y="242" width="300" height="18" rx="3" class="svg-bar"><title>Ordinal dos partes: 0,39 %</title></rect>
+        <text x="498" y="255" class="svg-tm">0,39 %</text>
+        <text x="40" y="285" class="svg-t">Lognormal</text>
+        <rect x="190" y="272" width="215" height="18" rx="3" class="svg-bar"><title>Lognormal: 0,28 % (28 % menos)</title></rect>
+        <text x="413" y="285" class="svg-tm">0,28 %</text>
+        <text x="40" y="315" class="svg-t">Gamma</text>
+        <rect x="190" y="302" width="77" height="18" rx="3" class="svg-bar"><title>Gamma: 0,10 % (74 % menos)</title></rect>
+        <text x="275" y="315" class="svg-tm">0,10 %</text>
+      </svg>
+    </div>
+    <figcaption>Predicción fuera de muestra, un paso, todas las filas de origen juntas. La línea punteada es lo observado. Falta mirar lo mismo por fila de origen y subgrupo (mejora I-1).</figcaption>
+  </figure>
+  <details>
+    <summary>Contrastes pareados: qué diferencias se detectan</summary>
+    <div class="inner">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Comparación</th><th class="num">Diferencia de log loss</th><th class="num">IC 95 %</th><th>¿Se detecta?</th></tr></thead>
+          <tbody>
+            <tr><td>Lognormal menos gamma</td><td class="num">−0,0121</td><td class="num">−0,0192 a −0,0050</td><td>Sí</td></tr>
+            <tr><td>Lognormal menos A</td><td class="num">−0,0093</td><td class="num">−0,0151 a −0,0034</td><td>Sí</td></tr>
+            <tr><td>Multinomial menos gamma</td><td class="num">−0,0096</td><td class="num">−0,0180 a −0,0012</td><td>Sí</td></tr>
+            <tr><td>Ordinal simple menos gamma</td><td class="num">−0,0096</td><td class="num">−0,0192 a 0,0000</td><td>Al límite</td></tr>
+            <tr><td>Gamma menos A</td><td class="num">0,0029</td><td class="num">−0,0078 a 0,0135</td><td>No</td></tr>
+            <tr><td>Gamma menos gamma sin educación</td><td class="num">−0,0013</td><td class="num">−0,0034 a 0,0009</td><td>No</td></tr>
+            <tr><td>Historia previa menos estado actual</td><td class="num">0,0034</td><td class="num">−0,0050 a 0,0119</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Negativo favorece al primer modelo. Los errores estándar respetan UPM y estratos (t con 78 gl) y son condicionales a las predicciones fuera de muestra. No hay contrastes entre los tres mejores ni con JRT.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Otras métricas y pruebas</summary>
+    <div class="inner">
+      <ul class="plain">
+        <li><strong>Brier.</strong> Suma de las diferencias al cuadrado entre la probabilidad dada y lo ocurrido en las 5 categorías. Casi no separa a gamma de lognormal (0,4167 y 0,4165) porque pesa poco las colas.</li>
+        <li><strong>Exactitud.</strong> ≈0,69 en todos los motores; predecir siempre "no consume" ya acierta 60,6 %.</li>
+        <li><strong>Repeticiones de la CV.</strong> La repetición 3 empeoró a casi todos por igual, así que el contraste lognormal menos gamma casi no se movió (−0,0123, −0,0113 y −0,0127). JRT es la excepción: frente a gamma pasó de +0,008 a −0,004.</li>
+        <li><strong>Transporte.</strong> Entrenar en un período y predecir el otro. Lognormal gana en un sentido (0,661) y multinomial en el otro (0,774); gamma queda penúltimo y último. La tabla no trae intervalos.</li>
+        <li><strong>Bootstrap de 500 frente a 1.000 réplicas.</strong> Con 500 el error estándar típico ya es el 99,9 % del de 1.000. Implica que 1.000 sobra y 500 sirve para pruebas.</li>
+      </ul>
+    </div>
+  </details>
+</section>
+
+<section id="anual" aria-labelledby="h-anual">
+  <div class="section-head">
+    <span class="eyebrow">Dinámica</span>
+    <h2 id="h-anual">La capa anual</h2>
+  </div>
+  <p>La encuesta es una foto cada 3,7 a 4 años y la microsimulación necesita la película año a año. La permanencia anual es la probabilidad de seguir en el mismo estado un año después. Un ejemplo inventado con dos estados: cada año 20 % de los bebedores deja de beber y 10 % de los no bebedores empieza.</p>
+  <figure>
+    <div class="fig-scroll">
+      <svg viewBox="0 0 680 312" role="img" aria-labelledby="toy-t toy-d">
+        <title id="toy-t">100 bebedores seguidos 4 años</title>
+        <desc id="toy-d">Siguen bebiendo 100, 80, 66, 56 y 49 en los años 0 a 4. En el año 4, 41 nunca dejaron y 8 dejaron y volvieron. La encuesta solo ve los años 0 y 4.</desc>
+        <rect x="40" y="14" width="12" height="12" rx="2" class="svg-bar"/>
+        <text x="58" y="25" class="svg-tm">Nunca dejó de beber</text>
+        <rect x="220" y="14" width="12" height="12" rx="2" class="svg-bar-2"/>
+        <text x="238" y="25" class="svg-tm">Dejó y volvió</text>
+        <line x1="100" y1="250" x2="620" y2="250" class="svg-axis"/>
+        <rect x="110" y="50" width="60" height="200" rx="3" class="svg-bar"><title>Año 0: 100</title></rect>
+        <text x="140" y="44" text-anchor="middle" class="svg-tm">100</text>
+        <rect x="220" y="90" width="60" height="160" rx="3" class="svg-bar"><title>Año 1: 80 nunca dejaron</title></rect>
+        <text x="250" y="84" text-anchor="middle" class="svg-tm">80</text>
+        <rect x="330" y="122" width="60" height="128" rx="3" class="svg-bar"><title>Año 2: 64 nunca dejaron</title></rect>
+        <rect x="330" y="116" width="60" height="4" rx="1" class="svg-bar-2"><title>Año 2: 2 volvieron</title></rect>
+        <text x="360" y="108" text-anchor="middle" class="svg-tm">66</text>
+        <rect x="440" y="148" width="60" height="102" rx="3" class="svg-bar"><title>Año 3: 51 nunca dejaron</title></rect>
+        <rect x="440" y="136" width="60" height="10" rx="2" class="svg-bar-2"><title>Año 3: 5 volvieron</title></rect>
+        <text x="470" y="128" text-anchor="middle" class="svg-tm">56</text>
+        <rect x="550" y="168" width="60" height="82" rx="3" class="svg-bar"><title>Año 4: 41 nunca dejaron</title></rect>
+        <rect x="550" y="149" width="60" height="17" rx="2" class="svg-bar-2"><title>Año 4: 8 dejaron y volvieron</title></rect>
+        <text x="580" y="141" text-anchor="middle" class="svg-tm">49</text>
+        <text x="580" y="213" text-anchor="middle" class="svg-on-accent">41</text>
+        <text x="580" y="162" text-anchor="middle" class="svg-on-accent-2">8</text>
+        <text x="140" y="270" text-anchor="middle" class="svg-tm">Año 0</text>
+        <text x="140" y="288" text-anchor="middle" class="svg-tm">encuesta</text>
+        <text x="250" y="270" text-anchor="middle" class="svg-tm">Año 1</text>
+        <text x="250" y="288" text-anchor="middle" class="svg-tm">no se ve</text>
+        <text x="360" y="270" text-anchor="middle" class="svg-tm">Año 2</text>
+        <text x="360" y="288" text-anchor="middle" class="svg-tm">no se ve</text>
+        <text x="470" y="270" text-anchor="middle" class="svg-tm">Año 3</text>
+        <text x="470" y="288" text-anchor="middle" class="svg-tm">no se ve</text>
+        <text x="580" y="270" text-anchor="middle" class="svg-tm">Año 4</text>
+        <text x="580" y="288" text-anchor="middle" class="svg-tm">encuesta</text>
+      </svg>
+    </div>
+    <figcaption>La encuesta ve 49 de 100 en el año 4 (y, en la otra fila, 25 de 100 no bebedores que empezaron). Con dos estados y las dos filas, el 80 % anual tiene una sola respuesta.</figcaption>
+  </figure>
+  <p>Con seis estados y pocos casos ya no es así. En C4 empiezan 29 personas y a los 4 años quedan 0 o 1. La figura muestra cuántas seguirían en C4 sin haber salido según la permanencia anual que uno suponga.</p>
+  <figure>
+    <div class="fig-scroll">
+      <svg viewBox="0 0 680 350" role="img" aria-labelledby="c4-t c4-d">
+        <title id="c4-t">Por qué la permanencia anual de C4 casi no tiene información</title>
+        <desc id="c4-d">Personas de 29 que seguirían en C4 sin salir tras 3,7 años, según la permanencia anual: 0 con 0,10; 1 con 0,40; 2,6 con 0,52. Lo observado fue 0 o 1 persona, compatible con permanencias de 0 a cerca de 0,5.</desc>
+        <text x="70" y="24" class="svg-tm">Personas de 29 que seguirían en C4 sin salir, tras 3,7 años</text>
+        <line x1="70" y1="200" x2="630" y2="200" class="svg-grid"/>
+        <line x1="70" y1="100" x2="630" y2="100" class="svg-grid"/>
+        <rect x="70" y="280" width="560" height="20" class="svg-band"/>
+        <text x="440" y="294" class="svg-tm">observado: 0 o 1 persona</text>
+        <line x1="70" y1="300" x2="630" y2="300" class="svg-axis"/>
+        <line x1="70" y1="40" x2="70" y2="300" class="svg-axis"/>
+        <text x="62" y="304" text-anchor="end" class="svg-tm">0</text>
+        <text x="62" y="204" text-anchor="end" class="svg-tm">5</text>
+        <text x="62" y="104" text-anchor="end" class="svg-tm">10</text>
+        <polyline class="svg-curve" points="70,300 105,300 140,299.9 175,299.5 210,298.4 245,296.4 280,293 315,287.7 350,279.9 385,269.1 420,254.5 455,235.4 490,211.1 525,180.7 560,143.4 595,98.3 630,44.3"/>
+        <line x1="142" y1="160" x2="142" y2="292" class="svg-leader"/>
+        <circle cx="142" cy="300" r="6" class="svg-pt"><title>Gamma: 0,10 por año</title></circle>
+        <text x="142" y="152" text-anchor="middle" class="svg-t">gamma: 0,10</text>
+        <line x1="352" y1="160" x2="352" y2="272" class="svg-leader"/>
+        <rect x="346" y="273" width="12" height="12" class="svg-pt"><title>A: 0,40 por año</title></rect>
+        <text x="352" y="152" text-anchor="middle" class="svg-t">A: 0,40</text>
+        <line x1="435" y1="120" x2="435" y2="238" class="svg-leader"/>
+        <path d="M435 239 l7 7 l-7 7 l-7 -7 z" class="svg-pt-ink"><title>NESARC, categoría más alta: 0,52 por año</title></path>
+        <text x="435" y="112" text-anchor="middle" class="svg-t">NESARC cat. III: 0,52</text>
+        <text x="70" y="320" text-anchor="middle" class="svg-tm">0</text>
+        <text x="210" y="320" text-anchor="middle" class="svg-tm">0,2</text>
+        <text x="350" y="320" text-anchor="middle" class="svg-tm">0,4</text>
+        <text x="490" y="320" text-anchor="middle" class="svg-tm">0,6</text>
+        <text x="630" y="320" text-anchor="middle" class="svg-tm">0,8</text>
+        <text x="350" y="342" text-anchor="middle" class="svg-tm">Permanencia anual supuesta en C4</text>
+      </svg>
+    </div>
+    <figcaption>Cálculo simplificado: 29 × permanencia elevada a 3,671, sin contar a quienes salen y vuelven. Ver 0 o 1 persona calza con cualquier permanencia entre 0 y cerca de 0,5; por eso gamma y A llegan a 0,10 y 0,40 con los mismos datos.</figcaption>
+  </figure>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Estado</th><th class="num">A</th><th class="num">Gamma</th><th class="num">Lognormal</th><th class="num">NESARC, EE.UU.</th></tr></thead>
+      <tbody>
+        <tr><td>N0</td><td class="num">0,913</td><td class="num">0,911</td><td class="num">0,911</td><td class="num" rowspan="2">0,901 (no bebedores)</td></tr>
+        <tr><td>FD</td><td class="num">0,871</td><td class="num">0,871</td><td class="num">0,872</td></tr>
+        <tr><td>C1</td><td class="num">0,818</td><td class="num">0,812</td><td class="num">0,815</td><td class="num">0,902 (I)</td></tr>
+        <tr><td>C2</td><td class="num">0,535</td><td class="num">0,517</td><td class="num">0,481</td><td class="num">0,318 (II)</td></tr>
+        <tr><td>C3</td><td class="num">0,443</td><td class="num">0,422</td><td class="num">0,434</td><td class="num" rowspan="2">0,522 (III)</td></tr>
+        <tr><td>C4</td><td class="num">0,403 (0,09 a 0,83)</td><td class="num">0,103 (0 a 1)</td><td class="num">0,181 (0 a 1)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="meta">Permanencia anual con intervalos del jackknife (archivo <code>annual_pooled_matrices_design_CI.csv</code>). NESARC: Puka et al., msm con transiciones solo entre estados vecinos; sus categorías I y II usan los mismos cortes que C1 y C2, y la III equivale a C3+C4. El notebook muestra solo la columna de gamma y la sensibilidad a la penalización (hasta 10,5 puntos) se corrió solo para gamma.</p>
+  <h3>Cómo mejorarla</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Opción</th><th>Qué cambia</th><th>Supuesto que agrega</th><th>Costo</th></tr></thead>
+      <tbody>
+        <tr><td>Fusionar C3+C4</td><td>La fila nueva tiene 98 pares de origen; equivale a la categoría más alta de SIMAH y NESARC</td><td>Dinámica común sobre 40 g (mujeres) y 60 g (hombres)</td><td><span class="chip good">Bajo</span></td></tr>
+        <tr><td>Encoger C4 hacia C3</td><td>La fila C4 aprende de C3 con un solo peso elegido por validación</td><td>Patrón relativo parecido (quedarse, bajar uno, dejar de beber)</td><td><span class="chip good">Bajo</span></td></tr>
+        <tr><td>Bandas de incertidumbre</td><td>Correr la microsimulación con varias matrices plausibles</td><td>Ninguno</td><td><span class="chip good">Bajo</span></td></tr>
+        <tr><td>Solo transiciones vecinas (msm)</td><td>Menos tasas libres; con NESARC predijo 11 años con error de 1 % o menos</td><td>Sin saltos instantáneos de más de un nivel</td><td><span class="chip warn">Medio</span></td></tr>
+        <tr><td>Calibrar a la ENPG</td><td>Entre ajustes casi iguales, elige el que reproduce las prevalencias bienales</td><td>Que la ENPG mida bien cada categoría</td><td><span class="chip warn">Medio</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="hed" aria-labelledby="h-hed">
+  <div class="section-head">
+    <span class="eyebrow">Consumo episódico</span>
+    <h2 id="h-hed">HED: ENPG frente a EPS</h2>
+  </div>
+  <p>La ENPG pregunta lo mismo desde 2012: cuántas veces en los últimos 30 días tomó 5 o más tragos (hombres) o 4 o más (mujeres) en una sola ocasión, de unas dos horas. La EPS no tiene esa pregunta; el notebook marca a quien tiene una cantidad típica de 5 o más (hombres) o 4 o más (mujeres) en alguna bebida.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Ola ENPG</th><th>Ítem</th><th>Cambios</th><th class="num">Embriaguez, % de bebedores del mes</th></tr></thead>
+      <tbody>
+        <tr><td>2008 y 2010</td><td>No existe</td><td>Solo cantidad en un día típico</td><td class="num">No aplica</td></tr>
+        <tr><td>2012</td><td><code>p16</code></td><td>Texto base</td><td class="num">52,1</td></tr>
+        <tr><td>2014</td><td><code>oh7</code></td><td>Igual</td><td class="num">43,7</td></tr>
+        <tr><td>2016</td><td><code>oh_7a</code>, <code>oh_7b</code></td><td>Excluye Fiestas Patrias</td><td class="num">51,1</td></tr>
+        <tr><td>2018</td><td><code>OH_7H</code>, <code>OH_7M</code></td><td>Tarjetas con volúmenes por sexo</td><td class="num">56,3</td></tr>
+        <tr><td>2020</td><td><code>OH_7</code></td><td>Excluye Año Nuevo según fecha (según la auditoría)</td><td class="num">50,2</td></tr>
+        <tr><td>2022</td><td><code>OH_7</code></td><td>La tarjeta de mujeres muestra los volúmenes de los hombres</td><td class="num">50,7</td></tr>
+        <tr><td>2024</td><td><code>OH_7</code></td><td>Igual que 2022</td><td class="num">47,2</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note"><p>La señal de la EPS da ≈20 % de los bebedores, frente a 44 a 56 % en la ENPG. Son medidas distintas: un hombre que toma 5 tragos un día a la semana queda en C1 con señal positiva, y otro que toma 2 casi siempre y 6 en un cumpleaños tiene HED en la ENPG y señal 0 en la EPS. Conviene llamarla "señal de cantidad típica" y tomar el nivel de HED de la ENPG.</p></div>
+</section>
+
+<section id="limites" aria-labelledby="h-limites">
+  <div class="section-head">
+    <span class="eyebrow">Magnitudes</span>
+    <h2 id="h-limites">Limitaciones y cuánto importan</h2>
+  </div>
+  <p>Criterio propuesto, a fijar antes de comparar: dos motores son equivalentes si la prevalencia proyectada de C3+C4 difiere menos que el intervalo de la ENPG del subgrupo y las muertes atribuibles proyectadas difieren menos de 5 %.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Tema</th><th>Magnitud</th><th>¿Importa?</th></tr></thead>
+      <tbody>
+        <tr><td>Elegir entre lognormal, ordinal simple y multinomial</td><td>Log loss 0,7055 a 0,7081</td><td><span class="chip neutral">No</span></td></tr>
+        <tr><td>A frente a lognormal</td><td>48,9 % frente a 49,4 % de probabilidad típica; A calibra mejor las colas</td><td><span class="chip neutral">Poco</span></td></tr>
+        <tr><td>Educación, interacciones, historia previa</td><td>0,0007 a 0,0034, con intervalos que cruzan 0</td><td><span class="chip neutral">No</span></td></tr>
+        <tr><td>Gamma en las colas</td><td>C3+C4 43 % menos; C4 74 % menos</td><td><span class="chip bad">Sí</span></td></tr>
+        <tr><td>Lognormal en las colas</td><td>C3+C4 24 % menos; C4 28 % menos</td><td><span class="chip warn">Moderado</span></td></tr>
+        <tr><td>Gramos por trago (12 frente a 15,7 g)</td><td>C3+C4 predicho se multiplica entre 1,7 y 2,2</td><td><span class="chip bad">Sí, mucho</span></td></tr>
+        <tr><td>Aproximación de HED</td><td>≈20 % frente a 44 a 56 %</td><td><span class="chip bad">Sí, si fija el nivel</span></td></tr>
+        <tr><td>Capa anual</td><td>Hasta 10,5 puntos entre ajustes equivalentes; C4 0,10 o 0,40</td><td><span class="chip bad">Sí</span></td></tr>
+        <tr><td>Estratos con una sola UPM</td><td>El error estándar cambia 8 a 9 %</td><td><span class="chip neutral">Poco</span></td></tr>
+        <tr><td>Repeticiones de la CV</td><td>Desviación 0,0007 frente a un error estándar de 0,0036</td><td><span class="chip neutral">No, salvo JRT</span></td></tr>
+        <tr><td>Bootstrap de 500 frente a 1.000</td><td>Error estándar típico 99,9 %</td><td><span class="chip neutral">No</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="mejoras" aria-labelledby="h-mejoras">
+  <div class="section-head">
+    <span class="eyebrow">Plan</span>
+    <h2 id="h-mejoras">Mejoras proyectadas para la v2</h2>
+  </div>
+  <p>La lista de trabajo completa, con criterios de término, está en el documento del proyecto <code>claude/eps_markov_v2_observaciones_2026-10-16.md</code>. Antes de tocar el notebook hay que pedir permiso; el trabajo va en una copia nueva.</p>
+  <div class="prio">
+    <h3>Prioridad 1 <span class="chip bad">Antes de usar el motor</span></h3>
+    <div class="item"><span class="id">I-2</span><div class="body"><p>Mostrar la capa anual de A y correrle la misma sensibilidad que a gamma.</p><div class="tags"><span class="chip good">Costo bajo</span><span class="chip neutral">Dice si A sirve como motor anual</span></div></div></div>
+    <div class="item"><span class="id">I-1</span><div class="body"><p>Calibración por fila de origen, sexo y grupo de edad para todos los motores.</p><div class="tags"><span class="chip warn">Costo medio</span><span class="chip neutral">Comprueba la condición para usar A</span></div></div></div>
+    <div class="item"><span class="id">I-4</span><div class="body"><p>Variante con C3+C4 fusionadas, para A, lognormal y la capa anual.</p><div class="tags"><span class="chip good">Costo bajo</span><span class="chip neutral">Elimina la fila de 29 personas</span></div></div></div>
+    <div class="item"><span class="id">I-5</span><div class="body"><p>A con préstamo entre filas vecinas, con un peso elegido por validación.</p><div class="tags"><span class="chip warn">Costo medio</span><span class="chip neutral">Colas estables sin supuestos de forma</span></div></div></div>
+    <div class="item"><span class="id">I-6</span><div class="body"><p>A con C1 partido por gramos previos (2 o 3 tramos por sexo).</p><div class="tags"><span class="chip good">Costo bajo</span><span class="chip neutral">Acerca A a lognormal sin parametrizar</span></div></div></div>
+    <div class="item"><span class="id">I-3</span><div class="body"><p>Validación de trayectoria: proyectar de VI a VIII con cada matriz anual y comparar con lo observado.</p><div class="tags"><span class="chip warn">Costo medio</span><span class="chip neutral">Prueba el motor como lo usará la micsim</span></div></div></div>
+    <div class="item"><span class="id">I-7</span><div class="body"><p>Fijar 12 g por trago con fuente y correr 15,7 g para todos los motores.</p><div class="tags"><span class="chip good">Costo bajo</span><span class="chip neutral">Acota el supuesto que más mueve C3+C4</span></div></div></div>
+    <h3>Prioridad 2 <span class="chip warn">Para el artículo</span></h3>
+    <div class="item"><span class="id">I-8</span><div class="body"><p>Contrastes pareados entre todos los motores, incluido JRT.</p></div></div>
+    <div class="item"><span class="id">I-9</span><div class="body"><p>Repeticiones 5×50 al menos para JRT (≈27 minutos más).</p></div></div>
+    <div class="item"><span class="id">I-10</span><div class="body"><p>Métricas nuevas: RPS ordinal, Brier descompuesto, log loss por origen y escalera de modelos.</p></div></div>
+    <div class="item"><span class="id">I-11</span><div class="body"><p>Transporte con intervalos y conteos de exclusión.</p></div></div>
+    <div class="item"><span class="id">I-12</span><div class="body"><p>Diseño: Kish y deff, la guía oficial de la EPS y la sensibilidad <code>adjust</code> frente a <code>certainty</code>.</p></div></div>
+    <div class="item"><span class="id">I-13</span><div class="body"><p>Calcular la misma señal de cantidad típica en la ENPG para compararla con la EPS.</p></div></div>
+    <div class="item"><span class="id">I-14</span><div class="body"><p>Exportar las matrices anuales en el formato que usará la calibración a la ENPG.</p></div></div>
+    <div class="item"><span class="id">I-15</span><div class="body"><p>Covariables comunes como sensibilidad: previsión de salud, tabaco, estado civil y macrozona.</p></div></div>
+    <h3>Prioridad 3 <span class="chip neutral">Texto</span></h3>
+    <div class="item"><span class="id">I-16</span><div class="body"><p>Explicaciones en simple: NC y FD una sola vez, métricas, transporte, rank matching entre rondas, bootstrap y permanencia anual.</p></div></div>
+    <div class="item"><span class="id">I-17</span><div class="body"><p>Reemplazar el argumento del "cambio medio de 0,35 puntos" por la calibración y declarar el motor principal.</p></div></div>
+    <div class="item"><span class="id">I-18</span><div class="body"><p>Tabla del cuestionario de alcohol de la EPS por ronda en la auditoría de armonización.</p></div></div>
+  </div>
+  <div class="note"><p>Referencia del proyecto: SIMAH (Kilian et al. 2025) estimó las transiciones con regresión ordinal sobre un pseudo-panel de BRFSS 2000 a 2010, las calibró con history matching contra BRFSS 2011 a 2015 y las validó con BRFSS 2016 a 2019, con 3 categorías de bebedor. Es una ruta parecida a la de JRT y compatible con calibrar la matriz A a la ENPG.</p></div>
+</section>
+
+<section id="glosario" aria-labelledby="h-glosario">
+  <div class="section-head">
+    <span class="eyebrow">Términos</span>
+    <h2 id="h-glosario">Glosario</h2>
+  </div>
+  <dl class="gloss">
+    <dt>N0, FD, NC</dt><dd>Nunca bebió; ex bebedor; no consumo actual (N0 más FD), usado solo en el destino.</dd>
+    <dt>C1 a C4</dt><dd>Bebedores actuales según gramos por día; C4 es 100 g/día o más.</dd>
+    <dt>UPM y estrato</dt><dd>La UPM es la comuna seleccionada; el estrato agrupa comunas parecidas. En la EPS cada estrato aporta una comuna.</dd>
+    <dt>IPW</dt><dd>Peso por probabilidad inversa: da más peso a quienes se parecen a los que faltan.</dd>
+    <dt>Peso efectivo (Kish)</dt><dd>Cuántas observaciones con pesos parejos equivalen a la muestra ponderada.</dd>
+    <dt>deff</dt><dd>Cuánto crece la varianza por el diseño y los pesos frente a una muestra aleatoria simple.</dd>
+    <dt>Jackknife y bootstrap</dt><dd>Repetir el análisis con muestras rehechas para medir cuánto se mueven los resultados.</dd>
+    <dt>Validación cruzada</dt><dd>Entrenar con unas personas y predecir a otras que el modelo no vio.</dd>
+    <dt>Log loss y probabilidad típica</dt><dd>Castigo por la probabilidad dada a lo que ocurrió; la probabilidad típica es e elevado a menos el log loss.</dd>
+    <dt>Brier y RPS</dt><dd>Error cuadrático de las probabilidades; el RPS es su versión para categorías ordenadas.</dd>
+    <dt>Calibración</dt><dd>Que la prevalencia predicha de cada categoría coincida con la observada.</dd>
+    <dt>Transporte</dt><dd>Entrenar en un período y predecir el otro.</dd>
+    <dt>Rank matching</dt><dd>Emparejar dos cortes transversales por rango para armar un pseudo-panel; exagera la persistencia.</dd>
+    <dt>Generador Q y capa anual</dt><dd>Tasas de cambio continuas; exp(QΔ) da la matriz para un intervalo Δ, y con Δ = 1 la matriz anual.</dd>
+    <dt>msm</dt><dd>Paquete de R para modelos de Markov multiestado en tiempo continuo con intervalos irregulares.</dd>
+    <dt>Raking (IPF)</dt><dd>Ajuste que corrige los márgenes de una tabla manteniendo su estructura interna.</dd>
+    <dt>HED</dt><dd>Consumo episódico excesivo: 5 o más tragos (hombres) o 4 o más (mujeres) en una ocasión.</dd>
+  </dl>
+</section>
+
+<section id="fuentes" aria-labelledby="h-fuentes">
+  <div class="section-head">
+    <span class="eyebrow">Respaldo</span>
+    <h2 id="h-fuentes">Fuentes</h2>
+  </div>
+  <ul class="plain">
+    <li>Notebook <code>eps_markov_transitions_EN.ipynb</code> y su <code>.html</code>; salidas en <code>eps_markov_outputs/</code> (incluido <code>annual_pooled_matrices_design_CI.csv</code>).</li>
+    <li>Documento del proyecto <code>claude/eps_markov_v2_observaciones_2026-10-16.md</code> (versión 3), con todas las cifras y su origen.</li>
+    <li>Cuestionarios e informes de la EPS en <code>micsim/_eps</code> (rondas VI, VII y VIII; informe técnico de la VIII ronda).</li>
+    <li>Cuestionarios de la ENPG en <code>micsim/_enpg/docs</code> y auditoría <code>hed_diagnostic.md</code>.</li>
+    <li><a href="https://www.senda.gob.cl/wp-content/uploads/2019/12/Cuestionario-ENPG-2018.pdf">Cuestionario ENPG 2018 (SENDA)</a></li>
+    <li><a href="https://eprints.whiterose.ac.uk/id/eprint/231116/1/1-s2.0-S2468266725001653-main.pdf">Kilian et al. 2025, Lancet Public Health</a></li>
+    <li><a href="https://onlinelibrary.wiley.com/doi/10.1111/add.16024">Puka et al., Addiction (NESARC)</a></li>
+  </ul>
+</section>
+
+<footer>Hecha a partir de salidas guardadas, sin volver a ejecutar el notebook. No reemplaza el notebook ni valida el pipeline completo con datos reales.</footer>
+
+</div>
+
+<script>
+(function(){
+  var b=document.getElementById('toggle-all');
+  if(!b){return;}
+  b.addEventListener('click',function(){
+    var ds=document.querySelectorAll('details');
+    var anyClosed=Array.prototype.some.call(ds,function(d){return !d.open;});
+    ds.forEach(function(d){d.open=anyClosed;});
+    b.textContent=anyClosed?'Cerrar todos los detalles':'Abrir todos los detalles';
+  });
+  window.addEventListener('beforeprint',function(){document.querySelectorAll('details').forEach(function(d){d.open=true;});});
+})();
+</script>
+
+</body>
+</html>
