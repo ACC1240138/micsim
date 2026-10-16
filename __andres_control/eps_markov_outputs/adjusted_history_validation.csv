@@ -1,0 +1,3 @@
+"model","n_persons","difference_history_minus_current","lower","upper","population"
+"Gamma",2730,0.00343427138105213,-0.00503806970146225,0.0119066124635665,"complete three-wave histories; conditional OOF comparison"
+"Gamma_education_interaction",2730,0.00302083303992327,-0.0054144554681347,0.0114561215479812,"complete three-wave histories; conditional OOF comparison"

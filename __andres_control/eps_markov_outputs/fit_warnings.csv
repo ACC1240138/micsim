@@ -1,0 +1,4 @@
+"warning","n"
+"glm.fit: fitted probabilities numerically 0 or 1 occurred",153
+"non-integer #successes in a binomial glm!",412
+"Ordinal fit restarted from weighted marginal thresholds",3
