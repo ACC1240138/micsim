@@ -22,6 +22,7 @@ All data access goes through `_tools/acc_data.R` (`source(here::here("_tools", "
 |---|---|---|
 | `_enpg/` | ENPG 2008–2024 and derived inputs | [README](_enpg/README.md) |
 | `_eps/` | EPS 2012–2023 | [README](_eps/README.md) |
+| `_tsm/` | TSM (Termómetro de la Salud Mental ACHS-UC) rounds 7–11 | [README](_tsm/README.md) |
 | `_deis/` | DEIS deaths 2012–2023 and 2024+ | [README](_deis/README.md) |
 | `_epf/` | EPF (harmonised cache and raw INE files) | [README](_epf/README.md) |
 | `_bib/` | Encrypted reference PDFs and `references.bib` | [README](_bib/README.md) |
@@ -67,6 +68,7 @@ Rscript --vanilla _tools/test_renv_activation.R   # renv loads the same library 
 4. `expand_pif.ipynb` (~45 min): AAF, attributable mortality and YPLL.
 5. `expand_pif2.ipynb` (~13 h) and `expand_pif3.ipynb`: PIF with synchronised draws, and tables/figures. **The draws are not in the repository**; regenerate them with `expand_pif` → `expand_pif2`.
 6. `guion_reunion_ACC_2026-09-16_revision_critica.ipynb`: critical review (reads saved artefacts).
+7. `TSM_ENPG_v3_EN.ipynb` (~51 min, E-cores on this PC): TSM panel transitions harmonized with the EPS engine, see `tsm_v3_plan_2026-10-19.md` and `hallazgos_tsm_v3.md`; `eps_markov_transitions_EN.ipynb` (~21 min) is the EPS engine itself.
 
 The canonical handoff is `__andres_control/codex_handoff_adam_rr_full_override_caveman.md` (see `AGENTS.md` §1). Roadmap: `presentacion_micsim.qmd` / `.html`.
 

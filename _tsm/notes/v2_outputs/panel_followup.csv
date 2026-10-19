@@ -1,0 +1,5 @@
+"interval","origin_rows","observed_pairs","absent_pct","first_observed_origins","observed_first_appearance_pairs","observed_FD_pairs"
+"R7-R8",2123,1001,52.8497409326425,2123,1001,0
+"R8-R9",1405,907,35.4448398576512,412,189,104
+"R9-R10",2137,1284,39.9157697707066,751,338,186
+"R10-R11",1672,983,41.2081339712919,104,25,144

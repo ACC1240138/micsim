@@ -1,0 +1,843 @@
+﻿wave,variable,label,codes,respondent_nonmissing
+7,IdEncuesta,ID Entrevista,Numeric/text without value labels,3012
+7,IdPersona,ID Integrante dentro del hogar,Numeric/text without value labels,3012
+7,IdPanel,Identificador Panel para conectar los intengrantes entre rondas (Corrige anterio,Numeric/text without value labels,3012
+7,Entrevistado,Entrevistado,0=Resto integrantes del hogar; 1=Entrevistado Panel,3012
+7,IdRegion,Región de residencia,1=De Tarapaca; 2=De Antofagasta; 3=De Atacama; 4=De Coquimbo; 5=De Valparaiso; 6=Del Lib.B. O´Higgins; 7=Del Maule; 8=Del Biobio; 9=De la Araucanía; 10=De los Lagos; 11=De Aysen; 12=De Magallanes; 13=Metropolitana; 14=De los Rios; 15=De Arica y Parinacota; 16=De Ñuble,3012
+7,Fact_Exp,Factor de expansión Población Entrevistada Mayor de 18 años,Numeric/text without value labels,3012
+7,a2,Encuestador: a2. Revise el sexo registrado de los integrantes del hogar y corrij,1=Hombre; 2=Mujer,3012
+7,a3,Encuestador: a3. Revise la edad de los integrantes del hogar y corrija si es nec,Numeric/text without value labels,3012
+7,a4,a4. ¿Qué relación tiene [NOMBRE] con Ud. (Entrevistado)?,1=Entrevistado(a); 2=Cónyuge(a) o pareja; 3=Hijo(a); 4=Padre o Madre; 5=Suegro(a); 6=Yerno o Nuera; 7=Nieto(a); 8=Hermano(a); 9=Cuñado(a); 10=Otro familiar; 11=Otro no familiar; 12=Servicio Doméstico P. Adentro,3012
+7,a6,a6. ¿Cuál es el estado civil o conyugal actual de [NOMBRE]:,1=Casado(a); 2=Conviviente o pareja; 3=Anulado(a); 4=Separado(a); 5=Divorciado(a); 6=Viudo(a); 7=Soltero(a),2998
+7,a7,a7. ¿Cuál es su nacionalidad de [NOMBRE]?,1=Chilena (exclusiva); 2=Chilena y otra (doble nacionalidad); 3=Otra nacionalidad (extranjeros),2998
+7,a8,"a8. Cuando nació [NOMBRE], ¿en qué país vivía su madre?",1=Perú; 2=Haití; 3=Colombia; 4=Venezuela; 5=Ecuador; 6=Bolivia; 7=Argentina; 8=Otro. Especifique,103
+7,a9,a9. ¿En qué año llegó [NOMBRE] a Chile?,1=Ingrese año; 2=No sabe/No se acuerda,103
+7,a9a,a9. ¿En qué año llegó [NOMBRE] a Chile?,Numeric/text without value labels,100
+7,a10,"a10. Aproximadamente, ¿entre qué años llegó a Chile?",1=Año 1989 o antes; 2=Entre 1990 y 1999; 3=Entre 2000 y 2004; 4=Entre 2005 y 2009; 5=Entre 2010 y 2014; 6=Entre 2015 y 2016; 7=Entre 2017 y 2018; 8=Año 2019 o después; 9=No sabe,3
+7,a11a,a11a. ¿Alguno de los miembros del hogar es una persona con discapacidad?,1=Sí; 2=No,2955
+7,a11b_1,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",113
+7,a11b_2,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",39
+7,a11b_3,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",19
+7,a11b_4,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",1
+7,a11b_5,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",0
+7,a11b_6,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",0
+7,a11b_7,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",1
+7,a11b_8,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",0
+7,a11b_9,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",4
+7,a11b_10,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",2
+7,a11b_11,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]? No lea alternativas. Re,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",14
+7,a12,"a12. En Chile, la ley reconoce diez pueblos indígenas. ¿Pertenece o es descendie",1=Sí; 2=No,2955
+7,a12b,a12b. Indique el pueblo indígena al que pertenece o es descendiente:,1=Aimara; 2=Rapa-Nui o Pascuenses; 3=Quechua; 4=Mapuche; 5=Atacameño (Likan-Antai); 6=Collas; 7=Kawashkar o Alacalufes; 8=Yámana o Yagán; 9=Diaguita; 10=Chango; 11=No pertenece a ninguno de estos pueblos indígenas,264
+7,b1,"b1. Actualmente, [NOMBRE] ¿está matriculado o asiste a algún establecimiento edu",1=Sí; 2=No,2955
+7,b2,b2. La semana pasada ¿asistió a clases presenciales al establecimiento educacion,1=Sí; 2=No,149
+7,b4a,b4.a. ¿Cuál es el nivel más alto alcanzado o el nivel educacional actual?  • Lea,1=Nunca asistió; 2=Preescolar; 3=Especial (Diferencial); 4=Básica; 5=Media Científico-Humanista; 6=Media Técnica-Profesional; 7=Superior Técnica (CFT o I. Profesional); 8=Superior Universitaria (Pregrado); 9=Postgrado; 10=NS/NR,2955
+7,b4b,"b4.b. En ese nivel educacional, ¿cuál fue el último curso que aprobó (para los q",Numeric/text without value labels,2922
+7,b5,b5. ¿Cuántos años dura(ó) su carrera de pregrado?,Numeric/text without value labels,97
+7,c1,"c1. Durante la semana pasada, ¿trabajó al menos una hora, sin considerar los que",1=Sí; 2=No,3012
+7,c2,"c2. Aunque no trabajó la semana pasada, ¿realizó alguna actividad por lo menos d",1=Sí; 2=No,1465
+7,c3,"c3. Aunque no trabajó la semana pasada, ¿tenía algún empleo, negocio u otra acti","1=Sí, por suspensión temporal de su contrato laboral por COVID-19; 2=Sí, por licencia médica por COVID-19; 3=Sí, por permiso de su empleador por cuarentena u otra razón; 4=Sí, por licencia médica por otra enfermedad; 5=Sí, por permiso pre o post-natal; 6=Sí, por huelga; 7=Sí, por enfermedad; 8=Sí, por vacaciones; 9=Sí, por otra razón. Especifique; 10=No",1432
+7,c4,c4. ¿Ha trabajado alguna vez?,1=Sí; 2=No,1365
+7,c5,c5. ¿Buscó trabajo remunerado o realizó alguna gestión para iniciar una activida,1=Sí; 2=No,1365
+7,c6,c6. ¿Cuál es la razón principal por la que no buscó trabajo o realizó alguna ges,1=Está dedicado(a) a los quehaceres del hogar; 2=Está dedicado(a) al cuidado de menores; 3=Está dedicado(a) al cuidado de algún adulto mayor o enfermo; 4=Está estudiando; 5=Está inválido(a) o tiene alguna enfermedad crónica; 6=Está jubilado(a) o tiene alguna pensión; 7=Es menor de edad o de edad avanzada; 8=Otra razón. Especifique,1255
+7,c8_1dig,c8. ¿Cuál es su ocupación u oficio o que hace Ud. en su trabajo principal? (CIUO,Numeric/text without value labels,3012
+7,c8_4dig,c8. ¿Cuál es su ocupación u oficio o que hace Ud. en su trabajo principal? (CIUO,Numeric/text without value labels,3012
+7,c9m,c9m. Mes,1=Ingrese mes; 8=No sabe; 9=No responde,1647
+7,c9m_m,c9m. Mes,Numeric/text without value labels,979
+7,c9a,c9a. Año,1=Ingrese año; 8=No sabe; 9=No responde,1647
+7,c9a_a,c9a. Año,Numeric/text without value labels,1562
+7,c10,"c10. En su trabajo o negocio principal, Ud. trabaja como:",1=Patrón o empleador; 2=Trabajador por cuenta propia; 3=Empleado u obrero del sector público; 4=Empleado u obrero de empresa pública; 5=Empleado u obrero del sector privado; 6=Servicio doméstico puertas adentro; 7=Servicio doméstico puertas afuera; 8=FF.AA. y de Orden; 9=Familiar no remunerado,1647
+7,c11,"c11. En su trabajo principal, ¿tiene contrato de trabajo escrito?","1=Sí, tiene contrato firmado; 2=Sí, tiene contrato, pero no ha firmado; 3=No tiene contrato escrito; 4=No sabe o no se acuerda si firmó contrato",1144
+7,c12_1dig,"c12. ¿A qué se dedica o que hace el negocio, empresa o institución donde trabaja",Numeric/text without value labels,3012
+7,c12_4dig,"c12. ¿A qué se dedica o que hace el negocio, empresa o institución donde trabaja",Numeric/text without value labels,3012
+7,c13,"c13. ¿Cuántas personas trabajan en total en el negocio, empresa o institución do",1=Sólo una persona (el entrevistado); 2=De 2 a 5 personas; 3=De 6 a 9 personas; 4=De 10 a 49 personas; 5=De 50 a 199 personas; 6=200 y más personas; 7=No sabe,1647
+7,c13a,"c13a. En su negocio, empresa o institución donde trabaja, ¿tiene algún cargo de",1=Sí; 2=No,1647
+7,c13b,c13b. ¿Cuántas personas aproximadamente tiene a su cargo de manera directa o ind,1=N° Personas; 2=Ninguna; 9=NS/NR,289
+7,c13bn,c13b. ¿Cuántas personas aproximadamente tiene a su cargo de manera directa o ind,Numeric/text without value labels,247
+7,c14ah,c14ah. Total de horas trabajadas en la semana,Numeric/text without value labels,1647
+7,c14ad,c14ad. Total de días trabajados en la semana,Numeric/text without value labels,1647
+7,c14b,"c14b. Del total de horas trabajadas la semana pasada, ¿cuántas realizó bajo la m",Numeric/text without value labels,1647
+7,c14d,c14d. ¿Cuán satisfecho está con su actual modalidad de trabajo que incluye horas,0=0. Muy insatisfecho; 1=1.; 2=2.; 3=3.; 4=4.; 5=5.; 6=6.; 7=7.; 8=8.; 9=9.; 10=10. Muy satisfecho,157
+7,c14e,c14e. ¿Tiene programado volver a trabajar de manera 100% presencial en los próxi,1=Sí; 2=No,157
+7,c14f,c14f. ¿Cuán de acuerdo está con volver a trabajar 100% presencial? Responda indi,1=Muy en desacuerdo; 2=En desacuerdo; 3=Ni de acuerdo ni en desacuerdo; 4=De acuerdo; 5=Muy de acuerdo,53
+7,c14g,"c14g. En su trabajo, ¿Dispone de un periodo diario de desconexión asegurado de a",1=Sí; 2=No,115
+7,c14h,"c14h. En su trabajo, ¿Cuenta con información respecto a los objetivos o metas as",1=Sí; 2=No,115
+7,c14i,"c14i. En su trabajo, ¿Existen instancias establecidas de interacción y apoyo con",1=Sí; 2=No,115
+7,c14j,"c14j. En su trabajo, ¿Puede comunicarse de manera expedita y fácil con su jefatu",1=Sí; 2=No,115
+7,c14k,"c14k. En su trabajo, ¿Se le ha informado sobre los riesgos de trabajar en solita",1=Sí; 2=No,115
+7,c14l,c14l. ¿Dispone de un periodo diario de desconexión asegurado de al menos 12 hora,1=Sí; 2=No,42
+7,c14m,"c14m. ¿Se ha informado sobre los riesgos de trabajar en solitario o aislado, que",1=Sí; 2=No,42
+7,c14n,c14n. ¿Su organización ha implementado alguna iniciativa para apoyar la salud me,1=Sí; 2=No,115
+7,c18,"c18. Desde el inicio de la pandemia, ¿los ingresos por ventas de su empresa o ne",1=Han disminuido. ¿En qué porcentaje?; 2=Se han mantenido constante; 3=Ha aumentado. ¿En qué porcentaje?; 4=NS/NR,492
+7,c18_porcentaje,"c18. Desde el inicio de la pandemia, ¿los ingresos por ventas de su empresa o ne",Numeric/text without value labels,297
+7,c31m,c31a. Mes,1=Ingrese mes; 8=No sabe; 9=No responde,103
+7,c31m_m,c31a. Mes,Numeric/text without value labels,74
+7,c31a,c31m. Año,1=Ingrese año; 8=No sabe; 9=No responde,103
+7,c31a_a,c31m. Año,Numeric/text without value labels,91
+7,c32_1dig,c32. ¿Cuál era su ocupación u oficio o que hacía Ud. en su último trabajo? (CIUO,Numeric/text without value labels,3012
+7,c32_4dig,c32. ¿Cuál era su ocupación u oficio o que hacía Ud. en su último trabajo? (CIUO,Numeric/text without value labels,3012
+7,c34,"c34. En su último trabajo o negocio, Ud. trabajaba como:",1=Patrón o empleador; 2=Trabajador por cuenta propia; 3=Empleado u obrero del sector público; 4=Empleado u obrero de empresa pública; 5=Empleado u obrero del sector privado; 6=Servicio doméstico puertas adentro; 7=Servicio doméstico puertas afuera; 8=FF.AA. y de Orden; 9=Familiar no remunerado,103
+7,c35,"c35. En su último trabajo, ¿tenía contrato de trabajo escrito?","1=Sí, tenía contrato firmado; 2=Sí, tenía contrato, pero no firmado; 3=No tenía contrato escrito; 4=No sabe o no se acuerda si firmó contrato",89
+7,c36_1dig,"c36. ¿A qué se dedicaba o qué hacía el negocio, empresa o institución donde trab",Numeric/text without value labels,3012
+7,c36_4dig,"c36. ¿A qué se dedicaba o qué hacía el negocio, empresa o institución donde trab",Numeric/text without value labels,3012
+7,c37,"c37. ¿Cuántas personas trabajaban en total en el negocio, empresa o institución",1=Sólo una persona (el entrevistado); 2=De 2 a 5 personas; 3=De 6 a 9 personas; 4=De 10 a 49 personas; 5=De 50 a 199 personas; 6=200 y más personas; 7=No sabe,103
+7,d1,"d1. En el mes anterior, ¿cuál fue su sueldo o salario líquido recibido por su tr",1=Monto mensual $; 2=No recibió sueldo o salario; 9=NS/NR,1148
+7,d1m,"d1. En el mes anterior, ¿cuál fue su sueldo o salario líquido recibido por su tr",Numeric/text without value labels,933
+7,d2,"d2. En el mes anterior, ¿cuál fue el monto líquido recibido en especies o regalí",1=Monto mensual $; 2=No recibió especies o regalías; 9=NS/NR,1148
+7,d2m,"d2. En el mes anterior, ¿cuál fue el monto líquido recibido en especies o regalí",Numeric/text without value labels,105
+7,d5,"d5. En el mes anterior, ¿cuál fue el total de ingresos obtenidos por actividades",1=Monto mensual $; 2=No recibió ingresos; 9=NS/NR,492
+7,d5m,"d5. En el mes anterior, ¿cuál fue el total de ingresos obtenidos por actividades",Numeric/text without value labels,347
+7,d7a,d7a. Seguro de Cesantía,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d7b,d7b. Indemnización por Despido,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d7c,d7c. Devolución de Impuestos,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d7d,d7d. Trabajos ocasionales o pololos,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d7e,d7e. Sueldo o salario del trabajo anterior,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d7f,d7f. Ingresos (honorarios) del trabajo anterior,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d7am,d7am. Seguro de Cesantía,Numeric/text without value labels,29
+7,d7bm,d7bm. Indemnización por Despido,Numeric/text without value labels,9
+7,d7cm,d7cm. Devolución de Impuestos,Numeric/text without value labels,13
+7,d7dm,d7dm. Trabajos ocasionales o pololos,Numeric/text without value labels,111
+7,d7em,d7em. Sueldo o salario del trabajo anterior,Numeric/text without value labels,33
+7,d7fm,d7fm. Ingresos (honorarios) del trabajo anterior,Numeric/text without value labels,12
+7,d8a,d8a. Arriendo de propiedades,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d8b,d8b. Arriendo de maquinaria/animales,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d8c,d8c. Intereses por depósitos,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d8d,d8d. Dividendos por acciones o bonos,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d8e,d8e. Retiro de utilidades de empresas,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d8am,d8am. Arriendo de propiedades,Numeric/text without value labels,105
+7,d8bm,d8bm. Arriendo de maquinaria/animales,Numeric/text without value labels,2
+7,d8cm,d8cm. Intereses por depósitos,Numeric/text without value labels,11
+7,d8dm,d8dm. Dividendos por acciones o bonos,Numeric/text without value labels,4
+7,d8em,d8em. Retiro de utilidades de empresas,Numeric/text without value labels,2
+7,d9a,d9a. Jubilación o pensión de vejez,1=Sí; 2=No; 3=NS; 9=NR,2337
+7,d9b,d9b. Jubilación o pensión de invalidez,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d9c,d9c. Montepío o pensión de viudez,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d9d,d9d. Pensión de orfandad,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d9e,d9e. PGU o Pensión Básica Solidaria,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d9f,d9f. Pensión por Leyes Especiales,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d9am,d9am. Jubilación o pensión de vejez,Numeric/text without value labels,543
+7,d9bm,d9bm. Jubilación o pensión de invalidez,Numeric/text without value labels,68
+7,d9cm,d9cm. Montepío o pensión de viudez,Numeric/text without value labels,99
+7,d9dm,d9dm. Pensión de orfandad,Numeric/text without value labels,9
+7,d9em,d9em. PGU o Pensión Básica Solidaria,Numeric/text without value labels,324
+7,d9fm,d9fm. Pensión por Leyes Especiales,Numeric/text without value labels,21
+7,d10a,d10a. Pensión de Alimentos,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d10b,d10b. Aporte de familiares o Amigos,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d10c,d10c. Aporte de Instituciones,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d10am,d10am. Pensión de Alimentos,Numeric/text without value labels,137
+7,d10bm,d10bm. Aporte de familiares o Amigos,Numeric/text without value labels,75
+7,d10cm,d10cm. Aporte de Instituciones,Numeric/text without value labels,15
+7,d11a,d11a. Subsidio Único Familiar (SUF),1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d11b,d11b. Bono de Protección Familiar,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d11c,d11c. Bono Base Familiar (Chile Solidario),1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d11d,d11d. Aporte Familiar Permanente,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d11e,d11e. Subsidio al Empleo Joven,1=Sí; 2=No; 3=NS; 9=NR,171
+7,d11f,d11f. Bono al Trabajo de la Mujer,1=Sí; 2=No; 3=NS; 9=NR,1126
+7,d11g,d11g. Bono COVID-19,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d11h,d11h. Ingreso Mínimo Garantizado,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d11i,d11i. Ingreso Familiar de Emergencia (IFE),1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d11j,d11j. Bono Clase Media,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d11k,d11k. IFE Laboral,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d11l,d11l. Subsidio Protege (a las madres trabajadoras para cuidado de hijos menores,1=Sí; 2=No; 3=NS; 9=NR,1168
+7,d11m,d11m. Otros subsidios del Estado,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d11am,d11am. Subsidio Único Familiar (SUF),Numeric/text without value labels,146
+7,d11bm,d11bm. Bono de Protección Familiar,Numeric/text without value labels,5
+7,d11cm,d11cm. Bono Base Familiar (Chile Solidario),Numeric/text without value labels,13
+7,d11dm,d11dm. Aporte Familiar Permanente,Numeric/text without value labels,78
+7,d11em,d11em. Subsidio al Empleo Joven,Numeric/text without value labels,4
+7,d11fm,d11fm. Bono al Trabajo de la Mujer,Numeric/text without value labels,7
+7,d11gm,d11gm. Bono COVID-19,Numeric/text without value labels,4
+7,d11hm,d11hm. Ingreso Mínimo Garantizado,Numeric/text without value labels,23
+7,d11im,d11im. Ingreso Familiar de Emergencia,Numeric/text without value labels,4
+7,d11jm,d11jm. Bono Clase Media,Numeric/text without value labels,0
+7,d11km,d11km. IFE Laboral,Numeric/text without value labels,3
+7,d11lm,d11lm. Subsidio Protege (a las madres trabajadoras para cuidado de hijos menores,Numeric/text without value labels,0
+7,d11mm,d11mm. Otros subsidios del Estado,Numeric/text without value labels,120
+7,d12a,d12a. Ingresos por trabajo,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d12b,d12b. Utilidades del negocio u otras actividades comerciales,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d12c,d12c. Intereses por depósitos o inversiones,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d12d,d12d. Arriendo de propiedades u otros bienes,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d12e,"d12e. Jubilaciones, pensiones o montepío",1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d12f,d12f. Ayuda de familiares o amigos,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d12g,d12g. Subsidios del Estado,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d12h,d12h. Otros ingresos,1=Sí; 2=No; 3=NS; 9=NR,3012
+7,d12am,d12am. Ingresos por trabajo,Numeric/text without value labels,539
+7,d12bm,d12bm. Utilidades del negocio u otras actividades comerciales,Numeric/text without value labels,10
+7,d12cm,d12cm. Intereses por depósitos o inversiones,Numeric/text without value labels,1
+7,d12dm,d12dm. Arriendo de propiedades u otros bienes,Numeric/text without value labels,15
+7,d12em,"d12em. Jubilaciones, pensiones o montepío",Numeric/text without value labels,399
+7,d12fm,d12fm. Ayuda de familiares o amigos,Numeric/text without value labels,19
+7,d12gm,d12gm. Subsidios del Estado,Numeric/text without value labels,42
+7,d12hm,d12hm. Otros ingresos,Numeric/text without value labels,20
+7,e3a1,e3a1. ¿Qué tan seguido usted toma alguna bebida alcohólica?,1=Nunca; 2=1 vez al mes o menos; 3=2 a 4 veces al mes; 4=2 a 3 veces a la semana; 5=4 o más veces a la semana,3012
+7,e3a2,e3a2. ¿Cuántos tragos suele tomar usted en un día típico de consumo de alcohol?,1=Entre 0 y 2; 2=Entre 3 y 4; 3=Entre 5 y 6; 4=Entre 7 y 9; 5=10 o más,1405
+7,e3a3,e3a3. ¿Qué tan seguido usted toma 6 o más tragos en una sola ocasión?,1=Nunca; 2=Menos de una vez al mes; 3=Mensualmente; 4=Semanalmente; 5=Todos o casi todos los días,1405
+7,e3b,"e3b. En relación con la situación anterior a la pandemia del Corona Virus, ¿uste",1=Ha aumentado?; 2=Se ha mantenido?; 3=Ha disminuido?,1405
+8,IdEncuesta,ID Entrevista,Numeric/text without value labels,2040
+8,IdPersona,ID Integrante dentro del hogar,Numeric/text without value labels,2040
+8,IdPanel,Identificador Panel para conectar los intengrantes entre rondas (Corrige anterio,Numeric/text without value labels,2040
+8,Entrevistado,Entrevistado,0=Resto integrantes del hogar; 1=Entrevistado Panel,2040
+8,IdRegion,Región de residencia,1=De Tarapaca; 2=De Antofagasta; 3=De Atacama; 4=De Coquimbo; 5=De Valparaiso; 6=Del Lib.B. O´Higgins; 7=Del Maule; 8=Del Biobio; 9=De la Araucanía; 10=De los Lagos; 11=De Aysen; 12=De Magallanes; 13=Metropolitana; 14=De los Rios; 15=De Arica y Parinacota; 16=De Ñuble,2040
+8,Fact_Exp,Factor de expansión Población Entrevistada Mayor de 18 años,Numeric/text without value labels,2040
+8,a2,Encuestador: a2. Revise el sexo registrado de los integrantes del hogar y corrij,1=Hombre; 2=Mujer,2040
+8,a3,Encuestador: a3. Revise la edad de los integrantes del hogar y corrija si es nec,Numeric/text without value labels,2040
+8,a4,a4. ¿Qué relación tiene [NOMBRE] con Ud. (Entrevistado)?,1=Entrevistado(a); 2=Cónyuge(a) o pareja; 3=Hijo(a); 4=Padre o Madre; 5=Suegro(a); 6=Yerno o Nuera; 7=Nieto(a); 8=Hermano(a); 9=Cuñado(a); 10=Otro familiar; 11=Otro no familiar; 12=Servicio Doméstico P. Adentro,2040
+8,a6,a6. ¿Cuál es el estado civil o conyugal actual de [NOMBRE]:,1=Casado(a); 2=Conviviente o pareja; 3=Anulado(a); 4=Separado(a); 5=Divorciado(a); 6=Viudo(a); 7=Soltero(a),2040
+8,a7,a7. ¿Cuál es su nacionalidad de [NOMBRE]?,1=Chilena (exclusiva); 2=Chilena y otra (doble nacionalidad); 3=Otra nacionalidad (extranjeros),2040
+8,a8,"a8. Cuando nació [NOMBRE], ¿en qué país vivía su madre?",1=Perú; 2=Haití; 3=Colombia; 4=Venezuela; 5=Ecuador; 6=Bolivia; 7=Argentina; 8=Otro. Especifique,56
+8,a9,a9. ¿En qué año llegó [NOMBRE] a Chile?,1=Ingrese año; 2=No sabe/No se acuerda,56
+8,a9a,a9. ¿En qué año llegó [NOMBRE] a Chile?,Numeric/text without value labels,52
+8,a10,"a10. Aproximadamente, ¿entre qué años llegó a Chile?",1=Año 1989 o antes; 2=Entre 1990 y 1999; 3=Entre 2000 y 2004; 4=Entre 2005 y 2009; 5=Entre 2010 y 2014; 6=Entre 2015 y 2016; 7=Entre 2017 y 2018; 8=Año 2019 o después; 9=No sabe,4
+8,a11a,a11a. ¿Alguno de los miembros del hogar es una persona con discapacidad?,1=Sí; 2=No,2040
+8,a11b_1,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",107
+8,a11b_2,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",23
+8,a11b_3,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",12
+8,a11b_4,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",1
+8,a11b_5,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",2
+8,a11b_6,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",2
+8,a11b_7,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",1
+8,a11b_8,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",3
+8,a11b_9,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",4
+8,a11b_10,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",0
+8,a11b_11,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",20
+8,a12,"a12. En Chile, la ley reconoce diez pueblos indígenas. ¿Pertenece o es descendie",1=Sí; 2=No,2040
+8,a12b,a12b. Indique el pueblo indígena al que pertenece o es descendiente:,1=Aimara; 2=Rapa-Nui o Pascuenses; 3=Quechua; 4=Mapuche; 5=Atacameño (Likan-Antai); 6=Collas; 7=Kawashkar o Alacalufes; 8=Yámana o Yagán; 9=Diaguita; 10=Chango; 11=No pertenece a ninguno de estos pueblos indígenas,174
+8,b1,"b1. Actualmente, [NOMBRE] ¿está matriculado o asiste a algún establecimiento edu",1=Sí; 2=No,2040
+8,b2,b2. La semana pasada ¿asistió a clases presenciales al establecimiento educacion,1=Sí; 2=No,74
+8,b4a,b4.a. ¿Cuál es el nivel más alto alcanzado o el nivel educacional actual?    • L,1=Nunca asistió; 2=Preescolar; 3=Especial (Diferencial); 4=Básica; 5=Media Científico-Humanista; 6=Media Técnica-Profesional; 7=Superior Técnica (CFT o I. Profesional); 8=Superior Universitaria (Pregrado); 9=Postgrado; 10=NS/NR,2040
+8,b4b,"b4.b. En ese nivel educacional, ¿cuál fue el último curso que aprobó (para los q",Numeric/text without value labels,1985
+8,b5,b5. ¿Cuántos años dura(ó) su carrera de pregrado?,Numeric/text without value labels,85
+8,c1,"c1. Durante la semana pasada, ¿trabajó al menos una hora, sin considerar los que",1=Sí; 2=No,2040
+8,c2,"c2. Aunque no trabajó la semana pasada, ¿realizó alguna actividad por lo menos d",1=Sí; 2=No,1026
+8,c3,"c3. Aunque no trabajó la semana pasada, ¿tenía algún empleo, negocio u otra acti","1=Sí, por suspensión temporal de su contrato laboral por COVID-19; 2=Sí, por licencia médica por COVID-19; 3=Sí, por permiso de su empleador por cuarentena u otra razón; 4=Sí, por licencia médica por otra enfermedad; 5=Sí, por permiso pre o post-natal; 6=Sí, por huelga; 7=Sí, por enfermedad; 8=Sí, por vacaciones; 9=Sí, por otra razón. Especifique; 10=No",995
+8,c4,c4. ¿Ha trabajado alguna vez?,1=Sí; 2=No,939
+8,c5,c5. ¿Buscó trabajo remunerado o realizó alguna gestión para iniciar una activida,1=Sí; 2=No,939
+8,c6,c6. ¿Cuál es la razón principal por la que no buscó trabajo o realizó alguna ges,1=Está dedicado(a) a los quehaceres del hogar; 2=Está dedicado(a) al cuidado de menores; 3=Está dedicado(a) al cuidado de algún adulto mayor o enfermo; 4=Está estudiando; 5=Está inválido(a) o tiene alguna enfermedad crónica; 6=Está jubilado(a) o tiene alguna pensión; 7=Es menor de edad o de edad avanzada; 8=Otra razón. Especifique,871
+8,c8_1dig,c8. ¿Cuál es su ocupación u oficio o que hace Ud. en su trabajo principal? (CIUO,Numeric/text without value labels,2040
+8,c8_4dig,c8. ¿Cuál es su ocupación u oficio o que hace Ud. en su trabajo principal? (CIUO,Numeric/text without value labels,2040
+8,c9m,c9m. Mes,1=Ingrese mes; 8=No sabe; 9=No responde,1101
+8,c9m_m,c9m. Mes,Numeric/text without value labels,660
+8,c9a,c9a. Año,1=Ingrese año; 8=No sabe; 9=No responde,1101
+8,c9a_a,c9a. Año,Numeric/text without value labels,1029
+8,c10,"c10. En su trabajo o negocio principal, Ud. trabaja como:",1=Patrón o empleador; 2=Trabajador por cuenta propia; 3=Empleado u obrero del sector público; 4=Empleado u obrero de empresa pública; 5=Empleado u obrero del sector privado; 6=Servicio doméstico puertas adentro; 7=Servicio doméstico puertas afuera; 8=FF.AA. y de Orden; 9=Familiar no remunerado,1101
+8,c11,"c11. En su trabajo principal, ¿tiene contrato de trabajo escrito?","1=Sí, tiene contrato firmado; 2=Sí, tiene contrato, pero no ha firmado; 3=No tiene contrato escrito; 4=No sabe o no se acuerda si firmó contrato",760
+8,c12_1dig,"c12. ¿A qué se dedica o que hace el negocio, empresa o institución donde trabaja",Numeric/text without value labels,2040
+8,c12_4dig,"c12. ¿A qué se dedica o que hace el negocio, empresa o institución donde trabaja",Numeric/text without value labels,2040
+8,c13,"c13. ¿Cuántas personas trabajan en total en el negocio, empresa o institución do",1=Sólo una persona (el entrevistado); 2=De 2 a 5 personas; 3=De 6 a 9 personas; 4=De 10 a 49 personas; 5=De 50 a 199 personas; 6=200 y más personas; 7=No sabe,1101
+8,c13a,"c13a. En su negocio, empresa o institución donde trabaja, ¿tiene algún cargo de",1=Sí; 2=No,1101
+8,c13b,c13b. ¿Cuántas personas aproximadamente tiene a su cargo de manera directa o ind,1=N° Personas; 2=Ninguna; 9=NS/NR,188
+8,c13bn,c13b. ¿Cuántas personas aproximadamente tiene a su cargo de manera directa o ind,Numeric/text without value labels,165
+8,c14ah,c14ah. Total de horas trabajadas en la semana,Numeric/text without value labels,1101
+8,c14ad,c14ad. Total de días trabajados en la semana,Numeric/text without value labels,1101
+8,c14b,"c14b. Del total de horas trabajadas la semana pasada, ¿cuántas realizó bajo la m",Numeric/text without value labels,1101
+8,c14d,c14d. ¿Cuán satisfecho está con su actual modalidad de trabajo que incluye horas,0=0. Muy insatisfecho; 1=1.; 2=2.; 3=3.; 4=4.; 5=5.; 6=6.; 7=7.; 8=8.; 9=9.; 10=10. Muy satisfecho,96
+8,c14e,c14e. ¿Tiene programado volver a trabajar de manera 100% presencial en los próxi,1=Sí; 2=No,96
+8,c14f,c14f. ¿Cuán de acuerdo está con volver a trabajar 100% presencial? Responda indi,1=Muy en desacuerdo; 2=En desacuerdo; 3=Ni de acuerdo ni en desacuerdo; 4=De acuerdo; 5=Muy de acuerdo,22
+8,c14g,"c14g. En su trabajo, ¿Dispone de un periodo diario de desconexión asegurado de a",1=Sí; 2=No,56
+8,c14h,"c14h. En su trabajo, ¿Cuenta con información respecto a los objetivos o metas as",1=Sí; 2=No,56
+8,c14i,"c14i. En su trabajo, ¿Existen instancias establecidas de interacción y apoyo con",1=Sí; 2=No,56
+8,c14j,"c14j. En su trabajo, ¿Puede comunicarse de manera expedita y fácil con su jefatu",1=Sí; 2=No,56
+8,c14k,"c14k. En su trabajo, ¿Se le ha informado sobre los riesgos de trabajar en solita",1=Sí; 2=No,56
+8,c14l,c14l. ¿Dispone de un periodo diario de desconexión asegurado de al menos 12 hora,1=Sí; 2=No,40
+8,c14m,"c14m. ¿Se ha informado sobre los riesgos de trabajar en solitario o aislado, que",1=Sí; 2=No,40
+8,c14n,c14n. ¿Su organización ha implementado alguna iniciativa para apoyar la salud me,1=Sí; 2=No,56
+8,c18,"c18. Desde el inicio de la pandemia, ¿los ingresos por ventas de su empresa o ne",1=Han disminuido. ¿En qué porcentaje?; 2=Se han mantenido constante; 3=Ha aumentado. ¿En qué porcentaje?; 4=NS/NR,334
+8,c18_porcentaje,"c18. Desde el inicio de la pandemia, ¿los ingresos por ventas de su empresa o ne",Numeric/text without value labels,185
+8,c31m,c31a. Mes,1=Ingrese mes; 8=No sabe; 9=No responde,59
+8,c31m_m,c31a. Mes,Numeric/text without value labels,45
+8,c31a,c31m. Año,1=Ingrese año; 8=No sabe; 9=No responde,59
+8,c31a_a,c31m. Año,Numeric/text without value labels,45
+8,c32_1dig,c32. ¿Cuál era su ocupación u oficio o que hacía Ud. en su último trabajo? (CIUO,Numeric/text without value labels,2040
+8,c32_4dig,c32. ¿Cuál era su ocupación u oficio o que hacía Ud. en su último trabajo? (CIUO,Numeric/text without value labels,2040
+8,c34,"c34. En su último trabajo o negocio, Ud. trabajaba como:",1=Patrón o empleador; 2=Trabajador por cuenta propia; 3=Empleado u obrero del sector público; 4=Empleado u obrero de empresa pública; 5=Empleado u obrero del sector privado; 6=Servicio doméstico puertas adentro; 7=Servicio doméstico puertas afuera; 8=FF.AA. y de Orden; 9=Familiar no remunerado,59
+8,c35,"c35. En su último trabajo, ¿tenía contrato de trabajo escrito?","1=Sí, tenía contrato firmado; 2=Sí, tenía contrato, pero no firmado; 3=No tenía contrato escrito; 4=No sabe o no se acuerda si firmó contrato",47
+8,c36_1dig,"c36. ¿A qué se dedicaba o qué hacía el negocio, empresa o institución donde trab",Numeric/text without value labels,2040
+8,c36_4dig,"c36. ¿A qué se dedicaba o qué hacía el negocio, empresa o institución donde trab",Numeric/text without value labels,2040
+8,c37,"c37. ¿Cuántas personas trabajaban en total en el negocio, empresa o institución",1=Sólo una persona (el entrevistado); 2=De 2 a 5 personas; 3=De 6 a 9 personas; 4=De 10 a 49 personas; 5=De 50 a 199 personas; 6=200 y más personas; 7=No sabe,59
+8,d1,"d1. En el mes anterior, ¿cuál fue su sueldo o salario líquido recibido por su tr",1=Monto mensual $; 2=No recibió sueldo o salario; 9=NS/NR,760
+8,d1m,"d1. En el mes anterior, ¿cuál fue su sueldo o salario líquido recibido por su tr",Numeric/text without value labels,643
+8,d2,"d2. En el mes anterior, ¿cuál fue el monto líquido recibido en especies o regalí",1=Monto mensual $; 2=No recibió especies o regalías; 9=NS/NR,760
+8,d2m,"d2. En el mes anterior, ¿cuál fue el monto líquido recibido en especies o regalí",Numeric/text without value labels,56
+8,d5,"d5. En el mes anterior, ¿cuál fue el total de ingresos obtenidos por actividades",1=Monto mensual $; 2=No recibió ingresos; 9=NS/NR,334
+8,d5m,"d5. En el mes anterior, ¿cuál fue el total de ingresos obtenidos por actividades",Numeric/text without value labels,240
+8,d7a,d7a. Seguro de Cesantía,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d7b,d7b. Indemnización por Despido,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d7c,d7c. Devolución de Impuestos,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d7d,d7d. Trabajos ocasionales o pololos,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d7e,d7e. Sueldo o salario del trabajo anterior,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d7f,d7f. Ingresos (honorarios) del trabajo anterior,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d7am,d7am. Seguro de Cesantía,Numeric/text without value labels,20
+8,d7bm,d7bm. Indemnización por Despido,Numeric/text without value labels,4
+8,d7cm,d7cm. Devolución de Impuestos,Numeric/text without value labels,2
+8,d7dm,d7dm. Trabajos ocasionales o pololos,Numeric/text without value labels,76
+8,d7em,d7em. Sueldo o salario del trabajo anterior,Numeric/text without value labels,24
+8,d7fm,d7fm. Ingresos (honorarios) del trabajo anterior,Numeric/text without value labels,7
+8,d8a,d8a. Arriendo de propiedades,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d8b,d8b. Arriendo de maquinaria/animales,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d8c,d8c. Intereses por depósitos,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d8d,d8d. Dividendos por acciones o bonos,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d8e,d8e. Retiro de utilidades de empresas,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d8am,d8am. Arriendo de propiedades,Numeric/text without value labels,78
+8,d8bm,d8bm. Arriendo de maquinaria/animales,Numeric/text without value labels,0
+8,d8cm,d8cm. Intereses por depósitos,Numeric/text without value labels,20
+8,d8dm,d8dm. Dividendos por acciones o bonos,Numeric/text without value labels,4
+8,d8em,d8em. Retiro de utilidades de empresas,Numeric/text without value labels,3
+8,d9a,d9a. Jubilación o pensión de vejez,1=Sí; 2=No; 3=NS; 9=NR,1600
+8,d9b,d9b. Jubilación o pensión de invalidez,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d9c,d9c. Montepío o pensión de viudez,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d9d,d9d. Pensión de orfandad,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d9e,d9e. PGU o Pensión Básica Solidaria,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d9f,d9f. Pensión por Leyes Especiales,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d9am,d9am. Jubilación o pensión de vejez,Numeric/text without value labels,367
+8,d9bm,d9bm. Jubilación o pensión de invalidez,Numeric/text without value labels,62
+8,d9cm,d9cm. Montepío o pensión de viudez,Numeric/text without value labels,80
+8,d9dm,d9dm. Pensión de orfandad,Numeric/text without value labels,4
+8,d9em,d9em. PGU o Pensión Básica Solidaria,Numeric/text without value labels,317
+8,d9fm,d9fm. Pensión por Leyes Especiales,Numeric/text without value labels,11
+8,d10a,d10a. Pensión de Alimentos,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d10b,d10b. Aporte de familiares o Amigos,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d10c,d10c. Aporte de Instituciones,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d10am,d10am. Pensión de Alimentos,Numeric/text without value labels,124
+8,d10bm,d10bm. Aporte de familiares o Amigos,Numeric/text without value labels,95
+8,d10cm,d10cm. Aporte de Instituciones,Numeric/text without value labels,15
+8,d11a,d11a. Subsidio Único Familiar (SUF),1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d11b,d11b. Bono de Protección Familiar,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d11c,d11c. Bono Base Familiar (Chile Solidario),1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d11d,d11d. Aporte Familiar Permanente,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d11e,d11e. Subsidio al Empleo Joven,1=Sí; 2=No; 3=NS; 9=NR,112
+8,d11f,d11f. Bono al Trabajo de la Mujer,1=Sí; 2=No; 3=NS; 9=NR,743
+8,d11g,d11g. Bono COVID-19,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d11h,d11h. Ingreso Mínimo Garantizado,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d11i,d11i. Ingreso Familiar de Emergencia (IFE),1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d11j,d11j. Bono Clase Media,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d11k,d11k. IFE Laboral,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d11l,d11l. Subsidio Protege (a las madres trabajadoras para cuidado de hijos menores,1=Sí; 2=No; 3=NS; 9=NR,777
+8,d11m,d11m. Otros subsidios del Estado,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d11am,d11am. Subsidio Único Familiar (SUF),Numeric/text without value labels,134
+8,d11bm,d11bm. Bono de Protección Familiar,Numeric/text without value labels,0
+8,d11cm,d11cm. Bono Base Familiar (Chile Solidario),Numeric/text without value labels,3
+8,d11dm,d11dm. Aporte Familiar Permanente,Numeric/text without value labels,9
+8,d11em,d11em. Subsidio al Empleo Joven,Numeric/text without value labels,0
+8,d11fm,d11fm. Bono al Trabajo de la Mujer,Numeric/text without value labels,9
+8,d11gm,d11gm. Bono COVID-19,Numeric/text without value labels,4
+8,d11hm,d11hm. Ingreso Mínimo Garantizado,Numeric/text without value labels,8
+8,d11im,d11im. Ingreso Familiar de Emergencia,Numeric/text without value labels,11
+8,d11jm,d11jm. Bono Clase Media,Numeric/text without value labels,1
+8,d11km,d11km. IFE Laboral,Numeric/text without value labels,0
+8,d11lm,d11lm. Subsidio Protege (a las madres trabajadoras para cuidado de hijos menores,Numeric/text without value labels,0
+8,d11mm,d11mm. Otros subsidios del Estado,Numeric/text without value labels,153
+8,d12a,d12a. Ingresos por trabajo,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d12b,d12b. Utilidades del negocio u otras actividades comerciales,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d12c,d12c. Intereses por depósitos o inversiones,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d12d,d12d. Arriendo de propiedades u otros bienes,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d12e,"d12e. Jubilaciones, pensiones o montepío",1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d12f,d12f. Ayuda de familiares o amigos,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d12g,d12g. Subsidios del Estado,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d12h,d12h. Otros ingresos,1=Sí; 2=No; 3=NS; 9=NR,2040
+8,d12am,d12am. Ingresos por trabajo,Numeric/text without value labels,424
+8,d12bm,d12bm. Utilidades del negocio u otras actividades comerciales,Numeric/text without value labels,5
+8,d12cm,d12cm. Intereses por depósitos o inversiones,Numeric/text without value labels,1
+8,d12dm,d12dm. Arriendo de propiedades u otros bienes,Numeric/text without value labels,9
+8,d12em,"d12em. Jubilaciones, pensiones o montepío",Numeric/text without value labels,271
+8,d12fm,d12fm. Ayuda de familiares o amigos,Numeric/text without value labels,12
+8,d12gm,d12gm. Subsidios del Estado,Numeric/text without value labels,35
+8,d12hm,d12hm. Otros ingresos,Numeric/text without value labels,52
+8,e3a1,e3a1. ¿Qué tan seguido usted toma alguna bebida alcohólica?,1=Nunca; 2=1 vez al mes o menos; 3=2 a 4 veces al mes; 4=2 a 3 veces a la semana; 5=4 o más veces a la semana,2040
+8,e3a2,e3a2. ¿Cuántos tragos suele tomar usted en un día típico de consumo de alcohol?,1=Entre 0 y 2; 2=Entre 3 y 4; 3=Entre 5 y 6; 4=Entre 7 y 9; 5=10 o más,854
+8,e3a3,e3a3. ¿Qué tan seguido usted toma 6 o más tragos en una sola ocasión?,1=Nunca; 2=Menos de una vez al mes; 3=Mensualmente; 4=Semanalmente; 5=Todos o casi todos los días,854
+8,e3b,"e3b. En relación con la situación anterior a la pandemia del Corona Virus, ¿uste",1=Ha aumentado?; 2=Se ha mantenido?; 3=Ha disminuido?,854
+9,IdEncuesta,ID Entrevista,Numeric/text without value labels,3056
+9,IdPersona,ID Integrante dentro del hogar,Numeric/text without value labels,3056
+9,IdPanel,Identificador Panel para conectar los intengrantes entre rondas (Corrige anterio,Numeric/text without value labels,3056
+9,Entrevistado,Entrevistado,0=Resto integrantes del hogar; 1=Entrevistado Panel,3056
+9,IdRegion,Región de residencia,1=De Tarapaca; 2=De Antofagasta; 3=De Atacama; 4=De Coquimbo; 5=De Valparaiso; 6=Del Lib.B. O´Higgins; 7=Del Maule; 8=Del Biobio; 9=De la Araucanía; 10=De los Lagos; 11=De Aysen; 12=De Magallanes; 13=Metropolitana; 14=De los Rios; 15=De Arica y Parinacota; 16=De Ñuble,3056
+9,Fact_Exp,Factor de expansión Población Entrevistada Mayor de 18 años,Numeric/text without value labels,3056
+9,a2,Encuestador: a2. Revise el sexo registrado de los integrantes del hogar y corrij,1=Hombre; 2=Mujer,3056
+9,a3,Encuestador: a3. Revise la edad de los integrantes del hogar y corrija si es nec,Numeric/text without value labels,3056
+9,a4,a4. ¿Qué relación tiene [NOMBRE] con Ud. (Entrevistado)?,1=Entrevistado(a); 2=Cónyuge(a) o pareja; 3=Hijo(a); 4=Padre o Madre; 5=Suegro(a); 6=Yerno o Nuera; 7=Nieto(a); 8=Hermano(a); 9=Cuñado(a); 10=Otro familiar; 11=Otro no familiar; 12=Servicio Doméstico P. Adentro,3056
+9,a6,a6. ¿Cuál es el estado civil o conyugal actual de [NOMBRE]:,1=Casado(a); 2=Conviviente o pareja; 3=Anulado(a); 4=Separado(a); 5=Divorciado(a); 6=Viudo(a); 7=Soltero(a),3055
+9,a7,a7. ¿Cuál es su nacionalidad de [NOMBRE]?,1=Chilena (exclusiva); 2=Chilena y otra (doble nacionalidad); 3=Otra nacionalidad (extranjeros),3056
+9,a8,"a8. Cuando nació [NOMBRE], ¿en qué país vivía su madre?",1=Perú; 2=Haití; 3=Colombia; 4=Venezuela; 5=Ecuador; 6=Bolivia; 7=Argentina; 8=Otro. Especifique,86
+9,a8_esp,"a8. Cuando nació [NOMBRE], ¿en qué país vivía su madre?",Numeric/text without value labels,3056
+9,a9,a9. ¿En qué año llegó [NOMBRE] a Chile?,1=Ingrese año; 2=No sabe/No se acuerda,86
+9,a9a,a9. ¿En qué año llegó [NOMBRE] a Chile?,Numeric/text without value labels,82
+9,a10,"a10. Aproximadamente, ¿entre qué años llegó a Chile?",1=Año 1989 o antes; 2=Entre 1990 y 1999; 3=Entre 2000 y 2004; 4=Entre 2005 y 2009; 5=Entre 2010 y 2014; 6=Entre 2015 y 2016; 7=Entre 2017 y 2018; 8=Año 2019 o después; 9=No sabe,4
+9,a11a,a11a. ¿Alguno de los miembros del hogar es una persona con discapacidad?,1=Sí; 2=No,3056
+9,a11b_1,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",132
+9,a11b_2,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",41
+9,a11b_3,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",12
+9,a11b_4,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",2
+9,a11b_5,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",4
+9,a11b_6,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",0
+9,a11b_7,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",0
+9,a11b_8,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",2
+9,a11b_9,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",4
+9,a11b_10,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",2
+9,a11b_11,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",24
+9,a12,"a12. En Chile, la ley reconoce diez pueblos indígenas. ¿Pertenece o es descendie",1=Sí; 2=No,3056
+9,a12b,a12b. Indique el pueblo indígena al que pertenece o es descendiente:,1=Aimara; 2=Rapa-Nui o Pascuenses; 3=Quechua; 4=Mapuche; 5=Atacameño (Likan-Antai); 6=Collas; 7=Kawashkar o Alacalufes; 8=Yámana o Yagán; 9=Diaguita; 10=Chango; 11=No pertenece a ninguno de estos pueblos indígenas,280
+9,b1,"b1. Actualmente, [NOMBRE] ¿está matriculado o asiste a algún establecimiento edu",1=Sí; 2=No,3056
+9,b2,b2. La semana pasada ¿asistió a clases presenciales al establecimiento educacion,1=Sí; 2=No,123
+9,b4a,b4.a. ¿Cuál es el nivel más alto alcanzado o el nivel educacional actual?    • L,1=Nunca asistió; 2=Preescolar; 3=Especial (Diferencial); 4=Básica; 5=Media Científico-Humanista; 6=Media Técnica-Profesional; 7=Superior Técnica (CFT o I. Profesional); 8=Superior Universitaria (Pregrado); 9=Postgrado; 10=NS/NR,3056
+9,b4b,"b4.b. En ese nivel educacional, ¿cuál fue el último curso que aprobó (para los q",Numeric/text without value labels,3006
+9,b5,b5. ¿Cuántos años dura(ó) su carrera de pregrado?,Numeric/text without value labels,93
+9,c1,"c1. Durante la semana pasada, usted don(ña) [NOMBRE_ENTREVISTADO1], ¿trabajó al",1=Sí; 2=No,3056
+9,c2,"c2. Aunque no trabajó la semana pasada, ¿realizó alguna actividad por lo menos d",1=Sí; 2=No,1592
+9,c3,"c3. Aunque no trabajó la semana pasada, ¿tenía algún empleo, negocio u otra acti","4=Sí, por licencia médica por otra enfermedad; 5=Sí, por permiso pre o post-natal; 6=Sí, por huelga; 7=Sí, por enfermedad; 8=Sí, por vacaciones; 9=Sí, por otra razón. Especifique; 10=No",1556
+9,c3_esp,"c3. Aunque no trabajó la semana pasada, ¿tenía algún empleo, negocio u otra acti",Numeric/text without value labels,3056
+9,c4,c4. ¿Ha trabajado alguna vez?,1=Sí; 2=No,1502
+9,c5,c5. ¿Buscó trabajo remunerado o realizó alguna gestión para iniciar una activida,1=Sí; 2=No,1502
+9,c6,c6. ¿Cuál es la razón principal por la que no buscó trabajo o realizó alguna ges,1=Está dedicado(a) a los quehaceres del hogar; 2=Está dedicado(a) al cuidado de menores; 3=Está dedicado(a) al cuidado de algún adulto mayor o enfermo; 4=Está estudiando; 5=Está inválido(a) o tiene alguna enfermedad crónica; 6=Está jubilado(a) o tiene alguna pensión; 7=Es menor de edad o de edad avanzada; 8=Otra razón. Especifique,1390
+9,c6_esp,c6. ¿Cuál es la razón principal por la que no buscó trabajo o realizó alguna ges,Numeric/text without value labels,3056
+9,c8_1dig,c8. ¿Cuál es su ocupación u oficio o que hace Ud. en su trabajo principal? (CIUO,Numeric/text without value labels,3056
+9,c8_4dig,c8. ¿Cuál es su ocupación u oficio o que hace Ud. en su trabajo principal? (CIUO,Numeric/text without value labels,3056
+9,c9m,c9m. Mes,1=Ingrese mes; 8=No sabe; 9=No responde,1554
+9,c9m_m,c9m. Mes,Numeric/text without value labels,1035
+9,c9a,c9a. Año,1=Ingrese año; 8=No sabe; 9=No responde,1554
+9,c9a_a,c9a. Año,Numeric/text without value labels,1480
+9,c10,"c10. En su trabajo o negocio principal, Ud. trabaja como:",1=Patrón o empleador; 2=Trabajador por cuenta propia; 3=Empleado u obrero del sector público; 4=Empleado u obrero de empresa pública; 5=Empleado u obrero del sector privado; 6=Servicio doméstico puertas adentro; 7=Servicio doméstico puertas afuera; 8=FF.AA. y de Orden; 9=Familiar no remunerado,1554
+9,c11,"c11. En su trabajo principal, ¿tiene contrato de trabajo escrito?","1=Sí, tiene contrato firmado; 2=Sí, tiene contrato, pero no ha firmado; 3=No tiene contrato escrito; 4=No sabe o no se acuerda si firmó contrato",1096
+9,c12_1dig,"c12. ¿A qué se dedica o que hace el negocio, empresa o institución donde trabaja",Numeric/text without value labels,3056
+9,c12_4dig,"c12. ¿A qué se dedica o que hace el negocio, empresa o institución donde trabaja",Numeric/text without value labels,3056
+9,c13,"c13. ¿Cuántas personas trabajan en total en el negocio, empresa o institución do",1=Sólo una persona (el entrevistado); 2=De 2 a 5 personas; 3=De 6 a 9 personas; 4=De 10 a 49 personas; 5=De 50 a 199 personas; 6=200 y más personas; 7=No sabe,1554
+9,c13a,"c13a. En su negocio, empresa o institución donde trabaja, ¿tiene algún cargo de",1=Sí; 2=No,1554
+9,c13b,c13b. ¿Cuántas personas aproximadamente tiene a su cargo de manera directa o ind,1=N° Personas; 2=Ninguna; 9=NS/NR,344
+9,c13bn,c13b. ¿Cuántas personas aproximadamente tiene a su cargo de manera directa o ind,Numeric/text without value labels,273
+9,c14ah,c14ah. Total de horas trabajadas en la semana,Numeric/text without value labels,1554
+9,c14ad,c14ad. Total de días trabajados en la semana,Numeric/text without value labels,1554
+9,c14b,"c14b. Del total de horas trabajadas la semana pasada, ¿cuántas realizó bajo la m",Numeric/text without value labels,1554
+9,c14d,c14d. ¿Cuán satisfecho está con su actual modalidad de trabajo que incluye horas,0=0. Muy insatisfecho; 1=1.; 2=2.; 3=3.; 4=4.; 5=5.; 6=6.; 7=7.; 8=8.; 9=9.; 10=10. Muy satisfecho,150
+9,c14e,c14e. ¿Tiene programado volver a trabajar de manera 100% presencial en los próxi,1=Sí; 2=No,150
+9,c14f,c14f. ¿Cuán de acuerdo está con volver a trabajar 100% presencial? Responda indi,1=Muy en desacuerdo; 2=En desacuerdo; 3=Ni de acuerdo ni en desacuerdo; 4=De acuerdo; 5=Muy de acuerdo,29
+9,c14g,"c14g. En su trabajo, ¿Dispone de un periodo diario de desconexión asegurado de a",1=Sí; 2=No,1102
+9,c14h,"c14h. En su trabajo, ¿Cuenta con información respecto a los objetivos o metas as",1=Sí; 2=No,1102
+9,c14i,"c14i. En su trabajo, ¿Existen instancias establecidas de interacción y apoyo con",1=Sí; 2=No,1102
+9,c14j,"c14j. En su trabajo, ¿Puede comunicarse de manera expedita y fácil con su jefatu",1=Sí; 2=No,1102
+9,c14l,c14l. ¿Dispone de un periodo diario de desconexión asegurado de al menos 12 hora,1=Sí; 2=No,446
+9,c31m,c31a. Mes,1=Ingrese mes; 8=No sabe; 9=No responde,107
+9,c31m_m,c31a. Mes,Numeric/text without value labels,79
+9,c31a,c31m. Año,1=Ingrese año; 8=No sabe; 9=No responde,107
+9,c31a_a,c31m. Año,Numeric/text without value labels,105
+9,c32_1dig,c32. ¿Cuál era su ocupación u oficio o que hacía Ud. en su último trabajo? (CIUO,Numeric/text without value labels,3056
+9,c32_4dig,c32. ¿Cuál era su ocupación u oficio o que hacía Ud. en su último trabajo? (CIUO,Numeric/text without value labels,3056
+9,c34,"c34. En su último trabajo o negocio, Ud. trabajaba como:",1=Patrón o empleador; 2=Trabajador por cuenta propia; 3=Empleado u obrero del sector público; 4=Empleado u obrero de empresa pública; 5=Empleado u obrero del sector privado; 6=Servicio doméstico puertas adentro; 7=Servicio doméstico puertas afuera; 8=FF.AA. y de Orden; 9=Familiar no remunerado,107
+9,c35,"c35. En su último trabajo, ¿tenía contrato de trabajo escrito?","1=Sí, tenía contrato firmado; 2=Sí, tenía contrato, pero no firmado; 3=No tenía contrato escrito; 4=No sabe o no se acuerda si firmó contrato",96
+9,c36_1dig,"c36. ¿A qué se dedicaba o qué hacía el negocio, empresa o institución donde trab",Numeric/text without value labels,3056
+9,c36_4dig,"c36. ¿A qué se dedicaba o qué hacía el negocio, empresa o institución donde trab",Numeric/text without value labels,3056
+9,c37,"c37. ¿Cuántas personas trabajaban en total en el negocio, empresa o institución",1=Sólo una persona (el entrevistado); 2=De 2 a 5 personas; 3=De 6 a 9 personas; 4=De 10 a 49 personas; 5=De 50 a 199 personas; 6=200 y más personas; 7=No sabe,107
+9,d1,"d1. En el mes anterior, ¿cuál fue su sueldo o salario líquido recibido por su tr",1=Monto mensual $; 2=No recibió sueldo o salario; 9=NS/NR,1102
+9,d1m,"d1. En el mes anterior, ¿cuál fue su sueldo o salario líquido recibido por su tr",Numeric/text without value labels,930
+9,d2,"d2. En el mes anterior, ¿cuál fue el monto líquido recibido en especies o regalí",1=Monto mensual $; 2=No recibió especies o regalías; 9=NS/NR,1102
+9,d2m,"d2. En el mes anterior, ¿cuál fue el monto líquido recibido en especies o regalí",Numeric/text without value labels,74
+9,d5,"d5. En el mes anterior, ¿cuál fue el total de ingresos obtenidos por actividades",1=Monto mensual $; 2=No recibió ingresos; 9=NS/NR,446
+9,d5m,"d5. En el mes anterior, ¿cuál fue el total de ingresos obtenidos por actividades",Numeric/text without value labels,325
+9,d7a,d7a. Seguro de Cesantía,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d7b,d7b. Indemnización por Despido,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d7c,d7c. Devolución de Impuestos,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d7d,d7d. Trabajos ocasionales o pololos,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d7e,d7e. Sueldo o salario del trabajo anterior,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d7f,d7f. Ingresos (honorarios) del trabajo anterior,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d7am,d7am. Seguro de Cesantía,Numeric/text without value labels,33
+9,d7bm,d7bm. Indemnización por Despido,Numeric/text without value labels,9
+9,d7cm,d7cm. Devolución de Impuestos,Numeric/text without value labels,63
+9,d7dm,d7dm. Trabajos ocasionales o pololos,Numeric/text without value labels,140
+9,d7em,d7em. Sueldo o salario del trabajo anterior,Numeric/text without value labels,25
+9,d7fm,d7fm. Ingresos (honorarios) del trabajo anterior,Numeric/text without value labels,4
+9,d8a,d8a. Arriendo de propiedades,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d8b,d8b. Arriendo de maquinaria/animales,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d8c,d8c. Intereses por depósitos,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d8d,d8d. Dividendos por acciones o bonos,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d8e,d8e. Retiro de utilidades de empresas,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d8am,d8am. Arriendo de propiedades,Numeric/text without value labels,127
+9,d8bm,d8bm. Arriendo de maquinaria/animales,Numeric/text without value labels,5
+9,d8cm,d8cm. Intereses por depósitos,Numeric/text without value labels,26
+9,d8dm,d8dm. Dividendos por acciones o bonos,Numeric/text without value labels,7
+9,d8em,d8em. Retiro de utilidades de empresas,Numeric/text without value labels,4
+9,d9a,d9a. Jubilación o pensión de vejez,1=Sí; 2=No; 3=NS; 9=NR,2401
+9,d9b,d9b. Pensión de invalidez,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d9c,d9c. Montepío o pensión de viudez,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d9d,d9d. Pensión de orfandad,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d9e,d9e. PGU o Pensión Básica Solidaria,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d9f,d9f. Pensión por Leyes Especiales,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d9am,d9am. Jubilación o pensión de vejez,Numeric/text without value labels,653
+9,d9bm,d9bm. Pensión de invalidez,Numeric/text without value labels,75
+9,d9cm,d9cm. Montepío o pensión de viudez,Numeric/text without value labels,104
+9,d9dm,d9dm. Pensión de orfandad,Numeric/text without value labels,8
+9,d9em,d9em. PGU o Pensión Básica Solidaria,Numeric/text without value labels,412
+9,d9fm,d9fm. Pensión por Leyes Especiales,Numeric/text without value labels,20
+9,d10a,d10a. Pensión de Alimentos,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d10b,d10b. Aporte de familiares o Amigos,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d10c,d10c. Aporte de Instituciones,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d10am,d10am. Pensión de Alimentos,Numeric/text without value labels,157
+9,d10bm,d10bm. Aporte de familiares o Amigos,Numeric/text without value labels,139
+9,d10cm,d10cm. Aporte de Instituciones,Numeric/text without value labels,15
+9,d11a,d11a. Subsidio Único Familiar (SUF),1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d11b,d11b. Bono de Protección Familiar,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d11c,d11c. Bono Base Familiar (Chile Solidario),1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d11d,d11d. Aporte Familiar Permanente,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d11e,d11e. Subsidio al Empleo Joven,1=Sí; 2=No; 3=NS; 9=NR,138
+9,d11f,d11f. Bono al Trabajo de la Mujer,1=Sí; 2=No; 3=NS; 9=NR,1122
+9,d11g,d11g. Bono COVID-19,1=Sí; 2=No; 3=NS; 9=NR,0
+9,d11h,d11h. Ingreso Mínimo Garantizado,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d11i,d11i. Ingreso Familiar de Emergencia (IFE),1=Sí; 2=No; 3=NS; 9=NR,0
+9,d11j,d11j. Bono Clase Media,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d11k,d11k. IFE Laboral,1=Sí; 2=No; 3=NS; 9=NR,0
+9,d11l,d11l. Subsidio Protege (a las madres trabajadoras para cuidado de hijos menores,1=Sí; 2=No; 3=NS; 9=NR,0
+9,d11m,d11m. Otros subsidios del Estado,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d11am,d11am. Subsidio Único Familiar (SUF),Numeric/text without value labels,172
+9,d11bm,d11bm. Bono de Protección Familiar,Numeric/text without value labels,3
+9,d11cm,d11cm. Bono Base Familiar (Chile Solidario),Numeric/text without value labels,3
+9,d11dm,d11dm. Aporte Familiar Permanente,Numeric/text without value labels,63
+9,d11em,d11em. Subsidio al Empleo Joven,Numeric/text without value labels,1
+9,d11fm,d11fm. Bono al Trabajo de la Mujer,Numeric/text without value labels,13
+9,d11gm,d11gm. Bono COVID-19,Numeric/text without value labels,0
+9,d11hm,d11hm. Ingreso Mínimo Garantizado,Numeric/text without value labels,15
+9,d11im,d11im. Ingreso Familiar de Emergencia,Numeric/text without value labels,0
+9,d11jm,d11jm. Bono Clase Media,Numeric/text without value labels,1
+9,d11km,d11km. IFE Laboral,Numeric/text without value labels,0
+9,d11lm,d11lm. Subsidio Protege (a las madres trabajadoras para cuidado de hijos menores,Numeric/text without value labels,0
+9,d11mm,d11mm. Otros subsidios del Estado,Numeric/text without value labels,100
+9,d12a,d12a. Ingresos por trabajo,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d12b,d12b. Utilidades del negocio u otras actividades comerciales,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d12c,d12c. Intereses por depósitos o inversiones,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d12d,d12d. Arriendo de propiedades u otros bienes,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d12e,"d12e. Jubilaciones, pensiones o montepío",1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d12f,d12f. Ayuda de familiares o amigos,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d12g,d12g. Subsidios del Estado,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d12h,d12h. Otros ingresos,1=Sí; 2=No; 3=NS; 9=NR,3056
+9,d12am,d12am. Ingresos por trabajo,Numeric/text without value labels,680
+9,d12bm,d12bm. Utilidades del negocio u otras actividades comerciales,Numeric/text without value labels,12
+9,d12cm,d12cm. Intereses por depósitos o inversiones,Numeric/text without value labels,2
+9,d12dm,d12dm. Arriendo de propiedades u otros bienes,Numeric/text without value labels,12
+9,d12em,"d12em. Jubilaciones, pensiones o montepío",Numeric/text without value labels,361
+9,d12fm,d12fm. Ayuda de familiares o amigos,Numeric/text without value labels,17
+9,d12gm,d12gm. Subsidios del Estado,Numeric/text without value labels,44
+9,d12hm,d12hm. Otros ingresos,Numeric/text without value labels,28
+9,e3a1,e3a1. ¿Qué tan seguido usted toma alguna bebida alcohólica?,1=Nunca; 2=1 vez al mes o menos; 3=2 a 4 veces al mes; 4=2 a 3 veces a la semana; 5=4 o más veces a la semana,3056
+9,e3a2,e3a2. ¿Cuántos tragos suele tomar usted en un día típico de consumo de alcohol?,1=Entre 0 y 2; 2=Entre 3 y 4; 3=Entre 5 y 6; 4=Entre 7 y 9; 5=10 o más,1297
+9,e3a3,e3a3. ¿Qué tan seguido usted toma 6 o más tragos en una sola ocasión?,1=Nunca; 2=Menos de una vez al mes; 3=Mensualmente; 4=Semanalmente; 5=Todos o casi todos los días,1297
+10,IdEncuesta,ID Entrevista,Numeric/text without value labels,2430
+10,IdPersona,ID Integrante dentro del hogar,Numeric/text without value labels,2430
+10,IdPanel,Identificador Panel para conectar los intengrantes entre rondas (Corrige anterio,Numeric/text without value labels,2430
+10,Entrevistado,Entrevistado,0=Resto integrantes del hogar; 1=Entrevistado Panel,2430
+10,IdRegion,Región de residencia,1=De Tarapaca; 2=De Antofagasta; 3=De Atacama; 4=De Coquimbo; 5=De Valparaiso; 6=Del Lib.B. O´Higgins; 7=Del Maule; 8=Del Biobio; 9=De la Araucanía; 10=De los Lagos; 11=De Aysen; 12=De Magallanes; 13=Metropolitana; 14=De los Rios; 15=De Arica y Parinacota; 16=De Ñuble,2430
+10,Fact_Exp,Factor de expansión Población Entrevistada Mayor de 18 años,Numeric/text without value labels,2430
+10,a2,Encuestador: a2. Revise el sexo registrado de los integrantes del hogar y corrij,1=Hombre; 2=Mujer,2430
+10,a3,Encuestador: a3. Revise la edad de los integrantes del hogar y corrija si es nec,Numeric/text without value labels,2430
+10,a4,a4. ¿Qué relación tiene [NOMBRE] con Ud. (Entrevistado)?,1=Entrevistado(a); 2=Cónyuge(a) o pareja; 3=Hijo(a); 4=Padre o Madre; 5=Suegro(a); 6=Yerno o Nuera; 7=Nieto(a); 8=Hermano(a); 9=Cuñado(a); 10=Otro familiar; 11=Otro no familiar; 12=Servicio Doméstico P. Adentro,2430
+10,a6,a6. ¿Cuál es el estado civil o conyugal actual de [NOMBRE]:,1=Casado(a); 2=Conviviente o pareja; 3=Anulado(a); 4=Separado(a); 5=Divorciado(a); 6=Viudo(a); 7=Soltero(a),2430
+10,a7,a7. ¿Cuál es su nacionalidad de [NOMBRE]?,1=Chilena (exclusiva); 2=Chilena y otra (doble nacionalidad); 3=Otra nacionalidad (extranjeros),2430
+10,a8,"a8. Cuando nació [NOMBRE], ¿en qué país vivía su madre?",1=Perú; 2=Haití; 3=Colombia; 4=Venezuela; 5=Ecuador; 6=Bolivia; 7=Argentina; 8=Otro. Especifique,71
+10,a9,a9. ¿En qué año llegó [NOMBRE] a Chile?,1=Ingrese año; 2=No sabe/No se acuerda,71
+10,a9a,a9. ¿En qué año llegó [NOMBRE] a Chile?,Numeric/text without value labels,70
+10,a10,"a10. Aproximadamente, ¿entre qué años llegó a Chile?",1=Año 1989 o antes; 2=Entre 1990 y 1999; 3=Entre 2000 y 2004; 4=Entre 2005 y 2009; 5=Entre 2010 y 2014; 6=Entre 2015 y 2016; 7=Entre 2017 y 2018; 8=Año 2019 o después; 9=No sabe,1
+10,a11a,a11a. ¿Alguno de los miembros del hogar es una persona con discapacidad?,1=Sí; 2=No,2430
+10,a11b_1,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",146
+10,a11b_2,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",31
+10,a11b_3,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",11
+10,a11b_4,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",6
+10,a11b_5,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",1
+10,a11b_6,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",1
+10,a11b_7,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",0
+10,a11b_8,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",2
+10,a11b_9,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",3
+10,a11b_10,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",0
+10,a11b_11,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",12
+10,a12,"a12. En Chile, la ley reconoce diez pueblos indígenas. ¿Pertenece o es descendie",1=Sí; 2=No,2430
+10,a12b,a12b. Indique el pueblo indígena al que pertenece o es descendiente:,1=Aimara; 2=Rapa-Nui o Pascuenses; 3=Quechua; 4=Mapuche; 5=Atacameño (Likan-Antai); 6=Collas; 7=Kawashkar o Alacalufes; 8=Yámana o Yagán; 9=Diaguita; 10=Chango; 11=No pertenece a ninguno de estos pueblos indígenas,232
+10,b1,"b1. Actualmente, [NOMBRE] ¿está matriculado o asiste a algún establecimiento edu",1=Sí; 2=No,2430
+10,b2,b2. La semana pasada ¿asistió a clases presenciales al establecimiento educacion,1=Sí; 2=No,92
+10,b4a,b4.a. ¿Cuál es el nivel más alto alcanzado o el nivel educacional actual?    • L,1=Nunca asistió; 2=Preescolar; 3=Especial (Diferencial); 4=Básica; 5=Media Científico-Humanista; 6=Media Técnica-Profesional; 7=Superior Técnica (CFT o I. Profesional); 8=Superior Universitaria (Pregrado); 9=Postgrado; 10=NS/NR,2430
+10,b4b,"b4.b. En ese nivel educacional, ¿cuál fue el último curso que aprobó (para los q",Numeric/text without value labels,2401
+10,b5,b5. ¿Cuántos años dura(ó) su carrera de pregrado?,Numeric/text without value labels,73
+10,c1,"c1. Durante la semana pasada, usted don(ña) [NOMBRE_ENTREVISTADO1], ¿trabajó al",1=Sí; 2=No,2430
+10,c2,"c2. Aunque no trabajó la semana pasada, ¿realizó alguna actividad por lo menos d",1=Sí; 2=No,1258
+10,c3,"c3. Aunque no trabajó la semana pasada, ¿tenía algún empleo, negocio u otra acti","4=Sí, por licencia médica por otra enfermedad; 5=Sí, por permiso pre o post-natal; 6=Sí, por huelga; 7=Sí, por enfermedad; 8=Sí, por vacaciones; 9=Sí, por otra razón. Especifique; 10=No",1237
+10,c4,c4. ¿Ha trabajado alguna vez?,1=Sí; 2=No,1152
+10,c5,c5. ¿Buscó trabajo remunerado o realizó alguna gestión para iniciar una activida,1=Sí; 2=No,1152
+10,c6,c6. ¿Cuál es la razón principal por la que no buscó trabajo o realizó alguna ges,1=Está dedicado(a) a los quehaceres del hogar; 2=Está dedicado(a) al cuidado de menores; 3=Está dedicado(a) al cuidado de algún adulto mayor o enfermo; 4=Está estudiando; 5=Está inválido(a) o tiene alguna enfermedad crónica; 6=Está jubilado(a) o tiene alguna pensión; 7=Es menor de edad o de edad avanzada; 8=Otra razón. Especifique,1075
+10,c8_1dig,c8. ¿Cuál es su ocupación u oficio o que hace Ud. en su trabajo principal? (CIUO,Numeric/text without value labels,2430
+10,c8_4dig,c8. ¿Cuál es su ocupación u oficio o que hace Ud. en su trabajo principal? (CIUO,Numeric/text without value labels,2430
+10,c9m,c9m. Mes,1=Ingrese mes; 8=No sabe; 9=No responde,1278
+10,c9m_m,c9m. Mes,Numeric/text without value labels,764
+10,c9a,c9a. Año,1=Ingrese año; 8=No sabe; 9=No responde,1278
+10,c9a_a,c9a. Año,Numeric/text without value labels,1233
+10,c10,"c10. En su trabajo o negocio principal, Ud. trabaja como:",1=Patrón o empleador; 2=Trabajador por cuenta propia; 3=Empleado u obrero del sector público; 4=Empleado u obrero de empresa pública; 5=Empleado u obrero del sector privado; 6=Servicio doméstico puertas adentro; 7=Servicio doméstico puertas afuera; 8=FF.AA. y de Orden; 9=Familiar no remunerado,1278
+10,c11,"c11. En su trabajo principal, ¿tiene contrato de trabajo escrito?","1=Sí, tiene contrato firmado; 2=Sí, tiene contrato, pero no ha firmado; 3=No tiene contrato escrito; 4=No sabe o no se acuerda si firmó contrato",888
+10,c12_1dig,"c12. ¿A qué se dedica o que hace el negocio, empresa o institución donde trabaja",Numeric/text without value labels,2430
+10,c12_4dig,"c12. ¿A qué se dedica o que hace el negocio, empresa o institución donde trabaja",Numeric/text without value labels,2430
+10,c13,"c13. ¿Cuántas personas trabajan en total en el negocio, empresa o institución do",1=Sólo una persona (el entrevistado); 2=De 2 a 5 personas; 3=De 6 a 9 personas; 4=De 10 a 49 personas; 5=De 50 a 199 personas; 6=200 y más personas; 7=No sabe,1278
+10,c13a,"c13a. En su negocio, empresa o institución donde trabaja, ¿tiene algún cargo de",1=Sí; 2=No,1278
+10,c13b,c13b. ¿Cuántas personas aproximadamente tiene a su cargo de manera directa o ind,1=N° Personas; 2=Ninguna; 9=NS/NR,263
+10,c13bn,c13b. ¿Cuántas personas aproximadamente tiene a su cargo de manera directa o ind,Numeric/text without value labels,225
+10,c14ah,c14ah. Total de horas trabajadas en la semana,Numeric/text without value labels,1278
+10,c14ad,c14ad. Total de días trabajados en la semana,Numeric/text without value labels,1278
+10,c14b,"c14b. Del total de horas trabajadas la semana pasada, ¿cuántas realizó bajo la m",Numeric/text without value labels,1278
+10,c14d,c14d. ¿Cuán satisfecho está con su actual modalidad de trabajo que incluye horas,0=0. Muy insatisfecho; 1=1.; 2=2.; 3=3.; 4=4.; 5=5.; 6=6.; 7=7.; 8=8.; 9=9.; 10=10. Muy satisfecho,119
+10,c14e,c14e. ¿Tiene programado volver a trabajar de manera 100% presencial en los próxi,1=Sí; 2=No,119
+10,c14f,c14f. ¿Cuán de acuerdo está con volver a trabajar 100% presencial? Responda indi,1=Muy en desacuerdo; 2=En desacuerdo; 3=Ni de acuerdo ni en desacuerdo; 4=De acuerdo; 5=Muy de acuerdo,29
+10,c14g,"c14g. En su trabajo, ¿Dispone de un periodo diario de desconexión asegurado de a",1=Sí; 2=No,93
+10,c14h,"c14h. En su trabajo, ¿Cuenta con información respecto a los objetivos o metas as",1=Sí; 2=No,93
+10,c14i,"c14i. En su trabajo, ¿Existen instancias establecidas de interacción y apoyo con",1=Sí; 2=No,93
+10,c14j,"c14j. En su trabajo, ¿Puede comunicarse de manera expedita y fácil con su jefatu",1=Sí; 2=No,93
+10,c14l,c14l. ¿Dispone de un periodo diario de desconexión asegurado de al menos 12 hora,1=Sí; 2=No,43
+10,c31m,c31a. Mes,1=Ingrese mes; 8=No sabe; 9=No responde,74
+10,c31m_m,c31a. Mes,Numeric/text without value labels,57
+10,c31a,c31m. Año,1=Ingrese año; 8=No sabe; 9=No responde,74
+10,c31a_a,c31m. Año,Numeric/text without value labels,72
+10,c32_1dig,c32. ¿Cuál era su ocupación u oficio o que hacía Ud. en su último trabajo? (CIUO,Numeric/text without value labels,2430
+10,c32_4dig,c32. ¿Cuál era su ocupación u oficio o que hacía Ud. en su último trabajo? (CIUO,Numeric/text without value labels,2430
+10,c34,"c34. En su último trabajo o negocio, Ud. trabajaba como:",1=Patrón o empleador; 2=Trabajador por cuenta propia; 3=Empleado u obrero del sector público; 4=Empleado u obrero de empresa pública; 5=Empleado u obrero del sector privado; 6=Servicio doméstico puertas adentro; 7=Servicio doméstico puertas afuera; 8=FF.AA. y de Orden; 9=Familiar no remunerado,74
+10,c35,"c35. En su último trabajo, ¿tenía contrato de trabajo escrito?","1=Sí, tenía contrato firmado; 2=Sí, tenía contrato, pero no firmado; 3=No tenía contrato escrito; 4=No sabe o no se acuerda si firmó contrato",64
+10,c36_1dig,"c36. ¿A qué se dedicaba o qué hacía el negocio, empresa o institución donde trab",Numeric/text without value labels,2430
+10,c36_4dig,"c36. ¿A qué se dedicaba o qué hacía el negocio, empresa o institución donde trab",Numeric/text without value labels,2430
+10,c37,"c37. ¿Cuántas personas trabajaban en total en el negocio, empresa o institución",1=Sólo una persona (el entrevistado); 2=De 2 a 5 personas; 3=De 6 a 9 personas; 4=De 10 a 49 personas; 5=De 50 a 199 personas; 6=200 y más personas; 7=No sabe,74
+10,d1,"d1. En el mes anterior, ¿cuál fue su sueldo o salario líquido recibido por su tr",1=Monto mensual $; 2=No recibió sueldo o salario; 9=NS/NR,897
+10,d1m,"d1. En el mes anterior, ¿cuál fue su sueldo o salario líquido recibido por su tr",Numeric/text without value labels,773
+10,d2,"d2. En el mes anterior, ¿cuál fue el monto líquido recibido en especies o regalí",1=Monto mensual $; 2=No recibió especies o regalías; 9=NS/NR,897
+10,d2m,"d2. En el mes anterior, ¿cuál fue el monto líquido recibido en especies o regalí",Numeric/text without value labels,68
+10,d5,"d5. En el mes anterior, ¿cuál fue el total de ingresos obtenidos por actividades",1=Monto mensual $; 2=No recibió ingresos; 9=NS/NR,376
+10,d5m,"d5. En el mes anterior, ¿cuál fue el total de ingresos obtenidos por actividades",Numeric/text without value labels,279
+10,d7a,d7a. Seguro de Cesantía,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d7b,d7b. Indemnización por Despido,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d7c,d7c. Devolución de Impuestos,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d7d,d7d. Trabajos ocasionales o pololos,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d7e,d7e. Sueldo o salario del trabajo anterior,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d7f,d7f. Ingresos (honorarios) del trabajo anterior,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d7am,d7am. Seguro de Cesantía,Numeric/text without value labels,21
+10,d7bm,d7bm. Indemnización por Despido,Numeric/text without value labels,8
+10,d7cm,d7cm. Devolución de Impuestos,Numeric/text without value labels,5
+10,d7dm,d7dm. Trabajos ocasionales o pololos,Numeric/text without value labels,135
+10,d7em,d7em. Sueldo o salario del trabajo anterior,Numeric/text without value labels,22
+10,d7fm,d7fm. Ingresos (honorarios) del trabajo anterior,Numeric/text without value labels,8
+10,d8a,d8a. Arriendo de propiedades,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d8b,d8b. Arriendo de maquinaria/animales,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d8c,d8c. Intereses por depósitos,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d8d,d8d. Dividendos por acciones o bonos,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d8e,d8e. Retiro de utilidades de empresas,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d8am,d8am. Arriendo de propiedades,Numeric/text without value labels,120
+10,d8bm,d8bm. Arriendo de maquinaria/animales,Numeric/text without value labels,2
+10,d8cm,d8cm. Intereses por depósitos,Numeric/text without value labels,30
+10,d8dm,d8dm. Dividendos por acciones o bonos,Numeric/text without value labels,3
+10,d8em,d8em. Retiro de utilidades de empresas,Numeric/text without value labels,2
+10,d9a,d9a. Jubilación o pensión de vejez,1=Sí; 2=No; 3=NS; 9=NR,1944
+10,d9b,d9b. Pensión de invalidez,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d9c,d9c. Montepío o pensión de viudez,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d9d,d9d. Pensión de orfandad,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d9e,d9e. PGU o Pensión Básica Solidaria,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d9f,d9f. Pensión por Leyes Especiales,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d9am,d9am. Jubilación o pensión de vejez,Numeric/text without value labels,462
+10,d9bm,d9bm. Pensión de invalidez,Numeric/text without value labels,70
+10,d9cm,d9cm. Montepío o pensión de viudez,Numeric/text without value labels,97
+10,d9dm,d9dm. Pensión de orfandad,Numeric/text without value labels,5
+10,d9em,d9em. PGU o Pensión Básica Solidaria,Numeric/text without value labels,469
+10,d9fm,d9fm. Pensión por Leyes Especiales,Numeric/text without value labels,18
+10,d10a,d10a. Pensión de Alimentos,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d10b,d10b. Aporte de familiares o Amigos,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d10c,d10c. Aporte de Instituciones,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d10am,d10am. Pensión de Alimentos,Numeric/text without value labels,137
+10,d10bm,d10bm. Aporte de familiares o Amigos,Numeric/text without value labels,84
+10,d10cm,d10cm. Aporte de Instituciones,Numeric/text without value labels,14
+10,d11a,d11a. Subsidio Único Familiar (SUF),1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d11b,d11b. Bono de Protección Familiar,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d11c,d11c. Bono Base Familiar (Chile Solidario),1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d11d,d11d. Aporte Familiar Permanente,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d11e,d11e. Subsidio al Empleo Joven,1=Sí; 2=No; 3=NS; 9=NR,83
+10,d11f,d11f. Bono al Trabajo de la Mujer,1=Sí; 2=No; 3=NS; 9=NR,876
+10,d11g,d11g. Bono COVID-19,1=Sí; 2=No; 3=NS; 9=NR,0
+10,d11h,d11h. Ingreso Mínimo Garantizado,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d11i,d11i. Ingreso Familiar de Emergencia (IFE),1=Sí; 2=No; 3=NS; 9=NR,0
+10,d11j,d11j. Bono Clase Media,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d11k,d11k. IFE Laboral,1=Sí; 2=No; 3=NS; 9=NR,0
+10,d11l,d11l. Subsidio Protege (a las madres trabajadoras para cuidado de hijos menores,1=Sí; 2=No; 3=NS; 9=NR,0
+10,d11m,d11m. Otros subsidios del Estado,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d11am,d11am. Subsidio Único Familiar (SUF),Numeric/text without value labels,141
+10,d11bm,d11bm. Bono de Protección Familiar,Numeric/text without value labels,3
+10,d11cm,d11cm. Bono Base Familiar (Chile Solidario),Numeric/text without value labels,7
+10,d11dm,d11dm. Aporte Familiar Permanente,Numeric/text without value labels,4
+10,d11em,d11em. Subsidio al Empleo Joven,Numeric/text without value labels,0
+10,d11fm,d11fm. Bono al Trabajo de la Mujer,Numeric/text without value labels,11
+10,d11gm,d11gm. Bono COVID-19,Numeric/text without value labels,0
+10,d11hm,d11hm. Ingreso Mínimo Garantizado,Numeric/text without value labels,0
+10,d11im,d11im. Ingreso Familiar de Emergencia,Numeric/text without value labels,0
+10,d11jm,d11jm. Bono Clase Media,Numeric/text without value labels,0
+10,d11km,d11km. IFE Laboral,Numeric/text without value labels,0
+10,d11lm,d11lm. Subsidio Protege (a las madres trabajadoras para cuidado de hijos menores,Numeric/text without value labels,0
+10,d11mm,d11mm. Otros subsidios del Estado,Numeric/text without value labels,140
+10,d12a,d12a. Ingresos por trabajo,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d12b,d12b. Utilidades del negocio u otras actividades comerciales,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d12c,d12c. Intereses por depósitos o inversiones,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d12d,d12d. Arriendo de propiedades u otros bienes,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d12e,"d12e. Jubilaciones, pensiones o montepío",1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d12f,d12f. Ayuda de familiares o amigos,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d12g,d12g. Subsidios del Estado,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d12h,d12h. Otros ingresos,1=Sí; 2=No; 3=NS; 9=NR,2430
+10,d12am,d12am. Ingresos por trabajo,Numeric/text without value labels,520
+10,d12bm,d12bm. Utilidades del negocio u otras actividades comerciales,Numeric/text without value labels,23
+10,d12cm,d12cm. Intereses por depósitos o inversiones,Numeric/text without value labels,6
+10,d12dm,d12dm. Arriendo de propiedades u otros bienes,Numeric/text without value labels,14
+10,d12em,"d12em. Jubilaciones, pensiones o montepío",Numeric/text without value labels,304
+10,d12fm,d12fm. Ayuda de familiares o amigos,Numeric/text without value labels,11
+10,d12gm,d12gm. Subsidios del Estado,Numeric/text without value labels,44
+10,d12hm,d12hm. Otros ingresos,Numeric/text without value labels,23
+10,e3a1,e3a1. ¿Qué tan seguido usted toma alguna bebida alcohólica?,1=Nunca; 2=1 vez al mes o menos; 3=2 a 4 veces al mes; 4=2 a 3 veces a la semana; 5=4 o más veces a la semana,2430
+10,e3a2,e3a2. ¿Cuántos tragos suele tomar usted en un día típico de consumo de alcohol?,1=Entre 0 y 2; 2=Entre 3 y 4; 3=Entre 5 y 6; 4=Entre 7 y 9; 5=10 o más,1187
+10,e3a3,e3a3. ¿Qué tan seguido usted toma 6 o más tragos en una sola ocasión?,1=Nunca; 2=Menos de una vez al mes; 3=Mensualmente; 4=Semanalmente; 5=Todos o casi todos los días,1187
+11,IdEncuesta,ID Entrevista,Numeric/text without value labels,2547
+11,IdPersona,ID Integrante dentro del hogar,Numeric/text without value labels,2547
+11,IdPanel,Identificador Panel para conectar los intengrantes entre rondas (Corrige anterio,Numeric/text without value labels,2547
+11,Entrevistado,Entrevistado,0=Resto integrantes del hogar; 1=Entrevistado Panel,2547
+11,IdRegion,Región de residencia,1=De Tarapaca; 2=De Antofagasta; 3=De Atacama; 4=De Coquimbo; 5=De Valparaiso; 6=Del Lib.B. O´Higgins; 7=Del Maule; 8=Del Biobio; 9=De la Araucanía; 10=De los Lagos; 11=De Aysen; 12=De Magallanes; 13=Metropolitana; 14=De los Rios; 15=De Arica y Parinacota; 16=De Ñuble,2547
+11,Fact_Exp,Factor de expansión Población Entrevistada Mayor de 18 años,Numeric/text without value labels,2547
+11,a2,a2. Sexo registrado de los integrantes del hogar,1=Hombre; 2=Mujer,2547
+11,a3,a3. Edad de los integrantes del hogar,Numeric/text without value labels,2547
+11,a4,a4. ¿Qué relación tiene [NOMBRE] con Ud. (Entrevistado)?,1=Entrevistado(a); 2=Cónyuge(a) o pareja; 3=Hijo(a); 4=Padre o Madre; 5=Suegro(a); 6=Yerno o Nuera; 7=Nieto(a); 8=Hermano(a); 9=Cuñado(a); 10=Otro familiar; 11=Otro no familiar; 12=Servicio Doméstico P. Adentro,2547
+11,a6,a6. ¿Cuál es el estado civil o conyugal actual de [NOMBRE]:,1=Casado(a); 2=Conviviente o pareja; 3=Anulado(a); 4=Separado(a); 5=Divorciado(a); 6=Viudo(a); 7=Soltero(a),2546
+11,a7,a7. ¿Cuál es su nacionalidad de [NOMBRE]?,1=Chilena (exclusiva); 2=Chilena y otra (doble nacionalidad); 3=Otra nacionalidad (extranjeros),2547
+11,a8,"a8. Cuando nació [NOMBRE], ¿en qué país vivía su madre?",1=Perú; 2=Haití; 3=Colombia; 4=Venezuela; 5=Ecuador; 6=Bolivia; 7=Argentina; 8=Otro. Especifique,83
+11,a9,a9. ¿En qué año llegó [NOMBRE] a Chile?,1=Ingrese año; 2=No sabe/No se acuerda,83
+11,a9a,a9. ¿En qué año llegó [NOMBRE] a Chile?,Numeric/text without value labels,80
+11,a10,"a10. Aproximadamente, ¿entre qué años llegó a Chile?",1=Año 1989 o antes; 2=Entre 1990 y 1999; 3=Entre 2000 y 2004; 4=Entre 2005 y 2009; 5=Entre 2010 y 2014; 6=Entre 2015 y 2016; 7=Entre 2017 y 2018; 8=Año 2019 o después; 9=No sabe,3
+11,a11a,a11a. ¿Alguno de los miembros del hogar es una persona con discapacidad?,1=Sí; 2=No,2547
+11,a11b_1,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",153
+11,a11b_2,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",44
+11,a11b_3,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",23
+11,a11b_4,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",1
+11,a11b_5,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",1
+11,a11b_6,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",0
+11,a11b_7,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",2
+11,a11b_8,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",3
+11,a11b_9,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",10
+11,a11b_10,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",0
+11,a11b_11,a11b. ¿Qué condiciones o alteraciones presenta [NOMBRE]?  No lea alternativas. R,"1=Dificultad física y/o motora; 2=Ceguera o alteraciones de la visión; 3=Sordera o alteraciones de la audición; 4=Discapacidad intelectual (o retardo mental); 5=Trastorno del espectro autista (incluye Asperger); 6=Trastorno del aprendizaje; 7=Trastorno del lenguaje; 8=Demencia o Alzheimer; 9=Alteración psiquiátrica (esquizofrenia, trastorno bipolar, trastorno obsesivo co; 10=Alteración genética (Síndrome de Down u otros); 11=Otra",10
+11,a12,"a12. En Chile, la ley reconoce diez pueblos indígenas. ¿Pertenece o es descendie",1=Sí; 2=No,2547
+11,a12b,a12b. Indique el pueblo indígena al que pertenece o es descendiente:,1=Aimara; 2=Rapa-Nui o Pascuenses; 3=Quechua; 4=Mapuche; 5=Atacameño (Likan-Antai); 6=Collas; 7=Kawashkar o Alacalufes; 8=Yámana o Yagán; 9=Diaguita; 10=Chango; 11=No pertenece a ninguno de estos pueblos indígenas,258
+11,b1,"b1. Actualmente, [NOMBRE] ¿está matriculado o asiste a algún establecimiento edu",1=Sí; 2=No,2547
+11,b2,b2. La semana pasada ¿asistió a clases presenciales al establecimiento educacion,1=Sí; 2=No,95
+11,b4a,b4.a. ¿Cuál es el nivel más alto alcanzado o el nivel educacional actual?    • L,1=Nunca asistió; 2=Preescolar; 3=Especial (Diferencial); 4=Básica; 5=Media Científico-Humanista; 6=Media Técnica-Profesional; 7=Superior Técnica (CFT o I. Profesional); 8=Superior Universitaria (Pregrado); 9=Postgrado; 10=NS/NR,2547
+11,b4b,"b4.b. En ese nivel educacional, ¿cuál fue el último curso que aprobó (para los q",Numeric/text without value labels,2530
+11,b5,b5. ¿Cuántos años dura(ó) su carrera de pregrado?,Numeric/text without value labels,75
+11,c1,"c1. Durante la semana pasada, usted don(ña) [NOMBRE_ENTREVISTADO1], ¿trabajó al",1=Sí; 2=No,2547
+11,c2,"c2. Aunque no trabajó la semana pasada, ¿realizó alguna actividad por lo menos d",1=Sí; 2=No,1318
+11,c3,"c3. Aunque no trabajó la semana pasada, ¿tenía algún empleo, negocio u otra acti","4=Sí, por licencia médica por otra enfermedad; 5=Sí, por permiso pre o post-natal; 6=Sí, por huelga; 7=Sí, por enfermedad; 8=Sí, por vacaciones; 9=Sí, por otra razón. Especifique; 10=No",1297
+11,c4,c4. ¿Ha trabajado alguna vez?,1=Sí; 2=No,1244
+11,c5,c5. ¿Buscó trabajo remunerado o realizó alguna gestión para iniciar una activida,1=Sí; 2=No,1244
+11,c6,c6. ¿Cuál es la razón principal por la que no buscó trabajo o realizó alguna ges,1=Está dedicado(a) a los quehaceres del hogar; 2=Está dedicado(a) al cuidado de menores; 3=Está dedicado(a) al cuidado de algún adulto mayor o enfermo; 4=Está estudiando; 5=Está inválido(a) o tiene alguna enfermedad crónica; 6=Está jubilado(a) o tiene alguna pensión; 7=Es menor de edad o de edad avanzada; 8=Otra razón. Especifique,1154
+11,c8_1dig,c8. ¿Cuál es su ocupación u oficio o que hace Ud. en su trabajo principal? (CIUO,Numeric/text without value labels,2547
+11,c8_4dig,c8. ¿Cuál es su ocupación u oficio o que hace Ud. en su trabajo principal? (CIUO,Numeric/text without value labels,2547
+11,c9m,c9m. Mes,1=Ingrese mes; 8=No sabe; 9=No responde,1303
+11,c9m_m,c9m. Mes,Numeric/text without value labels,815
+11,c9a,c9a. Año,1=Ingrese año; 8=No sabe; 9=No responde,1303
+11,c9a_a,c9a. Año,Numeric/text without value labels,1272
+11,c10,"c10. En su trabajo o negocio principal, Ud. trabaja como:",1=Patrón o empleador; 2=Trabajador por cuenta propia; 3=Empleado u obrero del sector público; 4=Empleado u obrero de empresa pública; 5=Empleado u obrero del sector privado; 6=Servicio doméstico puertas adentro; 7=Servicio doméstico puertas afuera; 8=FF.AA. y de Orden; 9=Familiar no remunerado,1303
+11,c11,"c11. En su trabajo principal, ¿tiene contrato de trabajo escrito?","1=Sí, tiene contrato firmado; 2=Sí, tiene contrato, pero no ha firmado; 3=No tiene contrato escrito; 4=No sabe o no se acuerda si firmó contrato",929
+11,c12_1dig,"c12. ¿A qué se dedica o que hace el negocio, empresa o institución donde trabaja",Numeric/text without value labels,2547
+11,c12_4dig,"c12. ¿A qué se dedica o que hace el negocio, empresa o institución donde trabaja",Numeric/text without value labels,2547
+11,c13,"c13. ¿Cuántas personas trabajan en total en el negocio, empresa o institución do",1=Sólo una persona (el entrevistado); 2=De 2 a 5 personas; 3=De 6 a 9 personas; 4=De 10 a 49 personas; 5=De 50 a 199 personas; 6=200 y más personas; 7=No sabe,1303
+11,c13a,"c13a. En su negocio, empresa o institución donde trabaja, ¿tiene algún cargo de",1=Sí; 2=No,1303
+11,c13b,c13b. ¿Cuántas personas aproximadamente tiene a su cargo de manera directa o ind,1=N° Personas; 2=Ninguna; 9=NS/NR,270
+11,c13bn,c13b. ¿Cuántas personas aproximadamente tiene a su cargo de manera directa o ind,Numeric/text without value labels,246
+11,c14ah,c14ah. Total de horas trabajadas en la semana,Numeric/text without value labels,1303
+11,c14ad,c14ad. Total de días trabajados en la semana,Numeric/text without value labels,1303
+11,c14b,"c14b. Del total de horas trabajadas la semana pasada, ¿cuántas realizó bajo la m",Numeric/text without value labels,1303
+11,c31m,c31a. Mes,1=Ingrese mes; 8=No sabe; 9=No responde,83
+11,c31m_m,c31a. Mes,Numeric/text without value labels,70
+11,c31a,c31m. Año,1=Ingrese año; 8=No sabe; 9=No responde,83
+11,c31a_a,c31m. Año,Numeric/text without value labels,80
+11,c32_1dig,c32. ¿Cuál era su ocupación u oficio o que hacía Ud. en su último trabajo? (CIUO,Numeric/text without value labels,2547
+11,c32_4dig,c32. ¿Cuál era su ocupación u oficio o que hacía Ud. en su último trabajo? (CIUO,Numeric/text without value labels,2547
+11,c34,"c34. En su último trabajo o negocio, Ud. trabajaba como:",1=Patrón o empleador; 2=Trabajador por cuenta propia; 3=Empleado u obrero del sector público; 4=Empleado u obrero de empresa pública; 5=Empleado u obrero del sector privado; 6=Servicio doméstico puertas adentro; 7=Servicio doméstico puertas afuera; 8=FF.AA. y de Orden; 9=Familiar no remunerado,83
+11,c35,"c35. En su último trabajo, ¿tenía contrato de trabajo escrito?","1=Sí, tenía contrato firmado; 2=Sí, tenía contrato, pero no firmado; 3=No tenía contrato escrito; 4=No sabe o no se acuerda si firmó contrato",72
+11,c36_1dig,"c36. ¿A qué se dedicaba o qué hacía el negocio, empresa o institución donde trab",Numeric/text without value labels,2547
+11,c36_4dig,"c36. ¿A qué se dedicaba o qué hacía el negocio, empresa o institución donde trab",Numeric/text without value labels,2547
+11,c37,"c37. ¿Cuántas personas trabajaban en total en el negocio, empresa o institución",1=Sólo una persona (el entrevistado); 2=De 2 a 5 personas; 3=De 6 a 9 personas; 4=De 10 a 49 personas; 5=De 50 a 199 personas; 6=200 y más personas; 7=No sabe,83
+11,d1,"d1. En el mes anterior, ¿cuál fue su sueldo o salario líquido recibido por su tr",1=Monto mensual $; 2=No recibió sueldo o salario; 9=NS/NR,933
+11,d1m,"d1. En el mes anterior, ¿cuál fue su sueldo o salario líquido recibido por su tr",Numeric/text without value labels,839
+11,d2,"d2. En el mes anterior, ¿cuál fue el monto líquido recibido en especies o regalí",1=Monto mensual $; 2=No recibió especies o regalías; 9=NS/NR,933
+11,d2m,"d2. En el mes anterior, ¿cuál fue el monto líquido recibido en especies o regalí",Numeric/text without value labels,48
+11,d5,"d5. En el mes anterior, ¿cuál fue el total de ingresos obtenidos por actividades",1=Monto mensual $; 2=No recibió ingresos; 9=NS/NR,368
+11,d5m,"d5. En el mes anterior, ¿cuál fue el total de ingresos obtenidos por actividades",Numeric/text without value labels,287
+11,d7a,d7a. Seguro de Cesantía,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d7b,d7b. Indemnización por Despido,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d7c,d7c. Devolución de Impuestos,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d7d,d7d. Trabajos ocasionales o pololos,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d7e,d7e. Sueldo o salario del trabajo anterior,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d7f,d7f. Ingresos (honorarios) del trabajo anterior,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d7am,d7am. Seguro de Cesantía,Numeric/text without value labels,30
+11,d7bm,d7bm. Indemnización por Despido,Numeric/text without value labels,16
+11,d7cm,d7cm. Devolución de Impuestos,Numeric/text without value labels,40
+11,d7dm,d7dm. Trabajos ocasionales o pololos,Numeric/text without value labels,170
+11,d7em,d7em. Sueldo o salario del trabajo anterior,Numeric/text without value labels,26
+11,d7fm,d7fm. Ingresos (honorarios) del trabajo anterior,Numeric/text without value labels,17
+11,d8a,d8a. Arriendo de propiedades,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d8b,d8b. Arriendo de maquinaria/animales,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d8c,d8c. Intereses por depósitos,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d8d,d8d. Dividendos por acciones o bonos,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d8e,d8e. Retiro de utilidades de empresas,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d8am,d8am. Arriendo de propiedades,Numeric/text without value labels,143
+11,d8bm,d8bm. Arriendo de maquinaria/animales,Numeric/text without value labels,3
+11,d8cm,d8cm. Intereses por depósitos,Numeric/text without value labels,21
+11,d8dm,d8dm. Dividendos por acciones o bonos,Numeric/text without value labels,5
+11,d8em,d8em. Retiro de utilidades de empresas,Numeric/text without value labels,4
+11,d9a,d9a. Jubilación o pensión de vejez,1=Sí; 2=No; 3=NS; 9=NR,2062
+11,d9b,d9b. Pensión de invalidez,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d9c,d9c. Montepío o pensión de viudez,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d9d,d9d. Pensión de orfandad,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d9e,d9e. PGU o Pensión Básica Solidaria,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d9f,d9f. Pensión por Leyes Especiales,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d9am,d9am. Jubilación o pensión de vejez,Numeric/text without value labels,506
+11,d9bm,d9bm. Pensión de invalidez,Numeric/text without value labels,73
+11,d9cm,d9cm. Montepío o pensión de viudez,Numeric/text without value labels,107
+11,d9dm,d9dm. Pensión de orfandad,Numeric/text without value labels,10
+11,d9em,d9em. PGU o Pensión Básica Solidaria,Numeric/text without value labels,556
+11,d9fm,d9fm. Pensión por Leyes Especiales,Numeric/text without value labels,18
+11,d10a,d10a. Pensión de Alimentos,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d10b,d10b. Aporte de familiares o Amigos,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d10c,d10c. Aporte de Instituciones,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d10am,d10am. Pensión de Alimentos,Numeric/text without value labels,134
+11,d10bm,d10bm. Aporte de familiares o Amigos,Numeric/text without value labels,75
+11,d10cm,d10cm. Aporte de Instituciones,Numeric/text without value labels,21
+11,d11a,d11a. Subsidio Único Familiar (SUF),1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d11b,d11b. Bono de Protección Familiar,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d11c,d11c. Bono Base Familiar (Chile Solidario),1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d11d,d11d. Aporte Familiar Permanente,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d11e,d11e. Subsidio al Empleo Joven,1=Sí; 2=No; 3=NS; 9=NR,75
+11,d11f,d11f. Bono al Trabajo de la Mujer,1=Sí; 2=No; 3=NS; 9=NR,908
+11,d11g,d11g. Bono COVID-19,1=Sí; 2=No; 3=NS; 9=NR,0
+11,d11h,d11h. Ingreso Mínimo Garantizado,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d11i,d11i. Ingreso Familiar de Emergencia (IFE),1=Sí; 2=No; 3=NS; 9=NR,0
+11,d11j,d11j. Bono Clase Media,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d11k,d11k. IFE Laboral,1=Sí; 2=No; 3=NS; 9=NR,0
+11,d11l,d11l. Subsidio Protege (a las madres trabajadoras para cuidado de hijos menores,1=Sí; 2=No; 3=NS; 9=NR,0
+11,d11m,d11m. Otros subsidios del Estado,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d11am,d11am. Subsidio Único Familiar (SUF),Numeric/text without value labels,140
+11,d11bm,d11bm. Bono de Protección Familiar,Numeric/text without value labels,0
+11,d11cm,d11cm. Bono Base Familiar (Chile Solidario),Numeric/text without value labels,9
+11,d11dm,d11dm. Aporte Familiar Permanente,Numeric/text without value labels,30
+11,d11em,d11em. Subsidio al Empleo Joven,Numeric/text without value labels,0
+11,d11fm,d11fm. Bono al Trabajo de la Mujer,Numeric/text without value labels,5
+11,d11gm,d11gm. Bono COVID-19,Numeric/text without value labels,0
+11,d11hm,d11hm. Ingreso Mínimo Garantizado,Numeric/text without value labels,1
+11,d11im,d11im. Ingreso Familiar de Emergencia,Numeric/text without value labels,0
+11,d11jm,d11jm. Bono Clase Media,Numeric/text without value labels,0
+11,d11km,d11km. IFE Laboral,Numeric/text without value labels,0
+11,d11lm,d11lm. Subsidio Protege (a las madres trabajadoras para cuidado de hijos menores,Numeric/text without value labels,0
+11,d11mm,d11mm. Otros subsidios del Estado,Numeric/text without value labels,127
+11,d12a,d12a. Ingresos por trabajo,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d12b,d12b. Utilidades del negocio u otras actividades comerciales,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d12c,d12c. Intereses por depósitos o inversiones,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d12d,d12d. Arriendo de propiedades u otros bienes,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d12e,"d12e. Jubilaciones, pensiones o montepío",1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d12f,d12f. Ayuda de familiares o amigos,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d12g,d12g. Subsidios del Estado,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d12h,d12h. Otros ingresos,1=Sí; 2=No; 3=NS; 9=NR,2547
+11,d12am,d12am. Ingresos por trabajo,Numeric/text without value labels,589
+11,d12bm,d12bm. Utilidades del negocio u otras actividades comerciales,Numeric/text without value labels,7
+11,d12cm,d12cm. Intereses por depósitos o inversiones,Numeric/text without value labels,1
+11,d12dm,d12dm. Arriendo de propiedades u otros bienes,Numeric/text without value labels,20
+11,d12em,"d12em. Jubilaciones, pensiones o montepío",Numeric/text without value labels,388
+11,d12fm,d12fm. Ayuda de familiares o amigos,Numeric/text without value labels,16
+11,d12gm,d12gm. Subsidios del Estado,Numeric/text without value labels,63
+11,d12hm,d12hm. Otros ingresos,Numeric/text without value labels,22
+11,e3a1,e3a1. ¿Qué tan seguido usted toma alguna bebida alcohólica?,1=Nunca; 2=1 vez al mes o menos; 3=2 a 4 veces al mes; 4=2 a 3 veces a la semana; 5=4 o más veces a la semana,2547
+11,e3a2,e3a2. ¿Cuántos tragos suele tomar usted en un día típico de consumo de alcohol?,1=Entre 0 y 2; 2=Entre 3 y 4; 3=Entre 5 y 6; 4=Entre 7 y 9; 5=10 o más,1147
+11,e3a3,e3a3. ¿Qué tan seguido usted toma 6 o más tragos en una sola ocasión?,1=Nunca; 2=Menos de una vez al mes; 3=Mensualmente; 4=Semanalmente; 5=Todos o casi todos los días,1147

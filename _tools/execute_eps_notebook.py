@@ -19,13 +19,14 @@ def main():
     parser.add_argument("--affinity", help="Comma-separated logical processor numbers")
     parser.add_argument("--through", type=int, help="Execute through this zero-based cell for a preliminary check")
     parser.add_argument("--output-dir", help="Project-relative aggregate-output directory for an independent reproduction")
+    parser.add_argument("--output-env", default="EPS_MARKOV_OUTPUT", help="Environment variable that receives --output-dir")
     args = parser.parse_args()
     if args.affinity:
         import psutil
         psutil.Process().cpu_affinity([int(x) for x in args.affinity.split(",")])
     if args.output_dir:
         assert not Path(args.output_dir).is_absolute() and ".." not in Path(args.output_dir).parts
-        os.environ["EPS_MARKOV_OUTPUT"] = args.output_dir
+        os.environ[args.output_env] = args.output_dir
     path = Path(args.notebook).resolve()
     doc = nbformat.read(path, as_version=4)
     start = time.monotonic()
@@ -46,7 +47,7 @@ def main():
         def process_message(self, msg, cell, cell_index):
             if msg.get("msg_type") == "stream":
                 for line in msg.get("content", {}).get("text", "").splitlines():
-                    if line.startswith(("CV repeat", "EPS design JKn", "Person bootstrap")):
+                    if line.startswith(("CV repeat", "EPS design JKn", "Person bootstrap", "TSM CV", "TSM bootstrap", "TSM annual", "Completed")):
                         print(line, flush=True)
             return super().process_message(msg, cell, cell_index)
     client = ProgressClient(doc, timeout=None, kernel_name="ir", allow_errors=False,

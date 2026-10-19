@@ -1,0 +1,14 @@
+"level","category","sex","n","share_hed6"
+"destination","C1","Men",914,0.381913222713099
+"destination","C1","Women",1131,0.213428354036211
+"destination","C2","Men",5,0.386810331359748
+"destination","C2","Women",9,0.823631083908265
+"destination","C3","Men",2,1
+"destination","C3","Women",1,1
+"destination","NC","Men",490,0
+"destination","NC","Women",1569,0
+"origin","N0","All",1592,0
+"origin","FD","All",431,0
+"origin","C1","All",2086,0.311830201496881
+"origin","C2","All",6,0.569616171773035
+"origin","C3","All",6,1

@@ -1,0 +1,243 @@
+{
+  "origin_rows": 7337,
+  "observed_pairs": 4175,
+  "observed_ids": 1934,
+  "primary_grams": 12,
+  "conversion_sensitivity": 15.7,
+  "metrics": [
+    {
+      "grams": 12,
+      "model": "Empirical",
+      "pairs": 4175,
+      "persons": 1934,
+      "Brier": 0.35790961,
+      "logloss_clipped": 0.60520931,
+      "logloss_raw": null,
+      "zero_probability_outcomes": 8,
+      "zero_probability_weight_share": 0.00192087,
+      "accuracy": 0.76487186,
+      "balanced_accuracy": 0.37505441,
+      "classes_with_outcomes": 5,
+      "floored_log_scores": 8
+    },
+    {
+      "grams": 12,
+      "model": "Gamma",
+      "pairs": 4175,
+      "persons": 1934,
+      "Brier": 0.3501404,
+      "logloss_clipped": 0.56914555,
+      "logloss_raw": 0.56914555,
+      "zero_probability_outcomes": 0,
+      "zero_probability_weight_share": 0,
+      "accuracy": 0.76558045,
+      "balanced_accuracy": 0.38542186,
+      "classes_with_outcomes": 5,
+      "floored_log_scores": 0
+    },
+    {
+      "grams": 12,
+      "model": "Lognormal",
+      "pairs": 4175,
+      "persons": 1934,
+      "Brier": 0.35000893,
+      "logloss_clipped": 0.55382501,
+      "logloss_raw": 0.55382501,
+      "zero_probability_outcomes": 0,
+      "zero_probability_weight_share": 0,
+      "accuracy": 0.76558045,
+      "balanced_accuracy": 0.38542186,
+      "classes_with_outcomes": 5,
+      "floored_log_scores": 0
+    },
+    {
+      "grams": 12,
+      "model": "Ordinal",
+      "pairs": 4175,
+      "persons": 1934,
+      "Brier": 0.34863791,
+      "logloss_clipped": 0.55244726,
+      "logloss_raw": 0.55244726,
+      "zero_probability_outcomes": 0,
+      "zero_probability_weight_share": 0,
+      "accuracy": 0.76653625,
+      "balanced_accuracy": 0.38556692,
+      "classes_with_outcomes": 5,
+      "floored_log_scores": 0
+    },
+    {
+      "grams": 15.7,
+      "model": "Empirical",
+      "pairs": 4175,
+      "persons": 1934,
+      "Brier": 0.36647049,
+      "logloss_clipped": 0.61139884,
+      "logloss_raw": null,
+      "zero_probability_outcomes": 4,
+      "zero_probability_weight_share": 0.00068572,
+      "accuracy": 0.75902343,
+      "balanced_accuracy": 0.31232324,
+      "classes_with_outcomes": 6,
+      "floored_log_scores": 4
+    },
+    {
+      "grams": 15.7,
+      "model": "Gamma",
+      "pairs": 4175,
+      "persons": 1934,
+      "Brier": 0.36017984,
+      "logloss_clipped": 0.5869998,
+      "logloss_raw": 0.58973832,
+      "zero_probability_outcomes": 0,
+      "zero_probability_weight_share": 0,
+      "accuracy": 0.75967181,
+      "balanced_accuracy": 0.32091261,
+      "classes_with_outcomes": 6,
+      "floored_log_scores": 1
+    },
+    {
+      "grams": 15.7,
+      "model": "Lognormal",
+      "pairs": 4175,
+      "persons": 1934,
+      "Brier": 0.36058974,
+      "logloss_clipped": 0.57559354,
+      "logloss_raw": 0.57559354,
+      "zero_probability_outcomes": 0,
+      "zero_probability_weight_share": 0,
+      "accuracy": 0.7578987,
+      "balanced_accuracy": 0.3205132,
+      "classes_with_outcomes": 6,
+      "floored_log_scores": 0
+    },
+    {
+      "grams": 15.7,
+      "model": "Ordinal",
+      "pairs": 4175,
+      "persons": 1934,
+      "Brier": 0.36078726,
+      "logloss_clipped": 0.58516864,
+      "logloss_raw": null,
+      "zero_probability_outcomes": 1,
+      "zero_probability_weight_share": 0.00040087,
+      "accuracy": 0.75808879,
+      "balanced_accuracy": 0.32076836,
+      "classes_with_outcomes": 6,
+      "floored_log_scores": 1
+    }
+  ],
+  "bootstrap_pair_success": 500,
+  "bootstrap_person_success": 500,
+  "primary_score": "Weighted multiclass Brier",
+  "category_support": [
+    {
+      "grams": 12,
+      "state": "ND_unknown",
+      "origin_rows": 2985,
+      "observed_origin_pairs": 1621,
+      "observed_origin_ids": 885,
+      "destination_pairs": 1352,
+      "destination_ids": 687
+    },
+    {
+      "grams": 12,
+      "state": "FD",
+      "origin_rows": 632,
+      "observed_origin_pairs": 434,
+      "observed_origin_ids": 322,
+      "destination_pairs": 733,
+      "destination_ids": 506
+    },
+    {
+      "grams": 12,
+      "state": "cat1",
+      "origin_rows": 3700,
+      "observed_origin_pairs": 2108,
+      "observed_origin_ids": 1168,
+      "destination_pairs": 2072,
+      "destination_ids": 1148
+    },
+    {
+      "grams": 12,
+      "state": "cat2",
+      "origin_rows": 13,
+      "observed_origin_pairs": 6,
+      "observed_origin_ids": 5,
+      "destination_pairs": 15,
+      "destination_ids": 13
+    },
+    {
+      "grams": 12,
+      "state": "cat3",
+      "origin_rows": 7,
+      "observed_origin_pairs": 6,
+      "observed_origin_ids": 6,
+      "destination_pairs": 3,
+      "destination_ids": 3
+    },
+    {
+      "grams": 12,
+      "state": "cat4",
+      "origin_rows": 0,
+      "observed_origin_pairs": 0,
+      "observed_origin_ids": 0,
+      "destination_pairs": 0,
+      "destination_ids": 0
+    },
+    {
+      "grams": 15.7,
+      "state": "ND_unknown",
+      "origin_rows": 2985,
+      "observed_origin_pairs": 1621,
+      "observed_origin_ids": 885,
+      "destination_pairs": 1352,
+      "destination_ids": 687
+    },
+    {
+      "grams": 15.7,
+      "state": "FD",
+      "origin_rows": 632,
+      "observed_origin_pairs": 434,
+      "observed_origin_ids": 322,
+      "destination_pairs": 733,
+      "destination_ids": 506
+    },
+    {
+      "grams": 15.7,
+      "state": "cat1",
+      "origin_rows": 3685,
+      "observed_origin_pairs": 2099,
+      "observed_origin_ids": 1167,
+      "destination_pairs": 2063,
+      "destination_ids": 1146
+    },
+    {
+      "grams": 15.7,
+      "state": "cat2",
+      "origin_rows": 22,
+      "observed_origin_pairs": 13,
+      "observed_origin_ids": 11,
+      "destination_pairs": 19,
+      "destination_ids": 16
+    },
+    {
+      "grams": 15.7,
+      "state": "cat3",
+      "origin_rows": 11,
+      "observed_origin_pairs": 7,
+      "observed_origin_ids": 6,
+      "destination_pairs": 7,
+      "destination_ids": 7
+    },
+    {
+      "grams": 15.7,
+      "state": "cat4",
+      "origin_rows": 2,
+      "observed_origin_pairs": 1,
+      "observed_origin_ids": 1,
+      "destination_pairs": 1,
+      "destination_ids": 1
+    }
+  ],
+  "evidence": "Actual local SAV execution; HED54 is a proxy, not verified past-30-day HED"
+}

@@ -1,0 +1,13 @@
+"model","eps_period","years","cells_included","cells","weighted_RMSE","max_absolute_difference"
+"A","VI_VII",3.671,"supported origins",20,0.197481398907537,0.382934834216459
+"A","VII_VIII",4.03,"supported origins",25,0.259002523454251,0.525496253334542
+"Gamma","VI_VII",3.671,"supported origins",20,0.199007756382583,0.385368082726668
+"Gamma","VII_VIII",4.03,"supported origins",25,0.260661207159846,0.52428985623471
+"Lognormal","VI_VII",3.671,"supported origins",20,0.19791987884661,0.382238825131556
+"Lognormal","VII_VIII",4.03,"supported origins",25,0.259534660995541,0.524735609371236
+"A","VI_VII",3.671,"excluding FD origin",20,0.197481398907537,0.382934834216459
+"A","VII_VIII",4.03,"excluding FD origin",20,0.259230084454169,0.525496253334542
+"Gamma","VI_VII",3.671,"excluding FD origin",20,0.199007756382583,0.385368082726668
+"Gamma","VII_VIII",4.03,"excluding FD origin",20,0.26082947448372,0.52428985623471
+"Lognormal","VI_VII",3.671,"excluding FD origin",20,0.19791987884661,0.382238825131556
+"Lognormal","VII_VIII",4.03,"excluding FD origin",20,0.259742366943545,0.524735609371236

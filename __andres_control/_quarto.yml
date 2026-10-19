@@ -9,3 +9,4 @@ project:
   render:
     - "*.ipynb"
     - "!*.before_recovery_*.ipynb"
+    - "!*_dry.ipynb"

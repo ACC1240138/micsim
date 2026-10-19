@@ -1,0 +1,13 @@
+"variant","model","quantity","probability"
+"primary_bounds_tolerance_1","A","Drinking_t1",0.56461552594732
+"primary_bounds_tolerance_1","A","Escalation_from_C1",0.00660181714214451
+"primary_bounds_tolerance_1","A","C3_C4_t1",0.00102932449705483
+"primary_bounds_tolerance_1","Lognormal","Drinking_t1",0.561756025120439
+"primary_bounds_tolerance_1","Lognormal","Escalation_from_C1",0.00837567018345656
+"primary_bounds_tolerance_1","Lognormal","C3_C4_t1",0.00184351553099329
+"strict_EPS_bounds","A","Drinking_t1",0.564705916140446
+"strict_EPS_bounds","A","Escalation_from_C1",0.00700047599749964
+"strict_EPS_bounds","A","C3_C4_t1",0.00072810013249248
+"strict_EPS_bounds","Lognormal","Drinking_t1",0.561776215312364
+"strict_EPS_bounds","Lognormal","Escalation_from_C1",0.00848961036623113
+"strict_EPS_bounds","Lognormal","C3_C4_t1",0.00189673394306776

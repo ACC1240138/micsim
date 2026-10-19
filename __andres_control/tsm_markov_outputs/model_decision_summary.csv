@@ -1,0 +1,2 @@
+"best_logloss","best_brier","lognormal_minus_A","lower","upper","mean_absolute_class_probability_change_pp","clear_lognormal_A_separation"
+"Lognormal","Ordinal_single",-0.0205434645226221,-0.0348264909762942,-0.00626043806895009,3.27376977588258,TRUE

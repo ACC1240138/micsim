@@ -1,0 +1,6 @@
+"e3a1","frequency","days_week","e3a2","quantity_band","typical_drinks"
+1,"Never",0,1,"0–2",1
+2,"Monthly or less",0.114989733059548,2,"3–4",3.5
+3,"2–4/month",0.68993839835729,3,"5–6",5.5
+4,"2–3/week",2.5,4,"7–9",8
+5,"4+/week",5.5,5,"10+",10
