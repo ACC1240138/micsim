@@ -69,6 +69,7 @@ Rscript --vanilla _tools/test_renv_activation.R   # renv loads the same library 
 5. `expand_pif2.ipynb` (~13 h) and `expand_pif3.ipynb`: PIF with synchronised draws, and tables/figures. **The draws are not in the repository**; regenerate them with `expand_pif` → `expand_pif2`.
 6. `guion_reunion_ACC_2026-09-16_revision_critica.ipynb`: critical review (reads saved artefacts).
 7. `TSM_ENPG_v3_EN.ipynb` (~51 min, E-cores on this PC): TSM panel transitions harmonized with the EPS engine, see `tsm_v3_plan_2026-10-19.md` and `hallazgos_tsm_v3.md`; `eps_markov_transitions_EN.ipynb` (~21 min) is the EPS engine itself.
+8. `eps_markov_transitions_v2_EN.ipynb` (~30 min, E-cores on this PC): the EPS engine plus the IPW version 2 (attrition model with the agreed predictors, SuperLearner weights, three weighting schemes, diagnostics), see `eps_ipw_v2_plan_2026-10-19.md` and `hallazgos_eps_ipw_v2.md`; built by `_tools/build_eps_markov_v2_notebook.py`, the original notebook stays untouched.
 
 The canonical handoff is `__andres_control/codex_handoff_adam_rr_full_override_caveman.md` (see `AGENTS.md` §1). Roadmap: `presentacion_micsim.qmd` / `.html`.
 

@@ -1,0 +1,3 @@
+"period","risk_set","usable_pairs","persons","age_min","age_max","weight_ESS","main_weight"
+"VI_VII",5252,4702,4702,18,65,3154.04171904232,"Official longitudinal + item/link-validity IPW"
+"VII_VIII",6047,3393,3393,22,65,1937.52388929299,"VII cross-sectional + follow-up/item IPW"
