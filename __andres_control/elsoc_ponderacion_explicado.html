@@ -1,0 +1,217 @@
+<title>Ponderación ELSOC explicada</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: one reading column (72ch) with full-width chart panels; same token family as the other MiCSim didactic pages. */
+:root {
+  --bg: #f7f8fa; --panel: #ffffff; --fg: #1b2430; --muted: #5a6572; --line: #d6dbe2; --soft: #eaeef3;
+  --accent: #2a78d6; --e1: #444444; --e2: #2a78d6; --e3: #9aa4b1; --e4: #eb6834; --e5: #1baf7a; --e6: #8e44ad;
+  --display: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", Consolas, "Courier New", monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15191f; --panel: #1d232b; --fg: #e8ecf1; --muted: #a9b3bf; --line: #333b46; --soft: #262d37;
+  --accent: #3987e5; --e1: #c9d1db; --e2: #3987e5; --e3: #7f8a97; --e4: #ef7a4a; --e5: #22b981; --e6: #a569c9; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #15191f; --panel: #1d232b; --fg: #e8ecf1; --muted: #a9b3bf; --line: #333b46; --soft: #262d37;
+  --accent: #3987e5; --e1: #c9d1db; --e2: #3987e5; --e3: #7f8a97; --e4: #ef7a4a; --e5: #22b981; --e6: #a569c9; color-scheme: dark; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); line-height: 1.55; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px; }
+main { max-width: 72ch; margin: 0 auto; }
+header { padding-block: 40px 8px; }
+h1 { font-family: var(--display); font-weight: 600; font-size: clamp(1.7rem, 4vw, 2.4rem); line-height: 1.15; margin: 0 0 10px; text-wrap: balance; }
+h2 { font-family: var(--display); font-weight: 600; font-size: 1.35rem; margin: 40px 0 10px; text-wrap: balance; }
+h3 { font-size: 1rem; margin: 22px 0 6px; }
+p, li { font-size: 1rem; }
+.lead { font-size: 1.08rem; color: var(--fg); }
+.eyebrow { font-family: var(--mono); font-size: .78rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.muted { color: var(--muted); }
+.key { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); padding: 14px 16px; margin: 18px 0; }
+.key p { margin: 6px 0; }
+table { border-collapse: collapse; width: 100%; font-size: .92rem; font-variant-numeric: tabular-nums; }
+.tablewrap { overflow-x: auto; margin: 12px 0 4px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); font-size: .82rem; letter-spacing: .03em; text-transform: uppercase; }
+td.num, th.num { text-align: right; }
+code { font-family: var(--mono); font-size: .88em; background: var(--soft); padding: 1px 4px; border-radius: 3px; }
+.panel { background: var(--panel); border: 1px solid var(--line); padding: 14px 12px 8px; margin: 16px 0; }
+.panel h3 { margin: 0 0 4px; }
+.panel .note { font-size: .85rem; color: var(--muted); margin: 6px 0 0; }
+svg text { font-family: var(--body); fill: var(--fg); }
+svg .axis { stroke: var(--line); stroke-width: 1; }
+svg .grid { stroke: var(--line); stroke-width: 1; stroke-dasharray: 2 4; }
+svg .lab { fill: var(--muted); font-size: 11px; }
+svg .zero { stroke: var(--muted); stroke-width: 1; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: .85rem; margin: 8px 0 0; }
+.legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; background: var(--c); }
+dl.facts { display: grid; grid-template-columns: 1fr; gap: 10px 16px; margin: 12px 0; }
+dl.facts div { background: var(--panel); border: 1px solid var(--line); padding: 10px 12px; min-width: 0; }
+dl.facts dt { font-weight: 600; font-size: .95rem; margin: 0 0 4px; }
+dl.facts dd { margin: 0; font-size: .9rem; color: var(--muted); overflow-wrap: anywhere; }
+@media (min-width: 720px) { dl.facts { grid-template-columns: 1fr 1fr; } }
+ul { padding-left: 1.2em; }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.foot { margin-top: 36px; border-top: 1px solid var(--line); padding-top: 12px; font-size: .85rem; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+<main>
+<header>
+  <div class="eyebrow">MiCSim · FONDECYT 1240138 · ELSOC 2016–2023 · 21 de octubre de 2026</div>
+  <h1>Qué cambia al ponderar las transiciones de consumo regular en ELSOC</h1>
+  <p class="lead">Las mismas personas responden en dos entrevistas separadas por dos o tres años si consumen alcohol regularmente (S09) y, si lo hacen, cuántos días a la semana bebieron el último mes (S10). El cuaderno anterior midió los cambios sin ponderar. Este análisis repite la medición con los dos pesos longitudinales oficiales de ELSOC y responde dos preguntas distintas: cuánto mueve la ponderación a las mismas personas y cuánto mueve el hecho de quedarse solo con el panel balanceado al que se aplica el peso panel.</p>
+</header>
+
+<div class="key">
+  <p><strong>Lo que se encontró.</strong> Ponderar con el peso total sube la permanencia «regular → regular» entre 3,2 y 6,6 puntos y baja la permanencia «no regular → no regular» entre 3,5 y 5,7 en los tres intervalos; los intervalos de confianza excluyen el cero en tres de esos seis movimientos, y la proporción que repite su respuesta casi no cambia. Con el peso panel sobre su propio subconjunto los movimientos son mayores, hasta 13 puntos en 2016→2018. La explicación principal es de composición: los pesos devuelven a los jóvenes de 18–29 el lugar que tienen en la población urbana (su participación pasa de 13–18 % a 26–32 % de los pares), y los jóvenes son los que menos permanecen en la no regularidad.</p>
+  <p><strong>Lo que no se encontró.</strong> Seleccionar el panel balanceado apenas cambia las transiciones cuando no se pondera: frente a la muestra general las diferencias son de 1,6 puntos o menos; frente al resto de la muestra llegan a 4–5 puntos, con intervalos anchos. La brecha entre los dos escenarios ponderados tal como se entregan proviene de aplicar pesos a ese subconjunto, no de haberlo seleccionado. Y los pesos cuestan precisión: el tamaño efectivo de muestra cae al 30 % y los intervalos se duplican.</p>
+</div>
+
+<h2>1. Tres escenarios, seis estimadores</h2>
+<p>El encargo pedía comparar <code>ponderador_long_total</code>, <code>ponderador_long_panel</code> y la opción sin pesos. Como el peso panel solo existe para quienes respondieron todas las olas de su cohorte, comparar «total» con «panel» mezcla dos cosas: otra gente y otro peso. Para separarlas se estiman seis cantidades por intervalo. G es la muestra general de pares; P es el subconjunto con peso panel.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Estimador</th><th>Personas</th><th>Peso</th><th class="num">Pares S09: 2016→18 / 2018→21 / 2021→23</th></tr></thead>
+<tbody>
+<tr><td><strong style="color:var(--e1)">E1</strong> sin ponderar</td><td>G</td><td>ninguno (referencia)</td><td class="num">1.888 / 2.261 / 1.807</td></tr>
+<tr><td><strong style="color:var(--e2)">E2</strong> total</td><td>G</td><td>peso total de la ola de destino</td><td class="num">1.888 / 2.261 / 1.807</td></tr>
+<tr><td><strong style="color:var(--e3)">E3</strong> sin ponderar</td><td>P</td><td>ninguno</td><td class="num">1.012 / 1.561 / 1.506</td></tr>
+<tr><td><strong style="color:var(--e4)">E4</strong> panel</td><td>P</td><td>peso panel de la ola de destino</td><td class="num">1.012 / 1.561 / 1.506</td></tr>
+<tr><td><strong style="color:var(--e5)">E5</strong> total</td><td>P</td><td>peso total</td><td class="num">1.012 / 1.561 / 1.506</td></tr>
+<tr><td><strong style="color:var(--e6)">E6</strong> sin ponderar</td><td>G sin P (fuera del panel balanceado: faltaron a alguna ola de su cohorte)</td><td>ninguno</td><td class="num">876 / 700 / 301</td></tr>
+</tbody></table></div>
+<p>Con estas seis piezas cada diferencia tiene un significado único. <strong>E2 − E1</strong> y <strong>E4 − E3</strong> son el efecto de ponderar sobre las mismas personas. <strong>E4 − E5</strong> aísla la variable de peso. <strong>E3 − E1</strong>, <strong>E3 − E6</strong> y <strong>E5 − E2</strong> son el efecto de seleccionar la muestra. La diferencia bruta entre escenarios, E4 − E2, es una identidad, (E4 − E3) + (E3 − E1) − (E2 − E1), y no un quinto efecto. Todas las diferencias se calculan réplica a réplica sobre el mismo bootstrap de segmentos del diseño, con las semillas de las tablas publicadas, que el script reproduce límite a límite antes de estimar nada nuevo.</p>
+
+<h2>2. Qué son los dos pesos y por qué se usa el de la ola de destino</h2>
+<p>Los dos pesos parten del peso de diseño y, ola a ola, dividen por la tasa de respuesta de celdas formadas por cuartiles de una probabilidad de participación estimada con un modelo GEE dentro de cada estrato; recortan las colas al 5 % una sola vez sobre todas las olas juntas; calibran por <em>raking</em> a la población urbana INE de 18 años o más por sexo y cinco tramos de edad del año correspondiente, y reescalan a media uno dentro de cada muestra y ola. El peso <strong>total</strong> se calibra sobre todos los entrevistados de la ola; el peso <strong>panel</strong>, sobre quienes respondieron todas las olas (siete en la muestra original de 2016, cinco en el refresco de 2018), que en el archivo coinciden exactamente con <code>tipo_atricion == 1</code>.</p>
+<p>Para un par w0→w1 se usa el peso de la ola de destino: su ajuste de participación es el que apunta a estar presente en w1, que es la selección a la que está expuesto el par. El de origen no contiene información sobre la reentrevista; multiplicar ambos duplicaría el peso de diseño que comparten. No se añade ningún ajuste de atrición propio. Usar el peso de origen como sensibilidad cambia las permanencias S09 globales en 2 puntos como máximo (3,2 en el cambio neto bajo peso panel en 2018→2021).</p>
+<h3>Hechos verificados, con fuente</h3>
+<dl class="facts">
+  <div><dt>El archivo es la versión 3.0 del Dataverse</dt><dd><code>ELSOC_Wide_2016_2023.sav</code>, MD5 <code>dac64998…</code>, coincide con la versión 3.0 (27-12-2024) del registro doi:10.7910/DVN/LD4BPH; las versiones 1.0 y 2.0 tienen otros MD5. Fuente: API de Harvard Dataverse, 21-10-2026.</dd></div>
+  <div><dt>El método es público</dt><dd>Informe «Ponderadores longitudinales ELSOC» (Equipo ELSOC, marzo 2023) y repositorio <code>elsoc-coes/ponderadores-long</code>, commit <code>475c7e32</code>, con insumos 2016–2022.</dd></div>
+  <div><dt>Los pesos del SAV son una corrida nueva 2016–2023</dt><dd>El CSV oficial de olas 1–6 no coincide con el SAV (diferencias de hasta 2,46; panel de 1.304/772 personas frente a 1.176/661). La etiqueta «(2016-2022)» quedó vieja; el listado 2023 dice «a partir de datos 2016-2023». La ola 2023 no tiene documento propio: se usa bajo el supuesto de que siguió el mismo método, por decisión del usuario.</dd></div>
+  <div><dt>Quién tiene cada peso</dt><dd>El total es positivo para el 100 % de los entrevistados de cada ola y suma N por muestra; quienes vuelven tras una ausencia pesan más. El panel tiene exactamente los mismos titulares en todas las olas. Fuente: inspección de solo lectura del SAV, registro en el repositorio.</dd></div>
+  <div><dt>De dónde viene la dispersión</dt><dd>Mediana del peso de destino 2,2–2,8 en Gran Santiago, 0,17–0,21 en ciudades grandes, 0,02–0,04 en medianas y 0,01 en pequeñas: la asignación por estrato de ciudad del diseño. El 1 % superior concentra 8–11 % del peso.</dd></div>
+  <div><dt>Los ítems son idénticos en las cuatro olas</dt><dd>S09 y S10 con el mismo fraseo y códigos en 2016 (cuestionario COES, p. 23, recuperado ahora), 2018, 2021 y 2023 CAPI; S09 = 2/NS/NR salta S10. Pendientes: instrumento CATI 2023 y modo individual.</dd></div>
+</dl>
+
+<h2>3. Resultados</h2>
+<div class="panel">
+  <h3>Permanencias condicionales bajo los seis estimadores</h3>
+  <p class="note">Porcentaje con intervalo del 95 % del bootstrap de segmentos. «Regular → regular» entre quienes eran regulares al inicio; «no regular → no regular» entre quienes no lo eran.</p>
+  <div id="chart1"></div>
+  <div class="legend"><span style="--c:var(--e1)">E1 sin ponderar, G</span><span style="--c:var(--e2)">E2 total, G</span><span style="--c:var(--e3)">E3 sin ponderar, P</span><span style="--c:var(--e4)">E4 panel, P</span><span style="--c:var(--e5)">E5 total, P</span><span style="--c:var(--e6)">E6 fuera del panel balanceado</span></div>
+</div>
+<div class="panel">
+  <h3>Efecto de ponderar frente a efecto de seleccionar, en puntos porcentuales</h3>
+  <p class="note">Diferencias pareadas sobre las mismas réplicas. Solo los efectos de ponderar (misma gente) superan los cinco puntos con alguna regularidad; la selección del panel frente a la muestra general sin pesos no pasa de 1,6.</p>
+  <div id="chart2"></div>
+  <div class="legend"><span style="--c:var(--e2)">Ponderar, G: E2 − E1</span><span style="--c:var(--e4)">Ponderar, P: E4 − E3</span><span style="--c:var(--e5)">Variable de peso: E4 − E5</span><span style="--c:var(--e3)">Selección sin pesos: E3 − E1</span><span style="--c:var(--e6)">Selección bajo pesos total: E5 − E2</span></div>
+</div>
+<p>El caso extremo es 2016→2018 en el subconjunto panel. Ahí P exige haber respondido las siete olas hasta 2023, cinco años después del destino; el peso panel calibra ese conjunto a la estructura INE de 2018 y la participación de los 18–29 pasa de 15,7 % a 31,1 %. La permanencia en no regular cae de 71,6 % a 58,6 %. Es la ponderación la que la mueve, no la selección: sin pesos, el panel balanceado (71,6 %) y la muestra general (72,5 %) casi coinciden.</p>
+<p>En S10, entre regulares con frecuencia válida en ambos extremos, ningún efecto de ponderar supera los cinco puntos y sus intervalos incluyen el cero; solo el contraste entre el panel balanceado y el resto de la muestra llega a 7 puntos en 2021→2023, donde ese resto tiene 94 pares. La dirección por período se conserva con y sin pesos: aumentos dominantes en 2018→2021, disminuciones iguales o mayores en 2016→2018, y en 2021→2023 el peso total deja aumento y disminución casi empatados. El cambio neto en la proporción de regulares es positivo bajo los tres estimadores principales en 2016→2018 y 2018→2021; en 2021→2023 queda entre −1,1 y +0,1 puntos, con intervalos que incluyen el cero.</p>
+
+<h2>4. Composición: lo que hacen los pesos y lo que hace la selección</h2>
+<div class="panel">
+  <h3>Participación de los 18–29 años entre los pares S09</h3>
+  <div id="chart3"></div>
+  <div class="legend"><span style="--c:var(--e1)">E1 sin ponderar, G</span><span style="--c:var(--e2)">E2 total, G</span><span style="--c:var(--e3)">E3 sin ponderar, P</span><span style="--c:var(--e4)">E4 panel, P</span></div>
+</div>
+<p>La comprobación que recomienda el informe oficial para combinaciones de olas, comparar la composición por sexo y tramo de edad de los pares con la del total de entrevistados y con la del panel balanceado, da diferencias estandarizadas menores de 0,1 frente a ambos en la ola de origen. Los pares se parecen un poco más al total en 2016 (0,044 frente a 0,093) y al panel en 2021 para la muestra original (0,047 frente a 0,032). El criterio oficial no inclina la balanza; por eso se muestran los dos pesos y se deja la referencia sin ponderar.</p>
+
+<h2>5. Precisión</h2>
+<p>Sobre los pares S09 el tamaño efectivo de Kish es el 28–30 % del N con el peso total (571, 660 y 510 pares efectivos) y el 24–26 % con el peso panel (251, 412 y 362). Los intervalos ponderados son aproximadamente el doble de anchos: 4,2 frente a 8,1 puntos para la proporción con la misma respuesta en 2016→2018. El error estándar de Taylor con <code>survey::svydesign</code>, con los mismos segmentos dentro de estratos, coincide con el bootstrap (razón mediana 1,005; percentiles 5 y 95 de 0,97 y 1,05) sobre 1.491 celdas; las 56 celdas marcadas tienen N de origen de 24 o menos. Capar los pesos en el percentil 99 toca entre 7 y 22 pares, mueve las permanencias S09 globales medio punto como máximo, las direcciones S10 hasta 1,3 puntos y las participaciones por sexo y edad tres puntos como máximo: los efectos de ponderar no dependen de unos pocos pesos extremos.</p>
+
+<h2>6. Decisiones del usuario y qué cambió respecto del plan</h2>
+<ul>
+  <li><strong>Fechas de destino ausentes.</strong> Once personas reentrevistadas en 2023 no tienen fecha de entrevista en el archivo. La regla publicada las excluía; como la fecha solo sirve para medir los años transcurridos y no para observar la transición, ahora se conservan sin duración. Pares S09 de 1.796 a 1.807; las estimaciones globales no cambian de forma apreciable. Las tablas publicadas no se tocaron: el script las reproduce con la regla antigua y después aplica la nueva.</li>
+  <li><strong>Pesos de 2023.</strong> Se usan en el par 2021→2023; que sigan el método público es un supuesto declarado, no un motivo para dejar ese par sin ponderar. El escenario sin ponderar no depende de ese supuesto.</li>
+  <li><strong>Referencia.</strong> El estimador sin ponderar sigue siendo la referencia: es la distribución observada de las mismas personas, sin modelo, con intervalos la mitad de anchos y reproducible exactamente desde las tablas anteriores.</li>
+  <li><strong>Panel en los pares tempranos.</strong> Se mantiene en los tres intervalos con su población declarada; su diferencia respecto de la muestra general se mide, no se presume.</li>
+</ul>
+
+<h2>7. Límites</h2>
+<ul>
+  <li>Los pesos corrigen la participación en la ola de destino dado el inicio en la muestra; no modelan la participación conjunta en dos olas ni la validez del ítem. Quienes están en el destino pero faltaron en el origen quedan fuera sin ajuste y se cuentan en el flujo.</li>
+  <li>El bootstrap de segmentos omite la etapa de ciudades y trata los pesos como fijos; el cruce de Taylor comparte el supuesto de conglomerado. Los intervalos son exploratorios y las celdas por sexo y edad bajo pesos tienen tamaños efectivos de 4 a 137.</li>
+  <li>«No regular» no es abstinencia; repetir la respuesta no prueba permanencia continua; el salto de S10 no es cero; S09 y S10 no son AUDIT, gramos por día ni consumo episódico intenso. S15 queda fuera. Si estas tablas se usan para calibrar el microsimulador dejan de ser una evaluación independiente de él.</li>
+</ul>
+
+<h2>8. Ampliación: matrices con «no regular» como estado</h2>
+<p>El mismo cuaderno construye ahora la matriz completa que necesita la microsimulación: nueve estados, <b>no regular</b> (S09 = 2) y los ocho códigos originales de S10 entre regulares, por ola de origen × sexo × edad inicial y agrupada en 2016–2023. Se estima de tres formas, como en el motor EPS: la proporción observada ponderada, la <b>matriz A</b> (conteos encogidos hacia la matriz del sexo, del intervalo y del total, con intensidad elegida por validación cruzada por persona) y una <b>lognormal en dos partes</b> (logit de ser regular y días por semana lognormales observados por tramos), cada una con los tres pesos. Los intervalos salen de un bootstrap de segmentos compartido por los tres intervalos, en el que los pares de una persona se mueven juntos; para lo observado se añaden Taylor con estratos y segmentos, y Taylor agrupado por persona.</p>
+<div class="tablewrap"><table>
+<thead><tr><th>Peso</th><th class="num">k de la matriz A</th><th class="num">Log loss A</th><th class="num">Log loss lognormal</th><th>Diferencia [IC 95%]</th></tr></thead>
+<tbody>
+<tr><td>Sin ponderar</td><td class="num">300</td><td class="num">1,253</td><td class="num">1,238</td><td>−0,015 [−0,021; −0,009]</td></tr>
+<tr><td>Total</td><td class="num">3.000</td><td class="num">1,430</td><td class="num">1,396</td><td>−0,034 [−0,048; −0,020]</td></tr>
+<tr><td>Panel</td><td class="num">10.000</td><td class="num">1,497</td><td class="num">1,444</td><td>−0,053 [−0,078; −0,028]</td></tr>
+</tbody></table></div>
+<p>La lognormal predice mejor fuera de muestra con los tres pesos. Con pesos, la validación cruzada elige un k tan alto que la matriz A deja la permanencia agrupada en no regular entre 68% y 72% en todos los grupos con peso total, y en 66–67% con peso panel, y achica mucho las diferencias entre olas (con peso panel casi las borra): los conteos ponderados son ruidosos, no los grupos iguales. Lo observado mantiene la diferencia entre hombres (60–62% con peso total, agrupado) y mujeres de 45 a 65 años (83–84%), y la lognormal también (58,5–63,7% y 80,9–84,1%). La lognormal suaviza la frecuencia: subestima quedarse en las frecuencias comunes y sobrestima quedarse en 4 a 6 días, donde casi no se observa. Agrupar por persona es el supuesto correcto, pero cambia poco: en lo agrupado el error por persona casi coincide con el de estratos + segmentos y con uno que trata los pares como independientes (razón mediana 1,00). Las matrices agrupadas mezclan intervalos de 2,0, 2,4 y 2,9 años y no son anuales. Las matrices completas se exploran en la sección 9 de la página «ELSOC transiciones explicadas» (<code>__andres_control/elsoc_transiciones_explicado.html</code>) y todas las celdas, con n e intervalos, están en <code>intervals/states_matrices.csv</code>.</p>
+<p class="foot">Cuaderno ejecutado: <code>__andres_control/elsoc_weighting_scenarios_EN.ipynb</code> (HTML autocontenido en la raíz del repositorio); scripts <code>weight_scenarios.R</code> y <code>state_transitions.R</code>; tablas <code>intervals/weights_*.csv</code> y <code>intervals/states_*.csv</code>; plan y fuentes en <code>WEIGHTING_PLAN.md</code>; hallazgos en <code>hallazgos_elsoc_ponderacion.md</code>. Una reproducción independiente del script produjo 22 de 23 tablas idénticas byte a byte (la restante, la de configuración, solo registra la carpeta de salida).</p>
+</main>
+<script>
+(function () {
+  var periods = ["2016-2018", "2018-2021", "2021-2023"];
+  var est = ["E1", "E2", "E3", "E4", "E5", "E6"];
+  var col = { E1: "var(--e1)", E2: "var(--e2)", E3: "var(--e3)", E4: "var(--e4)", E5: "var(--e5)", E6: "var(--e6)" };
+  // [estimate, lower, upper] in percent, from weights_comparison.csv (group All)
+  var reg = { "2016-2018": { E1: [64.6, 61.0, 68.2], E2: [68.5, 62.1, 74.5], E3: [63.1, 58.0, 68.2], E4: [68.0, 58.1, 77.1], E5: [66.5, 57.1, 75.2], E6: [66.2, 61.3, 71.0] },
+              "2018-2021": { E1: [67.3, 64.3, 70.2], E2: [70.5, 65.3, 75.6], E3: [68.9, 65.3, 72.7], E4: [74.3, 67.9, 80.0], E5: [73.7, 67.4, 79.4], E6: [64.2, 58.8, 69.3] },
+              "2021-2023": { E1: [65.2, 61.7, 68.7], E2: [71.8, 65.9, 77.7], E3: [64.4, 60.6, 68.2], E4: [70.3, 63.0, 77.8], E5: [70.1, 63.2, 77.2], E6: [69.1, 61.2, 76.9] } };
+  var non = { "2016-2018": { E1: [72.5, 69.6, 75.2], E2: [66.8, 61.0, 72.2], E3: [71.6, 68.0, 75.0], E4: [58.6, 50.9, 66.3], E5: [60.5, 53.0, 67.7], E6: [73.7, 69.6, 77.5] },
+              "2018-2021": { E1: [74.4, 72.1, 76.6], E2: [70.3, 65.9, 74.7], E3: [75.2, 72.6, 77.9], E4: [68.6, 63.2, 74.2], E5: [69.3, 63.9, 74.6], E6: [72.3, 67.8, 76.5] },
+              "2021-2023": { E1: [75.5, 72.9, 78.0], E2: [72.0, 66.4, 77.5], E3: [75.9, 72.9, 78.6], E4: [70.5, 63.8, 77.1], E5: [71.5, 65.5, 77.5], E6: [73.3, 66.9, 80.0] } };
+  function dotPanel(container, series, title, lo, hi) {
+    var W = 640, H = 230, left = 44, right = 12, top = 26, bottom = 28, pw = (W - left - right) / 3;
+    var y = function (v) { return top + (hi - v) / (hi - lo) * (H - top - bottom); };
+    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" role="img" aria-label="' + title + '">';
+    s += '<text x="' + left + '" y="14" font-size="12" font-weight="600">' + title + '</text>';
+    for (var g = lo; g <= hi; g += 10) { s += '<line class="grid" x1="' + left + '" x2="' + (W - right) + '" y1="' + y(g) + '" y2="' + y(g) + '"/><text class="lab" x="' + (left - 6) + '" y="' + (y(g) + 4) + '" text-anchor="end">' + g + '%</text>'; }
+    periods.forEach(function (p, i) {
+      var x0 = left + i * pw; s += '<line class="axis" x1="' + x0 + '" x2="' + x0 + '" y1="' + top + '" y2="' + (H - bottom) + '"/>';
+      s += '<text class="lab" x="' + (x0 + pw / 2) + '" y="' + (H - 8) + '" text-anchor="middle">' + p + '</text>';
+      est.forEach(function (e, j) { var v = series[p][e]; var x = x0 + pw * (j + 1) / 7;
+        s += '<line x1="' + x + '" x2="' + x + '" y1="' + y(v[1]) + '" y2="' + y(v[2]) + '" stroke="' + col[e] + '" stroke-width="2"/><circle cx="' + x + '" cy="' + y(v[0]) + '" r="4" fill="' + col[e] + '"/>'; });
+    });
+    s += '</svg>'; container.insertAdjacentHTML("beforeend", s);
+  }
+  var c1 = document.getElementById("chart1");
+  dotPanel(c1, reg, "Regular → regular", 50, 90);
+  dotPanel(c1, non, "No regular → no regular", 40, 90);
+  // deltas in pp [delta, lower, upper], from weights_deltas.csv (group All)
+  var contrasts = [["E2 − E1", "E2"], ["E4 − E3", "E4"], ["E4 − E5", "E5"], ["E3 − E1", "E3"], ["E5 − E2", "E6"]];
+  var del = {
+    "Misma respuesta S09": { "2016-2018": [[-2.2, -5.9, 1.0], [-6.0, -11.3, -1.1], [-0.3, -1.2, 0.5], [-1.0, -2.8, 0.8], [-4.5, -8.1, -0.8]], "2018-2021": [[-1.0, -4.0, 1.9], [-1.5, -5.3, 2.0], [0.0, -0.5, 0.4], [1.3, 0.1, 2.6], [0.9, -1.4, 3.2]], "2021-2023": [[0.9, -2.4, 4.5], [-0.6, -4.8, 3.7], [-0.5, -1.2, 0.2], [-0.1, -1.0, 0.9], [-1.1, -3.0, 0.7]] },
+    "Regular → regular": { "2016-2018": [[3.8, -1.7, 8.7], [4.9, -3.4, 12.8], [1.6, 0.1, 2.8], [-1.5, -4.9, 2.0], [-2.0, -7.9, 3.7]], "2018-2021": [[3.2, -1.1, 7.4], [5.4, -0.3, 10.5], [0.6, 0.0, 1.2], [1.6, -0.5, 3.9], [3.2, -0.8, 7.4]], "2021-2023": [[6.6, 1.7, 11.4], [5.9, -0.4, 11.8], [0.2, -0.7, 1.0], [-0.8, -2.3, 0.8], [-1.7, -4.3, 0.9]] },
+    "No regular → no regular": { "2016-2018": [[-5.7, -10.5, -1.2], [-13.0, -19.5, -6.7], [-1.9, -2.9, -1.0], [-0.9, -3.2, 1.3], [-6.3, -11.1, -1.0]], "2018-2021": [[-4.1, -7.7, -0.3], [-6.6, -11.2, -2.1], [-0.7, -1.3, 0.0], [0.8, -0.6, 2.3], [-1.0, -3.8, 1.8]], "2021-2023": [[-3.5, -8.1, 1.2], [-5.4, -11.1, 0.2], [-1.0, -2.0, -0.1], [0.4, -0.7, 1.6], [-0.5, -3.1, 2.2]] } };
+  var c2 = document.getElementById("chart2");
+  Object.keys(del).forEach(function (q) {
+    var W = 640, H = 200, left = 44, right = 12, top = 26, bottom = 28, pw = (W - left - right) / 3, lo = -20, hi = 14;
+    var y = function (v) { return top + (hi - v) / (hi - lo) * (H - top - bottom); };
+    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" role="img" aria-label="' + q + '">';
+    s += '<text x="' + left + '" y="14" font-size="12" font-weight="600">' + q + '</text>';
+    for (var g = -20; g <= 10; g += 10) { s += '<line class="' + (g === 0 ? 'zero' : 'grid') + '" x1="' + left + '" x2="' + (W - right) + '" y1="' + y(g) + '" y2="' + y(g) + '"/><text class="lab" x="' + (left - 6) + '" y="' + (y(g) + 4) + '" text-anchor="end">' + (g > 0 ? '+' : '') + g + '</text>'; }
+    periods.forEach(function (p, i) {
+      var x0 = left + i * pw; s += '<line class="axis" x1="' + x0 + '" x2="' + x0 + '" y1="' + top + '" y2="' + (H - bottom) + '"/>';
+      s += '<text class="lab" x="' + (x0 + pw / 2) + '" y="' + (H - 8) + '" text-anchor="middle">' + p + '</text>';
+      del[q][p].forEach(function (v, j) { var x = x0 + pw * (j + 1) / 6; var cc = col[contrasts[j][1]];
+        s += '<line x1="' + x + '" x2="' + x + '" y1="' + y(v[1]) + '" y2="' + y(v[2]) + '" stroke="' + cc + '" stroke-width="2"/><circle cx="' + x + '" cy="' + y(v[0]) + '" r="4" fill="' + cc + '"/>'; });
+    });
+    s += '</svg>'; c2.insertAdjacentHTML("beforeend", s);
+  });
+  // share of 18-29 among S09 pairs, percent, from weights_composition_balance.csv
+  var young = { "2016-2018": [17.8, 31.8, 15.7, 31.1], "2018-2021": [17.8, 31.6, 16.2, 31.5], "2021-2023": [12.6, 25.9, 12.2, 29.2] };
+  var c3 = document.getElementById("chart3");
+  (function () {
+    var W = 640, H = 210, left = 44, right = 12, top = 16, bottom = 28, pw = (W - left - right) / 3, hi = 40;
+    var y = function (v) { return top + (hi - v) / hi * (H - top - bottom); };
+    var s = '<svg viewBox="0 0 ' + W + ' ' + H + '" width="100%" role="img" aria-label="Participación de los 18 a 29 años">';
+    for (var g = 0; g <= hi; g += 10) { s += '<line class="grid" x1="' + left + '" x2="' + (W - right) + '" y1="' + y(g) + '" y2="' + y(g) + '"/><text class="lab" x="' + (left - 6) + '" y="' + (y(g) + 4) + '" text-anchor="end">' + g + '%</text>'; }
+    periods.forEach(function (p, i) {
+      var x0 = left + i * pw, bw = pw / 6; s += '<text class="lab" x="' + (x0 + pw / 2) + '" y="' + (H - 8) + '" text-anchor="middle">' + p + '</text>';
+      young[p].forEach(function (v, j) { var x = x0 + pw * 0.15 + j * bw; var e = est[j];
+        s += '<rect x="' + x + '" y="' + y(v) + '" width="' + (bw - 4) + '" height="' + (y(0) - y(v)) + '" fill="' + col[e] + '"/><text x="' + (x + (bw - 4) / 2) + '" y="' + (y(v) - 4) + '" font-size="11" text-anchor="middle">' + v.toFixed(1).replace('.', ',') + '</text>'; });
+    });
+    s += '<line class="axis" x1="' + left + '" x2="' + (W - right) + '" y1="' + y(0) + '" y2="' + y(0) + '"/></svg>'; c3.insertAdjacentHTML("beforeend", s);
+  })();
+})();
+</script>

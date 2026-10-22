@@ -1,0 +1,101 @@
+weights_inspect.R run on 2026-10-21 01:32
+SAV MD5 verified: dac64998f382fc99a5688ee8b5947db3 (Dataverse 10.7910/DVN/LD4BPH, V3)
+
+== A. Panel-weight holders: identity across waves, balanced participation, tipo_atricion ==
+M1: panel holders per wave = 1176/1176/1176/1176/1176/1176/1176 | identical sets across waves: TRUE | == balanced participants (n=1176): TRUE | == tipo_atricion==1 (n=1176): TRUE
+   tipo_atricion codes in M1: 1=1176; 2=1752
+M2: panel holders per wave = 661/661/661/661/661 | identical sets across waves: TRUE | == balanced participants (n=661): TRUE | == tipo_atricion==1 (n=661): TRUE
+   tipo_atricion codes in M2: 1=661; 2=858
+
+== B. Total weight: positive for every respondent; mean by participation pattern (missed any earlier cohort wave) ==
+w01 M1: n=2927 sum=2927.0 | continuous n=2927 mean=1.000 median=0.311 | returners n=0 mean=NA median=NA | max=6.64
+w02 M1: n=2473 sum=2473.0 | continuous n=2473 mean=1.000 median=0.329 | returners n=0 mean=NA median=NA | max=7.66
+w03 M1: n=2229 sum=2229.0 | continuous n=2106 mean=0.993 median=0.300 | returners n=123 mean=1.118 median=0.339 | max=8.95
+w03 M2: n=1519 sum=1519.0 | continuous n=1519 mean=1.000 median=0.380 | returners n=0 mean=NA median=NA | max=4.68
+w04 M1: n=2153 sum=2153.0 | continuous n=1913 mean=0.980 median=0.280 | returners n=240 mean=1.158 median=0.398 | max=11.79
+w04 M2: n=1264 sum=1264.0 | continuous n=1264 mean=1.000 median=0.315 | returners n=0 mean=NA median=NA | max=9.13
+w05 M1: n=1739 sum=1739.0 | continuous n=1513 mean=0.963 median=0.277 | returners n=226 mean=1.248 median=0.511 | max=13.81
+w05 M2: n=1001 sum=1001.0 | continuous n=933 mean=0.995 median=0.342 | returners n=68 mean=1.062 median=0.269 | max=8.65
+w06 M1: n=1728 sum=1728.0 | continuous n=1304 mean=0.927 median=0.254 | returners n=424 mean=1.225 median=0.333 | max=15.01
+w06 M2: n=1002 sum=1002.0 | continuous n=772 mean=0.970 median=0.289 | returners n=230 mean=1.102 median=0.323 | max=11.72
+w07 M1: n=1737 sum=1737.0 | continuous n=1176 mean=0.926 median=0.247 | returners n=561 mean=1.155 median=0.310 | max=16.38
+w07 M2: n=989 sum=989.0 | continuous n=661 mean=0.978 median=0.302 | returners n=328 mean=1.045 median=0.262 | max=10.71
+
+== B2. Transversal ponderador01: sum by sample vs n (implicit M1/M2 composite) ==
+w03: ponderador01 sum M1=2229.0 (n=2229, mean 1.000) M2=1519.7 (n=1519, mean 1.000); M1 share of weight=0.595 vs n share=0.595 | long_total: M1 share of weight=0.595
+w05: ponderador01 sum M1=2015.5 (n=1739, mean 1.159) M2=729.0 (n=1001, mean 0.728); M1 share of weight=0.734 vs n share=0.635 | long_total: M1 share of weight=0.635
+w07: ponderador01 sum M1=2022.8 (n=1737, mean 1.165) M2=703.2 (n=989, mean 0.711); M1 share of weight=0.742 vs n share=0.637 | long_total: M1 share of weight=0.637
+
+== C. Pair domains (masks as in extend_intervals.R): origin vs destination weights, panel subset, dates ==
+
+-- 2016-2018: primary=1917 s09=1888 s10=438 --
+   date exclusions among sex-consistent links: total 0 = destination date missing 0 + origin date missing 0 + ordered/year failures 0
+   destination respondents of the sample absent at origin (all ages, context only): M1 1, M2 1519
+   ratio dest/origin long_total on s09 pairs: q05=0.58 q25=0.89 median=1.15 q75=1.46 q95=1.99 | cor(log w0, log w1)=0.984 | sum w0=1781.2 sum w1=1971.3
+   panel-eligible s09 pairs: 1012 (M1 1012, M2 0); s10: 218 | panel w1/w0 ratio median=1.10 | cor(log panel w1, log total w1)=0.998 | cor(log panel w0, log panel w1)=0.985
+   long_total on s09 pairs: sum=1971.3 ESS=571 (n=1888) | long_total on panel subset: sum=959.1 ESS=285 | panel on panel subset: sum=1059.8 ESS=251 (n=1012)
+   destination total weight by stratum on s09 pairs (median; p05-p95):  1: 2.80 (0.982-6.16) | 2: 0.79 (0.276-2.27) | 3: 0.60 (0.244-2.03) | 4: 0.18 (0.066-0.70) | 5: 0.03 (0.009-0.11) | 6: 0.01 (0.004-0.03) 
+   segments per stratum (general s09 pairs / panel subset):  1: 167/126 | 2: 81/63 | 3: 90/71 | 4: 159/113 | 5: 204/141 | 6: 168/132 
+   Men s09 general/panel by age: 18-29 146/56, 30-44 226/94, 45-59 265/136, 60-65 75/36 | s10 general/panel: 18-29 61/24, 30-44 99/35, 45-59 82/47, 60-65 21/10
+   Women s09 general/panel by age: 18-29 190/103, 30-44 375/210, 45-59 473/296, 60-65 138/81 | s10 general/panel: 18-29 38/18, 30-44 74/44, 45-59 54/32, 60-65 9/8
+   education s09 general/panel: Basic 622/327, Secondary 783/434, Higher 482/251, Unknown 1/0
+   S09 origin regular (code 1) count: general 690/1888, panel subset 350/1012
+   absent in intermediate wave w02 and present at both ends: general 99, panel subset 0
+
+-- 2018-2021: primary=2281 s09=2261 s10=631 --
+   date exclusions among sex-consistent links: total 0 = destination date missing 0 + origin date missing 0 + ordered/year failures 0
+   destination respondents of the sample absent at origin (all ages, context only): M1 116, M2 0
+   ratio dest/origin long_total on s09 pairs: q05=0.32 q25=0.61 median=0.97 q75=1.58 q95=3.17 | cor(log w0, log w1)=0.941 | sum w0=2273.9 sum w1=2313.5
+   panel-eligible s09 pairs: 1561 (M1 983, M2 578); s10: 425 | panel w1/w0 ratio median=0.97 | cor(log panel w1, log total w1)=0.999 | cor(log panel w0, log panel w1)=0.942
+   long_total on s09 pairs: sum=2313.5 ESS=660 (n=2261) | long_total on panel subset: sum=1530.2 ESS=437 | panel on panel subset: sum=1656.2 ESS=412 (n=1561)
+   long_total weight share M1 on s09 pairs=0.607 vs n share=0.605
+   destination total weight by stratum on s09 pairs (median; p05-p95):  1: 2.57 (0.723-6.33) | 2: 0.97 (0.217-3.73) | 3: 0.63 (0.179-2.21) | 4: 0.19 (0.055-0.65) | 5: 0.03 (0.008-0.11) | 6: 0.01 (0.004-0.05) 
+   segments per stratum (general s09 pairs / panel subset):  1: 176/153 | 2: 83/71 | 3: 89/79 | 4: 160/135 | 5: 189/157 | 6: 167/148 
+   Men s09 general/panel by age: 18-29 159/95, 30-44 264/150, 45-59 294/198, 60-65 100/68 | s10 general/panel: 18-29 70/41, 30-44 128/71, 45-59 111/76, 60-65 34/24
+   Women s09 general/panel by age: 18-29 244/158, 30-44 461/322, 45-59 564/439, 60-65 175/131 | s10 general/panel: 18-29 59/36, 30-44 115/88, 45-59 99/75, 60-65 15/14
+   education s09 general/panel: Basic 631/479, Secondary 1019/697, Higher 610/384, Unknown 1/1
+   S09 origin regular (code 1) count: general 942/2261, panel subset 621/1561
+   absent in intermediate wave w04 and present at both ends: general 111, panel subset 0
+
+-- 2021-2023: primary=1802 s09=1796 s10=502 --
+   date exclusions among sex-consistent links: total 11 = destination date missing 11 + origin date missing 0 + ordered/year failures 0
+   destination respondents of the sample absent at origin (all ages, context only): M1 324, M2 210
+   ratio dest/origin long_total on s09 pairs: q05=0.40 q25=0.82 median=1.04 q75=1.28 q95=2.25 | cor(log w0, log w1)=0.973 | sum w0=1856.0 sum w1=1918.4
+   panel-eligible s09 pairs: 1500 (M1 934, M2 566); s10: 410 | panel w1/w0 ratio median=0.98 | cor(log panel w1, log total w1)=0.998 | cor(log panel w0, log panel w1)=0.972
+   long_total on s09 pairs: sum=1918.4 ESS=508 (n=1796) | long_total on panel subset: sum=1540.0 ESS=415 | panel on panel subset: sum=1640.9 ESS=360 (n=1500)
+   long_total weight share M1 on s09 pairs=0.637 vs n share=0.628
+   destination total weight by stratum on s09 pairs (median; p05-p95):  1: 2.53 (0.770-6.63) | 2: 0.92 (0.239-3.16) | 3: 0.69 (0.182-2.76) | 4: 0.18 (0.047-0.65) | 5: 0.03 (0.007-0.13) | 6: 0.01 (0.004-0.04) 
+   segments per stratum (general s09 pairs / panel subset):  1: 160/150 | 2: 79/69 | 3: 83/77 | 4: 143/131 | 5: 173/154 | 6: 151/144 
+   Men s09 general/panel by age: 18-29 95/72, 30-44 202/151, 45-59 227/182, 60-65 98/86 | s10 general/panel: 18-29 39/31, 30-44 98/70, 45-59 98/77, 60-65 35/30
+   Women s09 general/panel by age: 18-29 130/112, 30-44 380/314, 45-59 495/432, 60-65 169/151 | s10 general/panel: 18-29 40/31, 30-44 90/76, 45-59 83/77, 60-65 19/18
+   education s09 general/panel: Basic 513/450, Secondary 771/648, Higher 512/402, Unknown 0/0
+   S09 origin regular (code 1) count: general 774/1796, panel subset 641/1500
+   absent in intermediate wave w06 and present at both ends: general 173, panel subset 0
+
+== E. segmento_wXX vs segmento_disenno ==
+w01: present=2927, segmento_w differs from segmento_disenno: 0, segmento_w missing: 0
+w02: present=2473, segmento_w differs from segmento_disenno: 0, segmento_w missing: 0
+w03: present=3748, segmento_w differs from segmento_disenno: 0, segmento_w missing: 0
+w04: present=3417, segmento_w differs from segmento_disenno: 0, segmento_w missing: 0
+w05: present=2740, segmento_w differs from segmento_disenno: 0, segmento_w missing: 0
+w06: present=2730, segmento_w differs from segmento_disenno: 0, segmento_w missing: 0
+w07: present=2726, segmento_w differs from segmento_disenno: 0, segmento_w missing: 0
+segmento_disenno missing: 0; distinct segments: 1009; distinct strata: 6; segments shared by M1 and M2: 362; segments in more than one stratum: 0
+
+== G. Continuity w06 -> w07 and within-wave dispersion of long_total ==
+n=2319 cor(log total w06, log total w07)=0.999
+w03 total: p01=0.004 p05=0.008 p50=0.327 p95=3.915 p99=5.966 max=8.95; n at exact min=10, at exact max=12
+w05 total: p01=0.004 p05=0.008 p50=0.314 p95=4.325 p99=6.826 max=13.81; n at exact min=13, at exact max=4
+w06 total: p01=0.004 p05=0.007 p50=0.282 p95=4.373 p99=7.415 max=15.01; n at exact min=14, at exact max=7
+w07 total: p01=0.004 p05=0.007 p50=0.269 p95=4.183 p99=6.858 max=16.38; n at exact min=15, at exact max=6
+
+== H. Official 2016-2022 CSV (elsoc-coes/ponderadores-long, commit 475c7e32) vs SAV values, waves 1-6 ==
+CSV rows=18035; per wave: 1=2927, 2=2473, 3=3748, 4=3417, 5=2740, 6=2730
+ola 1: csv n=2927 matched=2927 | total: max|diff|=0.040 cor=1.0000 | panel non-NA csv=1304 sav=1176 max|diff|=0.379
+ola 2: csv n=2473 matched=2473 | total: max|diff|=0.732 cor=0.9993 | panel non-NA csv=1304 sav=1176 max|diff|=1.186
+ola 3: csv n=3748 matched=3748 | total: max|diff|=0.981 cor=0.9993 | panel non-NA csv=2076 sav=1837 max|diff|=1.295
+ola 4: csv n=3417 matched=3417 | total: max|diff|=1.042 cor=0.9986 | panel non-NA csv=2076 sav=1837 max|diff|=1.641
+ola 5: csv n=2740 matched=2740 | total: max|diff|=1.755 cor=0.9970 | panel non-NA csv=2076 sav=1837 max|diff|=2.213
+ola 6: csv n=2730 matched=2730 | total: max|diff|=2.463 cor=0.9971 | panel non-NA csv=2076 sav=1837 max|diff|=2.924
+
+No transition estimates computed; no repository table modified. Elapsed 0.08 minutes

@@ -1,0 +1,8 @@
+"contrast","a","b"
+"weighting_total_general","total_general","unweighted_general"
+"weighting_panel_subset","panel_panel_subset","unweighted_panel_subset"
+"weight_variable_panel_subset","panel_panel_subset","total_panel_subset"
+"selection_unweighted","unweighted_panel_subset","unweighted_general"
+"selection_unweighted_vs_lost","unweighted_panel_subset","unweighted_general_minus_panel"
+"selection_total_family","total_panel_subset","total_general"
+"scenario_difference","panel_panel_subset","total_general"

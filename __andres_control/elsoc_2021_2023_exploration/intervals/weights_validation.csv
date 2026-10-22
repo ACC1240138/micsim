@@ -1,0 +1,16 @@
+"check","kind","passed"
+"unique_longitudinal_ids","data_check",TRUE
+"md5_matches_published_provenance","data_check",TRUE
+"panel_weight_equals_tipo_atricion_2016-2018","data_check",TRUE
+"total_weight_positive_for_all_pairs_2016-2018","data_check",TRUE
+"panel_weight_equals_tipo_atricion_2018-2021","data_check",TRUE
+"total_weight_positive_for_all_pairs_2018-2021","data_check",TRUE
+"panel_weight_equals_tipo_atricion_2021-2023","data_check",TRUE
+"total_weight_positive_for_all_pairs_2021-2023","data_check",TRUE
+"flow_counts_and_published_unweighted_tables_reproduced","data_check",TRUE
+"weighted_rows_sum_to_one_and_events_to_origin","data_check",TRUE
+"deltas_paired_on_full_length_replicates","identity",TRUE
+"taylor_available_for_headline_cells","data_check",TRUE
+"missing_date_pairs_kept_not_excluded","identity",TRUE
+"no_pooled_independence_assumption","declaration",TRUE
+"published_tables_unchanged","data_check",TRUE

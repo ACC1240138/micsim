@@ -1,0 +1,186 @@
+<title>Auditoría ENPG/JRT, EPS y TSM</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: single reading column with wide scrollable tables; source chips colour-code JRT, EPS and TSM */
+:root{
+  --bg:#f5f7f8; --surface:#ffffff; --ink:#18242b; --muted:#56656e; --line:#d5dde1;
+  --accent:#0f6f78; --jrt:#a35b00; --eps:#2456a6; --tsm:#2f7d3b; --warn:#b3261e; --chip-bg:#eef3f4;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11181c; --surface:#182227; --ink:#e3eaed; --muted:#9db0b9; --line:#2c3a41;
+  --accent:#5cc0c8; --jrt:#e3a14a; --eps:#7ea6f0; --tsm:#7cc98a; --warn:#ff8a80; --chip-bg:#1f2c32; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11181c; --surface:#182227; --ink:#e3eaed; --muted:#9db0b9; --line:#2c3a41;
+  --accent:#5cc0c8; --jrt:#e3a14a; --eps:#7ea6f0; --tsm:#7cc98a; --warn:#ff8a80; --chip-bg:#1f2c32; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--f-body)}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
+header{display:grid;gap:10px;padding-bottom:18px;border-bottom:2px solid var(--ink)}
+.kicker{font:600 12px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font:800 clamp(28px,4.4vw,42px)/1.12 var(--f-body);margin:0;text-wrap:balance}
+h2{font:800 23px/1.25 var(--f-body);margin:40px 0 10px;text-wrap:balance}
+h3{font:600 17px/1.3 var(--f-body);margin:22px 0 8px}
+p,li{max-width:70ch}
+.lede{font-size:18px;color:var(--muted);margin:0}
+nav{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:6px;font-size:14px}
+nav a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover,nav a:focus-visible{border-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.findings{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px;margin-top:22px;padding:0;list-style:none}
+.findings li{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;max-width:none;min-width:0}
+.findings b{display:block;margin-bottom:4px}
+.chip{display:inline-block;font:600 11.5px/1 var(--f-mono);padding:4px 7px;border-radius:4px;background:var(--chip-bg);vertical-align:1px;white-space:nowrap}
+.jrt{color:var(--jrt)}.eps{color:var(--eps)}.tsm{color:var(--tsm)}
+.tbl{overflow-x:auto;margin:12px 0 6px;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:640px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font:600 12px var(--f-mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);background:var(--chip-bg)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+tr.total td{font-weight:600}
+.pend{color:var(--warn);font:600 12.5px var(--f-mono)}
+.no{color:var(--warn);font-weight:600}.part{color:var(--jrt);font-weight:600}
+code,.src{font:13px var(--f-mono)}
+.src{color:var(--muted)}
+.note{font-size:14px;color:var(--muted)}
+ol.disc li{margin-bottom:6px}
+.verdict{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:12px}
+.verdict section{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:4px 16px 10px;min-width:0}
+.verdict section.ok{border-top:4px solid var(--tsm)}.verdict section.bad{border-top:4px solid var(--warn)}.verdict section.todo{border-top:4px solid var(--jrt)}
+footer{margin-top:44px;padding-top:14px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="kicker">MiCSim · FONDECYT 1240138 · auditoría de solo lectura · 21-10-2026</div>
+  <h1>Qué comparamos entre ENPG/JRT, EPS y TSM</h1>
+  <p class="lede">Revisión del código que realmente se ejecuta y de sus salidas: qué fuentes y modelos entran, qué filtros se aplican, cómo se arman los estados y si las transiciones son comparables a dos años.</p>
+  <nav aria-label="Secciones"><a href="#modelos">Modelos</a><a href="#flujo">Flujo de N</a><a href="#estados">Estados</a><a href="#compar">Comparabilidad</a><a href="#discrep">Discrepancias</a><a href="#conclusion">Conclusión</a></nav>
+</header>
+
+<ul class="findings">
+  <li><b><span class="chip jrt">JRT</span> Transiciones de un pseudo-panel</b>Probabilidades a dos años desde ENPG 2008–2016 emparejada por rangos, con personas distintas en cada ola y sin pesos. Su archivo de entrenamiento no está en el repo: ningún N de entrenamiento es verificable.</li>
+  <li><b><span class="chip eps">EPS</span> <span class="chip tsm">TSM</span> Paneles reales</b>Personas de 18–65 enlazadas, con pesos e IPW. Intervalos de 3,7–4,0 años en EPS y de 4–8 meses en TSM. Ninguno se lleva a dos años.</li>
+  <li><b>JRT_reference no es JRT</b>Usa la fórmula de JRT más un término de periodo, y se ajusta con pesos sobre los paneles EPS o TSM.</li>
+  <li><b>El emparejamiento fabrica persistencia</b>Sobre las mismas personas de la EPS, quedarse en C1 sube de 58,3 % real a 94,0 % al emparejar por rangos (VI→VII).</li>
+  <li><b>La versión atemperada deriva de J0</b>Eleva las probabilidades de J0 a α = 0,5 y las renormaliza en cada año simulado. No es otro modelo ni una anualización.</li>
+</ul>
+
+<h2 id="modelos">1. Fuentes, procedimientos y modelos</h2>
+<div class="tbl"><table>
+<thead><tr><th>Objeto</th><th>Qué es</th><th>Datos y etapa</th><th>Relación</th><th>Evidencia</th></tr></thead>
+<tbody>
+<tr><td><span class="chip jrt">ENPG</span></td><td>Encuesta transversal bienal, no es panel</td><td>Entrena con 2008–2016; 2018–2022 son objetivos</td><td>Fuente de datos</td><td class="src">FINAL:13-15</td></tr>
+<tr><td><span class="chip jrt">Rank matching JRT</span></td><td>Dentro de sexo × tramo de edad, ordena por g/día y asigna a cada registro de t el de t+2 con rango más cercano. Con reemplazo, empates al azar, sin pesos, mismo tramo de edad en ambas olas</td><td>Pares 08→10, 10→12, 12→14, 14→16</td><td>Construye los datos de J0</td><td class="src">FINAL:72-146</td></tr>
+<tr><td><span class="chip jrt">J0 · JRT original</span></td><td><code>polr(state_t2 ~ state_t*agecat + state_t*sex + sex*agecat)</code>, sin pesos, cuatro estados</td><td>Entrenamiento 2008–2016</td><td>Modelo base</td><td class="src">FINAL:152-170</td></tr>
+<tr><td><span class="chip jrt">J0-α · atemperada</span></td><td>Probabilidades de J0 transformadas: exp(α·log p) renormalizado, α = 0,5, aplicado cada año</td><td>Simulación 2008–2022</td><td>Deriva de J0</td><td class="src">FINAL:178-205, 292-321</td></tr>
+<tr><td><span class="chip jrt">J0-cal</span></td><td>Mismos coeficientes de J0 con desplazamientos ajustados a prevalencias</td><td>Objetivos 2008–2022, incluye años de entrenamiento</td><td>Deriva de J0; el script no corre</td><td class="src">CALIB:11-22, 321</td></tr>
+<tr><td><span class="chip eps">JRT_reference</span></td><td><code>polr(~ state0*age_group + state0*sex + sex*age_group + period)</code> ponderado</td><td>Panel EPS VI→VII, VII→VIII; panel TSM R7→R11</td><td>Procedimiento distinto: solo comparte la fórmula</td><td class="src">core:247-248, 355; ts_models:30-31</td></tr>
+<tr><td><span class="chip eps">Rank matching EPS/TSM</span></td><td>Acople por rangos de los márgenes ponderados de las mismas personas del panel, por sexo × edad</td><td>EPS y TSM</td><td>Diagnóstico, distinto del de JRT</td><td class="src">core:682-707; ts_models:529-555</td></tr>
+<tr><td><span class="chip tsm">A, Multinomial, Ordinal, Gamma, Lognormal</span></td><td>Motores EPS/TSM con pesos oficial × IPW</td><td>EPS, TSM</td><td>Ordinal_single y JRT_reference usan el mismo estimador con otra fórmula</td><td class="src">core:347-359; ts_models:149-162</td></tr>
+</tbody></table></div>
+<p class="note">Entrenamiento, calibración y evaluación. JRT no tiene evaluación independiente: su «calibración» compara visualmente con 2018–2022. EPS y TSM se evalúan con validación cruzada por persona, y su «transport» es entre periodos dentro de la misma encuesta. Ninguno se calibra a ENPG. El cuaderno TSM_ENPG_v3 no lee datos ENPG: el nombre viene de la v2.</p>
+
+<h2 id="flujo">2. Flujo de N</h2>
+<h3><span class="chip jrt">ENPG para JRT</span> registros por ola</h3>
+<div class="tbl"><table>
+<thead><tr><th>Ola</th><th class="n">N bruto</th><th>Edad en archivo</th><th class="n">N 15+</th><th>N final JRT</th><th>Rol</th></tr></thead>
+<tbody>
+<tr><td>2008</td><td class="n">17.113</td><td>12–65</td><td class="n">16.422*</td><td class="pend">PENDIENTE</td><td>Origen 08→10</td></tr>
+<tr><td>2010</td><td class="n">15.576</td><td>12–64</td><td class="n">14.794*</td><td class="pend">PENDIENTE</td><td>Destino y origen</td></tr>
+<tr><td>2012</td><td class="n">17.154</td><td>12–65</td><td class="n">16.322</td><td class="pend">PENDIENTE</td><td>Destino y origen</td></tr>
+<tr><td>2014</td><td class="n">20.113</td><td>12–65</td><td class="n">19.326</td><td class="pend">PENDIENTE</td><td>Destino y origen</td></tr>
+<tr><td>2016</td><td class="n">19.147</td><td>12–65</td><td class="n">18.354</td><td class="pend">PENDIENTE</td><td>Solo destino</td></tr>
+<tr><td>2018 · 2020 · 2022</td><td class="n">19.427 · 16.662 · 17.454</td><td>12–65</td><td class="n">18.734 · 16.114 · 17.023</td><td class="pend">PENDIENTE</td><td>Objetivos de prevalencia</td></tr>
+</tbody></table></div>
+<p class="note">Filtros de JRT, en orden: edad ≥ 15 (dominio 15–65); fuera si falta año, sexo («Hombre»/«Mujer»), tramo de edad, g/día o estado; cat4 y bebedor sin volumen quedan fuera; no hay control de duplicados. Cada registro de t recibe un compañero de t+2, así que los pares sintéticos igualan los registros de la ola de origen tras filtros. Los N por motivo y finales quedan pendientes porque falta <code>Alcohol Transitions FINAL.RData</code>. * conteo propio. Fuentes: <span class="src">_enpg/notes/enpg_wave_inventory.csv; microsim_base_outputs/data_audit.csv; FINAL:37-66; handoff:5217</span>.</p>
+
+<h3><span class="chip eps">EPS</span> panel real, pares = personas</h3>
+<div class="tbl"><table>
+<thead><tr><th>Paso</th><th class="n">VI→VII</th><th class="n">VII→VIII</th><th>Evidencia</th></tr></thead>
+<tbody>
+<tr><td>Registros vivos en origen</td><td class="n">16.906</td><td class="n">7.800</td><td class="src">harmonization_audit.csv</td></tr>
+<tr><td>Con peso panel 2015</td><td class="n">6.284</td><td class="n">—</td><td class="src">core:143-146</td></tr>
+<tr><td>18–65 y sexo conocido</td><td class="n">5.252</td><td class="n">6.107</td><td class="src">core:141</td></tr>
+<tr><td>Muertes en destino</td><td class="n">0</td><td class="n">−60</td><td class="src">core:147-148</td></tr>
+<tr><td>Origen sin clasificar</td><td class="n">−153</td><td class="n">−350</td><td class="src">cohort.csv</td></tr>
+<tr><td>Enlace inválido o destino sin clasificar</td><td class="n">−397</td><td class="n">−2.304</td><td class="src">core:149-151</td></tr>
+<tr class="total"><td>Pares completos</td><td class="n">4.702</td><td class="n">3.393</td><td class="src">cohort.csv</td></tr>
+<tr><td>Tamaño efectivo, IPW v1</td><td class="n">3.154</td><td class="n">1.938</td><td class="src">v2_scheme_weights_audit.csv</td></tr>
+</tbody></table></div>
+<p class="note">Total 8.095 pares de 5.365 personas. Pendiente: separar edad y sexo en el paso 18–65, y enlace e ítem en las pérdidas.</p>
+
+<h3><span class="chip tsm">TSM</span> panel real, entrevistados</h3>
+<div class="tbl"><table>
+<thead><tr><th>Paso</th><th class="n">R7→R8</th><th class="n">R8→R9</th><th class="n">R9→R10</th><th class="n">R10→R11</th></tr></thead>
+<tbody>
+<tr><td>Meses</td><td class="n">8</td><td class="n">4</td><td class="n">7</td><td class="n">5</td></tr>
+<tr><td>Entrevistados en origen</td><td class="n">3.012</td><td class="n">2.040</td><td class="n">3.056</td><td class="n">2.430</td></tr>
+<tr><td>Excluidos por edad &gt; 65*</td><td class="n">889</td><td class="n">635</td><td class="n">919</td><td class="n">758</td></tr>
+<tr><td>18–65</td><td class="n">2.123</td><td class="n">1.405</td><td class="n">2.137</td><td class="n">1.672</td></tr>
+<tr><td>Sin destino</td><td class="n">1.122</td><td class="n">498</td><td class="n">853</td><td class="n">689</td></tr>
+<tr><td>Incompatibles: sexo; edad</td><td class="n">0; 5</td><td class="n">0; 6</td><td class="n">0; 30</td><td class="n">1; 12</td></tr>
+<tr class="total"><td>Pares usados</td><td class="n">996</td><td class="n">901</td><td class="n">1.254</td><td class="n">970</td></tr>
+<tr><td>Tamaño efectivo</td><td class="n">359</td><td class="n">264</td><td class="n">448</td><td class="n">336</td></tr>
+</tbody></table></div>
+<p class="note">Total 4.121 pares de 1.915 personas; 65,8 % mujeres sin ponderar (ponderado: pendiente). * conteo propio. Fuentes: <span class="src">tsm_markov_outputs/input_manifest.csv, link_audit.csv, cohort.csv; ts_data:201-203</span>.</p>
+
+<h2 id="estados">3. Cómo se arman los estados</h2>
+<div class="tbl"><table>
+<thead><tr><th></th><th><span class="chip jrt">ENPG / JRT</span></th><th><span class="chip eps">EPS</span></th><th><span class="chip tsm">TSM</span></th></tr></thead>
+<tbody>
+<tr><td>Ítems</td><td>Uso alguna vez, último uso, días en 30 días, tragos AUDIT, episodios 5+/4+</td><td>Bebe (sin ventana), días por semana en el último mes, vasos por ocasión</td><td>Frecuencia, tragos en día típico, 6+ tragos (sin ventana)</td></tr>
+<tr><td>Gramos/día</td><td>(episodios × 5 o 4 + días restantes × tragos) × 12 g en 30 días, llevado a año con factor OMS, /365</td><td>Σ bebidas 12 × días × vasos / 7; «menos de un día» = 0,5</td><td>12 × días/semana × tragos / 7 por bandas; máximo 94,3: C4 inalcanzable</td></tr>
+<tr><td>Ex bebedor</td><td>No bebió en 30 días (incluye más de un año)</td><td>Bebió en una ola anterior: años sin beber</td><td>Bebió en una ronda anterior: 4–24 meses</td></tr>
+<tr><td>Estados</td><td>No bebedor (abstemio + ex), Cat1–Cat3; sin Cat4</td><td>Origen N0, FD, C1–C4; destino NC, C1–C4</td><td>Igual que EPS</td></tr>
+<tr><td>Cortes g/día</td><td colspan="3">Mujeres 20 / 40 / 100; hombres 40 / 60 / 100 en las tres fuentes</td></tr>
+<tr><td>HED</td><td>5+/4+ en 30 días; no entra en el modelo</td><td>No existe; solo señal auxiliar</td><td>6+ tragos; solo en IPW y una variante</td></tr>
+<tr><td>Edad</td><td>15–29, 30–44, 45–59, 60–65</td><td colspan="2">18–29, 30–44, 45–59, 60–65</td></tr>
+</tbody></table></div>
+<p><b>NC→NC.</b> En las tres fuentes, el destino «no bebedor» suma N0 y FD. JRT mezcla abstemios y ex bebedores también en el origen, en la proporción de la ola t. EPS y TSM separan el origen y asignan el destino no bebedor a N0 si se partía de N0 y a FD en otro caso. Mezcla del origen sin ponderar: EPS VI→VII es todo N0 (2.936); VII→VIII tiene 1.686 N0 y 412 FD. TSM tiene 1.592 N0 y 431 FD (21,3 % FD). Las mezclas ponderadas están <span class="pend">PENDIENTES</span>.</p>
+
+<h2 id="compar">4. Comparabilidad a dos años</h2>
+<div class="tbl"><table>
+<thead><tr><th>Dimensión</th><th><span class="chip jrt">JRT</span></th><th><span class="chip eps">EPS</span></th><th><span class="chip tsm">TSM</span></th><th>¿Comparable?</th></tr></thead>
+<tbody>
+<tr><td>Unidad</td><td>Registros, pares sintéticos con reemplazo</td><td>Personas enlazadas</td><td>Personas enlazadas</td><td class="no">No</td></tr>
+<tr><td>Edad al inicio</td><td>15–65</td><td>18–65 (22–65 en VII→VIII)</td><td>18–65</td><td class="part">Parcial</td></tr>
+<tr><td>Intervalo</td><td>2 años, aplicado cada año con α</td><td>3,67 y 4,03 años</td><td>0,33–0,67 años</td><td class="no">No</td></tr>
+<tr><td>Pesos</td><td>Ninguno en el modelo</td><td>Oficial × IPW</td><td>Fact_Exp × IPW</td><td class="no">No</td></tr>
+<tr><td>Ex bebedor</td><td>30 días</td><td>Años</td><td>Meses</td><td class="no">No</td></tr>
+<tr><td>C4</td><td>No existe</td><td>Sí</td><td>Inalcanzable</td><td class="no">No</td></tr>
+<tr><td>Estratos</td><td>Sexo × edad; envejece 15 años por paso anual</td><td>Sexo × edad × periodo</td><td>Sexo × edad × periodo</td><td class="part">Parcial</td></tr>
+</tbody></table></div>
+<p>Las diferencias de persistencia vienen sobre todo de cómo se construyen los datos, no del modelo. El emparejamiento por rangos fabrica persistencia: C1→C1 pasa de 58,3 % a 94,0 % en EPS, y NC→NC de 0,764 a 0,969 en TSM R7→R8. La transformación con α la aplana en sentido contrario, y los intervalos no coinciden. Las cifras agrupadas o del generador anual son globales. No deben citarse como propias de un estrato; las matrices por estrato están en <span class="src">eps_markov_outputs_v2/transition_matrices_design_CI.csv</span> y <span class="src">tsm_markov_outputs/transition_matrices_person_CI.csv</span>.</p>
+
+<h2 id="discrep">5. Discrepancias entre documentos y código</h2>
+<ol class="disc">
+<li><code>__andres_control/README.md</code> no existe.</li>
+<li>La presentación llama a la ENPG «Encuesta Nacional de Presupuestos y Gastos», que es la EPF <span class="src">(presentacion_micsim.qmd:219)</span>.</li>
+<li>La presentación atribuye representatividad a los pesos; el modelo JRT no los usa <span class="src">(:221; FINAL:95-169)</span>.</li>
+<li>La presentación da por completos el modelo ordinal y la calibración. Falta el <code>.RData</code>, el script de calibración no corre y <code>apply_destination_offsets</code> no está definida <span class="src">(:307-339; FINAL:201)</span>.</li>
+<li>TSM_ENPG_v3 llama a JRT_reference «the published JRT specification» <span class="src">(TSM_ENPG_v3_EN.md:115, 131)</span>.</li>
+<li><code>ENPG_BINGE.RDS</code> se atribuye a JRT, pero cubre 2012–2024 y JRT exige 2008 y 2010 <span class="src">(_enpg/README.md:38)</span>.</li>
+<li>En el derivado actual, g/día falta en todos los abstemios y ex bebedores*: con ese objeto, el filtro de JRT eliminaría a todos los no bebedores. Cómo estaba en los datos de JRT: <span class="pend">PENDIENTE</span>.</li>
+<li>La nota de armonización propone ex bebedor a 12 meses y otros tramos de edad; el código usa 30 días en ENPG e historia de olas en EPS y TSM <span class="src">(armonizacion_enpg_eps_2026_10_16.md:93, 97)</span>.</li>
+<li>Una nota describe JRT como «anualizado» con α; α no anualiza <span class="src">(eps_markov_v2_observaciones_2026-10-16.md:240)</span>.</li>
+<li>La narrativa EPS dice log(g + 1); el código usa log(g) <span class="src">(eps_markov_v2_narrative.md:22; core:168)</span>.</li>
+<li>El transport EPS usa k = 100 fijo, y el ajuste principal k = 300; no está documentado <span class="src">(core:672-673)</span>.</li>
+<li>El README de TSM cita los N de la v2, 4.175 pares y 1.934 personas; la v3 usa 4.121 y 1.915 <span class="src">(_tsm/README.md:39)</span>.</li>
+<li>El peso ENPG 2014 que usa JRT es la versión redondeada <code>RND_F2_MAY_AJUS_com</code>, no la del crosswalk <span class="src">(handoff:5211)</span>.</li>
+<li>JRT solo acepta «Hombre»/«Mujer», y los crudos 2010 y 2012 usan otras etiquetas. Que no se pierdan esos registros: <span class="pend">PENDIENTE</span>.</li>
+</ol>
+
+<h2 id="conclusion">6. Qué estamos estimando</h2>
+<p>JRT estima cómo cambia la distribución del consumo entre dos encuestas transversales a la misma edad. La convierte en transiciones individuales con un supuesto de rangos, así que no mide transiciones individuales. EPS y TSM sí miden transiciones individuales, pero en sus propios intervalos, de unos cuatro años y de meses.</p>
+<div class="verdict">
+<section class="ok"><h3>Defendible hoy</h3><ul><li>Comparar modelos dentro de cada panel, incluido JRT_reference.</li><li>Usar el emparejamiento por rangos como diagnóstico de cuánta persistencia fabrica.</li><li>Comparar prevalencias ENPG con las simuladas.</li></ul></section>
+<section class="bad"><h3>No defendible</h3><ul><li>Comparar celda a celda las matrices JRT con EPS o TSM.</li><li>Comparar la fila del ex bebedor o C4 entre fuentes.</li><li>Leer cifras globales como propias de un estrato.</li></ul></section>
+<section class="todo"><h3>Falta</h3><ul><li>Recuperar los datos de entrenamiento de JRT para fijar sus N.</li><li>Un horizonte común, o comparar márgenes en vez de matrices.</li><li>Una ventana común de ex bebedor, y decidir qué hacer con 15–17.</li><li>Mezclas ponderadas N0/FD y las correcciones de la sección 5.</li></ul></section>
+</div>
+
+<footer>Rutas: FINAL = jrt/simulacion/Alcohol Transitions FINAL.R · CALIB = jrt/simulacion/Alcohol Transitions_CALIB.R · core = __andres_control/eps_markov_core.R · ts_data / ts_models = __andres_control/tsm_markov_data.R / tsm_markov_models.R · handoff = __andres_control/codex_handoff_adam_rr_full_override_caveman.md. * Conteos propios con scripts temporales fuera del repo. Detalle completo en auditoria_comparacion_enpg_jrt_eps_tsm_2026-10-21.md.</footer>
+</div>

@@ -1,0 +1,4 @@
+"scheme","k","replicates","lognormal_failed_replicates","sigma","minutes"
+"unweighted",300,1999,0,0.7335463,0.8303126
+"total",3000,1999,0,0.6919705,0.9007261
+"panel",10000,1999,1,0.6632427,0.6580848

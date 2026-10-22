@@ -1,0 +1,7 @@
+"survey","period","construct","persistence","source"
+"EPS","VI_VII","no_declared_use",0.733947860309943,"../eps_markov_outputs_v2/rank_matching_vs_panel.csv"
+"EPS","VII_VIII","no_declared_use",0.821418483887989,"../eps_markov_outputs_v2/rank_matching_vs_panel.csv"
+"TSM","R7_R8","no_declared_use",0.763874566766529,"../tsm_markov_outputs/rank_matching_vs_panel.csv"
+"TSM","R8_R9","no_declared_use",0.770543236511753,"../tsm_markov_outputs/rank_matching_vs_panel.csv"
+"TSM","R9_R10","no_declared_use",0.668933418879037,"../tsm_markov_outputs/rank_matching_vs_panel.csv"
+"TSM","R10_R11","no_declared_use",0.749236774486154,"../tsm_markov_outputs/rank_matching_vs_panel.csv"

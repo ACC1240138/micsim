@@ -1,0 +1,12 @@
+"estimator","sample_set","weight_family","weight_wave","trimmed","main"
+"unweighted_general","general","none","none",FALSE,TRUE
+"total_general","general","total","destination",FALSE,TRUE
+"unweighted_panel_subset","panel_subset","none","none",FALSE,TRUE
+"panel_panel_subset","panel_subset","panel","destination",FALSE,TRUE
+"total_panel_subset","panel_subset","total","destination",FALSE,TRUE
+"unweighted_general_minus_panel","general_minus_panel","none","none",FALSE,TRUE
+"total_general_trimmed","general","total","destination",TRUE,FALSE
+"panel_panel_subset_trimmed","panel_subset","panel","destination",TRUE,FALSE
+"total_panel_subset_trimmed","panel_subset","total","destination",TRUE,FALSE
+"total_general_origin_wave","general","total","origin",FALSE,FALSE
+"panel_panel_subset_origin_wave","panel_subset","panel","origin",FALSE,FALSE

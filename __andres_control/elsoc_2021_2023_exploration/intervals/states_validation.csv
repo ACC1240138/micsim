@@ -1,0 +1,17 @@
+"check","kind","passed"
+"md5_matches_published_provenance","data_check",TRUE
+"unique_longitudinal_ids","data_check",TRUE
+"pair_counts_match_weighting_notebook_flow","data_check",TRUE
+"total_weight_positive_for_all_state_pairs","data_check",TRUE
+"panel_weight_positive_for_panel_state_pairs","data_check",TRUE
+"replicate_path_reproduces_direct_estimates","identity",TRUE
+"taylor_point_equals_observed","identity",TRUE
+"frequency_block_counts_equal_published_S10_matrices","data_check",TRUE
+"NR_to_NR_counts_equal_published_S09_matrices","data_check",TRUE
+"every_estimated_row_sums_to_one","data_check",TRUE
+"lognormal_main_fit_predicts_every_cell_and_origin","data_check",TRUE
+"A_k_interior_or_flat_at_grid_edge","data_check",TRUE
+"lognormal_replicates_fitted_at_least_99_percent","data_check",TRUE
+"model_estimates_complete_for_observed_origins","data_check",TRUE
+"no_pooled_independence_assumption","declaration",TRUE
+"published_tables_unchanged","data_check",TRUE

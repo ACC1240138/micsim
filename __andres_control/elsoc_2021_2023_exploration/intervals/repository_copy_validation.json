@@ -1,0 +1,19 @@
+{
+  "encrypted_bundle": "_elsoc/elsoc_wide_2016_2023.tar.xz.enc",
+  "original_sav_md5": "dac64998f382fc99a5688ee8b5947db3",
+  "encrypted_roundtrip_verified": true,
+  "external_source_files_unchanged": true,
+  "official_documents_copied_byte_identical": 4,
+  "previous_2021_2023_tables_unchanged": true,
+  "original_engine_notebooks_unchanged": true,
+  "three_pair_counts_verified": true,
+  "html_self_contained": true,
+  "local_links_verified": true,
+  "source_pdf_bundle": "_elsoc/docs/elsoc_documentacion_pdf.tar.xz.enc",
+  "source_pdf_count": 5,
+  "source_pdfs_encrypted_roundtrip_verified": true,
+  "html_unchanged_after_final_request": true,
+  "notebook_execution_deferred_after_final_request": true,
+  "handoff_machine_id": "DELL_LR",
+  "handoff_append_only_verified": true
+}

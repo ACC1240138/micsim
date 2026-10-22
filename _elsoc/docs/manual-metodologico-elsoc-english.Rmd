@@ -1,0 +1,1778 @@
+--- 
+title: "ELSOC Methodological Manual 2016-2023"
+author: "ELSOC Team"
+site: bookdown::bookdown_site
+link-citations: yes
+linkcolor: blue
+geometry: "left=4cm, right=3cm, top=2.5cm, bottom=2.5cm"
+fontsize: 12pt
+linestretch: 1.5
+toc-depth: 1
+lof: True
+lot: True
+# author: "González, Roberto; Bargsted, Matías; Figuereido, Ana; Miranda, Daniel; Cerda, Edgardo; Plaza, Alejandro; Salas-Lewin, Rocío"
+description: "ELSOC Methodological Manual 2016-2023"
+github-repo: "elsoc-coes/manual-elsoc"
+# url: 'https://manual-metodologico-elsoc.netlify.app/'
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+
+# Introduction {-}
+
+```{js, echo = FALSE}
+title = document.getElementById('header');
+title.innerHTML = '<img src="inputs/ELSOC.png" alt="ELSOC">' + title.innerHTML
+```
+
+The Longitudinal Social Study of Chile (ELSOC) is a survey developed to analyze the evolution of conflict and cohesion in Chilean society over time, based on conceptual models described in national and international literature that address these issues. It aims to examine the main antecedents, moderating and mediating factors, as well as the main consequences associated with the development of different forms of conflict and social cohesion in Chile. Its fundamental objective is to provide empirical input for understanding the beliefs, attitudes, and perceptions of Chileans towards the different dimensions of coexistence and conflict, and how these change over time.
+
+This survey was designed by researchers from the Center for Social Conflict and Cohesion Studies (COES). COES is sponsored by the University of Chile and the Pontifical Catholic University of Chile, and has Diego Portales University and Adolfo Ibáñez University as associated institutions. For more information about COES, visit the COES website ([www.coes.cl/](www.coes.cl/)). COES is an initiative that has been funded since 2013 by the [Fund for the Financing of Research Centers in Priority Areas (FONDAP)](https://www.conicyt.cl/fondap/centros-fondap/) of the [National Commission for Scientific and Technological Research (CONICYT)](https://www.conicyt.cl/fondap/centros-fondap/centros-en-ejecucion/coes/)], an agency dependent on the Ministry of Education of Chile. The data collection of ELSOC is publicly tendered every 2 years and has been awarded in all its measurements to the [MicroData Center of the University of Chile (CMD)](https://www.microdatos.cl/).
+
+The Manual is structured around thematic sections: the first section describes the sample design of the panel study, divided into its original and refreshment samples, and the updates that have been applied over time. The second section describes the instrument design process, which is complemented by the study's technical sheet. The next section summarizes the main aspects of the fieldwork, emphasizing the particularities of the re-interview process with participants. The fourth section corresponds to the database version registry and details the protocol for its use. Finally, a section with basic guidelines for analysis and the codebook of the variables included in the database is included.
+
+
+
+```{r preamble1, include=FALSE}
+
+knitr::opts_chunk$set(cache = FALSE, warning = FALSE, message = FALSE, echo = FALSE, fig.topcaption = TRUE, fig.align = 'center')
+
+Sys.setlocale("LC_ALL","ES_ES.UTF-8")
+
+# Mainly for creating tables
+library(tidyverse)
+library(kableExtra)
+library(glue)
+library(rlang)
+library(purrr)
+library(elsoc)
+library(htmltools)
+library(mime)
+library(tinytex)
+
+options(dplyr.summarise.inform = FALSE)
+
+# Table format according to output type
+library(knitr)
+
+options(knitr.kable.NA = ' ')
+table_format <- if (is_html_output()) {
+  "html"
+} else if (is_latex_output()) {
+  "latex" 
+}
+
+fullw <- if (is_html_output()) TRUE else if (is_latex_output()) FALSE
+fsize <- if (is_html_output()) 14 else if(is_latex_output()) 8
+
+load(file.path('inputs', 'ELSOC_Long.RData'))
+
+```
+
+\newpage
+
+
+<!--chapter:end:index.Rmd-->
+
+
+```{r, incluede=FALSE}
+knitr::opts_chunk$set(cache = FALSE, warning = FALSE, message = FALSE, echo = FALSE, fig.topcaption = TRUE, fig.align = 'center')
+options(knitr.kable.NA = ' ')
+```
+
+```{r, incluede=FALSE}
+library(tidyverse)
+library(kableExtra)
+library(knitr)
+table_format <- if (is_html_output()) {
+  "html"
+} else if (is_latex_output()) {
+  "latex" 
+}
+
+fullw <- if (is_html_output()) TRUE else if (is_latex_output()) FALSE
+fsize <- if (is_html_output()) 14 else if(is_latex_output()) 8
+
+
+```
+
+# Sample Design of the Study {#dis_muest}
+
+The following section presents the description of the sample design of ELSOC, corresponding to the original sample and the refreshment sample of the study. At the end of the section, the construction of the ELSOC weights is described.
+
+## Sample Design Original Sample {#dis_muest_original}
+
+The design of the original ELSOC sample aimed to reconcile the multiple research interests of the researchers associated with the Center. Among the most relevant considerations were the following:
+
+1. A sample design that would allow combining the variables measured in the questionnaire with spatial variables, recorded at the block and commune level, contained in the databases developed by the Territorial Intelligence Center (CIT) of Adolfo Ibáñez University. Since CIT data is not available for all blocks in the country, particularly those located in rural areas, it was decided to include only urban areas in the sample. This consideration also coincided with the preferences of many researchers at the Center, who expressed a primary interest in an urban sample.
+
+2. Some researchers requested a design that would allow estimating multi-level (or hierarchical) models grouped by city and commune, and therefore, it was established that the sample should contain a sufficient number of cities and communes, as well as a sufficient number of cases within each city and commune, to allow such analysis (Snijders & Bosker, Chapter 10).
+
+3. Other researchers were interested in comparing the inhabitants of the three largest cities in the country, which resulted in a non-proportional design that increased the number of respondents in the areas of Greater Valparaíso (cities of Viña del Mar and Valparaíso) and Greater Concepción (Concepción, Talcahuano, and others).
+
+4. Finally, some researchers requested a design that would allow comparing respondents living in large and small cities, which favored increasing the sample size of households in small cities (Kish, 1965, Section 3.5), particularly those with between 30,000 and 100,000 inhabitants.
+
+COES researchers worked with the person in charge of the sample design, Stephanie Eckman, to develop a design that could reasonably meet these substantive needs and interests. The final sample design of wave 1 of ELSOC COES provides adequate coverage of the largest cities in the country (Greater Santiago, Greater Valparaíso, and Greater Concepción), as well as smaller cities, and also ensures the representation of people in the north and south of the country. Overall, the sample design achieves an approximate representativeness of 77% of the total population of the country and 93% of the urban population. The following subsections detail the different steps of the sample design.
+
+### Preparation of the Sampling Frame {-}
+
+The sampling process of the original sample was based on the 2011 pre-census data, which was formatted by CIT. Although the population counts of the 2012 census are not accurate, the pre-census work collecting information on households in all blocks is of good quality. The dataset contained a total of 155,757 blocks, but four different types were removed before selection began.
+
+1. Following the analytical interests of the Center's researchers, only urban blocks were used. To determine which blocks were urban, the locality type coding (urban or rural) contained in the 2011 pre-census database was used. Consequently, 22,188 (14.2%) blocks were excluded at this step.
+
+2. Again, based on the analytical interests of the Center's researchers, only blocks that had been previously geo-referenced by CIT were retained for sampling. This implies that a total of 1,971 (1.5% of urban blocks) that were not geo-referenced were removed at this step.
+
+3. Only blocks containing five or more households (according to the 2011 pre-census) were retained. 503 blocks (less than 1% of the remaining blocks after steps 1 and 2) did not meet this threshold and were eliminated.
+
+4. Only blocks in cities with more than 10,000 people were eligible for selection. 10,238 blocks (7.8% of the remaining blocks) were excluded from the sampling frame.
+
+Thus, the final sampling frame contains 120,857 blocks. The COES sample will only represent these blocks and not those that were excluded. Estimates derived from the sample data will apply only to this target population and should not be applied to the entire Chilean population. The selection process of respondents was developed in four stages, although a fifth stage was added during fieldwork.
+
+### Stage 1: Selection of Cities {-#etapa1m1}
+
+The universe of blocks (the 120,857 mentioned) was aggregated at the city level, resulting in 122 cities. The three largest cities (Greater Santiago, Viña del Mar - Valparaiso, and Concepción - Talcahuano) were selected with certainty. The remaining cities were stratified by population. Table \@ref(tab:tabla-estratos) shows the definitions of the strata and the population and sample sizes in each.
+
+```{r tabla-estratos, echo=FALSE}
+
+estratos <- data.frame(estrato = c('Greater Santiago', 'Greater Valparaíso', 'Greater Concepción', 
+                               'Large cities', 'Medium cities', 'Small cities'),
+                   def_N = c(' ', ' ', ' ', '> 100 thousand', '> 30 thousand', '> 10 thousand'),
+                   N_ciudades = c(1, 1, 1, 18, 28, 73),
+                   n_ciudades = c(1, 1, 1, 8, 10, 19),
+                   N_norte = c(NA, NA, NA, 8, 15, 24),
+                   n_norte = c(NA, NA, NA, 4, 6, 6),
+                   N_sur = c(NA, NA, NA, 10, 13, 49),
+                   n_sur = c(NA, NA, NA, 3, 3, 13)
+                   )
+
+estratos %>% 
+  kbl(caption = 'Population by city and sample sizes, by stratum',
+      align = c('l', rep('c', 7)),
+      format = table_format,
+      booktabs = TRUE,
+      col.name = c('Stratum', 'Definition (N° inhabitants)', 'Population size of cities', 'Sample size of cities',
+                   rep(c('Population size of stratum', 'Sample size of stratum'), 2))) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = c('HOLD_position', 'scale_down')) %>% 
+  column_spec(2:8, width = "4em") %>% 
+  kable_classic_2() %>% 
+  add_header_above(c(" " = 1, " " = 3, "Northern Stratum" = 2, "Southern Stratum" = 2))
+
+
+
+```
+
+The strata of large cities, medium cities, and small cities were geographically stratified by North or South zone to ensure that the sample contained cities from both the north and south of Chile. This results in a total of nine strata. The sample was allocated between the two areas in proportion to the size of their population in the universe. See Table \@ref(tab:tabla-estratos) for details on population and sample sizes in each of the northern and southern strata.
+
+The selection of cities within each of these final strata was done proportionally to the population size of each city. This method gives larger probabilities of selection to larger cities.
+
+The probability of selecting a city $i$ within stratum $h$ was:
+
+$$\pi_i=\frac{(nc_h)(pop_i)}{\sum_h pop}$$
+
+where $nc_h$ is the number of cities selected in stratum $h$ and $pop_i$ is the population of city $i$.
+
+### Stage 2: Selection of Blocks {-#etapa2m1}
+
+The 40 selected cities contained 87,839 blocks. In the second stage, blocks were selected in each city with population proportional to size, where size was determined based on the pre-census household count. The selection was systematic: the list of blocks in the selected cities was ordered by sub-census district and block number to ensure that the selected blocks were spread throughout the city^[The block and census district numbers were provided by Matías Garretón, a researcher at CIT. Sub-census districts are smaller geographic units than the commune but larger than blocks.].
+
+Table \@ref(tab:tabla-ciudades) shows the number of blocks selected in each city, by stratum. The block sample was allocated disproportionately so that areas outside Santiago were over-represented relative to their size in the target population. Several COES researchers requested this allocation to ensure that the sample was diverse with respect to city size.
+
+The probability of selecting a block $j$ in city $i$, conditional on the selection of the city, was:
+
+$$\pi_{j|i}=\frac{(nb_i)(hu_j)}{\sum_i hu}$$
+
+where $nb_i$ is the number of blocks selected in city $i$ and $hu_j$ is the population of city $i$.
+
+```{r tabla-ciudades, echo=FALSE}
+
+ciudades <- data.frame(estrato = c('Greater Santiago', 'Greater Valparaíso', 'Greater Concepción', 
+                               'Large cities', 'Medium cities', 'Small cities',
+                               'Total'),
+                   def_N = c(' ', ' ', ' ', '> 100 thousand', '> 30 thousand', '> 10 thousand', ' '),
+                   N_ciudades = c(1, 1, 1, 8, 10, 19, 40),
+                   n_ciudades = c(200, 100, 100, 26, 25, 11, 27)) %>% 
+  mutate(N_bloques = N_ciudades * n_ciudades)
+
+ciudades %>% 
+  kbl(caption = 'Distribution of cities and blocks by stratum',
+      align = c('l', rep('c', 4)),
+      format = table_format,
+      booktabs = TRUE,
+      col.name = c('Stratum', 'Definition (N° inhabitants)', 'Sample size of cities', 'Number of blocks per city', 'Number of blocks')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = c('HOLD_position')) %>% 
+  column_spec(2:4, width = "6em") %>% 
+  kable_classic_2()
+  
+
+```
+
+In 4 cities, some blocks were so large that they were selected with certainty. That is, the household counts were greater than the selection interval and would be selected in any sample, and could even be selected twice. To avoid duplicate selections, these blocks were chosen first with certainty and then additional blocks were selected from the remaining ones for those cities, to reach the desired total sample size for the city (see Table \@ref(tab:tabla-ciudades). $\pi_{j|i}$ for these cities is 1.
+
+The 1,067 blocks selected in the 40 chosen cities were listed in the field to perform the selection of households with the most up-to-date information possible. CIT provided maps of each selected block. CMD field staff visited each block in person and created a listing of all housing units in those blocks. The listings were carefully reviewed to detect any errors or duplicates.
+
+During the listing process, the Microdata Center found that some blocks had more than 100 households, which makes the listing process excessively difficult. Consequently, these blocks were divided into sub-blocks of approximately equal size (40 to 50 households) and one was selected to be listed. Since the sub-blocks were created to be of similar sizes, they were selected based on equal probability. In total, 301 blocks were sub-sampled. The remaining blocks were not affected by this stage.
+
+### Stage 3: Selection of Households {-#etapa3m1}
+
+The number of households selected in each block varied by stratum, as shown in Table \@ref(tab:bloques). This design resulted in 4,001 housing units, aiming to obtain approximately 3,000 complete interviews, assuming a response rate of 75% for all strata.
+
+```{r bloques, echo=FALSE, message=FALSE, warning=FALSE}
+
+bloques <- data.frame(estrato = c('Greater Santiago', 'Greater Valparaíso', 'Greater Concepción', 
+                               'Large cities', 'Medium cities', 'Small cities',
+                               'Total'),
+                   def_N = c(' ', ' ', ' ', '> 100 thousand', '> 30 thousand', '> 10 thousand', ' '),
+                   n_ciudades = c(5, 5, 5, 3, 3, 3, 4001))
+
+bloques %>% 
+  kbl(caption = 'Distribution of households by blocks, by stratum',
+      align = c('l', rep('c', 2)),
+      format = table_format,
+      booktabs = TRUE,
+      col.name = c('Stratum', 'Definition (N° inhabitants)', 'Number of households per block')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = c('HOLD_position')) %>% 
+  kable_classic_2()
+
+```
+
+A simple random sample of households was conducted in each block. The combination of population proportional to size sampling in the first two stages and simple random sampling in the third and fourth stages resulted in a sample of households with approximately equal probability within each of the nine strata.
+
+The probability of selecting a household $k$ in block $j$ in city $i$ and stratum $h$ was:
+
+$$\pi_{k|j,i}=\frac{nh_j}{NH_j}$$
+
+where $nh_j$ is the number of households selected in block $j$, and $NH_j$ corresponds to the number of households listed in block $j$.
+
+### Stage 4: Selection of Individuals {-#etapa4m1}
+
+Interviewers visited each selected household and attempted to conduct the interview. The first step in the interview process was to identify the target respondent. When there was more than one adult in the household, one was selected using a simple random sample, using a Kish table.
+
+The probability of selecting a person in household $k$ was:
+
+$$\pi_{l|k,j,i}=\frac{1}{NP_j}$$
+
+where $NP_j$ is the number of adults (over 18 and under 75 years old) living in household $j$.
+
+### Stage 5: Increase in Sample Size {-#etapa5m1}
+
+During the fieldwork of the first wave (2016), it was observed that the assumption of a 75% response rate for all strata was incorrect. First, the overall response rate was lower than 75%, and second, there was significant heterogeneity in response rates between regions. Due to this, it was decided to increase the number of households per block to effectively achieve the 3,000 interviews.
+
+This increase in the number of households per block has a limited effect on the probability of selection of each household. It only affects the probability calculated in Stage 3, as the number of available households is smaller, but there are no changes in the probabilities calculated in Stages 1 and 2. This occurs because the selected blocks (in Stage 2) were used, and no new blocks were introduced.
+
+During this process, a total of 1,082 new households were added to the study sample, located within the selected blocks. The allocation of these new households was not uniform across all blocks in the country. Instead, they were concentrated in four regions: Coquimbo, O'Higgins, Metropolitan, and Biobío regions, where interviewers had greater difficulties contacting respondents. Table \@ref(tab:tabla-aumento) details the communes where the number of households was increased compared to the initial design, along with the total number of households added per block.
+
+
+```{r tabla-aumento, echo=FALSE, message=FALSE, warning=FALSE}
+
+tabla_aumento_muestra <- data.frame(region = rep('', 3),
+          comuna = c('Coquimbo', 'La Serena', 'Salamanca'),
+          viv_agregadas = c(24,28,22),
+          viv_agregadas_bloque = c(2,2,2)) %>% 
+  add_row(region = rep('', 3),
+          comuna = c('Doñihue', 'Rancagua', 'Santa Cruz'),
+          viv_agregadas = c(10,42,11),
+          viv_agregadas_bloque = c(1,2,1)) %>% 
+  add_row(region = rep('', 6),
+          comuna = c('Chiguayante', 'Concepción', 'Coronel', 'Penco', 'Quillón', 'San Pedro de la Paz'),
+          viv_agregadas = c(24,75,11,4,6,28),
+          viv_agregadas_bloque = c(3,3,1,1,1,2)) %>% 
+  add_row(region = rep('', 34),
+          comuna = c('Cerrillos', 'Colina', 'Curacaví', 'El Bosque', 'Estación Central', 'Huechuraba', 'Independencia', 'Isla de Maipo ', 'La Cisterna', 'La Florida', 'La Granja', 'La Pintana', 'La Reina', 'Las Condes', 'Lo Barnechea', 'Lo Espejo', 'Lo Prado',  'Macul', 'Maipú', 'Ñuñoa', 'Padre Hurtado', 'Pedro Aguirre Cerda' , 'Peñaflor' ,'Peñalolén', 'Providencia', 'Pudahuel', 'Puente Alto','Quilicura', 'San Bernardo', 'San Joaquín', 'San Miguel', 'San Ramón', 'Santiago', 'Vitacura'),
+          viv_agregadas = c(9,12,14,8,12,6,6,39,9,24,6,12,9,33,9,6,6,8,32,16,6,6,30,14,7,14,32,12,16,6,9,6,120,9),
+                  viv_agregadas_bloque = c(3,3,2,2,3,2,2,3,3,2,2,2,3,3,3,2,2,2,2,2,3,2,2,2,3,2,2,2,2,2,3,2,3,3))
+
+
+tabla_aumento_muestra %>% 
+  kbl(caption = 'Number of households added to the sample by region and commune',
+      align = c('l', 'l', 'c', 'c'),
+      format = table_format,
+      booktabs = TRUE,
+      longtable = TRUE,
+      col.name = c('Region', 'Commune', 'Total households added', 'Households added per block')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = c('repeat_header')) %>% 
+  kable_classic_2() %>% 
+  pack_rows('Coquimbo', 1, 3) %>%
+  pack_rows('O’Higgins', 4, 6) %>%
+  pack_rows('Biobío', 7, 12) %>%
+  pack_rows('Metropolitan', 13, 46)
+
+
+```
+
+
+### Sample Design of Successive Waves in Original Sample {-}
+
+The sample design for successive waves is equivalent to the original sample design. The households added and the respondents selected during 2016, as well as those added during [Stage 5](#etapa5), were re-interviewed in the follow-up waves.
+
+
+## Sample Design Refreshment Sample {#dis_muest_refresco}
+
+Starting in 2018, it was decided to include a refreshment sample to counteract the effects of attrition (see [Survey Attrition](#atricion)). The design is explained below.
+
+### Preparation of the Sampling Frame for the Refreshment Sample {-}
+
+Since the 2017 Census databases were not yet available at the time of preparing the sampling frame for the Refreshment Sample, it was decided to use the household listing conducted by CMD during 2016 as the sampling frame.
+
+The listing corresponds to a list of households surveyed in person in the first round of the ELSOC survey (Original Sample), so it consists of the blocks (blocks) selected for the Original Sample. This includes approximately 40,000 households in 1,067 blocks (see [Stage 2: Selection of Blocks](#etapa2)).
+
+Since the listing was two years old at the time of generating the sample design for the refreshment sample, there may be coverage issues in the listed blocks. Additionally, there are 179 segments with fewer than 20 listed households, which were not considered for the selection of the new sample. If a selected segment is not residential, a replacement will be considered in the sample selection.
+
+Again, the selection process of households and respondents was developed in 4 stages:
+
+### Stage 1: Selection of Cities {-#etapa1m2}
+
+For the selection of Cities, it was decided to use the same cities from the Original Sample, present in the CMD listing. Therefore, the sample design of the Refreshment Sample is equivalent to the sample design of the Original Sample up to Stage 1 of City selection.
+
+### Stage 2: Selection of Blocks {-#etapa2m2}
+
+The blocks were selected using a simple random sample among those present in the CMD listing and selected in the Original Sample. This decision was made considering that it simplifies the data collection process by not altering the blocks to be visited (thus increasing the productivity of the collection) and allows maintaining similar representativeness to the Original Sample.
+
+However, before selection, blocks with fewer than 20 households or those that were part of the pilot survey for the 2018 refreshment sample were discarded. This means that the universe of available blocks is reduced from 1047 to 822. Finally, since the Refreshment Sample has a target size of 1,400 individuals, 402 blocks are selected.
+
+Table \@ref(tab:seleccion-bloques-m2) presents the listed blocks, available blocks, and selected blocks by region:
+
+```{r seleccion-bloques-m2, echo=FALSE}
+
+bloques_refresco <- data.frame(region = c('Tarapacá', 'Antofagasta', 'Atacama', 'Coquimbo', 'Valparaíso', 'Metropolitan', 'O\'Higgins', 'Del Maule', 'Biobío', 'La Araucanía', 'Los Ríos', 'Los Lagos', 'Aysén', 'Total'),
+                               segmentos_empadronamiento = c(23, 24, 51, 73, 159, 283, 47, 92, 143, 94, 22, 25, 11, 1047),
+                               segmentos_no_considerados = c(3, 3, 18, 22, 28, 32,7, 24, 34, 24, 6, 3, 1, 205),
+                               segmentos_piloto = c(0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0, 20),
+                               segmentos_disponibles = c(20, 21, 33, 51, 131, 231, 40, 68, 109, 70, 16, 22, 10, 822),
+                               segmentos_seleccionados = c(8, 9, 18, 23, 70, 100, 16, 32, 64, 38, 9, 10, 5, 402))
+
+bloques_refresco %>% 
+  kbl(caption = 'Available and selected blocks, by region',
+      align = c('l', rep('c', 5)),
+      format = table_format,
+      booktabs = TRUE,
+      col.name = c('Region', 'Listed blocks', 'Blocks < 20 households', 'Pilot Blocks 2018', 'Available blocks', 'Selected blocks')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = c('HOLD_position')) %>% 
+  column_spec(2:6, width = "5em") %>% 
+  kable_classic_2()
+
+
+  
+```
+
+### Stage 3: Selection of Households {-#etapa3refresco}
+
+Households are selected using a simple random sample among the households in the selected blocks. Since the goal is to obtain 1,400 surveys, an average of 3.5 households per block is required to meet the target sample. For this, in blocks with more than 20 households, between 4 and 6 households are selected per block, depending on the size of the strata and blocks; and in blocks with more than 50 households, another of the sub-blocks generated during the listing process is used, ensuring that this sub-block is not in the same building already selected.
+
+The probability of selecting the same household in the block is not zero, so a replacement will be generated for that unit using the same random selection method, verifying the selected sample with the panel sample already defined in 2016.
+
+### Stage 4: Selection of Individuals {-#etapa4refresco}
+
+As in the Original Sample, interviewers visit each selected household and attempt to conduct the interview. The first step in the interview process is to identify the target respondent, who is selected using a simple random sample among adults aged 18 to 75 living in the household.
+
+## Design of Weights {#dis_ponderadores}
+
+Considering that the aim is to extrapolate the interviews conducted to the respective target population, it is necessary to adequately weight each respondent according to their representation in the target population. For this, in each wave of the study, weights are provided to adjust for differences in demographic attributes of the ELSOC sample in relation to the target population. The weights included in the ELSOC database are the product of three factors: a design weight, a non-response adjustment, and a post-stratification adjustment.
+
+The process of creating these weights is described below^[These weights can be understood as "cross-sectional weights" as they ignore the problems derived from their longitudinal nature.] to achieve a correspondence between the sample and the target population.
+
+### Design Weights
+
+The first step in constructing the ELSOC weights is to consider the inverse of the probability of selecting an individual in the sample. In this case, the probability of selecting individual $i$ from household $j$ in block $l$ within stratum $k$, $P_{ijlk}$ is given by:
+
+$$P_{ijlk} = \pi_{i|jlk}\pi_{j|lk}\pi_{lk}$$
+
+Where:
+
+* $\pi_{i|jlk}$ is the probability that individual $i$ is selected in the sample given that the household where they live and the block where it is located were selected within stratum $k$.
+* $\pi_{j|lk}$ is the probability that household $j$ is selected in the sample given that block $l$ (which contains household $j$) was selected.
+* $\pi_{lk}$ is the probability that block $l$ in stratum $k$ is selected in the sample.
+
+The design weight $w_{ijlk}$ is defined as the inverse of the probability of selection of each individual in the sample:
+
+$$w_{ijlk}=\frac{1}{ P_{ijlk}}$$
+
+The probabilities that make up the probability of selection are calculated as follows:
+
+$$\pi_{lk} = n_k\frac{M_{lk}}{M_k}$$
+
+$$\pi_{j|lk} = \frac{m_{lk}}{M'_{lk}}$$
+
+$$\pi_{i|jlk} = \frac{1}{N_{jlk}}$$
+
+Where $n_k$ is the number of blocks to be selected from stratum $k$, $M_{lk}$ is the number of households in block $l$ of stratum $k$, $M_k$ is the total number of households in stratum $k$. $m_{lk}$ is the number of households to be surveyed within block $l$, $M'_k$ is the updated number of households in block $l$ after listing, and $N_{jlk}$ is the number of people in the target population living in household $j$ of block $l$ in stratum $k$.
+
+
+### Non-Response Adjustments
+
+The previous weight is then adjusted based on the initial non-response of the block where each individual is located. In this way, more weight is given to observations in blocks where fewer people respond.
+
+This adjustment is made based on a non-response factor for block $f_l$, and is estimated as the inverse of the proportion of households within block $l$ that respond to the survey.
+
+$$f_l=\frac{m_l}{resp_l}$$
+
+Where $m_l$ is the number of households selected to be in the sample, and $resp_l$ is the number of selected households that participate in ELSOC.
+
+### Post-Stratification
+
+Post-stratification is an adjustment commonly made in surveys to incorporate known information about the population into the analysis of survey data. Its main objective is to ensure that the distribution of weighted estimators can reproduce the population distribution in key variables such as regional and gender totals.
+
+The non-response adjustment can be thought of as a factor that adjusts:
+
+$$ps=N_j/\hat{N_j}$$
+Where $N_j$ is the total number of people in the population within stratum j (e.g., total number of women in the population), and $\hat N_j$ is the estimated total of that total from the sample data.
+
+Finally, the cross-sectional weights of ELSOC have the form:
+
+$$w=w^{dis}*f_l*ps$$
+That is, they are a combination of the probability of inclusion of individuals, a non-response adjustment in the block where they reside, and a post-stratification adjustment.
+
+
+### Longitudinal Weights
+
+The use of weights in statistical analyses has multiple motivations, one of the most important being the interest in avoiding biases due to the study's sample design. Given the longitudinal nature of ELSOC, it is particularly important to control for attrition biases that arise from systematic patterns in non-participation in the study after the first wave. Another relevant motivation for using weighted estimators is their ability to incorporate known information about the target population into the construction of the weights. To achieve this, the weights are adjusted to reproduce population totals or proportions.
+
+A complete report on the generation and use of longitudinal weights for ELSOC data has been generated and can be reviewed on the website [https://pondedradores-long-elsoc.netlify.app](https://pondedradores-long-elsoc.netlify.app).
+
+
+
+\newpage
+
+<!--chapter:end:01-dis-muestral.Rmd-->
+
+
+```{r}
+library(tidyverse)
+library(kableExtra)
+```
+
+# Instrument Design {#dis_ins}
+
+The data collection instrument consists of a structured questionnaire (survey type) applied to all participants. The questionnaires for each measurement can be found at [**coes.cl/cuestionarios**](https://coes.cl/cuestionarios/).
+
+The questionnaire was designed to measure a series of conceptually relevant aspects that allow characterizing the levels of conflict and social cohesion in Chile, emphasizing their evolution over time. The main topics of analytical interest addressed by the survey correspond to the modules in which it is structured:
+
+- Citizenship and Democracy
+- Social Networks and Intergroup Interactions
+- Legitimacy and Social Inequality
+- Social Conflict
+- Neighborhood Dimension
+- Health and Well-being
+- Socio-demographic Characterization
+- Gender (added to the survey starting in 2019)
+
+The application of the questionnaire was originally conducted using the **CAPI** system (Computer-Assisted Personal Interviews). During the 2021 wave, it was changed to the **CATI** system (Computer-Assisted Telephone Interviews) due to the COVID-19 contingency (more details in the section [Questionnaire 2021: data collection during the COVID-19 pandemic](#instrumento-covid)). During the 2022 wave, it switched to a Mixed-mode format, combining face-to-face (CAPI) and telephone (CATI) formats (more details in the section [Change to mixed-mode data collection](#instrumento-mixmode)).
+
+## Questionnaire Design {#dis-cuestionario}
+
+The design of the original ELSOC questionnaire was developed during 2015 and covered the planning of the 2016 and 2017 waves. The differences between subsequent questionnaires are described in the section [Changes in the Questionnaire between waves](#dif-cuest-olas).
+
+Most of the questions, scales, and/or items included in the ELSOC modules come from other public opinion studies, research -in psychology, sociology, economics, political science- conducted by national and international academics, and social surveys conducted in Chile and other countries. Additionally, some scales were developed by COES team members and/or adapted from their previous studies. The questionnaire was designed taking advantage of the main technical recommendations and the state of the art in the various areas of study included.
+
+To meet the quality criteria and standards for questionnaires and to reconcile the multiplicity of research agendas developed by COES, a working procedure for its construction was established. This process was developed during 2015 in different phases:
+
+1. Researchers linked to COES were asked to propose research projects that include a theoretical framework and hypotheses that support the scales proposed for inclusion in the questionnaire. Proposals could be submitted individually or collectively, and there were no restrictions on the number of items to propose. The only requirement was an explicit theoretical foundation involving longitudinal hypotheses and an operationalization of the constructs to be measured in the proposed items.
+
+2. The previous procedure resulted in the reception and organization of a large number of research agendas, materializing in more than 750 items (unique questions or part of a scale). The ELSOC team systematized the received proposals, classifying the items into thematic areas. Mechanisms were designed to reduce the number of items, and meetings were coordinated among COES researchers to decide on them. The selection criteria were mainly theoretical, prioritizing the fundamental questions for the longitudinal analysis of the research projects and their alignment with COES's substantive agenda. Practical criteria were also included, such as eliminating identical or very similar items, previous evidence on item quality (previous surveys, especially the cross-sectional survey conducted by COES in 2014), and the overall study design (sample design, unit of analysis, type of informant, etc.).
+
+3. After selecting the most relevant scales for each proposed topic, a pilot study of the developed questionnaire was conducted. This involved piloting 430 items, with the MicroData Center of the University of Chile in charge of its execution. Based on the results of this pilot, the panel team made adjustments to some items and developed a proposal to reduce items, which was evaluated with the Center's researchers.
+
+4. The final stage of questionnaire adjustment focused on identifying the conceptually most relevant aspects for COES and weighing the methodological requirements for their empirical evaluation. Thus, items were classified according to the number of required measurements, distinguishing between permanent items (measured in all waves, as they constitute the study's analytical core) and intercalated items (measured only once or every other wave).
+
+The final version of the data collection instrument consists of a structured questionnaire (survey type) applied face-to-face to all participants annually, with a total of 326 items or questions.
+
+### Changes in the Questionnaire between waves {-#dif-cuest-olas}
+
+As described in the previous section, ELSOC questions are classified into permanent and intercalated items, as some of them are not measured in all waves. Therefore, the implemented questionnaires present differences between the various waves of the survey.
+
+Additionally, the implemented questionnaires have undergone modifications that were not originally planned due to a constant evaluation process of the instrument's quality, which may result in the modification or elimination of questions; the existence of contingencies that, given the study's nature, motivate the inclusion of new items; or the emergence of new research agendas relevant to ELSOC.
+
+Another issue that impacted the implemented questionnaire is the average interview duration. During 2016, the average duration per respondent was 55 minutes. CMD recommended the ELSOC team reduce the interview time to an average of 45 minutes, as a longer time implies greater fatigue for interviewers and respondents, negatively affecting the data collection quality. For this reason, it was decided to shorten the study's length. The ELSOC Team, together with COES researchers, defined various adjustments that allowed reducing the questionnaire's length. While the 2016 wave questionnaire contained 326 items, in 2017, the instrument included 309. Efforts have been made to shorten the questionnaire in subsequent waves.
+
+Table \@ref(tab:tabla-items-olas) shows the number of items measured in each wave of the study in the Original and Refreshment samples:
+
+```{r tabla-items-olas}
+
+items_olas <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'), 
+                         sheet = 'n_ola_muestra') %>% 
+  janitor::clean_names() %>% 
+  select(ola, muestra_original, muestra_refresco)
+
+items_olas %>% 
+  kbl(caption = 'Number of items by sample, by wave',
+      align = c('l', 'c', 'c'),
+      booktabs = TRUE,
+      col.name = c('Wave', 'Items in original sample', 'Items in refreshment sample')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2()
+
+```
+
+Table \@ref(tab:tabla-items-olas-modulos) shows the distribution by questionnaire module:
+
+
+```{r tabla-items-olas-modulos}
+
+items_olas_modulos <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'), 
+                         sheet = 'n_ola_muestra_modulo') %>% 
+  janitor::clean_names()
+
+items_olas_modulos %>% 
+  dplyr::select(-muestra) %>% 
+  kbl(caption = 'Number of items by module, by sample and wave',
+      align = c('l', 'c', 'c', 'c', 'c', 'c', 'c'),
+      booktabs = TRUE,
+      col.name = c('Module', '2016', '2017', '2018', '2019', '2021', '2022')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>% 
+  pack_rows('Original Sample', 1, 8) %>%
+  pack_rows('Refreshment Sample', 9, 16)
+
+```
+
+### Differences in Questionnaires between Samples {-#dif-cuest-muestras}
+
+Starting in 2018, the Refreshment Sample was implemented to complement and compensate for the accumulated attrition of the Original Sample. The refreshment sample questionnaire is largely similar to the original sample questionnaire. However, given the wide range of research agendas and topics relevant to ELSOC, the inclusion of questions present only in one of the two samples has been allowed to increase the number of topics covered while maintaining a more limited number of questions asked to each respondent.
+
+Table \@ref(tab:tabla-items-compartidos) shows the number of items shared between both samples by wave, as well as items present exclusively in the original or refreshment sample.
+
+```{r tabla-items-compartidos}
+
+items_compartidos <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'), 
+                         sheet = 'n_ola_muestra_traslape') %>% 
+  janitor::clean_names() 
+
+items_compartidos %>% 
+  kbl(caption = 'Number of items by sample, by presence in Original and Refreshment samples',
+      align = c('l', 'c', 'c', 'c', 'c'),
+      booktabs = TRUE,
+      col.name = c('Wave', 'Only in original sample', 'Only in refreshment sample', 
+                   'Both samples', 'Total')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>% 
+  column_spec(2:5, width = "7em")
+
+  
+```
+### Questionnaire 2021: data collection during the COVID-19 pandemic {-#instrumento-covid}
+
+The health crisis that began in 2020 due to COVID-19 has posed significant challenges to statistical systems in general and public opinion surveys in particular. The International Labour Organization (ILO, 2020) reports that most national statistical offices have reported a significant impact on their operations, particularly those conducted in person. To overcome these problems, several organizations have had to transform their face-to-face operations into telephone or web surveys.
+
+In this context, to ensure the feasibility of the data production process of the ELSOC 2021 survey and the safety of both respondents and interviewers, the ELSOC executive team, together with professionals from the Microdata Center of the University of Chile, decided to adopt a series of measures that involved temporarily transitioning to a telephone questionnaire format (CATI mode).
+
+Since an increase in application times was expected when switching to the telephone format, the questionnaire application was divided into two calls, called Calls A and B, respectively, with the aim of each having a maximum duration of 30 minutes, to reduce the interview application time and avoid fatigue for respondents and interviewers.
+
+To evaluate the challenges and methodological change of the application, a pilot survey was conducted from December 2 to 21, 2020, which was relevant for evaluating both the technical and methodological aspects associated with the change in application. In this process, it was found that the application time exceeded 30 minutes on average per call, so it was decided to:
+
+1. Reduce the number of items in the questionnaires
+2. Adjust questions that caused complications based on the findings during the pilot test
+
+The following criteria were defined to reduce the questionnaire size: 1) reduce dimensions that have been significantly constrained by quarantines, such as political participation and social interaction; 2) prioritize items based on technical consistency and/or alignment with COES objectives; 3) prioritize items with fewer than three measurements throughout the study; and 4) maintain critical socio-economic and health items that allow for a good assessment of the pandemic and quarantine impact.
+
+Regarding the allocation of questions between Calls A and B, the main criteria used were: 1) maintain the quality of the survey flow, keeping questions on similar topics in the same call and ensuring that variable batteries sharing the same initial header remained together; and 2) ask essential items related to the pandemic, quarantines, and social unrest immediately to monitor and characterize respondents during this period.
+
+Table \@ref(tab:tabla-llamados) presents the distribution of items by modules for Calls A and B, distributed by sample type.
+
+```{r tabla-llamados}
+
+items_llamado_2021 <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'), 
+                         sheet = 'n_llamados_2021') %>% 
+  janitor::clean_names()
+
+items_llamado_2021 %>% 
+  kbl(caption = 'Distribution of items by call and sample, Wave 2021',
+      align = c('l', 'c', 'c', 'c', 'c'),
+      booktabs = TRUE,
+      col.name = c('Wave', rep(c('Call A', 'Call B'), 2))) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>% 
+  add_header_above(c(" "= 1, "Original Sample" = 2, "Refreshment Sample" = 2))
+
+  
+```
+
+Secondly, and linked to the above, variables with more than 5 response categories that caused greater complications during the pilot tests of this survey were adjusted. Below are the items that were reduced in their response alternatives and the criteria adopted for each case:
+ 
+ - Distant Networks Battery [r01, r02, and r04]: This battery asks about the number of people in different occupations and social groups that the respondent knows. Originally, this battery of questions has 7 values (1. None; 2. One; 3. Between 2 and 4; 4. Between 5 and 7; 5. Between 8 and 10; 6. Between 11 and 15; 7. 16 or more). Since the response ranges do not follow a clear pattern, it was decided to ask respondents for the exact number of acquaintances.
+ 
+  - Respondent's weight [s07]: This variable has 9 response ranges, which were established in 5 ranges, based on the weight quintiles reported by ELSOC in the 2018 wave in variable s06.
+  
+ - Income variables in ranges [m14 and m30]: Variable m14 has 16 response ranges, while variable m30 has 30 response ranges. Both variables were established in 5 ranges, based on the income quintiles presented by the 2017 Casen survey.
+
+### Questionnaire 2022: change to mixed-mode data collection {-#instrumento-mixmode}
+
+Starting from the sixth wave of ELSOC, the **mix-mode** method or **mixed methodology** was used, combining CAPI and CATI formats to conduct the surveys, thus optimizing the data collection process.
+
+However, the main data collection methodology remains the CAPI mode: the survey was conducted in CATI mode only when the respondent declared that they could not or did not want to answer the survey in person. As a result, during 2022, 13.3% of the original sample and 15.8% of the refreshment sample were conducted by telephone (see \@ref(tab:tabla-freq-mixmode)).
+
+```{r tabla-freq-mixmode}
+
+freq_mixmode <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'),
+                                sheet = 'n_mixmode') %>% 
+  mutate(porc_cati_m1 = scales::percent(m1_cati / (m1_cati + m1_capi), .1),
+         porc_cati_m2 = scales::percent(m2_cati / (m2_cati + m2_capi), .1)) %>% 
+  select(ola, m1_capi, m1_cati, porc_cati_m1, m2_capi, m2_cati, porc_cati_m2)
+
+freq_mixmode %>% 
+  kbl(align = rep('c', 7),
+      booktabs = TRUE,
+      col.name = c('Measurement', rep(c('CAPI', 'CATI', '% CATI'), 2)),
+      caption = 'Number of surveys by interview format, by wave and sample') %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>% 
+  add_header_above(c(" " = 1, "Original Sample" = 3, "Refreshment Sample" = 3))
+
+```
+
+
+As in the data collection of wave 5, the telephone mode considered conducting the interview in 2 calls to avoid exhausting the respondent and thus prevent loss of data quality.
+
+Comparative evidence reveals that the mixed-mode interview methodology increases coverage; and reduces measurement errors (Dillman et al., 2014^[Dillman, D. A., Smyth, J. D., & Christian, L. M. (2014). Internet, phone, mail, and mixed-mode surveys: The tailored design method. John Wiley & Sons.]), and representation biases of people with lower incomes and greater material deprivations (Lipps, 2016^[Lipps, O. (2016). Non-observation bias in an address-register-based CATI/CAPI mixed mode survey. methods, data, analyses, 10(1), 20.]), associated with the data collection process. Other studies show that there are no significant differences in the degree of confidence and stability of estimates when comparing CAPI and Mixed methods (Cernat, 2015^[Cernat, A. (2015). The impact of mixing modes on reliability in longitudinal studies. Sociological Methods & Research, 44(3), 427-457.]), nor in response rates (Bianchi, Biffignandi, and Lynn (2016)^[Bianchi, A., Biffignandi, S., & Lynn, P. (2016). Web-CAPI sequential mixed-mode design in a longitudinal survey: effects on participation rates, sample composition and costs (No. 2016-08). Understanding Society at the Institute for Social and Economic Research.]).
+
+Given the international evidence, it can be considered that there are no differences in the degree of confidence and stability associated with the different data collection methods, and no differences in the characteristics of those who decide to participate are expected. On the contrary, this new design could reduce representation bias, decrease attrition, and increase the geographic coverage of ELSOC.
+
+
+## List of Variables
+
+Given the large number of items measured over time, to examine the differences between the applied instruments in detail, interested parties are suggested to review the **Questionnaires** for each measurement (available at [**coes.cl/cuestionarios**](https://coes.cl/cuestionarios/)). Similarly, it is suggested to review the [**List of Variables**](https://coes.cl/wp-content/uploads/Listado-de-Variables-ELSOC-2.xlsx) and the [**Codebook**](#libro-codigos), which include all items measured in ELSOC, with detailed information on the waves in which each question was measured, as well as modifications and other relevant information for the use of ELSOC data.
+
+\newpage
+
+
+<!--chapter:end:02-dis-instrumento.Rmd-->
+
+
+```{r}
+library(tidyverse)
+library(kableExtra)
+load(file = file.path('inputs', 'ELSOC_Long.RData'))
+
+```
+
+# Survey Implementation {#implem_encuest}
+
+## General Characteristics of Data Collection
+
+### Executing Entity {-}
+
+Given the quality and transparency standards of ELSOC, the implementation of ELSOC is carried out by an independent institution, awarded through a public tender. To date, three public tenders have been conducted: in 2016, 2018, and 2020, each covering two measurements of the study. These are the 2016 and 2017 waves (Original Sample), the 2018 and 2019 waves (Original and Refreshment Samples), and the 2021 and 2022 waves (Original and Refreshment Samples), respectively.
+
+The [MicroData Center (CMD)](https://www.microdatos.cl) of the Faculty of Economics and Business of the University of Chile has been awarded the three tenders, and has been in charge of the survey's development since its inception. The tender bases and, therefore, the agreement with MicroData, include the highest quality standards and ensure adequate protection of the personal contact data of the panel study participants.
+
+The following are some of the criteria and practices applied to ensure the quality of data collection and processing:
+
+### Questionnaire Pilot Testing {-}
+
+Each ELSOC questionnaire is piloted following the ELSOC data collection mode to test the instrument and evaluate the operational functioning of the data collection.
+
+The pilot testing is conducted in the months prior to the official data collection, followed by focus group sessions with interviewers to obtain relevant recommendations for the final data collection. The information obtained is used to introduce changes to the questionnaires and to define adjustments to the interviewer training program.
+
+For the pilot testing process, a random sample in the Metropolitan Region is used, obtained from the listing conducted by CMD for the original sample.
+
+### Planning and Execution of Fieldwork {-}
+
+The selection and training of Site Coordinators, interviewers, and supervisors are fundamental pillars of data collection. Therefore, it is essential that both Coordinators and interviewers fully understand the survey and its objectives so that they can argue the importance and functionality of the information they are collecting.
+
+To achieve this, the first step is the selection of Site Coordinators, who are responsible for leading the team of interviewers in each administrative area (sites). Individuals with experience in this role in previous waves of the project and/or experience in complex surveys are selected.
+
+For interviewers, those who participated in previous waves of the project and whose work was satisfactorily evaluated are invited. Interviewers who participated in recent survey projects conducted by CMD are also invited.
+
+For each data collection process, interviewers and supervisors are trained in aspects of the study (objectives, coverage, types of respondents, etc.), methodological aspects of the application format, and the questionnaire.
+
+Additionally, an Interviewer Manual for the implementation of ELSOC and guiding documents and protocols for questionnaire application were developed and used. This includes:
+
+- Visit Protocol: first contact with the household, first contact with the household, and scheduling interviews in cases where the interview cannot be conducted at the time of the visit.
+
+- Protocol for Difficult Cases: scenarios of refusals, scenarios of more than 4 unsuccessful in-person attempts, access barriers to the household, no contact with the household. It also includes recovery strategies.
+
+- Questionnaire Application Protocol: study description, informed consent, question application, handling interruptions, gift card delivery.
+
+- Field Protocol: information backup, progress control, contact registration.
+
+The documents were adapted to meet the requirements of following up with a previously interviewed sample.
+
+### Quality Control and Assurance of Fieldwork {-}
+
+From the beginning of data collection and throughout its execution, constant supervision and quality control strategies are implemented, aimed not only at monitoring the progress status but also at detecting errors that occurred during data collection, interviewer behavior problems, among other aspects, in a timely manner.
+
+The following early warning strategies and corrective measures were implemented during the data collection process:
+
+- Review of 100% of the collected surveys, in terms of the observations recorded by the interviewer, by the Site Coordinator. At this stage, it is verified that the person chosen in the sampling process was indeed interviewed, and the correct completion of the route sheet, and the time and duration of the interview are verified.
+
+- Supervision of collected surveys by individuals other than the interview team that conducted the data collection. For this, a percentage of the sample (between 10 and 25% of the complete sample, depending on the wave) is randomly selected and re-contacted to verify responses to key questions, to detect and correct potential interviewer biases, application errors, and possible serious offenses such as survey falsification.
+
+- Weekly feedback to interviewers by zone managers, based on the results of the survey review and supervision.
+
+- Constant validation of the collected information by the central team to the database and validation sheets.
+
+- Weekly report to the COES team informing the progress status of the data collection.
+
+### Follow-up Strategy {-}
+
+An essential aspect for the continuous functioning of ELSOC is achieving follow-up over time with the respondents selected in the sample. To achieve this, loyalty and follow-up strategies are defined to reduce the phenomenon of attrition.
+
+Some of the implemented measures are:
+
+- Obtaining, storing, and updating relevant information to ensure adequate contact: respondent's name, contact information (phone number and email), and basic identification aspects. This information is stored and used following strict confidentiality standards.
+
+- Pre-contacting to schedule interviews and plan the fieldwork before the data collection date. Each interviewer receives information about the scheduled appointments with ELSOC participants from the site coordinator and uses a specific interview protocol for re-interviews.
+
+- Forming teams of interviewers with diverse profiles, prioritizing those with experience in previous waves of ELSOC or other complex surveys. Interviewers and coordinators are trained in aspects specific to their role and technical aspects of the questionnaire and study, emphasizing the interview protocol.
+
+- Using introduction letters for each respondent, signed by the Director of the Microdata Center, explaining the study's objectives, the responsible institutions, the guarantee of data confidentiality, and the delivery of the incentive.
+
+- Providing a monetary incentive to respondents after completing the survey. The incentive is a gift card to be redeemed at supermarkets or similar businesses. The incentive was $6,000 during the 2016, 2017, 2018, and 2019 waves. During the 2021 wave, the monetary incentive was increased to $9,000.
+
+- Re-contacting in cases of refusals or contactability issues by different interviewers than the original one, who must have a profile suitable for the observed characteristics of the unachieved sample and more experience in applying similar surveys. These interviewers receive an additional economic incentive to apply these "recovered" surveys.
+
+- In cases where the respondent has moved, interviewers are asked to find out about the new address and make efforts to interview them at the new address. This is done for both intra-communal and inter-regional moves. In the latter case, the case is referred to the coordinator in charge of the new commune of residence of the respondent.
+
+- Sending holiday greetings and similar messages to ELSOC participants via email on relevant dates. Additionally, brochures with the main results of previous rounds were provided so that respondents could learn about the use of the collected data and its relevance to the country.
+
+
+## Incidents in Survey Implementation
+
+The following details the specific milestones associated with the implementation of the 2016, 2017, 2018, 2019, 2021, and 2022 waves:
+
+### Implementation Wave 2016
+
+The survey was conducted over approximately 20 weeks, from August to December 2016 (see Figure \@ref(fig:graf-fechas-ola1)). For the fieldwork, 132 interviewers were distributed in 4 work sites, each led by a trained site coordinator.
+
+The duration was longer than initially estimated (it was estimated to last between 8 and 12 weeks, ultimately extending to 20). The main difficulties encountered and the measures taken to address the eventualities were:
+
+ - CMD's technical proposal committed to an 8-week fieldwork period. This time estimate was based on recent studies but was inadequate given the difficulties in accessing the sample and its dispersion.
+
+ - The main problem occurred in the Metropolitan Region, which, unlike other regions, did not consider an oversampling based on historical response rates in household surveys with random respondent selection. To address this issue, the sample was increased (see [Stage 5: Increase in Sample Size](#etapa5) for more details), resulting in additional data collection time.
+ 
+ - There was difficulty in recruiting and retaining interviewers for the project due to the difficulty of accessing the sample and its dispersion, which made the proposed payment to interviewers relatively less attractive compared to other parallel projects (within and outside the Center). The payment and facilities provided to interviewers were gradually increased to address this issue.
+
+The final closure of the fieldwork was agreed upon with COES once the entire oversampled sample was covered^[While the goal is to achieve the highest number of successful interviews, a cutoff point is necessary due to the impossibility of establishing contact or obtaining a response from the household/respondent.]. The fieldwork was finally closed with 2,984 completed surveys.
+
+
+```{r graf-fechas-ola1, fig.cap = 'Number of interviews per week, wave 2016'}
+
+elsoc_long_2016_2023 %>%
+  filter(ola == 1) %>% 
+  mutate(fecha_entr = lubridate::ymd(fecha_entr),
+         dia = lubridate::yday(fecha_entr),
+         año = lubridate::year(fecha_entr),
+         inicio = min(fecha_entr),
+         termino = max(fecha_entr),
+         año_inicio = min(año),
+         dia_inicio = lubridate::yday(inicio),
+         semana = trunc((365*(año - año_inicio) + dia - dia_inicio) / 7 )) %>% 
+  group_by(semana, inicio, termino) %>% 
+  summarise(n = n()) %>% 
+  ungroup() %>% 
+  mutate(fecha = inicio + 7 * semana) %>% 
+  ggplot(aes(x = fecha, y = n, label = n)) + 
+  theme_bw() +
+  geom_col(position = 'dodge2') +
+  geom_text(vjust = -0.5,
+            position = position_dodge2(width = .9),
+            size = 3) +
+  geom_col(fill = viridis::viridis(1, begin = .33)) +
+  scale_x_date(date_labels = "%d-%m-%y",
+               date_breaks = '1 week') +
+  scale_y_continuous(labels = scales::number,
+                     limits = c(0, 1000)) +
+  ylab(label = 'Number of weekly interviews') +
+  xlab(label = NULL) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+#### Survey Indicators {-}
+
+The following presents the Response Rate 1 (RR1, defined by AAPOR), Cooperation Rate 1 (CR1), Refusal Rate 1 (RR1), and Contact Rate 1 (CR1)^[For more information on determining final case disposition codes and calculating outcome rates, see 
+[AAPOR (2016). Standard Definitions. Final Dispositions of Case Codes and Outcome Rates for Surveys](http://www.aapor.org/AAPOR_Main/media/publications/Standard-Definitions20169theditionfinal.pdf)]
+
+
+```{r tabla-tasas-ola1}
+
+tasas_ola1 <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'),
+                                sheet = 'tasa_respuesta') %>% 
+  select(ola, original_2016) %>% 
+  mutate(original_2016 = scales::percent(original_2016, .1))
+
+tasas_ola1 %>% 
+  kbl(caption = 'Response, Cooperation, Refusal, and Contact Rates, wave 2016',
+      align = c('l', 'c'),
+      
+      booktabs = TRUE,
+      col.name = c('Indicator', 'Original Sample')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2()
+
+```
+
+#### Correction of Data for Anomalous Cases: Waves 2016 and 2017 {-#casos-falsificados}
+
+In the context of the third wave of the ELSOC study (2018), the falsification of a limited number of cases throughout the study in the 2016 and 2017 waves was diagnosed.
+
+During the supervision stage of interviewers' work in 2018, the Microdata Center (CMD) detected and reported that a set of cases included in the panel sample were false.
+
+Due to the slow progress of ELSOC fieldwork in 2018 in Tarapacá and Valparaíso, new interviewers were sent, who detected these problems. Specifically, the surveys were systematically falsified: they were conducted with other people not included in the sample, or the interviewers requested information from third parties.
+
+This led to an exhaustive review process, in which 56 falsified cases were detected in the 2016 fieldwork and 47 in the 2017 fieldwork, concentrated in the regions of Tarapacá (11 cases in 2016 and 11 in 2017) and Valparaíso (45 cases in 2016 and 37 in 2017).
+
+The CMD fieldwork strategy focuses on experienced interviewers, assigning the same cases to interviewers over time, according to the recommendations of specialized literature. The problem was concentrated in specific interviewers in these areas, which was not detected during the supervision of the first two waves.
+
+The falsified cases represent 1.9% of the effective sample size of ELSOC 2016 (N = 2,984) and 1.9% of 2017 (N = 2,522), so they are considered to have a marginal impact at the general level. Despite this, it was decided to exclude the falsified cases from the databases, and a corrected version of the 2016 and 2017 databases was generated and made available. The weights were corrected considering the elimination of these cases.
+
+To avoid these problems in the future, supervision protocols were modified, increasing in-person supervision and the percentage of cases supervised per interviewer. Additionally, a system of interviewer rotation was implemented so that the sample is not collected by the same interviewers in more than one round.
+
+
+### Implementation Wave 2017
+
+The final data collection was conducted over twelve weeks, from July to October 2017 (see Figure \@ref(fig:graf-fechas-ola2)). For the fieldwork, 120 interviewers were distributed in 17 work sites.
+
+The fieldwork was conducted over a longer period than estimated, as it was estimated to last nine weeks, ultimately extending to twelve. However, the data collection duration was shorter than the first wave, which extended for 20 weeks. This increased speed was facilitated by the availability of contact data for respondents obtained in the previous wave.
+
+The extension of the fieldwork beyond the original estimate was mainly due to greater difficulty in contacting respondents in the Metropolitan and Valparaíso regions.
+
+The final closure of the fieldwork was conducted once the entire sample was covered. The fieldwork was finally closed with 2,521 completed surveys.
+
+
+```{r graf-fechas-ola2, fig.cap = 'Number of interviews per week, wave 2017'}
+
+elsoc_long_2016_2023 %>%
+  filter(ola == 2) %>% 
+  mutate(fecha_entr = lubridate::ymd(fecha_entr),
+         dia = lubridate::yday(fecha_entr),
+         año = lubridate::year(fecha_entr),
+         inicio = min(fecha_entr),
+         termino = max(fecha_entr),
+         año_inicio = min(año),
+         dia_inicio = lubridate::yday(inicio),
+         semana = trunc((365*(año - año_inicio) + dia - dia_inicio) / 7 )) %>% 
+  group_by(semana, inicio, termino) %>% 
+  summarise(n = n()) %>% 
+  ungroup() %>% 
+  mutate(fecha = inicio + 7 * semana) %>% 
+  ggplot(aes(x = fecha, y = n, label = n)) + 
+  theme_bw() +
+  geom_col(position = 'dodge2') +
+  geom_text(vjust = -0.5,
+            position = position_dodge2(width = .9),
+            size = 3) +
+  geom_col(fill = viridis::viridis(1, begin = .33)) +
+  scale_x_date(date_labels = "%d-%m-%y",
+               date_breaks = '1 week') +
+  scale_y_continuous(labels = scales::number,
+                     limits = c(0, 1000)) +
+  ylab(label = 'Number of weekly interviews') +
+  xlab(label = NULL) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+
+#### Survey Indicators {-}
+
+The following presents the Response Rate 1 (RR1, defined by AAPOR), Cooperation Rate 1 (CR1), Refusal Rate 1 (RR1), and Contact Rate 1 (CR1):
+
+
+```{r tabla-tasas-ola2}
+
+tasas_ola2 <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'),
+                                sheet = 'tasa_respuesta') %>% 
+  select(ola, original_2017) %>% 
+  mutate(original_2017 = scales::percent(original_2017, .1))
+
+tasas_ola2 %>% 
+  kbl(caption = 'Response, Cooperation, Refusal, and Contact Rates, wave 2017',
+      align = c('l', 'c'),
+      
+      booktabs = TRUE,
+      col.name = c('Indicator', 'Original Sample')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2()
+
+```
+
+#### Falsified Cases in Wave 2017
+
+After the records and procedures applied by CMD in 2018, anomalies were found and corrected in surveys conducted in 2016 and 2017. For more details on the problem found and its correction, see [Correction of Data for Falsified Cases: Waves 2016 and 2017](#casos-falsificados).
+
+
+### Implementation Wave 2018
+
+The fieldwork was conducted from August to December 2018, within the estimated time (approximately 15 weeks) (see Figure \@ref(fig:graf-fechas-ola3)). For the fieldwork, 189 interviewers were distributed in 18 work sites.
+
+During this data collection, the Refreshment Sample was included, which posed a challenge for interviewers, as they had to explain and motivate participation in the study to both the household and the respondents.
+
+On the other hand, the follow-up sample (Original Sample) of respondents from 2016-2017 had contactability difficulties due to a higher presence of recorded address changes than in previous survey versions. 6.9% had moved to a different address.
+
+Another difficulty faced in this wave was related to the falsified cases detected (see [Correction of Data for Falsified Cases: Waves 2016 and 2017](#casos-falsificados)). This problem involved an exhaustive field review of these cases and a strengthening of the control system, including the following:
+
+1. Increasing the percentage of surveys to be controlled from 10% to 15% in 2018. Ensuring that at least 20% of the work conducted by each interviewer is controlled.
+
+2. Establishing a rotation of interviewers for future waves of the project to avoid the same interviewer collecting data from the same respondent.
+
+3. Registering the involved interviewers to ensure they are not considered for future applications of the study. Regarding the general work dynamics, economic incentives were created for interviewers to achieve the expected sample. Additionally, the necessary transportation was provided for interviewers to cover the entire sample in different schedules.
+
+The final closure of the fieldwork was agreed upon with COES once the entire sample was covered. The fieldwork was closed with 2,274 surveys in the follow-up sample and 1,523 surveys in the refreshment sample.
+
+```{r graf-fechas-ola3, fig.cap = 'Number of interviews per week, wave 2018'}
+
+elsoc_long_2016_2023 %>%
+  filter(ola == 3) %>% 
+  mutate(fecha_entr = lubridate::ymd(fecha_entr),
+         dia = lubridate::yday(fecha_entr),
+         año = lubridate::year(fecha_entr),
+         inicio = min(fecha_entr),
+         termino = max(fecha_entr),
+         año_inicio = min(año),
+         dia_inicio = lubridate::yday(inicio),
+         semana = trunc((365*(año - año_inicio) + dia - dia_inicio) / 7 )) %>% 
+  group_by(semana, inicio, termino) %>% 
+  summarise(n = n()) %>% 
+  ungroup() %>% 
+  mutate(fecha = inicio + 7 * semana) %>% 
+  ggplot(aes(x = fecha, y = n, label = n)) + 
+  theme_bw() +
+  geom_col(position = 'dodge2') +
+  geom_text(vjust = -0.5,
+            position = position_dodge2(width = .9),
+            size = 3) +
+  geom_col(fill = viridis::viridis(1, begin = .33)) +
+  scale_x_date(date_labels = "%d-%m-%y",
+               date_breaks = '1 week') +
+  scale_y_continuous(labels = scales::number,
+                     limits = c(0, 1000)) +
+  ylab(label = 'Number of weekly interviews') +
+  xlab(label = NULL) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+
+
+#### Survey Indicators {-}
+
+The following presents the Response Rate 1 (RR1, defined by AAPOR), Cooperation Rate 1 (CR1), Refusal Rate 1 (RR1), and Contact Rate 1 (CR1):
+
+
+```{r tabla-tasas-ola3}
+
+tasas_ola3 <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'),
+                                sheet = 'tasa_respuesta') %>% 
+  select(ola, original_2018, refresco_2018) %>% 
+  mutate(original_2018 = scales::percent(original_2018, .1),
+         refresco_2018 = scales::percent(refresco_2018, .1))
+
+tasas_ola3 %>% 
+  kbl(caption = 'Response, Cooperation, Refusal, and Contact Rates, wave 2018',
+      align = c('l', 'c', 'c'),
+      
+      booktabs = TRUE,
+      col.name = c('Indicator', 'Original Sample', 'Refreshment Sample')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2()
+
+```
+
+
+### Implementation Wave 2019
+
+The data collection for ELSOC 2019 was scheduled to begin on Saturday, October 19, 2019. However, due to the Social Outburst that occurred in Chile starting on October 18, 2019, the fieldwork had to be suspended until Thursday, November 21, when data collection finally began. Therefore, the data collection was conducted during the Social Outburst, which made its execution difficult.
+
+This work extended over a period of 13 weeks (Given the natural wear and tear of the sample and the field team, it was decided to pause data collection during the last 3 weeks of February 2020) (see Figure \@ref(fig:graf-fechas-ola4)). For the fieldwork, 143 interviewers were distributed in 16 work sites, managed by trained zone coordinators.
+
+
+```{r graf-fechas-ola4, fig.cap = 'Number of interviews per week, wave 2019'}
+
+elsoc_long_2016_2023 %>%
+  filter(ola == 4) %>% 
+  mutate(fecha_entr = lubridate::ymd(fecha_entr),
+         dia = lubridate::yday(fecha_entr),
+         año = lubridate::year(fecha_entr),
+         inicio = min(fecha_entr),
+         termino = max(fecha_entr),
+         año_inicio = min(año),
+         dia_inicio = lubridate::yday(inicio),
+         semana = trunc((365*(año - año_inicio) + dia - dia_inicio) / 7 )) %>% 
+  group_by(semana, inicio, termino) %>% 
+  summarise(n = n()) %>% 
+  ungroup() %>% 
+  mutate(fecha = inicio + 7 * semana) %>% 
+  ggplot(aes(x = fecha, y = n, label = n)) + 
+  theme_bw() +
+  geom_col(position = 'dodge2') +
+  geom_text(vjust = -0.5,
+            position = position_dodge2(width = .9),
+            size = 3) +
+  geom_col(fill = viridis::viridis(1, begin = .33)) +
+  scale_x_date(date_labels = "%d-%m-%y",
+               date_breaks = '1 week') +
+  scale_y_continuous(labels = scales::number,
+                     limits = c(0, 1000)) +
+  ylab(label = 'Number of weekly interviews') +
+  xlab(label = NULL) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+
+```
+
+
+
+#### Survey Indicators {-}
+
+The following presents the Response Rate 1 (RR1, defined by AAPOR), Cooperation Rate 1 (CR1), Refusal Rate 1 (RR1), and Contact Rate 1 (CR1):
+
+
+```{r tabla-tasas-ola4}
+
+tasas_ola4 <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'),
+                                sheet = 'tasa_respuesta') %>% 
+  select(ola, original_2019, refresco_2019) %>% 
+  mutate(original_2019 = scales::percent(original_2019, .1),
+         refresco_2019 = scales::percent(refresco_2019, .1))
+
+tasas_ola4 %>% 
+  kbl(caption = 'Response, Cooperation, Refusal, and Contact Rates, wave 2019',
+      align = c('l', 'c', 'c'),
+      
+      booktabs = TRUE,
+      col.name = c('Indicator', 'Original Sample', 'Refreshment Sample')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2()
+
+```
+
+### Implementation Wave 2021
+
+The health crisis caused by the COVID-19 pandemic and the associated restrictions required changing the data collection methodology of the Longitudinal Social Study of Chile from face-to-face to remote through a telephone survey (For more details, see [Questionnaire 2021: data collection during the COVID-19 pandemic](#instrumento-covid)). This change in the data collection method presented a significant logistical and operational challenge, as ELSOC had been conducted face-to-face since its inception.
+
+The COVID-19 pandemic also affected the traditional data collection date of ELSOC, which was scheduled to begin in October 2020. However, the data collection for the fifth wave began on Saturday, January 30, 2021, with the assignment of the sample to trained interviewers. The reasons for postponing the data collection period were mainly due to waiting for more favorable health conditions and quarantines that would allow face-to-face data collection (however, it soon became clear that maintaining the face-to-face mode was impossible); and the additional time required for preparing the fieldwork due to the change in data collection mode. The fieldwork extended until mid-June 2021. However, the application was mostly conducted between February and April 2021 (see Figure \@ref(fig:graf-fechas-ola5)).
+
+Due to the wear and tear of the sample and the field team from unsuccessful contact attempts, it was decided in May to change the production methodology from unit sampling to forming a group of interviewers dedicated exclusively to reviewing the sample during a specific workday.
+
+
+```{r graf-fechas-ola5, fig.cap = 'Number of interviews per week, wave 2021'}
+
+elsoc_long_2016_2023 %>%
+  filter(ola == 5) %>% 
+  mutate(fecha_entr = lubridate::ymd(fecha_entr),
+         dia = lubridate::yday(fecha_entr),
+         año = lubridate::year(fecha_entr),
+         inicio = min(fecha_entr),
+         termino = max(fecha_entr),
+         año_inicio = min(año),
+         dia_inicio = lubridate::yday(inicio),
+         semana = trunc((365*(año - año_inicio) + dia - dia_inicio) / 7 )) %>% 
+  group_by(semana, inicio, termino) %>% 
+  summarise(n = n()) %>% 
+  ungroup() %>% 
+  mutate(fecha = inicio + 7 * semana) %>% 
+  ggplot(aes(x = fecha, y = n, label = n)) + 
+  theme_bw() +
+  geom_col(position = 'dodge2') +
+  geom_text(vjust = -0.5,
+            position = position_dodge2(width = .9),
+            size = 3) +
+  geom_col(fill = viridis::viridis(1, begin = .33)) +
+  scale_x_date(date_labels = "%d-%m-%y",
+               date_breaks = '1 week') +
+  scale_y_continuous(labels = scales::number,
+                     limits = c(0, 1000)) +
+  ylab(label = 'Number of weekly interviews') +
+  xlab(label = NULL) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+
+#### Survey Indicators {-}
+
+The following presents the Response Rate 1 (RR1, defined by AAPOR), Cooperation Rate 1 (CR1), Refusal Rate 1 (RR1), and Contact Rate 1 (CR1):
+
+
+```{r tabla-tasas-ola5}
+
+tasas_ola5 <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'),
+                                sheet = 'tasa_respuesta') %>% 
+  select(ola, original_2021, refresco_2021) %>% 
+  mutate(original_2021 = scales::percent(original_2021, .1),
+         refresco_2021 = scales::percent(refresco_2021, .1))
+
+tasas_ola5 %>% 
+  kbl(caption = 'Response, Cooperation, Refusal, and Contact Rates, wave 2021',
+      align = c('l', 'c', 'c'),
+      booktabs = TRUE,
+      col.name = c('Indicator', 'Original Sample', 'Refreshment Sample')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2()
+
+```
+
+
+### Implementation Wave 2022
+
+The data collection process began on Friday, July 22, 2022, with the assignment of the sample to trained and selected interviewers for the study, after completing the national recruitment and selection process. This work extended over a period of 19 weeks, ending on December 1, 2022 (see Figure \@ref(fig:graf-fechas-ola6)).
+
+As a result, the 2022 Constitutional Exit Plebiscite occurred during the data collection process (held on Sunday, September 4), which required updating the questionnaire questions related to the plebiscite. In particular, the question about the plebiscite was modified, removing the one referring to the intention to vote and adding, instead, two new questions: the first refers to whether the person participated in the plebiscite vote, and the second to the retrospective vote in question.
+
+```{r graf-fechas-ola6, fig.cap = 'Number of interviews per week, wave 2022'}
+
+elsoc_long_2016_2023 %>%
+  filter(ola == 6) %>% 
+  mutate(fecha_entr = lubridate::ymd(fecha_entr),
+         dia = lubridate::yday(fecha_entr),
+         año = lubridate::year(fecha_entr),
+         inicio = min(fecha_entr),
+         termino = max(fecha_entr),
+         año_inicio = min(año),
+         dia_inicio = lubridate::yday(inicio),
+         semana = trunc((365*(año - año_inicio) + dia - dia_inicio) / 7 )) %>% 
+  group_by(semana, inicio, termino) %>% 
+  summarise(n = n()) %>% 
+  ungroup() %>% 
+  mutate(fecha = inicio + 7 * semana) %>% 
+  ggplot(aes(x = fecha, y = n, label = n)) + 
+  theme_bw() +
+  geom_col(position = 'dodge2') +
+  geom_text(vjust = -0.5,
+            position = position_dodge2(width = .9),
+            size = 3) +
+  geom_col(fill = viridis::viridis(1, begin = .33)) +
+  scale_x_date(date_labels = "%d-%m-%y",
+               date_breaks = '1 week') +
+  scale_y_continuous(labels = scales::number,
+                     limits = c(0, 1000)) +
+  ylab(label = 'Number of weekly interviews') +
+  xlab(label = NULL) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+#### Survey Indicators {-}
+
+The following presents the Response Rate 1 (RR1, defined by AAPOR), Cooperation Rate 1 (CR1), Refusal Rate 1 (RR1), and Contact Rate 1 (CR1):
+
+
+```{r tabla-tasas-ola6}
+
+tasas_ola6 <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'),
+                                sheet = 'tasa_respuesta') %>% 
+  select(ola, original_2022, refresco_2022) %>% 
+  mutate(original_2022 = scales::percent(original_2022, .1),
+         refresco_2022 = scales::percent(refresco_2022, .1))
+
+tasas_ola6 %>% 
+  kbl(caption = 'Response, Cooperation, Refusal, and Contact Rates, wave 2022',
+      align = c('l', 'c', 'c'),
+      booktabs = TRUE,
+      col.name = c('Indicator', 'Original Sample', 'Refreshment Sample')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2()
+
+```
+
+## Survey Indicators
+
+The following table shows the contact, cooperation, refusal, and response rates for all samples and waves.
+
+```{r tabla-de-tasas-varias-olas}
+tasas_olas <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'),
+                                sheet = 'tasa_respuesta') %>% 
+  rename(variable = ola) %>% 
+  pivot_longer(cols = starts_with(c('original_', 'refresco_')),
+               names_to = c('muestra', 'ola'),
+               names_sep = '_') %>% 
+  mutate(value = scales::percent(value, accuracy = .1)) %>% 
+  pivot_wider(names_from = variable,
+              values_from = value) %>% 
+  janitor::clean_names() %>% 
+  arrange(muestra, ola) %>% 
+  select(ola, muestra, tasa_de_respuesta, tasa_de_cooperacion, tasa_de_rechazo, tasa_de_contacto)
+
+tasas_olas %>%
+  select(-muestra) %>% 
+  kbl(caption = 'Response, Cooperation, Refusal, and Contact Rates, by wave and sample',
+      align = c('c', 'c', 'c', 'c', 'c'),
+      col.name = c('Wave', 'Response Rate', 'Cooperation Rate', 'Refusal Rate', 'Contact Rate'),
+      booktabs = TRUE) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>% 
+  pack_rows('Original Sample', 1, 7) %>%
+  pack_rows('Refreshment Sample', 8, 12)
+
+
+```
+
+
+### Implementation Wave 2023
+
+The data collection process began on Friday, December 11, 2023, with the assignment of the sample to trained and selected interviewers for the study, after completing the national recruitment and selection process. This work extended over a period of 21 weeks, ending on May 20, 2024 (see Figure \@ref(fig:graf-fechas-ola6)).
+
+As a result, the 2023 Constitutional Exit Plebiscite occurred during the data collection process (held on Sunday, December 17), which required updating the questionnaire questions related to the plebiscite. In particular, the question about the plebiscite was modified, removing the one referring to the intention to vote and adding, instead, two new questions: the first refers to whether the person participated in the plebiscite vote, and the second to the retrospective vote in question.
+
+```{r graf-fechas-ola6, fig.cap = 'Number of interviews per week, wave 2023'}
+
+elsoc_long_2016_2023 %>%
+  filter(ola == 7) %>% 
+  mutate(fecha_entr = lubridate::ymd(fecha_entr),
+         dia = lubridate::yday(fecha_entr),
+         año = lubridate::year(fecha_entr),
+         inicio = min(fecha_entr,na.rm=T),
+         termino = max(fecha_entr,na.rm=T),
+         año_inicio = min(año,na.rm = T),
+         dia_inicio = lubridate::yday(inicio),
+         semana = trunc((365*(año - año_inicio) + dia - dia_inicio) / 7 )) %>% 
+  group_by(semana, inicio, termino) %>% 
+  summarise(n = n()) %>% 
+  ungroup() %>% 
+  mutate(fecha = inicio + 7 * semana) %>% 
+  ggplot(aes(x = fecha, y = n, label = n)) + 
+  theme_bw() +
+  geom_col(position = 'dodge2') +
+  geom_text(vjust = -0.5,
+            position = position_dodge2(width = .9),
+            size = 3) +
+  geom_col(fill = viridis::viridis(1, begin = .33)) +
+  scale_x_date(date_labels = "%d-%m-%y",
+               date_breaks = '1 week') +
+  scale_y_continuous(labels = scales::number,
+                     limits = c(0, 1000)) +
+  ylab(label = 'Number of weekly interviews') +
+  xlab(label = NULL) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+```
+
+#### Survey Indicators {-}
+
+The following presents the Response Rate 1 (RR1, defined by AAPOR), Cooperation Rate 1 (CR1), Refusal Rate 1 (RR1), and Contact Rate 1 (CR1):
+
+
+```{r tabla-tasas-ola7}
+
+tasas_ola7 <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'),
+                                sheet = 'tasa_respuesta') %>% 
+  select(ola, original_2023, refresco_2023) %>% 
+  mutate(original_2023 = scales::percent(original_2023, .1),
+         refresco_2023 = scales::percent(refresco_2023, .1))
+
+tasas_ola7 %>% 
+  kbl(caption = 'Response, Cooperation, Refusal, and Contact Rates, wave 2023',
+      align = c('l', 'c', 'c'),
+      booktabs = TRUE,
+      col.name = c('Indicator', 'Original Sample', 'Refreshment Sample')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2()
+
+```
+
+## Survey Indicators
+
+The following table shows the contact, cooperation, refusal, and response rates for all samples and waves.
+
+```{r tabla-de-tasas-varias-olas}
+tasas_olas <- readxl::read_xlsx(path = file.path('inputs', 'datos_manual.xlsx'),
+                                sheet = 'tasa_respuesta') %>% 
+  rename(variable = ola) %>% 
+  pivot_longer(cols = starts_with(c('original_', 'refresco_')),
+               names_to = c('muestra', 'ola'),
+               names_sep = '_') %>% 
+  mutate(value = scales::percent(value, accuracy = .1)) %>% 
+  pivot_wider(names_from = variable,
+              values_from = value) %>% 
+  janitor::clean_names() %>% 
+  arrange(muestra, ola) %>% 
+  select(ola, muestra, tasa_de_respuesta, tasa_de_cooperacion, tasa_de_rechazo, tasa_de_contacto)
+
+tasas_olas %>%
+  select(-muestra) %>% 
+  kbl(caption = 'Response, Cooperation, Refusal, and Contact Rates, by wave and sample',
+      align = c('c', 'c', 'c', 'c', 'c'),
+      col.name = c('Wave', 'Response Rate', 'Cooperation Rate', 'Refusal Rate', 'Contact Rate'),
+      booktabs = TRUE) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>% 
+  pack_rows('Original Sample', 1, 7) %>%
+  pack_rows('Refreshment Sample', 8, 12)
+
+
+```
+
+## Survey Attrition {#atricion}
+
+The following table presents the attrition obtained by Sample:
+
+```{r tabla-atricion}
+atricion <-  elsoc_long_2016_2023 %>% 
+  sjlabelled::as_label(ola, muestra) %>% 
+  group_by(ola, muestra) %>% 
+  summarise(n = n()) %>% 
+  pivot_wider(names_from = muestra, values_from = n) %>% 
+  janitor::clean_names() %>% 
+  ungroup() %>% 
+  mutate(atricion_original = scales::percent(1 - muestra_original/lag(muestra_original), .1),
+         atricion_refresco = scales::percent(1 - muestra_refresco/lag(muestra_refresco), .1))
+  
+atricion %>% 
+  kbl(align = c('c', 'c', 'c', 'c', 'c'),
+      booktabs = TRUE,
+      col.name = c('Measurement', rep(c('Original Sample', 'Refreshment Sample'), 2)),
+      caption = 'Attrition of ELSOC samples between waves') %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>% 
+  add_header_above(c(" " = 1, "Achieved Sample" = 2, "Attrition Rate" = 2))
+
+```
+
+- By gender:
+
+```{r tabla-atricion-sexo}
+
+atricion_sexo <-elsoc_long_2016_2023 %>%
+  left_join(elsoc_long_2016_2023  %>% filter(ola == 1 & muestra == 1 | ola == 3 & muestra == 2) %>% 
+              select(idencuesta, m0_sexo) %>% 
+              rename(m0_sexo0 = m0_sexo), by = 'idencuesta') %>% 
+  sjlabelled::as_label(ola, muestra, m0_sexo0) %>% 
+  group_by(ola, muestra, m0_sexo0) %>% 
+  summarise(n = n()) %>% 
+  group_by(muestra, m0_sexo0) %>% 
+  mutate(atricion = 1 - n/lag(n),
+         atricion = scales::percent(atricion, .1)) %>% 
+  filter(!is.na(m0_sexo0)) %>% 
+  pivot_wider(id_cols = c(ola, muestra), 
+              names_from = m0_sexo0, values_from = c(n, atricion)) %>%  
+  janitor::clean_names() %>% 
+  ungroup() %>% 
+  arrange(muestra, ola) %>% 
+  select(-muestra)
+
+atricion_sexo %>% 
+  kbl(align = rep('c', 5),
+      
+      booktabs = TRUE,
+      col.name = c('Measurement', 'Men', 'Women', 'Men', 'Women'),
+      caption = 'Attrition of ELSOC samples between waves, by gender') %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>% 
+  pack_rows('Original Sample', 1, 7) %>%
+  pack_rows('Refreshment Sample', 8, 12) %>% 
+  add_header_above(c(" " = 1, "Achieved Sample" = 2, "Attrition Rate" = 2))
+
+
+```
+
+
+- By age group:
+
+```{r tabla-atricion-edad}
+
+atricion_edad <- elsoc_long_2016_2023 %>%
+  left_join(elsoc_long_2016_2023 %>% filter((ola == 1 & muestra == 1) | (ola == 3 & muestra == 2)) %>% 
+              select(idencuesta, m0_edad) %>% 
+              rename(m0_edad0 = m0_edad), by = 'idencuesta') %>% 
+    mutate(edadt = factor(car::recode(m0_edad0, "18:29 = 1; 30:49 = 2; 50:64 = 3; 65:150 = 4"),
+                    levels = 1:4,
+                    labels = c('18-29', '30-49', '50-64', '65 or more'))) %>% 
+  sjlabelled::as_label(ola, muestra, edadt) %>% 
+  group_by(ola, muestra, edadt) %>% 
+  summarise(n = n()) %>% 
+  group_by(muestra, edadt) %>% 
+  mutate(atricion = 1 - n/lag(n),
+         atricion = scales::percent(atricion, .1)) %>% 
+  filter(!is.na(edadt)) %>% 
+  pivot_wider(names_from = edadt, values_from = c(n, atricion)) %>% 
+  janitor::clean_names() %>% 
+  ungroup() %>% 
+  arrange(muestra, ola) %>% 
+  select(-muestra)
+
+atricion_edad %>% 
+  kbl(align = rep('c', 9),
+      
+      booktabs = TRUE,
+      col.name = c('Measurement', rep(c('19-29', '30-49', '50-64', '65 or more'), 2)),
+      caption = 'Attrition of ELSOC samples between waves, by age group') %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>% 
+  pack_rows('Original Sample', 1, 7) %>%
+  pack_rows('Refreshment Sample', 8, 12) %>% 
+  add_header_above(c(" " = 1, "Achieved Sample" = 4, "Attrition Rate" = 4))
+
+
+```
+
+
+- By educational level:
+
+```{r tabla-atricion-educ}
+
+atricion_educ <- elsoc_long_2016_2023 %>%
+  left_join(elsoc_long_2016_2023 %>% filter(ola == 1 & muestra == 1 | ola == 3 & muestra == 2) %>% 
+              select(idencuesta, m01) %>% 
+              rename(m010 = m01), by = 'idencuesta') %>%
+  mutate(educ = factor(car::recode(m010, "1:3 = 1; 4:5 = 2; 6:7 = 3; 8:10 = 4; -999:-666 = 5"),
+                       levels = 1:5,
+                       labels = c("Basic", "Secondary", "Technical", "University", "NS/NR"))) %>% 
+  sjlabelled::as_label(ola, muestra, educ) %>% 
+  group_by(ola, muestra, educ) %>% 
+  summarise(n = n()) %>% 
+  filter(!educ == 'NS/NR') %>% 
+  group_by(muestra, educ) %>% 
+  mutate(atricion = 1 - n/lag(n),
+         atricion = scales::percent(atricion, .1)) %>% 
+  filter(!is.na(educ)) %>% 
+  pivot_wider(names_from = educ, values_from = c(n, atricion)) %>% 
+  janitor::clean_names() %>% 
+  ungroup() %>% 
+  arrange(muestra, ola) %>% 
+  select(-muestra)
+
+atricion_educ %>% 
+  kbl(align = rep('c', 9),
+      
+      booktabs = TRUE,
+      col.name = c('Measurement', rep(c('Basic', 'Secondary', 'Technical', 'Univ'), 2)),
+      caption = 'Attrition of ELSOC samples between waves, by educational level') %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>% 
+  pack_rows('Original Sample', 1, 7) %>%
+  pack_rows('Refreshment Sample', 8, 12) %>% 
+  add_header_above(c(" " = 1, "Achieved Sample" = 4, "Attrition Rate" = 4))
+
+```
+
+### Attrition Compared to Other Surveys
+
+The following table presents the sample achieved by longitudinal surveys for social research similar to ELSOC, conducted in other parts of the world. For the case of The UK Household Longitudinal Study, from Understanding Society, the following samples achieved and attrition rates by measurement are found:
+
+```{r atricion-usocietya}
+
+usociety <- readxl::read_xlsx(file.path('inputs', 'atriciones_encuestas.xlsx')) %>%
+  janitor::clean_names() %>% 
+  mutate(agps = scales::percent(as.double(agps), .1),
+         abhps = scales::percent(as.double(abhps), .1),
+         aiembs = scales::percent(as.double(aiembs), .1),
+         aembs = scales::percent(as.double(aembs), .1))
+         
+
+usociety %>%
+    kbl(align = c('l', 'c', 'c', 'c', 'c','c','c','c','c','c'),
+      booktabs = TRUE,
+      col.name = c('Measurement', rep(c('General \n Population \n Sample', 'British \n Household \n Panel \n Survey', 'Immigrant and \n Ethnic Minority \n Boost Sample', 'Ethnic Minority Boost Sample'), 2)),
+) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>%
+  add_header_above(c(" " = 1, "Achieved Sample" = 4, "Attrition Rate" = 4))
+
+```
+
+For the case of The New Zealand Attitudes and Values Study (NZAVS), the following sample achieved and attrition rates by measurement are found:
+
+```{r atricion-usocietyb}
+
+nzav <- readxl::read_xlsx(file.path('inputs', 'atriciones_encuestas.xlsx'),
+                                   sheet = 'NZ AV') %>% 
+  janitor::clean_names() %>% 
+  mutate(ar1 = scales::percent(as.double(ar1), .1),
+         ar2 = scales::percent(as.double(ar2), .1))
+
+nzav %>%
+    kbl(align = c('l', 'c', 'c', 'c', 'c','c','c','c'),
+      booktabs = TRUE,
+      col.name = c('Measurement','Prov. of 1st Measurement','Prov. of Previous Measurement','Total Accumulated Sample','Relative to 1st Measurement','Relative to Previous Measurement')) %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = 'HOLD_position') %>% 
+  kable_classic_2() %>%
+  add_header_above(c(" " = 1, "Achieved Sample" = 2, "Attrition Rate" = 3))
+
+```
+
+
+\newpage
+
+
+<!--chapter:end:03-implement-encuesta.Rmd-->
+
+
+# Databases {#bases-datos}
+
+## Download Databases
+
+The ELSOC databases are made available to the general public once their review and validation process is complete. The databases are published and archived in the **Harvard Dataverse** repository, in the [COES data folder](https://dataverse.harvard.edu/dataverse/coes_data_repository). This repository provides free and secure access to the databases.
+
+ELSOC is made available as cross-sectional databases by wave: waves 2016, 2017, 2018, 2019, 2021, and 2022, in R (.RData), SPSS (.sav), and Stata 14 (.dta) data formats.
+
+Additionally, starting in 2019, the databases are published in longitudinal format to facilitate their use as a panel survey. To date, the longitudinal database of waves 2016-2019 in wide format and longitudinal databases of waves 2016-2021 and 2016-2022 in wide and long formats are available. Variables that have changed over time are harmonized to allow for longitudinal use.
+
+As part of an ongoing improvement process, it is possible that the published databases are updated during the development of ELSOC due to the correction of potential errors, improvements in data formatting, updating of non-response codes, etc. Therefore, the Harvard Dataverse repository contains the latest available version, as well as all previous versions if needed.
+
+## Technical Sheets
+
+This section presents the Technical Sheet (see Table \@ref(tab:ficha), which summarizes the main characteristics of the Longitudinal Social Study of Chile (ELSOC COES):
+
+```{r ficha, echo=FALSE, message=FALSE, warning=FALSE}
+
+ficha <- data.frame(caracteristicas = c('Objective', 'Design', 'Instrument', 'Unit of analysis', 'Target population', 'Sampling frame', 'Sample design', 'Sampling units', 'Periodicity', 'Mode of application', 'Informant', 'Average duration', 'Representativeness', 'Responsible organization', 'Executing organization'),
+                    ELSOC = c('Analyze longitudinally the evolution of conflict and cohesion in Chilean society',
+                              'Quantitative study through a structured questionnaire',
+                              'Questionnaire composed of closed questions of a simple and multiple nature along with some open questions', 
+                              'Individuals',
+                              'Men and women aged 18 to 75, habitual residents of private households',
+                              'Sampling frame of blocks from the 2011 pre-census, work prepared by the Territorial Intelligence Center (CIT) of Adolfo Ibáñez University', 
+                              'Probabilistic, stratified, by clusters and multi-stage',
+                              'First, cities are chosen (PSU), then blocks (SSU), and sub-blocks and households (TSU). The final selection unit is the person',
+                              'Annual. Refreshment sample starting from the 3rd year',
+                              'CAPI format in the respondent\'s household. CATI format during 2021. Mix-mode format in 2022',
+                              'Man or woman residing in the household, aged between 18 and 75 years.',
+                              '51 minutes',
+                              'Approximately 77% of the total population of the country and 93% of the urban population with the 2016 wave sample',
+                              'Center for Social Conflict and Cohesion Studies (COES)',
+                              'MicroData Center (CMD) of the University of Chile'))
+          
+
+ficha %>% 
+  kbl(align = rep('l', 2),
+      format = table_format,
+      booktabs = TRUE,
+      longtable = TRUE,
+      col.name = c('Characteristics', 'ELSOC'),
+      caption = 'ELSOC COES Technical Sheet') %>% 
+  kable_styling(full_width = FALSE,
+                latex_options = c('HOLD_position', 'scale_down', 'repeat_header')) %>%
+  column_spec(1, width = "8em") %>% 
+  column_spec(2, width = "35em") %>% 
+  kable_classic_2() 
+
+```
+
+
+## Database Usage Protocol
+
+Any publication that uses the ELSOC databases, in any of its versions, must cite the source in the following ways (depending on the database used):
+
+- ELSOC 2016:
+
+**Center for Social Conflict and Cohesion Studies (2016). Longitudinal Social Study of Chile, First Wave (ELSOC_W01_v1.00). [Data file]. Santiago, Chile: Center for Social Conflict and Cohesion Studies (COES). www.coes.cl**
+
+- ELSOC 2017:
+
+**Center for Social Conflict and Cohesion Studies (2017). Longitudinal Social Study of Chile, Second Wave (ELSOC_W02_v1.00). [Data file]. Santiago, Chile: Center for Social Conflict and Cohesion Studies (COES). www.coes.cl**
+
+- ELSOC 2018:
+
+**Center for Social Conflict and Cohesion Studies (2018). Longitudinal Social Study of Chile, Third Wave (ELSOC_W03_v1.00). [Data file]. Santiago, Chile: Center for Social Conflict and Cohesion Studies (COES). www.coes.cl**
+
+- ELSOC 2019:
+
+**Center for Social Conflict and Cohesion Studies (2019). Longitudinal Social Study of Chile, Fourth Wave (ELSOC_W04_v1.00). [Data file]. Santiago, Chile: Center for Social Conflict and Cohesion Studies (COES). www.coes.cl**
+
+- ELSOC 2021:
+
+**Center for Social Conflict and Cohesion Studies (2021). Longitudinal Social Study of Chile, Fifth Wave (ELSOC_W05_v1.00). [Data file]. Santiago, Chile: Center for Social Conflict and Cohesion Studies (COES). www.coes.cl**
+
+- ELSOC 2022:
+
+**Center for Social Conflict and Cohesion Studies (2022). Longitudinal Social Study of Chile, Fifth Wave (ELSOC_W06_v1.00). [Data file]. Santiago, Chile: Center for Social Conflict and Cohesion Studies (COES). www.coes.cl**
+
+- ELSOC 2023:
+
+**Center for Social Conflict and Cohesion Studies (2023). Longitudinal Social Study of Chile, Fifth Wave (ELSOC_W07_v1.00). [Data file]. Santiago, Chile: Center for Social Conflict and Cohesion Studies (COES). www.coes.cl**
+
+Or in its longitudinal format:
+
+- Wide Version:
+
+**Center for Social Conflict and Cohesion Studies (2023). Longitudinal Social Study of Chile, Combined Panel Version (ELSOC_Wide). [Data file]. Santiago, Chile: Center for Social Conflict and Cohesion Studies (COES). www.coes.cl**
+
+- Long Version:
+
+**Center for Social Conflict and Cohesion Studies (2023). Longitudinal Social Study of Chile, Combined Panel Version (ELSOC_Long). [Data file]. Santiago, Chile: Center for Social Conflict and Cohesion Studies (COES). www.coes.cl**
+
+Finally, if you wish to cite this User Manual:
+
+**Center for Social Conflict and Cohesion Studies (2023). User Manual of the Longitudinal Social Study of Chile. Santiago, Chile: Center for Social Conflict and Cohesion Studies (COES).**
+
+\newpage
+
+
+<!--chapter:end:04-bases_de_datos.Rmd-->
+
+
+# Ethics
+
+## Ethics Committee Approval
+
+The Longitudinal Study on Conflict and Social Cohesion in Chile (ELSOC) has ethical approval for all its waves from the [Ethics Committee of Social Sciences, Arts, and Humanities of the Pontifical Catholic University of Chile](http://eticayseguridad.uc.cl/comite-etico-cientifico-en-ciencias-sociales-artes-y-humanidades.html) dated June 8, 2016, with **Protocol ID 160129004**.
+
+The Ethics Committee approval was renewed on January 6, 2021.
+
+## Informed Consent
+
+Study participants signed a Written Informed Consent detailing the study's objectives, what their participation entails, and how the information and data provided will be protected and used.
+
+Participants in the Original Sample signed the Informed Consent in 2016, while participants in the Refreshment Sample signed it in 2018. Additionally, due to the change in data collection mode during the 2021 wave (see [Questionnaire 2021: data collection during the COVID-19 pandemic](#instrumento-covid)), participants in both samples were asked to sign an Appendix to the Informed Consent, detailing the changes made during that wave.
+
+```{r, results = 'asis'}
+  if (is_html_output()) {
+    
+    cat('Below are the Informed Consents signed by participants in 2016 (Original Sample), 2018 (Refreshment Sample), and 2021 (Appendix):')
+  }
+```
+
+
+```{r}
+
+if (is_html_output()) {
+  xfun::embed_file(file.path('inputs', 'consentimiento_informado_panel_coes_original.pdf'), text = 'Informed Consent 2016 (Original Sample)')
+}
+
+```
+
+
+```{r}
+
+if (is_html_output()) {
+  xfun::embed_file(file.path('inputs', 'consentimiento_informado_panel_coes_refresco.pdf'), text = 'Informed Consent 2018 (Refreshment Sample)')
+}
+
+```
+
+
+```{r}
+
+if (is_html_output()) {
+  xfun::embed_file(file.path('inputs', 'consentimiento_informado_panel_coes_apendice.pdf'), text = 'Informed Consent 2021 (Appendix)')
+}
+
+```
+
+\newpage
+
+<!--chapter:end:05-etica.Rmd-->
+
+
+# Questions and Inquiries
+
+If you detect problems with the database, wish to make requests, and/or have questions about aspects not covered by this User Manual, which cannot be resolved by other means, you can contact the COES Survey Team at the email [elsoc@uc.cl](elsoc@uc.cl). The team will process your request and try to respond as soon as possible.
+
+\newpage
+
+<!--chapter:end:06-dudas-consultas.Rmd-->
+
+
+# Publications
+
+Below is a list of all academic publications we have on record that have used ELSOC data.
+
+
+## Articles and Book Chapters
+
+- Contreras, D., Otero, G., Diaz, J. & Suarez, N. (2019). Inequality in social capital in Chile: Assessing the importance of network size and contacts’ occupational prestige on status attainment. Social Networks, Vol. 58(8), pp 59-77. [https://doi.org/10.1016/j.socnet.2019.02.002](https://doi.org/10.1016/j.socnet.2019.02.002)
+- Méndez, M. L., Otero, G., Link, F., López Morales, E., & Gayo, M. (2020). Neighbourhood cohesion as a form of privilege. Urban Studies, vol.58(8), pp 1691-1711. [https://doi.org/10.1177/0042098020914549](https://doi.org/10.1177/0042098020914549)
+- Somma, N. (2021). Power cages and the October 2019 uprising in Chile. Social Identities, vol.27(5), pp 579-592. [https://doi.org/10.1080/13504630.2021.1931092](https://doi.org/10.1080/13504630.2021.1931092)
+- Smith, E.M., González, R. & Frigolett, C. (2021). Understanding change in social movement participation: the roles of social norms and group efficacy. Political Psychology, vol. 42(6), pp 1037-1051. https://doi.org/10.1111/pops.12733
+- Otero, G., Volker, B. & Rozer, J. (2021). Open but segregated? Class divisions and network structure of social capital in Chile. Social Forces, vol. 100(2), pp 649-679. [https://doi.org/10.1093/sf/soab005](https://doi.org/10.1093/sf/soab005)
+- Otero, G., Volker, B. & Rozer, J. (2021). Space and Social Capital: Social contacts in a segregated city. Urban Geography, vol. 43(10), pp 1638-1661. [https://doi.org/10.1080/02723638.2021.1950982](https://doi.org/10.1080/02723638.2021.1950982)
+- Muga Mora, C. L., & Rodrigo Benito, L. M. (2021). Colegio y logro ocupacional en Chile: una explicación desde la segregación escolar. Acta Sociológica, (82), 135–166. [https://doi.org/10.22201/fcpys.24484938e.2020.82.79454](https://doi.org/10.22201/fcpys.24484938e.2020.82.79454)
+- Jimenez, R. (2021). La perspectiva de la matriz sociopolítica y sus transformaciones previas al estallido social: Una proximidad al norte chileno (2016-2018). Desde el Sur, 13(1), e0002. [https://dx.doi.org/10.21142/des-1301-2021-0002](https://dx.doi.org/10.21142/des-1301-2021-0002)
+- Jiménez, A., Reyes, P. & Rojas, G. (2021). Determinantes socioeconómicos y brechas de género de la sintomatología depresiva en Chile. Revista Médica de Chile, 149(4), pp 533-542. [https://dx.doi.org/10.4067/s0034-98872021000400533](https://dx.doi.org/10.4067/s0034-98872021000400533)
+- Flores, B. (2021). La importancia de las interacciones entre vecinos con lazos sociales débiles para incrementar la participación laboral femenina en Chile. Estudios Públicos, 163, pp 7-47. [https://doi.org/10.38178/07183089/1148201210](https://doi.org/10.38178/07183089/1148201210)
+- Duarte, F., Jiménez-Molina, Á. (2021). Psychological distress during the COVID-19 epidemic in Chile: The role of economic uncertainty. PLoS ONE, 16(11), e0251683. [https://doi.org/10.1371/journal.pone.0251683](https://doi.org/10.1371/journal.pone.0251683)
+- Chayinska, M., Miranda, D & González, R. (2021). A longitudinal study of the bidirectional causal relationships between online political participation and offline collective action. Computers in Human Behavior, vol. 121. [https://doi.org/10.1016/j.chb.2021.106810](https://doi.org/10.1016/j.chb.2021.106810)
+- Cabib, I., Azar, A., & Guerra, J. (2021). Simultaneous employment and depressive symptom trajectories around retirement age in Chile. Aging & Mental Health, vol. 26(6), pp 1143-1152. [https://doi.org/10.1080/13607863.2021.1929065](https://doi.org/10.1080/13607863.2021.1929065)
+- Vecchio, G., Huerta-Olivares, C., & Luengo Kanacri, B. P. (2021). Habitar, pertenecer y participar: la relación entre barrio y participación ciudadana en Santiago de Chile. Bitácora Urbano Territorial, 31(1), 83-97. [https://doi.org/10.15446/bitacora.v31n1.87765](https://doi.org/10.15446/bitacora.v31n1.87765)
+- Vargas Salfate, S., Khan, S. S., Liu, J. H., & Gil de Zúñiga, H. (2022). A Longitudinal Test of the Conservative-Liberal Well-Being Gap. Personality and Social Psychology Bulletin, 49(10), pp 1439-1453. [https://doi.org/10.1177/01461672221096587](https://doi.org/10.1177/01461672221096587)
+- Vargas Chanes, D., & Nieto Rivera, P. (2023). The importance of social ties in obtaining employment. AWARI, vol. 3. [https://doi.org/10.47909/awari.155](https://doi.org/10.47909/awari.155)
+- Otero, G., Volker, B., Rözer, J., & Mollenhorst, G. (2022). The lives of others: Class divisions, network segregation, and attachment to society in Chile. The British Journal of Sociology, vol 73(22), pp 754-785. [https://doi.org/10.1111/1468-4446.12966](https://doi.org/10.1111/1468-4446.12966)
+- Jiménez-Benítez, V., & Figueroa-Grenett, C. (2022). El rol mediador de la eficacia grupal y la rabia hacia la desigualdad en la relacion identificacion social y acciones colectivas en el contexto de Octubre -19 en Chile. PSOCIAL, 8(1). [https://www.redalyc.org/articulo.oa?id=672371222007](https://www.redalyc.org/articulo.oa?id=672371222007)
+- González, R., Chayinska, M., Plaza, A., Bargsted, M., & Miranda, D. (2022). A longitudinal examination of the factors that facilitate and hinder support for conservative and progressive social movements. European Journal of Social Psychology, vol. 52(7), pp 1031-1046. [https://doi.org/10.1002/ejsp.2893](https://doi.org/10.1002/ejsp.2893)
+- Duarte, F., & Jiménez-Molina, Á. (2022). A Longitudinal Nationwide Study of Psychological Distress During the COVID-19 Pandemic in Chile. Frontiers in Psychiatry, vol 13. [https://doi.org/10.3389/fpsyt.2022.744204](https://doi.org/10.3389/fpsyt.2022.744204)
+- Bargsted, M., Ortiz, C., Cáceres, I., & Somma, N. (2022). Social and Political Trust in a Low Trust Society. Political Behavior. [https://doi.org/10.1007/s11109-021-09762-2](https://doi.org/10.1007/s11109-021-09762-2)
+- Aguilera, C., & Espinoza V. (2022). “Chile despertó”: los sentidos políticos en la Revuelta de Octubre. Polis, 21(61), pp 10-31. http://dx.doi.org/10.32735/s0718-6568/2022-n61-1707. [https://www.scielo.cl/pdf/polis/v21n61/0718-6568-polis-21-61-13.pdf](https://www.scielo.cl/pdf/polis/v21n61/0718-6568-polis-21-61-13.pdf)
+- Otero, G., Völker, B., Rözer, J., & Mollenhorst, G. (2023). Differences in access to social capital across societies. European Sociological Review, jcad035. [https://doi.org/10.1093/esr/jcad035](https://doi.org/10.1093/esr/jcad035)
+- Otero, G., Ramond, Q., Méndez, M. L., Carranza, R., Link, F., & Ruiz-Tagle, J. (2023). The damages of stigma, the benefits of prestige: Examining the consequences of perceived residential reputations on neighbourhood attachment. Urban Studies. [https://doi.org/10.1177/00420980231186141](https://doi.org/10.1177/00420980231186141)
+- Olivos, F., & Wang, P. (2023). Cultural omnivorousness and status inconsistency in Chile: the role of objective and subjective social status. Sociological Research Online, 28(3), pp 736-758. [https://doi.org/10.1177/13607804221078023](https://doi.org/10.1177/13607804221078023)
+- Madrid-Solorza, S., Marquet, O., Fuentes, L., & Miralles-Guasch, C. (2023). Urban Vitality Conditions and Neighborhood Satisfaction in a Latin American City: The Case of Santiago de Chile. Journal of Urban Planning and Development, 149(3). [https://doi.org/10.1061/JUPDDM.UPENG-4332](https://doi.org/10.1061/JUPDDM.UPENG-4332)
+- Castillo, J. C., Bonhomme, M., Miranda, D., & Iturra, J. (2023). Social cohesion and attitudinal changes toward migration: A longitudinal perspective amid the COVID-19 pandemic. Frontiers in Sociology, vol.7. [https://doi.org/10.3389/fsoc.2022.1009567](https://doi.org/10.3389/fsoc.2022.1009567)
+- Garreton, M., Espinoza, V., & Cantillan, R. (2023). Social capital in the urban context: Diversity and social contacts in Chilean cities. Journal of Urban Affairs, vol. 45(9), pp 1644-1663. [https://doi.org/ 10.1080/07352166.2021.1974302](https://doi.org/ 10.1080/07352166.2021.1974302)
+- Castillo, I., Contreras-Guzmán, D., & Henzi, C. (2023). When do progressive evangelicals mobilize? Intra-denominational competing identities in Chile's constitutional process. Politics and Religion, 16(2), pp 301-323. [https://doi.org/10.1017/S1755048323000044](https://doi.org/10.1017/S1755048323000044)
+- Jaime-Godoy, J., Jara, F., Lisbona, F., & Navia, P. (2023). Perception of inequality and justification of violence for social control and social change: the case of Chile in 2018 and 2019. Canadian Journal of Latin American and Caribbean Studies / Revue canadienne des études latino-américaines et caraïbes. [https://doi.org/10.1080/08263663.2023.2254986](https://doi.org/10.1080/08263663.2023.2254986)
+- Duarte, F., & Jimenez-Molina, A. (2023). Exploring the impact of social protest on mental health: A study of the 2019 “Social Uprising” in Chile. Social Science & Medicine. [https://doi.org/10.1016/j.socscimed.2023.116392](https://doi.org/10.1016/j.socscimed.2023.116392)
+- Carvacho, H. & Álvarez, B. (2019). Inequality and Class Consciousness. In: Jetten J., Peters K. (Eds). The Social Psychology of Inequality. Springer, Cham. [https://doi.org/10.1007/978-3-030-28856-3_19](https://doi.org/10.1007/978-3-030-28856-3_19)
+- Méndez, M. L., & Gayo, M. (2022). Middle-Class Political and Cultural Subjectivities in the Chilean Social Outburst: Meritocracy, Social Justice, and Malaise. In: Grimson, A., Guizardi, M., Merenson, S. (Eds). Middle Class Identities and Social Crisis. Cultural and Political Perspectives on the ‘Global Rebellion’. Routledge. ISBN: 9781003318644. [https://doi.org/10.4324/b23074](https://doi.org/10.4324/b23074)
+- Flores, B., Reyes-Housholder, C., Jiménez-Moya, G., Carvacho, H., & Jirón, P. (Eds). (2023). Tejiendo rutas: Perspectivas para un Chile con equidad de género. Fondo de Cultura Económica, ISSN: 9789562893084.
+
+
+## Working Papers
+
+- Barozet, E., Contreras, D., Espinoza, V., Gayo, M., & Méndez, M. L. (2021). Clases medias en tiempos de crisis: vulnerabilidad persistente, desafíos para la cohesión y un nuevo pacto social en Chile. CEPAL. [https://hdl.handle.net/11362/47184](https://hdl.handle.net/11362/47184)
+- Castillo, J. C., Espinoza, V., & Barozet, E. (2022). Cohesión social en Chile en tiempos de cambio: indicadores, perfiles y factores asociados. CEPAL. [https://hdl.handle.net/11362/47735](https://hdl.handle.net/11362/47735)
+- Egaña-delSol, P., Gutiérrez Crocco, F., Contreras, D., Paredes, V., & Serrudo, L. (2023). Clases sociales y futuro del trabajo en Chile. (No. 68573). Naciones Unidas. Comisión Económica para América Latina y el Caribe (CEPAL). [https://hdl.handle.net/11362/68573](https://hdl.handle.net/11362/68573)
+- Espinoza, V., Gayo, M., Méndez, M. L., Barozet, E. & Contreras, D. (2023). Estratificación, desigualdad y pacto social en el Chile actual. Evaluaciones y preferencias de la población para la política pública. CEPAL. [https://hdl.handle.net/11362/68553](https://hdl.handle.net/11362/68553)
+- Pérez, C. (2018). Factores socioeconómicos que influyen en la legitimación de la desigualdad en educación. [https://doi.org/10.13140/RG.2.2.17256.62728](https://doi.org/10.13140/RG.2.2.17256.62728)
+- Maldonado, L., Castillo, J. C., Iturra, J. C., Atria, J., & Meneses, F. (2019). Meritocracia y redistribución en Chile: señales de la opinión pública. [https://doi.org/10.17605/OSF.IO/G4EK8](https://doi.org/10.17605/OSF.IO/G4EK8)
+- González-López, F., & Gómez-Contreras, M. (2022). Banks or Department Stores? Assessing how Unsecured Credit Affect Subjective Social Status in ´Tier` Markets for Consumer Lending. Society for the Advancement of Socio-Economics (SASE) Congress.
+
+
+## Master's and Doctoral Theses
+
+- Velásquez, P. (2023). Higher education and the evolution of prejudice (Doctoral dissertation). Umeå Universitet. [https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1725335&dswid=-1228](https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1725335&dswid=-1228)
+- Beck Villarroel, G. (2019). Explorando la asociación entre redes de contacto ocupacionales y la justificación de la desigualdad social en Chile (Thesis for the degree of Master in Sociology). Institute of Sociology, Pontifical Catholic University of Chile. [https://doi.org/10.13140/RG.2.2.28827.18721](https://doi.org/10.13140/RG.2.2.28827.18721)
+- Iturra, J. C. (2019) Estatus Social Subjetivo y Percepción de Meritocracia: El caso de Chile (Thesis for the degree of Master in Sociology). Institute of Sociology, Pontifical Catholic University of Chile. [https://doi.org/10.7764/tesisUC/SOC/65873](https://doi.org/10.7764/tesisUC/SOC/65873)
+- Nieto, P. (2019). La influencia del capital social sobre el logro de prestigio ocupacional en Chile y México (Thesis for the degree of Master in Social Sciences, mention in Civil Society Studies). University of Santiago de Chile.
+- Pérez, C. (2020). Desigualdad de género en participación política en Chile (Thesis for the degree of Master in Public Policy). Faculty of Economics and Business, University of Chile. [https://repositorio.uchile.cl/handle/2250/182157](https://repositorio.uchile.cl/handle/2250/182157)
+- Delgado Córdova, J. (2020). Delincuencia y justificación de la violencia: justicia por mano propia en Chile (Thesis for the degree of Master in Economic Analysis). Faculty of Economics and Business, University of Chile. [https://repositorio.uchile.cl/handle/2250/179393](https://repositorio.uchile.cl/handle/2250/179393)
+- Gildemeister Díaz, D. (2020). ¿Cómo quieren en Chile al amigo cuando es forastero?: análisis territorial de la relación entre diversidad por inmigración y cohesión social en la Región Metropolitana de Chile (Thesis for the degree of Master in Economic Analysis). Faculty of Economics and Business, University of Chile. [https://repositorio.uchile.cl/handle/2250/179396](https://repositorio.uchile.cl/handle/2250/179396)
+- Inostroza, V. (2020). El malestar urbano en una ciudad segregada. Geografía, desigualdad y segregación socioespacial del malestar en el Gran Santiago (Thesis for the degree of Master in Urban Development). Institute of Urban and Territorial Studies. Pontifical Catholic University of Chile. [https://estudiosurbanos.uc.cl/exalumnos/el-malestar-urbano-en-una-ciudad-segregada-geografia-desigualdad-y-segregacion-socioespacial-del-malestar-en-el-gran-santiago/](https://estudiosurbanos.uc.cl/exalumnos/el-malestar-urbano-en-una-ciudad-segregada-geografia-desigualdad-y-segregacion-socioespacial-del-malestar-en-el-gran-santiago/)
+- Vera, C. (2020). Sociabilidad  y bienestar subjetivo en Chile: el malestar relacional y la amenaza a la cohesión social (Thesis for the degree of Master in Social Sciences, mention in Civil Society Studies). University of Santiago de Chile.
+- Díaz, F. (2022). Depresión y sus determinantes sociales, algunas correlaciones incómodas (Equivalent Formative Activity for the degree of Master in Public Policy). Faculty of Economics and Business, University of Chile. [https://repositorio.uchile.cl/handle/2250/194645](https://repositorio.uchile.cl/handle/2250/194645)
+- Palma Awad, J. (2022). Impacto de los escenarios de crisis en el mercado del trabajo: mujeres y pandemia (Covid-19) (Thesis for the degree of Master in Applied Economics). Faculty of Physical and Mathematical Sciences, University of Chile. [https://repositorio.uchile.cl/handle/2250/187948](https://repositorio.uchile.cl/handle/2250/187948)
+- Villagrán, M. (2022). El Efecto de la Confianza Política en la Aceptación de la Violencia, Durante las Movilizaciones del 2019 (Thesis for the degree of Master in Sociology). Institute of Sociology, Pontifical Catholic University of Chile. [https://doi.org/10.7764/tesisUC/SOC/65026](https://doi.org/10.7764/tesisUC/SOC/65026)
+- Selamé, N. (2022). ¿Ni ahí con la crisis? Desafección y participación política en el Chile del estallido social (Thesis for the degree of Master in Sociology). Institute of Sociology, Pontifical Catholic University of Chile.
+- Pinto, B. (2023). Efecto político del uso de redes sociales: Evidencia sobre la participación política convencional y no convencional en Chile (Thesis for the degree of Master in Economic Analysis). Faculty of Economics and Business, University of Chile. [https://repositorio.uchile.cl/handle/2250/195091](https://repositorio.uchile.cl/handle/2250/195091)
+- Díaz Zapata, J. (2023). Composición de género de los colegios y estereotipos de género (Thesis for the degree of Master in Economic Analysis). Faculty of Economics and Business, University of Chile. [https://repositorio.uchile.cl/handle/2250/195106](https://repositorio.uchile.cl/handle/2250/195106)
+
+
+## Reports
+
+- Center for Social Conflict and Cohesion Studies - COES. (2017). First Wave Results, Longitudinal Social Study of Chile (ELSOC). Module 5: Gender: Gaps and Attitudes. COES Public Policy Notes N°12. ISSN: 0719-8795. Santiago, Chile: COES. [http://www.elsoc.cl/publicaciones-elsoc/informes](http://www.elsoc.cl/publicaciones-elsoc/informes)
+- Center for Social Conflict and Cohesion Studies - COES. (2017). First Wave Results, Longitudinal Social Study of Chile (ELSOC). Module 3: Territory. City, conflict, and social cohesion: on socio-spatial inequality in contemporary Chile. COES Public Policy Notes N°10. ISSN: 0719-8795. Santiago, Chile: COES. [http://www.elsoc.cl/publicaciones-elsoc/informes](http://www.elsoc.cl/publicaciones-elsoc/informes)
+- Center for Social Conflict and Cohesion Studies - COES. (2017). First Wave Results, Longitudinal Social Study of Chile (ELSOC). Module 2: Social conflict. The reasons for justifying violence in Chile. COES Public Policy Notes N°10. ISSN: 0719-8795. Santiago, Chile: COES. [http://www.elsoc.cl/publicaciones-elsoc/informes](http://www.elsoc.cl/publicaciones-elsoc/informes)
+- Center for Social Conflict and Cohesion Studies - COES. (2017). First Wave Results, Longitudinal Social Study of Chile (ELSOC). Module 1: Social Cohesion and Migration. COES Public Policy Notes N°1. Santiago, Chile: COES. [http://www.elsoc.cl/publicaciones-elsoc/informes](http://www.elsoc.cl/publicaciones-elsoc/informes)
+- Center for Social Conflict and Cohesion Studies - COES. (2017). First Wave Results, Longitudinal Social Study of Chile (ELSOC). Political voice inequalities in Chile. COES Public Policy Notes, No. 11; pp. 1–17. [http://www.elsoc.cl/publicaciones-elsoc/informes](http://www.elsoc.cl/publicaciones-elsoc/informes)
+- Center for Social Conflict and Cohesion Studies - COES. (2018). Political disaffection and politicization of interpersonal social networks. COES Public Policy Notes, No. 16; pp. 1–13. [http://www.elsoc.cl/publicaciones-elsoc/informes](http://www.elsoc.cl/publicaciones-elsoc/informes)
+- Center for Social Conflict and Cohesion Studies - COES. (2018). First Wave Results, Longitudinal Social Study of Chile (ELSOC). Module 6: Health and well-being. Mental Health in Contemporary Chile. COES Public Policy Notes N°15. ISSN: 0719-8795. Santiago, Chile: COES. [http://www.elsoc.cl/publicaciones-elsoc/informes](http://www.elsoc.cl/publicaciones-elsoc/informes)
+- COES. (2022). Radiography of Social Change: Analysis of Longitudinal Results ELSOC 2016-2021. COES Results Presentation. January, Santiago de Chile. [https://radiografia-cambio-social-2016-2021.netlify.app](https://radiografia-cambio-social-2016-2021.netlify.app)
+- COES. (2023). Radiography of Social Change: Analysis of Longitudinal Results ELSOC 2016-2022. COES Results Presentation. March, Santiago de Chile. [https://radiografia-cambio-social-2016-2022.netlify.app/](https://radiografia-cambio-social-2016-2022.netlify.app/)
+
+
+\newpage
+
+<!--chapter:end:07-publicaciones.Rmd-->
+

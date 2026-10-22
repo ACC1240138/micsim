@@ -1,0 +1,9 @@
+"sample","reason","Freq"
+"M1","date_missing_or_invalid",9
+"M2","date_missing_or_invalid",2
+"M1","not_reinterviewed",280
+"M2","not_reinterviewed",205
+"M1","primary_link_valid",1132
+"M2","primary_link_valid",670
+"M1","sex_missing_or_changed",1
+"M2","sex_missing_or_changed",1

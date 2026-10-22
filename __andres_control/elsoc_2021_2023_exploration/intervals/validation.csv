@@ -1,0 +1,8 @@
+"check","passed"
+"unique_longitudinal_ids",TRUE
+"valid_codes_all_waves",TRUE
+"s10_no_valid_for_nonregular",TRUE
+"matrix_rows_sum_one",TRUE
+"last_pair_counts_match",TRUE
+"existing_tables_unchanged",TRUE
+"no_pooled_independence_assumption",TRUE
