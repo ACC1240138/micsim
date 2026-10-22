@@ -27,7 +27,7 @@ All data access goes through `_tools/acc_data.R` (`source(here::here("_tools", "
 | `_deis/` | DEIS deaths 2012–2023 and 2024+ | [README](_deis/README.md) |
 | `_epf/` | EPF (harmonised cache and raw INE files) | [README](_epf/README.md) |
 | `_bib/` | Encrypted reference PDFs and `references.bib` | [README](_bib/README.md) |
-| `_sessions/` | Encrypted Claude Code chat transcripts | see below |
+| `_sessions/` | Encrypted Codex and Claude Code conversation backups | [README](_sessions/README.md) |
 | `jrt/` | Reference code and outputs from the JRT team | [README](jrt/README.md) |
 | `notes/` | Historical (non-canonical) handoffs | — |
 | `__andres_control/` | Notebooks, scripts, artefacts and outputs | — |
@@ -81,19 +81,17 @@ The canonical handoff is `__andres_control/codex_handoff_adam_rr_full_override_c
 
 Download `DEFUNCIONES_FUENTE_DEIS_2024_2026_<DDMMYYYY>.zip` into `_deis/` (git ignores it) and run `source("_tools/acc_data.R"); acc_deis_update()`. Details in [_deis/README.md](_deis/README.md).
 
-## Claude Code chats
+## Codex and Claude Code chats
 
-To resume a conversation, run from the repository root:
+Both agents use encrypted backups protected by `ACC_DATA_KEY`, with recovery that refuses to overwrite a different local conversation. Run from the repository root (Python 3.9+ and the project's R environment):
 
-```r
-source("_tools/acc_data.R")
-# Claude Code keeps chats in <home>/.claude/projects/<clone path with non-alphanumerics as "-">.
-# On Windows R's "~" is Documents, so use USERPROFILE (HOME on macOS/Linux).
-home <- Sys.getenv(if (.Platform$OS.type == "windows") "USERPROFILE" else "HOME")
-p <- file.path(home, ".claude", "projects", gsub("[^A-Za-z0-9]", "-", normalizePath(getwd())))
-dir.create(p, showWarnings = FALSE, recursive = TRUE)
-acc_unpack_all("_sessions", p)
+```bash
+python _tools/chat_sessions.py list
+python _tools/chat_sessions.py run codex
+python _tools/chat_sessions.py run claude
 ```
+
+The `run` commands back up changed project conversations when the terminal agent exits. For desktop/remote sessions, selected-session backups, recovery and compatibility limits, see [_sessions/README.md](_sessions/README.md). Backups must still be committed and pushed to reach another machine. No credentials or global agent databases are copied. After recovery the agent keeps a local decrypted history; the key protects the shared backup, not subsequent access to that local copy.
 
 ## Data policy
 

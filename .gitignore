@@ -15,6 +15,7 @@ CLAUDE.local.md
 *.jsonl
 _bib/local/
 _sessions/local/
+_sessions/**/*.part
 _epf/raw_local/
 # Large regenerable artifacts (Monte Carlo draws; rerun expand_pif / expand_pif2)
 __andres_control/*_synchronised_draws_*

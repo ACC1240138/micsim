@@ -56,7 +56,7 @@ acc_pack <- function(src, out, key = acc_key(), rounds = 256L, level = 9L) {
 }
 
 # Decrypt and extract `file` (*.tar.xz.enc) into `exdir`. Stops on a wrong key or any altered byte.
-acc_unpack <- function(file, exdir, key = acc_key()) {
+acc_decrypt_archive <- function(file, key = acc_key()) {
   b <- readBin(file, "raw", file.size(file))
   n <- length(b)
   if (n < 72 || !identical(rawToChar(b[1:4]), "ACC1")) stop("Not an ACC bundle: ", file)
@@ -66,8 +66,13 @@ acc_unpack <- function(file, exdir, key = acc_key()) {
   }
   tmp <- tempfile(fileext = ".tar.xz")
   writeBin(openssl::aes_ctr_decrypt(b[41:(n - 32)], k$enc, b[25:40]), tmp)
+  tmp
+}
+
+acc_unpack <- function(file, exdir, key = acc_key()) {
+  tmp <- acc_decrypt_archive(file, key)
+  on.exit(unlink(tmp), add = TRUE)
   utils::untar(tmp, exdir = exdir, tar = "internal")
-  unlink(tmp)
   invisible(exdir)
 }
 

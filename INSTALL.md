@@ -77,16 +77,14 @@ source("_tools/acc_data.R")
 acc_unpack_all("_bib")   # PDFs -> _bib/local/ (ignored by git)
 ```
 
-Claude Code chats (so they show up in `/resume` when you open Claude Code in `micsim`). Run from the repository root:
+Codex and Claude Code conversations require the same `ACC_DATA_KEY` to recover. From the repository root, list the snapshots and recover one selected bundle:
 
-```r
-# Claude Code keeps chats in <home>/.claude/projects/<clone path with non-alphanumerics as "-">.
-# On Windows R's "~" is Documents, so use USERPROFILE (HOME on macOS/Linux).
-home <- Sys.getenv(if (.Platform$OS.type == "windows") "USERPROFILE" else "HOME")
-p <- file.path(home, ".claude", "projects", gsub("[^A-Za-z0-9]", "-", normalizePath(getwd())))
-dir.create(p, showWarnings = FALSE, recursive = TRUE)
-acc_unpack_all("_sessions", p)
+```bash
+python _tools/chat_sessions.py list
+python _tools/chat_sessions.py restore _sessions/PROVIDER/BUNDLE.tar.xz.enc
 ```
+
+Replace the example path with one from `list`; older Claude bundles directly under `_sessions/` are also supported. Python 3.9+ is required. Put `Rscript` on PATH or set `ACC_RSCRIPT` locally. The tool uses the project renv environment, requires the key for every recovery, refuses conflicting local conversations, and prints the resume command. See [_sessions/README.md](_sessions/README.md) for automatic terminal backups and desktop/remote use.
 
 ## 6. Pushing from a computer with another GitHub account
 

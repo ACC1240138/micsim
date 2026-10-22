@@ -123,3 +123,14 @@ passing unit tests is not full-pipeline validation.
   e.g. `__andres_control/figures_expand_pif3/`), aggregated tables and rendered HTML. Encryption is only for microdata,
   intermediates derived from it, and copyrighted literature in `_bib/`.
 - Layout and provenance of each source: the `README.md` of `_enpg/`, `_eps/`, `_deis/`, `_epf/` and `_bib/`.
+
+## 8. Conversation backups
+
+- Before a user-requested commit/push, back up the current conversation when its actual session UUID is available:
+  `python _tools/chat_sessions.py backup codex SESSION_ID` (or `claude`). For Codex, use `CODEX_THREAD_ID`
+  when present; never guess an ID from a title. Run on the host storing the history.
+- Include only the resulting encrypted bundle and its `.md5.csv` in that authorized upload. Never sync raw agent
+  directories, credentials, global SQLite databases or plaintext transcripts. Recovery requires `ACC_DATA_KEY`.
+- If the session format, key or runtime is unavailable, report that the conversation was not backed up; do not
+  substitute another conversation or claim automatic persistence. A snapshot is a checkpoint, not a copy of
+  messages written after it. See [_sessions/README.md](_sessions/README.md) for terminal automation and recovery.
