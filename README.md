@@ -2,7 +2,7 @@
 
 Microsimulation of alcohol policies in Chile: alcohol-attributable mortality (PAF/AAF, YPLL), policy counterfactuals (PIF), price elasticities (EPF) and simulation. The repository holds the working notebooks, the scripts they load, their recent aggregate results, and the project guidelines (`AGENTS.md`).
 
-The **microdata** (ENPG, EPS, DEIS, EPF) are in the repository **only in encrypted form**, never as plain text.
+The **microdata** (ENPG, EPS, ELSOC, DEIS, EPF) are in the repository **only in encrypted form**, never as plain text.
 
 **Setting up a new computer:** follow [INSTALL.md](INSTALL.md) (clone, `renv::restore()`, data key, checks).
 
@@ -22,6 +22,7 @@ All data access goes through `_tools/acc_data.R` (`source(here::here("_tools", "
 |---|---|---|
 | `_enpg/` | ENPG 2008–2024 and derived inputs | [README](_enpg/README.md) |
 | `_eps/` | EPS 2012–2023 | [README](_eps/README.md) |
+| `_elsoc/` | ELSOC 2016–2023 encrypted microdata and source documentation; harmonisation map and links to transition analyses | [README](_elsoc/README.md) |
 | `_tsm/` | TSM (Termómetro de la Salud Mental ACHS-UC) rounds 7–11 | [README](_tsm/README.md) |
 | `_deis/` | DEIS deaths 2012–2023 and 2024+ | [README](_deis/README.md) |
 | `_epf/` | EPF (harmonised cache and raw INE files) | [README](_epf/README.md) |
@@ -35,9 +36,11 @@ All data access goes through `_tools/acc_data.R` (`source(here::here("_tools", "
 
 R ≥ 4.4. Core (data loader and tests): `openssl`, `data.table`, `nanoparquet`, `arrow`, `haven`, `here`, `jsonlite`.
 
-The notebooks also use: `dplyr`, `tidyr`, `purrr`, `tibble`, `stringr`, `forcats`, `tidyselect`, `readr`, `readxl`, `writexl`, `rio`, `janitor`, `ggplot2`, `scales`, `gridExtra`, `patchwork`, `htmltools`, `DT`, `knitr`, `IRdisplay`, `quarto`, `survey`, `sandwich`, `MASS`, `mvtnorm`, `fitdistrplus`, `gtools`, `MicSim`, `digest`, `withr`, `rvest`, `xml2`, `zip`, `IRkernel` and `devtools` (the latter only for the session information). The list comes from the package vectors in each notebook; most notebooks report a missing package at the start.
+The notebooks also use: `dplyr`, `tidyr`, `purrr`, `tibble`, `stringr`, `forcats`, `tidyselect`, `readr`, `readxl`, `writexl`, `rio`, `janitor`, `ggplot2`, `scales`, `gridExtra`, `patchwork`, `htmltools`, `DT`, `knitr`, `IRdisplay`, `quarto`, `survey`, `survival`, `sandwich`, `MASS`, `mvtnorm`, `fitdistrplus`, `gtools`, `MicSim`, `digest`, `withr`, `rvest`, `xml2`, `zip`, `IRkernel` and `devtools` (the latter only for the session information). The list comes from the package vectors in each notebook; most notebooks report a missing package at the start.
 
 ## Reproducible R environment (renv)
+
+The ELSOC analyses use the same project environment. `survival` is declared in `DESCRIPTION` and already pinned at version 3.6-4 in `renv.lock`; restore it with `renv::restore()` as part of the project setup.
 
 `renv.lock` pins the **exact versions** of 169 packages (those in `DESCRIPTION` plus their dependencies) and the repository: a **dated** Posit Package Manager snapshot (`https://packagemanager.posit.co/cran/2026-04-23`). The environment is therefore the same today as a year from now.
 
