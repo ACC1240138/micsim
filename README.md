@@ -21,7 +21,7 @@ All data access goes through `_tools/acc_data.R` (`source(here::here("_tools", "
 | Folder | Contents | Details |
 |---|---|---|
 | `_enpg/` | ENPG 2008–2024 and derived inputs | [README](_enpg/README.md) |
-| `_eps/` | EPS 2012–2023 | [README](_eps/README.md) |
+| `_eps/` | EPS 2009–2023 | [README](_eps/README.md) |
 | `_elsoc/` | ELSOC 2016–2023 encrypted microdata and source documentation; harmonisation map and links to transition analyses | [README](_elsoc/README.md) |
 | `_tsm/` | TSM (Termómetro de la Salud Mental ACHS-UC) rounds 7–11 | [README](_tsm/README.md) |
 | `_deis/` | DEIS deaths 2012–2023 and 2024+ | [README](_deis/README.md) |

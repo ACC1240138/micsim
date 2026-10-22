@@ -12,6 +12,7 @@ CLAUDE.local.md
 *.parquet
 *.zip
 *.7z
+*.rar
 *.jsonl
 _bib/local/
 _sessions/local/
