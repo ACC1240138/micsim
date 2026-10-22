@@ -1,0 +1,37 @@
+"exposure","outcome","sex","edu","delta","lo95","hi95"
+"rural_asg","Current drinker","Men","Primary completed or less",0.113,-0.173,0.399
+"rural_asg","Current drinker","Men","Secondary completed or less",-0.081,-0.284,0.122
+"rural_asg","Current drinker","Men","Tertiary completed or higher",-0.189,-0.464,0.087
+"rural_asg","Current drinker","Women","Primary completed or less",-0.047,-0.299,0.205
+"rural_asg","Current drinker","Women","Secondary completed or less",-0.241,-0.419,-0.063
+"rural_asg","Current drinker","Women","Tertiary completed or higher",-0.349,-0.598,-0.1
+"rural_asg","Grams/day (population)","Men","Primary completed or less",2.872,-3.342,9.087
+"rural_asg","Grams/day (population)","Men","Secondary completed or less",2.793,-3.55,9.136
+"rural_asg","Grams/day (population)","Men","Tertiary completed or higher",-0.874,-6.113,4.364
+"rural_asg","Grams/day (population)","Women","Primary completed or less",-1.015,-6.239,4.209
+"rural_asg","Grams/day (population)","Women","Secondary completed or less",-1.094,-3.834,1.646
+"rural_asg","Grams/day (population)","Women","Tertiary completed or higher",-4.762,-8.841,-0.682
+"rural_asg","HED 5+/4+ (population)","Men","Primary completed or less",0.09,-0.02,0.2
+"rural_asg","HED 5+/4+ (population)","Men","Secondary completed or less",0.099,-0.006,0.204
+"rural_asg","HED 5+/4+ (population)","Men","Tertiary completed or higher",-0.001,-0.124,0.123
+"rural_asg","HED 5+/4+ (population)","Women","Primary completed or less",-0.009,-0.127,0.11
+"rural_asg","HED 5+/4+ (population)","Women","Secondary completed or less",0,-0.067,0.068
+"rural_asg","HED 5+/4+ (population)","Women","Tertiary completed or higher",-0.099,-0.191,-0.007
+"noncov_asg","Current drinker","Men","Primary completed or less",0.076,-0.037,0.19
+"noncov_asg","Current drinker","Men","Secondary completed or less",-0.013,-0.09,0.064
+"noncov_asg","Current drinker","Men","Tertiary completed or higher",-0.067,-0.175,0.04
+"noncov_asg","Current drinker","Women","Primary completed or less",0,-0.101,0.102
+"noncov_asg","Current drinker","Women","Secondary completed or less",-0.089,-0.155,-0.023
+"noncov_asg","Current drinker","Women","Tertiary completed or higher",-0.143,-0.235,-0.051
+"noncov_asg","Grams/day (population)","Men","Primary completed or less",2.193,-0.797,5.184
+"noncov_asg","Grams/day (population)","Men","Secondary completed or less",1.63,-0.795,4.054
+"noncov_asg","Grams/day (population)","Men","Tertiary completed or higher",0.25,-1.742,2.241
+"noncov_asg","Grams/day (population)","Women","Primary completed or less",0.098,-2.279,2.474
+"noncov_asg","Grams/day (population)","Women","Secondary completed or less",-0.466,-1.486,0.554
+"noncov_asg","Grams/day (population)","Women","Tertiary completed or higher",-1.846,-3.451,-0.241
+"noncov_asg","HED 5+/4+ (population)","Men","Primary completed or less",0.07,0.011,0.13
+"noncov_asg","HED 5+/4+ (population)","Men","Secondary completed or less",0.066,0.016,0.116
+"noncov_asg","HED 5+/4+ (population)","Men","Tertiary completed or higher",0.019,-0.041,0.08
+"noncov_asg","HED 5+/4+ (population)","Women","Primary completed or less",0.008,-0.043,0.059
+"noncov_asg","HED 5+/4+ (population)","Women","Secondary completed or less",0.004,-0.028,0.036
+"noncov_asg","HED 5+/4+ (population)","Women","Tertiary completed or higher",-0.043,-0.083,-0.003

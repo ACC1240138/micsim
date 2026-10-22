@@ -1,0 +1,99 @@
+1. ENPG: ¿qué tan rural es su población?
+
+Usé la caché de diseño de la ENPG (2012–2024, que trae la comuna de cada encuestado) y la proyección comunal urbano/rural del INE. A cada persona le asigné el % rural de su comuna en el año de la encuesta. Después comparé dos promedios de ese % por sexo y grupo de edad:
+
+- ENPG: el promedio en la muestra, ponderado con el factor de expansión.
+- INE: el mismo promedio para toda la población del país de ese sexo y edad.
+
+Elegí el promedio y no la mediana porque la distribución está muy cargada a cero. Las medianas dan cerca de 1% en la ENPG y 2% en el INE, y casi no discriminan. Los 7 años, ambos sexos y las cuatro edades están en el CSV.
+
+
+1. Tabla ENPG completa
+
+Tenías razón: la tabla anterior estaba recortada. Le faltaban Mujer 45-59, Hombre 30-44, Mujer 30-44 y los totales por edad.
+
+Revisé las cifras de dos maneras:
+- Recálculo por otra vía: rehice Mujer 45-59 en 2012 y 2024 con código independiente (dplyr), y coincide en todas las columnas: media ENPG, media INE, % rural y n.
+- Pesos: la suma de los factores calza con la población del INE; el detalle de esa comprobación está en el punto 2.
+
+Cada celda es ENPG / INE, el % rural promedio de la comuna, ponderado:
+
+┌──────────────┬────────────┬────────────┬────────────┬────────────┬────────────┬────────────┬────────────┐
+│  Sexo, edad  │    2012    │    2014    │    2016    │    2018    │    2020    │    2022    │    2024    │
+├──────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
+│ Hombre 15-29 │ 4.6 / 11.2 │ 4.6 / 11.0 │ 4.7 / 10.8 │ 5.6 / 10.5 │ 4.4 / 10.2 │ 5.2 / 10.1 │ 4.0 / 10.1 │
+├──────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
+│ Hombre 30-44 │ 4.6 / 12.0 │ 4.5 / 11.7 │ 4.5 / 11.4 │ 5.3 / 11.0 │ 4.6 / 10.6 │ 5.0 / 10.4 │ 4.4 / 10.2 │
+├──────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
+│ Hombre 45-59 │ 4.7 / 13.1 │ 4.5 / 13.1 │ 4.9 / 13.0 │ 5.7 / 12.8 │ 4.5 / 12.5 │ 5.0 / 12.3 │ 4.1 / 12.1 │
+├──────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
+│ Hombre 60-65 │ 4.4 / 13.5 │ 4.6 / 13.3 │ 6.1 / 13.2 │ 5.5 / 13.0 │ 4.4 / 12.9 │ 4.9 / 12.7 │ 4.4 / 12.6 │
+├──────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
+│ Mujer 15-29  │ 4.8 / 11.5 │ 4.8 / 11.3 │ 4.7 / 11.1 │ 5.8 / 10.8 │ 4.7 / 10.5 │ 4.9 / 10.4 │ 4.3 / 10.4 │
+├──────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
+│ Mujer 30-44  │ 4.5 / 12.1 │ 4.7 / 11.9 │ 4.3 / 11.7 │ 5.5 / 11.4 │ 4.9 / 11.0 │ 4.9 / 10.8 │ 4.3 / 10.7 │
+├──────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
+│ Mujer 45-59  │ 4.6 / 12.3 │ 4.2 / 12.3 │ 4.5 / 12.2 │ 5.2 / 12.1 │ 4.3 / 11.9 │ 5.3 / 11.8 │ 4.2 / 11.7 │
+├──────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
+│ Mujer 60-65  │ 4.6 / 12.3 │ 3.9 / 12.2 │ 4.8 / 12.1 │ 5.7 / 11.9 │ 4.7 / 11.8 │ 5.4 / 11.7 │ 4.2 / 11.7 │
+├──────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┼────────────┤
+│ Total 15-65  │ 4.6 / 12.0 │ 4.5 / 11.9 │ 4.7 / 11.7 │ 5.5 / 11.5 │ 4.6 / 11.2 │ 5.1 / 11.0 │ 4.2 / 10.9 │
+└──────────────┴────────────┴────────────┴────────────┴────────────┴────────────┴────────────┴────────────┘
+
+
+Dirección del efecto, dentro de cada celda sexo × edad × educación (ronda VIII; RR rural/urbano):
+- Prevalencia de consumo actual: 0,87 [0,60–1,26]. Gramos/día: 0,92 [0,42–2,0]. HED: 1,13 [0,51–2,5]. Ninguna diferencia es significativa.
+- Mujeres: las rurales beben menos, sobre todo las de educación media y superior. El RR de gramos queda entre 0,16 y 0,41 en todos los niveles educativos, con IC bajo 1 en media y superior. Si esto se sostiene, la ENPG sobreestima a las mujeres entre +4% y +10%, cerca del techo.
+- Hombres con educación básica: los rurales tendrían más consumo actual (RR 1,7) y más HED (RR 2,7), pero los IC cruzan 1. La ENPG subestimaría su HED entre 17% y 22%, con mucha incertidumbre.
+- Hombres con educación media o superior: casi sin sesgo en prevalencia.
+- Al juntar las tres rondas de la EPS (VI a VIII), lo rural sale significativamente menor en prevalencia (0,64) y en gramos (0,61). Esta mezcla depende de la ronda VI, donde solo el 75% de las personas tiene cluster asignado, así que la tomo solo como sensibilidad.
+
+
+
+Sí hay sesgo, y depende del sexo. Corrí la versión final, con control por región, y el repo quedó intacto (lo verifiqué con git status). La ENPG sobreestima a las mujeres de educación media y superior y subestima el consumo intenso episódico (HED) de los hombres de educación básica y media. En el resto el sesgo es chico y no significativo.
+
+Contexto. El marco de la ENPG excluye al 11% rural y al 23% del total si se suman los pueblos de comunas de menos de 30 mil habitantes. Como la EPS no trae una variable urbano/rural por persona, la diferencia se estima comparando clusters más y menos rurales dentro de cada celda sexo × edad × educación. Uso la ronda VIII y controlo por región para no confundir "rural" con "regiones donde se bebe distinto".
+
+Diferencia rural/urbano dentro de las celdas (RR, ronda VIII, con control de región):
+
+┌────────────────┬──────────────────┐
+│   Indicador    │   RR [IC 95%]    │
+├────────────────┼──────────────────┤
+│ Consumo actual │ 0,67 [0,42–1,06] │
+├────────────────┼──────────────────┤
+│ Gramos/día     │ 0,96 [0,43–2,1]  │
+├────────────────┼──────────────────┤
+│ HED            │ 1,31 [0,57–3,0]  │
+└────────────────┴──────────────────┘
+
+Ninguna es significativa sola, pero la dirección se mantiene en todas las variantes. Al juntar las tres rondas, consumo actual da 0,55 y gramos 0,48, ambos significativos.
+
+Sesgo implícito de la ENPG, en % (positivo = la ENPG sobreestima; supuesto: falta toda la población fuera de su marco):
+
+┌───────────────────────┬────────────────┬───────────────┬───────────┐
+│         Grupo         │ Consumo actual │  Gramos/día   │    HED    │
+├───────────────────────┼────────────────┼───────────────┼───────────┤
+│ Mujeres, ed. media    │ +6 a +9        │ +4 a +9 (ns)  │ ~0        │
+├───────────────────────┼────────────────┼───────────────┼───────────┤
+│ Mujeres, ed. superior │ +6 a +8        │ +12 a +16     │ +14 a +17 │
+├───────────────────────┼────────────────┼───────────────┼───────────┤
+│ Mujeres, ed. básica   │ ~0             │ ~0            │ ~0        │
+├───────────────────────┼────────────────┼───────────────┼───────────┤
+│ Hombres, ed. básica   │ −5 a −6 (ns)   │ −8 a −16 (ns) │ −15 a −30 │
+├───────────────────────┼────────────────┼───────────────┼───────────┤
+│ Hombres, ed. media    │ ~0             │ −5 (ns)       │ −10 a −15 │
+├───────────────────────┼────────────────┼───────────────┼───────────┤
+│ Hombres, ed. superior │ +1 a +2        │ ~0            │ ~0        │
+└───────────────────────┴────────────────┴───────────────┴───────────┘
+
+En negrita, los valores con IC que excluye 0; "ns" marca los que no son significativos.
+
+Cómo leerlo
+- Cifras con poco respaldo: las celdas con IC enorme, sobre todo mujeres de 60 a 65 años con educación básica, y las mujeres de 60 a 65 años con educación superior, donde el HED no se puede calcular (prevalencia 0 en la EPS).
+- Para el microsim: si se calibra con la ENPG, convendría ajustar a la baja el consumo de las mujeres con educación media y superior, y al alza el HED de los hombres con educación básica y media. Son ajustes de alrededor de 10%, no órdenes de magnitud.
+- Es un piso: el cluster es la comuna donde la persona fue muestreada, no necesariamente donde vive hoy, y eso atenúa las diferencias.
+
+Supuestos detrás del resultado
+- Lectura ecológica: la diferencia entre clusters se atribuye a las personas rurales, suponiendo que el entorno de la comuna no influye por sí mismo en el consumo.
+- Comuna inferida: en los clusters ambiguos uso la comuna asignada por el método de antes. Cambiarla por el valor esperado entre las candidatas no altera la dirección.
+- Cálculo del sesgo: uso diferencias absolutas, para no exagerar las celdas extremas.

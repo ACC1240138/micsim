@@ -1,0 +1,3 @@
+"volume","training_years","pseudo_pairs","rows_after_preprocess","polr_convergence","polr_iterations","nondrinker_share_t","cat1_share_t","pairing_equivalence_check"
+"who_anchored","2012-2014-2016",33789,51217,0,233,0.581195063482198,0.337535884459439,"fast pairing identical to make_pseudopanel_pair (women, agecat 4, 2012-2014)"
+"raw_12g","2012-2014-2016",34268,51912,0,121,0.573071086728143,0.419108205906385,"fast pairing identical to make_pseudopanel_pair (women, agecat 4, 2012-2014)"

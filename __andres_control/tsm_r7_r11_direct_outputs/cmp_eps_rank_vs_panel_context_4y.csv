@@ -1,0 +1,13 @@
+"period","source","from","to","probability","years"
+"VI_VII","Observed_panel","NC","NC",0.733947860309943,3.671
+"VI_VII","Observed_panel","C1","NC",0.350967507576543,3.671
+"VI_VII","Observed_panel","C1","C1",0.582730329723519,3.671
+"VI_VII","Rank_matching","NC","NC",0.960924012366145,3.671
+"VI_VII","Rank_matching","C1","NC",0.0271772924519804,3.671
+"VI_VII","Rank_matching","C1","C1",0.939689389098596,3.671
+"VII_VIII","Observed_panel","NC","NC",0.821418483887989,4.03
+"VII_VIII","Observed_panel","C1","NC",0.438893074294811,4.03
+"VII_VIII","Observed_panel","C1","C1",0.522595298017388,4.03
+"VII_VIII","Rank_matching","NC","NC",1,4.03
+"VII_VIII","Rank_matching","C1","NC",0.220934261426557,4.03
+"VII_VIII","Rank_matching","C1","C1",0.774227168942586,4.03

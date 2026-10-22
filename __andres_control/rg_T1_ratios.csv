@@ -1,0 +1,21 @@
+"outcome","waves","exposure","region_FE","RR","lo95","hi95","p"
+"Current drinker","VIII","rural_asg","TRUE",0.668,0.421,1.059,0.086
+"Current drinker","VIII","rural_asg","FALSE",0.889,0.613,1.29,0.536
+"Current drinker","VIII","rural_exp","TRUE",0.687,0.44,1.072,0.098
+"Current drinker","ALL","rural_asg","TRUE",0.553,0.411,0.743,0
+"Current drinker","VIII","noncov_asg","TRUE",0.882,0.749,1.04,0.135
+"Grams/day (population)","VIII","rural_asg","TRUE",0.961,0.431,2.144,0.923
+"Grams/day (population)","VIII","rural_asg","FALSE",0.909,0.42,1.971,0.81
+"Grams/day (population)","VIII","rural_exp","TRUE",1.259,0.599,2.647,0.544
+"Grams/day (population)","ALL","rural_asg","TRUE",0.482,0.271,0.856,0.013
+"Grams/day (population)","VIII","noncov_asg","TRUE",1.08,0.814,1.432,0.594
+"Risky (>=20 g W / >=40 g M)","VIII","rural_asg","TRUE",0.277,0.058,1.334,0.109
+"Risky (>=20 g W / >=40 g M)","VIII","rural_asg","FALSE",0.241,0.067,0.867,0.029
+"Risky (>=20 g W / >=40 g M)","VIII","rural_exp","TRUE",0.547,0.125,2.389,0.422
+"Risky (>=20 g W / >=40 g M)","ALL","rural_asg","TRUE",0.34,0.141,0.822,0.017
+"Risky (>=20 g W / >=40 g M)","VIII","noncov_asg","TRUE",0.755,0.404,1.409,0.377
+"HED 5+/4+ (population)","VIII","rural_asg","TRUE",1.308,0.572,2.989,0.524
+"HED 5+/4+ (population)","VIII","rural_asg","FALSE",1.122,0.515,2.444,0.772
+"HED 5+/4+ (population)","VIII","rural_exp","TRUE",1.816,0.815,4.047,0.144
+"HED 5+/4+ (population)","ALL","rural_asg","TRUE",1.126,0.632,2.003,0.688
+"HED 5+/4+ (population)","VIII","noncov_asg","TRUE",1.312,1.005,1.715,0.046
