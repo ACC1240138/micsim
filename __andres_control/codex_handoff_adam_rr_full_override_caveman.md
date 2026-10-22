@@ -8600,3 +8600,14 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 * Pedido user: registrar este enlace para entender la subestimacion/sobreestimacion de consumo segun ruralidad, a nivel comunal agregado (ecologico): https://sites.google.com/d/1gy4rQqIQaNoxwaLjbv6m-TBGOGQXM0xM/p/12Wt6Jdw5GgZQXRDIdzqGgEDWC4oQONzE/edit?pli=1
 * Es un enlace de edicion de Google Sites (requiere cuenta con acceso); el agente no lo abrio ni verifico su contenido.
 * Nivel ecologico (comuna), no individual: no traducir a sesgo por persona sin supuestos explicitos. Relacionado (local, sin commit): `__andres_control/README_tablas_ruralidad_2026_10_22.md`, `enpg_rural_coverage.csv`, `enpg_rural_bias.csv`, `rg_T1_ratios.csv`, `rg_T2_gaps.csv`, `rg_T3_enpg_bias_cells.csv`, `rg_clusters.csv` (ENPG cubre solo sectores urbanos de comunas >=30.000 hab.; ~38-40% de la poblacion rural 15-64 vive en sus comunas).
+
+2026-10-22 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: EPS 2009 (ronda IV) agregada a `_eps/eps.tar.xz.enc`; SIN commit
+
+* Pedido user: revisar como se armo el bundle EPS y, solo si se podia trazar, agregar `_eps/base-datos-eps-2009.rar`.
+* Traza: bundle = `acc_pack()` de una carpeta `eps/` con la estructura original de cada entrega (`2012/`, `2015/2015/`, `Bases y Documentos EPS 2020/...`, `Bases de datos EPS VIII Ronda/...`), solo `.dta` originales; docs aparte sin cifrar en `_eps/docs/`. Descifrado: 115/115 md5 y tamanos = sidecar. Limite: git parte en `c5fb774` ("migrated from expandPIF"); el armado previo no esta en el repo.
+* Hecho: 12 `.dta` del RAR (md5 RAR `76fa1b89ae76b5d714b643b8bccf5d47`, archivos 2020-01-13) en `eps/2009/2009/` (misma estructura del RAR, como `2015/2015/`). Sidecar +12 lineas, 0 borradas (115 previos identicos). Copia del repo descifrada: 127/127 md5 OK; `acc_data()` lee `2009/2009/entrevistado.dta` (14.463 filas; fallecidos 457). R en E-cores (un R sin fijar dio segfault).
+* 2009 no tiene `cluster_ID`/`strata_ID` -> `eps_markov_core.R` y `eps_reid.R` lo ignoran; el inventario de `eps_alcohol_prevalencia_persistencia.ipynb` sumara 12 filas al re-ejecutar. `salud.dta` 2009 sin nombres `f13_*`: items de alcohol 2009 NO mapeados. Peso `factor_EPS09`.
+* Docs: `_eps/README.md` (127 archivos, fila ronda IV, `docs/2009/Instrucciones-EPS-2009.pdf` que agrego el user); README raiz "EPS 2009-2023"; `.gitignore` + `*.rar` (el RAR plano no estaba ignorado).
+* Pendiente user: commit (`.enc`, `.md5.csv`, READMEs, `.gitignore`, `_eps/docs/2009/`); decidir si borrar el RAR (sigue en `_eps/`, ahora ignorado); `check_bundles.R` completo no corrido (solo `_eps`).

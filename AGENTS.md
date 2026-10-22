@@ -19,6 +19,9 @@ This file is synced across machines: keep it machine-agnostic.
 - Canonical handoff: `__andres_control/codex_handoff_adam_rr_full_override_caveman.md`.
   Ignore other handoffs with similar names (e.g. any "conversacion" handoff).
 - The non-canonical handoffs live in `notes/handoffs_historicos/`; do not add entries to them.
+- If the user's request does not say whether to record the work in the canonical handoff, ask at once
+  (first action of the task, before reading files or long reasoning) whether to append an entry.
+  Do not leave the question for the end: the user may already be gone.
 - Sync before editing. Append new entries; do not rewrite or reorder earlier entries.
 - Each entry starts with: `YYYY-MM-DD | MACHINE_ID | agent`.
 - If a sync-conflict copy exists (e.g. `...-<machine>.md`), stop and ask the user before merging.

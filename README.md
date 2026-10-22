@@ -75,7 +75,7 @@ Rscript --vanilla _tools/test_renv_activation.R   # renv loads the same library 
 8. `eps_markov_transitions_v2_EN.ipynb` (~30 min, E-cores on this PC): the EPS engine plus the IPW version 2 (attrition model with the agreed predictors, SuperLearner weights, three weighting schemes, diagnostics), see `eps_ipw_v2_plan_2026-10-19.md` and `hallazgos_eps_ipw_v2.md`; built by `_tools/build_eps_markov_v2_notebook.py`, the original notebook stays untouched.
 9. `elsoc_transiciones_2016_2023.ipynb` (Spanish; ELSOC regular-drinking transitions, three intervals, unweighted) and `elsoc_weighting_scenarios_EN.ipynb` (~8 min): the same transitions under `ponderador_long_total`, `ponderador_long_panel` and no weights, with the weighting and selection effects separated, plus nine-state matrices with non-regular use as a state (observed, matrix A and two-part lognormal as in EPS) by sex, age group and origin wave and pooled with subject-clustered intervals (`elsoc_2021_2023_exploration/state_transitions.R`); see `elsoc_2021_2023_exploration/WEIGHTING_PLAN.md` and `hallazgos_elsoc_ponderacion.md`; built by `_tools/build_elsoc_weighting_notebook.py`.
 
-The canonical handoff is `__andres_control/codex_handoff_adam_rr_full_override_caveman.md` (see `AGENTS.md` §1). Roadmap: `presentacion_micsim.qmd` / `.html`.
+The canonical handoff is `__andres_control/codex_handoff_adam_rr_full_override_caveman.md` (see `AGENTS.md` §1); unless told, agents ask at the start of each task whether to append an entry to it. Roadmap: `presentacion_micsim.qmd` / `.html`.
 
 ## Weekly DEIS update
 
