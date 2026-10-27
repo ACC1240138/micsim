@@ -176,19 +176,25 @@ eca_casen_read <- function(year, health = FALSE, rural = FALSE) {
   }
   files <- c(`2017` = "casen_2017_dta.zip", `2020` = "casen_en_pandemia_2020_dta.zip",
     `2022` = "casen_2022stata.zip", `2024` = "casen_2024stata.zip")
-  z <- acc_data(file.path("_casen", paste0(files[[as.character(year)]], ".tar.xz.enc")))
-  inside <- utils::unzip(z, list = TRUE)$Name
-  inside <- inside[grepl("[.]dta$", inside, ignore.case = TRUE)]
-  stopifnot(length(inside) == 1, !grepl("(^/|[.][.])", inside))
-  dest <- file.path(tempdir(), paste0("eca_casen_", year))
-  f <- file.path(dest, inside)
-  if (!file.exists(f)) utils::unzip(z, files = inside, exdir = dest)
   vars <- c(base, "varstrat", "varunit", "educc", if (year >= 2022) "e6c_completo")
   if (rural) vars <- c(vars, "area")
   if (health) vars <- c(vars, "region", "folio", if (year == 2017) "o" else "id_persona",
     if (year == 2017) c("s19a", "s19b", "s26a", "s26c") else
     if (year == 2020) c("s16", "s17") else c("s20a_preg", "s20b", "s26a", "s26c"))
-  d <- haven::read_dta(f, col_select = dplyr::all_of(vars), encoding = if (year == 2020) "UTF-8" else NULL)
+  if (year %in% c(2017, 2024)) {
+    d <- readRDS(acc_data(sprintf("_casen/casen_%d_eca.rds.tar.xz.enc", year)))
+    stopifnot(all(vars %in% names(d)))
+    d <- d[, names(d) %in% vars]
+  } else {
+    z <- acc_data(file.path("_casen", paste0(files[[as.character(year)]], ".tar.xz.enc")))
+    inside <- utils::unzip(z, list = TRUE)$Name
+    inside <- inside[grepl("[.]dta$", inside, ignore.case = TRUE)]
+    stopifnot(length(inside) == 1, !grepl("(^/|[.][.])", inside))
+    dest <- file.path(tempdir(), paste0("eca_casen_", year))
+    f <- file.path(dest, inside)
+    if (!file.exists(f)) utils::unzip(z, files = inside, exdir = dest)
+    d <- haven::read_dta(f, col_select = dplyr::all_of(vars), encoding = if (year == 2020) "UTF-8" else NULL)
+  }
   if (rural) names(d)[names(d) == "area"] <- "zona"
   d
 }

@@ -2,7 +2,10 @@
 
 Entry points: [notebook](../enpg_casen_aps.ipynb),
 [plain-language interactive explanation](../enpg_casen_aps_explicado.html),
-[computational source](../enpg_casen_aps.R).
+[computational source](../enpg_casen_aps.R). CASEN 2017 and 2024 now use
+encrypted, column-reduced inputs; their original source hashes and the exact
+regeneration and equivalence checks are documented in [_casen/README.md](../../_casen/README.md).
+The existing outputs and their source manifests describe the original analysis.
 
 ## Execution and boundaries
 
