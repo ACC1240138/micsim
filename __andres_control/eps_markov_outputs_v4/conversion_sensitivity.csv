@@ -1,0 +1,13 @@
+"grams_per_drink","model","quantity","probability"
+12,"Gamma","Drinking_t1",0.393168494377832
+12,"Gamma","Escalation_from_C1",0.0550232505392622
+12,"Gamma","C3_C4_t1",0.00807130754654096
+12,"Lognormal","Drinking_t1",0.393168494377832
+12,"Lognormal","Escalation_from_C1",0.0498074913474537
+12,"Lognormal","C3_C4_t1",0.010838901041031
+15.7,"Gamma","Drinking_t1",0.393150245108284
+15.7,"Gamma","Escalation_from_C1",0.0892931319567076
+15.7,"Gamma","C3_C4_t1",0.0179369377920029
+15.7,"Lognormal","Drinking_t1",0.393150245108284
+15.7,"Lognormal","Escalation_from_C1",0.0727839493452225
+15.7,"Lognormal","C3_C4_t1",0.0187725457443915

@@ -20,5 +20,6 @@
 "Rows aged 18-65 in FD (any-history FD, 12 g)",888,888,TRUE,"counts_age_sex_education_HED_category.csv (FD)"
 "Rows aged 18-65 in C1 (any-history FD, 12 g)",4564,4564,TRUE,"counts_age_sex_education_HED_category.csv (cat1)"
 "Rows aged 18-65 in C2 (any-history FD, 12 g)",21,21,TRUE,"counts_age_sex_education_HED_category.csv (cat2)"
-"Rows aged 18-65 in C3 (any-history FD, 12 g)",7,7,TRUE,"counts_age_sex_education_HED_category.csv (cat3)"
-"Rows aged 18-65 in C4 (any-history FD, 12 g)",0,0,TRUE,"counts_age_sex_education_HED_category.csv (cat4)"
+"Men aged 18-65 in C3 (any-history FD, 12 g)",3,3,TRUE,"counts_age_sex_education_HED_category.csv (cat3, Male)"
+"Men aged 18-65 in C4 (any-history FD, 12 g)",0,0,TRUE,"counts_age_sex_education_HED_category.csv (cat4, Male)"
+"Women aged 18-65 in C3 + C4 (any-history FD, 12 g)",4,4,TRUE,"counts_age_sex_education_HED_category.csv (cat3 + cat4, Female)"

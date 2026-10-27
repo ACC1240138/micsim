@@ -1,0 +1,8 @@
+"anio","a","b","wb","method"
+2012,2013,2013,0,"Proxy CASEN 2013 (no CASEN 2012)"
+2014,2013,2015,0.5,"Interpolation CASEN 2013/2015"
+2016,2015,2017,0.5,"Interpolation CASEN 2015/2017"
+2018,2017,2022,0.2,"Scenario interpolating 2017/2022; crosses pandemic"
+2020,2017,2022,0.6,"Unobserved in CASEN 2020; scenario interpolating 2017/2022"
+2022,2022,2022,0,"Observed CASEN 2022"
+2024,2024,2024,0,"Observed CASEN 2024"

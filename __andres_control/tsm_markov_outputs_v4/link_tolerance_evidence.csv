@@ -1,0 +1,6 @@
+"same_sex","years_outside_strict_bounds","pairs","education_known","education_differs_pct","compatible_at_tolerance"
+TRUE,"0",3888,3826,10.4547830632514,3888
+TRUE,"1",233,229,13.9737991266376,4121
+TRUE,"2",39,39,10.2564102564103,4160
+TRUE,"3 or more",14,14,21.4285714285714,4174
+FALSE,"0",1,1,0,

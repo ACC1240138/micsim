@@ -1,6 +1,6 @@
 ---
-title: "TSM: alcohol consumption transitions harmonized with the EPS engine"
-subtitle: "Rounds 7–11, whole-person bootstrap and cross-check against EPS"
+title: "TSM v4: alcohol consumption transitions harmonized with the EPS engine"
+subtitle: "Rounds 7–11, five states (C3plus), whole-person bootstrap and cross-check against EPS"
 author: "Andres Gonzalez Santa Cruz"
 lang: en
 format:
@@ -23,20 +23,32 @@ execute:
   error: false
 ---
 
-**Quick orientation:** the same people are followed across five rounds of the Termómetro de la Salud Mental (TSM), rounds 7 to 11, and their drinking category at one round is used to predict the category at the next. The computation is the EPS transition engine ported to this panel: the same six states, the same models, the same person-blocked validation and the same annual layer. What changes is the data layer, because TSM has short intervals, no survey design variables and alcohol items without a recall window. Every result in this notebook comes from the saved tables; the text explains how to read them and does not restate numbers.
+**Quick orientation:** the same people are followed across five rounds of the Termómetro de la Salud Mental (TSM), rounds 7 to 11, and their drinking category at one round is used to predict the category at the next. The computation is the EPS transition engine ported to this panel: the same states (five since 2026-10-26, with C3 and C4 merged into C3plus), the same models, the same person-blocked validation and the same annual layer. What changes is the data layer, because TSM has short intervals, no survey design variables and alcohol items without a recall window. Every result in this notebook comes from the saved tables; the text explains how to read them and does not restate numbers.
+
+## What changed in version 4
+
+Version 4 (2026-10-26) keeps the version 3 engine and changes three things, recorded in `__andres_control/decision_categorias_who_12g_2026-10-26.md`:
+
+1. **Five states.** C3 and C4 are always one state, C3plus, at origin and destination, as in Puka et al. (2022) and Kilian et al. (2025): the top WHO category is too sparse to be a state of its own. Version 3 estimated six states and merged them only in a side table.
+2. **WHO borders without gaps.** The exact border value goes to the lower class. No TSM value falls exactly on a border, so no label changes.
+3. **A two-year link tolerance chosen from the data.** Version 3 widened the strict EPS age bounds by one year. Version 4 widens them by two, because pairs one or two years outside the strict bounds disagree on education about as often as strict pairs, while the few pairs further out disagree about twice as often.
+
+**Can there be five states when TSM cannot always tell a former drinker from a lifetime abstainer?** Yes, with a caveat. FD is not asked; it is built from the panel: a current non-drinker is FD when drinking was observed at an earlier compatible interview. So FD is well defined, but N0 is a mixture: it contains lifetime abstainers and former drinkers whose drinking happened before the panel started (everyone who does not drink at round 7 is N0). The two non-drinking states therefore mean "no drinking seen in the panel" (N0) and "stopped within the panel" (FD), not "never" and "ever". The destination classes do not depend on this split: every model predicts NC, C1, C2 or C3plus, and NC is divided into N0 or FD afterwards by the origin history. Puka et al. merge lifetime abstainers and former drinkers into one non-drinker state for the same reason; here the split is kept as a covariate and for comparability with EPS, whose 2009 history (EPS version 4) identifies former drinkers far better.
+
+The executed version 3 notebook (`TSM_ENPG_v3_EN.ipynb`, outputs in `tsm_markov_outputs/`) is kept unchanged as history; version 4 writes to `tsm_markov_outputs_v4/`.
 
 ## How this notebook relates to version 2 and to the EPS engine
 
-Version 2 of the TSM analysis was built on its own conventions. Version 3 keeps its data reading and linking, which are checked against the version 2 counts, and replaces everything downstream with the EPS engine so that the two Chilean panels produce matrices that can be read side by side. The crosswalk below lists each decision in the three vocabularies.
+Version 2 of the TSM analysis was built on its own conventions. Version 3 kept its data reading and linking, which are checked against the version 2 counts, and replaced everything downstream with the EPS engine so that the two Chilean panels produce matrices that can be read side by side; version 4 keeps that design. The crosswalk below lists each decision in the three vocabularies.
 
-| Decision | TSM v2 | TSM v3 (this notebook) | EPS engine |
+| Decision | TSM v2 | TSM v4 (this notebook) | EPS engine |
 |---|---|---|---|
-| States | ND_unknown, FD, cat1–cat4 | N0, FD, C1–C4 | N0, FD, C1–C4 |
-| Destination classes | six states | NC, C1–C4 (NC splits into N0/FD by origin history) | NC, C1–C4 |
+| States | ND_unknown, FD, cat1–cat4 | N0, FD, C1, C2, C3plus | N0, FD, C1–C4 (v1/v2); N0, FD, C1, C2, C3plus (v4) |
+| Destination classes | six states | NC, C1, C2, C3plus (NC splits into N0/FD by origin history) | NC, C1–C4 (v1/v2); NC, C1, C2, C3plus (v4) |
 | Sex labels | Male, Female | Men, Women | Men, Women |
 | Age groups | continuous age and age squared | 18–29, 30–44, 45–59, 60–65 at origin | same |
 | Intervals | four adjacent links, wave term | R7→R8, R8→R9, R9→R10, R10→R11, each with its elapsed months | VI→VII, VII→VIII, each with its elapsed years |
-| Link rule | same `IdPanel` | same `IdPanel`, same sex, age change within the EPS bounds widened by one year, because TSM ages are roster values corrected sporadically; strict EPS bounds as sensitivity | same `folio`, same sex, age change compatible with the elapsed years |
+| Link rule | same `IdPanel` | same `IdPanel`, same sex, age change within the EPS bounds widened by two years (chosen from the data, see the link section), because TSM ages are roster values corrected sporadically; strict EPS bounds as sensitivity | same `folio`, same sex, age change compatible with the elapsed years (v4: widened by three years) |
 | Former-drinker (FD) rule | drinking observed in any earlier wave | drinking observed earlier and carried along the chain of compatible consecutive interviews; past-only | same chain, plus direct links to every earlier wave; over multi-year links, so EPS FD has abstained for years while TSM FD drank at a compatible interview months earlier |
 | Education | reached level (three levels) | completion-based level inferred from level, last grade approved and attendance; strict and reached variants as sensitivities | completion-based level from the EPS items |
 | HED signal | 6+ item or typical-quantity band | typical-quantity signal as auxiliary; 6+ item reported separately | typical-quantity signal from beverage quantities |
@@ -47,24 +59,25 @@ Version 2 of the TSM analysis was built on its own conventions. Version 3 keeps 
 | Uncertainty | pair and person bootstrap | whole-person bootstrap only, IPW refitted | JKn design replicates primary, person bootstrap as sensitivity |
 | Annual layer | none | continuous-time generator fitted to the four intervals jointly | generator fitted to the two intervals jointly |
 
-The first code cell sets the session; the two cells that follow it contain the data layer and the model layer, embedded verbatim so that the notebook is self-contained.
+The first code cell sets the session. The cells that follow it define every function the notebook uses, each with a short explanation, so the notebook is self-contained: the only file it sources is the data decryptor `_tools/acc_data.R`.
 
 <!-- code:tsm-session-setup -->
 
 ## Data, population and states
 
-The alcohol module is answered by one panel respondent per household. The analysis population is respondents aged 18 to 65 at the origin round; the destination age is not restricted. A destination record is accepted as the same person only when it has the same sex and an age change compatible with the months elapsed between the two rounds; otherwise it is treated as not linked and counted in the link audit. The EPS bounds are widened by one year on both sides: the TSM age is a household-roster value that interviewers revise only when they notice it, so an age that jumps by two years between rounds a few months apart marks a corrected age of the same person, and the strict EPS bounds would remove a group that starts drinking more often than the retained pairs. The strict bounds are kept as a sensitivity with its own link audit. The same rule decides which past interviews may inform the drinking history: the flag that drinking was observed travels from each interview of a person to the next observed one when that link is compatible, so an earlier report reaches a later round only through a chain of compatible interviews. EPS also lets the flag travel along direct links to every earlier wave; with TSM's approximate round dates that variant and the direct-only variant both produce a few pairs that contradict the N0/FD map, so the chain is kept, and the EPS-rule and direct-rule counts are exported in the history audit.
+The alcohol module is answered by one panel respondent per household. The analysis population is respondents aged 18 to 65 at the origin round; the destination age is not restricted. A destination record is accepted as the same person only when it has the same sex and an age change compatible with the months elapsed between the two rounds; otherwise it is treated as not linked and counted in the link audit. The EPS bounds are widened by two years on both sides: the TSM age is a household-roster value that interviewers revise only when they notice it, so an age that jumps by two years between rounds a few months apart marks a corrected age of the same person, and the strict EPS bounds would remove a group that starts drinking more often than the retained pairs. The width comes from the data, with the criterion used for EPS version 4: pairs whose age change falls one or two years outside the strict bounds disagree on education about as often as strict pairs, while the few pairs further out disagree about twice as often and add almost nothing; the table "Why the tolerance is two years" shows the counts. The strict bounds are kept as a sensitivity with its own link audit. The same rule decides which past interviews may inform the drinking history: the flag that drinking was observed travels from each interview of a person to the next observed one when that link is compatible, so an earlier report reaches a later round only through a chain of compatible interviews. EPS also lets the flag travel along direct links to every earlier wave; with TSM's approximate round dates that variant and the direct-only variant both produce a few pairs that contradict the N0/FD map, so the chain is kept, and the EPS-rule and direct-rule counts are exported in the history audit.
 
-**NC means current non-consumption: N0 + FD.** Destinations are modelled in five classes, NC and C1–C4, and the origin history then splits NC into N0 or FD, which gives the six-state matrices. FD is a declared limitation: it requires drinking observed at an earlier compatible interview, so a person whose drinking years precede the panel is N0, and respondents who enter at round 7 are N0 whenever they do not drink. N0 is incomplete history, not lifetime abstention.
+**NC means current non-consumption: N0 + FD.** Destinations are modelled in four classes, NC, C1, C2 and C3plus, and the origin history then splits NC into N0 or FD, which gives the five-state matrices. FD is a declared limitation: it requires drinking observed at an earlier compatible interview, so a person whose drinking years precede the panel is N0, and respondents who enter at round 7 are N0 whenever they do not drink. N0 is incomplete history, not lifetime abstention.
 
 | State | Definition |
 |---|---|
 | N0 | Currently not drinking; no earlier drinking reached this interview through compatible links. |
 | FD | Currently not drinking; drinking observed at an earlier interview and carried through compatible links. In TSM this means drinking reported a few months to two years earlier, a different quantity from the multi-year former drinker of EPS; a tenure audit shows how FD grows with the number of earlier interviews. |
-| C1 | Women: more than 0 and less than 20 g/day; men: more than 0 and less than 40. |
-| C2 | Women: 20 to less than 40; men: 40 to less than 60. |
-| C3 | Women: 40 to 100; men: 60 to 100, including 100. |
-| C4 | More than 100 g/day in either sex. |
+| C1 | Women: more than 0 and up to 20 g/day; men: more than 0 and up to 40. |
+| C2 | Women: more than 20 and up to 40; men: more than 40 and up to 60. |
+| C3plus | Women: more than 40 g/day; men: more than 60 g/day (WHO C3 and C4 merged). |
+
+Borders follow the WHO convention without gaps (decision of 2026-10-26, shared with EPS version 4): the exact border value goes to the lower class. No TSM observation falls exactly on 20, 40 or 60 g/day, so the convention changes no label. **C3 and C4 are always merged into C3plus** (decision of 2026-10-26), as in Puka et al. (2022) and Kilian et al. (2025): the top WHO category is too sparse to be a state of its own. The EPS version 1/2 outputs used in the cross-check keep C3 and C4 apart and are merged there. A Pareto tail, used in EPS version 4, is not estimable here: at 12 g per drink only three destination drinkers exceed the C3plus cut.
 
 **From response bands to grams.** The frequency item gives drinking days per week and the typical-quantity item gives drinks per drinking day; both are banded. Following the frequency × quantity / 7 logic of Calvo and colleagues, average drinks per day and grams per day are
 
@@ -82,7 +95,7 @@ The lookup assigns each band a single value: the midpoint of closed bands, half 
 | 4 | Two to three times a week | 2.5 | 4 | 7–9 | 8 |
 | 5 | Four or more times a week | 5.5 | 5 | 10 or more | 10 |
 
-With this lookup the largest reconstructable exposure at 12 g per drink is below the C4 threshold, so **C4 cannot be observed at 12 g**; the parametric models can still assign probability to it through their tails, and the 15.7 g and upper-band sensitivities show how much the classification moves. The raw codes stay in memory next to the derived variables.
+With this lookup the largest reconstructable exposure at 12 g per drink is 94.3 g/day, so C3plus is reachable but nearly empty; the parametric models can still assign probability to it through their tails, and the 15.7 g and upper-band sensitivities show how much the classification moves. The raw codes stay in memory next to the derived variables.
 
 **Education.** EPS classifies people by the level they completed. TSM asks three things: whether the person is currently attending (`b1`), the level reached, worded as "nivel más alto alcanzado o el nivel educacional actual" (`b4a`), and the last grade approved in that level, worded as "último curso que aprobó (para los que no están estudiando), o que cursa actualmente (para los que están estudiando)" (`b4b`). Completion is therefore inferred: a level counts as completed when the last approved grade reaches the length of that level, and a person currently attending has not completed the level in progress, because for them `b4b` is the current grade. Three rules are compared.
 
@@ -125,14 +138,14 @@ $$
 | Multinomial | Multinomial regression on the five destination classes. |
 | Gamma | Two parts: participation at the next round, then a Gamma distribution of grams; class probabilities integrate the fitted distribution between the cutpoints. |
 | Lognormal | Same two parts with a lognormal amount. |
-| Ordinal_two_part | Participation, then a proportional-odds model over C1–C4. |
+| Ordinal_two_part | Participation, then a proportional-odds model over C1, C2 and C3plus. |
 | NonPO_two_part | Participation, then a multinomial amount model, to test proportional odds through prediction. |
-| Ordinal_single | One proportional-odds model over NC and C1–C4. |
+| Ordinal_single | One proportional-odds model over NC, C1, C2 and C3plus. |
 | JRT_reference | The published JRT specification: state × age group, state × sex, sex × age group and period; no grams, no education. |
 | Gamma_no_education, Gamma_education_interaction, Lognormal_education_interaction | Education removed or interacted with baseline drinking, sex and age. |
 | Lognormal_tsm_extras | The common formula plus the TSM-only origin covariates (signal, 6+ item, depression screener, region, employment, history length). |
 
-The main models compared in every table are A, Multinomial, Gamma, Lognormal, Ordinal_two_part, Ordinal_single and JRT_reference. The parametric amount models "share information" in the sense that a person's predicted distribution is informed by everyone with similar covariates, which allows a positive probability of C3 and C4 even where no such destination was observed; the price is dependence on the assumed shape. Dispersion is estimated with normalised weights, so multiplying every weight by ten must leave the predictions unchanged, and this is checked.
+The main models compared in every table are A, Multinomial, Gamma, Lognormal, Ordinal_two_part, Ordinal_single and JRT_reference. The parametric amount models "share information" in the sense that a person's predicted distribution is informed by everyone with similar covariates, which allows a positive probability of C3plus even where no such destination was observed; the price is dependence on the assumed shape. Dispersion is estimated with normalised weights, so multiplying every weight by ten must leave the predictions unchanged, and this is checked.
 
 **Log loss, in plain words.** Each model assigns a probability to the category that actually happened. Log loss is minus the logarithm of that probability, averaged over the observed pairs with their weights. Suppose three people are observed: the first stays in C1 and the model gave that outcome probability 0.8, the second moves to NC with probability 0.5, and the third moves to C3 with probability 0.1. Their individual losses are −log 0.8, −log 0.5 and −log 0.1, and the average is the log loss. Exponentiating minus the log loss returns the "typical probability" the model gave to what happened, a geometric mean that is easier to read than the loss itself. The Brier score instead sums squared differences between the probability vector and the observed indicator, and accuracy only asks whether the most probable class was the observed one. All three are computed on held-out people.
 
@@ -176,23 +189,17 @@ $$
 P(\Delta)=\exp(Q\Delta),\qquad P(1)=\exp(Q).
 $$
 
-**What the annual staying probability means.** Take two states, drinking and not drinking, and suppose the observed matrix over an interval of half a year shows that a drinker is still a drinker at the end with probability 0.9. The annual staying probability is not 0.9 squared, because during the year the person can leave and come back; the generator describes the rates of leaving and returning per unit time, and the annual matrix is what those rates produce over one year. At 12 g per drink no pair starts in C4, so its annual row is not estimated: it is reported as an unobserved origin with a blank estimate and no interval. The rows that rest on few people are C2 and C3, flagged sparse: their annual probabilities are model-derived numbers that depend on the penalty and the starting values of the optimiser, and their bootstrap intervals are wide. The sensitivity table repeats the fit with a weak, a primary and a stronger penalty and reports the largest change in any annual probability; large changes keep this layer exploratory. Time-homogeneous rates are an assumption, and the four intervals test it: each interval is also fitted alone, and a table compares its reconstruction error and staying probabilities with the joint generator's. A joint error well above the single-interval errors means the intervals imply different rates, so the annual matrix is a compromise between them, and short windows turn within-year fluctuation of infrequent drinkers into annual exits. Annual intervals come from the bootstrap replicates and condition on the primary penalty and start.
+**What the annual staying probability means.** Take two states, drinking and not drinking, and suppose the observed matrix over an interval of half a year shows that a drinker is still a drinker at the end with probability 0.9. The annual staying probability is not 0.9 squared, because during the year the person can leave and come back; the generator describes the rates of leaving and returning per unit time, and the annual matrix is what those rates produce over one year. At 12 g per drink C3plus has almost no origins, so its annual row rests on a handful of pairs (a row with no observed origin would be reported with a blank estimate and no interval). The rows that rest on few people are C2 and C3plus, flagged sparse: their annual probabilities are model-derived numbers that depend on the penalty and the starting values of the optimiser, and their bootstrap intervals are wide. The sensitivity table repeats the fit with a weak, a primary and a stronger penalty and reports the largest change in any annual probability; large changes keep this layer exploratory. Time-homogeneous rates are an assumption, and the four intervals test it: each interval is also fitted alone, and a table compares its reconstruction error and staying probabilities with the joint generator's. A joint error well above the single-interval errors means the intervals imply different rates, so the annual matrix is a compromise between them, and short windows turn within-year fluctuation of infrequent drinkers into annual exits. Annual intervals come from the bootstrap replicates and condition on the primary penalty and start.
 
 <!-- code:tsm-annual-layer -->
 
 ## Cross-check against EPS
 
-The EPS notebook exports annual matrices for A, Gamma and Lognormal with design-based intervals, and the observed-origin matrices of its two intervals. Three comparisons are made with aggregates only. First, the annual staying probabilities of the two panels are placed side by side, each with its own interval. Second, a generator is recovered from each EPS annual matrix, projected to the TSM interval lengths and scored on the observed TSM pairs, next to the TSM models' in-sample and held-out scores and an origin-only TSM matrix, which is the like-for-like reference because the EPS projection also conditions on the origin state alone. Third, the TSM generator is projected to the EPS interval lengths and compared with the EPS observed-origin pooled matrices on the five collapsed destinations; the FD origin is flagged as not comparable, because TSM FD and EPS FD are different constructs.
+The EPS notebook exports annual matrices for A, Gamma and Lognormal with design-based intervals, and the observed-origin matrices of its two intervals. Three comparisons are made with aggregates only. First, the annual staying probabilities of the two panels are placed side by side, each with its own interval. Second, a generator is recovered from each EPS annual matrix, projected to the TSM interval lengths and scored on the observed TSM pairs, next to the TSM models' in-sample and held-out scores and an origin-only TSM matrix, which is the like-for-like reference because the EPS projection also conditions on the origin state alone. Third, the TSM generator is projected to the EPS interval lengths and compared with the EPS observed-origin pooled matrices on the four collapsed destinations; the FD origin is flagged as not comparable, because TSM FD and EPS FD are different constructs. The EPS version 1 matrices keep C3 and C4 apart, so they are merged first: destination columns are summed and the two origin rows are averaged with the observed EPS origin pairs as weights. This is an approximation for the annual matrices, and the merged EPS cells carry no interval.
 
 This is external consistency, not validation. The populations differ, the periods differ, the instruments differ in wording and recall window, and the TSM intervals are months while the EPS intervals are years, so agreement does not establish that either engine is right and disagreement does not identify which one is wrong.
 
 <!-- code:tsm-eps-crosscheck -->
-
-## Merged C3 + C4 variant
-
-The SIMAH microsimulation and the NESARC-based transition literature it draws on use a top category that merges the two highest volume levels. The variant here merges C3 and C4 into C3plus at origin and destination, refits A, Lognormal and Ordinal_single, repeats the cross-validation (one repeat), the pooled matrices and the annual layer, and places the staying probabilities next to the six-state ones. The scores are not comparable across variants because the outcome classes differ; the matrices show what the merge does to the top row.
-
-<!-- code:tsm-merged-C3plus -->
 
 ## Sensitivities
 
@@ -205,7 +212,7 @@ Conversion: every main model is refitted at 15.7 g per drink, and the pooled mat
 - The TSM alcohol items have no recall window, so "current drinking", FD and the quantity signals are proxies, not ENPG 30-day constructs.
 - No primary sampling units or strata are released; `Fact_Exp` is cross-sectional, and the whole-person bootstrap is the only uncertainty computed. It does not reconstruct the original design variance.
 - Round dates are approximate fieldwork months, and the date of round 11 is unverified; the elapsed months, and with them the link rule and the annual layer, inherit this approximation.
-- C4 is unreachable at 12 g per drink with the primary lookup; its probabilities come from model tails and from the conversion sensitivities.
+- At 12 g per drink C3plus is nearly empty with the primary lookup; its probabilities come mostly from model tails and from the conversion sensitivities.
 - TSM intervals are short compared with the multi-year EPS intervals; short intervals observe fewer changes and make the annual layer depend more on the generator assumptions.
 - FD requires observed earlier drinking within the panel; N0 is incomplete history. TSM FD identifies people who drank within the previous year or two, so its relapse rate is a different quantity from the EPS former-drinker row.
 - Pooled next-round tables mix four interval lengths; only the annual layer compares with EPS, with the caveat that a generator fitted to months-long windows is a compromise across intervals.

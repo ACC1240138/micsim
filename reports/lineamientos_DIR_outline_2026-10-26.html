@@ -1,0 +1,330 @@
+<title>Lineamientos outline DIR</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one column of decision cards, then three short reference tables. One decision per card, recommendation first. */
+:root {
+  --bg: #f3f6f7; --surface: #ffffff; --fg: #16232b; --muted: #566771; --line: #c3cfd6;
+  --accent: #0a7c76; --accent-soft: #d6ede9; --on-accent: #ffffff; --warn: #9c4300; --warn-soft: #fbe9d9;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1418; --surface: #151d23; --fg: #e3ebef; --muted: #92a3ad; --line: #2b3943;
+  --accent: #43c6bb; --accent-soft: #123836; --on-accent: #06211f; --warn: #f0a45f; --warn-soft: #3a2614; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0e1418; --surface: #151d23; --fg: #e3ebef; --muted: #92a3ad; --line: #2b3943;
+  --accent: #43c6bb; --accent-soft: #123836; --on-accent: #06211f; --warn: #f0a45f; --warn-soft: #3a2614; color-scheme: dark; }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 64px; }
+main { max-width: 860px; margin-inline: auto; display: flex; flex-direction: column; gap: 40px; }
+h1 { font-size: 26px; line-height: 1.2; font-weight: 600; margin: 0 0 8px; text-wrap: balance; }
+h2 { font-size: 19px; line-height: 1.3; font-weight: 600; margin: 0; text-wrap: balance; }
+h3 { font-size: 15.5px; font-weight: 600; margin: 0; }
+p { margin: 0; max-width: 70ch; }
+.lede, .note { color: var(--muted); }
+.tag { font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); }
+section { display: flex; flex-direction: column; gap: 14px; }
+.cards { display: flex; flex-direction: column; gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; padding: 14px 16px; display: grid; grid-template-columns: 1fr; gap: 8px; }
+.card .num { font: 500 11px var(--font-mono); color: var(--muted); letter-spacing: .06em; }
+.reco { font-weight: 600; font-size: 15.5px; }
+.why { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 3px; font-size: 14px; }
+.alt { font-size: 13.5px; color: var(--muted); }
+.alt b { color: var(--fg); font-weight: 500; }
+.where { font: 11.5px var(--font-mono); color: var(--muted); overflow-wrap: anywhere; }
+.vote { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding-top: 4px; }
+.vote label { border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; font-size: 13px; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
+.vote input { margin: 0; accent-color: var(--accent); }
+.vote label:has(input:checked) { background: var(--accent-soft); border-color: var(--accent); }
+.vote label:focus-within { outline: 2px solid var(--accent); outline-offset: 1px; }
+button { font: 500 14px var(--font-body); background: var(--accent); color: var(--on-accent); border: 0; border-radius: 6px; padding: 9px 14px; cursor: pointer; }
+button:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.toast { font-size: 13.5px; color: var(--muted); }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { text-align: left; vertical-align: top; padding: 7px 9px; border-bottom: 1px solid var(--line); }
+th { font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.scroll { overflow-x: auto; }
+code { font: 12.5px var(--font-mono); }
+.ans { display: inline-block; font: 500 11px var(--font-mono); padding: 1px 7px; border-radius: 999px; background: var(--warn-soft); color: var(--warn); margin-left: 6px; }
+.ans.ok { background: var(--accent-soft); color: var(--accent); }
+.chg { display: inline-block; font: 500 10.5px var(--font-mono); padding: 1px 6px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); margin-left: 6px; }
+.disc { margin: 0; padding-left: 18px; font-size: 14px; display: flex; flex-direction: column; gap: 3px; }
+.disc::before { content: "Para discutir"; display: block; margin-left: -18px; font: 500 11px var(--font-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--warn); }
+.pill { display: inline-block; font: 500 11px var(--font-mono); padding: 1px 7px; border-radius: 999px; background: var(--warn-soft); color: var(--warn); }
+.ok { background: var(--accent-soft); color: var(--accent); }
+a { color: var(--accent); }
+</style>
+
+<main>
+  <header>
+    <p class="tag">micsim · outline del paper · v2 · 26-oct-2026</p>
+    <h1>Lineamientos para cerrar el outline</h1>
+    <p class="lede">Diez decisiones, cada una con la opción recomendada, por qué, la alternativa y dónde está documentada. Tu respuesta del 26-oct aparece en cada tarjeta; las marcadas «Discutir» traen los puntos concretos a resolver. Nada de esto es una decisión adoptada hasta que lo cierres. Las figuras están en el artefacto <a href="https://claude.ai/artifact/WNuXMoaiB2d8BowKc23iun">Figuras DIR micsim</a>.</p>
+    <p class="note"><span class="chg">v2</span> Cambios respecto de la v1, siguiendo la revisión de Codex: se distingue en cada tarjeta lo que es error demostrado, supuesto defendible y comprobación pendiente. D4: −8 % y RD −0,07 pasan de «parámetro a reemplazar» a traducciones defendibles que hay que documentar. D5: S1 se estimará, no «debería dar ≈ 0»; se separa probabilidad de IB constante de capacidad fija. D6: la mortalidad de referencia común es válida para muertes esperadas evitables por PIF; se define el estimador y se quita «rompe la comparación pareada». D7: tres edades distintas, sin presentar el seguimiento a 79 ni los cánceres como requisitos. D9: según Codex los archivos locales ya usan 60 g/día en mujeres; falta confirmar que las salidas se regeneraron. D10: CHEERS solo si entra costo. Fuentes: textos principales de Lemp 2026, Kaner 2018 y Manthey 2021 vía el brief del 26-oct; el suplemento de Lemp no se revisó, así que nada aquí lo da por verificado.</p>
+  </header>
+
+  <section>
+    <h2>1 · Decisiones por consensuar</h2>
+    <div class="cards" id="cards">
+
+      <div class="card" data-id="D1 Edades">
+        <span class="num">D1 · Población y edades <span class="ans">Tu respuesta: Discutir</span> <span class="chg">v2</span></span>
+        <p class="reco">Separar tres edades y fijar cada una: la observada en los paneles (18–64), la de elegibilidad DIR en el modelo (propuesta: desde 15) y la de seguimiento de mortalidad (D7).</p>
+        <ul class="why">
+          <li>Es el denominador del DIR (9.432.037 inscritos validados 15–64) y el plan del 17-sep.</li>
+          <li>Hoy conviven cuatro valores: 15–65 (obj. 1), 18–65 (obj. 2 y Figura 1), 15–64 (REM v7) y salida a los 66 (motor).</li>
+          <li>Los paneles no observan 15–17: declarar que esas transiciones se toman de 18–24 o del pseudopanel ENPG, como supuesto.</li>
+        </ul>
+        <ul class="disc">
+          <li>¿El modelo entra a los 15 (ENPG y DIR) o a los 18 (lo observado)? Si entra a los 15, ¿con qué transiciones 15–17?</li>
+          <li>¿La salida de la exposición a los 64 se mantiene aunque el seguimiento de mortalidad siga (D7)?</li>
+          <li>¿Qué se escribe en el outline: un rango único o los tres rangos con su función?</li>
+        </ul>
+        <p class="alt"><b>Alternativa:</b> 18–64 (solo lo observado en EPS/TSM), perdiendo el tramo donde empieza el consumo y el CRAFFT del DIR.</p>
+        <p class="where">dir_rem_mapeo_metricas v7 §Mediciones locales · plan_trabajo_post_reunion_ACC_2026-09-17 · Módulo DIR en micsim (paso 3: «sale a los 66»)</p>
+        <div class="vote"><label><input type="radio" name="D1" value="Acuerdo">Acuerdo</label><label><input type="radio" name="D1" value="Cambiar">Cambiar</label><label><input type="radio" name="D1" value="Discutir">Discutir</label></div>
+      </div>
+
+      <div class="card" data-id="D2 Base JRT y PUC/SENDA">
+        <span class="num">D2 · Qué entra en la base: evidencia JRT y PUC/SENDA 2018 <span class="ans ok">Tu respuesta: Acuerdo</span></span>
+        <p class="reco">Sí entran, con roles distintos: JRT como comprobación de la mortalidad basal y del PIF; PUC/SENDA como sensibilidad de RR y módulo de costos futuro.</p>
+        <ul class="why">
+          <li>AAF 2008–2022 (Ruiz-Tagle, Román y Castillo-Carniglia 2026): meta de calibración de la mortalidad atribuible del año base del motor.</li>
+          <li>PIF de lesiones por reducción de HED (Ruiz-Tagle, Purshouse y Castillo-Carniglia, en revisión): comparador directo del módulo PIF cuando el escenario mueve HED.</li>
+          <li>Tabla 5 PUC/SENDA 2018 (RR IHD/ACV): ya decidido como sensibilidad (D7, 7-oct); mantenerlo así y no mezclar vintages sin nota.</li>
+          <li>Rank-matching JRT sobre ENPG: comparador del pseudopanel, no fuente primaria. En EPS da 96 % de permanencia en C1 contra 60 % en el panel real.</li>
+          <li>Costos PUC/SENDA 2018: insumo para un módulo de costo por AVPP evitado, fuera del primer artículo.</li>
+        </ul>
+        <p class="alt"><b>Alternativa:</b> usar las matrices PAF/PIF de JRT directamente como mortalidad basal del motor. Más rápido, pero hereda el pipeline que aún está en revisión y los RR del vintage 2018.</p>
+        <p class="where">jrt/README.md · _bib/references.bib (ruiztagle2026sex, ruiztagle2025potentially, pucsenda2018estudio) · notes_decisions.md D7 · eps_markov_transiciones §8.1</p>
+        <div class="vote"><label><input type="radio" name="D2" value="Acuerdo">Acuerdo</label><label><input type="radio" name="D2" value="Cambiar">Cambiar</label><label><input type="radio" name="D2" value="Discutir">Discutir</label></div>
+      </div>
+
+      <div class="card" data-id="D3 Cascada S0">
+        <span class="num">D3 · Cascada basal del DIR (escenario S0) <span class="ans">Tu respuesta: Discutir</span> <span class="chg">v2</span></span>
+        <p class="reco">REM 2024 sobre inscritos validados: 14,5 % tamizados al año (8,9 % AUDIT en EMP), 6,6 % positivos, 52 % de los AUDIT 8–15 reciben IB de alcohol; referencia asistida sin efecto.</p>
+        <ul class="why">
+          <li>Reemplaza la cascada 2018 de Barticevic (8 % de la población, 6 % de los tamizados) que todavía usa el módulo HTML del 9-oct.</li>
+          <li>La especialidad recibe a lo más 10–33 % de las referencias; Lemp 2026 tampoco modela la referencia (Glass 2015).</li>
+          <li>No usar 2.537.634 ni 88.236 (programa 2025) hasta que el referente DIR confirme la consulta.</li>
+        </ul>
+        <ul class="disc">
+          <li>REM cuenta atenciones, no personas: ¿se asume una persona por tamizaje y por IB al año, o se corrige con el cociente programa/REM (0,92–1,02)?</li>
+          <li>¿La cascada S0 se fija en 2024 o se modela su tendencia (2019→2024: +36 % tamizajes, −10 % IB)?</li>
+          <li>Entrega de IB «52 %» viene de IB alcohol / resultados 8–15 con ASSIST mezclado en el denominador; ¿se acepta como aproximación?</li>
+          <li>¿La referencia asistida queda sin efecto (como Lemp) o con efecto × tasa de llegada 10–33 % (sensibilidad)?</li>
+        </ul>
+        <p class="alt"><b>Alternativa:</b> cascada DIPRES 2019 (77.294 + 27.634 personas en riesgo; 88.585 IB), que queda 3–7 % bajo el REM y mezcla alcohol, tabaco y drogas.</p>
+        <p class="where">dir_rem_mapeo_metricas v7 §Lectura rápida (6) y §Brecha de absorción · Módulo DIR en micsim, tabla «Cascada Chile 2018»</p>
+        <div class="vote"><label><input type="radio" name="D3" value="Acuerdo">Acuerdo</label><label><input type="radio" name="D3" value="Cambiar">Cambiar</label><label><input type="radio" name="D3" value="Discutir">Discutir</label></div>
+      </div>
+
+      <div class="card" data-id="D4 Efecto IB y decaimiento">
+        <span class="num">D4 · Efecto de la IB y su duración <span class="ans">Tu respuesta: Discutir</span> <span class="chg">v2</span></span>
+        <p class="reco">Base: −8 % relativo del g/día, como traducción agregada de −20 g/sem sobre el consumo basal medio de 244 g/sem de Kaner 2018 (≈ 8,2 %), aplicada en proporción al consumo de cada persona (Lemp 2026 escala −2,86 g/día al consumo individual). HED: RD −0,07 implementada como transición HED→no-HED (supuesto publicado por Lemp). Duración: supuesto con sensibilidad; propuesta base pleno 12 meses y lineal a 0 al año 3–4.</p>
+        <ul class="why">
+          <li>El −8 % es defendible y no exige recalibrar; lo que falta es documentar denominador, regla de escalado y transportabilidad (ensayos de países de altos ingresos; IB chilena por TENS en 5 minutos).</li>
+          <li>RD −0,07 es una diferencia de proporciones con HED al seguimiento; no significa por sí sola que el 7 % de quienes tenían HED lo dejen. La traducción a transición es la de Lemp; hay que explicitar el estimando original y la traducción.</li>
+          <li>El módulo HTML propone «pleno 4 años y lineal a 0 al año 10»; eso solo lo sostiene Project TrEAT (2 visitas + 2 llamadas), más intenso que el DIR. Queda como escenario optimista, no como error.</li>
+          <li>Pesimista: 1 año, o 50 % del efecto (Kaner con control folleto: −13 g/sem; ambos ensayos chilenos compararon contra folleto).</li>
+          <li>Barticevic (−0,86 puntos AUDIT) no se convierte a gramos: se usa como argumento del escenario al 50 %, no como parámetro.</li>
+          <li>IB repetida: reinicia el reloj, no acumula (Tanner-Smith 2022 apoya refuerzos, sin cifra).</li>
+          <li>Comprobaciones pendientes, no fallos: que la actualización de HED y los nuevos sorteos de g/día conserven el efecto remanente de la IB; y si una IB de 2025 modifica el riesgo de 2025 o de 2026 (el paso 6 del motor produce la exposición del año siguiente).</li>
+        </ul>
+        <ul class="disc">
+          <li>¿Efecto proporcional (−8 %) o absoluto (−2,86 g/día) por persona? Cambia quién se beneficia más.</li>
+          <li>¿Curva base de duración: 1 año pleno → 0 al año 3–4, o la de TrEAT? ¿Con qué rangos de sensibilidad?</li>
+          <li>¿Escenario «Chile» al 50 % del efecto (comparador folleto) como sensibilidad o como base?</li>
+          <li>¿Año de aplicación: t o t + 1?</li>
+        </ul>
+        <p class="alt"><b>Alternativa:</b> efecto por sexo de Manthey 2021 (−12 % hombres, −15,8 % mujeres) como base; Kaner no encontró diferencia por sexo.</p>
+        <p class="where">intervencion_breve.md §1–§3 · Brief de evidencia 26-oct, P2 tabla de sensibilidad · Módulo DIR en micsim, tabla de parámetros</p>
+        <div class="vote"><label><input type="radio" name="D4" value="Acuerdo">Acuerdo</label><label><input type="radio" name="D4" value="Cambiar">Cambiar</label><label><input type="radio" name="D4" value="Discutir">Discutir</label></div>
+      </div>
+
+      <div class="card" data-id="D5 Escenarios">
+        <span class="num">D5 · Escenarios <span class="ans">Tu respuesta: Discutir</span> <span class="chg">v2</span></span>
+        <p class="reco">Cinco: S0 status quo; S1 solo más tamizaje; S2 IB en AUDIT 8–15 de 52 % a 80 %; S3 tamizaje + IB; S4 AUDIT universal en el EMP. Solo la IB nueva recibe efecto.</p>
+        <ul class="why">
+          <li>S1 se estimará. Lemp 2026 encontró un efecto sobre AVPP indistinguible de cero y un leve aumento de IB (ambas cosas son compatibles); su reproducción en Chile no se presupone.</li>
+          <li>Probabilidad de IB constante ≠ número de IB constante: con 200 tamizados en vez de 100, 10 % elegibles y 50 % de entrega, las IB pasan de 5 a 10. Si la capacidad fuera fija en 5, ambas ramas entregarían 5: ese es otro escenario (más detección con capacidad de tratamiento fija). Separar efecto directo del tamizaje, detección, elegibilidad, entrega y efecto de la IB.</li>
+          <li>80 % es la meta C3 del ex ante DIPRES; S4 es el techo de capacidad calculado en REM v7 (441.000 IB, 74–147 jornadas).</li>
+          <li>Escenarios por volumen de IB, no solo por tamizaje, como SIMAH.</li>
+        </ul>
+        <ul class="disc">
+          <li>¿S1 con probabilidad de IB constante (más IB) o con capacidad fija (mismas IB)? ¿O ambos?</li>
+          <li>¿La meta de S2 es 80 % (C3 DIPRES) u otra? ¿S4 universal es creíble dadas las 74–147 jornadas estimadas?</li>
+          <li>¿Entra educación como dimensión de equidad en los resultados?</li>
+        </ul>
+        <p class="alt"><b>Alternativa:</b> escenarios por región o por quintil de educación (equidad, como SIMAH). Requiere decidir si educación entra al motor con tres estratos.</p>
+        <p class="where">dir_rem_mapeo_metricas v7 §Capacidad de APS · Módulo DIR en micsim §3</p>
+        <div class="vote"><label><input type="radio" name="D5" value="Acuerdo">Acuerdo</label><label><input type="radio" name="D5" value="Cambiar">Cambiar</label><label><input type="radio" name="D5" value="Discutir">Discutir</label></div>
+      </div>
+
+      <div class="card" data-id="D6 Mortalidad y doble conteo">
+        <span class="num">D6 · Puente consumo → mortalidad <span class="ans">Tu respuesta: Discutir</span> <span class="chg">v2</span></span>
+        <p class="reco">Elegir una de dos rutas (figura C2). Ruta A, la del motor actual: mortalidad de referencia común entre escenarios y muertes esperadas evitables = D_ref × PIF por causa, sexo, edad y año, con PIF = 1 − Σ p′RR / Σ pRR (p: exposición simulada en S0; p′: en el escenario). Ruta B: hazard individual por causa = tasa basal libre de alcohol (m₀ = m_obs / Σ p·RR) × RR(exposición, historia).</p>
+        <ul class="why">
+          <li>La ruta A es válida para muertes y AVPP esperados evitables; no es una incoherencia ni obliga a reconstruir el motor. Lo que falta es escribir el estimador del paso 3 (está arriba) y distinguirlo de simular supervivencia individual.</li>
+          <li>En la ruta B se comparten individuos y números aleatorios comunes aunque las muertes difieran; no «rompe la comparación pareada». Lo que exige es calibrar m₀ y no sumar un segundo efecto por PIF.</li>
+          <li>Rezagos: agudas con 0; crónicas con exposición acumulada 5–10 años (Holmes 2012), lo que implica guardar historia de g/día por persona (pendiente en el motor). Excluir cánceres del horizonte 2025–2034 es lo que hizo Lemp, una opción, no un requisito.</li>
+          <li>Exbebedor con RR propio; la IB nunca crea exbebedores. Calibrar los escenarios intervenidos al mismo margen basal borraría su efecto: solo S0 se calibra a ENPG.</li>
+        </ul>
+        <ul class="disc">
+          <li>¿Ruta A (impacto esperado, motor intacto) o ruta B (supervivencia por escenario, población viva distinta)?</li>
+          <li>Si A: ¿PIF por celda sexo × edad × educación o solo sexo × edad? ¿Rezago cómo?</li>
+          <li>¿Cánceres fuera del horizonte o con rezago ≥ 10 años?</li>
+        </ul>
+        <p class="alt"><b>Alternativa dentro de A:</b> aplicar el PIF a las muertes proyectadas por el motor (D_ref simulado) o a las muertes observadas/proyectadas DEIS fuera del motor; cambia qué demografía lleva el denominador.</p>
+        <p class="where">Brief de evidencia 26-oct, P3 y P6 · auditoria_microsim_2026-10-09/rr_bridge.md · AGENTS.md §2 y §5 (PIF separado de AAF)</p>
+        <div class="vote"><label><input type="radio" name="D6" value="Acuerdo">Acuerdo</label><label><input type="radio" name="D6" value="Cambiar">Cambiar</label><label><input type="radio" name="D6" value="Discutir">Discutir</label></div>
+      </div>
+
+      <div class="card" data-id="D7 AVPP">
+        <span class="num">D7 · Años de vida potencial perdidos <span class="ans ok">Tu respuesta: Acuerdo</span> <span class="chg">v2</span></span>
+        <p class="reco">Propuesta: AVPP con corte fijo a los 75 años (SIMAH) y seguimiento de mortalidad atribuible hasta los 79 aunque la exposición se congele a los 64. Es una opción, no un requisito: restringirse a muertes antes de 65 también es válido si esa es la pregunta.</p>
+        <ul class="why">
+          <li>Con salida a los 64, las muertes evitadas después de esa edad no se cuentan; seguir más allá capta beneficios tardíos de las causas crónicas.</li>
+          <li>AVPP con corte fijo (75) y años perdidos según esperanza de vida son medidas distintas; declarar cuál se usa.</li>
+          <li>Castillo-Carniglia, Kaufman y Pino 2013 usaron AVPP para Chile 2009 (21,5 % de los AVPP): sirve de comparación histórica si el corte coincide.</li>
+        </ul>
+        <p class="alt"><b>Alternativa:</b> declarar la salida a los 64 como límite y reportar solo muertes y AVPP antes de 65. Más simple; conclusiones más conservadoras.</p>
+        <p class="where">Outline, nota [AG1] (SIMAH: YLL &lt; 75) · Figura B del artefacto de figuras</p>
+        <div class="vote"><label><input type="radio" name="D7" value="Acuerdo">Acuerdo</label><label><input type="radio" name="D7" value="Cambiar">Cambiar</label><label><input type="radio" name="D7" value="Discutir">Discutir</label></div>
+      </div>
+
+      <div class="card" data-id="D8 HED">
+        <span class="num">D8 · Persistencia de HED <span class="ans ok">Tu respuesta: Acuerdo</span></span>
+        <p class="reco">Reemplazar «72–98 % interanual y 42–63 % a 5 años» por la tabla 2 de Puka 2023 (anual: no-HED 82,4 %; HED ocasional 45,8 %; mensual 22,9 %; semanal 65,5 %) y calibrar el latente rho_hed a esos valores.</p>
+        <ul class="why">
+          <li>Las cifras del outline no coinciden con la tabla anual de Puka; las de 5 años no se pudieron verificar.</li>
+          <li>HED sigue sin ser estado con matriz propia: se asigna cada año por volumen + latente. Los HED del panel (EPS señal 5+/4+, TSM 6+) solo sirven para contrastar, no para estimar rho.</li>
+        </ul>
+        <p class="alt"><b>Alternativa:</b> estimar rho_hed con los pares TSM 6+ (≈ 6 meses) y declarar la diferencia de ventana con ENPG (30 días).</p>
+        <p class="where">Outline §Fijar rangos HED · auditoria_microsim_2026-10-09/hed_diagnostic.md · Brief 26-oct P7</p>
+        <div class="vote"><label><input type="radio" name="D8" value="Acuerdo">Acuerdo</label><label><input type="radio" name="D8" value="Cambiar">Cambiar</label><label><input type="radio" name="D8" value="Discutir">Discutir</label></div>
+      </div>
+
+      <div class="card" data-id="D9 Categorías OMS mujeres">
+        <span class="num">D9 · Cortes OMS en mujeres <span class="ans ok">Tu respuesta: Acuerdo</span> <span class="chg">v2</span></span>
+        <p class="reco">C3 mujeres = &gt;40–60 g/día y C4 = &gt;60, como dice la nota de la Figura 1 y la clasificación OMS que usa Puka. Según Codex, los archivos locales ya usan el corte de 60 en mujeres; lo que queda es alinear las tablas del Google Doc («cat3 mujeres [40,100]») y la tabla del notebook TSM, y confirmar que las salidas se regeneraron con ese corte.</p>
+        <ul class="why">
+          <li>La inconsistencia demostrada es de texto (doc y descripción del notebook); no está confirmado que las salidas estén mal.</li>
+          <li>Afecta cuántas mujeres caen en C4 y las matrices de transición. Un PIF calculado sobre g/día continuo no cambia necesariamente por mover un corte categórico.</li>
+        </ul>
+        <p class="alt"><b>Alternativa:</b> mantener 100 g/día para ambos sexos y citar la fuente que lo justifique (no la encontré).</p>
+        <p class="where">Outline, Figura 1 note · Google Doc DIR §Yo › edad × sexo × educación × consumo · TSM_ENPG_v2 tabla de cortes</p>
+        <div class="vote"><label><input type="radio" name="D9" value="Acuerdo">Acuerdo</label><label><input type="radio" name="D9" value="Cambiar">Cambiar</label><label><input type="radio" name="D9" value="Discutir">Discutir</label></div>
+      </div>
+
+      <div class="card" data-id="D10 Reporte y validación">
+        <span class="num">D10 · Reporte, validación e incertidumbre <span class="ans ok">Tu respuesta: Acuerdo</span> <span class="chg">v2</span></span>
+        <p class="reco">Protocolo ODD para el componente de simulación (como Lemp y Kilian); CHEERS solo si entra costo-efectividad, no es obligatorio para una microsimulación. Validación tipo Puka (aplicar las matrices anuales a ENPG 2012 y comparar con 2024: evalúa márgenes, no demuestra persistencia individual); separar incertidumbre de parámetros de ruido Monte Carlo (Lemp: 70 conjuntos × 20 réplicas).</p>
+        <ul class="why">
+          <li>Responde al comentario del doc: usar ODD sin llamar al artículo «microsimulation study» mientras solo desarrolle insumos.</li>
+          <li>Cinco semillas no cubren las tres fuentes de incertidumbre (tu propia respuesta 14).</li>
+        </ul>
+        <p class="alt"><b>Alternativa:</b> solo ISPOR-SMDM (Briggs 2012 ya está en la lista). ODD es más específico para modelos individuales.</p>
+        <p class="where">Google Doc DIR, respuestas 10 y 14 · Brief 26-oct P4</p>
+        <div class="vote"><label><input type="radio" name="D10" value="Acuerdo">Acuerdo</label><label><input type="radio" name="D10" value="Cambiar">Cambiar</label><label><input type="radio" name="D10" value="Discutir">Discutir</label></div>
+      </div>
+    </div>
+    <div class="bar"><button id="copy" type="button">Copiar mis respuestas</button><span class="toast" id="toast">Tus respuestas del 26-oct ya están en cada tarjeta; vuelve a marcar solo lo que cambie y pégalo en el chat.</span></div>
+  </section>
+
+  <section>
+    <h2>2 · Inconsistencias del outline y su corrección</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>#</th><th>Dónde</th><th>Dice</th><th>Debe decir</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Obj. 1 población; Obj. 2 población; Figura 1 note; motor</td><td>15–65 · 18–65 · 18–65 · sale a los 66</td><td>Un solo rango (D1): 15–64.</td></tr>
+        <tr><td>2</td><td>Obj. 1 población</td><td>«entre 2012 y 2024, seguidos durante 10 años»</td><td>EPS VI→VIII cubre 2015/16–2024 (≈ 8–9 años); TSM 2023–2025. «Seguidos hasta 9 años» o quitar la cifra.</td></tr>
+        <tr><td>3</td><td>Figura 1 note vs texto EPS</td><td>Note: VII (2020), VIII (2023); texto: VII (2019-2020), VIII (2024)</td><td>Mismas fechas en ambos (VI 2015/16, VII 2019/20, VIII 2024).</td></tr>
+        <tr><td>4</td><td>TSM, fuentes</td><td>«906, preliminarmente 902 (15-65 en ola 7)»; atrición 60 %; en Desafíos «hasta 49 %»</td><td>Notebook: 1.934 personas y 4.175 pares R7→R11, 18–65. Una sola cifra de atrición con su definición.</td></tr>
+        <tr><td>5</td><td>Plan de análisis, EPS</td><td>«(dias/semana) x (tragos/ocasion) x (7 g/trago)»</td><td>días/semana × tragos/ocasión × g/trago ÷ 7; g/trago = 12 (JRT, ADD-25-1576) o 15,5–15,7 (ENS 2009-10; SENDA 2016 dice 15,5).</td></tr>
+        <tr><td>6</td><td>Estados OMS</td><td>«Cat1= &gt;0–40 y &lt;20 &amp; &gt;0–20»</td><td>Escribir como en la nota de la Figura 1: C1 M &gt;0–40 / W &gt;0–20; C2 40–60 / 20–40; C3 60–100 / 40–60; C4 &gt;100 / &gt;60.</td></tr>
+        <tr><td>7</td><td>Rangos HED</td><td>Puka: 72–98 % interanual, 42–63 % a 5 años</td><td>Tabla 2 de Puka (D8).</td></tr>
+        <tr><td>8</td><td>Obj. 2, intro</td><td>«Notas FONDECYT 11240138»</td><td>1240138.</td></tr>
+        <tr><td>9</td><td>Obj. 2, Barticevic</td><td>DOI «…00248-43»; «aOR = 0.60» sin decir de qué</td><td>DOI 10.1186/s13722-021-00248-4; el OR es de seguir en riesgo (IB vs folleto), no de pasar a bajo riesgo. Mover a la lista de referencias.</td></tr>
+        <tr><td>10</td><td>Obj. 2, población</td><td>«18 a 65 [falta la población de beneficiarios fonasa]»</td><td>Ya existe: 9.432.037 inscritos APS validados FONASA, 15–64, dic-2023 (REM v7).</td></tr>
+        <tr><td>11</td><td>Obj. 2, efecto</td><td>«Kaner (−20 g/semana) hacia el valor marginal de Barticevic (−0.86 AUDIT)»</td><td>Unidades distintas; no hay conversión directa. Kaner (−20 g/sem ≈ −8 % sobre 244 g/sem) como base documentada; Barticevic como justificación de un escenario reducido (D4).</td></tr>
+        <tr><td>12</td><td>Obj. 2, nota [AG1]</td><td>YLL antes de 75 (SIMAH) con población que sale a los 65</td><td>Fijar corte de AVPP (fijo vs esperanza de vida) y edad de seguimiento de mortalidad, por separado de la edad de exposición (D7). Cualquiera de las dos combinaciones es válida si se declara.</td></tr>
+        <tr><td>13</td><td>Módulo DIR en micsim (9-oct)</td><td>Cascada 2018: 1.268.640 tamizados, 75.854 IB, ≈ 8 %; decaimiento 4 → 10 años</td><td>Cascada: hay una fuente más reciente (REM 2024, D3). Decaimiento: no es error, es el escenario optimista; presentar la curva como supuesto con sensibilidad (D4).</td></tr>
+        <tr><td>14</td><td>Obj. 1, intro</td><td>«Killian et al., 2025»</td><td>Kilian.</td></tr>
+        <tr><td>15</td><td>Obj. 1, intro</td><td>«Maharaj et al., 2023» para rezagos de 2–3 años</td><td>No existe como estudio de rezagos; el Maharaj 2023 real es sobre precio mínimo. Usar Holmes et al. 2012.</td></tr>
+        <tr><td>16</td><td>Obj. 2, motor</td><td>HED «se asigna cada año con un modelo logístico sobre el volumen, más un latente» y comentario «me falta consumo diferenciado de HED»</td><td>Decir explícitamente que HED no es estado del panel y cómo se contrasta con EPS (señal 5+/4+) y TSM (6+).</td></tr>
+        <tr><td>17</td><td>Obj. 2, métodos <span class="chg">v2</span></td><td>«vínculo específico por causa con riesgos externos; calibración basal» sin estimador</td><td>Escribir el estimador del paso de mortalidad (ruta A: D_ref × PIF por celda; ruta B: hazard individual) y declarar cuál se usa (D6). Calibrar solo S0 al margen ENPG.</td></tr>
+        <tr><td>18</td><td>Obj. 1, representatividad <span class="chg">v2</span></td><td>«post-estratificación por sexo, edad y educación… corrección composicional»</td><td>Correcto como está: postestratificar con CASEN corrige composición y no identifica patrones rurales de consumo. Mantener la frase y la evidencia preliminar como hipótesis.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>3 · Referencias: cruce texto ↔ lista</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Caso</th><th>Referencias</th><th>Acción</th></tr></thead>
+      <tbody>
+        <tr><td><span class="pill">Citada, sin entrada</span></td><td>Maharaj 2023 · Paraje et al. 2024 · Subsecretaría de Previsión Social 2024 (EPS) · Errázuriz-Concha 2026 (TSM, en comentario) · Barticevic 2021 (solo inline)</td><td>Maharaj → Holmes 2012. Paraje 2024 = Paraje, Araya &amp; Monteiro 2024, Int J Drug Policy 124:104316 (elasticidades, no pisco; para pisco citar Araya &amp; Paraje 2018). Agregar las otras tres a la lista.</td></tr>
+        <tr><td><span class="pill">En lista, no citada</span></td><td>Araya &amp; Paraje 2018 · Peña et al. 2020 · Savitsky &amp; Toth 2016 (solo en comentario) · Briggs 2012 (citado como «Briggs» sin año)</td><td>Citar Araya &amp; Paraje en «pisco y sustitución» y Peña en «sistemas de atención / política»; Savitsky si se adopta la estimación bayesiana bajo muestreo informativo; poner año a Briggs.</td></tr>
+        <tr><td><span class="pill">Corregir dato</span></td><td>Kilian 2025 · Peña 2020 · Castillo-Carniglia 2025</td><td>Kilian: páginas e815–e823. Peña: número de 2021 (116(3)), en línea 2020; usar uno solo. Castillo-Carniglia: título «National profile…», autor único (ya correcto).</td></tr>
+        <tr><td><span class="pill ok">Verificadas</span></td><td>Barbosa 2010/2019 · Bassett 2022 · Britton 2015 · Calvo 2020 · Card-Gowers 2025 · Cook 2024 · Cornejo 2025 · Cremonte 2016 · Gmel 2011 · Kaner 2018 · Kasajima 2020 · Keyes 2020 · Lemp 2026 · Liang 2013 · Maruotti 2012 · Moid 2026 · Murray 2026 · O'Neill 2018 · Probst 2014/2023 · Puka 2023 · Torvik 2011 · WHO 2024 · Zhao 2023 · Collins 2016</td><td>Citadas y en lista. DOI de Lemp, Kaner, Zhao, Puka, Card-Gowers, Cornejo verificados hoy; el resto por coincidencia de cita.</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>4 · Literatura que falta (verificada) y dónde entra</h2>
+    <div class="scroll"><table>
+      <thead><tr><th>Referencia</th><th>Para qué</th><th>Sección</th></tr></thead>
+      <tbody>
+        <tr><td>Castillo-Carniglia, Kaufman &amp; Pino (2013). <i>Alcohol Alcohol</i> 48(6):729–736. doi:10.1093/alcalc/agt066</td><td>Línea base publicada: 9,8 % de muertes y 21,5 % de AVPP atribuibles (2009)</td><td>Obj. 2 intro</td></tr>
+        <tr><td>Ruiz-Tagle Maturana, Román &amp; Castillo-Carniglia (2026). <i>Public Health in Practice</i> 11:100798</td><td>AAF 2008–2022 por sexo y edad (JRT); calibración basal</td><td>Obj. 2 métodos</td></tr>
+        <tr><td>PUC &amp; SENDA (2018). Estudio del costo económico y social del consumo de alcohol en Chile (informe técnico)</td><td>Tabla 5 RR IHD/ACV (sensibilidad); costos</td><td>Obj. 2 métodos</td></tr>
+        <tr><td>Holmes, Meier, Booth, Guo &amp; Brennan (2012). <i>Drug Alcohol Depend</i> 123:7–14</td><td>Rezagos consumo → daño (reemplaza Maharaj)</td><td>Obj. 1 intro; Obj. 2 métodos</td></tr>
+        <tr><td>Barendregt &amp; Veerman (2010). <i>J Epidemiol Community Health</i> 64:209–212</td><td>PIF con exposición continua vs categórica</td><td>Obj. 2 métodos</td></tr>
+        <tr><td>Manthey, Solovei, Anderson, Carr &amp; Rehm (2021). <i>PLoS ONE</i> 16(8):e0255843</td><td>Simulación SBI Alemania; efecto por sexo; HED RD −0,07</td><td>Obj. 2 métodos (sensibilidad)</td></tr>
+        <tr><td>Purshouse et al. (2013) <i>Alcohol Alcohol</i> 48:180–188; Angus et al. (2014) <i>BMC Fam Pract</i> 15:26</td><td>SAPM: SBI en APS, decaimiento y costo-efectividad</td><td>Obj. 2 intro</td></tr>
+        <tr><td>Platt et al. (2016) <i>BMJ Open</i> 6:e011473; Tanner-Smith et al. (2022) <i>Addiction</i> 117:877–889; Fleming et al. (2002) <i>ACER</i> 26:36–43</td><td>Efecto por entorno (−26 g/sem APS), refuerzos, mantención a 48 meses (optimista)</td><td>Obj. 2 métodos (duración)</td></tr>
+        <tr><td>Glass et al. (2015) <i>Addiction</i> 110:1404–1415</td><td>IB no aumenta uso de especialidad: justifica referencia sin efecto</td><td>Obj. 2 métodos</td></tr>
+        <tr><td>Poblete et al. (2017) <i>Addiction</i> 112:1462–1469</td><td>Segundo ensayo chileno; comparador folleto</td><td>Obj. 2 discusión</td></tr>
+        <tr><td>Rehm et al. (2017) <i>Addiction</i> 112:968–1001</td><td>Dimensiones de exposición y rezagos en CRA</td><td>Obj. 2 métodos</td></tr>
+        <tr><td>Grimm et al. (2020) ODD protocol, <i>JASSS</i> 23(2):7</td><td>Estándar de reporte (D10); DOI por confirmar</td><td>Obj. 2 métodos</td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">El brief completo con fuentes está guardado en <code>micsim/Microsimulación de alcohol en Chile_ evidencia para escalar el programa DIR, mortalidad y AVPP.md</code>. No verificadas en esta ronda: Stockwell 2016/2024, GBD 2022, Jonas 2012, O'Connor 2018, Kasajima 2020, Keyes 2020, «So et al. 2025» (no se encontró; lo más cercano es Poikolainen 1999).</p>
+  </section>
+</main>
+
+<script>
+(function () {
+  var KEY = 'lineamientos_dir_votes';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { saved = {}; }
+  var radios = document.querySelectorAll('.vote input');
+  radios.forEach(function (r) {
+    if (saved[r.name] === r.value) r.checked = true;
+    r.addEventListener('change', function () {
+      saved[r.name] = r.value;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+    });
+  });
+  document.getElementById('copy').addEventListener('click', function () {
+    var lines = [];
+    document.querySelectorAll('.card').forEach(function (c) {
+      var id = c.getAttribute('data-id'), v = c.querySelector('input:checked');
+      lines.push(id + ': ' + (v ? v.value : 'sin marcar'));
+    });
+    var txt = 'Respuestas lineamientos DIR (26-oct):\n' + lines.join('\n');
+    var toast = document.getElementById('toast');
+    function fallback() {
+      var ta = document.createElement('textarea'); ta.value = txt; document.body.appendChild(ta); ta.select();
+      toast.textContent = 'Texto seleccionado abajo; cópialo con Ctrl+C.';
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(txt).then(function () { toast.textContent = 'Copiado. Pégalo en el chat.'; }, fallback);
+    } else { fallback(); }
+  });
+})();
+</script>

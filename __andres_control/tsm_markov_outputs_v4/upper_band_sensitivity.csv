@@ -1,0 +1,10 @@
+"scenario","model","quantity","probability"
+"top_16_drinks","A","Drinking_t1",0.564574468480486
+"top_16_drinks","A","Escalation_from_C1",0.00649216287196246
+"top_16_drinks","A","C3_C4_t1",0.00165981292203449
+"top_16_drinks","Gamma","Drinking_t1",0.561712845603048
+"top_16_drinks","Gamma","Escalation_from_C1",0.00410614580168127
+"top_16_drinks","Gamma","C3_C4_t1",0.000478882054719107
+"top_16_drinks","Lognormal","Drinking_t1",0.561712845603048
+"top_16_drinks","Lognormal","Escalation_from_C1",0.00839180805730107
+"top_16_drinks","Lognormal","C3_C4_t1",0.00182334199433481

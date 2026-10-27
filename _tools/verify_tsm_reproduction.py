@@ -1,11 +1,11 @@
-"""Compare the TSM v3 notebook run with its fresh-kernel reproduction and attach measured evidence.
+"""Compare the TSM v4 notebook run with its fresh-kernel reproduction and attach measured evidence.
 
 Run only after both executions have finished. This checks real exported results;
 it neither executes R nor manufactures notebook execution counts.
 
 Expected table schemas (from the notebook sections): eps_crosscheck_annual.csv in
-long format with columns model, source (TSM/EPS), from, to, estimate, lower, upper;
-merged_C3plus_annual.csv with model, from, to, estimate; annual_generator_sensitivity.csv
+long format with columns model, source (TSM/EPS), from, to, estimate, lower, upper (five states since
+2026-10-26, C3 and C4 merged into C3plus); annual_generator_sensitivity.csv
 with model, penalty, max_annual_difference.
 """
 import argparse
@@ -22,9 +22,9 @@ import nbformat
 
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / ".acc_root").is_file())
 REPORTS = ROOT / "__andres_control"
-NOTEBOOK = "TSM_ENPG_v3_EN.ipynb"
+NOTEBOOK = "TSM_ENPG_v4_EN.ipynb"
 SOURCES = {"data_sha256": "tsm_markov_data.R", "models_sha256": "tsm_markov_models.R",
-           "sections_sha256": "tsm_markov_sections.R", "narrative_sha256": "TSM_ENPG_v3_EN.md"}
+           "sections_sha256": "tsm_markov_sections.R", "narrative_sha256": "TSM_ENPG_v4_EN.md"}
 
 
 def digest(path):
@@ -56,12 +56,12 @@ def check_html(html_path, out_dir):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--replication", default=".quarto/tsm_markov_reproduction_en")
+    parser.add_argument("--replication", default=".quarto/tsm_markov_reproduction_v4_en")
     parser.add_argument("--html", help="Rendered self-contained HTML to validate (optional)")
     args = parser.parse_args()
     replication = Path(args.replication)
     assert not replication.is_absolute() and ".." not in replication.parts
-    first = REPORTS / "tsm_markov_outputs"
+    first = REPORTS / "tsm_markov_outputs_v4"
     second = ROOT / replication
     excluded = {"reproducibility_check.csv"}
     files_a = {p.name: p for p in first.glob("*.csv") if p.name not in excluded}
@@ -129,15 +129,12 @@ def main():
     cross_lines = []
     for model in ("A", "Gamma", "Lognormal"):
         bits = []
-        for state in ("N0", "C1"):
+        for state in ("N0", "C1", "C3plus"):
             for source in ("TSM", "EPS"):
                 row = next(r for r in cross if r["model"] == model and r["source"] == source and r["from"] == state and r["to"] == state)
                 support = f"; {row['support']}, n={row['n_origin']}" if source == "TSM" and row.get("n_origin") else ""
                 bits.append(f"{source} {state} {float(row['estimate']):.3f} [{fmt(row, 'lower')}, {fmt(row, 'upper')}{support}]")
         cross_lines.append(f"  - {model}: " + "; ".join(bits))
-    merged = read_csv(first / "merged_C3plus_annual.csv")
-    merged_text = "; ".join(f"{r['model']} {float(r['estimate']):.3f} ({r.get('support', '')}, n={r.get('n_origin', '')})"
-                            for r in merged if r["from"] == "C3plus" and r["to"] == "C3plus" and r["estimate"])
     summary = (
         "## Saved results: quick reading\n\n"
         f"- **Best average score:** {decision['best_logloss']} by log loss; {decision['best_brier']} by Brier. "
@@ -147,8 +144,8 @@ def main():
         "- **Uncertainty:** whole-person bootstrap with 1,000 replicates and refitted IPW; no design variables exist in TSM.\n"
         f"- **Exploratory annualization:** for {worst['model']}, restarts at the primary penalty change an individual annual probability by up to {annual_start_pp:.1f} percentage points; "
         f"exploring penalties as well raises this to {annual_max_pp:.1f}. This is not yet a stable annual engine.\n"
-        "- **EPS cross-check (annual staying probabilities, external consistency only):**\n" + "\n".join(cross_lines) + "\n"
-        f"- **Merged C3+ variant:** annual staying probability of C3plus: {merged_text}.\n\n"
+        "- **EPS cross-check (annual staying probabilities, external consistency only; EPS C3 and C4 merged with origin-pair weights):**\n"
+        + "\n".join(cross_lines) + "\n\n"
         "This summary is generated from verified tables after notebook execution."
     )
     text = (
@@ -159,7 +156,7 @@ def main():
         "The external verifier checked the embedded source hashes, exported results and every recorded R check. "
         "This cell reports that subsequent verification; it does not simulate another execution. "
         "Figures were inspected separately. Model assumptions and external validity still require assessment.\n\n"
-        "[Review report](__andres_control/tsm_v3_review.md) · [File comparison](__andres_control/tsm_markov_outputs/reproducibility_check.csv)"
+        "[Review report](__andres_control/tsm_v3_review.md) · [File comparison](__andres_control/tsm_markov_outputs_v4/reproducibility_check.csv)"
     )
     doc.cells = [c for c in doc.cells if not c.metadata.get("tsm_reproduction") and not c.metadata.get("tsm_result_summary")]
     summary_cell = nbformat.v4.new_markdown_cell(summary)
@@ -169,7 +166,7 @@ def main():
     cell.metadata["tsm_reproduction"] = True
     doc.cells.insert(len(doc.cells) - 1, cell)
     nbformat.write(doc, path)
-    report = ["# TSM v3 reproducibility check", "", "Status: **PASS**", "",
+    report = ["# TSM v4 reproducibility check", "", "Status: **PASS**", "",
               f"- Independent fresh R sessions: 2 (one language); completed code cells: {len(code)}.",
               f"- Byte-identical aggregate CSV files: {n}; aggregate rows: {numerical_rows}.",
               "- Source SHA256 in notebook metadata: " + ", ".join(f"{k} `{doc.metadata.tsm_revision[k]}`" for k in SOURCES) + ".",
@@ -183,8 +180,8 @@ def main():
     report += ["", f"Scientific sensitivity: for {worst['model']}, annual probabilities differ by up to {annual_start_pp:.1f} percentage points across restarts at the primary penalty, and {annual_max_pp:.1f} across the combined penalty/start grid. Computational PASS does not resolve this instability. The EPS cross-check is external consistency, not validation.", "",
                "Reproduce from the project root after obtaining the encrypted data key through the usual local environment:", "",
                "```text", "python _tools/build_tsm_markov_notebook.py",
-               "python _tools/execute_eps_notebook.py __andres_control/TSM_ENPG_v3_EN.ipynb --output-env TSM_MARKOV_OUTPUT",
-               "python _tools/execute_eps_notebook.py __andres_control/TSM_ENPG_v3_EN.ipynb --output-env TSM_MARKOV_OUTPUT --output-dir .quarto/tsm_markov_reproduction_en",
+               "python _tools/execute_eps_notebook.py __andres_control/TSM_ENPG_v4_EN.ipynb --output-env TSM_MARKOV_OUTPUT",
+               "python _tools/execute_eps_notebook.py __andres_control/TSM_ENPG_v4_EN.ipynb --output-env TSM_MARKOV_OUTPUT --output-dir .quarto/tsm_markov_reproduction_v4_en",
                "python _tools/verify_tsm_reproduction.py", "```", "",
                "Use the project's existing R/renv and Python notebook environment. Optional process affinity is a local runtime argument, not a project default.",
                "This verifies computational reproduction, not external validation or the truth of the statistical assumptions.", ""]

@@ -1,0 +1,2 @@
+"anio","rows_before","rows_after","unmatched","duplicated_keys","missing_commune_weight","communes_with_weight","source","commune_weight","fixed_geography","commune_weight_label"
+2020,185437,185437,0,0,0,324,"_casen/casen_2020_geography.dta.tar.xz.enc","expc","INE commune geography; official survey strata/PSUs unchanged","Factor de expansión comunal con proyección Censo 2017"

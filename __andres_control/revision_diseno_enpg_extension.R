@@ -10,11 +10,19 @@
 #
 # 2. Joins that cache back to ENPG_BINGE.RDS by year and respondent ID.
 #
-# 3. Derives the PIF/AAF-relevant alcohol variables:
-#      abs         : lifetime abstainer indicator.
-#      form        : former drinker indicator.
-#      hed         : HED among current drinkers.
-#      consumption : mean daily alcohol grams from the CHMS-calibrated variable.
+# 3. Derives the PIF/AAF-relevant alcohol variables exactly as expand_pif.ipynb does in its cell
+#    `enpg-consolidate` (same rows, same rules), so each cell describes the population whose
+#    precision it corrects in the AAF engine:
+#      abs         : lifetime abstainer (oh1 == "No"), share among rows with a known status.
+#      form        : former drinker (last drink > 30 days or > 1 year ago), same denominator.
+#                    Known status includes "cur_na": current drinkers whose volume is missing or
+#                    zero stay in the abs/form denominator (expand_pif rule B1).
+#      hed         : any binge episode in the last 30 days (db > 0) among current drinkers with
+#                    positive volume, the population of the HED shares in expand_pif step0.
+#      consumption : volajohdia (12 g per drink, WHO per-capita anchored) among current drinkers
+#                    with positive volume, the population of the Gamma fits.
+#    The WHO anchoring factor per year is read from oms_factor_by_year.csv, which expand_pif
+#    writes. It only rescales grams within a year, so it changes no design factor.
 #
 # 4. Estimates, where possible, a cell-specific residual clustering factor:
 #      factor = (SE_survey_design / SE_Kish_only)^2
@@ -29,6 +37,19 @@
 #    stratum used in the older-wave workflow. The 2024 ESTRATO design is not
 #    used here because the goal is a cell-specific replacement for the older
 #    REGION-level approximation, not a separate official-2024-only design.
+#
+# Revision 2026-10-26 (documented, with the before/after effect, in revision_diseno_enpg_extension.md)
+# -------------------
+# Aligned with expand_pif.ipynb. Before this revision the script (a) had no cur_na rule, so 3,756
+# current drinkers with a missing or zero volume dropped out of the abs/form cells; (b) counted as
+# former drinkers the rows with oh1 == "Si" and an unknown recency (oh2 missing), which expand_pif
+# leaves out; (c) kept rows with more than 30 drinking days and did not drop the inconsistent
+# oh1 == "No" with a recency answer; (d) computed hed and consumption on every current drinker
+# with data instead of the positive-volume drinkers, with 15.7 g per drink and a single 7.9-litre
+# anchor for every year. Categories now follow the WHO borders without gaps
+# (decision_categorias_who_12g_2026-10-26.md); only the ltabs/fd/cur_na labels enter the factors.
+# The outputs feed only the width of the AAF/PIF/YPLL Monte Carlo intervals (Kish neff and PSU
+# factors passed to aaf_unified.R), never a point estimate.
 #
 # What is and is not possible
 # ---------------------------
@@ -165,82 +186,43 @@ audit_join <- function(data) {
   do.call(rbind, rows)
 }
 
-conversion <- function(x, vol) {
-  # Conversion factor sent by ACC and used in expand_pif.ipynb.
-  vol_oms <- x * 0.8
-  oms <- round((vol_oms * 0.789) * 1000, 2)
-  oms / vol
-}
+derive_alcohol_variables <- function(data, oms_factor) {
+  # Row-by-row mirror of expand_pif.ipynb, cell enpg-consolidate (dplyr there, base R here).
+  data <- data[(to_numeric(data$edad) >= 15) %in% TRUE, , drop = FALSE]
+  oh1 <- as.character(data$oh1); oh2 <- as.character(data$oh2)
+  db <- to_numeric(data$db); db[db >= 88] <- NA_real_
+  oh3 <- to_numeric(data$oh3); oh3[oh3 %in% c(88, 99)] <- NA_real_
+  nondrinker <- oh1 %in% "No" | oh2 %in% c(">30", ">1 a\u00f1o")   # ltabs or fd: 0 days, 0 drinks
+  oh3[nondrinker] <- 0
+  prom_tragos <- unname(c("0-2" = 1, "3-4" = 3.5, "5-6" = 5.5, "7-8" = 7.5, "9 o mas" = 9)[as.character(data$audit2)])
+  prom_tragos[nondrinker] <- 0
+  diasalchab <- pmax(oh3 - db, 0)
+  volbinge <- ifelse(data$sexo == "Hombre", db * 5, db * 4)
+  data$volCH <- (volbinge + diasalchab * prom_tragos) * 12 / 30 * 365   # g/year at 12 g per drink
+  keep <- (is.na(oh3) | oh3 <= 30) & !(oh1 %in% "No" & !is.na(oh2))     # expand_pif: oh3 filter, then aux == 0
+  data <- data[keep, , drop = FALSE]; oh1 <- oh1[keep]; oh2 <- oh2[keep]; db <- db[keep]
 
-derive_alcohol_variables <- function(data) {
-  # This block mirrors the existing PIF/AAF alcohol derivation, but keeps the
-  # survey design fields attached. Non-current drinkers keep missing consumption
-  # means, while abstainer/former indicators remain defined.
-  data$db_num <- to_numeric(data$db)
-  data$db_num[data$db_num >= 88] <- NA_real_
+  f <- oms_factor$factor_CH[match(data$year, oms_factor$year)]
+  stopifnot(all(is.finite(f)))
+  v <- data$volCH * f / 365                                              # volajohdia, WHO-anchored g/day
+  women <- data$sexo %in% "Mujer"; men <- data$sexo %in% "Hombre"
+  lo <- ifelse(women, 20, 40); hi <- ifelse(women, 40, 60); top <- ifelse(women, 60, 100)
+  pos <- (women | men) & (v > 0) %in% TRUE
+  # WHO borders without gaps: the exact border value goes to the lower class.
+  cvolaj <- rep(NA_character_, nrow(data))
+  cvolaj[oh2 %in% "30 dias"] <- "cur_na"
+  cvolaj[pos & v <= lo] <- "cat1"; cvolaj[pos & v > lo & v <= hi] <- "cat2"
+  cvolaj[pos & v > hi & v <= top] <- "cat3"; cvolaj[pos & v > top] <- "cat4"
+  cvolaj[oh2 %in% c(">30", ">1 a\u00f1o")] <- "fd"
+  cvolaj[oh1 %in% "No"] <- "ltabs"
 
-  data$oh3_num <- to_numeric(data$oh3)
-  data$oh3_num[data$oh3_num %in% c(88, 99)] <- NA_real_
-
-  data$current_drinker <- !is.na(data$oh2) & data$oh2 == "30 dias"
-  data$abstainer <- !is.na(data$oh1) & data$oh1 == "No"
-  data$former_drinker <- !is.na(data$oh1) & data$oh1 == "Si" & !data$current_drinker
-
-  data$oh3_clean <- data$oh3_num
-  data$oh3_clean[!data$current_drinker] <- 0
-
-  data$prom_tragos <- NA_real_
-  data$prom_tragos[!data$current_drinker | data$abstainer] <- 0
-  data$prom_tragos[data$audit2 == "0-2"] <- 1
-  data$prom_tragos[data$audit2 == "3-4"] <- 3.5
-  data$prom_tragos[data$audit2 == "5-6"] <- 5.5
-  data$prom_tragos[data$audit2 == "7-8"] <- 7.5
-  data$prom_tragos[data$audit2 == "9 o mas"] <- 9
-
-  data$diasalchab <- pmax(data$oh3_clean - data$db_num, 0)
-  data$volalchab <- data$diasalchab * data$prom_tragos
-  data$volbinge <- ifelse(data$sexo == "Hombre", data$db_num * 5, data$db_num * 4)
-  data$voltotMS <- (data$volbinge + data$volalchab) * 15.7
-  data$voltotMINSAL <- data$voltotMS / 30
-  data$volCHMS <- data$voltotMINSAL * 365
-
+  data$volajohdia <- v
+  data$cvolaj <- cvolaj
+  data$abs <- as.integer(cvolaj == "ltabs")
+  data$form <- as.integer(cvolaj == "fd")
+  data$hed <- ifelse((v > 0) %in% TRUE, as.integer(db > 0), NA_integer_)
+  data$consumption <- ifelse((v > 0) %in% TRUE, v, NA_real_)
   data$analysis_weight <- ifelse(is.finite(data$weight) & data$weight > 0, data$weight, data$exp)
-
-  pc_by_year <- tapply(seq_len(nrow(data)), data$year, function(idx) {
-    d <- data[idx, , drop = FALSE]
-    ok <- is.finite(d$volCHMS) & is.finite(d$analysis_weight) &
-      d$analysis_weight > 0 & d$oh3_clean <= 30
-    if (!any(ok)) {
-      return(NA_real_)
-    }
-    sum(d$volCHMS[ok] * d$analysis_weight[ok]) / sum(d$analysis_weight[ok])
-  })
-
-  data$pc_totalvolCHMS <- as.numeric(pc_by_year[as.character(data$year)])
-  data$volajms <- data$volCHMS * conversion(7.9, data$pc_totalvolCHMS)
-  data$volajohdiams <- data$volajms / 365
-
-  data$cvolajms <- NA_character_
-  data$cvolajms[data$abstainer] <- "ltabs"
-  data$cvolajms[data$former_drinker] <- "fd"
-
-  female <- data$sexo == "Mujer"
-  male <- data$sexo == "Hombre"
-  v <- data$volajohdiams
-
-  data$cvolajms[female & v > 0 & v <= 19.99] <- "cat1"
-  data$cvolajms[female & v >= 20 & v <= 39.99] <- "cat2"
-  data$cvolajms[female & v >= 40 & v <= 100] <- "cat3"
-  data$cvolajms[female & v > 100] <- "cat4"
-  data$cvolajms[male & v > 0 & v <= 39.99] <- "cat1"
-  data$cvolajms[male & v >= 40 & v <= 59.99] <- "cat2"
-  data$cvolajms[male & v >= 60 & v <= 100] <- "cat3"
-  data$cvolajms[male & v > 100] <- "cat4"
-
-  data$abs <- as.integer(data$cvolajms == "ltabs")
-  data$form <- as.integer(data$cvolajms == "fd")
-  data$hed <- ifelse(data$current_drinker & !is.na(data$db_num), as.integer(data$db_num > 0), NA_integer_)
-  data$consumption <- data$volajohdiams
 
   data$age_group <- make_age_group(as.numeric(data$edad))
   data$age_group_label <- age_group_label(data$age_group)
@@ -503,8 +485,17 @@ if ("region.y" %in% names(analysis_data)) {
 
 join_audit <- audit_join(analysis_data)
 
-message("Deriving alcohol variables and age/sex tramos.")
-analysis_data <- derive_alcohol_variables(analysis_data)
+message("Deriving alcohol variables and age/sex tramos (mirror of expand_pif.ipynb, enpg-consolidate).")
+oms_factor_path <- file.path(control_dir, "oms_factor_by_year.csv")
+if (!file.exists(oms_factor_path)) stop("Missing ", oms_factor_path, ": run expand_pif.ipynb (enpg-consolidate) first.", call. = FALSE)
+analysis_data <- derive_alcohol_variables(analysis_data, utils::read.csv(oms_factor_path))
+# Self-check: the four populations are the ones expand_pif uses.
+stopifnot(identical(!is.na(analysis_data$abs), !is.na(analysis_data$cvolaj)),
+          all(analysis_data$cvolaj[analysis_data$abs %in% 1] == "ltabs"),
+          identical(!is.na(analysis_data$consumption), !is.na(analysis_data$hed)),
+          all(analysis_data$cvolaj[!is.na(analysis_data$consumption)] %in% paste0("cat", 1:4)))
+message("Status counts (cvolaj): ", paste(names(table(analysis_data$cvolaj, useNA = "ifany")),
+        table(analysis_data$cvolaj, useNA = "ifany"), sep = "=", collapse = ", "))
 
 variable_specs <- data.frame(
   variable = c("abs", "form", "hed", "consumption"),
@@ -520,10 +511,10 @@ design_table_cells <- add_engine_fallback(cell_factors_strict)
 # Keep the compact variable names used by the engine, but add the exact source
 # variable/expression from the exposure-preparation chunk for auditability.
 variable_source_from_chunk <- c(
-  abs = "cvolajms == \"ltabs\"",
-  form = "cvolajms == \"fd\"",
-  hed = "hed; derived as db > 0",
-  consumption = "volajohdiams"
+  abs = "cvolaj == \"ltabs\" among known status (cur_na in the denominator)",
+  form = "cvolaj == \"fd\" among known status (cur_na in the denominator)",
+  hed = "db > 0 among volajohdia > 0",
+  consumption = "volajohdia among volajohdia > 0 (12 g, WHO-anchored)"
 )
 design_table_cells$variable_source_from_chunk <- unname(
   variable_source_from_chunk[design_table_cells$variable]

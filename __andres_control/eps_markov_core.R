@@ -47,9 +47,10 @@ ep_age <- function(a) factor(as.character(cut(a, c(18, 30, 45, 60, 66), right = 
 ep_key <- function(d, v) if (length(v)) do.call(paste, c(lapply(d[v], as.character), sep = "|")) else rep("All", nrow(d))
 ep_cat <- function(current, g, sex) {
   lo <- ifelse(sex == "Women", 20, 40); hi <- ifelse(sex == "Women", 40, 60)
+  top <- ifelse(sex == "Women", 60, 100)   # C3/C4 boundary (included in C3): women 60 g/day, men 100 g/day
   ans <- rep(NA_character_, length(g)); ok <- current %in% 1 & is.finite(g) & g > 0
   ans[ok & g < lo] <- "C1"; ans[ok & g >= lo & g < hi] <- "C2"
-  ans[ok & g >= hi & g <= 100] <- "C3"; ans[ok & g > 100] <- "C4"
+  ans[ok & g >= hi & g <= top] <- "C3"; ans[ok & g > top] <- "C4"
   ans
 }
 ep_qsignal <- function(d) {
@@ -376,7 +377,7 @@ ep_prob <- function(o, d) {
     if (o$kind %in% c("ordinal", "nonpo")) pa <- ep_class_prob(o$amount, d)
     else {
       a <- o$amount; eta <- as.numeric(ep_x(d, a$formula, a$columns) %*% a$coef)
-      cuts <- cbind(ifelse(d$sex == "Women", 20, 40), ifelse(d$sex == "Women", 40, 60), 100)
+      cuts <- cbind(ifelse(d$sex == "Women", 20, 40), ifelse(d$sex == "Women", 40, 60), ifelse(d$sex == "Women", 60, 100))
       F <- if (o$kind == "gamma") stats::pgamma(cuts, shape = a$shape, scale = exp(eta) / a$shape) else
         stats::pnorm((log(cuts) - eta) / a$sigma)
       pa <- cbind(F[, 1], F[, 2] - F[, 1], F[, 3] - F[, 2], 1 - F[, 3])

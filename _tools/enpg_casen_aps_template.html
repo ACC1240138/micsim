@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ENPG, CASEN y contacto con APS · explicado</title>
+<style>
+:root{color-scheme:light;--ink:#15313b;--muted:#48606a;--paper:#f4f4ec;--card:#fff;--green:#176854;--line:#d4dfd9;--amber:#fff0ca}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}header,main,footer{max-width:1120px;margin:auto;padding:36px 28px}header{padding-top:64px}h1{font-size:clamp(32px,5vw,56px);line-height:1.12;letter-spacing:-.035em;max-width:900px;margin:14px 0 24px}h2{font-size:29px;line-height:1.2;margin:0 0 20px}h3{font-size:20px;margin:20px 0 8px}p{max-width:88ch}a{color:var(--green)}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:13px;font-weight:700}.lead{font-size:21px;max-width:790px}.muted{color:var(--muted)}nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px}section{background:var(--card);padding:32px;margin-bottom:26px;border-radius:16px;border:1px solid var(--line)}.step{color:var(--green);font-size:14px;font-weight:700;letter-spacing:.07em}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.box{background:#edf4f0;border-radius:10px;padding:22px}.warn{background:var(--amber);border-left:4px solid #c39230;padding:18px 22px;margin:20px 0}.metric{font-size:36px;font-weight:650;line-height:1.2}.controls{display:flex;gap:18px;align-items:end;flex-wrap:wrap;margin:24px 0}label{display:block;font-size:14px;font-weight:600}select,button{font:inherit;color:var(--ink);background:white;border:1px solid #7a9590;border-radius:7px;padding:9px 12px;max-width:100%}button{cursor:pointer;background:var(--green);color:white;border:0}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #da7c28;outline-offset:3px}.scroll{overflow:auto}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:15px}th{text-align:left;color:var(--muted);font-size:13px}th,td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:top}td.num{text-align:right;white-space:nowrap}caption{text-align:left;font-weight:600;padding:12px 0}.bar{height:14px;display:flex;min-width:120px;border-radius:4px;overflow:hidden}.basic{background:#416b83}.secondary{background:#a0bcb7}.tertiary{background:#dbac51}.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:14px}.dot{display:inline-block;width:12px;height:12px;margin-right:6px}code{font-size:.88em;background:#eef1ed;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}details{margin:18px 0}summary{cursor:pointer;font-weight:600}.small{font-size:14px}.flow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.flow span{padding:12px 16px;background:#edf4f0;border-radius:8px}footer{padding-bottom:60px;font-size:14px}.note{border-top:1px solid var(--line);padding-top:16px}#status{min-height:1.5em}@media(max-width:700px){header,main,footer{padding:24px 16px}header{padding-top:40px}section{padding:22px 18px}.grid{grid-template-columns:1fr}h2{font-size:25px}table{font-size:14px}th,td{padding:9px 7px}}
+</style></head>
+<body>
+<header><div class="eyebrow">Fondecyt 1240138 · Insumos para el microsimulador · Octubre 2026</div>
+<h1>¿A quién representa la ENPG<br>y qué cambia al ajustarla?</h1>
+<p class="lead">Hay dos preguntas distintas: cuánto cambia la estimación al dar más peso a grupos poco representados, y si las personas rurales beben distinto de las urbanas aun siendo comparables.</p>
+<div class="grid"><div class="box"><strong>1. CASEN: cambiar la mezcla de personas</strong><p>Podemos calcular cuánto cambia el resultado. Abajo verás el antes y el después.</p></div><div class="box"><strong>2. EPS: explorar diferencias rurales</strong><p>Hay indicios de diferencias, pero todavía no una corrección rural validada para ENPG.</p></div></div>
+<p class="small muted">Primero: nunca bebieron, consumo del último mes, categorías WHO y HED. ENPG 2012–2024; la referencia rural EPS que se muestra es de 2023–2024. Educación y contacto con salud están al final.</p>
+<nav aria-label="Secciones"><a href="#rural-prelim">1. Cambios con CASEN</a><a href="#eps">2. Indicios de EPS</a><a href="#educacion">Insumo educativo</a><a href="#aps">Contacto con salud</a><a href="#ajuste">Detalle de los pesos</a></nav></header>
+<main>
+<section id="rural-prelim"><div class="step">1 · CAMBIAR QUIÉN PESA MÁS EN LA ENPG</div>
+<h2>¿Cuánto cambia el resultado al representar la composición nacional?</h2>
+<p>CASEN nos dice cuántas personas hay de cada sexo, edad y nivel educativo. Usamos esa información para cambiar cuánto cuenta cada entrevistado de la ENPG. <strong>Sus respuestas de consumo siguen siendo las mismas.</strong></p>
+<p>Elige un grupo. La tabla muestra cuántas personas de cada 100 cumplen cada condición, antes y después del ajuste.</p>
+<div class="controls">
+<label>Año<br><select id="ruralYear"></select></label>
+<label>Sexo<br><select id="ruralSex"><option value="0">Ambos</option><option value="1">Hombres</option><option value="2">Mujeres</option></select></label>
+<label>Edad<br><select id="ruralAge"><option value="All">15–65, total</option><option>15-29</option><option>30-44</option><option>45-59</option><option>60-65</option></select></label>
+</div>
+<div class="scroll"><table><caption id="overviewTitle"></caption><thead><tr><th>De cada 100 personas…</th><th>ENPG original</th><th>Con pesos CASEN</th><th>Cambio</th><th>n con respuesta</th></tr></thead><tbody id="indicatorOverview"></tbody></table></div>
+<p class="small">Los renglones no se suman: HED puede ocurrir en distintas categorías WHO. Quienes bebieron alguna vez, pero no el último mes, no están entre “nunca bebieron” ni entre “bebieron el último mes”. Cada indicador excluye sus respuestas desconocidas; por eso puede cambiar el n.</p>
+<div class="controls"><label>Explícame este resultado<br><select id="ruralOutcome"><option value="lifetime">Nunca bebieron · lifetime abstainer</option><option value="current">Bebieron en los últimos 30 días</option><option value="C1">WHO C1 · menor volumen diario</option><option value="C2">WHO C2 · volumen intermedio</option><option value="C3plus">WHO C3+ · mayor volumen diario</option><option value="hed">HED · consumo intenso en una ocasión</option><option value="NC">Sin consumo en 30 días · incluye exbebedores</option><option value="grams">Gramos diarios por persona</option></select></label></div>
+<div id="ruralSummary" aria-live="polite"></div>
+<p id="measureMeaning"></p>
+<details><summary>Ver en qué grupos de edad y sexo cambia más este indicador</summary>
+<div class="scroll"><table><caption id="rankingTitle"></caption><thead><tr><th>Grupo</th><th>ENPG original</th><th>Con pesos CASEN</th><th>Cambio</th></tr></thead><tbody id="groupChanges"></tbody></table></div>
+<p class="small">Ordenados por tamaño del cambio. Bajar después del ajuste significa que la estimación original era mayor que la ajustada; subir significa lo contrario. La tabla no mide por sí sola sesgo rural.</p>
+</details>
+<p class="warn"><strong>Un aumento después del ajuste no prueba que la ENPG subestimara el consumo real.</strong> Dice cuánto cambia la estimación al modificar la composición. El cálculo supone que las personas de igual sexo, edad y educación tienen un consumo comparable dentro y fuera del marco ENPG.</p>
+<details><summary>Ver qué parte del cambio se relaciona con la composición rural</summary>
+<p>Este cálculo usa solo educación conocida. Conserva el consumo ENPG de cada grupo de sexo, edad y educación y compara dos mezclas: la urbana de CASEN y la nacional, que incluye lo rural. Así aísla un cambio de composición. <strong>No incorpora una diferencia de consumo rural dentro del mismo grupo.</strong></p>
+<div class="scroll"><table><thead><tr><th>Mezcla de población</th><th>Estimación</th></tr></thead><tbody id="ruralTargets"></tbody></table></div>
+<p id="ruralComponent" class="box"></p><p id="ruralSupport" class="small muted"></p><p id="ruralSource" class="small muted"></p>
+<p class="small">Aquí cada grupo con respuesta válida se lleva a su meta CASEN. El cálculo principal de arriba aplica directamente los pesos ya entregados y conserva a quienes tienen educación desconocida. Por esos tratamientos distintos de los faltantes, las cifras de ambas comparaciones pueden diferir.</p>
+<h3>Cómo aporta cada nivel educativo</h3>
+<p>Con sexo, edad y educación fijos, este ajuste no cambia el promedio del grupo. Lo que cambia es cuántas personas de ese grupo representa. Los aportes siguientes explican el cambio urbano–nacional; no miden un efecto rural dentro de cada nivel educativo.</p>
+<div class="controls"><label>Educación<br><select id="ruralEdu"><option value="All">Tres niveles</option><option value="1">Básica o menos</option><option value="2">Media</option><option value="3">Superior</option></select></label></div>
+<p id="ruralEduNote" class="small"></p>
+<div class="scroll"><table><thead><tr><th>Educación</th><th>n / tamaño efectivo</th><th>Casos</th><th>Resultado del grupo</th><th>% en mezcla urbana / nacional</th><th>Aporte al cambio</th><th>Datos suficientes para el filtro</th></tr></thead><tbody id="ruralEducation"></tbody></table></div>
+<p class="small muted">Filtro orientativo: n ≥60, tamaño efectivo de Kish ≥30, ≥5 casos y ≥5 no casos en porcentajes, y ≤10% de peso con resultado desconocido. Kish resume la desigualdad de los pesos; no incorpora agrupación muestral. Superar el filtro no garantiza precisión. No hay intervalos conjuntos ENPG–CASEN en este cálculo preliminar.</p>
+</details>
+<details><summary>Qué significan las categorías WHO y cómo se calcula HED</summary>
+<p><strong>WHO clasifica el volumen diario promedio.</strong> Mujeres: C1 hasta 20 g/día, C2 más de 20 hasta 40, C3+ más de 40. Hombres: C1 hasta 40, C2 más de 40 hasta 60, C3+ más de 60. C1 requiere consumo positivo y no significa consumo seguro. Se usa la regla vigente del proyecto y los cortes de <a href="https://www.who.int/docs/default-source/substance-use/who-msd-msb-00-4.pdf">WHO 2000, tabla 2.2.2</a>.</p>
+<p><strong>HED describe una ocasión de consumo intenso:</strong> al menos 5 tragos en hombres o 4 en mujeres, alguna vez en los últimos 30 días, según la definición usada por el proyecto. Puede coexistir con cualquiera de las categorías de volumen. Se mantiene esta definición del proyecto separada de la clasificación WHO por volumen diario.</p>
+<label>Volumen usado para las categorías<br><select id="ruralScale"><option value="anchored">Corregido con referencia de consumo nacional</option><option value="reported">Calculado solo desde las respuestas · 12 g/trago</option></select></label>
+<p class="small">La corrección usa el factor anual existente del proyecto, fijo antes y después del ajuste CASEN. Solo cambia las categorías WHO y los gramos; no cambia nunca bebieron, consumo del mes ni HED. Factores de junio de 2026; 2024 usa la referencia de consumo nacional de 2023. Una persona con consumo actual y volumen desconocido queda sin categoría.</p>
+</details>
+<details><summary>Figuras y comprobaciones del ajuste</summary>
+<p>El love plot muestra si sexo, edad y educación quedan alineados con CASEN. Llegar a cero comprueba ese balance; no demuestra que desaparezcan las diferencias rurales de consumo.</p>
+<figure style="margin:0"><img src="data:image/png;base64,__FIG_loveplot_composition__" alt="Balance de sexo, edad y educación antes y después en los siete años" style="width:100%;height:auto"></figure>
+<figure style="margin:0"><img src="data:image/png;base64,__FIG_rural_composition_heatmap__" alt="Cambio por composición rural de la categoría WHO C3+ por sexo, edad y año" style="width:100%;height:auto"><figcaption class="small">Valores positivos: la mezcla urbana da un valor mayor que la nacional. Valores negativos: da un valor menor. Son cambios de composición, no diferencias rurales observadas.</figcaption></figure>
+</details>
+<div class="controls"><button id="downloadIndicators">Descargar comparación principal · siete años</button><button id="downloadRural">Descargar cálculo rural de composición</button><button id="downloadRuralEdu">Descargar aportes educativos</button></div>
+</section>
+
+<section id="eps"><div class="step">2 · PREGUNTAR SI SE BEBE DISTINTO EN LO RURAL</div>
+<h2>¿Qué sugiere la EPS sobre las personas que ENPG deja fuera?</h2>
+<p>Esta es otra pregunta. Aunque dos grupos tengan igual sexo, edad y educación, podrían beber distinto según dónde viven. La EPS permite explorar esa posibilidad, pero aquí la ruralidad se <strong>aproximó a partir del área de muestreo</strong>: no tenemos residencia rural individual confirmada.</p>
+<div class="grid"><div class="box"><h3>Consumo actual</h3><p>Los modelos anteriores apuntan a menos personas que beben en áreas más rurales. La señal más consistente por educación aparece en mujeres con educación superior; también en mujeres con educación media para consumo actual.</p><p><strong>Si se confirmara y fuera aplicable a ENPG, excluirlas podría elevar la estimación de consumo.</strong></p></div>
+<div class="box"><h3>HED</h3><p>Los modelos apuntan a más HED en hombres con educación básica o media de áreas más rurales. Para ruralidad, sus intervalos también admiten ausencia de diferencia o la dirección contraria.</p><p><strong>Es una posibilidad de subestimación, todavía incierta.</strong></p></div></div>
+<p class="warn">Estos son modelos históricos de EPS VIII (2023–2024), no reestimados en esta revisión. Sus resultados no se suman al cambio CASEN ni se usan como un porcentaje de corrección automático de ENPG.</p>
+<div class="scroll"><table><caption>Qué tenemos para los cuatro indicadores que pediste</caption><thead><tr><th>Indicador</th><th>Qué permite decir esta referencia EPS</th></tr></thead><tbody>
+<tr><td>Nunca bebieron</td><td>Sin una estimación rural específica en las tablas históricas usadas aquí.</td></tr>
+<tr><td>Bebieron en los últimos 30 días</td><td>Existe “consumo actual” EPS. Su pregunta debe armonizarse antes de tratarlo como equivalente al último mes ENPG.</td></tr>
+<tr><td>Categorías WHO actuales</td><td>Las tablas históricas no las estiman con la clasificación vigente. No se reutiliza el antiguo indicador “Risky” como si fueran estas categorías.</td></tr>
+<tr><td>HED</td><td>Existe una comparación contextual 5+/4+, con incertidumbre amplia.</td></tr>
+</tbody></table></div>
+<h3>Ver la señal por sexo y educación</h3>
+<p>La comparación del modelo es entre un área 100% rural y otra 100% urbana, con control por región. <strong>Se estimó por sexo y educación, suponiendo la misma diferencia para las edades.</strong> Por eso no la etiquetamos como un efecto específico de 30–44 años.</p>
+<div class="controls"><label>Sexo EPS<br><select id="epsSex"><option value="Women">Mujeres</option><option value="Men">Hombres</option></select></label><label>Educación EPS<br><select id="epsEdu"><option value="Tert">Superior</option><option value="Sec">Media</option><option value="Prim">Básica o menos</option></select></label></div>
+<div class="scroll"><table><thead><tr><th>Indicador EPS</th><th>Diferencia entre áreas del modelo: rural − urbana</th><th>IC 95% del modelo</th><th>Lectura</th></tr></thead><tbody id="epsGroups"></tbody></table></div>
+<p id="epsInterpretation" class="box"></p>
+<details><summary>Ver muestra por edad y resultados nacionales anteriores</summary>
+<p>Estos n pertenecen a la tabla histórica de 18–65 años; no son tamaños efectivos ni aseguran precisión del modelo. El primer tramo EPS empieza a los 18, mientras ENPG empieza a los 15.</p>
+<div class="scroll"><table><thead><tr><th>Edad EPS</th><th>n de la tabla histórica</th></tr></thead><tbody id="epsAgeN"></tbody></table></div>
+<div class="scroll"><table><thead><tr><th>Indicador</th><th>Razón rural/urbana</th><th>IC 95%</th></tr></thead><tbody id="rural"></tbody></table></div>
+<p class="small">Una razón 0,67 describe un valor 33% menor en el contraste entre áreas del modelo, no 33 puntos porcentuales menos ni una sobreestimación ENPG de 33%. Los intervalos nacionales de consumo actual y HED incluyen ausencia de diferencia.</p>
+</details>
+<details><summary>Por qué la asignación de ruralidad requiere cautela</summary>
+<p>El script propone comunas usando tamaño del área, sexo, edad, región laboral y respuesta de atención en posta rural. La comuna propuesta no es residencia confirmada. La etiqueta de confianza del script tampoco es una probabilidad calibrada. La mezcla de personas rurales y urbanas dentro de un área dificulta atribuir las diferencias a ruralidad individual.</p><p id="epsAudit"></p>
+<p>El original se preservó; se ejecutó una copia compatible. Las asociaciones de consumo se leen de los resultados anteriores. No se atribuye su incertidumbre solo al tamaño de la muestra: también importa si la aproximación geográfica y las preguntas de consumo son válidas.</p>
+</details>
+<details><summary>Qué aporta Yang, Kim y Song (2020)</summary>
+<p>Su trabajo combina información de dos muestras mediante modelos de participación y de consumo. Sirve como referencia para estudiar una extensión. <strong>No hemos implementado ese estimador aquí.</strong> Hacen falta supuestos sobre cómo representa una muestra a la población que falta; dos modelos no crean observaciones rurales que la ENPG no tiene. El <a href="enpg_casen_aps.ipynb">notebook</a> explica los requisitos y cita el <a href="https://doi.org/10.1111/rssb.12354">artículo</a>.</p>
+</details>
+<p><strong>Conclusión práctica:</strong> CASEN permite calcular el cambio por composición. EPS aporta indicios sobre diferencias rurales de consumo. Todavía no tenemos una cifra validada del sesgo rural total de ENPG.</p>
+</section>
+
+<section id="educacion"><div class="step">INSUMO COMPLEMENTARIO · EDUCACIÓN</div><h2>La tabla que convierte la regla en un insumo</h2>
+<p>Tres niveles según el nivel completado: básica o menos, media y superior. Se reconstruyeron las seis rondas CASEN con los factores actualizados de 2013 y 2015. Las tablas antiguas del repositorio se conservaron y se compararon con esta nueva ejecución.</p>
+<p id="oldtargets" class="warn"></p>
+<div class="controls"><label>Sexo<br><select id="sex"><option value="1">Hombres</option><option value="2">Mujeres</option></select></label><label>Detalle<br><select id="ageMode"><option value="groups">Tramos para los pesos</option><option value="single">Edad simple para inicialización</option></select></label><button id="downloadEdu">Descargar tabla completa</button></div>
+<p id="source" class="small muted"></p>
+<div class="legend"><span><i class="dot basic"></i>Básica o menos</span><span><i class="dot secondary"></i>Media</span><span><i class="dot tertiary"></i>Superior</span></div>
+<div class="scroll"><table><thead><tr><th>Edad</th><th>Básica o menos</th><th>Media</th><th>Superior</th><th>Distribución</th></tr></thead><tbody id="education"></tbody></table></div>
+<p class="small muted">Las proporciones suman 100% antes del redondeo. Edad simple: promedio de la edad y sus vecinas disponibles; dos edades en los extremos 15 y 65. Es un perfil transversal, no una tasa observada de progreso educativo.</p>
+<details><summary>Ver validación e interpolación</summary><div class="scroll"><table><thead><tr><th>CASEN</th><th>Personas 15–65</th><th>Acuerdo con clasificación ministerial</th><th>Sin educación</th></tr></thead><tbody id="validation"></tbody></table></div>
+<p>2012 usa 2013; 2014 combina 2013 y 2015 por mitades; 2016 combina 2015 y 2017 por mitades; 2018 usa dos tercios de 2017 y un tercio de 2020. 2020, 2022 y 2024 usan CASEN del mismo año.</p>
+<p>La concordancia comprueba la recodificación. No verifica el supuesto de igualdad de consumo rural–urbano. CASEN 2020 fue telefónica; interpolar tampoco elimina cambios de cuestionario o modo.</p></details>
+</section>
+
+<section id="aps"><div class="step">INSUMO COMPLEMENTARIO · CONTACTO CON SALUD</div><h2>Quién vive en cada comuna y quién declara atención</h2>
+<div class="grid"><div class="box"><h3>Población de la comuna</h3><p>INE informa la composición por sexo y edad, incluyendo áreas urbanas y rurales. Se entregan 346 comunas para 2012–2024.</p><p><strong>15–64 años.</strong> La fuente comunal agrupa edades de cinco en cinco. No permite aislar los 65 años.</p></div>
+<div class="box"><h3>Contacto sanitario en seis rondas</h3><p>Se procesaron CASEN 2013, 2015, 2017, 2020, 2022 y 2024. Cambian las preguntas y los períodos: la tabla inferior permite ver cada medición por separado.</p><p><strong>APS se aproxima en 2013–2017.</strong> En 2022/2024 solo se distingue público/privado. En 2020 falta la pregunta comparable.</p></div></div>
+<div class="warn">Una consulta en el sistema público puede ocurrir en distintos niveles de atención. Afiliación a FONASA, uso del sistema público y contacto con APS son medidas diferentes.</div>
+<div class="controls"><label>Año ENPG<br><select id="contactYear" aria-label="Año del insumo de contacto"></select></label><label>Comuna<br><select id="commune" aria-label="Comuna"></select></label><button id="downloadContact">Descargar insumo de contacto</button></div>
+<p id="contactMethod" class="warn" role="status"></p><div class="scroll"><table><caption id="communeTitle"></caption><thead><tr><th>Grupo</th><th>% de habitantes de 15–64 de la comuna</th><th>Contacto público general · fuente comunal</th><th>n válido en fuentes</th><th>Escenario regional</th></tr></thead><tbody id="contact"></tbody></table></div>
+<p class="small muted">Contacto: al menos una consulta general en tres meses cuya última atención declarada fue pública, entre personas con respuesta válida. La columna comunal usa CASEN y factor <code>expc</code>: medición directa en 2022/2024, proxy de 2013 para 2012 e interpolación en los demás años. El n corresponde a las rondas fuente, no a una muestra inventada del año interpolado. “Escenario regional” aplica a la comuna la tasa regional del mismo sexo y edad; supone igualdad dentro de la región y no mide una diferencia comunal.</p>
+<p class="small muted">La composición usa la serie comunal INE existente, basada en Censo 2017. No es una nueva proyección comunal basada en Censo 2024. Las tablas educativas y los pesos ENPG usan 15–65; no deben cruzarse sin resolver esa diferencia de edad.</p>
+<details><summary>Cómo se advierte una celda imprecisa</summary><p>Se exige n válido ≥60, tamaño efectivo de Kish ≥30, al menos cinco casos y cinco no casos, dos UPM, CV ≤30% y hasta 10% de peso con respuesta faltante. Es un filtro exploratorio de este trabajo. Superarlo no basta para aprobar la estimación comunal para el motor.</p><p>Las tablas por ronda entregan error estándar e intervalos calculados con estratos y UPM oficiales. No se atribuyen esos intervalos a las interpolaciones: falta modelar el error temporal. En proporciones cero o uno no se fuerza un intervalo logit. Una celda no observada se mantiene ausente; no se rellena como cero. En 2015 solo 139 comunas tienen factor comunal oficial: las demás no reciben una estimación directa, aunque sí conservan el escenario regional. Los factores comunales históricos y los regionales actualizados tienen distintas bases censales.</p></details>
+<h3>Qué se observó realmente en cada CASEN</h3>
+<p>La consulta general pública mantiene un período de tres meses. Los controles pasan de tres a doce meses entre cuestionarios; se muestran como indicadores diferentes. La aproximación APS reúne consulta general o control cuyo último establecimiento fue consultorio o posta rural.</p>
+<div class="controls"><label>Ronda CASEN<br><select id="casenRound" aria-label="Ronda CASEN observada"></select></label><label>Indicador disponible<br><select id="healthMetric" aria-label="Indicador de salud observado"></select></label><button id="downloadHealth">Descargar mediciones nacionales</button></div>
+<p id="roundNote" class="small muted"></p>
+<div class="scroll"><table><thead><tr><th>Grupo</th><th id="healthHeading">Estimación nacional observada</th><th>IC 95%</th></tr></thead><tbody id="historicalAps"></tbody></table></div>
+<div class="warn">En 2020 solo se puede medir aquí consulta por enfermedad o accidente, de cualquier sector. No sustituye consulta general pública ni APS. Para alinear contacto público con ENPG 2018/2020 se ofrece una interpolación 2017–2022 que cruza la pandemia: es un escenario, no evidencia de cómo evolucionó el contacto en esos años.</div>
+<p class="small muted">Los resultados observados por región y comuna también están en el CSV de estimaciones por ronda. El insumo alineado contiene un escenario APS regional solo para 2012/2014/2016; en 2018–2024 APS queda sin estimar. Contacto público y contacto APS no se intercambian.</p>
+<div class="flow" aria-label="Etapas del programa"><span>Contacto</span>→<span>Tamizaje</span>→<span>Intervención recibida</span>→<span>Cambio de consumo</span></div>
+<p>CASEN informa la primera etapa de manera parcial. Las otras requieren coberturas y efectos específicos del programa DIR.</p>
+</section>
+
+<section id="ajuste"><div class="step">DETALLE OPCIONAL · PESOS</div><h2>Dos ajustes que responden preguntas distintas</h2>
+<div class="grid"><div class="box"><h3>Educación dentro de cada sexo y edad</h3><p>Cambia cuánto pesa cada nivel educativo. Mantiene el total original de hombres y mujeres de cada tramo en la ENPG.</p><code>peso_educ = peso × factor educativo</code></div>
+<div class="box"><h3>Composición nacional completa</h3><p>Añade un factor para que la distribución por sexo y edad también corresponda a CASEN. Mantiene el total de pesos de cada ola ENPG.</p><code>peso_nacional = peso_educ × factor sexo–edad</code></div></div>
+<p>La persona conserva sus respuestas de consumo. Lo que cambia es su contribución al promedio. El ajuste requiere que, dentro de sexo, edad y educación, las personas cubiertas por la ENPG representen también el consumo de quienes quedan fuera.</p>
+<div class="warn"><strong>No demuestra que desaparezca todo el sesgo.</strong> No corrige automáticamente subdeclaración, no respuesta dependiente del consumo ni diferencias rurales que persistan dentro de esos grupos.</div>
+<div class="controls"><label>Año ENPG<br><select id="year" aria-label="Año ENPG"></select></label></div>
+<div class="scroll"><table><caption>Consumo de alcohol: antes y después, población de 15–65 años</caption><thead><tr><th>Indicador</th><th>ENPG original</th><th>Solo educación</th><th>Sexo, edad y educación</th><th>Cambio total</th></tr></thead><tbody id="consumption"></tbody></table></div>
+<p class="small muted">Porcentaje entre respuestas válidas. Cambios en puntos porcentuales. Estas diferencias son efectos de la reponderación, no estimaciones observadas del sesgo verdadero. No incluyen intervalos ni propagan la incertidumbre de CASEN.</p>
+<details><summary>Qué hubo que corregir antes de calcular los pesos</summary>
+<ul><li>En 2014 y 2016, las preguntas 12 y 13 son de ingresos. La educación está en las preguntas 9 y 10.</li><li>En 2012–2018 hay columnas diferentes para entrevistado y jefe de hogar. Se usa la del jefe solamente si es la misma persona entrevistada.</li><li>Si no se sabe si terminó un nivel, no se lo trata automáticamente como incompleto.</li><li>El porcentaje educativo ENPG se calcula entre quienes tienen educación conocida. Así, mantener el peso de los desconocidos no aumenta artificialmente el total.</li></ul>
+<p id="missing"></p><p>En el ajuste nacional, los desconocidos reciben solo el factor de sexo–edad. Su educación no se imputa.</p></details>
+</section>
+
+<section id="entrega"><div class="step">06 · CÓMO SE USA</div><h2>Un insumo para calibrar y otro para explorar contacto</h2>
+<ol><li><strong>Consumo:</strong> unir los nuevos pesos por año e identificador original de la ENPG. Elegir <code>peso_educ</code> o <code>peso_nacional</code>, verificar la unión y recalcular las metas del motor.</li><li><strong>Educación de la población sintética:</strong> usar las probabilidades por edad simple para inicialización. La progresión educativa requiere supuestos adicionales; no sale identificada de estas fotografías.</li><li><strong>Comuna:</strong> usar los porcentajes INE con el denominador correcto. La tabla de contacto conserva los siete años, sus fuentes y las columnas observadas y de escenario por separado. Revise el año y la definición antes de usar una probabilidad.</li><li><strong>APS actual:</strong> conseguir una fuente que identifique APS y personas únicas. Los recuentos de consultas no equivalen a personas ni a probabilidades anuales de contacto.</li></ol>
+<p>Notebook reproducible: <a href="enpg_casen_aps.ipynb">enpg_casen_aps.ipynb</a>. Código: <a href="enpg_casen_aps.R">enpg_casen_aps.R</a>. Los CSV y bundles cifrados están en <code>enpg_casen_aps_outputs/</code>. La página contiene sus tablas y funciona sin conexión.</p>
+<details><summary>Fuentes y alcance de la validación</summary><p>Se comprobó armonización por ola, integridad de los bundles, claves únicas, conservación de totales, cumplimiento de metas, rangos de probabilidades y tamaño de las tablas. Son datos reales, pero no una validación completa de AAF/PIF, del ciclo anual o del efecto causal de DIR.</p>
+<ul><li><a href="https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2015/Metodologia_de_Diseno_Muestral_Casen_2015.pdf">CASEN 2015: factores comunales para 139 dominios</a></li><li><a href="https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2013/Casen2013_Manual_TrabajodeCampo.pdf">CASEN 2013: preguntas y períodos</a></li><li><a href="https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2022/Cuestionario%20Casen%202022.pdf">CASEN 2022: cuestionario</a></li><li><a href="https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen-2024">CASEN 2024 y documentación oficial</a></li><li><a href="https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2024/Nota_uso_bases_de_datos_Casen_2024.pdf">Cruce oficial de la base con provincia y comuna</a></li><li><a href="https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2024/Diseno_Muestral_Casen_2024.pdf">Diseño muestral y ponderador comunal</a></li><li><a href="https://observatorio.ministeriodesarrollosocial.gob.cl/storage/docs/casen/2017/Manual_del_Investigador_Casen_2017.pdf">CASEN 2017: definiciones y períodos de salud</a></li></ul>
+<p>Las versiones de los archivos locales CASEN quedan identificadas por MD5; sus fechas originales de descarga no se verificaron. Las proyecciones INE y los archivos ENPG/EPS son los insumos existentes del proyecto. No se descargó ni modificó SIMAH para este trabajo.</p></details>
+<p class="note">No se modificaron los notebooks anteriores ni el motor. No se realizó commit o push. La reponderación describe qué cambia bajo los supuestos elegidos; no prueba por sí sola representatividad nacional del consumo.</p>
+</section><div id="status" role="status" aria-live="polite"></div>
+</main><footer>Elaboración del proyecto FONDECYT 1240138. Porcentajes redondeados para lectura; los CSV mantienen precisión. Esta página contiene solo resultados agregados.</footer>
+<script>
+const D=__DATA__;
+const $=id=>document.getElementById(id);
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pct=x=>x===null||!Number.isFinite(x)?'Sin estimar':(100*x).toLocaleString('es-CL',{minimumFractionDigits:1,maximumFractionDigits:1})+'%';
+const dec=(x,n=2)=>x===null||!Number.isFinite(x)?'—':x.toLocaleString('es-CL',{minimumFractionDigits:n,maximumFractionDigits:n});
+const num=x=>x===null?'—':Math.round(x).toLocaleString('es-CL');
+const row=c=>'<tr>'+c.map((x,i)=>`<td${i?' class="num"':''}>${x}</td>`).join('')+'</tr>';
+for(const y of [...new Set(D.targets.map(r=>r.anio))]) $('year').add(new Option(String(y),String(y)));
+$('year').value='2024';
+for(const y of [...new Set(D.contact.map(r=>r.anio))]) $('contactYear').add(new Option(String(y),String(y)));
+$('contactYear').value='2024';
+for(const y of [...new Set(D.ruralEstimates.map(r=>r.anio))])$('ruralYear').add(new Option(String(y),String(y)));
+$('ruralYear').value='2024';
+const communes=[...new Map(D.contact.map(r=>[r.comuna,r.nombre])).entries()].sort((a,b)=>a[1].localeCompare(b[1],'es'));
+for(const [id,name]of communes)$('commune').add(new Option(name+' · '+id,id));
+$('commune').value='13101';
+function updateEducation(){
+ const year=+$('year').value,sex=+$('sex').value,single=$('ageMode').value==='single';
+ $('consumption').innerHTML=D.consumption.filter(r=>r.anio===year).map(r=>row([r.outcome==='current_30d'?'Últimos 30 días':'Últimos 12 meses',pct(r.p_original),pct(r.p_educ),pct(r.p_nacional),dec(r.change_national_pp)+' pp'])).join('');
+ const a=D.audit.find(r=>r.anio===year);$('missing').textContent=`En ${year}, ${num(a.n_educ_missing)} personas elegibles quedan sin educación clasificable (${dec(a.pct_educ_missing_weighted)}% del peso).`;
+ const data=(single?D.ages:D.targets).filter(r=>r.anio===year&&r.sexo===sex);
+ $('education').innerHTML=data.map(r=>row([esc(single?r.edad:r.ag),pct(r.e1),pct(r.e2),pct(r.e3),`<div class="bar" role="img" aria-label="Básica ${pct(r.e1)}, media ${pct(r.e2)}, superior ${pct(r.e3)}"><span class="basic" style="width:${r.e1*100}%"></span><span class="secondary" style="width:${r.e2*100}%"></span><span class="tertiary" style="width:${r.e3*100}%"></span></div>`])).join('');
+ const source={2012:'CASEN 2013',2014:'50% CASEN 2013 + 50% CASEN 2015',2016:'50% CASEN 2015 + 50% CASEN 2017',2018:'2/3 CASEN 2017 + 1/3 CASEN 2020',2020:'CASEN 2020',2022:'CASEN 2022',2024:'CASEN 2024'};
+ $('source').textContent=`Referencia para ENPG ${year}: ${source[year]}.`;
+}
+const healthNames={public_general_3m:'Consulta general pública · 3 meses',public_control_3m:'Control público · 3 meses',public_control_12m:'Control público · 12 meses',aps_general_or_control_3m:'Consulta general o control en consultorio/posta · 3 meses',illness_consultation_3m:'Consulta por enfermedad/accidente · cualquier sector · 3 meses'};
+const methods={2012:'Proxy: se usa CASEN 2013. No hay una observación CASEN 2012.',2014:'Interpolación: 50% CASEN 2013 + 50% CASEN 2015.',2016:'Interpolación: 50% CASEN 2015 + 50% CASEN 2017.',2018:'Escenario: 80% CASEN 2017 + 20% CASEN 2022. Cruza la pandemia; no mide el contacto observado de 2018.',2020:'Sin observación comparable en CASEN 2020. Escenario: 40% CASEN 2017 + 60% CASEN 2022. No reconstruye el efecto de la pandemia.',2022:'Medición observada en CASEN 2022; el traslado de la tasa regional a una comuna sigue siendo un supuesto.',2024:'Medición observada en CASEN 2024; el traslado de la tasa regional a una comuna sigue siendo un supuesto.'};
+function updateContact(){
+ const year=+$('contactYear').value,code=+$('commune').value,rs=D.contact.filter(r=>r.anio===year&&r.comuna===code).sort((a,b)=>a.sexo-b.sexo||a.ag.localeCompare(b.ag));
+ $('communeTitle').textContent=rs[0].nombre+' · población y contacto en '+year+' · * fuentes superan filtro exploratorio; ⚠ precisión insuficiente';
+ $('contactMethod').textContent=methods[year];
+ $('contact').innerHTML=rs.map(r=>row([(r.sexo===1?'Hombres':'Mujeres')+' '+esc(r.ag),pct(r.p_sexo_edad_en_comuna),pct(r.p_scenario_commune)+(r.p_scenario_commune===null?'':r.source_cells_pass_commune?' *':' ⚠'),num(r.n_source_a_commune)+(r.source_a===r.source_b?'':' / '+num(r.n_source_b_commune)),pct(r.p_scenario_region)+(r.source_cells_pass_region?' *':' ⚠')])).join('');
+}
+function updateHealth(reset=false){
+ const y=+$('casenRound').value;
+ if(reset){$('healthMetric').replaceChildren(); for(const k of Object.keys(healthNames))if(D.availability.some(r=>r.anio_casen===y&&r.outcome===k&&r.available))$('healthMetric').add(new Option(healthNames[k],k));}
+ const metric=$('healthMetric').value;
+ $('roundNote').textContent=`CASEN ${y}: población nacional de 15–64 años, entre respuestas válidas. `+(y===2020?'Consulta motivada por enfermedad o accidente; cualquier sector, no APS ni consulta general pública.':y<=2017?'Se conoce el tipo de establecimiento de la última atención.':'El cuestionario distingue sector público/privado/otro, no APS.');
+ $('healthHeading').textContent=healthNames[metric];
+ $('historicalAps').innerHTML=D.health.filter(r=>r.anio_casen===y&&r.outcome===metric).sort((a,b)=>a.sexo-b.sexo||a.ag.localeCompare(b.ag)).map(r=>row([(r.sexo===1?'Hombres':'Mujeres')+' '+esc(r.ag),pct(r.p),r.lo95===null?'Sin intervalo':pct(r.lo95)+'–'+pct(r.hi95)])).join('');
+}
+const indicatorNames={lifetime:'Nunca bebieron',current:'Bebieron en los últimos 30 días',C1:'WHO C1 · menor volumen',C2:'WHO C2 · volumen intermedio',C3plus:'WHO C3+ · mayor volumen',hed:'HED · consumo intenso en una ocasión',NC:'Sin consumo en los últimos 30 días',grams:'Gramos diarios por persona'};
+const meanings={lifetime:'“Nunca bebieron” exige una respuesta explícita sobre toda la vida. No incluye a quienes bebieron antes y dejaron de hacerlo.',current:'Incluye a quienes declararon consumo en los últimos 30 días, cualquiera sea su cantidad o categoría WHO.',C1:'C1 clasifica un volumen diario positivo: hasta 20 g en mujeres y 40 g en hombres. No significa consumo seguro.',C2:'C2 corresponde a más de 20 y hasta 40 g/día en mujeres; más de 40 y hasta 60 en hombres.',C3plus:'C3+ corresponde a más de 40 g/día en mujeres y más de 60 en hombres. Reúne las dos categorías superiores del proyecto.',hed:'HED cuenta al menos una ocasión con 5+ tragos en hombres o 4+ en mujeres durante el último mes. Puede coexistir con diferentes categorías WHO.',NC:'Incluye tanto a quienes nunca bebieron como a quienes bebieron antes pero no en el último mes. No equivale a “lifetime abstainer”.',grams:'Es el promedio diario por persona del grupo: incluye cero para quienes no bebieron el último mes.'};
+const signed=x=>(x>0?'+':'')+dec(x,2);
+function updateRural(){
+ const year=+$('ruralYear').value,sex=+$('ruralSex').value,ag=$('ruralAge').value,scale=$('ruralScale').value,outcome=$('ruralOutcome').value;
+ const match=r=>r.anio===year&&r.sexo===sex&&r.ag===ag&&r.scale===scale;
+ const all=D.indicators.filter(match),main=all.find(r=>r.outcome===outcome),r=D.ruralEstimates.find(r=>match(r)&&r.outcome===outcome);
+ const grams=outcome==='grams',format=x=>grams?dec(x)+' g/día':dec(100*x,2)+' de cada 100',unit=grams?'g/día':'puntos porcentuales';
+ const group=(sex===0?'Hombres y mujeres':sex===1?'Hombres':'Mujeres')+' de '+(ag==='All'?'15–65':ag)+' años';
+ $('overviewTitle').textContent=group+' · '+year;
+ $('indicatorOverview').innerHTML=['lifetime','current','C1','C2','C3plus','hed'].map(key=>{const v=all.find(r=>r.outcome===key);return row([esc(indicatorNames[key]),dec(100*v.original,2),dec(100*v.national,2),signed(100*v.change)+' pp',num(v.n)]);}).join('');
+ const change=main.change*(grams?1:100),direction=Math.abs(change)<.005?'Casi no cambia':change>0?'Sube con el ajuste':'Baja con el ajuste';
+ $('ruralSummary').innerHTML=`<div class="box"><strong>${esc(indicatorNames[outcome])} · ${esc(group)} · ${year}</strong><p>ENPG original: <strong>${format(main.original)}</strong>.<br>Con pesos CASEN: <strong>${format(main.national)}</strong>.</p><div class="metric">${direction}: ${signed(change)} ${grams?'g/día':'pp'}</div><p>Es un cambio de composición. No sabemos todavía si esta diferencia equivale al sesgo real de ENPG.</p></div>`;
+ $('measureMeaning').textContent=meanings[outcome];
+ $('rankingTitle').textContent=indicatorNames[outcome]+' · '+year+' · los ocho grupos, independientemente del grupo seleccionado arriba';
+ $('groupChanges').innerHTML=D.indicators.filter(v=>v.anio===year&&v.scale===scale&&v.outcome===outcome&&v.sexo>0&&v.ag!=='All').sort((a,b)=>Math.abs(b.change)-Math.abs(a.change)).map(v=>row([(v.sexo===1?'Hombres':'Mujeres')+' '+esc(v.ag),format(v.original),format(v.national),signed(v.change*(grams?1:100))+' '+(grams?'g/día':'pp')])).join('');
+ $('ruralTargets').innerHTML=[['Solo composición urbana de CASEN',r.urban],['Composición nacional, incluyendo lo rural',r.national]].map(([label,v])=>row([label,format(v)])).join('');
+ const ruralChange=-r.rural_composition_gap*(grams?1:100);
+ $('ruralComponent').textContent=`Al incluir la composición rural, el resultado ${Math.abs(ruralChange)<.005?'casi no cambia':ruralChange>0?'sube':'baja'}: ${signed(ruralChange)} ${unit}. Esto no incorpora que una persona rural pueda beber distinto de una urbana del mismo sexo, edad y educación.`;
+ $('ruralSupport').textContent=`Este cálculo usa ${num(r.n)} respuestas válidas con educación conocida. ${pct(r.unsupported_target_share)} de la población objetivo del grupo depende de subdivisiones que no superan el filtro orientativo de datos. No se calcularon intervalos conjuntos.`;
+ const source=D.ruralCells.find(c=>c.anio===year);
+ $('ruralSource').textContent=`Referencia: CASEN ${source.source_a}`+(source.source_a===source.source_b?'':` y ${source.source_b} (${pct(source.weight_b)} de peso para la segunda)`) + '. Fracción rural objetivo del grupo: '+pct(r.rural_share)+'.';
+ const enabled=sex>0&&ag!=='All';$('ruralEdu').disabled=!enabled;
+ if(!enabled)$('ruralEdu').value='All';
+ $('ruralEduNote').textContent=enabled?'Los tres aportes suman el cambio al incluir la composición rural. El panel principal mantiene el grupo completo aunque selecciones un nivel educativo.':'Para abrir este detalle, selecciona un sexo y uno de los cuatro tramos de edad arriba.';
+ const edu=$('ruralEdu').value;
+ $('ruralEducation').innerHTML=enabled?D.ruralCells.filter(c=>match(c)&&c.outcome===outcome&&(edu==='All'||c.educ3===+edu)).map(c=>row([['','Básica o menos','Media','Superior'][c.educ3],num(c.n)+' / '+dec(c.kish,1),num(c.events),format(c.m),pct(c.p_educ_urban)+' / '+pct(c.p_educ_national),signed(-c.contribution*(grams?1:100))+' '+(grams?'g/día':'pp'),c.screen?'Sí':'⚠ No'])).join(''):'';
+}
+function updateEps(){
+ const sex=$('epsSex').value,edu=$('epsEdu').value;
+ const eduNames={Prim:'Primary completed or less',Sec:'Secondary completed or less',Tert:'Tertiary completed or higher'};
+ const names={'Current drinker':'Consumo actual EPS','Grams/day (population)':'Gramos/día · modelo anterior','HED 5+/4+ (population)':'HED 5+/4+'};
+ const rs=D.epsGaps.filter(r=>r.sex===sex&&r.edu===eduNames[edu]);
+ $('epsGroups').innerHTML=rs.map(r=>{const grams=r.outcome.startsWith('Grams'),f=grams?1:100,u=grams?'g/día':'pp';
+ const reading=r.lo95<=0&&r.hi95>=0?'Admite menor, igual o mayor consumo':r.hi95<0?'Menor en el contraste del modelo':'Mayor en el contraste del modelo';
+ return row([esc(names[r.outcome]),signed(r.delta*f)+' '+u,dec(r.lo95*f,1)+' a '+dec(r.hi95*f,1)+' '+u,reading]);}).join('');
+ $('epsAgeN').innerHTML=D.epsCells.filter(r=>r.sex===sex&&r.edu===edu).map(r=>row([esc(r.ageg),num(r.n)])).join('');
+ $('epsInterpretation').textContent='Un valor negativo significa menos consumo en el área rural del modelo; si se confirmara y fuera aplicable a ENPG, su exclusión podría elevar la estimación ENPG. Un valor positivo sugiere la dirección contraria. Estos resultados no establecen cuánto corregir la ENPG ni un efecto específico por edad.';
+}
+function download(rows,name){
+ const keys=Object.keys(rows[0]),q=x=>'"'+String(x??'').replaceAll('"','""')+'"';
+ const csv=[keys.map(q).join(','),...rows.map(r=>keys.map(k=>q(r[k])).join(','))].join('\r\n');
+ const u=URL.createObjectURL(new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'}));
+ const a=document.createElement('a');a.href=u;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);
+ $('status').textContent='Descarga preparada: '+name;
+}
+for(const id of ['sex','ageMode'])$(id).addEventListener('change',updateEducation);
+for(const id of ['year','contactYear','ruralYear'])$(id).addEventListener('change',()=>{for(const other of ['year','contactYear','ruralYear'])$(other).value=$(id).value;updateEducation();updateContact();updateRural();});
+for(const id of ['ruralSex','ruralAge','ruralScale','ruralOutcome','ruralEdu'])$(id).addEventListener('change',updateRural);
+$('downloadIndicators').addEventListener('click',()=>download(D.indicators,'enpg_antes_despues_casen_2012_2024.csv'));
+for(const id of ['epsSex','epsEdu'])$(id).addEventListener('change',updateEps);
+$('downloadRural').addEventListener('click',()=>download(D.ruralEstimates,'contraste_composicion_rural_2012_2024.csv'));
+$('downloadRuralEdu').addEventListener('click',()=>download(D.ruralCells,'aportes_educacion_rural_2012_2024.csv'));
+$('commune').addEventListener('change',updateContact);
+$('downloadEdu').addEventListener('click',()=>download($('ageMode').value==='single'?D.ages:D.targets,'casen_educacion_todos_anios.csv'));
+$('downloadContact').addEventListener('click',()=>download(D.contact,'contacto_comunas_anios_enpg_2012_2024.csv'));
+$('validation').innerHTML=D.validation.map(r=>row([num(r.anio),num(r.n),dec(r.agreement_pct)+'%',dec(r.pct_missing)+'%'])).join('');
+const maxdiff=Math.max(...D.differences.flatMap(r=>[Math.abs(r.e1_difference_pp),Math.abs(r.e2_difference_pp),Math.abs(r.e3_difference_pp)]));
+$('oldtargets').textContent=`La reconstrucción difiere de las metas antiguas del repositorio hasta ${dec(maxdiff)} puntos porcentuales. Los pesos nuevos usan las metas regeneradas; los originales se preservaron.`;
+for(const y of [...new Set(D.health.map(r=>r.anio_casen))])$('casenRound').add(new Option(String(y),String(y)));
+$('casenRound').value='2024';
+$('casenRound').addEventListener('change',()=>updateHealth(true));
+$('healthMetric').addEventListener('change',()=>updateHealth());
+$('downloadHealth').addEventListener('click',()=>download(D.health,'casen_salud_nacional_2013_2024.csv'));
+const e=D.eps[0];$('epsAudit').textContent=`La ejecución conservó ${num(e.candidates)} candidatos y ${num(e.assignments)} asignaciones propuestas. ${num(e.negative_margins)} asignaciones tienen margen negativo: existe una alternativa local con mejor puntuación, aunque la regla global de asignación eligió otra.`;
+const names={'Current drinker':'Consumo actual','Grams/day (population)':'Gramos/día en la población','HED 5+/4+ (population)':'Consumo episódico intenso'};
+$('rural').innerHTML=D.rural.filter(r=>!r.outcome.startsWith('Risky')).map(r=>row([esc(names[r.outcome]||r.outcome),dec(r.RR),dec(r.lo95)+'–'+dec(r.hi95)])).join('');
+updateEducation();updateContact();updateHealth(true);updateRural();updateEps();
+</script></body></html>

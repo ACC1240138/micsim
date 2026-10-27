@@ -1,0 +1,3 @@
+"model","n_pairs","n_persons","difference_history_minus_current","lower","upper","population"
+"Gamma",2177,1164,0.00173537586731838,-0.0271685834213828,0.0306393351560196,"pairs with a compatible earlier wave; person-cluster Taylor; conditional OOF comparison"
+"Gamma_education_interaction",2177,1164,0.00534038192066385,-0.0245963146593671,0.0352770785006947,"pairs with a compatible earlier wave; person-cluster Taylor; conditional OOF comparison"

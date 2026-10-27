@@ -1,0 +1,2 @@
+"seed","superlearner_V","superlearner_stratified_CV","superlearner_library","ranger_num_trees","ranger_min_node_size","probability_floor","weight_trimming","JKn_replicates","ipw_v1_refitted_in_replicates","superlearner_fixed_in_replicates","schemes","models","exits","macrozone_region"
+1240138,5,TRUE,"SL.mean;SL.glm;SL.glmnet;SL.ranger_v2",500,50,0.02,"p1/p99 within interval",111,TRUE,TRUE,"official;ipw_v1;ipw_v2_sl","A;Lognormal","deceased and impeded removed in both intervals; phone-only VII = missing outcome","left out: not in the public files"

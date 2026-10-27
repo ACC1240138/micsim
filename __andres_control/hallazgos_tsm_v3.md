@@ -1,5 +1,10 @@
 # TSM v3: el panel del Termómetro con el motor de transiciones de la EPS
 
+> **Versión histórica.** La vigente es TSM v4 (2026-10-26): cinco estados con C3+, bordes WHO, tolerancia de vínculo de
+> ±2 años elegida con datos y todas las funciones escritas en el cuaderno. Ver [tsm_v4_explicado.html](tsm_v4_explicado.html),
+> [TSM_ENPG_v4_EN.ipynb](TSM_ENPG_v4_EN.ipynb) y [tsm_markov_outputs_v4/](tsm_markov_outputs_v4/). En los orígenes con datos
+> (N0, FD, C1), las matrices agregadas cambian a lo más 0,003 frente a v3.
+
 [Cuaderno ejecutado](TSM_ENPG_v3_EN.ipynb) · [HTML autocontenido](../TSM_ENPG_v3_EN.html) · [Salidas agregadas](tsm_markov_outputs/) · [Plan y desviaciones](tsm_v3_plan_2026-10-19.md) · [Revisión crítica](tsm_v3_review.md) · [Página didáctica](https://claude.ai/artifact/LQ7Rsae6D2dAHjk9wPcLwN) (copia local: [tsm_v3_explicado.html](tsm_v3_explicado.html))
 
 Fecha: 2026-10-19. Datos reales: rondas 7 a 11 del Termómetro de la Salud Mental (TSM), leídas del paquete cifrado `_tsm/tsm.tar.xz.enc`. Dos ejecuciones en kernels nuevos de 51 minutos cada una; 63 tablas CSV idénticas byte a byte; 56 comprobaciones registradas, todas superadas.

@@ -13,7 +13,7 @@ ts_checks <- list(); ts_warnings <- character()
 ts_out <- here::here(".quarto", "tsm_models_test"); dir.create(ts_out, showWarnings = FALSE, recursive = TRUE)
 if (!exists("ts_ipw_fit")) {
   ts_seed <- 1240138L; ts_B <- 1000L; ts_repeats <- 3L; ts_K <- 5L; ts_kgrid <- c(10, 30, 100, 300, 1000)
-  ts_ST <- c("N0", "FD", "C1", "C2", "C3", "C4"); ts_Y <- c("NC", "C1", "C2", "C3", "C4")
+  ts_ST <- c("N0", "FD", "C1", "C2", "C3plus"); ts_Y <- c("NC", "C1", "C2", "C3plus")
   ts_ages <- c("18-29", "30-44", "45-59", "60-65"); ts_periods <- c("R7_R8", "R8_R9", "R9_R10", "R10_R11")
   ts_edu_levels <- c("Primary completed or less", "Secondary completed or less", "Tertiary completed or higher")
   ts_palette <- c(blue = "#216A83", rust = "#B16031", olive = "#637A44", grey = "#777777",
@@ -112,7 +112,7 @@ syn_waves <- function(n_persons = 2500, seed = 20261019) {
           stats::rbinom(1, 1, stats::plogis(-1.5 + .6 * u[i] + .3 * (sex[i] == "Men") - .01 * (age[k] - 40)))
       mu <- log(10) + .5 * (sex[i] == "Men") + .4 * u[i]
       if (cur[k] == 1) lg <- if (is.na(lg)) stats::rnorm(1, mu, .8) else .6 * lg + .4 * mu + stats::rnorm(1, 0, .5)
-      g[k] <- if (cur[k] == 1) min(exp(lg), 94.29) else 0   # C4 unreachable at 12 g with the 10-drink top value
+      g[k] <- if (cur[k] == 1) min(exp(lg), 94.29) else 0   # 12 g lookup maximum; C3plus is above 40 g (women) or 60 g (men)
     }
     qty <- ifelse(cur == 1, as.integer(cut(g / 12, c(-Inf, 2, 4.5, 6.5, 9, Inf))), NA_integer_)
     rows[[i]] <- data.frame(id = sprintf("P%04d", i), wave = waves, age = age, sex = sex[i],
@@ -132,7 +132,7 @@ syn_waves <- function(n_persons = 2500, seed = 20261019) {
 }
 syn_states <- function(W) {
   W <- W[order(W$id, W$wave), ]; lo <- ifelse(W$sex == "Women", 20, 40); hi <- ifelse(W$sex == "Women", 40, 60)
-  W$cat <- ifelse(W$current == 1, ifelse(W$grams < lo, "C1", ifelse(W$grams < hi, "C2", ifelse(W$grams <= 100, "C3", "C4"))), NA)
+  W$cat <- ifelse(W$current == 1, ifelse(W$grams <= lo, "C1", ifelse(W$grams <= hi, "C2", "C3plus")), NA)
   W$n_prior <- stats::ave(W$wave, W$id, FUN = seq_along) - 1
   W$prior_use <- FALSE; key <- paste(W$id, W$wave)
   for (L in 1:4) {
@@ -162,7 +162,7 @@ syn_risk <- function(W) {
   d$edu_missing <- as.numeric(d$edu == "Missing"); d$edu_num <- match(d$edu, ts_edu_levels) - 1; d$edu_num[is.na(d$edu_num)] <- 0
   d$edu <- factor(d$edu, levels = c(ts_edu_levels, "Missing"))
   d$region <- factor(d$region, levels = c("RM", "North", "Centre", "South")); d$employment <- factor(d$employment, levels = c("No", "Yes", "Unknown"))
-  d$state0 <- factor(d$state0, levels = ts_ST); d$current0 <- as.numeric(d$state0 %in% paste0("C", 1:4))
+  d$state0 <- factor(d$state0, levels = ts_ST); d$current0 <- as.numeric(d$state0 %in% ts_ST[-(1:2)])
   d$lg0 <- ifelse(d$current0 == 1 & d$grams0 > 0, log(d$grams0), 0)
   d$signal0f <- factor(ifelse(d$current0 == 0, "Noncurrent", as.character(d$signal0)), levels = c("Noncurrent", "0", "1"))
   d$s0 <- TRUE; d$s1 <- d$linked; d$complete <- d$s0 & d$linked & d$s1
@@ -179,7 +179,7 @@ print(table(pairs_per_person = table(ts_d$id)))
 print(table(origin = ts_d$state0, destination = ts_d$y1))
 print(table(period = ts_risk$period, present = ts_risk$destination_present, compatible = ts_risk$compatible))
 stopifnot(nrow(ts_d) == length(unique(ts_d$row_id)), all(ts_d$wn > 0), all(is.finite(ts_d$wn)),
-  !any(ts_d$state1 == "C4"), sum(ts_d$state1 == "C3") > 0, sum(ts_risk$destination_present & !ts_risk$compatible) > 0,
+  !any(ts_d$state1 %in% c("C3", "C4")), sum(ts_d$state1 == "C3plus") > 0, sum(ts_risk$destination_present & !ts_risk$compatible) > 0,
   all(ts_d$age >= 18 & ts_d$age <= 65), nlevels(droplevels(ts_d$edu)) == 4,
   abs(sum(ts_d$wn) - sum(ts_period_mass)) < 1e-8)
 # ---- tuning and full fits ----
@@ -230,13 +230,13 @@ check_tab <- function(tab) {
     all(tab$support %in% c("unobserved origin", "sparse", "observed")))
 }
 check_tab(ts_points)
-stopifnot(nrow(ts_points) == 7 * 36 * length(unique(ts_key(ts_d, c("period", "sex", "age_group")))))
+stopifnot(nrow(ts_points) == 7 * 25 * length(unique(ts_key(ts_d, c("period", "sex", "age_group")))))
 ts_pool_sa <- ts_matrices(ts_d, ts_prob(ts_fits$A, ts_d), "A", by = c("sex", "age_group")); check_tab(ts_pool_sa)
 ts_pool_tab <- do.call(rbind, lapply(c("A", "Gamma", "Lognormal"), function(nm) {
   d <- ts_d; d$pooled <- "All"; ts_matrices(d, ts_prob(ts_fits[[nm]], d), nm, by = "pooled")
 })); check_tab(ts_pool_tab)
 ts_edu_tab <- ts_matrices(ts_d, ts_prob(ts_fits$Gamma, ts_d), "Gamma", by = "edu"); check_tab(ts_edu_tab)
-stopifnot(nrow(ts_pool_sa) == 8 * 36, nrow(ts_pool_tab) == 3 * 36, nrow(ts_edu_tab) == 4 * 36)
+stopifnot(nrow(ts_pool_sa) == 8 * 25, nrow(ts_pool_tab) == 3 * 25, nrow(ts_edu_tab) == 4 * 25)
 print(ts_pool_tab[ts_pool_tab$model == "Gamma" & ts_pool_tab$from == "C1", c("from", "to", "n_origin", "estimate", "support")], digits = 3)
 ts_engine <- ts_coef(ts_fits)
 stopifnot(all(c("shape", "sigma") %in% ts_engine$term), setequal(unique(ts_engine$model), c("Gamma", "Lognormal")), all(is.finite(ts_engine$estimate)))
@@ -250,7 +250,7 @@ v <- unlist(lapply(boot_models, function(nm) {   # full-data targets: by period,
   c(ts_vector(ts_matrices(ts_d, P, nm)), ts_vector(ts_matrices(ts_d, P, nm, by = c("sex", "age_group"))), ts_vector(ts_matrices(dd, P, nm, by = "pooled")))
 }))
 stopifnot(setequal(names(rep1$target), names(v)), max(abs(rep1$target - v[names(rep1$target)]), na.rm = TRUE) < 1e-8,
-  all(names(ts_vector(ts_pool_tab)) %in% names(rep1$target)), length(rep1$annual) == 3 * 36, all(is.finite(rep1$coefficients)))
+  all(names(ts_vector(ts_pool_tab)) %in% names(rep1$target)), length(rep1$annual) == 3 * 25, all(is.finite(rep1$coefficients)))
 ts_B <- 8L
 ts_person <- blk("ts_bootstrap_person B=8", ts_bootstrap_person(boot_models, annual = TRUE, B = ts_B))
 stopifnot(length(ts_person) == 8, file.exists(file.path(ts_out, "person_bootstrap_audit.csv")))
@@ -277,8 +277,8 @@ ts_ann <- do.call(rbind, lapply(names(ts_annual_full), function(nm) {
   z <- ts_annual_full[[nm]]
   ts_check(max(abs(rowSums(z$P) - 1)) < 1e-8 && min(z$P) > -1e-10, paste("Annual stochastic matrix", nm))
   ts_check(z$semigroup_error < 1e-8, paste("Annual semigroup", nm))
-  stopifnot(z$gradient_error < 1e-6, z$convergence == 0, identical(dim(z$P), c(6L, 6L)))
-  data.frame(model = nm, from = rep(ts_ST, 6), to = rep(ts_ST, each = 6), estimate = as.vector(z$P),
+  stopifnot(z$gradient_error < 1e-6, z$convergence == 0, identical(dim(z$P), c(5L, 5L)))
+  data.frame(model = nm, from = rep(ts_ST, 5), to = rep(ts_ST, each = 5), estimate = as.vector(z$P),
     weighted_reconstruction_RMSE = z$rmse, optimizer_code = z$convergence, semigroup_error = z$semigroup_error)
 }))
 ts_ann <- cbind(ts_ann, ts_interval(ts_ann$estimate, do.call(rbind, lapply(ts_person, function(x) x$annual))))
@@ -303,27 +303,22 @@ stopifnot(nrow(ts_ck_tab) == 9 * 4, setequal(ts_ck_tab$period, c("All", ts_perio
 print(ts_ck_tab[ts_ck_tab$period == "All", c("from", "to", "n_pairs", "observed", "chained", "difference", "lower", "upper")], digits = 3)
 ts_rank_tab <- blk("ts_rank", ts_rank(ts_d))
 rs <- tapply(ts_rank_tab$probability, paste(ts_rank_tab$period, ts_rank_tab$source, ts_rank_tab$from), sum, na.rm = TRUE)
-stopifnot(nrow(ts_rank_tab) == 4 * 2 * 25, all(abs(rs[rs > 0] - 1) < 1e-8))
+stopifnot(nrow(ts_rank_tab) == 4 * 2 * 16, all(abs(rs[rs > 0] - 1) < 1e-8))
 ts_hed_result <- blk("ts_hed", ts_hed())
 stopifnot(nrow(ts_hed_result$coef) > 5, all(is.finite(ts_hed_result$coef$estimate)), nrow(ts_hed_result$proportions) >= 6)
 print(ts_hed_result$proportions, digits = 3)
-# ---- merged C3plus variant ----
-ts_merged <- blk("ts_merged_variant (K=3)", ts_merged_variant(ts_risk, K = 3, repeats = 1))
-stopifnot(nrow(ts_merged$cv_scores) == 3, nrow(ts_merged$pooled) == 3 * 25, nrow(ts_merged$annual) == 3 * 25,
-  setequal(ts_merged$pooled$from, c("N0", "FD", "C1", "C2", "C3plus")), all(is.finite(ts_merged$cv_scores$logloss)),
-  all(ts_merged$annual$semigroup_error < 1e-8), all(ts_merged$annual$optimizer_code == 0))
-check_tab(ts_merged$pooled); print(ts_merged$cv_scores, digits = 4)
 # ---- cross-check with the real EPS aggregate CSVs ----
 ts_cross <- blk("ts_crosscheck_eps", ts_crosscheck_eps(ts_d, ts_fits, ts_annual_full, ts_cvtab, ts_ann))
 eA <- utils::read.csv(here::here("__andres_control", "eps_markov_outputs", "transition_matrices_design_CI.csv"))
-eA <- eA[eA$model == "A" & is.finite(eA$estimate), ]; eA$to <- ifelse(eA$to %in% c("N0", "FD"), "NC", eA$to)
+eA <- eA[eA$model == "A" & is.finite(eA$estimate), ]; m34 <- function(x) ifelse(x %in% c("C3", "C4"), "C3plus", x)
+eA$from <- m34(eA$from); eA$to <- ifelse(eA$to %in% c("N0", "FD"), "NC", m34(eA$to))
 observed_origins <- names(which(table(factor(as.character(ts_d$state0), levels = ts_ST)) > 0))
 eps_cells <- nrow(unique(eA[eA$from %in% observed_origins, c("period", "from", "to")]))  # collapsed destinations, supported origins
 cat("EPS pooled cells (model A, finite):", eps_cells, "
 ")
-stopifnot(nrow(ts_cross$annual) == 2 * 3 * 36, sum(ts_cross$annual$staying) == 2 * 3 * 6,
+stopifnot(nrow(ts_cross$annual) == 2 * 3 * 25, sum(ts_cross$annual$staying) == 2 * 3 * 5,
   nrow(ts_cross$projection_eps_to_tsm) == 3 * 5 * 3, all(is.finite(ts_cross$projection_eps_to_tsm$logloss)),
-  nrow(ts_cross$projection_eps_matrices) == 3 * 4 * 30, nrow(ts_cross$projection_tsm_to_eps) == 3 * eps_cells,
+  nrow(ts_cross$projection_eps_matrices) == 3 * 4 * 20, nrow(ts_cross$projection_tsm_to_eps) == 3 * eps_cells,
   nrow(ts_cross$projection_tsm_to_eps_summary) == 12, all(is.finite(ts_cross$projection_tsm_to_eps_summary$weighted_RMSE)),
   is.logical(ts_cross$projection_tsm_to_eps$comparable), all(ts_cross$projection_tsm_to_eps$to %in% ts_Y))
 rec <- ts_cross$projection_eps_to_tsm[ts_cross$projection_eps_to_tsm$source == "EPS_projection" & ts_cross$projection_eps_to_tsm$period == "All", ]
@@ -343,10 +338,10 @@ stopifnot(nrow(ts_sensitivity) == 18, all(is.finite(ts_sensitivity$probability))
 r_alt <- ts_risk; r_alt$edu_num <- pmin(r_alt$edu_num + 1, 2)   # stand-in for a second education rule
 ts_edu_sens <- blk("ts_education_sensitivity", ts_education_sensitivity(list(lenient = ts_risk, strict = r_alt)))
 stopifnot(nrow(ts_edu_sens$summary) == 2 * 2 * 3, identical(names(ts_edu_sens$summary), c("rule", "model", "quantity", "probability")),
-  nrow(ts_edu_sens$pooled) == 2 * 2 * 36, "rule" %in% names(ts_edu_sens$pooled))
+  nrow(ts_edu_sens$pooled) == 2 * 2 * 25, "rule" %in% names(ts_edu_sens$pooled))
 W16 <- ts_W; W16$grams[W16$e3a2 %in% 5] <- W16$grams[W16$e3a2 %in% 5] * 1.6   # stand-in for the 16-drink top band
 ts_band <- blk("ts_upper_band_sensitivity", ts_upper_band_sensitivity(syn_risk(W16)))
-stopifnot(nrow(ts_band$summary) == 9, identical(names(ts_band$summary), c("scenario", "model", "quantity", "probability")), nrow(ts_band$pooled) == 3 * 36)
+stopifnot(nrow(ts_band$summary) == 9, identical(names(ts_band$summary), c("scenario", "model", "quantity", "probability")), nrow(ts_band$pooled) == 3 * 25)
 print(ts_edu_sens$summary, digits = 3); print(ts_band$summary, digits = 3)
 # ---- diagrams and plots ----
 ts_counts <- as.data.frame(table(period = ts_d$period, sex = ts_d$sex, age_group = ts_d$age_group, state0 = ts_d$state0)); names(ts_counts)[5] <- "n"

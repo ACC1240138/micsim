@@ -1,0 +1,49 @@
+"check","passed"
+"Cells run by ep_load() equal the listing shown in this notebook",TRUE
+"Published design codes agree across files",TRUE
+"VI-VII longitudinal weight and design are available",TRUE
+"Every risk-set ID has one published PSU and stratum",TRUE
+"Risk-set persons belong to the full VII design frame",TRUE
+"One row per person and interval",TRUE
+"Positive finite main weights",TRUE
+"No fabricated strict long-term origin states",TRUE
+"Observed pairs respect the history-state transition map",TRUE
+"Weight-scale invariance Gamma",TRUE
+"Weight-scale invariance Lognormal",TRUE
+"Weight-scale invariance Multinomial",TRUE
+"Weight-scale invariance Ordinal_two_part",TRUE
+"Disjoint persons CV 1:1",TRUE
+"Disjoint persons CV 1:2",TRUE
+"Disjoint persons CV 1:3",TRUE
+"Disjoint persons CV 1:4",TRUE
+"Disjoint persons CV 1:5",TRUE
+"Disjoint persons CV 2:1",TRUE
+"Disjoint persons CV 2:2",TRUE
+"Disjoint persons CV 2:3",TRUE
+"Disjoint persons CV 2:4",TRUE
+"Disjoint persons CV 2:5",TRUE
+"Disjoint persons CV 3:1",TRUE
+"Disjoint persons CV 3:2",TRUE
+"Disjoint persons CV 3:3",TRUE
+"Disjoint persons CV 3:4",TRUE
+"Disjoint persons CV 3:5",TRUE
+"Every held-out prediction is finite",TRUE
+"Every available interval includes its point estimate",TRUE
+"Transport IDs disjoint forward1",TRUE
+"Transport IDs disjoint forward2",TRUE
+"Transport IDs disjoint forward3",TRUE
+"Transport IDs disjoint forward4",TRUE
+"Transport IDs disjoint forward5",TRUE
+"Transport IDs disjoint retro1",TRUE
+"Transport IDs disjoint retro2",TRUE
+"Transport IDs disjoint retro3",TRUE
+"Transport IDs disjoint retro4",TRUE
+"Transport IDs disjoint retro5",TRUE
+"Rank matching preserves both weighted margins VI_VII",TRUE
+"Rank matching preserves both weighted margins VII_VIII",TRUE
+"Annual stochastic matrix A",TRUE
+"Annual semigroup A",TRUE
+"Annual stochastic matrix Gamma",TRUE
+"Annual semigroup Gamma",TRUE
+"Annual stochastic matrix Lognormal",TRUE
+"Annual semigroup Lognormal",TRUE

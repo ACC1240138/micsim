@@ -1,0 +1,156 @@
+<title>Transiciones EPS v4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column with a sticky section index; tables and charts scroll inside their own boxes. */
+:root {
+  --bg: #f6f7f5; --surface: #ffffff; --fg: #1d2622; --muted: #5b6a63; --line: #d7ddd9;
+  --accent: #1f6f78; --accent-soft: #dcebec; --warm: #a8552c; --warm-soft: #f3e3d9;
+  --good: #2e7d4f; --bad: #b3402d;
+  --display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #131917; --surface: #1b2320; --fg: #e5ebe8; --muted: #9aaba3; --line: #2f3a36;
+  --accent: #6fbac2; --accent-soft: #1f3638; --warm: #e0946b; --warm-soft: #3a2a21; --good: #6cc391; --bad: #ef8a76; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #131917; --surface: #1b2320; --fg: #e5ebe8; --muted: #9aaba3; --line: #2f3a36;
+  --accent: #6fbac2; --accent-soft: #1f3638; --warm: #e0946b; --warm-soft: #3a2a21; --good: #6cc391; --bad: #ef8a76; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.6 var(--body); padding-inline: 16px; }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 28px 64px; display: grid; gap: 40px; }
+header h1 { font: 700 2.1rem/1.15 var(--display); margin: 0 0 8px; text-wrap: balance; }
+header p { margin: 0; color: var(--muted); max-width: 68ch; }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); border-bottom: 1px solid var(--line);
+  display: flex; gap: 6px; flex-wrap: wrap; padding-block: 10px; }
+nav a { color: var(--accent); text-decoration: none; font-weight: 500; padding: 4px 10px; border-radius: 4px; }
+nav a:hover, nav a:focus-visible { background: var(--accent-soft); outline: none; }
+section { display: grid; gap: 18px; scroll-margin-top: 64px; }
+h2 { font: 700 1.55rem/1.2 var(--display); margin: 0; text-wrap: balance; }
+h3 { font: 600 1.05rem/1.3 var(--body); margin: 0; }
+.eyebrow { font: 500 .72rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--warm); }
+p { margin: 0; max-width: 70ch; }
+.changes { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.change { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 8px; min-width: 0; }
+.change .tag { font: 500 .78rem var(--mono); color: var(--accent); }
+.example { font: .86rem/1.5 var(--mono); background: var(--accent-soft); padding: 8px 10px; border-radius: 4px; overflow-x: auto; }
+.kpis { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+.kpi { border-left: 3px solid var(--accent); padding: 6px 12px; }
+.kpi b { display: block; font: 600 1.6rem/1.1 var(--display); font-variant-numeric: tabular-nums; }
+.kpi span { color: var(--muted); font-size: .88rem; }
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px; overflow-x: auto; min-width: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .88rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; }
+td.num, th.num { text-align: right; }
+tr.win td { background: var(--accent-soft); }
+.pill { display: inline-block; font: 500 .74rem var(--mono); padding: 1px 7px; border-radius: 10px; }
+.pill.ok { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); }
+.pill.no { background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); }
+.pill.warn { background: var(--warm-soft); color: var(--warm); }
+.note { color: var(--muted); font-size: .86rem; }
+svg text { fill: var(--fg); font-family: var(--body); }
+svg .axis { stroke: var(--line); }
+svg .ref { stroke: var(--muted); stroke-dasharray: 4 3; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: .82rem; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.heat td.cell { text-align: right; }
+@media (prefers-reduced-motion: no-preference) { nav a { transition: background .15s; } }
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">FONDECYT 1240138 · motor de transiciones EPS</div>
+  <h1>Transiciones EPS v4</h1>
+  <p>Qué cambia en la versión 4 del cuaderno de transiciones de consumo de alcohol (EPS 2015–2023), cuánto mueve los resultados frente a la versión 2 y de dónde salen las categorías de consumo. Cifras de la ejecución del cuaderno del <span id="run-date"></span>.</p>
+</header>
+<nav aria-label="Secciones"><a href="#cambios">Qué cambió</a><a href="#panel">Panel v2 vs v4</a><a href="#auditoria">Auditoría de categorías</a></nav>
+
+<section id="cambios">
+  <div class="eyebrow">1 · Didáctico</div>
+  <h2>Cinco cambios y por qué</h2>
+  <div class="changes">
+    <div class="change"><div class="tag">Categorías WHO sin huecos</div>
+      <p>El valor exacto del borde va a la categoría de abajo (C1 ≤ 20 g/día en mujeres, ≤ 40 en hombres). Los intervalos son contiguos: nadie queda sin categoría.</p>
+      <div class="example">Con 12 g por trago, los gramos/día van en pasos de 6/7 g. Solo 60 g cae exacto en un borde (70 × 6/7): <span id="ties"></span> filas de hombres pasan de C3+ a C2.</div></div>
+    <div class="change"><div class="tag">12 g por trago</div>
+      <p>Es la convención que JRT adoptó tras los revisores de ADD-25-1576. No se corre sensibilidad con 13 g ni con la regla JRT de bordes.</p></div>
+    <div class="change"><div class="tag">C3 + C4 = C3+</div>
+      <p>La cola es demasiado escasa para dos estados. Puka 2022 y Kilian 2025 usan una sola categoría superior (≥ 41 g mujeres, ≥ 61 g hombres). C4 queda solo para diagnosticar la cola.</p></div>
+    <div class="change"><div class="tag">EPS 2009 como historia</div>
+      <p>2009 tiene las mismas preguntas de alcohol. Sirve para saber quién bebía antes de VI: identifica exbebedores (FD) y abstemios prolongados (Calvo 2020). No es un intervalo de transición.</p>
+      <div class="example">2009 codifica la frecuencia de 1 a 8 y VI–VIII de 0 a 7: se resta 1 antes de convertir.</div></div>
+    <div class="change"><div class="tag">Tolerancia de edad ±1 año</div>
+      <p>Las ventanas de enlace se ensanchan un año a cada lado, como en TSM. Los folios EPS son estables; la edad solo protege contra errores de digitación.</p></div>
+    <div class="change"><div class="tag">Comparación formal de colas</div>
+      <p>Cinco modelos de gramos con las mismas predicciones fuera de muestra y las mismas métricas. La regla de adopción se escribió antes de ver resultados.</p></div>
+  </div>
+</section>
+
+<section id="panel">
+  <div class="eyebrow">2 · Panel</div>
+  <h2>Cuánto cambia frente a la versión 2</h2>
+  <div class="kpis" id="kpis"></div>
+  <h3>Historia 2009: N0 que bebían en 2009</h3>
+  <div class="box"><table id="t-reclass"></table></div>
+  <h3>Recuperación de la cola: predicho / observado</h3>
+  <p class="note">Proporción predicha sobre observada fuera de muestra (1 = calibración perfecta), todos los pares. Barras: estimación; línea punteada: 1.</p>
+  <div class="box" id="c-recovery"></div>
+  <div class="legend"><span><i style="background:var(--accent)"></i>C3+</span><span><i style="background:var(--warm)"></i>C4 (solo diagnóstico)</span></div>
+  <h3>Regla de adopción</h3>
+  <div class="box"><table id="t-decision"></table></div>
+  <p class="note" id="sep-note"></p>
+  <h3>Matriz agregada: v2 (lognormal) frente a v4</h3>
+  <p class="note">Ambos intervalos juntos. v2 colapsado a cinco estados (C3+C4). Celdas sombreadas: cambio absoluto ≥ 0,01.</p>
+  <div class="box"><table id="t-matrix" class="heat"></table></div>
+</section>
+
+<section id="auditoria">
+  <div class="eyebrow">3 · Auditoría</div>
+  <h2>De dónde salen los cortes</h2>
+  <p>Cortes en g/día de alcohol puro. "Borde" indica a qué categoría va el valor exacto del corte.</p>
+  <div class="box"><table id="t-audit"></table></div>
+  <p class="note">El 100 g/día de las mujeres que heredaron <code>expand_pif</code> y EPS viene del script de preparación de JRT, no del análisis publicado. La escala WHO de cuatro niveles falta verificarla en su fuente primaria (guía WHO 2000).</p>
+</section>
+</div>
+
+<script>
+const DATA = {"run_date": "26 de octubre de 2026", "ties_men60": 21, "kpis": [{"value": "980", "label": "N0 de VI que bebían en 2009 (12.0 % de N0) pasan a FD"}, {"value": "372", "label": "orígenes FD en VI→VII (antes 0)"}, {"value": "2.897", "label": "candidatos a abstención prolongada en VI"}, {"value": "1,00", "label": "C3+ predicho/observado con Hurdle + Pareto (lognormal v1: 0,76)"}], "reclass": [{"wave": "VI (2015)", "sex": "Hombres", "n0": 2919, "to_fd": 548, "pct": 18.7735525865022, "lt9": 765}, {"wave": "VI (2015)", "sex": "Mujeres", "n0": 5236, "to_fd": 432, "pct": 8.25057295645531, "lt9": 2132}, {"wave": "VI (2015)", "sex": "Total", "n0": 8155, "to_fd": 980, "pct": 12.0171673819742, "lt9": 2897}, {"wave": "VII (2020)", "sex": "Hombres", "n0": 770, "to_fd": 96, "pct": 12.4675324675325, "lt9": 160}, {"wave": "VII (2020)", "sex": "Mujeres", "n0": 1951, "to_fd": 94, "pct": 4.81804202972834, "lt9": 723}, {"wave": "VII (2020)", "sex": "Total", "n0": 2721, "to_fd": 190, "pct": 6.98272693862551, "lt9": 883}, {"wave": "VIII (2023)", "sex": "Hombres", "n0": 2421, "to_fd": 90, "pct": 3.71747211895911, "lt9": 512}, {"wave": "VIII (2023)", "sex": "Mujeres", "n0": 4062, "to_fd": 117, "pct": 2.88035450516987, "lt9": 1628}, {"wave": "VIII (2023)", "sex": "Total", "n0": 6483, "to_fd": 207, "pct": 3.1929662193429, "lt9": 2140}], "recovery": [{"model": "Gamma (v1)", "c3": 0.575315557600938, "c4": 0.250161330561527}, {"model": "Lognormal (v1)", "c3": 0.763194456402539, "c4": 0.737551607101401}, {"model": "Lognormal, var. sexo×edad", "c3": 0.791192750242689, "c4": 0.783406647571561}, {"model": "Lognormal + Pareto", "c3": 0.871774662380722, "c4": 1.14845234484392}, {"model": "Hurdle + Pareto", "c3": 1.0019023913882, "c4": 0.922937647290033}, {"model": "Hurdle + Pareto, ridge*", "c3": 1.0015225133022, "c4": 0.916629569019597}, {"model": "A (referencia)*", "c3": 1.04342272082961, "c4": null}], "decision": [{"model": "Gamma (v1)", "r1": false, "r2": false, "r3": false, "eligible": false, "maxcell": 0.0727195368099971}, {"model": "Lognormal, var. sexo×edad", "r1": false, "r2": true, "r3": true, "eligible": false, "maxcell": 0.0637019020040057}, {"model": "Lognormal + Pareto", "r1": true, "r2": true, "r3": true, "eligible": true, "maxcell": 0.0690710843333331}, {"model": "Hurdle + Pareto", "r1": true, "r2": true, "r3": true, "eligible": true, "maxcell": 0.029066610656743}], "winner": "Hurdle + Pareto", "separation_note": "Separación en el logístico del hurdle: sin destinos C3+ en mujeres 60-65; coeficientes extremos: edu_missing (-15.0), sexWomen:age_group60-65 (-13.6). Esas celdas quedarían con P(C3+) ≈ 0 en la microsimulación. * Hurdle ridge: sensibilidad agregada después de la comparación, no elegible. A: referencia sin distribución de gramos.", "matrix": [{"from": "C1", "to": "C1", "v2": 0.564490033886301, "v4": 0.559535389257943}, {"from": "C1", "to": "C2", "v2": 0.0293519088863275, "v4": 0.0301159281002753}, {"from": "C1", "to": "C3plus", "v2": 0.0188557215960716, "v4": 0.0216962007114049}, {"from": "C1", "to": "FD", "v2": 0.3873023356313, "v4": 0.388652481930377}, {"from": "C1", "to": "N0", "v2": 0.0, "v4": 0.0}, {"from": "C2", "to": "C1", "v2": 0.499046029359463, "v4": 0.492309312229343}, {"from": "C2", "to": "C2", "v2": 0.0748694380598132, "v4": 0.0706766931689467}, {"from": "C2", "to": "C3plus", "v2": 0.0541386945115727, "v4": 0.0445663307536246}, {"from": "C2", "to": "FD", "v2": 0.371945838069151, "v4": 0.392447663848086}, {"from": "C2", "to": "N0", "v2": 0.0, "v4": 0.0}, {"from": "C3plus", "to": "C1", "v2": 0.610468323730086, "v4": 0.594511544444854}, {"from": "C3plus", "to": "C2", "v2": 0.0556315423637126, "v4": 0.0507921547807216}, {"from": "C3plus", "to": "C3plus", "v2": 0.0495730901168009, "v4": 0.074122870698699}, {"from": "C3plus", "to": "FD", "v2": 0.284327043789401, "v4": 0.280573430075725}, {"from": "C3plus", "to": "N0", "v2": 0.0, "v4": 0.0}, {"from": "FD", "to": "C1", "v2": 0.317952456449035, "v4": 0.354890692970739}, {"from": "FD", "to": "C2", "v2": 0.00759797796182565, "v4": 0.0115516934089704}, {"from": "FD", "to": "C3plus", "v2": 0.00286856983123826, "v4": 0.00891745047082548}, {"from": "FD", "to": "FD", "v2": 0.671580995757901, "v4": 0.624640163149465}, {"from": "FD", "to": "N0", "v2": 0.0, "v4": 0.0}, {"from": "N0", "to": "C1", "v2": 0.209740125519528, "v4": 0.18786175109509}, {"from": "N0", "to": "C2", "v2": 0.00668695912067421, "v4": 0.00567689866424417}, {"from": "N0", "to": "C3plus", "v2": 0.00252807292794858, "v4": 0.00583351797831844}, {"from": "N0", "to": "FD", "v2": 0.0, "v4": 0.0}, {"from": "N0", "to": "N0", "v2": 0.781044842431849, "v4": 0.800627832262348}], "audit": [{"source": "JRT publicado (PHiP 2026), script de análisis", "women": "≤19,99 / 20–39,99 / 40–60 / >60", "men": "≤39,99 / 40–59,99 / 60–100 / >100", "border": "bajos arriba; tope abajo", "gaps": "sí (19,99–20 …)", "grams": "13 (luego 12)", "note": "Paper mortality trends.R L25–34; categorías solo para ltabs/fd y tablas descriptivas"}, {"source": "JRT, script de preparación (ENPG_FULL.rds)", "women": "≤19,99 / 20–39,99 / 40–100 / >100", "men": "≤39,99 / 40–59,99 / 60–100 / >100", "border": "bajos arriba; tope abajo", "gaps": "sí", "grams": "13", "note": "DATA PREPARATION ENPG.R L635–645; origen del 100 heredado por expand_pif y EPS"}, {"source": "ADD-25-1576 (JRT, lesiones y HED)", "women": "volumen continuo", "men": "volumen continuo", "border": "—", "gaps": "—", "grams": "12", "note": "“One standard drink was assumed to contain 12 g”; HED ≥5 tragos; tope 150 g/día"}, {"source": "WHO, cuatro niveles de riesgo", "women": "≤20 / 21–40 / 41–60 / >60", "men": "≤40 / 41–60 / 61–100 / >100", "border": "abajo", "gaps": "no", "grams": "—", "note": "pendiente de verificar en la guía WHO 2000"}, {"source": "Puka et al. 2022 (NESARC)", "women": "≤20 / 21–40 / ≥41", "men": "≤40 / 41–60 / ≥61", "border": "abajo", "gaps": "no", "grams": "—", "note": "III+IV fusionadas; LD + FD fusionados en no bebedor"}, {"source": "Kilian et al. 2025 (SIMAH)", "women": "≤20 / >20–40 / >40", "men": "≤40 / >40–60 / >60", "border": "abajo", "gaps": "no", "grams": "—", "note": "tres categorías; protocolo Probst 2023 planeaba IV (>61 / >100)"}, {"source": "EPS v1/v2 (desde 2026-10-26)", "women": "<20 / 20–<40 / 40–60 / >60", "men": "<40 / 40–<60 / 60–100 / >100", "border": "bajos arriba; tope abajo", "gaps": "no", "grams": "12", "note": "C3 y C4 separados"}, {"source": "EPS v4", "women": "≤20 / >20–40 / >40 (C3+)", "men": "≤40 / >40–60 / >60 (C3+)", "border": "abajo (WHO)", "gaps": "no", "grams": "12", "note": "C4 (>60 / >100) solo diagnóstico"}]};
+const $ = (id) => document.getElementById(id);
+const fmt = (x, d = 3) => (x === null || x === undefined || Number.isNaN(x)) ? "—" : Number(x).toLocaleString("es-CL", { minimumFractionDigits: d, maximumFractionDigits: d });
+const int = (x) => Number(x).toLocaleString("es-CL");
+function table(el, head, rows, cls) {
+  el.innerHTML = "<thead><tr>" + head.map(h => `<th class="${h[1] || ""}">${h[0]}</th>`).join("") + "</tr></thead><tbody>" +
+    rows.map((r, i) => `<tr class="${cls ? cls(i) : ""}">` + r.map((c, j) => `<td class="${head[j][1] || ""}">${c}</td>`).join("") + "</tr>").join("") + "</tbody>";
+}
+function render() {
+  const D = DATA; $("run-date").textContent = D.run_date; $("ties").textContent = int(D.ties_men60);
+  $("kpis").innerHTML = D.kpis.map(k => `<div class="kpi"><b>${k.value}</b><span>${k.label}</span></div>`).join("");
+  table($("t-reclass"), [["Ola"], ["Sexo"], ["N0 sin 2009", "num"], ["N0→FD", "num"], ["% de N0", "num"], ["Abstención prolongada con 2009", "num"]],
+    D.reclass.map(r => [r.wave, r.sex, int(r.n0), int(r.to_fd), fmt(r.pct, 1), int(r.lt9)]));
+  // Recovery chart: horizontal bars of P/O with a reference line at 1.
+  const rec = D.recovery, W = 640, rowH = 34, left = 190, right = 30, H = rec.length * rowH + 40;
+  const xmax = Math.max(1.4, ...rec.flatMap(r => [r.c3, r.c4 || 0])) * 1.05, x = v => left + (W - left - right) * v / xmax;
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Predicho sobre observado por modelo">`;
+  for (const t of [0, 0.5, 1, 1.5].filter(t => t <= xmax)) s += `<line class="axis" x1="${x(t)}" x2="${x(t)}" y1="10" y2="${H - 24}"/><text x="${x(t)}" y="${H - 8}" font-size="11" text-anchor="middle">${fmt(t, 1)}</text>`;
+  s += `<line class="ref" x1="${x(1)}" x2="${x(1)}" y1="10" y2="${H - 24}"/>`;
+  rec.forEach((r, i) => { const y = 14 + i * rowH;
+    s += `<text x="${left - 8}" y="${y + 14}" font-size="12" text-anchor="end">${r.model}</text>`;
+    s += `<rect x="${x(0)}" y="${y}" width="${x(r.c3) - x(0)}" height="11" fill="var(--accent)"/><text x="${x(r.c3) + 4}" y="${y + 10}" font-size="10">${fmt(r.c3, 2)}</text>`;
+    if (r.c4 !== null) s += `<rect x="${x(0)}" y="${y + 13}" width="${x(r.c4) - x(0)}" height="11" fill="var(--warm)"/><text x="${x(r.c4) + 4}" y="${y + 23}" font-size="10">${fmt(r.c4, 2)}</text>`; });
+  $("c-recovery").innerHTML = s + "</svg>";
+  const pill = (b) => b ? '<span class="pill ok">sí</span>' : '<span class="pill no">no</span>';
+  table($("t-decision"), [["Modelo"], ["C3+ calibra mejor", ""], ["Log loss no peor"], ["Sin sesgo nuevo"], ["Elegible"], ["Error máx. celda", "num"]],
+    D.decision.map(r => [r.model + (r.model === D.winner ? ' <span class="pill warn">adoptado</span>' : ""), pill(r.r1), pill(r.r2), pill(r.r3), pill(r.eligible), fmt(r.maxcell, 3)]),
+    i => D.decision[i].model === D.winner ? "win" : "");
+  $("sep-note").textContent = D.separation_note;
+  const order = ["N0", "FD", "C1", "C2", "C3plus"];
+  const rows = order.map(f => [f].concat(order.map(t => { const c = D.matrix.find(m => m.from === f && m.to === t);
+    if (!c) return "—"; const ch = c.v4 - c.v2, mark = Math.abs(ch) >= 0.01 ? ` style="background:${ch > 0 ? "var(--accent-soft)" : "var(--warm-soft)"}"` : "";
+    return `<span${mark}>${fmt(c.v4, 3)}</span><br><span class="note">${ch >= 0 ? "+" : ""}${fmt(ch, 3)}</span>`; })));
+  table($("t-matrix"), [["Origen \\ destino"]].concat(order.map(t => [t, "num"])), rows);
+  table($("t-audit"), [["Fuente"], ["Mujeres C1 / C2 / C3 / C4"], ["Hombres C1 / C2 / C3 / C4"], ["Borde"], ["Huecos"], ["g/trago"], ["Nota"]],
+    D.audit.map(a => [a.source, a.women, a.men, a.border, a.gaps, a.grams, a.note]));
+}
+if (DATA) render();
+</script>

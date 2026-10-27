@@ -52,7 +52,7 @@ replacement. The analysis uses real EPS VI, in-person VII and VIII records.
   and adequate support. Known VIII deaths are removed; survival remains
   incompletely known among other losses. Missing outcomes are not converted to
   abstention.
-- **Sparse tails:** C2/C3/C4 have 141/69/29 origin pairs. Parametric pooling can
+- **Sparse tails:** C2/C3/C4 have 141/67/31 origin pairs (women's C3/C4 boundary at 60 g/day since 2026-10-26; it was 100 g/day, 69/29). Parametric pooling can
   stabilize prediction; it cannot establish rare transitions without assumptions.
   A narrow interval after strong pooling is not evidence of abundant local data.
 - **Annual history:** generator fitting compares N0+FD with observed NC. It can

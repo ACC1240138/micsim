@@ -1,32 +1,32 @@
 # Las mismas personas, de R7 a R11
 
-Versión Markdown de la página publicada (https://claude.ai/artifact/KZzq8pfaJU8QGWqitvsbv2; copia local `tsm_r7_r11_directo_explicado.html`). Los gráficos se omiten: sus datos están en las tablas. Tablas fuente: `tsm_r7_r11_direct_outputs/`.
+**Actualizado el 2026-10-26 con TSM v4:** cinco estados (C3 y C4 fusionados en C3+), bordes WHO y tolerancia de vínculo de ±2 años. Esta versión trae las cifras vigentes, tomadas de `tsm_r7_r11_direct_outputs/`. La página publicada (https://claude.ai/artifact/KZzq8pfaJU8QGWqitvsbv2; copia local `tsm_r7_r11_directo_explicado.html`) es la corrida del 2026-10-20, con seis estados y ±1, y no se reconstruyó. Respecto de ella, se suma una persona (mujer de 30–44 años, origen C1), las cifras globales se mueven a lo más 1 punto y las conclusiones no cambian. Los gráficos se omiten: sus datos están en las tablas.
 
 Comparación directa a unos 24 meses, sin exigir entrevistas intermedias y sin encadenar ni anualizar matrices.
 
-**En breve.** Con 902 personas seguidas 24 meses, 71 % de los no bebedores de R7 siguen sin beber en R11 (IC 62 %–80 %) y 77 % de los bebedores C1 siguen en C1 (70 %–83 %). Frente a eso, el JRT original y el rank matching predicen más estabilidad (90 % y 94 % en C1). EPS y JRT_reference predicen algo menos en C1 (68 % y 66 %) y más en no bebedores (85 %). El motor TSM coincide en C1 (72 %) y queda muy bajo en no bebedores (50 %). Son diferencias descriptivas: los modelos son puntuales y el desgaste no está corregido.
+**En breve.** Con 903 personas seguidas 24 meses, 71 % de los no bebedores de R7 siguen sin beber en R11 (IC 61 %–80 %) y 77 % de los bebedores C1 siguen en C1 (70 %–83 %). Frente a eso, el JRT original y el rank matching predicen más estabilidad (90 % y 93 % en C1). EPS y JRT_reference predicen algo menos en C1 (68 % y 66 %) y más en no bebedores (85 %). El motor TSM coincide en C1 (73 %) y queda muy bajo en no bebedores (50 %). Son diferencias descriptivas: los modelos son puntuales y el desgaste no está corregido.
 
 - **2.123** personas de 18–65 años en R7
 
 - **906** vuelven a ser entrevistadas en R11 (42,7 %); es el N de 906 informado antes
 
-- **902** analizables tras el control de vínculo (tolerancia ±1 año)
+- **903** analizables tras el control de vínculo (tolerancia ±2 años)
 
 - **847** analizables con límites estrictos de EPS (sensibilidad)
 
 ## 1. Cómo se armó la cohorte
 
-Se usó el código de datos TSM v3 sin modificarlo: personas con edad de 18 a 65 años en R7, buscadas por su identificador en R11. El vínculo exige mismo sexo y un cambio de edad compatible con 24 meses (de 1 a 3 años; ±1 año de tolerancia, la regla acordada para TSM v3, es decir de 0 a 4). Los 4 pares descartados tienen un cambio de edad fuera de ese rango. Con los límites estrictos de EPS quedan 847. Los 24 meses salen de las fechas aproximadas de campo (abril de 2023 y abril de 2025; el mes de R11 no está verificado).
+Se usó el código de datos TSM v4 sin modificarlo: personas con edad de 18 a 65 años en R7, buscadas por su identificador en R11. El vínculo exige mismo sexo y un cambio de edad compatible con 24 meses (de 1 a 3 años, con la tolerancia de ±2 años de TSM v4 elegida con datos: de −1 a 5). Los 3 pares descartados tienen un cambio de edad fuera de ese rango. Con los límites estrictos de EPS quedan 847. Los 24 meses salen de las fechas aproximadas de campo (abril de 2023 y abril de 2025; el mes de R11 no está verificado).
 
 | Paso | N |
 |----|----|
 | Personas de 18–65 años en R7 | 2.123 |
 | Entrevistadas otra vez en R11 (cualquier edad) | 906 |
-| Vínculo compatible, tolerancia ±1 año (regla principal) | 902 |
-| Analizables: origen y destino clasificados (no hay casos sin clasificar) | 902 |
+| Vínculo compatible, tolerancia ±2 años (regla principal) | 903 |
+| Analizables: origen y destino clasificados (no hay casos sin clasificar) | 903 |
 | Sensibilidad: límites estrictos de EPS (tolerancia 0), analizables | 847 |
 
-En R7 no hay historia previa, así que el origen «NC» mezcla a quienes nunca bebieron con exbebedores: no equivale al N0 de EPS. El destino se mantiene en dos grupos, «NC» (no bebe) y consumo C1 a C4, porque separar exbebedores en R11 exigiría las entrevistas intermedias que este análisis evita.
+En R7 no hay historia previa, así que el origen «NC» mezcla a quienes nunca bebieron con exbebedores: no equivale al N0 de EPS. El destino se mantiene en dos grupos, «NC» (no bebe) y consumo C1 a C3+, porque separar exbebedores en R11 exigiría las entrevistas intermedias que este análisis evita.
 
 ## 2. Tamaños de muestra
 
@@ -34,29 +34,29 @@ En R7 no hay historia previa, así que el origen «NC» mezcla a quienes nunca b
 
 ### Sexo × edad al inicio
 
-| Sexo × edad en R7 | N inicial R7 | N observado R11 | Seguimiento | Vínculo descartado | N analizable | Origen NC | C1 | C2 | C3 | C4 | Sin clasificar origen / destino |
-|----|----|----|----|----|----|----|----|----|----|----|----|
-| Hombres 18-29 | 119 | 40 | 33,6 % | 0 | 40 | 8▲ | 32 | 0∅ | 0∅ | 0∅ | 0 / 0 |
-| Hombres 30-44 | 241 | 94 | 39,0 % | 0 | 94 | 29△ | 64 | 0∅ | 1▲ | 0∅ | 0 / 0 |
-| Hombres 45-59 | 243 | 108 | 44,4 % | 1 | 107 | 30 | 77 | 0∅ | 0∅ | 0∅ | 0 / 0 |
-| Hombres 60-65 | 152 | 72 | 47,4 % | 0 | 72 | 24△ | 48 | 0∅ | 0∅ | 0∅ | 0 / 0 |
-| Hombres, todas las edades | 755 | 314 | 41,6 % | 1 | 313 | 91 | 221 | 0∅ | 1▲ | 0∅ | 0 / 0 |
-| Mujeres 18-29 | 142 | 50 | 35,2 % | 0 | 50 | 26△ | 23△ | 1▲ | 0∅ | 0∅ | 0 / 0 |
-| Mujeres 30-44 | 442 | 173 | 39,1 % | 2 | 171 | 81 | 88 | 1▲ | 1▲ | 0∅ | 0 / 0 |
-| Mujeres 45-59 | 534 | 246 | 46,1 % | 1 | 245 | 131 | 114 | 0∅ | 0∅ | 0∅ | 0 / 0 |
-| Mujeres 60-65 | 250 | 123 | 49,2 % | 0 | 123 | 81 | 42 | 0∅ | 0∅ | 0∅ | 0 / 0 |
-| Mujeres, todas las edades | 1.368 | 592 | 43,3 % | 3 | 589 | 319 | 267 | 2▲ | 1▲ | 0∅ | 0 / 0 |
-| Total | 2.123 | 906 | 42,7 % | 4 | 902 | 410 | 488 | 2▲ | 2▲ | 0∅ | 0 / 0 |
+| Sexo × edad en R7 | N inicial R7 | N observado R11 | Seguimiento | Vínculo descartado | N analizable | Origen NC | C1 | C2 | C3+ | Sin clasificar origen / destino |
+|----|----|----|----|----|----|----|----|----|----|----|
+| Hombres 18-29 | 119 | 40 | 33,6 % | 0 | 40 | 8▲ | 32 | 0∅ | 0∅ | 0 / 0 |
+| Hombres 30-44 | 241 | 94 | 39,0 % | 0 | 94 | 29△ | 64 | 0∅ | 1▲ | 0 / 0 |
+| Hombres 45-59 | 243 | 108 | 44,4 % | 1 | 107 | 30 | 77 | 0∅ | 0∅ | 0 / 0 |
+| Hombres 60-65 | 152 | 72 | 47,4 % | 0 | 72 | 24△ | 48 | 0∅ | 0∅ | 0 / 0 |
+| Hombres, todas las edades | 755 | 314 | 41,6 % | 1 | 313 | 91 | 221 | 0∅ | 1▲ | 0 / 0 |
+| Mujeres 18-29 | 142 | 50 | 35,2 % | 0 | 50 | 26△ | 23△ | 1▲ | 0∅ | 0 / 0 |
+| Mujeres 30-44 | 442 | 173 | 39,1 % | 1 | 172 | 81 | 89 | 1▲ | 1▲ | 0 / 0 |
+| Mujeres 45-59 | 534 | 246 | 46,1 % | 1 | 245 | 131 | 114 | 0∅ | 0∅ | 0 / 0 |
+| Mujeres 60-65 | 250 | 123 | 49,2 % | 0 | 123 | 81 | 42 | 0∅ | 0∅ | 0 / 0 |
+| Mujeres, todas las edades | 1.368 | 592 | 43,3 % | 2 | 590 | 319 | 268 | 2▲ | 1▲ | 0 / 0 |
+| Total | 2.123 | 906 | 42,7 % | 3 | 903 | 410 | 489 | 2▲ | 2▲ | 0 / 0 |
 
 ### Educación completada al inicio
 
-| Educación en R7 | N inicial R7 | N observado R11 | Seguimiento | Vínculo descartado | N analizable | Origen NC | C1 | C2 | C3 | C4 | Sin clasificar origen / destino |
-|----|----|----|----|----|----|----|----|----|----|----|----|
-| Básica o menos | 427 | 167 | 39,1 % | 0 | 167 | 96 | 70 | 1▲ | 0∅ | 0∅ | 0 / 0 |
-| Media | 857 | 371 | 43,3 % | 1 | 370 | 180 | 189 | 1▲ | 0∅ | 0∅ | 0 / 0 |
-| Superior | 816 | 360 | 44,1 % | 3 | 357 | 130 | 225 | 0∅ | 2▲ | 0∅ | 0 / 0 |
-| Sin dato (visible) | 23 | 8 | 34,8 % | 0 | 8▲ | 4▲ | 4▲ | 0∅ | 0∅ | 0∅ | 0 / 0 |
-| Total | 2.123 | 906 | 42,7 % | 4 | 902 | 410 | 488 | 2▲ | 2▲ | 0∅ | 0 / 0 |
+| Educación en R7 | N inicial R7 | N observado R11 | Seguimiento | Vínculo descartado | N analizable | Origen NC | C1 | C2 | C3+ | Sin clasificar origen / destino |
+|----|----|----|----|----|----|----|----|----|----|----|
+| Básica o menos | 427 | 167 | 39,1 % | 0 | 167 | 96 | 70 | 1▲ | 0∅ | 0 / 0 |
+| Media | 857 | 371 | 43,3 % | 1 | 370 | 180 | 189 | 1▲ | 0∅ | 0 / 0 |
+| Superior | 816 | 360 | 44,1 % | 2 | 358 | 130 | 226 | 0∅ | 2▲ | 0 / 0 |
+| Sin dato (visible) | 23 | 8 | 34,8 % | 0 | 8▲ | 4▲ | 4▲ | 0∅ | 0∅ | 0 / 0 |
+| Total | 2.123 | 906 | 42,7 % | 3 | 903 | 410 | 489 | 2▲ | 2▲ | 0 / 0 |
 
 La fila «Sin dato» corresponde a personas sin información de educación en R7 y se conserva a la vista. No se cruzó educación con sexo y edad: serían unas 24 celdas de alrededor de 37 analizables, demasiado pocas para tasas de transición.
 
@@ -64,12 +64,11 @@ La fila «Sin dato» corresponde a personas sin información de educación en R7
 
 | Origen en R7   | N inicial | N observado en R11 | Seguimiento | N analizable |
 |----------------|-----------|--------------------|-------------|--------------|
-| NC             | 999       | 411                | 41,1 %      | 410          |
-| C1             | 1.118     | 491                | 43,9 %      | 488          |
-| C2             | 4▲        | 2▲                 | 50,0 %      | 2▲           |
-| C3             | 2▲        | 2▲                 | 100,0 %     | 2▲           |
-| C4             | 0∅        | 0∅                 | —           | 0∅           |
-| Sin clasificar | 0∅        | 0∅                 | —           | 0∅           |
+| NC | 999 | 411 | 41,1 % | 410 |
+| C1 | 1.118 | 491 | 43,9 % | 489 |
+| C2 | 4▲ | 2▲ | 50,0 % | 2▲ |
+| C3+ | 2▲ | 2▲ | 100,0 % | 2▲ |
+| Sin clasificar | 0∅ | 0∅ | — | 0∅ |
 
 El seguimiento es similar entre no bebedores (41,1 %) y bebedores C1 (43,9 %). Es mucho menor en edades jóvenes (34 % en hombres de 18–29) que en mayores (47 % en hombres de 60–65), así que la pérdida no es aleatoria. El seguimiento total (42,7 %) deja la comparación expuesta a sesgo por desgaste que aquí no se corrige.
 
@@ -88,8 +87,8 @@ Cada persona aporta un solo par R7 → R11. La estimación ponderada usa el peso
 
 | Origen | Destino NC | Destino C1 | Destino C2 o más |
 |----|----|----|----|
-| NC | 71 % (62 %–80 %) 322/410 | 29 % (20 %–38 %) 88/410 | 0 % (0 %–0 %) 0/410 |
-| C1 | 21 % (15 %–28 %) 123/488 | 77 % (70 %–83 %) 361/488 | 2 % (0 %–6 %) 4/488 |
+| NC | 71 % (61 %–80 %) 322/410 | 29 % (20 %–39 %) 88/410 | 0 % (0 %–0 %) 0/410 |
+| C1 | 21 % (15 %–28 %) 124/489 | 77 % (70 %–83 %) 361/489 | 2 % (0 %–5 %) 4/489 |
 | C2 o más | 0/4 solo conteo | 3/4 solo conteo | 1/4 solo conteo |
 
 Con límites estrictos de EPS el resultado casi no cambia: 70 % permanecen NC (N = 383) y 78 % permanecen C1 (N = 460). El origen «C2 o más» tiene 4 personas: solo conteos.
@@ -98,29 +97,29 @@ Con límites estrictos de EPS el resultado casi no cambia: 70 % permanecen NC (N
 
 | Sexo | NC → sigue NC | C1 → sigue C1 | C1 → deja de beber (NC) |
 |----|----|----|----|
-| Hombres | 63 % (44 %–81 %) 62/91 exploratoria | 84 % (74 %–92 %) 184/221 | 16 % (8 %–26 %) 36/221 |
-| Mujeres | 76 % (67 %–84 %) 260/319 | 68 % (57 %–77 %) 177/267 | 28 % (20 %–37 %) 87/267 |
+| Hombres | 63 % (45 %–82 %) 62/91 exploratoria | 84 % (74 %–91 %) 184/221 | 16 % (9 %–26 %) 36/221 |
+| Mujeres | 76 % (67 %–84 %) 260/319 | 67 % (57 %–76 %) 177/268 | 28 % (20 %–37 %) 88/268 |
 
 ### Por sexo × edad
 
 | Sexo × edad | NC → sigue NC | C1 → sigue C1 | C1 → deja de beber (NC) |
 |----|----|----|----|
-| Hombres 18-29 | 7/8 solo conteo | 93 % (79 %–99 %) 28/32 exploratoria | 7 % (1 %–21 %) 4/32 exploratoria |
-| Hombres 30-44 | 19/29 inestable, no interpretar (60 %) | 75 % (54 %–91 %) 53/64 exploratoria | 25 % (9 %–46 %) 10/64 exploratoria |
-| Hombres 45-59 | 54 % (31 %–78 %) 19/30 exploratoria | 86 % (74 %–96 %) 67/77 exploratoria | 14 % (4 %–26 %) 10/77 exploratoria |
+| Hombres 18-29 | 7/8 solo conteo | 93 % (78 %–100 %) 28/32 exploratoria | 7 % (0 %–22 %) 4/32 exploratoria |
+| Hombres 30-44 | 19/29 inestable, no interpretar (60 %) | 75 % (55 %–91 %) 53/64 exploratoria | 25 % (9 %–45 %) 10/64 exploratoria |
+| Hombres 45-59 | 54 % (32 %–78 %) 19/30 exploratoria | 86 % (74 %–96 %) 67/77 exploratoria | 14 % (4 %–26 %) 10/77 exploratoria |
 | Hombres 60-65 | 17/24 inestable, no interpretar (72 %) | 91 % (82 %–96 %) 36/48 exploratoria | 9 % (4 %–18 %) 12/48 exploratoria |
 | Mujeres 18-29 | 13/26 inestable, no interpretar (35 %) | 16/23 inestable, no interpretar (74 %) | 6/23 inestable, no interpretar (15 %) |
-| Mujeres 30-44 | 83 % (71 %–93 %) 69/81 exploratoria | 71 % (52 %–86 %) 68/88 exploratoria | 22 % (10 %–37 %) 18/88 exploratoria |
-| Mujeres 45-59 | 88 % (80 %–94 %) 110/131 | 63 % (51 %–74 %) 66/114 | 37 % (26 %–49 %) 48/114 |
-| Mujeres 60-65 | 77 % (60 %–93 %) 68/81 exploratoria | 60 % (35 %–83 %) 27/42 exploratoria | 40 % (17 %–65 %) 15/42 exploratoria |
+| Mujeres 30-44 | 83 % (71 %–93 %) 69/81 exploratoria | 69 % (50 %–85 %) 68/89 exploratoria | 24 % (11 %–40 %) 19/89 exploratoria |
+| Mujeres 45-59 | 88 % (81 %–94 %) 110/131 | 63 % (51 %–75 %) 66/114 | 37 % (25 %–49 %) 48/114 |
+| Mujeres 60-65 | 77 % (60 %–92 %) 68/81 exploratoria | 60 % (35 %–83 %) 27/42 exploratoria | 40 % (17 %–65 %) 15/42 exploratoria |
 
 ### Por educación (margen)
 
 | Educación en R7 | NC → sigue NC | C1 → sigue C1 | C1 → deja de beber (NC) |
 |----|----|----|----|
-| Básica o menos | 86 % (74 %–95 %) 86/96 exploratoria | 62 % (46 %–79 %) 42/70 exploratoria | 37 % (21 %–54 %) 27/70 exploratoria |
-| Media | 70 % (57 %–81 %) 136/180 | 82 % (74 %–89 %) 136/189 | 17 % (11 %–26 %) 52/189 |
-| Superior | 67 % (49 %–84 %) 98/130 | 76 % (65 %–86 %) 181/225 | 20 % (12 %–31 %) 42/225 |
+| Básica o menos | 86 % (74 %–95 %) 86/96 exploratoria | 62 % (46 %–78 %) 42/70 exploratoria | 37 % (22 %–54 %) 27/70 exploratoria |
+| Media | 70 % (57 %–81 %) 136/180 | 82 % (73 %–89 %) 136/189 | 17 % (11 %–26 %) 52/189 |
+| Superior | 67 % (49 %–85 %) 98/130 | 75 % (64 %–85 %) 181/226 | 21 % (12 %–32 %) 43/226 |
 | Sin dato (visible) | 2/4 solo conteo | 2/4 solo conteo | 2/4 solo conteo |
 
 **Educación: qué sí y qué no.** Como margen, con origen NC o C1, hay entre 70 y 225 personas por celda y los intervalos son anchos. No hay datos para sexo × edad × educación. Para compartir información sin presentar estimaciones inestables, se propone usar sexo × edad (o solo edad por sexo) como base y estimar el efecto de la educación con una regresión logística aditiva o con contracción hacia esa base, y publicar solo las estimaciones con intervalo. Mientras tanto, las celdas pequeñas se comparten como conteos.
@@ -131,12 +130,12 @@ Los cinco comparadores pedidos más uno adicional. No son sinónimos. **Rank mat
 
 | Comparador | Datos y plazo original | Especificación | Pesos | Calibración o escalamiento | Conversión a dos años | Incertidumbre aquí |
 |----|----|----|----|----|----|----|
-| **1. Observado TSM R7 → R11** | Las mismas 902 personas, 24 meses. | Proporciones de destino por origen. | Peso transversal R7 (Fact_Exp) sin corrección por desgaste; también sin ponderar. | Ninguna. | Ninguna: plazo nativo. | IC 95 % por bootstrap de personas (solo muestral). |
+| **1. Observado TSM R7 → R11** | Las mismas 903 personas, 24 meses. | Proporciones de destino por origen. | Peso transversal R7 (Fact_Exp) sin corrección por desgaste; también sin ponderar. | Ninguna. | Ninguna: plazo nativo. | IC 95 % por bootstrap de personas (solo muestral). |
 | **2. Motor EPS** (A y Lognormal) | Panel EPS real, VI → VII (3,7 años) y VII → VIII (4,0 años), 18–65 años. Seis estados: N0, FD, C1–C4. | A: matrices por celda sexo × edad con contracción. Lognormal: participación más cantidad lognormal, con origen, sexo × edad, periodo, gramos previos y educación. | Longitudinal oficial o transversal VII, más IPW. | Generador continuo de seis estados ajustado a las matrices de intervalo; la matriz anual publicada sale de ahí. | Generador reajustado por estrato con el mismo método y masas ponderadas; matriz a dos años = exp(2Q). Verificado contra la anual publicada (ver abajo). | Puntual: las réplicas JKn existen en el notebook pero no se exportaron. |
 | **3. JRT original** | ENPG transversal. Original: pares bienales 2008 → 2010 → … → 2016. Aquí reconstruido con 2012 → 2014 → 2016 (33.789 pseudo-pares). | Pseudo-panel por rank matching de g/día dentro de sexo × tramo de edad; MASS::polr ordinal de 4 estados (no bebe = abstinente de vida + exbebedor; Cat1–Cat3; cat4 excluida): destino ~ origen × edad + origen × sexo + sexo × edad. | Ninguno: ni el emparejamiento ni el polr usan pesos. | En la simulación cada año eleva las probabilidades a α = 0,5 y renormaliza. Los offsets de calibración (theta) de `Alcohol Transitions_CALIB.R` no se aplican y ese script no se puede leer (error de sintaxis). | El polr se entrena con pares t → t + 2, así que su predicción ya es a dos años: sin conversión. Como diagnóstico se muestran también dos pasos atemperados, que es lo que hace la simulación en dos años. | Puntual; ajuste reconstruido, no el original. |
 | **4. JRT_reference** (notebook EPS) | Los mismos pares reales EPS que el motor EPS, 3,7 y 4,0 años. | Modelo ordinal único con la fórmula literal de JRT: origen × edad + origen × sexo + sexo × edad + periodo. Seis orígenes EPS, sin educación. | Los del motor EPS. | Ninguno. El notebook EPS lo usa como referencia de validación cruzada y no lo anualiza. | Generador por estrato y exp(2Q), igual que el motor EPS. Esta conversión se deriva aquí; no existía. | Puntual. |
-| **5. Motor TSM** (A y Lognormal) | Panel TSM R7 a R11, cuatro intervalos de 4 a 8 meses. | El motor EPS portado a TSM. | Fact_Exp de origen más IPW de vínculo. | Generador anual publicado. | Generador por estrato y exp(2Q). | Puntual: no se exportaron réplicas bootstrap de las matrices. |
-| **Adicional: acoplamiento por rangos** | Márgenes R7 y R11 de las mismas 902 personas, 24 meses. | Acoplamiento comonótono de categorías ordenadas dentro de sexo × edad que preserva ambos márgenes (la forma por categorías del rank matching de JRT). | Peso R7 o sin ponderar. | Ninguno. | Ninguna: plazo nativo. | No aplica. |
+| **5. Motor TSM** (A y Lognormal) | Panel TSM R7 a R11, cuatro intervalos de 4 a 8 meses. Cinco estados: N0, FD, C1, C2, C3+ (v4). | El motor EPS portado a TSM. | Fact_Exp de origen más IPW de vínculo. | Generador anual publicado. | Generador por estrato y exp(2Q). | Puntual: no se exportaron réplicas bootstrap de las matrices. |
+| **Adicional: acoplamiento por rangos** | Márgenes R7 y R11 de las mismas 903 personas, 24 meses. | Acoplamiento comonótono de categorías ordenadas dentro de sexo × edad que preserva ambos márgenes (la forma por categorías del rank matching de JRT). | Peso R7 o sin ponderar. | Ninguno. | Ninguna: plazo nativo. | No aplica. |
 
 **Qué mide el acoplamiento por rangos.** Usa exactamente los márgenes observados, pero ignora quién es quién: empareja a la persona que más bebía en R7 con la que más bebe en R11. Por eso entrega la persistencia máxima compatible con esos márgenes. La diferencia con lo observado mide cuánto sesgo introduce construir pares por rangos. EPS ya lo había medido en su propio plazo: con 3,7 y 4,0 años, rank matching daba 94 % y 77 % de permanencia C1, frente a 58 % y 52 % en el panel real. Esos valores a cuatro años no se comparan con los de dos años.
 
@@ -155,7 +154,7 @@ Los cinco comparadores pedidos más uno adicional. No son sinónimos. **Rank mat
 
 ## 5. «No consumo» armonizado y verificación de la proyección
 
-TSM observa no consumo (NC) sin separar abstinentes de vida (N0) y exbebedores (FD) de forma comparable. En los motores entrenados con estados EPS, la probabilidad de seguir sin beber desde un origen no bebedor suma los **dos** destinos N0 y FD, porque pasar de uno a otro sigue siendo no consumir. La proyección conserva los seis estados y solo agrega N0 + FD al leer el resultado. El cálculo anterior de esta página ya sumaba ambos destinos: se revisó y era correcto.
+TSM observa no consumo (NC) sin separar abstinentes de vida (N0) y exbebedores (FD) de forma comparable. En los motores entrenados con estados EPS, la probabilidad de seguir sin beber desde un origen no bebedor suma los **dos** destinos N0 y FD, porque pasar de uno a otro sigue siendo no consumir. La proyección conserva los estados de cada motor (seis en EPS, cinco en TSM v4) y solo agrega N0 + FD al leer el resultado. El cálculo anterior de esta página ya sumaba ambos destinos: se revisó y era correcto.
 
 **Mezcla de orígenes.** El NC de R7 no se puede separar en N0 y FD: es la primera ronda y no hay historia. Para EPS y JRT_reference se muestran dos límites: todos N0 y todos FD. Además se muestra un escenario con la proporción de FD entre los no bebedores EPS del mismo sexo y edad (conteos sin ponderar, ambos periodos sumados). Este rango es incertidumbre de composición, separada del intervalo muestral de lo observado. El motor TSM usa su fila N0, porque los no bebedores de R7 son N0 por construcción. JRT original ya une ambos grupos en un solo estado.
 
@@ -170,20 +169,20 @@ TSM observa no consumo (NC) sin separar abstinentes de vida (N0) y exbebedores (
 | Mujeres 45-59 | 1.215     | 101       | 7,7 %                             |
 | Mujeres 60-65 | 484       | 36        | 6,9 %                             |
 
-**Verificación de la proyección.** Antes de mirar los estratos se fijó una condición: el generador reajustado a las matrices agregadas debía reproducir la matriz anual publicada con diferencia menor a 0,02 en cada celda. Con conteos como masas no pasó en tres motores, porque los conteos cambian la composición del promedio. Con las masas ponderadas que usa la publicación pasa en todos, y las celdas a dos años que se informan difieren en 0,002 o menos. Dentro de un estrato esa composición no interviene.
+**Verificación de la proyección.** Antes de mirar los estratos se fijó una condición: el generador reajustado a las matrices agregadas debía reproducir la matriz anual publicada con diferencia menor a 0,02 en cada celda. Con conteos como masas no pasó en tres motores, porque los conteos cambian la composición del promedio. Con las masas ponderadas que usa la publicación pasa en todos, y las celdas a dos años que se informan difieren en 0,002 o menos. Dentro de un estrato esa composición no interviene. En EPS, que sigue con seis estados, la matriz anual se compara después de fusionar C3 y C4 con los mismos pesos de origen que usa el cruce EPS–TSM. Sin esa fusión, la celda C4→C4, casi sin datos, hacía fallar la condición.
 
 | Motor | Masas | Diferencia máxima, matriz anual | Diferencia máxima, celdas informadas a 2 años | Condición |
 |----|----|----|----|----|
-| EPS A | conteos | 0,140 | 0,0113 | no pasa |
-| EPS A | ponderadas (como en la publicación) | 0,014 | 0,0017 | pasa |
-| EPS Lognormal | conteos | 0,030 | 0,0211 | no pasa |
-| EPS Lognormal | ponderadas (como en la publicación) | 0,014 | 0,0003 | pasa |
-| TSM A | conteos | 0,010 | 0,0064 | pasa |
-| TSM A | ponderadas (como en la publicación) | 0,006 | 0,0018 | pasa |
-| TSM Lognormal | conteos | 0,039 | 0,0532 | no pasa |
-| TSM Lognormal | ponderadas (como en la publicación) | 0,002 | 0,0009 | pasa |
+| EPS A | conteos | 0,083 | 0,0133 | no pasa |
+| EPS A | ponderadas (como en la publicación) | 0,006 | 0,0013 | pasa |
+| EPS Lognormal | conteos | 0,027 | 0,0214 | no pasa |
+| EPS Lognormal | ponderadas (como en la publicación) | 0,006 | 0,0008 | pasa |
+| TSM A | conteos | 0,009 | 0,0063 | pasa |
+| TSM A | ponderadas (como en la publicación) | 0,002 | 0,0004 | pasa |
+| TSM Lognormal | conteos | 0,041 | 0,0558 | no pasa |
+| TSM Lognormal | ponderadas (como en la publicación) | 0,006 | 0,0009 | pasa |
 
-**Filas sin datos.** Algunos orígenes no tienen personas en ciertos estratos (sobre todo C3 y C4). Sus tasas quedan fijadas solo por la penalización débil del generador. Con una penalización diez veces menor o mayor, las celdas informadas cambian a lo más 0,009 en EPS y 0,028 en TSM. La fila C4 publicada de TSM no tiene datos; ya no se usa como absorbente, porque la proyección por estrato no la necesita.
+**Filas sin datos.** Algunos orígenes no tienen personas en ciertos estratos (sobre todo C3 y C4). Sus tasas quedan fijadas solo por la penalización débil del generador. Con una penalización diez veces menor o mayor, las celdas informadas cambian a lo más 0,009 en EPS y 0,028 en TSM. TSM v4 ya no tiene fila C4: C3+ reúne a C3 y C4.
 
 **Composición.** Los valores globales de los modelos son el promedio de las predicciones por estrato, ponderado por la composición R7 de las personas analizables con ese origen. No se repite una predicción global en todos los estratos. Con esa estandarización, la permanencia C1 de EPS A pasa de 69,6 % (composición de entrenamiento EPS) a 68,2 % (composición de la cohorte TSM).
 
@@ -193,9 +192,9 @@ Todas las columnas son a dos años. El observado lleva su intervalo muestral; lo
 
 | Transición | N origen | Observado ponderado (IC) | Sin ponderar | EPS A | EPS Lognormal | JRT_reference (EPS) | TSM A | TSM Lognormal | JRT original | JRT, 2 pasos atemperados | Rangos, ponderado | Rangos, sin ponderar |
 |----|----|----|----|----|----|----|----|----|----|----|----|----|
-| NC → sigue NC | 410 | 71 % (62 %–80 %) | 79 % | 85 % (77 %–86 %)↑ | 85 % (80 %–86 %)↑ | 85 % (81 %–86 %)↑ | 50 %↓ | 52 %↓ | 97 %↑ | 77 % | 94 %↑ | 98 %↑ |
-| C1 → sigue C1 | 488 | 77 % (70 %–83 %) | 74 % | 68 %↓ | 67 %↓ | 66 %↓ | 72 % | 73 % | 90 %↑ | 54 %↓ | 94 %↑ | 91 %↑ |
-| C1 → deja de beber (NC) | 488 | 21 % (15 %–28 %) | 25 % | 27 % | 29 %↑ | 29 %↑ | 25 % | 25 % | 9 %↓ | 35 %↑ | 6 %↓ | 9 %↓ |
+| NC → sigue NC | 410 | 71 % (61 %–80 %) | 79 % | 85 % (77 %–86 %)↑ | 85 % (80 %–86 %)↑ | 85 % (81 %–86 %)↑ | 50 %↓ | 51 %↓ | 97 %↑ | 77 % | 94 %↑ | 98 %↑ |
+| C1 → sigue C1 | 489 | 77 % (70 %–83 %) | 74 % | 68 %↓ | 67 %↓ | 66 %↓ | 73 % | 73 % | 90 %↑ | 54 %↓ | 93 %↑ | 91 %↑ |
+| C1 → deja de beber (NC) | 489 | 21 % (15 %–28 %) | 25 % | 28 % | 29 %↑ | 29 %↑ | 25 % | 25 % | 9 %↓ | 35 %↑ | 6 %↓ | 9 %↓ |
 
 ## 7. Por sexo × edad al inicio
 
@@ -206,39 +205,39 @@ Cada predicción usa el modelo del propio estrato; no se repite el valor global.
 | Estrato | N origen | Observado ponderado (IC) | Sin ponderar | EPS A | EPS Lognormal | JRT_reference (EPS) | TSM A | TSM Lognormal | JRT original | JRT, 2 pasos atemperados | Rangos, ponderado | Rangos, sin ponderar |
 |----|----|----|----|----|----|----|----|----|----|----|----|----|
 | Hombres 18-29 | 8 | 7/8 solo conteo | — | 79 % (75 %–79 %) | 75 % (69 %–76 %) | 74 % (69 %–74 %) | 50 % | 52 % | 99 % | 81 % | 100 % | 100 % |
-| Hombres 30-44 | 29 | 60 % inestable | 66 % | 80 % (76 %–81 %) | 78 % (73 %–80 %) | 79 % (75 %–79 %) | 50 % | 44 % | 98 % | 80 % | 100 % | 100 % |
-| Hombres 45-59 | 30 | 54 % (31 %–78 %) exploratoria | 63 % | 82 %↑ (78 %–82 %) | 82 %↑ (76 %–83 %) | 83 %↑ (80 %–83 %) | 49 % | 45 % | 99 %↑ | 82 %↑ | 93 %↑ | 97 %↑ |
-| Hombres 60-65 | 24 | 72 % inestable | 71 % | 83 % (77 %–83 %) | 83 % (77 %–84 %) | 85 % (78 %–85 %) | 49 % | 43 % | 99 % | 88 % | 99 % | 100 % |
-| Mujeres 18-29 | 26 | 35 % inestable | 50 % | 83 % (78 %–83 %) | 82 % (77 %–82 %) | 81 % (73 %–81 %) | 49 % | 38 % | 97 % | 75 % | 48 % | 73 % |
-| Mujeres 30-44 | 81 | 83 % (71 %–93 %) exploratoria | 85 % | 87 % (78 %–88 %) | 88 % (83 %–88 %) | 88 % (83 %–89 %) | 49 %↓ | 47 %↓ | 95 %↑ | 71 %↓ | 100 %↑ | 100 %↑ |
-| Mujeres 45-59 | 131 | 88 % (80 %–94 %) | 84 % | 89 % (77 %–90 %) | 90 % (87 %–91 %) | 91 % (87 %–91 %) | 51 %↓ | 61 %↓ | 97 %↑ | 76 %↓ | 100 %↑ | 100 %↑ |
-| Mujeres 60-65 | 81 | 77 % (60 %–93 %) exploratoria | 84 % | 89 % (78 %–90 %) | 91 % (86 %–91 %) | 92 % (85 %–92 %) | 51 %↓ | 75 % | 98 %↑ | 79 % | 100 %↑ | 100 %↑ |
+| Hombres 30-44 | 29 | 60 % inestable | 66 % | 80 % (76 %–81 %) | 78 % (73 %–80 %) | 79 % (76 %–79 %) | 50 % | 43 % | 98 % | 80 % | 100 % | 100 % |
+| Hombres 45-59 | 30 | 54 % (32 %–78 %) exploratoria | 63 % | 82 %↑ (78 %–82 %) | 82 %↑ (76 %–83 %) | 83 %↑ (80 %–83 %) | 48 % | 44 % | 99 %↑ | 82 %↑ | 93 %↑ | 97 %↑ |
+| Hombres 60-65 | 24 | 72 % inestable | 71 % | 83 % (77 %–83 %) | 83 % (76 %–84 %) | 85 % (78 %–85 %) | 49 % | 44 % | 99 % | 88 % | 99 % | 100 % |
+| Mujeres 18-29 | 26 | 35 % inestable | 50 % | 83 % (78 %–83 %) | 82 % (77 %–82 %) | 81 % (73 %–81 %) | 49 % | 37 % | 97 % | 75 % | 48 % | 73 % |
+| Mujeres 30-44 | 81 | 83 % (71 %–93 %) exploratoria | 85 % | 87 % (78 %–88 %) | 88 % (83 %–88 %) | 88 % (84 %–89 %) | 50 %↓ | 47 %↓ | 95 %↑ | 71 % | 100 %↑ | 100 %↑ |
+| Mujeres 45-59 | 131 | 88 % (81 %–94 %) | 84 % | 89 % (77 %–90 %) | 90 % (87 %–91 %) | 91 % (87 %–91 %) | 51 %↓ | 62 %↓ | 97 %↑ | 76 %↓ | 100 %↑ | 100 %↑ |
+| Mujeres 60-65 | 81 | 77 % (60 %–92 %) exploratoria | 84 % | 89 % (78 %–90 %) | 91 % (86 %–91 %) | 92 % (85 %–92 %) | 51 %↓ | 74 % | 98 %↑ | 79 % | 100 %↑ | 100 %↑ |
 
 ### C1 → sigue C1
 
 | Estrato | N origen | Observado ponderado (IC) | Sin ponderar | EPS A | EPS Lognormal | JRT_reference (EPS) | TSM A | TSM Lognormal | JRT original | JRT, 2 pasos atemperados | Rangos, ponderado | Rangos, sin ponderar |
 |----|----|----|----|----|----|----|----|----|----|----|----|----|
-| Hombres 18-29 | 32 | 93 % (79 %–99 %) exploratoria | 88 % | 76 %↓ | 77 %↓ | 73 %↓ | 74 %↓ | 76 %↓ | 93 % | 57 %↓ | 95 % | 91 % |
-| Hombres 30-44 | 64 | 75 % (54 %–91 %) exploratoria | 83 % | 75 % | 75 % | 72 % | 74 % | 77 % | 92 %↑ | 56 % | 97 %↑ | 100 %↑ |
-| Hombres 45-59 | 77 | 86 % (74 %–96 %) exploratoria | 87 % | 73 %↓ | 71 %↓ | 69 %↓ | 73 %↓ | 75 % | 93 % | 58 %↓ | 100 %↑ | 100 %↑ |
+| Hombres 18-29 | 32 | 93 % (78 %–100 %) exploratoria | 88 % | 76 %↓ | 77 %↓ | 73 %↓ | 74 %↓ | 76 %↓ | 93 % | 57 %↓ | 95 % | 91 % |
+| Hombres 30-44 | 64 | 75 % (55 %–91 %) exploratoria | 83 % | 75 % | 75 % | 72 % | 74 % | 78 % | 92 %↑ | 56 % | 97 %↑ | 100 %↑ |
+| Hombres 45-59 | 77 | 86 % (74 %–96 %) exploratoria | 87 % | 73 %↓ | 71 %↓ | 69 %↓ | 73 %↓ | 76 % | 93 % | 58 %↓ | 100 %↑ | 100 %↑ |
 | Hombres 60-65 | 48 | 91 % (82 %–96 %) exploratoria | 75 % | 72 %↓ | 71 %↓ | 70 %↓ | 74 %↓ | 76 %↓ | 82 % | 47 %↓ | 100 %↑ | 90 % |
-| Mujeres 18-29 | 23 | 74 % inestable | 70 % | 62 % | 66 % | 67 % | 71 % | 75 % | 90 % | 54 % | 92 % | 100 % |
-| Mujeres 30-44 | 88 | 71 % (52 %–86 %) exploratoria | 77 % | 59 % | 59 % | 60 % | 71 % | 74 % | 89 %↑ | 54 % | 91 %↑ | 92 %↑ |
-| Mujeres 45-59 | 114 | 63 % (51 %–74 %) | 58 % | 57 % | 54 % | 55 % | 70 % | 61 % | 89 %↑ | 53 % | 78 %↑ | 76 %↑ |
-| Mujeres 60-65 | 42 | 60 % (35 %–83 %) exploratoria | 64 % | 61 % | 53 % | 56 % | 69 % | 47 % | 83 % | 47 % | 95 %↑ | 95 %↑ |
+| Mujeres 18-29 | 23 | 74 % inestable | 70 % | 62 % | 66 % | 67 % | 72 % | 75 % | 90 % | 54 % | 92 % | 100 % |
+| Mujeres 30-44 | 89 | 69 % (50 %–85 %) exploratoria | 76 % | 59 % | 59 % | 61 % | 72 % | 74 % | 89 %↑ | 54 % | 89 %↑ | 91 %↑ |
+| Mujeres 45-59 | 114 | 63 % (51 %–75 %) | 58 % | 57 % | 54 % | 55 % | 71 % | 61 % | 89 %↑ | 53 % | 78 %↑ | 76 %↑ |
+| Mujeres 60-65 | 42 | 60 % (35 %–83 %) exploratoria | 64 % | 61 % | 53 % | 56 % | 70 % | 48 % | 83 % | 47 % | 95 %↑ | 95 %↑ |
 
 ### C1 → deja de beber (NC)
 
 | Estrato | N origen | Observado ponderado (IC) | Sin ponderar | EPS A | EPS Lognormal | JRT_reference (EPS) | TSM A | TSM Lognormal | JRT original | JRT, 2 pasos atemperados | Rangos, ponderado | Rangos, sin ponderar |
 |----|----|----|----|----|----|----|----|----|----|----|----|----|
-| Hombres 18-29 | 32 | 7 % (1 %–21 %) exploratoria | 12 % | 19 % | 18 % | 19 % | 24 %↑ | 22 %↑ | 5 % | 28 %↑ | 5 % | 9 % |
-| Hombres 30-44 | 64 | 25 % (9 %–46 %) exploratoria | 16 % | 21 % | 21 % | 21 % | 24 % | 21 % | 7 %↓ | 32 % | 3 %↓ | 0 %↓ |
+| Hombres 18-29 | 32 | 7 % (0 %–22 %) exploratoria | 13 % | 19 % | 18 % | 19 % | 24 %↑ | 23 %↑ | 5 % | 28 %↑ | 5 % | 9 % |
+| Hombres 30-44 | 64 | 25 % (9 %–45 %) exploratoria | 16 % | 21 % | 21 % | 21 % | 24 % | 21 % | 7 %↓ | 32 % | 3 %↓ | 0 %↓ |
 | Hombres 45-59 | 77 | 14 % (4 %–26 %) exploratoria | 13 % | 23 % | 25 % | 26 % | 25 % | 22 % | 6 % | 29 %↑ | 0 %↓ | 0 %↓ |
 | Hombres 60-65 | 48 | 9 % (4 %–18 %) exploratoria | 25 % | 23 %↑ | 27 %↑ | 24 %↑ | 24 %↑ | 22 %↑ | 17 % | 47 %↑ | 0 %↓ | 10 % |
-| Mujeres 18-29 | 23 | 15 % inestable | 26 % | 33 % | 28 % | 29 % | 25 % | 21 % | 9 % | 35 % | 0 % | 0 % |
-| Mujeres 30-44 | 88 | 22 % (10 %–37 %) exploratoria | 20 % | 37 % | 38 %↑ | 37 %↑ | 27 % | 25 % | 10 %↓ | 35 % | 9 %↓ | 7 %↓ |
-| Mujeres 45-59 | 114 | 37 % (26 %–49 %) | 42 % | 39 % | 44 % | 44 % | 27 % | 36 % | 10 %↓ | 36 % | 22 %↓ | 24 %↓ |
-| Mujeres 60-65 | 42 | 40 % (17 %–65 %) exploratoria | 36 % | 35 % | 45 % | 41 % | 27 % | 50 % | 17 %↓ | 45 % | 5 %↓ | 5 %↓ |
+| Mujeres 18-29 | 23 | 15 % inestable | 26 % | 33 % | 28 % | 29 % | 26 % | 21 % | 9 % | 35 % | 0 % | 0 % |
+| Mujeres 30-44 | 89 | 24 % (11 %–40 %) exploratoria | 21 % | 37 % | 38 % | 37 % | 27 % | 25 % | 10 %↓ | 35 % | 11 % | 8 %↓ |
+| Mujeres 45-59 | 114 | 37 % (25 %–49 %) | 42 % | 39 % | 44 % | 44 % | 27 % | 37 % | 10 %↓ | 36 % | 22 %↓ | 24 %↓ |
+| Mujeres 60-65 | 42 | 40 % (17 %–65 %) exploratoria | 36 % | 35 % | 46 % | 41 % | 28 % | 49 % | 17 % | 45 % | 5 %↓ | 5 %↓ |
 
 ### Resumen por estrato con 30 o más personas de origen
 
@@ -246,17 +245,17 @@ Número de estratos donde el valor puntual queda dentro / sobre / bajo el IC obs
 
 | Comparador               | NC → sigue NC  | C1 → sigue C1  | C1 → deja de beber |
 |--------------------------|----------------|----------------|--------------------|
-| EPS A                    | 3 / 1 / 0 de 4 | 4 / 0 / 3 de 7 | 6 / 1 / 0 de 7     |
-| EPS Lognormal            | 3 / 1 / 0 de 4 | 4 / 0 / 3 de 7 | 5 / 2 / 0 de 7     |
-| JRT_reference (EPS)      | 3 / 1 / 0 de 4 | 4 / 0 / 3 de 7 | 5 / 2 / 0 de 7     |
-| TSM A                    | 1 / 0 / 3 de 4 | 4 / 0 / 3 de 7 | 5 / 2 / 0 de 7     |
-| TSM Lognormal            | 2 / 0 / 2 de 4 | 5 / 0 / 2 de 7 | 5 / 2 / 0 de 7     |
-| JRT original             | 0 / 4 / 0 de 4 | 4 / 3 / 0 de 7 | 3 / 0 / 4 de 7     |
-| JRT, 2 pasos atemperados | 1 / 1 / 2 de 4 | 4 / 0 / 3 de 7 | 4 / 3 / 0 de 7     |
-| Rangos, ponderado        | 0 / 4 / 0 de 4 | 1 / 6 / 0 de 7 | 1 / 0 / 6 de 7     |
-| Rangos, sin ponderar     | 0 / 4 / 0 de 4 | 2 / 5 / 0 de 7 | 2 / 0 / 5 de 7     |
+| EPS A | 3 / 1 / 0 de 4 | 4 / 0 / 3 de 7 | 6 / 1 / 0 de 7 |
+| EPS Lognormal | 3 / 1 / 0 de 4 | 4 / 0 / 3 de 7 | 6 / 1 / 0 de 7 |
+| JRT_reference (EPS) | 3 / 1 / 0 de 4 | 4 / 0 / 3 de 7 | 6 / 1 / 0 de 7 |
+| TSM A | 1 / 0 / 3 de 4 | 4 / 0 / 3 de 7 | 5 / 2 / 0 de 7 |
+| TSM Lognormal | 2 / 0 / 2 de 4 | 5 / 0 / 2 de 7 | 5 / 2 / 0 de 7 |
+| JRT original | 0 / 4 / 0 de 4 | 4 / 3 / 0 de 7 | 4 / 0 / 3 de 7 |
+| JRT, 2 pasos atemperados | 2 / 1 / 1 de 4 | 4 / 0 / 3 de 7 | 4 / 3 / 0 de 7 |
+| Rangos, ponderado | 0 / 4 / 0 de 4 | 1 / 6 / 0 de 7 | 2 / 0 / 5 de 7 |
+| Rangos, sin ponderar | 0 / 4 / 0 de 4 | 2 / 5 / 0 de 7 | 2 / 0 / 5 de 7 |
 
-**Orígenes altos.** Solo hay seis personas con origen C2 o más en R7 (4 C2, 2 C3, ninguna C4). No sirven para validar la persistencia de estados altos en ningún comparador.
+**Orígenes altos.** Solo hay seis personas con origen C2 o más en R7 (4 C2 y 2 C3+). No sirven para validar la persistencia de estados altos en ningún comparador.
 
 ## 8. Educación
 
@@ -266,10 +265,10 @@ La educación queda como margen observado (sección 3). Las matrices exportadas 
 
 Se describen diferencias puntuales frente al intervalo observado; ninguna es una prueba. Estar en el mismo estado en R7 y R11 no prueba permanencia continua: alguien pudo cambiar y volver entre ambas entrevistas. Esta comprobación tampoco valida por sí sola las trayectorias anuales de ningún motor.
 
-- **JRT original sobreestima la estabilidad a nivel global.** Predice que 97 % de los no bebedores y 90 % de C1 siguen igual a dos años, frente a 71 % y 77 % observados; ambos valores quedan sobre el IC. Por estrato con 30 o más personas queda sobre el IC en 4 de 4 en NC y en 3 de 7 en C1. Es coherente con su construcción: el acoplamiento por rangos de los mismos márgenes TSM da 94 % y 94 %. Aplicado como en su simulación, con dos pasos α = 0,5, pasa a quedar bajo lo observado en C1 (54 %) y dentro del IC en NC (77 %).
+- **JRT original sobreestima la estabilidad a nivel global.** Predice que 97 % de los no bebedores y 90 % de C1 siguen igual a dos años, frente a 71 % y 77 % observados; ambos valores quedan sobre el IC. Por estrato con 30 o más personas queda sobre el IC en 4 de 4 en NC y en 3 de 7 en C1. Es coherente con su construcción: el acoplamiento por rangos de los mismos márgenes TSM da 94 % y 93 %. Aplicado como en su simulación, con dos pasos α = 0,5, pasa a quedar bajo lo observado en C1 (54 %) y dentro del IC en NC (77 %).
 - **El rank matching sobreestima la estabilidad** a dos años en estos datos, como ya se veía a cuatro años en EPS.
 - **JRT_reference y EPS quedan cerca entre sí.** En C1 predicen 66 % y 68 % de permanencia, algo bajo el IC observado (70 %–83 %) y también bajo el valor sin ponderar (74 %). En no bebedores predicen cerca de 85 %, sobre el observado ponderado y sin ponderar (71 % y 79 %); el límite todo FD (77 %) cae dentro del IC. Las diferencias son de 6 a 14 puntos y dependen del peso y de la mezcla N0/FD.
-- **El motor TSM reproduce C1 y no reproduce NC.** Predice 72 % en C1, dentro del IC, pero solo 50 % de no bebedores que siguen sin beber, muy bajo lo observado. La proyección desde intervalos de 4 a 8 meses implica más inicio de consumo del que se observa a 24 meses.
+- **El motor TSM reproduce C1 y no reproduce NC.** Predice 73 % en C1, dentro del IC, pero solo 50 % de no bebedores que siguen sin beber, muy bajo lo observado. La proyección desde intervalos de 4 a 8 meses implica más inicio de consumo del que se observa a 24 meses.
 - **Por sexo × edad** el patrón global se repite en general, con mucho ruido. Los estratos con 30 o más personas tienen intervalos anchos, y el resumen de la sección 7 debe leerse como descripción.
 - **El peso importa.** Lo observado ponderado y sin ponderar difiere hasta 7 puntos. La ponderación usa el peso R7 sin corregir el desgaste, que no está resuelto.
 

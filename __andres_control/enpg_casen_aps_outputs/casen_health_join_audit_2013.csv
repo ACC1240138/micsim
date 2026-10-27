@@ -1,0 +1,2 @@
+"anio","rows_before","rows_after","unmatched","duplicated_keys","source","commune_weight","fixed_geography","missing_commune_weight","communes_with_weight","commune_weight_label"
+2013,218491,218491,0,0,"_casen/casen_2013_geography.dta.tar.xz.enc","expc","INE commune geography; official survey strata/PSUs unchanged",0,324,"Factor de expansión comunal con proyección Censo 2002"

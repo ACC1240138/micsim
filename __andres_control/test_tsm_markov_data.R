@@ -38,7 +38,7 @@ stopifnot(all(ts_risk$s0), identical(ts_risk$s1, ts_risk$linked), identical(ts_r
   all(ts_risk$edu_num %in% 0:2), all(ts_risk$edu_missing %in% 0:1), all((ts_risk$edu_missing == 1) == (ts_risk$edu == "Missing")),
   all(ts_risk$edu_num[ts_risk$edu_missing == 1] == 0), all(ts_risk$age >= 18 & ts_risk$age <= 65), !anyNA(ts_risk$age_group),
   all(ts_risk$wbase > 0), all(ts_risk$years == ts_time$years[match(ts_risk$period, ts_time$period)]),
-  all(ts_risk$current0 == (ts_risk$state0 %in% c("C1", "C2", "C3", "C4"))), all(ts_risk$lg0[ts_risk$current0 == 0] == 0),
+  all(ts_risk$current0 == (ts_risk$state0 %in% c("C1", "C2", "C3plus"))), all(ts_risk$lg0[ts_risk$current0 == 0] == 0),
   all(abs(ts_risk$lg0[ts_risk$current0 == 1] - log(ts_risk$grams0[ts_risk$current0 == 1])) < 1e-12),
   all(ts_risk$phq2 %in% 0:6), all(ts_risk$partnered %in% 0:1), all(ts_risk$owner %in% 0:1), all(ts_risk$after_R7 %in% 0:1),
   all(ts_risk$after_R7[ts_risk$period == "R7_R8"] == 0), all(ts_risk$log_history >= 0), all(ts_risk$freq %in% 1:5),
@@ -47,7 +47,8 @@ stopifnot(all(ts_risk$s0), identical(ts_risk$s1, ts_risk$linked), identical(ts_r
 # States, grams and signals.
 stopifnot(!anyNA(ts_risk$state0), all(ts_W$state %in% ts_ST),
   all(is.finite(ts_risk$grams0[ts_risk$current0 == 1]) & ts_risk$grams0[ts_risk$current0 == 1] > 0),
-  all(ts_risk$grams0[ts_risk$current0 == 0] == 0), max(ts_W$grams) < 100,
+  all(ts_risk$grams0[ts_risk$current0 == 0] == 0), max(ts_W$grams[ts_W$sex == "Men"]) < 100,
+  all(vapply(c(20, 40, 60, 100), function(b) !any(ts_W$current %in% 1 & abs(ts_W$grams - b) < 1e-9), TRUE)), all(ts_W$cat[ts_W$grams > ifelse(ts_W$sex == "Women", 40, 60)] %in% "C3plus", na.rm = TRUE),   # no exact border values: WHO equals the earlier rule
   all(is.na(ts_risk$signal0) == (ts_risk$current0 == 0)), all(is.na(ts_W$signal) == (ts_W$current == 0)),
   all(ts_W$signal[ts_W$signal_ambiguous] == 0), all(ts_W$sex[ts_W$signal_ambiguous] == "Women"),
   all(ts_W$hed6[ts_W$current == 0] == 0), all(ts_W$state[ts_W$wave == 7 & ts_W$current == 0] == "N0"))
@@ -65,6 +66,9 @@ stopifnot(!any(lk$state0 != "N0" & lk$state1 == "N0"), !any(lk$state0 == "N0" & 
 # Links (rule 4).
 stopifnot(all(ts_risk$linked == (ts_risk$destination_present & ts_risk$compatible)), all(!ts_risk$compatible | ts_risk$destination_present))
 ts_link <- ts_link_audit(ts_W, ts_risk); print(ts_link, row.names = FALSE)
+ev <- ts_link_tolerance_evidence(ts_W); print(ev, row.names = FALSE)
+stopifnot(ev$compatible_at_tolerance[ev$same_sex & ev$years_outside_strict_bounds == as.character(ts_link_tolerance)] == sum(ts_risk$compatible),
+  sum(ev$pairs) == sum(ts_risk$destination_present))
 stopifnot(all(ts_link$destination_present == ts_link$compatible + ts_link$incompatible),
   all(ts_link$incompatible == ts_link$incompatible_sex + ts_link$incompatible_age), sum(ts_link$compatible) == sum(ts_risk$linked))
 
@@ -119,7 +123,7 @@ cat(sprintf("IPW fit + apply, mean of 5 repeats: %.2f seconds\n", as.numeric(dif
 
 # Sensitivity variants of the wave table.
 W157 <- ts_waves(15.7); stopifnot(nrow(W157) == nrow(ts_W), all(abs(W157$grams - ts_W$grams * 15.7 / 12) < 1e-9))
-cat("C4 rows at 15.7 g:", sum(W157$cat %in% "C4"), "; at 12 g:", sum(ts_W$cat %in% "C4"), "\n")
+cat("C3plus rows at 15.7 g:", sum(W157$cat %in% "C3plus"), "; at 12 g:", sum(ts_W$cat %in% "C3plus"), "\n")
 W16 <- ts_waves(top_quantity = 16); top <- W16$current == 1 & W16$qty %in% 5
 stopifnot(all(W16$grams[top] > ts_W$grams[top]), all(W16$grams[!top] == ts_W$grams[!top]))
 for (rule in c("strict", "reached")) { Wr <- ts_waves(education_rule = rule); stopifnot(identical(Wr$education, Wr[[paste0("edu_", rule)]])) }

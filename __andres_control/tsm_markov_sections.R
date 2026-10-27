@@ -1,4 +1,4 @@
-# Cell bodies of TSM_ENPG_v3_EN.ipynb, one per "# @@label" line. The builder
+# Cell bodies of TSM_ENPG_v4_EN.ipynb, one per "# @@label" line. The builder
 # (_tools/build_tsm_markov_notebook.py) adds the timing lines; nothing here is
 # executed on its own. Functions and constants come from tsm_markov_data.R and
 # tsm_markov_models.R (contract: __andres_control/tsm_v3_plan_2026-10-19.md).
@@ -6,7 +6,7 @@
 # @@tsm-session-setup
 ts_lang <- "en"
 if (.Platform$OS.type == "windows") invisible(Sys.setlocale("LC_ALL", "English_United States.utf8")) else invisible(Sys.setlocale("LC_CTYPE", ""))
-suppressMessages(here::i_am("__andres_control/TSM_ENPG_v3_EN.ipynb"))
+suppressMessages(here::i_am("__andres_control/TSM_ENPG_v4_EN.ipynb"))
 required <- c("survey","haven","nnet","MASS","ggplot2","jsonlite","IRdisplay","htmltools","knitr")
 stopifnot(all(vapply(required, requireNamespace, logical(1), quietly = TRUE)))
 ts_checks <- list(); ts_warnings <- character()
@@ -27,6 +27,9 @@ ts_v2 <- ts_v2_regression(ts_W, ts_risk)
 ts_save(ts_v2, "v2_regression_check")
 ts_check(is.logical(ts_v2$match) && all(ts_v2$match), "v2 regression quantities match")
 ts_link <- ts_link_audit(ts_W, ts_risk); ts_save(ts_link, "link_audit")
+ts_link_evidence <- ts_link_tolerance_evidence(ts_W); ts_save(ts_link_evidence, "link_tolerance_evidence")
+ts_check(identical(ts_link_evidence$compatible_at_tolerance[ts_link_evidence$same_sex & ts_link_evidence$years_outside_strict_bounds == as.character(ts_link_tolerance)],
+ sum(ts_risk$compatible)), "Tolerance evidence matches the primary link count")
 ts_counts <- as.data.frame(table(period = ts_d$period, sex = ts_d$sex, age_group = ts_d$age_group, state0 = ts_d$state0))
 names(ts_counts)[5] <- "n"
 ts_save(ts_counts, "row_counts_state0_by_stratum")
@@ -42,7 +45,8 @@ ts_edu_audit <- ts_education_audit(ts_W)
 ts_harmonization <- do.call(rbind, lapply(split(ts_W, ts_W$wave), function(d)
  data.frame(wave = d$wave[1], respondents = nrow(d), aged_18_65 = sum(d$age >= 18 & d$age <= 65, na.rm = TRUE),
   current = sum(d$current %in% 1), N0 = sum(d$state %in% "N0"), FD = sum(d$state %in% "FD"),
-  C1 = sum(d$cat %in% "C1"), C2 = sum(d$cat %in% "C2"), C3 = sum(d$cat %in% "C3"), C4 = sum(d$cat %in% "C4"),
+  C1 = sum(d$cat %in% "C1"), C2 = sum(d$cat %in% "C2"), C3plus = sum(d$cat %in% "C3plus"),
+  above_C4_cut = sum(d$current %in% 1 & d$grams > ifelse(d$sex == "Women", 60, 100)),
   signal_1 = sum(d$signal %in% 1), signal_0 = sum(d$signal %in% 0), hed6_1 = sum(d$hed6 %in% 1),
   grams_max = max(d$grams, na.rm = TRUE), prior_use = sum(d$prior_use %in% TRUE))))
 ts_save(ts_cohort, "cohort"); ts_save(ts_hist_audit, "abstention_history_audit")
@@ -54,6 +58,7 @@ ts_show(data.frame(pairs = nrow(ts_d), persons = length(unique(ts_d$id)), person
  persons_with_four_pairs = sum(table(ts_d$id) == 4)), "Pairs and distinct people")
 ts_show(ts_v2, "Regression against version 2 before the link-compatibility rule")
 ts_show(ts_link, "Link audit: destination records present, compatible and used")
+ts_show(ts_link_evidence, "Why the tolerance is two years: education disagreement by years outside the strict EPS age bounds", 1)
 ts_show(ts_hist_audit, "Past-only history flags by round; all available ages")
 ts_show(ts_fd_tenure, "FD depends on panel tenure: non-drinkers by number of earlier interviews, and FD by months since the last observed drinking")
 ts_show(ts_harmonization, "Harmonized wave table by round; counts only")
@@ -181,7 +186,7 @@ ts_ann <- do.call(rbind, lapply(names(ts_annual_full), function(nm) {
  z <- ts_annual_full[[nm]]
  ts_check(max(abs(rowSums(z$P) - 1)) < 1e-8 && min(z$P) > -1e-10, paste("Annual stochastic matrix", nm))
  ts_check(z$semigroup_error < 1e-8, paste("Annual semigroup", nm))
- data.frame(model = nm, from = rep(ts_ST, 6), to = rep(ts_ST, each = 6), estimate = as.vector(z$P),
+ data.frame(model = nm, from = rep(ts_ST, length(ts_ST)), to = rep(ts_ST, each = length(ts_ST)), estimate = as.vector(z$P),
   weighted_reconstruction_RMSE = z$rmse, optimizer_code = z$convergence, gradient_error = z$gradient_error, semigroup_error = z$semigroup_error)
 }))
 ts_ann <- cbind(ts_ann, ts_interval(ts_ann_point, ts_ann_rep))
@@ -207,7 +212,7 @@ ts_save(ts_ann_sens, "annual_generator_sensitivity")
 ts_ann_intervals <- do.call(rbind, lapply(c("A", "Gamma", "Lognormal"), function(nm) do.call(rbind, lapply(ts_periods, function(p) {
  ii <- ts_d$period == p; z <- ts_annual(ts_d[ii, ], ts_fits[[nm]], starts = .05)
  P <- ts_prob(ts_fits[[nm]], ts_d[ii, ]); yrs <- ts_time$years[match(p, ts_time$period)]
- pj <- ts_expm(ts_annual_full[[nm]]$Q * yrs); pj5 <- cbind(pj[, 1] + pj[, 2], pj[, 3:6])
+ pj <- ts_expm(ts_annual_full[[nm]]$Q * yrs); pj5 <- cbind(pj[, 1] + pj[, 2], pj[, 3:ncol(pj)])
  err <- 0; mass <- 0
  for (s in seq_along(ts_ST)) { jj <- as.character(ts_d$state0[ii]) == ts_ST[s]; if (any(jj)) {
   target <- colSums(P[jj, , drop = FALSE] * ts_d$wn[ii][jj]) / sum(ts_d$wn[ii][jj])
@@ -223,7 +228,7 @@ ts_show(ts_ann[ts_ann$from == ts_ann$to, c("model", "from", "to", "n_origin", "s
 ts_show(ts_ann_sens, "Annual reconstruction sensitivity to penalty and restarts", 5)
 ts_show(ts_ann_intervals[, c("model", "period", "years", "single_fit_RMSE", "joint_fit_within_interval_RMSE",
  "single_fit_annual_stay_N0", "joint_annual_stay_N0", "single_fit_annual_stay_C1", "joint_annual_stay_C1")],
- "Each interval fitted alone versus the joint generator: a time-homogeneity check; C2-C4 rows are not shown because they are penalty-driven", 4)
+ "Each interval fitted alone versus the joint generator: a time-homogeneity check; C2 and C3plus rows are not shown because they are penalty-driven", 4)
 
 # @@tsm-eps-crosscheck
 ts_cross <- ts_crosscheck_eps(ts_d, ts_fits, ts_annual_full, cvtab = ts_cvtab, annual_ci = ts_ann)
@@ -254,21 +259,6 @@ ts_show(ts_cross$annual[ts_cross$annual$from == ts_cross$annual$to, ],
 ts_show(ts_cross$projection_eps_to_tsm, "EPS generators projected to the TSM intervals and scored on TSM pairs, next to the TSM models", 4)
 ts_show(ts_cross$projection_tsm_to_eps_summary, "TSM generators projected to the EPS interval lengths versus the EPS observed-origin pooled matrices", 4)
 
-# @@tsm-merged-C3plus
-ts_merged <- ts_merged_variant(ts_risk)
-ts_save(ts_merged$cv_scores, "merged_C3plus_cv_scores")
-ts_save(ts_merged$pooled, "merged_C3plus_pooled_matrices")
-ts_merged$annual <- ts_ann_support(ts_merged$annual, ts_merged$d)
-ts_save(ts_merged$annual, "merged_C3plus_annual")
-ts_stay6 <- ts_pool_tab[ts_pool_tab$from == ts_pool_tab$to & ts_pool_tab$model %in% unique(ts_merged$pooled$model), c("model", "from", "n_origin", "estimate")]
-ts_stay_m <- ts_merged$pooled[ts_merged$pooled$from == ts_merged$pooled$to, c("model", "from", "n_origin", "estimate")]
-names(ts_stay6)[2:4] <- paste0("six_state_", names(ts_stay6)[2:4]); names(ts_stay_m)[2:4] <- paste0("merged_", names(ts_stay_m)[2:4])
-ts_stay6$row <- stats::ave(seq_len(nrow(ts_stay6)), ts_stay6$model, FUN = seq_along)
-ts_stay_m$row <- stats::ave(seq_len(nrow(ts_stay_m)), ts_stay_m$model, FUN = seq_along)
-ts_show(merge(ts_stay6, ts_stay_m, by = c("model", "row"), all = TRUE)[, -2],
- "Pooled staying probabilities side by side: six states versus merged C3plus")
-ts_show(ts_merged$cv_scores, "Merged-variant held-out scores; not comparable with the six-state scores", 5)
-
 # @@tsm-sensitivities
 ts_conv <- lapply(c(12, 15.7), function(g) {
  r <- ts_make_risk(ts_waves(g)); d <- ts_ipw_apply(r, ts_ipw_fit(r)); d$pooled <- "All"
@@ -277,8 +267,8 @@ ts_conv <- lapply(c(12, 15.7), function(g) {
   pr <- ts_prob(fits[[nm]], d)
   data.frame(grams_per_drink = g, model = nm, quantity = c("Drinking_t1", "Escalation_from_C1", "C3_C4_t1"),
    probability = c(stats::weighted.mean(1 - pr[, 1], d$wn),
-    stats::weighted.mean(rowSums(pr[d$state0 == "C1", 3:5, drop = FALSE]), d$wn[d$state0 == "C1"]),
-    stats::weighted.mean(rowSums(pr[, 4:5, drop = FALSE]), d$wn)))
+    stats::weighted.mean(rowSums(pr[d$state0 == "C1", 3:ncol(pr), drop = FALSE]), d$wn[d$state0 == "C1"]),
+    stats::weighted.mean(rowSums(pr[, 4:ncol(pr), drop = FALSE]), d$wn)))
  })), pooled = if (g == 15.7) do.call(rbind, lapply(ts_main_models, function(nm) ts_matrices(d, ts_prob(fits[[nm]], d), nm, by = "pooled"))))
 })
 ts_sensitivity <- do.call(rbind, lapply(ts_conv, function(x) x$sensitivity))
@@ -297,7 +287,7 @@ ts_weight_sens <- do.call(rbind, lapply(c("base_only", "base_trimmed", "IPW_untr
   d$wn[ii] <- w / sum(w) * ts_period_mass[[p]]
  }
  pr <- ts_prob(ts_fit(d, "Gamma", ts_k[1]), d)
- data.frame(scenario = s, current_t1 = stats::weighted.mean(1 - pr[, 1], d$wn), C3_C4_t1 = stats::weighted.mean(rowSums(pr[, 4:5]), d$wn),
+ data.frame(scenario = s, current_t1 = stats::weighted.mean(1 - pr[, 1], d$wn), C3_C4_t1 = stats::weighted.mean(pr[, 4], d$wn),
   weight_ESS = sum(d$wn)^2 / sum(d$wn^2))
 }))
 ts_save(ts_weight_sens, "weight_refit_sensitivity")
@@ -316,11 +306,12 @@ ts_edu_cv <- rbind(ts_variant_cv(ts_risk, "lenient"),
  ts_variant_cv(ts_make_risk(ts_waves(education_rule = "strict")), "strict"),
  ts_variant_cv(ts_make_risk(ts_waves(education_rule = "reached")), "reached"))
 ts_save(ts_edu_cv, "education_sensitivity_cv")
-# Link rule sensitivity: the strict EPS age bounds (tolerance 0) instead of the primary bounds widened by one year.
+# Link rule sensitivity: the strict EPS age bounds (tolerance 0) instead of the primary bounds widened by ts_link_tolerance years.
 ts_W_strict <- ts_waves(tolerance = 0); ts_risk_strict <- ts_make_risk(ts_W_strict, tolerance = 0)
 ts_save(ts_link_audit(ts_W_strict, ts_risk_strict, tolerance = 0), "link_audit_strict_bounds")
-ts_link_cv <- rbind(ts_variant_cv(ts_risk, "primary_bounds_tolerance_1"), ts_variant_cv(ts_risk_strict, "strict_EPS_bounds"))
-ts_link_pooled <- ts_point_sensitivity(list(primary_bounds_tolerance_1 = ts_risk, strict_EPS_bounds = ts_risk_strict), c("A", "Lognormal"), "variant")
+ts_link_primary <- paste0("primary_bounds_tolerance_", ts_link_tolerance)
+ts_link_cv <- rbind(ts_variant_cv(ts_risk, ts_link_primary), ts_variant_cv(ts_risk_strict, "strict_EPS_bounds"))
+ts_link_pooled <- ts_point_sensitivity(stats::setNames(list(ts_risk, ts_risk_strict), c(ts_link_primary, "strict_EPS_bounds")), c("A", "Lognormal"), "variant")
 ts_save(ts_link_cv, "link_bounds_sensitivity_cv"); ts_save(ts_link_pooled$summary, "link_bounds_sensitivity")
 ts_save(ts_link_pooled$pooled, "link_bounds_pooled_matrices")
 ts_hed_result <- ts_hed(); ts_save(ts_hed_result$coef, "typical_quantity_signal_coefficients")

@@ -1,0 +1,21 @@
+"variant","period","origin","Freq"
+"with 2009","VI_VII","C1",1660
+"without 2009","VI_VII","C1",1660
+"with 2009","VII_VIII","C1",1185
+"without 2009","VII_VIII","C1",1185
+"with 2009","VI_VII","C2",85
+"without 2009","VI_VII","C2",85
+"with 2009","VII_VIII","C2",65
+"without 2009","VII_VIII","C2",65
+"with 2009","VI_VII","C3plus",47
+"without 2009","VI_VII","C3plus",47
+"with 2009","VII_VIII","C3plus",45
+"without 2009","VII_VIII","C3plus",45
+"with 2009","VI_VII","FD",372
+"without 2009","VI_VII","FD",0
+"with 2009","VII_VIII","FD",542
+"without 2009","VII_VIII","FD",421
+"with 2009","VI_VII","N0",2609
+"without 2009","VI_VII","N0",2981
+"with 2009","VII_VIII","N0",1557
+"without 2009","VII_VIII","N0",1678

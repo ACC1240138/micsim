@@ -3,16 +3,15 @@
 Status: **PASS**
 
 - Independent fresh R sessions: 2 (one language); completed code cells: 14.
-- Byte-identical aggregate CSV files: 63; aggregate rows: 17404.
-- Source SHA256 in notebook metadata: data_sha256 `655c2b107e8ee9cf50006992251eff7222a09626cda00bde2f84da514ec515e0`, models_sha256 `fb252bf8303fc5f538a1961d08846380239af3f8704725e56665d954bf79301b`, sections_sha256 `f895ee9fcbd9eb7ca952264f5ad362c42a5fdda4e7c3c3fd6efa98f9690febc1`, narrative_sha256 `b3c1cb9da2c23d0c4f5976da8401eec5af685bb421ae50ae2a12baedd0c74c4a`.
-- Main execution: 51.23 minutes; final cell completed 2026-10-19T21:47:18.856895+00:00.
+- Byte-identical aggregate CSV files: 63; aggregate rows: 17405.
+- Source SHA256 in notebook metadata: data_sha256 `5659c7d2a96cf4141af1ab7dc6bb8ad1abd6be1243606cd554f8fe3b3db398ce`, models_sha256 `fc127cccf651572164ca3491aab7d9671af38dbc47a69e10272541f36981a2c3`, sections_sha256 `f895ee9fcbd9eb7ca952264f5ad362c42a5fdda4e7c3c3fd6efa98f9690febc1`, narrative_sha256 `41db24b00d97908b1e64de1b0f5fc6b1d482eb34491e5f0b0abd0e4a28bef29a`.
+- Main execution: 51.27 minutes; final cell completed 2026-10-26T23:47:35.845330+00:00.
 - Person replicates: 1000; every replicate succeeded.
 - Every recorded real-data R check passed; the notebook contains no error output.
 - Supported transition rows sum to one and available probability intervals include their estimates within [0,1].
 - File-level hashes: `reproducibility_check.csv`.
-- Rendered HTML: all assets embedded; 12 embedded images; 3 MathML display equations (`render_validation.json`).
 
-Scientific sensitivity: for Gamma, annual probabilities differ by up to 8.9 percentage points across restarts at the primary penalty, and 8.9 across the combined penalty/start grid. Computational PASS does not resolve this instability. The EPS cross-check is external consistency, not validation.
+Scientific sensitivity: for Gamma, annual probabilities differ by up to 9.0 percentage points across restarts at the primary penalty, and 21.4 across the combined penalty/start grid. Computational PASS does not resolve this instability. The EPS cross-check is external consistency, not validation.
 
 Reproduce from the project root after obtaining the encrypted data key through the usual local environment:
 

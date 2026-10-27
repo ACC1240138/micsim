@@ -5,8 +5,8 @@ Todas son agregadas (no hay filas por persona). Los números usan punto decimal.
 
 Contexto común:
 
-- La **ENPG** (SENDA) encuesta solo **sectores urbanos de comunas de 30.000 o más habitantes** (108–109 comunas), según sus propios informes. Deja fuera a la población rural y a los pueblos de comunas chicas.
-- El **INE** (estimaciones y proyecciones 2002–2035 por comuna y área urbana/rural) da la población real de cada comuna, separada en urbana y rural.
+- La **ENPG 2024** define áreas urbanas de 109 comunas. Aquí las comunas con encuestados aproximan la lista del marco; ausencia no equivale a menos de 30.000 habitantes. El cálculo provisional homogéneo de **2024, 15–64 años**, da **21,95% excluido**: 17,62% en comunas no observadas (urbano + rural) y 4,33% rural dentro de las observadas. Véanse [cálculo, escenarios y límites](README_enpg_geographic_coverage_2024.md).
+- El **INE** (estimaciones y proyecciones 2002–2035 por comuna y área urbana/rural) proyecta la población de cada comuna, separada en urbana y rural.
 - La **EPS** (Encuesta de Protección Social) sí incluye zonas rurales, pero no trae una variable urbano/rural por persona. Para las tablas `rg_*` se usó la **ruralidad estimada del área de muestreo** de cada persona. Es una aproximación con supuestos fuertes (ver "Límites").
 - Grupos de edad: ENPG 15–29, 30–44, 45–59, 60–65; EPS 18–29, 30–44, 45–59, 60–65. Educación (EPS): básica o menos / media (incluye superior incompleta) / superior completa.
 
@@ -25,7 +25,7 @@ Fuentes: ENPG (comuna de cada encuestado) e INE. Una fila por año de la ENPG (2
 | `pct_rural_pop_in_enpg_comunas` | % de la población **rural** de 15–64 años que vive en esas comunas. |
 | `enpg_pct_weight_comunas_r0` | % del peso expandido de la ENPG que cae en comunas sin población rural (0% rural). |
 
-Cómo leerla: las comunas de la ENPG concentran ~82% de la población pero solo ~38–40% de la población rural. Además, dentro de esas comunas la ENPG encuesta solo la parte urbana, así que la población rural efectivamente cubierta es todavía menor.
+Cómo leerla: las comunas observadas concentran ~82% de la población de 15–64 años, sumando urbano y rural; eso no equivale a cobertura. En 2024 la población urbana en esas comunas representa 78,05% y el complemento geográfico provisional es 21,95%. Ninguna población rural se considera cubierta. Las comunas observadas contienen ~40% del rural nacional de 15–64; ese porcentaje tiene un denominador diferente. El generador original y las comprobaciones se documentan en el [registro de cálculo](README_enpg_geographic_coverage_2024.md).
 
 ---
 
@@ -43,15 +43,15 @@ Filas: año × sexo (`Hombre`, `Mujer`, `Total`) × edad (`15-29`, `30-44`, `45-
 | `enpg_mean` | Promedio del % rural de la comuna, ponderado con el factor de expansión ENPG. |
 | `enpg_median` | Mediana ponderada del mismo indicador. |
 | `enpg_mean_unw` | Promedio sin ponderar (solo referencia). |
-| `pop_mean` | Lo mismo para la población real del país en esa celda (INE): el promedio del % rural comunal que "vive" una persona típica. Es el valor esperado si la ENPG no tuviera sesgo de cobertura comunal. |
+| `pop_mean` | Lo mismo para la población real del país en esa celda (INE): el promedio del % rural comunal que "vive" una persona típica. Es una referencia descriptiva de composición comunal, no una estimación de cobertura o sesgo de consumo. |
 | `pop_median` | Mediana poblacional del mismo indicador. |
 | `pop_pct_rural` | % de la población de la celda que es efectivamente rural (INE). |
-| `ratio_mean` | `enpg_mean / pop_mean`. 1 = sin sesgo; ~0,4 = la ENPG "ve" comunas mucho menos rurales que el país. |
+| `ratio_mean` | `enpg_mean / pop_mean`. 1 = igualdad de promedios; ~0,4 = las comunas observadas son menos rurales en promedio. No mide sesgo de consumo. |
 
 Notas:
 - Las medianas son cercanas a 1–3% en ambos casos (distribución muy cargada a cero) y casi no discriminan. Usar los promedios.
-- En `60-65`, la referencia INE usa el grupo 60–64 (el INE no tiene 60–65).
-- Esta tabla mide solo **qué comunas** entran. No puede ver que dentro de cada comuna la ENPG excluye la zona rural. Por eso es un piso del sesgo de cobertura.
+- La tabla histórica compara ENPG 15–65 con INE 15–64; en `60-65`, la referencia INE usa 60–64. No se usa esta comparación de edades distintas para el nuevo porcentaje de exclusión, que utiliza 15–64 en todo el cálculo.
+- Esta tabla describe la ruralidad de las comunas observadas. No estima la población excluida ni un piso del sesgo en alcohol; para la exclusión geográfica se calcula A + B por separado.
 
 ---
 
@@ -65,7 +65,7 @@ Una fila por indicador × especificación.
 |---|---|
 | `outcome` | Indicador: `Current drinker` (bebe actualmente), `Grams/day (population)` (gramos de alcohol puro al día, contando 0 a quien no bebe), `Risky` (≥20 g/día mujeres, ≥40 g/día hombres), `HED 5+/4+` (al menos una ocasión con 5+ tragos hombres / 4+ mujeres, sobre toda la población). |
 | `waves` | `VIII` = solo ronda 2023/24 (**principal**); `ALL` = las tres rondas juntas (sensibilidad). |
-| `exposure` | `rural_asg` = ruralidad estimada del área (versión principal); `rural_exp` = misma idea con otra forma de estimarla (sensibilidad); `noncov_asg` = proporción de la población del área que queda **fuera del marco ENPG** (rural + comunas <30 mil), en vez de solo la rural. |
+| `exposure` | `rural_asg` = ruralidad estimada del área (versión principal); `rural_exp` = misma idea con otra forma de estimarla (sensibilidad); `noncov_asg` = proporción de la población del área que queda **fuera del marco ENPG** (rural + urbano fuera de las comunas observadas), en vez de solo la rural. |
 | `region_FE` | `TRUE` = controla por región (**principal**); `FALSE` = sin ese control. |
 | `RR` | Razón entre un área 100% rural y una 100% urbana (o 100% fuera vs 100% dentro del marco ENPG). 1 = sin diferencia; 0,67 = lo rural tiene un 33% menos; 1,31 = un 31% más. |
 | `lo95`, `hi95` | Intervalo de confianza 95% (errores robustos por área de muestreo). Si incluye 1, la diferencia no es estadísticamente clara. |
@@ -108,7 +108,7 @@ Idea: la ENPG mide en la práctica a la población urbana cubierta. El valor rea
 | `mean_pop_grams` | Gramos/día promedio (EPS, celda completa, 0 para quien no bebe). |
 | `mean_hed` | Proporción con consumo intenso episódico (EPS, celda completa). |
 | `rural_current`, `rural_pop_grams`, `rural_hed` | **Error relativo de la ENPG (%) si solo faltara la población rural**, con IC 95% entre corchetes. |
-| `noncov_current`, `noncov_pop_grams`, `noncov_hed` | **Error relativo de la ENPG (%) por todo lo que queda fuera de su marco** (rural + comunas chicas). Es la versión más cercana a la cobertura real de la ENPG. |
+| `noncov_current`, `noncov_pop_grams`, `noncov_hed` | **Error relativo de la ENPG (%) por todo lo que queda fuera de su marco** (rural + urbano fuera de comunas observadas), bajo el supuesto contextual del modelo; no es una medición directa de sesgo ni del marco completo. |
 
 Cómo leer las columnas de sesgo:
 - Formato `estimación [límite inferior, límite superior]`, en %.
@@ -121,7 +121,13 @@ Cómo leer las columnas de sesgo:
 
 ## Límites (aplican a las tablas `rg_*`)
 
+- `noncov_asg` procede de INE 2023, todas las edades, con la unión de comunas observadas ENPG 2022/2024. Es una exposición contextual asignada a áreas EPS, distinta de la exclusión nacional 2024 de 15–64 años. No se recalcularon los modelos ni sus intervalos en esta corrección.
+
 - La ruralidad de cada persona es la **estimada del área donde fue muestreada**, no un dato individual ni necesariamente su residencia actual. Esto tiende a **atenuar** las diferencias (los resultados son más bien un piso).
 - La comparación supone que vivir en un área más rural no cambia el consumo por sí mismo más allá de la mezcla de personas rurales y urbanas (supuesto ecológico).
 - Las definiciones de consumo de la EPS y la ENPG no son idénticas: usar estas tablas para la **dirección y el orden de magnitud** del sesgo, no como factores de corrección exactos.
 - Resultados no replicados en una segunda corrida.
+
+## Extensión histórica de cobertura
+
+El [cálculo homogéneo 2012–2024](README_enpg_geographic_coverage_2024.md#extensión-a-20122024-2026-10-26) usa 15–64 años y población INE del mismo año en cada ola. La exclusión geográfica provisional pasa de 23,14% en 2012 a 21,95% en 2024, con comunas observadas como aproximación al marco. La serie se conserva en `enpg_geographic_coverage_2012_2024.csv`; no es una serie de sesgo de consumo.

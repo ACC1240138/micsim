@@ -20,8 +20,8 @@ edad 22. Los grupos 18–29 no tienen idéntica composición en ambos periodos.
 | FD | 412 | No bebe actualmente; consumo previo observado. |
 | C1 | 2.822 | Mujeres: >0–<20 g/día; hombres: >0–<40. |
 | C2 | 141 | Mujeres: 20–<40; hombres: 40–<60. |
-| C3 | 69 | Mujeres: 40–100; hombres: 60–100, incluidos los 100. |
-| C4 | 29 | Más de 100 g/día. |
+| C3 | 67 | Mujeres: 40–60; hombres: 60–100, incluido el límite superior (60 y 100 g/día respectivamente). |
+| C4 | 31 | Mujeres: más de 60 g/día; hombres: más de 100 g/día. |
 
 Por sexo, edad y periodo, **57 de 96 filas tienen menos de 30 pares**; 18 están
 vacías. Compartir información mediante modelos conjuntos ayuda, pero no crea

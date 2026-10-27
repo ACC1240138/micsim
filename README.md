@@ -6,6 +6,8 @@ The **microdata** (ENPG, EPS, ELSOC, DEIS, EPF) are in the repository **only in 
 
 **Setting up a new computer:** follow [INSTALL.md](INSTALL.md) (clone, `renv::restore()`, data key, checks).
 
+**Browse the research:** [Article and analysis index](index.html) — longitudinal transitions and ENPG calibration, JRT replications and PIF extensions, and screening/brief-intervention microsimulation.
+
 ## Data and key
 
 Bundles are `*.tar.xz.enc` files (tar.xz + AES-256-CTR + HMAC-SHA256), each with a `*.md5.csv` sidecar (file names, sizes and md5; no data). The key is the environment variable `ACC_DATA_KEY`:
@@ -71,7 +73,7 @@ Rscript --vanilla _tools/test_renv_activation.R   # renv loads the same library 
 4. `expand_pif.ipynb` (~45 min): AAF, attributable mortality and YPLL.
 5. `expand_pif2.ipynb` (~13 h) and `expand_pif3.ipynb`: PIF with synchronised draws, and tables/figures. **The draws are not in the repository**; regenerate them with `expand_pif` → `expand_pif2`.
 6. `guion_reunion_ACC_2026-09-16_revision_critica.ipynb`: critical review (reads saved artefacts).
-7. `TSM_ENPG_v3_EN.ipynb` (~51 min, E-cores on this PC): TSM panel transitions harmonized with the EPS engine, see `tsm_v3_plan_2026-10-19.md` and `hallazgos_tsm_v3.md`; `eps_markov_transitions_EN.ipynb` (~21 min) is the EPS engine itself.
+7. `TSM_ENPG_v4_EN.ipynb` (~42 min, E-cores on this PC): TSM panel transitions harmonized with the EPS engine; five states (C3plus), WHO borders, link tolerance ±2 years chosen with data, all functions written in the notebook. See `tsm_v4_explicado.html`; v3 (`hallazgos_tsm_v3.md`) is kept as history. `eps_markov_transitions_EN.ipynb` (~21 min) is the EPS engine itself.
 8. `eps_markov_transitions_v2_EN.ipynb` (~30 min, E-cores on this PC): the EPS engine plus the IPW version 2 (attrition model with the agreed predictors, SuperLearner weights, three weighting schemes, diagnostics), see `eps_ipw_v2_plan_2026-10-19.md` and `hallazgos_eps_ipw_v2.md`; built by `_tools/build_eps_markov_v2_notebook.py`, the original notebook stays untouched.
 9. `elsoc_transiciones_2016_2023.ipynb` (Spanish; ELSOC regular-drinking transitions, three intervals, unweighted) and `elsoc_weighting_scenarios_EN.ipynb` (~8 min): the same transitions under `ponderador_long_total`, `ponderador_long_panel` and no weights, with the weighting and selection effects separated, plus nine-state matrices with non-regular use as a state (observed, matrix A and two-part lognormal as in EPS) by sex, age group and origin wave and pooled with subject-clustered intervals (`elsoc_2021_2023_exploration/state_transitions.R`); see `elsoc_2021_2023_exploration/WEIGHTING_PLAN.md` and `hallazgos_elsoc_ponderacion.md`; built by `_tools/build_elsoc_weighting_notebook.py`.
 

@@ -1,5 +1,5 @@
 .t0 <- Sys.time()
-# TSM version 3 data layer: the v2 loader, observed history and adjacent pairs ported to the EPS engine conventions.
+# TSM version 4 data layer (version 3 plus five states, WHO borders and a two-year link tolerance, 2026-10-26): the v2 loader, observed history and adjacent pairs ported to the EPS engine conventions.
 # Contract: __andres_control/tsm_v3_plan_2026-10-19.md (decisions 1-9, 18, 19). Row-level objects stay in memory;
 # only aggregates are written. The notebook setup cell creates ts_checks (list) and ts_warnings (character).
 ts_seed <- 1240138L
@@ -9,8 +9,9 @@ ts_repeats <- as.integer(Sys.getenv("TSM_REPEATS", "3"))
 ts_K <- 5L
 # Wider than EPS (10-1000): TSM cells are sparser and the tuned value reached the EPS boundary in the dry run.
 ts_kgrid <- c(10, 30, 100, 300, 1000, 3000, 10000)
-ts_ST <- c("N0", "FD", "C1", "C2", "C3", "C4")
-ts_Y <- c("NC", "C1", "C2", "C3", "C4")
+# C3 and C4 are always merged into C3plus (decision 2026-10-26; too sparse for two states, as in Puka 2022 and Kilian 2025).
+ts_ST <- c("N0", "FD", "C1", "C2", "C3plus")
+ts_Y <- c("NC", "C1", "C2", "C3plus")
 ts_ages <- c("18-29", "30-44", "45-59", "60-65")
 ts_periods <- c("R7_R8", "R8_R9", "R9_R10", "R10_R11")
 ts_edu_levels <- c("Primary completed or less", "Secondary completed or less", "Tertiary completed or higher")
@@ -65,16 +66,20 @@ ts_wquant <- function(x, w, p) {
 # only when they notice it, so a +2 change over a few months marks a corrected age of the same person, and the strict
 # EPS bounds would drop pairs that start drinking more often than the retained ones. The EPS bounds are therefore
 # widened by ts_link_tolerance years on both sides; the strict EPS bounds (tolerance 0) are a sensitivity.
-ts_link_tolerance <- 1L
+# Tolerance 2 (data-based, 2026-10-26, same criterion as EPS v4): pairs 1-2 years beyond the strict bounds disagree on
+# education about as often as strict pairs (15.1% and 11.4% vs 10.5%); beyond 2 years 3 of 14 disagree and only 4 pairs are gained.
+ts_link_tolerance <- 2L
 ts_compatible <- function(sex_a, sex_b, age_a, age_b, months, tolerance = ts_link_tolerance) {
   gap <- age_b - age_a
   (sex_a == sex_b & gap >= floor((months - 1) / 12) - tolerance & gap <= ceiling((months + 1) / 12) + tolerance) %in% TRUE
 }
 ts_cat <- function(current, g, sex) {
   lo <- ifelse(sex == "Women", 20, 40); hi <- ifelse(sex == "Women", 40, 60)
+  # WHO borders without gaps (decision 2026-10-26): the exact border value goes to the LOWER class. No TSM observation
+  # falls exactly on 20/40/60 g/day, so this changes no label relative to the earlier lower-borders-up rule.
+  # C3 and C4 merged: C3plus is above 40 g/day (women) or 60 g/day (men).
   ans <- rep(NA_character_, length(g)); ok <- current %in% 1 & is.finite(g) & g > 0
-  ans[ok & g < lo] <- "C1"; ans[ok & g >= lo & g < hi] <- "C2"
-  ans[ok & g >= hi & g <= 100] <- "C3"; ans[ok & g > 100] <- "C4"
+  ans[ok & g <= lo] <- "C1"; ans[ok & g > lo & g <= hi] <- "C2"; ans[ok & g > hi] <- "C3plus"
   ans
 }
 # Decision 8: typical-quantity signal (1 = band lower bound of at least 5 drinks) and the ambiguous women-in-band-2 flag.
@@ -105,7 +110,7 @@ ts_education <- function(b4a, b4b, b1, rule = c("lenient", "strict", "reached"))
 }
 ts_load <- function() {
   source(here::here("_tools", "acc_data.R"))
-  ts_out <<- here::here(Sys.getenv("TSM_MARKOV_OUTPUT", "__andres_control/tsm_markov_outputs"))
+  ts_out <<- here::here(Sys.getenv("TSM_MARKOV_OUTPUT", "__andres_control/tsm_markov_outputs_v4"))
   dir.create(file.path(ts_out, "en"), showWarnings = FALSE, recursive = TRUE)
   bundle <- "_tsm/tsm.tar.xz.enc"
   ts_root <<- acc_data(bundle)   # decrypted once per session into tempdir(); never into the repository
@@ -217,7 +222,7 @@ ts_make_risk <- function(W, tolerance = ts_link_tolerance) {
   d$edu_num[is.na(d$edu_num)] <- 0
   d$edu <- factor(ifelse(is.na(d$edu), "Missing", d$edu), levels = c(ts_edu_levels, "Missing"))
   d$state0 <- factor(d$state0, levels = ts_ST)
-  d$current0 <- as.numeric(d$state0 %in% paste0("C", 1:4))
+  d$current0 <- as.numeric(d$state0 %in% ts_ST[-(1:2)])
   d$lg0 <- ifelse(d$current0 == 1 & d$grams0 > 0, log(d$grams0), 0)
   d$s0 <- !is.na(d$state0); d$s1 <- d$linked & !is.na(d$state1); d$complete <- d$s0 & d$linked & d$s1
   d$y1 <- factor(ifelse(d$state1 %in% c("N0", "FD"), "NC", d$state1), levels = ts_Y)
@@ -303,6 +308,26 @@ ts_link_audit <- function(W, risk, tolerance = ts_link_tolerance) {
       linked_persons = length(unique(r$id[r$linked])))
   }))
 }
+# Evidence for ts_link_tolerance (same criterion as EPS v4): for every destination-present pair, the years by which the
+# age change falls outside the strict EPS bounds, and how often the reached education level differs between the two rounds.
+# Pairs that are the same person should disagree on education about as often as strict pairs. Age, sex and education do not
+# depend on the tolerance, so any ts_waves() result can be passed.
+ts_link_tolerance_evidence <- function(W) {
+  z <- do.call(rbind, lapply(seq_len(nrow(ts_time)), function(k) {
+    tm <- ts_time[k, ]; a <- W[W$wave == tm$from & W$age >= 18 & W$age <= 65, ]; b <- W[W$wave == tm$to, ]
+    j <- match(a$id, b$id); a <- a[!is.na(j), ]; b <- b[j[!is.na(j)], ]
+    lo <- floor(tm$min_years); hi <- ceiling(tm$max_years); gap <- b$age - a$age
+    ra <- match(a$edu_reached, ts_edu_levels); rb <- match(b$edu_reached, ts_edu_levels)
+    data.frame(same_sex = a$sex == b$sex, excess = pmin(ifelse(gap < lo, lo - gap, pmax(gap - hi, 0)), 3),
+               known = !is.na(ra) & !is.na(rb), differ = !is.na(ra) & !is.na(rb) & ra != rb)
+  }))
+  out <- do.call(rbind, lapply(split(z, list(z$same_sex, z$excess), drop = TRUE), function(d) data.frame(
+    same_sex = d$same_sex[1], years_outside_strict_bounds = ifelse(d$excess[1] == 3, "3 or more", as.character(d$excess[1])),
+    pairs = nrow(d), education_known = sum(d$known), education_differs_pct = 100 * sum(d$differ) / max(1, sum(d$known)),
+    compatible_at_tolerance = if (d$same_sex[1]) sum(z$same_sex & z$excess <= d$excess[1]) else NA_integer_)))
+  out <- out[order(!out$same_sex, out$years_outside_strict_bounds), ]; rownames(out) <- NULL
+  out
+}
 # Per wave and rule: b4a x b4b x attending -> level counts, plus EPS-style education_mapping_changed rows.
 ts_education_audit <- function(W) {
   key <- data.frame(wave = W$wave, b4a = ifelse(is.na(W$b4a), "NA", W$b4a), b4b = ifelse(is.na(W$b4b), "NA", W$b4b),
@@ -356,7 +381,8 @@ ts_v2_regression <- function(W, risk) {
   reached <- ifelse(is.na(adult$edu_reached), "Missing", adult$edu_reached)
   state_any <- ifelse(adult$current == 1, adult$cat, ifelse(adult$prior_use_any, "FD", "N0"))
   v2_edu <- c(Basic = ts_edu_levels[1], Secondary = ts_edu_levels[2], Higher = ts_edu_levels[3], Unknown = "Missing")
-  v2_state <- c(ND_unknown = "N0", FD = "FD", cat1 = "C1", cat2 = "C2", cat3 = "C3", cat4 = "C4")
+  v2_sex <- c(Men = "Male", Women = "Female")
+  v2_state <- c(ND_unknown = "N0", FD = "FD", cat1 = "C1", cat2 = "C2", cat3 = "C3plus", cat4 = "C3plus")
   row <- function(quantity, v3, baseline, source) data.frame(quantity = quantity, v3 = as.numeric(v3),
     v2_baseline = as.numeric(baseline), source = source)
   pf$period <- gsub("-", "_", pf$interval)
@@ -371,8 +397,13 @@ ts_v2_regression <- function(W, risk) {
       row(paste("Destination-present pairs", pf$period[k]), sum(present & risk$period == pf$period[k]), pf$observed_pairs[k], "panel_followup.csv")))),
     do.call(rbind, lapply(names(v2_edu), function(e) row(paste0("Rows aged 18-65, reached rule: ", v2_edu[[e]]),
       sum(reached == v2_edu[[e]]), sum(ct$n[ct$education == e]), paste0("counts_age_sex_education_HED_category.csv (", e, ")")))),
-    do.call(rbind, lapply(names(v2_state), function(s) row(paste0("Rows aged 18-65 in ", v2_state[[s]], " (any-history FD, 12 g)"),
-      sum(state_any == v2_state[[s]]), sum(ct$n[ct$state == s]), paste0("counts_age_sex_education_HED_category.csv (", s, ")")))))
+    do.call(rbind, lapply(setdiff(names(v2_state), c("cat3", "cat4")), function(s) row(paste0("Rows aged 18-65 in ", v2_state[[s]], " (any-history FD, 12 g)"),
+      sum(state_any == v2_state[[s]]), sum(ct$n[ct$state == s]), paste0("counts_age_sex_education_HED_category.csv (", s, ")")))),
+    # The v2 baseline closes women's C3 at 100 g/day; v3 merges C3 and C4 (2026-10-26). C3plus is cut-invariant:
+    # v2 cat3 + cat4 (>= 40 g women, >= 60 g men) equals v3 C3plus because no TSM value falls exactly on a border.
+    do.call(rbind, lapply(c("Men", "Women"), function(s) row(paste(s, "aged 18-65 in C3plus (any-history FD, 12 g)"),
+        sum(state_any %in% "C3plus" & adult$sex == s), sum(ct$n[ct$state %in% c("cat3", "cat4") & ct$sex == v2_sex[[s]]]),
+        paste0("counts_age_sex_education_HED_category.csv (cat3 + cat4, ", v2_sex[[s]], ")")))))
   out$match <- out$v3 == out$v2_baseline
   out[c("quantity", "v3", "v2_baseline", "match", "source")]
 }

@@ -1,0 +1,5 @@
+"outcome","waves","exposure","region_FE","RR","lo95","hi95","p","models_reexecuted","role"
+"Current drinker","VIII","rural_asg",TRUE,0.668,0.421,1.059,0.086,FALSE,"Historical ecological sensitivity only; not a transport factor"
+"Grams/day (population)","VIII","rural_asg",TRUE,0.961,0.431,2.144,0.923,FALSE,"Historical ecological sensitivity only; not a transport factor"
+"Risky (>=20 g W / >=40 g M)","VIII","rural_asg",TRUE,0.277,0.058,1.334,0.109,FALSE,"Historical ecological sensitivity only; not a transport factor"
+"HED 5+/4+ (population)","VIII","rural_asg",TRUE,1.308,0.572,2.989,0.524,FALSE,"Historical ecological sensitivity only; not a transport factor"

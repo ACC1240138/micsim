@@ -1,0 +1,8 @@
+"anio","file","id","weight","sex","age","level","complete","head","head_level","head_complete","ever","last"
+2012,"Base de datos ENPG 2012 (PG).DTA.dta","idencuesta","PONDERADOR","sexo","edad","p184_1","p185_1","p182","p184_2","p185_2","p10","p13"
+2014,"Base de datos ENPG 2014 (PG).DTA.dta","idencuesta","F2_MAY_AJUS_com","sexo","edad","dp9_1","dp10_1","dp7","dp9_2","dp10_2","oh1","oh4"
+2016,"base ENPG 2016 publico general.dta","idencuesta","Fexp","sexo","edad","dp_9_a","dp_10_a","dp_7","dp_9_b","dp_10_b","oh_1","oh_4"
+2018,"Base de datos ENPG 2018 (PG).DTA","SbjNum","Fexp","S01","S02","T_DP_12_1","T_DP_13_1","DP_10","T_DP_12_2","T_DP_13_2","OH_1","OH_4"
+2020,"enpg2020.RDS","SbjNum","FACT_PERS_COMUNA","S01","S02","DP_12","DP_13",NA,NA,NA,"OH_1","OH_4"
+2022,"BD - ENPG 2022 (Stata 16).dta","FOLIO","FACTOR_EXPANSION","SEXO","EDAD","DP_12","DP_13",NA,NA,NA,"OH_1","OH_4"
+2024,"Base Publica ENPG 2024 (Stata 16).dta","RESPONDENT_SERIAL","FACTOR_EXPANSION","SEXO","EDAD","DP_12","DP_13",NA,NA,NA,"OH_1","OH_4"

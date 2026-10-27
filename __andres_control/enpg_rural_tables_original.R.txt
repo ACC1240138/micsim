@@ -1,0 +1,54 @@
+.t0 <- Sys.time()
+source(here::here("_tools", "acc_data.R"))
+W <- readRDS(acc_data("_enpg/enpg.tar.xz.enc", "derived/enpg_design_waves_2012_2024_list.RDS"))$waves
+# 2018/2020: the design cache lacks sex/age (S01/S02 in the raw files); join them by SbjNum.
+rr <- acc_data("_enpg/enpg.tar.xz.enc")
+for (y in c("2018", "2020")) {
+  raw <- if (y == "2018") haven::read_dta(file.path(rr, "Base de datos ENPG 2018 (PG).DTA"), col_select = c("SbjNum", "S01", "S02")) else readRDS(file.path(rr, "enpg2020.RDS"))[c("SbjNum", "S01", "S02")]
+  if (y == "2018") print(attr(raw$S01, "labels"))
+  j <- match(W[[y]]$id_join, as.character(haven::zap_labels(raw$SbjNum))); stopifnot(!anyNA(j))
+  W[[y]]$sex_raw <- as.numeric(haven::zap_labels(raw$S01))[j]; W[[y]]$age_raw <- as.numeric(haven::zap_labels(raw$S02))[j]
+  print(table(W[[y]]$sex_raw, useNA = "ifany"))
+}
+ine <- read.csv2(here::here("__andres_control", list.files(here::here("__andres_control"), "EEPP comuna area")),
+                 check.names = FALSE, fileEncoding = "UTF-8-BOM")
+names(ine)[c(5, 7, 8, 9)] <- c("comuna", "sex", "area", "ageg")
+ages <- c("15-29", "30-44", "45-59", "60-65")
+# shortcut: INE has 60-64, not 60-65; the 60-65 row uses 60-64 as reference.
+amap <- setNames(rep(ages, each = 3)[1:10], c("De 15 a 19 años","De 20 a 24 años","De 25 a 29 años","De 30 a 34 años",
+  "De 35 a 39 años","De 40 a 44 años","De 45 a 49 años","De 50 a 54 años","De 55 a 59 años","De 60 a 64 años"))
+wmed <- function(x, w) { o <- order(x); x <- x[o]; w <- w[o]; x[which(cumsum(w) >= sum(w) / 2)[1]] }
+years <- as.integer(names(W))
+out <- list(); cov <- list()
+for (y in years) {
+  pc <- paste("Poblacion", y)
+  tot <- tapply(ine[[pc]], ine$comuna, sum); rur <- tapply(ine[[pc]] * (ine$area == 2), ine$comuna, sum)
+  r <- 100 * rur / tot                                     # comuna % rural, all ages, year y
+  g <- ine[!is.na(amap[ine$ageg]), ]; g$age <- amap[g$ageg]; g$r <- r[as.character(g$comuna)]
+  d <- W[[as.character(y)]]
+  d$comuna <- ifelse(d$commune == "8401", "16101", d$commune)  # Chillan pre-Nuble code
+  d$r <- r[d$comuna]; stopifnot(!anyNA(d$r))
+  d$age <- as.character(cut(d$age_raw, c(15, 30, 45, 60, 66), right = FALSE, labels = ages))
+  d$sex <- c("Hombre", "Mujer")[d$sex_raw]; d <- d[!is.na(d$age) & !is.na(d$sex) & d$weight > 0 & !is.na(d$weight), ]
+  for (s in c("Hombre", "Mujer", "Total")) for (a in c(ages, "15-65")) {
+    e <- d[(s == "Total" | d$sex == s) & (a == "15-65" | d$age == a), ]
+    p <- g[(s == "Total" | g$sex == c(Hombre = 1, Mujer = 2)[s]) & (a == "15-65" | g$age == a), ]
+    pw <- tapply(p[[pc]], p$comuna, sum); pr <- r[names(pw)]
+    out[[length(out) + 1]] <- data.frame(year = y, sex = s, age = a, n = nrow(e), n_comunas = length(unique(e$comuna)),
+      enpg_mean = weighted.mean(e$r, e$weight), enpg_median = wmed(e$r, e$weight), enpg_mean_unw = mean(e$r),
+      pop_mean = weighted.mean(pr, pw), pop_median = wmed(pr, pw),
+      pop_pct_rural = 100 * sum(p[[pc]][p$area == 2]) / sum(p[[pc]]))
+  }
+  inS <- names(tot) %in% unique(d$comuna); q <- g  # coverage, ages 15-64
+  cov[[length(cov) + 1]] <- data.frame(year = y, comunas_enpg = sum(inS), comunas_total = length(tot),
+    pct_pop_in_enpg_comunas = 100 * sum(q[[pc]][q$comuna %in% d$comuna]) / sum(q[[pc]]),
+    pct_rural_pop_in_enpg_comunas = 100 * sum(q[[pc]][q$comuna %in% d$comuna & q$area == 2]) / sum(q[[pc]][q$area == 2]),
+    enpg_pct_weight_comunas_r0 = 100 * sum(d$weight[d$r == 0]) / sum(d$weight))
+}
+out <- do.call(rbind, out); cov <- do.call(rbind, cov)
+num <- sapply(out, is.numeric) & !names(out) %in% c("year", "n", "n_comunas"); out[num] <- round(out[num], 1)
+out$ratio_mean <- round(out$enpg_mean / out$pop_mean, 2)
+write.csv(out, file.path(Sys.getenv("SCR"), "enpg_rural_bias.csv"), row.names = FALSE)
+write.csv(cov, file.path(Sys.getenv("SCR"), "enpg_rural_coverage.csv"), row.names = FALSE)
+options(width = 200); print(cov, digits = 3, row.names = FALSE); print(out, row.names = FALSE)
+cat(sprintf("Elapsed: %.2f min\n", as.numeric(difftime(Sys.time(), .t0, units = "mins"))))

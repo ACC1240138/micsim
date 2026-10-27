@@ -1,0 +1,7 @@
+"warning","n"
+"Gamma amount model fitted by BFGS fallback after IRLS nonconvergence",138
+"glm.fit: algorithm did not converge",135
+"glm.fit: fitted probabilities numerically 0 or 1 occurred",1033
+"non-integer #successes in a binomial glm!",1106
+"Ordinal fit restarted from weighted marginal thresholds",1003
+"step size truncated due to divergence",2

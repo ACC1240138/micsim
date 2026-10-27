@@ -30,8 +30,8 @@ Se enlazan **las mismas personas** en VI→VII presencial y VII presencial→VII
 | FD | No consume actualmente; se observó consumo en alguna ola anterior compatible. |
 | C1 | Mujeres: >0–<20 g/día; hombres: >0–<40. |
 | C2 | Mujeres: 20–<40; hombres: 40–<60. |
-| C3 | Mujeres: 40–100; hombres: 60–100, incluidos los 100. |
-| C4 | Más de 100 g/día en ambos sexos. |
+| C3 | Mujeres: 40–60; hombres: 60–100, incluido el límite superior (60 y 100 g/día respectivamente). |
+| C4 | Mujeres: más de 60 g/día; hombres: más de 100 g/día. |
 
 **Calvo y abstinencia prolongada.** Se conserva una variable separada que exige dos respuestas negativas con separación mínima de cuatro años y ningún consumo previo observado. Solo usa historia disponible hasta esa entrevista. VI→VII no garantiza cuatro años; los primeros casos elegibles aparecen en VIII, sin una ola posterior para estimar sus transiciones. Por eso no se renombra N0 ni se inventa una fila de “iniciación”. Dos respuestas negativas tampoco prueban abstinencia continua entre entrevistas.
 
@@ -54,8 +54,8 @@ The **same people** are linked across VI→in-person VII and in-person VII→VII
 | FD | Currently not drinking; drinking observed at an earlier compatible interview. |
 | C1 | Women: >0–<20 g/day; men: >0–<40. |
 | C2 | Women: 20–<40; men: 40–<60. |
-| C3 | Women: 40–100; men: 60–100, including 100. |
-| C4 | More than 100 g/day in either sex. |
+| C3 | Women: 40–60; men: 60–100, upper limit included (60 and 100 g/day respectively). |
+| C4 | Women: more than 60 g/day; men: more than 100 g/day. |
 
 **Calvo and long-term abstention.** A separate flag requires two negative responses at least four years apart, with no previously observed drinking. It uses only history available by that interview. VI→VII does not guarantee four years; the first eligible flags occur at VIII, with no subsequent wave to estimate their transitions. N0 is therefore retained without inventing an initiation row. Two negative interviews do not establish continuous abstention between interviews.
 

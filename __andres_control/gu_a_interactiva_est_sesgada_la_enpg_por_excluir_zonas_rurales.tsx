@@ -34,11 +34,16 @@ import {
 const COVERAGE_BY_YEAR = {
   2012: {
     year: 2012,
+    population_total: 11998670,
+    population_covered: 9222687,
+    component_A: 2239021,
+    component_B: 536962,
+    excluded_pct: 23.13575587961,
     comunas_enpg: 108,
     comunas_total: 346,
-    pct_pop_in_enpg_comunas: 81.6,
-    pct_rural_pop_in_enpg_comunas: 37.8,
-    enpg_pct_weight_comunas_r0: 31.2,
+    pct_pop_in_enpg_comunas: 81.3,
+    pct_rural_pop_in_enpg_comunas: 37.2,
+    enpg_pct_weight_comunas_r0: 25.6,
     enpg_mean: 4.6,
     pop_mean: 12.0,
     ratio_mean: 0.38,
@@ -56,11 +61,16 @@ const COVERAGE_BY_YEAR = {
   },
   2014: {
     year: 2014,
+    population_total: 12251374,
+    population_covered: 9421653,
+    component_A: 2282019,
+    component_B: 547702,
+    excluded_pct: 23.0971726110067,
     comunas_enpg: 108,
     comunas_total: 346,
-    pct_pop_in_enpg_comunas: 81.8,
-    pct_rural_pop_in_enpg_comunas: 38.2,
-    enpg_pct_weight_comunas_r0: 30.8,
+    pct_pop_in_enpg_comunas: 81.4,
+    pct_rural_pop_in_enpg_comunas: 37.7,
+    enpg_pct_weight_comunas_r0: 24.9,
     enpg_mean: 4.5,
     pop_mean: 11.9,
     ratio_mean: 0.38,
@@ -78,11 +88,16 @@ const COVERAGE_BY_YEAR = {
   },
   2016: {
     year: 2016,
+    population_total: 12488678,
+    population_covered: 9614859,
+    component_A: 2318731,
+    component_B: 555088,
+    excluded_pct: 23.0113948009549,
     comunas_enpg: 108,
     comunas_total: 346,
-    pct_pop_in_enpg_comunas: 82.0,
-    pct_rural_pop_in_enpg_comunas: 38.6,
-    enpg_pct_weight_comunas_r0: 30.4,
+    pct_pop_in_enpg_comunas: 81.4,
+    pct_rural_pop_in_enpg_comunas: 38.1,
+    enpg_pct_weight_comunas_r0: 23.6,
     enpg_mean: 4.7,
     pop_mean: 11.7,
     ratio_mean: 0.40,
@@ -100,11 +115,16 @@ const COVERAGE_BY_YEAR = {
   },
   2018: {
     year: 2018,
+    population_total: 12890070,
+    population_covered: 9982173,
+    component_A: 2336416,
+    component_B: 571481,
+    excluded_pct: 22.5592025489388,
     comunas_enpg: 109,
     comunas_total: 346,
-    pct_pop_in_enpg_comunas: 82.1,
-    pct_rural_pop_in_enpg_comunas: 39.1,
-    enpg_pct_weight_comunas_r0: 29.9,
+    pct_pop_in_enpg_comunas: 81.9,
+    pct_rural_pop_in_enpg_comunas: 38.9,
+    enpg_pct_weight_comunas_r0: 20.6,
     enpg_mean: 5.5,
     pop_mean: 11.5,
     ratio_mean: 0.48,
@@ -122,11 +142,16 @@ const COVERAGE_BY_YEAR = {
   },
   2020: {
     year: 2020,
+    population_total: 13361656,
+    population_covered: 10404214,
+    component_A: 2372973,
+    component_B: 584469,
+    excluded_pct: 22.1337983854696,
     comunas_enpg: 108,
     comunas_total: 346,
     pct_pop_in_enpg_comunas: 82.2,
     pct_rural_pop_in_enpg_comunas: 39.4,
-    enpg_pct_weight_comunas_r0: 30.1,
+    enpg_pct_weight_comunas_r0: 31.1,
     enpg_mean: 4.6,
     pop_mean: 11.2,
     ratio_mean: 0.41,
@@ -144,11 +169,16 @@ const COVERAGE_BY_YEAR = {
   },
   2022: {
     year: 2022,
+    population_total: 13528576,
+    population_covered: 10552521,
+    component_A: 2388190,
+    component_B: 587865,
+    excluded_pct: 21.998287181149,
     comunas_enpg: 109,
     comunas_total: 346,
     pct_pop_in_enpg_comunas: 82.3,
     pct_rural_pop_in_enpg_comunas: 39.8,
-    enpg_pct_weight_comunas_r0: 29.7,
+    enpg_pct_weight_comunas_r0: 29.2,
     enpg_mean: 5.1,
     pop_mean: 11.0,
     ratio_mean: 0.46,
@@ -166,6 +196,11 @@ const COVERAGE_BY_YEAR = {
   },
   2024: {
     year: 2024,
+    population_total: 13619165,
+    population_covered: 10630379,
+    component_A: 2399620,
+    component_B: 589166,
+    excluded_pct: 21.945442323373,
     comunas_enpg: 109,
     comunas_total: 346,
     pct_pop_in_enpg_comunas: 82.4,
@@ -232,7 +267,7 @@ const EPS_WAVES_COMPARISON = [
       noncov_asg_FE: {
         viii: { rr: 0.752, lo95: 0.531, hi95: 1.065, p: 0.109, sig: false },
         all: { rr: 0.648, lo95: 0.512, hi95: 0.820, p: 0.0003, sig: true },
-        insight: 'Midiendo todo lo que queda fuera del marco ENPG (rural + comunas <30k), las 3 olas confirman menor prevalencia general (-35%).'
+        insight: 'Midiendo todo lo que queda fuera del marco ENPG (rural + urbano fuera de comunas observadas), las 3 olas confirman menor prevalencia general (-35%).'
       }
     }
   },
@@ -334,7 +369,7 @@ const T2_GAPS = {
   noncov_asg: [
     // Mujeres
     { sex: 'Mujeres', edu: 'Básica o menos (Prim)', current_delta: -0.005, current_lo: -0.180, current_hi: 0.170, sig_current: false, grams_delta: -0.03, grams_lo: -0.85, grams_hi: 0.79, sig_grams: false, hed_delta: -0.003, hed_lo: -0.060, hed_hi: 0.054, sig_hed: false, summary: 'Sin diferencia relevante fuera del marco ENPG.' },
-    { sex: 'Mujeres', edu: 'Media (Sec)', current_delta: -0.195, current_lo: -0.340, current_hi: -0.050, sig_current: true, grams_delta: -1.05, grams_lo: -2.30, grams_hi: 0.20, sig_grams: false, hed_delta: -0.001, hed_lo: -0.065, hed_hi: 0.063, sig_hed: false, summary: 'Fuera del marco ENPG (rural + comunas <30k) hay 19,5 pp menos de mujeres bebedoras.' },
+    { sex: 'Mujeres', edu: 'Media (Sec)', current_delta: -0.195, current_lo: -0.340, current_hi: -0.050, sig_current: true, grams_delta: -1.05, grams_lo: -2.30, grams_hi: 0.20, sig_grams: false, hed_delta: -0.001, hed_lo: -0.065, hed_hi: 0.063, sig_hed: false, summary: 'Fuera del marco ENPG (rural + urbano fuera de comunas observadas) hay 19,5 pp menos de mujeres bebedoras.' },
     { sex: 'Mujeres', edu: 'Superior completa (Tert)', current_delta: -0.285, current_lo: -0.500, current_hi: -0.070, sig_current: true, grams_delta: -3.95, grams_lo: -6.80, grams_hi: -1.10, sig_grams: true, hed_delta: -0.118, hed_lo: -0.215, hed_hi: -0.021, sig_hed: true, summary: 'Fuera del marco ENPG beben muchísimo menos en los 3 indicadores.' },
     // Hombres
     { sex: 'Hombres', edu: 'Básica o menos (Prim)', current_delta: 0.092, current_lo: -0.110, current_hi: 0.294, sig_current: false, grams_delta: 2.35, grams_lo: -2.80, grams_hi: 7.50, sig_grams: false, hed_delta: 0.078, hed_lo: 0.008, hed_hi: 0.148, sig_hed: true, summary: 'Fuera del marco ENPG sube el consumo intenso episódico (HED) en +7,8 pp.' },
@@ -909,18 +944,18 @@ export default function App() {
                   ¿Cuál es el «punto ciego» del diseño muestral de la ENPG?
                 </h2>
                 <p className="mt-2 text-slate-600 text-sm sm:text-base leading-relaxed">
-                  La Encuesta Nacional de Drogas en Población General (ENPG de SENDA) no encuesta a todo Chile. Por diseño, solo visita <strong>sectores urbanos de comunas con 30.000 o más habitantes</strong> (unas 108–109 comunas de las 346 del país). Esto genera una <strong>doble exclusión</strong>:
+                  El informe ENPG 2024 define áreas urbanas de 109 comunas. Usamos las 109 comunas observadas como aproximación al marco y las proyecciones INE base 2017 para <strong>2024, edades 15–64</strong>. No todas las comunas ausentes tienen menos de 30.000 habitantes. Separamos dos componentes sin solapamiento:
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                 <div className="p-4 rounded-xl bg-indigo-50/70 border border-indigo-200">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-indigo-700">Sí entra al marco ENPG</span>
-                    <span className="text-lg font-extrabold text-indigo-900">~77% del país</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-indigo-700">Cobertura geográfica aproximada</span>
+                    <span className="text-lg font-extrabold text-indigo-900">78,05% (15–64)</span>
                   </div>
                   <p className="mt-2 text-sm text-indigo-950 font-medium">
-                    Zonas urbanas de comunas grandes (≥30 mil hab.)
+                    10.630.379 personas urbanas en las 109 comunas observadas
                   </p>
                   <p className="mt-1 text-xs text-indigo-700">
                     Ej: Santiago, Concepción, Antofagasta, o la parte urbana de Melipilla y Ovalle.
@@ -929,31 +964,39 @@ export default function App() {
 
                 <div className="p-4 rounded-xl bg-amber-50/70 border border-amber-200">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-amber-800">Exclusión 1: Pueblos chicos</span>
-                    <span className="text-lg font-extrabold text-amber-900">~12% del país</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-amber-800">A: Comunas no observadas</span>
+                    <span className="text-lg font-extrabold text-amber-900">17,62% (15–64)</span>
                   </div>
                   <p className="mt-2 text-sm text-amber-950 font-medium">
-                    237 comunas completas de menos de 30.000 habitantes
+                    2.399.620 personas urbanas y rurales en las otras 237 comunas
                   </p>
                   <p className="mt-1 text-xs text-amber-800">
-                    Quedan 100% fuera, tanto su parte urbana (el pueblo) como su parte rural.
+                    Se consideran fuera en esta aproximación; la lista observada no sustituye un listado oficial del marco.
                   </p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-rose-50/70 border border-rose-200">
                   <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold uppercase tracking-wider text-rose-800">Exclusión 2: Todo lo rural</span>
-                    <span className="text-lg font-extrabold text-rose-900">~11% del país</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-rose-800">B: Rural dentro de la lista</span>
+                    <span className="text-lg font-extrabold text-rose-900">4,33% (15–64)</span>
                   </div>
                   <p className="mt-2 text-sm text-rose-950 font-medium">
-                    Toda la población rural de Chile (en comunas grandes y chicas)
+                    589.166 personas rurales en las 109 comunas observadas
                   </p>
                   <p className="mt-1 text-xs text-rose-800">
-                    Incluso si una comuna grande entra en la ENPG, sus sectores rurales no se encuestan. Sumando ambas exclusiones, <strong>~23% del país queda fuera del marco</strong>.
+                    El rural de las otras 237 comunas ya está en A. Sobre 13.619.165 personas de 15–64 años, <strong>A + B = 21,95% excluido provisional</strong>; coincide con 100 × (1 − población urbana cubierta / total).
                   </p>
                 </div>
               </div>
             </div>
+
+            <p className="text-sm text-slate-600">
+              Cálculo fijo de 2024, independiente del selector histórico. La lista observada de 2022 da también 21,95%;
+              el escenario hipotético de 135 comunas con ≥30.000 habitantes en 2024 da 18,62% y no reproduce el marco ENPG.
+              No se cuantifican exclusiones de UPM especiales dentro del área urbana. No es un porcentaje de todas las edades
+              ni una medida de pobreza, consumo o sesgo en alcohol. Sin intervalo de confianza artificial.
+              Registro: README_enpg_geographic_coverage_2024.md; tabla: enpg_geographic_coverage_2024.csv.
+            </p>
 
             {/* Selector Interactivo de Año (Tablas 1 y 2) */}
             <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
@@ -984,6 +1027,15 @@ export default function App() {
                   ))}
                 </div>
               </div>
+
+              <p className="mt-4 text-sm text-slate-600">
+                Estimación provisional de {selectedYear}, edades 15–64: <strong>{currentYearData.excluded_pct.toFixed(2)}% excluido</strong>.
+                A = {currentYearData.component_A.toLocaleString('es-CL')} personas fuera de las comunas observadas;
+                B = {currentYearData.component_B.toLocaleString('es-CL')} rurales dentro de ellas.
+                Población urbana cubierta: {currentYearData.population_covered.toLocaleString('es-CL')};
+                total nacional: {currentYearData.population_total.toLocaleString('es-CL')}.
+                Se usa la población INE del mismo año. Las comunas observadas aproximan el marco; A y B no se solapan.
+              </p>
 
               {/* Métricas de `enpg_rural_coverage.csv` */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
@@ -1017,7 +1069,7 @@ export default function App() {
                     />
                   </div>
                   <p className="mt-1.5 text-[11px] text-slate-500">
-                    Esas {currentYearData.comunas_enpg} comunas concentran ~82% de la población total.
+                    Esas comunas concentran {currentYearData.pct_pop_in_enpg_comunas}% de la población de 15–64 años, sumando áreas urbanas y rurales.
                   </p>
                 </div>
 
@@ -1034,7 +1086,7 @@ export default function App() {
                     />
                   </div>
                   <p className="mt-1.5 text-[11px] text-slate-500">
-                    El 60% de la población rural vive en las comunas excluidas.
+                    El {(100 - currentYearData.pct_rural_pop_in_enpg_comunas).toFixed(1)}% de la población rural de 15–64 vive fuera de las comunas observadas.
                   </p>
                 </div>
 
@@ -1129,7 +1181,7 @@ export default function App() {
               <div className="mt-6 bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-xl flex items-start gap-3">
                 <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                 <div className="text-xs sm:text-sm text-amber-950 leading-relaxed">
-                  <strong>¿Por qué este ~0,39 es solo un «piso» (subestimación) del sesgo de cobertura?</strong> Porque la Tabla 2 solo mide <em>qué comunas</em> entran a la muestra. Asume implícitamente que si la ENPG entra a una comuna con 25% de población rural (como Melipilla o Curicó), representa a toda la comuna. Pero dentro de esa comuna la ENPG <strong>solo encuesta las manzanas urbanas</strong>, por lo que la población rural directamente encuestada es en realidad <strong>0%</strong>.
+                  <strong>El cociente ~0,39 no es un porcentaje de exclusión ni un piso del sesgo en alcohol.</strong> Compara promedios de ruralidad comunal. La exclusión geográfica se calcula por separado con A + B. La comparación histórica usa ENPG 15–65 frente a INE 15–64; no debe confundirse con el cálculo demográfico homogéneo de 2024.
                 </div>
               </div>
             </div>
@@ -1885,7 +1937,7 @@ export default function App() {
                     question: '¿Qué parte del país cae en las comunas ENPG?',
                     source: 'ENPG + INE (2012–2024)',
                     keyCols: '`comunas_enpg` (~109), `pct_pop_in_enpg_comunas` (~82%), `pct_rural_pop_in_enpg_comunas` (~40%).',
-                    takeaway: 'Muestra que el 60% de la población rural vive en las ~237 comunas chicas que la ENPG ni siquiera toca.'
+                    takeaway: 'En 2024, el 60% de la población rural de 15–64 vive en las 237 comunas no observadas; no necesariamente son pequeñas.'
                   },
                   {
                     step: 'Tabla 2',
@@ -1893,7 +1945,7 @@ export default function App() {
                     question: '¿Qué tan rurales son las comunas ENPG vs Chile?',
                     source: 'ENPG + INE por edad y sexo',
                     keyCols: '`enpg_mean` (~4,2%), `pop_mean` (~10,9%), `ratio_mean` (~0,39).',
-                    takeaway: 'La ENPG observa comunas con menos de la mitad de ruralidad que el país real. Y es un piso porque dentro de ellas solo encuesta lo urbano.'
+                    takeaway: 'Describe la ruralidad de las comunas observadas; no mide la proporción excluida ni cuantifica sesgo en consumo.'
                   },
                   {
                     step: 'Tabla 3',

@@ -1,0 +1,263 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<meta charset="utf-8">
+<title>Transiciones TSM v4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Same tokens as eps_v4_explicado.html: one reading column, sticky section index, tables scroll inside their boxes. */
+:root {
+  --bg: #f6f7f5; --surface: #ffffff; --fg: #1d2622; --muted: #5b6a63; --line: #d7ddd9;
+  --accent: #1f6f78; --accent-soft: #dcebec; --warm: #a8552c; --warm-soft: #f3e3d9;
+  --good: #2e7d4f; --bad: #b3402d;
+  --display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #131917; --surface: #1b2320; --fg: #e5ebe8; --muted: #9aaba3; --line: #2f3a36;
+  --accent: #6fbac2; --accent-soft: #1f3638; --warm: #e0946b; --warm-soft: #3a2a21; --good: #6cc391; --bad: #ef8a76; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #131917; --surface: #1b2320; --fg: #e5ebe8; --muted: #9aaba3; --line: #2f3a36;
+  --accent: #6fbac2; --accent-soft: #1f3638; --warm: #e0946b; --warm-soft: #3a2a21; --good: #6cc391; --bad: #ef8a76; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.6 var(--body); padding-inline: 16px; margin: 0; }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 28px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 8px; }
+header h1 { font: 700 2.1rem/1.15 var(--display); margin: 0; text-wrap: balance; }
+header p { margin: 0; color: var(--muted); max-width: 68ch; }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); border-bottom: 1px solid var(--line);
+  display: flex; gap: 6px; flex-wrap: wrap; padding-block: 10px; }
+nav a { color: var(--accent); text-decoration: none; font-weight: 500; padding: 4px 10px; border-radius: 4px; }
+nav a:hover, nav a:focus-visible { background: var(--accent-soft); outline: none; }
+section { display: grid; gap: 18px; scroll-margin-top: 64px; }
+h2 { font: 700 1.55rem/1.2 var(--display); margin: 0; text-wrap: balance; }
+h3 { font: 600 1.05rem/1.3 var(--body); margin: 0; }
+.eyebrow { font: 500 .72rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--warm); }
+p, ul { margin: 0; max-width: 70ch; }
+ul { padding-left: 1.2em; display: grid; gap: 4px; }
+code { font: .86em var(--mono); background: var(--accent-soft); padding: 1px 4px; border-radius: 3px; overflow-wrap: anywhere; }
+.lead { font-size: 1.05rem; border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; }
+.changes { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.change { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; display: grid; gap: 8px; min-width: 0; align-content: start; }
+.change .tag { font: 500 .78rem var(--mono); color: var(--accent); }
+.example { font: .86rem/1.5 var(--mono); background: var(--accent-soft); padding: 8px 10px; border-radius: 4px; overflow-x: auto; }
+.kpis { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+.kpi { border-left: 3px solid var(--accent); padding: 6px 12px; }
+.kpi b { display: block; font: 600 1.6rem/1.1 var(--display); font-variant-numeric: tabular-nums; }
+.kpi span { color: var(--muted); font-size: .88rem; }
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px; overflow-x: auto; min-width: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .88rem; font-variant-numeric: tabular-nums; }
+caption { text-align: left; font-weight: 600; padding-bottom: 8px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+tr.win td { background: var(--accent-soft); }
+tr.dim td { color: var(--muted); }
+td.hi { background: var(--warm-soft); }
+.pill { display: inline-block; font: 500 .74rem var(--mono); padding: 1px 7px; border-radius: 10px; }
+.pill.ok { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); }
+.pill.no { background: color-mix(in srgb, var(--bad) 16%, transparent); color: var(--bad); }
+.pill.warn { background: var(--warm-soft); color: var(--warm); }
+.note { color: var(--muted); font-size: .86rem; }
+.ci { color: var(--muted); font-size: .8rem; display: block; }
+@media (prefers-reduced-motion: no-preference) { nav a { transition: background .15s; } }
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">FONDECYT 1240138 · panel TSM, rondas 7–11</div>
+  <h1>Transiciones TSM v4</h1>
+  <p>Qué cambia en la versión 4 del cuaderno de transiciones del Termómetro de la Salud Mental (TSM), por qué las matrices casi no se mueven, cómo queda la comparación con la EPS y qué se corrigió en el script de diseño de la ENPG. Cifras de la ejecución del 2026-10-26.</p>
+</header>
+<nav aria-label="Secciones"><a href="#cambios">Qué cambió</a><a href="#fd">Exbebedores</a><a href="#tolerancia">Tolerancia</a><a href="#matriz">Matriz</a><a href="#eps">EPS vs TSM</a><a href="#r7r11">R7–R11</a><a href="#diseno">Diseño ENPG</a><a href="#archivos">Archivos</a></nav>
+
+<section id="resumen" aria-label="Resumen">
+  <p class="lead">Los cambios de v4 son de estructura, no de resultados. En los orígenes con datos (N0, FD y C1), ninguna celda de la matriz agregada se mueve más de 0,003 frente a v3, y el modelo elegido sigue siendo el mismo (Lognormal).</p>
+  <div class="kpis">
+    <div class="kpi"><b>5</b><span>estados: N0, FD, C1, C2, C3+</span></div>
+    <div class="kpi"><b>±2 años</b><span>tolerancia de edad en el vínculo, elegida con datos (v3: ±1)</span></div>
+    <div class="kpi"><b>4.160</b><span>pares de transición (v3: 4.121)</span></div>
+    <div class="kpi"><b>≤ 0,003</b><span>cambio máximo frente a v3 en orígenes con datos</span></div>
+    <div class="kpi"><b>61 / 61</b><span>tablas idénticas en dos ejecuciones; 57 controles en TRUE</span></div>
+  </div>
+</section>
+
+<section id="cambios">
+  <div class="eyebrow">1 · Qué cambió</div>
+  <h2>Cuatro cambios y por qué</h2>
+  <div class="changes">
+    <div class="change"><div class="tag">C3 + C4 = C3+, dentro del modelo</div>
+      <p>C4 ya no existe como estado en TSM: no es origen, ni destino, ni aparece en el bootstrap ni en la capa anual. En v3 la fusión estaba solo en una tabla resumen. Es la misma regla de EPS v4, Puka 2022 y Kilian 2025.</p>
+      <div class="example">Orígenes en los 4.160 pares: N0 1.613 · FD 432 · C1 2.103 · C2 6 · C3+ 6. En v3, C4 tenía 0 orígenes.</div></div>
+    <div class="change"><div class="tag">Bordes WHO y 12 g por trago</div>
+      <p>El valor exacto del borde va a la categoría inferior: C1 hasta 20 g/día en mujeres y 40 en hombres, C2 hasta 40 y 60, y C3+ por encima.</p>
+      <div class="example">TSM no tiene ninguna observación exacta en 20, 40, 60 o 100 g/día, así que no cambia ninguna etiqueta.</div></div>
+    <div class="change"><div class="tag">Tolerancia de vínculo ±2 años</div>
+      <p>TSM toma la edad de un listado del hogar que se corrige de vez en cuando. Por eso los límites de edad de EPS se amplían hasta donde la discordancia educacional de los pares sigue en su nivel base (<a href="#tolerancia">sección 3</a>).</p>
+      <div class="example">De ±1 a ±2: +39 pares (4.121 → 4.160).</div></div>
+    <div class="change"><div class="tag">Cuaderno autocontenido</div>
+      <p>Todas las funciones de datos y de modelos están escritas en el cuaderno, en 17 bloques con su explicación. Al construirlo se verifica que, juntos, coincidan byte a byte con los archivos R que usan las pruebas.</p>
+      <div class="example">Único source() que queda: _tools/acc_data.R, la puerta obligada a los datos cifrados.</div></div>
+  </div>
+</section>
+
+<section id="fd">
+  <div class="eyebrow">2 · Exbebedores</div>
+  <h2>¿Cinco estados, si TSM no pregunta por exbebedores?</h2>
+  <p>Sí. TSM no pregunta si alguna vez bebió, así que FD no puede salir de una respuesta, como en EPS. Sale del propio panel.</p>
+  <div class="box"><table>
+    <thead><tr><th scope="col">Estado</th><th scope="col">EPS</th><th scope="col">TSM v4</th></tr></thead>
+    <tbody>
+      <tr><td><b>N0</b></td><td>No bebe y declara no haber bebido nunca (o abstinencia prolongada, con la historia de 2009).</td><td>No bebe y no se le vio beber en ninguna entrevista anterior compatible. Mezcla abstemios de por vida con quienes dejaron de beber antes del panel: todo no bebedor de R7 es N0.</td></tr>
+      <tr><td><b>FD</b></td><td>Bebió alguna vez y ahora no bebe.</td><td>No bebe ahora y bebía en una entrevista anterior compatible, siguiendo la cadena de entrevistas.</td></tr>
+      <tr><td><b>C1, C2, C3+</b></td><td colspan="2">Gramos por día con bordes WHO y 12 g por trago, igual en ambas fuentes.</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Por qué funciona.</b> Los modelos predicen el destino en cuatro clases: NC, C1, C2 y C3+. Después NC se reparte según la historia: desde N0 se queda en N0 y desde cualquier otro origen pasa a FD. La división N0/FD solo entra como covariable de origen, así que no hace falta que N0 signifique «nunca bebió».</p>
+  <p><b>Lo que no se puede hacer</b> es comparar el FD de TSM con el de EPS. En TSM, FD dejó de beber hace meses; en EPS, hace años. Por eso el cruce EPS–TSM deja fuera el origen FD (FD→FD anual: 0,28 en TSM y 0,87 en EPS).</p>
+</section>
+
+<section id="tolerancia">
+  <div class="eyebrow">3 · Tolerancia</div>
+  <h2>Por qué ±2 años</h2>
+  <p>La educación completada no debería cambiar en pocos meses. Si un par con la edad fuera de rango fuera en realidad otra persona, la educación discreparía más que en los pares limpios. Hasta 2 años fuera de los límites estrictos, la discordancia se mantiene en el nivel de los pares estrictos; con 3 o más se duplica. En EPS, el mismo criterio llevó a ±3, porque allí las olas están separadas por años.</p>
+  <div class="box"><table>
+    <caption>Pares del mismo sexo según cuántos años quedan fuera de los límites estrictos de EPS</caption>
+    <thead><tr><th scope="col">Años fuera</th><th scope="col" class="num">Pares</th><th scope="col" class="num">Con educación en ambas rondas</th><th scope="col" class="num">Educación distinta</th><th scope="col" class="num">Pares aceptados (acumulado)</th></tr></thead>
+    <tbody>
+      <tr><td>0 (límites estrictos)</td><td class="num">3.888</td><td class="num">3.826</td><td class="num">10,5 %</td><td class="num">3.888</td></tr>
+      <tr><td>1</td><td class="num">233</td><td class="num">229</td><td class="num">14,0 %</td><td class="num">4.121 <span class="pill warn">v3</span></td></tr>
+      <tr class="win"><td>2</td><td class="num">39</td><td class="num">39</td><td class="num">10,3 %</td><td class="num">4.160 <span class="pill ok">v4</span></td></tr>
+      <tr><td>3 o más</td><td class="num">14</td><td class="num">14</td><td class="num">21,4 %</td><td class="num">4.174</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">El único par con distinto sexo entre rondas queda fuera. Con 3 o más años hay solo 14 pares (3 discordantes), así que la evidencia es débil, pero lo que se gana o se pierde también es poco. Tabla: <code>tsm_markov_outputs_v4/link_tolerance_evidence.csv</code>. Un control del cuaderno verifica que el acumulado en ±2 coincida con los pares del análisis principal.</p>
+</section>
+
+<section id="matriz">
+  <div class="eyebrow">4 · Resultados</div>
+  <h2>Matriz agregada: prácticamente la de v3</h2>
+  <p>Transiciones por intervalo (de 4 a 8 meses), con los cuatro intervalos juntos, para el modelo Lognormal, que sigue con el mejor log loss fuera de muestra: frente a A, la diferencia es −0,021 [−0,035; −0,006] (en v3, −0,020). Los IC 95 % salen de un bootstrap de personas con B = 1000.</p>
+  <div class="box"><table>
+    <thead><tr><th scope="col">Origen (pares)</th><th scope="col" class="num">N0</th><th scope="col" class="num">FD</th><th scope="col" class="num">C1</th><th scope="col" class="num">C2</th><th scope="col" class="num">C3+</th></tr></thead>
+    <tbody>
+      <tr><td>N0 (1.613)</td><td class="num">0,798<span class="ci">0,756–0,834</span></td><td class="num">0</td><td class="num">0,202<span class="ci">0,165–0,244</span></td><td class="num">0,000</td><td class="num">0,000</td></tr>
+      <tr><td>FD (432)</td><td class="num">0</td><td class="num">0,434<span class="ci">0,352–0,520</span></td><td class="num">0,565<span class="ci">0,479–0,647</span></td><td class="num">0,001</td><td class="num">0,000</td></tr>
+      <tr><td>C1 (2.103)</td><td class="num">0</td><td class="num">0,218<span class="ci">0,188–0,252</span></td><td class="num">0,774<span class="ci">0,740–0,804</span></td><td class="num">0,005<span class="ci">0,004–0,007</span></td><td class="num">0,003<span class="ci">0,002–0,005</span></td></tr>
+      <tr class="dim"><td>C2 (6)</td><td class="num">0</td><td class="num">0,000</td><td class="num">0,759</td><td class="num">0,133</td><td class="num">0,108</td></tr>
+      <tr class="dim"><td>C3+ (6)</td><td class="num">0</td><td class="num">0,087</td><td class="num">0,911</td><td class="num">0,001</td><td class="num">0,000</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Los ceros sin decimales son estructurales: N0 no pasa a FD y un bebedor no vuelve a N0. Las filas C2 y C3+ tienen 6 pares cada una: son extrapolación del modelo, no datos, y no tienen IC porque en algunas réplicas no aparece ningún origen.</p>
+  <div class="box"><table>
+    <caption>Celdas principales, v3 → v4 (Lognormal)</caption>
+    <thead><tr><th scope="col">Transición</th><th scope="col" class="num">v3 (6 estados, ±1)</th><th scope="col" class="num">v4 (5 estados, ±2)</th></tr></thead>
+    <tbody>
+      <tr><td>N0 → N0</td><td class="num">0,800</td><td class="num">0,798</td></tr>
+      <tr><td>N0 → C1</td><td class="num">0,200</td><td class="num">0,202</td></tr>
+      <tr><td>FD → FD</td><td class="num">0,435</td><td class="num">0,434</td></tr>
+      <tr><td>FD → C1</td><td class="num">0,564</td><td class="num">0,565</td></tr>
+      <tr><td>C1 → FD</td><td class="num">0,217</td><td class="num">0,218</td></tr>
+      <tr><td>C1 → C1</td><td class="num">0,774</td><td class="num">0,774</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="eps">
+  <div class="eyebrow">5 · Cruce con EPS</div>
+  <h2>EPS vs TSM con los estados fusionados</h2>
+  <p>El cruce lee la capa anual del motor EPS v1, que sigue con seis estados. EPS v4 ya tiene cinco, pero todavía no tiene capa anual. Para comparar, la matriz EPS se lleva a cinco estados: las columnas C3 y C4 se suman, y las filas C3 y C4 se promedian ponderadas por los pares de origen EPS observados en cada una. Las celdas fusionadas quedan sin IC, porque combinarlos exige las réplicas.</p>
+  <div class="box"><table>
+    <caption>Matrices anuales, modelo Lognormal (IC 95 %)</caption>
+    <thead><tr><th scope="col">Transición</th><th scope="col" class="num">TSM v4</th><th scope="col" class="num">EPS</th><th scope="col">Lectura</th></tr></thead>
+    <tbody>
+      <tr><td>N0 → N0</td><td class="num">0,588<span class="ci">0,514–0,659</span></td><td class="num">0,911<span class="ci">0,901–0,920</span></td><td>TSM ve mucho más inicio de consumo</td></tr>
+      <tr><td>N0 → C1</td><td class="num">0,323<span class="ci">0,271–0,380</span></td><td class="num">0,076<span class="ci">0,067–0,087</span></td><td></td></tr>
+      <tr><td>C1 → C1</td><td class="num">0,736<span class="ci">0,701–0,768</span></td><td class="num">0,816<span class="ci">0,786–0,843</span></td><td>Más cerca</td></tr>
+      <tr><td>C1 → FD</td><td class="num">0,250<span class="ci">0,219–0,285</span></td><td class="num">0,154<span class="ci">0,136–0,175</span></td><td></td></tr>
+      <tr class="dim"><td>C2 → C2</td><td class="num">0,011<span class="ci">6 orígenes</span></td><td class="num">0,486<span class="ci">0,408–0,565</span></td><td>TSM sin datos</td></tr>
+      <tr class="dim"><td>C3+ → C3+</td><td class="num">0,007<span class="ci">6 orígenes</span></td><td class="num">0,399<span class="ci">fusionada, sin IC</span></td><td>TSM sin datos</td></tr>
+      <tr class="dim"><td>FD → FD</td><td class="num">0,276<span class="ci">0,231–0,325</span></td><td class="num">0,872<span class="ci">0,828–0,906</span></td><td>No comparable (ver sección 2)</td></tr>
+    </tbody>
+  </table></div>
+  <p>La brecha es la misma de v3: viene de una diferencia de constructo y no de calibración. TSM no fija ventana de recuerdo, sus intervalos son de 4 a 8 meses y las respuestas oscilan entre rondas.</p>
+  <p><b>Por qué sube el RMSE.</b> El RMSE ponderado de la proyección TSM → EPS pasa de 0,198 a 0,224 en VI→VII y de 0,259 a 0,292 en VII→VIII. No es un empeoramiento. El RMSE promedia sobre las celdas de destino, y con cuatro destinos en vez de cinco los mismos errores se dividen entre menos celdas: el factor es √(5/4) = 1,118, y 0,198 × 1,118 = 0,221. Las diferencias por celda casi no cambian: N0→C1 pasa de +0,380 en v3 a +0,390 en v4.</p>
+</section>
+
+<section id="r7r11">
+  <div class="eyebrow">6 · Comparación directa R7–R11</div>
+  <h2>Misma comparación a dos años, una persona más</h2>
+  <p><code>tsm_r7_r11_comparators.R</code> ahora trabaja con los estados de cada motor: seis en EPS y cinco en TSM. La condición sobre el generador compara la matriz anual de EPS después de fusionar C3 y C4 con los mismos pesos que el cruce; antes fallaba por la celda C4→C4, casi sin datos. Con las masas ponderadas, como en la publicación, pasa en los cuatro motores.</p>
+  <div class="box"><table>
+    <caption>El generador reajustado debe reproducir la matriz anual publicada (diferencia &lt; 0,02 por celda)</caption>
+    <thead><tr><th scope="col">Motor</th><th scope="col">Masas</th><th scope="col" class="num">Máx. dif. anual</th><th scope="col" class="num">Máx. dif. a 2 años</th><th scope="col">Condición</th></tr></thead>
+    <tbody>
+      <tr><td>EPS A</td><td>conteos</td><td class="num">0,083</td><td class="num">0,0133</td><td><span class="pill no">no pasa</span></td></tr>
+      <tr><td>EPS A</td><td>ponderadas</td><td class="num">0,006</td><td class="num">0,0013</td><td><span class="pill ok">pasa</span></td></tr>
+      <tr><td>EPS Lognormal</td><td>conteos</td><td class="num">0,027</td><td class="num">0,0214</td><td><span class="pill no">no pasa</span></td></tr>
+      <tr><td>EPS Lognormal</td><td>ponderadas</td><td class="num">0,006</td><td class="num">0,0008</td><td><span class="pill ok">pasa</span></td></tr>
+      <tr><td>TSM A</td><td>conteos</td><td class="num">0,009</td><td class="num">0,0063</td><td><span class="pill ok">pasa</span></td></tr>
+      <tr><td>TSM A</td><td>ponderadas</td><td class="num">0,002</td><td class="num">0,0004</td><td><span class="pill ok">pasa</span></td></tr>
+      <tr><td>TSM Lognormal</td><td>conteos</td><td class="num">0,041</td><td class="num">0,0558</td><td><span class="pill no">no pasa</span></td></tr>
+      <tr><td>TSM Lognormal</td><td>ponderadas</td><td class="num">0,006</td><td class="num">0,0009</td><td><span class="pill ok">pasa</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="box"><table>
+    <caption>A dos años, 903 personas: observado (IC 95 %) y predicción puntual de cada motor</caption>
+    <thead><tr><th scope="col">Transición</th><th scope="col" class="num">Observado</th><th scope="col" class="num">EPS A</th><th scope="col" class="num">TSM A</th><th scope="col" class="num">TSM Lognormal</th><th scope="col" class="num">JRT original</th><th scope="col" class="num">Rangos</th></tr></thead>
+    <tbody>
+      <tr><td>NC → sigue NC (410)</td><td class="num">71 %<span class="ci">61–80 %</span></td><td class="num">85 %</td><td class="num">50 %</td><td class="num">51 %</td><td class="num">97 %</td><td class="num">94 %</td></tr>
+      <tr><td>C1 → sigue C1 (489)</td><td class="num">77 %<span class="ci">70–83 %</span></td><td class="num">68 %</td><td class="num">73 %</td><td class="num">73 %</td><td class="num">90 %</td><td class="num">93 %</td></tr>
+      <tr><td>C1 → deja de beber (489)</td><td class="num">21 %<span class="ci">15–28 %</span></td><td class="num">28 %</td><td class="num">25 %</td><td class="num">25 %</td><td class="num">9 %</td><td class="num">6 %</td></tr>
+    </tbody>
+  </table></div>
+  <p>Frente a la corrida del 20 de octubre, los analizables pasan de 902 a 903: la tolerancia ±2 recupera a una mujer de 30–44 años con origen C1. Las cifras globales se mueven a lo más 1 punto y las conclusiones no cambian. TSM reproduce C1 pero no la permanencia sin consumo; JRT original y el rank matching sobrestiman la estabilidad. Las tablas completas, por sexo × edad y por educación, están en <code>tsm_r7_r11_directo.md</code>. La página anterior, con seis estados y ±1, quedó con un aviso.</p>
+</section>
+
+<section id="diseno">
+  <div class="eyebrow">7 · Diseño ENPG</div>
+  <h2><code>revision_diseno_enpg_extension.R</code>: misma población que <code>expand_pif</code></h2>
+  <p>El script calcula, por año × tramo de edad × sexo, el tamaño efectivo de Kish y un factor de conglomerado (PSU + región). Solo lo usa <code>expand_pif.ipynb</code>, en la celda <code>enpg-kish-PSU-corr</code>, y de ahí pasa a <code>aaf_unified.R</code>. Define el ancho de los IC Monte Carlo de AAF, PIF y AVPP, nunca la estimación puntual. Antes derivaba las variables a su manera, así que medía la precisión de otra población; ahora replica fila por fila la celda <code>enpg-consolidate</code>.</p>
+  <div class="box"><table>
+    <thead><tr><th scope="col">Qué se corrigió</th><th scope="col">Antes</th><th scope="col">Ahora (= expand_pif)</th></tr></thead>
+    <tbody>
+      <tr><td>Bebedor actual sin volumen o con volumen 0</td><td>quedaba fuera de abs/form</td><td><code>cur_na</code>: dentro del denominador</td></tr>
+      <tr><td>«Sí ha bebido» sin fecha del último consumo</td><td>contado como exbebedor</td><td>estado desconocido: fuera</td></tr>
+      <tr><td>Más de 30 días de consumo, o abstemio con fecha</td><td>se mantenían</td><td>se excluyen</td></tr>
+      <tr><td>Población de HED y consumo</td><td>todo bebedor actual con datos</td><td>bebedores con volumen positivo</td></tr>
+      <tr><td>Volumen</td><td>15,7 g, anclaje fijo de 7,9 L</td><td>12 g, factor WHO por año</td></tr>
+      <tr><td>Categorías</td><td>cortes JRT con huecos</td><td>bordes WHO sin huecos</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box"><table>
+    <caption>Efecto en las 56 celdas de cada variable</caption>
+    <thead><tr><th scope="col">Variable</th><th scope="col" class="num">n total antes → ahora</th><th scope="col" class="num">n efectivo corregido, ahora / antes</th></tr></thead>
+    <tbody>
+      <tr><td>Abstemio de por vida</td><td class="num">120.015 → 122.968</td><td class="num">0,90 a 1,12</td></tr>
+      <tr><td>Exbebedor</td><td class="num">120.015 → 122.968</td><td class="num">0,92 a 1,24</td></tr>
+      <tr><td>HED</td><td class="num">45.361 → 44.868</td><td class="num">0,95 a 1,01</td></tr>
+      <tr><td>Consumo (g/día)</td><td class="num">44.880 → 44.868</td><td class="num">1,00 a 1,00</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Verificado contra los datos que guarda <code>expand_pif</code>: la tabla año × estado y los bebedores con volumen positivo son idénticos, y el volumen medio por año coincide. El script se detiene si las cuatro poblaciones no son las esperadas. <b>Pendiente:</b> reejecutar <code>expand_pif</code> para que sus IC usen los nuevos factores. Detalle: <code>revision_diseno_enpg_extension.md</code>.</p>
+</section>
+
+<section id="archivos">
+  <div class="eyebrow">8 · Archivos y pendientes</div>
+  <h2>Dónde está cada cosa</h2>
+  <ul>
+    <li>Cuaderno: <code>__andres_control/TSM_ENPG_v4_EN.ipynb</code>, ejecutado dos veces en núcleos E (42 min cada vez) con 61 tablas idénticas. HTML: <code>TSM_ENPG_v4_EN.html</code> en la raíz, con todas las imágenes incrustadas.</li>
+    <li>Salidas agregadas: <code>tsm_markov_outputs_v4/</code>. El cuaderno v3 y sus salidas (<code>tsm_markov_outputs/</code>) quedan como historia.</li>
+    <li>Constructor: <code>_tools/build_tsm_markov_notebook.py</code>. Verificación: <code>_tools/verify_tsm_reproduction.py</code>.</li>
+    <li>R7–R11: <code>tsm_r7_r11_directo.md</code> y <code>tsm_r7_r11_direct_outputs/</code>. Diseño ENPG: <code>revision_diseno_enpg_extension.md</code>.</li>
+  </ul>
+  <h3>Pendientes</h3>
+  <ul>
+    <li>Reejecutar <code>expand_pif</code> para que sus IC de AAF, PIF y AVPP usen los nuevos factores de diseño.</li>
+    <li>Capa anual de cinco estados en EPS v4; mientras no exista, el cruce usa EPS v1 fusionado.</li>
+    <li>En <code>v2_regression_check.csv</code>, la columna de la versión actual todavía se llama «v3». Es solo la etiqueta; las cifras son de v4.</li>
+    <li>La página publicada de R7–R11 no se reconstruyó; las cifras vigentes están en el md.</li>
+  </ul>
+</section>
+</div>
+
+</body></html>

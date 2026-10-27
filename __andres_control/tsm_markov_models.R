@@ -1,9 +1,9 @@
 .t0 <- Sys.time()
-# tsm_markov_models.R -- model layer of TSM v3: port of the EPS engine (eps_markov_core.R) to the TSM risk set.
+# tsm_markov_models.R -- model layer of TSM v4 (v3 engine, five states): port of the EPS engine (eps_markov_core.R) to the TSM risk set.
 # Port rules: same algorithms, numerical conventions and output column names as the ep_* functions; four TSM
 # periods with their own interval lengths; no survey design (the whole-person bootstrap is the primary
-# uncertainty); destination and state vectors are parameters (defaults ts_Y / ts_ST, untouched) so the
-# merged C3plus variant reuses the same code. All confidential row-level objects stay in memory.
+# uncertainty); destination and state vectors are parameters (defaults ts_Y / ts_ST: five states with C3 and C4
+# merged into C3plus since 2026-10-26). All confidential row-level objects stay in memory.
 #
 # Expected globals (defined by the data layer tsm_markov_data.R or by the notebook sections before use):
 #   constants : ts_seed, ts_B, ts_repeats, ts_K, ts_kgrid, ts_ST, ts_Y, ts_ages, ts_periods, ts_edu_levels,
@@ -180,7 +180,7 @@ ts_prob <- function(o, d) {
     if (o$kind %in% c("ordinal", "nonpo")) pa <- ts_class_prob(o$amount, d)
     else {
       a <- o$amount; eta <- as.numeric(ts_x(d, a$formula, a$columns) %*% a$coef)
-      cuts <- cbind(ifelse(d$sex == "Women", 20, 40), ifelse(d$sex == "Women", 40, 60), 100)[, seq_len(length(Y) - 2), drop = FALSE]
+      cuts <- cbind(ifelse(d$sex == "Women", 20, 40), ifelse(d$sex == "Women", 40, 60), ifelse(d$sex == "Women", 60, 100))[, seq_len(length(Y) - 2), drop = FALSE]
       F <- if (o$kind == "gamma") stats::pgamma(cuts, shape = a$shape, scale = exp(eta) / a$shape) else
         stats::pnorm((log(cuts) - eta) / a$sigma)
       pa <- cbind(F[, 1], if (ncol(F) > 1) F[, -1, drop = FALSE] - F[, -ncol(F), drop = FALSE], 1 - F[, ncol(F)])
@@ -424,7 +424,7 @@ ts_calibration_cells <- function(cvtab, d = ts_d,
 # Continuous-time generator: free rates N0->C, FD->C, C->FD and C->C; annual rows remain model-derived scenarios.
 ts_ij_fun <- function(n) rbind(cbind(1, 3:n), cbind(2, 3:n), cbind(3:n, 2),
                                do.call(rbind, lapply(3:n, function(i) cbind(i, setdiff(3:n, i)))))
-ts_ij <- ts_ij_fun(6)
+ts_ij <- ts_ij_fun(length(ts_ST))
 ts_Q <- function(theta, ij = ts_ij) {
   n <- max(ij); q <- matrix(0, n, n); q[ij] <- exp(pmin(pmax(theta, -14), 2)); diag(q) <- -rowSums(q); q
 }
@@ -591,8 +591,8 @@ ts_history_check <- function(risk = ts_risk, W = ts_W, models = c("Gamma", "Gamm
 }
 ts_ck <- function(d = ts_d, W = ts_W, B = 200, seed = ts_seed + 700L) {
   d <- ts_earlier(d, W); d <- d[d$history_available, ]
-  collapse <- function(s) factor(ifelse(s %in% c("N0", "FD"), "NC", ifelse(s %in% c("C1", "C2"), "C1-C2", "C3-C4")),
-                                 levels = c("NC", "C1-C2", "C3-C4"))
+  collapse <- function(s) factor(ifelse(s %in% c("N0", "FD"), "NC", ifelse(s %in% c("C1", "C2"), "C1-C2", "C3plus")),
+                                 levels = c("NC", "C1-C2", "C3plus"))
   d$a <- collapse(as.character(d$earlier_state)); d$b <- collapse(as.character(d$state0)); d$c <- collapse(d$state1)
   calc <- function(z, w) {
     mat <- function(x, y) { m <- tapply(w, list(x, y), sum); m[is.na(m)] <- 0; m / rowSums(m) }
@@ -633,6 +633,17 @@ ts_crosscheck_eps <- function(d, fits, annual_full, cvtab = NULL, annual_ci = NU
   eps_years <- c(VI_VII = 3.671, VII_VIII = 4.03); nS <- length(ts_ST)
   models <- intersect(c("A", "Gamma", "Lognormal"), intersect(names(annual_full), unique(ea$model)))
   collapse <- function(pp) { x <- cbind(pp[, 1] + pp[, 2], pp[, 3:nS]); colnames(x) <- ts_Y; x }
+  # The EPS v1 engine keeps C3 and C4 apart: merge them into C3plus. Columns are summed; the two rows are averaged with
+  # the observed EPS origin pairs as weights (an approximation for an annual matrix; intervals of merged cells are dropped).
+  ST6 <- c("N0", "FD", "C1", "C2", "C3", "C4"); m34 <- function(s) ifelse(s %in% c("C3", "C4"), "C3plus", s)
+  o <- unique(et[et$model == "A", c("group", "from", "n_origin")]); n34 <- c(sum(o$n_origin[o$from == "C3"]), sum(o$n_origin[o$from == "C4"]))
+  eps_P <- function(m) {
+    z <- ea[ea$model == m, ]; P <- matrix(NA_real_, 6, 6, dimnames = list(ST6, ST6))
+    P[cbind(match(z$from, ST6), match(z$to, ST6))] <- z$estimate
+    stopifnot(all(is.finite(P)))
+    P[, "C3"] <- P[, "C3"] + P[, "C4"]; P["C3", ] <- (n34[1] * P["C3", ] + n34[2] * P["C4", ]) / sum(n34)
+    P <- P[1:5, 1:5]; dimnames(P) <- list(ts_ST, ts_ST); P
+  }
   annual <- do.call(rbind, lapply(models, function(m) {
     tsm <- data.frame(source = "TSM", model = m, from = rep(ts_ST, nS), to = rep(ts_ST, each = nS),
       estimate = as.vector(annual_full[[m]]$P), lower = NA_real_, upper = NA_real_)
@@ -640,8 +651,9 @@ ts_crosscheck_eps <- function(d, fits, annual_full, cvtab = NULL, annual_ci = NU
       z <- annual_ci[annual_ci$model == m, ]; j <- match(paste(tsm$from, tsm$to), paste(z$from, z$to))
       tsm$lower <- z$lower[j]; tsm$upper <- z$upper[j]
     }
-    z <- ea[ea$model == m, ]
-    rbind(tsm, data.frame(source = "EPS", model = m, from = z$from, to = z$to, estimate = z$estimate, lower = z$lower, upper = z$upper))
+    z <- ea[ea$model == m, ]; e <- data.frame(source = "EPS", model = m, from = rep(ts_ST, nS), to = rep(ts_ST, each = nS),
+      estimate = as.vector(eps_P(m))); j <- match(paste(e$from, e$to), paste(z$from, z$to))
+    rbind(tsm, cbind(e, lower = z$lower[j], upper = z$upper[j]))
   }))
   annual$staying <- annual$from == annual$to
   score <- function(loss, w, source, m, extra = NA_real_) {
@@ -651,9 +663,7 @@ ts_crosscheck_eps <- function(d, fits, annual_full, cvtab = NULL, annual_ci = NU
     rbind(one(seq_len(nrow(d)), "All"), do.call(rbind, lapply(ts_periods, function(p) one(which(d$period == p), p))))
   }
   mats <- list(); eps_scores <- lapply(models, function(m) {
-    z <- ea[ea$model == m, ]; P1 <- matrix(NA_real_, nS, nS, dimnames = list(ts_ST, ts_ST))
-    P1[cbind(match(z$from, ts_ST), match(z$to, ts_ST))] <- z$estimate
-    stopifnot(all(is.finite(P1)))
+    P1 <- eps_P(m)
     g <- ts_generator(list(list(P = collapse(P1), n = rep(1, nS), delta = 1)), total = nS)
     per <- lapply(ts_periods, function(p) collapse(ts_expm(g$Q * ts_time$years[match(p, ts_time$period)]))); names(per) <- ts_periods
     mats[[m]] <<- do.call(rbind, lapply(ts_periods, function(p) data.frame(model = m, period = p,
@@ -669,9 +679,10 @@ ts_crosscheck_eps <- function(d, fits, annual_full, cvtab = NULL, annual_ci = NU
   # TSM -> EPS: compare on the five collapsed destinations (NC = N0 + FD), the space the generator is fitted on;
   # the EPS N0 -> FD cell is a structural zero, while a generator distributes within-interval N0 -> C -> FD mass.
   eA <- et[et$model == "A" & is.finite(et$estimate), ]
-  eA$period <- as.character(eA$period); eA$to <- ifelse(eA$to %in% c("N0", "FD"), "NC", eA$to)
+  eA$period <- as.character(eA$period); den <- unique(eA[c("period", "group", "from", "n_origin")]); den$from <- m34(den$from)
+  eA$from <- m34(eA$from); eA$to <- ifelse(eA$to %in% c("N0", "FD"), "NC", m34(eA$to))
   num <- stats::aggregate(cbind(weighted = estimate * n_origin) ~ period + from + to, eA, sum)
-  den <- stats::aggregate(n_origin ~ period + from, unique(eA[c("period", "group", "from", "n_origin")]), sum)
+  den <- stats::aggregate(n_origin ~ period + from, den, sum)
   pooled <- merge(num, den, by = c("period", "from")); pooled$estimate <- pooled$weighted / pooled$n_origin
   observed_origins <- names(which(table(factor(as.character(d$state0), levels = ts_ST)) > 0))
   cells <- do.call(rbind, lapply(models, function(m) do.call(rbind, lapply(names(eps_years), function(ep) {
@@ -689,23 +700,6 @@ ts_crosscheck_eps <- function(d, fits, annual_full, cvtab = NULL, annual_ci = NU
   rownames(summary) <- NULL
   list(annual = annual, projection_eps_to_tsm = rbind(do.call(rbind, eps_scores), do.call(rbind, own)),
        projection_eps_matrices = do.call(rbind, mats), projection_tsm_to_eps = cells, projection_tsm_to_eps_summary = summary)
-}
-ts_merged_variant <- function(risk, models = c("A", "Lognormal", "Ordinal_single"), K = 5, repeats = 1) {
-  Ym <- c("NC", "C1", "C2", "C3plus"); STm <- ts_states(Ym)
-  merge_state <- function(s) ifelse(s %in% c("C3", "C4"), "C3plus", as.character(s))
-  r <- risk; r$state0 <- factor(merge_state(r$state0), levels = STm); r$state1 <- merge_state(r$state1)
-  r$y1 <- factor(ifelse(r$state1 %in% c("N0", "FD"), "NC", r$state1), levels = Ym)
-  d <- ts_ipw_apply(r, ts_ipw_fit(r))
-  k <- ts_tune(r, FALSE, Y = Ym)$k
-  fits <- lapply(stats::setNames(models, models), function(nm) ts_fit(d, nm, k, Y = Ym))
-  cvtab <- ts_cv_tables(ts_cv(r, models, repeats = repeats, K = K, d = d, Y = Ym), d = d, Y = Ym)
-  dd <- d; dd$pooled <- "All"
-  pooled <- do.call(rbind, lapply(models, function(nm) ts_matrices(dd, ts_prob(fits[[nm]], dd), nm, by = "pooled", Y = Ym)))
-  ann <- lapply(fits, function(f) ts_annual(d, f, starts = .05, levels = STm)); n <- length(STm)
-  annual <- do.call(rbind, lapply(names(ann), function(nm) { z <- ann[[nm]]
-    data.frame(model = nm, from = rep(STm, n), to = rep(STm, each = n), estimate = as.vector(z$P),
-      weighted_reconstruction_RMSE = z$rmse, optimizer_code = z$convergence, semigroup_error = z$semigroup_error) }))
-  list(cv_scores = cvtab$summary, pooled = pooled, annual = annual, k = k, fits = fits, d = d, cvtab = cvtab, generators = ann)
 }
 ts_point_sensitivity <- function(risks, models, label, k = NULL) {
   # CV-free pooled point estimates for already-built risk sets (education rules, upper band); IPW refitted.
@@ -775,13 +769,13 @@ ts_intervals_figure <- function() {
 }
 ts_diagrams <- function() {
   ts_diagram(c("TSM rounds R7-R11\nRespondents, Fact_Exp", "Same person\nAdjacent rounds, 4-8 months", "Fact_Exp + link IPW\nPeriod mass fixed",
-    "Observed origin states\nN0 / FD / C1-C4", "Person-blocked validation\nIPW fit inside training", "Pooled models\nCategory probabilities",
+    "Observed origin states\nN0 / FD / C1, C2, C3plus", "Person-blocked validation\nIPW fit inside training", "Pooled models\nCategory probabilities",
     "Whole-person bootstrap\nOne multiplier per person", "Annual generator\nFour interval lengths", "EPS cross-check\nConsistency, not validation"),
     matrix(c(1, 2, 2, 3, 3, 6, 6, 5, 5, 4, 4, 7, 7, 8, 8, 9), byrow = TRUE, ncol = 2),
     "From survey responses to transition probabilities", "fig_flowchart")
   ts_intervals_figure()
-  ts_diagram(c("At t: N0 / FD / C1-C4\nSex, age, education, prior grams", "Participation model\nP(drinking at t+1)",
-    "Amount if drinking\nGamma / lognormal / ordinal", "Non-drinking\nN0 or FD from past history", "Integrate category cutpoints\nP(C1), P(C2), P(C3), P(C4)", "Next-round distribution\nNot just the predicted mean"),
+  ts_diagram(c("At t: N0 / FD / C1, C2, C3plus\nSex, age, education, prior grams", "Participation model\nP(drinking at t+1)",
+    "Amount if drinking\nGamma / lognormal / ordinal", "Non-drinking\nN0 or FD from past history", "Integrate category cutpoints\nP(C1), P(C2), P(C3plus)", "Next-round distribution\nNot just the predicted mean"),
     matrix(c(1, 2, 2, 3, 2, 4, 3, 5, 4, 6, 5, 6), ncol = 2, byrow = TRUE), "Two-part models", "fig_two_part")
 }
 ts_plots <- function() {

@@ -12,48 +12,51 @@ source(here::here("__andres_control", "tsm_r7_r11_direct.R"))   # cohort D / AN,
 .t1 <- Sys.time()
 source(here::here("__andres_control", "tsm_markov_models.R"))    # ts_generator, ts_expm (definitions only)
 source(here::here("__andres_control", "eps_markov_core.R"))      # ep_ij, ep_coupling (definitions only)
-stopifnot(identical(unname(ep_ij), unname(ts_ij)))   # EPS and TSM annual generators share the same six-state structure
+stopifnot(identical(unname(ep_ij), unname(ts_ij_fun(6))))   # the TSM generator code reproduces the six-state EPS structure
+# States per engine: TSM has five (C3 and C4 merged into C3plus since 2026-10-26); the EPS v1 engine keeps six.
+eng_ST <- function(src) if (src == "EPS") ep_ST else ts_ST
+eng_Y <- function(src) if (src == "EPS") ep_Y else ts_Y
 cmp_csv <- function(x, name) save_csv(x, paste0("cmp_", name))
 SA <- expand.grid(age_group = ts_ages, sex = c("Men", "Women"), stringsAsFactors = FALSE)[, 2:1]
 SA$stratum <- paste(SA$sex, SA$age_group)
 
 # ---- 1. Two-year projection of the engines, per sex x age stratum --------------------------------------------------
-# The engines' annual matrices come from a six-state generator fitted to the model-predicted interval matrices of each
-# period (destinations NC, C1-C4; ts_annual / ep_annual). The exported group matrices are the same predictions averaged
+# The engines' annual matrices come from a generator fitted to the model-predicted interval matrices of each period
+# (EPS: six states, destinations NC, C1-C4; TSM: five states, destinations NC, C1, C2, C3plus; ts_annual / ep_annual). The exported group matrices are the same predictions averaged
 # within period x sex x age x origin (ep_matrices), so the same generator is refitted per stratum and exponentiated at two
 # years: P2 = expm(2 Q). Row masses are origin counts (the published pooled fit used weighted masses); origins with no
 # rows keep zero mass, so their rates are set by the fixed ridge only.
-eng_targets <- function(tab, periods, years, rows = rep(TRUE, nrow(tab)), wmass = NULL) {
+eng_targets <- function(tab, periods, years, rows = rep(TRUE, nrow(tab)), wmass = NULL, ST = ts_ST, Y = ts_Y) {
   if (!is.null(wmass)) tab$n_origin <- wmass$mass[match(paste(tab$group, tab$from), paste(wmass$group, wmass$from))]
   tab$n_origin[is.na(tab$n_origin)] <- 0
   lapply(seq_along(periods), function(k) {
     z <- tab[rows & tab$period == periods[k], ]
-    P <- matrix(0, 6, 5); n <- numeric(6)
-    for (j in 1:6) {
-      zz <- z[z$from == ts_ST[j], ]
+    P <- matrix(0, length(ST), length(Y)); n <- numeric(length(ST))
+    for (j in seq_along(ST)) {
+      zz <- z[z$from == ST[j], ]
       if (!nrow(zz)) next
       # sum over groups with count masses (a single group when stratum-specific)
       m <- stats::aggregate(cbind(mass = n_origin) ~ group, unique(zz[c("group", "n_origin")]), sum)
       tot <- sum(m$mass); if (tot == 0) next
       e <- zz; e$estimate[is.na(e$estimate)] <- 0
       e$to5 <- ifelse(e$to %in% c("N0", "FD"), "NC", e$to)
-      num <- tapply(e$estimate * e$n_origin, factor(e$to5, ts_Y), sum)
+      num <- tapply(e$estimate * e$n_origin, factor(e$to5, Y), sum)
       P[j, ] <- as.numeric(num) / tot; n[j] <- tot
     }
     list(P = P, n = n, delta = years[k])
   })
 }
-eng_fit <- function(targets) {
+eng_fit <- function(targets, ST = ts_ST) {
   total <- sum(vapply(targets, function(z) sum(z$n), 1))
   g <- tryCatch(ts_generator(targets, total = total), error = function(e) NULL)
   if (is.null(g)) return(NULL)
-  P2 <- ts_expm(g$Q * 2); dimnames(P2) <- list(ts_ST, ts_ST)
+  P2 <- ts_expm(g$Q * 2); dimnames(P2) <- list(ST, ST); dimnames(g$P) <- list(ST, ST)
   list(P1 = g$P, P2 = P2, rmse = g$rmse, convergence = g$convergence, semigroup = g$semigroup_error, n_rows = targets[[1]]$n)
 }
 et <- utils::read.csv(here::here("__andres_control", "eps_markov_outputs", "transition_matrices_design_CI.csv"), stringsAsFactors = FALSE)
-tt <- utils::read.csv(here::here("__andres_control", "tsm_markov_outputs", "transition_matrices_person_CI.csv"), stringsAsFactors = FALSE)
+tt <- utils::read.csv(here::here("__andres_control", "tsm_markov_outputs_v4", "transition_matrices_person_CI.csv"), stringsAsFactors = FALSE)
 ea <- utils::read.csv(here::here("__andres_control", "eps_markov_outputs", "annual_pooled_matrices_design_CI.csv"), stringsAsFactors = FALSE)
-ta <- utils::read.csv(here::here("__andres_control", "tsm_markov_outputs", "annual_pooled_matrices_person_CI.csv"), stringsAsFactors = FALSE)
+ta <- utils::read.csv(here::here("__andres_control", "tsm_markov_outputs_v4", "annual_pooled_matrices_person_CI.csv"), stringsAsFactors = FALSE)
 eps_periods <- c("VI_VII", "VII_VIII"); eps_years <- c(3.671, 4.03)   # ep_time$years in eps_markov_core.R
 engines <- list(
   list(source = "EPS", model = "A", tab = et, periods = eps_periods, years = eps_years, published = ea),
@@ -80,37 +83,45 @@ stopifnot(nrow(ts_dw) == sum(tt$n_origin[tt$model == "A" & tt$to == "N0"], na.rm
 # Gate (fixed before looking): the generator refitted to the pooled targets must reproduce the published pooled annual
 # matrix within 0.02 in every identified cell; otherwise stratum projections are not reported. First run with count
 # masses (failed for three engines); rerun with the engines' weighted masses, which the published fit used.
+# Since 2026-10-26 C4 is never reported: for the six-state EPS engine both annual matrices are merged to C3plus with the
+# same weights (columns summed, the C3 and C4 rows averaged with the observed EPS origin pairs) before the comparison.
+o34 <- unique(et[et$model == "A", c("group", "from", "n_origin")]); n34 <- c(sum(o34$n_origin[o34$from == "C3"]), sum(o34$n_origin[o34$from == "C4"]))
+merge34 <- function(P) {
+  if (!"C4" %in% rownames(P)) return(P)
+  P[, "C3"] <- P[, "C3"] + P[, "C4"]; P["C3", ] <- (n34[1] * P["C3", ] + n34[2] * P["C4", ]) / sum(n34)
+  P <- P[rownames(P) != "C4", colnames(P) != "C4"]; rownames(P)[rownames(P) == "C3"] <- colnames(P)[colnames(P) == "C3"] <- "C3plus"; P
+}
 gate <- do.call(rbind, lapply(engines, function(e) do.call(rbind, lapply(c("counts", "weighted"), function(mt) {
-  tab <- e$tab[e$tab$model == e$model, ]
+  tab <- e$tab[e$tab$model == e$model, ]; ST <- eng_ST(e$source)
   wm <- if (mt == "counts") NULL else if (e$source == "EPS") eps_wmass else tsm_wmass
-  f <- eng_fit(eng_targets(tab, e$periods, e$years, wmass = wm))
+  f <- eng_fit(eng_targets(tab, e$periods, e$years, wmass = wm, ST = ST, Y = eng_Y(e$source)), ST)
   if (is.null(e$published)) return(data.frame(source = e$source, model = e$model, masses = mt, max_abs_diff_annual = NA_real_,
     max_abs_diff_2y_reported_cells = NA_real_, rmse = f$rmse, pass = NA, note = "no published annual matrix: conversion derived here"))
   pub <- e$published[e$published$model == e$model, ]
-  Pp <- matrix(NA_real_, 6, 6, dimnames = list(ts_ST, ts_ST)); Pp[cbind(match(pub$from, ts_ST), match(pub$to, ts_ST))] <- pub$estimate
+  Pp <- matrix(NA_real_, length(ST), length(ST), dimnames = list(ST, ST)); Pp[cbind(match(pub$from, ST), match(pub$to, ST))] <- pub$estimate
   ok <- is.finite(Pp)
   P2p <- Pp; P2p[!ok] <- 0; for (r in rownames(Pp)[rowSums(!ok) > 0]) P2p[r, r] <- 1; P2p <- P2p %*% P2p
   nc <- function(P, o) P[o, "N0"] + P[o, "FD"]
   d2 <- max(abs(c(nc(f$P2, "N0") - nc(P2p, "N0"), nc(f$P2, "FD") - nc(P2p, "FD"), f$P2["C1", "C1"] - P2p["C1", "C1"],
                   nc(f$P2, "C1") - nc(P2p, "C1"))))
-  d1 <- max(abs(f$P1[ok] - Pp[ok]))
+  ok_m <- is.finite(merge34(Pp)); d1 <- max(abs(merge34(f$P1)[ok_m] - merge34(Pp)[ok_m]))
   data.frame(source = e$source, model = e$model, masses = mt, max_abs_diff_annual = d1, max_abs_diff_2y_reported_cells = d2,
-    rmse = f$rmse, pass = d1 < 0.02, note = if (mt == "counts") "count masses" else "weighted masses (as published)")
+    rmse = f$rmse, pass = d1 < 0.02, note = paste0(if (mt == "counts") "count masses" else "weighted masses (as published)", if (e$source == "EPS") "; annual cells compared after merging C3 and C4" else ""))
 }))))
 cmp_csv(gate, "generator_gate"); cat("generator gate:\n"); print(gate, row.names = FALSE, digits = 3)
 
 proj <- do.call(rbind, lapply(engines, function(e) {
-  tab <- e$tab[e$tab$model == e$model, ]
+  tab <- e$tab[e$tab$model == e$model, ]; ST <- eng_ST(e$source)
   gp <- gate$pass[gate$source == e$source & gate$model == e$model & gate$masses == "weighted"]
   passed <- is.na(gp) || gp
   do.call(rbind, lapply(seq_len(nrow(SA)), function(s) {
     rows <- tab$sex == SA$sex[s] & tab$age_group == SA$age_group[s]
-    f <- if (passed) eng_fit(eng_targets(tab, e$periods, e$years, rows, wmass = if (e$source == "EPS") eps_wmass else tsm_wmass)) else NULL
+    f <- if (passed) eng_fit(eng_targets(tab, e$periods, e$years, rows, wmass = if (e$source == "EPS") eps_wmass else tsm_wmass, ST = ST, Y = eng_Y(e$source)), ST) else NULL
     get <- function(o, d) if (is.null(f)) NA_real_ else if (d == "NC") f$P2[o, "N0"] + f$P2[o, "FD"] else f$P2[o, d]
     data.frame(source = e$source, model = e$model, sex = SA$sex[s], age_group = SA$age_group[s], stratum = SA$stratum[s],
       N0_NC = get("N0", "NC"), FD_NC = get("FD", "NC"), C1_C1 = get("C1", "C1"), C1_NC = get("C1", "NC"),
       n_rows_N0 = if (is.null(f)) NA else f$n_rows[1], n_rows_FD = if (is.null(f)) NA else f$n_rows[2],
-      n_rows_C1 = if (is.null(f)) NA else f$n_rows[3], n_rows_C4 = if (is.null(f)) NA else f$n_rows[6],
+      n_rows_C1 = if (is.null(f)) NA else f$n_rows[3], n_rows_C3plus = if (is.null(f)) NA else sum(f$n_rows[-(1:4)]),
       rmse = if (is.null(f)) NA_real_ else f$rmse, convergence = if (is.null(f)) NA else f$convergence,
       status = if (is.null(f)) "not available" else "point estimate")
   }))
@@ -119,13 +130,13 @@ cmp_csv(proj, "engine_two_year_by_stratum")
 # Origins with no rows in a stratum (mass 0) have rates set by the fixed ridge only. Sensitivity: refit every stratum
 # with a ridge 10 times weaker and 10 times stronger and report the largest change in the reported cells.
 ridge <- do.call(rbind, lapply(engines, function(e) {
-  tab <- e$tab[e$tab$model == e$model, ]; wm <- if (e$source == "EPS") eps_wmass else tsm_wmass
+  tab <- e$tab[e$tab$model == e$model, ]; wm <- if (e$source == "EPS") eps_wmass else tsm_wmass; ST <- eng_ST(e$source)
   do.call(rbind, lapply(c(5e-6, 5e-4), function(lam) {
     dif <- vapply(seq_len(nrow(SA)), function(s) {
-      tg <- eng_targets(tab, e$periods, e$years, tab$sex == SA$sex[s] & tab$age_group == SA$age_group[s], wmass = wm)
+      tg <- eng_targets(tab, e$periods, e$years, tab$sex == SA$sex[s] & tab$age_group == SA$age_group[s], wmass = wm, ST = ST, Y = eng_Y(e$source))
       g <- tryCatch(ts_generator(tg, total = sum(vapply(tg, function(z) sum(z$n), 1)), lambda = lam), error = function(err) NULL)
       if (is.null(g)) return(NA_real_)
-      P2 <- ts_expm(g$Q * 2); dimnames(P2) <- list(ts_ST, ts_ST)
+      P2 <- ts_expm(g$Q * 2); dimnames(P2) <- list(ST, ST)
       b <- proj[proj$source == e$source & proj$model == e$model & proj$stratum == SA$stratum[s], ]
       max(abs(c(P2["N0", "N0"] + P2["N0", "FD"] - b$N0_NC, P2["FD", "N0"] + P2["FD", "FD"] - b$FD_NC,
                 P2["C1", "C1"] - b$C1_C1, P2["C1", "N0"] + P2["C1", "FD"] - b$C1_NC)))
@@ -154,15 +165,15 @@ proj$NC_NC_scenario <- ifelse(proj$source == "EPS", proj$pi_fd * proj$FD_NC + (1
 proj$NC_NC_low[proj$source == "TSM"] <- proj$NC_NC_high[proj$source == "TSM"] <- proj$N0_NC[proj$source == "TSM"]
 
 # ---- 3. Rank coupling of the cohort's own R7 and R11 margins (24 months, no conversion) ----------------------------
-# ep_coupling: comonotone coupling of the ordered categories within sex x age, preserving both margins. It is the
+# ts_coupling (the TSM port of ep_coupling, five destination classes): comonotone coupling of the ordered categories within sex x age, preserving both margins. It is the
 # category-level form of the JRT rank matching (ranking by grams orders NC < C1 < ... within a sex), applied here to the
 # same people, so it measures the persistence a rank-matched pseudo-panel would infer from these exact margins.
 rank_tab <- do.call(rbind, lapply(c("weighted", "unweighted"), function(wt) {
-  M_all <- matrix(0, 5, 5, dimnames = list(ep_Y, ep_Y))
+  M_all <- matrix(0, length(ts_Y), length(ts_Y), dimnames = list(ts_Y, ts_Y))
   per <- do.call(rbind, lapply(seq_len(nrow(SA)), function(s) {
     z <- AN[AN$sex == SA$sex[s] & AN$age_group == SA$age_group[s], ]
     w <- if (wt == "weighted") z$w else rep(1, nrow(z))
-    M <- ep_coupling(z$origin, z$dest, w); M_all <<- M_all + M * sum(w)
+    M <- ts_coupling(z$origin, z$dest, w); M_all <<- M_all + M * sum(w)
     R <- M / ifelse(rowSums(M) > 0, rowSums(M), NA)
     data.frame(weighting = wt, stratum = SA$stratum[s], NC_NC = R["NC", "NC"], C1_C1 = R["C1", "C1"], C1_NC = R["C1", "NC"])
   }))

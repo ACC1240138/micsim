@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research articles, reproducible analyses and population calibration for Chilean alcohol-policy microsimulation, FONDECYT 1240138.">
+  <title>Alcohol-policy microsimulation in Chile · FONDECYT 1240138</title>
+  <style>
+    :root { color-scheme: light; --ink: #292929; --muted: #686868; --link: #28688b; --rule: #e2e2e2; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: #fff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: #173f55; }
+    a:focus-visible { outline: 3px solid #28688b; outline-offset: 4px; }
+    .skip { position: absolute; left: 16px; top: -80px; background: white; padding: 12px; }
+    .skip:focus { top: 12px; }
+    .column { width: min(100% - 48px, 740px); margin-inline: auto; }
+    header { padding: 76px 0 36px; }
+    .eyebrow, .section-label { color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; }
+    h1 { margin: 18px 0 22px; font-size: clamp(36px, 5vw, 52px); line-height: 1.1; letter-spacing: -.035em; }
+    .subtitle { margin: 0; color: #555; font-size: 21px; font-weight: 300; line-height: 1.55; }
+    .byline { border-block: 1px solid var(--rule); padding-block: 22px; font-size: 13px; line-height: 1.65; color: var(--muted); }
+    .byline strong { color: var(--ink); font-weight: 600; }
+    main { font-size: 17px; line-height: 1.75; padding-top: 30px; }
+    p { margin: 0 0 19px; }
+    nav { margin: 26px 0 38px; padding: 19px 0; border-block: 1px solid var(--rule); font-size: 15px; }
+    nav ol { margin: 8px 0 0; padding-left: 23px; }
+    section { margin-bottom: 48px; scroll-margin-top: 24px; }
+    h2 { margin: 10px 0 20px; font-size: 27px; line-height: 1.35; letter-spacing: -.02em; font-weight: 650; }
+    h3 { font-size: 18px; margin: 28px 0 12px; }
+    ul { padding-left: 23px; }
+    li { padding-left: 3px; margin-bottom: 13px; }
+    .status { color: var(--muted); font-size: 14px; }
+    .note { border-left: 3px solid #d0d7de; padding: 2px 0 2px 20px; margin: 24px 0; font-size: 15px; color: #555; }
+    .note p:last-child { margin-bottom: 0; }
+    .references { font-size: 15px; }
+    footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13px; line-height: 1.7; color: var(--muted); }
+    @media (max-width: 600px) { header { padding-top: 42px; } .column { width: calc(100% - 36px); } h2 { font-size: 24px; } main { font-size: 16px; } .subtitle { font-size: 19px; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    @media print { header { padding-top: 0; } .column { width: 100%; } nav, .skip { display: none; } a { color: inherit; } h2, h3 { break-after: avoid; } li, .note { break-inside: avoid; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="column">
+    <div class="eyebrow">FONDECYT Regular 1240138 · Research repository</div>
+    <h1>Alcohol-policy microsimulation in Chile</h1>
+    <p class="subtitle">From longitudinal patterns of alcohol consumption to population calibration, attributable harm and intervention scenarios.</p>
+  </header>
+  <div class="byline">
+    <div class="column"><strong>Project</strong><br>A system approach to alcohol policy evaluation: using microsimulation to model the effect of policy changes on alcohol use and related harm<br>2024–2028 · <a href="https://github.com/ACC1240138/main/blob/main/README.md">Project overview and team</a> · <a href="README.md">Repository documentation</a></div>
+  </div>
+  <main id="content" class="column">
+    <p>This repository brings together a focused branch of the wider project: analyses of persistence and transitions, replications and extensions of alcohol-attributable harm estimates, and inputs for a Chilean dynamic microsimulation. The work is organised below around three article strands.</p>
+    <p class="status">The first and third titles are working manuscript titles. Linked reports document available analyses; their presence does not establish that a manuscript or the integrated simulation is complete.</p>
+    <nav aria-label="Article strands"><strong>Explore the work</strong><ol>
+      <li><a href="#transitions">Persistence, transitions and ENPG calibration</a></li>
+      <li><a href="#replications">JRT replications and combined PIF scenarios</a></li>
+      <li><a href="#interventions">Screening and brief intervention</a></li>
+    </ol></nav>
+
+    <section id="transitions">
+      <div class="section-label">01 · Longitudinal evidence and calibration</div>
+      <h2>Estimating Persistence and Transitions in Alcohol Consumption to Inform Microsimulation: A Longitudinal Analysis of Chilean Panel Data</h2>
+      <p>EPS and TSM follow people over time and provide evidence on persistence and changes in alcohol consumption. ENPG supplies repeated population cross-sections for calibration. These sources have different observation intervals, age ranges and measurement constraints; ENPG alone does not identify individual transitions.</p>
+      <ul>
+        <li><a href="eps_markov_transitions_EN.html">EPS: alcohol consumption transitions</a> — longitudinal states, pooled transition models and person-blocked validation.</li>
+        <li><a href="eps_markov_transitions_v2_EN.html">EPS v2: attrition weighting and sensitivity analyses</a> — alternative weighting schemes and diagnostics for follow-up.</li>
+        <li><a href="TSM_ENPG_v4_EN.html">TSM rounds 7–11 (v4, five states): transitions and comparison with EPS</a> — complementary panel evidence, with its own measurement and design limitations.</li>
+        <li><a href="microsim_recalib_ACC_2012_2024.html">ENPG 2012–2024: microsimulation recalibration</a> — the population-calibration bridge to the simulation prototype.</li>
+      </ul>
+      <p>Supporting analyses: <a href="elsoc_transiciones_2016_2023.html">ELSOC transitions, 2016–2023</a> and <a href="elsoc_weighting_scenarios_EN.html">ELSOC weighting scenarios</a>.</p>
+    </section>
+
+    <section id="replications">
+      <div class="section-label">02 · Attributable harm and policy counterfactuals</div>
+      <h2>Replicating JRT analyses and extending potential impact fractions</h2>
+      <p>The <code>expand_pif</code> series brings together replication and harmonisation of José Antonio Ruiz-Tagle Maturana (JRT) and colleagues’ analyses. Version 2 extends the counterfactual scenarios to combined changes in alcohol volume and heavy episodic drinking (HED).</p>
+      <h3>Reference articles</h3>
+      <ul class="references">
+        <li>Ruiz-Tagle Maturana, J., Román Mella, F., &amp; Castillo-Carniglia, Á. (2026). <a href="https://doi.org/10.1016/j.puhip.2026.100798">Sex and age differences in alcohol-attributable mortality in Chile between 2008 and 2022.</a> <em>Public Health in Practice</em>, 11, 100798.</li>
+        <li>Ruiz-Tagle Maturana, J., Purshouse, R. C., &amp; Castillo-Carniglia, Á. (2025). <a href="https://github.com/ACC1240138/Potentially-Avoidable-Injury-Mortality-in-Chile-">Potentially avoidable injury mortality and years of potential life lost through reduction of heavy episodic drinking in Chile.</a> Listed as a manuscript submitted to <em>Addiction</em> in the <a href="https://github.com/ACC1240138/main/blob/main/README.md">parent project overview</a>.</li>
+      </ul>
+      <h3>Analysis sequence</h3>
+      <ol>
+        <li><a href="expand_pif.html">expand_pif — exposure and attributable mortality</a>: harmonised consumption inputs, alcohol-attributable fractions, deaths and years of potential life lost.</li>
+        <li><a href="expand_pif2.html">expand_pif2 — PIF scenarios and combined effects</a>: reductions in volume, HED and both together, with avoidable mortality and years of life lost.</li>
+        <li><a href="expand_pif3.html">expand_pif3 — figures and tables</a>: reporting and checks based on the upstream analysis outputs.</li>
+      </ol>
+      <p class="note">PIF scenarios describe counterfactual changes in harm. Their integration into an annual dynamic microsimulation is a separate step.</p>
+    </section>
+
+    <section id="interventions">
+      <div class="section-label">03 · Dynamic microsimulation · In development</div>
+      <h2>Projected Effects of Scaling Up Alcohol Screening and Brief Intervention on Alcohol-Attributable Mortality and Potential Years of Life Lost in Chile: A Dynamic Microsimulation Study</h2>
+      <p>This strand will connect screening coverage, eligibility, brief-intervention delivery and changes in alcohol consumption to subsequent mortality and potential years of life lost. The longitudinal and calibration work supplies population dynamics; the attributable-harm work supplies the link from consumption to health outcomes.</p>
+      <ul>
+        <li><a href="presentacion_micsim.html">Project roadmap</a> — mortality, policy counterfactuals, elasticity, simulation and their integration.</li>
+      </ul>
+      <p class="note">The roadmap supports model development; it does not constitute completed estimates of the effects of scaling up brief intervention. Intervention effects require their own evidence and parameters. Price elasticity belongs to the separate pricing-policy pathway.</p>
+    </section>
+
+    <section id="reproducibility">
+      <h2>Data, methods and reproducibility</h2>
+      <p>Start with the <a href="README.md">repository README</a> and <a href="INSTALL.md">environment setup</a>. Source documentation is available for <a href="_eps/README.md">EPS</a>, <a href="_tsm/README.md">TSM</a>, <a href="_enpg/README.md">ENPG</a>, <a href="_elsoc/README.md">ELSOC</a>, <a href="_deis/README.md">DEIS</a> and <a href="_epf/README.md">EPF</a>. Microdata are stored as encrypted bundles; the reports linked here are rendered analysis outputs.</p>
+      <p class="references">Microsimulation architecture reference: Kilian et al. (2025), <a href="https://doi.org/10.1016/S2468-2667(25)00165-3">Targeting alcohol use in high-risk population groups: a US microsimulation study of beverage-specific pricing policies</a>; <a href="https://doi.org/10.5281/zenodo.15641639">SIMAH implementation, release 0.1.1</a>. Adaptation requires Chilean data and assumptions.</p>
+    </section>
+  </main>
+  <footer><div class="column">FONDECYT Regular 1240138 · Index updated 26 October 2026.<br>Layout inspired by the project’s <a href="https://github.com/FONDECYTACC/polysubstance-treatment-chile/blob/main/index.html">Distill-style research index</a>. This page has no external assets; linked reports remain separate files.</div></footer>
+</body>
+</html>

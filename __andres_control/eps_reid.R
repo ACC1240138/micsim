@@ -164,7 +164,12 @@ score_one <- function(i) {
              rural = round(100 * u$rural, 1),
              ratio = round(C$w[i] / u$pop20, 2),
              d_size = abs(log(C$w[i] / u$pop20)),
-             d_agesex = 0.5 * rowSums(abs(sweep(pu, 2, q))),
+             #d_agesex = 0.5 * rowSums(abs(sweep(pu, 2, q))),
+             d_agesex = 0.5 * rowSums(
+                abs(
+                  sweep(pu, 2, q, FUN = "-")
+                )
+              ),
              d_rural = abs(C$posta[i] - u$rural))
 }
 idx <- which(C$st == 0 & !is.na(C$reg))
