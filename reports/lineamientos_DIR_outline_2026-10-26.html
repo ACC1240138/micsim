@@ -62,7 +62,7 @@ a { color: var(--accent); }
     <p class="tag">micsim · outline del paper · v2 · 26-oct-2026</p>
     <h1>Lineamientos para cerrar el outline</h1>
     <p class="lede">Diez decisiones, cada una con la opción recomendada, por qué, la alternativa y dónde está documentada. Tu respuesta del 26-oct aparece en cada tarjeta; las marcadas «Discutir» traen los puntos concretos a resolver. Nada de esto es una decisión adoptada hasta que lo cierres. Las figuras están en el artefacto <a href="https://claude.ai/artifact/WNuXMoaiB2d8BowKc23iun">Figuras DIR micsim</a>.</p>
-    <p class="note"><span class="chg">v2</span> Cambios respecto de la v1, siguiendo la revisión de Codex: se distingue en cada tarjeta lo que es error demostrado, supuesto defendible y comprobación pendiente. D4: −8 % y RD −0,07 pasan de «parámetro a reemplazar» a traducciones defendibles que hay que documentar. D5: S1 se estimará, no «debería dar ≈ 0»; se separa probabilidad de IB constante de capacidad fija. D6: la mortalidad de referencia común es válida para muertes esperadas evitables por PIF; se define el estimador y se quita «rompe la comparación pareada». D7: tres edades distintas, sin presentar el seguimiento a 79 ni los cánceres como requisitos. D9: según Codex los archivos locales ya usan 60 g/día en mujeres; falta confirmar que las salidas se regeneraron. D10: CHEERS solo si entra costo. Fuentes: textos principales de Lemp 2026, Kaner 2018 y Manthey 2021 vía el brief del 26-oct; el suplemento de Lemp no se revisó, así que nada aquí lo da por verificado.</p>
+    <p class="note"><span class="chg">v2</span> Cambios respecto de la v1, siguiendo la revisión de Codex: se distingue en cada tarjeta lo que es error demostrado, supuesto defendible y comprobación pendiente. D4: −8 % y RD −0,07 pasan de «parámetro a reemplazar» a traducciones defendibles que hay que documentar. D5: S1 se estimará, no «debería dar ≈ 0»; se separa probabilidad de IB constante de capacidad fija. D6: la mortalidad de referencia común es válida para muertes esperadas evitables por PIF; se define el estimador y se quita «rompe la comparación pareada». D7: tres edades distintas, sin presentar el seguimiento a 79 ni los cánceres como requisitos. D9: según Codex los archivos locales ya usan 60 g/día en mujeres; falta confirmar que las salidas se regeneraron. D10: se retira CHEERS. Fuentes: textos principales de Lemp 2026, Kaner 2018 y Manthey 2021 vía el brief del 26-oct; el suplemento de Lemp no se revisó, así que nada aquí lo da por verificado.</p>
   </header>
 
   <section>
@@ -89,13 +89,12 @@ a { color: var(--accent); }
 
       <div class="card" data-id="D2 Base JRT y PUC/SENDA">
         <span class="num">D2 · Qué entra en la base: evidencia JRT y PUC/SENDA 2018 <span class="ans ok">Tu respuesta: Acuerdo</span></span>
-        <p class="reco">Sí entran, con roles distintos: JRT como comprobación de la mortalidad basal y del PIF; PUC/SENDA como sensibilidad de RR y módulo de costos futuro.</p>
+        <p class="reco">Sí entran, con roles distintos: JRT como comprobación de la mortalidad basal y del PIF; PUC/SENDA 2018 solo como sensibilidad de RR (Tabla 5).</p>
         <ul class="why">
           <li>AAF 2008–2022 (Ruiz-Tagle, Román y Castillo-Carniglia 2026): meta de calibración de la mortalidad atribuible del año base del motor.</li>
           <li>PIF de lesiones por reducción de HED (Ruiz-Tagle, Purshouse y Castillo-Carniglia, en revisión): comparador directo del módulo PIF cuando el escenario mueve HED.</li>
           <li>Tabla 5 PUC/SENDA 2018 (RR IHD/ACV): ya decidido como sensibilidad (D7, 7-oct); mantenerlo así y no mezclar vintages sin nota.</li>
           <li>Rank-matching JRT sobre ENPG: comparador del pseudopanel, no fuente primaria. En EPS da 96 % de permanencia en C1 contra 60 % en el panel real.</li>
-          <li>Costos PUC/SENDA 2018: insumo para un módulo de costo por AVPP evitado, fuera del primer artículo.</li>
         </ul>
         <p class="alt"><b>Alternativa:</b> usar las matrices PAF/PIF de JRT directamente como mortalidad basal del motor. Más rápido, pero hereda el pipeline que aún está en revisión y los RR del vintage 2018.</p>
         <p class="where">jrt/README.md · _bib/references.bib (ruiztagle2026sex, ruiztagle2025potentially, pucsenda2018estudio) · notes_decisions.md D7 · eps_markov_transiciones §8.1</p>
@@ -221,7 +220,7 @@ a { color: var(--accent); }
 
       <div class="card" data-id="D10 Reporte y validación">
         <span class="num">D10 · Reporte, validación e incertidumbre <span class="ans ok">Tu respuesta: Acuerdo</span> <span class="chg">v2</span></span>
-        <p class="reco">Protocolo ODD para el componente de simulación (como Lemp y Kilian); CHEERS solo si entra costo-efectividad, no es obligatorio para una microsimulación. Validación tipo Puka (aplicar las matrices anuales a ENPG 2012 y comparar con 2024: evalúa márgenes, no demuestra persistencia individual); separar incertidumbre de parámetros de ruido Monte Carlo (Lemp: 70 conjuntos × 20 réplicas).</p>
+        <p class="reco">Protocolo ODD para el componente de simulación (como Lemp y Kilian). Validación tipo Puka (aplicar las matrices anuales a ENPG 2012 y comparar con 2024: evalúa márgenes, no demuestra persistencia individual); separar incertidumbre de parámetros de ruido Monte Carlo (Lemp: 70 conjuntos × 20 réplicas).</p>
         <ul class="why">
           <li>Responde al comentario del doc: usar ODD sin llamar al artículo «microsimulation study» mientras solo desarrolle insumos.</li>
           <li>Cinco semillas no cubren las tres fuentes de incertidumbre (tu propia respuesta 14).</li>
@@ -281,11 +280,11 @@ a { color: var(--accent); }
       <tbody>
         <tr><td>Castillo-Carniglia, Kaufman &amp; Pino (2013). <i>Alcohol Alcohol</i> 48(6):729–736. doi:10.1093/alcalc/agt066</td><td>Línea base publicada: 9,8 % de muertes y 21,5 % de AVPP atribuibles (2009)</td><td>Obj. 2 intro</td></tr>
         <tr><td>Ruiz-Tagle Maturana, Román &amp; Castillo-Carniglia (2026). <i>Public Health in Practice</i> 11:100798</td><td>AAF 2008–2022 por sexo y edad (JRT); calibración basal</td><td>Obj. 2 métodos</td></tr>
-        <tr><td>PUC &amp; SENDA (2018). Estudio del costo económico y social del consumo de alcohol en Chile (informe técnico)</td><td>Tabla 5 RR IHD/ACV (sensibilidad); costos</td><td>Obj. 2 métodos</td></tr>
+        <tr><td>PUC &amp; SENDA (2018). Estudio del costo económico y social del consumo de alcohol en Chile (informe técnico)</td><td>Tabla 5 RR IHD/ACV (sensibilidad)</td><td>Obj. 2 métodos</td></tr>
         <tr><td>Holmes, Meier, Booth, Guo &amp; Brennan (2012). <i>Drug Alcohol Depend</i> 123:7–14</td><td>Rezagos consumo → daño (reemplaza Maharaj)</td><td>Obj. 1 intro; Obj. 2 métodos</td></tr>
         <tr><td>Barendregt &amp; Veerman (2010). <i>J Epidemiol Community Health</i> 64:209–212</td><td>PIF con exposición continua vs categórica</td><td>Obj. 2 métodos</td></tr>
         <tr><td>Manthey, Solovei, Anderson, Carr &amp; Rehm (2021). <i>PLoS ONE</i> 16(8):e0255843</td><td>Simulación SBI Alemania; efecto por sexo; HED RD −0,07</td><td>Obj. 2 métodos (sensibilidad)</td></tr>
-        <tr><td>Purshouse et al. (2013) <i>Alcohol Alcohol</i> 48:180–188; Angus et al. (2014) <i>BMC Fam Pract</i> 15:26</td><td>SAPM: SBI en APS, decaimiento y costo-efectividad</td><td>Obj. 2 intro</td></tr>
+        <tr><td>Purshouse et al. (2013) <i>Alcohol Alcohol</i> 48:180–188; Angus et al. (2014) <i>BMC Fam Pract</i> 15:26</td><td>SAPM: SBI en APS, cobertura y decaimiento</td><td>Obj. 2 intro</td></tr>
         <tr><td>Platt et al. (2016) <i>BMJ Open</i> 6:e011473; Tanner-Smith et al. (2022) <i>Addiction</i> 117:877–889; Fleming et al. (2002) <i>ACER</i> 26:36–43</td><td>Efecto por entorno (−26 g/sem APS), refuerzos, mantención a 48 meses (optimista)</td><td>Obj. 2 métodos (duración)</td></tr>
         <tr><td>Glass et al. (2015) <i>Addiction</i> 110:1404–1415</td><td>IB no aumenta uso de especialidad: justifica referencia sin efecto</td><td>Obj. 2 métodos</td></tr>
         <tr><td>Poblete et al. (2017) <i>Addiction</i> 112:1462–1469</td><td>Segundo ensayo chileno; comparador folleto</td><td>Obj. 2 discusión</td></tr>
