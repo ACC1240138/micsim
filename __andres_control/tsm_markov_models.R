@@ -1,3 +1,6 @@
+# Since 2026-10-27 TSM_ENPG_v4_EN.ipynb is the single source of the TSM v4 analysis and is edited directly; this file no
+# longer builds it. It is still sourced by tsm_r7_r11_direct.R, tsm_r7_r11_comparators.R, encavi_tsm_explicado.R and the
+# tests. The notebook holds identical copies of these definitions (2026-10-26): a change on either side must be mirrored.
 .t0 <- Sys.time()
 # tsm_markov_models.R -- model layer of TSM v4 (v3 engine, five states): port of the EPS engine (eps_markov_core.R) to the TSM risk set.
 # Port rules: same algorithms, numerical conventions and output column names as the ep_* functions; four TSM

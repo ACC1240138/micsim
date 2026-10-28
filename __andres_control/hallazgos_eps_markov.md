@@ -1,6 +1,8 @@
 # EPS como candidato a motor de transición de consumo
 
-[Notebook español](eps_markov_transiciones.ipynb) · [HTML español](eps_markov_transiciones.html) · [English notebook](eps_markov_transitions_EN.ipynb) · [English HTML](eps_markov_transitions_EN.html)
+[English notebook](eps_markov_transitions_EN.ipynb) · [English HTML](../eps_markov_transitions_EN.html)
+
+La versión española del notebook y sus figuras se retiraron; este documento conserva la explicación histórica en español. La comparación de reproducibilidad entre idiomas registrada en su momento es histórica y no puede repetirse con los archivos actuales.
 
 **Decisión principal:** EPS, con su diseño muestral y todos los pares de cada
 persona unidos en la estimación de incertidumbre. Lognormal obtiene el mejor

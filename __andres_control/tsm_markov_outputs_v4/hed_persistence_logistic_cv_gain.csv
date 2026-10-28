@@ -1,0 +1,3 @@
+"comparison","mean_logloss_difference","mean_AUC_difference","folds_with_lower_logloss","folds"
+"previous_volume_plus_HED minus previous_volume",-0.0179858481879138,0.0324044758695825,13,15
+"same_round_volume_plus_HED minus same_round_volume",-0.0175494128230699,0.0266380553801401,13,15

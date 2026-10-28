@@ -8792,3 +8792,140 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 * `_casen/reduce_casen_bundles.R` verifica MD5 de los ZIP originales, selecciona columnas, cifra con acc_pack, restaura y compara valores, orden y atributos. `_casen/README.md` registra hashes, alcance e instrucciones de recuperación cifrada desde `b6a3122` y reproducción. `_casen/.Rprofile` copia el stub del proyecto. Los bundles originales y sidecars quedan además en `.quarto/backup_casen_full_bundles_20261027/`, copia local ignorada y verificada SHA-256.
 * `eca_casen_read()` ahora lee los RDS reducidos para 2017/2024, con orden de columnas original y validación de columnas. Las otras rondas y archivos geográficos no cambiaron. Notebook usa ese helper; no se modificó el notebook ni se regeneraron salidas analíticas. Los manifests históricos conservan hashes de fuentes originales.
 * Validación real: igualdad exacta de las cuatro combinaciones health/rural por año entre ZIP y RDS y entre ZIP y lector actualizado; 216.439/218.367 filas; descifrado con MD5; `eca_tests()` PASS y 8 lecturas sin originales PASS. Simulación de archivos Git con índice temporal: 0 microdatos planos prohibidos y 0 archivos >50 MiB. No se ejecutó GitHub Actions ni el pipeline completo; CI requiere commit/push. No commit/push en esta tarea.
+
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: metrica anios perdidos + edades cerradas; figuras de revista, script y ODD; SIN commit
+* DECIDIDO user 27-oct: anios de vida perdidos = yll_hmd (tabla de vida HMD Chile, como D12) principal; AVPP <75 solo para comparar con Lemp. Mortalidad atribuible seguida hasta 79 con exposicion congelada a los 64. PENDIENTE construir: muertes DEIS de referencia 66-79 y banda RR 65+ en aaf_age_band_mapping() (choca con D13 15-65; D14 era solo propuesta).
+* Correcciones: desde 65 se congela el consumo BASAL, el efecto de una IB previa sigue decayendo; D_ref = muertes totales DEIS 2012-2024 de la causa x PIF (D9), causas AAF=1 fuera (D8); P(IB) 52% = IB alcohol / resultados de riesgo de cualquier instrumento; FD ENPG (ultimo trago >30 dias, D4) != FD panel; falta mapear abstemios de vida ENPG.
+* Figuras revista BMC (Fig 1-3 + S1, PNG 450 dpi/SVG/PDF + docx con leyendas): [carpeta](../reports/figuras_revista/). Script ASCII bilingue que las regenera: [make_figures_paper_outline.py](figures_paper_outline/make_figures_paper_outline.py) (Python stdlib + Edge/Chrome headless; python-docx opcional; probado con Chromium Linux, no en Windows). Google Doc no creado: Chrome no respondio.
+* ODD esquematico (Grimm 2020) entregado por chat para pegar en PAPER OUTLINE; incluye tabla programa DIR real -> modelo (DIPRES Monitoreo 2024, Glosa 23 Ley 21.722). Abierto: 15-19 se tamizan con CRAFFT, no AUDIT (REM 2024: 1,0% AUDIT vs 18,5% cualquier instrumento).
+
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: precision edades (reemplaza "seguimiento hasta 79" de la entrada anterior); SIN commit
+* DECIDIDO user: nadie ENTRA al motor despues de los 64. La poblacion presente en 2025 se sigue hasta 2034 aunque pase los 65 (max ~74 anios). Exposicion basal congelada desde los 65; efecto IB sigue decayendo. Reconciliacion INE solo 15-64. Se quito salida a los 80.
+* Por construir: muertes de referencia DEIS 65-74 y banda RR 65+ (aaf_age_band_mapping). Figuras HTML, lineamientos, figuras revista y script actualizados.
+
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: edades FINAL (anula la entrada "precision edades ... max ~74"); SIN commit
+* DECIDIDO user: consumo basal congelado desde los 65, con decaimiento de la IB previa; mortalidad atribuible hasta edad maxima 79 dentro de 2025-2034 (salida a los 80); nadie entra al motor despues de los 64; yll_hmd desenlace principal (D7), AVPP <75 solo comparacion.
+* Calvo/EPS = posible sensibilidad para la evolucion del consumo en mayores; NO integrado.
+* Pendiente: precisar inicializacion de mayores (65-79); preparar muertes DEIS de referencia 65-79 y banda RR 65+ (aaf_age_band_mapping). Figuras HTML, lineamientos, figuras revista y script actualizados.
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Codex
+
+## Reflexion sobre persistencia HED de TSM v4: evidencia util, mecanismo y transporte pendientes
+
+* Autorizacion: el usuario pidio reflexionar sobre el analisis comunicado por Claude y autorizo agregar esta entrada. Lectura de la seccion 8 de [tsm_v4_explicado.html](tsm_v4_explicado.html) y del codigo de los notebooks base/recalib. No se reestimaron resultados ni se revisaron los scripts temporales de Claude. Las cifras siguientes son resultados publicados en esa pagina, no reproduccion independiente. Fetch previo: HEAD y origin/main alineados; version remota del handoff incluida, sin copia de conflicto; se conservan cambios locales previos.
+* Senal relevante: HED previo aporta informacion condicionada al volumen medido, sexo y edad (OR ~3; CV agrupada por persona, AUC 0,702 -> 0,729 con volumen destino). Esa CV evalua asignacion de HED condicionado al volumen destino conocido; la prediccion desde origen es otra fila (0,648 -> 0,682). No demuestra causalidad ni identifica un rasgo biologico. Las 15 particiones no son pruebas independientes.
+* Nivel y mecanismo deben separarse: rho anual TSM publicado 0,34 (0,24-0,41), SIN pesos, cuestiona el supuesto 0,8 para este resultado observado/poblacion/especificacion. No es un rechazo formal del parametro transportado a ENPG, ni permite descartar AR(1) con error de medicion. No detectar caida no demuestra constancia. El agregado 16-24 meses da 0,27, pero solo R7-R11 (24 meses) da 0,08/0,12 segun vinculo; debe conservarse esta heterogeneidad al comparar mecanismos.
+* Rasgo estable mas ruido con lambda ~0,3 es candidato a comparar, no sustitucion ya identificada. AR(1) moderado y rasgo estable pueden tener igual correlacion anual y distinta correlacion a dos anos; el rasgo puro impone persistencia indefinida. Calibrar contra varios intervalos, transiciones y margenes bajo poblaciones/definiciones comparables; ajustar y validar con objetivos separados. OR ~3 y lambda ~0,3 no son el mismo parametro ni se convierten de manera universal. El rango 0,15-0,45 es escenario propuesto, no IC de transporte.
+* Precisiones necesarias en la pagina: (1) HED mensual IC -0,26 a 0,22 EXCLUYE 0,30 bajo ese procedimiento; contradice 'no distingue 0 de 0,3'. No prueba ausencia de persistencia, pero no debe descartarse como totalmente no informativo. (2) Margen saturado rho 0,33 -> 0,28 prueba sensibilidad a especificacion de las variables observadas; no descarta error del volumen verdadero. (3) TSM y ENPG no tienen demostrado el mismo error de medicion; igualar prevalencias no justifica ignorar error longitudinal. (4) 150-200 bootstrap implican inestabilidad Monte Carlo, no sesgo necesariamente hacia IC estrechos; falta revisar remuestreo por persona y reestimacion de margenes/pesos. (5) Revisores de IA sobre el mismo script/resultados son controles internos complementarios, no replicacion empirica independiente.
+* Transporte: TSM >=6 tragos sin ventana frente a ENPG 5+/4+ en 30 dias; volumen proxy; seleccion de bebedores en ambos extremos; poblacion urbana 18-65. Diferencia descriptiva de abandono 15,8% vs 24,4% amerita evaluar asociacion residual condicionada al volumen, sexo y edad; por si sola no demuestra dependencia residual que falte en el motor. Las limitaciones de diseno/ponderacion no se resuelven con agrupacion por persona.
+* Codigo actual verificado en [base](microsim_base_ACC_2012_2024.ipynb) y [recalib](microsim_recalib_ACC_2012_2024.ipynb): ms_cfg$rho=0.8, normales iniciales independientes; bucle comun actualiza z_current, z_amount y z_hed. Cambiar rho global alteraria los tres procesos. Cualquier implementacion HED futura requiere alcance separado y permiso explicito para notebooks. Mantener N(0,1) conserva margenes teoricos bajo independencia condicional del umbral/seleccion, no garantiza invariancia exacta tras futuras politicas dirigidas, seleccion o supervivencia dependiente de exposicion.
+* Siguiente paso propuesto, NO ejecutado: recuperar/preservar scripts temporales y tablas agregadas reproducibles; resolver contradicciones; comparar AR(1) moderado y rasgo mas ruido contra los mismos objetivos observables, sin trasladar directamente 0,33; evaluar sensibilidad de resultados DIR. En este turno solo se agrega esta entrada; sin cambios a HTML, notebooks, RR/AAF/PIF, dependencias ni commit/push.
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Codex
+
+## Matiz a la respuesta de Claude: orden de correlaciones estimadas y separacion nivel/decaimiento HED
+
+* Continuacion de la reflexion autorizada. La propuesta de comparar componente estable con componente persistente que decae es razonable; la tabla previa de Codex era ilustrativa, no seleccion empirica de modelos.
+* No se puede declarar descartado todo AR(1) puro porque las estimaciones puntuales sean 0,27 a 4-8 meses y 0,34 al ano. La monotonia es poblacional bajo modelo estacionario comparable, no una obligacion para estimaciones muestrales con incertidumbre, pares/composicion distintos y personas repetidas. Se necesita contraste conjunto/ajuste con incertidumbre y dependencia por persona. El AR(1) positivo con ruido independiente y varianza constante tambien tiene correlaciones poblacionales decrecientes: invocar ruido no resuelve una violacion poblacional demostrada de monotonia.
+* Ejemplo algebraico, no estimacion TSM: Z_t = sqrt(kappa) X_t + sqrt(1-kappa) epsilon_t, X estandarizado con correlacion phi^h y epsilon independiente. A rezagos positivos Corr(Z_t,Z_t+h)=kappa*phi^h. kappa=0,4 y phi=0,8 dan correlacion efectiva anual 0,32 y a dos anos 0,256. Por tanto excluir 0,8 como correlacion anual efectiva NO excluye phi=0,8 para el componente persistente bajo otro modelo con ruido. Rasgo puro: phi=1 y correlacion kappa constante.
+* Sensibilidad debe distinguir correlacion efectiva anual y velocidad de caida; son dos dimensiones, con restricciones de factibilidad (kappa entre 0 y 1). Rango ~0-0,4 propuesto puede servir como escenario exploratorio, no IC validado de transporte; no sustituye sensibilidad a definicion HED ni cubre automaticamente todo el rango publicado hasta ~0,5. No interpretar el estimador mensual cercano a cero como demostracion de independencia.
+* No se recalcularon datos ni se cambiaron modelos. Solo append al handoff tras fetch y verificacion de alineacion remota; sin commit/push.
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: revision focalizada para INTRODUCCION paper DIR 2025-2034 (muertes atribuibles + AVPP); SIN commit
+* Autorizado por user. Investigacion web: 14 fuentes centrales, mapa 4 parrafos, borrador intro ~420 palabras, vacios para Metodos/Discusion. Informe quedo en el chat; NO guardado en repo. Sync: ls-remote = HEAD = origin/main, sin copia de conflicto.
+* Antecedente directo: Lemp et al. 2026 JAMA Health Forum (SIMAH, ASBI universal reduce AVPP; tamizaje solo ~0). NO afirmar "primer estudio"; a lo mas "en Chile/Latinoamerica, hasta donde sabemos".
+* Carga: Ruiz-Tagle Maturana et al. 2026 (AAM 9,6% 2022; citar version con corrigendum). Conteo DEIS 100% atribuible (K70/F10/X45) NO extraido.
+* IB Chile: Barticevic 2021 sin diferencia vs folleto (aOR 0,6; 0,34-1,05); reanalisis bayesiano 2022 = mismo ensayo. Efecto AUDIT discrepa entre fuentes (0,84 / -0,86 / 0,44 AUDIT-C): verificar Tabla 2 antes de citar.
+* Cifras DIR para el texto: DIPRES ex ante 2021 (13.555->77.294; 18.610->88.585, REM) = personas PESQUISADAS con consumo de riesgo (positivos) e IB alcohol+tabaco+drogas; NO son tamizajes. 2023 (1.750.229 tamizajes; 74.651 IB) = tablas del programa, prestaciones no personas; fuente publica exacta no ubicada. Detalle: [dir_rem_mapeo_metricas_2026-10-16.md](dir_rem_mapeo_metricas_2026-10-16.md).
+* Sin cambios a codigo, notebooks, RR/AAF/PIF.
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Codex
+
+## Replica final sobre HED: extension subanual, innovacion y escenarios
+
+* Continuacion de reflexion solicitada; el acuerdo sobre separar correlacion anual efectiva y decaimiento es suficiente para avanzar a documentacion/reproducibilidad, sin declarar seleccionado un mecanismo.
+* Precisar 'motor sin ruido': el AR(1) actual SI contiene innovaciones aleatorias anuales. R=1 significa ausencia de un componente adicional independiente de ocasion/medicion en la representacion propuesta; no ausencia de aleatoriedad.
+* De rho anual 0,34 se obtienen 0,34^(4/12) ~0,70 y 0,34^(8/12) ~0,49 solo al imponer decaimiento exponencial homogeneo dentro del ano. Un motor definido en pasos anuales no determina por si solo correlaciones subanuales. El contraste es razonable bajo esa extension explicita, con la misma escala latente, margenes y poblacion comparables; no prueba universal contra cualquier proceso que reproduzca un AR(1) en observaciones anuales. El contraste directo anual sigue cuestionando el 0,8 para el indicador observado TSM bajo el procedimiento publicado.
+* Con ruido de ocasion, r(d)=R*phi^d para d>0 requiere innovaciones de ocasion independientes, componente persistente estandarizado y estructura estacionaria. R es fraccion de varianza persistente, no porcentaje de personas con HED. Si se fija r(1), entonces R=r(1)/phi y debe estar entre 0 y 1. 'Phi 0,6 a 1' es una grilla exploratoria, no rango de compatibilidad comprobado ni perfil de identificacion ya calculado.
+* 'ENPG 30 dias probablemente tiene menos dependencia' queda como hipotesis: ventana, umbral 5+/4+ vs 6+, frecuencia minima, poblacion y medicion cambian conjuntamente. HED mensual TSM tampoco equivale automaticamente a algun episodio en los ultimos 30 dias ENPG. No imponer direccion al transporte sin comprobacion.
+* Orden sugerido: conservar scripts/salidas y corregir afirmaciones; comparar escenarios factibles y cuantificar impacto en DIR antes de sofisticar modelo. Ausencia de sensibilidad en muertes agregadas solo reduce relevancia para ese resultado/politica; no valida trayectorias ni garantiza insensibilidad de exposicion repetida o resultados por grupo.
+* Solo append autorizado al handoff, con fetch previo y contenido anterior preservado. No se ejecutaron analisis ni se modificaron pagina o motor; sin commit/push.
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: persistencia HED integrada a TSM v4 (cuaderno = fuente unica) + seccion 8 corregida; SIN commit
+* Autorizado por user: corregir seccion 8 de [tsm_v4_explicado.html](tsm_v4_explicado.html) con lo acordado con Codex; integrar el analisis HED en TSM v4, reproducible; evaluar que combinaciones r(1)/phi respalda TSM, separando dato de supuesto, como base de escenarios DIR. Alcance: solo TSM v4 + documentacion; motor y DIR = pasos posteriores. Fetch previo: HEAD = origin/main, sin copia de conflicto.
+* DECIDIDO user: cuaderno = fuente unica. [TSM_ENPG_v4_EN.ipynb](TSM_ENPG_v4_EN.ipynb) se edita directo; _tools/build_tsm_markov_notebook.py se niega a sobrescribirlo (solo con --out); tsm_markov_sections.R y TSM_ENPG_v4_EN.md = historia. tsm_markov_data.R y tsm_markov_models.R siguen usados por los scripts R7-R11, encavi_tsm_explicado.R y tests: un cambio debe replicarse en el cuaderno. encavi_tsm_explicado.R queda como esta. Par de 24 meses (R7-R11) en el ajuste principal, sensibilidad sin el.
+* Nueva seccion del cuaderno "HED persistence beyond volume (exploratory)": tablas de transicion/repeticion, logistica de transicion con CV por persona; copula gaussiana con el margen del motor (cuadratura Gauss-Legendre con 3 controles); rho a 5 distancias (4-5, 7-8, 11-12, 16-19, 24 meses); bootstrap por persona B=1000 con IPW reestimado; minima distancia de R*phi^(meses/12) con covarianza bootstrap; region 95% (chi2 2 gl) y perfiles (1 gl); escenarios con nombre. Salidas: 13 hed_persistence_*.csv + 2 figuras en tsm_markov_outputs_v4/ (README actualizado).
+* Ejecucion: cuaderno y copia de reproduccion a la vez en nucleos E, ~59 min c/u. verify_tsm_reproduction.py PASS (74 CSV identicos; registra hash del codigo del cuaderno). 64/64 controles TRUE. Las 61 tablas previas identicas byte a byte vs 2026-10-26 (solo cambian analysis_checks y reproducibility_check). [TSM_ENPG_v4_EN.html](../TSM_ENPG_v4_EN.html) renderizado, recursos incrustados.
+* Resultados (B=1000): rho adyacente IPW 0,33 (0,14-0,46); sin IPW 0,27; margen saturado 0,28; bebedores frecuentes 0,37; HED mensual 0,00 (-0,25 a 0,20; excluye 0,3); ML conjunto 0,34. OR HED previo 2,8-3,0; CV mejora log loss en 13/15 particiones. Por distancia: 0,24 / 0,28 / 0,34 / 0,35 / 0,08. Ajuste 5 distancias p=0,064; sin 24 meses p=0,34.
+* Lectura: r(1) 0,24-0,36 (sin 24m 0,25-0,38) = respaldado por TSM. phi 0,67-1 = poco identificado. Correlacion a 5/10 anos = supuesto. Motor (r1=phi=0,8) y AR(1) puro fuera de la region 95% (AR(1): bajo caida exponencial dentro del ano). Precisiones de Codex incorporadas: incompatible para HED TSM, NO rechazo formal del parametro trasladado a ENPG; motor tiene innovacion, le falta componente de ocasion; margen saturado = robustez de especificacion; direccion del traslado a ENPG = hipotesis; revisores IA = control interno.
+* Pagina tsm_v4_explicado.html: seccion 8 generada desde los CSV (cifras no tipeadas; script en scratch, no en repo), con "lo que TSM sostiene vs supuesto", escenarios, limites de transporte y tabla "la discusion, en corto"; KPIs, archivos y pendientes actualizados. Republicada en la misma URL (privada).
+* PASOS para DIR (NO ejecutados; tocar cuadernos del motor requiere permiso aparte):
+  1. Motor base/recalib: rho propio para z_hed (hoy ms_cfg$rho=0.8 comun a z_current, z_amount, z_hed).
+  2. z_hed = parte persistente (retencion phi) + componente de ocasion; parametrizar con r(1) y phi, R=r(1)/phi <= 1; mantener N(0,1).
+  3. Escenarios: filas "inside" de tsm_markov_outputs_v4/hed_persistence_scenarios.csv + motor actual como referencia. No son IC validado.
+  4. Correr DIR por escenario; mirar muertes/AVPP y tambien exposicion repetida y resultados por grupo (insensibilidad agregada no valida trayectorias).
+  5. Traslado a ENPG 30 dias 5+/4+: calibrar por simulacion con el margen y volumen propios del motor antes de llamar calibrado a un escenario.
+  6. GJRM opcional (rho por sexo/edad, copulas asimetricas, modelo conjunto seguir bebiendo + HED); no esta en renv.
+* Sin commit/push. Sin cambios a motor, RR/AAF/PIF ni dependencias.
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: limpieza TSM v4; SIN commit
+* DECIDIDO user: borrados (git rm; quedan en historial) _tools/build_tsm_markov_notebook.py, __andres_control/tsm_markov_sections.R, __andres_control/TSM_ENPG_v4_EN.md. Referencias actualizadas en cuaderno (celda 0, solo texto), tsm_markov_outputs_v4/README.md, _tsm/README.md, tsm_v4_explicado.html; HTML raiz re-renderizado, verify PASS.
+* Se conservan tsm_markov_data.R y tsm_markov_models.R (los usan R7-R11, encavi_tsm_explicado.R y tests) y _tools/verify_tsm_reproduction.py (reproducibilidad TSM v4).
+* PENDIENTE user: cuando exista el notebook de encavi_tsm, el user borrara tsm_markov_data.R y tsm_markov_models.R (revisar antes que R7-R11 y tests no dependan de ellos).
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Codex
+
+## DIR: auditoria externa de FONASA/REM y propuesta v8, sin aplicar al proyecto
+
+* Autorizacion: usuario pidio trabajar en DIR fuera del proyecto, sin figuras ni cambios a notebooks/Quarto, y autorizo esta entrada al inicio. Fetch previo; handoff remoto contenido en la version local; sin copia de conflicto. Se preservan todos los cambios locales anteriores. Sin commit/push.
+* Original [dir_rem_mapeo_metricas_2026-10-16.md](dir_rem_mapeo_metricas_2026-10-16.md) intacto: SHA256 1628ddaa7a5435800d8437c4f217b2f3e280b7d01776b64fe5bc7d6e04d03884. Entregables externos en DIR/revision_2026-10-27: informe con siete tareas, propuesta v8, diff y R reproducible. La v8 NO se aplica hasta aprobacion.
+* FONASA real: APS dic-2023 suma 15.051.673; subconjunto A-D 14.133.444; X 918.229. No se encontro definicion que pruebe X=no validado o A-D=Registro de Poblacion Inscrita Validada. APS beneficiarios 2022, INSCRITO_APS=Si: 895.728 (15-19), 8.263.354 (20-64), 670.066 (65-69), reproducidos en R y Python. HostUrl local recupera URL exacta de ambos archivos; fechas originales de descarga pendientes.
+* REM 15-64: 2019 positividad 94.876/1.067.337=8,889%; IB alcohol 37.574/69.705=53,904%; RA 11.940/25.171=47,436%. En 2024: 84.971/1.289.663=6,589%; IB 31.370/60.326=52,001%; RA 11.568/24.645=46,939%. Cocientes de evaluaciones/intervenciones y resultados multisustancia, NO probabilidades individuales. AUDIT 2024 15-64=1.103.414; cobertura exacta por inscritos pendiente. A27 no cruza edad x sexo; 18-65 exacto no identificable. No se imputan esos puntos.
+* Catalogos DEIS emparejados 2019-2024: Primario estricto no explica brecha. En 2024 conserva 2.123.691 resultados y 81.658 IB, frente a 2.005.138 y 78.458 del programa. Sensibilidad niveles mixtos y SNSS tampoco reproduce serie. Volumen no vinculado preservado. P6: seis filas y dos cortes comprobados; no sumar junio/diciembre ni asumir diagnosticos mutuamente excluyentes.
+* Especialidad segun niveles secundario/terciario SNSS: 2024 codigos 09600297+298=1.452 todas edades y 1.341 de 15-64; 1.341/11.568 RA=11,59 por100 es comparacion de volumen, no techo de ingreso individual. Codigos ausentes en 2019; alternativa historica explicita 06901500, no sustitucion silenciosa. Retirar inferencia de que dos de cada tres referencias no ingresan.
+* Manuales A 2019, 2024 y 2025-26 describen AUDIT-C inicial y AUDIT completo segun riesgo. R.2 separa la misma aplicacion EMP de otras prestaciones; no garantiza personas unicas anuales. Resultados A03 no equivalen universalmente a puntajes AUDIT. P1 2020: denominador actual da -212%, y +212% requiere ademas alterar signo; corregido solo en propuesta.
+* Validacion: R 4.4.1 con archivos reales; Python streaming independiente coincide en 1.102 celdas nacionales 2019/2024 y 12 valores P6. No se instala nada, no se modifica motor/RR/AAF/PIF. Pendiente: validacion administrativa FONASA, denominadores exactos, nominales APS enlazados con admisiones y SISTRAT para repeticion/ingreso; consulta/corte original DIR. SISTRAT no aporta solo el denominador de derivados que no ingresaron.
+
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Codex
+
+## Limpieza autorizada de EPS en español
+* Usuario autorizó eliminar la versión española de transiciones EPS y sus salidas, además de los 10 PNG duplicados en raíz de `eps_markov_outputs/`. Eliminados `eps_markov_transiciones.ipynb` y `.html`, 20 figuras de `eps_markov_outputs/es/` y 10 PNG duplicados en la raíz. Conservadas tablas CSV compartidas y versión inglesa, usadas por TSM, ELSOC y otros análisis.
+* Builder `_tools/build_eps_markov_notebooks.py` genera solo inglés. El verificador bilingüe histórico `_tools/verify_eps_reproduction.py` informa explícitamente que no es repetible sin el notebook retirado; se conserva la evidencia previa y se rotula como histórica en `reproducibility_report.md`. `hallazgos_eps_markov.md` conserva su texto español y ya no enlaza los artefactos eliminados.
+* Verificación estática Python, ausencia de notebook ES, existencia de notebook inglés, HTML v4 y matrices compartidas. No se reejecutaron modelos ni se probó una nueva reproducción de EPS en inglés. Fetch 0/0, sin copia de conflicto. Otros cambios concurrentes preservados; sin commit/push.
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: Fig 1 (study design, paper outline) revisada contra fuentes y actualizada; SIN commit
+* Autorizado por user (prompt "revisar la figura del paper outline"; registro aqui al cerrar). Sync: ls-remote = HEAD = origin/main (0969428), sin copia de conflicto; entradas Codex FONASA/REM v8 y limpieza EPS leidas antes de escribir.
+* Version de trabajo = figures_paper_outline/output/ (script). Copia raiz era v1 (DEIS 2008-2022, YPLL<75) -> renombrada Fig1_study_design_old_2026-10-27.{png,svg,pdf}; raiz y output/ ahora con la Fig 1 nueva. Fig2/3/S1 y Word de la raiz siguen siendo los de 15:59-16:01 (output/ = vigente).
+* Verificado: EPS v4 8.167 pares (4.773+3.394, v4_2009_matrix_shift.csv; 8.095 = v1/v2 estricto); olas VI 2015, VII 2020, VIII 2023; intervalos 3,7/4,0 anos. TSM v4 4.160 pares (tol. 2 anos; 4.175 era v2); R7 abr-2023 a R11 abr-2025 (aprox.); intervalos 8/4/7/5 meses. Capa anual EPS v4 NO calculada (matrices anuales guardadas = 6 estados antiguos); TSM v4 exploratoria, C2 y C3+ con 6 pares de origen c/u. Motor base (leido, sin cambios): max_age 65 (sale >65), rho 0.8 comun a z_current/z_amount/z_hed. A27: IB sin cruce edad x sexo. build_ypll.R sin educacion. ENPG 2026: sin datos publicados encontrados.
+* DECIDIDO user 27-oct (preguntas Fig 1): EPS 8.167 (v4); caja HED = escenarios informados por TSM (exploratorio), Puka 2023 solo comparacion (reemplaza D8 en la figura), "HED persistence" en sensibilidades; marcas daga = planificado/no implementado, doble daga = exploratorio; POBLACION INICIAL SOLO 15-64 -> edad maxima alcanzada 73 en 2034 (no se inicializa 65+; el tope 79 de "edades FINAL" no se alcanza); APS unida a REM como denominador (Obj 2); edades dentro de la figura, CRAFFT solo en leyenda; salidas Obj 2 sin educacion (solo sexo y edad); copia raiz reemplazada guardando la antigua.
+* Leyenda Fig 1 (Word): cortes OMS corregidos (borde a clase inferior; M >0-20/>20-40/>40, H >0-40/>40-60/>60; 12 g), antes decia ">0 a <20..."; N0/FD distintos por fuente; HED TSM r(1) 0,24-0,36; D_ref = muertes totales, causas AAF=1 fuera; yll_hmd. Abreviaturas sin FONASA/YLL/YPLL, con AUDIT; YPLL definido en leyenda Fig 2; nota de borrador actualizada (73, ruta output/). Checks del script PASS (ASCII, PNG 3000x2550, leyenda 295 palabras).
+* Ojo APS: la figura ya no dice "FONASA-validated" (Codex 27-oct: A-D = validado no probado). 9,43 M sigue siendo v7; v8 de Codex sin aplicar.
+* Pendiente: alinear "edad maxima 79" en leyenda Fig 3, HTML figuras/lineamientos y ODD; muertes DEIS y RR 65-73; capa anual EPS v4; rho propio para z_hed en el motor (requiere permiso); decidir denominador APS (v7 vs v8).
+* Sin cambios a motor, notebooks, RR/AAF/PIF ni Google Docs. Sin commit/push.
+
+2026-10-27 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: Fig1 v2 + figs 2/3/S1 y artefactos alineados a decisiones 27-oct; SIN commit
+* DECIDIDO user: ENPG 2026 = comparacion por implementar, opcion ENCAVI 2023-24. APS: esperar v8 Codex; 9,43 M = estimado A-D repartido por edad (no conteo; "validados" sin confirmar) -> coberturas aprox. (11,7%); REM 2024 15-64 reproduce 6,59% pos, 52 IB/100 riesgo, 46,94 ref/100 alto riesgo (cocientes, no prob. individuales). TSM R11 campo hogares 26-mar a 10-may-2025 (cuaderno "2025-04" ok).
+* Hecho: Fig1 (ENPG 2026 o ENCAVI; "≈9,43 M" con doble daga = exploratorio/provisional); Fig2 (HED TSM; REM 2024 sexo y edad; ENCAVI); Fig3 (daga = no implementado en motor: pasos 3, 4 desde 65, 6a, 6c-6e; sin salida a 80, mayor 73 en 2034); leyendas y nota Word. Raiz figures_paper_outline reemplazada (antiguas *_old_2026-10-27.*). HTML figuras/lineamientos (D8 -> escenarios TSM, Puka comparacion)/ciclo animado (Rosa 61, Jorge 64; borde OMS a clase inferior) republicados + copias reports/ y figures_paper_outline/.
+* PENDIENTE MOTOR (requiere permiso; no tocado): rho propio z_hed (hoy 0.8 comun a z_current/z_amount/z_hed); edades: max_age 65 -> seguir 15-64 iniciales a 2034 (max 73), consumo congelado 65+; integrar 6a (EPS/TSM), 6c-6d (DIR), paso 3 (PIF).
+* Pendiente datos/docs: DEIS y RR 65-73; capa anual EPS v4; ODD del outline (Google Doc) aun 79 y "validados FONASA" -> user.
+* Sin cambios a motor, notebooks, RR/AAF/PIF ni Google Docs. Sin commit/push.

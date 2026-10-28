@@ -34,6 +34,8 @@ def main():
     assert not replication.is_absolute() and ".." not in replication.parts
     first = REPORTS / "eps_markov_outputs"
     second = ROOT / replication
+    if not (REPORTS / "eps_markov_transiciones.ipynb").is_file():
+        raise SystemExit("Historical bilingual verification is unavailable: the Spanish EPS notebook was removed. Existing reproducibility reports document the prior comparison.")
     excluded = {"reproducibility_check.csv"}
     files_a = {p.name: p for p in first.glob("*.csv") if p.name not in excluded}
     files_b = {p.name: p for p in second.glob("*.csv") if p.name not in excluded}

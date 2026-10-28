@@ -1,4 +1,4 @@
-"""Build the Spanish and English EPS notebooks from one computational source."""
+"""Build the English EPS notebook from the shared computational source."""
 from pathlib import Path
 import argparse
 import hashlib
@@ -424,7 +424,7 @@ references = """## References / Referencias
 - Architecture for subsequent microsimulation integration: [Kilian et al. (2025), Lancet Public Health](https://pubmed.ncbi.nlm.nih.gov/40885207/), DOI 10.1016/S2468-2667(25)00165-3; [SIMAH release 0.1.1](https://doi.org/10.5281/zenodo.15641639). This notebook estimates Chilean transition components; it does not execute SIMAH or import US parameter values.
 """
 
-for lang in ("es", "en"):
+for lang in ("en",):
     filename = "eps_markov_transiciones.ipynb" if lang == "es" else "eps_markov_transitions_EN.ipynb"
     title = "EPS: transiciones de consumo de alcohol" if lang == "es" else "EPS: alcohol consumption transitions"
     sub = "Diseño muestral, modelos agrupados y validación por persona" if lang == "es" else "Survey design, pooled models and person-blocked validation"

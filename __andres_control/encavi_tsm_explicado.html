@@ -1,0 +1,308 @@
+<meta charset="utf-8">
+<title>ENCAVI y TSM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Same tokens as tsm_v4_explicado.html and eps_v4_explicado.html: one reading column, sticky index, ENCAVI = accent, TSM = warm. */
+:root {
+  --bg: #f6f7f5; --surface: #ffffff; --fg: #1d2622; --muted: #5b6a63; --line: #d7ddd9;
+  --accent: #1f6f78; --accent-soft: #dcebec; --warm: #a8552c; --warm-soft: #f3e3d9;
+  --good: #2e7d4f; --bad: #b3402d; --grey: #9aa6a0;
+  --display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #131917; --surface: #1b2320; --fg: #e5ebe8; --muted: #9aaba3; --line: #2f3a36;
+  --accent: #6fbac2; --accent-soft: #1f3638; --warm: #e0946b; --warm-soft: #3a2a21; --good: #6cc391; --bad: #ef8a76; --grey: #5f6d67; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #131917; --surface: #1b2320; --fg: #e5ebe8; --muted: #9aaba3; --line: #2f3a36;
+  --accent: #6fbac2; --accent-soft: #1f3638; --warm: #e0946b; --warm-soft: #3a2a21; --good: #6cc391; --bad: #ef8a76; --grey: #5f6d67; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.6 var(--body); padding-inline: 16px; margin: 0; }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 28px 64px; display: grid; gap: 40px; }
+header { display: grid; gap: 8px; }
+header h1 { font: 700 2.1rem/1.15 var(--display); margin: 0; text-wrap: balance; }
+header p { margin: 0; color: var(--muted); max-width: 70ch; }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2; background: var(--bg); border-bottom: 1px solid var(--line);
+  display: flex; gap: 6px; flex-wrap: wrap; padding-block: 10px; }
+nav a { color: var(--accent); text-decoration: none; font-weight: 500; padding: 4px 10px; border-radius: 4px; }
+nav a:hover, nav a:focus-visible { background: var(--accent-soft); outline: none; }
+section { display: grid; gap: 18px; scroll-margin-top: 64px; min-width: 0; }
+h2 { font: 700 1.55rem/1.2 var(--display); margin: 0; text-wrap: balance; }
+h3 { font: 600 1.05rem/1.3 var(--body); margin: 0; }
+.eyebrow { font: 500 .72rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--warm); }
+p, ul { margin: 0; max-width: 70ch; }
+ul { padding-left: 1.2em; display: grid; gap: 4px; }
+code { font: .86em var(--mono); background: var(--accent-soft); padding: 1px 4px; border-radius: 3px; overflow-wrap: anywhere; }
+pre { margin: 0; font: .82rem/1.5 var(--mono); background: var(--accent-soft); padding: 10px 12px; border-radius: 4px; overflow-x: auto; }
+.lead { font-size: 1.05rem; border-left: 3px solid var(--accent); padding: 4px 0 4px 14px; }
+.kpis { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+.kpi { border-left: 3px solid var(--accent); padding: 6px 12px; }
+.kpi.t { border-left-color: var(--warm); }
+.kpi b { display: block; font: 600 1.6rem/1.1 var(--display); font-variant-numeric: tabular-nums; }
+.kpi span { color: var(--muted); font-size: .88rem; }
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px; overflow-x: auto; min-width: 0; }
+table { border-collapse: collapse; width: 100%; font-size: .88rem; font-variant-numeric: tabular-nums; }
+caption { text-align: left; font-weight: 600; padding-bottom: 8px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; }
+td.num, th.num { text-align: right; white-space: nowrap; }
+tr.win td { background: var(--accent-soft); }
+tr.sum td { font-weight: 600; border-top: 2px solid var(--line); }
+.note { color: var(--muted); font-size: .86rem; }
+.ci { color: var(--muted); font-size: .8rem; display: block; }
+.tagE, .tagT { font: 500 .74rem var(--mono); padding: 1px 7px; border-radius: 10px; white-space: nowrap; }
+.tagE { background: var(--accent-soft); color: var(--accent); }
+.tagT { background: var(--warm-soft); color: var(--warm); }
+.callout { background: var(--warm-soft); border-radius: 6px; padding: 12px 14px; display: grid; gap: 6px; max-width: 78ch; }
+.callout b { color: var(--warm); }
+/* Question flow: one column per survey, steps stacked. */
+.flows { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+.flow { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px; display: grid; gap: 10px; min-width: 0; align-content: start; }
+.q { border: 1px solid var(--line); border-radius: 4px; padding: 8px 10px; display: grid; gap: 6px; }
+.q .v { font: 500 .8rem var(--mono); color: var(--accent); }
+.flow.t .q .v { color: var(--warm); }
+.ans { display: grid; gap: 4px; padding-left: 10px; border-left: 2px solid var(--line); font-size: .88rem; }
+.ans div { display: flex; gap: 8px; justify-content: space-between; flex-wrap: wrap; }
+.ans .n { font-variant-numeric: tabular-nums; color: var(--muted); }
+.grp { font: 600 .74rem var(--mono); padding: 0 6px; border-radius: 3px; color: var(--surface); }
+.gA { background: var(--accent); } .gB { background: color-mix(in srgb, var(--accent) 55%, var(--grey)); }
+.gC { background: var(--warm); } .gD { background: var(--grey); color: var(--fg) !important; } .gU { background: var(--muted); }
+.down { color: var(--muted); font-size: .82rem; padding-left: 10px; }
+/* Stacked bar: widths are the weighted shares themselves (0-100 %). */
+.stack { display: flex; height: 34px; border-radius: 4px; overflow: hidden; }
+.stack div { display: flex; align-items: center; justify-content: center; color: var(--surface); font: 600 .78rem var(--mono); min-width: 0; overflow: hidden; white-space: nowrap; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: .84rem; color: var(--muted); }
+.legend span { display: inline-flex; gap: 6px; align-items: center; }
+.sw { width: 12px; height: 12px; border-radius: 2px; display: inline-block; }
+/* Paired bars: scale 0-50 %, one track per survey. */
+.pairs { display: grid; gap: 12px; }
+.pair { display: grid; grid-template-columns: minmax(120px, 190px) 1fr; gap: 10px; align-items: center; }
+.pair .lab { font-size: .88rem; }
+.tracks { display: grid; gap: 4px; min-width: 0; }
+.track { position: relative; height: 18px; background: color-mix(in srgb, var(--line) 45%, transparent); border-radius: 3px; }
+.bar { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 3px; }
+.bar.e { background: var(--accent); } .bar.t { background: var(--warm); }
+.whisk { position: absolute; top: 4px; bottom: 4px; border-left: 1.5px solid var(--fg); border-right: 1.5px solid var(--fg); opacity: .55; }
+.val { position: absolute; top: 0; font: 500 .74rem/18px var(--mono); color: var(--fg); padding-left: 6px; white-space: nowrap; }
+.axis { display: grid; grid-template-columns: minmax(120px, 190px) 1fr; gap: 10px; font: .72rem var(--mono); color: var(--muted); }
+.axis div:last-child { display: flex; justify-content: space-between; }
+@media (max-width: 520px) { .pair, .axis { grid-template-columns: 1fr; } .axis div:first-child { display: none; } }
+@media (prefers-reduced-motion: no-preference) { nav a { transition: background .15s; } }
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">FONDECYT 1240138 · ENCAVI 2023–2024 y TSM ronda 7</div>
+  <h1>ENCAVI y TSM</h1>
+  <p>¿Qué parte de quienes no beben en TSM nunca bebió? TSM no lo pregunta y ENCAVI sí. Esta página muestra qué mide cada encuesta, cómo se conectan sus preguntas y qué dan las primeras cifras con diseño muestral. No es la calibración: es la base para decidir cómo hacerla.</p>
+</header>
+<nav aria-label="Secciones"><a href="#encuestas">Las encuestas</a><a href="#preguntas">Preguntas</a><a href="#nobebe">Quién no bebe</a><a href="#misma">Misma pregunta</a><a href="#grupos">Sexo y edad</a><a href="#educacion">Educación</a><a href="#diseno">Diseño</a><a href="#ejemplo">Ejemplo</a><a href="#supuestos">Supuestos</a></nav>
+
+<section id="resumen" aria-label="Resumen">
+  <p class="lead">La pregunta de frecuencia de TSM (<code>e3a1</code>) es la misma de ENCAVI (<code>p5_22</code>). Si en ENCAVI se cuenta como «Nunca» a quien no bebe hace más de un año o nunca bebió, la proporción que responde «Nunca» es casi la misma en las dos encuestas: 39 % y 41 %. Con esa definición, 4 de cada 10 no bebedores urbanos de 18 a 65 años nunca bebió.</p>
+  <div class="kpis">
+    <div class="kpi"><b>16.590</b><span>personas en ENCAVI, 15 años o más, urbano y rural (10.742 urbanas de 18–65)</span></div>
+    <div class="kpi t"><b>2.123</b><span>personas de 18–65 años en TSM R7; 999 responden «Nunca»</span></div>
+    <div class="kpi"><b>39 % · 41 %</b><span>responden «Nunca»: ENCAVI construido y TSM R7, urbano 18–65</span></div>
+    <div class="kpi"><b>40 %</b><span>de los no bebedores nunca bebió (IC 95 %: 37–43 %), ENCAVI, definición b</span></div>
+    <div class="kpi"><b>51 %</b><span>con la definición a, que deja fuera a quien bebió en el año pero dice «Nunca»</span></div>
+  </div>
+</section>
+
+<section id="encuestas">
+  <div class="eyebrow">1 · Las dos encuestas</div>
+  <h2>Qué es cada una</h2>
+  <div class="box"><table>
+    <thead><tr><th scope="col"></th><th scope="col"><span class="tagE">ENCAVI 2023–2024</span></th><th scope="col"><span class="tagT">TSM, ronda 7</span></th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Responsable</th><td>Ministerio de Salud, Departamento de Epidemiología; terreno de DESUC (UC)</td><td>ACHS y Centro de Encuestas y Estudios Longitudinales UC</td></tr>
+      <tr><th scope="row">Tipo</th><td>Transversal: una sola entrevista</td><td>Panel: las mismas personas en las rondas 7 a 11 (2023–2025)</td></tr>
+      <tr><th scope="row">Modo</th><td>Presencial en la vivienda, con tableta (CAPI)</td><td>Telefónica</td></tr>
+      <tr><th scope="row">Cobertura</th><td>Viviendas particulares de las 16 regiones, urbanas y rurales</td><td>Población urbana; hogares entrevistados antes en forma presencial</td></tr>
+      <tr><th scope="row">Edades</th><td>15 años o más</td><td>18 años o más (aquí, 18–65)</td></tr>
+      <tr><th scope="row">Terreno</th><td>Octubre de 2023 a febrero de 2024</td><td>Abril de 2023</td></tr>
+      <tr><th scope="row">Diseño</th><td>Estratificado y en cuatro etapas (comuna, manzana, vivienda, persona): <code>varstrat</code>, <code>varunit</code>, <code>w_personas_cal</code></td><td>Solo el factor de expansión <code>Fact_Exp</code>; no hay estrato ni conglomerado publicados</td></tr>
+      <tr><th scope="row">Historia de consumo</th><td>Pregunta directa: <code>p5_20</code> «¿Ha tomado alcohol alguna vez en su vida?» y <code>p5_21</code> «¿Cuándo fue la última vez?»</td><td>Ninguna pregunta. Solo lo que el panel observa: quien bebía en una ronda anterior y ya no bebe es FD</td></tr>
+      <tr><th scope="row">Frecuencia</th><td><code>p5_22</code> (AUDIT-C 1), solo a quien bebió en el último año</td><td><code>e3a1</code> (AUDIT-C 1), a todos</td></tr>
+      <tr><th scope="row">Educación</th><td><code>educ</code> / <code>educ_imp</code>: 4 grupos ya armados</td><td><code>b4a</code> (nivel), <code>b4b</code> (último curso), <code>b1</code> (estudia actualmente)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Fuentes: ficha técnica del manual de ENCAVI (<code>_encavi2324/manual_de_base_de_datos_encavi_2023_2024.pdf</code>) y diccionario de TSM (<code>_tsm/notes/</code>).</p>
+</section>
+
+<section id="preguntas">
+  <div class="eyebrow">2 · Preguntas</div>
+  <h2>El orden de las preguntas cambia lo que significa «Nunca»</h2>
+  <div class="flows">
+    <div class="flow">
+      <span class="tagE">ENCAVI · conteos sin ponderar, 15 años o más</span>
+      <div class="q"><span class="v">p5_20</span><span>¿Ha tomado alcohol alguna vez en su vida?</span>
+        <div class="ans"><div><span>No <span class="grp gA">A</span></span><span class="n">3.218</span></div><div><span>Sí</span><span class="n">13.359</span></div><div><span>No sabe / no responde</span><span class="n">13</span></div></div></div>
+      <div class="down">↓ si respondió Sí</div>
+      <div class="q"><span class="v">p5_21</span><span>¿Cuándo fue la última vez?</span>
+        <div class="ans"><div><span>Hace más de un año <span class="grp gB">B</span></span><span class="n">3.562</span></div><div><span>Últimos 30 días</span><span class="n">7.183</span></div><div><span>Más de un mes, menos de un año</span><span class="n">2.513</span></div><div><span>No sabe / no responde</span><span class="n">101</span></div></div></div>
+      <div class="down">↓ solo si bebió en el último año</div>
+      <div class="q"><span class="v">p5_22</span><span>¿Qué tan seguido toma alguna bebida alcohólica?</span>
+        <div class="ans"><div><span>Nunca <span class="grp gC">C</span></span><span class="n">1.555</span></div><div><span>1 vez al mes o más <span class="grp gD">D</span></span><span class="n">8.103</span></div><div><span>No sabe / no responde</span><span class="n">38</span></div></div></div>
+    </div>
+    <div class="flow t">
+      <span class="tagT">TSM R7 · 18–65 años, sin ponderar</span>
+      <div class="q"><span class="v">e3a1</span><span>¿Qué tan seguido usted toma alguna bebida alcohólica?</span>
+        <div class="ans"><div><span>Nunca</span><span class="n">999</span></div><div><span>1 vez al mes o menos</span><span class="n">623</span></div><div><span>2 a 4 veces al mes</span><span class="n">395</span></div><div><span>2 a 3 veces a la semana</span><span class="n">89</span></div><div><span>4 o más veces a la semana</span><span class="n">17</span></div></div></div>
+      <div class="down">↓ quien responde «Nunca» salta las preguntas de cantidad y de 6+ tragos</div>
+      <p class="note">TSM pregunta <code>e3a1</code> a todos. No pregunta si alguna vez bebió ni cuándo fue la última vez, así que en R7 todos los que responden «Nunca» quedan como N0: abstemios de vida y exbebedores mezclados.</p>
+    </div>
+  </div>
+  <div class="callout"><b>El hallazgo que ordena todo lo demás</b>
+    <p>En ENCAVI, 1.555 personas que bebieron en el último año responden «Nunca» a la pregunta de frecuencia; 911 de ellas bebieron en los últimos 30 días. «Nunca» en esa pregunta no equivale a no haber bebido en el año. En TSM esas personas también responderían «Nunca» y quedarían como no bebedoras.</p></div>
+  <p class="note">Que <code>p5_22</code> se pregunte solo a quien bebió en el último año se deduce de los datos: está vacía exactamente para quienes respondieron No en <code>p5_20</code> o «más de un año» en <code>p5_21</code>.</p>
+</section>
+
+<section id="nobebe">
+  <div class="eyebrow">3 · Quién no bebe</div>
+  <h2>Dos maneras de definir «no bebe» en ENCAVI</h2>
+  <p>Población urbana de 18 a 65 años, el dominio más parecido a TSM. Porcentajes ponderados con el diseño completo de ENCAVI.</p>
+  <div class="box" style="display:grid;gap:10px">
+    <div class="stack" role="img" aria-label="A 15,7 %, B 15,1 %, C 8,4 %, D 60,2 %, sin dato 0,7 %">
+      <div class="gA" style="width:15.7%">A 15,7</div><div class="gB" style="width:15.1%">B 15,1</div><div class="gC" style="width:8.4%">C 8,4</div><div class="gD" style="width:60.2%">D 60,2</div><div class="gU" style="width:0.7%"></div>
+    </div>
+    <div class="legend"><span><i class="sw gA"></i>A nunca bebió</span><span><i class="sw gB"></i>B no bebe hace más de un año</span><span><i class="sw gC"></i>C bebió en el año, pero dice «Nunca»</span><span><i class="sw gD"></i>D bebe una vez al mes o más</span><span><i class="sw gU"></i>sin dato 0,7</span></div>
+  </div>
+  <div class="box"><table>
+    <thead><tr><th scope="col">Definición de no bebedor</th><th scope="col">Grupos</th><th class="num" scope="col">No bebedores</th><th class="num" scope="col">Nunca bebió, entre ellos</th><th class="num" scope="col">n</th><th class="num" scope="col">Efecto de diseño</th></tr></thead>
+    <tbody>
+      <tr><td><b>a</b> · sin consumo en 12 meses</td><td>A + B</td><td class="num">30,8 %</td><td class="num">51,1 %<span class="ci">47,9–54,3</span></td><td class="num">3.854</td><td class="num">4,2</td></tr>
+      <tr class="win"><td><b>b</b> · equivalente a «Nunca» en TSM</td><td>A + B + C</td><td class="num">39,1 %</td><td class="num">40,2 %<span class="ci">37,2–43,3</span></td><td class="num">4.811</td><td class="num">4,8</td></tr>
+    </tbody>
+  </table></div>
+  <p>La definición cambia la respuesta en 11 puntos: quien bebió en el año pero dice «Nunca» (C) no es abstemio de vida y diluye la proporción. La definición b es la que corresponde a TSM, como muestra la sección siguiente. Supone que quienes nunca bebieron (A) o no beben hace más de un año (B) responderían «Nunca» si se les preguntara.</p>
+</section>
+
+<section id="misma">
+  <div class="eyebrow">4 · Misma pregunta</div>
+  <h2>Con la definición b, ENCAVI reproduce las respuestas de TSM</h2>
+  <p>ENCAVI construido: A, B y C cuentan como «Nunca» y el resto conserva su respuesta a <code>p5_22</code>. TSM R7: respuestas a <code>e3a1</code>. Ambos urbanos de 18 a 65 años, ponderados; las líneas marcan el IC 95 %.</p>
+  <div class="box" style="display:grid;gap:12px">
+    <div class="legend"><span><i class="sw" style="background:var(--accent)"></i>ENCAVI construido (n = 10.654)</span><span><i class="sw" style="background:var(--warm)"></i>TSM R7 (n = 2.123)</span></div>
+    <div class="pairs">
+      <div class="pair"><div class="lab">Nunca</div><div class="tracks">
+        <div class="track"><div class="bar e" style="width:78.78%"></div><div class="whisk" style="left:74.66%;width:8.24%"></div><span class="val" style="left:82.9%">39,4</span></div>
+        <div class="track"><div class="bar t" style="width:82.54%"></div><div class="whisk" style="left:74.74%;width:15.6%"></div><span class="val" style="left:90.34%">41,3</span></div></div></div>
+      <div class="pair"><div class="lab">1 vez al mes o menos</div><div class="tracks">
+        <div class="track"><div class="bar e" style="width:62.16%"></div><div class="whisk" style="left:58.95%;width:6.41%"></div><span class="val" style="left:65.36%">31,1</span></div>
+        <div class="track"><div class="bar t" style="width:56.54%"></div><div class="whisk" style="left:49.94%;width:13.2%"></div><span class="val" style="left:63.14%">28,3</span></div></div></div>
+      <div class="pair"><div class="lab">2 a 4 veces al mes</div><div class="tracks">
+        <div class="track"><div class="bar e" style="width:42.86%"></div><div class="whisk" style="left:39.99%;width:5.73%"></div><span class="val" style="left:45.72%">21,4</span></div>
+        <div class="track"><div class="bar t" style="width:47.34%"></div><div class="whisk" style="left:39.86%;width:14.98%"></div><span class="val" style="left:54.84%">23,7</span></div></div></div>
+      <div class="pair"><div class="lab">2 a 3 veces a la semana</div><div class="tracks">
+        <div class="track"><div class="bar e" style="width:12.62%"></div><div class="whisk" style="left:10.92%;width:3.4%"></div><span class="val" style="left:14.32%">6,3</span></div>
+        <div class="track"><div class="bar t" style="width:11.08%"></div><div class="whisk" style="left:6.62%;width:8.9%"></div><span class="val" style="left:15.52%">5,5</span></div></div></div>
+      <div class="pair"><div class="lab">4 o más veces a la semana</div><div class="tracks">
+        <div class="track"><div class="bar e" style="width:3.6%"></div><div class="whisk" style="left:2.66%;width:1.88%"></div><span class="val" style="left:4.54%">1,8</span></div>
+        <div class="track"><div class="bar t" style="width:2.5%"></div><div class="whisk" style="left:0.46%;width:4.1%"></div><span class="val" style="left:4.56%">1,3</span></div></div></div>
+    </div>
+    <div class="axis"><div></div><div><span>0 %</span><span>25 %</span><span>50 %</span></div></div>
+  </div>
+  <p>En las cinco categorías los intervalos se superponen, pese a que una encuesta es presencial y la otra telefónica, y a que se levantaron con 6 a 10 meses de diferencia. Con la definición a, ENCAVI tendría 31 % de «Nunca» frente a 41 % en TSM: no calza.</p>
+  <p class="note">El IC de TSM usa solo <code>Fact_Exp</code>, sin estrato ni conglomerado, así que probablemente es más estrecho de lo que debería.</p>
+</section>
+
+<section id="grupos">
+  <div class="eyebrow">5 · Sexo y edad</div>
+  <h2>Proporción de abstemios de vida entre los no bebedores, por grupo</h2>
+  <p>ENCAVI urbano 18–65, definición b (definición a como sensibilidad). El n efectivo es el n dividido por el efecto de diseño: es lo que de verdad informa cada celda.</p>
+  <div class="box"><table>
+    <thead><tr><th scope="col">Grupo</th><th class="num" scope="col">Definición b</th><th class="num" scope="col">Definición a</th><th class="num" scope="col">n ENCAVI (b)</th><th class="num" scope="col">n efectivo</th><th class="num" scope="col">No bebedores TSM R7</th></tr></thead>
+    <tbody>
+      <tr><td>Hombres 18–29</td><td class="num">52,9 %<span class="ci">43,6–62,0</span></td><td class="num">65,2 %</td><td class="num">235</td><td class="num">115</td><td class="num">34</td></tr>
+      <tr><td>Hombres 30–44</td><td class="num">39,4 %<span class="ci">30,8–48,7</span></td><td class="num">50,2 %</td><td class="num">255</td><td class="num">115</td><td class="num">77</td></tr>
+      <tr><td>Hombres 45–59</td><td class="num">32,1 %<span class="ci">26,1–38,9</span></td><td class="num">40,1 %</td><td class="num">413</td><td class="num">204</td><td class="num">79</td></tr>
+      <tr><td>Hombres 60–65</td><td class="num">34,4 %<span class="ci">26,3–43,4</span></td><td class="num">43,1 %</td><td class="num">239</td><td class="num">120</td><td class="num">63</td></tr>
+      <tr><td>Mujeres 18–29</td><td class="num">41,0 %<span class="ci">34,5–47,8</span></td><td class="num">51,1 %</td><td class="num">527</td><td class="num">210</td><td class="num">74</td></tr>
+      <tr><td>Mujeres 30–44</td><td class="num">38,0 %<span class="ci">33,0–43,3</span></td><td class="num">50,1 %</td><td class="num">917</td><td class="num">346</td><td class="num">207</td></tr>
+      <tr><td>Mujeres 45–59</td><td class="num">39,3 %<span class="ci">34,8–43,9</span></td><td class="num">51,3 %</td><td class="num">1.451</td><td class="num">449</td><td class="num">298</td></tr>
+      <tr><td>Mujeres 60–65</td><td class="num">42,5 %<span class="ci">37,5–47,7</span></td><td class="num">52,4 %</td><td class="num">774</td><td class="num">360</td><td class="num">167</td></tr>
+      <tr class="sum"><td>Todos</td><td class="num">40,2 %<span class="ci">37,2–43,3</span></td><td class="num">51,1 %</td><td class="num">4.811</td><td class="num">1.009</td><td class="num">999</td></tr>
+    </tbody>
+  </table></div>
+  <p>Entre hombres y mujeres casi no hay diferencia (40,9 % y 39,7 %). Sí la hay por edad: los jóvenes no bebedores son más a menudo abstemios de vida (46 % en 18–29, frente a 37–39 % en los demás grupos). Con 8 celdas, los intervalos ya miden de 9 a 18 puntos; agregar educación los ensancharía más, y ahí convendría agrupar o suavizar.</p>
+</section>
+
+<section id="educacion">
+  <div class="eyebrow">6 · Educación</div>
+  <h2>Ninguna regla de TSM calza entera con ENCAVI</h2>
+  <p>ENCAVI trae la educación ya agrupada en cuatro categorías. TSM la arma con nivel, último curso y si estudia, y el motor v4 usa nivel <b>completado</b>. El problema está en el grupo superior de ENCAVI, que junta superior incompleta y completa.</p>
+  <div class="box"><table>
+    <thead><tr><th scope="col">ENCAVI <code>educ</code></th><th scope="col">TSM completado (v4)</th><th scope="col">TSM alcanzado</th><th class="num" scope="col">No bebedores ENCAVI (b)</th></tr></thead>
+    <tbody>
+      <tr><td>1 · Básica incompleta o completa</td><td>Primaria o menos</td><td>Primaria o menos</td><td class="num">15,0 %</td></tr>
+      <tr><td>2 · Media incompleta</td><td>Primaria o menos</td><td>Secundaria</td><td class="num">10,8 %</td></tr>
+      <tr><td>3 · Media completa</td><td>Secundaria</td><td>Secundaria</td><td class="num">36,7 %</td></tr>
+      <tr><td>4 · Superior incompleta o completa</td><td>Secundaria si es incompleta, terciaria si es completa: <b>no se puede separar</b></td><td>Superior</td><td class="num">37,4 %</td></tr>
+    </tbody>
+  </table></div>
+  <p>En los 999 no bebedores de TSM R7, 175 cambian de grupo según la regla: 106 con media incompleta y 69 con superior incompleta. Hay 9 sin dato. Una regla mixta para TSM (completado en media, alcanzado en superior) calzaría con los cuatro grupos de ENCAVI agrupados como {1, 2}, {3} y {4}, y solo movería a los 69 de superior incompleta respecto de v4.</p>
+  <p class="note"><code>educ_imp</code> es la versión imputada de <code>educ</code> (2 casos imputados). El ponderador de ENCAVI está calibrado a sexo × educación, así que los márgenes educacionales ponderados reproducen el objetivo de calibración.</p>
+</section>
+
+<section id="diseno">
+  <div class="eyebrow">7 · Variables de diseño</div>
+  <h2>Cómo usar el diseño de cada encuesta</h2>
+  <div class="flows">
+    <div class="flow"><span class="tagE">ENCAVI</span>
+      <p>Tres variables: <code>varstrat</code> (pseudo-estrato), <code>varunit</code> (pseudo-conglomerado) y <code>w_personas_cal</code> (ponderador calibrado a sexo × edad, sexo × educación, región y macrozona × área, con base en el Censo 2017). Es la declaración que da el manual:</p>
+      <pre>des &lt;- survey::svydesign(ids = ~varunit, strata = ~varstrat,
+  weights = ~w_personas_cal, nest = TRUE, data = encavi2)
+options(survey.lonely.psu = "certainty")   # como en el manual</pre>
+      <ul>
+        <li>Los dominios (urbano 18–65, sexo × edad) se estiman con <code>subset()</code> sobre el diseño, nunca filtrando antes los datos.</li>
+        <li>El efecto de diseño va de 2 a 5: el n efectivo es entre la mitad y la quinta parte del n bruto.</li>
+      </ul></div>
+    <div class="flow t"><span class="tagT">TSM</span>
+      <p>Solo <code>Fact_Exp</code>, el factor de expansión de la población entrevistada de 18 años o más. No hay estrato ni conglomerado publicados.</p>
+      <ul>
+        <li>El motor v4 estima la incertidumbre con bootstrap por persona (B = 1000), sin conglomerados.</li>
+        <li>Para propagar la incertidumbre de la calibración, cada réplica bootstrap de TSM se emparejaría con una réplica de ENCAVI (<code>survey::as.svrepdesign</code>).</li>
+      </ul></div>
+  </div>
+</section>
+
+<section id="ejemplo">
+  <div class="eyebrow">8 · Ejemplo</div>
+  <h2>Qué daría aplicar ENCAVI a los no bebedores de TSM R7</h2>
+  <p>Ilustración con sexo × edad, sin educación, sin suavizado y sin propagar incertidumbre: no es la calibración. Cada fila multiplica los no bebedores de TSM por la proporción de ENCAVI.</p>
+  <div class="box"><table>
+    <thead><tr><th scope="col">Grupo</th><th class="num" scope="col">No bebedores TSM R7 (n)</th><th class="num" scope="col">% ponderado del total</th><th class="num" scope="col">Abstemios de vida esperados (b)</th><th class="num" scope="col">Con definición a</th></tr></thead>
+    <tbody>
+      <tr><td>Hombres 18–29</td><td class="num">34</td><td class="num">6,7</td><td class="num">18</td><td class="num">22</td></tr>
+      <tr><td>Hombres 30–44</td><td class="num">77</td><td class="num">18,9</td><td class="num">30</td><td class="num">39</td></tr>
+      <tr><td>Hombres 45–59</td><td class="num">79</td><td class="num">7,4</td><td class="num">25</td><td class="num">32</td></tr>
+      <tr><td>Hombres 60–65</td><td class="num">63</td><td class="num">6,4</td><td class="num">22</td><td class="num">27</td></tr>
+      <tr><td>Mujeres 18–29</td><td class="num">74</td><td class="num">12,1</td><td class="num">30</td><td class="num">38</td></tr>
+      <tr><td>Mujeres 30–44</td><td class="num">207</td><td class="num">22,1</td><td class="num">79</td><td class="num">104</td></tr>
+      <tr><td>Mujeres 45–59</td><td class="num">298</td><td class="num">17,5</td><td class="num">117</td><td class="num">153</td></tr>
+      <tr><td>Mujeres 60–65</td><td class="num">167</td><td class="num">8,8</td><td class="num">71</td><td class="num">87</td></tr>
+      <tr class="sum"><td>Total</td><td class="num">999</td><td class="num">100</td><td class="num">392 (39,6 % ponderado)</td><td class="num">501 (50,5 %)</td></tr>
+    </tbody>
+  </table></div>
+  <ul>
+    <li><b>Qué se conserva:</b> el total de no bebedores de cada celda. Solo se reparte entre abstemios de vida y exbebedores anteriores al panel.</li>
+    <li><b>Cómo se asigna:</b> TSM no distingue a esas personas, así que no hay ponderadores que calibrar. Sería una asignación probabilística, por ejemplo una imputación múltiple: cada N0 recibe la marca de abstemio con la probabilidad de su celda, tomada de una réplica de ENCAVI. Es un supuesto externo, no información individual.</li>
+    <li><b>La restricción:</b> nunca marcar como abstemio a quien tiene consumo previo observado. En R7 nadie tiene historia, así que no hay conflicto. En las rondas siguientes, los FD quedan fuera y solo los N0 son candidatos.</li>
+  </ul>
+</section>
+
+<section id="supuestos">
+  <div class="eyebrow">9 · Supuestos</div>
+  <h2>Qué hay que suponer y qué no se toca</h2>
+  <ul>
+    <li><b>Transportabilidad:</b> la proporción de ENCAVI (presencial, todas las viviendas, octubre de 2023 a febrero de 2024) vale para TSM (telefónica, hogares urbanos ya entrevistados, abril de 2023) dentro de cada grupo. La coincidencia de la sección 4 apoya el supuesto, pero no lo prueba grupo por grupo.</li>
+    <li><b>Respuesta hipotética:</b> quien nunca bebió o no bebe hace más de un año respondería «Nunca» a la pregunta de frecuencia. ENCAVI no se la hace, así que no se puede comprobar.</li>
+    <li><b>ENCAVI no dice quién es abstemio dentro de TSM:</b> solo informa la composición de cada grupo.</li>
+    <li><b>Las transiciones siguen siendo de TSM:</b> ENCAVI es transversal y no informa cambios. Si abstemios de vida y exbebedores necesitaran filas de transición distintas, TSM no las identifica y habría que suponerlas (la misma fila N0, o la fila FD para los exbebedores).</li>
+    <li><b>Para qué sirve:</b> sobre todo para la composición inicial de la microsimulación, donde exbebedores y abstemios de vida tienen riesgos distintos.</li>
+  </ul>
+  <p class="note">Cifras de <code>__andres_control/encavi_tsm_explicado.R</code> (desde la raíz; lee los datos con <code>acc_data()</code>), con salidas agregadas en <code>__andres_control/encavi_tsm_outputs/</code>. ENCAVI: <code>_encavi2324/20260722_ENCAVI_data.RData.tar.xz.enc</code>. TSM: <code>_tsm/tsm.tar.xz.enc</code>, ronda 7, entrevistados de 18–65. Cálculo del 2026-10-27.</p>
+</section>
+</div>

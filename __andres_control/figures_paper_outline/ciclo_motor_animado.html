@@ -1,0 +1,641 @@
+<title>Ciclo anual del motor DIR</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: header with the year counter and controls; step rail on the left (Figure C, same solid/dashed feasibility borders);
+   stage with two rows of the same ten people (S0 above, scenario below) and the dice they share in between;
+   narration and running totals under the stage. */
+:root {
+  --bg: #e9eff1; --surface: #ffffff; --ink: #17242b; --muted: #56666f; --line: #c4d0d5; --track: #dfe7ea;
+  --accent: #0a7a71; --accent-soft: #d1ebe6; --on-accent: #ffffff; --warn: #9a4a0a; --warn-soft: #f8e6d4;
+  --n0: #cdd6de; --fd: #aa9ec0; --c1: #f1c04f; --c2: #e47f37; --c3: #ad3427;
+  --die: #ffffff; --pip: #17242b;
+  --display: "Bricolage Grotesque", "IBM Plex Sans", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f171b; --surface: #172227; --ink: #e3ebee; --muted: #93a4ac; --line: #2c3b42; --track: #24323a;
+  --accent: #46c4b8; --accent-soft: #143a36; --on-accent: #06211f; --warn: #f0a45f; --warn-soft: #3a2614;
+  --n0: #56636e; --fd: #7d7192; --c1: #dcae45; --c2: #de7a36; --c3: #d2594b;
+  --die: #f3f6f7; --pip: #17242b; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0f171b; --surface: #172227; --ink: #e3ebee; --muted: #93a4ac; --line: #2c3b42; --track: #24323a;
+  --accent: #46c4b8; --accent-soft: #143a36; --on-accent: #06211f; --warn: #f0a45f; --warn-soft: #3a2614;
+  --n0: #56636e; --fd: #7d7192; --c1: #dcae45; --c2: #de7a36; --c3: #d2594b;
+  --die: #f3f6f7; --pip: #17242b; color-scheme: dark; }
+
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 22px 48px; }
+.wrap { max-width: 1180px; margin-inline: auto; display: flex; flex-direction: column; gap: 14px; }
+.top { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: flex-end; justify-content: space-between; }
+.eyebrow { margin: 0; font: 600 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { margin: 2px 0 4px; font: 800 30px/1.1 var(--display); letter-spacing: -.01em; text-wrap: balance; }
+.lede { margin: 0; color: var(--muted); max-width: 68ch; }
+.yearbox { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.ylabel { font: 600 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.year { font: 800 44px/1 var(--display); font-variant-numeric: tabular-nums; }
+.yticks { display: flex; gap: 4px; }
+.yticks i { width: 14px; height: 6px; border-radius: 3px; background: var(--track); }
+.yticks i.past { background: var(--muted); }
+.yticks i.now { background: var(--accent); }
+
+.controls { display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; }
+button, select { font: 500 14px var(--body); border-radius: 8px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); padding: 7px 12px; cursor: pointer; }
+button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); min-width: 118px; }
+button:disabled { opacity: .5; cursor: default; }
+button:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.controls label { font-size: 13px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+.toy { margin: 0; font-size: 13px; color: var(--warn); background: var(--warn-soft); border-radius: 8px; padding: 6px 10px; align-self: flex-start; }
+
+.layout { display: grid; grid-template-columns: 228px minmax(0, 1fr); gap: 16px; align-items: start; }
+.rail ol { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.rail .grp { font: 600 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 6px 2px 0; }
+.st { display: flex; gap: 8px; align-items: baseline; padding: 6px 10px; border: 1.5px solid var(--ink); border-radius: 8px; background: var(--surface); font-size: 13.5px; transition: background .3s, border-color .3s; }
+.st.x { border-style: dashed; }
+.st .code { font: 600 12px var(--mono); min-width: 24px; color: var(--muted); }
+.st.on { background: var(--accent-soft); border-color: var(--accent); }
+.st.on .code { color: var(--accent); }
+.feas { font-size: 12px; color: var(--muted); display: flex; flex-direction: column; gap: 3px; margin-top: 8px; }
+.feas span { display: flex; gap: 6px; align-items: center; }
+.feas i { width: 22px; height: 0; border-top: 2px solid var(--ink); }
+.feas i.x { border-top-style: dashed; }
+
+.stagewrap { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.stage { display: grid; grid-template-columns: 74px repeat(10, minmax(0, 1fr)); column-gap: 6px; row-gap: 2px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 10px; }
+.rowlab { align-self: center; font: 600 13px var(--body); line-height: 1.2; }
+.rowlab small { display: block; font: 400 11.5px var(--body); color: var(--muted); }
+.rowlab.sc { color: var(--accent); }
+.rowlab.dl { font: 500 11px var(--mono); color: var(--muted); }
+.name { text-align: center; font: 600 12.5px var(--body); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-bottom: 2px; }
+.name.focal { color: var(--accent); }
+.name.focal::after { content: ""; display: block; width: 18px; height: 3px; border-radius: 2px; background: var(--accent); margin: 2px auto 0; }
+.who { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 4px 0; border-radius: 8px; }
+.badges { display: flex; flex-wrap: wrap; align-content: flex-end; justify-content: center; gap: 1px 2px; height: 28px; width: 100%; }
+.badges svg { width: 13px; height: 13px; }
+.fig { width: 100%; max-width: 40px; height: auto; overflow: visible; transition: opacity .6s, transform .6s; }
+.fig circle, .fig path { stroke: var(--ink); stroke-width: 1.3; transition: fill .7s ease; }
+.who.dead .fig { opacity: .22; }
+.who.gone .fig { opacity: .12; transform: translateX(12px); }
+.who.new { animation: pop .7s ease-out; }
+.who.chg .fig { animation: flash .9s ease-out; }
+@keyframes pop { from { transform: translateY(-10px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes flash { 0% { filter: drop-shadow(0 0 0 var(--accent)); } 35% { filter: drop-shadow(0 0 6px var(--accent)); } 100% { filter: none; } }
+.age { font: 500 11px var(--mono); color: var(--muted); white-space: nowrap; }
+.gbar { width: 100%; max-width: 40px; height: 5px; background: var(--track); border-radius: 3px; overflow: hidden; }
+.gbar i { display: block; height: 100%; width: 0; background: var(--ink); opacity: .55; transition: width .7s ease; }
+.gval { font: 500 10.5px var(--mono); white-space: nowrap; min-height: 15px; }
+.dice { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 48px; }
+.die { width: min(24px, 80%); aspect-ratio: 1; border-radius: 5px; background: var(--die); border: 1.5px solid var(--pip);
+  display: grid; grid-template: repeat(3, 1fr) / repeat(3, 1fr); padding: 3px; opacity: 0; transform: scale(.5); transition: opacity .25s, transform .25s; }
+.die.on { opacity: 1; transform: scale(1); }
+.die.rolling { animation: tumble .45s linear infinite; }
+@keyframes tumble { 0% { transform: rotate(0); } 25% { transform: rotate(90deg) translateY(-4px); } 50% { transform: rotate(180deg); } 75% { transform: rotate(270deg) translateY(-4px); } 100% { transform: rotate(360deg); } }
+.die b { width: 4px; height: 4px; border-radius: 50%; background: var(--pip); place-self: center; visibility: hidden; }
+.die b.v { visibility: visible; }
+.u { font: 600 11px var(--mono); min-height: 15px; }
+
+.ic-lock { color: var(--muted); }
+.ic-hed { color: var(--c3); }
+.ic-scr { color: var(--ink); }
+.ic-pos { color: var(--warn); }
+.ic-bi0 { color: var(--muted); }
+.ic-bin { color: var(--accent); }
+.ic-dead { color: var(--muted); }
+
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12.5px; color: var(--muted); }
+.legend span { display: inline-flex; gap: 5px; align-items: center; }
+.legend .sw { width: 12px; height: 12px; border-radius: 3px; border: 1px solid var(--ink); }
+.legend svg { width: 13px; height: 13px; }
+
+.panels { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; min-width: 0; }
+.nstep { margin: 0; font: 600 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.card h2 { margin: 2px 0 6px; font: 700 21px/1.2 var(--display); text-wrap: balance; }
+.card p { margin: 0 0 8px; max-width: 70ch; }
+.ndetail { background: var(--bg); border-radius: 8px; padding: 8px 10px; font-size: 14px; }
+.ndetail:empty { display: none; }
+.ndetail b { font-weight: 600; }
+.ndetail .num { font-family: var(--mono); font-size: 13px; }
+.card h3 { margin: 0 0 6px; font: 600 12px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; font-variant-numeric: tabular-nums; margin-bottom: 12px; }
+th, td { text-align: right; padding: 4px 6px; border-bottom: 1px solid var(--line); }
+th:first-child, td:first-child { text-align: left; }
+th { font: 500 11.5px var(--body); color: var(--muted); }
+td.sc { color: var(--accent); font-weight: 600; }
+.big { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; font-size: 13.5px; margin: 0 0 12px; }
+.big dd { margin: 0; text-align: right; font: 700 17px var(--display); font-variant-numeric: tabular-nums; }
+.big dt { color: var(--muted); align-self: center; }
+.mix { display: grid; grid-template-columns: 70px 1fr; gap: 4px 8px; align-items: center; font-size: 12.5px; }
+.bar { display: flex; height: 12px; border-radius: 6px; overflow: hidden; background: var(--track); }
+.bar i { display: block; height: 100%; transition: width .6s; }
+.note { font-size: 12.5px; color: var(--muted); margin: 0; }
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; }
+  .rail ol { flex-direction: row; overflow-x: auto; padding-bottom: 4px; }
+  .rail .grp { display: none; }
+  .st { flex: 0 0 auto; }
+  .panels { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  h1 { font-size: 24px; }
+  .year { font-size: 34px; }
+  .stage { grid-template-columns: 18px repeat(10, minmax(0, 1fr)); column-gap: 3px; padding: 10px 6px; }
+  .rowlab { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 11px; justify-self: center; }
+  .rowlab small, .rowlab.dl { display: none; }
+  .name { font-size: 10px; }
+  .badges svg { width: 10px; height: 10px; }
+  .age, .gval, .u { font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+</style>
+
+<main class="wrap">
+  <header class="top">
+    <div>
+      <p class="eyebrow">micsim · figura C animada</p>
+      <h1>Un año en el motor, persona por persona</h1>
+      <p class="lede">Cada columna es una persona. Arriba vive en S0, lo que pasa hoy; abajo, la misma persona en el escenario elegido. Entre ambas está el dado que comparten: cuando sale menos que la probabilidad, el evento ocurre.</p>
+    </div>
+    <div class="yearbox" aria-live="off">
+      <span class="ylabel">Año simulado</span>
+      <span class="year" id="year">2025</span>
+      <div class="yticks" id="yticks"></div>
+    </div>
+  </header>
+
+  <div class="controls">
+    <button class="primary" id="play" type="button">Reproducir</button>
+    <button id="next" type="button">Paso siguiente</button>
+    <button id="skip" type="button">Saltar al final</button>
+    <button id="reroll" type="button">Otros dados</button>
+    <label for="scen">Escenario
+      <select id="scen">
+        <option value="S1">S1 · tamizaje ×1,5</option>
+        <option value="S2">S2 · IB 52 % → 80 %</option>
+        <option value="S3" selected>S3 · ambas</option>
+      </select>
+    </label>
+    <label for="speed">Velocidad
+      <select id="speed">
+        <option value="0.6">Lenta</option>
+        <option value="1" selected>Normal</option>
+        <option value="2.2">Rápida</option>
+      </select>
+    </label>
+  </div>
+  <p class="toy">Ejemplo ilustrativo: 10 personas, probabilidades aumentadas para que se vea y riesgos de juguete. No son resultados del modelo.</p>
+
+  <div class="layout">
+    <nav class="rail" aria-label="Pasos del ciclo anual">
+      <ol id="rail"></ol>
+      <div class="feas">
+        <span><i></i>Con datos chilenos</span>
+        <span><i class="x"></i>Supuesto o parámetro externo</span>
+      </div>
+    </nav>
+
+    <section class="stagewrap">
+      <div class="stage" id="stage" aria-label="Diez personas en S0 y en el escenario"></div>
+      <div class="legend" id="legend"></div>
+      <div class="panels">
+        <div class="card" aria-live="polite">
+          <p class="nstep" id="nstep">Antes de empezar</p>
+          <h2 id="ntitle">Seguimos a Ana</h2>
+          <p id="ntext">Ana tiene 52 años y está marcada en verde. La narración muestra sus dados en cada paso. Aprieta «Reproducir» o «Paso siguiente».</p>
+          <p class="ndetail" id="ndetail"></p>
+        </div>
+        <div class="card" id="tally"></div>
+      </div>
+      <p class="note">En el modelo real: tamizaje con cualquier AUDIT ≈11,7 % al año (aproximado: el denominador APS es provisional), IB para el 52 % de los resultados de riesgo, efecto −8 % de g/día pleno el primer año y en 0 al año 3–4, años de vida perdidos con la tabla de vida de Chile. Aquí el tamizaje base es 30 % y la mortalidad está multiplicada para que se vean eventos con solo 10 personas.</p>
+    </section>
+  </div>
+</main>
+
+<script>
+(function () {
+'use strict';
+var $ = function (s) { return document.querySelector(s); };
+var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// ---------- illustrative parameters (toy values, not model output) ----------
+var N = 10, START = 2025, END = 2034;
+var STATES = ['N0', 'FD', 'C1', 'C2', 'C3'];
+var SHOW = { N0: 'N0', FD: 'FD', C1: 'C1', C2: 'C2', C3: 'C3+' };
+var CUT = { M: [20, 40], H: [40, 60] };                       // women / men g/day cut-offs for C2 and C3+
+var RANGE = { M: { C1: [2, 19], C2: [20, 39], C3: [40, 85] }, H: { C1: [3, 39], C2: [40, 59], C3: [60, 120] } };
+var TRANS = { N0: [.88, 0, .10, .02, 0], FD: [0, .78, .18, .03, .01], C1: [0, .12, .76, .10, .02],
+              C2: [0, .08, .30, .48, .14], C3: [0, .08, .14, .26, .52] };
+var ENTRY = [.55, 0, .35, .07, .03];                          // 15-year-olds drawn from their ENPG cell
+var S0 = { screen: .30, bi: .52 };
+var SC = { S1: { screen: .45, bi: .52, lab: 'S1 · tamizaje ×1,5' }, S2: { screen: .30, bi: .80, lab: 'S2 · IB 80 %' },
+           S3: { screen: .45, bi: .80, lab: 'S3 · ambas' } };
+var R = 0.08, W = [1, 2 / 3, 1 / 3], RHO = 0.6, DREF = 1000;
+function qDeath(a) { return Math.min(.6, .004 * Math.exp(.075 * (a - 30))); }
+function sig(x) { return 1 / (1 + Math.exp(-x)); }
+function pPos(g) { return g > 0 ? sig((g - 22) / 7) : 0; }
+function pHed(g, z) { return g > 0 ? sig(-3.2 + .055 * g + 1.2 * z) : 0; }
+function rrOf(b) { return b.state === 'N0' ? 1 : b.state === 'FD' ? 1.25 : Math.exp(.015 * b.g) * (b.hed ? 1.3 : 1); }
+function eRes(a) { return Math.max(4, .9 * (85 - a)); }
+function drinker(s) { return s === 'C1' || s === 'C2' || s === 'C3'; }
+function stateFromG(sex, g) { var c = CUT[sex]; return g <= c[0] ? 'C1' : g <= c[1] ? 'C2' : 'C3'; }  // WHO borders go to the lower class
+function fmt(x, d) { return x.toFixed(d == null ? 2 : d).replace('.', ','); }
+function pct(x) { return fmt(x * 100, 1) + ' %'; }
+function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; var t = Math.imul(a ^ a >>> 15, 1 | a);
+  t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+var rng = Math.random;
+function gauss() { var u = 0; while (u === 0) u = rng(); return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * rng()); }
+function drawG(sex, s, u) { if (!drinker(s)) return 0; var r = RANGE[sex][s]; return Math.round(r[0] + u * (r[1] - r[0])); }
+function pick(p, u) { var c = 0, last = 0; for (var i = 0; i < p.length; i++) { if (p[i] > 0) last = i; c += p[i]; if (u < c) return STATES[i]; } return STATES[last]; }
+
+var PEOPLE = [['Ana', 'M', 52, 'C2'], ['Luis', 'H', 23, 'C1'], ['Rosa', 'M', 61, 'FD'], ['Pedro', 'H', 41, 'C3'], ['Inés', 'M', 17, 'N0'],
+              ['Jorge', 'H', 64, 'C1'], ['Sofía', 'M', 34, 'C1'], ['Raúl', 'H', 58, 'C2'], ['Eva', 'M', 28, 'N0'], ['Diego', 'H', 63, 'C3']];
+var NEW_NAMES = ['Tomás', 'Paz', 'Leo', 'Mía', 'Iván', 'Flor', 'Ema', 'Gael', 'Luz', 'Noé', 'Abril', 'Bruno', 'Cata', 'Dani', 'Elsa', 'Fede'];
+
+var STEPS = [
+  { k: '1', name: 'Registro de enero', f: 's', text: 'Se anota quién está y cuánto bebe cada persona. De aquí salen las prevalencias por estado y por consumo intenso (HED), y el conteo de IB.' },
+  { k: '2', name: 'Mortalidad por todas las causas', f: 's', text: 'Cada persona tira un dado. Si sale menos que su riesgo de morir según sexo y edad, muere. El riesgo es el mismo en S0 y en el escenario, así que muere la misma persona en ambos.' },
+  { k: '3', name: 'Muertes atribuibles evitadas', f: 'x', text: 'El beneficio no aparece como personas «salvadas». Se calcula aparte, como muertes esperadas: muertes de referencia × PIF. La PIF compara el riesgo por alcohol del escenario con el de S0.' },
+  { k: '4', name: 'Envejecer un año', f: 'x', text: 'Todos cumplen un año. Desde los 65 el consumo basal queda congelado (candado), pero el efecto de una IB previa sigue bajando. Nadie empieza con más de 64, así que en 2034 la persona mayor tiene 73.' },
+  { k: '5', name: 'Reconciliación con INE', f: 's', text: 'Se cuadra la población con los stocks del INE. Entran jóvenes de 15 años y su consumo se sortea desde su grupo en la ENPG. Nadie entra después de los 64; no es migración observada.' },
+  { k: '6a', name: 'Transiciones de estado', f: 's', text: 'Cada persona de 15 a 64 tira un dado para su estado del año siguiente, con probabilidades estimadas de EPS y TSM.' },
+  { k: '6b', name: 'Gramos por día', f: 's', text: 'Otro dado elige cuántos gramos al día bebe, dentro del rango de su estado.' },
+  { k: '6c', name: 'Cascada DIR', f: 's', text: 'Hasta tres dados: ¿le aplican AUDIT?, ¿sale positivo? (más probable si bebe más) y ¿recibe intervención breve? Los dados son los mismos en S0 y en el escenario; solo cambian las probabilidades.' },
+  { k: '6d', name: 'Efecto de la IB nueva', f: 'x', text: 'Solo la IB nueva, la que no habría ocurrido en S0, baja el consumo: −8 % de g/día, pleno el primer año y en 0 al año 3–4. Las IB de S0 ya están en los datos observados.' },
+  { k: '6e', name: 'Consumo intenso (HED)', f: 'x', text: 'El HED se sortea según el volumen y una tendencia personal que persiste año a año. Si la persona bebe menos, es menos probable.' },
+  { k: '6f', name: 'Recodificar estado', f: 's', text: 'Con los gramos finales se reasigna el estado: C1, C2 o C3+. La IB nunca convierte a nadie en abstemio.' }
+];
+
+// ---------- icons ----------
+var IC = {
+  lock: '<svg class="ic-lock" viewBox="0 0 14 14" aria-hidden="true"><rect x="2.5" y="6" width="9" height="7" rx="1.5" fill="currentColor"/><path d="M4.6 6V4.6a2.4 2.4 0 0 1 4.8 0V6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>',
+  hed: '<svg class="ic-hed" viewBox="0 0 14 14" aria-hidden="true"><path d="M8 .8 2.6 8h3.6l-1 5.2L11.4 6H7.6z" fill="currentColor"/></svg>',
+  scr: '<svg class="ic-scr" viewBox="0 0 14 14" aria-hidden="true"><rect x="2.5" y="2.5" width="9" height="10.5" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="4.8" y="1.2" width="4.4" height="2.6" rx=".8" fill="currentColor"/><path d="M4.6 7h4.8M4.6 9.6h3.4" stroke="currentColor" stroke-width="1.2"/></svg>',
+  pos: '<svg class="ic-pos" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="currentColor"/><path d="M7 3.8v6.4M3.8 7h6.4" stroke="#fff" stroke-width="1.8"/></svg>',
+  bi0: '<svg class="ic-bi0" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2.5h10a1 1 0 0 1 1 1v5.5a1 1 0 0 1-1 1H6.5L3.5 12.5v-2.5H2a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1z" fill="currentColor"/></svg>',
+  bin: '<svg class="ic-bin" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2.5h10a1 1 0 0 1 1 1v5.5a1 1 0 0 1-1 1H6.5L3.5 12.5v-2.5H2a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1z" fill="currentColor"/></svg>',
+  dead: '<svg class="ic-dead" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1.5v11M3.5 5h7" stroke="currentColor" stroke-width="2"/></svg>'
+};
+function ring(w) { var c = 2 * Math.PI * 5; return '<svg class="ic-bin" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-opacity=".25" stroke-width="2.4"/><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-dasharray="' + (w * c).toFixed(1) + ' ' + c.toFixed(1) + '" transform="rotate(-90 7 7)"/></svg>'; }
+var BODY_M = 'M20 21.5c-7.5 0-11 4.6-11 10.5V55h22V32c0-5.9-3.5-10.5-11-10.5z';
+var BODY_F = 'M20 21.5c-6.8 0-10 4.6-10 10.5L6.5 55h27L30 32c0-5.9-3.2-10.5-10-10.5z';
+var FACES = { 1: [4], 2: [0, 8], 3: [0, 4, 8], 4: [0, 2, 6, 8], 5: [0, 2, 4, 6, 8], 6: [0, 2, 3, 5, 6, 8] };
+
+// ---------- state ----------
+var slots, year, stepIdx, scen = 'S3', speed = 1, playing = false, stepRequested = false, instant = false, done = false;
+var epoch = 0, seed = 20251, nameIdx = 0, acc, ys, aliveStart, cells = { s0: [], sc: [] }, dice = [], names = [];
+
+function makeBranch(s, g, hed) { return { state: s, prev: s, gBase: g, g: g, hed: hed, scr: false, pos: false, bi: false, newBi: false, biK: null }; }
+function makePerson(name, sex, age, s) {
+  var z = gauss(), g = drawG(sex, s, rng()), hed = rng() < pHed(g, z);
+  return { name: name, sex: sex, age: age, alive: true, gone: false, justIn: false, z: z, s0: makeBranch(s, g, hed), sc: makeBranch(s, g, hed) };
+}
+
+// ---------- DOM ----------
+function cell(cls, col, row, html) { var d = document.createElement('div'); d.className = cls; d.style.gridColumn = col; d.style.gridRow = row; if (html) d.innerHTML = html; $('#stage').appendChild(d); return d; }
+function build() {
+  $('#stage').innerHTML = '';
+  cell('rowlab', 1, 2, 'S0<small>status quo</small>');
+  cell('rowlab dl', 1, 3, '<span id="dicelab">dados</span>');
+  cell('rowlab sc', 1, 4, '<span id="sclab">Escenario</span><small id="scsub"></small>');
+  for (var i = 0; i < N; i++) {
+    names[i] = cell('name' + (i === 0 ? ' focal' : ''), i + 2, 1, '');
+    ['s0', 'sc'].forEach(function (b) {
+      var r = cell('who', i + 2, b === 's0' ? 2 : 4,
+        '<div class="badges"></div><svg class="fig" viewBox="0 0 40 62" aria-hidden="true"><circle cx="20" cy="11" r="8.5"/><path/></svg>' +
+        '<div class="age"></div><div class="gbar"><i></i></div><div class="gval"></div>');
+      cells[b][i] = { root: r, badges: r.querySelector('.badges'), head: r.querySelector('circle'), body: r.querySelector('path'),
+        age: r.querySelector('.age'), bar: r.querySelector('.gbar i'), gval: r.querySelector('.gval'), last: null };
+    });
+    var d = cell('dice', i + 2, 3, '<div class="die">' + '<b></b>'.repeat(9) + '</div><div class="u"></div>');
+    dice[i] = { die: d.querySelector('.die'), pips: Array.prototype.slice.call(d.querySelectorAll('b')), u: d.querySelector('.u') };
+  }
+  var rail = $('#rail'); rail.innerHTML = '';
+  STEPS.forEach(function (s, k) {
+    if (s.k === '6a') { var g = document.createElement('li'); g.className = 'grp'; g.textContent = '6 · Exposición del año siguiente, 15–64'; rail.appendChild(g); }
+    var li = document.createElement('li'); li.className = 'st ' + s.f; li.id = 'st' + k;
+    li.innerHTML = '<span class="code">' + s.k + '</span><span>' + s.name + '</span>'; rail.appendChild(li);
+  });
+  $('#legend').innerHTML = STATES.map(function (s) { return '<span><i class="sw" style="background:var(--' + s.toLowerCase() + ')"></i>' +
+    { N0: 'N0 no bebe, historia desconocida', FD: 'FD exbebedor', C1: 'C1', C2: 'C2', C3: 'C3+' }[s] + '</span>'; }).join('') +
+    '<span>' + IC.hed + 'HED</span><span>' + IC.scr + 'tamizado</span><span>' + IC.pos + 'positivo</span><span>' + IC.bi0 +
+    'IB de S0 (ya en los datos)</span><span>' + IC.bin + 'IB nueva</span><span>' + ring(2 / 3) + 'efecto que queda</span><span>' + IC.lock + 'consumo congelado (65+)</span>';
+}
+function badges(p, br, b) {
+  if (!p.alive) return IC.dead;
+  if (p.gone) return '';
+  var h = '';
+  if (p.age >= 65) h += IC.lock;
+  if (br.hed) h += IC.hed;
+  if (br.scr) h += IC.scr;
+  if (br.pos) h += IC.pos;
+  if (br.bi) h += (b === 'sc' && br.newBi) ? IC.bin : IC.bi0;
+  if (b === 'sc' && br.biK != null) h += ring(W[br.biK]);
+  return h;
+}
+function paint(i, b) {
+  var p = slots[i], br = p[b], el = cells[b][i], col = 'var(--' + br.state.toLowerCase() + ')';
+  el.root.classList.toggle('dead', !p.alive);
+  el.root.classList.toggle('gone', p.gone);
+  el.root.classList.toggle('new', p.justIn && !instant);
+  if (el.last && el.last !== br.state && !instant && p.alive && !p.gone) {
+    el.root.classList.remove('chg'); void el.root.offsetWidth; el.root.classList.add('chg');
+  }
+  el.last = br.state;
+  el.head.style.fill = col; el.body.style.fill = col;
+  el.body.setAttribute('d', p.sex === 'M' ? BODY_F : BODY_M);
+  el.age.textContent = p.gone ? 'salió' : p.alive ? p.age + ' a' : 'murió';
+  var live = p.alive && !p.gone;
+  el.bar.style.width = live ? Math.min(100, br.g / 120 * 100) + '%' : '0';
+  el.gval.textContent = live ? (br.g > 0 ? Math.round(br.g) + ' g' : SHOW[br.state]) : '';
+  el.badges.innerHTML = badges(p, br, b);
+  el.root.title = p.name + ', ' + p.age + ' años, ' + SHOW[br.state] + (br.g > 0 ? ', ' + fmt(br.g, 1) + ' g/día' : '') + (br.hed ? ', HED' : '');
+}
+function paintAll() { for (var i = 0; i < N; i++) { names[i].textContent = slots[i].name; paint(i, 's0'); paint(i, 'sc'); } updateTally(); }
+function renderYear() {
+  $('#year').textContent = Math.min(year, END);
+  var h = ''; for (var y = START; y <= END; y++) h += '<i class="' + (y < year ? 'past' : y === year ? 'now' : '') + '" title="' + y + '"></i>';
+  $('#yticks').innerHTML = h;
+}
+function setRail(k) { STEPS.forEach(function (_, j) { $('#st' + j).classList.toggle('on', j === k); }); }
+function narr(step, title, text) { $('#nstep').textContent = step; $('#ntitle').textContent = title; $('#ntext').textContent = text; }
+function detail(html) { $('#ndetail').innerHTML = html; }
+function mix(b) {
+  var c = { N0: 0, FD: 0, C1: 0, C2: 0, C3: 0 }, n = 0;
+  slots.forEach(function (p) { if (p.alive && !p.gone) { c[p[b].state]++; n++; } });
+  return STATES.map(function (s) { return c[s] ? '<i style="width:' + (c[s] / n * 100) + '%;background:var(--' + s.toLowerCase() + ')" title="' + SHOW[s] + ': ' + c[s] + '"></i>' : ''; }).join('');
+}
+function updateTally() {
+  $('#tally').innerHTML =
+    '<h3>Este año</h3><table><tr><th></th><th>S0</th><th>Escenario</th></tr>' +
+    '<tr><td>IB entregadas</td><td>' + ys.bi0 + '</td><td class="sc">' + ys.biS + '</td></tr>' +
+    '<tr><td>IB nuevas, con efecto</td><td>–</td><td class="sc">' + ys.newBi + '</td></tr>' +
+    '<tr><td>PIF</td><td colspan="2" class="sc">' + (ys.pif == null ? '–' : pct(ys.pif)) + '</td></tr></table>' +
+    '<h3>Acumulado desde 2025</h3><dl class="big"><dt>IB nuevas</dt><dd>' + acc.newBi + '</dd>' +
+    '<dt>Muertes esperadas evitadas</dt><dd>' + fmt(acc.deaths, 1) + '</dd>' +
+    '<dt>Años de vida perdidos evitados</dt><dd>' + fmt(acc.yll, 0) + '</dd></dl>' +
+    '<h3>Estados hoy</h3><div class="mix"><span>S0</span><div class="bar">' + mix('s0') + '</div><span>Escenario</span><div class="bar">' + mix('sc') + '</div></div>';
+}
+
+// ---------- timing ----------
+function Cancel() {}
+function sleep(ms) {
+  var e = epoch;
+  return new Promise(function (res, rej) {
+    if (instant || ms <= 0) return res();
+    setTimeout(function () { e === epoch ? res() : rej(new Cancel()); }, (reduce ? ms * .5 : ms) / speed);
+  });
+}
+function gate() {
+  var e = epoch;
+  return new Promise(function (res, rej) {
+    (function check() {
+      if (e !== epoch) return rej(new Cancel());
+      if (playing || stepRequested) { stepRequested = false; return res(); }
+      setTimeout(check, 80);
+    })();
+  });
+}
+function face(i, f) { dice[i].pips.forEach(function (b, k) { b.classList.toggle('v', FACES[f].indexOf(k) >= 0); }); }
+function clearDice() { dice.forEach(function (d) { d.die.classList.remove('on', 'rolling'); d.u.textContent = ''; }); }
+function roll(us, label) {
+  $('#dicelab').textContent = label;
+  var idx = [];
+  us.forEach(function (u, i) { var on = u != null; dice[i].die.classList.toggle('on', on); dice[i].u.textContent = ''; if (on) idx.push(i); });
+  var finish = function () {
+    idx.forEach(function (i) { dice[i].die.classList.remove('rolling'); face(i, Math.min(6, 1 + Math.floor(us[i] * 6))); dice[i].u.textContent = fmt(us[i]); });
+  };
+  if (instant || reduce || !idx.length) { finish(); return sleep(350); }
+  idx.forEach(function (i) { dice[i].die.classList.add('rolling'); });
+  var iv = setInterval(function () { idx.forEach(function (i) { face(i, 1 + Math.floor(Math.random() * 6)); }); }, 90);
+  return sleep(750).then(function () { clearInterval(iv); finish(); return sleep(400); }, function (err) { clearInterval(iv); throw err; });
+}
+function active(i) { var p = slots[i]; return p.alive && !p.gone && p.age < 65; }
+function F() { return slots[0]; }
+function yn(x) { return x ? 'sí' : 'no'; }
+
+// ---------- the eleven steps ----------
+var RUN = [
+  function s1() {
+    ys = { bi0: 0, biS: 0, newBi: 0, pif: null };
+    slots.forEach(function (p) { ['s0', 'sc'].forEach(function (b) { var br = p[b]; br.scr = br.pos = br.bi = br.newBi = false; }); p.justIn = false; });
+    aliveStart = slots.map(function (p) { return p.alive && !p.gone; });
+    clearDice(); $('#dicelab').textContent = 'dados'; paintAll();
+    var f = F();
+    detail('<b>' + f.name + '</b>, ' + f.age + ' años: ' + SHOW[f.s0.state] + (f.s0.g ? ' con ' + fmt(f.s0.g, 0) + ' g/día' : '') + ' en S0 y ' +
+      SHOW[f.sc.state] + (f.sc.g ? ' con ' + fmt(f.sc.g, 1) + ' g/día' : '') + ' en el escenario.');
+    return sleep(1100);
+  },
+  function s2() {
+    var us = slots.map(function (p) { return p.alive && !p.gone ? rng() : null; });
+    var f = F(), q = qDeath(f.age);
+    return roll(us, 'dado: ¿muere?').then(function () {
+      var died = [];
+      slots.forEach(function (p, i) { if (us[i] != null && us[i] < qDeath(p.age)) { p.alive = false; died.push(p.name); } });
+      paintAll();
+      detail((us[0] != null ? '<b>' + f.name + '</b>: dado <span class="num">' + fmt(us[0]) + '</span>; riesgo de morir este año <span class="num">' + fmt(q, 3) +
+        '</span>. ' + (us[0] < q ? 'Sale menor: muere' : 'Sale mayor: sigue con vida') + ' en S0 y en el escenario. ' : '') +
+        (died.length ? 'Este año murieron: ' + died.join(', ') + '.' : 'Nadie murió este año.'));
+      return sleep(900);
+    });
+  },
+  function s3() {
+    var a0 = 0, a1 = 0, ages = 0, n = 0;
+    slots.forEach(function (p, i) { if (!aliveStart[i]) return; a0 += rrOf(p.s0); a1 += rrOf(p.sc); ages += p.age; n++; });
+    var pif = a0 > 0 ? 1 - a1 / a0 : 0, av = DREF * pif, e = eRes(ages / n), yll = av * e;
+    ys.pif = pif; acc.deaths += av; acc.yll += yll; updateTally();
+    detail('PIF = 1 − ' + '<span class="num">' + fmt(a1) + '</span> / <span class="num">' + fmt(a0) + '</span> = <b>' + pct(pif) + '</b>. ' +
+      'Muertes esperadas evitadas = 1.000 × ' + pct(pif) + ' = <b>' + fmt(av, 1) + '</b>. ' +
+      'Años de vida perdidos evitados ≈ ' + fmt(av, 1) + ' × ' + fmt(e, 1) + ' años que les quedaban = <b>' + fmt(yll, 0) + '</b>. ' +
+      (year === START ? 'Todavía no hay IB nuevas, así que la PIF es 0; en este ejemplo la IB actúa desde el año siguiente (en el modelo es una decisión pendiente). ' : '') +
+      '<br><span class="note">1.000 = muertes de referencia por causas ligadas al alcohol en el año; los riesgos relativos y la tabla de vida son de juguete.</span>');
+    return sleep(2200);
+  },
+  function s4() {
+    var froze = [];
+    slots.forEach(function (p) { if (p.alive && !p.gone) { p.age++; if (p.age === 65) froze.push(p.name); } });
+    paintAll();
+    detail((froze.length ? 'Cumplen 65 y su consumo basal queda congelado: ' + froze.join(', ') + '. ' : '') +
+      (!froze.length ? 'Todos suman un año. ' : '') + (F().alive && !F().gone ? '<b>' + F().name + '</b> ahora tiene ' + F().age + '.' : ''));
+    return sleep(1100);
+  },
+  function s5() {
+    var empty = slots.map(function (p) { return !p.alive || p.gone; });
+    var us = slots.map(function (p, i) { return empty[i] ? rng() : null; });
+    var go = us.some(function (u) { return u != null; }) ? roll(us, 'dado: consumo de quien entra') : sleep(200);
+    return go.then(function () {
+      var inn = [];
+      slots.forEach(function (p, i) {
+        if (!empty[i]) return;
+        var sex = rng() < .5 ? 'M' : 'H', s = pick(ENTRY, us[i]);
+        var np = makePerson(NEW_NAMES[nameIdx++ % NEW_NAMES.length], sex, 15, s);
+        np.justIn = true; slots[i] = np; cells.s0[i].last = null; cells.sc[i].last = null; inn.push(np.name + ' (15 años, ' + SHOW[s] + ')');
+      });
+      paintAll();
+      detail(inn.length ? 'Entran para cuadrar con el INE: ' + inn.join(', ') + '. En el ejemplo ocupan los lugares que quedaron libres.' :
+        'No hay lugares libres en el ejemplo: este año nadie entra.');
+      return sleep(1000);
+    });
+  },
+  function s6a() {
+    var us = slots.map(function (p, i) { return active(i) ? rng() : null; });
+    return roll(us, 'dado: estado del año siguiente').then(function () {
+      slots.forEach(function (p, i) {
+        if (!active(i)) return;
+        ['s0', 'sc'].forEach(function (b) { var br = p[b]; br.prev = br.state; br.state = pick(TRANS[br.state], us[i]); if (!drinker(br.state)) { br.gBase = 0; br.g = 0; br.hed = false; } });
+      });
+      paintAll();
+      var f = F();
+      detail(active(0) ? '<b>' + f.name + '</b>: dado <span class="num">' + fmt(us[0]) + '</span>. S0: ' + SHOW[f.s0.prev] + ' → ' + SHOW[f.s0.state] +
+        '. Escenario: ' + SHOW[f.sc.prev] + ' → ' + SHOW[f.sc.state] + '.' :
+        '<b>' + f.name + '</b> tiene ' + f.age + ' años: no tira este dado.');
+      return sleep(900);
+    });
+  },
+  function s6b() {
+    var us = slots.map(function (p, i) { return active(i) ? rng() : null; });
+    return roll(us, 'dado: gramos por día').then(function () {
+      slots.forEach(function (p, i) { if (!active(i)) return; ['s0', 'sc'].forEach(function (b) { var br = p[b]; br.gBase = drawG(p.sex, br.state, us[i]); br.g = br.gBase; }); });
+      paintAll();
+      var f = F();
+      detail(active(0) ? '<b>' + f.name + '</b>: dado <span class="num">' + fmt(us[0]) + '</span> → ' + f.s0.gBase + ' g/día en S0 y ' + f.sc.gBase +
+        ' g/día en el escenario, antes de aplicar el efecto de la IB.' : '<b>' + f.name + '</b> no tira este dado.');
+      return sleep(900);
+    });
+  },
+  function s6c() {
+    var sc = SC[scen], f = F(), lines = [];
+    var u1 = slots.map(function (p, i) { return active(i) ? rng() : null; });
+    return roll(u1, 'dado 1: ¿AUDIT?').then(function () {
+      slots.forEach(function (p, i) { if (u1[i] == null) return; p.s0.scr = u1[i] < S0.screen; p.sc.scr = u1[i] < sc.screen; });
+      paintAll();
+      if (u1[0] != null) lines.push('Tamizaje: dado <span class="num">' + fmt(u1[0]) + '</span> → S0 ' + yn(f.s0.scr) + ' (umbral ' + fmt(S0.screen) + '), escenario ' + yn(f.sc.scr) + ' (umbral ' + fmt(sc.screen) + ').');
+      var u2 = slots.map(function (p, i) { return u1[i] != null && (p.s0.scr || p.sc.scr) ? rng() : null; });
+      if (!u2.some(function (u) { return u != null; })) return null;
+      return roll(u2, 'dado 2: ¿positivo?').then(function () {
+        slots.forEach(function (p, i) { if (u2[i] == null) return; p.s0.pos = p.s0.scr && u2[i] < pPos(p.s0.gBase); p.sc.pos = p.sc.scr && u2[i] < pPos(p.sc.gBase); });
+        paintAll();
+        if (u2[0] != null) lines.push('Positivo: dado <span class="num">' + fmt(u2[0]) + '</span> frente a ' + fmt(pPos(f.sc.gBase)) + ' → ' + yn(f.sc.pos) + '.');
+        var u3 = slots.map(function (p, i) { return u2[i] != null && (p.s0.pos || p.sc.pos) ? rng() : null; });
+        if (!u3.some(function (u) { return u != null; })) return null;
+        return roll(u3, 'dado 3: ¿recibe IB?').then(function () {
+          slots.forEach(function (p, i) { if (u3[i] == null) return; p.s0.bi = p.s0.pos && u3[i] < S0.bi; p.sc.bi = p.sc.pos && u3[i] < sc.bi; p.sc.newBi = p.sc.bi && !p.s0.bi; });
+          if (u3[0] != null) lines.push('IB: dado <span class="num">' + fmt(u3[0]) + '</span> → S0 ' + yn(f.s0.bi) + ' (umbral 0,52), escenario ' + yn(f.sc.bi) + ' (umbral ' + fmt(sc.bi) + ')' + (f.sc.newBi ? ': <b>IB nueva</b>.' : '.'));
+          return null;
+        });
+      });
+    }).then(function () {
+      slots.forEach(function (p) { if (p.s0.bi) ys.bi0++; if (p.sc.bi) ys.biS++; if (p.sc.newBi) { ys.newBi++; acc.newBi++; } });
+      paintAll();
+      detail((lines.length ? '<b>' + f.name + '</b>. ' + lines.join(' ') : '<b>' + f.name + '</b> no entra a la cascada este año.') +
+        ' <br>Este año: ' + ys.bi0 + ' IB en S0 y ' + ys.biS + ' en el escenario; ' + ys.newBi + ' son nuevas.');
+      return sleep(1100);
+    });
+  },
+  function s6d() {
+    var news = [];
+    slots.forEach(function (p) {
+      if (!p.alive || p.gone) return;
+      var br = p.sc;
+      if (br.newBi) { br.biK = 0; news.push(p.name); }
+      else if (br.biK != null) { br.biK++; if (br.biK >= W.length) br.biK = null; }
+      br.g = br.biK == null ? br.gBase : Math.round(br.gBase * (1 - R * W[br.biK]) * 10) / 10;
+      p.s0.g = p.s0.gBase;
+    });
+    paintAll();
+    var f = F(), w = f.sc.biK == null ? 0 : W[f.sc.biK];
+    detail('IB nuevas este año: ' + (news.length ? news.join(', ') : 'ninguna') + '. <b>' + f.name + '</b>: ' +
+      (w ? 'efecto al ' + fmt(w * 100, 0) + ' %: ' + f.sc.gBase + ' → ' + fmt(f.sc.g, 1) + ' g/día.' : 'sin efecto activo de IB.') +
+      ' El dado de gramos (6b) no sabe de la IB: este paso vuelve a aplicar el efecto que queda.');
+    return sleep(1300);
+  },
+  function s6e() {
+    slots.forEach(function (p, i) { if (active(i)) p.z = RHO * p.z + Math.sqrt(1 - RHO * RHO) * gauss(); });
+    var us = slots.map(function (p, i) { return active(i) ? rng() : null; });
+    return roll(us, 'dado: ¿HED?').then(function () {
+      slots.forEach(function (p, i) { if (!active(i)) return; ['s0', 'sc'].forEach(function (b) { p[b].hed = us[i] < pHed(p[b].g, p.z); }); });
+      paintAll();
+      var f = F();
+      detail(active(0) ? '<b>' + f.name + '</b>: dado <span class="num">' + fmt(us[0]) + '</span>; probabilidad de HED ' + pct(pHed(f.s0.g, f.z)) + ' en S0 y ' +
+        pct(pHed(f.sc.g, f.z)) + ' en el escenario → ' + yn(f.s0.hed) + ' / ' + yn(f.sc.hed) + '.' : '<b>' + f.name + '</b> no tira este dado.');
+      return sleep(900);
+    });
+  },
+  function s6f() {
+    var drop = [];
+    slots.forEach(function (p) {
+      if (!p.alive || p.gone) return;
+      ['s0', 'sc'].forEach(function (b) { var br = p[b]; if (drinker(br.state)) { br.prev = br.state; br.state = stateFromG(p.sex, br.g); } });
+      if (p.sc.state !== p.s0.state && STATES.indexOf(p.sc.state) < STATES.indexOf(p.s0.state) && p.sc.biK != null) drop.push(p.name);
+    });
+    paintAll();
+    var f = F();
+    detail('<b>' + f.name + '</b>: ' + SHOW[f.s0.state] + ' en S0 y ' + SHOW[f.sc.state] + ' en el escenario. ' +
+      (drop.length ? 'Por la IB bajan de categoría: ' + drop.join(', ') + '.' : 'Nadie cambia de categoría por la IB este año.'));
+    return sleep(1000);
+  }
+];
+
+function runStep(k) {
+  setRail(k);
+  clearDice(); $('#dicelab').textContent = 'dados';
+  narr('Año ' + year + ' · paso ' + STEPS[k].k, STEPS[k].name, STEPS[k].text);
+  return RUN[k]();
+}
+function advance() { stepIdx++; if (stepIdx >= STEPS.length) { stepIdx = 0; year++; renderYear(); } }
+function finish() {
+  done = true; playing = false; setRail(-1); clearDice(); syncButtons();
+  narr('Fin · 2025–2034', 'Diez años simulados', 'Con otros dados el resultado cambia. Por eso el modelo repite muchas réplicas y reporta el promedio y su variación.');
+  detail(SC[scen].lab + ': <b>' + acc.newBi + '</b> IB nuevas, <b>' + fmt(acc.deaths, 1) + '</b> muertes esperadas evitadas y <b>' +
+    fmt(acc.yll, 0) + '</b> años de vida perdidos evitados. Valores de juguete.');
+}
+function runner() {
+  var e = epoch;
+  (function loop() {
+    if (e !== epoch) return;
+    if (year > END) return finish();
+    gate().then(function () { return runStep(stepIdx); }).then(function () { advance(); loop(); }, function (err) { if (!(err instanceof Cancel)) console.error(err); });
+  })();
+}
+function syncButtons() {
+  $('#play').textContent = done ? 'Terminado' : playing ? 'Pausar' : 'Reproducir';
+  $('#play').disabled = done; $('#next').disabled = done; $('#skip').disabled = done;
+}
+function reset(newSeed) {
+  epoch++; seed = newSeed; rng = mulberry32(seed); nameIdx = 0; year = START; stepIdx = 0; done = false; instant = false;
+  acc = { newBi: 0, deaths: 0, yll: 0 }; ys = { bi0: 0, biS: 0, newBi: 0, pif: null };
+  slots = PEOPLE.map(function (d) { return makePerson(d[0], d[1], d[2], d[3]); });
+  aliveStart = slots.map(function () { return true; });
+  cells.s0.forEach(function (c) { c.last = null; }); cells.sc.forEach(function (c) { c.last = null; });
+  $('#sclab').textContent = scen; $('#scsub').textContent = SC[scen].lab.split(' · ')[1];
+  clearDice(); setRail(-1); renderYear(); paintAll(); syncButtons();
+  narr('Antes de empezar', 'Seguimos a ' + slots[0].name, slots[0].name + ' tiene ' + slots[0].age + ' años y está marcada en verde. La narración muestra sus dados en cada paso. Nadie empieza con más de 64 años: Jorge (64) y Rosa (61) cumplirán 65 durante la simulación y desde ahí su consumo basal queda congelado. En 2034 la persona mayor tendrá 73.');
+  detail('');
+  runner();
+}
+function skipToEnd() {
+  epoch++; instant = true; playing = false;
+  var e = epoch;
+  (function loop() {
+    if (e !== epoch) return;
+    if (year > END) { instant = false; paintAll(); return finish(); }
+    runStep(stepIdx).then(function () { advance(); loop(); });
+  })();
+}
+
+$('#play').addEventListener('click', function () { playing = !playing; syncButtons(); });
+$('#next').addEventListener('click', function () { if (playing) { playing = false; syncButtons(); } stepRequested = true; });
+$('#skip').addEventListener('click', skipToEnd);
+$('#reroll').addEventListener('click', function () { playing = !reduce; reset((Math.random() * 1e9) | 0); });
+$('#scen').addEventListener('change', function (ev) { scen = ev.target.value; reset(seed); });
+$('#speed').addEventListener('change', function (ev) { speed = parseFloat(ev.target.value); });
+
+build();
+reset(seed);
+if (!reduce) setTimeout(function () { if (!done && year === START && stepIdx === 0) { playing = true; syncButtons(); } }, 1800);
+})();
+</script>

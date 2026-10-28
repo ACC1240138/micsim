@@ -1,0 +1,3 @@
+"moments","minimum_distance","n_moments","parameters","p_value","best_r1","best_phi","bootstrap_replicates"
+"all five distances",7.25201926218833,5,2,0.0642844421912561,0.3,0.95,1000
+"without the 24-month pair",2.15585825373538,4,2,0.34029951357811,0.31,1,1000

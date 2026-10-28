@@ -1,0 +1,8 @@
+"estimate","description","pairs","rho","lower","upper"
+"adjacent_IPW","Adjacent pairs, engine margin, IPW (primary)",1599,0.326893842716362,0.142686339041997,0.459698812751064
+"adjacent_unweighted","Adjacent pairs, engine margin, no IPW",1599,0.267097136579726,0.156625579355505,0.353192063981044
+"adjacent_bands","Adjacent pairs, saturated frequency x quantity margin, IPW",1599,0.284265254822051,0.0922355666686044,0.410949098736017
+"adjacent_frequent","Adjacent pairs, drinkers 2+ times a month at both rounds, IPW",599,0.371456906900051,0.143092117650448,0.522682622423119
+"adjacent_monthly","Adjacent pairs, 6+ drinks monthly or more often (prevalence about 9%), IPW",1599,0.00253001199931766,-0.246992499621817,0.19705242537098
+"IPW_minus_unweighted","Effect of the IPW weights on the adjacent estimate",1599,0.0597967061366365,-0.0839602007111315,0.170298939500552
+"joint_ML","Margin and rho in one likelihood (GJRM-type core), point only",1599,0.335162534105097,,

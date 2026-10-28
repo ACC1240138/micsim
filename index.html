@@ -35,6 +35,9 @@
     .note { border-left: 3px solid #d0d7de; padding: 2px 0 2px 20px; margin: 24px 0; font-size: 15px; color: #555; }
     .note p:last-child { margin-bottom: 0; }
     .references { font-size: 15px; }
+    figure { margin: 24px 0; }
+    figure img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+    figcaption { margin-top: 10px; color: var(--muted); font-size: 14px; line-height: 1.6; }
     footer { border-top: 1px solid var(--rule); padding: 28px 0 48px; font-size: 13px; line-height: 1.7; color: var(--muted); }
     @media (max-width: 600px) { header { padding-top: 42px; } .column { width: calc(100% - 36px); } h2 { font-size: 24px; } main { font-size: 16px; } .subtitle { font-size: 19px; } }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -105,7 +108,15 @@
       <p>Start with the <a href="README.md">repository README</a> and <a href="INSTALL.md">environment setup</a>. Source documentation is available for <a href="_eps/README.md">EPS</a>, <a href="_tsm/README.md">TSM</a>, <a href="_enpg/README.md">ENPG</a>, <a href="_elsoc/README.md">ELSOC</a>, <a href="_deis/README.md">DEIS</a> and <a href="_epf/README.md">EPF</a>. Microdata are stored as encrypted bundles; the reports linked here are rendered analysis outputs.</p>
       <p class="references">Microsimulation architecture reference: Kilian et al. (2025), <a href="https://doi.org/10.1016/S2468-2667(25)00165-3">Targeting alcohol use in high-risk population groups: a US microsimulation study of beverage-specific pricing policies</a>; <a href="https://doi.org/10.5281/zenodo.15641639">SIMAH implementation, release 0.1.1</a>. Adaptation requires Chilean data and assumptions.</p>
     </section>
+    <section id="study-design">
+      <h2>Proposed study design</h2>
+      <p>The diagram brings together the planned analysis of alcohol-use dynamics and the proposed microsimulation of the DIR programme. Select it to view the full-size image.</p>
+      <figure>
+        <a href="__andres_control/figures_paper_outline/Fig1_study_design.png"><img src="__andres_control/figures_paper_outline/Fig1_study_design.png" alt="Proposed study design linking alcohol-use transitions and data inputs to a dynamic microsimulation of the DIR programme." loading="lazy"></a>
+        <figcaption>Working schematic: some components are proposed or depend on external assumptions. Counts and specifications in the figure should be checked against the latest analysis before use.</figcaption>
+      </figure>
+    </section>
   </main>
-  <footer><div class="column">FONDECYT Regular 1240138 · Index updated 26 October 2026.<br>Layout inspired by the project’s <a href="https://github.com/FONDECYTACC/polysubstance-treatment-chile/blob/main/index.html">Distill-style research index</a>. This page has no external assets; linked reports remain separate files.</div></footer>
+  <footer><div class="column">FONDECYT Regular 1240138 · Index updated 26 October 2026.<br>Layout inspired by the project’s <a href="https://github.com/FONDECYTACC/polysubstance-treatment-chile/blob/main/index.html">Distill-style research index</a>. The figure and linked reports are separate files.</div></footer>
 </body>
 </html>

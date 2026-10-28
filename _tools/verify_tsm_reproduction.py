@@ -23,8 +23,12 @@ import nbformat
 ROOT = next(p for p in Path(__file__).resolve().parents if (p / ".acc_root").is_file())
 REPORTS = ROOT / "__andres_control"
 NOTEBOOK = "TSM_ENPG_v4_EN.ipynb"
-SOURCES = {"data_sha256": "tsm_markov_data.R", "models_sha256": "tsm_markov_models.R",
-           "sections_sha256": "tsm_markov_sections.R", "narrative_sha256": "TSM_ENPG_v4_EN.md"}
+REPRODUCTION_COPY = "TSM_ENPG_v4_EN_repro_dry.ipynb"   # executed copy for the second run (excluded from Quarto rendering)
+
+
+def code_digest(doc):
+    # The notebook is the single source since 2026-10-27, so its code cells (not the former R files) are hashed.
+    return hashlib.sha256("\n".join(c.source for c in doc.cells if c.cell_type == "code").encode("utf-8")).hexdigest()
 
 
 def digest(path):
@@ -78,9 +82,10 @@ def main():
     assert code and all(c.execution_count is not None for c in code), NOTEBOOK + ": incomplete execution"
     assert not any(o.output_type == "error" for c in code for o in c.outputs), NOTEBOOK + ": execution error"
     assert len({c.execution_count for c in code}) == len(code), NOTEBOOK + ": repeated execution counts"
-    for key, source in SOURCES.items():
-        current = hashlib.sha256((REPORTS / source).read_text(encoding="utf-8").encode("utf-8")).hexdigest()
-        assert doc.metadata.tsm_revision[key] == current, f"{NOTEBOOK}: {source} drift"
+    notebook_code = code_digest(doc)
+    copy = REPORTS / REPRODUCTION_COPY
+    if copy.exists():
+        assert code_digest(nbformat.read(copy, as_version=4)) == notebook_code, "Reproduction copy runs different code"
     first_time = datetime.fromisoformat(code[0].metadata.execution["iopub.status.busy"].replace("Z", "+00:00"))
     last_time = datetime.fromisoformat(code[-1].metadata.execution["iopub.status.idle"].replace("Z", "+00:00"))
     minutes = (last_time - first_time).total_seconds() / 60
@@ -135,6 +140,15 @@ def main():
                 support = f"; {row['support']}, n={row['n_origin']}" if source == "TSM" and row.get("n_origin") else ""
                 bits.append(f"{source} {state} {float(row['estimate']):.3f} [{fmt(row, 'lower')}, {fmt(row, 'upper')}{support}]")
         cross_lines.append(f"  - {model}: " + "; ".join(bits))
+    hed = {r["estimate"]: r for r in read_csv(first / "hed_persistence_adjacent.csv")}["adjacent_IPW"]
+    ranges = {r["quantity"]: r for r in read_csv(first / "hed_persistence_ranges.csv") if r["moments"] == "all five distances"}
+    engine = next(r for r in read_csv(first / "hed_persistence_scenarios.csv") if r["scenario"].startswith("Current engine"))
+    r1, phi = ranges["r1 (profile 95%)"], ranges["phi (profile 95%)"]
+    hed_line = (f"- **HED persistence beyond volume (exploratory):** adjacent latent correlation {float(hed['rho']):.2f} "
+                f"[{float(hed['lower']):.2f}, {float(hed['upper']):.2f}]; supported effective one-year correlation r(1) "
+                f"{float(r1['lower']):.2f} to {float(r1['upper']):.2f}; yearly retention phi {float(phi['lower']):.2f} to "
+                f"{float(phi['upper']):.2f} (weakly identified). The current engine (0.8, 0.8) is {engine['TSM_support']}; "
+                "correlations beyond 24 months are scenarios.")
     summary = (
         "## Saved results: quick reading\n\n"
         f"- **Best average score:** {decision['best_logloss']} by log loss; {decision['best_brier']} by Brier. "
@@ -145,7 +159,7 @@ def main():
         f"- **Exploratory annualization:** for {worst['model']}, restarts at the primary penalty change an individual annual probability by up to {annual_start_pp:.1f} percentage points; "
         f"exploring penalties as well raises this to {annual_max_pp:.1f}. This is not yet a stable annual engine.\n"
         "- **EPS cross-check (annual staying probabilities, external consistency only; EPS C3 and C4 merged with origin-pair weights):**\n"
-        + "\n".join(cross_lines) + "\n\n"
+        + "\n".join(cross_lines) + "\n" + hed_line + "\n\n"
         "This summary is generated from verified tables after notebook execution."
     )
     text = (
@@ -153,7 +167,7 @@ def main():
         f"The notebook ran twice in **fresh R kernels**, with {len(code)} completed code cells and no errors. "
         f"All **{n} CSV files ({numerical_rows:,} aggregate rows)** are byte-identical between the main run and the reproduction. "
         "They include 1,000 whole-person replicates with refitted IPW.\n\n"
-        "The external verifier checked the embedded source hashes, exported results and every recorded R check. "
+        "The external verifier checked that both runs used the same notebook code, the exported results and every recorded R check. "
         "This cell reports that subsequent verification; it does not simulate another execution. "
         "Figures were inspected separately. Model assumptions and external validity still require assessment.\n\n"
         "[Review report](__andres_control/tsm_v3_review.md) · [File comparison](__andres_control/tsm_markov_outputs_v4/reproducibility_check.csv)"
@@ -169,7 +183,7 @@ def main():
     report = ["# TSM v4 reproducibility check", "", "Status: **PASS**", "",
               f"- Independent fresh R sessions: 2 (one language); completed code cells: {len(code)}.",
               f"- Byte-identical aggregate CSV files: {n}; aggregate rows: {numerical_rows}.",
-              "- Source SHA256 in notebook metadata: " + ", ".join(f"{k} `{doc.metadata.tsm_revision[k]}`" for k in SOURCES) + ".",
+              f"- SHA256 of the notebook code cells (the single source since 2026-10-27): `{notebook_code}`.",
               f"- Main execution: {minutes:.2f} minutes; final cell completed {last_time.isoformat()}.",
               "- Person replicates: 1000; every replicate succeeded.",
               "- Every recorded real-data R check passed; the notebook contains no error output.",
@@ -179,9 +193,9 @@ def main():
         report.append(f"- Rendered HTML: all assets embedded; {render['embedded_images']} embedded images; {render['mathml_display_equations']} MathML display equations (`render_validation.json`).")
     report += ["", f"Scientific sensitivity: for {worst['model']}, annual probabilities differ by up to {annual_start_pp:.1f} percentage points across restarts at the primary penalty, and {annual_max_pp:.1f} across the combined penalty/start grid. Computational PASS does not resolve this instability. The EPS cross-check is external consistency, not validation.", "",
                "Reproduce from the project root after obtaining the encrypted data key through the usual local environment:", "",
-               "```text", "python _tools/build_tsm_markov_notebook.py",
+               "```text", "copy __andres_control/TSM_ENPG_v4_EN.ipynb to __andres_control/" + REPRODUCTION_COPY,
                "python _tools/execute_eps_notebook.py __andres_control/TSM_ENPG_v4_EN.ipynb --output-env TSM_MARKOV_OUTPUT",
-               "python _tools/execute_eps_notebook.py __andres_control/TSM_ENPG_v4_EN.ipynb --output-env TSM_MARKOV_OUTPUT --output-dir .quarto/tsm_markov_reproduction_v4_en",
+               "python _tools/execute_eps_notebook.py __andres_control/" + REPRODUCTION_COPY + " --output-env TSM_MARKOV_OUTPUT --output-dir .quarto/tsm_markov_reproduction_v4_en",
                "python _tools/verify_tsm_reproduction.py", "```", "",
                "Use the project's existing R/renv and Python notebook environment. Optional process affinity is a local runtime argument, not a project default.",
                "This verifies computational reproduction, not external validation or the truth of the statistical assumptions.", ""]

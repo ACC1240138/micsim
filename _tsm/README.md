@@ -41,4 +41,4 @@ Questionnaires R7–R10 (`Cuestionario R7.pdf` … `Cuestionario R10.pdf`): alco
 
 ## Notebook
 
-`__andres_control/TSM_ENPG_v3_EN.ipynb`, built from `__andres_control/tsm_markov_data.R` and `tsm_markov_models.R` by `_tools/build_tsm_markov_notebook.py`; aggregate outputs in `__andres_control/tsm_markov_outputs/`; plan in `__andres_control/tsm_v3_plan_2026-10-19.md`.
+`__andres_control/TSM_ENPG_v3_EN.ipynb`, built from `__andres_control/tsm_markov_data.R` and `tsm_markov_models.R` by `_tools/build_tsm_markov_notebook.py` (deleted 2026-10-27, in git history); aggregate outputs in `__andres_control/tsm_markov_outputs/`; plan in `__andres_control/tsm_v3_plan_2026-10-19.md`.

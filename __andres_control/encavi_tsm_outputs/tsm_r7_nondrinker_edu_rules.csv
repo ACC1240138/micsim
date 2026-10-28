@@ -1,0 +1,17 @@
+"lenient","reached","Freq"
+"Primary completed or less","Primary completed or less",156
+"Secondary completed or less","Primary completed or less",0
+"Tertiary completed or higher","Primary completed or less",0
+NA,"Primary completed or less",0
+"Primary completed or less","Secondary completed or less",106
+"Secondary completed or less","Secondary completed or less",370
+"Tertiary completed or higher","Secondary completed or less",0
+NA,"Secondary completed or less",0
+"Primary completed or less","Tertiary completed or higher",0
+"Secondary completed or less","Tertiary completed or higher",69
+"Tertiary completed or higher","Tertiary completed or higher",289
+NA,"Tertiary completed or higher",0
+"Primary completed or less",NA,0
+"Secondary completed or less",NA,0
+"Tertiary completed or higher",NA,0
+NA,NA,9

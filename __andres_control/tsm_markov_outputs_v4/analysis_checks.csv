@@ -56,3 +56,10 @@
 "Annual semigroup Gamma",TRUE
 "Annual stochastic matrix Lognormal",TRUE
 "Annual semigroup Lognormal",TRUE
+"HED copula: bivariate normal quadrature matches the closed form at the origin",TRUE
+"HED copula: bivariate normal quadrature factorizes at zero correlation",TRUE
+"HED copula: bivariate normal quadrature is symmetric in its two limits",TRUE
+"HED persistence: every multi-round pair belongs to the person bootstrap frame",TRUE
+"HED persistence: adjacent pairs rebuilt from the waves equal the v4 adjacent drinker pairs",TRUE
+"HED persistence: joint margin and copula likelihood converged",TRUE
+"HED persistence: the 95% region of (r1, phi) is not empty",TRUE

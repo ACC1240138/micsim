@@ -1,3 +1,6 @@
+# Since 2026-10-27 TSM_ENPG_v4_EN.ipynb is the single source of the TSM v4 analysis and is edited directly; this file no
+# longer builds it. It is still sourced by tsm_r7_r11_direct.R, tsm_r7_r11_comparators.R, encavi_tsm_explicado.R and the
+# tests. The notebook holds identical copies of these definitions (2026-10-26): a change on either side must be mirrored.
 .t0 <- Sys.time()
 # TSM version 4 data layer (version 3 plus five states, WHO borders and a two-year link tolerance, 2026-10-26): the v2 loader, observed history and adjacent pairs ported to the EPS engine conventions.
 # Contract: __andres_control/tsm_v3_plan_2026-10-19.md (decisions 1-9, 18, 19). Row-level objects stay in memory;

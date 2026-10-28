@@ -133,7 +133,7 @@ svg .dirx { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; st
       <span><i class="lg o"></i>Not in this paper</span>
       <span><em class="pend">to integrate</em> not yet in the engine</span>
     </div>
-    <p class="note"><span class="chg">v3</span> Estados N0 / FD / C1 / C2 / C3+. Escenarios S0–S3 (S4 retirado). Exposición 15–64 y mortalidad atribuible seguida hasta 79. Ruta A como base y ruta B como extensión fuera de este artículo. Cascada de 3 pasos calibrada a REM 2024. Factibilidad visible en bordes y leyenda.</p>
+    <p class="note"><span class="chg">v6</span> Nadie entra después de los 64; mortalidad atribuible hasta una edad máxima de 79 en 2025–2034 (salida a los 80); inicialización de mayores por precisar; Calvo/EPS queda como posible sensibilidad para la evolución del consumo en mayores, no integrado. <span class="chg">v4</span> Años de vida perdidos con tabla de vida (YPLL &lt; 75 solo para comparar); muertes de referencia DEIS 2012–2024; el efecto de la IB sigue decayendo después de los 65. <span class="chg">v3</span> Estados N0 / FD / C1 / C2 / C3+. Escenarios S0–S3 (S4 retirado). Entrada y exposición 15–64; la población de 2025 se sigue hasta 2034 aunque pase los 65. Ruta A como base y ruta B como extensión fuera de este artículo. Cascada de 3 pasos calibrada a REM 2024. Factibilidad visible en bordes y leyenda.</p>
   </header>
 
   <!-- ============ FIGURE A ============ -->
@@ -152,7 +152,7 @@ svg .dirx { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; st
           <div class="box o1"><span class="ttl">Population</span><span class="it s">INE stocks 2012–2034 by sex and single age: demographic reconciliation, not observed migration</span><span class="it s">APS enrolment validated by FONASA, Dec-2023: 9.43 M aged 15–64 (DIR denominator)</span></div>
         </div>
         <div class="in2">
-          <div class="box o2"><span class="ttl">Mortality</span><span class="it s">DEIS death records 2008–2022, ICD-10 groups (Shield 2025, Table S6)</span><span class="it x">RR by cause: WHO/InterMAHP; PUC/SENDA 2018 Table 5 for IHD and stroke (sensitivity); current, former-drinker and HED components</span><span class="it s">Check: AAF 2008–2022 (Ruiz-Tagle et al. 2026); injury PIF under HED reduction (Ruiz-Tagle et al., under review)</span></div>
+          <div class="box o2"><span class="ttl">Mortality</span><span class="it s">DEIS death records 2012–2024, ICD-10 groups (Shield 2025, Table S6)</span><span class="it x">RR by cause: WHO/InterMAHP; PUC/SENDA 2018 Table 5 for IHD and stroke (sensitivity); current, former-drinker and HED components</span><span class="it s">Check: AAF 2008–2022 (Ruiz-Tagle et al. 2026); injury PIF under HED reduction (Ruiz-Tagle et al., under review)</span></div>
           <div class="box o2"><span class="ttl">Intervention</span><span class="it s">DIR volumes: REM-A03/A27 2019–2024 (DEIS) on APS enrolment</span><span class="it x">BI effect: Kaner 2018 (−20 g/week); Manthey 2021; Chilean RCTs Barticevic 2021, Poblete 2017 (leaflet comparator)</span></div>
         </div>
 
@@ -160,16 +160,16 @@ svg .dirx { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; st
 
         <div class="rowlab">Analyses</div>
         <div class="box o1 ana link"><span class="ttl">Transition and persistence models</span><span class="it s">States: N0 (no current use, unknown history), FD (former drinker), C1, C2, C3+ (WHO g/day, sex-specific); by sex, age and education</span><span class="it s">Shrinkage matrices, two-part gamma / lognormal, ordinal; IPW for attrition; ENPG rank-matching (JRT) as comparator</span><span class="it x">Annual probabilities from ~4-y and ~6-m intervals via a continuous-time generator (time-homogeneity assumed)</span><span class="it x">HED: separate layer, latent AR(1) persistence (rho to validate)</span><span class="src">Time: 2012–2024 · Level: national, post-stratified</span></div>
-        <div class="box o2 ana"><span class="ttl">Discrete-time annual microsimulation of DIR scenarios</span><span class="it s">S0 fixed at REM 2024: 11.7% any AUDIT, REM positivity, 52% of AUDIT 8–15 get BI · S1 screening ×1.5 · S2 BI 52→80% · S3 both <em class="pend">to integrate</em></span><span class="it x">Only new BI gets an effect: −8% of g/day, full 1 y, 0 by year 3–4; HED changes through volume</span><span class="it x">Expected attributable deaths and YPLL (&lt;75) avoided = reference deaths × PIF (route A); current-state vs history-informed version <em class="pend">to integrate</em></span><span class="it o">Individual survival by scenario (route B): extension</span><span class="src">Time: 2025–2034 · Level: national, post-stratified (sex, age, education)</span></div>
+        <div class="box o2 ana"><span class="ttl">Discrete-time annual microsimulation of DIR scenarios</span><span class="it s">S0 fixed at REM 2024: 11.7% any AUDIT, REM positivity, 52% of AUDIT 8–15 get BI · S1 screening ×1.5 · S2 BI 52→80% · S3 both <em class="pend">to integrate</em></span><span class="it x">Only new BI gets an effect: −8% of g/day, full 1 y, 0 by year 3–4; HED changes through volume</span><span class="it x">Expected attributable deaths and years of life lost (YLL, life table) avoided = reference deaths × PIF (route A); current-state vs history-informed version <em class="pend">to integrate</em></span><span class="it o">Individual survival by scenario (route B): extension</span><span class="src">Time: 2025–2034 · Level: national, post-stratified (sex, age, education)</span></div>
 
         <div class="rowlab">Outputs</div>
         <div class="box o1">Annual probabilities of staying, reducing, escalating, stopping and resuming, by sex × age (× education), with uncertainty<br>Persistence of volume and HED; comparison with ENPG 2026 and across sources<br>Exported parameters for the microsimulation</div>
-        <div class="box o2">Alcohol-attributable deaths and YPLL avoided 2025–2034 per scenario, by sex, age and education<br>Sensitivity: effect size (50%, null, Kaner CI), scaling rule, RR source, transition model; Monte Carlo vs parameter uncertainty<br>YPLL avoided per 1,000 BIs by scenario</div>
+        <div class="box o2">Alcohol-attributable deaths and YLL avoided 2025–2034 per scenario, by sex, age and education<br>Sensitivity: effect size (50%, null, Kaner CI), scaling rule, RR source, transition model; Monte Carlo vs parameter uncertainty<br>YLL avoided per 1,000 BIs by scenario</div>
       </div></div>
       <figcaption>Estructura Aims → Inputs → Analyses → Outputs de SIMAH. La mortalidad entra en el objetivo 2 porque el objetivo 1 solo produce dinámica de consumo. El material JRT (AAF 2008–2022, PIF de lesiones) sirve de comprobación de la mortalidad basal; la Tabla 5 PUC/SENDA 2018 es sensibilidad de RR (D7 del 7-oct).</figcaption>
     </figure>
     <ul class="open">
-      <li>Edades: exposición 15–64; las transiciones de 15–17 se toman de 18–24 (supuesto, los paneles parten a los 18); mortalidad atribuible seguida hasta 79 con la exposición congelada a los 64; AVPP con corte fijo a los 75.</li>
+      <li>Edades: exposición 15–64; las transiciones de 15–17 se toman de 18–24 (supuesto, los paneles parten a los 18); nadie entra después de los 64; mortalidad atribuible hasta una edad máxima de 79 en 2025–2034, con el consumo basal congelado desde los 65 (muertes DEIS y RR de 65–79 por preparar; inicialización de mayores por precisar); años de vida perdidos con la tabla de vida HMD de Chile (yll_hmd, D12); AVPP antes de 75 solo para comparar con Lemp.</li>
       <li>Educación fija desde la entrada; el beneficio por educación se reporta bajo el supuesto de igual cobertura DIR entre niveles (REM no trae educación).</li>
     </ul>
   </section>
@@ -183,7 +183,7 @@ svg .dirx { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; st
           <h3>Data inputs</h3>
           <div class="mod"><span class="nm">1 · Population</span><span class="it s">ENPG × CASEN base population, ages 15–64</span><span class="it s">INE stocks: demographic reconciliation; entrants draw exposure from their ENPG cell</span></div>
           <div class="mod"><span class="nm">2 · Alcohol exposure</span><span class="it s">Annual transitions N0 / FD / C1 / C2 / C3+ from EPS and TSM; g/day within category from ENPG <em class="pend">to integrate</em></span><span class="it x">HED from volume + latent AR(1) rho</span></div>
-          <div class="mod m2"><span class="nm">3 · Mortality</span><span class="it s">DEIS deaths 2008–2022 as reference; AAF 2008–2022 as check</span><span class="it x">RR by cause (current, former drinker, HED); exposure frozen at 64, follow-up to 79 <em class="pend">to integrate</em></span></div>
+          <div class="mod m2"><span class="nm">3 · Mortality</span><span class="it s">DEIS deaths 2012–2024 as reference; AAF 2008–2022 as check</span><span class="it x">RR by cause (current, former drinker, HED); 2025 population followed to 2034 past age 65, exposure held from 65 <em class="pend">to integrate</em></span></div>
           <div class="mod dirm"><span class="nm">4 · DIR</span><span class="it s">REM 2024 cascade by sex × age; eligibility from ENPG AUDIT-C <em class="pend">to integrate</em></span><span class="it x">Effect −8% of g/day; 1 y full, 0 by year 3–4; new BI only</span></div>
           <div class="mod"><span class="nm">5 · Scenarios</span>S0 fixed 2024 · S1 screening ×1.5 · S2 BI 80% · S3 both; 2025–2034</div>
           <div class="mod off"><span class="nm">Not in this paper</span><span class="it o">Individual survival by scenario · referral effect · education transitions · cancers in base case</span></div>
@@ -204,8 +204,8 @@ svg .dirx { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; st
           <h3>Model outputs</h3>
           <div class="out"><b>Exposure</b><br>Prevalence by state and HED, by sex, age, education, year; comparison with ENPG 2026</div>
           <div class="out"><b>Mortality</b><br>Expected alcohol-attributable deaths avoided, by cause and year</div>
-          <div class="out"><b>Years of potential life lost</b><br>YPLL &lt; 75 avoided</div>
-          <div class="out"><b>Programme volume</b><br>Screens and BIs per scenario; YPLL avoided per 1,000 BIs</div>
+          <div class="out"><b>Years of life lost</b><br>YLL avoided (HMD Chile life table); YPLL &lt; 75 for comparison</div>
+          <div class="out"><b>Programme volume</b><br>Screens and BIs per scenario; YLL avoided per 1,000 BIs</div>
         </div>
       </div></div>
       <figcaption>Módulos de datos a la izquierda, ciclo anual al centro, salidas a la derecha. Hoy el motor tiene los módulos 1 y 2 en versión base (drivers con persistencia latente); las matrices del objetivo 1, el PIF de <code>expand_pif</code> y el módulo DIR están por integrar.</figcaption>
@@ -244,7 +244,7 @@ svg .dirx { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; st
           <line x1="520" y1="202" x2="596" y2="202" class="ln" marker-end="url(#ar)"></line>
           <path d="M600 172 H812 L826 186 V240 H600 Z" class="recx"></path>
           <text x="612" y="192" class="t" font-style="italic">3) Expected attributable deaths</text>
-          <text x="612" y="209" class="t" font-style="italic">and YPLL &lt; 75: D_ref × PIF [3]</text>
+          <text x="612" y="209" class="t" font-style="italic">and YLL: D_ref × PIF [3]</text>
           <text x="612" y="230" class="tw" font-style="italic">to integrate</text>
           <line x1="826" y1="206" x2="896" y2="206" class="ln" marker-end="url(#ar)"></line>
           <text x="930" y="202" class="t c">Exit</text><text x="930" y="217" class="t c">population</text>
@@ -261,7 +261,7 @@ svg .dirx { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; st
 
           <rect x="300" y="336" width="220" height="50" rx="3" class="bx"></rect>
           <text x="410" y="357" class="tb c">5) Demographic reconciliation</text>
-          <text x="410" y="374" class="ts c">to INE stocks; add 15-year-olds [1]</text>
+          <text x="410" y="374" class="ts c">to INE stocks, ages 15–64 [1]</text>
           <rect x="80" y="338" width="180" height="46" rx="3" class="bx"></rect>
           <text x="170" y="358" class="t c">INE stocks</text><text x="170" y="374" class="ts c">sex × age × year</text>
           <text x="268" y="355" class="ts">Enter</text>
@@ -318,10 +318,10 @@ svg .dirx { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; st
       <figcaption>Orden real del motor (registro → muerte → edad → reconciliación → exposición del año siguiente). Con mortalidad de referencia común entre escenarios, el paso 3 es un estimador agregado de muertes esperadas evitables (ruta A). Borde sólido: estimado o calibrado con datos locales; punteado: parámetro externo o supuesto; gris: fuera de este artículo.</figcaption>
     </figure>
     <ol class="notes">
-      <li><b>Población.</b> ENPG 2012, 2014, 2016, 2018, 2020, 2022 y 2024 postestratificadas con CASEN por sexo, edad y educación (corrige composición, no identifica patrones rurales de consumo). El paso 5 es una reconciliación demográfica con los stocks INE: agrega o retira personas para cuadrar el stock. No observa migración individual. Quien entra recibe la exposición de un sorteo en su celda ENPG (supuesto).</li>
+      <li><b>Población.</b> ENPG 2012, 2014, 2016, 2018, 2020, 2022 y 2024 postestratificadas con CASEN por sexo, edad y educación (corrige composición, no identifica patrones rurales de consumo). El paso 5 es una reconciliación demográfica con los stocks INE: agrega o retira personas para cuadrar el stock, solo entre 15 y 64 años. No observa migración individual. Quien entra recibe la exposición de un sorteo en su celda ENPG (supuesto). En la ENPG, exbebedor = bebió alguna vez y su último trago fue hace más de 30 días (D4); en los paneles, no bebe ahora pero bebía en una ola previa. Falta definir a qué estado van los abstemios de toda la vida de la ENPG.</li>
       <li><b>Mortalidad de referencia (ruta A, base).</b> Las tasas all-cause por sexo × edad son las mismas en todas las ramas, así que las muertes sorteadas no cambian con el DIR. La ruta B (hazard individual por escenario) queda como extensión y no forma parte de este artículo (figura C2).</li>
-      <li><b>Estimador del paso 3.</b> Muertes esperadas evitables<sub>c,s,a,t</sub> = D<sub>ref,c,s,a,t</sub> × PIF<sub>c,s,a,t</sub>, con PIF = 1 − Σ p′·RR / Σ p·RR (p: exposición simulada en S0; p′: en el escenario; misma celda). AVPP con corte fijo a los 75. La exposición se congela a los 64 y la mortalidad atribuible se sigue hasta los 79 (supuesto). Cánceres fuera del caso base. La versión con historia usa el g/día simulado por persona desde 2012 (historia reconstruida, no observada) con rezago por causa; cánceres con rezago ≥ 10 años solo como sensibilidad. Guardar esa historia es parte de lo que falta integrar.</li>
-      <li><b>Cascada DIR.</b> Tres pasos por sexo × edad, calibrados a REM 2024 y fijos en 2025–2034: P(AUDIT) = 11,7 % (cualquier AUDIT; supone una prestación por persona y año); P(positivo | tamizado, consumo) desde un modelo de AUDIT-C en ENPG (OH_8–OH_10) calibrado a la positividad REM; P(IB | AUDIT 8–15) = 52 %. El recorrido individual no se observa: la independencia entre pasos y entre años es un supuesto. REM no trae educación: igual cobertura entre niveles. La referencia asistida no tiene efecto. S1 multiplica la cobertura por 1,5 con la misma P(IB); su impacto se estima, no se presupone.</li>
+      <li><b>Estimador del paso 3.</b> Muertes esperadas evitables<sub>c,s,a,t</sub> = D<sub>ref,c,s,a,t</sub> × PIF<sub>c,s,a,t</sub>, con PIF = 1 − Σ p′·RR / Σ p·RR (p: exposición simulada en S0; p′: en el escenario; misma celda). Muertes evitadas = muertes totales DEIS de la causa × PIF, nunca AAF × PIF (D9); causas 100 % atribuibles fuera del PIF (D8). Se reportan años de vida perdidos con la tabla de vida HMD de Chile (yll_hmd, D12); AVPP antes de 75 solo para comparar con Lemp. Nadie entra al modelo después de los 64; la mortalidad atribuible se sigue hasta una edad máxima de 79 en 2025–2034. Falta precisar cómo se inicializan las personas mayores y preparar las muertes DEIS y la banda de RR de 65–79. Calvo/EPS queda como posible sensibilidad para la evolución del consumo en mayores, no integrado. Desde los 65 se congela el consumo basal, pero el efecto de una IB previa sigue decayendo. Cánceres fuera del caso base. La versión con historia usa el g/día simulado por persona desde 2012 (historia reconstruida, no observada) con rezago por causa; cánceres con rezago ≥ 10 años solo como sensibilidad. Guardar esa historia es parte de lo que falta integrar.</li>
+      <li><b>Cascada DIR.</b> Tres pasos por sexo × edad, calibrados a REM 2024 y fijos en 2025–2034: P(AUDIT) = 11,7 % (cualquier AUDIT; supone una prestación por persona y año); P(positivo | tamizado, consumo) desde un modelo de AUDIT-C en ENPG (OH_8–OH_10) calibrado a la positividad REM; P(IB | AUDIT 8–15) ≈ 52 % (IB de alcohol sobre resultados de riesgo de cualquier instrumento). El recorrido individual no se observa: la independencia entre pasos y entre años es un supuesto. REM no trae educación: igual cobertura entre niveles. La referencia asistida no tiene efecto. S1 multiplica la cobertura por 1,5 con la misma P(IB); su impacto se estima, no se presupone.</li>
       <li><b>Efecto de la IB.</b> −8 % del g/día de cada persona (−20 g/sem sobre 244 g/sem, Kaner 2018). Pleno el primer año y lineal a 0 al año 3–4 (supuesto). Sorteo anual; una IB nueva reinicia el reloj y no se acumula. HED cambia solo a través del volumen. Sensibilidades: 50 % del efecto (comparador folleto), efecto nulo, IC de Kaner (−12 y −28 g/sem), transición HED 0,07 (Lemp); escalado absoluto (−2,86 g/día) y por sexo (Manthey) una a una en el escenario principal. Comprobaciones pendientes: que 6b y 6e conserven el efecto remanente, y si una IB del año t cambia la exposición de t o de t + 1.</li>
       <li><b>Categoría → gramos.</b> La categoría sale de la matriz y el g/día de la distribución ENPG dentro de la categoría. Es un modelo híbrido: se declara y se valida contra la distribución de g/día de la ENPG.</li>
       <li><b>Transiciones.</b> Las matrices EPS/TSM reemplazan a los drivers actuales (p_current y g/día por sexo × edad con regla hold-last). Son anuales por generador continuo bajo homogeneidad temporal. Solo S0 se calibra a ENPG: calibrar los escenarios intervenidos al mismo margen borraría su efecto.</li>
@@ -341,7 +341,7 @@ svg .dirx { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 2; st
           <div class="dn">↓</div>
           <div class="step"><b>RR by cause and drinking history</b><br>→ PIF by age, sex, cause and year</div>
           <div class="dn">↓</div>
-          <div class="step"><b>Expected avoidable deaths</b><br>D_ref × PIF; YPLL weighted by age</div>
+          <div class="step"><b>Expected avoidable deaths</b><br>D_ref × PIF; YLL from life table</div>
           <p class="rn">No «saved» persons inside the engine. Demographic projection and health impact are separate components. Example: 100 reference deaths × PIF 0.10 = 10 expected avoidable deaths.</p>
         </div>
         <div class="route rB">

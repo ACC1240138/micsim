@@ -1,5 +1,7 @@
 # EPS reproducibility check
 
+**Historical record:** the Spanish notebook and its figures were removed after this check. The commands below describe the original bilingual verification and cannot be repeated unchanged with the current repository.
+
 Status: **PASS**
 
 - Independent fresh R sessions: 2; completed code cells each: 11.
