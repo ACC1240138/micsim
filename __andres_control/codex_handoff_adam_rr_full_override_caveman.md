@@ -8929,3 +8929,22 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 * PENDIENTE MOTOR (requiere permiso; no tocado): rho propio z_hed (hoy 0.8 comun a z_current/z_amount/z_hed); edades: max_age 65 -> seguir 15-64 iniciales a 2034 (max 73), consumo congelado 65+; integrar 6a (EPS/TSM), 6c-6d (DIR), paso 3 (PIF).
 * Pendiente datos/docs: DEIS y RR 65-73; capa anual EPS v4; ODD del outline (Google Doc) aun 79 y "validados FONASA" -> user.
 * Sin cambios a motor, notebooks, RR/AAF/PIF ni Google Docs. Sin commit/push.
+
+2026-10-29 | DELL_LR | Claude
+
+## CAVEMAN: user borro versiones antiguas de salidas Markov (sin commit)
+* Borrado por user (versiones antiguas): `__andres_control/eps_markov_outputs/`, `eps_markov_outputs_v2/`, `tsm_markov_outputs/` (248 archivos, siguen en git). Quedan `eps_markov_outputs_v4/`, `tsm_markov_outputs_v4/`.
+* Rompe al re-ejecutar: `TSM_ENPG_v4_EN.ipynb` (tsm-def-crosscheck lee `eps_markov_outputs/`), `test_tsm_markov_models.R` l.312, `_tools/verify_eps_reproduction.py` l.35, notebooks EPS v1/v2/TSM v3 y default de `eps_markov_core.R` (notebook v4 EPS usa `EPS_MARKOV_OUTPUT`). Links en `eps_markov_review.md` y HTML v1/v2 quedan muertos. No toque codigo. Sin commit/push.
+
+2026-10-29 | DELL_LR | Claude
+
+## CAVEMAN: correccion a entrada previa (si toque codigo, con permiso user); EPS v4 autocontenido; SIN commit
+* Redirigido a `eps_markov_outputs_v4/`: `TSM_ENPG_v4_EN.ipynb` (celda tsm-def-crosscheck), `test_tsm_markov_models.R` l.312, default `EPS_MARKOV_OUTPUT` en `eps_markov_core.R` y en el cuaderno EPS v4 (CSV de `_v4` identicos a los borrados, salvo CRLF).
+* `eps_markov_transitions_v4_EN.ipynb`: las 3 celdas (eps-setup/inputs/harmonize) ahora son celdas de codigo propias (`ep_prep_*`, copia sin cambios salvo `here::i_am`); `ep_load()` ya no lee `eps_alcohol_prevalencia_persistencia.ipynb`; borrados el listado en markdown y el check md5. Prueba: `ep_load()` desde las celdas del cuaderno da 16906/7800/15788 personas y 0 checks fallidos = `design_availability.csv` de v4. Cuaderno completo NO reejecutado.
+* Ojo: el cuaderno v4 ya difiere de `eps_markov_core.R` (ep_load); `_tools/build_eps_markov_v4_notebook.py` ya no regenera igual (asserts); la tabla md5 final aun lee 4 `.R` externos. `v4_source_md5.csv` desfasado hasta reejecutar.
+
+2026-10-29 | DELL_LR | Claude
+
+## CAVEMAN: EPS v4 = unica fuente de su codigo; tabla de trazabilidad sobre su propio codigo; SIN commit
+* Celda final `eps-v4-reproducibility`: ya no lee los 4 `.R`; lee su propio `.ipynb` y escribe md5 por grupo de celdas de codigo (core, prep, v2 defs, v4 defs, secciones, total). `v4_source_md5.csv` cambia de columnas (code, cells, md5). md5 en R = md5 en Python (47 celdas, 6 filas), 47 celdas parsean, `ep_load()` OK (16906/7800/15788).
+* Prosa/comentarios del cuaderno ya no dicen que lee `eps_markov_core.R`/`v2_extra`; metadata `eps_v4_revision` reducida a language + single_source (hashes del builder quitados; `_tools/build_eps_markov_v4_notebook.py` queda obsoleto). Salida guardada de esa celda (tabla antigua) sigue vieja hasta reejecutar. Cuaderno completo NO reejecutado.

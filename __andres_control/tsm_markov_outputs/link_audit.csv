@@ -1,5 +1,0 @@
-"period","months","age_bounds","origin_rows","destination_present","compatible","incompatible","incompatible_sex","incompatible_age","age_decrease","age_increase_above_bound","linked_persons"
-"R7_R8",8,"[-1, 2]",2123,1001,996,5,0,5,4,5,996
-"R8_R9",4,"[-1, 2]",1405,907,901,6,0,6,4,4,901
-"R9_R10",7,"[-1, 2]",2137,1284,1254,30,0,30,9,28,1254
-"R10_R11",5,"[-1, 2]",1672,983,970,13,1,12,5,12,970

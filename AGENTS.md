@@ -68,6 +68,7 @@ Keep this reference visible:
 
 ## 4. Code and file editing rules
 
+- Prefer self-contained notebooks as the single, traceable source of analysis code; avoid splitting notebook logic across small external scripts or introducing unnecessary code-file dependencies. Preserve required shared data-access infrastructure.
 - Do not edit notebooks (`.ipynb`) or Quarto files (`.qmd`) without explicit user permission.
 - R: call functions as `package::function`; use `library()` only when necessary.
 - Each chunk/script starts with `.t0 <- Sys.time()` and ends reporting elapsed time in minutes.

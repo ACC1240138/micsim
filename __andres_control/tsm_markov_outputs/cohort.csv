@@ -1,5 +1,0 @@
-"period","months","years","risk_set","destination_present","incompatible_links","usable_pairs","persons","age_min","age_max","weight_ESS","main_weight"
-"R7_R8",8,0.666666666666667,2123,1001,5,996,996,19,65,359.197799739531,"Origin Fact_Exp + link IPW (stages a and c constant)"
-"R8_R9",4,0.333333333333333,1405,907,6,901,901,18,65,263.806364625772,"Origin Fact_Exp + link IPW (stages a and c constant)"
-"R9_R10",7,0.583333333333333,2137,1284,30,1254,1254,19,65,447.860460117746,"Origin Fact_Exp + link IPW (stages a and c constant)"
-"R10_R11",5,0.416666666666667,1672,983,13,970,970,19,65,335.759025612024,"Origin Fact_Exp + link IPW (stages a and c constant)"

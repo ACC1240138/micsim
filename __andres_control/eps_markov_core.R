@@ -62,7 +62,7 @@ ep_qsignal <- function(d) {
 }
 ep_load <- function() {
   source(here::here("_tools", "acc_data.R"))
-  ep_out <<- here::here(Sys.getenv("EPS_MARKOV_OUTPUT", "__andres_control/eps_markov_outputs"))
+  ep_out <<- here::here(Sys.getenv("EPS_MARKOV_OUTPUT", "__andres_control/eps_markov_outputs_v4"))
   dir.create(ep_out, showWarnings = FALSE, recursive = TRUE)
   cells <- jsonlite::read_json(here::here("__andres_control", "eps_alcohol_prevalencia_persistencia.ipynb"))$cells
   run <- function(label) {

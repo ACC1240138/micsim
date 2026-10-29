@@ -309,7 +309,7 @@ stopifnot(nrow(ts_hed_result$coef) > 5, all(is.finite(ts_hed_result$coef$estimat
 print(ts_hed_result$proportions, digits = 3)
 # ---- cross-check with the real EPS aggregate CSVs ----
 ts_cross <- blk("ts_crosscheck_eps", ts_crosscheck_eps(ts_d, ts_fits, ts_annual_full, ts_cvtab, ts_ann))
-eA <- utils::read.csv(here::here("__andres_control", "eps_markov_outputs", "transition_matrices_design_CI.csv"))
+eA <- utils::read.csv(here::here("__andres_control", "eps_markov_outputs_v4", "transition_matrices_design_CI.csv"))
 eA <- eA[eA$model == "A" & is.finite(eA$estimate), ]; m34 <- function(x) ifelse(x %in% c("C3", "C4"), "C3plus", x)
 eA$from <- m34(eA$from); eA$to <- ifelse(eA$to %in% c("N0", "FD"), "NC", m34(eA$to))
 observed_origins <- names(which(table(factor(as.character(ts_d$state0), levels = ts_ST)) > 0))
