@@ -22,7 +22,7 @@ Volume coherence needs one more line in the engine: HED by volume rank, through 
 | `ms_fit(2024, "interp_hold")` HED coefficients equal the stored `microsim_recalib_outputs/model_parameters.csv` (`reconstruction2024_interp_hold`) | **Run**: identical to 1e-14 |
 | Re-run of the reconstruction, 5 seeds × rho 0/0.8/0.95 | **Run.** rho 0.8 bias −4.497 pp, coverage 30/48. Stored: −4.464 pp, 31/48. Per-cell max diff 2.1 pp, mean −0.03 pp (MC sd per cell ≈ 1.3 pp). The stream likely diverges because the DEIS 2024 vintage (`06102026`) changes the mortality multiplier (inferred) |
 | Decomposition, fixes, holdout, persistence grid | **Run** (see scripts) |
-| SENDA series 52.1/43.7/51.1/56.3/50.2/50.7/47.2 | **Read** from `__andres_control/p3kimi_investigacion_HED_faltantes_AAF_Chile.md:92,107`; not re-verified against SENDA |
+| SENDA series 52.1/43.7/51.1/56.3/50.2/50.7/47.2 | **Read** from `research_notes/p3kimi_investigacion_HED_faltantes_AAF_Chile.md:92,107`; not re-verified against SENDA |
 | Questionnaire wording by wave | **Read** from `_enpg/notes/enpg_questionnaire_pages.csv`, `_enpg/notes/enpg_findings.md` §3, §5 and `__andres_control/eps_alcohol_outputs/enpg_wave_crosswalk.csv` |
 
 ## 1. How HED is defined, by wave

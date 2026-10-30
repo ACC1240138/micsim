@@ -33,6 +33,8 @@ desktop.ini
 Rplots.pdf
 
 # Derived microdata: never in plain text (use acc_pack)
+/_dir/rem/
+/_dir/fonasa/
 data_binge_sensitivity.rds
 ENPG_*.RDS
 enpg20??.RDS

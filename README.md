@@ -2,7 +2,7 @@
 
 Microsimulation of alcohol policies in Chile: alcohol-attributable mortality (PAF/AAF, YPLL), policy counterfactuals (PIF), price elasticities (EPF) and simulation. The repository holds the working notebooks, the scripts they load, their recent aggregate results, and the project guidelines (`AGENTS.md`).
 
-The **microdata** (ENPG, EPS, ELSOC, DEIS, EPF) are in the repository **only in encrypted form**, never as plain text.
+The **microdata** (ENPG, EPS, ELSOC, TSM, DEIS, EPF, CASEN, ENCAVI) are in the repository **only in encrypted form**, never as plain text.
 
 **Setting up a new computer:** follow [INSTALL.md](INSTALL.md) (clone, `renv::restore()`, data key, checks).
 
@@ -24,9 +24,12 @@ All data access goes through `_tools/acc_data.R` (`source(here::here("_tools", "
 |---|---|---|
 | `_enpg/` | ENPG 2008–2024 and derived inputs | [README](_enpg/README.md) |
 | `_eps/` | EPS 2009–2023 | [README](_eps/README.md) |
+| `_encavi2324/` | ENCAVI 2023-2024 | [README](_encavi2324/README.md) |
+| `_casen/` | CASEN data and derived inputs | [README](_casen/README.md) |
 | `_elsoc/` | ELSOC 2016–2023 encrypted microdata and source documentation; harmonisation map and links to transition analyses | [README](_elsoc/README.md) |
 | `_tsm/` | TSM (Termómetro de la Salud Mental ACHS-UC) rounds 7–11 | [README](_tsm/README.md) |
 | `_deis/` | DEIS deaths 2012–2023 and 2024+ | [README](_deis/README.md) |
+| `_dir/` | DIR inputs: encrypted REM 2019–2024 extracts and FONASA aggregates; public codebooks and facility catalogues | [README](_dir/README.md) |
 | `_epf/` | EPF (harmonised cache and raw INE files) | [README](_epf/README.md) |
 | `_bib/` | Encrypted reference PDFs and `references.bib` | [README](_bib/README.md) |
 | `_sessions/` | Encrypted Codex and Claude Code conversation backups | [README](_sessions/README.md) |
@@ -38,13 +41,13 @@ All data access goes through `_tools/acc_data.R` (`source(here::here("_tools", "
 
 R ≥ 4.4. Core (data loader and tests): `openssl`, `data.table`, `nanoparquet`, `arrow`, `haven`, `here`, `jsonlite`.
 
-The notebooks also use: `dplyr`, `tidyr`, `purrr`, `tibble`, `stringr`, `forcats`, `tidyselect`, `readr`, `readxl`, `writexl`, `rio`, `janitor`, `ggplot2`, `scales`, `gridExtra`, `patchwork`, `htmltools`, `DT`, `knitr`, `IRdisplay`, `quarto`, `survey`, `survival`, `sandwich`, `MASS`, `mvtnorm`, `fitdistrplus`, `gtools`, `MicSim`, `digest`, `withr`, `rvest`, `xml2`, `zip`, `IRkernel` and `devtools` (the latter only for the session information). The list comes from the package vectors in each notebook; most notebooks report a missing package at the start.
+The notebooks also use: `dplyr`, `tidyr`, `purrr`, `tibble`, `stringr`, `forcats`, `tidyselect`, `readr`, `readxl`, `writexl`, `rio`, `janitor`, `ggplot2`, `scales`, `gridExtra`, `patchwork`, `htmltools`, `DT`, `knitr`, `IRdisplay`, `quarto`, `survey`, `survival`, `glmnet`, `ranger`, `SuperLearner`, `sandwich`, `MASS`, `mvtnorm`, `fitdistrplus`, `gtools`, `MicSim`, `digest`, `withr`, `rvest`, `xml2`, `zip`, `IRkernel` and `devtools` (the latter only for the session information). The list comes from the package vectors in each notebook; most notebooks report a missing package at the start.
 
 ## Reproducible R environment (renv)
 
 The ELSOC analyses use the same project environment. `survival` is declared in `DESCRIPTION` and already pinned at version 3.6-4 in `renv.lock`; restore it with `renv::restore()` as part of the project setup.
 
-`renv.lock` pins the **exact versions** of 169 packages (those in `DESCRIPTION` plus their dependencies) and the repository: a **dated** Posit Package Manager snapshot (`https://packagemanager.posit.co/cran/2026-04-23`). The environment is therefore the same today as a year from now.
+`renv.lock` pins the **exact versions** of 186 packages (those in `DESCRIPTION` plus their dependencies) and the repository: a **dated** Posit Package Manager snapshot (`https://packagemanager.posit.co/cran/2026-04-23`). The environment is therefore the same today as a year from now.
 
 - **In a clone:** start R in the repository root or in any folder with R code, with any tool (Positron, Jupyter, `Rscript`; in RStudio open `micsim.Rproj`): `.Rprofile` activates `renv` automatically. Run `renv::restore()` (the first time from the Positron console or a terminal, see [INSTALL.md](INSTALL.md)), then `Rscript _tools/test_acc_data.R`.
 - **How renv activates:** R runs only the `.Rprofile` of the folder it starts in. The root `.Rprofile` activates `renv` with the canonical project path (Positron starts R in `c:/…`, which would otherwise give a second, empty library); every folder with R code has an identical stub `.Rprofile` (a copy of `_tools/.Rprofile`) that runs the root one. A new folder with R code needs a copy of the stub. If `.libPaths()` shows no `renv` path, R started in a folder without `.Rprofile` (outside the repository, or a folder without R code such as `_enpg/`): `setwd()` to the root and restart R. Non-interactive R (Rscript, PSOCK workers, Jupyter kernels) skips renv's load-time library/lockfile check (~7 s); run `renv::status()` to see it.

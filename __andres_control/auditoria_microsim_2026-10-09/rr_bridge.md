@@ -156,7 +156,7 @@ This is `.aaf_core`/`.aaf_pop_R` (`aaf_unified.R:252-264, 530-554`) with the int
 
    - Engine-specific risk: the microsim moves people between current and former every year through `z_current` (ρ = 0.8). A person who quits instantly jumps from RR(x) to RR_FD. An intervention must therefore change **gpd/hed only, never status**; this is what the expand_pif volume and HED scenarios do (`p_form × RR_FD` stays untouched). A participation or quitting effect needs an explicit rule, for example "intervention quitters take RR(0.1) for k years".
 2. **HED.** The engine and expand_pif are identical ([B]). Against the RR source:
-   - The item is 5+ drinks (men) / 4+ (women), which is 60/48 g at 12 g per drink, while the RR threshold is ≥60 g (see `__andres_control/p3kimi_investigacion_HED_faltantes_AAF_Chile.md`). Declare it; do not recode.
+   - The item is 5+ drinks (men) / 4+ (women), which is 60/48 g at 12 g per drink, while the RR threshold is ≥60 g (see `research_notes/p3kimi_investigacion_HED_faltantes_AAF_Chile.md`). Declare it; do not recode.
    - The joint (x, HED) distribution differs. expand_pif uses separate NHED and HED gammas. The microsim uses `P(HED | x) = plogis(a_cell + b·log1p(gpd))`. For cap/explicit causes the AAF depends on that joint distribution, so check it by cell with the [2]-type check, not only the HED prevalence.
    - Size of the current HED bias [RUN, `audit/rr_bridge_hed_bias_2024.csv`]: a −4.5 pp p_hed moves the 2024 injury AAFs by **−6.6% to −9.3% relative** and IHD by −1.1% (F) / −3.4% (M).
 3. **Pooled vs split consumption inside expand_pif.**

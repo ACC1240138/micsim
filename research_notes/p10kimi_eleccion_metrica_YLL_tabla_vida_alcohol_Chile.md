@@ -115,7 +115,7 @@ No. La convención vigente desde GBD 2010 elimina ambos: "Neither YLLs nor YLDs 
 
 AS = ambos sexos; H = hombres; M = mujeres; n/d = no disponible en la fuente consultada. **Versiones consultadas:** HMD valores = datos suplementarios de Aburto et al. 2022 (File008, hoja "Life expectancy at birth"; descarga directa de HMD bloqueada por muro de registro); INE = Anuario de Estadísticas Vitales 2022 (PDF, consultado 2026-10-07) y presentación EEVV 2023–2025(p) del 27-05-2026 (PDF, consultado 2026-10-07); WPP = WPP 2024 Online Edition Rev.1 (julio 2024), archivo Excel oficial descargado 2026-10-07. La serie WDI del Banco Mundial (fuente: UN WPP; última actualización 2026-07-13) coincide al centésimo con estos valores WPP 2024. Los valores INE 2015–2021 de ambos sexos son ponderaciones de las series por sexo (nota al Gráf. 29 del Anuario 2022) — no promediar con tablas de ambos sexos calculadas directamente.
 
-![Chile: esperanza de vida al nacer por fuente, 2012–2024](figura_e0_chile_fuentes.png)
+![Chile: esperanza de vida al nacer por fuente, 2012–2024](../__andres_control/figura_e0_chile_fuentes.png)
 
 ---
 

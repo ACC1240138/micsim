@@ -107,7 +107,7 @@ Etiquetas: **[TEXTO]** = la fuente lo afirma (cita textual ≤30 palabras cuando
 
 ### 4.2 Serie APC Chile 2010–2024 (litros de alcohol puro per cápita 15+; consulta 2026-10-07)
 
-![Series APC Chile 2010-2024](figura_APC_Chile_2010_2024.png)
+![Series APC Chile 2010-2024](../__andres_control/figura_APC_Chile_2010_2024.png)
 
 | Año | OMS GHO total SDG 3.5.2 (SA_0000001688; registrado prom. 3 años + no registrado, ajustado turismo; vintage registro 2026-06-15) | OMS GHO registrado anual (SA_0000001400) | OMS GHO no registrado (SA_0000001821, prom. 3 años) | Banco Mundial SH.ALC.PCAP.LI ("total… projected estimates, 15+") | OCDE AC (ventas aparentes ODEPA, 15+) |
 |---|---|---|---|---|---|

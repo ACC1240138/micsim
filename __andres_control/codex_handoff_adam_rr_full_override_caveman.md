@@ -8948,3 +8948,29 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 ## CAVEMAN: EPS v4 = unica fuente de su codigo; tabla de trazabilidad sobre su propio codigo; SIN commit
 * Celda final `eps-v4-reproducibility`: ya no lee los 4 `.R`; lee su propio `.ipynb` y escribe md5 por grupo de celdas de codigo (core, prep, v2 defs, v4 defs, secciones, total). `v4_source_md5.csv` cambia de columnas (code, cells, md5). md5 en R = md5 en Python (47 celdas, 6 filas), 47 celdas parsean, `ep_load()` OK (16906/7800/15788).
 * Prosa/comentarios del cuaderno ya no dicen que lee `eps_markov_core.R`/`v2_extra`; metadata `eps_v4_revision` reducida a language + single_source (hashes del builder quitados; `_tools/build_eps_markov_v4_notebook.py` queda obsoleto). Salida guardada de esa celda (tabla antigua) sigue vieja hasta reejecutar. Cuaderno completo NO reejecutado.
+
+2026-10-29 | DESKTOP_NDP_SGTV88L | Codex
+
+* Movidas a `research_notes/` 15 revisiones documentales (DIR/APS, trago estandar, intervencion adolescente, KIMI P1-P10 y modelos); ajustadas referencias de ruta. Sin cambios analiticos.
+
+2026-10-29 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: HED TSM vs ENPG (concordancia + prediccion persistencia CV5); playground, SIN archivos en repo ni commit
+* Exploratorio, scripts temporales fuera del repo (no persisten). Defs = celdas 5/7/9/11/13 de `TSM_ENPG_v4_EN.ipynb` evaluadas tal cual (`ts_save` anulado). Pares elegibles R7->R11 adyacentes (18-65 origen, tol +-2, IPW `wn`) = 1001/906/1276/977 = `cohort.csv` v4; se usa el origen de cada par.
+* HED TSM = e3a1>1 & e3a3>=2 (mensual+: >=3). ENPG 2022+2024 18-65 equivalente = pasado-anio & AUDIT1!=Nunca & AUDIT3>=1 (mensual+: >=2). Educ ENPG desde DP_11-14 con regla lenient TSM (`nedu` no distingue media incompleta). Diseno: TSM `wn` + cluster persona (sin PSU/estrato publicado); ENPG PSU/estrato anidados en anio (2022 estrato = comuna proxy). Concordancia = acuerdo de prevalencias (muestras independientes), no kappa.
+* HED any TSM 17.9 (15.4-20.5) vs ENPG 17.1 (16.4-17.9); H 25.2/24.2; M 11.2/10.2; mensual+ 5.7/5.7. Discrepan: 60-65 +6.3pp (H 60-65 +10.0), secundaria -4.1, terciaria +4.6, M primaria -3.5. Pareo temporal R7+R8 vs 2022 +0.5; R9+R10 vs 2024 +1.0; R11 vs 2024 +0.1. Sin filtro AUDIT1 ENPG 17.7. ENPG: 2297 bebedores ultimo anio con AUDIT1 Nunca (141 con AUDIT3>=1).
+* Sexo x edad x educ (24 celdas, xlsx entregado al usuario fuera del repo): muchas celdas TSM 50-120 personas -> descriptivo; |z|>=1.96 en H 30-44 media (15.1 vs 30.3; mensual+ 2.5 vs 12.2), H 18-29 media mensual+ (3.1 vs 6.8), M 30-44 basica mensual+ (0.9 vs 5.5); celdas 18-29 basica con 5-6 personas/0 casos no informativas. Sin correccion multiple (48 comparaciones).
+* Persistencia (origen HED): 619 pares/444 personas, 253 eventos, tasa ponderada 0.443 (= `hed_persistence_transitions.csv`). CV5 x20 (folds por persona, estratificado, `wn` en ajuste y score; todos con periodo): ningun modelo mejora Brier vs tasa base (BSS -0.004 a -0.041); AUC max demo+AUDIT1+AUDIT2 0.573, AUDIT1+2 0.561, demo 0.544, nivel AUDIT3 0.449 (no aporta); AP 0.42-0.50 vs prevalencia 0.44. => persistencia HED TSM ~constante por periodo; estratificar agrega varianza sin ganar prediccion.
+
+2026-10-30 | DESKTOP_NDP_SGTV88L | Claude
+
+## CAVEMAN: sintesis puente EPS-ENPG, FD/rural y diseno incertidumbre en Google Doc; SIN cambios en motor/notebooks ni commit
+* Doc (carpeta Drive ACC1240138): https://docs.google.com/document/d/1l7v1kLVKnbOZe9H7rd3Oy29qqNPxphoGyovVEKHJDGA/edit . Scripts temporales fuera del repo; no persisten.
+* IRT descartado (EPS solo F13-F15, sin AUDIT-C). Piloto equipercentile EPS VIII->ENPG 2024 por sexo = casi gramos EPS x 0.5; prueba VI/2016 y VII/2020: IC solapados con razon de medias y factor APC propio; sin puente claramente peor. Educacion en mujeres no invariante (p=.02), edad si.
+* FD EPS (historia observada, incl. 2009) != ex-bebedor ENPG (`fd` incluye 30d-1a). N0 EPS casi doble de "nunca" ENPG. ENPG "nunca" salta 2020->2024 (H 11.2->18.9; M 18.0->29.4), causa sin investigar. ENCAVI: rural menor en mujeres; EPS VIII sin zona publica.
+* PROPUESTA sin implementar: IPF solo poblacion inicial; history matching calibra; puente con VI/VII y ENPG 2024 + ENCAVI como validacion; cadena completa por sorteo; fila nunca = (N0-(1-pi)FD)/pi. Pendiente decision usuario: si 30d-1a sigue como `fd`.
+
+2026-10-30 | DESKTOP_NDP_SGTV88L | Codex
+
+## DIR: bundles de insumos agregados
+* `_dir/rem.tar.xz.enc` (12 extractos REM) y `_dir/fonasa.tar.xz.enc` (3 fuentes FONASA): acc_pack y round-trip de bytes/MD5 verificados, cada bundle y sidecar <50.000.000 bytes. Copias locales en claro conservadas e ignoradas; README documenta acceso mediante acc_data() y ZIP originales externos para regenerar. Sin commit/push ni integracion al motor.

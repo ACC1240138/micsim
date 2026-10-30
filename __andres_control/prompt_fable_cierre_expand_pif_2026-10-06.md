@@ -18,7 +18,7 @@ No-objetivos: no trabajar en `microsim_*`, `eps_*` ni `elasticidad_*`; no extend
 1. `AGENTS.md`.
 2. La entrada `2026-10-06 | DESKTOP_NDP_SGTV88L | Claude` al final de `__andres_control/codex_handoff_adam_rr_full_override_caveman.md` (con sus addenda). Es la fuente de las decisiones.
 3. `__andres_control/expand_pif_registro_2026-10-06.md`: registro de issues con verificación en código. Consúltalo por ID cuando lo necesites; no lo leas entero.
-4. Bajo demanda: informes de Kimi `__andres_control/p1kimi_*` a `p5kimi_*` (literatura que respalda las decisiones; sus citas ya fueron revisadas, con las correcciones anotadas en el handoff).
+4. Bajo demanda: informes de Kimi `research_notes/p1kimi_*` a `p5kimi_*` (literatura que respalda las decisiones; sus citas ya fueron revisadas, con las correcciones anotadas en el handoff).
 
 ## 3. Entorno y forma de trabajo
 
