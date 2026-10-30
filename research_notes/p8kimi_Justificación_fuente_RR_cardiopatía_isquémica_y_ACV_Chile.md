@@ -107,6 +107,7 @@ El estudio está identificado: *Estudio del Costo Económico y Social del Consum
 
 ## 7. BibTeX
 
+{% raw %}
 ```bibtex
 @article{roerecke2012ihd,
   author  = {Roerecke, Michael and Rehm, J{\"u}rgen},
@@ -306,6 +307,7 @@ El estudio está identificado: *Estudio del Costo Económico y Social del Consum
   note        = {Informe completo no accesible en l{\'i}nea al 2026-10-08; URL corresponde a la noticia institucional que documenta el estudio}
 }
 ```
+{% endraw %}
 
 ---
 

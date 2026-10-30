@@ -83,6 +83,7 @@ KIMI-P4 | 2026-10-07 | 8 referencias leídas a texto completo / 7 solo resumen
 
 ## 7. BibTeX
 
+{% raw %}
 ```bibtex
 @article{shield2020lancetph,
   author  = {Shield, Kevin and Manthey, Jakob and Rylett, Margaret and Probst, Charlotte and Wettlaufer, Ashley and Hasan, Omer S. M. and Rehm, J{\"u}rgen},
@@ -226,6 +227,7 @@ KIMI-P4 | 2026-10-07 | 8 referencias leídas a texto completo / 7 solo resumen
   doi     = {10.1111/add.14392}
 }
 ```
+{% endraw %}
 
 ## 8. NO ENCONTRADO / NO VERIFICADO y discrepancias de DOI
 

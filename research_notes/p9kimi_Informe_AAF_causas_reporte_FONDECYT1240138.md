@@ -156,6 +156,7 @@ Alternatively, stomach cancer may be included in the main estimate following the
 
 ## 7. BibTeX
 
+{% raw %}
 ```bibtex
 @article{Shield2025,
   author  = {Shield, Kevin and Weber, Andrija and Fecioru, Andrei and Sohi, Ivneet and Bader, Marissa and Kok Tan, Ee and Gruenewald, Ida-Rebekka and Kilian, Carolin and Manthey, Jakob and Rehm, Jakob and Rehm, J{\"u}rgen and others},
@@ -435,6 +436,7 @@ Alternatively, stomach cancer may be included in the main estimate following the
   doi     = {10.3390/nu17193104}
 }
 ```
+{% endraw %}
 
 ---
 

@@ -161,6 +161,7 @@ Datos adicionales GHO: consumo **entre bebedores** (SA_0000001404, prom. 3 años
 
 ## 7. BibTeX
 
+{% raw %}
 ```bibtex
 @article{Rehm2010,
   author  = {Rehm, J{\"u}rgen and Kehoe, Tara and Gmel, Gerhard and Stinson, Frederick and Grant, Bridget and Gmel, Gerrit},
@@ -337,6 +338,7 @@ Datos adicionales GHO: consumo **entre bebedores** (SA_0000001404, prom. 3 años
   doi    = {10.5281/zenodo.15641639}
 }
 ```
+{% endraw %}
 
 ---
 

@@ -143,6 +143,7 @@ AS = ambos sexos; H = hombres; M = mujeres; n/d = no disponible en la fuente con
 
 ## 7. BibTeX
 
+{% raw %}
 ```bibtex
 @article{martinez2019yll,
   author = {Martinez, Ramon and Soliz, Patricia and Caixeta, Roberta and Ordunez, Pedro},
@@ -343,6 +344,7 @@ AS = ambos sexos; H = hombres; M = mujeres; n/d = no disponible en la fuente con
   url = {https://www.mortality.org/File/GetDocument/Public/Docs/MethodsProtocolV6.pdf}
 }
 ```
+{% endraw %}
 
 ---
 

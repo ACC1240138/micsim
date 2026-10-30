@@ -8974,3 +8974,8 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 
 ## DIR: bundles de insumos agregados
 * `_dir/rem.tar.xz.enc` (12 extractos REM) y `_dir/fonasa.tar.xz.enc` (3 fuentes FONASA): acc_pack y round-trip de bytes/MD5 verificados, cada bundle y sidecar <50.000.000 bytes. Copias locales en claro conservadas e ignoradas; README documenta acceso mediante acc_data() y ZIP originales externos para regenerar. Sin commit/push ni integracion al motor.
+
+2026-10-30 | DESKTOP_NDP_SGTV88L | Codex
+
+## GitHub Pages: BibTeX y Liquid
+* Protegidos nueve bloques BibTeX en research_notes con Liquid raw/endraw para evitar interpretar dobles llaves. Comprobacion estatica y diff --check; compilacion Jekyll no disponible localmente. Pendiente commit/push y verificar Pages.

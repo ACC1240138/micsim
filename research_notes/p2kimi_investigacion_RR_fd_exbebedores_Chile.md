@@ -175,6 +175,7 @@ La decisión D-a afecta a entre 14.2 y 17.9 puntos porcentuales de la población
 
 ## 7. BibTeX (referencias de los puntos 3 y 6; solo campos verificados)
 
+{% raw %}
 ```bibtex
 @report{who2024,
   author = {{World Health Organization}},
@@ -453,6 +454,7 @@ La decisión D-a afecta a entre 14.2 y 17.9 puntos porcentuales de la población
   doi = {10.1016/S2468-2667(25)00165-3}
 }
 ```
+{% endraw %}
 
 ## 8. NO ENCONTRADO / NO VERIFICADO y discrepancias
 

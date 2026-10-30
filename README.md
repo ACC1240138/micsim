@@ -8,6 +8,8 @@ The **microdata** (ENPG, EPS, ELSOC, TSM, DEIS, EPF, CASEN, ENCAVI) are in the r
 
 **Browse the research:** [Article and analysis index](index.html) — longitudinal transitions and ENPG calibration, JRT replications and PIF extensions, and screening/brief-intervention microsimulation.
 
+**GitHub Pages:** Jekyll processes Liquid syntax even inside Markdown code fences. Wrap BibTeX blocks containing double braces with Liquid `{&#37; raw &#37;}` and `{&#37; endraw &#37;}` tags outside the code fence; otherwise the Pages build can fail or alter the rendered references.
+
 ## Data and key
 
 Bundles are `*.tar.xz.enc` files (tar.xz + AES-256-CTR + HMAC-SHA256), each with a `*.md5.csv` sidecar (file names, sizes and md5; no data). The key is the environment variable `ACC_DATA_KEY`:

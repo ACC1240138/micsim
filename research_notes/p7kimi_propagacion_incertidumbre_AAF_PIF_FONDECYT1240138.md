@@ -145,6 +145,7 @@ As a lower-bound sensitivity analysis, all parameters, including the relative ri
 
 ## 7. BibTeX de las referencias citadas en las secciones 3 y 6
 
+{% raw %}
 ```bibtex
 @article{gmel2011,
   author  = {Gmel, Gerrit and Shield, Kevin D. and Frick, Hanna and Kehoe, Tara and Gmel, Gerhard and Rehm, J{\"u}rgen},
@@ -360,6 +361,7 @@ As a lower-bound sensitivity analysis, all parameters, including the relative ri
   note        = {Solo metadatos/overview le{\'i}dos; PDF en iris.who.int (handle 10665/377960)}
 }
 ```
+{% endraw %}
 
 ## 8. NO ENCONTRADO / NO VERIFICADO y discrepancias
 

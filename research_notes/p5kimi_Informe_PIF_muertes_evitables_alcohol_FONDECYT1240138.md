@@ -151,6 +151,7 @@ Sí, el denominador es la carga **total** de la causa. [TEXTO] OMS (Q&A de CRA, 
 
 ## 7. BibTeX
 
+{% raw %}
 ```bibtex
 @techreport{sherk2017intermahp,
   author      = {Sherk, Adam and others},
@@ -355,6 +356,7 @@ Sí, el denominador es la carga **total** de la causa. [TEXTO] OMS (Q&A de CRA, 
   doi     = {10.26633/RPSP.2018.7}
 }
 ```
+{% endraw %}
 
 ---
 

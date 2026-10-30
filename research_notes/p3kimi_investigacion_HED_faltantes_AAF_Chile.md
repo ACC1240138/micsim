@@ -129,6 +129,7 @@ Within each year × age × sex × HED stratum, consumption among current drinker
 
 ## 7. BibTeX
 
+{% raw %}
 ```bibtex
 @misc{who_gho_459,
   author = {{World Health Organization}},
@@ -359,6 +360,7 @@ Within each year × age × sex × HED stratum, consumption among current drinker
   url         = {https://diprece.minsal.cl/wrdprss_minsal/wp-content/uploads/2016/02/5.-MINSAL_2011_-Intervenciones-breves-alcohol.pdf}
 }
 ```
+{% endraw %}
 
 ## 8. Lista de NO ENCONTRADO / NO VERIFICADO y discrepancias
 
