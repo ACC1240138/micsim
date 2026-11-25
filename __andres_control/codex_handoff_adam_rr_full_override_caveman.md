@@ -8979,3 +8979,113 @@ Contexto: registro 61 issues + verificacion en codigo -> `__andres_control/expan
 
 ## GitHub Pages: BibTeX y Liquid
 * Protegidos nueve bloques BibTeX en research_notes con Liquid raw/endraw para evitar interpretar dobles llaves. Comprobacion estatica y diff --check; compilacion Jekyll no disponible localmente. Pendiente commit/push y verificar Pages.
+
+
+2026-11-10 | DESKTOP_NDP_SGTV88L | Codex
+
+## CAVEMAN: Tabla 5 IHD, covarianza e incertidumbre; nota incorporada por solicitud del usuario
+
+* Fuente: `table5_ihd_cov_handoff_2026-11-10.md`, recibida del usuario. Transcripcion completa abajo; resultados y estado de correspondencia son los reportados por esa nota, no verificados independientemente en este turno. Las propuestas NO quedan aprobadas ni implementadas.
+* Sincronizacion previa: git fetch origin; HEAD y origin/main alineados (0/0); sin copias de conflicto del handoff. Entrada agregada sin modificar contenido anterior.
+* Alcance: registro documental; sin cambios ni ejecucion de notebooks, RR/AAF/PIF. La correlacion propuesta es entre coeficientes B1/B2, NO el rho de persistencia HED.
+
+# table5_ihd_cov_handoff | 2026-11-10 | FONDECYT 1240138 | PIF expand_pif3
+
+## SRC
+- PUC/SENDA 2018 "Costo Económico y Social Consumo Alcohol Chile 2017–Act.2018" (Margozzini PI; Zitko epi). Local: micsim/_bib/local/PUC-SENDA Estudios de costos alcohol.pdf (from ACC email 2026-05-12).
+- Tabla5 p61 (pdf) = RR fn params {B1,EE1,B2,EE2,Fact,comparador,RR_former}. GSheet copy: 1bNCtpMnR18fK6CTLbzsa2KNiILdrg8VkAswrYuScgMk (tabs "tabla 5","anexo 2").
+- p161 (pdf; printed 160) verbatim: "Los anexos se adjuntan en CD en formato electrónico". Anexo1=consumption-distribution fitting; Anexo2=Tablas y Figuras cap IV (RR spec); Anexo3=AVISA; Anexo4=PAF by sex×age. Not public.
+- Email to Zitko 2026-10-07 (pedrozitko@gmail.com) requesting Anexo2: NO reply as of 2026-11-10.
+
+## MODEL (mortality rows used in PIF)
+x=g/day; RR=exp(lnRR); no intercept (RR(0)=1)
+- IHD_F: lnRR=B1*x+B2*x*ln(x); B1=-0.052526(EE .032510); B2=0.014704(EE .007925); Fact=1/20; RRformer=1.54[1.17-2.03]
+- IHD_M: lnRR=B1*sqrt(x)+B2*x^3; B1=-0.046271(EE .024037); B2=0.000001(EE 0); Fact=1/3; RRformer=1.25[1.15-1.36]
+- IS_F:  lnRR=B1*sqrt(x)+B2*x; B1=-0.249674(EE .019163); B2=0.037207(EE .000523); Fact=1
+- IS_M:  lnRR=B1*sqrt(x)+B2*sqrt(x)*ln(x); B1=-0.141950(EE .012866); B2=0.039613(EE .001782); Fact=1
+- B1=protective term(<0); B2=harmful term(>0); J-curve = B1 vs B2 net.
+
+## CODE STATE
+- table5_make_record(): covBetaCurrent=diag(EE1^2,EE2^2) => rho(B1,B2)=0 assumed.
+- Fact stored, NOT applied as x-scale.
+- Same RR repeated across Adam age bands (15-34,35-64,65+).
+- Roles (user decisions 2026-10-07/08): IHD primary=WHO/Adam, Table5=sensitivity; IS primary=Table5.
+- Neg PIF retained+flagged, no clip, no monotonicity.
+
+## PROBLEM
+- expand_pif3.html: "Table 5 IHD-female upper limit is degenerate (missing b1/b2 covariance)"; 336/588 non-baseline cells UL>50%; 237 UL>90%. IHD_M, IS: none >90%.
+- Point PIFs fine; only MC UL explodes.
+
+## MECHANISM (IHD_F)
+- rel SE: EE1/|B1|=0.62; EE2/B2=0.54.
+- x=5: z=x*ln(x)=8.05; terms -0.263,+0.118; lnRR=-0.144; RR=0.866; SE_ln(indep)=0.175; IC95 RR 0.615–1.22.
+- x=50: z=195.6; terms -2.626,+2.876; lnRR=0.250; RR=1.284; per-term SE 1.626,1.550; Var=5.045; SE_ln=2.246; exp(SE)=9.451; factor=9.451^1.96=81.6; IC95 RR 0.0157–104.8.
+- 1-SE adverse draw (B1+EE1,B2+EE2) @50: lnRR=3.425; RR=30.7.
+- cause: lnRR = small diff of 2 large terms; indep draws break compensation; exp() asymmetry => UL only.
+- MC check (10k draws, rho=0): RR>10 in 17%@50g, 33%@75g, 44%@100g.
+
+## FORMULA
+Var(lnRR)=a^2+b^2+2*rho*a*b; a=EE1*f1(x); b=EE2*f2(x); cov=rho*EE1*EE2
+IC_RR = RR * exp(SE_ln)^(±1.96)
+R: 1.283793*9.451259^c(-1.96,1.96)
+
+## RHO SENSITIVITY IHD_F @50g (IC95 RR)
+rho +0.5: 0.006–282 | 0: 0.016–105 (current) | -0.5: 0.06–29 | -0.9: 0.32–5.2 | -0.99: 0.81–2.0
+@5g: rho0 0.62–1.22; rho-0.9 0.70–1.07 (minor).
+
+## RHO INFERENCE (assumption, not data)
+- no-intercept 2-col LS => corr(B1,B2)=f(design cols x, x*ln(x)) only.
+- plausible dose grids {6..45},{5,15,30,50,80},{2..120}, equal or 1/x weights => rho∈[-0.996,-0.986].
+- check: implied EE1/EE2 = 3.4–4.5; Table5 observed 0.03251/0.007925=4.10 (computed, not printed) => consistent.
+- demo: B1±1EE with refit B2 (B1 -0.085→B2 .0225; B1 -0.020→B2 .0069) gives near-identical curve 5–80g => non-identifiability.
+- best guess rho≈-0.99; sensitivity -0.98,-0.99. Unverified.
+
+## IHD_M
+- B2=0.000001 rounded (6 dp) on x^3 term; B2∈[5e-7,1.5e-6] => RR@100g 1.04–2.8; @125g 1.6–11. Point estimate unreliable.
+- EE2=0 => no MC uncertainty => IC too narrow (opposite of F).
+
+## PUC OWN CIs (same coefs) — narrow
+- Tabla6 p63 FA mort IHD 18.1% (14.7–21.2); IHME -6.1% (-11.5–0.4); PUC flags as largest discrepancy p64.
+- Tabla7 deaths IHD 2053 (1672–2413); Tabla8 AVISA 35673 (29182–42220). rel width ±18%.
+- PUC shifted consumption ÷0.2205 (coverage ratio) => mass at 50–100g; still narrow => they used vcov OR didn't propagate RR param uncertainty OR other method. Method in Anexos (CD). Only MC described (p75, 10k) = direct costs.
+- not directly comparable: pooled sex, incl former drinkers.
+
+## FACT
+- unexplained in report body. Hypothesis: x-scale (x*Fact) for fractional polynomial. If applied, IHD_F eval at x/20 => RR≈<1 across range. Unverified.
+
+## ASK AUTHORS (Zitko/SENDA E.Pizarro via ACC?)
+1. vcov(B1,B2) per function.
+2. Fact definition/application.
+3. full-precision coefs (esp IHD_M B2, cirrosis_M B2).
+4. Anexos 1,2,4.
+
+## PROPOSED (not implemented)
+- Table5 IHD: report point-only sensitivity, no IC, until vcov.
+- optional: rho=-0.98/-0.99 sensitivity in table5_make_record() covBetaCurrent, declared as assumption.
+- IS unaffected.
+
+## CAVEATS
+- delta-method + standalone RR MC only; full PIF not rerun.
+- expand_pif3.html read via summarizer; verify 237/588.
+- dose grids assumed.
+
+## 2026-11-10 B2 ROUNDING SENS — Table5 IHD_M (precision sens, NOT correction/CI)
+- script: __andres_control/sens_b2_ihd_male_table5_20261110/sens_b2_ihd_male_table5.R; pif_point(); validates vs pif2_pif_results_table5_full_20261008 (616 cells, max dev 2.8e-16). No notebook edited; IHD primary stays WHO/Adam.
+- printed B2=0,000001 (6dp, 1 sig fig), EE2=0,000000. rounding=>B2∈[0.5e-6,1.5e-6); truncation=>[1e-6,2e-6); report silent. EE2=0 ≠ no uncertainty.
+- held fixed: B1=-0.046271, RRformer 1.25, cap HED, x 0.1–150, bundle 20261007, 22 scen (λ0/.5/1), 7y×4 ages. Fact=1/3 stored NOT applied (unvalidated).
+- RR: nadir 47/36/31 g; RR=1 at 97/73/62 g (B2 .5/1/1.5e-6). RR@125g 1.58/4.20/11.2; <30g ~identical.
+- HED male density >60g 26–32%, >100g 8–13% (2024).
+- mean PIF (28 cells, unweighted) vol-10: .008/.050/.181; vol-30: .012/.083/.262; HED-50 λ0: .020/.015/.010; comb30/50 λ0: .032/.099/.274. WHO vol-10 .004.
+- AAF mean .064/.138/.317.
+- sign: 0 neg cells any B2. magnitude: cell ratio hi/lo median 8.3 (0.44–54). ranking flips in rounding range (low B2: HED-50 > vol-30; pub: vol-30 >> HED-50).
+- verdict: Table5 IHD_M NOT interpretable sensitivity at published precision; at most precision band w/ explicit caveat; ask authors full-precision B2 (+Fact, vcov).
+- context only (not used to pick B2): WHO base IHD_M same form on (x+.01)/100 → B1≈-0.0487, B2≈1.55e-6 ×beta3; B1≠Table5 → not same fit. WHO base IHD_F reparam B1=-0.05253 = Table5 B1; B2 .01539 vs .01470.
+- rho=-0.99 for IHD_F also assumption, not recovered vcov.
+
+## 2026-11-10 B2 BACK-SOLVE ATTEMPT — Table5 IHD_M (NOT identifiable from published report)
+- published IHD info only pooled: Tabla6 FA mort 18.1% (14.7–21.2) both sexes, 15+; Tabla7 2053 deaths. Tabla28/Fig14 by sex×age = all causes, not IHD. Cause×sex×age FA in Anexo 2/4 (CD). GSheet "anexo 2" tab = pointer sentence only.
+- eq: FA_pooled = w_M*FA_M(B2, PUC exposure_M) + (1-w_M)*FA_F(PUC exposure_F). 1 eq, unknowns: B2, PUC gamma per sex×age (ENS 2009-10 ÷0.2205; Anexo 1), w_M (IHD deaths 2014 by sex×age), 65+ strata (bulk of IHD deaths; our engine 15–65 only), Fact.
+- illustration w/ OUR ENPG 2014 exposure (not PUC): FA_M B2 .5e-6 .05–.06; 1e-6 .12–.14; 1.5e-6 .29–.36; FA_F (Table5) .16–.20. assumed w_M≈0.6 => B2≈1.1–1.2e-6. Driven by our exposure; NOT valid estimate; do not use.
+- solvable path: Anexo 4 (FA by cause×sex×age) + Anexo 1 (exposure params) => 1 eq per male stratum, overidentified => B2 + test Fact=1/3 (B2 consistency across strata w/ vs w/o Fact).
+- ask SENDA/Zitko: Anexo 1 + Anexo 4 + full-precision coefs (+vcov, Fact).
+- not saved as file/script; ad hoc check only.
